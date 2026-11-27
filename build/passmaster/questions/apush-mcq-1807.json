@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1807",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "excl-act-1882",
+ "stimulus": {
+  "kind": "text",
+  "text": "“Whereas in the opinion of the Government of the United States the coming of Chinese laborers to this country endangers the good order of certain localities within the territory thereof: Therefore, Be it enacted by the Senate and House of Representatives of the United States of America in Congress assembled, That from and after the expiration of ninety days next after the passage of this act, and until the expiration of ten years next after the passage of this act, the coming of Chinese laborers to the United States be, and the same is hereby, suspended; and during such suspension it shall not be lawful for any Chinese laborer to come, or having so come after the expiration of said ninety days to remain within the United States.”\n\nChinese Exclusion Act, approved May 6, 1882.",
+  "source_note": "Chinese Exclusion Act, May 6, 1882 (22 Stat. 58), Section 1 and preamble. Public domain; text checked against the National Archives transcript."
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Chinese Exclusion Act, May 6, 1882 (22 Stat. 58)"
+  ]
+ },
+ "status": "final",
+ "stem": "The act gives as its reason for suspending Chinese laborers that their coming did what?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Raised wages for American workers",
+   "misconception": "Reads a wage claim into a passage about good order."
+  },
+  {
+   "key": "B",
+   "text": "Had been requested by the Chinese government",
+   "misconception": "Assumes the excluded group asked to be excluded."
+  },
+  {
+   "key": "C",
+   "text": "Increased trade with China",
+   "misconception": "Adds a trade reason the act never gives."
+  },
+  {
+   "key": "D",
+   "text": "Endangered the good order of certain localities"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "The act says nothing about raising wages. Its stated reason is danger to good order.",
+  "B": "The act never says China asked for the ban. Congress imposed it on its own.",
+  "C": "Trade with China is not mentioned anywhere in the passage.",
+  "D": "The preamble says the coming of Chinese laborers “endangers the good order of certain localities,” and that stated fear is the act’s reason.",
+  "general": "Start with the preamble, where the act states its reason.\n1. The preamble says Chinese laborers endanger the good order of certain localities.\n2. That fear is the reason Congress gives for the suspension.\n3. Wages, trade, and China’s wishes are never mentioned.\n4. The stated reason is the one in the text, not a guess about motives.\nRemember: a law’s stated reason is the one written in its preamble."
+ }
+}

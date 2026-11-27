@@ -1,0 +1,77 @@
+{
+  "id": "apush-mcq-1737",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 2,
+  "answerKey": "D",
+  "skills": [
+    "3.B",
+    "1.A"
+  ],
+  "themes": [
+    "WXT",
+    "GEO"
+  ],
+  "reasoning": "continuity-change",
+  "stem": "According to the table, how did American corn production change between 1870 and 1900?",
+  "stimulus": {
+    "kind": "table",
+    "source_note": "United States corn production, in millions of bushels, from the National Bureau of Economic Research Macrohistory Database (series A01023USA391NNBR), via FRED, Federal Reserve Bank of St. Louis. Public data.",
+    "text": "United States corn production, in millions of bushels:\n\n| Year | Corn produced |\n| 1870 | 1,125 |\n| 1880 | 1,707 |\n| 1890 | 1,650 |\n| 1900 | 2,662 |"
+  },
+  "stimulus_set": "corn-production",
+  "options": [
+    {
+      "key": "A",
+      "text": "It fell from 2,662 million bushels to 1,125 million bushels",
+      "misconception": "Background: the table runs the other way; production rose from 1,125 million bushels in 1870 to 2,662 million in 1900."
+    },
+    {
+      "key": "B",
+      "text": "It stayed at about 1,700 million bushels for the whole period",
+      "misconception": "Background: production was 1,707 million bushels only in 1880; it was 1,125 in 1870 and 2,662 in 1900."
+    },
+    {
+      "key": "C",
+      "text": "It rose every single year without ever dipping",
+      "misconception": "Background: the table shows a dip in 1890, when production fell to 1,650 million bushels from 1,707 in 1880."
+    },
+    {
+      "key": "D",
+      "text": "It more than doubled, rising from 1,125 million to 2,662 million bushels"
+    }
+  ],
+  "rationales": {
+    "A": "The table runs the other way: 1,125 million bushels in 1870, then 1,707, 1,650, and 2,662 by 1900. Production rose, it did not fall.",
+    "B": "Production was 1,707 million bushels only in 1880. It started at 1,125 in 1870 and ended at 2,662 in 1900.",
+    "C": "The table shows a dip: production fell from 1,707 million bushels in 1880 to 1,650 in 1890, before climbing to 2,662 in 1900.",
+    "D": "Read the first and last rows: 1,125 million bushels in 1870 and 2,662 million in 1900. Production more than doubled across the period.",
+    "general": "Compare the first row with the last row.\n1. In 1870 the table shows 1,125 million bushels of corn.\n2. By 1900 it shows 2,662 million bushels, more than twice as much.\n3. The middle rows show the rise was uneven, with a dip in 1890, but the trend is up.\nRemember: a table tells its story in its first and last rows."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Mechanized Agriculture"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 17",
+        "section": "Challenges for Western Farmers"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Railroads and Developments in the West"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)"
+}

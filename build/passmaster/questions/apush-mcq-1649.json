@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1649",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "1.B",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "continuity-change",
+ "stem": "What limited the victory farmers won in Munn v. Illinois?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Munn v. Illinois, 94 U.S. 113 (1877), opinion of Chief Justice Waite. Public domain. Text verified against Cornell LII (law.cornell.edu/supremecourt/text/94/113) and the Bochum source collection.",
+  "text": "Munn v. Illinois, 94 U.S. 113 (1877). Illinois had set maximum charges for storing grain in Chicago warehouses. Munn, who owned a grain elevator, argued the law took his property without due process. Chief Justice Waite, for the Court:\n\n\"Property does become clothed with a public interest when used in a manner to make it of public consequence, and affect the community at large. When, therefore, one devotes his property to a use in which the public has an interest, he, in effect, grants to the public an interest in that use, and must submit to be controlled by the public for the common good, to the extent of the interest he has thus created.\""
+ },
+ "stimulus_set": "munn-illinois",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Court ordered all grain elevators to close within a year",
+   "misconception": "Background: the elevators stayed open and in business; the Court upheld regulating their charges, it did not close them."
+  },
+  {
+   "key": "B",
+   "text": "Wabash v. Illinois (1886) barred states from regulating interstate railroad rates"
+  },
+  {
+   "key": "C",
+   "text": "Congress repealed all the Granger laws the next year",
+   "misconception": "Background: Congress never repealed the Granger laws; the Court's Wabash decision, not Congress, cut them back."
+  },
+  {
+   "key": "D",
+   "text": "The farmers' Grange disbanded and stopped pressing the issue",
+   "misconception": "Background: the Grange faded as a political force, but the Alliances and then the Populists carried the fight forward."
+  }
+ ],
+ "rationales": {
+  "A": "Background: Munn's elevators kept operating under the capped rates. The Court regulated them; it never shut them down.",
+  "B": "Background from the books: in Wabash v. Illinois (1886) the Court held that interstate commerce belonged to Congress alone, so state railroad laws could not reach the long hauls that mattered most. Background: farmers then needed a federal law, and got the Interstate Commerce Act in 1887.",
+  "C": "Background: no repeal followed. Background: the Granger laws were narrowed by the Court, not struck down by Congress.",
+  "D": "Background: the Grange's membership fell, but the Farmers' Alliances took up the same demands, and the Populist Party carried them into national politics.",
+  "general": "A victory in one court can be narrowed in the next, so follow the cases in order.\n1. Take the 1877 win. Background: the Court upheld state regulation of businesses affected with a public interest.\n2. Add the 1886 turn. Background: Wabash said interstate rates were Congress's business alone, so Illinois could not touch them.\n3. See the gap that opened. Background: the states could not act and Congress had not yet acted, which forced the fight to Washington.\nRemember: a court giveth and a court taketh away, so track the rulings in sequence."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The Grange and Farmers' Alliances"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

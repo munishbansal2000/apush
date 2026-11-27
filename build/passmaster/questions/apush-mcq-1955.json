@@ -1,0 +1,89 @@
+{
+  "id": "apush-mcq-1955",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.13"
+  ],
+  "skills": [
+    "3.A"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "difficulty": 3,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "C. Politics, Power, and Reform in Urban America"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Gilded Age Politics"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "National Politics"
+      }
+    ],
+    "primary_sources": [
+      "Thomas Nast, 'The Brains,' Harper's Weekly, October 21, 1871"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-613-nast-tweed",
+  "stimulus": {
+    "kind": "image",
+    "text": "The cartoon, by Thomas Nast in Harper’s Weekly, October 21, 1871, shows a fat man in a suit with a money bag for a head. The bag is marked with a dollar sign. Below the figure the caption reads “THE ‘BRAINS’” and “That achieved the Tammany Victory at the Rochester Democratic Convention.” The figure is William M. “Boss” Tweed of New York City’s Tammany Hall.",
+    "source_note": "Thomas Nast, “The Brains,” Harper’s Weekly, October 21, 1871. Public domain; image viewed by the writer (shared pool: u6/5s24-ch03-mcq-20.jpg)."
+  },
+  "stem": "Why did Nast draw Tweed with a money bag for a head?",
+  "options": [
+    {
+      "key": "A",
+      "text": "To praise Tweed for funding schools and parks in the city",
+      "misconception": "Nast attacked Tweed; the cartoon mocks him rather than praising his spending."
+    },
+    {
+      "key": "B",
+      "text": "To show that Tweed paid his workers fairly and on time",
+      "misconception": "The cartoon charges Tweed with stealing public money, not with paying workers fairly."
+    },
+    {
+      "key": "C",
+      "text": "To argue that bankers should run the city government instead",
+      "misconception": "The cartoon attacks Tweed himself, not the idea of bankers running the city."
+    },
+    {
+      "key": "D",
+      "text": "To charge that stolen public money was Tweed's real power"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "Nast drew the cartoon to expose Tweed, not to praise him.",
+    "B": "The money bag stands for money Tweed took, not wages he paid.",
+    "C": "The cartoon names no banker as a better ruler of the city.",
+    "D": "A money bag for a head says Tweed thought in money and ruled by it.",
+    "general": "Ask what the joke accuses Tweed of doing.\n1. A money bag for a head means money fills Tweed's mind.\n2. Background from the books: Nast's cartoons exposed Tweed's courthouse kickbacks to the public.\n3. The point is theft, not praise: Tweed's machine took public money for itself.\n4. A cartoon that calls a man 'THE BRAINS' while giving him a money head is mocking him.\nRemember: a cartoon's joke is its charge, so name the charge first."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1955",
+      "file": "u6/5s24-ch03-mcq-20.jpg",
+      "caption": "Thomas Nast, “The Brains,” Harper’s Weekly, October 21, 1871",
+      "alt": "Cartoon of a fat man in a suit with a money bag marked with a dollar sign for a head, captioned THE BRAINS, about the Tammany victory at the Rochester Democratic Convention",
+      "license": "Public domain",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Boss_Tweed%2C_Thomas_Nast.jpg"
+    }
+  ]
+}

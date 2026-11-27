@@ -1,0 +1,73 @@
+{
+ "id": "apush-mcq-1709",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.4"
+ ],
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "status": "final",
+ "lesson": "apush-u6-l2",
+ "stem": "Hayes could make this promise in March 1877 most directly because",
+ "options": [
+  {
+   "key": "A",
+   "text": "the disputed election of 1876 had been settled by a bargain"
+  },
+  {
+   "key": "B",
+   "text": "Congress had just passed a new civil rights act for the South",
+   "misconception": "A new civil rights act enabled him."
+  },
+  {
+   "key": "C",
+   "text": "Southern states had asked the Supreme Court to end Reconstruction",
+   "misconception": "The Court ended Reconstruction."
+  },
+  {
+   "key": "D",
+   "text": "the Democratic Party had won control of the presidency",
+   "misconception": "A Democrat won the presidency."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background: the 1876 election was disputed, and the Compromise of 1877 settled it: Democrats accepted Hayes as president, and Hayes withdrew the remaining federal troops from the South. His inaugural promise was the Southern half of that bargain.",
+  "B": "No new civil rights act passed in 1877; the bargain was about troops, not new laws.",
+  "C": "The Court did not end Reconstruction; the political bargain did.",
+  "D": "Background: Hayes was a Republican; the Democrats accepted his presidency in exchange for the troop withdrawal.",
+  "general": "1. Ask what made the promise possible. A new president needs the authority to set Southern policy.\n2. Ask how Hayes became president. Background: the election of 1876 was disputed, and a bargain settled it in his favor.\n3. Ask what the bargain cost. Background: the remaining federal troops left the South, ending Reconstruction.\n4. Match the cause. The promise was possible because the disputed election had been settled by that bargain.\nRemember: a president’s first promises often spend the bargain that put him in office."
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Rutherford B. Hayes, Inaugural Address, March 5, 1877. Public domain.",
+  "text": "“I am sincerely anxious to use every legitimate influence in favor of honest and efficient local self-government as the true resource of those States for the promotion of the contentment and prosperity of their citizens. . . .\n\nLet me assure my countrymen of the Southern States that it is my earnest desire to regard and promote their truest interest — the interests of the white and of the colored people both and equally — and to put forth my best efforts in behalf of a civil policy which will forever wipe out in our political affairs the color line and the distinction between North and South, to the end that we may have not merely a united North or a united South, but a united country.”"
+ },
+ "stimulus_set": "hayes-inaugural-1877",
+ "source": "original; stimulus is a verbatim public-domain inaugural address",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.4 The “New South”"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Rutherford B. Hayes, Inaugural Address (1877)"
+  ]
+ }
+}

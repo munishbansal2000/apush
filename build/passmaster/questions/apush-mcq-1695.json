@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-1695",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.4"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WXT"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 2,
+ "status": "final",
+ "lesson": "apush-u6-l2",
+ "stem": "The chart most directly shows that between 1880 and 1900, the South",
+ "options": [
+  {
+   "key": "A",
+   "text": "stopped growing cotton and turned to other crops",
+   "misconception": "The mills replaced cotton farming."
+  },
+  {
+   "key": "B",
+   "text": "lost its textile industry to New England mills",
+   "misconception": "The South lost its mills to New England."
+  },
+  {
+   "key": "C",
+   "text": "employed fewer workers in factories than in 1880",
+   "misconception": "Fewer spindles would mean fewer workers."
+  },
+  {
+   "key": "D",
+   "text": "greatly expanded its cotton textile manufacturing"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "The chart counts spindles for spinning cotton, which grew, not vanished.",
+  "B": "The Southern count rises sharply; the chart shows growth, not loss.",
+  "C": "More spindles mean more mill work, not less.",
+  "D": "The bars climb from 561 thousand spindles in 1880 to 4,368 thousand in 1900, nearly eight times as many. More spindles mean more mills spinning Southern cotton at home.",
+  "general": "1. Read the bars. 561 thousand in 1880, 1,570 thousand in 1890, 4,368 thousand in 1900.\n2. Ask what a spindle does. It spins cotton into yarn, so more spindles mean more textile mills.\n3. Test the other readings. Nothing here shows cotton farming ending, mills leaving, or work shrinking.\n4. Match the trend. The South built a textile industry of its own in twenty years.\nRemember: a rising bar is a claim about growth — name what is growing."
+ },
+ "stimulus": {
+  "kind": "chart",
+  "source_note": "Chart plotted from the same figures: U.S. Bureau of the Census, Statistical Abstract of the United States, 1925, Table 749. The 1880 figure is corroborated by Southern Historical Society Papers, vol. 34, p. 347.",
+  "text": "| Year | Cotton spindles in the Southern states (thousands) |\n| 1880 | 561 |\n| 1890 | 1,570 |\n| 1900 | 4,368 |\n\nSource: U.S. Bureau of the Census, Statistical Abstract of the United States, 1925, Table 749."
+ },
+ "stimulus_set": "southern-spindles-1880-1900",
+ "source": "original; stimulus is a chart plotted from U.S. Census Bureau figures (Statistical Abstract, 1925, Table 749)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.4 The “New South”"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "America Transformed into the Industrial Giant"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10"
+   }
+  ],
+  "primary_sources": [
+   "U.S. Bureau of the Census, Statistical Abstract of the United States, 1925, Table 749"
+  ]
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1695",
+   "file": "u6/u6-southern-spindles-1880-1900.png",
+   "caption": "Cotton spindles in the Southern states, 1880-1900. Source: U.S. Census Bureau, Statistical Abstract, 1925.",
+   "alt": "Bar chart showing cotton spindles in the Southern states rising from 561 thousand in 1880 to 1,570 thousand in 1890 and 4,368 thousand in 1900",
+   "source_url": "https://www.yumpu.com/en/document/view/59564938/united-states-yearbook-1925-1/923",
+   "license": "Chart data: public U.S. government data"
+  }
+ ]
+}

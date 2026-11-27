@@ -1,0 +1,87 @@
+{
+  "id": "apush-mcq-1736",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "answerKey": "C",
+  "skills": [
+    "1.B",
+    "5.B"
+  ],
+  "themes": [
+    "WOR",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "stem": "How did the typewriter change who worked in American offices?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Remington Standard Typewriter, 1890, Wikimedia Commons. Public domain. https://commons.wikimedia.org/wiki/File:Remington_Standard_Typewriter_1890.png",
+    "text": "The image shows a Remington Standard Typewriter from 1890. It is a heavy iron machine with three rows of round keys in the familiar QWERTY order, a roller at the top for holding paper, and a metal ruler above the keys. A printed card on the machine reads: \"KEEP MACHINE FREE FROM DUST. PUT NO OIL ON THE BACK ROD EXCEPT TO CLEAN IT. WIPE THE FRONT ROD WITH A GREASY CLOTH.\""
+  },
+  "stimulus_set": "remington-typewriter",
+  "options": [
+    {
+      "key": "A",
+      "text": "It ended office work, since machines wrote all the letters",
+      "misconception": "Background: the typewriter needed a typist; it created office jobs, it did not end them."
+    },
+    {
+      "key": "B",
+      "text": "It kept office work for men only, since women were banned from typing",
+      "misconception": "Background: women took typing jobs in large numbers; the typewriter opened office work to women, it did not close it."
+    },
+    {
+      "key": "C",
+      "text": "It opened office work to large numbers of women, who learned to type"
+    },
+    {
+      "key": "D",
+      "text": "It moved all office work onto farms, where the machines were built",
+      "misconception": "Background: typewriters were built in factories and used in city offices; farm work stayed farm work."
+    }
+  ],
+  "rationales": {
+    "A": "Background: a typewriter only writes when a person types on it. The machine created a whole new office job, the typist, instead of ending office work.",
+    "B": "Background: women filled office typing jobs in large numbers. The typewriter was the machine that brought them into the office workforce.",
+    "C": "Background from the books: secretarial work had been men's work before the Civil War, but as the typewriter came into use, literate women learned to type and were hired to perform office duties. The machine opened a new door into paid work.",
+    "D": "Background: typewriters were used in city offices, where the big corporations kept their clerks. Farm work had nothing to do with them.",
+    "general": "Ask who sat at the machine.\n1. Background: before the typewriter, office copying and letter-writing were men's work, done by hand.\n2. Background: as the typewriter spread, literate women learned to type and were hired for office duties in large numbers.\n3. Background: a machine that anyone could learn to use changed who the office would hire.\nRemember: a tool that is easy to learn opens a job to new workers."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "The Managerial Revolution"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "The Second Industrial Revolution"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Age of Invention and Economic Growth"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)",
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1736",
+      "file": "u6/original-u6-midclass-02.png",
+      "caption": "A Remington Standard Typewriter, 1890",
+      "alt": "A heavy iron Remington Standard Typewriter from 1890 with three rows of round keys, a paper roller at the top, and a printed care card on the machine",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Remington_Standard_Typewriter_1890.png",
+      "license": "Public domain: Remington Standard Typewriter, 1890."
+    }
+  ]
+}

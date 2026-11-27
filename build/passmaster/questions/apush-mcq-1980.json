@@ -1,0 +1,80 @@
+{
+  "id": "apush-mcq-1980",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.13"
+  ],
+  "skills": [
+    "3.D"
+  ],
+  "themes": [
+    "PCE",
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "difficulty": 3,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "The Currency Issue"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Gilded Age Politics"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "National Politics"
+      }
+    ],
+    "primary_sources": [
+      "Sherman Silver Purchase Act, July 14, 1890",
+      "McKinley Tariff Act, October 1, 1890"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-613-billion-congress",
+  "stimulus": {
+    "kind": "text",
+    "text": "In 1890, under President Benjamin Harrison, Congress passed the Sherman Antitrust Act, the Sherman Silver Purchase Act, and the McKinley Tariff. The silver act ordered the Treasury to buy 4.5 million ounces of silver each month and pay for it with Treasury notes. The McKinley Tariff raised tariff rates to about 48 percent, the highest level yet. The two laws passed together as a bargain: westerners who wanted the government to buy silver voted for the high tariff that eastern manufacturers wanted, and eastern protectionists voted for the silver purchases. Congress also spent so much money that critics called it the Billion-Dollar Congress. In the midterm elections that fall, Democrats won a large majority in the House of Representatives.",
+    "source_note": "Paraphrase of standard accounts, grounded in Barron’s Chapter 8, Topic 6.13, and 5 Steps Chapter 18. The silver purchase amount and the 48 percent tariff rate are in the cited histories. The bargain between western silver men and eastern protectionists is the standard account of the Compromise of 1890."
+  },
+  "stem": "Why did the same Congress pass both a silver-purchase law and a high tariff?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The president ordered Congress to pass both laws at once",
+      "misconception": "Harrison signed the laws, but Congress shaped them through bargains."
+    },
+    {
+      "key": "B",
+      "text": "Both laws were written to help farmers in the same way",
+      "misconception": "The tariff raised prices farmers paid, so it did not help them like silver."
+    },
+    {
+      "key": "C",
+      "text": "The Supreme Court required Congress to pass both measures together",
+      "misconception": "The Court ordered neither law; Congress passed them as a political deal."
+    },
+    {
+      "key": "D",
+      "text": "Western silver men and eastern protectionists traded support for each law"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "The laws came from Congress, where regional interests struck a bargain.",
+    "B": "Silver helped debtors, but the tariff raised the prices farmers paid.",
+    "C": "No court ordered these laws; they were political bargains.",
+    "D": "Each side backed the other's measure to get its own passed.",
+    "general": "Ask what each side got from the deal.\n1. Western lawmakers wanted the Treasury to buy silver.\n2. Eastern makers wanted high tariffs to block foreign goods.\n3. Each side voted for the other's measure to win its own.\n4. Background from the books: the tariff and silver were the era's great regional bargains.\nRemember: when one Congress passes clashing laws together, look for a trade."
+  }
+}

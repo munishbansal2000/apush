@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0192",
+ "lesson": "apush-u6-l5",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.11"
+ ],
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "SOC",
+  "WXT"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "source": "original; stimulus written from the grounding books or verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "The Moral Obligations of the Wealthy Class"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Challenges to the Dominant Corporate Ethic"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+   }
+  ],
+  "primary_sources": [
+   "Andrew Carnegie, “Wealth,” North American Review, June 1889"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "text",
+  "text": "“There are but three modes in which surplus wealth can be disposed of. It can be left to the families of the decedents; or it can be bequeathed for public purposes; or, finally, it can be administered during their lives by its possessors. . . . This policy would work powerfully to induce the rich man to attend to the administration of wealth during his life, which is the end that society should always have in view, as being that by far most fruitful for the people.”\n\n(Andrew Carnegie, “Wealth,” North American Review, June 1889)",
+  "source_note": "Andrew Carnegie, “Wealth,” North American Review, June 1889. Public domain; wording checked against the text used in the Unit 6 middle-class DBQ, which was verified against the original. Ellipsis marks sentences omitted between complete sentences."
+ },
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify Carnegie’s preferred way for the rich to dispose of surplus wealth.",
+   "modelAnswer": "Carnegie preferred that the rich administer their surplus wealth during their own lives, giving it to public purposes while they lived. He called that course by far the most fruitful for the people.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying lifetime administration of wealth by its possessors for public purposes.",
+     "notEarned": "Naming one of the other two modes, leaving wealth to families or bequeathing it, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one reason Carnegie gives for preferring lifetime administration of surplus wealth.",
+   "modelAnswer": "Carnegie says lifetime giving works powerfully to induce the rich man to attend to the administration of wealth during his life. He calls that course by far the most fruitful for the people, which is the end society should always have in view.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason Carnegie gives, such as that lifetime giving induces the rich man to attend to administration during his life, or that he calls it by far the most fruitful course for the people.",
+     "notEarned": "Naming the preferred mode without giving Carnegie’s reason for preferring it does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Evaluate the extent to which the passage shows Carnegie trusted private action rather than government to dispose of surplus wealth.",
+   "modelAnswer": "The passage shows complete trust in private action: all three modes it names — leaving wealth to families, bequeathing it for public purposes, and administering it during life — are private choices by the possessor, and government appears in none of them. His preferred mode depends entirely on the rich man choosing to give while he lives.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for a judgment about the extent of Carnegie’s trust in private action, weighing the three private modes named against the absence of any government role.",
+     "notEarned": "Describing the three modes without judging how far the passage relies on private action does not earn the point."
+    }
+   ]
+  }
+ ]
+}

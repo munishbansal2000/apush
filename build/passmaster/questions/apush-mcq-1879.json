@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-1879",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.10"
+ ],
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.10 Development of the Middle Class"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "Uneven Affluence"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Montgomery Ward and Company stereoscopic card, Chicago"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "u6-610-montgomery-ward",
+ "stimulus": {
+  "kind": "image",
+  "text": "The image is a hand-colored stereoscopic card, one of a “Travelers Series” published by Montgomery Ward and Company of Chicago. It shows the firm's large Chicago building twice, side by side: a tall tower rising over a many-windowed block with an arched ground floor. Printed beneath the two views is the caption “Class A, No. 12. The Establishment of Montgomery Ward and Co., One of the Sights of the City, Chicago, Ill., U. S. A.”",
+  "source_note": "Stereoscopic view of the Montgomery Ward and Company establishment, Chicago, from the Robert N. Dennis collection of stereoscopic views. Public domain image from Wikimedia Commons; viewed by the writer."
+ },
+ "stem": "The card was published by Montgomery Ward itself to show off its building. What does that purpose mean for a historian using the card as evidence?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It is advertising, so it shows the scale the firm wanted seen"
+  },
+  {
+   "key": "B",
+   "text": "It proves the building was the largest in Chicago",
+   "misconception": "An ad claims importance; it does not prove a size ranking."
+  },
+  {
+   "key": "C",
+   "text": "It proves most Americans shopped by mail-order catalog",
+   "misconception": "One firm's ad cannot prove what most Americans did."
+  },
+  {
+   "key": "D",
+   "text": "It shows the firm sold only to customers in Chicago and nowhere else",
+   "misconception": "A mail-order firm sold across the country, not only in Chicago."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The firm published the card to impress buyers. It shows the image the firm chose, so it proves the firm's ambitions, not a measured ranking.",
+  "B": "Largest in Chicago would need a comparison with other buildings. An ad's boast is not that comparison.",
+  "C": "Most Americans still shopped in stores or grew and made much at home. One ad cannot carry that claim.",
+  "D": "The catalog business reached far beyond Chicago; that was its point.",
+  "general": "Ask who made the source and why.\n1. The publisher is printed on the card: Montgomery Ward and Company.\n2. A firm publishes a card of its own building to impress customers.\n3. So the card shows the scale the firm wanted seen, in its best light.\n4. It is evidence about the firm's ambitions, not a neutral measure of its rank.\nRemember: a source made to sell shows the seller's chosen picture, not the whole truth."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1879",
+   "file": "u6/original-u6-midclass-05.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/The_establilshment_of_the_Montgomery_Ward_%26_Co.%2C_one_of_the_sights_of_the_city%2C_Chicago%2C_Ill.%2C_U.S.A%2C_from_Robert_N._Dennis_collection_of_stereoscopic_views.jpg",
+   "license": "Public domain",
+   "caption": "Stereoscopic card showing the Montgomery Ward and Company building, Chicago",
+   "alt": "Hand-colored stereoscopic card showing the tall tower and many-windowed Montgomery Ward building in Chicago twice, side by side"
+  }
+ ]
+}

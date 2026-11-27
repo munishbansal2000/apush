@@ -1,0 +1,90 @@
+{
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ]
+  },
+  "id": "apush-saq-0179",
+  "lesson": "apush-u6-l3",
+  "parts": [
+    {
+      "modelAnswer": "Businesses formed trusts, joining rival firms under one board of trustees, as Rockefeller did with Standard Oil in 1882. They also formed holding companies, which owned enough stock in other firms to control them.",
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify one way businesses combined into larger firms in the late nineteenth century.",
+      "scoring": [
+        {
+          "criterion": "Earns the point for identifying one way businesses combined, such as a trust or a holding company.",
+          "notEarned": "Naming a business form without tying it to combining firms does not earn the point.",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "modelAnswer": "A holding company bought enough stock in other companies to control them, so one firm could direct many companies without merging them into a single firm. After the Trust was dissolved in 1892, Standard Oil reorganized as Standard Oil of New Jersey in 1899 and used it to hold its oil companies together.",
+      "part": "b",
+      "points": 1,
+      "prompt": "Briefly explain how a holding company let one firm control other companies.",
+      "scoring": [
+        {
+          "criterion": "Earns the point for explaining how a holding company worked, such as owning controlling stock in other firms.",
+          "notEarned": "Naming a holding company without explaining how it controlled other firms does not earn the point.",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "modelAnswer": "Reformers and the public feared that trusts and combinations had grown too powerful, controlling whole industries and influencing government. The Sherman Act answered that fear by declaring illegal every combination in restraint of trade among the states.",
+      "part": "c",
+      "points": 1,
+      "prompt": "Briefly explain one reason the federal government passed the Sherman Antitrust Act in 1890.",
+      "scoring": [
+        {
+          "criterion": "Earns the point for explaining one reason for the Sherman Act, such as public fear of the trusts’ power or the desire to protect competition.",
+          "notEarned": "Naming the Sherman Act without explaining why it was passed does not earn the point.",
+          "points": 1
+        }
+      ]
+    }
+  ],
+  "pool": "practice",
+  "reasoning": "causation",
+  "saq_slot": 1,
+  "skills": [
+    "1.B",
+    "5.A"
+  ],
+  "source": "original; stimulus written for this question from the grounding books",
+  "status": "final",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Original secondary passage, written for this question from Barron’s Premium 2027 Chapter 8 (Topic 6.6), 5 Steps to a 5, 2024, Chapter 18, and Princeton Review, Chapter 10.",
+    "text": "Original secondary passage, written for this question from the grounding books:\n\nAfter the Civil War, American businesses grew so large that the old ways of running them no longer worked. In the oil business, John D. Rockefeller joined many rival refineries under one board of trustees, forming the Standard Oil Trust in 1882. When trusts were attacked in the courts, businesses found a new form: the holding company, which owned enough stock in other companies to control them. In 1889, New Jersey became the first state to let a company incorporated there own stock in other corporations. After the Ohio courts dissolved the Standard Oil Trust in 1892, Standard Oil reorganized as a holding company, Standard Oil of New Jersey, in 1899. By the 1890s, Rockefeller’s company refined about nine-tenths of the oil used in the United States."
+  },
+  "stimulus_set": null,
+  "themes": [
+    "WXT",
+    "PCE"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "totalPoints": 3,
+  "type": "saq",
+  "unit": 6
+}

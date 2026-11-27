@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0173",
+ "type": "saq",
+ "unit": 6,
+ "topics": [
+  "6.3"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "skills": [
+  "1.B",
+  "5.A"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "comparison",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question; facts from Barron's Premium 2027 Ch 8, 5 Steps to a 5 2024 Ch 17, and Princeton Review Ch 10.",
+  "text": "Original secondary passage, written for this question from the grounding books:\n\nWhen gold or silver was found in the West, a town could appear almost overnight. Virginia City, Nevada, born of the Comstock Lode in 1859, held more than 25,000 people by 1875, making it one of the largest towns in the interior West. Its streets held Irish, Chinese, German, Italian, Mexican, Scandinavian, and French settlers, along with immigrants from South and Central America, Africa, and the Pacific Islands, and the town soon had schools, theaters, and churches like an eastern industrial city. These towns were very different from the 'Wild West' towns of classic Western movies. Yet the boom could end as fast as it began: when the ore ran out or prices fell, the crowds left, and many boomtowns became ghost towns. Women arrived as the towns grew, working as boardinghouse keepers, washerwomen, cooks, and maids."
+ },
+ "stimulus_set": null,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one immigrant or ethnic group that lived in western mining boomtowns.",
+   "modelAnswer": "Irish immigrants lived in Virginia City, alongside Chinese, German, Italian, Mexican, and Scandinavian settlers. The town's streets held people from many nations, not a single group.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one immigrant or ethnic group named in the passage, such as the Irish, Chinese, Germans, Italians, Mexicans, or Scandinavians.",
+     "notEarned": "Naming a group that is not in the passage, or a vague answer with no group identified, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one way mining boomtowns resembled eastern industrial cities.",
+   "modelAnswer": "Virginia City soon had schools, theaters, and churches, like an eastern industrial city. Those are the institutions of a settled city, and Virginia City had them all.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one resemblance, such as schools, theaters, and churches.",
+     "notEarned": "Restating that boomtowns were like eastern cities, with no specific resemblance explained, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way Virginia City differed from the 'Wild West' town of popular movies.",
+   "modelAnswer": "Popular movies show Wild West towns as small and lawless, but Virginia City was large, with more than 25,000 people, and ethnically diverse. It also had schools, theaters, and churches, which the movie image of a gunfighter town leaves out.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one difference, such as the town's size, its ethnic diversity, or its schools, theaters, and churches.",
+     "notEarned": "Naming a difference with no explanation, or describing the movie image without contrasting it to Virginia City, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Mining Boomtowns in the West"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The Mining and Lumbering Frontier"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-1912",
+ "lesson": "apush-u6-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.11"
+ ],
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.12 Controversies over the Role of Government in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "Gilded Age Politics"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "National Politics"
+   }
+  ],
+  "primary_sources": [
+   "Joseph Keppler, “The Bosses of the Senate,” Puck, January 23, 1889"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "u6-611-bosses-senate",
+ "stimulus": {
+  "kind": "image",
+  "text": "The cartoon, “The Bosses of the Senate,” by Joseph Keppler in Puck magazine, January 23, 1889, shows the United States Senate chamber. Tiny senators sit at small desks in the lower half of the picture. Towering over them are huge men in top hats whose swollen bodies are money bags labeled with the names of trusts: “Standard Oil Trust,” “Copper Trust,” “Steel Beam Trust,” “Iron Trust,” “Sugar Trust,” “Coal Trust,” and “Nail Trust.” A sign on the wall reads: “This is a Senate of the Monopolists by the Monopolists and for the Monopolists!” A door at the left is marked “People’s Entrance” and “Closed.”",
+  "source_note": "Joseph Keppler, “The Bosses of the Senate,” Puck, January 23, 1889. Public domain; image viewed by the writer (new pool file: u6/u6-bosses-of-senate.jpg, catalogued in CATALOG-u6.json)."
+ },
+ "stem": "What does the size difference between the trusts and the senators show?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The trusts held far more power than the elected senators"
+  },
+  {
+   "key": "B",
+   "text": "The senators were children serving their first terms",
+   "misconception": "The senators are drawn small to show weakness, not because they are children."
+  },
+  {
+   "key": "C",
+   "text": "The trusts were physically taller men than the senators",
+   "misconception": "The size is symbolic: the trusts’ power is large, not their bodies."
+  },
+  {
+   "key": "D",
+   "text": "The Senate chamber was too small for its members",
+   "misconception": "The room is not the point. The trusts’ size shows their power."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Giant money bags loom over tiny men at desks, so the trusts dominate the chamber.",
+  "B": "Small size here means little power, not youth or a first term.",
+  "C": "Keppler draws power as size. The trusts are not literally giants.",
+  "D": "The chamber fits everyone. The contrast is power, not room.",
+  "general": "Turn size into meaning.\n1. The trusts are drawn huge, with money bags for bodies.\n2. The senators are drawn tiny, bent over small desks.\n3. A cartoon draws the powerful large and the powerless small.\n4. The trusts’ size says they ruled the Senate, while the senators bent over small desks.\nRemember: in a cartoon, size is a claim about power, not about height."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1912",
+   "file": "u6/u6-bosses-of-senate.jpg",
+   "source_url": "https://www.senate.gov/art-artifacts/historical-images/political-cartoons-caricatures/38_00392_001.htm",
+   "license": "Public domain",
+   "caption": "Joseph Keppler, “The Bosses of the Senate,” Puck, January 23, 1889",
+   "alt": "Cartoon of giant money-bag figures in top hats labeled with trust names towering over tiny senators at their desks, under a sign reading This is a Senate of the Monopolists by the Monopolists and for the Monopolists"
+  }
+ ]
+}

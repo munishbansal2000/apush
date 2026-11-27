@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-1926",
+ "lesson": "apush-u6-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.12"
+ ],
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.12 Controversies over the Role of Government in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "Gilded Age Politics"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "National Politics"
+   }
+  ],
+  "primary_sources": [
+   "Joseph Keppler, 'The Bosses of the Senate,' Puck, January 23, 1889"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "u6-612-bosses-senate",
+ "stimulus": {
+  "kind": "image",
+  "text": "Political cartoon, “The Bosses of the Senate,” by Joseph Keppler, Puck, January 23, 1889. In the Senate chamber, giant figures in top hats, their bodies huge money bags labeled “Standard Oil Trust,” “Copper Trust,” “Steel Beam Trust,” “Iron Trust,” “Sugar Trust,” “Coal Trust,” and “Nail Trust,” tower over the small senators seated at their desks below. A sign on the wall reads, “This is a Senate of the Monopolists by the Monopolists and for the Monopolists.” A door at the left marked “People’s Entrance” is labeled “Closed,” while a door at the right marks the monopolists’ entrance.",
+  "source_note": "Joseph Keppler, 'The Bosses of the Senate,' Puck, January 23, 1889. Public domain: chromolithograph published 1889 (pre-1930); United States Senate historical images collection. Labels and sign wording checked against the image."
+ },
+ "stem": "A historian argues that the cartoon helps explain why early federal regulation of business was weak. Which evidence best supports that argument?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The lawmakers who would write the regulations answered to the trusts themselves"
+  },
+  {
+   "key": "B",
+   "text": "The Interstate Commerce Commission had too many inspectors to do its job",
+   "misconception": "The Commission was chronically short of money and staff, not overstaffed with inspectors."
+  },
+  {
+   "key": "C",
+   "text": "The Sherman Antitrust Act was never passed by Congress",
+   "misconception": "Congress passed the Sherman Antitrust Act in 1890."
+  },
+  {
+   "key": "D",
+   "text": "The Supreme Court ordered the trusts broken up in 1889",
+   "misconception": "In 1895 the Court narrowed the Sherman Act in the E. C. Knight case instead."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "If the trusts ran the Senate, the laws meant to restrain them would be written by their friends.",
+  "B": "Background from the books: the Interstate Commerce Commission was underfunded and short of staff, not overstaffed.",
+  "C": "Congress passed the Sherman Antitrust Act in 1890, so it was passed.",
+  "D": "Background from the books: the Court narrowed the Sherman Act in 1895, and ordered no breakup in 1889.",
+  "general": "Connect the picture to the laws.\n1. The cartoon shows the trusts towering over the senators who make the laws.\n2. A law against trusts must pass through the very men the trusts control.\n3. That helps explain why the Interstate Commerce Act and the Sherman Act were weakly enforced.\n4. The other choices get the history backward: the Sherman Act passed, and the courts narrowed it.\nRemember: when the regulated write the rules, the rules stay weak."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1926",
+   "file": "u6/u6-bosses-of-senate.jpg",
+   "caption": "“The Bosses of the Senate,” Puck, January 23, 1889",
+   "alt": "Keppler cartoon: giant money-bag trusts labeled Standard Oil, Copper, Steel Beam, Iron, Sugar, Coal, and Nail tower over tiny senators at their desks in the Senate chamber.",
+   "license": "Public domain: Puck cartoon published 1889.",
+   "source_url": "https://www.senate.gov/art-artifacts/historical-images/political-cartoons-caricatures/38_00392_001.htm"
+  }
+ ]
+}

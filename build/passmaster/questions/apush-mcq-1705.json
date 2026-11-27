@@ -1,0 +1,72 @@
+{
+ "id": "apush-mcq-1705",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.4"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "status": "final",
+ "lesson": "apush-u6-l2",
+ "stem": "The grandfather clause in Louisiana’s 1898 constitution most directly helped white voters by",
+ "options": [
+  {
+   "key": "A",
+   "text": "paying their poll taxes from state funds",
+   "misconception": "The state paid white voters’ poll taxes."
+  },
+  {
+   "key": "B",
+   "text": "exempting men whose grandfathers had voted before 1867"
+  },
+  {
+   "key": "C",
+   "text": "letting white voters cast ballots in Black precincts",
+   "misconception": "The clause moved voters between precincts."
+  },
+  {
+   "key": "D",
+   "text": "removing the literacy test for all voters",
+   "misconception": "The clause ended the literacy test."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Background: The clause waived the tests, not the tax bill.",
+  "B": "Background: the clause excused a man from the new tests if his father or grandfather could vote on or before January 1, 1867, a date before Black men could legally vote in Louisiana. White men passed through the loophole; Black men faced the tests.",
+  "C": "The clause changed who had to pass the tests, not where anyone voted.",
+  "D": "The literacy test stayed; the clause only excused some men from it.",
+  "general": "1. Ask what the clause waived. The literacy test and the other new requirements.\n2. Ask who it waived them for. Background: men whose fathers or grandfathers voted before 1867.\n3. Ask who that covers. Background: before 1867, only white men could vote in Louisiana, so the loophole favored white men.\n4. Match the design. A rule that looks neutral can still sort voters by race through their grandfathers.\nRemember: a grandfather clause sorts by ancestry — ask whose grandfathers could vote."
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Louisiana voter registration, 1896–1900. Figures from the Historic New Orleans Collection (64 Parishes) and the U.S. Commission on Civil Rights briefing paper, Barriers to Voting in Louisiana (2018).",
+  "text": "| Year | Black voters registered | White voters registered |\n| 1896 | 130,344 | 164,088 |\n| 1898 | 12,902 | 74,133 |\n| 1900 | 5,320 | 125,437 |\n\nSource: Louisiana voter registration figures, 1896–1900. Louisiana adopted a new constitution in 1898 with a poll tax, a literacy test, a property requirement, and a grandfather clause."
+ },
+ "stimulus_set": "louisiana-voters-1896-1900",
+ "source": "original; stimulus is a table of Louisiana voter registration figures from the Historic New Orleans Collection and the U.S. Commission on Civil Rights",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.4 The “New South”"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10"
+   }
+  ],
+  "primary_sources": [
+   "Louisiana voter registration figures, 1896–1900 (Historic New Orleans Collection; U.S. Commission on Civil Rights)"
+  ]
+ }
+}

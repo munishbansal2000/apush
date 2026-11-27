@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-1694",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.4"
+ ],
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 4,
+ "status": "final",
+ "lesson": "apush-u6-l2",
+ "stem": "The sharecropping system described in the contract best illustrates which of the following continuities with slavery?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Black laborers remained legally free but economically bound to white landowners"
+  },
+  {
+   "key": "B",
+   "text": "Black laborers continued to be bought and sold as property",
+   "misconception": "Sharecropping was slavery under another name."
+  },
+  {
+   "key": "C",
+   "text": "White landowners lost all control over Black workers after emancipation",
+   "misconception": "Emancipation ended white control of Black labor."
+  },
+  {
+   "key": "D",
+   "text": "The federal government continued to own all Southern farmland",
+   "misconception": "The government owned the land sharecroppers worked."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The contract frees no one from dependence: the worker owns no land, borrows his supplies from the owner, and pays with his crop. Background: Legal freedom arrived, but the economic bond to the white landowner carried on.",
+  "B": "Sharecroppers were not property; the system bound them through debt, not ownership.",
+  "C": "The contract itself shows the landowner’s control over land, supplies, and accounts.",
+  "D": "The land belonged to private owners, not the federal government.",
+  "general": "1. Name what changed. Slavery ended, and the worker is legally free.\n2. Name what stayed. The worker owns no land and borrows everything from the owner.\n3. Ask what binds him now. Not a bill of sale, but debt and the crop that secures it.\n4. Match the continuity. Background: Freedom changed the law; the economic bond to the landowner carried on.\nRemember: continuity can wear new clothes — look for who still controls the land and the ledger."
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Paraphrased from sharecropping contracts of the period, including the De Soto County, Mississippi, contract of 1867 (Salisbury University, Nabb Research Center). Image: title page of the 1867 De Soto County contract.",
+  "text": "Paraphrase of a sharecropping contract, De Soto County, Mississippi, 1867. The freedmen agree to work the landowner’s plantation for one year. The landowner furnishes the land, seed, tools, and housing. The freedmen receive one-half of the crop after the debts for supplies are paid. Supplies are bought on credit from the landowner, and the crop stands as security for the debt."
+ },
+ "stimulus_set": "sharecropping-contract-1867",
+ "source": "original; stimulus paraphrases sharecropping contracts of the period, with the title page of the 1867 De Soto County contract",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.4 The “New South”"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10"
+   }
+  ],
+  "primary_sources": [
+   "Sharecropping contract, De Soto County, Mississippi (1867)"
+  ]
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1694",
+   "file": "u6/original-u6-newsouth-08.jpg",
+   "caption": "Sharecropping contract, De Soto County, Mississippi, 1867.",
+   "alt": "Title page of a sharecropping contract from De Soto County, Mississippi, dated 1867, held by Salisbury University’s Nabb Research Center",
+   "source_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Sharecropping_Contract_%28De_Soto_County%2C_Mississippi%29%2C_1867_%28IA_sc2014.069%29.pdf/page1-960px-Sharecropping_Contract_%28De_Soto_County%2C_Mississippi%29%2C_1867_%28IA_sc2014.069%29.pdf.jpg",
+   "license": "Public domain (1867 contract)"
+  }
+ ]
+}

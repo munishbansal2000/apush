@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1647",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "stem": "What did the Supreme Court decide in Munn v. Illinois (1877)?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Munn v. Illinois, 94 U.S. 113 (1877), opinion of Chief Justice Waite. Public domain. Text verified against Cornell LII (law.cornell.edu/supremecourt/text/94/113) and the Bochum source collection.",
+  "text": "Munn v. Illinois, 94 U.S. 113 (1877). Illinois had set maximum charges for storing grain in Chicago warehouses. Munn, who owned a grain elevator, argued the law took his property without due process. Chief Justice Waite, for the Court:\n\n\"Property does become clothed with a public interest when used in a manner to make it of public consequence, and affect the community at large. When, therefore, one devotes his property to a use in which the public has an interest, he, in effect, grants to the public an interest in that use, and must submit to be controlled by the public for the common good, to the extent of the interest he has thus created.\""
+ },
+ "stimulus_set": "munn-illinois",
+ "options": [
+  {
+   "key": "A",
+   "text": "States could never regulate any private business under any circumstances",
+   "misconception": "Background: the Court upheld the Illinois law; it did not ban state regulation."
+  },
+  {
+   "key": "B",
+   "text": "Only the federal government could regulate grain elevators",
+   "misconception": "Background: the Court upheld Illinois's own regulation; federal regulation of railroads came a decade later."
+  },
+  {
+   "key": "C",
+   "text": "States could regulate a private business whose use affected the public interest"
+  },
+  {
+   "key": "D",
+   "text": "Grain elevators were public property owned by the state of Illinois",
+   "misconception": "Background: the elevators stayed private property; the Court said private property used for a public purpose could be regulated."
+  }
+ ],
+ "rationales": {
+  "A": "Background: the Court sustained the Illinois maximum-rate law by 7 to 2. It affirmed state regulation, it did not forbid it.",
+  "B": "Background: Illinois regulated its own warehouses in this case. Background: federal railroad regulation arrived with the Interstate Commerce Act in 1887.",
+  "C": "Waite's rule is the answer: property clothed with a public interest must submit to public control for the common good. A grain elevator holding the region's wheat qualified.",
+  "D": "Background: Munn owned his elevator. The Court never made it public property; it said private property devoted to a public use could be regulated.",
+  "general": "A warehouse full of other people's wheat is not a purely private affair.\n1. Find Waite's test: property becomes clothed with a public interest when its use affects the community at large.\n2. Apply it to the elevator: Chicago's warehouses held the grain of the whole region, so their charges touched everyone.\n3. Name the decision. Background: Illinois could cap the charges, and the farmers' Granger laws stood.\nRemember: when a private business holds the public's lifeline, the public may set the terms."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The Grange and Farmers' Alliances"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

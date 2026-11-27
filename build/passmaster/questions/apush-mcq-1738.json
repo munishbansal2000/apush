@@ -1,0 +1,76 @@
+{
+  "id": "apush-mcq-1738",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "answerKey": "A",
+  "skills": [
+    "1.B",
+    "5.B"
+  ],
+  "themes": [
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "stem": "The table shows corn output rising sharply from 1870 to 1900, but dipping slightly in 1890. What does that dip best show about American farming?",
+  "stimulus": {
+    "kind": "table",
+    "source_note": "United States corn production, in millions of bushels, from the National Bureau of Economic Research Macrohistory Database (series A01023USA391NNBR), via FRED, Federal Reserve Bank of St. Louis. Public data.",
+    "text": "United States corn production, in millions of bushels:\n\n| Year | Corn produced |\n| 1870 | 1,125 |\n| 1880 | 1,707 |\n| 1890 | 1,650 |\n| 1900 | 2,662 |"
+  },
+  "stimulus_set": "corn-production",
+  "options": [
+    {
+      "key": "A",
+      "text": "Output still varied year to year even while machines raised the long-run trend"
+    },
+    {
+      "key": "B",
+      "text": "Machines stopped improving after 1880, so output could never rise again",
+      "misconception": "Background: output rose again to 2,662 million bushels by 1900; machines kept improving, and the dip was one year, not the end of growth."
+    },
+    {
+      "key": "C",
+      "text": "Farmers stopped planting corn in 1890 and grew nothing that year",
+      "misconception": "Background: farmers grew 1,650 million bushels in 1890, a dip, not a stop; the table shows corn grown in every year listed."
+    },
+    {
+      "key": "D",
+      "text": "The railroads stopped carrying corn in 1890, so the harvest rotted in the fields",
+      "misconception": "Background: railroads carried grain in huge amounts through the whole period; the table's dip is in bushels grown, not bushels shipped."
+    }
+  ],
+  "rationales": {
+    "A": "The table's long run is growth, from 1,125 million bushels in 1870 to 2,662 million in 1900, but 1890 dips to 1,650 million. Background: machines raised what a farm could grow over the decades, yet the harvest still varied year to year.",
+    "B": "Background: output rose again to 2,662 million bushels by 1900; machines kept improving, and the dip was one year, not the end of growth.",
+    "C": "Background: farmers grew 1,650 million bushels in 1890, a dip, not a stop; the table shows corn grown in every year listed.",
+    "D": "Background: railroads carried grain in huge amounts through the whole period; the table's dip is in bushels grown, not bushels shipped.",
+    "general": "Ask what a dip inside a rise means.\n1. Read the long run. Corn output rises from 1,125 million bushels in 1870 to 2,662 million in 1900.\n2. Read the exception. In 1890 the figure dips to 1,650 million, below 1880's 1,707 million.\n3. Background: machines raised the trend over decades, but the harvest still varied from year to year.\nRemember: a trend can rise while single years fall, so read both the slope and the bumps."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Mechanized Agriculture"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 17",
+        "section": "Challenges for Western Farmers"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Railroads and Developments in the West"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)"
+}

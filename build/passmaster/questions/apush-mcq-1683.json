@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1683",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.3"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "D",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "GEO",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "stem": "According to the table, what happened to Native land between 1887 and 1934?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Figures from Barron's Premium 2027, Chapter 8; 5 Steps to a 5, 2024, Chapter 17; and the Unit 6 period review (land-loss figures).",
+  "text": "| Measure | Figure |\n| Native land held by tribes, 1887 | about 138 million acres |\n| Native land held by tribes, 1934 | about 48 million acres |\n| Population of Minnesota, the Dakotas, Kansas, and Nebraska, 1865 | about 300,000 |\n| Population of the same states, 1900 | about 5 million |\n| Homestead claims proved up by 1900 | 610,000 claims, 85 million acres |\n| Homesteaders who had given up their farms by 1900 | about two-thirds |"
+ },
+ "stimulus_set": "west-table",
+ "options": [
+  {
+   "key": "A",
+   "text": "It grew as tribes bought back their reservations",
+   "misconception": "Background: the table shows a fall from 138 million acres to 48 million; no buying back appears in it."
+  },
+  {
+   "key": "B",
+   "text": "It stayed the same, protected by the Dawes Act's promises",
+   "misconception": "Background: the table shows a fall of about 90 million acres; the Dawes Act divided the land, it did not protect it."
+  },
+  {
+   "key": "C",
+   "text": "It doubled as allotments were handed out",
+   "misconception": "Background: the table shows a fall, not a doubling; allotment divided the land and the surplus was sold."
+  },
+  {
+   "key": "D",
+   "text": "It fell by two-thirds, from 138 million acres to 48 million"
+  }
+ ],
+ "rationales": {
+  "A": "Background: the table shows a fall from 138 million acres to 48 million. No buying back appears in it.",
+  "B": "Background: the table shows a fall of about 90 million acres. The Dawes Act divided the land, it did not protect it.",
+  "C": "Background: the table shows a fall, not a doubling. Allotment divided the land and the surplus was sold.",
+  "D": "The table gives both numbers: about 138 million acres in 1887 and about 48 million in 1934. That is a loss of roughly 90 million acres, about two-thirds of the land base.",
+  "general": "Picture a map of tribal land in 1887, and the same map in 1934, two-thirds gone.\n1. Read the two rows. About 138 million acres, then about 48 million.\n2. Do the subtraction. Roughly 90 million acres lost.\n3. Name the change. A land base cut by about two-thirds in one lifetime.\nRemember: two numbers, side by side, can tell a story no paragraph can soften."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.3 Westward Expansion: Social and Cultural Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The End of Native American Independence"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

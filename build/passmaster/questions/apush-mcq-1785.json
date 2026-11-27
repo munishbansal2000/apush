@@ -1,0 +1,79 @@
+{
+ "answerKey": "A",
+ "difficulty": 4,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Historical Statistics of the United States, Table Ba4954-4964 (work stoppages, workers involved)"
+  ]
+ },
+ "id": "apush-mcq-1785",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "text": "Stoppages more than tripled and workers involved nearly quadrupled from 1884 to 1886."
+  },
+  {
+   "key": "B",
+   "misconception": "Stoppages hit their highest level in 1886, not their lowest.",
+   "text": "Stoppages fell to their lowest level in 1886 while workers involved kept rising."
+  },
+  {
+   "key": "C",
+   "misconception": "Workers involved range from 130,000 to 610,000, so they did not stay the same.",
+   "text": "Workers involved stayed about the same in every year shown in the table."
+  },
+  {
+   "key": "D",
+   "misconception": "The table shows hundreds of stoppages in every year from 1881 on.",
+   "text": "The table shows no strikes at all in any year before 1886."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "From 1884 to 1886, stoppages rose from 485 to 1,572 and workers from 165,000 to 610,000, a break with earlier years.",
+  "B": "Stoppages hit their highest level in 1886, not their lowest.",
+  "C": "Workers involved range from 130,000 to 610,000, so they did not stay the same.",
+  "D": "The table shows hundreds of stoppages in every year from 1881 on.",
+  "general": "A turning point needs a break, not a steady line.\n1. From 1881 to 1884, stoppages stay near 500 and workers near 150,000.\n2. In 1886, stoppages reach 1,572, more than triple the 1884 figure.\n3. Workers involved reach 610,000, nearly four times the 1884 figure.\n4. That sudden jump is the break a turning-point claim needs.\nRemember: a turning point is a sharp change, so compare the year with the years before it."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "3.B",
+  "6.B"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "A historian argues that 1886 was a turning point for the labor movement. Which evidence from the table best supports that claim?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Historical Statistics of the United States, Table Ba4954-4964 (work stoppages, workers involved, 1881-1998), U.S. Bureau of Labor Statistics historical series. Figures rounded to the nearest thousand.",
+  "text": "| Year | Work stoppages (strikes and lockouts) | Workers involved |\n| 1881 | 477 | 130,000 |\n| 1882 | 476 | 159,000 |\n| 1883 | 506 | 170,000 |\n| 1884 | 485 | 165,000 |\n| 1885 | 695 | 258,000 |\n| 1886 | 1,572 | 610,000 |\n| 1887 | 1,503 | 439,000 |\n| 1888 | 946 | 163,000 |"
+ },
+ "stimulus_set": "strikes-1881-1888",
+ "themes": [
+  "WOR"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

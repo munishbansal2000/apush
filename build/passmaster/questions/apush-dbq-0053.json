@@ -1,0 +1,155 @@
+{
+ "id": "apush-dbq-0053",
+ "type": "dbq",
+ "unit": 6,
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "topics": [
+  "6.2"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "stimulus_set": null,
+ "source": "original; documents are public-domain primary sources or paraphrases of them (see each document's sourcing note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "Agricultural Innovation"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The Grange and Farmers' Alliances"
+   }
+  ],
+  "primary_sources": []
+ },
+ "prompt": "Evaluate the extent to which mechanization and market forces transformed farming on the Great Plains between 1865 and 1900.",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "chart",
+   "date": "1870-1900",
+   "title": "United States wheat production",
+   "source": "Chart drawn from USDA National Agricultural Statistics Service figures (1870: 254 million bushels; 1880: 502; 1890: 449; 1900: 599).",
+   "sourcing": "A chart of wheat output across the period, showing how much more grain American farms produced by 1900.",
+   "figure": "u6/u6-wheat-production-1870-1900.png"
+  },
+  {
+   "n": 2,
+   "kind": "image",
+   "date": "1886",
+   "title": "The Chrisman sisters' sod house",
+   "source": "Photograph by Solomon Butcher, 1886. Public domain.",
+   "sourcing": "A Nebraska homestead photographed by Solomon Butcher; shows the house, the open prairie, and the family that farmed it.",
+   "figure": "u6/5s24-ch17-mcq-01.jpg"
+  },
+  {
+   "n": 3,
+   "kind": "text",
+   "date": "1874",
+   "title": "Declaration of Purposes of the National Grange",
+   "source": "Declaration of Purposes of the National Grange of the Patrons of Husbandry, adopted February 11, 1874, St. Louis. Public domain.",
+   "sourcing": "Farmers speaking for themselves at their national convention; shows what they wanted from cooperation.",
+   "text": "\"We shall endeavor to advance our cause by laboring to accomplish the following objects: ... To buy less and produce more in order to make our farms self-supporting; to diversify our crops, and crop no more than we can cultivate; ... to discountenance the credit system, the mortgage system, the fashion system, and every other system tending to prodigality and bankruptcy. We propose meeting together, talking together, working together, buying together, selling together, and in general acting together for our mutual protection and advancement, as occasion may require.\""
+  },
+  {
+   "n": 4,
+   "kind": "text",
+   "date": "1886",
+   "title": "Wabash v. Illinois",
+   "source": "Wabash, St. Louis & Pacific Railway Co. v. Illinois, 118 U.S. 557 (1886), syllabus and opinion of Justice Miller. Public domain.",
+   "sourcing": "A Supreme Court decision striking down state railroad regulation; shows why farmers turned to Congress.",
+   "text": "Held: the transportation of goods under one contract from the interior of Illinois to New York is commerce among the states, even as to the part of the voyage within Illinois, and its regulation is confided to Congress exclusively. A state statute attempting to regulate the fares and charges of railroad companies for such transportation is not a valid law."
+  },
+  {
+   "n": 5,
+   "kind": "text",
+   "date": "1887",
+   "title": "The Interstate Commerce Act",
+   "source": "Interstate Commerce Act of 1887, Sections 1-3. Public domain.",
+   "sourcing": "An act of Congress answering the farmers' movement; shows the first federal regulation of railroads.",
+   "text": "\"All charges made for any service rendered or to be rendered in the transportation of passengers or property as aforesaid... shall be reasonable and just; and every unjust and unreasonable charge for such service is prohibited and declared to be unlawful.\"\n\n\"SEC. 2. That if any common carrier... shall... charge... from any person or persons a greater or less compensation for any service rendered... than it charges... from any other person or persons for doing for him or them a like and contemporaneous service... such common carrier shall be deemed guilty of unjust discrimination, which is hereby prohibited and declared to be unlawful.\""
+  },
+  {
+   "n": 6,
+   "kind": "text",
+   "date": "1892",
+   "title": "The Omaha Platform",
+   "source": "People's Party, Omaha Platform, adopted July 4, 1892. Public domain.",
+   "sourcing": "The Populist Party's platform, written by farmers and workers; shows how agrarian anger became a national political program.",
+   "text": "\"The conditions which surround us best justify our co-operation; we meet in the midst of a nation brought to the verge of moral, political, and material ruin. Corruption dominates the ballot-box, the Legislatures, the Congress, and touches even the ermine of the bench... business prostrated, homes covered with mortgages, labor impoverished, and the land concentrating in the hands of capitalists.\""
+  },
+  {
+   "n": 7,
+   "kind": "table",
+   "date": "1865-1900",
+   "title": "Settlement of the Plains",
+   "source": "Figures: 5 Steps to a 5, 2024, Chapter 17; Barron's Premium 2027, Chapter 8.",
+   "sourcing": "A table of the scale and the human cost of Plains settlement, drawn from the course books.",
+   "text": "| Measure | Figure |\n| Population of Minnesota, the Dakotas, Kansas, and Nebraska, Civil War to 1900 | from 300,000 to 5 million |\n| Homestead claims made by 1900 | 610,000 plots, 85 million acres |\n| Share of homesteaders who had given up their farms by 1900 | about two-thirds |\n| Share of Americans working on farms, 1860 to 1900 | from 60 percent to 37 percent |"
+  }
+ ],
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which mechanization and market forces transformed Plains farming between 1865 and 1900, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of transformation does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the settlement of the West after the Civil War, the growth of railroads and national markets, or the industrialization of the American economy.",
+   "notEarned": "A sentence of background with no link to the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (first point): earns the point for describing specific and relevant evidence from at least three documents to support an argument about the transformation of Plains farming.",
+   "notEarned": "Using fewer than three documents, or quoting documents without describing what they show, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support an argument, with the evidence accurately described and tied to the claim.",
+   "notEarned": "Using fewer than six documents, or listing documents without connecting them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence beyond the documents: earns the point for describing a specific and relevant example beyond the documents, such as bonanza farms, the reaper and combine harvester, barbed wire, the Panic of 1893, or the election of 1896.",
+   "notEarned": "A general statement with no specific example beyond the documents does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "3.B",
+   "criterion": "Sourcing: earns the point for explaining the relevance of a document's author, purpose, audience, or historical situation to the argument, for at least two documents.",
+   "notEarned": "Identifying an author without explaining why it matters, or sourcing only one document, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Complexity: earns the point for demonstrating a complex understanding, such as qualifying the extent of transformation, showing that mechanization helped and hurt farmers at once, or explaining why farmers answered economic change with political organization.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: Between 1865 and 1900 mechanization and market forces transformed Plains farming from a frontier of small family farms into a mechanized, market-bound business, raising output enormously while leaving most farmers poorer and driving them to organize.\nContext: The Civil War's end opened the Plains to settlement, railroads tied the region to eastern and world markets, and new machines arrived just as millions of settlers claimed land under the Homestead Act.\nEvidence: Document 1 shows output more than doubling, while Document 7 shows the farm workforce shrinking and two-thirds of homesteaders failing. Document 2 shows the sod-house life of the settlers behind those numbers. Documents 3 and 6 show farmers answering with cooperation and then with a national party, while Documents 4 and 5 show the legal road from state regulation to the first federal railroad law.\nBeyond the documents: Bonanza farms grew single cash crops with the newest machines and sold in bulk, and the reaper and combine let one crew farm hundreds of acres; the Panic of 1893 then crushed prices further and carried the Populists into the election of 1896.\nSourcing: The Grange speaks for farmers at their own convention, and the Omaha Platform speaks for a party built from their movement, while the Wabash syllabus and the Interstate Commerce Act show the law catching up with their demands.\nComplexity: The transformation cut both ways. Machines and markets made American agriculture the most productive on earth, and the same forces pushed prices down, drove farmers into debt, and turned a farming problem into a political revolt.",
+ "totalPoints": 7
+}

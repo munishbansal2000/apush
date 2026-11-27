@@ -1,0 +1,86 @@
+{
+  "answerKey": "A",
+  "difficulty": 4,
+  "figures": [
+    {
+      "alt": "An 1890 newspaper advertisement headed We Have, listing ladies’ and gentlemen’s shoes at reduced prices for H. Leh and Company of Allentown, Pennsylvania",
+      "caption": "H. Leh and Company shoe advertisement, Allentown, Pennsylvania, 1890",
+      "file": "u6/original-u6-midclass-03.jpg",
+      "id": "fig-apush-mcq-1763",
+      "license": "Public domain: 1890 newspaper advertisement, Allentown, Pennsylvania.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/1890_-_H_Leh_%26_Company_Newspaper_Ad_Allentown_PA.jpg"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ]
+  },
+  "id": "apush-mcq-1763",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "text": "They replaced homemade goods with ready-made store goods"
+    },
+    {
+      "key": "B",
+      "misconception": "Background: small-town stores kept operating; department and chain stores joined them, not ended them.",
+      "text": "They ended all shopping in small towns"
+    },
+    {
+      "key": "C",
+      "misconception": "Background: stores offered installment plans; cash was not the only way to pay.",
+      "text": "They made shoppers buy goods only with cash"
+    },
+    {
+      "key": "D",
+      "misconception": "The ad itself is advertising, and stores advertised more, not less.",
+      "text": "They stopped advertising their goods to the public"
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "Background from the books: ready-made clothing replaced homemade clothing, and commercially prepared food reached families that had grown their own. The store sold what homes once made.",
+    "B": "Background: chain stores opened in towns across the country, and mail-order catalogs reached farms. Small shops did not vanish.",
+    "C": "Background: the books note that stores sold on installment plans, so shoppers did not have to pay cash at once.",
+    "D": "The Leh advertisement is itself proof that stores advertised heavily to draw shoppers in.",
+    "general": "Compare shopping before and after the store.\n1. Background from the books: before these stores, families made much of what they used at home.\n2. Leh’s ad sells ready-made shoes in dozens of sizes, off the shelf.\n3. Shoppers now bought in a store what their homes once produced.\n4. That shift from making to buying is the change the store brought.\nRemember: a new kind of store changes shopping when it sells what homes used to make."
+  },
+  "reasoning": "continuity-change",
+  "skills": [
+    "5.B"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "How did stores like Leh’s change the way ordinary Americans shopped?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "H. Leh and Company newspaper advertisement, Allentown, Pennsylvania, 1890. Public domain.",
+    "text": "A newspaper advertisement from 1890 for H. Leh and Company, a dry goods and shoe dealer in Allentown, Pennsylvania. Under the heading “WE HAVE,” it lists pair after pair of ladies’ and gentlemen’s shoes at reduced prices — $4.50 shoes now $2.95, $3 shoes now $2 — and invites shoppers to “come and look through before your size is sold out.”"
+  },
+  "stimulus_set": "leh-department-store",
+  "themes": [
+    "SOC",
+    "WXT"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

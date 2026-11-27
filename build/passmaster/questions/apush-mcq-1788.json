@@ -1,0 +1,89 @@
+{
+ "answerKey": "A",
+ "difficulty": 2,
+ "figures": [
+  {
+   "alt": "An 1892 cartoon showing Andrew Carnegie sitting on piles of money bags holding a whip, above a steel mill with signs reading Closed Strike, Closed, and Lock-Out, with crowds of workers outside the gates",
+   "caption": "“Promise and Performance” cartoon on the Homestead strike, 1892",
+   "file": "u6/barrons-2027-pt2-17.png",
+   "id": "fig-apush-mcq-1788",
+   "license": "Public domain: cartoon published 1892.",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Promise_and_Performance_Political_Cartoon_Andrew_Carnegie_sitting_on_bags_of_money_Homestead_Strike_1892.png"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "“Promise and Performance” political cartoon on the Homestead strike (1892)"
+  ]
+ },
+ "id": "apush-mcq-1788",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "text": "The mill was shut while the company and the workers fought."
+  },
+  {
+   "key": "B",
+   "misconception": "The signs say closed and lock-out, not burned.",
+   "text": "The mill had burned to the ground in a fire."
+  },
+  {
+   "key": "C",
+   "misconception": "A lock-out means workers were kept out, not welcomed back.",
+   "text": "The workers had all agreed to return to work."
+  },
+  {
+   "key": "D",
+   "misconception": "The signs say closed and lock-out, not hiring.",
+   "text": "The mill was hiring hundreds of new hands."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Closed, strike, and lock-out are all words for a shut mill during a labor fight.",
+  "B": "The signs say closed and lock-out, not burned.",
+  "C": "A lock-out means workers were kept out, not welcomed back.",
+  "D": "The signs say closed and lock-out, not hiring.",
+  "general": "Read the signs on the mill.\n1. One sign reads CLOSED—STRIKE and another reads LOCK-OUT.\n2. A strike means workers stopped work; a lock-out means the company shut them out.\n3. Both words describe a mill shut during a fight.\n4. So the mill was closed while the company and the workers fought.\nRemember: signs in a cartoon state the facts the artist wants you to see."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.A"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "The signs “CLOSED—STRIKE” and “LOCK-OUT” on the mill show what about the Homestead dispute?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Political cartoon “Promise and Performance,” 1892. Public domain (Wikimedia Commons).",
+  "text": "Political cartoon “Promise and Performance,” published in 1892. A large Andrew Carnegie sits on piles of money bags, holding a whip. Below him stretches a steel mill with signs reading “CLOSED—STRIKE,” “CLOSED,” and “LOCK-OUT.” Crowds of workers stand outside the mill gates."
+ },
+ "stimulus_set": "homestead-promise-performance-1892",
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

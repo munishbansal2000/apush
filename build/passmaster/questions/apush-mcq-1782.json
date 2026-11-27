@@ -1,0 +1,90 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "figures": [
+  {
+   "alt": "A Harper’s Weekly engraving of the Haymarket Square bombing in 1886, showing a speaker on a wagon at left, police moving through smoke in the center, and men falling in the street",
+   "caption": "The Haymarket Square bombing, Chicago, May 4, 1886, Harper’s Weekly",
+   "file": "u6/pr25e-ch10-q05.jpg",
+   "id": "fig-apush-mcq-1782",
+   "license": "Public domain: Harper’s Weekly engraving, May 15, 1886.",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/61/HaymarketRiot-Harpers.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Harper’s Weekly engraving of the Haymarket Square bombing (May 15, 1886)"
+  ]
+ },
+ "id": "apush-mcq-1782",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The engraving shows a blast, not who threw the bomb or planned it.",
+   "text": "The Knights of Labor organized the bombing themselves."
+  },
+  {
+   "key": "B",
+   "text": "The public came to link labor meetings with violence."
+  },
+  {
+   "key": "C",
+   "misconception": "The engraving shows a meeting ending in a blast, not a victory.",
+   "text": "The Knights won the eight-hour day at Haymarket."
+  },
+  {
+   "key": "D",
+   "misconception": "The police are shown in the middle of the rally, not refusing to attend.",
+   "text": "The police refused to attend any labor rallies."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The engraving shows a blast, not who threw the bomb or planned it.",
+  "B": "The engraving shows a labor meeting ending in a bomb blast and police gunfire. Background from the books: after Haymarket, Americans linked unions with violence and the Knights lost members.",
+  "C": "The engraving shows a meeting ending in a blast, not a victory for the eight-hour day.",
+  "D": "The police are shown in the middle of the rally, not refusing to attend.",
+  "general": "Ask what a viewer of this picture would carry away.\n1. The picture shows a labor meeting, a speaker, and a crowd.\n2. It also shows a bomb blast, smoke, and men falling.\n3. A viewer links the two: labor meetings and violence, side by side.\n4. That link is what damaged the Knights in public eyes.\nRemember: an image can show a link the public made, even when it proves nothing about who acted."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.D",
+  "5.A"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "The Haymarket bombing is often linked to the decline of the Knights of Labor. Which connection does the engraving best support?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Harper’s Weekly engraving, May 15, 1886. Public domain (Wikimedia Commons).",
+  "text": "Harper’s Weekly engraving of the Haymarket Square bombing in Chicago, May 4, 1886. At the left, a speaker stands on a wagon with one arm raised, addressing the crowd. In the center, police officers move through thick smoke as the bomb explodes, and men fall and scatter in the street. A street sign on a building at the upper left reads “N. JEFFERSON ST.”"
+ },
+ "stimulus_set": "haymarket-harper-1886",
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

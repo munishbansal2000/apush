@@ -1,0 +1,85 @@
+{
+ "id": "apush-mcq-1710",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.5"
+ ],
+ "lesson": "apush-u6-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "A",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "stem": "What process is shown in the image?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Nineteenth-century engraving of a Bessemer converter in operation, Wikimedia Commons. Public domain. https://commons.wikimedia.org/wiki/File:Bessemer_process.jpg",
+  "text": "The image shows a Bessemer converter at work inside a steel mill. A large pear-shaped vessel throws off a shower of white-hot sparks as air blasts through molten iron. A ladle and tools lie in the foreground. The converter is the tall upright vessel in the center."
+ },
+ "stimulus_set": "bessemer-converter",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Bessemer process, which turned molten iron into steel"
+  },
+  {
+   "key": "B",
+   "text": "The open-hearth process, which melted scrap iron in a furnace",
+   "misconception": "Background: the open-hearth process came later and used a shallow furnace, not a pear-shaped converter that blows air through molten iron."
+  },
+  {
+   "key": "C",
+   "text": "The puddling process, which stirred molten iron by hand",
+   "misconception": "Background: puddling was an older, slower way of working iron by hand; it did not use a converter vessel like the one shown."
+  },
+  {
+   "key": "D",
+   "text": "The smelting of copper ore in a blast furnace",
+   "misconception": "Background: the converter shown worked iron into steel; copper smelting used different furnaces and ores."
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: the Bessemer process blew air into molten iron, burning out impurities and leaving steel. The upright vessel throwing off sparks is the converter itself.",
+  "B": "Background: the open-hearth process used a wide, shallow furnace, not a converter. It grew important later, after Bessemer steel was already common.",
+  "C": "Background: puddling made wrought iron by stirring molten iron by hand. It was slow, costly work, and it never used a converter vessel.",
+  "D": "Background: copper smelting turned ore into copper, not iron into steel. The vessel and the sparks point to steelmaking, not copper.",
+  "general": "Look at the vessel first, then name what it does.\n1. The pear-shaped vessel is a converter, throwing off a shower of sparks as air blasts through molten iron.\n2. Background: blowing air through molten iron in that vessel burned out impurities and left steel, and that is the Bessemer process.\n3. The other choices name real metalworking methods, but none of them uses a converter like this one.\nRemember: name a process by the tool that does the work."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Steel and the Bessemer Process"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Second Industrial Revolution"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Age of Invention and Economic Growth"
+   }
+  ]
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1710",
+   "file": "u6/original-u6-tech-07.jpg",
+   "caption": "A Bessemer converter at work, nineteenth-century engraving",
+   "alt": "A tall pear-shaped Bessemer converter vessel throws off a shower of white-hot sparks inside a steel mill",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Bessemer_process.jpg",
+   "license": "Public domain: nineteenth-century engraving of a Bessemer converter in operation."
+  }
+ ]
+}

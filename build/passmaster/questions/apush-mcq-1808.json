@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1808",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "excl-act-1882",
+ "stimulus": {
+  "kind": "text",
+  "text": "“Whereas in the opinion of the Government of the United States the coming of Chinese laborers to this country endangers the good order of certain localities within the territory thereof: Therefore, Be it enacted by the Senate and House of Representatives of the United States of America in Congress assembled, That from and after the expiration of ninety days next after the passage of this act, and until the expiration of ten years next after the passage of this act, the coming of Chinese laborers to the United States be, and the same is hereby, suspended; and during such suspension it shall not be lawful for any Chinese laborer to come, or having so come after the expiration of said ninety days to remain within the United States.”\n\nChinese Exclusion Act, approved May 6, 1882.",
+  "source_note": "Chinese Exclusion Act, May 6, 1882 (22 Stat. 58), Section 1 and preamble. Public domain; text checked against the National Archives transcript."
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Chinese Exclusion Act, May 6, 1882 (22 Stat. 58)"
+  ]
+ },
+ "status": "final",
+ "stem": "Which conclusion about federal power in 1882 does the act best support?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Congress was willing to single out one nationality for exclusion from immigration"
+  },
+  {
+   "key": "B",
+   "text": "Congress banned all immigration from Asia for ten years",
+   "misconception": "Widens a ban on one group into a ban on a whole continent."
+  },
+  {
+   "key": "C",
+   "text": "Congress gave Chinese laborers already in the country a path to citizenship",
+   "misconception": "Reverses the act: it barred citizenship instead of granting it."
+  },
+  {
+   "key": "D",
+   "text": "Congress left immigration policy entirely to the states",
+   "misconception": "Misses that Congress itself passed this law."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The act suspends only Chinese laborers by name, so Congress was willing to single out one nationality for exclusion.",
+  "B": "The act names Chinese laborers only. It bans no other Asian group.",
+  "C": "The act does the opposite: a later section bars Chinese from citizenship. It gives no path to it.",
+  "D": "This is a federal act passed by Congress, so the states did not decide the policy.",
+  "general": "Ask what the act actually does, not what it might have done.\n1. The act names one group: Chinese laborers.\n2. It suspends only their coming, for ten years.\n3. No other nationality is named anywhere in the passage.\n4. A law aimed at one named group is exclusion by nationality.\nBackground: the books call this the first federal law to target one national group.\nRemember: to judge a law’s reach, check exactly whom it names."
+ }
+}

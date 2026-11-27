@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-1988",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.14"
+  ],
+  "skills": [
+    "2.A"
+  ],
+  "themes": [
+    "WXT"
+  ],
+  "reasoning": "comparison",
+  "difficulty": 2,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.14 Subject to Debate"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "America Transformed into the Industrial Giant of the World (1870–1910)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ],
+    "primary_sources": [
+      "Emory R. Johnson, American Railway Transportation (1908), Interstate Commerce Commission railroad mileage; Encyclopaedia Britannica, 11th edition (1911), Table IX, steel output"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-614-growth-table",
+  "stimulus": {
+    "kind": "table",
+    "text": "The table shows two measures of American industrial growth, 1870-1900.\n\n| Year | Miles of railroad in operation | Steel produced (millions of tons) |\n| 1870 | 52,922 | 0.07 |\n| 1880 | 93,296 | 1.25 |\n| 1890 | 163,597 | 4.28 |\n| 1900 | 193,346 | 10.19 |",
+    "source_note": "Railroad mileage from Emory R. Johnson, American Railway Transportation (1908), using Interstate Commerce Commission figures; steel output from the Encyclopaedia Britannica, 11th edition (1911), Table IX. The lesson script gives the same scale in round numbers: about 35,000 miles of track in 1865 and over 190,000 by 1900."
+  },
+  "stem": "According to the table, which statement best describes American industrial growth between 1870 and 1900?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Railroad mileage fell while steel output rose",
+      "misconception": "Both columns rise from 1870 to 1900, so neither one fell."
+    },
+    {
+      "key": "B",
+      "text": "Both railroad mileage and steel output grew greatly"
+    },
+    {
+      "key": "C",
+      "text": "Steel output grew while railroad mileage stayed flat",
+      "misconception": "Railroad mileage nearly quadrupled, from about 53,000 to about 193,000 miles."
+    },
+    {
+      "key": "D",
+      "text": "Railroad mileage grew, but steel output fell",
+      "misconception": "Steel output rose from 0.07 to 10.19 million tons, so it did not fall."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The table shows both columns rising, so a fall in either one is wrong.",
+    "B": "Both series rise sharply across all four rows of the table.",
+    "C": "Railroad mileage rises in every row, so it did not stay the same.",
+    "D": "Steel output rises in every row, so it did not fall.",
+    "general": "Read the table row by row.\n1. In 1870 the nation had about 53,000 miles of railroad and made 0.07 million tons of steel.\n2. By 1900 it had about 193,000 miles of railroad and made 10.19 million tons of steel.\n3. Both numbers grew in every decade the table shows.\n4. Background from the books: railroads and steel fed each other, since rails were made of steel.\nRemember: when two series rise together, the safe claim is that both grew."
+  }
+}

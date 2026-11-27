@@ -1,0 +1,86 @@
+{
+  "answerKey": "A",
+  "difficulty": 4,
+  "figures": [
+    {
+      "alt": "A stereoscopic view of the huge Montgomery Ward and Company building in Chicago, a multi-story block with a tall tower, captioned one of the sights of the city",
+      "caption": "The Montgomery Ward and Company establishment, Chicago, stereoscopic view",
+      "file": "u6/original-u6-midclass-05.jpg",
+      "id": "fig-apush-mcq-1769",
+      "license": "Public domain: stereoscopic view from the Robert N. Dennis collection.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/The_establilshment_of_the_Montgomery_Ward_%26_Co.%2C_one_of_the_sights_of_the_city%2C_Chicago%2C_Ill.%2C_U.S.A%2C_from_Robert_N._Dennis_collection_of_stereoscopic_views.jpg"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ]
+  },
+  "id": "apush-mcq-1769",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "text": "The catalog brought the store to distant farm families"
+    },
+    {
+      "key": "B",
+      "misconception": "Farm families bought from catalogs, so they had money to spend; distance was the problem.",
+      "text": "Farm families had no money to buy anything"
+    },
+    {
+      "key": "C",
+      "misconception": "Distance kept farm families from stores; they did not refuse to go.",
+      "text": "Farm families refused to visit towns"
+    },
+    {
+      "key": "D",
+      "misconception": "Background: catalogs sold goods; they were not the only books in farm homes.",
+      "text": "Catalogs were the only books farm families owned"
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "Background from the books: being far from a city was no longer a barrier, because catalogs let farm families order goods and railroads delivered them.",
+    "B": "Farm families ordered goods through the catalogs, which shows they had money to spend. Their problem was distance, not poverty alone.",
+    "C": "The books say distance was the barrier, not refusal. Catalogs solved the distance.",
+    "D": "Background: catalogs were sales books, not the only reading in farm homes. Their value was in ordering goods.",
+    "general": "Ask what problem the catalog solved.\n1. Farm families lived far from cities and their stores.\n2. Background from the books: a catalog let them choose goods without traveling to a store.\n3. Railroads then carried the ordered goods to the farm.\n4. Together the catalog and the railroad closed the distance.\nRemember: a new way of selling matters most to the people the old way left out."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "1.B"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "Why did mail-order catalogs matter most to farm families?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "“The Establishment of Montgomery Ward and Co., One of the Sights of the City, Chicago,” stereoscopic view, Robert N. Dennis collection. Public domain.",
+    "text": "A stereoscopic view of the Montgomery Ward and Company establishment in Chicago, a huge multi-story building with a tall tower rising over the neighboring blocks. The caption calls it “one of the sights of the city,” and the building’s many windows show floor after floor of goods."
+  },
+  "stimulus_set": "montgomery-ward",
+  "themes": [
+    "WXT",
+    "GEO"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

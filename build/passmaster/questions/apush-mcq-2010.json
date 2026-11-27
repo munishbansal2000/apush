@@ -1,0 +1,97 @@
+{
+  "id": "apush-mcq-2010",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.14"
+  ],
+  "skills": [
+    "2.C"
+  ],
+  "themes": [
+    "PCE",
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "difficulty": 2,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.11 Reform in the Gilded Age"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Gilded Age Politics"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ],
+    "primary_sources": [
+      "Coxey’s Army photograph, 1894; Coney Island trade card, about 1885–1896"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-614-coxey-coney",
+  "stimulus": {
+    "kind": "mixed",
+    "text": "Image 1: An 1894 photograph shows a column of men marching down a dirt road toward Washington, carrying banners. One banner reads “More Money! Less Misery! Good Roads!” A placard shows a portrait with the words “Death to Interest on Bonds.” The caption reads “Coxey’s Army approaching Washington.” Image 2: A color trade card from about 1885–1896, “Scene at Coney Island,” shows boys in suits digging in the sand on a crowded beach, with a sailboat and a paddle steamer on the water and amusement buildings, a tall tower, and an elephant-shaped hotel behind them.",
+    "source_note": "Image 1: 1894 stereograph, Library of Congress (LC-DIG-stereo-1s09209), public domain; image viewed by the writer (shared pool: u6/original-u6-coxeys-army-approaching-washington.jpg). Image 2: chromolithograph trade card, Lindner, Eddy and Clauss, New York, about 1885-1896, public domain; image viewed by the writer (shared pool: u6/u6-coney-island-scene.jpg)."
+  },
+  "stem": "What does Image 1 show about how some Americans responded to the depression of the 1890s?",
+  "options": [
+    {
+      "key": "A",
+      "text": "They left the country to find work abroad",
+      "misconception": "The marchers are heading toward Washington, not leaving the country."
+    },
+    {
+      "key": "B",
+      "text": "They marched on Washington to demand federal action"
+    },
+    {
+      "key": "C",
+      "text": "They formed a new political party in Congress",
+      "misconception": "The image shows a march, not the founding of a party."
+    },
+    {
+      "key": "D",
+      "text": "They opened new factories in the West",
+      "misconception": "The image shows marchers on a road, not factories."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The marchers are on the road to Washington, not on their way out of the country.",
+    "B": "The banners demand more money and good roads, and the marchers head for the capital.",
+    "C": "No party is founded in the photograph; the men are marching.",
+    "D": "No factories appear in the photograph.",
+    "general": "Read the banners and the road.\n1. The men march in a column down a dirt road toward Washington.\n2. Their banner reads “More Money! Less Misery! Good Roads!”\n3. Those are demands aimed at the federal government, not at a boss or a town.\n4. Background from the books: Coxey’s Army marched in 1894, after the Panic of 1893 left millions jobless.\nRemember: a march on the capital is a demand aimed at the national government."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-2010",
+      "file": "u6/original-u6-coxeys-army-approaching-washington.jpg",
+      "source_url": "https://www.loc.gov/item/2002718487/",
+      "license": "Public domain",
+      "caption": "“More Money! Less Misery! Good Roads!” Coxey’s Army approaching Washington, 1894",
+      "alt": "Stereograph photograph showing a column of men marching down a dirt road carrying banners, one reading More Money Less Misery Good Roads, toward Washington in 1894"
+    },
+    {
+      "id": "fig-apush-mcq-2010-b",
+      "file": "u6/u6-coney-island-scene.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Scene_at_Coney_Island_-_DPLA_-_7037785ea62fdba714a144b9b402a640.jpg",
+      "license": "Public domain",
+      "caption": "“Scene at Coney Island,” trade card, about 1885–1896",
+      "alt": "Color trade card showing boys in suits digging in the sand on a crowded Coney Island beach, with a sailboat and paddle steamer on the water and an elephant-shaped hotel behind them"
+    }
+  ]
+}

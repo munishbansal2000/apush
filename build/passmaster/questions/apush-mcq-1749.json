@@ -1,0 +1,75 @@
+{
+  "answerKey": "B",
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "The Rise of the Corporation and Mass Production"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ]
+  },
+  "id": "apush-mcq-1749",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "The passage mentions no government order; managers came from the size of the business.",
+      "text": "Because the government ordered companies to hire them"
+    },
+    {
+      "key": "B",
+      "text": "Because the businesses were too large for owners to run"
+    },
+    {
+      "key": "C",
+      "misconception": "The passage says nothing about workers demanding profits.",
+      "text": "Because workers demanded a share of the profits"
+    },
+    {
+      "key": "D",
+      "misconception": "The passage says nothing about mail sales; managers ran buying, selling, and shipping.",
+      "text": "Because corporations wanted to stop selling goods by mail"
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "The passage credits new incorporation laws and growth, not a government order to hire managers.",
+    "B": "The passage says the railroad grew too large for any one owner to run, so a new class of middle managers ran the daily work.",
+    "C": "Background: workers’ demands belong to the labor story. This passage is about how corporations organized themselves.",
+    "D": "Background: mail-order selling grew in this period, but the passage ties managers to size, not to stopping mail sales.",
+    "general": "Find the cause in the passage.\n1. The Pennsylvania Railroad grew into a business too large for one owner to run.\n2. Size created departments for buying, selling, and shipping.\n3. Someone had to run those departments day by day.\n4. That someone was the new middle manager.\nRemember: when a passage says a business grew too large, ask who does the work now."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "1.B"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "According to the passage, why did large corporations need middle managers?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Original secondary passage, written for this question from Barron’s Premium 2027, Chapter 8 (Topic 6.6), 5 Steps to a 5, 2024, Chapter 18, and Princeton Review, Chapter 10.",
+    "text": "Before the Civil War, most American businesses were small firms run by their owners. After the war, new laws made it easier to form corporations, and the railroads showed how a corporation could work: the Pennsylvania Railroad, incorporated in 1846, grew into a business too large for any one owner to run. Large corporations hired layers of managers, kept careful cost accounts, and divided the work among departments for buying, selling, and shipping. A new class of middle managers ran the daily work while top executives planned for the future."
+  },
+  "stimulus_set": "corporation-managerial",
+  "themes": [
+    "WXT"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-1845",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 6,
+ "topics": [
+  "6.9"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "MIG",
+  "GEO"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 2,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.9 Responses to Immigration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "origin-shares-table",
+ "stimulus": {
+  "kind": "table",
+  "text": "Share of all immigrants to the United States, by country of birth (percent).\n\n| Country | 1861–1870 | 1891–1900 |\n| Great Britain | 24.5 | 7.5 |\n| Ireland | 18.8 | 10.0 |\n| Germany | 34.0 | 14.0 |\n| Austria-Hungary | 0.3 | 16.0 |\n| Russia and Poland | 0.2 | 14.0 |\n| Italy | 0.5 | 18.0 |",
+  "source_note": "Encyclopaedia Britannica, 11th edition (1911), article “Migration,” table of nationality of immigrants, compiled from official United States immigration figures. Public domain."
+ },
+ "stem": "According to the table, which group made up the largest share of immigrants in 1891-1900?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Immigrants from Great Britain",
+   "misconception": "Picks a country whose share had fallen sharply by the 1890s."
+  },
+  {
+   "key": "B",
+   "text": "Immigrants from Germany",
+   "misconception": "Picks the largest source of the 1860s instead of the 1890s."
+  },
+  {
+   "key": "C",
+   "text": "Immigrants from Russia and Poland",
+   "misconception": "Picks a fast-growing group that still trails Italy."
+  },
+  {
+   "key": "D",
+   "text": "Immigrants from Italy"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Great Britain stands at 7.5 in 1891-1900, far below Italy at 18.0. Britain had faded as a source by then.",
+  "B": "Germany stands at 14.0 in 1891-1900, below Italy at 18.0. Germany was the largest source thirty years earlier, not in the 1890s.",
+  "C": "Russia and Poland stand at 14.0 in 1891-1900, below Italy at 18.0. They had grown fast, but not past Italy.",
+  "D": "Italy stands at 18.0 in the 1891-1900 column, higher than Austria-Hungary at 16.0 and every other country in the table. No other group holds a larger share in that decade.",
+  "general": "Compare the 1891-1900 column row by row before choosing.\n1. Great Britain stands at 7.5 and Ireland at 10.0.\n2. Germany stands at 14.0, and Russia and Poland at 14.0.\n3. Austria-Hungary stands at 16.0, and Italy at 18.0.\n4. So Italy holds the largest share in 1891-1900.\nRemember: on a table with two columns, read the column the question names."
+ }
+}

@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1626",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "A",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "stem": "According to the Pacific Railway Act, what did the federal government grant to the railroad companies?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Pacific Railway Act, July 1, 1862, 12 Stat. 489, Sec. 3. Public domain. Text verified against the Gilder Lehrman excerpt (Our Documents) and the Supreme Court's quotation of Sec. 3 in Platt v. Union Pacific Railroad Co., 99 U.S. 48 (1878).",
+  "text": "Pacific Railway Act of 1862, Section 3 (ellipses mark omissions):\n\n\"That there be, and is hereby, granted to the said company, for the purpose of aiding in the construction of said railroad and telegraph line, and to secure the safe and speedy transportation of the mails, troops, munitions of war, and public stores thereon, every alternate section of public land, designated by odd numbers, to the amount of five alternate sections per mile on each side of said railroad, on the line thereof, and within the limits of ten miles on each side of said road, not sold, reserved, or otherwise disposed of by the United States, and to which a preemption or homestead claim may not have attached, at the time the line of said road is definitely fixed: Provided, That all mineral lands shall be excepted from the operation of this act...\""
+ },
+ "stimulus_set": "railroad-land-grants",
+ "options": [
+  {
+   "key": "A",
+   "text": "Public land along the railroad line, to help pay for building it"
+  },
+  {
+   "key": "B",
+   "text": "Cash payments to every settler who moved west by rail",
+   "misconception": "Background: the act aided the companies, not individual settlers; settlers got land through the Homestead Act."
+  },
+  {
+   "key": "C",
+   "text": "Ownership of all the gold and silver mines near the tracks",
+   "misconception": "Background: the act expressly excepted mineral lands from the grant."
+  },
+  {
+   "key": "D",
+   "text": "A monopoly on carrying mail between the East and the West",
+   "misconception": "Background: the act mentions carrying the mails as a purpose of the railroad, but it granted no mail monopoly."
+  }
+ ],
+ "rationales": {
+  "A": "Section 3 says it outright: alternate sections of public land, five per mile on each side, granted to aid construction of the railroad and telegraph line.",
+  "B": "Background: the grants went to the railroad companies. Background: settlers claimed land under the Homestead Act, a different law.",
+  "C": "Background: Section 3 ends with the exception: all mineral lands were kept out of the grant.",
+  "D": "Background: moving the mails is listed as a purpose the railroad would serve, not as a monopoly handed to the companies.",
+  "general": "Follow the land: the government paid for a railroad with the one thing it had in plenty.\n1. Read the grant's purpose in Section 3: aiding construction of the railroad and telegraph line.\n2. Read what was granted: alternate sections of public land, five per mile on each side.\n3. Name the deal. Land, not cash, built the road, and the companies could sell the land to raise money.\nRemember: when the government wants something built, watch what it pays with."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "Government Encouragement of Western Settlement"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

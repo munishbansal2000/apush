@@ -1,0 +1,80 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Preamble and Declaration of Principles of the Knights of Labor (1878)"
+  ]
+ },
+ "id": "apush-mcq-1774",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "text": "Workers created the wealth but received too little of it."
+  },
+  {
+   "key": "B",
+   "misconception": "The passage says workers create the wealth, so they had not stopped producing.",
+   "text": "Workers had stopped producing goods of any value at all."
+  },
+  {
+   "key": "C",
+   "misconception": "The passage attacks unjust accumulation, not the idea that employers do anything.",
+   "text": "Employers played no part at all in creating any wealth."
+  },
+  {
+   "key": "D",
+   "misconception": "The passage speaks of toilers in workshops, mines, and factories, not only farmers.",
+   "text": "Only farmers, not factory workers, produced wealth."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The passage says toilers deserve a proper share of the wealth they create, so the wealth exists because workers made it.",
+  "B": "The passage says workers create the wealth, so it cannot mean they stopped producing anything of value.",
+  "C": "The passage attacks the unjust piling up of wealth, not the idea that employers do nothing at all.",
+  "D": "The passage speaks of toilers in workshops, mines, and factories, not only of farmers.",
+  "general": "Ask who makes the wealth in the passage.\n1. The Knights want the laborer to keep the fruits of his toil.\n2. They ask for a proper share of the wealth that toilers create.\n3. If workers create the wealth, they must now be getting too little of it.\n4. That gap, not idleness or farming alone, is the Knights’ complaint.\nRemember: “fruits of toil” language points to who produces and who keeps."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.A",
+  "2.B"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "The passage says the Knights wanted to secure to the laborer “the fruits of his toil.” What does that phrase best show about how the Knights saw the economy?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Preamble and Declaration of Principles of the Knights of Labor (1878), as printed in Terence V. Powderly, Thirty Years of Labor (1890). Public domain. Excerpts joined with ellipses.",
+  "text": "“The recent alarming development and aggression of aggregated wealth, which, unless checked, will invariably lead to the pauperization and hopeless degradation of the toiling masses, render it imperative, if we desire to enjoy the blessings of life, that a check should be placed upon its power and upon unjust accumulation, and a system adopted which will secure to the laborer the fruits of his toil. . . . To secure to the toilers a proper share of the wealth that they create; more of the leisure that rightfully belongs to them; more societary advantages; more of the benefits, privileges, and emoluments of the world. . . . The prohibition of the employment of children in workshops, mines, and factories before attaining their fourteenth year. . . . To secure for both sexes equal pay for equal work. The reduction of the hours of labor to eight per day.”"
+ },
+ "stimulus_set": "knights-preamble-1878",
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

@@ -1,0 +1,72 @@
+{
+ "answerKey": "C",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.1 Contextualizing Period 6"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-1613",
+ "lesson": "apush-u6-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The table shows mileage rising by about three-quarters between 1870 and 1880; building slowed but continued.",
+   "text": "Railroad building stopped after the Panic of 1873"
+  },
+  {
+   "key": "B",
+   "misconception": "Background: the table counts the national network, and the transcontinental lines carried rails deep into the West.",
+   "text": "Railroads grew only in the eastern states"
+  },
+  {
+   "key": "C",
+   "text": "Railroads were the backbone of industrial growth, linking the nation into one market"
+  },
+  {
+   "key": "D",
+   "misconception": "No such ban existed; wagons, ships, and canals continued, while railroads won on speed and cost.",
+   "text": "Railroad mileage grew because the government banned all other forms of transport"
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "The table shows mileage rising by about three-quarters between 1870 and 1880. Building slowed after the Panic of 1873 but did not stop.",
+  "B": "Background: the table counts the whole national network, and the transcontinental lines carried rails deep into the West.",
+  "C": "Background: mileage rose from about 35,000 to over 193,000 miles while steel, coal, and factory output soared. The rails carried wheat, cattle, ore, and goods between every part of the country, binding them into one market.",
+  "D": "Background: no such ban existed. Wagons, ships, and canals kept running; railroads won because they were faster and cheaper.",
+  "general": "Let the numbers tell the story: a network that grows more than fivefold is not a side detail.\n1. Measure the growth. Mileage rises from about 35,000 in 1865 to over 193,000 by 1900.\n2. Ask what rode on those rails. Background: wheat and cattle, ore and goods, from every part of the country.\n3. Name the conclusion. Railroads were the backbone of industrial growth, joining farms, mines, and factories into one market.\nRemember: when one number grows more than fivefold, look for the system it carries."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "5.B",
+  "1.B"
+ ],
+ "source": "original; stimulus is an original table drawn from E. R. Johnson, American Railway Transportation (1908), and Historical Statistics of the United States.",
+ "status": "final",
+ "stem": "The pattern in the table best supports which of the following conclusions about Period 6?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Mileage figures from E. R. Johnson, American Railway Transportation (1908); the 1865 figure is about 35,000 miles. Figures count miles of railroad in operation.",
+  "text": "| Year | Miles of railroad in operation |\n| 1865 | about 35,000 |\n| 1870 | 53,914 |\n| 1880 | 93,296 |\n| 1890 | 163,597 |\n| 1900 | 193,346 |"
+ },
+ "stimulus_set": "railroad-miles",
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "topics": [
+  "6.1"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

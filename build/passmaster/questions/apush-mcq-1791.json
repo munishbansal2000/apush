@@ -1,0 +1,79 @@
+{
+ "answerKey": "B",
+ "difficulty": 2,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "In re Debs, 158 U.S. 564 (1895)"
+  ]
+ },
+ "id": "apush-mcq-1791",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The passage speaks of the army and militia, not of fines.",
+   "text": "Only the power to fine the railroad companies."
+  },
+  {
+   "key": "B",
+   "text": "The army and the militia, the full strength of the nation"
+  },
+  {
+   "key": "C",
+   "misconception": "The passage gives the power to the national government itself.",
+   "text": "Only the power to ask the states for help."
+  },
+  {
+   "key": "D",
+   "misconception": "The passage says the national government may act, not that it may not.",
+   "text": "No power at all, since strikes are a state matter."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "The passage speaks of the army and militia, not of fines.",
+  "B": "The passage says the army of the Nation and all its militia are at the service of the Nation to compel obedience.",
+  "C": "The passage gives the power to the national government itself.",
+  "D": "The passage says the national government may act, not that it may not.",
+  "general": "Follow the passage’s “strong arm.”\n1. The Court says the national government may brush away obstructions to commerce and the mails.\n2. It names the force: the army of the Nation and all its militia.\n3. That force is at the service of the Nation to compel obedience to its laws.\n4. So the power is the army and militia, the nation’s full strength.\nRemember: when a court names a force, the force is the answer."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.A"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "According to the passage, what power does the Court say the national government may use against obstructions to interstate commerce?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Justice David J. Brewer, opinion of the Court, In re Debs, 158 U.S. 564 (1895). Public domain.",
+  "text": "“The strong arm of the national government may be put forth to brush away all obstructions to the freedom of interstate commerce or the transportation of the mails. If the emergency arises, the army of the Nation, and all its militia, are at the service of the Nation to compel obedience to its laws.”"
+ },
+ "stimulus_set": "in-re-debs-1895",
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

@@ -1,0 +1,75 @@
+{
+  "answerKey": "D",
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "The Rise of the Corporation and Mass Production"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ]
+  },
+  "id": "apush-mcq-1748",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "The passage says railroads showed corporations how to work, not that small firms took them over.",
+      "text": "Small firms took over the railroads"
+    },
+    {
+      "key": "B",
+      "misconception": "The passage describes managers inside companies, not government managers.",
+      "text": "The government took over the management of corporations"
+    },
+    {
+      "key": "C",
+      "misconception": "The passage says corporations kept careful cost accounts.",
+      "text": "Corporations stopped keeping cost accounts"
+    },
+    {
+      "key": "D",
+      "text": "Businesses grew into large corporations run by managers"
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "The railroads were the model for the corporation, not the prize small firms captured.",
+    "B": "The managers in the passage work for the company, and the government does not appear in it.",
+    "C": "The passage says the opposite: large corporations kept careful cost accounts.",
+    "D": "The passage moves from small firms run by owners to the Pennsylvania Railroad, too large for one owner, with layers of managers and departments.",
+    "general": "Track the change from the first sentence to the last.\n1. The passage starts with small firms run by their owners.\n2. Then the Pennsylvania Railroad grows too large for any one owner to run.\n3. Layers of managers, cost accounts, and departments take over the daily work.\n4. That is the shift from owner-run firms to manager-run corporations.\nRemember: a passage that starts small and ends large is describing a change in scale."
+  },
+  "reasoning": "continuity-change",
+  "skills": [
+    "1.B"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "What change in American business does the passage describe?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Original secondary passage, written for this question from Barron’s Premium 2027, Chapter 8 (Topic 6.6), 5 Steps to a 5, 2024, Chapter 18, and Princeton Review, Chapter 10.",
+    "text": "Before the Civil War, most American businesses were small firms run by their owners. After the war, new laws made it easier to form corporations, and the railroads showed how a corporation could work: the Pennsylvania Railroad, incorporated in 1846, grew into a business too large for any one owner to run. Large corporations hired layers of managers, kept careful cost accounts, and divided the work among departments for buying, selling, and shipping. A new class of middle managers ran the daily work while top executives planned for the future."
+  },
+  "stimulus_set": "corporation-managerial",
+  "themes": [
+    "WXT"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

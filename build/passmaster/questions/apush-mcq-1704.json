@@ -1,0 +1,72 @@
+{
+ "id": "apush-mcq-1704",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.4"
+ ],
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u6-l2",
+ "stem": "Which of the following best explains the sharp fall in Black registration shown in the table?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Fifteenth Amendment was repealed in 1898",
+   "misconception": "The amendment was repealed."
+  },
+  {
+   "key": "B",
+   "text": "Black Louisianans voluntarily stopped voting",
+   "misconception": "The drop was a free choice."
+  },
+  {
+   "key": "C",
+   "text": "Louisiana’s population shrank sharply after 1896",
+   "misconception": "The population collapsed."
+  },
+  {
+   "key": "D",
+   "text": "Louisiana’s voting requirements Black men could rarely meet"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Background: the Fifteenth Amendment was never repealed; the new rules worked around it.",
+  "B": "Nothing in the table shows choice; the timing matches the new constitution.",
+  "C": "Background: Louisiana’s population grew in these years; the rolls shrank because the rules changed, not because people vanished.",
+  "D": "The table’s own note names the cause: the 1898 constitution added a poll tax, a literacy test, a property requirement, and a grandfather clause. Those requirements fell hardest on Black men, and registration fell with them.",
+  "general": "1. Ask when the fall happens. The steepest drop comes between 1896 and 1898.\n2. Ask what changed then. The table’s note names the 1898 constitution and its new voting requirements.\n3. Test the other causes. No repeal, no mass choice to stop voting, and no population collapse fit the dates.\n4. Match the cause. New requirements that Black men could rarely meet cut the rolls.\nRemember: when a table turns sharply, look for the law that changed at the turn."
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Louisiana voter registration, 1896–1900. Figures from the Historic New Orleans Collection (64 Parishes) and the U.S. Commission on Civil Rights briefing paper, Barriers to Voting in Louisiana (2018).",
+  "text": "| Year | Black voters registered | White voters registered |\n| 1896 | 130,344 | 164,088 |\n| 1898 | 12,902 | 74,133 |\n| 1900 | 5,320 | 125,437 |\n\nSource: Louisiana voter registration figures, 1896–1900. Louisiana adopted a new constitution in 1898 with a poll tax, a literacy test, a property requirement, and a grandfather clause."
+ },
+ "stimulus_set": "louisiana-voters-1896-1900",
+ "source": "original; stimulus is a table of Louisiana voter registration figures from the Historic New Orleans Collection and the U.S. Commission on Civil Rights",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.4 The “New South”"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10"
+   }
+  ],
+  "primary_sources": [
+   "Louisiana voter registration figures, 1896–1900 (Historic New Orleans Collection; U.S. Commission on Civil Rights)"
+  ]
+ }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "apush-saq-0196",
+  "lesson": "apush-u6-l5",
+  "type": "saq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.13"
+  ],
+  "skills": [
+    "2.A",
+    "3.A"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "continuity-change",
+  "difficulty": 3,
+  "source": "original; stimulus written for this question from the grounding books (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.13 Politics in the Gilded Age"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Gilded Age Politics"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "National Politics"
+      }
+    ]
+  },
+  "status": "final",
+  "stimulus_set": null,
+  "stimulus": {
+    "kind": "text",
+    "text": "Gilded Age politics looked busy but changed little. The two major parties were so evenly matched that no winning candidate won a clear majority of the popular vote in any election between 1876 and 1892, and control of Congress passed back and forth. About four in five eligible voters cast ballots, and party loyalty ran deep. Yet both parties avoided the hardest questions of the age: child labor, workplace safety, railroad abuses, and the rights of Black Americans. The one issue that sharply divided them was the tariff, with Republicans favoring high rates and Democrats favoring lower ones. Behind the close elections stood the spoils system, which filled federal jobs with party workers, and the political machines, which traded jobs and services for votes in the cities.",
+    "source_note": "Original secondary passage written for this question from the grounding books (Barron's Chapter 8, Topic 6.13; 5 Steps Chapter 18; Princeton Chapter 10)."
+  },
+  "saq_slot": 1,
+  "totalPoints": 3,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify one issue that divided the two major parties in the Gilded Age.",
+      "modelAnswer": "The tariff divided the two major parties. Republicans favored high tariff rates to protect American industry, while Democrats favored lower rates. The passage names the tariff as the one issue that sharply divided them.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for identifying the tariff as the issue dividing the parties, with the parties on opposite sides.",
+          "notEarned": "Naming an issue the passage says both parties avoided, such as child labor, does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain how the spoils system shaped Gilded Age politics.",
+      "modelAnswer": "The spoils system filled federal jobs with party workers, so winning an election meant handing out thousands of jobs. Presidents spent much of their time on appointments, and party machines traded jobs and services for votes in the cities. The system tied party loyalty to jobs, which made reformers demand civil-service reform.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for explaining that the spoils system gave federal jobs as rewards for party support, with a consequence such as presidential time on appointments or machine power.",
+          "notEarned": "Saying only that the spoils system existed, without explaining how it shaped politics, does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Evaluate the extent to which the major parties addressed the problems of ordinary Americans in this period.",
+      "modelAnswer": "The major parties addressed the problems of ordinary Americans only slightly. They fought over the tariff but avoided the harder questions of child labor, workplace safety, railroad abuses, and Black rights. Machines helped immigrants with jobs and services, yet corruption stayed common, so the parties offered little real relief.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for a judgment about the extent of change that weighs both what the parties did and what they avoided, such as the tariff fight against the ignored questions.",
+          "notEarned": "Describing the parties without judging how far they addressed ordinary people's problems does not earn the point."
+        }
+      ]
+    }
+  ]
+}

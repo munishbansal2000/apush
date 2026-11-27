@@ -1,0 +1,90 @@
+{
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "id": "apush-saq-0182",
+ "lesson": "apush-u6-l3",
+ "parts": [
+  {
+   "modelAnswer": "The Knights welcomed unskilled workers into their ranks. The AFL organized only skilled workers by craft, so unskilled workers were left outside it.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one group of workers the Knights of Labor welcomed that the AFL did not organize.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one group the Knights welcomed that the AFL did not organize, such as unskilled workers, women, or Black workers.",
+     "notEarned": "Naming a group both unions welcomed, such as skilled craftsmen, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "After the Haymarket bombing of 1886, the public linked the Knights with violence and radicalism. Many Americans shied away from the labor movement, and the Knights’ membership fell sharply.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain one reason the Knights of Labor lost members after 1886.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one reason the Knights lost members after 1886, such as the public linking them with Haymarket violence.",
+     "notEarned": "Naming the Haymarket bombing without explaining how it cost the Knights members does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "The AFL sought higher wages and shorter hours for its own skilled members, a narrow set of bread-and-butter gains. The Knights campaigned for broad social reforms, such as the eight-hour day, an end to child labor, and equal pay for equal work.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain one way the AFL’s goals differed from the Knights’ goals.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one difference in goals, such as the AFL’s narrow wage-and-hours focus against the Knights’ broad reforms.",
+     "notEarned": "Naming one union’s goals without contrasting them with the other’s does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "comparison",
+ "saq_slot": 1,
+ "skills": [
+  "1.B",
+  "3.C"
+ ],
+ "source": "original; stimulus written for this question from the grounding books",
+ "status": "final",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, written for this question from Barron’s Premium 2027 Chapter 8 (Topic 6.7), 5 Steps to a 5, 2024, Chapter 18, and Princeton Review, Chapter 10.",
+  "text": "Original secondary passage, written for this question from the grounding books:\n\nThe Knights of Labor and the American Federation of Labor both organized workers in the Gilded Age, but they organized different workers for different ends. The Knights, founded in 1869, welcomed skilled and unskilled workers, women, and Black workers, and campaigned for broad reforms such as the eight-hour day and an end to child labor. The American Federation of Labor, founded in 1886 under Samuel Gompers, organized only skilled workers by craft and sought higher wages and shorter hours. After the Haymarket bombing of 1886, the Knights lost members as the public linked them with violence, while the AFL kept growing into the twentieth century."
+ },
+ "stimulus_set": null,
+ "themes": [
+  "WOR",
+  "SOC"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 6
+}

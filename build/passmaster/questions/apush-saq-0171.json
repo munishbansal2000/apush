@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0171",
+ "type": "saq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "skills": [
+  "1.B",
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Interstate Commerce Act, Feb. 4, 1887, 24 Stat. 379, Secs. 1-3. Public domain. Text verified against the Statutes at Large via govtrack (STATUTE-24-Pg379) and Original Sources.",
+  "text": "Interstate Commerce Act of 1887, Sections 1-3 (ellipses mark omissions):\n\n\"All charges made for any service rendered or to be rendered in the transportation of passengers or property as aforesaid, or in connection therewith, or for the receiving, delivering, storage, or handling of such property, shall be reasonable and just; and every unjust and unreasonable charge for such service is prohibited and declared to be unlawful.\"\n\n\"SEC. 2. That if any common carrier subject to the provisions of this act shall, directly or indirectly, by any special rate, rebate, drawback, or other device, charge, demand, collect, or receive from any person or persons a greater or less compensation for any service rendered... than it charges... from any other person or persons for doing for him or them a like and contemporaneous service in the transportation of a like kind of traffic under substantially similar circumstances and conditions, such common carrier shall be deemed guilty of unjust discrimination, which is hereby prohibited and declared to be unlawful.\"\n\n\"SEC. 3. That it shall be unlawful for any common carrier subject to the provisions of this act to make or give any undue or unreasonable preference or advantage to any particular person, company, firm, corporation, or locality...\""
+ },
+ "stimulus_set": null,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one railroad practice the Interstate Commerce Act declared unlawful.",
+   "modelAnswer": "The act declared unjust discrimination unlawful, including charging different shippers different rates for the same service. It also banned rebates and special rates given to favored customers.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one banned practice from the act, such as unjust discrimination, rebates, special rates, or undue preference.",
+     "notEarned": "Naming a practice the act does not ban, or a vague answer with no practice identified, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain why farmers in the 1880s wanted the federal government to regulate railroads.",
+   "modelAnswer": "Farmers depended on the railroads to carry their crops to market, and railroads charged high rates where they held a monopoly while giving rebates to big shippers. The states could not reach interstate rates after Wabash v. Illinois in 1886, so only Congress could act.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one farmer grievance or one reason federal action was needed, such as monopoly rates, rebates to large shippers, or the Wabash decision blocking state regulation.",
+     "notEarned": "Restating that farmers disliked railroads, with no specific reason explained, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one reason the Interstate Commerce Act had limited effect in its first years.",
+   "modelAnswer": "The act created the Interstate Commerce Commission but gave it little power to set rates, and the courts narrowed its authority further. Railroads also found ways around the rules, so real rate regulation took years to develop.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limit, such as the Commission's weak powers, court decisions narrowing it, or railroad evasion.",
+     "notEarned": "Claiming the act solved the problem at once, or giving a limit with no explanation, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The Grange and Farmers' Alliances"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

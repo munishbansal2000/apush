@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1923",
+ "lesson": "apush-u6-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.11"
+ ],
+ "skills": [
+  "2.C"
+ ],
+ "themes": [
+  "SOC",
+  "MIG"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "The Settlement House Movement"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.11 Reform in the Gilded Age"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "National Park Service, settlement house history",
+   "Spartacus Educational, National Federation of Settlements"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "u6-611-settlements",
+ "stimulus": {
+  "kind": "table",
+  "text": "Settlement houses in the United States:\n\n| Year | Settlement houses |\n| 1886 | 1 |\n| 1891 | 6 |\n| 1897 | 74 |",
+  "source_note": "Counts: National Park Service (first American settlement house, the Neighborhood Guild, opened in New York in 1886; 74 houses by 1897; 103 by 1900) and the Spartacus Educational settlement history (6 settlements in 1891, 74 in 1897, over 100 in 1900)."
+ },
+ "stem": "A historian claims the table proves settlement houses solved urban poverty. What is the strongest objection?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The table leaves out the year 1886 entirely",
+   "misconception": "The table includes 1886, with 1 house, so nothing is left out there."
+  },
+  {
+   "key": "B",
+   "text": "The table counts houses in the wrong order for the years given",
+   "misconception": "The years run 1886, 1891, 1897, in the right order."
+  },
+  {
+   "key": "C",
+   "text": "Settlement houses were built only in the countryside",
+   "misconception": "Settlement houses stood in poor city neighborhoods, not the countryside."
+  },
+  {
+   "key": "D",
+   "text": "The table counts houses, not results, so it shows growth, not falling poverty"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "The 1886 row is present, listing 1 house, so the table leaves out no year it claims.",
+  "B": "The rows run in order from 1886 to 1897, so the order is right.",
+  "C": "Background from the books: settlements stood in immigrant city neighborhoods, not the countryside.",
+  "D": "A count of houses measures how many existed, not whether the poor grew less poor.",
+  "general": "Ask what a count can prove.\n1. The table gives the number of settlement houses in three years.\n2. The numbers rise fast, from 1 to 74.\n3. Rising numbers prove the movement spread.\n4. They cannot prove poverty fell, since the table measures houses built, not results achieved.\nRemember: a count of efforts is not a measure of success."
+ }
+}

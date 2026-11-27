@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1627",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "1.B",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "stem": "Which statement best captures the bargain struck by the Pacific Railway Act's land grants?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Pacific Railway Act, July 1, 1862, 12 Stat. 489, Sec. 3. Public domain. Text verified against the Gilder Lehrman excerpt (Our Documents) and the Supreme Court's quotation of Sec. 3 in Platt v. Union Pacific Railroad Co., 99 U.S. 48 (1878).",
+  "text": "Pacific Railway Act of 1862, Section 3 (ellipses mark omissions):\n\n\"That there be, and is hereby, granted to the said company, for the purpose of aiding in the construction of said railroad and telegraph line, and to secure the safe and speedy transportation of the mails, troops, munitions of war, and public stores thereon, every alternate section of public land, designated by odd numbers, to the amount of five alternate sections per mile on each side of said railroad, on the line thereof, and within the limits of ten miles on each side of said road, not sold, reserved, or otherwise disposed of by the United States, and to which a preemption or homestead claim may not have attached, at the time the line of said road is definitely fixed: Provided, That all mineral lands shall be excepted from the operation of this act...\""
+ },
+ "stimulus_set": "railroad-land-grants",
+ "options": [
+  {
+   "key": "A",
+   "text": "The government bought the railroads and ran them as public works",
+   "misconception": "Background: the railroads stayed private companies; the government subsidized them, it did not buy or run them."
+  },
+  {
+   "key": "B",
+   "text": "The railroads paid the government for the right to cross public land",
+   "misconception": "Background: the land flowed from the government to the companies, not the other way; the companies paid nothing for the grants."
+  },
+  {
+   "key": "C",
+   "text": "The government gave the railroads land but kept control of their freight rates",
+   "misconception": "Background: the companies resisted rate regulation for decades, and federal regulation only arrived with the Interstate Commerce Act in 1887."
+  },
+  {
+   "key": "D",
+   "text": "The government paid in public land for a road private companies built"
+  }
+ ],
+ "rationales": {
+  "A": "Background: the Union Pacific and Central Pacific stayed private, profit-seeking companies. The government subsidized construction; it never owned the roads.",
+  "B": "Background: Section 3 grants the land to the company. The company paid nothing for it; the grant was the subsidy.",
+  "C": "Background: the act set no freight rates. Background: the companies fought regulation for years, and Congress only created the Interstate Commerce Commission in 1887.",
+  "D": "Section 3's purpose clause gives the bargain away: public land, granted to aid construction and secure the mails, troops, and stores. The public paid in land; private companies built the road.",
+  "general": "A subsidy is a deal, so ask who paid and who built.\n1. Find the payment in Section 3: public land, five alternate sections per mile on each side.\n2. Find the builder: a private company, granted the land to aid its construction.\n3. Name the bargain. Background: the public paid in land for a road it wanted, and the companies kept the land and the profits.\nRemember: a grant is a price, so always ask what the giver got and what the taker kept."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "Government Encouragement of Western Settlement"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

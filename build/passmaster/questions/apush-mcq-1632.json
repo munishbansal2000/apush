@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1632",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "1.B",
+  "6.B"
+ ],
+ "themes": [
+  "WXT",
+  "WOR"
+ ],
+ "reasoning": "continuity-change",
+ "stem": "Which broader change in western mining does Twain's description of Virginia City best illustrate?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Mark Twain, Roughing It (1872), ch. 52. Public domain. Text verified against the Standard Ebooks edition (standardebooks.org/ebooks/mark-twain/roughing-it/text/chapter-52).",
+  "text": "Mark Twain, Roughing It (1872), Chapter 52, on Virginia City, Nevada:\n\n\"The year 1863 was perhaps the very top blossom and culmination of the 'flush times.' Virginia swarmed with men and vehicles to that degree that the place looked like a very hive—that is when one's vision could pierce through the thick fog of alkali dust that was generally blowing in summer... Speculation ran riot, and yet there was a world of substantial business going on, too. All freights were brought over the mountains from California (150 miles) by pack-train partly, and partly in huge wagons drawn by such long mule teams that each team amounted to a procession... All the bullion was shipped in bars by stage to San Francisco... There were three stages a day, each way, and I have seen the out-going stages carry away a third of a ton of bullion each, and more than once I saw them divide a two-ton lot and take it off.\"\n\n\"All along under the center of Virginia and Gold Hill, for a couple of miles, ran the great Comstock silver lode — a vein of ore from fifty to eighty feet thick between its solid walls of rock — a vein as wide as some of New York's streets.\"\n\n\"Virginia was a busy city of streets and houses above ground. Under it was another busy city, down in the bowels of the earth, where a great population of men thronged in and out among an intricate maze of tunnels and drifts, flitting hither and thither under a winking sparkle of lights, and over their heads towered a vast web of interlocking timbers that held the walls of the gutted Comstock apart.\""
+ },
+ "stimulus_set": "comstock-twain",
+ "options": [
+  {
+   "key": "A",
+   "text": "Mining stayed a business of lone prospectors with pans and shovels",
+   "misconception": "Background: Twain's underground city of tunnels and timbering needed capital no lone prospector had; placer mining was the early stage, not the lasting one."
+  },
+  {
+   "key": "B",
+   "text": "Mining moved west to east as the gold in California ran out",
+   "misconception": "Background: mining spread across the West, but the change Twain shows is in how mining was organized, not in which direction it moved."
+  },
+  {
+   "key": "C",
+   "text": "Mining was outlawed in Nevada after the Comstock Lode was found",
+   "misconception": "Background: Nevada mining was never outlawed; the Comstock mines operated for decades and made Virginia City one of the West's largest towns."
+  },
+  {
+   "key": "D",
+   "text": "Mining became an industrial business run by large companies with wage workers"
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: placer mining with pans and sluices came first, but the deep lode needed expensive machinery — hoists, pumps, and stamp mills, so large firms took over and wage workers replaced prospectors.",
+  "B": "Background: the mines did spread from California to Nevada and beyond, but Twain's passage shows a change in scale and organization, not geography.",
+  "C": "Background: the Comstock mines ran for decades under private ownership. No ban followed the strike; the strike is what built the town.",
+  "D": "Twain's underground city proves it: miles of tunnels, a web of timbers, whole crews working shifts. That is a factory below ground, run by companies, not a prospector's camp.",
+  "general": "Think of the mine as a factory that happens to sit underground.\n1. Measure the scale Twain shows: miles of tunnels, a vast web of timbers, crowds of men working below.\n2. Ask who could pay for that. Background: no lone prospector could; only a company with capital and wage workers could.\n3. Name the change. Background: mining grew up from panning to industry, with investors, shares, and hired hands.\nRemember: when the tool gets too big for one person, the business stops being one person's."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The Mining and Lumbering Frontier"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

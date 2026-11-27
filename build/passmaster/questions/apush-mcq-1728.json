@@ -1,0 +1,76 @@
+{
+  "id": "apush-mcq-1728",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "answerKey": "C",
+  "skills": [
+    "1.B",
+    "5.B"
+  ],
+  "themes": [
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "stem": "The price of American steel rails fell from about $160 a ton in 1867 to about $75 a ton in 1875. What best explains that fall?",
+  "stimulus": {
+    "kind": "table",
+    "source_note": "United States steel production, in thousands of long tons, from the Encyclopaedia Britannica, 11th edition (1911), Table IX, Production of Steel. Public domain.",
+    "text": "United States steel production, in thousands of long tons:\n\n| Year | Steel produced |\n| 1870 | 69 |\n| 1880 | 1,247 |\n| 1890 | 4,277 |\n| 1900 | 10,188 |"
+  },
+  "stimulus_set": "steel-output",
+  "options": [
+    {
+      "key": "A",
+      "text": "Railroads stopped buying steel rails after 1867",
+      "misconception": "Background: railroads bought more steel rails every year; by 1882 most American steel went into rails."
+    },
+    {
+      "key": "B",
+      "text": "The government fixed the price of steel rails by law in 1867",
+      "misconception": "Background: no law fixed steel prices; the government of this era left prices to the market."
+    },
+    {
+      "key": "C",
+      "text": "The Bessemer process let mills make far more steel for far less"
+    },
+    {
+      "key": "D",
+      "text": "American mills began importing all their steel from Britain",
+      "misconception": "Background: American mills made their own steel, and by 1900 the United States produced more steel than Britain."
+    }
+  ],
+  "rationales": {
+    "A": "Background: railroad demand for steel rails grew through the whole period. Falling prices came with rising sales, not with buyers walking away.",
+    "B": "Background: the federal government did not fix steel prices. The price fell because making steel got cheaper, not because a law said so.",
+    "C": "Background from the books: the Bessemer process, patented in 1856, greatly reduced the cost of steel. As mills adopted it, output exploded, from 69 thousand tons in 1870 toward 10 million by 1900, and the price of rails fell with the cost of making them.",
+    "D": "Background: American mills produced their own steel, and by 1900 the United States made more steel than Britain. Imports did not drive the price down.",
+    "general": "Ask what a price fall needs: cheaper making.\n1. In 1867 a ton of steel rail cost about $160; by 1875 it cost about $75.\n2. Background: the Bessemer process cut the cost of turning iron into steel, so mills could sell rails for less and still profit.\n3. The table shows the result: output climbed from 69 thousand tons toward 10 million.\nRemember: a price falls when the making gets cheaper, not when buyers vanish."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Steel and the Bessemer Process"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "The Second Industrial Revolution"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Age of Invention and Economic Growth"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)"
+}

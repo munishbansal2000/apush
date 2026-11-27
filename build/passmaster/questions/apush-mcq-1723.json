@@ -1,0 +1,87 @@
+{
+  "id": "apush-mcq-1723",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "answerKey": "B",
+  "skills": [
+    "1.B",
+    "5.B"
+  ],
+  "themes": [
+    "WXT",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "stem": "How did cheap steel change the skylines of American cities in the 1880s?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "The Eads Bridge at St. Louis, 1874, Library of Congress (ppmsca08973u). Public domain. https://commons.wikimedia.org/wiki/File:Eads_Bridge_St_Louis_1874_ppmsca08973u.jpg",
+    "text": "The image is a large 1874 print titled \"THE BRIDGE AT ST. LOUIS.\" In the center, a great three-arched bridge crosses the wide Mississippi River, with steamboats passing beneath it and the city of St. Louis on the far bank. Smaller panels around the edges show the bridge under construction, its stone piers, and a portrait of its designer, James B. Eads. A table of measurements runs along the bottom."
+  },
+  "stimulus_set": "eads-bridge",
+  "options": [
+    {
+      "key": "A",
+      "text": "Cities banned tall buildings, so steel was used only for bridges",
+      "misconception": "Background: cities built taller, not shorter; the first skyscrapers rose in Chicago in the 1880s."
+    },
+    {
+      "key": "B",
+      "text": "Steel frames let builders raise towers above the old four-story limit"
+    },
+    {
+      "key": "C",
+      "text": "Steel replaced brick in houses, so every home became a steel house",
+      "misconception": "Background: homes stayed wood and brick; steel frames went into tall office buildings, not houses."
+    },
+    {
+      "key": "D",
+      "text": "Steel made elevators unnecessary, since people could climb steel stairs",
+      "misconception": "Background: elevators became more important, not less; tall steel buildings needed a way to move people up and down."
+    }
+  ],
+  "rationales": {
+    "A": "Background: the 1880s saw the first skyscrapers, not a ban on them. Chicago's Home Insurance Building of 1885 rose ten stories on a steel frame.",
+    "B": "Background from the books: strong Bessemer steel girders let builders put up taller buildings around a steel framework, and elevators, in use since the 1850s, moved people up and down them. Before the Civil War, buildings rarely rose above four or five stories.",
+    "C": "Background: steel framed office towers and bridges, not ordinary houses. Homes stayed wood and brick through the whole period.",
+    "D": "Background: elevators arrived with the tall buildings, not instead of them. A ten-story office needs a lift, not just stairs.",
+    "general": "Ask what holds a tall building up.\n1. Background: brick walls can only carry so many floors before they grow too thick to be useful.\n2. Background: a steel frame carries the weight instead, so builders could raise towers far above the old four- or five-story limit.\n3. Background: the elevator, in use since the 1850s and improved for tall buildings, made those high floors worth reaching.\nRemember: a skyline changes when a new material carries the load."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Steel and the Bessemer Process"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "The Second Industrial Revolution"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Age of Invention and Economic Growth"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)",
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1723",
+      "file": "u6/original-u6-tech-08.jpg",
+      "caption": "The Eads Bridge at St. Louis, 1874, with construction panels",
+      "alt": "A large 1874 print shows the three-arched Eads Bridge crossing the Mississippi at St. Louis, with steamboats below and construction scenes and a portrait of James B. Eads around the edges",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Eads_Bridge_St_Louis_1874_ppmsca08973u.jpg",
+      "license": "Public domain: Library of Congress print of the Eads Bridge, 1874."
+    }
+  ]
+}

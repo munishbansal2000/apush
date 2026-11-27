@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-1959",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.13"
+  ],
+  "skills": [
+    "6.C"
+  ],
+  "themes": [
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "difficulty": 3,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "B. Politics, Big Business, and Corruption in the Gilded Age"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Gilded Age Politics"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "National Politics"
+      }
+    ],
+    "primary_sources": [
+      "Presidential election returns, 1876-1896 (American Presidency Project)"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-613-elections-table",
+  "stimulus": {
+    "kind": "table",
+    "text": "Presidential elections, 1876–1896. Popular vote shares and electoral votes for the leading candidates.\n\n| Year | Candidate | Party | Popular vote | Electoral votes |\n|---|---|---|---|---:|\n| 1876 | Rutherford B. Hayes | Republican | 48.0% | 185 |\n| 1876 | Samuel J. Tilden | Democratic | 51.0% | 184 |\n| 1880 | James A. Garfield | Republican | 48.3% | 214 |\n| 1880 | Winfield S. Hancock | Democratic | 48.2% | 155 |\n| 1884 | Grover Cleveland | Democratic | 48.9% | 219 |\n| 1884 | James G. Blaine | Republican | 48.3% | 182 |\n| 1888 | Benjamin Harrison | Republican | 47.8% | 233 |\n| 1888 | Grover Cleveland | Democratic | 48.6% | 168 |\n| 1892 | Grover Cleveland | Democratic | 46.0% | 277 |\n| 1892 | Benjamin Harrison | Republican | 43.0% | 145 |\n| 1892 | James B. Weaver | People’s Party | 8.5% | 22 |\n| 1896 | William McKinley | Republican | 51.0% | 271 |\n| 1896 | William Jennings Bryan | Democratic | 46.7% | 176 |\n\nIn 1896 the People’s Party also nominated Bryan.",
+    "source_note": "Presidential election returns, 1876–1896, American Presidency Project (via the Gilder Lehrman Institute). Popular vote shares rounded to one decimal place."
+  },
+  "stem": "What does James B. Weaver's result in 1892 best show about the People's Party?",
+  "options": [
+    {
+      "key": "A",
+      "text": "It won the presidency by carrying the South and the West",
+      "misconception": "Weaver finished third with 22 electoral votes, far from winning."
+    },
+    {
+      "key": "B",
+      "text": "It drew its votes mainly from eastern industrial cities",
+      "misconception": "The Populists drew strength from farmers in the South and West, not eastern cities."
+    },
+    {
+      "key": "C",
+      "text": "It agreed with the major parties on the money question",
+      "misconception": "The Populists demanded free silver, which the major parties resisted."
+    },
+    {
+      "key": "D",
+      "text": "It broke the two-party hold enough to win electoral votes"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "Weaver took 8.5 percent and 22 votes, a strong third-place showing, not a win.",
+    "B": "Populist strength lay with southern and western farmers, not city voters.",
+    "C": "Free silver was the Populists' demand against the gold-standard parties.",
+    "D": "A third party winning 22 electoral votes shows the two-party hold cracking.",
+    "general": "Put Weaver's row beside the other 1892 rows.\n1. Weaver took 8.5 percent of the popular vote and 22 electoral votes.\n2. No other third-party candidate in the table won any electoral votes.\n3. Winning electoral votes means carrying whole states, not just scattering votes.\n4. Background from the books: the Populists spoke for farmers the major parties had ignored.\nRemember: electoral votes show where a movement carried states, not just votes."
+  }
+}

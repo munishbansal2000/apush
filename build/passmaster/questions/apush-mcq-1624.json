@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1624",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "stem": "What limit did the Homestead Act itself place on a settler's claim?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Homestead Act of 1862, 12 Stat. 392. Public domain. Text verified against the National Park Service transcription (home.nps.gov/home/homestead-act-of-1862.htm) and Wikisource (en.wikisource.org/wiki/Homestead_Act).",
+  "text": "Homestead Act of 1862, Sections 1-2 (ellipses mark omissions):\n\n\"That any person who is the head of a family, or who has arrived at the age of twenty-one years, and is a citizen of the United States, or who shall have filed his declaration of intention to become such, ... shall ... be entitled to enter one quarter section or a less quantity of unappropriated public lands ... Provided, That any person owning and residing on land may ... enter other land lying contiguous to his or her said land, which shall not, with the land so already owned and occupied, exceed in the aggregate one hundred and sixty acres.\"\n\n\"And upon filing the said affidavit with the register or receiver, and on payment of ten dollars, he or she shall thereupon be permitted to enter the quantity of land specified: Provided, however, That no certificate shall be given or patent issued therefor until the expiration of five years from the date of such entry.\""
+ },
+ "stimulus_set": "homestead-act",
+ "options": [
+  {
+   "key": "A",
+   "text": "The settler had to be born in the United States",
+   "misconception": "Background: the act welcomed citizens and immigrants who had declared their intention to become citizens; birthplace was not the test."
+  },
+  {
+   "key": "B",
+   "text": "The settler had to plant trees on half of the claim",
+   "misconception": "Background: tree planting came later, in the Timber Culture Act of 1873, which offered extra land for planting trees."
+  },
+  {
+   "key": "C",
+   "text": "The claim could not exceed 160 acres in total, including land already owned"
+  },
+  {
+   "key": "D",
+   "text": "The claim had to lie within ten miles of a railroad line",
+   "misconception": "Background: the ten-mile limit belongs to the Pacific Railway Act's land grants to railroads, not to homestead claims."
+  }
+ ],
+ "rationales": {
+  "A": "Background: Section 1 admits citizens and immigrants who filed a declaration of intention. Birth in the United States is not required.",
+  "B": "Background: planting trees was the Timber Culture Act's deal in 1873. The Homestead Act asked for residence and cultivation, not trees.",
+  "C": "Section 1 states the cap in plain numbers: the new entry plus land already owned and occupied may not exceed 160 acres in total.",
+  "D": "Background: ten miles on each side of the road is the railroad grant's boundary in the Pacific Railway Act, not a homestead rule.",
+  "general": "The act is generous with land but careful with numbers, so watch the numbers.\n1. Find the only number that caps a claim: 160 acres, counting land the settler already owns.\n2. Set aside numbers from other laws. Background: tree planting belongs to the Timber Culture Act of 1873, and ten miles belongs to the railroad act.\n3. Name the limit the act itself sets. No settler could hold more than 160 acres under it.\nRemember: when a law gives something away, the cap it writes in is the first thing to find."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "Government Encouragement of Western Settlement"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

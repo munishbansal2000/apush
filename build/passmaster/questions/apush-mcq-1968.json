@@ -1,0 +1,89 @@
+{
+  "id": "apush-mcq-1968",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "test",
+  "unit": 6,
+  "topics": [
+    "6.13"
+  ],
+  "skills": [
+    "3.B"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "comparison",
+  "difficulty": 3,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "A. Farmers and the Populist Party"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 17",
+        "section": "The Populist Revolt"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Silver Issue and the Populist Movement"
+      }
+    ],
+    "primary_sources": [
+      "Frank Leslie's Illustrated Newspaper, 'The People's Party Convention - Delegates Who Were Not In It,' 1892"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-613-peoples-convention",
+  "stimulus": {
+    "kind": "image",
+    "text": "Political cartoon, Frank Leslie’s Illustrated Newspaper, 1892, “The People’s Party Convention—Delegates Who Were Not In It.” At the top left, a group is labeled “A Mixed Delegation.” At the right, a tall figure with his back turned is labeled “Farmers Alliance.” In the center, two men shake hands under the label “Lobby Debate.” In the foreground, a man sleeps on the floor, captioned “Away from the Excitement.”",
+    "source_note": "Frank Leslie’s Illustrated Newspaper, 1892, “The People’s Party Convention—Delegates Who Were Not In It.” Public domain: cartoon published 1892 (pre-1930); Library of Congress, LCCN2004677367. Labels checked against the image."
+  },
+  "stem": "What does the back-turned figure labeled 'Farmers Alliance' suggest?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The Alliance had already taken over the People's Party completely",
+      "misconception": "A back-turned figure stands apart, not in command of the party."
+    },
+    {
+      "key": "B",
+      "text": "The Alliance opposed all political action by farmers everywhere",
+      "misconception": "The Alliance was a political movement; the figure shows division, not opposition to politics."
+    },
+    {
+      "key": "C",
+      "text": "The Alliance sent the largest delegation to the Omaha convention",
+      "misconception": "The figure stands outside the convention, not inside it as a delegate."
+    },
+    {
+      "key": "D",
+      "text": "Even the farmers' own movement was divided about the new party"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "Turning his back shows distance, not control of the party.",
+    "B": "Alliance members built the party; the question is why some held back.",
+    "C": "The cartoon places him outside, among those who were not in it.",
+    "D": "His turned back shows that not all Alliance farmers joined the party.",
+    "general": "Read the figure's posture, not just its label.\n1. The tall figure wears the label 'Farmers Alliance.'\n2. He stands with his back turned to the convention scene.\n3. A back turned means distance, not support.\n4. Background from the books: many Alliance leaders split over leaving the old parties.\nRemember: in a cartoon, a turned back means a group holding itself apart."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1968",
+      "file": "u6/saq-set-02-q3.jpg",
+      "caption": "“The People’s Party Convention—Delegates Who Were Not In It,” 1892",
+      "alt": "Leslie cartoon: a mixed delegation, a back-turned Farmers Alliance figure, a lobby debate, and a man asleep captioned Away from the Excitement",
+      "license": "Public domain: cartoon published 1892.",
+      "source_url": "https://www.loc.gov/pictures/item/2004677367/"
+    }
+  ]
+}

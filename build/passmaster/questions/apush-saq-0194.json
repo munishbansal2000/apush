@@ -1,0 +1,90 @@
+{
+ "id": "apush-saq-0194",
+ "lesson": "apush-u6-l5",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.12"
+ ],
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "source": "original; stimulus written from the grounding books or verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.12 Controversies over the Role of Government in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The Populist Revolt"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "National Politics"
+   }
+  ]
+ },
+ "status": "final",
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "text",
+  "text": "Original secondary passage, written for this question from the grounding books:\n\nIn the Gilded Age, reformers pressed the federal government to restrain railroads and trusts. Congress answered with the Interstate Commerce Act of 1887, which created the Interstate Commerce Commission, and the Sherman Antitrust Act of 1890, which outlawed combinations in restraint of trade. Both laws looked strong on paper, but both proved weak in practice. The Commission was chronically short of money, and the courts narrowed its powers; the Sherman Act was narrowed by the Supreme Court in United States v. E. C. Knight Company in 1895, which held that manufacturing was not interstate commerce.",
+  "source_note": "Original secondary passage, written for this question from Barron's Premium 2027, Chapter 8 (Topic 6.12) and 5 Steps to a 5, 2024, Chapter 17 ('The Populist Revolt') and Chapter 18 ('Gilded Age Politics'). Dates and holdings follow the books."
+ },
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one federal law passed in the Gilded Age to regulate business.",
+   "modelAnswer": "The Interstate Commerce Act of 1887 created the Interstate Commerce Commission to regulate railroads. It was the first federal law to regulate a private industry.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one federal regulatory law of the period, such as the Interstate Commerce Act of 1887 or the Sherman Antitrust Act of 1890.",
+     "notEarned": "Naming a state law, or a law from outside the period, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain why early federal regulation of business proved weak in practice.",
+   "modelAnswer": "The Interstate Commerce Commission was chronically short of money, so it could not enforce its orders. The courts also narrowed the new laws, as the Supreme Court ruled in 1895 that manufacturing was not interstate commerce and lay beyond the Sherman Act.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limit on early regulation, such as weak funding, narrow court readings, or the trade-manufacturing distinction.",
+     "notEarned": "Restating that regulation was weak without giving a reason does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Evaluate the extent to which federal regulation changed the American economy in the period 1865–1898.",
+   "modelAnswer": "Federal regulation changed the economy only a little in this period: the new laws put the idea of regulation into federal law, yet the Commission and the Sherman Act left the trusts largely untouched. The change was real as a precedent, but small as a restraint on business.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for a judgment about the extent of change that weighs both a gain, such as the precedent of federal regulation, and a limit, such as weak enforcement.",
+     "notEarned": "Describing the laws without judging how far the change reached does not earn the point."
+    }
+   ]
+  }
+ ]
+}

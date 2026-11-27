@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1655",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "B",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "MIG"
+ ],
+ "reasoning": "causation",
+ "stem": "Why were the Hispanos' Spanish-language land titles usually rejected by American officials?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage; facts from Barron's Premium 2027, Chapter 8, Topic 6.2, \"Protecting Communal Lands of the Southwestern Hispanos.\"",
+  "text": "Original secondary passage, written for this question from the grounding books:\n\nAfter the United States took New Mexico from Mexico in 1848, Anglo newcomers moved in and squatted on lands that Hispano villagers had long used in common for grazing, timber, and water. The Homestead Act of 1862 gave those squatters a degree of legitimacy in the eyes of the federal government. By the 1890s the Hispanos of northern New Mexico had lost more than 90 percent of their traditional lands, and their Spanish-language titles were usually rejected because officials demanded documentation in English. In protest, groups calling themselves Las Gorras Blancas (the White Caps) cut settlers' fences and burned property, and some of their members formed the United People's Party and won seats in the New Mexico legislature in 1890."
+ },
+ "stimulus_set": "gorras-blancas",
+ "options": [
+  {
+   "key": "A",
+   "text": "The titles had been forged by Mexican officials after the war",
+   "misconception": "Background: the titles were genuine records of long-held communal lands; forgery was never the issue."
+  },
+  {
+   "key": "B",
+   "text": "Officials demanded documentation in English, which the Spanish titles could not provide"
+  },
+  {
+   "key": "C",
+   "text": "The Treaty of Guadalupe Hidalgo had canceled all Spanish land titles",
+   "misconception": "Background: the treaty promised to respect Mexican land titles; the failure was in how American officials administered the claims."
+  },
+  {
+   "key": "D",
+   "text": "The villagers had never lived on the lands they claimed",
+   "misconception": "Background: the villagers had used the lands in common for generations for grazing, timber, and water."
+  }
+ ],
+ "rationales": {
+  "A": "Background: the titles recorded generations of communal use. No forgery is alleged in the books; the barrier was language and form.",
+  "B": "The passage states it: titles were usually rejected because officials demanded documentation in English. Background from the books: the Surveyor of General Claims Office generally demanded that documentation be in English, but Hispano titles were in Spanish.",
+  "C": "Background: the Treaty of Guadalupe Hidalgo pledged to honor Mexican titles. The loss came from administration, not from the treaty's text.",
+  "D": "Background: the villagers lived in the villages and worked the surrounding lands in common. Their use was long and continuous.",
+  "general": "A title is only as good as the language the office will read.\n1. Find the officials' rule: documentation of ownership in English.\n2. Find the villagers' papers: titles in Spanish, recording generations of common use.\n3. Name the mismatch. A real claim, written in the wrong language for the office that judged it.\nRemember: procedure can take land as surely as an army can."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "Government Encouragement of Western Settlement"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

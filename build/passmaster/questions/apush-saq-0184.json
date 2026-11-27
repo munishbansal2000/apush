@@ -1,0 +1,100 @@
+{
+ "difficulty": 4,
+ "figures": [
+  {
+   "alt": "A photograph of the Arcade Building in Pullman, Chicago, in 1894, with a long line of uniformed Illinois National Guard troops in formation in front of it and a crowd of onlookers in the foreground",
+   "caption": "Illinois National Guard troops at the Arcade Building, Pullman, Chicago, 1894",
+   "file": "u6/original-u6-labor-pullman-arcade.jpg",
+   "id": "fig-apush-saq-0184",
+   "license": "Public domain: photograph published 1894.",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Pullman_strikers_outside_Arcade_Building.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "id": "apush-saq-0184",
+ "lesson": "apush-u6-l3",
+ "parts": [
+  {
+   "modelAnswer": "The photograph shows Illinois National Guard troops in formation outside the Arcade Building in Pullman. Armed troops were deployed to the company town during the strike.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one thing the photograph shows about the government’s response to the Pullman strike.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one visible sign of the government response, such as armed troops deployed at Pullman.",
+     "notEarned": "Describing the building without noting the troops does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "The American Railway Union’s boycott stopped trains carrying Pullman cars, which halted interstate commerce and the mail. President Cleveland sent federal troops to keep the trains and the mail moving.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain why the federal government sent troops during the Pullman strike.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining why troops were sent, such as to protect interstate commerce and the mail.",
+     "notEarned": "Naming the Pullman strike without explaining why troops were sent does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "The strike’s defeat and his jailing for defying an injunction convinced Debs that unions alone could not win against business and government. He turned to socialism and later helped found the Socialist Party of America.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain one way the Pullman strike changed Eugene Debs’s views.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one change in Debs’s views, such as his turn to socialism after the strike’s defeat.",
+     "notEarned": "Naming Debs as the strike’s leader without explaining how his views changed does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "causation",
+ "saq_slot": 3,
+ "skills": [
+  "3.A",
+  "1.B"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph of Illinois National Guard troops outside the Arcade Building in Pullman, Chicago, during the Pullman strike of 1894. Public domain (Wikimedia Commons).",
+  "text": "Photograph of Illinois National Guard troops outside the Arcade Building in Pullman, Chicago, during the Pullman strike of 1894. A large brick building fills the frame, and a long line of uniformed Illinois National Guard troops stands in formation in front of it, with a band at the left. A crowd of onlookers watches from the foreground."
+ },
+ "stimulus_set": null,
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 6
+}

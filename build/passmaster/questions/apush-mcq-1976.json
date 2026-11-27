@@ -1,0 +1,89 @@
+{
+  "id": "apush-mcq-1976",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.13"
+  ],
+  "skills": [
+    "2.B"
+  ],
+  "themes": [
+    "PCE",
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "difficulty": 3,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "The Election of 1896 and the “Cross of Gold” Speech"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Gilded Age Politics"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Silver Issue and the Populist Movement"
+      }
+    ],
+    "primary_sources": [
+      "Frederick Burr Opper, 'The Silver-Tongued Ventriloquist and His Dummies,' Puck, August 12, 1896"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-613-silver-ventriloquist",
+  "stimulus": {
+    "kind": "image",
+    "text": "Political cartoon, “The Silver-Tongued Ventriloquist and His Dummies,” by Frederick Burr Opper, Puck, August 12, 1896. A large bearded man wearing a sash labeled “Silver Mine Owner” sits on a box marked “16 to 1.” He holds a small dummy labeled “Bryan” who waves a paper reading “Free Silver Harangues.” At the left, three more small dummies sit in a box, labeled “Tillman,” “Peffer,” and “Altgeld.” At the right, another dummy labeled “Sewall” sits in a box. The caption reads, “If the Show Succeeds, He’ll Get All the Profits.”",
+    "source_note": "Frederick Burr Opper, ‘The Silver-Tongued Ventriloquist and His Dummies,’ Puck, August 12, 1896. Public domain: cartoon published 1896 (pre-1930); Library of Congress, LCCN2012648552. Labels and caption checked against the image."
+  },
+  "stem": "What does the caption 'If the Show Succeeds, He'll Get All the Profits' add?",
+  "options": [
+    {
+      "key": "A",
+      "text": "It says Bryan would keep all the money the campaign raised",
+      "misconception": "The 'he' is the mine owner sitting behind the dummies, not Bryan."
+    },
+    {
+      "key": "B",
+      "text": "It says the voters would profit most from free silver",
+      "misconception": "The caption gives the profits to one man, not to the voters."
+    },
+    {
+      "key": "C",
+      "text": "It says the mine owner, not the voters, would gain from free silver"
+    },
+    {
+      "key": "D",
+      "text": "It says the show would fail because the dummies were too small",
+      "misconception": "The caption speaks of success and profits, not of the show failing."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "Bryan is the dummy, so the profits do not go to him.",
+    "B": "One man gets all the profits, which leaves the voters out.",
+    "C": "The mine owner runs the show, so success pays him alone.",
+    "D": "The caption imagines the show succeeding, not failing.",
+    "general": "Read the caption as the cartoon's punch line.\n1. 'He' points to the ventriloquist, the silver mine owner.\n2. 'All the profits' means the gains from free silver go to one man.\n3. The farmers and workers who backed silver get no share in the caption.\n4. The caption turns a campaign for the people into a business deal.\nRemember: a caption that names the winner of a policy tells you whose interest it serves."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1976",
+      "file": "u6/pr25e-test1-q29.jpg",
+      "caption": "“The Silver-Tongued Ventriloquist and His Dummies,” Puck, August 12, 1896",
+      "alt": "Opper cartoon: a giant silver mine owner seated on a box marked 16 to 1 holds a small Bryan dummy waving a paper reading Free Silver Harangues, with other small dummies in boxes at each side.",
+      "license": "Public domain: Puck cartoon published 1896.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/The_silver-tongued_ventriloquist_and_his_dummies_-_F._Opper._LCCN2012648552.jpg"
+    }
+  ]
+}

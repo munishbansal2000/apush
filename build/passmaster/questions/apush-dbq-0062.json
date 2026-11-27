@@ -1,0 +1,163 @@
+{
+ "id": "apush-dbq-0062",
+ "lesson": "apush-u6-l4",
+ "type": "dbq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": null,
+ "source": "original; documents are public-domain primary sources, public data, or labeled paraphrases (see each document’s sourcing note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Minority report of the Senate Select Committee to Investigate the Causes of the Removal of the Negroes from the Southern States to the Northern States (Senators William Windom and Henry W. Blair), 1880",
+   "Chinese Exclusion Act, May 6, 1882 (22 Stat. 58)",
+   "U.S. Bureau of the Census, Statistical Abstract of the United States (1943), Table 107",
+   "Immigration Restriction League, founding statement (Boston, 1894)",
+   "Jane Addams, Twenty Years at Hull-House (1910)",
+   "Joint Resolution to Provide for Annexing the Hawaiian Islands to the United States (Newlands Resolution), approved July 7, 1898 (30 Stat. 750)",
+   "U.S. Immigration and Naturalization Service, Statistical Yearbook (1986), Table 1"
+  ]
+ },
+ "status": "final",
+ "prompt": "Evaluate the extent to which the arrival of “new immigrants” changed American society between 1865 and 1898.",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "1880",
+   "title": "Senate minority report on the Exodus",
+   "source": "Minority report of the Senate Select Committee to Investigate the Causes of the Removal of the Negroes from the Southern States to the Northern States (Senators William Windom and Henry W. Blair), 1880. Public domain.",
+   "sourcing": "Senators’ report on why Black Southerners fled to Kansas; shows internal migration running beside immigration from abroad.",
+   "text": "“In the spring of 1879, thousands of colored people, unable longer to endure the intolerable hardships, injustice, and suffering inflicted upon them by a class of Democrats in the South, had, in utter despair, fled panic-stricken from their homes and sought protection among strangers in a strange land. Homeless, penniless, and in rags, these poor people were thronging the wharves of Saint Louis, crowding the steamers on the Mississippi River, and in pitiable destitution throwing themselves upon the charity of Kansas. ...”"
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "1882",
+   "title": "No citizenship for the Chinese",
+   "source": "Chinese Exclusion Act, May 6, 1882 (22 Stat. 58), Section 14. Public domain.",
+   "sourcing": "The law itself; shows exclusion reaching past entry into citizenship itself.",
+   "text": "“That hereafter no State court or court of the United States shall admit Chinese to citizenship; and all laws in conflict with this act are hereby repealed.”"
+  },
+  {
+   "n": 3,
+   "kind": "table",
+   "date": "1890",
+   "title": "Immigration by decade",
+   "source": "U.S. Bureau of the Census, Statistical Abstract of the United States (1943), Table 107. Public data.",
+   "sourcing": "Census counts; shows the 1880s surge that brought the new immigration.",
+   "text": "| Period | Immigrants |\n| 1871–1880 | 2,812,191 |\n| 1881–1890 | 5,246,613 |\n\nIn single years: 1882 saw 788,992 immigrants arrive, and 1890 saw 455,302."
+  },
+  {
+   "n": 4,
+   "kind": "text",
+   "date": "1894",
+   "title": "The Immigration Restriction League",
+   "source": "Paraphrased from the founding statement of the Immigration Restriction League, Boston, 1894.",
+   "sourcing": "Nativists’ own program; shows restriction moving from one group to all new immigrants.",
+   "text": "Paraphrased from the League’s founding statement: the League, founded by Harvard graduates including Prescott Hall, demanded a literacy test for immigrants, arguing that the new immigrants from southern and eastern Europe were unfit for American citizenship."
+  },
+  {
+   "n": 5,
+   "kind": "text",
+   "date": "1889",
+   "title": "Addams on child labor",
+   "source": "Jane Addams, Twenty Years at Hull-House (1910), Chapter X, describing Christmas 1889. Public domain.",
+   "sourcing": "A settlement founder’s account; shows immigrant children carrying factory work.",
+   "text": "“Our very first Christmas at Hull House, when we as yet knew nothing of child labor, a number of little girls refused the candy which was offered them as part of the Christmas good cheer, saying simply that they “worked in a candy factory and could not bear the sight of it.” We discovered that for six weeks they had worked from seven in the morning until nine at night.”"
+  },
+  {
+   "n": 6,
+   "kind": "text",
+   "date": "1898",
+   "title": "Congress annexes Hawaii",
+   "source": "Joint Resolution to Provide for Annexing the Hawaiian Islands to the United States (Newlands Resolution), approved July 7, 1898 (30 Stat. 750). Public domain.",
+   "sourcing": "Congress annexes Hawaii; annexation brought the islands’ Japanese residents under American rule and opened the way for them to move to California.",
+   "text": "“Resolved by the Senate and House of Representatives of the United States of America in Congress Assembled, That said cession is accepted, ratified, and confirmed, and that the said Hawaiian Islands and their dependencies be, and they are hereby, annexed as a part of the territory of the United States and are subject to the sovereign dominion thereof, and that all and singular the property and rights hereinbefore mentioned are vested in the United States of America. ...”"
+  },
+  {
+   "n": 7,
+   "kind": "table",
+   "date": "1894",
+   "title": "Immigration falls in the Panic of 1893",
+   "source": "U.S. Immigration and Naturalization Service, Statistical Yearbook (1986), Table 1. Public data.",
+   "sourcing": "Immigration counts; shows arrivals falling from 579,663 in 1892 to 285,631 in 1894 as the Panic of 1893 struck.",
+   "text": "| Year | Immigrants |\n| 1892 | 579,663 |\n| 1893 | 439,730 |\n| 1894 | 285,631 |"
+  }
+ ],
+ "rubric": [
+  {
+   "criterion": "Earns the point for a thesis that makes a historically defensible claim about the extent to which the arrival of “new immigrants” changed American society between 1865 and 1898, with a line of reasoning.",
+   "notEarned": "A thesis that merely restates the prompt, or one that makes no claim about extent, does not earn the point.",
+   "points": 1,
+   "skill": "6.A"
+  },
+  {
+   "criterion": "Earns the point for describing a broader historical context relevant to the prompt, such as post-Civil War industrialization, the growth of cities, or the rise of mass immigration.",
+   "notEarned": "A context that is only background on one document, or one set outside the period, does not earn the point.",
+   "points": 1,
+   "skill": "4.B"
+  },
+  {
+   "criterion": "Earns the point for using the content of at least three documents to support the argument.",
+   "notEarned": "Using fewer than three documents, or quoting documents without connecting them to the argument, does not earn the point.",
+   "points": 1,
+   "skill": "6.B"
+  },
+  {
+   "criterion": "Earns the point for using at least six documents to support the argument, with specific evidence from each.",
+   "notEarned": "Using fewer than six documents, or listing documents without using their content, does not earn the point.",
+   "points": 1,
+   "skill": "6.B"
+  },
+  {
+   "criterion": "Earns the point for using at least one piece of specific outside evidence, such as the opening of Ellis Island in 1892, the Exoduster movement, or the settlement house movement, to support the argument.",
+   "notEarned": "Repeating document content without adding outside evidence does not earn the point.",
+   "points": 1,
+   "skill": "6.B"
+  },
+  {
+   "criterion": "Earns the point for explaining how at least one document’s point of view, purpose, historical situation, or audience matters to the argument.",
+   "notEarned": "Identifying a document’s author without explaining why that matters does not earn the point.",
+   "points": 1,
+   "skill": "3.B"
+  },
+  {
+   "criterion": "Earns the point for a complex argument, such as showing that immigration changed some parts of American life while leaving others unchanged, or that the same changes helped some Americans and hurt others.",
+   "notEarned": "A one-sided argument that ignores counter-evidence, or a complexity move stated without support, does not earn the point.",
+   "points": 1,
+   "skill": "6.D"
+  }
+ ],
+ "modelOutline": "Thesis: Between 1865 and 1898 the new immigration changed American society to a large extent, remaking the cities, the workforce, and the debate over who counted as American, although the change was checked by exclusion laws and by the persistence of older American institutions.\nContext: Before 1880 most immigrants came from Ireland, Germany, and Britain and settled in fairly easily. After 1880 the new wave came from Italy, Russia, Poland, and the Balkans, speaking little English and crowding into factory cities.\nEvidence: Document 3 shows the scale: immigration nearly doubled from 2,812,191 in 1871–1880 to 5,246,613 in 1881–1890. Document 5 shows the human cost: immigrant girls working fourteen-hour days in a candy factory. Document 1 shows the same decades moving Black Americans west as Exodusters, so migration reshaped the country from within as well.\nEvidence continued: Document 2 shows the sharpest response: Congress barred the Chinese from citizenship itself. Document 4 shows restriction widening, with the Immigration Restriction League demanding a literacy test for all new immigrants. Document 6 shows the United States annexing Hawaii in 1898, bringing the islands and their Japanese residents under American rule.\nOutside evidence: Ellis Island opened in 1892 to process the new arrivals, and settlement houses like Hull House, opened in 1889, tried to help immigrants learn English and find work.\nComplexity: the new immigrants were both welcomed as the labor that built industrial America and feared as strangers, so the same decades produced the Statue of Liberty’s welcome and the Exclusion Act’s ban.",
+ "totalPoints": 7
+}

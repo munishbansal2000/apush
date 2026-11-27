@@ -1,0 +1,79 @@
+{
+  "id": "apush-mcq-1994",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.14"
+  ],
+  "skills": [
+    "5.B"
+  ],
+  "themes": [
+    "GEO",
+    "WXT"
+  ],
+  "reasoning": "continuity-change",
+  "difficulty": 4,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.14 Subject to Debate"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 17",
+        "section": "Western Expansion and Its Impact on the American Character (1860–1895)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ],
+    "primary_sources": [
+      "Frederick Jackson Turner, “The Significance of the Frontier in American History,” 1893"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-614-turner",
+  "stimulus": {
+    "kind": "text",
+    "text": "In a recent bulletin of the Superintendent of the Census for 1890 appear these significant words: “Up to and including 1880 the country had a frontier of settlement, but at present the unsettled area has been so broken into by isolated bodies of settlement that there can hardly be said to be a frontier line. In the discussion of its extent, its westward movement, etc., it can not, therefore, any longer have a place in the census reports.” This brief official statement marks the closing of a great historic movement. Up to our own day American history has been in a large degree the history of the colonization of the Great West. The existence of an area of free land, its continuous recession, and the advance of American settlement westward, explain American development.",
+    "source_note": "Frederick Jackson Turner, “The Significance of the Frontier in American History,” 1893, quoting the Superintendent of the Census bulletin for 1890. Public domain; wording and punctuation follow the 1893 Annual Report of the American Historical Association text."
+  },
+  "stem": "Turner wrote in 1893, the year of a major economic panic. Which connection between the frontier and the wider changes of the period is most consistent with Turner’s argument?",
+  "options": [
+    {
+      "key": "A",
+      "text": "With free land gone, no western escape from hard times remained"
+    },
+    {
+      "key": "B",
+      "text": "The panic proved that western farming had never mattered to the economy",
+      "misconception": "Turner says western settlement explained American development, so it mattered greatly."
+    },
+    {
+      "key": "C",
+      "text": "The panic ended immigration to the United States",
+      "misconception": "Immigration kept coming after 1893, and Turner says nothing about it here."
+    },
+    {
+      "key": "D",
+      "text": "The panic made the census stop counting the population",
+      "misconception": "The census kept counting the population after 1890."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "The closed frontier ended the westward escape Turner describes.",
+    "B": "Turner argues western settlement was central, not unimportant.",
+    "C": "Immigration continued after 1893, so the panic did not end it.",
+    "D": "The census continued after 1890; it only dropped the frontier line.",
+    "general": "Connect the closed frontier to the panic.\n1. Turner says free land and westward settlement explained American development.\n2. The census said that free land was gone by 1890.\n3. Background from the books: the frontier had served as a safety valve for people in hard times.\n4. With the valve shut, hard times in 1893 had no western escape.\nRemember: when a cause ends, ask what people can no longer do."
+  }
+}

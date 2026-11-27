@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1623",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "D",
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "MIG"
+ ],
+ "reasoning": "causation",
+ "stem": "Which of the following people could claim land under the Homestead Act?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Homestead Act of 1862, 12 Stat. 392. Public domain. Text verified against the National Park Service transcription (home.nps.gov/home/homestead-act-of-1862.htm) and Wikisource (en.wikisource.org/wiki/Homestead_Act).",
+  "text": "Homestead Act of 1862, Sections 1-2 (ellipses mark omissions):\n\n\"That any person who is the head of a family, or who has arrived at the age of twenty-one years, and is a citizen of the United States, or who shall have filed his declaration of intention to become such, ... shall ... be entitled to enter one quarter section or a less quantity of unappropriated public lands ... Provided, That any person owning and residing on land may ... enter other land lying contiguous to his or her said land, which shall not, with the land so already owned and occupied, exceed in the aggregate one hundred and sixty acres.\"\n\n\"And upon filing the said affidavit with the register or receiver, and on payment of ten dollars, he or she shall thereupon be permitted to enter the quantity of land specified: Provided, however, That no certificate shall be given or patent issued therefor until the expiration of five years from the date of such entry.\""
+ },
+ "stimulus_set": "homestead-act",
+ "options": [
+  {
+   "key": "A",
+   "text": "A nineteen-year-old single man with no family",
+   "misconception": "Background: the act required the claimant to be a head of family or at least twenty-one years old."
+  },
+  {
+   "key": "B",
+   "text": "A wealthy landowner who already owned 500 acres",
+   "misconception": "Background: the act capped total holdings at 160 acres, so a 500-acre owner could not add a claim."
+  },
+  {
+   "key": "C",
+   "text": "A former Confederate soldier who had borne arms against the United States",
+   "misconception": "Background: the act barred anyone who had borne arms against the United States or aided its enemies."
+  },
+  {
+   "key": "D",
+   "text": "A twenty-five-year-old immigrant who had filed a declaration to become a citizen"
+  }
+ ],
+ "rationales": {
+  "A": "Background: Section 1 sets the bar at head of a family or twenty-one years old. Nineteen and single clears neither.",
+  "B": "Background: the act caps a claim at 160 acres in total, including land already owned. A 500-acre owner is already past the cap.",
+  "C": "Background: Section 1 excludes anyone who bore arms against the United States. A former Confederate soldier is named out, not in.",
+  "D": "Section 1 names this person exactly: twenty-one or older, a citizen or one who has filed a declaration of intention to become one.",
+  "general": "Read the act like a bouncer checking names at the door: age, citizenship, loyalty.\n1. Pull the three tests from Section 1: head of a family or twenty-one, citizen or declared intention, never bore arms against the United States.\n2. Test each person against all three. Only the immigrant declarant clears every one.\n3. Note what the act rewards: settlement by loyal newcomers, not youth, wealth, or rebellion.\nRemember: laws open doors with conditions, so test every person against every condition."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "Government Encouragement of Western Settlement"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

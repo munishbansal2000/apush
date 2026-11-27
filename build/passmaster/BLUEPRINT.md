@@ -352,6 +352,56 @@ Test pool 76 MCQ + 4 SAQ + 1 DBQ + 1 LEQ = 82.
 | 7.15 | Comparison in Period 7 | 21 | 2 | 1 | 1 | 25 |
 | **Total** | | **415** | **34** | **16** | **11** | **476** |
 
+### Unit 6 per-topic quotas (set 2026-11-26; closed 2026-11-27)
+
+Period 6, 1865-1898. 476 questions: 415 MCQ + 33 SAQ + 17 DBQ + 11 LEQ.
+Test pool 76 MCQ + 3 SAQ + 2 DBQ + 1 LEQ = 82.
+
+| Topic | Title | MCQ | SAQ | DBQ | LEQ | Total |
+|---|---|---:|---:|---:|---:|---:|
+| 6.1 | Contextualizing Period 6 | 16 | 2 | 0 | 0 | 18 |
+| 6.2 | Westward Expansion: Economic Development | 34 | 3 | 2 | 1 | 40 |
+| 6.3 | Westward Expansion: Social and Cultural Development | 30 | 2 | 1 | 1 | 34 |
+| 6.4 | The "New South" | 28 | 2 | 1 | 1 | 32 |
+| 6.5 | Technological Innovation | 30 | 2 | 1 | 1 | 34 |
+| 6.6 | The Rise of Industrial Capitalism | 36 | 3 | 2 | 1 | 42 |
+| 6.7 | Labor in the Gilded Age | 34 | 3 | 2 | 1 | 40 |
+| 6.8 | Immigration and Migration in the Gilded Age | 30 | 3 | 2 | 1 | 36 |
+| 6.9 | Responses to Immigration in the Gilded Age | 28 | 2 | 1 | 1 | 32 |
+| 6.10 | Development of the Middle Class | 28 | 2 | 1 | 0 | 31 |
+| 6.11 | Reform in the Gilded Age | 32 | 3 | 2 | 1 | 38 |
+| 6.12 | Controversies over the Role of Government in the Gilded Age | 30 | 2 | 1 | 1 | 34 |
+| 6.13 | Politics in the Gilded Age | 34 | 2 | 1 | 1 | 38 |
+| 6.14 | Continuity and Change in Period 6 | 25 | 2 | 0 | 0 | 27 |
+| **Total** | | **415** | **33** | **17** | **11** | **476** |
+
+### Unit 6 — LANDED (closed 2026-11-27; push 13)
+
+MCQ difficulty lands easy 117 / medium 218 / hard 80 vs target 83/145/187
+(hard short 107 — the largest shortfall in the book). Two topics land
+ZERO hard MCQs: 6.8 (13/17/0) and 6.10 (11/17/0). Per-topic lands:
+6.1: 4/8/4, 6.2: 6/15/13, 6.3: 6/12/12, 6.4: 6/11/11, 6.5: 6/21/3,
+6.6: 7/21/8, 6.7: 15/17/2, 6.8: 13/17/0, 6.9: 7/17/4, 6.10: 11/17/0,
+6.11: 13/17/2, 6.12: 7/11/12, 6.13: 4/27/3, 6.14: 12/7/6.
+Keys A113/B109/C98/D95.
+Test pool: 76 MCQ / 3 SAQ (0170, 0180, 0200) / 2 DBQ (0057, 0061) /
+1 LEQ (0060). Exam 01 holds 8 of 6.4/6.6's test MCQs (2013-2020) and
+SAQ 0200.
+Lessons as proposed: L1 6.1+6.2+6.3 (92), L2 6.4+6.5 (66),
+L3 6.6+6.7 (82), L4 6.8+6.9+6.10 (99), L5 6.11+6.12+6.13+6.14 (137).
+Blind-read record: L1 FAIL 11 -> PASS, L2 FAIL 4 -> PASS,
+L3 FAIL 3 -> PASS, L4 FAIL 3 -> FAIL 1 (Social Darwinism absent from
+the narrative) -> PASS, L5 FAIL 2 -> PASS. Bank fixes in the reads:
+Bessemer-converter stimulus rewritten (1710-1712 — the image shows no
+workers and an upright vessel, not a tilted vessel pouring metal);
+Pullman photograph mislabeled "of Pullman strikers" corrected to
+Illinois National Guard troops (SAQ 0184, DBQ 0060 doc 5); Chrisman
+sisters photograph dated 1886, not 1887 (SAQ 0172, DBQ 0053 doc 2, L1,
+catalog).
+Note: the LOG.md unit-close table first recorded difficulty 114/213/80
+— a mis-sum (6.4 and 6.6 undercounted); recomputed from disk 117/218/80,
+correction logged.
+
 ### Unit 7 — LANDED (closed 2026-11-27; push 9)
 
 Question counts landed exactly on quota in every topic. MCQ difficulty

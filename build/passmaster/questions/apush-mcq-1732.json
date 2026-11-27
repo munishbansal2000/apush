@@ -1,0 +1,87 @@
+{
+  "id": "apush-mcq-1732",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "answerKey": "C",
+  "skills": [
+    "2.A",
+    "3.A"
+  ],
+  "themes": [
+    "WXT",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "stem": "What work are the men in the image doing?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Harper's Weekly, June 24, 1882, \"The Electric Light in Houses — Laying the Tubes for Wires in the Streets of New York,\" drawn by W. P. Snyder. Public domain. https://commons.wikimedia.org/wiki/File:Laying_electric_lines_under_street_Edison_Pearl_Street_Utility_June_21_1882_Harpers_Weekly.png",
+    "text": "The image is a page from Harper's Weekly, June 24, 1882, titled \"THE ELECTRIC LIGHT IN HOUSES — LAYING THE TUBES FOR WIRES IN THE STREETS OF NEW YORK.\" The top panel, \"Laying the Electrical Tubes,\" shows workers digging a New York street and lowering thick tubes into the ground. The bottom panel, \"Testing Tubes for Insulation,\" shows a worker at a tripod instrument and others handling coiled wire. An inset at the top right shows a worker pouring insulation."
+  },
+  "stimulus_set": "pearl-street-tubes",
+  "options": [
+    {
+      "key": "A",
+      "text": "Digging a subway tunnel for passenger trains under New York",
+      "misconception": "Background: the men are laying tubes for electric wires, not a train tunnel; the caption names the electric light, not the subway."
+    },
+    {
+      "key": "B",
+      "text": "Laying gas pipes to light the streets with gas lamps",
+      "misconception": "Background: the caption says electric light, and the tubes carry electric wires; gas lighting used different pipes and an older system."
+    },
+    {
+      "key": "C",
+      "text": "Laying tubes under the street to carry electric wires into houses"
+    },
+    {
+      "key": "D",
+      "text": "Building the Brooklyn Bridge across the East River",
+      "misconception": "Background: the bridge was built above the river, not under a street; this image shows wire tubes in a New York street."
+    }
+  ],
+  "rationales": {
+    "A": "Background: the first New York subway opened in 1904, decades later. The caption names the electric light, and the men handle wire tubes, not train tunnels.",
+    "B": "Background: the caption reads \"THE ELECTRIC LIGHT IN HOUSES,\" and the panels are labeled \"Laying the Electrical Tubes\" and \"Testing Tubes for Insulation.\" The tubes carry electric wires, not gas.",
+    "C": "The caption says it plainly: the men are laying tubes for wires in the streets of New York, to bring the electric light into houses. The bottom panel shows them testing the tubes for insulation.",
+    "D": "Background: the Brooklyn Bridge crossed the East River above the water. This work happens under a city street, laying wire tubes.",
+    "general": "Read the caption before the picture.\n1. The title names the job: laying the tubes for wires in the streets of New York.\n2. The panels show the work in two steps, laying the tubes and testing them for insulation.\n3. The tubes carry electric wires into houses, so the electric light can reach them.\nRemember: a caption tells you the job; the picture shows you how it was done."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Coal and Oil"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "The Second Industrial Revolution"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Age of Invention and Economic Growth"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)",
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1732",
+      "file": "u6/original-u6-tech-04.png",
+      "caption": "Workers laying tubes for electric wires in New York, Harper's Weekly, 1882",
+      "alt": "A Harper's Weekly page from June 1882 shows workers digging a New York street and laying thick tubes for electric wires, with a second panel testing the tubes for insulation",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Laying_electric_lines_under_street_Edison_Pearl_Street_Utility_June_21_1882_Harpers_Weekly.png",
+      "license": "Public domain: Harper's Weekly engraving, June 24, 1882."
+    }
+  ]
+}

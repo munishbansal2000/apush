@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-1860",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 6,
+ "topics": [
+  "6.9"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.9 Responses to Immigration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "three-responses",
+ "stimulus": {
+  "kind": "text",
+  "text": "Original secondary passage, written for this question from the grounding books:\n\nAmericans answered the new immigration in opposite ways. Nativists, including the Immigration Restriction League founded in Boston in 1894, demanded a literacy test and warned that the new immigrants from southern and eastern Europe were unfit for citizenship.\n\nPolitical machines in the big cities took the opposite approach: bosses helped immigrants find homes and jobs and apply for citizenship, and in return the immigrants’ votes kept the machines in power. Settlement houses took a third path, neither shutting immigrants out nor buying their votes, but teaching English and offering childcare, classes, and employment bureaus.",
+  "source_note": "Original secondary passage, written for this question from Barron’s Premium 2027 Chapter 8 (Topic 6.9), 5 Steps to a 5, 2024, Chapter 18, and Princeton Review, Chapter 10."
+ },
+ "stem": "According to the passage, political machines helped immigrants mainly because",
+ "options": [
+  {
+   "key": "A",
+   "text": "immigrant votes kept the machines in power"
+  },
+  {
+   "key": "B",
+   "text": "the machines agreed with the nativists",
+   "misconception": "Claims agreement with the side the machines opposed."
+  },
+  {
+   "key": "C",
+   "text": "the federal government ordered them to",
+   "misconception": "Credits a federal order the passage never mentions."
+  },
+  {
+   "key": "D",
+   "text": "immigrants paid the machines in gold",
+   "misconception": "Turns votes into gold payments the passage never mentions."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The passage says bosses helped immigrants find homes and jobs and apply for citizenship, and in return the immigrants' votes kept the machines in power. The help was an exchange for votes.",
+  "B": "The machines took the opposite approach from the nativists. They welcomed immigrants while nativists wanted them shut out.",
+  "C": "The passage says nothing about a federal order. The machines acted for their own power, not on orders.",
+  "D": "The passage says the return was votes, not gold. Immigrants paid with ballots, not money.",
+  "general": "Follow the exchange the passage describes.\n1. Bosses helped immigrants find homes and jobs and apply for citizenship.\n2. In return, the immigrants' votes kept the machines in power.\n3. So the help was given for votes, not for agreement, orders, or gold.\n4. The nativists, the government, and gold are not part of the exchange.\nRemember: when a passage says in return, the answer is what came back."
+ }
+}

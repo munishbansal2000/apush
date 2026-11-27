@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1652",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "6.C",
+  "6.D"
+ ],
+ "themes": [
+  "ARC",
+  "GEO"
+ ],
+ "reasoning": "comparison",
+ "stem": "Which criticism of Turner's frontier thesis is best supported by the history of the West in this period?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Frederick Jackson Turner, \"The Significance of the Frontier in American History,\" paper read July 12, 1893. Public domain. Text verified against the University of Colorado transcription (spot.colorado.edu/~mcguire/turner.html) and Project Gutenberg's The Frontier in American History (pg22994).",
+  "text": "Frederick Jackson Turner, \"The Significance of the Frontier in American History\" (1893):\n\n\"In a recent bulletin of the Superintendent of the Census for 1890 appear these significant words: 'Up to and including 1880 the country had a frontier of settlement, but at present the unsettled area has been so broken into by isolated bodies of settlement that there can hardly be said to be a frontier line.'\"\n\n\"What the Mediterranean Sea was to the Greeks, breaking the bond of custom, offering new experiences, calling out new institutions and activities, that, and more, the ever retreating frontier has been to the United States directly, and to the nations of Europe more remotely. And now, four centuries from the discovery of America, at the end of a hundred years of life under the Constitution, the frontier has gone, and with its going has closed the first period of American history.\""
+ },
+ "stimulus_set": "turner-frontier",
+ "options": [
+  {
+   "key": "A",
+   "text": "The 'free land' of the frontier was Native peoples' land, taken by treaty-breaking, war, and federal policy"
+  },
+  {
+   "key": "B",
+   "text": "Turner was wrong that the frontier closed, since the census of 1900 found a new frontier line",
+   "misconception": "Background: the 1890 census finding stood; later censuses did not restore a frontier line, and Turner's claim was about 1890."
+  },
+  {
+   "key": "C",
+   "text": "Turner ignored the railroads, which he never mentions in his essay",
+   "misconception": "Background: railroads, mining, and farming are the engines of the settlement Turner describes; the criticism that matters is about whose land it was, not about a missing topic."
+  },
+  {
+   "key": "D",
+   "text": "Turner claimed the frontier made Americans less democratic, which the evidence contradicts",
+   "misconception": "Background: Turner argued the opposite, that the frontier fostered democracy; the criticism is not that he got the direction backwards."
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: the land was inhabited. Background: treaties were broken, the buffalo were destroyed, peoples were confined to reservations, and the Dawes Act divided what was left. The frontier advanced across other peoples' homes.",
+  "B": "Background: no later census redrew a frontier line. The 1890 finding is not the weak point in Turner's thesis.",
+  "C": "Background: the settlement Turner describes rode on railroads and land policy. The essay's blind spot is the peoples displaced, not the technology.",
+  "D": "Background: Turner claimed the frontier made Americans more democratic, not less. The criticism runs against his omissions, not his direction.",
+  "general": "Every story about empty land is a story about someone who was already there.\n1. Take Turner's central word: free land, open and waiting.\n2. Check it against the record. Background: the land held Native peoples, whose treaties were broken and whose herds were destroyed to make room.\n3. Name the blind spot. A thesis about freedom built on land taken by force leaves out the people who lost it.\nRemember: when a history calls land empty, ask who was moved off it."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The Idea of the West"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1865",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.10"
+ ],
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "SOC",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "The Rise of the Middle Class"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "Uneven Affluence"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "white-collar-rise",
+ "stimulus": {
+  "kind": "text",
+  "text": "Original secondary passage, written for this question from the grounding books:\n\nThe spread of the corporate model led to a managerial revolution. Large businesses needed a host of managers, clerical workers, salespeople, and accountants. The new urban economy also needed support services such as health care, education, and legal services.\n\nWhite-collar employees saw their wages rise faster than those of working-class men and women, and their average workday was shorter than that of laborers and factory workers. Women filled many of the lower-level white-collar jobs as more office workers were hired. Secretarial work had been seen as men's work before the Civil War, but as the typewriter came into use, literate women learned to type and were hired to perform office duties. Women were also hired as schoolteachers, a growing field in the late 1800s.",
+  "source_note": "Original secondary passage, written for this question from Barron's Premium 2027 Chapter 8 (Topic 6.10, The Rise of the Middle Class), 5 Steps to a 5, 2024, Chapter 18 (Uneven Affluence), and Princeton Review, Chapter 10 (Factories and City Life)."
+ },
+ "stem": "According to the passage, how did the typewriter change who worked in offices?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It ended office work, since machines did the writing",
+   "misconception": "Machines created office jobs; they did not end them."
+  },
+  {
+   "key": "B",
+   "text": "It kept secretarial work as men's work, as before the Civil War",
+   "misconception": "The passage says the opposite: typing opened office work to women."
+  },
+  {
+   "key": "C",
+   "text": "It let literate women learn to type and be hired for office duties"
+  },
+  {
+   "key": "D",
+   "text": "It required every office worker to hold a college degree",
+   "misconception": "The passage mentions no degree; it says literate women learned to type."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "The passage describes new office jobs growing, not disappearing. The typewriter made more office work, not less.",
+  "B": "Before the Civil War, secretarial work was seen as men's work. The passage says the typewriter changed that.",
+  "C": "The passage says that as the typewriter came into use, literate women learned to type and were hired to perform office duties.",
+  "D": "No degree is mentioned in the passage. Literacy and typing skill, not a college degree, opened the jobs.",
+  "general": "Follow the change the passage describes, step by step.\n1. Before the Civil War, secretarial work was seen as men's work.\n2. The typewriter came into use in offices.\n3. Literate women learned to type and were hired for office duties.\n4. Women also entered teaching, another growing field.\nRemember: a new machine can change who does a job by changing the skill the job needs."
+ }
+}

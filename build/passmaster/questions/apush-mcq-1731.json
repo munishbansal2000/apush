@@ -1,0 +1,77 @@
+{
+  "id": "apush-mcq-1731",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 3,
+  "answerKey": "B",
+  "skills": [
+    "1.B",
+    "4.B"
+  ],
+  "themes": [
+    "WXT",
+    "SOC"
+  ],
+  "reasoning": "continuity-change",
+  "stem": "By the end of 1880, almost 50,000 telephones were in use in the United States. What does that rapid spread best show?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Alexander Graham Bell's first transmitted words, March 10, 1876, as recorded in his laboratory notebook and reported by the Smithsonian Institution and the Library of Congress. Public domain.",
+    "text": "\"Mr. Watson, come here, I want to see you.\"\n\n— Alexander Graham Bell, speaking into his experimental telephone to his assistant Thomas Watson, March 10, 1876, three days after Bell received U.S. Patent No. 174,465 for the telephone."
+  },
+  "stimulus_set": "bell-first-words",
+  "options": [
+    {
+      "key": "A",
+      "text": "The telephone failed, since almost no one wanted one",
+      "misconception": "Background: 50,000 telephones in four years is fast growth for a brand-new invention, not failure."
+    },
+    {
+      "key": "B",
+      "text": "A new invention could reach everyday business use within a few years"
+    },
+    {
+      "key": "C",
+      "text": "The government bought every telephone and gave them away free",
+      "misconception": "Background: the Bell Telephone Company sold telephones as a business; the government did not buy or give them away."
+    },
+    {
+      "key": "D",
+      "text": "The telephone replaced the railroad as the main way to move goods",
+      "misconception": "Background: the telephone moved words, not goods; freight still traveled by rail."
+    }
+  ],
+  "rationales": {
+    "A": "Background: 50,000 telephones within four years of the first call is rapid growth, not failure. A failed invention gathers dust, not customers.",
+    "B": "Background from the books: Bell's telephone was patented in 1876, the Bell Telephone Company was established within a year, and by the end of 1880 almost 50,000 telephones were in use. A laboratory device became a business tool in four years.",
+    "C": "Background: the Bell Telephone Company was a private business that sold telephone service. The government did not buy the telephones or give them away.",
+    "D": "Background: the telephone carried voices, not freight. Goods still moved by rail, and the railroads kept growing.",
+    "general": "Count the years, then count the phones.\n1. The first words traveled in March 1876, from one room to the next.\n2. Background: by the end of 1880, almost 50,000 telephones were in use across the country.\n3. Background: four years took the telephone from an experiment to a business tool.\nRemember: speed of spread is the best measure of how much a new tool was wanted."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "The Telegraph and the Telephone"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "The Second Industrial Revolution"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Age of Invention and Economic Growth"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)"
+}

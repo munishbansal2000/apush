@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1922",
+ "lesson": "apush-u6-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.11"
+ ],
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "SOC",
+  "MIG"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 2,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "The Settlement House Movement"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.11 Reform in the Gilded Age"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "National Park Service, settlement house history",
+   "Spartacus Educational, National Federation of Settlements"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "u6-611-settlements",
+ "stimulus": {
+  "kind": "table",
+  "text": "Settlement houses in the United States:\n\n| Year | Settlement houses |\n| 1886 | 1 |\n| 1891 | 6 |\n| 1897 | 74 |",
+  "source_note": "Counts: National Park Service (first American settlement house, the Neighborhood Guild, opened in New York in 1886; 74 houses by 1897; 103 by 1900) and the Spartacus Educational settlement history (6 settlements in 1891, 74 in 1897, over 100 in 1900)."
+ },
+ "stem": "What does the table show about the settlement movement?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It began in 1897 with 74 houses opening all at once",
+   "misconception": "The table starts with 1 house in 1886, not 74 in 1897."
+  },
+  {
+   "key": "B",
+   "text": "It shrank steadily after the first house opened in 1886",
+   "misconception": "The numbers rise from 1 to 6 to 74, so the movement grew, not shrank."
+  },
+  {
+   "key": "C",
+   "text": "It grew from 1 house in 1886 to 74 houses by 1897"
+  },
+  {
+   "key": "D",
+   "text": "It reached every state in the nation by 1891",
+   "misconception": "The table counts houses, not states, so it cannot show every state."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "The first row is 1886 with 1 house. The movement began small, not with 74 at once.",
+  "B": "One house becomes 6, then 74. That is growth, not shrinkage.",
+  "C": "The table runs 1 in 1886, 6 in 1891, and 74 in 1897.",
+  "D": "Counts of houses say nothing about how many states held them.",
+  "general": "Read the table row by row.\n1. In 1886 the table lists 1 settlement house.\n2. In 1891 it lists 6 houses.\n3. In 1897 it lists 74 houses.\n4. One house growing to 74 in eleven years, from 1886 to 1897, is rapid growth from a small start.\nRemember: a table’s story is in the direction of its numbers, and here the numbers climb steeply."
+ }
+}

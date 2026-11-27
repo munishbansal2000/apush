@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1820",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "immigration-decade-table",
+ "stimulus": {
+  "kind": "text",
+  "text": "Immigration to the United States (U.S. Bureau of the Census, Statistical Abstract of the United States)\n\n| Period | Immigrants |\n| 1861–1870 | 2,314,824 |\n| 1871–1880 | 2,812,191 |\n| 1881–1890 | 5,246,613 |\n| 1891–1900 | 3,687,564 |\n\nFigures are totals for each ten-year period.\n\nIn single years: 1882 saw 788,992 immigrants arrive, and 1890 saw 455,302.",
+  "source_note": "U.S. Bureau of the Census, Statistical Abstract of the United States (1943), Table 107. Public data."
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "U.S. Bureau of the Census, Statistical Abstract of the United States (1943), Table 107"
+  ]
+ },
+ "status": "final",
+ "stem": "A student claims the table proves that the Chinese Exclusion Act of 1882 stopped immigration. The table best answers that claim by showing what?",
+ "options": [
+  {
+   "key": "A",
+   "text": "That no immigrants arrived in 1882",
+   "misconception": "Claims zero arrivals in a year the table counts at 788,992."
+  },
+  {
+   "key": "B",
+   "text": "That immigration fell to zero in the 1890s",
+   "misconception": "Claims zero arrivals in a decade the table counts at 3,687,564."
+  },
+  {
+   "key": "C",
+   "text": "That the 1880s total was the lowest of the four decades",
+   "misconception": "Calls the highest decade the lowest."
+  },
+  {
+   "key": "D",
+   "text": "1882 brought 788,992 immigrants, and the 1880s total was the highest shown"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "The table says 788,992 immigrants arrived in 1882. That is not zero.",
+  "B": "The 1890s brought 3,687,564 immigrants. That is not zero either.",
+  "C": "The 1880s total was the highest of the four decades, not the lowest.",
+  "D": "The very year of the act brought 788,992 immigrants, and the decade around it was the largest in the table, so immigration did not stop.",
+  "general": "Test the claim against the numbers for the act’s own year.\n1. The act passed in 1882 and barred Chinese laborers only.\n2. The table counts 788,992 immigrants arriving in 1882.\n3. The 1881–1890 decade total is the highest in the table.\n4. A law aimed at one group cannot be said to have stopped all immigration.\nRemember: a claim about all immigration must survive the total, not one group."
+ }
+}

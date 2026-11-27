@@ -1,0 +1,78 @@
+{
+  "answerKey": "B",
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ],
+    "primary_sources": [
+      "Ida M. Tarbell, The History of the Standard Oil Company (1904)"
+    ]
+  },
+  "id": "apush-mcq-1754",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "text": "Its profits depended entirely on a single year's sales",
+      "misconception": "Tarbell gives five years of dividends, not one year's sales."
+    },
+    {
+      "key": "B",
+      "text": "Its profits were steady, protected by an ample reserve fund"
+    },
+    {
+      "key": "C",
+      "text": "Its profits were spent at once on new oil wells",
+      "misconception": "The passage says nothing about spending profits on new wells."
+    },
+    {
+      "key": "D",
+      "text": "Its profits fell every year as rivals grew",
+      "misconception": "Tarbell counts steady dividends over five years, not falling profits."
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Tarbell counts dividends averaging about $45 million a year for five years, not a single year's sales.",
+    "B": "Tarbell says the company “allows an annual average of 5.77 per cent. for deficit, and it carries always an ample reserve fund” — the profits were steady and guarded, not a one-year windfall.",
+    "C": "The passage never says what the profits were spent on; it counts them and describes the reserve.",
+    "D": "Five years of steady dividends averaging about $45 million a year is the opposite of falling profits.",
+    "general": "Read the end of the passage, past the big numbers.\n1. Tarbell counts enormous profits: about $45 million a year in dividends.\n2. Then she adds that the company allows 5.77 percent for deficit each year.\n3. And it “carries always an ample reserve fund.”\n4. A company that plans for deficits and keeps a reserve expects its profits to last.\nRemember: a reserve fund is a sign of steady profits, not shaky ones."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "3.A"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "What does Tarbell suggest about how secure Standard Oil's profits were?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Ida M. Tarbell, The History of the Standard Oil Company, Vol. 2, Chapter 18 (1904), public domain.",
+    "text": "“The profits of the present Standard Oil Company are enormous. For five years the dividends have been averaging about forty-five million dollars a year, or nearly fifty per cent. on its capitalisation, a sum which capitalised at five per cent. would give $900,000,000. Of course this is not all that the combination makes in a year. It allows an annual average of 5.77 per cent. for deficit, and it carries always an ample reserve fund.”"
+  },
+  "stimulus_set": "tarbell-standard-oil",
+  "themes": [
+    "WXT"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

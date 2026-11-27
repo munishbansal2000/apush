@@ -1,0 +1,79 @@
+{
+  "id": "apush-mcq-1960",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.13"
+  ],
+  "skills": [
+    "6.A"
+  ],
+  "themes": [
+    "PCE",
+    "GEO"
+  ],
+  "reasoning": "continuity-change",
+  "difficulty": 3,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "B. Politics, Big Business, and Corruption in the Gilded Age"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Gilded Age Politics"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "National Politics"
+      }
+    ],
+    "primary_sources": [
+      "Presidential election returns, 1876-1896 (American Presidency Project)"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-613-elections-table",
+  "stimulus": {
+    "kind": "table",
+    "text": "Presidential elections, 1876–1896. Popular vote shares and electoral votes for the leading candidates.\n\n| Year | Candidate | Party | Popular vote | Electoral votes |\n|---|---|---|---|---:|\n| 1876 | Rutherford B. Hayes | Republican | 48.0% | 185 |\n| 1876 | Samuel J. Tilden | Democratic | 51.0% | 184 |\n| 1880 | James A. Garfield | Republican | 48.3% | 214 |\n| 1880 | Winfield S. Hancock | Democratic | 48.2% | 155 |\n| 1884 | Grover Cleveland | Democratic | 48.9% | 219 |\n| 1884 | James G. Blaine | Republican | 48.3% | 182 |\n| 1888 | Benjamin Harrison | Republican | 47.8% | 233 |\n| 1888 | Grover Cleveland | Democratic | 48.6% | 168 |\n| 1892 | Grover Cleveland | Democratic | 46.0% | 277 |\n| 1892 | Benjamin Harrison | Republican | 43.0% | 145 |\n| 1892 | James B. Weaver | People’s Party | 8.5% | 22 |\n| 1896 | William McKinley | Republican | 51.0% | 271 |\n| 1896 | William Jennings Bryan | Democratic | 46.7% | 176 |\n\nIn 1896 the People’s Party also nominated Bryan.",
+    "source_note": "Presidential election returns, 1876–1896, American Presidency Project (via the Gilder Lehrman Institute). Popular vote shares rounded to one decimal place."
+  },
+  "stem": "What changed in the election of 1896, according to the table?",
+  "options": [
+    {
+      "key": "A",
+      "text": "A third party won the presidency for the first time",
+      "misconception": "No third party won in 1896; McKinley, a Republican, won."
+    },
+    {
+      "key": "B",
+      "text": "A winner won a popular-vote majority for the first time here"
+    },
+    {
+      "key": "C",
+      "text": "The popular-vote winner lost the electoral vote for the first time",
+      "misconception": "That had already happened in 1876 and 1888, not first in 1896."
+    },
+    {
+      "key": "D",
+      "text": "Voters gave the Democrats their first victory since the Civil War",
+      "misconception": "Cleveland, a Democrat, had already won in 1884 and 1892."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "McKinley won 271 electoral votes, and no third party came close.",
+    "B": "McKinley's 51.0 percent is the only majority in the whole table.",
+    "C": "The popular winner lost in 1876 and 1888, before 1896.",
+    "D": "Cleveland won as a Democrat in 1884 and again in 1892.",
+    "general": "Compare 1896 with the five elections above it.\n1. From 1876 through 1892, every winner took less than half the popular vote.\n2. In 1896 McKinley took 51.0 percent, the first majority in the table.\n3. A majority win after twenty years of near-ties marks a break, not a repeat.\n4. Background from the books: after 1896, Republicans held a strong majority until the 1930s.\nRemember: the first break in a long pattern is the change to name."
+  }
+}

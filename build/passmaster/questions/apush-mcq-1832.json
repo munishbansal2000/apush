@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-1832",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "riis-bandits-roost",
+ "stimulus": {
+  "kind": "image",
+  "text": "The photograph shows a narrow alley between tall tenement buildings in New York City. Laundry hangs on lines overhead. Men stand in doorways and on a wooden balcony, and a man in the foreground holds a long stick. The alley floor is wet stone, with barrels at one side and a cart in the distance.",
+  "source_note": "Jacob A. Riis, “Bandits’ Roost, 59 1-2 Mulberry Street,” 1888. Photograph from the shared image pool; public domain."
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Jacob A. Riis, “Bandits’ Roost, 59 1-2 Mulberry Street” (1888); Jacob A. Riis, How the Other Half Lives (1890)"
+  ]
+ },
+ "status": "final",
+ "stem": "A student claims the photograph proves that all immigrants in New York lived in crime-ridden alleys. The best answer to that claim is what?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The photograph shows no people at all in the alley",
+   "misconception": "Denies people the photograph plainly shows."
+  },
+  {
+   "key": "B",
+   "text": "Riis photographed only wealthy neighborhoods, not the slums",
+   "misconception": "Puts Riis in wealthy neighborhoods he never photographed."
+  },
+  {
+   "key": "C",
+   "text": "The alley was in Chicago, not in New York",
+   "misconception": "Moves a New York alley to Chicago."
+  },
+  {
+   "key": "D",
+   "text": "One alley cannot stand for every immigrant neighborhood"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "The photograph is full of people in doorways, on a balcony, and in the alley.",
+  "B": "Riis photographed the poorest slums, not wealthy neighborhoods.",
+  "C": "The alley is on Mulberry Street in New York, as Riis titled it.",
+  "D": "A single alley shows crowding in that one place. It cannot prove how all immigrants in a city of over a million people lived.",
+  "general": "Ask how much one photograph can prove.\n1. The photograph shows one alley on Mulberry Street.\n2. New York held over a million people and many immigrant neighborhoods.\n3. One place cannot stand for every neighborhood in a great city.\n4. The photograph proves crowding there, not a single life for all immigrants.\nRemember: one example proves one place, not a whole city."
+ },
+ "figures": [
+  {
+   "file": "u7/5s24-exam2-mcq-12.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Bandits%27_Roost%2C_59_1-2_Mulberry_Street_by_Jacob_August_Riis%2C_1888.jpg",
+   "license": "Public domain",
+   "caption": "Bandits’ Roost, Mulberry Street, New York, photographed by Jacob Riis in 1888",
+   "alt": "A narrow alley between tall tenement buildings, with laundry on lines overhead and men standing in doorways and on a wooden balcony",
+   "id": "fig-apush-mcq-1832"
+  }
+ ]
+}

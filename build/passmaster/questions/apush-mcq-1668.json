@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1668",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.3"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "2.B",
+  "3.A"
+ ],
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "stem": "What does the act's preamble show about how Congress justified the ban?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Chinese Exclusion Act, 22 Stat. 58, approved May 6, 1882. Public domain. Text verified against the Avalon Project (Yale Law School) and the Gilder Lehrman Institute transcription.",
+  "text": "Chinese Exclusion Act, May 6, 1882 (ellipses mark omissions):\n\n\"Whereas, in the opinion of the Government of the United States the coming of Chinese laborers to this country endangers the good order of certain localities within the territory thereof: Therefore, Be it enacted ... That from and after the expiration of ninety days next after the passage of this act, and until the expiration of ten years next after the passage of this act, the coming of Chinese laborers to the United States be, and the same is hereby, suspended...\"\n\n\"SEC. 14. That hereafter no State court or court of the United States shall admit Chinese to citizenship...\"\n\n\"SEC. 15. That the words 'Chinese laborers,' wherever used in this act, shall be construed to mean both skilled and unskilled laborers and Chinese employed in mining.\""
+ },
+ "stimulus_set": "chinese-exclusion",
+ "options": [
+  {
+   "key": "A",
+   "text": "It claimed Chinese laborers endangered 'the good order' of American communities"
+  },
+  {
+   "key": "B",
+   "text": "It claimed Chinese laborers refused to work on the railroads",
+   "misconception": "Background: up to 12,000 Chinese workers helped build the Central Pacific; they were sought after, not unwilling."
+  },
+  {
+   "key": "C",
+   "text": "It claimed China had declared war on the United States",
+   "misconception": "Background: the United States and China were at peace; the act answers labor competition, not a war."
+  },
+  {
+   "key": "D",
+   "text": "It claimed Chinese immigrants were taking land from homesteaders",
+   "misconception": "Background: the act targets laborers coming to work, and Section 15 names mining; the land complaint belonged to the homestead debates."
+  }
+ ],
+ "rationales": {
+  "A": "The preamble's own words give the justification: 'the coming of Chinese laborers to this country endangers the good order of certain localities.' Congress framed a labor ban as a defense of order.",
+  "B": "Background: up to 12,000 Chinese workers helped build the Central Pacific. They were sought after, not unwilling.",
+  "C": "Background: the United States and China were at peace. The act answers labor competition, not a war.",
+  "D": "Background: the act targets laborers coming to work, and Section 15 names mining. The land complaint belonged to the homestead debates.",
+  "general": "Picture Congress writing a law that names one people and bars them at the border.\n1. Read the reason Congress gives first. Chinese laborers 'endanger the good order' of certain places.\n2. Ask what that reason does. It turns a question of jobs and wages into a question of public order.\n3. Name the move. A labor ban dressed as a defense of peace.\nRemember: when a law opens with a danger, ask who benefits from naming it."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Chinese Communities in the West"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The End of Native American Independence"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

@@ -1,0 +1,89 @@
+{
+  "id": "apush-saq-0177",
+  "type": "saq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "saq_slot": 1,
+  "totalPoints": 3,
+  "skills": [
+    "1.B",
+    "5.A"
+  ],
+  "themes": [
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Original secondary passage, written for this question from Barron's Premium 2027 Ch 8 (Coal and Oil), 5 Steps to a 5 2024 Ch 18, and Princeton Review Ch 10.",
+    "text": "Original secondary passage, written for this question from the grounding books:\n\nIn the 1850s, George Bissell showed that oil from the ground could be refined into kerosene, a lamp fuel brighter and cheaper than candles or whale oil. In 1859, Edwin Drake drilled the first oil well at Titusville, Pennsylvania, and the oil business was born. Refined oil lit American homes, and it also lubricated the machines of the new factories and railroads. By the 1870s, oil had become one of the nation's great industries, and the men who controlled its refining, above all John D. Rockefeller's Standard Oil, were among the richest in the country."
+  },
+  "stimulus_set": null,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify one way petroleum was used in the United States in the late nineteenth century.",
+      "modelAnswer": "Petroleum was refined into kerosene, which lit American homes in lamps. Refined oil also lubricated factory machines and railroad equipment, keeping the new industrial machinery running.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for identifying one use of petroleum, such as kerosene for lamps, lubrication for machines, or fuel for factories.",
+          "notEarned": "Naming a use without tying it to petroleum, or naming a use from another period, does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Briefly explain how kerosene changed daily life for ordinary Americans.",
+      "modelAnswer": "Kerosene lamps were brighter and cheaper than candles or whale oil, so ordinary families could afford light after dark. Evening hours opened up for reading, work, and school, and homes no longer went dark at sundown.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for explaining how kerosene changed daily life, such as cheaper and brighter light, longer usable evenings, or light reaching homes beyond gas-lit cities.",
+          "notEarned": "Naming kerosene without explaining its effect on daily life does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Briefly explain one way the oil industry was connected to the growth of the railroads.",
+      "modelAnswer": "Railroads carried crude oil and refined kerosene to markets across the country, and the oil business depended on rail transport to grow beyond Pennsylvania. At the same time, railroads needed oil to lubricate their locomotives and machinery, so each industry fed the other.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for explaining one connection, such as railroads carrying oil to market, oil lubricating railroad machinery, or the two industries growing together.",
+          "notEarned": "Naming both industries without explaining how they were connected does not earn the point."
+        }
+      ]
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Coal and Oil"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "The Second Industrial Revolution"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Age of Invention and Economic Growth"
+      }
+    ]
+  },
+  "source": "original; stimulus written for this question from the grounding books"
+}

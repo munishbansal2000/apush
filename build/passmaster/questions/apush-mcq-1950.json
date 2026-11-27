@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1950",
+ "lesson": "apush-u6-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.12"
+ ],
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.12 Controversies over the Role of Government in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "Gilded Age Politics"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Silver Issue and the Populist Movement"
+   }
+  ],
+  "primary_sources": [
+   "United States presidential election of 1896, official returns"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "u6-612-election-1896",
+ "stimulus": {
+  "kind": "table",
+  "text": "Results of the presidential election of 1896:\n\n| Candidate | Party | Popular vote | Share | Electoral vote |\n| William McKinley | Republican | about 7.1 million | 51% | 271 |\n| William Jennings Bryan | Democratic and Populist | about 6.5 million | 47% | 176 |\n\nBryan, the Democratic nominee, also won the Populist Party’s nomination. He campaigned for the free coinage of silver. McKinley campaigned for the gold standard. The Panic of 1893 had begun a severe depression, and the election was fought during that depression.",
+  "source_note": "Election figures follow the standard record: McKinley 271 electoral votes, Bryan 176; popular shares about 51 percent and 47 percent. Popular totals vary slightly by source, so rounded figures are given. Bryan's dual nomination and the candidates' money positions follow Barron's Premium 2027, Chapter 8, and 5 Steps to a 5, 2024, Chapter 18."
+ },
+ "stem": "Bryan won the South and much of the West but lost the election. What does that best show?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The industrial Northeast and Midwest outvoted the farming South and West"
+  },
+  {
+   "key": "B",
+   "text": "The South and West held most of the nation's voters",
+   "misconception": "Bryan won the South and West yet lost, so those regions did not hold most voters."
+  },
+  {
+   "key": "C",
+   "text": "Bryan won no states at all in the election",
+   "misconception": "Bryan carried 22 states, including most of the South and West."
+  },
+  {
+   "key": "D",
+   "text": "The election was decided by the Supreme Court",
+   "misconception": "The election was decided by voters, not by the Court."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background from the books: McKinley carried the populous industrial Northeast and Midwest.",
+  "B": "Bryan won the South and West yet lost, so those regions lacked the votes.",
+  "C": "Bryan carried 22 states, including most of the South and West.",
+  "D": "The election was decided by voters, not by the Court.",
+  "general": "Ask where the votes lived.\n1. Bryan swept the South and much of the West, the farming regions.\n2. He still lost the popular vote by about 600,000 and the electoral vote 271 to 176.\n3. Background from the books: McKinley carried the populous industrial Northeast and Midwest.\n4. Industrial America, with more voters, outvoted rural America in 1896.\nRemember: a map of states is not a map of voters, so count the people."
+ }
+}

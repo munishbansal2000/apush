@@ -1,0 +1,86 @@
+{
+  "answerKey": "A",
+  "difficulty": 3,
+  "figures": [
+    {
+      "alt": "1889 Puck cartoon showing giant top-hatted figures labeled with trust names looming over small senators at their desks",
+      "caption": "Joseph Keppler, “The Bosses of the Senate,” Puck, January 23, 1889. Giant figures labeled with trust names loom over the small senators.",
+      "file": "pt01/fig3-bosses-of-senate-1889.jpg",
+      "id": "fig-apush-mcq-2016",
+      "license": "No known restrictions on publication",
+      "source_url": "https://www.loc.gov/pictures/item/2002718861/"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "America Transformed into the Industrial Giant"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-2016",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "text": "The Progressive argument that government should regulate business to protect the public"
+    },
+    {
+      "key": "B",
+      "misconception": "Public libraries funded by philanthropists contrast with Carnegie.",
+      "text": "The establishment of public libraries and universities funded by private philanthropy"
+    },
+    {
+      "key": "C",
+      "misconception": "Charitable giving by industrialists contrasts with Carnegie.",
+      "text": "The growth of charitable giving by wealthy industrialists"
+    },
+    {
+      "key": "D",
+      "misconception": "The growth of private business contrasts with Carnegie.",
+      "text": "The expansion of private business in the late nineteenth century"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Progressives argued government itself should regulate business and protect the public, a direct contrast to relying on private philanthropy. For them, public protection was a duty of government, not a gift of the wealthy.",
+    "B": "Public libraries funded by philanthropy are Carnegie's approach, not a contrast.",
+    "C": "Charitable giving by industrialists is also Carnegie's approach.",
+    "D": "The expansion of private business is the background condition, not a contrasting idea.",
+    "general": "1. Name Carnegie's answer. Private wealth, given voluntarily for public benefit.\n2. Ask what the opposite answer is. Government regulation of business to protect the public.\n3. Test the other options. Libraries, charity, and business growth all belong to Carnegie's world.\n4. Match the contrast. The Progressive argument replaces private giving with public regulation.\nRemember: a contrast answers the same problem with a different actor."
+  },
+  "reasoning": "continuity-change",
+  "skills": [
+    "5.B"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from Carnegie, “The Gospel of Wealth” (1889) with the Keppler 1889 Puck cartoon",
+  "status": "final",
+  "stem": "Carnegie’s ideas about wealth most directly contrast with which of the following later developments?",
+  "stimulus": {
+    "kind": "mixed",
+    "source_note": "Andrew Carnegie, “The Gospel of Wealth,” 1889, public domain. Cartoon: Joseph Keppler, “The Bosses of the Senate,” Puck, January 23, 1889, Library of Congress.",
+    "text": "“The problem of our age is the proper administration of wealth, so that the ties of brotherhood may still bind together the rich and poor in harmonious relationship. . . . The man who dies thus rich dies disgraced.”"
+  },
+  "stimulus_set": "carnegie-gospel-wealth-1889",
+  "themes": [
+    "PCE",
+    "WXT"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

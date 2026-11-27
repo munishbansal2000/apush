@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-1637",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "1.B",
+  "6.B"
+ ],
+ "themes": [
+  "WXT",
+  "WOR"
+ ],
+ "reasoning": "continuity-change",
+ "stem": "The chart shows wheat production more than doubling between 1870 and 1900. What does that growth, combined with the fall in farm employment, best show about American farming?",
+ "stimulus": {
+  "kind": "chart",
+  "source_note": "Chart rendered in code from USDA National Agricultural Statistics Service production figures (1870: 254,429 thousand bushels; 1880: 502,257; 1890: 449,042; 1900: 599,315), corroborated by the FRED/NBER series A0109AUSA391NNBR (1870: 254; 1880: 502; 1890: 449; 1900: 599 million bushels).",
+  "text": "The chart shows United States wheat production in millions of bushels: 1870, 254; 1880, 502; 1890, 449; 1900, 599. Production roughly doubled between 1870 and 1880, dipped in 1890, and reached its highest level of the four years in 1900. The figures come from the United States Department of Agriculture's crop records, which count the harvested wheat crop for each calendar year."
+ },
+ "stimulus_set": "plains-farming-chart",
+ "options": [
+  {
+   "key": "A",
+   "text": "Farming became less important to the American economy",
+   "misconception": "Background: farming stayed central; the United States became a great grain exporter, and food production rose even as farm jobs shrank."
+  },
+  {
+   "key": "B",
+   "text": "Machines let fewer farmers grow far more food"
+  },
+  {
+   "key": "C",
+   "text": "Wheat replaced all other crops on American farms",
+   "misconception": "Background: corn, cotton, and other crops also grew; wheat was one of several great crops, not the only one."
+  },
+  {
+   "key": "D",
+   "text": "Farmers grew richer as their harvests grew larger",
+   "misconception": "Background: bigger harvests pushed prices down, so many farmers fell into debt even as production rose."
+  }
+ ],
+ "rationales": {
+  "A": "Background: the grain trade grew, not shrank. Background: the chart shows output rising while farm work fell from 60 percent of Americans in 1860 to 37 percent in 1900.",
+  "B": "The chart's rising bars tell one story when read with the books. Background: farm work fell from 60 percent of Americans in 1860 to 37 percent in 1900, so machines and bonanza farms let fewer hands grow far more wheat.",
+  "C": "Background: corn production also more than doubled in the same years. Wheat led the Plains, but it never stood alone.",
+  "D": "Background: the cruel twist of the era was that bigger harvests meant lower prices. Many farmers grew more wheat and earned less for it.",
+  "general": "More wheat, fewer farmers: the chart and the census are telling one story.\n1. Read the chart: 254 million bushels in 1870, 599 million in 1900, more than double.\n2. Add the books. Background: the share of Americans working on farms fell from 60 percent in 1860 to 37 percent in 1900.\n3. Name the change. Machines and large farms let fewer people grow far more food.\nRemember: when output rises and workers fall, look for the machine in between."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "Agricultural Innovation"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "Challenges for Western Farmers"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1637",
+   "file": "u6/u6-wheat-production-1870-1900.png",
+   "caption": "United States wheat production, 1870-1900, in millions of bushels",
+   "alt": "Bar chart of United States wheat production: 254 million bushels in 1870, 502 in 1880, 449 in 1890, and 599 in 1900",
+   "license": "Public data (USDA); chart drawn for this question",
+   "source_url": "https://fred.stlouisfed.org/data/A0109AUSA391NNBR"
+  }
+ ]
+}

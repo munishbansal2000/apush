@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-1640",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "1.B",
+  "6.B"
+ ],
+ "themes": [
+  "WXT",
+  "WOR"
+ ],
+ "reasoning": "continuity-change",
+ "stem": "Which development best explains how wheat production could rise so sharply while the number of American farmers fell?",
+ "stimulus": {
+  "kind": "chart",
+  "source_note": "Chart rendered in code from USDA National Agricultural Statistics Service production figures (1870: 254,429 thousand bushels; 1880: 502,257; 1890: 449,042; 1900: 599,315), corroborated by the FRED/NBER series A0109AUSA391NNBR (1870: 254; 1880: 502; 1890: 449; 1900: 599 million bushels).",
+  "text": "The chart shows United States wheat production in millions of bushels: 1870, 254; 1880, 502; 1890, 449; 1900, 599. Production roughly doubled between 1870 and 1880, dipped in 1890, and reached its highest level of the four years in 1900. The figures come from the United States Department of Agriculture's crop records, which count the harvested wheat crop for each calendar year."
+ },
+ "stimulus_set": "plains-farming-chart",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Homestead Act gave every farmer a second 160-acre claim",
+   "misconception": "Background: the Homestead Act capped claims at 160 acres; it never offered a second claim to every farmer."
+  },
+  {
+   "key": "B",
+   "text": "Farmers stopped using machines and returned to hand tools",
+   "misconception": "Background: the era ran the other way, toward reapers, combines, and steam threshers, not back to hand tools."
+  },
+  {
+   "key": "C",
+   "text": "Bonanza farms grew one cash crop with new machines and sold in bulk"
+  },
+  {
+   "key": "D",
+   "text": "The government paid farmers to leave their land and move to cities",
+   "misconception": "Background: no program paid farmers to quit; farmers left because small farms could not compete, not because the government bought them out."
+  }
+ ],
+ "rationales": {
+  "A": "Background: the Homestead Act's cap was 160 acres in total. No second claim was on offer.",
+  "B": "Background: mechanization drove the whole change. Hand tools could not have doubled the harvest with fewer workers.",
+  "C": "Background from the books: bonanza farms grew one or two cash crops on a huge scale, used the latest machines, and sold in bulk to eastern and foreign markets, squeezing out small family farms.",
+  "D": "Background: farmers drifted to cities because their farms failed, not because the government paid them to leave. No such payment existed.",
+  "general": "The chart hides a changing cast: the same wheat, grown by different hands.\n1. Hold the two facts together: output more than doubled, and the farm workforce shrank.\n2. Ask what kind of farm does that. Background: a bonanza farm, thousands of acres, one crop, the newest machines, selling in bulk.\n3. See who lost. Background: the small family farm could not afford the machines and could not match the price.\nRemember: when the same work is done by fewer people, look for the bigger farm and the better machine."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "Agricultural Innovation"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "Challenges for Western Farmers"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1640",
+   "file": "u6/u6-wheat-production-1870-1900.png",
+   "caption": "United States wheat production, 1870-1900, in millions of bushels",
+   "alt": "Bar chart of United States wheat production: 254 million bushels in 1870, 502 in 1880, 449 in 1890, and 599 in 1900",
+   "license": "Public data (USDA); chart drawn for this question",
+   "source_url": "https://fred.stlouisfed.org/data/A0109AUSA391NNBR"
+  }
+ ]
+}

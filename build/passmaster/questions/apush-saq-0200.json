@@ -1,0 +1,99 @@
+{
+  "difficulty": 2,
+  "figures": [
+    {
+      "alt": "Bar chart showing the urban share of the U.S. population rising from 19.8 percent in 1860 to 51.2 percent in 1920",
+      "caption": "Share of the U.S. population living in urban places, 1860-1920. Source: U.S. Census Bureau.",
+      "file": "pt01/fig7-urban-share-1860-1920.jpg",
+      "id": "fig-apush-saq-0200",
+      "license": "Chart data: public U.S. government data"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "America Transformed into the Industrial Giant"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-saq-0200",
+  "lesson": "apush-u6-l4",
+  "parts": [
+    {
+      "modelAnswer": "The urban share rose steadily and sharply, from about 20 percent in 1860 to over half the population by 1920. The rise was continuous across all four data points, with the largest gains after 1880. By 1920 a majority of Americans lived in urban places for the first time.",
+      "part": "a",
+      "points": 1,
+      "prompt": "Briefly describe the trend shown in the table.",
+      "scoring": [
+        {
+          "criterion": "Earns the point for describing the trend: the urban share rose steadily from about 20 percent in 1860 to over half the population by 1920.",
+          "notEarned": "Naming one year’s figure with no description of the trend does not earn the point.",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "modelAnswer": "Industrialization contributed to the trend by creating factory jobs in cities. Millions of immigrants arrived at urban ports and took industrial work, while railroads and streetcars made urban growth possible. Mechanization also pushed some farm workers toward the cities.",
+      "part": "b",
+      "points": 1,
+      "prompt": "Briefly explain ONE factor that contributed to the trend shown in the table.",
+      "scoring": [
+        {
+          "criterion": "Earns the point for naming one factor and explaining how it contributed, such as industrial jobs, immigration, railroads and streetcars, or mechanization pushing farm workers to cities.",
+          "notEarned": "Naming a factor with no explanation of the mechanism does not earn the point.",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "modelAnswer": "Urban growth strengthened political machines that served immigrants and the urban poor. Machines traded services and jobs for votes, which gave new urban voters a path into politics. The growth of cities also drove Progressive reforms for housing, sanitation, and labor.",
+      "part": "c",
+      "points": 1,
+      "prompt": "Briefly explain ONE effect of the trend shown in the table on American politics or society in the period 1865–1920.",
+      "scoring": [
+        {
+          "criterion": "Earns the point for naming one effect in 1865–1920 and explaining it, such as political machines, Progressive reforms for housing and sanitation, debates over immigration, or the expansion of labor unions.",
+          "notEarned": "Naming a reform with no explanation of the effect, or an effect outside 1865–1920, does not earn the point.",
+          "points": 1
+        }
+      ]
+    }
+  ],
+  "pool": "test",
+  "reasoning": "continuity-change",
+  "saq_slot": 3,
+  "skills": [
+    "2.A",
+    "2.B"
+  ],
+  "source": "original; stimulus is a chart plotted from U.S. Census Bureau decennial figures (public data); model answers written for this question",
+  "status": "final",
+  "stimulus": {
+    "kind": "chart",
+    "source_note": "U.S. Census Bureau. Chart plotted from decennial census figures.",
+    "text": "| Year | Urban Share |\n| 1860 | 19.8% |\n| 1880 | 28.2% |\n| 1900 | 39.6% |\n| 1920 | 51.2% |\n\nSource: U.S. Census Bureau. Simplified for this test."
+  },
+  "stimulus_set": null,
+  "themes": [
+    "MIG",
+    "WXT"
+  ],
+  "topics": [
+    "6.8"
+  ],
+  "totalPoints": 3,
+  "type": "saq",
+  "unit": 6
+}

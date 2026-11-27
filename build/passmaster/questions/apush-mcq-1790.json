@@ -1,0 +1,89 @@
+{
+ "answerKey": "D",
+ "difficulty": 3,
+ "figures": [
+  {
+   "alt": "An 1892 cartoon showing Andrew Carnegie sitting on piles of money bags holding a whip, above a steel mill with signs reading Closed Strike, Closed, and Lock-Out, with crowds of workers outside the gates",
+   "caption": "“Promise and Performance” cartoon on the Homestead strike, 1892",
+   "file": "u6/barrons-2027-pt2-17.png",
+   "id": "fig-apush-mcq-1790",
+   "license": "Public domain: cartoon published 1892.",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Promise_and_Performance_Political_Cartoon_Andrew_Carnegie_sitting_on_bags_of_money_Homestead_Strike_1892.png"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "“Promise and Performance” political cartoon on the Homestead strike (1892)"
+  ]
+ },
+ "id": "apush-mcq-1790",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The whip is in Carnegie’s hand, not in the workers’ hands.",
+   "text": "It shows the workers themselves holding the whip over Carnegie."
+  },
+  {
+   "key": "B",
+   "misconception": "Carnegie sits on the money bags, not the workers.",
+   "text": "It shows the workers sitting on the piles of money bags."
+  },
+  {
+   "key": "C",
+   "misconception": "The gates are closed by lock-out, and Carnegie holds the whip.",
+   "text": "It shows the workers closing the mill gates themselves by hand."
+  },
+  {
+   "key": "D",
+   "text": "It shows Carnegie with the whip and the money, shutting the works."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The whip is in Carnegie’s hand, not in the workers’ hands.",
+  "B": "Carnegie sits on the money bags, not the workers.",
+  "C": "The gates are closed by lock-out, and Carnegie holds the whip.",
+  "D": "Carnegie holds the whip and sits on the money, above a mill he has shut: the power and the decision are his.",
+  "general": "Ask who holds the whip and the money.\n1. The whip is in Carnegie’s hand, not in any worker’s hand.\n2. The money bags sit under Carnegie, not under the workers.\n3. The mill below is closed and locked out.\n4. So the cartoon puts the shutdown on Carnegie, not on the workers.\nRemember: in a cartoon, whoever holds the whip holds the blame."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.D"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "A student says the cartoon blames the workers for the Homestead shutdown. The cartoon best answers that claim in which way?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Political cartoon “Promise and Performance,” 1892. Public domain (Wikimedia Commons).",
+  "text": "Political cartoon “Promise and Performance,” published in 1892. A large Andrew Carnegie sits on piles of money bags, holding a whip. Below him stretches a steel mill with signs reading “CLOSED—STRIKE,” “CLOSED,” and “LOCK-OUT.” Crowds of workers stand outside the mill gates."
+ },
+ "stimulus_set": "homestead-promise-performance-1892",
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1630",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "C",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "stem": "What does Twain's description show about Virginia City, Nevada, in 1863?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Mark Twain, Roughing It (1872), ch. 52. Public domain. Text verified against the Standard Ebooks edition (standardebooks.org/ebooks/mark-twain/roughing-it/text/chapter-52).",
+  "text": "Mark Twain, Roughing It (1872), Chapter 52, on Virginia City, Nevada:\n\n\"The year 1863 was perhaps the very top blossom and culmination of the 'flush times.' Virginia swarmed with men and vehicles to that degree that the place looked like a very hive—that is when one's vision could pierce through the thick fog of alkali dust that was generally blowing in summer... Speculation ran riot, and yet there was a world of substantial business going on, too. All freights were brought over the mountains from California (150 miles) by pack-train partly, and partly in huge wagons drawn by such long mule teams that each team amounted to a procession... All the bullion was shipped in bars by stage to San Francisco... There were three stages a day, each way, and I have seen the out-going stages carry away a third of a ton of bullion each, and more than once I saw them divide a two-ton lot and take it off.\"\n\n\"All along under the center of Virginia and Gold Hill, for a couple of miles, ran the great Comstock silver lode — a vein of ore from fifty to eighty feet thick between its solid walls of rock — a vein as wide as some of New York's streets.\"\n\n\"Virginia was a busy city of streets and houses above ground. Under it was another busy city, down in the bowels of the earth, where a great population of men thronged in and out among an intricate maze of tunnels and drifts, flitting hither and thither under a winking sparkle of lights, and over their heads towered a vast web of interlocking timbers that held the walls of the gutted Comstock apart.\""
+ },
+ "stimulus_set": "comstock-twain",
+ "options": [
+  {
+   "key": "A",
+   "text": "It was a quiet farming village with almost no trade",
+   "misconception": "Background: Twain describes a hive of men and vehicles, freight wagons, and stages, not a quiet farming village."
+  },
+  {
+   "key": "B",
+   "text": "It was a government fort built to protect settlers from attack",
+   "misconception": "Background: Virginia City was a mining boomtown, not a military fort."
+  },
+  {
+   "key": "C",
+   "text": "It was a booming mining town built over the Comstock silver lode"
+  },
+  {
+   "key": "D",
+   "text": "It was a railroad town with no mines of its own",
+   "misconception": "Background: the town sat directly over the Comstock lode; the railroad served the mines, it did not replace them."
+  }
+ ],
+ "rationales": {
+  "A": "Background: Twain's Virginia swarms with men, vehicles, and freight wagons. Nothing about it is quiet or agricultural.",
+  "B": "Background: the town grew from the silver strike, not from a fort. Its business was mining, freight, and speculation.",
+  "C": "Twain lays it out: a hive of a town above ground, and below it a second city of tunnels in the Comstock lode, a vein fifty to eighty feet thick.",
+  "D": "Background: the lode ran under the center of Virginia and Gold Hill. The mines were the town's reason for existing.",
+  "general": "A boomtown announces itself in noise and crowds, and Twain counts both.\n1. Listen to the surface: men, vehicles, dust, freight wagons, stages, all moving at once.\n2. Look underneath: a second city of tunnels and timbers in a silver vein as wide as a New York street.\n3. Name the place. A mining town, built on silver and crowded with people chasing it.\nRemember: a boomtown is a crowd standing on top of a resource."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The Mining and Lumbering Frontier"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

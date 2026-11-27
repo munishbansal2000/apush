@@ -1,0 +1,80 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Samuel Gompers, address to the International Labor Congress (August 28, 1893)"
+  ]
+ },
+ "id": "apush-mcq-1778",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The passage asks for schools, books, and justice, not for violence.",
+   "text": "The violent overthrow of employers and owners."
+  },
+  {
+   "key": "B",
+   "text": "A better society for workers and their families."
+  },
+  {
+   "key": "C",
+   "misconception": "The passage speaks for labor, not for owners, and asks for more for workers.",
+   "text": "Higher profits for factory owners and managers."
+  },
+  {
+   "key": "D",
+   "misconception": "Gompers asks for more schoolhouses and justice, which need government.",
+   "text": "An end to all government and all laws."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The passage asks for schools, books, and justice, not for violence against employers.",
+  "B": "Gompers closes by picturing manhood more noble, womanhood more beautiful, and childhood more happy: a better life for whole families.",
+  "C": "The passage speaks for labor, not for owners, and asks for more for workers.",
+  "D": "Gompers asks for more schoolhouses and more justice, which need government, not its end.",
+  "general": "Look past the single demands to the picture at the end.\n1. The list names schools, books, learning, leisure, and justice.\n2. Gompers closes with manhood more noble, womanhood more beautiful, and childhood more happy.\n3. Those are hopes for whole families, not only for a pay packet.\n4. So the unions’ larger end is a better society for workers.\nRemember: a closing picture of family life shows the goal behind the demands."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.A",
+  "2.B"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "Gompers’ list suggests he saw trade unions as working toward what larger end?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Samuel Gompers, address to the International Labor Congress, August 28, 1893. Public domain (Samuel Gompers Papers, University of Maryland).",
+  "text": "“What does labor want? . . . We want more schoolhouses and less jails; more books and less arsenals; more learning and less vice; more constant work and less crime; more leisure and less greed; more justice and less revenge; in fact, more of the opportunities to cultivate our better natures, to make manhood more noble, womanhood more beautiful and childhood more happy and bright.”"
+ },
+ "stimulus_set": "gompers-what-labor-wants-1893",
+ "themes": [
+  "WOR",
+  "SOC"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

@@ -1,0 +1,89 @@
+{
+ "answerKey": "A",
+ "difficulty": 2,
+ "figures": [
+  {
+   "alt": "A Harper’s Weekly engraving of the Haymarket Square bombing in 1886, showing a speaker on a wagon at left, police moving through smoke in the center, and men falling in the street",
+   "caption": "The Haymarket Square bombing, Chicago, May 4, 1886, Harper’s Weekly",
+   "file": "u6/pr25e-ch10-q05.jpg",
+   "id": "fig-apush-mcq-1780",
+   "license": "Public domain: Harper’s Weekly engraving, May 15, 1886.",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/61/HaymarketRiot-Harpers.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Harper’s Weekly engraving of the Haymarket Square bombing (May 15, 1886)"
+  ]
+ },
+ "id": "apush-mcq-1780",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "text": "The bombing at a labor rally in Haymarket Square, Chicago, in 1886"
+  },
+  {
+   "key": "B",
+   "misconception": "Homestead was a steel strike in 1892, not a bombing at a Chicago rally.",
+   "text": "The Homestead steel strike in the Pennsylvania mills in 1892."
+  },
+  {
+   "key": "C",
+   "misconception": "Pullman was a railroad strike in 1894, not a bombing at a rally.",
+   "text": "The Pullman railroad strike in the city of Chicago in 1894."
+  },
+  {
+   "key": "D",
+   "misconception": "The 1877 strike was a railroad walkout, not a bombing at a rally.",
+   "text": "The Great Railroad Strike across the whole nation in 1877."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The engraving is dated to the Haymarket bombing: a speaker on a wagon, police in smoke, and the Jefferson Street sign.",
+  "B": "Background from the books: Homestead was a steel strike in Pennsylvania in 1892, not a bombing at a Chicago rally.",
+  "C": "Background from the books: Pullman was a railroad strike in Chicago in 1894, not a bombing at a rally.",
+  "D": "Background from the books: the 1877 strike was a railroad walkout, not a bombing at a rally.",
+  "general": "Name what is drawn before naming the event.\n1. A speaker stands on a wagon, addressing a crowd.\n2. Police move through thick smoke as men fall in the street.\n3. The street sign reads N. Jefferson St., in Chicago.\n4. A bomb blast at a Chicago labor rally is the Haymarket affair of 1886.\nRemember: place, crowd, and blast together name the event."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.A"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "What event does the engraving show?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Harper’s Weekly engraving, May 15, 1886. Public domain (Wikimedia Commons).",
+  "text": "Harper’s Weekly engraving of the Haymarket Square bombing in Chicago, May 4, 1886. At the left, a speaker stands on a wagon with one arm raised, addressing the crowd. In the center, police officers move through thick smoke as the bomb explodes, and men fall and scatter in the street. A street sign on a building at the upper left reads “N. JEFFERSON ST.”"
+ },
+ "stimulus_set": "haymarket-harper-1886",
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

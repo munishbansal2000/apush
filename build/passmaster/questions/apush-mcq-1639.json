@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-1639",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "1.B",
+  "6.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "stem": "Why did the rising wheat production shown in the chart make life harder for many Plains farmers?",
+ "stimulus": {
+  "kind": "chart",
+  "source_note": "Chart rendered in code from USDA National Agricultural Statistics Service production figures (1870: 254,429 thousand bushels; 1880: 502,257; 1890: 449,042; 1900: 599,315), corroborated by the FRED/NBER series A0109AUSA391NNBR (1870: 254; 1880: 502; 1890: 449; 1900: 599 million bushels).",
+  "text": "The chart shows United States wheat production in millions of bushels: 1870, 254; 1880, 502; 1890, 449; 1900, 599. Production roughly doubled between 1870 and 1880, dipped in 1890, and reached its highest level of the four years in 1900. The figures come from the United States Department of Agriculture's crop records, which count the harvested wheat crop for each calendar year."
+ },
+ "stimulus_set": "plains-farming-chart",
+ "options": [
+  {
+   "key": "A",
+   "text": "Wheat became illegal to sell across state lines",
+   "misconception": "Background: wheat moved freely in interstate trade; no law banned selling it across state lines."
+  },
+  {
+   "key": "B",
+   "text": "The government taxed each bushel so heavily that farming lost money",
+   "misconception": "Background: farmers' trouble was deflation and debt, not a per-bushel tax; no such tax existed."
+  },
+  {
+   "key": "C",
+   "text": "Railroads refused to carry wheat from the Plains to eastern cities",
+   "misconception": "Background: railroads carried Plains wheat east in huge volumes; the farmers' complaint was the freight rate, not a refusal to carry."
+  },
+  {
+   "key": "D",
+   "text": "Bigger harvests pushed prices down while farmers' debts stayed fixed"
+  }
+ ],
+ "rationales": {
+  "A": "Background: Plains wheat flowed east by rail and abroad by ship. No law barred it from crossing a state line.",
+  "B": "Background: the squeeze came from falling crop prices and fixed mortgage debts, not from a tax on each bushel.",
+  "C": "Background: the railroads hauled the wheat; that was their business. Farmers protested the rates they charged, not a refusal to carry.",
+  "D": "Background from the books: overproduction in the 1880s and 1890s drove prices down, and farmers answered by growing still more, which pushed prices down further while their mortgages stayed fixed.",
+  "general": "A bigger harvest should mean a bigger payday, so ask what broke the link.\n1. Read the chart's direction: up, from 254 to 599 million bushels.\n2. Add the market's answer. Background: more wheat on the market meant a lower price per bushel.\n3. Add the debt. Background: mortgages did not shrink when prices fell, so farmers grew more wheat and earned less for it.\nRemember: when everyone grows more of the same thing, the price falls for everyone."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "Agricultural Innovation"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "Challenges for Western Farmers"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1639",
+   "file": "u6/u6-wheat-production-1870-1900.png",
+   "caption": "United States wheat production, 1870-1900, in millions of bushels",
+   "alt": "Bar chart of United States wheat production: 254 million bushels in 1870, 502 in 1880, 449 in 1890, and 599 in 1900",
+   "license": "Public data (USDA); chart drawn for this question",
+   "source_url": "https://fred.stlouisfed.org/data/A0109AUSA391NNBR"
+  }
+ ]
+}

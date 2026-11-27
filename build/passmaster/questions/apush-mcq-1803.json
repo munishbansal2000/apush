@@ -1,0 +1,76 @@
+{
+ "answerKey": "D",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "id": "apush-mcq-1803",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The AFL sought wages and hours, not an end to private property.",
+   "text": "It promised to end all private property at once."
+  },
+  {
+   "key": "B",
+   "misconception": "The AFL sought higher wages, not a surrender of wages.",
+   "text": "It asked skilled workers to give up their own wages."
+  },
+  {
+   "key": "C",
+   "misconception": "The AFL organized only skilled workers by craft.",
+   "text": "It welcomed unskilled workers into every craft union."
+  },
+  {
+   "key": "D",
+   "text": "It focused on their wages and hours, not broad reform."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The AFL sought wages and hours, not an end to private property.",
+  "B": "The AFL sought higher wages, not a surrender of wages.",
+  "C": "The AFL organized only skilled workers by craft.",
+  "D": "Skilled workers kept their own craft unions and their gains went to their own pay and hours, not to a broad reform program.",
+  "general": "Ask what a skilled worker got from the AFL.\n1. The AFL organized only skilled workers by craft.\n2. It sought higher wages and shorter hours for its members.\n3. It left broader reform aside.\n4. So a skilled worker’s dues bought gains for himself, not a distant cause.\nRemember: a narrow goal appeals when the payoff lands on the member."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.B"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "Which of the following best explains why the AFL’s approach appealed to skilled workers?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, written for this question from Barron’s Premium 2027 Chapter 8 (Topic 6.7), 5 Steps to a 5, 2024, Chapter 18, and Princeton Review, Chapter 10.",
+  "text": "Original secondary passage, written for this question from the grounding books:\n\nThe Knights of Labor, founded in 1869, welcomed skilled and unskilled workers, women, and Black workers, and campaigned for broad reforms such as the eight-hour day, an end to child labor, and equal pay for equal work. The American Federation of Labor, founded in 1886 under Samuel Gompers, took a different path: it organized only skilled workers by craft and sought higher wages and shorter hours, leaving broader reform aside. After the Haymarket bombing of 1886, the public linked the Knights with violence and their membership fell, while the AFL kept growing."
+ },
+ "stimulus_set": "knights-vs-afl",
+ "themes": [
+  "WOR",
+  "SOC"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

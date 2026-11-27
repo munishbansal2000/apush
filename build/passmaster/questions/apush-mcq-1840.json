@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1840",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 6,
+ "topics": [
+  "6.9"
+ ],
+ "skills": [
+  "3.C"
+ ],
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 2,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.9 Responses to Immigration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "United States Census Office, Density of Distribution of the Natives of Ireland: 1890, Government release of 11th Census Results (1898)"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "irish-map-1890",
+ "stimulus": {
+  "kind": "map",
+  "text": "Described: a pair of statistical maps from the United States Census Office (1898) showing where Irish-born residents lived in 1890. The darkest shading, marking the heaviest concentrations of Irish-born residents relative to population, falls over the industrial Northeast and the Great Lakes port cities, with far lighter shading across the rural South and the far West.",
+  "source_note": "Described from the Census Office maps, Density of Distribution of the Natives of Ireland: 1890, Government release of 11th Census Results, 1898. Public domain. Rewrite of staged survivor pr25e-test2-q36 (Princeton Practice Test 2), reframed to a map-reading item on Irish settlement patterns; stem, options, and explanations are original."
+ },
+ "stem": "According to the maps, where were Irish-born residents least concentrated in 1890?",
+ "options": [
+  {
+   "key": "A",
+   "text": "In the rural South and the far West"
+  },
+  {
+   "key": "B",
+   "text": "In the industrial cities of the Northeast",
+   "misconception": "Confuses the darkest shading with the lightest."
+  },
+  {
+   "key": "C",
+   "text": "In the Great Lakes port cities",
+   "misconception": "Mistakes a dark-shaded region for a light one."
+  },
+  {
+   "key": "D",
+   "text": "In the port cities of the Atlantic seaboard",
+   "misconception": "Puts the Atlantic ports outside the dark-shaded Northeast."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The maps shade the rural South and the far West lightest, marking the fewest Irish-born residents relative to population.",
+  "B": "The industrial Northeast is shaded darkest, marking the heaviest concentration, not the lightest.",
+  "C": "The Great Lakes port cities are shaded darkest, marking the heaviest concentration, not the lightest.",
+  "D": "The Atlantic seaboard cities fall in the dark-shaded Northeast, marking heavy concentration, not the lightest.",
+  "general": "Read the shading, not the story the nativist tells.\n1. The darkest shading marks the heaviest concentrations of Irish-born residents.\n2. The darkest shading falls over the industrial Northeast and the Great Lakes port cities.\n3. The lightest shading falls over the rural South and the far West.\n4. Lightest shading means the fewest Irish-born residents relative to population.\nRemember: on a shaded map, the lightest areas answer 'where least.'"
+ }
+}

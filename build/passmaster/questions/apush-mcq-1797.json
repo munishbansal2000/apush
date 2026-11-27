@@ -1,0 +1,76 @@
+{
+ "answerKey": "D",
+ "difficulty": 2,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "id": "apush-mcq-1797",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The passage says tasks were simple, not that women and children were skilled.",
+   "text": "Women and children were more skilled than men."
+  },
+  {
+   "key": "B",
+   "misconception": "The passage says nothing about a law requiring child hiring.",
+   "text": "The law required factories to hire children."
+  },
+  {
+   "key": "C",
+   "misconception": "The passage says men’s pay was low, not that men refused factory work.",
+   "text": "Men refused to work in factories at all."
+  },
+  {
+   "key": "D",
+   "text": "Women and children could be paid less than men."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The passage says tasks were simple, not that women and children were skilled.",
+  "B": "The passage says nothing about a law requiring child hiring.",
+  "C": "The passage says men’s pay was low, not that men refused factory work.",
+  "D": "The passage says employers hired women and children whose pay was lower than men’s.",
+  "general": "Find the reason in the first sentence.\n1. Factory work was broken into simple, repeated tasks.\n2. Employers hired more women and children for those tasks.\n3. The passage gives the reason at once: their pay was lower than men’s.\n4. So cheaper labor, not greater skill, is the reason.\nRemember: the reason often sits in the same sentence as the fact."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.B"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "According to the passage, why did employers hire more women and children?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, written for this question from Barron’s Premium 2027 Chapter 8 (Topic 6.7), 5 Steps to a 5, 2024, Chapter 18, and Princeton Review, Chapter 10.",
+  "text": "Original secondary passage, written for this question from the grounding books:\n\nAs factory work was broken into simple, repeated tasks, employers hired more women and children, whose pay was lower than men’s. Families often needed the extra wages because a working-class man’s pay alone was low. By 1900, children aged ten to fifteen made up 18 percent of the industrial workforce, and women made up 17 percent. Machines also took skill out of work: a craftsman who once set his own pace now repeated one task at a machine for hours, and unsafe mills and mines injured workers in large numbers."
+ },
+ "stimulus_set": "women-children-workforce",
+ "themes": [
+  "WOR",
+  "SOC"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

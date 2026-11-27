@@ -1,0 +1,85 @@
+{
+  "answerKey": "D",
+  "difficulty": 2,
+  "figures": [
+    {
+      "alt": "1943 photograph of a sign reading COLORED WAITING ROOM with an arrow, outside a Greyhound bus station in Rome, Georgia",
+      "caption": "Esther Bubley, “Colored Waiting Room” sign, Greyhound bus station, Rome, Georgia, September 1943.",
+      "file": "pt01/fig4-colored-waiting-room-1943.jpg",
+      "id": "fig-apush-mcq-2018",
+      "license": "Public domain (FSA/OWI)",
+      "source_url": "https://www.loc.gov/pictures/resource/cph.3b22541/"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.4 The “New South”"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "America Transformed into the Industrial Giant"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-2018",
+  "lesson": "apush-u6-l2",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Brown v. Board of Education upheld the system Wells criticized.",
+      "text": "*Brown v. Board of Education* (1954)"
+    },
+    {
+      "key": "B",
+      "misconception": "Marbury v. Madison upheld the system Wells criticized.",
+      "text": "*Marbury v. Madison* (1803)"
+    },
+    {
+      "key": "C",
+      "misconception": "Dred Scott upheld the system Wells criticized.",
+      "text": "*Dred Scott v. Sandford* (1857)"
+    },
+    {
+      "key": "D",
+      "text": "*Plessy v. Ferguson* (1896)"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Brown v. Board of Education overturned Plessy; it did not uphold it.",
+    "B": "Marbury v. Madison is about judicial review, not segregation.",
+    "C": "Dred Scott (1857) is about slavery and citizenship, not the 1890s segregation system.",
+    "D": "Background: Plessy v. Ferguson (1896) upheld “separate but equal” and legitimized the segregation Wells attacked. The Court's blessing let Southern states write segregation into law for the next half century.",
+    "general": "1. Name the system. Laws separating the races in public places, backed by courts.\n2. Ask what gave it cover. Background: Plessy v. Ferguson (1896) upheld “separate but equal.”\n3. Test the others. Brown overturned Plessy; Marbury is judicial review; Dred Scott is 1857.\n4. Match it. Plessy legitimized the segregation Wells attacked.\nRemember: the ruling behind a system is the case that declared it lawful."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "2.B"
+  ],
+  "source": "original; stimulus is a paraphrase of Ida B. Wells’s speeches and writings (1890s) with the Bubley 1943 photograph",
+  "status": "final",
+  "stem": "Which of the following Supreme Court decisions most directly upheld the system Wells criticized?",
+  "stimulus": {
+    "kind": "mixed",
+    "source_note": "Ida B. Wells, anti-lynching and civil rights advocate, 1890s, paraphrased from her speeches and writings. Photograph: Esther Bubley, 1943, Library of Congress.",
+    "text": "The white man has made laws that separate the races in schools, in trains, in every public place. We ask not for special favors, but for justice and equal protection under the law."
+  },
+  "stimulus_set": "wells-jim-crow-1890s",
+  "themes": [
+    "PCE"
+  ],
+  "topics": [
+    "6.4"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

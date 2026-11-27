@@ -1,0 +1,79 @@
+{
+  "id": "apush-mcq-2002",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "test",
+  "unit": 6,
+  "topics": [
+    "6.14"
+  ],
+  "skills": [
+    "5.A"
+  ],
+  "themes": [
+    "PCE",
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "difficulty": 4,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.14 Subject to Debate"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Gilded Age Politics"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ],
+    "primary_sources": [
+      "People’s Party Platform (Omaha Platform), July 4, 1892"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-614-omaha",
+  "stimulus": {
+    "kind": "text",
+    "text": "The conditions which surround us best justify our co-operation; we meet in the midst of a nation brought to the verge of moral, political, and material ruin. Corruption dominates the ballot-box, the Legislatures, the Congress, and touches even the ermine of the bench. The people are demoralized; most of the States have been compelled to isolate the voters at the polling places to prevent universal intimidation and bribery. The newspapers are largely subsidized or muzzled, public opinion silenced, business prostrated, homes covered with mortgages, labor impoverished, and the land concentrating in the hands of capitalists. … From the same prolific womb of governmental injustice we breed the two great classes—tramps and millionaires.",
+    "source_note": "People’s Party (Populist) Platform, Omaha, July 4, 1892, preamble. Public domain; wording and punctuation follow the platform as printed in McPherson, A Handbook of Politics for 1892. Ellipsis marks an omission between complete sentences."
+  },
+  "stem": "The Populists blame “governmental injustice” for producing “tramps and millionaires.” Which demand of the Populists best follows from this charge?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Leaving the money supply to private banks alone",
+      "misconception": "Leaving money to banks would keep the system the Populists blame."
+    },
+    {
+      "key": "B",
+      "text": "Government ownership of railroads and a graduated income tax"
+    },
+    {
+      "key": "C",
+      "text": "Ending all federal regulation of business",
+      "misconception": "Ending regulation would give government less power, not use it to fix injustice."
+    },
+    {
+      "key": "D",
+      "text": "Raising tariffs to protect millionaires",
+      "misconception": "Higher tariffs would help the rich the Populists blame."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "Private banks alone would leave the blamed system untouched.",
+    "B": "Public ownership and a tax on the rich use government to undo the concentration.",
+    "C": "Ending regulation takes government out of the fight the Populists want it to join.",
+    "D": "Protecting millionaires would help the class the Populists blame.",
+    "general": "Ask what remedy fits the charge.\n1. The Populists charge that government injustice bred tramps and millionaires.\n2. A remedy must use government power against the concentration of wealth.\n3. Owning the railroads takes a monopoly out of private hands.\n4. Background from the books: the Omaha Platform also demanded free silver and the direct election of senators.\nRemember: when a group blames government, its remedy usually asks government to act."
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-1961",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.13"
+  ],
+  "skills": [
+    "1.B"
+  ],
+  "themes": [
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "difficulty": 2,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "The Pendleton Act"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Gilded Age Politics"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Civil Service Reform"
+      }
+    ],
+    "primary_sources": [
+      "Pendleton Civil Service Reform Act, January 16, 1883"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-613-pendleton-spoils",
+  "stimulus": {
+    "kind": "text",
+    "text": "Under the spoils system, a new president filled thousands of federal jobs with supporters of the winning party. In July 1881, a disappointed office seeker shot President James A. Garfield, who died that September. Congress then passed the Pendleton Act of 1883, which created a Civil Service Commission and required open, competitive examinations for some federal jobs. At first the act covered only about a tenth of federal jobs.",
+    "source_note": "Paraphrase of standard accounts, grounded in Barron’s Chapter 8, Topic 6.13, and 5 Steps Chapter 18. The Garfield shooting and the Pendleton Act are in both books."
+  },
+  "stem": "What was the spoils system?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Giving federal jobs to supporters of the winning party"
+    },
+    {
+      "key": "B",
+      "text": "Filling federal jobs through open competitive examinations",
+      "misconception": "Examinations came with the Pendleton Act, which replaced the spoils system."
+    },
+    {
+      "key": "C",
+      "text": "Electing the president by a vote of the whole people",
+      "misconception": "The spoils system was about handing out jobs, not about electing the president."
+    },
+    {
+      "key": "D",
+      "text": "Banning federal workers from joining any political party",
+      "misconception": "The spoils system rewarded party workers with jobs instead of banning them."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "The stimulus defines it: new presidents filled jobs with party supporters.",
+    "B": "Exams belong to the Pendleton reform, not to the spoils system.",
+    "C": "The spoils system handed out jobs after the election, not votes.",
+    "D": "Party workers got the jobs under the spoils system.",
+    "general": "Start from the stimulus definition.\n1. Under the spoils system, a new president filled thousands of jobs with party supporters.\n2. The jobs were rewards for helping the winning party, not prizes for exams.\n3. The Pendleton Act later replaced this with competitive examinations.\n4. So the spoils system is patronage: jobs as party rewards.\nRemember: when a stimulus defines a term, use its definition, not a guess."
+  }
+}

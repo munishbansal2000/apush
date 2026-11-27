@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-1638",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "A",
+ "skills": [
+  "4.A"
+ ],
+ "themes": [
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "stem": "According to the chart, in which year was United States wheat production about double its 1870 level?",
+ "stimulus": {
+  "kind": "chart",
+  "source_note": "Chart rendered in code from USDA National Agricultural Statistics Service production figures (1870: 254,429 thousand bushels; 1880: 502,257; 1890: 449,042; 1900: 599,315), corroborated by the FRED/NBER series A0109AUSA391NNBR (1870: 254; 1880: 502; 1890: 449; 1900: 599 million bushels).",
+  "text": "The chart shows United States wheat production in millions of bushels: 1870, 254; 1880, 502; 1890, 449; 1900, 599. Production roughly doubled between 1870 and 1880, dipped in 1890, and reached its highest level of the four years in 1900. The figures come from the United States Department of Agriculture's crop records, which count the harvested wheat crop for each calendar year."
+ },
+ "stimulus_set": "plains-farming-chart",
+ "options": [
+  {
+   "key": "A",
+   "text": "1880"
+  },
+  {
+   "key": "B",
+   "text": "1890",
+   "misconception": "Background: the 1890 bar, 449 million bushels, sits below double the 1870 figure of 254 million."
+  },
+  {
+   "key": "C",
+   "text": "1900",
+   "misconception": "Background: 1900 production, 599 million bushels, is more than double the 1870 figure, not about double."
+  },
+  {
+   "key": "D",
+   "text": "1870",
+   "misconception": "Background: 1870 is the starting year itself, 254 million bushels; doubling it gives about 508 million."
+  }
+ ],
+ "rationales": {
+  "A": "Read the bars: 1870 shows 254 million bushels and 1880 shows 502 million, almost exactly twice as much.",
+  "B": "Background: the 1890 bar reads 449 million bushels, which is less than twice the 1870 figure of 254 million.",
+  "C": "Background: the 1900 bar reads 599 million bushels, well above double the 1870 level.",
+  "D": "Background: 1870 is the base year at 254 million bushels. The question asks when production reached about double that.",
+  "general": "A chart question starts with the numbers, not with a guess.\n1. Find the base year first: 1870, at 254 million bushels.\n2. Double it in your head: about 508 million bushels.\n3. Find the bar nearest that number. 1880 reads 502 million, the closest bar to double.\n4. Check the others: 1890 falls short at 449, and 1900 overshoots at 599.\nRemember: double the first number first, then find the bar."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "Agricultural Innovation"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "Challenges for Western Farmers"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1638",
+   "file": "u6/u6-wheat-production-1870-1900.png",
+   "caption": "United States wheat production, 1870-1900, in millions of bushels",
+   "alt": "Bar chart of United States wheat production: 254 million bushels in 1870, 502 in 1880, 449 in 1890, and 599 in 1900",
+   "license": "Public data (USDA); chart drawn for this question",
+   "source_url": "https://fred.stlouisfed.org/data/A0109AUSA391NNBR"
+  }
+ ]
+}

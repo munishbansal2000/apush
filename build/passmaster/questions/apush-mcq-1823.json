@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-1823",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "3.D"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "kearney-workingmen",
+ "stimulus": {
+  "kind": "text",
+  "text": "Original secondary passage, written for this question from the grounding books:\n\nIn California in the 1870s, the Workingmen’s Party, led by the Irish immigrant Denis Kearney, blamed Chinese laborers for low wages and unemployment after the Panic of 1873. At rallies in San Francisco, Kearney ended his speeches with the slogan “The Chinese must go.” The party demanded that Congress exclude Chinese immigrants, and its campaign helped push Congress to pass the Chinese Exclusion Act of 1882.",
+  "source_note": "Original secondary passage, written for this question from Barron’s Premium 2027 Chapter 8 (Topics 6.3 and 6.8), 5 Steps to a 5, 2024, Chapter 18, and Princeton Review, Chapter 10."
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "status": "final",
+ "stem": "Kearney was himself an Irish immigrant. That fact best supports which conclusion about nativism in the Gilded Age?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Earlier immigrants could also turn nativist against newer arrivals"
+  },
+  {
+   "key": "B",
+   "text": "Irish immigrants were the main supporters of Chinese immigration",
+   "misconception": "Turns the leader of an exclusion campaign into a supporter of immigration."
+  },
+  {
+   "key": "C",
+   "text": "The Workingmen’s Party welcomed Chinese laborers as members",
+   "misconception": "Puts the excluded group inside the party that excluded them."
+  },
+  {
+   "key": "D",
+   "text": "Congress passed the Exclusion Act because Kearney asked for it alone",
+   "misconception": "Credits one man alone with a law many forces pushed."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "An Irish immigrant leading the campaign against Chinese immigrants shows that nativism crossed the line between native-born and immigrant.",
+  "B": "Kearney demanded that the Chinese must go. He did not support their immigration.",
+  "C": "The party demanded exclusion of the Chinese. It did not welcome them as members.",
+  "D": "Many forces pushed Congress, and the passage says the campaign helped push it, not that one man caused the law.",
+  "general": "Ask what an immigrant nativist proves.\n1. Kearney was an Irish immigrant.\n2. He led the campaign to exclude Chinese immigrants.\n3. If an immigrant can lead a nativist campaign, nativism is not only for the native-born.\n4. Earlier arrivals could turn against newer ones.\n5. The campaign’s leader proves the line between immigrant and nativist was not fixed.\nRemember: one example that crosses a line proves the line is not a wall."
+ }
+}

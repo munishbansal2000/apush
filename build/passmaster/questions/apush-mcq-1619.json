@@ -1,0 +1,83 @@
+{
+ "answerKey": "D",
+ "difficulty": 2,
+ "figures": [
+  {
+   "alt": "Color cartoon of giant fat men in top hats labeled with trust names towering over small senators seated at desks, with a sign reading This is a Senate of the monopolists",
+   "caption": "'The Bosses of the Senate,' Joseph Keppler, Puck, 1889",
+   "file": "u6/original-u6-tech-12.jpg",
+   "id": "fig-apush-mcq-1619",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:The_Bosses_of_the_Senate_by_Joseph_Keppler.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.1 Contextualizing Period 6"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-1619",
+ "lesson": "apush-u6-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The size is symbolic; the giants are the trusts and the small figures are the senators.",
+   "text": "That senators were taller than businessmen"
+  },
+  {
+   "key": "B",
+   "misconception": "The closed door is the people's entrance, not the Senate itself.",
+   "text": "That the trusts wanted to close the Senate for good"
+  },
+  {
+   "key": "C",
+   "misconception": "Background: the Sherman Antitrust Act came in 1890 and was weakly enforced at first; the cartoon shows the trusts in charge.",
+   "text": "That the Senate had passed laws breaking up the trusts"
+  },
+  {
+   "key": "D",
+   "text": "That giant trusts controlled the Senate and shut out ordinary people"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The size is symbolic. The giants are the trusts, and the small figures are the senators — the drawing shows who rules.",
+  "B": "The closed door is the people's entrance, not the Senate itself. The trusts want the people out, not the Senate gone.",
+  "C": "Background: the Sherman Antitrust Act came in 1890 and was weakly enforced at first. The cartoon shows the trusts in charge.",
+  "D": "The trusts tower over the tiny senators, the wall reads 'a Senate of the monopolists, by the monopolists, and for the monopolists,' and the people's entrance is closed.",
+  "general": "Read the cartoon's three labels and the point assembles itself.\n1. Look at the giants. Each belly names a trust: steel, copper, Standard Oil, iron, sugar.\n2. Read the wall. 'A Senate of the monopolists, by the monopolists, and for the monopolists!'\n3. Find the people. Their entrance is closed while the monopolists walk in.\nRemember: labels are evidence — when every giant wears a trust's name, the cartoon's target is the trusts."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "source": "original; stimulus viewed before writing — Joseph Keppler, Puck, 1889, public domain.",
+ "status": "final",
+ "stem": "What is the cartoon's main point?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Joseph Keppler, 'The Bosses of the Senate,' Puck magazine, 1889. Public domain. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:The_Bosses_of_the_Senate_by_Joseph_Keppler.jpg",
+  "text": "The cartoon shows giant, fat men in top hats towering over the small senators seated at their desks below. Each giant's belly is labeled with a trust, among them 'Steel Beam Trust,' 'Copper Trust,' 'Standard Oil Trust,' 'Iron Trust,' 'Sugar Trust,' 'Tin Trust,' 'Coal Trust.' A sign on the wall reads: 'This is a Senate of the monopolists, by the monopolists, and for the monopolists!' Above a small side door, a sign reads: 'Peoples' Entrance — CLOSED.'"
+ },
+ "stimulus_set": "bosses-senate",
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "topics": [
+  "6.1"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

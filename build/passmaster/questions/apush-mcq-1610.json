@@ -1,0 +1,82 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "figures": [
+  {
+   "alt": "Color cartoon of a giant businessman in a suit straddling the nation, holding strings that control the railroads below him, with two small men beneath his feet",
+   "caption": "The Modern Colossus of (Rail) Roads, Joseph Keppler, Puck, 1879",
+   "file": "u6/original-u6-tech-10.jpg",
+   "id": "fig-apush-mcq-1610",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Modern_Colossus_of_Rail_Roads_-_Keppler_1879.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.1 Contextualizing Period 6"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-1610",
+ "lesson": "apush-u6-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The size is symbolic, not literal; cartoonists exaggerate size to make a point about power.",
+   "text": "To show that Vanderbilt was the tallest man in the United States"
+  },
+  {
+   "key": "B",
+   "text": "To show that one man's railroad empire controlled commerce across the nation"
+  },
+  {
+   "key": "C",
+   "misconception": "He controlled the New York Central system, not every railroad; the point is his power, not literal ownership of all.",
+   "text": "To show that Vanderbilt owned every railroad in the world"
+  },
+  {
+   "key": "D",
+   "misconception": "The cartoon attacks his unregulated power; Vanderbilt and his fellow barons opposed regulation.",
+   "text": "To show that Vanderbilt supported government regulation of railroads"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The size is symbolic, not literal. Cartoonists draw powerful men as giants to show the reach of their power.",
+  "B": "The giant's size is the argument: one man's empire stretches across the whole nation, and the strings in his hands show who decides what freight moves and what it costs.",
+  "C": "Background: Vanderbilt controlled the New York Central system, not every railroad on earth. The point is the scale of his power, not a literal inventory.",
+  "D": "Background: the cartoon attacks unregulated power. Vanderbilt and his fellow barons opposed government regulation of their railroads.",
+  "general": "Ask what the drawing would lose if Vanderbilt were life-size: the whole point would vanish.\n1. Look at the strings in his hands. They run to the railroads below, showing who controls them.\n2. Look at the two small men beneath his feet. Gould and Field are minor figures beside the giant.\n3. Name the message. One man's empire controlled commerce across the nation.\nRemember: cartoon size is a claim about power — giants rule, small figures obey."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "2.B"
+ ],
+ "source": "original; stimulus viewed before writing — Joseph Keppler, Puck, 1879, public domain.",
+ "status": "final",
+ "stem": "Why did the cartoonist draw Vanderbilt as a giant towering over the whole country?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Joseph Keppler, 'The Modern Colossus of (Rail) Roads,' Puck magazine, 1879. Public domain. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Modern_Colossus_of_Rail_Roads_-_Keppler_1879.jpg",
+  "text": "The cartoon shows railroad magnate William Henry Vanderbilt as a giant straddling the nation, holding the strings that control the railroads below him. Two smaller figures, railroad men Jay Gould and Cyrus Field, stand beneath his feet. A sign at his feet reads: 'All freight seeking the seaboard MUST pass here and pay any tolls WE DEMAND.'"
+ },
+ "stimulus_set": "rail-colossus",
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "topics": [
+  "6.1"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

@@ -1,0 +1,88 @@
+{
+  "id": "apush-mcq-1956",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.13"
+  ],
+  "skills": [
+    "6.B"
+  ],
+  "themes": [
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "difficulty": 3,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "C. Politics, Power, and Reform in Urban America"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Gilded Age Politics"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "National Politics"
+      }
+    ],
+    "primary_sources": [
+      "Thomas Nast, 'The Brains,' Harper's Weekly, October 21, 1871"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-613-nast-tweed",
+  "stimulus": {
+    "kind": "image",
+    "text": "The cartoon, by Thomas Nast in Harper’s Weekly, October 21, 1871, shows a fat man in a suit with a money bag for a head. The bag is marked with a dollar sign. Below the figure the caption reads “THE ‘BRAINS’” and “That achieved the Tammany Victory at the Rochester Democratic Convention.” The figure is William M. “Boss” Tweed of New York City’s Tammany Hall.",
+    "source_note": "Thomas Nast, “The Brains,” Harper’s Weekly, October 21, 1871. Public domain; image viewed by the writer (shared pool: u6/5s24-ch03-mcq-20.jpg)."
+  },
+  "stem": "What does the caption about the Rochester convention show about Tweed's machine?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The machine reached beyond New York City into state party politics"
+    },
+    {
+      "key": "B",
+      "text": "The machine won its victories only in New York City elections",
+      "misconception": "The caption names a state convention in Rochester, beyond the city."
+    },
+    {
+      "key": "C",
+      "text": "The machine had lost control of the Democratic Party by 1871",
+      "misconception": "The caption credits Tweed with a Tammany victory, not a loss of control."
+    },
+    {
+      "key": "D",
+      "text": "The machine depended on rural voters more than city voters",
+      "misconception": "Tammany's strength was the city vote, and the caption shows it reaching outward from there."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "A Rochester convention victory means the city machine shaped state party choices.",
+    "B": "Rochester sits outside New York City, so the victory reached beyond it.",
+    "C": "A victory at the convention shows control, not loss of it.",
+    "D": "Tammany drew its votes from city immigrants, not from rural voters.",
+    "general": "Read the caption as evidence, not decoration.\n1. The caption credits Tweed's 'brains' with a Tammany victory at a Rochester convention.\n2. Rochester is a state convention site, far from Tweed's New York City base.\n3. A city machine that wins state conventions controls more than city jobs.\n4. Background from the books: party machines aimed to hold power at every level.\nRemember: a caption that names a place tells you how far a power reached."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1956",
+      "file": "u6/5s24-ch03-mcq-20.jpg",
+      "caption": "Thomas Nast, “The Brains,” Harper’s Weekly, October 21, 1871",
+      "alt": "Cartoon of a fat man in a suit with a money bag marked with a dollar sign for a head, captioned THE BRAINS, about the Tammany victory at the Rochester Democratic Convention",
+      "license": "Public domain",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Boss_Tweed%2C_Thomas_Nast.jpg"
+    }
+  ]
+}

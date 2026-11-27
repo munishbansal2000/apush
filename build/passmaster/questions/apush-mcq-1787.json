@@ -1,0 +1,89 @@
+{
+ "answerKey": "B",
+ "difficulty": 2,
+ "figures": [
+  {
+   "alt": "An 1892 cartoon showing Andrew Carnegie sitting on piles of money bags holding a whip, above a steel mill with signs reading Closed Strike, Closed, and Lock-Out, with crowds of workers outside the gates",
+   "caption": "“Promise and Performance” cartoon on the Homestead strike, 1892",
+   "file": "u6/barrons-2027-pt2-17.png",
+   "id": "fig-apush-mcq-1787",
+   "license": "Public domain: cartoon published 1892.",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Promise_and_Performance_Political_Cartoon_Andrew_Carnegie_sitting_on_bags_of_money_Homestead_Strike_1892.png"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "“Promise and Performance” political cartoon on the Homestead strike (1892)"
+  ]
+ },
+ "id": "apush-mcq-1787",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "No bills appear; Carnegie sits on bags marked with dollar signs.",
+   "text": "A pile of unpaid bills from the mill."
+  },
+  {
+   "key": "B",
+   "text": "Large piles of money bags beneath him."
+  },
+  {
+   "key": "C",
+   "misconception": "No contracts appear; Carnegie sits on bags marked with dollar signs.",
+   "text": "A stack of signed union contracts."
+  },
+  {
+   "key": "D",
+   "misconception": "No broken machinery appears; Carnegie sits on bags marked with dollar signs.",
+   "text": "A heap of broken mill machinery."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "No bills appear; Carnegie sits on bags marked with dollar signs.",
+  "B": "The cartoon draws Carnegie reclining on piles of money bags, holding a whip.",
+  "C": "No contracts appear; Carnegie sits on bags marked with dollar signs.",
+  "D": "No broken machinery appears; Carnegie sits on bags marked with dollar signs.",
+  "general": "Name the object under Carnegie.\n1. Carnegie sits on top of a heap of bags.\n2. The bags are marked with dollar signs.\n3. They are money bags, the cartoonist’s picture of his fortune.\n4. So the answer is piles of money bags.\n5. Money bags, a whip, and a closed mill are the cartoonist’s whole argument in one picture.\nRemember: in a cartoon, labels on objects name what they stand for."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.A"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "What does the cartoon show Carnegie sitting on?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Political cartoon “Promise and Performance,” 1892. Public domain (Wikimedia Commons).",
+  "text": "Political cartoon “Promise and Performance,” published in 1892. A large Andrew Carnegie sits on piles of money bags, holding a whip. Below him stretches a steel mill with signs reading “CLOSED—STRIKE,” “CLOSED,” and “LOCK-OUT.” Crowds of workers stand outside the mill gates."
+ },
+ "stimulus_set": "homestead-promise-performance-1892",
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

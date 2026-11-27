@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-1868",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 6,
+ "topics": [
+  "6.10"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "The Rise of the Middle Class"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "Uneven Affluence"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Remington Standard typewriter, 1890"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "u6-610-remington-typewriter",
+ "stimulus": {
+  "kind": "image",
+  "text": "The image shows a Remington Standard typewriter of 1890: a heavy black machine with round keys arranged in rows, a roller at the top for holding paper, and a ruler marked with numbers across the middle. A small plate above the roller reads, in part, “Keep machine free from dust.”",
+  "source_note": "Remington Standard typewriter, 1890. Public domain image from Wikimedia Commons; viewed by the writer."
+ },
+ "stem": "What does the image show?",
+ "options": [
+  {
+   "key": "A",
+   "text": "A steam locomotive used to haul heavy freight cars",
+   "misconception": "The image shows a small office machine, not a locomotive."
+  },
+  {
+   "key": "B",
+   "text": "A large printing press used to print newspapers in a city shop",
+   "misconception": "A press prints whole pages; this machine has keys for typing letters."
+  },
+  {
+   "key": "C",
+   "text": "A typewriter, with round keys, a paper roller, and a numbered ruler"
+  },
+  {
+   "key": "D",
+   "text": "A telegraph key used to send messages by wire",
+   "misconception": "A telegraph key is a single lever; this machine has rows of letter keys."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Nothing in the image runs on rails or hauls freight. Look at the keys and the paper roller.",
+  "B": "A printing press is far larger and has no letter keys. The rows of round keys mark this as a typewriter.",
+  "C": "The round keys in rows, the roller at the top for paper, and the numbered ruler across the middle are the parts of a typewriter.",
+  "D": "A telegraph key sends dots and dashes with one lever. This machine types letters with many keys.",
+  "general": "Name what you can see before you reason about it.\n1. Look at the front: rows of round keys marked with letters.\n2. Look at the top: a roller that holds paper.\n3. Look at the middle: a ruler marked with numbers.\n4. Keys plus a paper roller make a typewriter, not a press or a telegraph.\nRemember: identify the object from its visible parts, then ask what it was used for."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1868",
+   "file": "u6/original-u6-midclass-02.png",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Remington_Standard_Typewriter_1890.png",
+   "license": "Public domain",
+   "caption": "Remington Standard typewriter, 1890",
+   "alt": "Engraving of a Remington Standard typewriter with round keys in rows, a paper roller at the top, and a numbered ruler across the middle"
+  }
+ ]
+}

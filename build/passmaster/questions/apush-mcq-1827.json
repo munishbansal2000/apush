@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1827",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "MIG",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 2,
+ "stimulus_set": "city-growth-table",
+ "stimulus": {
+  "kind": "text",
+  "text": "Population of leading American cities (U.S. Bureau of the Census)\n\n| City | 1870 | 1890 |\n| New York | 942,292 | 1,515,301 |\n| Chicago | 298,977 | 1,099,850 |\n| Philadelphia | 674,022 | 1,046,964 |\n| St. Louis | 310,864 | 451,770 |\n| Boston | 250,526 | 448,477 |\n\nPopulations are from the decennial census of each year.",
+  "source_note": "U.S. Bureau of the Census, Population of the 100 Largest Urban Places, 1870 and 1890. Public data."
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Rise of the Modern American City"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "U.S. Bureau of the Census, Population of the 100 Largest Urban Places, 1870 and 1890"
+  ]
+ },
+ "status": "final",
+ "stem": "According to the table, which city grew the most between 1870 and 1890?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Boston, Massachusetts",
+   "misconception": "Picks the smallest gain in the table."
+  },
+  {
+   "key": "B",
+   "text": "Chicago, Illinois"
+  },
+  {
+   "key": "C",
+   "text": "St. Louis, Missouri",
+   "misconception": "Picks a small gain instead of the largest."
+  },
+  {
+   "key": "D",
+   "text": "Philadelphia, Pennsylvania",
+   "misconception": "Picks the second-largest gain instead of the largest."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Boston rose from 250,526 to 448,477, a gain of about 198,000, far below Chicago’s.",
+  "B": "Chicago rose from 298,977 to 1,099,850, a gain of about 801,000, larger than any other city’s gain.",
+  "C": "St. Louis rose from 310,864 to 451,770, a gain of about 141,000, far below Chicago’s.",
+  "D": "Philadelphia rose from 674,022 to 1,046,964, a gain of about 373,000, below Chicago’s.",
+  "general": "Subtract each city’s 1870 figure from its 1890 figure.\n1. New York gained about 573,000.\n2. Chicago gained about 801,000.\n3. Philadelphia gained about 373,000.\n4. Boston and St. Louis gained far less than Chicago.\n5. Chicago’s gain is the largest of the five cities.\n6. A gain of about 801,000 means Chicago nearly quadrupled in twenty years.\nRemember: growth is the difference, so subtract before you compare."
+ }
+}

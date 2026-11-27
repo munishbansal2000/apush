@@ -1,0 +1,70 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.1 Contextualizing Period 6"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-1614",
+ "lesson": "apush-u6-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "From about 35,000 to over 193,000 miles is far more than doubling.",
+   "text": "It roughly doubled in size between 1865 and 1900"
+  },
+  {
+   "key": "B",
+   "text": "It grew to more than five times its 1865 size"
+  },
+  {
+   "key": "C",
+   "misconception": "That is the starting figure, not the growth; the network added about 158,000 miles.",
+   "text": "It grew by only about 35,000 miles in total"
+  },
+  {
+   "key": "D",
+   "misconception": "The table shows growth from 163,597 miles in 1890 to 193,346 in 1900.",
+   "text": "It shrank after 1890 instead of growing further"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "From about 35,000 to over 193,000 miles is far more than doubling.",
+  "B": "Divide the end by the start: about 193,000 divided by about 35,000 is more than five. The network grew to more than five times its 1865 size.",
+  "C": "That is the starting figure, not the growth. The network added about 158,000 miles between 1865 and 1900.",
+  "D": "The table shows growth from 163,597 miles in 1890 to 193,346 in 1900, not a shrinking network.",
+  "general": "Do the division before you pick an answer — the table rewards one quick calculation.\n1. Take the two ends. About 35,000 miles in 1865, over 193,000 in 1900.\n2. Divide. About 193,000 divided by about 35,000 is more than five.\n3. Name the growth. The network grew to more than five times its 1865 size.\nRemember: 'how much did it grow' is a division question — end divided by start, not start minus end."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "1.A"
+ ],
+ "source": "original; stimulus is an original table drawn from E. R. Johnson, American Railway Transportation (1908), and Historical Statistics of the United States.",
+ "status": "final",
+ "stem": "Between 1865 and 1900, the railroad network grew by roughly how much, according to the table?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Mileage figures from E. R. Johnson, American Railway Transportation (1908); the 1865 figure is about 35,000 miles. Figures count miles of railroad in operation.",
+  "text": "| Year | Miles of railroad in operation |\n| 1865 | about 35,000 |\n| 1870 | 53,914 |\n| 1880 | 93,296 |\n| 1890 | 163,597 |\n| 1900 | 193,346 |"
+ },
+ "stimulus_set": "railroad-miles",
+ "themes": [
+  "WXT"
+ ],
+ "topics": [
+  "6.1"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

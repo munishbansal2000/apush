@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1934",
+ "lesson": "apush-u6-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.12"
+ ],
+ "skills": [
+  "2.C"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.12 Controversies over the Role of Government in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "Agrarian Anger and Populism"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "National Politics"
+   }
+  ],
+  "primary_sources": [
+   "Interstate Commerce Act, Section 1, February 4, 1887",
+   "Munn v. Illinois, 94 U.S. 113 (1877)"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "u6-612-railroad-regulation",
+ "stimulus": {
+  "kind": "table",
+  "text": "Government and the railroads:\n\n| Year | Event |\n| 1877 | In Munn v. Illinois, the Supreme Court upholds an Illinois law setting maximum charges for grain storage, ruling that property used in a way that affects the public may be regulated. |\n| 1886 | In Wabash v. Illinois, the Supreme Court rules that a state may not regulate railroad rates on shipments crossing state lines. |\n| 1887 | Congress passes the Interstate Commerce Act, creating the Interstate Commerce Commission to regulate railroads. The Act requires that railroad charges “shall be reasonable and just.” |\n| 1897 | In the Maximum Rate Case, the Supreme Court rules that the Interstate Commerce Commission may not set railroad rates. |",
+  "source_note": "Munn v. Illinois, 94 U.S. 113 (1877); Wabash, St. Louis and Pacific Railway Co. v. Illinois, 118 U.S. 557 (1886); Interstate Commerce Act, February 4, 1887, Section 1 (quoted clause exact); Interstate Commerce Commission v. Cincinnati, New Orleans and Texas Pacific Railway Co., 167 U.S. 479 (1897), the Maximum Rate Case."
+ },
+ "stem": "Why did Congress pass the Interstate Commerce Act in 1887?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Supreme Court had ordered Congress to create the Commission",
+   "misconception": "The Court never ordered Congress to create the Commission; Congress acted after Wabash."
+  },
+  {
+   "key": "B",
+   "text": "Wabash had barred the states from regulating interstate railroad rates"
+  },
+  {
+   "key": "C",
+   "text": "The railroads asked Congress to regulate their rates for them",
+   "misconception": "The railroads opposed regulation; farmers and shippers demanded it."
+  },
+  {
+   "key": "D",
+   "text": "The Sherman Antitrust Act had already broken up the railroads",
+   "misconception": "The Sherman Act came in 1890, three years after the Interstate Commerce Act."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "No Court order created the Commission; Congress acted after Wabash left a gap.",
+  "B": "After Wabash, only the federal government could reach interstate rates, so Congress acted.",
+  "C": "The railroads opposed regulation; farmers and shippers were the ones demanding it.",
+  "D": "The Sherman Act came in 1890, after the Interstate Commerce Act of 1887.",
+  "general": "Ask what gap the law filled.\n1. Munn let the states regulate, but Wabash took that power back for interstate shipments.\n2. No state could reach rates that crossed state lines after 1886.\n3. Only Congress could regulate commerce between the states.\n4. The Interstate Commerce Act filled the gap Wabash had opened.\nRemember: a new law often answers a court decision, so find the decision first."
+ }
+}

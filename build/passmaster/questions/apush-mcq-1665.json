@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-1665",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.3"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "B",
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "stem": "What does this photograph show about the events at Wounded Knee Creek?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph of the burial of Lakota dead at Wounded Knee, South Dakota, winter of 1890-1891. Public domain (Library of Congress via Wikimedia Commons). Image viewed before writing.",
+  "text": "The photograph shows men loading Lakota dead onto a wagon at Wounded Knee Creek, South Dakota, in the winter of 1890-1891, while soldiers on horseback watch from the ridge behind them. The dead were Lakota men, women, and children killed on December 29, 1890, when the Seventh Cavalry opened fire during the disarmament of Big Foot's band."
+ },
+ "stimulus_set": "wounded-knee",
+ "options": [
+  {
+   "key": "A",
+   "text": "A battle between two armed forces of roughly similar size",
+   "misconception": "Background: the dead were mostly Lakota women and children, and the Seventh Cavalry suffered few losses; this was not a battle of equals."
+  },
+  {
+   "key": "B",
+   "text": "The burial of Lakota dead after soldiers fired during a disarmament"
+  },
+  {
+   "key": "C",
+   "text": "A Lakota victory celebration after Little Bighorn",
+   "misconception": "Background: Little Bighorn was fought in 1876; this photograph is from the winter of 1890-1891."
+  },
+  {
+   "key": "D",
+   "text": "A government ceremony granting allotments to Lakota families",
+   "misconception": "Background: allotments were paper transactions under the Dawes Act, not mass burials in the snow."
+  }
+ ],
+ "rationales": {
+  "A": "Background: the dead were mostly Lakota women and children, and the Seventh Cavalry suffered few losses. This was not a battle of equals.",
+  "B": "The photograph shows a wagon loaded with the dead and a burial party at work, not two armies. The dead are Lakota, killed when the disarmament turned into a massacre.",
+  "C": "Background: Little Bighorn was fought in 1876. This photograph is from the winter of 1890-1891.",
+  "D": "Background: allotments were paper transactions under the Dawes Act, not mass burials in the snow.",
+  "general": "Picture a wagon in the snow, loaded with bodies, while soldiers watch from the ridge.\n1. Ask what the men are doing. They are gathering the dead, not fighting.\n2. Ask whose dead they are. The caption and the scene say Lakota, killed when the disarmament turned to shooting.\n3. Name the event. A massacre, buried in a mass grave.\nRemember: a photograph of a burial tells you who paid, even when no one names a winner."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Wounded Knee and the End of Autonomous American Indian Groups"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The End of Native American Independence"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1665",
+   "file": "u6/original-misc-ghostdance-05.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Burial_Party_Wounded_Knee.jpg",
+   "license": "Public domain",
+   "caption": "Burial of the Lakota dead at Wounded Knee, winter of 1890-1891",
+   "alt": "A black-and-white photograph of men loading bodies onto a horse-drawn wagon in the snow at Wounded Knee, with mounted soldiers watching from a ridge behind them"
+  }
+ ]
+}

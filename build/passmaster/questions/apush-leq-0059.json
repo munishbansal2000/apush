@@ -1,0 +1,87 @@
+{
+  "id": "apush-leq-0059",
+  "type": "leq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "6.A",
+    "6.B"
+  ],
+  "themes": [
+    "WXT",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "stimulus_set": null,
+  "prompt": "Evaluate the extent to which technological innovation caused economic and social change in the United States in the period from 1865 to 1898.",
+  "rubric": [
+    {
+      "points": 1,
+      "skill": "6.A",
+      "criterion": "Earns the point for a thesis that makes a historically defensible claim about the extent to which technological innovation caused economic and social change between 1865 and 1898.",
+      "notEarned": "A thesis that merely restates the prompt, or one that makes no causal claim, does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "4.B",
+      "criterion": "Earns the point for describing a broader historical context relevant to the prompt, such as the Civil War's end, the settlement of the West, or the rise of industrial capitalism.",
+      "notEarned": "A context that is only background on one example, or one set outside the period, does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "6.B",
+      "criterion": "Earns the point for supporting the argument with specific evidence about at least one technology, such as railroads, steel, electricity, or the telephone.",
+      "notEarned": "General claims about technology without specific examples do not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "6.B",
+      "criterion": "Earns the point for supporting the argument with specific evidence about a second technology or a second kind of change, such as daily life, work, or the growth of cities.",
+      "notEarned": "Repeating the same example, or adding examples without connecting them to the argument, does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "6.C",
+      "criterion": "Earns the point for using historical reasoning to explain how the evidence connects, such as showing a chain from cheaper steel to more track to larger markets.",
+      "notEarned": "Listing evidence without explaining the links between the pieces does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "6.D",
+      "criterion": "Earns the point for a complex argument, such as showing that innovation transformed some parts of American life while leaving others unchanged, or that the same technology helped some Americans and hurt others.",
+      "notEarned": "A one-sided argument that ignores counter-evidence does not earn the point."
+    }
+  ],
+  "modelOutline": "Thesis: Between 1865 and 1898 technological innovation was the main engine of economic and social change in the United States, remaking transport, production, communication, and daily life, though its gains went mostly to owners and cities while farmers and workers paid much of the cost.\nContext: The Civil War left a continent to settle, a government willing to grant land and patents, and an economy ready to industrialize.\nEvidence: Railroads grew from about 35,000 miles to more than 193,000, carrying settlers west and beef and grain east, and they set the nation's clocks with standard time in 1883. The Bessemer process cut the price of steel rails from about $160 to about $75 a ton, and steel output rose from 69 thousand tons in 1870 to over 10 million in 1900, building bridges and skyscrapers.\nEvidence continued: Bell's telephone reached almost 50,000 users by 1880, and Edison's Pearl Street station of 1882 brought electric light and longer working days. Farm machines doubled grain output while prices fell.\nComplexity: the same changes that lowered prices and shrank distance squeezed small farmers, exposed workers to dangerous machines, and helped dispossess Native peoples, so the transformation was real but uneven.",
+  "totalPoints": 6,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Steel and the Bessemer Process"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "The Second Industrial Revolution"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Age of Invention and Economic Growth"
+      }
+    ],
+    "primary_sources": [
+      "U.S. Patent No. 174,465 (Bell, 1876)",
+      "Andrew Carnegie, \"Wealth,\" North American Review, June 1889"
+    ]
+  },
+  "source": "original"
+}

@@ -1,0 +1,92 @@
+{
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ],
+    "primary_sources": [
+      "John D. Rockefeller, Random Reminiscences of Men and Events (1909)"
+    ]
+  },
+  "id": "apush-saq-0180",
+  "lesson": "apush-u6-l3",
+  "parts": [
+    {
+      "modelAnswer": "Rockefeller claims that combinations bring advantages through cooperation and the joining of capital, letting people do together what no one person can do alone. He argues that combination is necessary and its size should follow the needs of the business.",
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify Rockefeller’s main claim about industrial combinations.",
+      "scoring": [
+        {
+          "criterion": "Earns the point for identifying Rockefeller’s claim, such as that combinations bring advantages through cooperation and joined capital.",
+          "notEarned": "Restating the passage without naming Rockefeller’s claim does not earn the point.",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "modelAnswer": "Rockefeller argues that a business can grow so large that a partnership no longer works as a tool for running it, and a corporation becomes necessary. Growth itself, driven by the needs of the business, forces firms to combine and take in more people and more capital.",
+      "part": "b",
+      "points": 1,
+      "prompt": "Briefly explain one reason Rockefeller gives for why businesses grew into large combinations.",
+      "scoring": [
+        {
+          "criterion": "Earns the point for explaining one reason Rockefeller gives, such as business growth outrunning the partnership form or the needs of the business requiring more capital.",
+          "notEarned": "Naming a large business without explaining Rockefeller’s reason for its growth does not earn the point.",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "modelAnswer": "Critics such as Ida Tarbell saw Standard Oil’s combination as a monopoly built by unfair methods, including railroad rebates that rivals could not get. Where Rockefeller saw cooperation serving the needs of business, Tarbell saw a trust crushing rivals and threatening the public.",
+      "part": "c",
+      "points": 1,
+      "prompt": "Briefly explain one way critics of Standard Oil viewed the same combinations differently.",
+      "scoring": [
+        {
+          "criterion": "Earns the point for explaining one critic’s view, such as Tarbell’s charge of monopoly built by rebates or unfair methods.",
+          "notEarned": "Naming a critic without explaining how that critic viewed combinations does not earn the point.",
+          "points": 1
+        }
+      ]
+    }
+  ],
+  "pool": "test",
+  "reasoning": "causation",
+  "saq_slot": 2,
+  "skills": [
+    "3.A",
+    "2.B"
+  ],
+  "source": "original; stimulus written for this question from the grounding books",
+  "status": "final",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "John D. Rockefeller, Random Reminiscences of Men and Events (1909), Chapter II, “The Modern Corporation.” Public domain.",
+    "text": "“The chief advantages from industrial combinations are those which can be derived from a coöperation of persons and aggregation of capital. Much that one man cannot do alone two can do together, and once admit the fact that coöperation, or, what is the same thing, combination, is necessary on a small scale, the limit depends solely upon the necessities of business.”"
+  },
+  "stimulus_set": null,
+  "themes": [
+    "WXT"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "totalPoints": 3,
+  "type": "saq",
+  "unit": 6
+}

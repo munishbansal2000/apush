@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-1833",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "MIG",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "exodusters-west",
+ "stimulus": {
+  "kind": "text",
+  "text": "Original secondary passage, written for this question from the grounding books:\n\nAfter Reconstruction ended, many African Americans left the rural South. Starting in the late 1870s, about 40,000 Black migrants known as Exodusters crossed the Mississippi River to settle in Kansas, with smaller numbers going on to Oklahoma and Colorado. They left behind Jim Crow laws and Ku Klux Klan violence, and they hoped to find land of their own and a fair chance to vote. At the same time, farm families across the country were leaving the countryside: machines let fewer hands farm more land, so younger sons and daughters moved to the cities for factory work.",
+  "source_note": "Original secondary passage, written for this question from Barron’s Premium 2027 Chapter 8 (Topic 6.8), 5 Steps to a 5, 2024, Chapter 18, and Princeton Review, Chapter 10."
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "status": "final",
+ "stem": "According to the passage, where did most Exodusters settle?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Oklahoma",
+   "misconception": "Picks a smaller destination instead of the main one."
+  },
+  {
+   "key": "B",
+   "text": "Missouri",
+   "misconception": "Picks a stopping place instead of the main destination."
+  },
+  {
+   "key": "C",
+   "text": "Kansas"
+  },
+  {
+   "key": "D",
+   "text": "Colorado",
+   "misconception": "Picks a smaller destination instead of the main one."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Smaller numbers went to Oklahoma, but most settled in Kansas.",
+  "B": "Some Exodusters stopped in Missouri, but most went on to Kansas.",
+  "C": "The passage says about 40,000 Exodusters crossed the Mississippi to settle in Kansas.",
+  "D": "Smaller numbers went to Colorado, but most settled in Kansas.",
+  "general": "Find the main destination in the passage.\n1. About 40,000 Exodusters crossed the Mississippi River.\n2. They settled in Kansas.\n3. Smaller numbers went on to Oklahoma and Colorado.\n4. Some stopped in Missouri, but most went on to Kansas.\n5. The main destination is Kansas, not the smaller ones.\nRemember: most means the largest share, so compare the numbers."
+ }
+}

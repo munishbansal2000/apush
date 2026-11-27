@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-2004",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.14"
+  ],
+  "skills": [
+    "2.A"
+  ],
+  "themes": [
+    "PCE"
+  ],
+  "reasoning": "comparison",
+  "difficulty": 2,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.13 Politics in the Gilded Age"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Gilded Age Politics"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ],
+    "primary_sources": [
+      "William Jennings Bryan, “Cross of Gold” speech, July 9, 1896"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-614-bryan",
+  "stimulus": {
+    "kind": "text",
+    "text": "Having behind us the producing masses of this nation and the world, supported by the commercial interests, the laboring interests, and the toilers everywhere, we will answer their demand for a gold standard by saying to them: You shall not press down upon the brow of labor this crown of thorns, you shall not crucify mankind upon a cross of gold.",
+    "source_note": "William Jennings Bryan, “Cross of Gold” speech, Democratic National Convention, Chicago, July 9, 1896. Public domain; wording and punctuation follow Bryan, The First Battle (1896)."
+  },
+  "stem": "Whom does Bryan say stands behind his answer to the gold standard?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The producing masses, the laborers, and the toilers"
+    },
+    {
+      "key": "B",
+      "text": "The bankers of New York and London",
+      "misconception": "Bryan speaks against the gold standard the bankers favored, not for them."
+    },
+    {
+      "key": "C",
+      "text": "The owners of the great railroads",
+      "misconception": "Bryan names producers and laborers, not railroad owners."
+    },
+    {
+      "key": "D",
+      "text": "The justices of the Supreme Court",
+      "misconception": "Bryan names no judges in this passage."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "Bryan names the producing masses, the laboring interests, and the toilers.",
+    "B": "The bankers are the side Bryan answers, not the side behind him.",
+    "C": "Railroad owners are not among the groups Bryan names.",
+    "D": "No judges appear in Bryan’s list.",
+    "general": "Read Bryan’s list of supporters.\n1. Bryan says he has behind him the producing masses of the nation and the world.\n2. He adds the commercial interests, the laboring interests, and the toilers everywhere.\n3. Those are the people who work and produce, not the bankers.\n4. Background from the books: Bryan spoke for farmers and workers against the gold standard.\nRemember: a speaker’s list of supporters tells you whose side he claims."
+  }
+}

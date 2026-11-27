@@ -1,0 +1,75 @@
+{
+  "answerKey": "B",
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Corporations Look Abroad"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ]
+  },
+  "id": "apush-mcq-1766",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Factories made more than Americans could buy, which is why goods went abroad.",
+      "text": "American factories made fewer goods than Americans could buy"
+    },
+    {
+      "key": "B",
+      "text": "Surplus goods from mass production needed foreign buyers"
+    },
+    {
+      "key": "C",
+      "misconception": "Background: foreign trade grew, and Europe was a leading buyer of American goods.",
+      "text": "The United States stopped trading with Europe"
+    },
+    {
+      "key": "D",
+      "misconception": "Background: farm output more than doubled in this period; farmers grew more, not less.",
+      "text": "American farmers stopped growing wheat and corn"
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "If factories made too little, there would be nothing left to export. The surplus is what went abroad.",
+    "B": "Background from the books: factories turned out goods in huge numbers, and businessmen sought foreign markets for the surplus.",
+    "C": "Background: trade with Europe grew in this period. The table itself shows exports rising, not stopping.",
+    "D": "Background: the books say corn and wheat production more than doubled between 1870 and 1900.",
+    "general": "Ask what a surplus does.\n1. The table shows exports rising fast after 1870.\n2. Background from the books: factories and farms were producing more than Americans at home could buy.\n3. A surplus has to go somewhere, and foreign buyers were the outlet.\n4. So the growth in exports follows from producing more than the home market took.\nRemember: when output outruns home demand, look abroad for the surplus."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "1.B"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "Which of the following best explains the growth in exports shown in the table?",
+  "stimulus": {
+    "kind": "table",
+    "source_note": "Figures from Barron’s Premium 2027, Chapter 8 (Topic 6.6, Corporations Look Abroad).",
+    "text": "| Year | Value of American exports |\n| 1870 | About $400 million |\n| 1880 | About $850 million |\n| 1900 | About $1,400 million |"
+  },
+  "stimulus_set": "exports-table",
+  "themes": [
+    "WXT"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

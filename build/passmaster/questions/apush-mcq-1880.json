@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-1880",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.10"
+ ],
+ "skills": [
+  "2.A",
+  "5.A"
+ ],
+ "themes": [
+  "GEO",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.10 Development of the Middle Class"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Rise of the Modern American City"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Electric streetcars on Canal Street, New Orleans, Detroit Publishing Company postcard, 1907"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "canal-streetcars",
+ "stimulus": {
+  "kind": "image",
+  "text": "The image is a hand-colored postcard of Canal Street, New Orleans, copyrighted 1907 by the Detroit Publishing Company. It shows a wide city street with several sets of streetcar tracks running down its middle and three electric streetcars carrying passengers. Tall commercial buildings line both sides of the street, and a horse-drawn carriage stands at the right edge.",
+  "source_note": "Electric streetcars on Canal Street, New Orleans, 1907 postcard view (Detroit Publishing Company). Public domain image from Wikimedia Commons; viewed by the writer."
+ },
+ "stem": "Which chain of effects best explains how electric streetcars changed where the middle class lived?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Streetcars replaced railroads, so factories moved into city centers",
+   "misconception": "Streetcars carried city passengers; they did not replace railroads or move factories."
+  },
+  {
+   "key": "B",
+   "text": "Streetcars ended all walking, so families never left their neighborhoods",
+   "misconception": "People kept walking; streetcars added a longer trip, they did not end walking."
+  },
+  {
+   "key": "C",
+   "text": "Streetcars made travel from outlying areas practical, so families could live farther out"
+  },
+  {
+   "key": "D",
+   "text": "Streetcars carried freight across the country, so farmers shipped wheat by streetcar",
+   "misconception": "Streetcars carried city passengers, not cross-country freight."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Railroads kept carrying freight and long-distance passengers. Streetcars served the city itself.",
+  "B": "Walking continued. The change was that a family could live farther away and still get to work.",
+  "C": "Cheap daily rides let families live beyond walking distance of downtown, buy homes there, and commute. Those outlying homes were the early suburbs.",
+  "D": "Wheat traveled by railroad, not by streetcar. Streetcars moved people within the city.",
+  "general": "Follow the chain one link at a time.\n1. Electric streetcars made fast, cheap rides across the city possible.\n2. A worker could then live farther from the workplace and still arrive each day.\n3. Background from the books: families moved to early suburbs, separating home from workplace.\n4. Homeownership in those suburbs became the middle class's defining aspiration.\nRemember: a chain answer must hold at every link, not only at the end."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1880",
+   "file": "u6/original-u6-midclass-06.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/CanalMagazineStreetcarsPub1907.jpg",
+   "license": "Public domain",
+   "caption": "Electric streetcars on Canal Street, New Orleans, 1907 postcard",
+   "alt": "Hand-colored postcard of a wide city street with streetcar tracks and three electric streetcars, tall commercial buildings on both sides, and a horse-drawn carriage at the right"
+  }
+ ]
+}

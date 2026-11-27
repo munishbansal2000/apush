@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-1816",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "3.C"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "opper-castle-garden-1882",
+ "stimulus": {
+  "kind": "image",
+  "text": "Political cartoon, “Castle Garden Emigrant-Catchers,” by Frederick Burr Opper, Puck, June 14, 1882. Newly arrived immigrants carrying bags and bundles stand outside the Castle Garden immigrant depot in New York, whose signs read “ENTRANCE FOR MEN” and “ENTRANCE FOR WOMEN.” In front of them, six figures buried to the neck in holes each hold a chain leading to a pair of spring-loaded steel jaws. Four of their signs read “MONEY CHANGER,” “TEMPTRESS,” “CONFIDENCE MAN,” and “FRIEND FROM THE OLD COUNTRY.” Two more figures wait in holes beside them. Two policemen look on without helping.",
+  "source_note": "Frederick Burr Opper, “Castle Garden Emigrant-Catchers,” Puck, vol. 11, no. 275 (June 14, 1882), back page. Image file: scan of the issue held by the Internet Archive (archive.org/details/sim_puck_1882-06-14_11_275); the cartoon is also catalogued by the Historical Society of Pennsylvania and the United States Holocaust Memorial Museum (Katz Ehrenthal Collection). Public domain: published 1882."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1816",
+   "file": "u6/original-u6-castle-garden-emigrant-catchers.jpg",
+   "alt": "Opper cartoon: six swindlers wait in holes with spring-loaded steel jaws for newly arrived immigrants outside Castle Garden, while two policemen look on.",
+   "caption": "Castle Garden Emigrant-Catchers, Puck, June 14, 1882",
+   "license": "Public domain: 1882 cartoon, Puck magazine.",
+   "source_url": "https://archive.org/details/sim_puck_1882-06-14_11_275"
+  }
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Frederick Burr Opper, “Castle Garden Emigrant-Catchers,” Puck, vol. 11, no. 275 (June 14, 1882)"
+  ]
+ },
+ "status": "final",
+ "stem": "Opper’s cartoon differs from most nativist cartoons of the era mainly in that it does what?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Blames the swindlers waiting at Castle Garden, not the immigrants"
+  },
+  {
+   "key": "B",
+   "text": "Calls for Congress to ban immigration from southern and eastern Europe",
+   "misconception": "Reads a policy demand into a cartoon that makes none."
+  },
+  {
+   "key": "C",
+   "text": "Shows immigrants as a threat to American jobs and wages",
+   "misconception": "Gives the cartoon the nativist message it answers."
+  },
+  {
+   "key": "D",
+   "text": "Blames the new immigrants for the crowding of the cities",
+   "misconception": "Blames the victims the cartoon defends."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The steel jaws are set by the labeled swindlers, and the policemen do nothing. The cartoon’s anger falls on the cheats, not on the newcomers.",
+  "B": "The cartoon makes no call for a ban. It asks readers to see the newcomers as victims of cheats.",
+  "C": "Showing immigrants as a job threat is the nativist view this cartoon answers, not its own point.",
+  "D": "The cartoon blames the swindlers and the idle police for the immigrants’ troubles, not the immigrants for crowding.",
+  "general": "Compare the cartoon’s stance with the nativist stance.\n1. Background: nativist cartoons of the era showed immigrants as a threat to jobs and cities.\n2. Opper shows the immigrants carrying their bundles toward Castle Garden while swindlers wait in holes with steel jaws.\n3. The policemen look on and do nothing.\n4. The danger in the cartoon is what waits for the immigrants, not the immigrants themselves.\nRemember: a cartoon’s stance is in whom it blames and whom it honors."
+ }
+}

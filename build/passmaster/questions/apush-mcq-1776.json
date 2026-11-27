@@ -1,0 +1,79 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Samuel Gompers, address to the International Labor Congress (August 28, 1893)"
+  ]
+ },
+ "id": "apush-mcq-1776",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "text": "More chances for workers to live fuller, better lives."
+  },
+  {
+   "key": "B",
+   "misconception": "Money never appears in the list; Gompers asks for schools, books, and justice.",
+   "text": "More money and nothing else besides money."
+  },
+  {
+   "key": "C",
+   "misconception": "Nothing in the passage calls for overthrowing the government.",
+   "text": "The overthrow of the government by force."
+  },
+  {
+   "key": "D",
+   "misconception": "Gompers asks for more of many good things, not for an end to business.",
+   "text": "An end to all private business and property."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "Gompers ends with more chances to cultivate our better natures, which sums up the whole list.",
+  "B": "Money never appears in the list; Gompers asks for schools, books, leisure, and justice.",
+  "C": "Nothing in the passage calls for overthrowing the government.",
+  "D": "Gompers asks for more of many good things, not for an end to private business.",
+  "general": "Read the list, then read its ending.\n1. Gompers asks for more schoolhouses, books, learning, leisure, and justice.\n2. None of those is a wage demand.\n3. He sums them up as more chances to cultivate our better natures.\n4. So the broad want is a fuller, better life, not money alone.\nRemember: a list’s closing line often states what the list adds up to."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.A"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "What does Gompers say labor wants most broadly?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Samuel Gompers, address to the International Labor Congress, August 28, 1893. Public domain (Samuel Gompers Papers, University of Maryland).",
+  "text": "“What does labor want? . . . We want more schoolhouses and less jails; more books and less arsenals; more learning and less vice; more constant work and less crime; more leisure and less greed; more justice and less revenge; in fact, more of the opportunities to cultivate our better natures, to make manhood more noble, womanhood more beautiful and childhood more happy and bright.”"
+ },
+ "stimulus_set": "gompers-what-labor-wants-1893",
+ "themes": [
+  "WOR",
+  "SOC"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

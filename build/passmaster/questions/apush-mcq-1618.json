@@ -1,0 +1,75 @@
+{
+ "answerKey": "B",
+ "difficulty": 4,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.1 Contextualizing Period 6"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Chapter 10 Summary"
+   }
+  ],
+  "primary_sources": [
+   "William Jennings Bryan, 'Cross of Gold' speech, July 1896"
+  ]
+ },
+ "id": "apush-mcq-1618",
+ "lesson": "apush-u6-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Background: farmers kept producing; overproduction and low prices were the problem, not a retreat from farming.",
+   "text": "Farmers stopped growing crops for the market and left their farms"
+  },
+  {
+   "key": "B",
+   "text": "Industrial America outvoted rural America, and McKinley beat Bryan's farm coalition"
+  },
+  {
+   "key": "C",
+   "misconception": "Background: the opposite happened; McKinley's victory kept gold, later confirmed by the Gold Standard Act of 1900.",
+   "text": "Congress abolished the gold standard and adopted free silver in 1896"
+  },
+  {
+   "key": "D",
+   "misconception": "Background: the Populists fused with Bryan and lost; McKinley won the election.",
+   "text": "The Populist Party won the presidency in 1896 with Bryan"
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "Background: farmers kept producing. Overproduction and low prices were the problem, not a retreat from farming.",
+  "B": "Background: by 1896 the industrial North and East held more votes than the farming South and West. McKinley carried the cities and the factory vote, and gold won with them.",
+  "C": "Background: the opposite happened. McKinley's victory kept gold, later confirmed by the Gold Standard Act of 1900.",
+  "D": "Background: the Populists fused with Bryan and lost. McKinley won the election.",
+  "general": "Think of 1896 as a census in disguise: the votes counted who America had become.\n1. Count the sides. Bryan's farm coalition held the rural South and West; McKinley held the industrial North and East.\n2. Ask which side had grown. Cities, factories, and their workers now outnumbered the farm vote.\n3. Name the result. Industrial America outvoted rural America, and gold won with the cities.\nRemember: elections settle arguments by counting people — and by 1896, more Americans lived the industrial life."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "4.B",
+  "6.C"
+ ],
+ "source": "original; stimulus is William Jennings Bryan, 'Cross of Gold' speech, July 1896, public domain.",
+ "status": "final",
+ "stem": "Bryan's speech came at the end of Period 6. Which of the following best explains why the election of 1896 settled the money question in favor of gold?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "William Jennings Bryan, 'Cross of Gold' speech, Democratic National Convention, Chicago, July 1896. Public domain.",
+  "text": "\"Having behind us the producing masses of this nation and the world, supported by the commercial interests, the laboring interests, and the toilers everywhere, we will answer their demand for a gold standard by saying to them: You shall not press down upon the brow of labor this crown of thorns, you shall not crucify mankind upon a cross of gold.\"\n— William Jennings Bryan, \"Cross of Gold\" speech, Democratic National Convention, Chicago, July 1896"
+ },
+ "stimulus_set": "cross-gold",
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "topics": [
+  "6.1"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

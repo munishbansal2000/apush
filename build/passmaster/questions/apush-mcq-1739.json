@@ -1,0 +1,77 @@
+{
+  "id": "apush-mcq-1739",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "answerKey": "B",
+  "skills": [
+    "1.B",
+    "4.B"
+  ],
+  "themes": [
+    "WXT",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "stem": "Corn output more than doubled, yet many small farmers grew poorer. Who gained most from the rising output?",
+  "stimulus": {
+    "kind": "table",
+    "source_note": "United States corn production, in millions of bushels, from the National Bureau of Economic Research Macrohistory Database (series A01023USA391NNBR), via FRED, Federal Reserve Bank of St. Louis. Public data.",
+    "text": "United States corn production, in millions of bushels:\n\n| Year | Corn produced |\n| 1870 | 1,125 |\n| 1880 | 1,707 |\n| 1890 | 1,650 |\n| 1900 | 2,662 |"
+  },
+  "stimulus_set": "corn-production",
+  "options": [
+    {
+      "key": "A",
+      "text": "Small farmers, who sold the most corn and kept the profits",
+      "misconception": "Background: small farmers sold less, not more; falling prices and costly machines squeezed them, while large farms sold in volume."
+    },
+    {
+      "key": "B",
+      "text": "Large mechanized farms, and the railroads and dealers who moved the crop"
+    },
+    {
+      "key": "C",
+      "text": "The federal government, which collected a tax on every bushel shipped east",
+      "misconception": "Background: the federal government levied no tax on bushels of corn shipped east."
+    },
+    {
+      "key": "D",
+      "text": "Foreign buyers overseas, who paid the highest prices for American corn",
+      "misconception": "Background: foreign buyers bought at falling world prices; they did not pay the highest prices."
+    }
+  ],
+  "rationales": {
+    "A": "Background: small farmers sold less, not more; falling prices and costly machines squeezed them, while large farms sold in volume.",
+    "B": "Background from the books: large farms could afford the machines that raised output, so they sold the most grain; railroads and grain dealers took their cut moving it east. The gains went to scale and to middlemen, not to the small farmer.",
+    "C": "Background: the federal government levied no tax on bushels of corn shipped east.",
+    "D": "Background: foreign buyers bought at falling world prices; they did not pay the highest prices.",
+    "general": "Ask who the rising output paid.\n1. Read the table. Corn output more than doubles, from 1,125 million bushels in 1870 to 2,662 million in 1900.\n2. Background: large farms could afford the machines behind that rise, so they sold the most grain.\n3. Background: railroads and grain dealers took their cut moving the crop east, while small farmers sold little at falling prices.\nRemember: when output rises, ask who sells the most, because the gains follow scale."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Mechanized Agriculture"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 17",
+        "section": "Challenges for Western Farmers"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Railroads and Developments in the West"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)"
+}

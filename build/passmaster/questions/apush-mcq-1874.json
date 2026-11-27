@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-1874",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.10"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.10 Development of the Middle Class"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "Uneven Affluence"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Floor plan of the first floor of Macy's Department Store, New York, as built 1901-1902"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "macy-floor-plan",
+ "stimulus": {
+  "kind": "image",
+  "text": "The image is a floor plan of the first floor of Macy's Department Store in New York, as built 1901–1902. It shows one very large open floor crossed by a grid of columns, with a grand staircase at its center, entrances on Broadway and 35th Street, and small rooms for stairs and lifts along the edges. The plan is labeled “FIRST FLOOR.”",
+  "source_note": "Floor plan of the first floor of Macy's Department Store, New York, as built 1901-1902. Public domain image from Wikimedia Commons; viewed by the writer."
+ },
+ "stem": "What does the floor plan show about the inside of the store?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Small separate rooms, each selling one kind of good behind a counter",
+   "misconception": "The plan shows one open floor, not small separate rooms."
+  },
+  {
+   "key": "B",
+   "text": "A factory floor filled with machines for making goods",
+   "misconception": "No machines are shown; the plan is of a store floor, not a factory."
+  },
+  {
+   "key": "C",
+   "text": "A warehouse with no space at all for customers",
+   "misconception": "The open floor and grand staircase are built for customers to walk through."
+  },
+  {
+   "key": "D",
+   "text": "One very large open floor with a grand staircase at its center"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "The plan shows a single large space crossed by columns, not a set of small rooms.",
+  "B": "The plan is labeled as a store floor. Its open space is for display and shoppers, not machines.",
+  "C": "The staircase and the entrances show customers moving through the space. It is a selling floor.",
+  "D": "The plan shows one big open floor with a grid of columns and a grand staircase at its center.",
+  "general": "Read the plan like a map of the room.\n1. The outline is one large rectangle, not many small rooms.\n2. Dots in a grid mark columns holding up the open floor.\n3. A grand staircase stands at the center, with entrances on two sides.\n4. Open space plus a central staircase means a floor built for shoppers to move through.\nRemember: a plan shows shape first; read the shape before you judge what it was for."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1874",
+   "file": "u6/original-u6-midclass-04.png",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Macy_first_floor.png",
+   "license": "Public domain",
+   "caption": "Floor plan of the first floor of Macy's Department Store, New York, as built 1901-1902",
+   "alt": "Floor plan of one large open store floor crossed by a grid of columns, with a grand staircase at the center and entrances marked on Broadway and 35th Street"
+  }
+ ]
+}

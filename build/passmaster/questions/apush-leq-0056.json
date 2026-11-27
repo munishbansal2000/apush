@@ -1,0 +1,84 @@
+{
+ "id": "apush-leq-0056",
+ "type": "leq",
+ "unit": 6,
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "topics": [
+  "6.2"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "stimulus_set": null,
+ "source": "original; no stimulus (LEQ is stimulus-free)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "Government Encouragement of Western Settlement"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "prompt": "Evaluate the extent to which the federal government encouraged the economic development of the American West in the period 1865-1898.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which the federal government encouraged the economic development of the West between 1865 and 1898, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of encouragement does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the Civil War's end, the nation's industrial growth, or the long history of federal land policy from the Northwest Ordinance to the Homestead Act.",
+   "notEarned": "A sentence of background with no link to the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant evidence, such as the Homestead Act, the Pacific Railway Acts, the Morrill Land-Grant Act, or the Dawes Act.",
+   "notEarned": "A general statement with no specific evidence does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for using additional specific evidence to support a different part of the argument, such as mining law and the Comstock Lode, railroad regulation, or the opening of Oklahoma in 1889.",
+   "notEarned": "Repeating the same example, or giving evidence with no link to the claim, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (first point): earns the point for explaining how the evidence supports the argument, such as showing how land grants financed railroads that then carried settlement, or how allotment opened Native land to settlers.",
+   "notEarned": "Listing evidence without explaining how it supports the claim does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (second point): earns the point for demonstrating a complex understanding, such as qualifying the extent of encouragement, weighing the government's help to settlers and companies against its harm to Native peoples, or tracing change across the period.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: Between 1865 and 1898 the federal government was the West's greatest developer, using land grants and laws to build farms, railroads, mines, and markets, though the same encouragement enriched corporations and dispossessed Native peoples.\nContext: The Civil War left the government holding a vast public domain and a railroad-building habit, while eastern industry hungered for western grain, beef, and minerals.\nEvidence: The Homestead Act of 1862 and its follow-ups, the Timber Culture and Desert Land Acts, gave settlers land; the Pacific Railway Acts gave railroad companies more than 175 million acres and government bonds; the Morrill Land-Grant Act funded agricultural colleges; mining law left the Comstock and other strikes to private enterprise; the Dawes Act of 1887 divided reservations and sold the surplus to settlers; the Interstate Commerce Act of 1887 answered the corporate power the earlier laws had built.\nComplexity: Encouragement was not neutral. Settlers got 160 acres and a hard life, railroads got empires, and Native peoples lost the buffalo, the land, and finally the reservations themselves, while farmers answered with the Grange, the Alliances, and the Populist Party.",
+ "totalPoints": 6
+}

@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1893",
+ "lesson": "apush-u6-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.11"
+ ],
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "The Settlement House Movement"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.11 Reform in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Rise of the Modern American City"
+   }
+  ],
+  "primary_sources": [
+   "Jane Addams, Twenty Years at Hull-House (1910)"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "u6-611-addams-strike",
+ "stimulus": {
+  "kind": "text",
+  "text": "“At a meeting of working girls held at Hull-House during a strike in a large shoe factory, the discussions made it clear that the strikers who had been most easily frightened, and therefore first to capitulate, were naturally those girls who were paying board and were afraid of being put out if they fell too far behind. After a recital of a case of peculiar hardship one of them exclaimed: “Wouldn’t it be fine if we had a boarding club of our own, and then we could stand by each other in a time like this?” After that events moved quickly. We read aloud together Beatrice Potter’s little book on “Coöperation,” and discussed all the difficulties and fascinations of such an undertaking, and on the first of May, 1891, two comfortable apartments near Hull-House were rented and furnished. The Settlement was responsible for the furniture and paid the first month’s rent, but beyond that the members managed the club themselves.”\n\n(Jane Addams, Twenty Years at Hull-House, 1910, Chapter VII)",
+  "source_note": "Jane Addams, Twenty Years at Hull-House (1910), Chapter VII, “Some Early Undertakings at Hull-House,” p. 136. Public domain; wording checked against the University of Pennsylvania digital text. The book was published in 1910 and recalls the boarding club founded May 1, 1891."
+ },
+ "stem": "According to the passage, why were some strikers the first to give in?",
+ "options": [
+  {
+   "key": "A",
+   "text": "They paid their own board and feared losing their rooms"
+  },
+  {
+   "key": "B",
+   "text": "They were fired from the factory before the strike began",
+   "misconception": "The passage says they feared falling behind on board, not that they were fired."
+  },
+  {
+   "key": "C",
+   "text": "They opposed the strike and wanted the factory to reopen",
+   "misconception": "The passage says fear made them give in first, not opposition to the strike."
+  },
+  {
+   "key": "D",
+   "text": "They lived at Hull-House and obeyed Addams’s orders without question",
+   "misconception": "The strikers lived in boarding houses, not at Hull-House."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Addams says the most easily frightened strikers were girls paying board, afraid of being put out.",
+  "B": "Nothing in the passage says any striker had been fired before the strike.",
+  "C": "Fear of losing their rooms is the reason given, not opposition to the strike.",
+  "D": "The meeting was held at Hull-House, but the strikers lived in boarding houses.",
+  "general": "Take the reason straight from the passage.\n1. Find the sentence about the strikers who were most easily frightened.\n2. It says they were girls paying board.\n3. It says they feared being put out if they fell too far behind.\n4. Fear of losing their rooms, not the strike itself, made them give in first.\nRemember: when a passage names a fear, that fear is the cause it gives."
+ }
+}

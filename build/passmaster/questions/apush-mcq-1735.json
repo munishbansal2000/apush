@@ -1,0 +1,87 @@
+{
+  "id": "apush-mcq-1735",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "answerKey": "B",
+  "skills": [
+    "1.A",
+    "5.A"
+  ],
+  "themes": [
+    "WXT",
+    "WOR"
+  ],
+  "reasoning": "causation",
+  "stem": "What did the spread of the machine in the image change most directly?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Remington Standard Typewriter, 1890, Wikimedia Commons. Public domain. https://commons.wikimedia.org/wiki/File:Remington_Standard_Typewriter_1890.png",
+    "text": "The image shows a Remington Standard Typewriter from 1890. It is a heavy iron machine with three rows of round keys in the familiar QWERTY order, a roller at the top for holding paper, and a metal ruler above the keys. A printed card on the machine reads: \"KEEP MACHINE FREE FROM DUST. PUT NO OIL ON THE BACK ROD EXCEPT TO CLEAN IT. WIPE THE FRONT ROD WITH A GREASY CLOTH.\""
+  },
+  "stimulus_set": "remington-typewriter",
+  "options": [
+    {
+      "key": "A",
+      "text": "How farmers harvested wheat on the Great Plains",
+      "misconception": "Background: wheat was harvested by reapers and combines, not by typewriters; this machine wrote letters, it did not cut grain."
+    },
+    {
+      "key": "B",
+      "text": "How quickly offices could produce letters, records, and copies"
+    },
+    {
+      "key": "C",
+      "text": "How trains were scheduled across the country",
+      "misconception": "Background: train schedules were set by railroad timetables and the telegraph; the typewriter wrote office letters, not timetables."
+    },
+    {
+      "key": "D",
+      "text": "How steel was made in the mills of Pittsburgh",
+      "misconception": "Background: steel was made in converters and furnaces; the typewriter belonged in the office, not the mill."
+    }
+  ],
+  "rationales": {
+    "A": "Background: the mechanical reaper and the combine harvester cut and threshed grain. A typewriter wrote letters; it never touched a wheat field.",
+    "B": "Background from the books: as corporations grew, they needed armies of clerks, bookkeepers, and stenographers, and the typewriter let offices produce letters and records far faster than handwriting. The machine in the image is a Remington Standard Typewriter from 1890.",
+    "C": "Background: railroad schedules ran on timetables and the telegraph. The typewriter sped up office paperwork, not train dispatching.",
+    "D": "Background: steel came from converters and furnaces in the mills. The typewriter sat on an office desk, not a factory floor.",
+    "general": "Ask what the machine's keys do: they write.\n1. The machine is a typewriter, with round keys, a paper roller, and a care card.\n2. Background: big corporations needed clerks and stenographers to handle their paper, and the typewriter let one worker produce letters and records far faster than by hand.\n3. Background: faster paper meant bigger offices and more office workers.\nRemember: a machine changes the room it sits in first."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "The Managerial Revolution"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "The Second Industrial Revolution"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Age of Invention and Economic Growth"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)",
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1735",
+      "file": "u6/original-u6-midclass-02.png",
+      "caption": "A Remington Standard Typewriter, 1890",
+      "alt": "A heavy iron Remington Standard Typewriter from 1890 with three rows of round keys, a paper roller at the top, and a printed care card on the machine",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Remington_Standard_Typewriter_1890.png",
+      "license": "Public domain: Remington Standard Typewriter, 1890."
+    }
+  ]
+}

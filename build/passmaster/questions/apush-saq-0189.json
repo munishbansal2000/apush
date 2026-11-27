@@ -1,0 +1,90 @@
+{
+ "id": "apush-saq-0189",
+ "lesson": "apush-u6-l4",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.10"
+ ],
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "SOC",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "source": "original; stimulus written from the grounding books (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "The Rise of the Middle Class"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "Uneven Affluence"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "status": "final",
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "text",
+  "text": "Original secondary passage, written for this question from the grounding books:\n\nIn the last decades of the nineteenth century, a class of white-collar employees became essential to industrial capitalism. Their wages rose faster than those of working-class men and women, and their workday was shorter. Women filled many lower-level white-collar jobs, learning to type as the typewriter came into use, and women were also hired as schoolteachers in growing numbers.\n\nOn the eve of the Civil War there were only 100 public high schools in the United States; by 1900 there were about 6,000. The growth of the middle class went hand in hand with the commercialization of leisure: town fairs and dances gave way to for-profit ventures in the city, and Brooklyn's Coney Island, with its boardwalk, vaudeville theaters, and attractions, became the most successful large-scale amusement park.",
+  "source_note": "Original secondary passage, written for this question from Barron's Premium 2027 Chapter 8 (Topic 6.10, The Rise of the Middle Class, The Commercialization of Leisure) and 5 Steps to a 5, 2024, Chapter 18 (Uneven Affluence). High-school figures: Barron's Chapter 8 (100 in 1860, about 6,000 by 1900), corroborated by the United States Bureau of Education, Statistics of Public High Schools 1919-1920, Table 1 (2,526 reporting in 1890; 6,005 in 1900)."
+ },
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one way the growth of corporations changed the American workforce in the Gilded Age.",
+   "modelAnswer": "Corporations needed managers, clerks, salespeople, and accountants to run their operations, creating a white-collar workforce that worked with paper rather than tools. These office workers earned salaries and worked shorter days than factory laborers.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one corporate-driven workforce change, such as the creation of white-collar office jobs or the hiring of managers, clerks, and accountants.",
+     "notEarned": "Naming industrialization in general without stating a workforce change does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how the expansion of public high schools was connected to the growth of the middle class.",
+   "modelAnswer": "The new offices and schools needed literate workers, and high schools supplied them: graduates became clerks, typists, and teachers. In turn, middle-class families sent their children to high school in larger numbers, so schooling and the middle class grew together.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one link between high schools and the middle class, such as schools supplying literate office workers or middle-class families using high schools for their children.",
+     "notEarned": "Stating only that high schools grew, without linking that growth to the middle class, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Evaluate the extent to which the commercialization of leisure changed American life in the Gilded Age.",
+   "modelAnswer": "It changed leisure a great deal for city dwellers: for-profit parks, vaudeville, and circuses replaced community fairs and gave the middle class new ways to spend free time and money. But the change was limited, because leisure still depended on income and free time, which factory workers had far less of, and rural Americans saw little of it.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for a judgment about the extent of change that weighs both the spread of commercial leisure and a limit on it, such as workers' lack of time and money or the limited reach beyond cities.",
+     "notEarned": "Describing Coney Island without judging how far the change reached does not earn the point."
+    }
+   ]
+  }
+ ]
+}

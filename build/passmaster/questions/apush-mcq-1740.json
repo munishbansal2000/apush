@@ -1,0 +1,79 @@
+{
+  "answerKey": "C",
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ],
+    "primary_sources": [
+      "William Graham Sumner, What Social Classes Owe to Each Other (1883)"
+    ]
+  },
+  "id": "apush-mcq-1740",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Sumner believed the state should rescue people from the results of their choices.",
+      "text": "The government should aid the poor so that no one suffers for bad luck."
+    },
+    {
+      "key": "B",
+      "misconception": "This is Carnegie’s Gospel of Wealth, not Sumner’s argument.",
+      "text": "Wealthy businessmen should give their fortunes to public libraries and schools."
+    },
+    {
+      "key": "C",
+      "text": "Helping people in trouble does not end suffering; it only moves the cost onto others."
+    },
+    {
+      "key": "D",
+      "misconception": "Sumner writes about individuals and the state, not about unions winning wages.",
+      "text": "Workers should organize unions to win higher wages from their employers."
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "Sumner argues the opposite: aid shifts the penalty onto people who did nothing wrong.",
+    "B": "Background from the books: giving fortunes to libraries is Carnegie’s Gospel of Wealth. Sumner defends letting natural consequences run their course.",
+    "C": "Sumner says a penalty can never be destroyed, only shifted from the person who earned it to people who did not earn it. The sober workman who pays the policeman is the one who bears it.",
+    "D": "Background: unions and strikes belong to the labor story of the period. Sumner argues about what the state owes people, not about wages.",
+    "general": "Start with what Sumner says happens to a penalty.\n1. A drunkard in the gutter is where nature puts him, and nature’s penalty for vice is decline.\n2. Sumner says no one can destroy that penalty, only move it to heads that did not earn it.\n3. The workman who pays for the policeman bears the cost, and Sumner calls him the Forgotten Man.\n4. So the passage argues against relief that shifts costs, not for it.\nRemember: when a writer says a cost cannot be destroyed, ask who ends up paying it."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "3.A"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "Which of the following best states Sumner’s main argument in the passage?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "William Graham Sumner, What Social Classes Owe to Each Other (1883), public domain. Excerpts joined with ellipses.",
+    "text": "“A drunkard in the gutter is just where he ought to be, according to the fitness and tendency of things. Nature has set up on him the process of decline and dissolution by which she removes things which have survived their usefulness. . . . Now, we never can annihilate a penalty. We can only divert it from the head of the man who has incurred it to the heads of others who have not incurred it. . . . The industrious and sober workman, who is mulcted of a percentage of his day’s wages to pay the policeman, is the one who bears the penalty. But he is the Forgotten Man.”"
+  },
+  "stimulus_set": "sumner-forgotten-man",
+  "themes": [
+    "WXT",
+    "PCE"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

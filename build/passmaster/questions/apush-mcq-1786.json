@@ -1,0 +1,79 @@
+{
+ "answerKey": "C",
+ "difficulty": 4,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Historical Statistics of the United States, Table Ba4954-4964 (work stoppages, workers involved)"
+  ]
+ },
+ "id": "apush-mcq-1786",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The table lists 946 stoppages in 1888, so strikes had not ended.",
+   "text": "Strikes had ended by 1888, and workers had gone home."
+  },
+  {
+   "key": "B",
+   "misconception": "The table says nothing about what strikers won or lost.",
+   "text": "Unions had won all their demands by the year 1888."
+  },
+  {
+   "key": "C",
+   "text": "The 1888 stoppages involved fewer workers on average than the 1886 stoppages."
+  },
+  {
+   "key": "D",
+   "misconception": "The table lists 163,000 workers involved in 1888.",
+   "text": "No workers at all went on strike in the year 1888."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "The table lists 946 stoppages in 1888, so strikes had not ended.",
+  "B": "The table says nothing about what strikers won or lost.",
+  "C": "In 1886 about 388 workers were involved per stoppage, while in 1888 only about 172 were, so the average stoppage was smaller.",
+  "D": "The table lists 163,000 workers involved in 1888.",
+  "general": "Divide workers by stoppages for each year.\n1. In 1886, 610,000 workers divided by 1,572 stoppages is about 388 per stoppage.\n2. In 1888, 163,000 workers divided by 946 stoppages is about 172 per stoppage.\n3. The stoppage count stayed high, but the workers per stoppage fell by more than half.\n4. So the table alone supports smaller average stoppages, not an end to strikes.\nRemember: when two columns move differently, divide them to see the average."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "3.B",
+  "6.C"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "The table shows workers involved fell sharply in 1888 even though stoppages stayed high. What is the best conclusion a student can draw from the table alone?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Historical Statistics of the United States, Table Ba4954-4964 (work stoppages, workers involved, 1881-1998), U.S. Bureau of Labor Statistics historical series. Figures rounded to the nearest thousand.",
+  "text": "| Year | Work stoppages (strikes and lockouts) | Workers involved |\n| 1881 | 477 | 130,000 |\n| 1882 | 476 | 159,000 |\n| 1883 | 506 | 170,000 |\n| 1884 | 485 | 165,000 |\n| 1885 | 695 | 258,000 |\n| 1886 | 1,572 | 610,000 |\n| 1887 | 1,503 | 439,000 |\n| 1888 | 946 | 163,000 |"
+ },
+ "stimulus_set": "strikes-1881-1888",
+ "themes": [
+  "WOR"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

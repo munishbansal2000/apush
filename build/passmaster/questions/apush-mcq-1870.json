@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-1870",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.10"
+ ],
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "SOC",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "The Rise of the Middle Class"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "Uneven Affluence"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Remington Standard typewriter, 1890"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "u6-610-remington-typewriter",
+ "stimulus": {
+  "kind": "image",
+  "text": "The image shows a Remington Standard typewriter of 1890: a heavy black machine with round keys arranged in rows, a roller at the top for holding paper, and a ruler marked with numbers across the middle. A small plate above the roller reads, in part, “Keep machine free from dust.”",
+  "source_note": "Remington Standard typewriter, 1890. Public domain image from Wikimedia Commons; viewed by the writer."
+ },
+ "stem": "A historian wants to use this image as evidence about women's work in Gilded Age offices. What is the strongest limitation of the image as evidence for that question?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It shows a machine, so it cannot show anything about office work",
+   "misconception": "A machine can show what office work used; the limit is narrower than that."
+  },
+  {
+   "key": "B",
+   "text": "It was printed in 1890, long before women worked in offices in the United States",
+   "misconception": "Women were already entering office work by 1890; the date is not the problem."
+  },
+  {
+   "key": "C",
+   "text": "It proves that every office in America used the very same machine",
+   "misconception": "One image proves nothing about every office; that overreads the evidence."
+  },
+  {
+   "key": "D",
+   "text": "It shows the machine alone, with no operator, so it cannot show who used it"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "The machine is real evidence about office tools. The gap is about the worker, not the tool.",
+  "B": "By 1890 women were already being hired as typists. The date fits the question; the missing operator is the problem.",
+  "C": "No single image proves a claim about every office. But the question asks for the strongest limit, and the missing worker is stronger.",
+  "D": "The image shows the machine and no one using it. It cannot tell you who typed, for what pay, or for how many hours.",
+  "general": "Ask what the image shows and what it leaves out.\n1. The image shows the machine in detail: keys, roller, ruler.\n2. It shows no operator, no office, and no working conditions.\n3. A claim about women's work needs evidence about the women, not only the tool.\n4. So the image alone cannot carry that claim.\nRemember: a source's limit is what it does not show, not what it shows."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1870",
+   "file": "u6/original-u6-midclass-02.png",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Remington_Standard_Typewriter_1890.png",
+   "license": "Public domain",
+   "caption": "Remington Standard typewriter, 1890",
+   "alt": "Engraving of a Remington Standard typewriter with round keys in rows, a paper roller at the top, and a numbered ruler across the middle"
+  }
+ ]
+}

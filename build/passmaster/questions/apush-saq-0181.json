@@ -1,0 +1,89 @@
+{
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Corporations Look Abroad"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ]
+  },
+  "id": "apush-saq-0181",
+  "lesson": "apush-u6-l3",
+  "parts": [
+    {
+      "modelAnswer": "American exports grew sharply between 1870 and 1900, rising from about $400 million to about $1,400 million. Exports more than tripled across the thirty years shown.",
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify the trend shown in the table.",
+      "scoring": [
+        {
+          "criterion": "Earns the point for identifying the trend, such as exports more than tripling from 1870 to 1900.",
+          "notEarned": "Naming one year’s figure without stating the trend does not earn the point.",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "modelAnswer": "Mass production in factories and on farms created more goods than Americans at home could buy, leaving a surplus to sell abroad. Businessmen therefore sought foreign buyers for goods their home market could not absorb.",
+      "part": "b",
+      "points": 1,
+      "prompt": "Briefly explain one reason American exports grew in this period.",
+      "scoring": [
+        {
+          "criterion": "Earns the point for explaining one reason for export growth, such as surplus production or the search for foreign markets.",
+          "notEarned": "Restating the trend without explaining why exports grew does not earn the point.",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "modelAnswer": "Selling abroad let firms keep their factories running when home demand fell, as after the Panic of 1893, when businessmen looked harder for foreign markets. It also pushed firms like Standard Oil to open branches in other countries, making American business international.",
+      "part": "c",
+      "points": 1,
+      "prompt": "Briefly explain one way the growth of foreign trade affected American businesses.",
+      "scoring": [
+        {
+          "criterion": "Earns the point for explaining one effect on American businesses, such as keeping factories running in hard times or opening foreign branches.",
+          "notEarned": "Naming foreign trade without explaining its effect on businesses does not earn the point.",
+          "points": 1
+        }
+      ]
+    }
+  ],
+  "pool": "practice",
+  "reasoning": "causation",
+  "saq_slot": 3,
+  "skills": [
+    "2.A",
+    "5.A"
+  ],
+  "source": "original; stimulus written for this question from the grounding books",
+  "status": "final",
+  "stimulus": {
+    "kind": "table",
+    "source_note": "Figures from Barron’s Premium 2027, Chapter 8 (Topic 6.6, Corporations Look Abroad).",
+    "text": "| Year | Value of American exports |\n| 1870 | About $400 million |\n| 1880 | About $850 million |\n| 1900 | About $1,400 million |"
+  },
+  "stimulus_set": null,
+  "themes": [
+    "WXT"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "totalPoints": 3,
+  "type": "saq",
+  "unit": 6
+}

@@ -1,0 +1,79 @@
+{
+  "answerKey": "A",
+  "difficulty": 4,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ],
+    "primary_sources": [
+      "Ida M. Tarbell, The History of the Standard Oil Company (1904)"
+    ]
+  },
+  "id": "apush-mcq-1753",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "text": "It turned public opinion against the trusts"
+    },
+    {
+      "key": "B",
+      "misconception": "Tarbell attacked Standard Oil’s methods, not private ownership itself.",
+      "text": "It proved that all corporations should be owned by the government"
+    },
+    {
+      "key": "C",
+      "misconception": "Background: her work helped bring the Sherman Act to bear on Standard Oil, not end it.",
+      "text": "It ended the Sherman Antitrust Act"
+    },
+    {
+      "key": "D",
+      "misconception": "Tarbell documented rebates and methods that courts later ruled unlawful.",
+      "text": "It showed that Standard Oil had never broken any law"
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "Background: Tarbell’s articles ran in McClure’s from 1902 to 1904 and became the classic exposé of a trust, arming the Progressive attack on the trusts.",
+    "B": "Tarbell criticized how Standard Oil grew, not the idea of private business. Her remedy was exposure and law, not ownership.",
+    "C": "Background: the Sherman Act was the tool used against Standard Oil in 1911. Tarbell’s work pointed toward using it, not ending it.",
+    "D": "Background: the Supreme Court found in 1911 that Standard Oil violated the Sherman Act, the opposite of clearing the company.",
+    "general": "Ask what an exposé does.\n1. Tarbell counts the profits of the combination in hard figures.\n2. Background: her articles ran in a popular magazine and were read across the country.\n3. Readers who had only suspected a monopoly now had names, figures, and methods.\n4. That evidence fed the reformers who moved against the trusts.\nRemember: an exposé matters when it gives reformers facts they can use."
+  },
+  "reasoning": "continuity-change",
+  "skills": [
+    "5.A"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "Why did Tarbell’s account of Standard Oil matter beyond the oil business?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Ida M. Tarbell, The History of the Standard Oil Company, Vol. 2, Chapter 18 (1904), public domain.",
+    "text": "“The profits of the present Standard Oil Company are enormous. For five years the dividends have been averaging about forty-five million dollars a year, or nearly fifty per cent. on its capitalisation, a sum which capitalised at five per cent. would give $900,000,000. Of course this is not all that the combination makes in a year. It allows an annual average of 5.77 per cent. for deficit, and it carries always an ample reserve fund.”"
+  },
+  "stimulus_set": "tarbell-standard-oil",
+  "themes": [
+    "PCE",
+    "WXT"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

@@ -1,0 +1,87 @@
+{
+  "id": "apush-mcq-1719",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 2,
+  "answerKey": "B",
+  "skills": [
+    "1.A",
+    "3.A"
+  ],
+  "themes": [
+    "GEO",
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "stem": "What event does this photograph show?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "A. J. Russell, Golden Spike ceremony, Promontory Summit, Utah, May 10, 1869. Public domain. https://commons.wikimedia.org/wiki/File:Golden_Spike_ceremony%2C_Promontory%2C_Utah%2C_May_10%2C_1869.jpg",
+    "text": "The photograph shows two locomotives standing nose to nose on a single track at Promontory Summit, Utah, on May 10, 1869. A large crowd of workers and officials stands between and around the engines, shaking hands and cheering. One man in the center holds a bottle. The engines face each other where the Union Pacific and Central Pacific tracks met."
+  },
+  "stimulus_set": "golden-spike",
+  "options": [
+    {
+      "key": "A",
+      "text": "The opening of the first railroad in the United States",
+      "misconception": "Background: the first American railroads ran in the 1830s, decades earlier; this photograph is from 1869."
+    },
+    {
+      "key": "B",
+      "text": "The completion of the first transcontinental railroad in 1869"
+    },
+    {
+      "key": "C",
+      "text": "The start of construction on the transcontinental railroad",
+      "misconception": "Background: construction began in 1863; this crowd celebrates the finished line, with the two locomotives already nose to nose."
+    },
+    {
+      "key": "D",
+      "text": "A train crash that stopped rail traffic across the West",
+      "misconception": "Background: the two engines stand side by side on purpose for a ceremony, and the crowd is cheering, not fleeing a crash."
+    }
+  ],
+  "rationales": {
+    "A": "Background: American railroads began running in the 1830s. This 1869 photograph shows a later milestone, the joining of the two coasts by rail.",
+    "B": "The two locomotives meet nose to nose at Promontory Summit, Utah, on May 10, 1869, where the Union Pacific and Central Pacific tracks joined. The crowd celebrates the first railroad across the continent.",
+    "C": "Background: construction started in 1863, six years earlier. The photograph shows the end of the work, not its start.",
+    "D": "Background: the engines were placed nose to nose for the ceremony, and the crowd is celebrating. Nothing in the scene shows a crash.",
+    "general": "Read the scene before the date.\n1. Two locomotives face each other on one track, and a crowd cheers between them.\n2. That meeting happened at Promontory Summit on May 10, 1869, when the two railroads joined.\n3. A joined track meant a train could now cross the whole continent.\nRemember: a photograph of a meeting is a photograph of a finish, not a start."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Government Support for Transcontinental Railroads"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 17",
+        "section": "Government Encouragement of Western Settlement"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Railroads and Developments in the West"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)",
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1719",
+      "file": "u6/5s24-ch17-mcq-07.jpg",
+      "caption": "The Golden Spike ceremony at Promontory Summit, Utah, May 10, 1869",
+      "alt": "Two locomotives stand nose to nose at Promontory Summit while a large crowd of workers and officials celebrates between them",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Golden_Spike_ceremony%2C_Promontory%2C_Utah%2C_May_10%2C_1869.jpg",
+      "license": "Public domain: photograph by A. J. Russell, 1869."
+    }
+  ]
+}

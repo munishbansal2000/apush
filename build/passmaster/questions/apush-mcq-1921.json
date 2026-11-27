@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1921",
+ "lesson": "apush-u6-l5",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 6,
+ "topics": [
+  "6.11"
+ ],
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 2,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Corruption and Civil-Service Reform"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "Gilded Age Politics"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "National Politics"
+   }
+  ],
+  "primary_sources": [
+   "Pendleton Civil Service Act, January 16, 1883"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "u6-611-pendleton",
+ "stimulus": {
+  "kind": "table",
+  "text": "Section 2 of the Pendleton Civil Service Act (January 16, 1883) required the new Civil Service Commission’s rules to provide “for open, competitive examinations for testing the fitness of applicants for the public service now classified or to be classified hereunder.” The Act followed the 1881 assassination of President James A. Garfield by a disappointed office seeker.\n\nFederal employees covered by the merit system:\n\n| Year | Share of federal employees in the classified service |\n| 1883 | about 10% |\n| 1897 | about 40% |",
+  "source_note": "Pendleton Civil Service Act, Section 2, January 16, 1883 (National Archives transcript; the quoted clause is exact). Garfield’s assassination by a disappointed office seeker: 5 Steps to a 5, 2024, Chapter 18, “Gilded Age Politics,” and Barron’s Premium 2027, Chapter 8. Coverage shares: National Archives (about 10 percent of 132,000 employees in 1883) and the historical literature summarized in the Pendleton Act history (about 40 percent by 1897)."
+ },
+ "stem": "What does the table best show about the Pendleton Act’s effect?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Merit hiring covered nearly every federal job at once",
+   "misconception": "Only about 10 percent were covered in 1883, so coverage was not nearly complete."
+  },
+  {
+   "key": "B",
+   "text": "Merit hiring spread slowly, covering about 40 percent of federal jobs by 1897"
+  },
+  {
+   "key": "C",
+   "text": "The Act ended the spoils system in every state and city at once",
+   "misconception": "The Act covered federal jobs only, not state and city patronage."
+  },
+  {
+   "key": "D",
+   "text": "The share of merit jobs fell as the government grew",
+   "misconception": "The table shows the share rising from about 10 to about 40 percent."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "About 10 percent in 1883 is a small start, not nearly every job at once.",
+  "B": "From about 10 percent in 1883 to about 40 percent in 1897 is slow, steady growth.",
+  "C": "Federal classified service is the table’s subject, not state and city jobs.",
+  "D": "The share rises across the table, from about 10 percent to about 40 percent.",
+  "general": "Read the table as a story over time.\n1. In 1883 about 10 percent of federal employees were in the classified service.\n2. By 1897 the share was about 40 percent.\n3. Fourteen years bought a rise of about thirty points, not a sudden change.\n4. Merit hiring grew, but most federal jobs still lay outside it at the period’s end.\nRemember: a table that rises slowly tells of a reform that spread slowly."
+ }
+}

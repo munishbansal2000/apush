@@ -1,0 +1,83 @@
+{
+ "answerKey": "C",
+ "difficulty": 4,
+ "figures": [
+  {
+   "alt": "Color cartoon of a giant businessman in a suit straddling the nation, holding strings that control the railroads below him, with two small men beneath his feet",
+   "caption": "The Modern Colossus of (Rail) Roads, Joseph Keppler, Puck, 1879",
+   "file": "u6/original-u6-tech-10.jpg",
+   "id": "fig-apush-mcq-1609",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Modern_Colossus_of_Rail_Roads_-_Keppler_1879.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.1 Contextualizing Period 6"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-1609",
+ "lesson": "apush-u6-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Background: Reconstruction ended in 1877, and railroad consolidation was a national economic process, not a Southern political one.",
+   "text": "The return of Southern states to the Union under Radical Reconstruction"
+  },
+  {
+   "key": "B",
+   "misconception": "Background: the Ghost Dance was spiritual resistance to reservation life, not a response to railroad finance.",
+   "text": "The spread of the Ghost Dance among Plains peoples"
+  },
+  {
+   "key": "C",
+   "text": "The rise of giant corporations that dominated whole industries"
+  },
+  {
+   "key": "D",
+   "misconception": "Background: the Homestead Act passed in 1862, before the period, and it concerned settlement, not corporate power.",
+   "text": "The passage of the Homestead Act offering free western land"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: Reconstruction ended in 1877, and railroad consolidation was a national economic process, not part of the South's return to the Union.",
+  "B": "Background: the Ghost Dance was spiritual resistance to reservation life. It answered the loss of land and the buffalo, not railroad finance.",
+  "C": "The railroad barons were the first of the giants. Background: their consolidation — buying rivals, controlling every step — became the model for trusts in oil, steel, and sugar.",
+  "D": "Background: the Homestead Act passed in 1862, before this period began, and it offered land to settlers rather than building corporate power.",
+  "general": "Follow the pattern, not the single villain: Vanderbilt is one example of a bigger habit.\n1. Name what Vanderbilt did. Background: he bought rivals and controlled the lines, the freight, and the tolls.\n2. Ask where else that habit appears. Background: oil, steel, and sugar all grew the same way, into trusts.\n3. Name the feature. Giant corporations dominating whole industries, with railroads as the model.\nRemember: when one industry's trick shows up everywhere, it is the period's pattern, not one man's scheme."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "4.B",
+  "5.B"
+ ],
+ "source": "original; stimulus viewed before writing — Joseph Keppler, Puck, 1879, public domain.",
+ "status": "final",
+ "stem": "The power the cartoon attacks grew out of developments that also shaped which of the following features of the period?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Joseph Keppler, 'The Modern Colossus of (Rail) Roads,' Puck magazine, 1879. Public domain. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Modern_Colossus_of_Rail_Roads_-_Keppler_1879.jpg",
+  "text": "The cartoon shows railroad magnate William Henry Vanderbilt as a giant straddling the nation, holding the strings that control the railroads below him. Two smaller figures, railroad men Jay Gould and Cyrus Field, stand beneath his feet. A sign at his feet reads: 'All freight seeking the seaboard MUST pass here and pay any tolls WE DEMAND.'"
+ },
+ "stimulus_set": "rail-colossus",
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "topics": [
+  "6.1"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

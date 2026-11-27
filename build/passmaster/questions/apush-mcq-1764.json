@@ -1,0 +1,85 @@
+{
+  "answerKey": "B",
+  "difficulty": 3,
+  "figures": [
+    {
+      "alt": "An 1890 newspaper advertisement headed We Have, listing ladies’ and gentlemen’s shoes at reduced prices for H. Leh and Company of Allentown, Pennsylvania",
+      "caption": "H. Leh and Company shoe advertisement, Allentown, Pennsylvania, 1890",
+      "file": "u6/original-u6-midclass-03.jpg",
+      "id": "fig-apush-mcq-1764",
+      "license": "Public domain: 1890 newspaper advertisement, Allentown, Pennsylvania.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/1890_-_H_Leh_%26_Company_Newspaper_Ad_Allentown_PA.jpg"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ]
+  },
+  "id": "apush-mcq-1764",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "text": "By selling only by mail order",
+      "misconception": "The ad invites shoppers to come to the store, not to order by mail."
+    },
+    {
+      "key": "B",
+      "text": "Through newspaper ads with low prices and an invitation"
+    },
+    {
+      "key": "C",
+      "text": "By refusing to advertise at all",
+      "misconception": "The ad itself is an advertisement, so the store did advertise."
+    },
+    {
+      "key": "D",
+      "text": "By selling only to customers in other states",
+      "misconception": "The ad is for a store in Allentown, selling to local shoppers."
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "The ad invites shoppers to “come and look through before your size is sold out” — it sells in the store, not by mail.",
+    "B": "The ad is itself a newspaper advertisement: it lists pair after pair at reduced prices and invites shoppers to “come and look through before your size is sold out.”",
+    "C": "The store printed this advertisement, so it did not refuse to advertise.",
+    "D": "The ad names a store on Hamilton Street in Allentown, selling to shoppers who come in.",
+    "general": "Read the ad as evidence of how the store sold.\n1. The ad lists many pairs of shoes at prices cut below what they once cost.\n2. It tells shoppers to come and look before their size is sold out.\n3. A store that prints prices and an invitation in the newspaper is reaching customers through advertising.\n4. Nothing in the ad mentions mail order, other states, or refusing to advertise.\nRemember: an advertisement is itself proof that the store advertised."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "3.A"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "What does the advertisement show about how a store like Leh's reached its customers?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "H. Leh and Company newspaper advertisement, Allentown, Pennsylvania, 1890. Public domain.",
+    "text": "A newspaper advertisement from 1890 for H. Leh and Company, a dry goods and shoe dealer in Allentown, Pennsylvania. Under the heading “WE HAVE,” it lists pair after pair of ladies’ and gentlemen’s shoes at reduced prices — $4.50 shoes now $2.95, $3 shoes now $2 — and invites shoppers to “come and look through before your size is sold out.”"
+  },
+  "stimulus_set": "leh-department-store",
+  "themes": [
+    "WXT"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

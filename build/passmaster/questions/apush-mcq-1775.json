@@ -1,0 +1,79 @@
+{
+ "answerKey": "D",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Preamble and Declaration of Principles of the Knights of Labor (1878)"
+  ]
+ },
+ "id": "apush-mcq-1775",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The Knights welcomed workers of every skill, so this is the reverse.",
+   "text": "The Knights admitted only skilled craftsmen and turned every other worker away."
+  },
+  {
+   "key": "B",
+   "misconception": "The passage demands equal pay for both sexes, so women were included.",
+   "text": "The Knights refused to admit any women workers to their organization at all."
+  },
+  {
+   "key": "C",
+   "misconception": "Banning child labor needs law, so the Knights did not avoid government.",
+   "text": "The Knights avoided all contact with government, with courts, and with the law."
+  },
+  {
+   "key": "D",
+   "text": "The Knights sought broad reforms like shorter hours and an end to child labor."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background from the books: the Knights welcomed skilled and unskilled workers, women, and Black workers. Skill was not a barrier.",
+  "B": "The passage demands equal pay for both sexes, so women were part of its vision, not shut out.",
+  "C": "The passage calls for banning child labor before age fourteen, which needs law, not avoidance of government.",
+  "D": "The passage lists the eight-hour day, an end to child labor, and equal pay, which reach far beyond wages alone.",
+  "general": "Compare the passage’s list with wages alone.\n1. A wages-only union would stop at pay.\n2. The passage goes on to shorter hours, an end to child labor, and equal pay.\n3. Those goals change childhood, the workday, and women’s pay, not just the wage rate.\n4. So the Knights’ program was broad reform, not a single pay demand.\nRemember: a list that runs past pay is evidence of a broader program."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "3.C"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "Based on the passage, how did the Knights of Labor differ from a union that sought only higher wages?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Preamble and Declaration of Principles of the Knights of Labor (1878), as printed in Terence V. Powderly, Thirty Years of Labor (1890). Public domain. Excerpts joined with ellipses.",
+  "text": "“The recent alarming development and aggression of aggregated wealth, which, unless checked, will invariably lead to the pauperization and hopeless degradation of the toiling masses, render it imperative, if we desire to enjoy the blessings of life, that a check should be placed upon its power and upon unjust accumulation, and a system adopted which will secure to the laborer the fruits of his toil. . . . To secure to the toilers a proper share of the wealth that they create; more of the leisure that rightfully belongs to them; more societary advantages; more of the benefits, privileges, and emoluments of the world. . . . The prohibition of the employment of children in workshops, mines, and factories before attaining their fourteenth year. . . . To secure for both sexes equal pay for equal work. The reduction of the hours of labor to eight per day.”"
+ },
+ "stimulus_set": "knights-preamble-1878",
+ "themes": [
+  "WOR",
+  "SOC"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

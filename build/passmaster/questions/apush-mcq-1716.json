@@ -1,0 +1,86 @@
+{
+  "id": "apush-mcq-1716",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "answerKey": "C",
+  "skills": [
+    "2.A",
+    "3.A"
+  ],
+  "themes": [
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "stem": "What is Edison asking for in this document?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "First page of Thomas A. Edison's patent application for the incandescent light bulb, filed 1879, National Archives. Public domain. https://commons.wikimedia.org/wiki/File:Drawing_of_the_Incandescent_Light_Bulb_by_Thomas_Edison%2C_01-27-1880_%28Page_1_of_2%29_%285286032634%29.jpg",
+    "text": "The image is the first page of Thomas Edison's patent application. At the top, an eagle and a robed figure hold the scales of justice above inventors' tools. The handwritten petition reads: \"To the Honorable Commissioner of Patents: Your Petitioner Thomas A. Edison of Menlo Park in the State of New Jersey prays that LETTERS PATENT may be granted to him for the invention of an Improvement in Electric Lamps and in the method of manufacturing the same.\" The page is dated 1879."
+  },
+  "stimulus_set": "edison-bulb-petition",
+  "options": [
+    {
+      "key": "A",
+      "text": "Money from the government to build a power station in New York",
+      "misconception": "Background: the petition asks the Patent Office for a patent, not for money; the Pearl Street station came later, paid for by investors."
+    },
+    {
+      "key": "B",
+      "text": "A law banning gas lamps from American homes",
+      "misconception": "Background: no law banned gas lamps; electric light competed with gas in the market, and gas lighting lasted for decades."
+    },
+    {
+      "key": "C",
+      "text": "A patent for his improvement in electric lamps"
+    },
+    {
+      "key": "D",
+      "text": "Permission to sell his phonograph to the public",
+      "misconception": "Background: the phonograph was a separate invention from 1877; this petition names electric lamps, not the phonograph."
+    }
+  ],
+  "rationales": {
+    "A": "Background: Edison built the Pearl Street station with private money in 1882. This 1879 petition asks only for a patent, not for government funds.",
+    "B": "Background: gas lamps were never banned by law. Electric light won customers by being cleaner and brighter, not by outlawing gas.",
+    "C": "The petition says it in Edison's own hand: he prays that letters patent be granted to him \"for the invention of an Improvement in Electric Lamps.\"",
+    "D": "Background: Edison invented the phonograph in 1877, two years earlier. This petition names electric lamps and their manufacture, nothing about the phonograph.",
+    "general": "Read what the petitioner prays for.\n1. The page is addressed to the Commissioner of Patents, and Edison signs it from Menlo Park, New Jersey.\n2. The request names the invention exactly: an improvement in electric lamps.\n3. A patent protects an invention; it does not fund it or ban its rivals.\nRemember: read a petition for the thing it asks for, not the thing around it."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Coal and Oil"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "The Second Industrial Revolution"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Age of Invention and Economic Growth"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)",
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1716",
+      "file": "u6/original-u6-tech-02.jpg",
+      "caption": "First page of Edison's patent application for the electric lamp, 1879",
+      "alt": "The first page of Edison's patent petition, with an eagle and robed figure at the top and Edison's handwritten request for a patent on an improvement in electric lamps",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Drawing_of_the_Incandescent_Light_Bulb_by_Thomas_Edison%2C_01-27-1880_%28Page_1_of_2%29_%285286032634%29.jpg",
+      "license": "Public domain: U.S. patent application, National Archives."
+    }
+  ]
+}

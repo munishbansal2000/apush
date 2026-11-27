@@ -1,0 +1,83 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "figures": [
+  {
+   "alt": "Color cartoon of giant fat men in top hats labeled with trust names towering over small senators seated at desks, with a sign reading This is a Senate of the monopolists",
+   "caption": "'The Bosses of the Senate,' Joseph Keppler, Puck, 1889",
+   "file": "u6/original-u6-tech-12.jpg",
+   "id": "fig-apush-mcq-1620",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:The_Bosses_of_the_Senate_by_Joseph_Keppler.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.1 Contextualizing Period 6"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-1620",
+ "lesson": "apush-u6-l1",
+ "options": [
+  {
+   "key": "A",
+   "text": "Public anger at the trusts was pushing Congress toward action"
+  },
+  {
+   "key": "B",
+   "misconception": "The Sherman Act came in 1890 and was weakly enforced at first; no breakup had happened by 1889.",
+   "text": "The trusts had already been broken up by 1889"
+  },
+  {
+   "key": "C",
+   "misconception": "The cartoon shows the opposite: the trusts tower over the senators, still in charge.",
+   "text": "Senators had already stopped taking money from businesses"
+  },
+  {
+   "key": "D",
+   "misconception": "Background: the Panic came four years later from railroad overbuilding and bank failures, not from a cartoon.",
+   "text": "The cartoon caused the Panic of 1893"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "A cartoon this angry does not appear in a calm moment. Public fury at the trusts was rising, and Congress answered the next year with the Sherman Antitrust Act.",
+  "B": "The Sherman Act came in 1890 and was weakly enforced at first. No breakup had happened by 1889.",
+  "C": "The cartoon shows the opposite: the trusts tower over the senators, still in charge.",
+  "D": "Background: the Panic came four years later, from railroad overbuilding and bank failures — not from a cartoon.",
+  "general": "Date the cartoon, then ask what comes next: anger first, law second.\n1. Place the cartoon. It appeared in 1889, with the trusts towering over the Senate.\n2. Place the law. The Sherman Antitrust Act followed in 1890, the year after.\n3. Connect them. Public anger at the trusts was building and pushing Congress toward action.\nRemember: cartoons are weather vanes — an angry cartoon often blows just before the law changes."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "2.B",
+  "5.B"
+ ],
+ "source": "original; stimulus viewed before writing — Joseph Keppler, Puck, 1889, public domain.",
+ "status": "final",
+ "stem": "The cartoon appeared in 1889, the year before the Sherman Antitrust Act. What does that timing best suggest?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Joseph Keppler, 'The Bosses of the Senate,' Puck magazine, 1889. Public domain. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:The_Bosses_of_the_Senate_by_Joseph_Keppler.jpg",
+  "text": "The cartoon shows giant, fat men in top hats towering over the small senators seated at their desks below. Each giant's belly is labeled with a trust: 'Steel Beam Trust,' 'Copper Trust,' 'Standard Oil Trust,' 'Iron Trust,' 'Sugar Trust,' 'Tin Trust,' 'Coal Trust.' A sign on the wall reads: 'This is a Senate of the monopolists, by the monopolists, and for the monopolists!' Above a small side door, a sign reads: 'Peoples' Entrance — CLOSED.'"
+ },
+ "stimulus_set": "bosses-senate",
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "topics": [
+  "6.1"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

@@ -1,0 +1,86 @@
+{
+  "answerKey": "B",
+  "difficulty": 3,
+  "figures": [
+    {
+      "alt": "1943 photograph of a sign reading COLORED WAITING ROOM with an arrow, outside a Greyhound bus station in Rome, Georgia",
+      "caption": "Esther Bubley, “Colored Waiting Room” sign, Greyhound bus station, Rome, Georgia, September 1943.",
+      "file": "pt01/fig4-colored-waiting-room-1943.jpg",
+      "id": "fig-apush-mcq-2019",
+      "license": "Public domain (FSA/OWI)",
+      "source_url": "https://www.loc.gov/pictures/resource/cph.3b22541/"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.4 The “New South”"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "America Transformed into the Industrial Giant"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-2019",
+  "lesson": "apush-u6-l2",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Wells shows Black activism steadily declining after Reconstruction.",
+      "text": "The steady decline of Black activism after Reconstruction"
+    },
+    {
+      "key": "B",
+      "text": "The use of journalism, organizing, and appeals to constitutional ideals to challenge racial inequality"
+    },
+    {
+      "key": "C",
+      "misconception": "Wells shows all Black leaders accepting segregation.",
+      "text": "The acceptance of segregation by all Black leaders in the 1890s"
+    },
+    {
+      "key": "D",
+      "misconception": "Wells shows the federal government handling all civil rights until 1954.",
+      "text": "The withdrawal of the federal government from all civil rights issues until 1954"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Black activism continued after Reconstruction; it did not decline steadily.",
+    "B": "Wells exemplifies a long tradition: Black journalists and organizers using investigation, publicity, and constitutional claims to challenge inequality. Her newspaper work and her pamphlets carried the evidence to Northern readers and to Congress.",
+    "C": "Many Black leaders, including Wells, opposed segregation.",
+    "D": "Federal retreat was real, but activism did not stop until 1954.",
+    "general": "1. Name Wells's tools. Journalism, organizing, and appeals to constitutional ideals.\n2. Ask whether those tools recur. Black journalists and organizers used them before Wells and after her.\n3. Test the endings. Activism continued, leaders opposed segregation, and federal retreat did not stop the work.\n4. Match the continuity. The methods, not the outcome, are what carry across the decades.\nRemember: a continuity of method is still a continuity, even when the victories are slow."
+  },
+  "reasoning": "continuity-change",
+  "skills": [
+    "5.B"
+  ],
+  "source": "original; stimulus is a paraphrase of Ida B. Wells’s speeches and writings (1890s) with the Bubley 1943 photograph",
+  "status": "final",
+  "stem": "Wells’s activism best illustrates which of the following continuities?",
+  "stimulus": {
+    "kind": "mixed",
+    "source_note": "Ida B. Wells, anti-lynching and civil rights advocate, 1890s, paraphrased from her speeches and writings. Photograph: Esther Bubley, 1943, Library of Congress.",
+    "text": "The white man has made laws that separate the races in schools, in trains, in every public place. We ask not for special favors, but for justice and equal protection under the law."
+  },
+  "stimulus_set": "wells-jim-crow-1890s",
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "topics": [
+    "6.4"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

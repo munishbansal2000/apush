@@ -1,0 +1,161 @@
+{
+  "difficulty": 4,
+  "documents": [
+    {
+      "date": "1883",
+      "kind": "text",
+      "n": 1,
+      "source": "William Graham Sumner, What Social Classes Owe to Each Other (1883). Public domain.",
+      "sourcing": "A Yale professor’s argument against government action; shows the laissez-faire ideas that defended big business.",
+      "text": "“What do social classes owe to each other? . . . There is anything but a fallacy and a superstition in the notion that ‘the State’ owes anything to anybody except peace, order, and the guarantees of rights.”",
+      "title": "Sumner on what the state owes"
+    },
+    {
+      "date": "1894",
+      "kind": "text",
+      "n": 2,
+      "source": "Henry Demarest Lloyd, Wealth Against Commonwealth (1894). Public domain.",
+      "sourcing": "A reformer's attack on monopoly; shows how critics said concentrated wealth threatened liberty.",
+      "text": "“Nature is rich; but everywhere man, the heir of nature, is poor. . . . The majority have never been able to buy enough of anything; but this minority have too much of everything to sell. Liberty produces wealth, and wealth destroys liberty.”",
+      "title": "Lloyd on monopoly and liberty"
+    },
+    {
+      "date": "1887",
+      "kind": "text",
+      "n": 3,
+      "source": "Interstate Commerce Act, Section 1, approved February 4, 1887 (24 Stat. 379). Public domain.",
+      "sourcing": "The law itself; shows the federal government beginning to regulate the railroads.",
+      "title": "The Interstate Commerce Act",
+      "text": "“All charges made for any service rendered or to be rendered in the transportation of passengers or property as aforesaid, or in connection therewith, or for the receiving, delivering, storage, or handling of such property, shall be reasonable and just; and every unjust and unreasonable charge for such service is prohibited and declared to be unlawful.”"
+    },
+    {
+      "date": "1870-1890",
+      "kind": "table",
+      "n": 4,
+      "source": "Barron’s Premium 2027, Chapter 8 (Topic 6.6, Corporations Look Abroad); 1890 figure from Historical Statistics of the United States.",
+      "sourcing": "Export figures across the period; shows American business reaching for foreign markets.",
+      "text": "| Year | Value of American exports |\n| 1870 | About $400 million |\n| 1880 | About $850 million |\n| 1890 | About $860 million |",
+      "title": "American exports"
+    },
+    {
+      "date": "1890",
+      "kind": "text",
+      "n": 5,
+      "source": "Sherman Antitrust Act, Section 1, approved July 2, 1890. Public domain.",
+      "sourcing": "The law itself; shows the federal response to combinations in restraint of trade.",
+      "text": "“Every contract, combination in the form of trust or otherwise, or conspiracy, in restraint of trade or commerce among the several States, or with foreign nations, is hereby declared to be illegal.”",
+      "title": "Sherman Antitrust Act, Section 1"
+    },
+    {
+      "date": "1892",
+      "kind": "text",
+      "n": 6,
+      "source": "State ex rel. Attorney General v. Standard Oil Co., 49 Ohio St. 137 (1892). Public domain.",
+      "sourcing": "The Ohio court's own words describing the trust; shows how the combination worked and why judges called it a monopoly.",
+      "text": "“An agreement by which all, or a majority of the stockholders of a corporation, transfer their stocks to certain trustees . . . and by which the trustees are empowered as apparent owners of the stock to elect directors of the several companies, and thereby control their affairs in the interests of the trust so created . . . tends to the creation of a monopoly, to control production as well as prices, and is against public policy.”",
+      "title": "The Ohio Supreme Court describes the Standard Oil Trust"
+    },
+    {
+      "date": "1890",
+      "figure": "u6/original-u6-midclass-03.jpg",
+      "kind": "image",
+      "n": 7,
+      "source": "H. Leh and Company newspaper advertisement, Allentown, Pennsylvania, 1890. Public domain.",
+      "sourcing": "A store’s own advertisement; shows mass selling and low prices reaching ordinary shoppers.",
+      "title": "A department store advertisement"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ],
+    "primary_sources": [
+      "William Graham Sumner, What Social Classes Owe to Each Other (1883)",
+      "Henry Demarest Lloyd, Wealth Against Commonwealth (1894)",
+      "Interstate Commerce Act, Section 1 (1887)",
+      "Sherman Antitrust Act, Section 1 (1890)",
+      "State ex rel. Attorney General v. Standard Oil Co. (1892)"
+    ]
+  },
+  "id": "apush-dbq-0057",
+  "lesson": "apush-u6-l3",
+  "modelOutline": "Thesis: Between 1865 and 1898 the rise of big business transformed the American economy profoundly but unevenly, creating national markets, cheaper goods, and vast fortunes, while concentrating power in a few hands and leaving farmers and small rivals at a disadvantage.\nContext: The Civil War ended with a continent to settle, a government that granted land and patents, and new technologies in steel, oil, and transport.\nEvidence: Documents 2 and 6 show the trust's critics: Lloyd warns monopoly destroys liberty, and the Ohio court describes trustees holding the stock and controlling the companies. Document 3 shows government answering: the Interstate Commerce Act declared unjust railroad charges unlawful. Documents 4 and 7 show the new market: exports rising from about $400 million to about $860 million, and a store selling shoes at cut prices. Documents 1 and 5 show the two answers to big business: Sumner’s laissez-faire and the Sherman Act’s ban on combinations.\nOutside evidence: Carnegie’s vertical integration in steel, the railroads growing from about 35,000 miles in 1865 to about 164,000 in 1890, and the Wabash decision of 1886 limiting state railroad regulation.\nComplexity: the same combinations that lowered prices and widened markets also crushed rivals and bent government, so the transformation was real for shoppers and exporters and costly for competitors and farmers.",
+  "pool": "test",
+  "prompt": "Evaluate the extent to which the rise of big business transformed the American economy between 1865 and 1898.",
+  "reasoning": "causation",
+  "rubric": [
+    {
+      "criterion": "Earns the point for a thesis that makes a historically defensible claim about the extent to which big business transformed the American economy between 1865 and 1898, with a line of reasoning.",
+      "notEarned": "A thesis that merely restates the prompt, or one that makes no claim about extent, does not earn the point.",
+      "points": 1,
+      "skill": "6.A"
+    },
+    {
+      "criterion": "Earns the point for describing a broader historical context relevant to the prompt, such as post-Civil War industrialization, the growth of corporations, or the settlement of the West.",
+      "notEarned": "A context that is only background on one document, or one set outside the period, does not earn the point.",
+      "points": 1,
+      "skill": "4.B"
+    },
+    {
+      "criterion": "Earns the point for using the content of at least three documents to support the argument.",
+      "notEarned": "Using fewer than three documents, or quoting documents without connecting them to the argument, does not earn the point.",
+      "points": 1,
+      "skill": "6.B"
+    },
+    {
+      "criterion": "Earns the point for using at least six documents to support the argument, with specific evidence from each.",
+      "notEarned": "Using fewer than six documents, or listing documents without using their content, does not earn the point.",
+      "points": 1,
+      "skill": "6.B"
+    },
+    {
+      "criterion": "Earns the point for using at least one piece of specific outside evidence, such as the transcontinental railroad, the Bessemer process, or the Interstate Commerce Act, to support the argument.",
+      "notEarned": "Repeating document content without adding outside evidence does not earn the point.",
+      "points": 1,
+      "skill": "6.B"
+    },
+    {
+      "criterion": "Earns the point for explaining how at least one document’s point of view, purpose, historical situation, or audience matters to the argument.",
+      "notEarned": "Identifying a document’s author without explaining why that matters does not earn the point.",
+      "points": 1,
+      "skill": "3.B"
+    },
+    {
+      "criterion": "Earns the point for a complex argument, such as showing that big business transformed some parts of American life while leaving others unchanged, or that the same changes helped some Americans and hurt others.",
+      "notEarned": "A one-sided argument that ignores counter-evidence, or a complexity move stated without support, does not earn the point.",
+      "points": 1,
+      "skill": "6.D"
+    }
+  ],
+  "skills": [
+    "6.A",
+    "6.B"
+  ],
+  "source": "original; documents are public-domain primary sources, public data, or labeled paraphrases (see each document’s sourcing note)",
+  "status": "final",
+  "stimulus_set": null,
+  "themes": [
+    "WXT",
+    "SOC"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "totalPoints": 7,
+  "type": "dbq",
+  "unit": 6
+}

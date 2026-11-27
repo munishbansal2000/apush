@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0174",
+ "type": "saq",
+ "unit": 6,
+ "topics": [
+  "6.3"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "skills": [
+  "1.B",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Helen Hunt Jackson, A Century of Dishonor (1881). Public domain. Text verified against the Tennessee State University and Read Closely transcriptions of the 1881 edition.",
+  "text": "Helen Hunt Jackson, A Century of Dishonor (1881) (ellipses mark omissions):\n\n\"There is not among these three hundred bands of Indians [in the United States] one which has not suffered cruelly at the hands either of the Government or of white settlers. ... It makes little difference, however, where one opens the record of the history of the Indians; every page and every year has its dark stain. ... The history of the Government connections with the Indians is a shameful record of broken treaties and unfulfilled promises.\""
+ },
+ "stimulus_set": null,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify Jackson's central claim about the federal government's treatment of Native peoples.",
+   "modelAnswer": "Jackson claims the federal government has a shameful record of broken treaties and unfulfilled promises toward Native peoples. She says every tribe has suffered cruelly at the hands of the government or of white settlers.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying Jackson's claim, such as the broken treaties and unfulfilled promises, or the cruel suffering of every tribe.",
+     "notEarned": "Restating the passage without naming Jackson's claim, or naming a claim she does not make, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one way federal policy toward Native peoples changed in the 1880s in response to reformers like Jackson.",
+   "modelAnswer": "Reformers like Jackson pushed the government from warfare toward assimilation, and Congress answered with the Dawes Act of 1887. The act broke reservations into individual allotments, aiming to turn Native peoples into self-sufficient farmers and citizens.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one policy change, such as the Dawes Act, allotment, or the shift from warfare to assimilation.",
+     "notEarned": "Naming a policy with no explanation of the change, or describing a change from another period, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one reason the Dawes Act failed to help Native peoples as its reformers intended.",
+   "modelAnswer": "The allotments were too small and dry for Plains farming, and much of the best land was declared surplus and sold to white settlers. Native peoples lost about two-thirds of their remaining land, falling from about 138 million acres in 1887 to about 48 million by 1934.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason for failure, such as allotments too small or dry, the sale of surplus land, or the loss of two-thirds of tribal land.",
+     "notEarned": "Naming a failure with no reason explained, or blaming Native peoples for the outcome, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Helen Hunt Jackson and the Call for Reform"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The End of Native American Independence"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

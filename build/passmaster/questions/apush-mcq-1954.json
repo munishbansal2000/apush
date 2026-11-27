@@ -1,0 +1,89 @@
+{
+  "id": "apush-mcq-1954",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.13"
+  ],
+  "skills": [
+    "2.A"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "difficulty": 3,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "C. Politics, Power, and Reform in Urban America"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Gilded Age Politics"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "National Politics"
+      }
+    ],
+    "primary_sources": [
+      "Thomas Nast, 'The Brains,' Harper's Weekly, October 21, 1871"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-613-nast-tweed",
+  "stimulus": {
+    "kind": "image",
+    "text": "The cartoon, by Thomas Nast in Harper’s Weekly, October 21, 1871, shows a fat man in a suit with a money bag for a head. The bag is marked with a dollar sign. Below the figure the caption reads “THE ‘BRAINS’” and “That achieved the Tammany Victory at the Rochester Democratic Convention.” The figure is William M. “Boss” Tweed of New York City’s Tammany Hall.",
+    "source_note": "Thomas Nast, “The Brains,” Harper’s Weekly, October 21, 1871. Public domain; image viewed by the writer (shared pool: u6/5s24-ch03-mcq-20.jpg)."
+  },
+  "stem": "What does the cartoon say about Boss Tweed's power in New York?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Tweed won office by promising honest and open government",
+      "misconception": "The cartoon shows Tweed's head as a money bag, not a reformer promising honest government."
+    },
+    {
+      "key": "B",
+      "text": "Money was the source of Tweed's power over the city"
+    },
+    {
+      "key": "C",
+      "text": "Tweed answered to the voters of Rochester, New York",
+      "misconception": "The caption names a Rochester convention, but Tweed ran New York City, not Rochester."
+    },
+    {
+      "key": "D",
+      "text": "Tweed's power came from his skill as a public speaker",
+      "misconception": "Nothing in the cartoon shows Tweed speaking; it shows money as his head."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The money-bag head points to money, not to honest government promises.",
+    "B": "Tweed's head is a money bag, so the cartoon says money made him powerful.",
+    "C": "Rochester is where the convention met, not the city Tweed ran.",
+    "D": "The cartoon shows no speech, only a money bag for a head.",
+    "general": "Look at what Nast changed about Tweed's body.\n1. Tweed's head is a money bag marked with a dollar sign, so money stands for his mind.\n2. The caption calls him 'THE BRAINS' behind a Tammany convention victory.\n3. Together, the picture and caption say money, not ideas, drove Tweed's machine.\n4. Background from the books: Tammany Hall traded jobs and services for votes in New York City.\nRemember: in a cartoon, a changed body part names the person's real power."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1954",
+      "file": "u6/5s24-ch03-mcq-20.jpg",
+      "caption": "Thomas Nast, “The Brains,” Harper’s Weekly, October 21, 1871",
+      "alt": "Cartoon of a fat man in a suit with a money bag marked with a dollar sign for a head, captioned THE BRAINS, about the Tammany victory at the Rochester Democratic Convention",
+      "license": "Public domain",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Boss_Tweed%2C_Thomas_Nast.jpg"
+    }
+  ]
+}

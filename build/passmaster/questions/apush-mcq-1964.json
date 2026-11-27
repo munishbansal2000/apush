@@ -1,0 +1,89 @@
+{
+  "id": "apush-mcq-1964",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.13"
+  ],
+  "skills": [
+    "2.A"
+  ],
+  "themes": [
+    "PCE",
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "difficulty": 2,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "The Politics of Tariff Rates"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Gilded Age Politics"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "National Politics"
+      }
+    ],
+    "primary_sources": [
+      "Bernhard Gillam, 'The Protectors of Our Industries,' Puck, February 7, 1883"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-613-tariff-protectors",
+  "stimulus": {
+    "kind": "image",
+    "text": "Political cartoon by Bernhard Gillam, Puck, February 7, 1883, “The Protectors of Our Industries.” Four wealthy industrialists sit on bags labeled with their millions atop a raft built of cloth, linen, lumber, and other goods. Workers from many trades carry the raft on their backs while wading through rough water. Signs on the goods give each trade’s weekly pay, such as cloth workers at $9 a week, linen workers at $11 a week, and lumber workers at $6 a week.",
+    "source_note": "Bernhard Gillam, “The Protectors of Our Industries,” Puck, February 7, 1883. Public domain: cartoon published 1883 (pre-1930); Library of Congress, LCCN94507245. Labels and wage signs checked against the image."
+  },
+  "stem": "What does the cartoon show carrying the wealthy men on the raft?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Foreign ships bringing cheap goods into American ports",
+      "misconception": "The raft is carried by workers, not by ships bringing goods."
+    },
+    {
+      "key": "B",
+      "text": "Government officials collecting taxes from the industrialists",
+      "misconception": "No officials appear; the carriers are workers from many trades."
+    },
+    {
+      "key": "C",
+      "text": "The industrialists themselves rowing the raft through the waves",
+      "misconception": "The men sit on top while workers below carry the raft."
+    },
+    {
+      "key": "D",
+      "text": "Workers from many trades carrying the raft on their backs"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "The carriers are named trades, not ships in a harbor.",
+    "B": "The men below carry goods, and their signs list weekly wages.",
+    "C": "The rich men sit still on their money bags above the workers.",
+    "D": "Cloth, linen, and lumber workers hold the raft up on their backs.",
+    "general": "Look at who is below the raft.\n1. The men on top sit on bags labeled with their millions.\n2. Below them, workers from many trades carry the raft on their backs.\n3. The workers wade through rough water while the rich stay dry.\n4. The picture puts the burden below and the comfort above.\nRemember: in a cartoon, who carries whom shows who pays the cost."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1964",
+      "file": "u6/saq-set-01-q3.jpg",
+      "caption": "“The Protectors of Our Industries,” Puck, February 7, 1883",
+      "alt": "Gillam cartoon: wealthy industrialists sit on bags of millions atop a raft of goods carried on the backs of workers wading through rough water, with signs giving each trade's weekly pay",
+      "license": "Public domain: Puck cartoon published 1883.",
+      "source_url": "https://www.loc.gov/pictures/item/2012647455/"
+    }
+  ]
+}

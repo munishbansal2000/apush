@@ -1,0 +1,80 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "In re Debs, 158 U.S. 564 (1895)"
+  ]
+ },
+ "id": "apush-mcq-1792",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "text": "Send the army and use the courts to clear the obstruction"
+  },
+  {
+   "key": "B",
+   "misconception": "The passage is about clearing obstructions, not about setting wages.",
+   "text": "Order the railroads to raise their workers’ wages at once."
+  },
+  {
+   "key": "C",
+   "misconception": "The passage is about obstructions to commerce, not about banning unions.",
+   "text": "Ban all labor unions across the whole country at once."
+  },
+  {
+   "key": "D",
+   "misconception": "The passage says the national government may act, not that it must stand aside.",
+   "text": "Leave the strike to the states and do nothing at all."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Stopped trains carrying mail are obstructions to commerce and the mails, which the passage says the nation may brush away with its army and courts.",
+  "B": "The passage is about clearing obstructions, not about setting wages.",
+  "C": "The passage is about obstructions to commerce, not about banning unions.",
+  "D": "The passage says the national government may act, not that it must stand aside.",
+  "general": "Apply the passage to the strike it decided.\n1. The Pullman strikers stopped trains carrying mail.\n2. The passage calls such blocks obstructions to commerce and the mails.\n3. It says the national government may brush them away, with army and militia if needed.\n4. So the government could send troops and use the courts to clear the trains.\nRemember: apply a court’s rule to the facts the case gives you."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.D",
+  "1.B"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "The case concerned the Pullman strike, in which rail workers stopped trains carrying mail. Under the Court’s reasoning in the passage, what could the government do?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Justice David J. Brewer, opinion of the Court, In re Debs, 158 U.S. 564 (1895). Public domain.",
+  "text": "“The strong arm of the national government may be put forth to brush away all obstructions to the freedom of interstate commerce or the transportation of the mails. If the emergency arises, the army of the Nation, and all its militia, are at the service of the Nation to compel obedience to its laws.”"
+ },
+ "stimulus_set": "in-re-debs-1895",
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

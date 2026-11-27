@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1631",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "3.A",
+  "6.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "stem": "What does Twain mean when he writes that in Virginia City \"speculation ran riot, and yet there was a world of substantial business going on, too\"?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Mark Twain, Roughing It (1872), ch. 52. Public domain. Text verified against the Standard Ebooks edition (standardebooks.org/ebooks/mark-twain/roughing-it/text/chapter-52).",
+  "text": "Mark Twain, Roughing It (1872), Chapter 52, on Virginia City, Nevada:\n\n\"The year 1863 was perhaps the very top blossom and culmination of the 'flush times.' Virginia swarmed with men and vehicles to that degree that the place looked like a very hive—that is when one's vision could pierce through the thick fog of alkali dust that was generally blowing in summer... Speculation ran riot, and yet there was a world of substantial business going on, too. All freights were brought over the mountains from California (150 miles) by pack-train partly, and partly in huge wagons drawn by such long mule teams that each team amounted to a procession... All the bullion was shipped in bars by stage to San Francisco... There were three stages a day, each way, and I have seen the out-going stages carry away a third of a ton of bullion each, and more than once I saw them divide a two-ton lot and take it off.\"\n\n\"All along under the center of Virginia and Gold Hill, for a couple of miles, ran the great Comstock silver lode — a vein of ore from fifty to eighty feet thick between its solid walls of rock — a vein as wide as some of New York's streets.\"\n\n\"Virginia was a busy city of streets and houses above ground. Under it was another busy city, down in the bowels of the earth, where a great population of men thronged in and out among an intricate maze of tunnels and drifts, flitting hither and thither under a winking sparkle of lights, and over their heads towered a vast web of interlocking timbers that held the walls of the gutted Comstock apart.\""
+ },
+ "stimulus_set": "comstock-twain",
+ "options": [
+  {
+   "key": "A",
+   "text": "The town's economy was entirely fake, with no real mining at all",
+   "misconception": "Background: Twain describes a real underground city of tunnels and timbers; the silver was real and the mining was large-scale."
+  },
+  {
+   "key": "B",
+   "text": "Wild gambling on mining shares went on alongside genuine, large-scale silver mining"
+  },
+  {
+   "key": "C",
+   "text": "The townspeople had stopped mining and lived only by trading stocks",
+   "misconception": "Background: the tunnels, drifts, and timbering Twain describes are working mines, not abandoned holes."
+  },
+  {
+   "key": "D",
+   "text": "The federal government had banned all private mining in Nevada",
+   "misconception": "Background: mining in Nevada was private enterprise; the government never banned it, and the Comstock mines made fortunes."
+  }
+ ],
+ "rationales": {
+  "A": "Background: the lode was real, fifty to eighty feet thick, and the underground city of tunnels was a working mine. The business was substantial, not fake.",
+  "B": "Twain holds both halves at once: the 'flush times' frenzy of speculation, and beneath it a real industry of shafts, tunnels, and bullion shipped by stage.",
+  "C": "Background: the men thronging the tunnels are miners at work. Trading shares happened above ground; digging happened below it.",
+  "D": "Background: the Comstock mines were private ventures. No federal ban existed, and the mines poured out silver for decades.",
+  "general": "Twain is holding two pictures at once: the casino upstairs and the mine below.\n1. Take the first half: speculation ran riot in the flush times.\n2. Take the second half: a world of substantial business, tunnels, timbers, and bullion bars shipped to San Francisco.\n3. Put them together. A boomtown gambles on top of real work, and both are the story.\nRemember: in a boom, the betting and the business grow together, so do not mistake one for the other."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The Mining and Lumbering Frontier"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

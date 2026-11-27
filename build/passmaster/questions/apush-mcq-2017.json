@@ -1,0 +1,86 @@
+{
+  "answerKey": "D",
+  "difficulty": 2,
+  "figures": [
+    {
+      "alt": "1943 photograph of a sign reading COLORED WAITING ROOM with an arrow, outside a Greyhound bus station in Rome, Georgia",
+      "caption": "Esther Bubley, “Colored Waiting Room” sign, Greyhound bus station, Rome, Georgia, September 1943.",
+      "file": "pt01/fig4-colored-waiting-room-1943.jpg",
+      "id": "fig-apush-mcq-2017",
+      "license": "Public domain (FSA/OWI)",
+      "source_url": "https://www.loc.gov/pictures/resource/cph.3b22541/"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.4 The “New South”"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "America Transformed into the Industrial Giant"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-2017",
+  "lesson": "apush-u6-l2",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Wells was responding to the end of European immigration.",
+      "text": "The end of immigration from Europe"
+    },
+    {
+      "key": "B",
+      "misconception": "Wells was responding to the passage of women's suffrage.",
+      "text": "The passage of women’s suffrage at the federal level"
+    },
+    {
+      "key": "C",
+      "misconception": "Wells was responding to the decline of railroad construction.",
+      "text": "The decline of railroad construction in the West"
+    },
+    {
+      "key": "D",
+      "text": "Jim Crow segregation and racial violence expanding in the South"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Immigration from Europe is not Wells's subject.",
+    "B": "Women's suffrage was not yet passed at the federal level.",
+    "C": "Railroad construction in the West is not the target of her critique.",
+    "D": "Wells responded to Jim Crow segregation and the epidemic of lynching and racial violence in the South. Her investigations documented lynchings as terror, not as punishment for crime.",
+    "general": "1. Name what Wells describes. Laws separating the races in schools, trains, and every public place.\n2. Ask what system that is. Jim Crow segregation, backed by racial violence in the South.\n3. Test the other subjects. Immigration, suffrage, and railroads are not what she attacks.\n4. Match the response. Her call for justice and equal protection answers segregation itself.\nRemember: a writer's target is named by what she describes, not by the decade alone."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "4.B"
+  ],
+  "source": "original; stimulus is a paraphrase of Ida B. Wells’s speeches and writings (1890s) with the Bubley 1943 photograph",
+  "status": "final",
+  "stem": "Wells’s argument most directly responded to which of the following developments?",
+  "stimulus": {
+    "kind": "mixed",
+    "source_note": "Ida B. Wells, anti-lynching and civil rights advocate, 1890s, paraphrased from her speeches and writings. Photograph: Esther Bubley, 1943, Library of Congress.",
+    "text": "The white man has made laws that separate the races in schools, in trains, in every public place. We ask not for special favors, but for justice and equal protection under the law."
+  },
+  "stimulus_set": "wells-jim-crow-1890s",
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "topics": [
+    "6.4"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

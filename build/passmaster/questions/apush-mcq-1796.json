@@ -1,0 +1,77 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "id": "apush-mcq-1796",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Sending the army is not how a government treats a minor dispute.",
+   "text": "The government treated the strike as a minor local dispute and nothing more."
+  },
+  {
+   "key": "B",
+   "text": "The federal government treated the strike as a national emergency worthy of the army."
+  },
+  {
+   "key": "C",
+   "misconception": "The troops were sent to end the strike, not to help the strikers.",
+   "text": "The government sided with the striking workers against the railroad companies."
+  },
+  {
+   "key": "D",
+   "misconception": "The passage says Hayes did send federal troops.",
+   "text": "The government had no troops left to send anywhere at all."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "Sending the army is not how a government treats a minor dispute.",
+  "B": "Troops fresh from Reconstruction were the nation’s emergency force, and Hayes spent them on a strike, which shows how grave Washington judged it.",
+  "C": "The troops were sent to end the strike, not to help the strikers.",
+  "D": "The passage says Hayes did send federal troops.",
+  "general": "Ask what kind of force was sent.\n1. The troops had recently enforced Reconstruction in the South.\n2. That was the army’s great postwar domestic mission.\n3. Hayes moved that same force against railroad strikers.\n4. So Washington treated the strike as a national emergency, not a local quarrel.\nRemember: the force a government sends shows how serious it thinks the trouble is."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "4.A",
+  "2.B"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "The passage says Hayes sent federal troops, many recently withdrawn from enforcing Reconstruction in the South. What does that detail best show about the strike?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, written for this question from Barron’s Premium 2027 Chapter 8 (Topic 6.7), 5 Steps to a 5, 2024, Chapter 18, and Princeton Review, Chapter 10.",
+  "text": "Original secondary passage, written for this question from the grounding books:\n\nIn July 1877, the Baltimore and Ohio Railroad announced a 10 percent pay cut for its workers, whose wages had already fallen during the depression that followed the Panic of 1873. Railroad workers in Martinsburg, West Virginia, stopped the trains, and workers in Pittsburgh, Chicago, and other cities followed. At its height the strike involved more than 100,000 railroad workers. Violence broke out in nine states, and President Rutherford B. Hayes sent federal troops to end the strike. The troops Hayes sent had recently been withdrawn from enforcing Reconstruction in the South."
+ },
+ "stimulus_set": "railroad-strike-1877",
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

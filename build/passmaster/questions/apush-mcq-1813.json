@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1813",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "riis-tenements",
+ "stimulus": {
+  "kind": "text",
+  "text": "“To-day three-fourths of its people live in the tenements, and the nineteenth century drift of the population to the cities is sending ever-increasing multitudes to crowd them. The fifteen thousand tenant houses that were the despair of the sanitarian in the past generation have swelled into thirty-seven thousand, and more than twelve hundred thousand persons call them home.”\n\nJacob A. Riis, How the Other Half Lives (1890), Introduction.",
+  "source_note": "Jacob A. Riis, How the Other Half Lives (New York: Charles Scribner’s Sons, 1890), Introduction. Public domain; text checked against Project Gutenberg eBook 45502."
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Jacob A. Riis, How the Other Half Lives (1890)"
+  ]
+ },
+ "status": "final",
+ "stem": "Riis says the number of tenant houses grew from fifteen thousand to thirty-seven thousand. That growth best shows what?",
+ "options": [
+  {
+   "key": "A",
+   "text": "That tenements were disappearing as the city grew",
+   "misconception": "Reads a rise in tenement numbers as a fall."
+  },
+  {
+   "key": "B",
+   "text": "That most New Yorkers had moved to the suburbs",
+   "misconception": "Reverses the drift: people moved into the city, not out."
+  },
+  {
+   "key": "C",
+   "text": "That tenement crowding grew worse as the city grew"
+  },
+  {
+   "key": "D",
+   "text": "That the city had solved its housing problem",
+   "misconception": "Treats a growing housing problem as a solved one."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "The number rose from fifteen thousand to thirty-seven thousand. Tenements were spreading, not disappearing.",
+  "B": "Riis says the drift of population was into the cities, not out to the suburbs.",
+  "C": "More tenant houses holding ever-increasing multitudes means the crowding grew worse, not better.",
+  "D": "A rise to thirty-seven thousand tenant houses is a growing problem, not a solved one.",
+  "general": "Ask what a rising number means.\n1. Tenant houses more than doubled, from fifteen thousand to thirty-seven thousand.\n2. At the same time, ever-increasing multitudes crowded into them.\n3. More houses plus more people means the crowding grew worse.\n4. A problem that grows is not a problem that is solved.\nRemember: a rising count plus rising crowding means a worsening problem."
+ }
+}

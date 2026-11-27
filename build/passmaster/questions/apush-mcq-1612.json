@@ -1,0 +1,75 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.1 Contextualizing Period 6"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+   }
+  ],
+  "primary_sources": [
+   "Andrew Carnegie, 'Wealth,' North American Review, June 1889"
+  ]
+ },
+ "id": "apush-mcq-1612",
+ "lesson": "apush-u6-l1",
+ "options": [
+  {
+   "key": "A",
+   "text": "The rich should administer their surplus wealth for the good of the community"
+  },
+  {
+   "key": "B",
+   "misconception": "Carnegie called leaving wealth to families the most injudicious of the three modes of disposing of it.",
+   "text": "The rich should leave their fortunes entirely to their children"
+  },
+  {
+   "key": "C",
+   "misconception": "Carnegie rejected redistribution; he wanted voluntary giving by the rich, with the laws of accumulation left free.",
+   "text": "The government should take over large fortunes and divide them equally"
+  },
+  {
+   "key": "D",
+   "misconception": "Carnegie urged modest living and public giving, not secrecy about wealth.",
+   "text": "The rich should keep their wealth secret so the poor would not envy them"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Carnegie calls the millionaire a trustee for the poor: surplus wealth is a trust fund to be administered for the community during the rich man's life.",
+  "B": "Carnegie called leaving wealth to families the most injudicious of the three modes of disposing of a fortune.",
+  "C": "Carnegie rejected redistribution. He wanted the rich to give voluntarily while the laws of accumulation stayed free.",
+  "D": "Carnegie urged modest, unostentatious living and public giving — libraries, parks, universities — not secrecy about wealth.",
+  "general": "Follow Carnegie's favorite word — trustee — and the duty explains itself.\n1. Find his image. The millionaire holds surplus wealth as a trustee holds a trust fund.\n2. Ask what a trustee does. He administers the money for others, not for himself.\n3. Name the duty. The rich should administer surplus wealth for the good of the community.\nRemember: a trustee never owns the money — he only manages it for someone else's benefit."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.A",
+  "1.B"
+ ],
+ "source": "original; stimulus is Andrew Carnegie, 'Wealth,' North American Review, June 1889, public domain.",
+ "status": "final",
+ "stem": "According to Carnegie, what duty did great wealth carry with it?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Andrew Carnegie, 'Wealth,' North American Review, June 1889. Public domain.",
+  "text": "\"The problem of our age is the proper administration of wealth, that the ties of brotherhood may still bind together the rich and poor in harmonious relationship. . . . The millionaire will be but a trustee for the poor, intrusted for a season with a great part of the increased wealth of the community, but administering it for the community far better than it could or would have done for itself.\"\n— Andrew Carnegie, \"Wealth\" (The Gospel of Wealth), North American Review, June 1889"
+ },
+ "stimulus_set": "gospel-wealth",
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "topics": [
+  "6.1"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

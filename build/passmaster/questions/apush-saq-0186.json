@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0186",
+ "lesson": "apush-u6-l4",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "3.A",
+  "2.B"
+ ],
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Lee Chew, “The Biography of a Chinaman,” The Independent, February 19, 1903. Public domain; text checked against the Re-imagining Migration and Gilder Lehrman excerpts.",
+  "text": "“When I got to San Francisco, which was before the passage of the Exclusion act, I was half starved. . . . A man got me work as a house servant in an American family, and my start was the same as that of almost all the Chinese in this country. . . . The reason why so many Chinese go into the laundry business in this country is because it requires little capital and is one of the few opportunities that are open. . . . More than half the Chinese in this country would become citizens if allowed to do so, and would be patriotic Americans. But how can they make this country their home as matters now are!”\n\nLee Chew, “The Biography of a Chinaman,” The Independent, February 19, 1903, recalling his arrival in San Francisco before the Exclusion Act."
+ },
+ "source": "original; stimulus is a public-domain primary source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Lee Chew, “The Biography of a Chinaman,” The Independent, February 19, 1903"
+  ]
+ },
+ "status": "final",
+ "saq_slot": 2,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one job Lee Chew held in the United States.",
+   "modelAnswer": "Lee Chew first worked as a house servant in an American family in San Francisco, and he later opened a laundry business with a partner. Both jobs were among the few open to Chinese immigrants.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one job Lee Chew held, such as house servant or laundryman.",
+     "notEarned": "Naming a job Chinese immigrants held in general, without tying it to Lee Chew, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain one reason Lee Chew gives for why so many Chinese immigrants worked in laundries.",
+   "modelAnswer": "Lee Chew says the laundry business required little capital and was one of the few opportunities open to Chinese immigrants. With most doors closed to them, Chinese workers took the work they could start cheaply.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one reason Lee Chew gives, such as little capital needed or few opportunities open.",
+     "notEarned": "Naming the laundry business without explaining Lee Chew’s reason does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain one way the Exclusion Act affected Chinese immigrants’ ability to make America their home, as Lee Chew describes it.",
+   "modelAnswer": "Lee Chew says more than half the Chinese in the country would become citizens if allowed, but the law barred them from citizenship. Because they could not become citizens, he asks how they can call America home at all.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one effect of exclusion on making a home, such as the bar on citizenship.",
+     "notEarned": "Naming the Exclusion Act without explaining how it kept Chinese immigrants from making a home does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

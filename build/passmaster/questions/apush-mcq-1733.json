@@ -1,0 +1,87 @@
+{
+  "id": "apush-mcq-1733",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "answerKey": "D",
+  "skills": [
+    "1.B",
+    "5.B"
+  ],
+  "themes": [
+    "WXT",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "stem": "How did electric light change the working day for Americans?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Harper's Weekly, June 24, 1882, \"The Electric Light in Houses — Laying the Tubes for Wires in the Streets of New York,\" drawn by W. P. Snyder. Public domain. https://commons.wikimedia.org/wiki/File:Laying_electric_lines_under_street_Edison_Pearl_Street_Utility_June_21_1882_Harpers_Weekly.png",
+    "text": "The image is a page from Harper's Weekly, June 24, 1882, titled \"THE ELECTRIC LIGHT IN HOUSES — LAYING THE TUBES FOR WIRES IN THE STREETS OF NEW YORK.\" The top panel, \"Laying the Electrical Tubes,\" shows workers digging a New York street and lowering thick tubes into the ground. The bottom panel, \"Testing Tubes for Insulation,\" shows a worker at a tripod instrument and others handling coiled wire. An inset at the top right shows a worker pouring insulation."
+  },
+  "stimulus_set": "pearl-street-tubes",
+  "options": [
+    {
+      "key": "A",
+      "text": "It ended factory work, since machines could run without people",
+      "misconception": "Background: machines still needed workers; electric light let people work longer hours, it did not replace them."
+    },
+    {
+      "key": "B",
+      "text": "It made the working day shorter, since light cost more than candles",
+      "misconception": "Background: electric light let work run past sundown, so the working day grew longer, not shorter."
+    },
+    {
+      "key": "C",
+      "text": "It changed nothing, since most Americans already worked at night",
+      "misconception": "Background: before electric light, most work ended at sundown; night work was rare and costly."
+    },
+    {
+      "key": "D",
+      "text": "It stretched the working day past sundown, into hours that had been dark"
+    }
+  ],
+  "rationales": {
+    "A": "Background: factories still needed workers to run the machines. Electric light let those workers keep working after dark, it did not send them home.",
+    "B": "Background: electric light was brighter and steadier than candles, and it let work run on after sundown. The working day stretched longer, not shorter.",
+    "C": "Background: before electric light, the working day ended at sundown for most people. Night work was rare because lamps were dim and costly.",
+    "D": "Background from the books: Edison's advances allowed for the extension of the workday, which previously ended at sundown, and the wider availability of electricity. Light after dark meant work after dark.",
+    "general": "Ask what the sun used to decide: quitting time.\n1. Background: before electric light, most work stopped at sundown because lamps were dim and costly.\n2. Background: Edison's light let the workday run past sundown, and factories and shops stayed open into the night.\n3. Background: the day itself got longer, not just brighter.\nRemember: a light that beats the sun changes the clock, not just the room."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Coal and Oil"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "The Second Industrial Revolution"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Age of Invention and Economic Growth"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)",
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1733",
+      "file": "u6/original-u6-tech-04.png",
+      "caption": "Workers laying tubes for electric wires in New York, Harper's Weekly, 1882",
+      "alt": "A Harper's Weekly page from June 1882 shows workers digging a New York street and laying thick tubes for electric wires, with a second panel testing the tubes for insulation",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Laying_electric_lines_under_street_Edison_Pearl_Street_Utility_June_21_1882_Harpers_Weekly.png",
+      "license": "Public domain: Harper's Weekly engraving, June 24, 1882."
+    }
+  ]
+}

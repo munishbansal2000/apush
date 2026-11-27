@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-1822",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "3.C"
+ ],
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "kearney-workingmen",
+ "stimulus": {
+  "kind": "text",
+  "text": "Original secondary passage, written for this question from the grounding books:\n\nIn California in the 1870s, the Workingmen’s Party, led by the Irish immigrant Denis Kearney, blamed Chinese laborers for low wages and unemployment after the Panic of 1873. At rallies in San Francisco, Kearney ended his speeches with the slogan “The Chinese must go.” The party demanded that Congress exclude Chinese immigrants, and its campaign helped push Congress to pass the Chinese Exclusion Act of 1882.",
+  "source_note": "Original secondary passage, written for this question from Barron’s Premium 2027 Chapter 8 (Topics 6.3 and 6.8), 5 Steps to a 5, 2024, Chapter 18, and Princeton Review, Chapter 10."
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "status": "final",
+ "stem": "The passage best illustrates which pattern in Gilded Age politics?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Immigrants were welcomed by every political party",
+   "misconception": "Claims a welcome that the passage’s exclusion demand contradicts."
+  },
+  {
+   "key": "B",
+   "text": "Economic hardship after a panic fed nativist demands for restriction"
+  },
+  {
+   "key": "C",
+   "text": "Congress ignored every demand made by labor groups",
+   "misconception": "Says Congress ignored a demand it passed into law."
+  },
+  {
+   "key": "D",
+   "text": "Chinese laborers led the campaign for their own exclusion",
+   "misconception": "Makes the excluded group the leader of its own exclusion."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "The Workingmen’s Party demanded exclusion. Not every party welcomed immigrants.",
+  "B": "A panic brought low wages and unemployment, Kearney blamed Chinese laborers, and the blame became a demand for exclusion that Congress answered.",
+  "C": "Congress passed the Exclusion Act, so it did not ignore this demand.",
+  "D": "Chinese laborers were the target of the campaign, not its leaders.",
+  "general": "Trace the chain from panic to law.\n1. The Panic of 1873 brought low wages and unemployment.\n2. Kearney blamed Chinese laborers for that hardship.\n3. The blame became a demand for exclusion.\n4. Congress answered with the Exclusion Act of 1882.\n5. Hardship, blame, demand, and law follow one another in order.\nRemember: a pattern is a chain, so follow it from its first link to its last."
+ }
+}

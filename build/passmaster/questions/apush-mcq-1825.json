@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1825",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "addams-hull-house",
+ "stimulus": {
+  "kind": "text",
+  "text": "“Our very first Christmas at Hull House, when we as yet knew nothing of child labor, a number of little girls refused the candy which was offered them as part of the Christmas good cheer, saying simply that they “worked in a candy factory and could not bear the sight of it.” We discovered that for six weeks they had worked from seven in the morning until nine at night, and they were exhausted as well as satiated.”\n\nJane Addams, Twenty Years at Hull-House (1910), Chapter X, describing Christmas 1889.",
+  "source_note": "Jane Addams, Twenty Years at Hull-House (1910), Chapter X. Public domain; text checked against the University of Pennsylvania digital edition."
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Jane Addams, Twenty Years at Hull-House (1910), Chapter X"
+  ]
+ },
+ "status": "final",
+ "stem": "Addams’s story best shows that Hull House residents did what?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Ran the candy factories of Chicago",
+   "misconception": "Turns the reformers who found the abuse into the factory owners."
+  },
+  {
+   "key": "B",
+   "text": "Believed child labor was good for immigrant children",
+   "misconception": "Reads concern about exhausted children as approval of child labor."
+  },
+  {
+   "key": "C",
+   "text": "Learned about child labor by living among immigrants"
+  },
+  {
+   "key": "D",
+   "text": "Moved to Chicago to work in factories themselves",
+   "misconception": "Turns settlement residents into factory workers."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Hull House residents did not run the factories. They discovered the factory work by living nearby.",
+  "B": "Addams writes about the girls’ exhaustion with concern, not approval.",
+  "C": "The residents learned about child labor only because they lived in the neighborhood and met the girls at Christmas.",
+  "D": "The residents lived in the settlement house to serve the neighborhood, not to take factory jobs.",
+  "general": "Ask how the residents found out.\n1. The girls came to Hull House at Christmas.\n2. Their refusal led the residents to discover the factory hours.\n3. The discovery came from living in the neighborhood, not from a report.\n4. Settlement living was how reformers learned what the neighborhood needed.\nRemember: a settlement house learned by living there, not by reading about it."
+ }
+}

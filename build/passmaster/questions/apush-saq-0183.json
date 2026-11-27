@@ -1,0 +1,93 @@
+{
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "August Spies, address to the court (October 7, 1886)"
+  ]
+ },
+ "id": "apush-saq-0183",
+ "lesson": "apush-u6-l3",
+ "parts": [
+  {
+   "modelAnswer": "Spies claims the State produced no evidence that he knew who threw the bomb or had anything to do with it. His conviction therefore rested on no proof tying him to the bombing.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify Spies’s main claim about the evidence against him.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying Spies’s claim that no evidence tied him to the bombing.",
+     "notEarned": "Restating that Spies was sentenced to death, without his claim about the evidence, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "The trial and executions tied organized labor to anarchism and violence in the public mind. Many Americans came to fear unions as dangerous and radical, which weakened support for the labor movement.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain how the Haymarket trial affected public attitudes toward organized labor.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining how the trial shaped public attitudes, such as linking unions with violence and radicalism.",
+     "notEarned": "Naming the Haymarket affair without explaining its effect on public attitudes does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "After Haymarket, government and employers treated unions as a threat to order and used police, troops, and courts against them more freely. The bombing gave officials a reason to crush strikes and jail labor leaders.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain one way the Haymarket affair changed how the government treated labor.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one change in government treatment, such as freer use of police, troops, or courts against labor.",
+     "notEarned": "Naming the Haymarket bombing without explaining a change in government action does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "causation",
+ "saq_slot": 2,
+ "skills": [
+  "3.A",
+  "2.B"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "August Spies, address to the court, October 7, 1886, in The Chicago Martyrs (1899). Public domain (Wikisource). Excerpts joined with ellipses.",
+  "text": "“There was no evidence produced by the State to show or even indicate that I had any knowledge of the man who threw the bomb, or that I myself had anything to do with the throwing of the missile. . . . You may pronounce the sentence upon me, honorable judge, but let the world know that in A.D. 1886, in the State of Illinois, eight men were sentenced to death, because they believed in a better future; because they had not lost their faith in the ultimate victory of liberty and justice!”"
+ },
+ "stimulus_set": null,
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 6
+}

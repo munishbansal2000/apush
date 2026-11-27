@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1806",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "excl-act-1882",
+ "stimulus": {
+  "kind": "text",
+  "text": "“Whereas in the opinion of the Government of the United States the coming of Chinese laborers to this country endangers the good order of certain localities within the territory thereof: Therefore, Be it enacted by the Senate and House of Representatives of the United States of America in Congress assembled, That from and after the expiration of ninety days next after the passage of this act, and until the expiration of ten years next after the passage of this act, the coming of Chinese laborers to the United States be, and the same is hereby, suspended; and during such suspension it shall not be lawful for any Chinese laborer to come, or having so come after the expiration of said ninety days to remain within the United States.”\n\nChinese Exclusion Act, approved May 6, 1882.",
+  "source_note": "Chinese Exclusion Act, May 6, 1882 (22 Stat. 58), Section 1 and preamble. Public domain; text checked against the National Archives transcript."
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Chinese Exclusion Act, May 6, 1882 (22 Stat. 58)"
+  ]
+ },
+ "status": "final",
+ "stem": "According to the act, for how long was the coming of Chinese laborers suspended?",
+ "options": [
+  {
+   "key": "A",
+   "text": "For ninety days only",
+   "misconception": "Confuses the ninety-day start with the length of the suspension."
+  },
+  {
+   "key": "B",
+   "text": "For ten years"
+  },
+  {
+   "key": "C",
+   "text": "For the lifetime of each laborer",
+   "misconception": "Turns a ten-year term into a lifetime ban."
+  },
+  {
+   "key": "D",
+   "text": "Until the end of the Civil War",
+   "misconception": "Picks a famous date that has nothing to do with this act."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Ninety days is when the suspension starts, not how long it lasts. Read the full time phrase.",
+  "B": "The act says the suspension lasts “until the expiration of ten years next after the passage of this act.”",
+  "C": "The act names ten years, not a lifetime. It sets a fixed term.",
+  "D": "The Civil War ended in 1865, seventeen years before this act. The dates do not fit.",
+  "general": "Read the time words in order.\n1. The suspension starts ninety days after the act passes.\n2. It then runs until ten years after the act passes.\n3. Ninety days is the start, not the length.\n4. The length is the ten-year term the act names.\nRemember: in a law, read the whole time phrase before you pick a number."
+ }
+}

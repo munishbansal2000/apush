@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1641",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "MIG"
+ ],
+ "reasoning": "causation",
+ "stem": "According to the Dawes Act, how much land did a Native head of family receive?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Dawes Severalty Act, Feb. 8, 1887, 24 Stat. 388, Sec. 1. Public domain. Text verified against the Statutes at Large via govinfo (STATUTE-24-Pg388) and EBSCO's document analysis of the act's provisions.",
+  "text": "Dawes Severalty Act (General Allotment Act) of 1887, Section 1 (ellipses mark omissions):\n\n\"That in all cases where any tribe or band of Indians has been, or shall hereafter be, located upon any reservation created for their use... the President of the United States be, and he hereby is, authorized... to allot the lands in said reservation in severalty to any Indian located thereon in quantities as follows:\"\n\n\"To each head of a family, one-quarter of a section; To each single person over eighteen years of age, one-eighth of a section; To each orphan child under eighteen years of age, one-eighth of a section; and To each other single person under eighteen years now living... one-sixteenth of a section...\"\n\n(Paraphrase of Section 5: the United States would hold each allotment in trust for twenty-five years, after which the owner would receive title and citizenship.)"
+ },
+ "stimulus_set": "dawes-act",
+ "options": [
+  {
+   "key": "A",
+   "text": "One-quarter of a section, or 160 acres"
+  },
+  {
+   "key": "B",
+   "text": "One full section, or 640 acres",
+   "misconception": "Background: a full section, 640 acres, was four times the allotment the act gave a head of family."
+  },
+  {
+   "key": "C",
+   "text": "One-eighth of a section, or 80 acres",
+   "misconception": "Background: one-eighth of a section, 80 acres, was the share for a single person over eighteen or an orphan, not for a head of family."
+  },
+  {
+   "key": "D",
+   "text": "As much land as the family could fence in a year",
+   "misconception": "Background: the act fixed exact shares by category; it never let a family take whatever it could fence."
+  }
+ ],
+ "rationales": {
+  "A": "Section 1 names the share in the act's own fractions: to each head of a family, one-quarter of a section, which is 160 acres.",
+  "B": "Background: 640 acres is a full section. The act gave a head of family one quarter of that.",
+  "C": "Background: 80 acres was the share for a single adult or an orphan child. The head of a family received twice as much.",
+  "D": "Background: the act set the shares by law, quarter, eighth, and sixteenth sections. Fencing speed played no part.",
+  "general": "The act is a measuring exercise, so read the fractions, not the feelings.\n1. Find the head of a family's line in Section 1: one-quarter of a section.\n2. Turn the fraction into acres: a section is 640 acres, so a quarter is 160.\n3. Check the other shares against it. Single adults got 80, children 40, all smaller.\nRemember: in a law, the fractions are the policy, so read them exactly."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The End of Native American Independence"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

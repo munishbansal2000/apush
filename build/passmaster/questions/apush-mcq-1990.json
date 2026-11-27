@@ -1,0 +1,79 @@
+{
+  "id": "apush-mcq-1990",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.14"
+  ],
+  "skills": [
+    "5.A"
+  ],
+  "themes": [
+    "WXT",
+    "PCE"
+  ],
+  "reasoning": "continuity-change",
+  "difficulty": 4,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.14 Subject to Debate"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "America Transformed into the Industrial Giant of the World (1870–1910)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ],
+    "primary_sources": [
+      "Emory R. Johnson, American Railway Transportation (1908), Interstate Commerce Commission railroad mileage; Encyclopaedia Britannica, 11th edition (1911), Table IX, steel output"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-614-growth-table",
+  "stimulus": {
+    "kind": "table",
+    "text": "The table shows two measures of American industrial growth, 1870-1900.\n\n| Year | Miles of railroad in operation | Steel produced (millions of tons) |\n| 1870 | 52,922 | 0.07 |\n| 1880 | 93,296 | 1.25 |\n| 1890 | 163,597 | 4.28 |\n| 1900 | 193,346 | 10.19 |",
+    "source_note": "Railroad mileage from Emory R. Johnson, American Railway Transportation (1908), using Interstate Commerce Commission figures; steel output from the Encyclopaedia Britannica, 11th edition (1911), Table IX. The lesson script gives the same scale in round numbers: about 35,000 miles of track in 1865 and over 190,000 by 1900."
+  },
+  "stem": "A historian arguing that industrialization changed the American economy more than it changed American politics in this period could best use the table to show that",
+  "options": [
+    {
+      "key": "A",
+      "text": "production grew several times over within a generation"
+    },
+    {
+      "key": "B",
+      "text": "the two major parties agreed on railroad policy",
+      "misconception": "The table gives production figures, not party positions."
+    },
+    {
+      "key": "C",
+      "text": "voters chose industrialists as presidents",
+      "misconception": "The table says nothing about who won elections."
+    },
+    {
+      "key": "D",
+      "text": "the tariff ended political debate",
+      "misconception": "The table says nothing about the tariff or about debate."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "The numbers show the economy changing on a vast scale in thirty years.",
+    "B": "The table has no figures about the parties or their policies.",
+    "C": "The table has no figures about elections or presidents.",
+    "D": "The table has no figures about the tariff or political debate.",
+    "general": "Ask what the table can prove and what it cannot.\n1. The table shows railroad mileage nearly quadrupling and steel output rising more than a hundredfold.\n2. That is a change in the scale of the economy, measured in thirty years.\n3. The table holds no numbers about parties, elections, or laws.\n4. Background from the books: the same parties fought the same close elections while the economy was remade.\nRemember: a table proves what it measures, and this one measures economic scale."
+  }
+}

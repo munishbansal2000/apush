@@ -1,0 +1,82 @@
+{
+ "answerKey": "D",
+ "difficulty": 3,
+ "figures": [
+  {
+   "alt": "Color cartoon of Uncle Sam welcoming a crowd of immigrants of many origins up the gangplank into a building marked U.S. Ark Refuge",
+   "caption": "'Welcome to All!', Joseph Keppler, Puck, 1880",
+   "file": "u6/barrons-2027-ch08-09.jpg",
+   "id": "fig-apush-mcq-1616",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Welcome_to_all!_LCCN2002719044.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.1 Contextualizing Period 6"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-1616",
+ "lesson": "apush-u6-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Background: immigration continued and grew after 1882; only Chinese laborers were barred.",
+   "text": "That immigration to the United States had ended entirely"
+  },
+  {
+   "key": "B",
+   "misconception": "No such ban existed; Puck and other papers kept publishing Uncle Sam cartoons.",
+   "text": "That Uncle Sam cartoons were banned after 1880"
+  },
+  {
+   "key": "C",
+   "misconception": "Background: the 1882 act targeted Chinese immigrants only; European immigration continued.",
+   "text": "That immigrants from Europe were also barred in 1882"
+  },
+  {
+   "key": "D",
+   "text": "That the welcome depended on the newcomers' origins"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: immigration continued and grew after 1882. Only Chinese laborers were barred, not all newcomers.",
+  "B": "No such ban existed. Puck and other papers kept publishing Uncle Sam cartoons for decades.",
+  "C": "Background: the 1882 act targeted Chinese immigrants only. European immigration continued through Ellis Island and beyond.",
+  "D": "The cartoon welcomes all, but the 1882 act barred Chinese laborers by nationality. The welcome depended on who the newcomers were, and nativism could close the door.",
+  "general": "Put the cartoon and the law side by side: the same country, two opposite messages.\n1. Note the cartoon's promise. In 1880 Uncle Sam welcomes all, whatever their origins.\n2. Note the law's answer. In 1882 Congress barred Chinese laborers, the first ban by nationality.\n3. Name the lesson. The welcome depended on the newcomers' origins, as nativism turned welcome into restriction.\nRemember: a welcome that stops at one group was never for everyone — check who is left outside."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "4.B",
+  "2.C"
+ ],
+ "source": "original; stimulus viewed before writing — Joseph Keppler, Puck, 1880, public domain.",
+ "status": "final",
+ "stem": "The welcome in the cartoon looked different only two years later, when Congress passed the Chinese Exclusion Act of 1882. What does that change best illustrate about the period?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Joseph Keppler, 'Welcome to All!,' Puck magazine, 1880. Public domain. Library of Congress, LCCN2002719044. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Welcome_to_all!_LCCN2002719044.jpg",
+  "text": "The cartoon shows Uncle Sam standing in the doorway of a building marked 'U.S. Ark Refuge,' welcoming a crowd of immigrants of many origins as they walk up the gangplank. A sign beside the door reads: 'No oppressive taxes, No military kings, No compulsory military service, No knouts or dungeons.' The caption reads 'Welcome to All!'"
+ },
+ "stimulus_set": "welcome-all",
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "topics": [
+  "6.1"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

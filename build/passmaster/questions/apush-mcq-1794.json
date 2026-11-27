@@ -1,0 +1,76 @@
+{
+ "answerKey": "C",
+ "difficulty": 2,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "id": "apush-mcq-1794",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The passage says the railroad cut pay, not raised it.",
+   "text": "The railroad raised wages by 10 percent."
+  },
+  {
+   "key": "B",
+   "misconception": "The passage says nothing about new hiring.",
+   "text": "The railroad hired thousands of new workers."
+  },
+  {
+   "key": "C",
+   "text": "The railroad announced a 10 percent pay cut."
+  },
+  {
+   "key": "D",
+   "misconception": "The passage says the railroad cut pay, not that it closed.",
+   "text": "The railroad closed all its lines for good."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The passage says the railroad cut pay, not raised it.",
+  "B": "The passage says nothing about new hiring.",
+  "C": "The passage opens with the Baltimore and Ohio announcing a 10 percent pay cut in July 1877.",
+  "D": "The passage says the railroad cut pay, not that it closed.",
+  "general": "Find the first action in the passage.\n1. The passage opens in July 1877 with the Baltimore and Ohio Railroad.\n2. What it did was announce a 10 percent pay cut.\n3. Workers’ wages had already fallen in the depression.\n4. That pay cut is the action that started the strike.\nRemember: the first action in a narrative is usually the trigger."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.A"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "According to the passage, what action by the railroad started the strike?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, written for this question from Barron’s Premium 2027 Chapter 8 (Topic 6.7), 5 Steps to a 5, 2024, Chapter 18, and Princeton Review, Chapter 10.",
+  "text": "Original secondary passage, written for this question from the grounding books:\n\nIn July 1877, the Baltimore and Ohio Railroad announced a 10 percent pay cut for its workers, whose wages had already fallen during the depression that followed the Panic of 1873. Railroad workers in Martinsburg, West Virginia, stopped the trains, and workers in Pittsburgh, Chicago, and other cities followed. At its height the strike involved more than 100,000 railroad workers. Violence broke out in nine states, and President Rutherford B. Hayes sent federal troops to end the strike. The troops Hayes sent had recently been withdrawn from enforcing Reconstruction in the South."
+ },
+ "stimulus_set": "railroad-strike-1877",
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

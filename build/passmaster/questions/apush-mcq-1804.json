@@ -1,0 +1,79 @@
+{
+ "answerKey": "C",
+ "difficulty": 2,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "August Spies, address to the court (October 7, 1886)"
+  ]
+ },
+ "id": "apush-mcq-1804",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Spies says the fire cannot be put out, so it will not die.",
+   "text": "The labor movement will die out at once."
+  },
+  {
+   "key": "B",
+   "misconception": "Spies says nothing about freeing other prisoners.",
+   "text": "The courts will free all the other prisoners."
+  },
+  {
+   "key": "C",
+   "text": "The labor movement will spread like fire everywhere."
+  },
+  {
+   "key": "D",
+   "misconception": "Spies says the flames will blaze up everywhere, not that demands will stop.",
+   "text": "The workers will stop asking for shorter hours."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Spies says the fire cannot be put out, so it will not die.",
+  "B": "Spies says nothing about freeing other prisoners.",
+  "C": "Spies says flames will blaze up there, and there, and behind you and in front of you, and everywhere.",
+  "D": "Spies says the flames will blaze up everywhere, not that demands will stop.",
+  "general": "Follow the fire image to its end.\n1. Spies says hanging the defendants will tread upon a spark.\n2. From that spark, flames will blaze up everywhere.\n3. He calls it a subterranean fire that cannot be put out.\n4. So his prediction is spread, not death.\n5. Spies turns the sentence itself into proof that the movement will outlive him.\nRemember: a fire image that spreads means growth, not an ending."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.A"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "What does Spies predict will happen if the defendants are hanged?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "August Spies, address to the court, October 7, 1886, in The Chicago Martyrs (1899). Public domain (Wikisource).",
+  "text": "“If you think that by hanging us you can stamp out the labor movement, the movement from which the downtrodden millions, the millions who toil and live in want and misery, the wage slaves, expect salvation, if this is your opinion, then hang us! Here you will tread upon a spark, but there, and there, and behind you and in front of you, and everywhere, flames will blaze up. It is a subterranean fire. You cannot put it out.”"
+ },
+ "stimulus_set": "spies-address-1886",
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

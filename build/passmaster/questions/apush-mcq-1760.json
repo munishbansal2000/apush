@@ -1,0 +1,86 @@
+{
+  "answerKey": "C",
+  "difficulty": 4,
+  "figures": [
+    {
+      "alt": "Studio portrait of John D. Rockefeller in 1880, a man with a large mustache wearing a dark suit",
+      "caption": "John D. Rockefeller, photographed by Napoleon Sarony, 1880",
+      "file": "u6/original-u6-tech-22.jpg",
+      "id": "fig-apush-mcq-1760",
+      "license": "Public domain: photograph of John D. Rockefeller by Sarony, 1880.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/John_D_Rockefeller_by_Sarony%2C_1880.jpg"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ]
+  },
+  "id": "apush-mcq-1760",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Background: Bell patented the telephone in 1876; Rockefeller worked in oil.",
+      "text": "Because Rockefeller invented the telephone"
+    },
+    {
+      "key": "B",
+      "misconception": "Background: Drake drilled the first oil well in 1859; Rockefeller entered the business by refining.",
+      "text": "Because Rockefeller discovered oil in Pennsylvania"
+    },
+    {
+      "key": "C",
+      "text": "Because he organized business, not by inventing machines"
+    },
+    {
+      "key": "D",
+      "misconception": "Background: wealthy Americans existed long before Rockefeller; his fame is about organization at a new scale.",
+      "text": "Because Rockefeller was the first American to become rich"
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "Background: the telephone belongs to Bell and to the chapter on invention. Rockefeller’s story is oil and organization.",
+    "B": "Background: Drake drilled the first well in 1859. Rockefeller built his power by refining and combining, not by discovery.",
+    "C": "Background from the books: Rockefeller’s mark was the trust, horizontal integration, and control of an industry — new ways of organizing business, not a new invention.",
+    "D": "Background: America had rich men before the Civil War. Rockefeller stands out for the scale and organization of his company.",
+    "general": "Ask what the man is famous for.\n1. The portrait shows Rockefeller, but he invented no famous machine.\n2. Background from the books: his fame rests on the trust and on buying out rival refiners.\n3. Those are ways of organizing business, and they changed how whole industries worked.\n4. That is why he belongs with the capitalists, not the inventors.\nRemember: sort a figure by what changed because of him, not by his dates."
+  },
+  "reasoning": "comparison",
+  "skills": [
+    "5.B"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "Which of the following best explains why Rockefeller’s portrait belongs in a chapter on industrial capitalism rather than on invention?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "John D. Rockefeller, photographed by Napoleon Sarony, 1880. Public domain.",
+    "text": "John D. Rockefeller, photographed by Napoleon Sarony in 1880. By then he had built Standard Oil into the largest oil-refining business in the country, refining far more oil than any rival, from his Cleveland base."
+  },
+  "stimulus_set": "rockefeller-portrait",
+  "themes": [
+    "WXT",
+    "SOC"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

@@ -1,0 +1,89 @@
+{
+  "id": "apush-mcq-1973",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "test",
+  "unit": 6,
+  "topics": [
+    "6.13"
+  ],
+  "skills": [
+    "2.A"
+  ],
+  "themes": [
+    "PCE",
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "difficulty": 3,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "The Election of 1896 and the “Cross of Gold” Speech"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Gilded Age Politics"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Silver Issue and the Populist Movement"
+      }
+    ],
+    "primary_sources": [
+      "Frederick Burr Opper, 'The Silver-Tongued Ventriloquist and His Dummies,' Puck, August 12, 1896"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-613-silver-ventriloquist",
+  "stimulus": {
+    "kind": "image",
+    "text": "Political cartoon, “The Silver-Tongued Ventriloquist and His Dummies,” by Frederick Burr Opper, Puck, August 12, 1896. A large bearded man wearing a sash labeled “Silver Mine Owner” sits on a box marked “16 to 1.” He holds a small dummy labeled “Bryan” who waves a paper reading “Free Silver Harangues.” At the left, three more small dummies sit in a box, labeled “Tillman,” “Peffer,” and “Altgeld.” At the right, another dummy labeled “Sewall” sits in a box. The caption reads, “If the Show Succeeds, He’ll Get All the Profits.”",
+    "source_note": "Frederick Burr Opper, ‘The Silver-Tongued Ventriloquist and His Dummies,’ Puck, August 12, 1896. Public domain: cartoon published 1896 (pre-1930); Library of Congress, LCCN2012648552. Labels and caption checked against the image."
+  },
+  "stem": "In the cartoon, who is the ventriloquist and who are the dummies?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Bryan is the ventriloquist and the mine owners are his dummies",
+      "misconception": "Bryan is the small dummy, and the mine owner holds him."
+    },
+    {
+      "key": "B",
+      "text": "The voters are the ventriloquist and the candidates are their dummies",
+      "misconception": "No voters appear; the ventriloquist wears a Silver Mine Owner sash."
+    },
+    {
+      "key": "C",
+      "text": "Congress is the ventriloquist and the states are its dummies",
+      "misconception": "The cartoon shows a mine owner and politicians, not Congress and the states."
+    },
+    {
+      "key": "D",
+      "text": "A silver mine owner speaks through Bryan and other silver politicians"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "The large figure wears the Silver Mine Owner sash, not Bryan.",
+    "B": "The ventriloquist is labeled a mine owner, not the voters.",
+    "C": "The dummies are named politicians like Bryan, Tillman, and Sewall.",
+    "D": "The mine owner holds Bryan, with the other dummies waiting in boxes.",
+    "general": "Match each figure to its label.\n1. The large man wears a sash that reads 'Silver Mine Owner.'\n2. The small figures are dummies labeled Bryan, Tillman, Peffer, Altgeld, and Sewall.\n3. The owner holds Bryan and moves him, as a ventriloquist moves a dummy.\n4. The picture says the silver men speak, and the mine owner supplies the words.\nRemember: in a cartoon, labels name the actor, and size shows who controls whom."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1973",
+      "file": "u6/pr25e-test1-q29.jpg",
+      "caption": "“The Silver-Tongued Ventriloquist and His Dummies,” Puck, August 12, 1896",
+      "alt": "Opper cartoon: a giant silver mine owner seated on a box marked 16 to 1 holds a small Bryan dummy waving a paper reading Free Silver Harangues, with other small dummies in boxes at each side.",
+      "license": "Public domain: Puck cartoon published 1896.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/The_silver-tongued_ventriloquist_and_his_dummies_-_F._Opper._LCCN2012648552.jpg"
+    }
+  ]
+}

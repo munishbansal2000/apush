@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-1815",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "opper-castle-garden-1882",
+ "stimulus": {
+  "kind": "image",
+  "text": "Political cartoon, “Castle Garden Emigrant-Catchers,” by Frederick Burr Opper, Puck, June 14, 1882. Newly arrived immigrants carrying bags and bundles stand outside the Castle Garden immigrant depot in New York, whose signs read “ENTRANCE FOR MEN” and “ENTRANCE FOR WOMEN.” In front of them, six figures buried to the neck in holes each hold a chain leading to a pair of spring-loaded steel jaws. Four of their signs read “MONEY CHANGER,” “TEMPTRESS,” “CONFIDENCE MAN,” and “FRIEND FROM THE OLD COUNTRY.” Two more figures wait in holes beside them. Two policemen look on without helping.",
+  "source_note": "Frederick Burr Opper, “Castle Garden Emigrant-Catchers,” Puck, vol. 11, no. 275 (June 14, 1882), back page. Image file: scan of the issue held by the Internet Archive (archive.org/details/sim_puck_1882-06-14_11_275); the cartoon is also catalogued by the Historical Society of Pennsylvania and the United States Holocaust Memorial Museum (Katz Ehrenthal Collection). Public domain: published 1882."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1815",
+   "file": "u6/original-u6-castle-garden-emigrant-catchers.jpg",
+   "alt": "Opper cartoon: six swindlers wait in holes with spring-loaded steel jaws for newly arrived immigrants outside Castle Garden, while two policemen look on.",
+   "caption": "Castle Garden Emigrant-Catchers, Puck, June 14, 1882",
+   "license": "Public domain: 1882 cartoon, Puck magazine.",
+   "source_url": "https://archive.org/details/sim_puck_1882-06-14_11_275"
+  }
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Frederick Burr Opper, “Castle Garden Emigrant-Catchers,” Puck, vol. 11, no. 275 (June 14, 1882)"
+  ]
+ },
+ "status": "final",
+ "stem": "According to the cartoon, what waited for newly arrived immigrants outside Castle Garden?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Free land and a paid ticket to the West",
+   "misconception": "Reads an offer into the cartoon that is not there."
+  },
+  {
+   "key": "B",
+   "text": "Swindlers with steel jaws set to cheat new arrivals"
+  },
+  {
+   "key": "C",
+   "text": "Police officers who arrested each newcomer on the spot",
+   "misconception": "Turns idle onlookers into arresting officers."
+  },
+  {
+   "key": "D",
+   "text": "Factory owners offering newcomers steady work at high wages",
+   "misconception": "Reads employers into a cartoon about swindlers."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "The cartoon shows no offer of land or tickets. Its waiting figures are swindlers with steel jaws.",
+  "B": "Each labeled figure holds a chain to a pair of spring-loaded steel jaws: money changer, temptress, confidence man, and ‘friend from the old country,’ with two more figures waiting beside them. They wait to cheat the newcomers.",
+  "C": "The policemen in the cartoon look on without helping. They arrest no one.",
+  "D": "No factory owner appears in the cartoon. The waiting figures are swindlers, not employers.",
+  "general": "Read what the cartoon labels, not what you expect.\n1. Four of the six figures in the holes are labeled with their trades: money changer, temptress, confidence man, and ‘friend from the old country.’\n2. Each one holds a chain to a pair of spring-loaded steel jaws.\n3. The newcomers carry bags and bundles, and the steel jaws lie between them and the depot.\n4. The two policemen look on and do nothing.\nRemember: a label in a cartoon is the cartoonist telling you who the figure is."
+ }
+}

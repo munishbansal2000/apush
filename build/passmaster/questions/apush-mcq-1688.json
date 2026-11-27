@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-1688",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.4"
+ ],
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u6-l2",
+ "stem": "Grady’s speech best illustrates which of the following continuities between the Old South and the New South?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The same Southern white elite kept leading the region’s public life"
+  },
+  {
+   "key": "B",
+   "text": "Plantation agriculture remained the South’s only major industry",
+   "misconception": "Grady says the single crop stayed dominant."
+  },
+  {
+   "key": "C",
+   "text": "Enslaved labor continued to power the Southern economy",
+   "misconception": "Grady says slavery carried on as before."
+  },
+  {
+   "key": "D",
+   "text": "The South continued to reject the Union and the Constitution",
+   "misconception": "Grady says the South still rejects the Union."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Grady himself admits the continuity: his “perfect democracy” still has “the oligarchs leading in the popular movement.” The faces at the top did not change, even as he promised a new economy below them.",
+  "B": "Grady’s whole point is diversified industry replacing the single crop.",
+  "C": "Grady declares the South of slavery dead.",
+  "D": "Grady celebrates “union and freedom,” not rejection of the Union.",
+  "general": "1. Look for what stays the same. Grady promises a new economy, so ask what does not change.\n2. Read his own words. “The oligarchs leading in the popular movement” keeps the old elite in charge.\n3. Test the other continuities. He says slavery is dead, the single crop is ending, and secession is buried.\n4. Name the continuity. Background: The leadership stayed white and elite while the economy was supposed to change.\nRemember: a promise of change can hide a continuity — check who still leads."
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Henry W. Grady, “The New South,” address to the New England Society of New York, December 1886. Grady opens by quoting Benjamin H. Hill (1866). Portrait: Henry W. Grady, Library of Congress.",
+  "text": "[Grady opens by quoting Benjamin H. Hill, 1866:]\n\n“There was a South of slavery and secession — that South is dead. There is a South of union and freedom — that South, thank God, is living, breathing, growing every hour.”\n\n“The old South rested everything on slavery and agriculture, unconscious that these could neither give nor maintain healthy growth. The new South presents a perfect democracy, the oligarchs leading in the popular movement; a social system compact and closely knitted, less splendid on the surface, but stronger at the core; a hundred farms for every plantation, fifty homes for every palace; and a diversified industry that meets the complex needs of this complex age.”"
+ },
+ "stimulus_set": "grady-new-south-1886",
+ "source": "original; stimulus is a verbatim public-domain speech with a Library of Congress portrait",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.4 The “New South”"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "America Transformed into the Industrial Giant"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10"
+   }
+  ],
+  "primary_sources": [
+   "Henry W. Grady, “The New South” (1886)"
+  ]
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1688",
+   "file": "u6/original-u6-newsouth-03.jpg",
+   "caption": "Henry W. Grady, Atlanta editor and spokesman for the “New South.”",
+   "alt": "Half-length portrait of Henry W. Grady, the Atlanta newspaper editor who preached the New South creed",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Henry_W._Grady%2C_half-length_portrait%2C_facing_left_LCCN93510871.jpg",
+   "license": "Public domain (Library of Congress)"
+  }
+ ]
+}

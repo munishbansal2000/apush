@@ -1,0 +1,86 @@
+{
+  "id": "apush-mcq-2008",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.14"
+  ],
+  "skills": [
+    "2.C"
+  ],
+  "themes": [
+    "PCE",
+    "WXT"
+  ],
+  "reasoning": "comparison",
+  "difficulty": 2,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.12 Controversies over the Role of Government in the Gilded Age"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Gilded Age Politics"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-614-bosses",
+  "stimulus": {
+    "kind": "image",
+    "text": "The cartoon, by Joseph Keppler in Puck magazine, January 23, 1889, shows the United States Senate chamber. Towering over the small senators seated at their desks are giant figures with money bags for bodies. The bags are labeled “Standard Oil Trust,” “Copper Trust,” “Steel Beam Trust,” “Iron Trust,” “Sugar Trust,” “Coal Trust,” and “Nail Trust.” A sign above reads “This is a Senate of the Monopolists by the Monopolists and for the Monopolists!” At the left a door marked “People’s Entrance” is marked “Closed.”",
+    "source_note": "Joseph Keppler, “The Bosses of the Senate,” Puck, January 23, 1889. Public domain; image viewed by the writer (shared pool: u6/u6-bosses-of-senate.jpg)."
+  },
+  "stem": "What does the cartoon show about the Senate in 1889?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Giant trusts tower over the small senators"
+    },
+    {
+      "key": "B",
+      "text": "Senators tower over the small trusts",
+      "misconception": "The cartoon shows the trusts as giants and the senators as tiny figures."
+    },
+    {
+      "key": "C",
+      "text": "The people fill the Senate chamber",
+      "misconception": "The people’s entrance is closed, and the chamber holds trusts and senators, not the people."
+    },
+    {
+      "key": "D",
+      "text": "The Senate has closed for the year",
+      "misconception": "Only the people’s entrance is marked closed, not the Senate itself."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "The money-bag trusts loom over the senators seated at their small desks.",
+    "B": "The size is the other way: the trusts are giants and the senators are small.",
+    "C": "The people are shut out; the chamber is filled by trusts and senators.",
+    "D": "The closed sign is on the people’s entrance, not on the Senate.",
+    "general": "Read the picture by size.\n1. The trusts are drawn as giants with money bags for bodies.\n2. The senators sit small at their desks below them.\n3. Size in a cartoon means power, so the trusts hold the power.\n4. Background from the books: Keppler drew the trusts as the real rulers of the Senate.\nRemember: in a cartoon, the biggest figure is usually the most powerful one."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-2008",
+      "file": "u6/u6-bosses-of-senate.jpg",
+      "source_url": "https://www.senate.gov/art-artifacts/historical-images/political-cartoons-caricatures/38_00392_001.htm",
+      "license": "Public domain",
+      "caption": "Joseph Keppler, “The Bosses of the Senate,” Puck, January 23, 1889",
+      "alt": "Cartoon of giant money-bag trusts labeled Standard Oil, Copper, Steel Beam, Iron, Sugar, Coal, and Nail looming over tiny senators at their desks, under a sign reading This is a Senate of the Monopolists"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "apush-mcq-1726",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "answerKey": "A",
+  "skills": [
+    "1.B",
+    "5.B"
+  ],
+  "themes": [
+    "WXT",
+    "GEO"
+  ],
+  "reasoning": "causation",
+  "stem": "How did the railroad network in the table change what Americans ate?",
+  "stimulus": {
+    "kind": "table",
+    "source_note": "Miles of railroad in operation in the United States, from Emory R. Johnson, American Railway Transportation (1908), using Interstate Commerce Commission figures, and the Statistical Abstract of the United States. Public domain.",
+    "text": "Miles of railroad in operation in the United States:\n\n| Year | Miles of railroad |\n| 1865 | 35,085 |\n| 1870 | 52,922 |\n| 1880 | 93,296 |\n| 1890 | 163,597 |\n| 1900 | 193,346 |"
+  },
+  "stimulus_set": "railroad-mileage",
+  "options": [
+    {
+      "key": "A",
+      "text": "Refrigerated cars carried fresh beef from Chicago packing houses to eastern cities"
+    },
+    {
+      "key": "B",
+      "text": "Trains carried wheat west, so eastern cities had to grow their own food",
+      "misconception": "Background: wheat moved east from the Plains, not west; the trains fed the eastern cities, they did not starve them."
+    },
+    {
+      "key": "C",
+      "text": "Railroads ended farming, since farmers could no longer sell their crops",
+      "misconception": "Background: farming boomed with the railroads; the trains carried crops to market, and crop output doubled."
+    },
+    {
+      "key": "D",
+      "text": "Fresh food stopped moving, since railroads carried only coal and steel",
+      "misconception": "Background: railroads carried food as well as coal and steel; refrigerated cars were built exactly to move fresh beef and produce."
+    }
+  ],
+  "rationales": {
+    "A": "Background from the books: cattle were shipped by rail to Chicago for slaughter, and newly invented refrigerated rail cars carried the dressed beef on to eastern cities. Fresh meat became an everyday food far from the slaughterhouse.",
+    "B": "Background: wheat and cattle flowed east from the Plains to the cities. The trains fed the East, they did not empty it.",
+    "C": "Background: farm output soared in this period, and production of corn and wheat more than doubled between 1870 and 1900. The railroads made farming pay, they did not end it.",
+    "D": "Background: railroads carried coal, steel, and food together. The refrigerated car existed precisely because fresh food did move by rail.",
+    "general": "Follow the beef from the Plains to the plate.\n1. Background: cattle walked to Kansas railheads, and trains carried them to Chicago's packing houses.\n2. Background: refrigerated cars then carried the dressed beef east, still fresh, to cities that had never eaten it before.\n3. Background: the railroad did not just move people; it moved dinner.\nRemember: a food revolution is a transport revolution in disguise."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Land Grants to Railroads"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 17",
+        "section": "Government Encouragement of Western Settlement"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Railroads and Developments in the West"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)"
+}

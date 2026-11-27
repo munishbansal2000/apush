@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0176",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.4"
+ ],
+ "skills": [
+  "1.B",
+  "2.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u6-l2",
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Constitution of the State of Mississippi, Article 12, Sections 243–244, adopted November 1, 1890. Public domain.",
+  "text": "Sec. 243. A uniform poll tax of two dollars . . . is hereby imposed on every male inhabitant of this State between the ages of twenty-one and sixty years. . . .\n\nSec. 244. On and after the first day of January, A. D., 1892, every elector shall, in addition to the foregoing qualifications, be able to read any section of the constitution of this State; or he shall be able to understand the same when read to him, or give a reasonable interpretation thereof."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus is a verbatim public-domain state constitution",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.4 The “New South”"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10"
+   }
+  ],
+  "primary_sources": [
+   "Constitution of the State of Mississippi (1890), Article 12, Sections 243–244"
+  ]
+ },
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly describe the purpose of the provisions in the excerpt.",
+   "modelAnswer": "The provisions set new requirements for voting in Mississippi: a poll tax and a literacy or understanding test. Their purpose was to shrink the electorate by keeping poor and illiterate men off the voter rolls. Because Black men were far more likely to be poor and unschooled, the rules fell hardest on them.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for describing the purpose: new voting requirements meant to shrink the electorate, falling hardest on Black men.",
+     "notEarned": "Restating the provisions without naming their purpose does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain how ONE specific historical development between 1865 and 1890 led to provisions such as those in the excerpt.",
+   "modelAnswer": "The end of Reconstruction in 1877 led to these provisions because federal troops left the South and white Democrats regained control of Southern state governments. Without federal enforcement of Black voting rights, Southern legislatures were free to rewrite their election laws. Mississippi’s 1890 convention used that freedom to build barriers against Black voters.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one specific development, such as the end of Reconstruction and the withdrawal of federal troops, and explaining how it opened the way for the 1890 provisions.",
+     "notEarned": "Naming the end of Reconstruction with no explanation of how it led to the provisions does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain how ONE specific historical development after 1890 resulted from provisions such as those in the excerpt.",
+   "modelAnswer": "Black voter registration in Mississippi fell from 52,705 in 1876 to 3,573 in 1898, once the new constitution’s requirements took hold. The poll tax and the understanding test gave local registrars the tools to turn Black men away. That collapse locked in one-party white rule in Mississippi for generations.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one specific result, such as the collapse of Black voter registration, and explaining how the provisions produced it.",
+     "notEarned": "Naming a later development with no explanation of how it resulted from the provisions does not earn the point."
+    }
+   ]
+  }
+ ]
+}

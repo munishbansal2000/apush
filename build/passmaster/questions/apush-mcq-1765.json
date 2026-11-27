@@ -1,0 +1,75 @@
+{
+  "answerKey": "D",
+  "difficulty": 2,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Corporations Look Abroad"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ]
+  },
+  "id": "apush-mcq-1765",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "The figures rise from about $400 million to about $1,400 million, not fall.",
+      "text": "American exports fell by more than half between 1870 and 1900"
+    },
+    {
+      "key": "B",
+      "misconception": "The figures more than triple, so exports did not stay the same.",
+      "text": "American exports stayed the same for thirty years"
+    },
+    {
+      "key": "C",
+      "misconception": "The table lists exports only; it says nothing about imports.",
+      "text": "America imported more than it exported in every year shown"
+    },
+    {
+      "key": "D",
+      "text": "American exports more than tripled between 1870 and 1900"
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "The figures climb from 1870 to 1900, so exports rose, not fell.",
+    "B": "The value rises from about $400 million to about $850 million to about $1,400 million, so it did not stay the same.",
+    "C": "The table shows exports alone, and no import figures appear in it.",
+    "D": "The table gives about $400 million in 1870 and about $1,400 million in 1900, which is more than three times as much.",
+    "general": "Read the table from left to right.\n1. In 1870 exports stood at about $400 million.\n2. By 1880 they had passed $850 million.\n3. By 1900 they reached about $1,400 million.\n4. Each step is higher than the last, and the last is more than three times the first.\nRemember: to find a trend, compare the first number with the last."
+  },
+  "reasoning": "continuity-change",
+  "skills": [
+    "2.A"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "What trend does the table show?",
+  "stimulus": {
+    "kind": "table",
+    "source_note": "Figures from Barron’s Premium 2027, Chapter 8 (Topic 6.6, Corporations Look Abroad).",
+    "text": "| Year | Value of American exports |\n| 1870 | About $400 million |\n| 1880 | About $850 million |\n| 1900 | About $1,400 million |"
+  },
+  "stimulus_set": "exports-table",
+  "themes": [
+    "WXT"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

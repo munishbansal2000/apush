@@ -1,0 +1,83 @@
+{
+ "answerKey": "C",
+ "difficulty": 4,
+ "figures": [
+  {
+   "alt": "Color cartoon of giant fat men in top hats labeled with trust names towering over small senators seated at desks, with a sign reading This is a Senate of the monopolists",
+   "caption": "'The Bosses of the Senate,' Joseph Keppler, Puck, 1889",
+   "file": "u6/original-u6-tech-12.jpg",
+   "id": "fig-apush-mcq-1621",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:The_Bosses_of_the_Senate_by_Joseph_Keppler.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.1 Contextualizing Period 6"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Chapter 10 Summary"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-1621",
+ "lesson": "apush-u6-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Background: the government sided with business — federal troops broke the 1877 strike and an injunction broke Pullman in 1894.",
+   "text": "That the federal government consistently sided with workers against business"
+  },
+  {
+   "key": "B",
+   "misconception": "Background: trusts and railroads reached every region; Standard Oil was a national company.",
+   "text": "That big business had no influence outside the Northeast"
+  },
+  {
+   "key": "C",
+   "text": "That industrialization concentrated power and wealth in a few hands"
+  },
+  {
+   "key": "D",
+   "misconception": "Background: unions, the Grange, the Populists, and reformers all challenged business power, even when they lost.",
+   "text": "That ordinary Americans had no way to challenge business power"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: the government sided with business. Federal troops broke the 1877 strike, and an injunction broke Pullman in 1894.",
+  "B": "Background: trusts and railroads reached every region. Standard Oil was a national company, not a Northeastern one.",
+  "C": "The giants own the trusts and the Senate while the people's door stays closed. Background: the period's wealth and power piled up with a few owners while workers, farmers, and immigrants shared little of it.",
+  "D": "Background: unions, the Grange, the Populists, and reformers all challenged business power — even when they lost the fight.",
+  "general": "Step back from the single cartoon and the whole period comes into focus.\n1. Add up the period. Background: railroads, steel, and oil made a few owners rich beyond imagining.\n2. Ask who shared the wealth. Background: workers labored long hours for low pay, farmers sank into debt, immigrants crowded into tenements.\n3. Name the pattern. Background: power and wealth concentrated in a few hands while most Americans shared little of it.\nRemember: the Gilded Age glittered on top and stayed base metal below — the cartoon draws the gap."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "4.B",
+  "5.A"
+ ],
+ "source": "original; stimulus viewed before writing — Joseph Keppler, Puck, 1889, public domain.",
+ "status": "final",
+ "stem": "Taken together with the period's other developments, the cartoon best supports which broader conclusion about the Gilded Age?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Joseph Keppler, 'The Bosses of the Senate,' Puck magazine, 1889. Public domain. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:The_Bosses_of_the_Senate_by_Joseph_Keppler.jpg",
+  "text": "The cartoon shows giant, fat men in top hats towering over the small senators seated at their desks below. Each giant's belly is labeled with a trust: 'Steel Beam Trust,' 'Copper Trust,' 'Standard Oil Trust,' 'Iron Trust,' 'Sugar Trust,' 'Tin Trust,' 'Coal Trust.' A sign on the wall reads: 'This is a Senate of the monopolists, by the monopolists, and for the monopolists!' Above a small side door, a sign reads: 'Peoples' Entrance — CLOSED.'"
+ },
+ "stimulus_set": "bosses-senate",
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "topics": [
+  "6.1"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

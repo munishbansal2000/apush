@@ -1,0 +1,77 @@
+{
+  "id": "apush-mcq-1725",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 2,
+  "answerKey": "D",
+  "skills": [
+    "1.B",
+    "4.B"
+  ],
+  "themes": [
+    "WXT",
+    "GEO"
+  ],
+  "reasoning": "causation",
+  "stem": "The railroad network shown in the table created a problem with time. What solved it?",
+  "stimulus": {
+    "kind": "table",
+    "source_note": "Miles of railroad in operation in the United States, from Emory R. Johnson, American Railway Transportation (1908), using Interstate Commerce Commission figures, and the Statistical Abstract of the United States. Public domain.",
+    "text": "Miles of railroad in operation in the United States:\n\n| Year | Miles of railroad |\n| 1865 | 35,085 |\n| 1870 | 52,922 |\n| 1880 | 93,296 |\n| 1890 | 163,597 |\n| 1900 | 193,346 |"
+  },
+  "stimulus_set": "railroad-mileage",
+  "options": [
+    {
+      "key": "A",
+      "text": "Each town kept its own local time, and trains carried fifty clocks",
+      "misconception": "Background: towns did keep local time before 1883, and the confusion was the problem; carrying more clocks did not fix it."
+    },
+    {
+      "key": "B",
+      "text": "Congress banned railroads from running on Sundays",
+      "misconception": "Background: no such ban existed; trains ran every day, and the time problem was about schedules, not Sundays."
+    },
+    {
+      "key": "C",
+      "text": "Railroads stopped publishing timetables, so no one knew when trains left",
+      "misconception": "Background: timetables were the railroads' lifeblood; they needed one shared time to make them work, not no timetables at all."
+    },
+    {
+      "key": "D",
+      "text": "The railroads adopted four standard time zones in 1883"
+    }
+  ],
+  "rationales": {
+    "A": "Background: before 1883, railroads used more than fifty different local times, and that confusion was exactly the problem. More clocks would only add to it.",
+    "B": "Background: trains ran seven days a week. The problem was that no two towns agreed on the time, not that trains ran on Sundays.",
+    "C": "Background: timetables only work when everyone reads the same time. Dropping them would have made travel impossible, not easier.",
+    "D": "Background from the books: railroad time gave the nation its first standard way of telling time. On November 18, 1883, the railroads adopted four zones, Eastern, Central, Mountain, and Pacific, and towns soon followed.",
+    "general": "Ask what a timetable needs: one time.\n1. Background: the towns the trains crossed each kept their own local time.\n2. Background: before 1883 the railroads ran on more than fifty different times, so no schedule could be trusted.\n3. Background: the fix was four shared zones, adopted on November 18, 1883, and the whole country soon set its clocks by them.\nRemember: a network needs one clock before it needs more track."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Land Grants to Railroads"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 17",
+        "section": "Government Encouragement of Western Settlement"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Railroads and Developments in the West"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)"
+}

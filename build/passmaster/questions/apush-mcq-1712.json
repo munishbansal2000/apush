@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-1712",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.5"
+ ],
+ "lesson": "apush-u6-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "5.B",
+  "6.B"
+ ],
+ "themes": [
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "stem": "Which statement best explains how the Bessemer process and the railroads fed each other's growth?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Nineteenth-century engraving of a Bessemer converter in operation, Wikimedia Commons. Public domain. https://commons.wikimedia.org/wiki/File:Bessemer_process.jpg",
+  "text": "The image shows a Bessemer converter at work inside a steel mill. A large pear-shaped vessel throws off a shower of white-hot sparks as air blasts through molten iron. A ladle and tools lie in the foreground. The converter is the tall upright vessel in the center."
+ },
+ "stimulus_set": "bessemer-converter",
+ "options": [
+  {
+   "key": "A",
+   "text": "Railroads stopped buying steel once the first transcontinental line was finished",
+   "misconception": "Background: railroads kept buying steel for decades after 1869; by 1882 most American steel went into rails."
+  },
+  {
+   "key": "B",
+   "text": "The Bessemer process made steel so cheap that railroads no longer needed iron ore or coal",
+   "misconception": "Background: making steel still needed iron ore and coal; the process only made turning iron into steel cheaper."
+  },
+  {
+   "key": "C",
+   "text": "Steel mills moved west to build rails, so eastern factories closed down",
+   "misconception": "Background: the great steel mills stayed in the East, around Pittsburgh; they shipped rails west, they did not move west."
+  },
+  {
+   "key": "D",
+   "text": "Cheap steel let railroads lay more track, and more track meant more orders for steel mills"
+  }
+ ],
+ "rationales": {
+  "A": "Background: the railroads kept laying track long after 1869, and steel rails were their biggest purchase. The first transcontinental line was a beginning, not an end.",
+  "B": "Background: the Bessemer process changed how iron became steel; it did not remove iron ore and coal from the recipe. Mills still needed both in huge amounts.",
+  "C": "Background: the big steel mills stayed in the East, near coal and iron ore, and shipped rails west by train. Eastern factories did not close down.",
+  "D": "Background from the books: cheap steel made long rail lines affordable, and every new mile of track ordered more steel. The mills and the railroads grew by feeding each other.",
+  "general": "Picture a loop, not a line.\n1. Background: cheap steel cut the price of rails, so railroads could afford to lay far more track.\n2. Background: every new mile of track was a new order for the steel mills, and by 1882 most American steel went into rails.\n3. Background: more orders meant bigger mills and cheaper steel, and the loop ran again.\nRemember: when two industries buy from each other, each one's growth feeds the other's."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Steel and the Bessemer Process"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Second Industrial Revolution"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Age of Invention and Economic Growth"
+   }
+  ]
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1712",
+   "file": "u6/original-u6-tech-07.jpg",
+   "caption": "A Bessemer converter at work, nineteenth-century engraving",
+   "alt": "A tall pear-shaped Bessemer converter vessel throws off a shower of white-hot sparks inside a steel mill",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Bessemer_process.jpg",
+   "license": "Public domain: nineteenth-century engraving of a Bessemer converter in operation."
+  }
+ ]
+}

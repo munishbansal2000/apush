@@ -1,0 +1,79 @@
+{
+ "answerKey": "B",
+ "difficulty": 2,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Preamble and Declaration of Principles of the Knights of Labor (1878)"
+  ]
+ },
+ "id": "apush-mcq-1772",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The passage says wealth piled up while workers were pauperized, the reverse of overpay.",
+   "text": "Workers were paid far too much for the work they did each day."
+  },
+  {
+   "key": "B",
+   "text": "Aggregated wealth was growing so powerful that it threatened to pauperize working people."
+  },
+  {
+   "key": "C",
+   "misconception": "Nothing in the passage says unions were banned; it argues workers must unite.",
+   "text": "The government had banned every labor union outright across the entire nation."
+  },
+  {
+   "key": "D",
+   "misconception": "The passage blames concentrated wealth, not a split among workers.",
+   "text": "Skilled craftsmen refused to work beside unskilled workers in the same shops."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The passage says the opposite: wealth piled up while workers faced pauperization, not overpay.",
+  "B": "The passage opens with the alarming growth of aggregated wealth and warns it will pauperize the toiling masses unless checked.",
+  "C": "The passage never says unions were banned; it argues workers must unite to check the power of wealth.",
+  "D": "Background from the books: the Knights welcomed skilled and unskilled workers alike. The passage blames wealth, not a split.",
+  "general": "Start with what the Knights call alarming.\n1. The passage names the alarming development of aggregated wealth.\n2. It warns that unchecked wealth will pauperize and degrade the toiling masses.\n3. The answer is a check on that power, secured by uniting labor.\n4. So the Knights formed because concentrated wealth threatened workers, not because of a ban or a split.\nRemember: when a passage opens with a warning, the warning names the problem the group was built to answer."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.A"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "According to the passage, what problem made the Knights of Labor say an organization of workers was necessary?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Preamble and Declaration of Principles of the Knights of Labor (1878), as printed in Terence V. Powderly, Thirty Years of Labor (1890). Public domain. Excerpts joined with ellipses.",
+  "text": "“The recent alarming development and aggression of aggregated wealth, which, unless checked, will invariably lead to the pauperization and hopeless degradation of the toiling masses, render it imperative, if we desire to enjoy the blessings of life, that a check should be placed upon its power and upon unjust accumulation, and a system adopted which will secure to the laborer the fruits of his toil. . . . To secure to the toilers a proper share of the wealth that they create; more of the leisure that rightfully belongs to them; more societary advantages; more of the benefits, privileges, and emoluments of the world. . . . The prohibition of the employment of children in workshops, mines, and factories before attaining their fourteenth year. . . . To secure for both sexes equal pay for equal work. The reduction of the hours of labor to eight per day.”"
+ },
+ "stimulus_set": "knights-preamble-1878",
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

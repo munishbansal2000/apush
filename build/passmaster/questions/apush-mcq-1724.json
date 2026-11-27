@@ -1,0 +1,77 @@
+{
+  "id": "apush-mcq-1724",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "answerKey": "C",
+  "skills": [
+    "3.B",
+    "1.A"
+  ],
+  "themes": [
+    "WXT",
+    "GEO"
+  ],
+  "reasoning": "continuity-change",
+  "stem": "According to the table, how did the American railroad network change between 1865 and 1900?",
+  "stimulus": {
+    "kind": "table",
+    "source_note": "Miles of railroad in operation in the United States, from Emory R. Johnson, American Railway Transportation (1908), using Interstate Commerce Commission figures, and the Statistical Abstract of the United States. Public domain.",
+    "text": "Miles of railroad in operation in the United States:\n\n| Year | Miles of railroad |\n| 1865 | 35,085 |\n| 1870 | 52,922 |\n| 1880 | 93,296 |\n| 1890 | 163,597 |\n| 1900 | 193,346 |"
+  },
+  "stimulus_set": "railroad-mileage",
+  "options": [
+    {
+      "key": "A",
+      "text": "It shrank, falling from 193,346 miles to 35,085 miles",
+      "misconception": "Background: the table runs the other way; mileage grew from 35,085 miles in 1865 to 193,346 miles in 1900."
+    },
+    {
+      "key": "B",
+      "text": "It stayed about the same size for the whole period",
+      "misconception": "Background: the table shows mileage more than quintupling, from about 35,000 miles to more than 193,000 miles."
+    },
+    {
+      "key": "C",
+      "text": "It grew more than fivefold, from about 35,000 miles to more than 193,000 miles"
+    },
+    {
+      "key": "D",
+      "text": "It grew only in the East, with no new track in the West",
+      "misconception": "Background: the table counts the whole country, and the western lines to the Pacific were the fastest-growing part of the network."
+    }
+  ],
+  "rationales": {
+    "A": "The table runs the other way: 35,085 miles in 1865, then 52,922, 93,296, 163,597, and 193,346 by 1900. The network grew, it did not shrink.",
+    "B": "The table shows mileage more than quintupling, from about 35,000 miles to more than 193,000 miles. That is growth, not stability.",
+    "C": "Read the first and last rows: 35,085 miles in 1865 and 193,346 miles in 1900. The network grew more than fivefold in thirty-five years.",
+    "D": "The table counts the whole United States. Background: the transcontinental lines to the Pacific were built in this very period. The West gained track, it did not stand still.",
+    "general": "Compare the first row with the last row.\n1. In 1865 the table shows 35,085 miles of railroad in operation.\n2. By 1900 it shows 193,346 miles, more than five times as much.\n3. The middle rows show the growth was steady, decade after decade, not a single jump.\nRemember: a table tells its story in its first and last rows."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Land Grants to Railroads"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 17",
+        "section": "Government Encouragement of Western Settlement"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Railroads and Developments in the West"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)"
+}

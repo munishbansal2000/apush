@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-1690",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.4"
+ ],
+ "skills": [
+  "2.C"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "status": "final",
+ "lesson": "apush-u6-l2",
+ "stem": "Which of the following would be the strongest evidence against the cartoon’s optimistic view of the New South?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Most Southern Black farmers remained trapped in sharecropping and debt"
+  },
+  {
+   "key": "B",
+   "text": "The Atlanta Exposition drew large crowds in 1895",
+   "misconception": "The exposition’s success proves the cartoon right."
+  },
+  {
+   "key": "C",
+   "text": "Birmingham built new iron and steel mills in the 1880s",
+   "misconception": "Birmingham’s mills prove the New South worked."
+  },
+  {
+   "key": "D",
+   "text": "Northern newspapers praised Grady’s speeches",
+   "misconception": "Praise for the speeches proves the promise was real."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background: the cartoon promises that free labor brings prosperity, but most Black Southerners worked land they did not own, paid rent with a share of the crop, and sank deeper into debt each year. That reality undercuts the triumph the cartoon celebrates.",
+  "B": "Crowds at the fair show the exposition happened, not that workers prospered.",
+  "C": "Background: Birmingham’s mills were real, but they were pockets of industry in a region that stayed mostly poor and rural.",
+  "D": "Praise for a speech is not proof that the promise came true.",
+  "general": "1. Name the cartoon’s claim. Free labor leads to prosperity for Southern workers.\n2. Ask what would break it. Evidence that free workers stayed poor despite their freedom.\n3. Weigh the options. Crowds, mills, and praise all fit the cartoon’s story; only sharecropping and debt contradict it.\n4. Match the challenge. Background: sharecropping kept most Black farmers landless and in debt, the opposite of the cartoon’s triumph.\nRemember: to test a sunny picture, look for the people it leaves out."
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Udo J. Keppler, “The New South — The Triumph of Free Labor,” Puck magazine, October 23, 1895. Public domain (Library of Congress).",
+  "text": "A large Black worker wearing a sash reading “FREE LABOR” stands with a hammer in one hand and a plow at his feet. Behind him, a crowd of Black and white Southerners, including Civil War veterans, walks past a statue of Abraham Lincoln toward a bright fairground. A flag reads “ATLANTA EXPOSITION,” and the word “PROSPERITY” shines in the sky above the fairground. The caption reads: “THE NEW SOUTH — THE TRIUMPH OF FREE LABOR.”"
+ },
+ "stimulus_set": "keppler-new-south-1895",
+ "source": "original; stimulus is a public-domain Puck cartoon, described from the image",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.4 The “New South”"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "America Transformed into the Industrial Giant"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10"
+   }
+  ],
+  "primary_sources": [
+   "Udo J. Keppler, “The New South — The Triumph of Free Labor,” Puck (1895)"
+  ]
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1690",
+   "file": "u6/original-u6-newsouth-05.jpg",
+   "caption": "Udo J. Keppler, “The New South — The Triumph of Free Labor,” Puck, October 23, 1895.",
+   "alt": "Puck cartoon showing a muscular Black worker labeled FREE LABOR with a hammer and plow, while a crowd passes a statue of Lincoln toward the Atlanta Exposition fairground under the word PROSPERITY",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/95/The_new_South_-_the_triumph_of_free_labor_-_Keppler._LCCN2012648573.jpg",
+   "license": "Public domain (Library of Congress)"
+  }
+ ]
+}

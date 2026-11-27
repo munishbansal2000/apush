@@ -1,0 +1,85 @@
+{
+  "answerKey": "D",
+  "difficulty": 3,
+  "figures": [
+    {
+      "alt": "A stereoscopic view of the huge Montgomery Ward and Company building in Chicago, a multi-story block with a tall tower, captioned one of the sights of the city",
+      "caption": "The Montgomery Ward and Company establishment, Chicago, stereoscopic view",
+      "file": "u6/original-u6-midclass-05.jpg",
+      "id": "fig-apush-mcq-1770",
+      "license": "Public domain: stereoscopic view from the Robert N. Dennis collection.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/The_establilshment_of_the_Montgomery_Ward_%26_Co.%2C_one_of_the_sights_of_the_city%2C_Chicago%2C_Ill.%2C_U.S.A%2C_from_Robert_N._Dennis_collection_of_stereoscopic_views.jpg"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ]
+  },
+  "id": "apush-mcq-1770",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "A building this large filled orders from across the country, not only from Chicago.",
+      "text": "That it sold goods only in Chicago"
+    },
+    {
+      "key": "B",
+      "misconception": "A warehouse this size stored factory goods for shipment, not handmade goods.",
+      "text": "That it made all its goods by hand"
+    },
+    {
+      "key": "C",
+      "misconception": "A company does not build a towered headquarters while losing money; the building shows success.",
+      "text": "That it was losing money"
+    },
+    {
+      "key": "D",
+      "text": "That it handled a huge volume of goods"
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "The building stood in Chicago, but its catalogs reached customers far away, so its market was national.",
+    "B": "Background: the goods Ward sold were factory-made. The building stored them; it did not make them by hand.",
+    "C": "A firm builds a landmark headquarters when business is growing, not when it is failing.",
+    "D": "A multi-story building with a tall tower, called one of the sights of the city, fits a firm that stored and shipped goods in great numbers.",
+    "general": "Read the building as evidence.\n1. The building fills the picture: many floors, a tall tower, and a caption calling it a sight of the city.\n2. A mail-order house needs room to store goods and fill orders.\n3. Only a firm handling a huge volume needs a building this large.\n4. So the size itself shows a national business, not a small shop.\nRemember: the size of a firm’s building can show the size of its business."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "3.A"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "What does the size of the Montgomery Ward building suggest about the company?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "“The Establishment of Montgomery Ward and Co., One of the Sights of the City, Chicago,” stereoscopic view, Robert N. Dennis collection. Public domain.",
+    "text": "A stereoscopic view of the Montgomery Ward and Company establishment in Chicago, a huge multi-story building with a tall tower rising over the neighboring blocks. The caption calls it “one of the sights of the city,” and the building’s many windows show floor after floor of goods."
+  },
+  "stimulus_set": "montgomery-ward",
+  "themes": [
+    "WXT"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

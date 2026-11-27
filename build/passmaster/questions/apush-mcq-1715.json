@@ -1,0 +1,86 @@
+{
+  "id": "apush-mcq-1715",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "answerKey": "B",
+  "skills": [
+    "3.C",
+    "5.A"
+  ],
+  "themes": [
+    "WXT"
+  ],
+  "reasoning": "comparison",
+  "stem": "How did the telephone differ from the telegraph that came before it?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Alexander Graham Bell's telephone patent drawing, U.S. Patent No. 174,465, patented March 7, 1876, National Archives (NARA 302052). Public domain. https://commons.wikimedia.org/wiki/File:Alexander_Graham_Bell%27s_Telephone_Patent_Drawing_and_Oath_-_NARA_-_302052_%28page_2%29.jpg",
+    "text": "The image is a page from Alexander Graham Bell's patent application. At the top it reads \"A. G. BELL. TELEGRAPHY. No. 174,465. Patented March 7, 1876.\" Below are two labeled diagrams: Fig. 6 shows three panels of electrical instruments wired together, and Fig. 7 shows a transmitter and receiver joined by a wire. At the bottom, the inventor signs \"A. Graham Bell.\""
+  },
+  "stimulus_set": "bell-patent",
+  "options": [
+    {
+      "key": "A",
+      "text": "The telegraph carried the human voice, while the telephone carried only written code",
+      "misconception": "Background: it was the other way around; the telegraph carried coded dots and dashes, and the telephone carried the voice itself."
+    },
+    {
+      "key": "B",
+      "text": "The telephone carried spoken words, while the telegraph carried coded signals"
+    },
+    {
+      "key": "C",
+      "text": "The telegraph was invented after the telephone and replaced it",
+      "misconception": "Background: the telegraph spread before the Civil War, decades before Bell's 1876 telephone patent."
+    },
+    {
+      "key": "D",
+      "text": "The telephone needed no wires, while the telegraph needed miles of wire",
+      "misconception": "Background: early telephones ran on wires just as the telegraph did; wireless telephones came much later."
+    }
+  ],
+  "rationales": {
+    "A": "Background: the telegraph clicked out dots and dashes in Morse code, and only trained operators could read them. The telephone carried the speaker's own voice.",
+    "B": "Background from the books: the telegraph sent coded signals over wires, while Bell's telephone sent the human voice itself. Anyone could pick up a telephone and talk, with no code to learn.",
+    "C": "Background: the telegraph network spread before the Civil War, and the first transatlantic cable was laid in 1858. The telephone came after it, in 1876.",
+    "D": "Background: early telephones were wired to each other and to switchboards. Wireless communication came decades later.",
+    "general": "Compare what each machine carries.\n1. Background: the telegraph carried code: dots and dashes that only trained operators could send and read.\n2. Background: the telephone carried the voice itself, so anyone could speak and be understood at once.\n3. Background: that difference is why the telephone spread from offices into homes.\nRemember: compare inventions by what they carry, not by what they look like."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "The Telegraph and the Telephone"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "The Second Industrial Revolution"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Age of Invention and Economic Growth"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)",
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1715",
+      "file": "u6/original-u6-tech-01.jpg",
+      "caption": "Bell's telephone patent drawing, U.S. Patent No. 174,465, March 7, 1876",
+      "alt": "A patent page headed A. G. Bell, Telegraphy, No. 174,465, patented March 7, 1876, with two labeled diagrams of transmitters and receivers joined by wires",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Alexander_Graham_Bell%27s_Telephone_Patent_Drawing_and_Oath_-_NARA_-_302052_%28page_2%29.jpg",
+      "license": "Public domain: U.S. patent drawing, National Archives."
+    }
+  ]
+}

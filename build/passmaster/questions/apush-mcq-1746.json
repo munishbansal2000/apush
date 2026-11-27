@@ -1,0 +1,86 @@
+{
+  "answerKey": "B",
+  "difficulty": 3,
+  "figures": [
+    {
+      "alt": "A giant octopus labeled Standard Oil wraps its tentacles around the Capitol and a state capitol and reaches toward the White House while crushing small businessmen below",
+      "caption": "Standard Oil as a giant octopus reaching for government buildings, Puck, 1904",
+      "file": "u6/5s24-ch18-mcq-07.jpg",
+      "id": "fig-apush-mcq-1746",
+      "license": "Public domain: 1904 cartoon, Library of Congress print.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Standard_oil_octopus_loc_color.jpg"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ]
+  },
+  "id": "apush-mcq-1746",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "The octopus is a symbol of grasping power, not a picture of where oil is found.",
+      "text": "Because Standard Oil drilled for oil under the sea"
+    },
+    {
+      "key": "B",
+      "text": "Because many Americans saw the company as a grasping monopoly"
+    },
+    {
+      "key": "C",
+      "misconception": "Background: Rockefeller wrote about business and giving, not about sea creatures.",
+      "text": "Because Rockefeller had written a book praising sea creatures"
+    },
+    {
+      "key": "D",
+      "misconception": "A cartoon that crushes small businessmen is an attack, not an advertisement.",
+      "text": "Because the cartoonist wanted to advertise Standard Oil products"
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "Standard Oil drilled on land in Pennsylvania and Ohio, and the octopus is a symbol, not a map of oil fields.",
+    "B": "Background from the books: by 1904 Standard Oil controlled about nine-tenths of American oil refining, and critics called it the most hated corporation in the country. The octopus gives that fear a shape.",
+    "C": "Background: Rockefeller’s book defends business combinations. It has nothing to do with sea creatures.",
+    "D": "The cartoon shows the company crushing small men and gripping government, which is criticism, not advertising.",
+    "general": "Ask what an octopus does that fits the company.\n1. An octopus wraps its arms around many things at once and holds them fast.\n2. Background from the books: by 1904 Standard Oil controlled most American oil refining and was widely feared as a monopoly.\n3. The cartoonist gives that fear a body: arms around the Capitol and a state capitol, reaching for the White House.\n4. The drawing works because readers already worried about the company’s power.\nRemember: a cartoon animal is chosen for what it does, not for what it looks like."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "3.B"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "Why would a cartoonist in 1904 draw Standard Oil as an octopus?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Udo Keppler, 'Next!', Puck, September 7, 1904. Public domain, Library of Congress print.",
+    "text": "Udo Keppler's cartoon 'Next!' (Puck, September 7, 1904) shows a giant octopus with 'STANDARD OIL' written across its head. Its tentacles reach across the land, wrapping around the Capitol and a state capitol and reaching toward the White House, and squeezing small businessmen at the bottom of the picture."
+  },
+  "stimulus_set": "standard-oil-octopus",
+  "themes": [
+    "WXT",
+    "SOC"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

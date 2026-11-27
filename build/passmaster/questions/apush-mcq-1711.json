@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-1711",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.5"
+ ],
+ "lesson": "apush-u6-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "1.B",
+  "5.B"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "stem": "Why did the switch from iron rails to steel rails matter most for the railroad network?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Nineteenth-century engraving of a Bessemer converter in operation, Wikimedia Commons. Public domain. https://commons.wikimedia.org/wiki/File:Bessemer_process.jpg",
+  "text": "The image shows a Bessemer converter at work inside a steel mill. A large pear-shaped vessel throws off a shower of white-hot sparks as air blasts through molten iron. A ladle and tools lie in the foreground. The converter is the tall upright vessel in the center."
+ },
+ "stimulus_set": "bessemer-converter",
+ "options": [
+  {
+   "key": "A",
+   "text": "Steel rails were lighter, so trains could run without locomotives",
+   "misconception": "Background: steel is heavier and stronger than iron, not lighter, and every train still needed a locomotive to pull it."
+  },
+  {
+   "key": "B",
+   "text": "Steel rails let railroads charge farmers lower freight rates by law",
+   "misconception": "Background: freight rates were set by the railroads and later regulated by government; the metal in the rails did not set rates by law."
+  },
+  {
+   "key": "C",
+   "text": "Steel rails lasted far longer under heavy loads, so track stayed in service"
+  },
+  {
+   "key": "D",
+   "text": "Steel rails needed no maintenance, so railroads fired all their track crews",
+   "misconception": "Background: steel rails still wore out and needed crews to inspect and replace them; they lasted longer, they did not last forever."
+  }
+ ],
+ "rationales": {
+  "A": "Background: steel rails were stronger than iron rails, not lighter. Trains still needed locomotives, and a lighter rail would have bent under heavy loads.",
+  "B": "Background: railroads set their own freight rates, and farmers complained about them for decades. The metal in the rails did not change rates by law.",
+  "C": "Background from the books: steel was far more durable than iron, so steel rails survived heavy trains that wore iron rails out quickly. Longer-lasting track let the network grow without constant rebuilding.",
+  "D": "Background: steel rails wore out more slowly, but they still wore out. Railroads kept large track crews to inspect and replace rails.",
+  "general": "Ask what breaks first on a railroad: the rail.\n1. Background: iron rails wore out fast under heavy trains, so track had to be rebuilt again and again.\n2. Background: steel rails lasted far longer, so a line laid in steel stayed in service while the traffic over it grew.\n3. Background: that durability is what let the network stretch to 190,000 miles without collapsing under its own weight.\nRemember: a network grows when its weakest link stops breaking."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Steel and the Bessemer Process"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Second Industrial Revolution"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Age of Invention and Economic Growth"
+   }
+  ]
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1711",
+   "file": "u6/original-u6-tech-07.jpg",
+   "caption": "A Bessemer converter at work, nineteenth-century engraving",
+   "alt": "A tall pear-shaped Bessemer converter vessel throws off a shower of white-hot sparks inside a steel mill",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Bessemer_process.jpg",
+   "license": "Public domain: nineteenth-century engraving of a Bessemer converter in operation."
+  }
+ ]
+}

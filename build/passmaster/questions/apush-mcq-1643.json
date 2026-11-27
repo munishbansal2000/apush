@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1643",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "stem": "What happened to reservation land left over after every tribal member received an allotment under the Dawes Act?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Dawes Severalty Act, Feb. 8, 1887, 24 Stat. 388, Sec. 1. Public domain. Text verified against the Statutes at Large via govinfo (STATUTE-24-Pg388) and EBSCO's document analysis of the act's provisions.",
+  "text": "Dawes Severalty Act (General Allotment Act) of 1887, Section 1 (ellipses mark omissions):\n\n\"That in all cases where any tribe or band of Indians has been, or shall hereafter be, located upon any reservation created for their use... the President of the United States be, and he hereby is, authorized... to allot the lands in said reservation in severalty to any Indian located thereon in quantities as follows:\"\n\n\"To each head of a family, one-quarter of a section; To each single person over eighteen years of age, one-eighth of a section; To each orphan child under eighteen years of age, one-eighth of a section; and To each other single person under eighteen years now living... one-sixteenth of a section...\"\n\n(Paraphrase of Section 5: the United States would hold each allotment in trust for twenty-five years, after which the owner would receive title and citizenship.)"
+ },
+ "stimulus_set": "dawes-act",
+ "options": [
+  {
+   "key": "A",
+   "text": "It was returned to the tribe as a communal hunting ground",
+   "misconception": "Background: the act's whole point was to end communal tribal ownership, not to preserve it."
+  },
+  {
+   "key": "B",
+   "text": "It was set aside forever as a national park",
+   "misconception": "Background: national parks were created elsewhere, by separate laws; surplus allotment land went to settlers, not to the park system."
+  },
+  {
+   "key": "C",
+   "text": "It was declared surplus and sold to white settlers"
+  },
+  {
+   "key": "D",
+   "text": "It was given to the railroad companies to pay for new lines",
+   "misconception": "Background: railroad land grants came from the Pacific Railway Acts, not from Dawes Act surplus land."
+  }
+ ],
+ "rationales": {
+  "A": "Background: the act aimed to dissolve tribal landholding into individual plots. Keeping a communal remnant would have defeated its purpose.",
+  "B": "Background: parks like Yellowstone were set aside by their own laws. Background: the Dawes Act's leftover land was sold, not preserved.",
+  "C": "Background from the books: once allotments were made, the remaining land was declared surplus and sold to white settlers, which is how the tribal land base shrank so fast.",
+  "D": "Background: the railroads got their land from the Pacific Railway Acts of the 1860s, a different law for a different purpose.",
+  "general": "Every allotment law has a leftover, so ask who got it.\n1. Work through the act's order: survey the reservation, allot shares to each member, then look at what remains.\n2. Find the word the law used for the remainder: surplus.\n3. Follow the surplus. Background: it was sold to white settlers, and the tribe never got it back.\nRemember: in a land law, the word surplus is where the land changes hands."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The End of Native American Independence"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-1831",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "riis-bandits-roost",
+ "stimulus": {
+  "kind": "image",
+  "text": "The photograph shows a narrow alley between tall tenement buildings in New York City. Laundry hangs on lines overhead. Men stand in doorways and on a wooden balcony, and a man in the foreground holds a long stick. The alley floor is wet stone, with barrels at one side and a cart in the distance.",
+  "source_note": "Jacob A. Riis, “Bandits’ Roost, 59 1-2 Mulberry Street,” 1888. Photograph from the shared image pool; public domain."
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Jacob A. Riis, “Bandits’ Roost, 59 1-2 Mulberry Street” (1888); Jacob A. Riis, How the Other Half Lives (1890)"
+  ]
+ },
+ "status": "final",
+ "stem": "Riis called this alley “Bandits’ Roost” and published the photograph in 1890. His purpose in publishing such photographs was most likely to do what?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Celebrate the beauty of tenement architecture",
+   "misconception": "Reads a reform photograph as praise of architecture."
+  },
+  {
+   "key": "B",
+   "text": "Show middle-class readers the crowded poor so they would demand reform"
+  },
+  {
+   "key": "C",
+   "text": "Advertise the alley as a place for tourists to visit",
+   "misconception": "Turns a document of poverty into a travel advertisement."
+  },
+  {
+   "key": "D",
+   "text": "Prove that immigrants preferred to live in alleys",
+   "misconception": "Treats crowded housing as a free choice."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "A dark, crowded alley is not shown as beautiful architecture. Riis showed it as a problem.",
+  "B": "Riis published photographs of tenement life so that readers who had never seen the slums would see the crowding and demand change.",
+  "C": "Nothing in the photograph advertises tourism. It documents poverty.",
+  "D": "The photograph shows crowding, not a preference. No one chooses an alley for its own sake.",
+  "general": "Ask why a reformer publishes a photograph.\n1. Riis photographed the poorest corners of the city.\n2. His book reached middle-class readers who never saw those corners.\n3. Seeing the crowding was meant to move readers to demand reform.\n4. A photograph that only praised the buildings would need no reform.\nBackground: the books say Riis’s photographs drew attention to the plight of the poor.\nRemember: a reformer’s photograph is an argument, so ask what change it argues for."
+ },
+ "figures": [
+  {
+   "file": "u7/5s24-exam2-mcq-12.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Bandits%27_Roost%2C_59_1-2_Mulberry_Street_by_Jacob_August_Riis%2C_1888.jpg",
+   "license": "Public domain",
+   "caption": "Bandits’ Roost, Mulberry Street, New York, photographed by Jacob Riis in 1888",
+   "alt": "A narrow alley between tall tenement buildings, with laundry on lines overhead and men standing in doorways and on a wooden balcony",
+   "id": "fig-apush-mcq-1831"
+  }
+ ]
+}

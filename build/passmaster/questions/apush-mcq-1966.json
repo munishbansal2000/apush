@@ -1,0 +1,89 @@
+{
+  "id": "apush-mcq-1966",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.13"
+  ],
+  "skills": [
+    "2.B"
+  ],
+  "themes": [
+    "PCE",
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "difficulty": 3,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "The Politics of Tariff Rates"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Gilded Age Politics"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "National Politics"
+      }
+    ],
+    "primary_sources": [
+      "Bernhard Gillam, 'The Protectors of Our Industries,' Puck, February 7, 1883"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-613-tariff-protectors",
+  "stimulus": {
+    "kind": "image",
+    "text": "Political cartoon by Bernhard Gillam, Puck, February 7, 1883, “The Protectors of Our Industries.” Four wealthy industrialists sit on bags labeled with their millions atop a raft built of cloth, linen, lumber, and other goods. Workers from many trades carry the raft on their backs while wading through rough water. Signs on the goods give each trade’s weekly pay, such as cloth workers at $9 a week, linen workers at $11 a week, and lumber workers at $6 a week.",
+    "source_note": "Bernhard Gillam, “The Protectors of Our Industries,” Puck, February 7, 1883. Public domain: cartoon published 1883 (pre-1930); Library of Congress, LCCN94507245. Labels and wage signs checked against the image."
+  },
+  "stem": "Why did Gillam label the workers' weekly wages on the cartoon?",
+  "options": [
+    {
+      "key": "A",
+      "text": "To show that factory jobs paid better than farm work",
+      "misconception": "The cartoon compares no farm pay, so it proves nothing about farm work."
+    },
+    {
+      "key": "B",
+      "text": "To prove that the industrialists shared their millions with workers",
+      "misconception": "The millions stay on top with the owners, not in the workers' hands."
+    },
+    {
+      "key": "C",
+      "text": "To show that tariff protection did not raise workers' pay"
+    },
+    {
+      "key": "D",
+      "text": "To list the trades that supported high tariff rates",
+      "misconception": "The signs list pay, not opinions about the tariff."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "No farm wages appear anywhere in the cartoon.",
+    "B": "The owners sit on their millions while workers carry the load.",
+    "C": "Low weekly pay next to millions shows who gained from protection.",
+    "D": "The signs give wages, not a list of tariff supporters.",
+    "general": "Ask what the numbers prove.\n1. The signs give weekly pay for cloth, linen, and lumber workers.\n2. The pay is low: $9, $11, and $6 a week.\n3. Low pay sits next to bags of millions, so the gains went upward.\n4. If tariffs truly protected workers, their pay would show it, and it does not.\nRemember: numbers in a cartoon are evidence, so ask what they prove."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1966",
+      "file": "u6/saq-set-01-q3.jpg",
+      "caption": "“The Protectors of Our Industries,” Puck, February 7, 1883",
+      "alt": "Gillam cartoon: wealthy industrialists sit on bags of millions atop a raft of goods carried on the backs of workers wading through rough water, with signs giving each trade's weekly pay",
+      "license": "Public domain: Puck cartoon published 1883.",
+      "source_url": "https://www.loc.gov/pictures/item/2012647455/"
+    }
+  ]
+}

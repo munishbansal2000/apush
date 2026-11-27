@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-1851",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.9"
+ ],
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.9 Responses to Immigration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "chinese-west",
+ "stimulus": {
+  "kind": "text",
+  "text": "Original secondary passage, written for this question from the grounding books:\n\nChinese immigrants first came to California for gold, and by 1870 more than 63,000 lived in the United States, nearly 80 percent of them in California. White Californians pushed them out of mining with the Foreign Miners’ License Tax of 1852, and an 1854 California Supreme Court decision, People v. Hall, barred Chinese Americans from testifying against whites in court.\n\nAs many as 12,000 Chinese workers helped build the transcontinental railroad, yet after the Panic of 1873, California workers blamed Chinese laborers for low wages, and the Workingmen’s Party, formed in 1876, demanded that Chinese immigration be excluded.",
+  "source_note": "Original secondary passage, written for this question from Barron’s Premium 2027 Chapter 8 (Topics 6.8 and 6.9), 5 Steps to a 5, 2024, Chapter 18, and Princeton Review, Chapter 10."
+ },
+ "stem": "According to the passage, what did the Foreign Miners’ License Tax of 1852 do?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It paid Chinese miners for their gold",
+   "misconception": "Turns a tax that drove miners out into a payment to them."
+  },
+  {
+   "key": "B",
+   "text": "It gave Chinese miners the right to vote",
+   "misconception": "Credits the tax with a right it never gave."
+  },
+  {
+   "key": "C",
+   "text": "It pushed Chinese immigrants out of mining"
+  },
+  {
+   "key": "D",
+   "text": "It built the transcontinental railroad in California",
+   "misconception": "Credits a mining tax with building a railroad."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "The tax took money from Chinese miners; it did not pay them. Its purpose was to push them out.",
+  "B": "The tax had nothing to do with voting. It was a levy aimed at Chinese miners.",
+  "C": "The passage says White Californians pushed Chinese immigrants out of mining with the Foreign Miners' License Tax of 1852. The tax was a tool of exclusion from mining, not a payment, a vote, or a railroad.",
+  "D": "The railroad came later and was built with Chinese labor, not by this tax. The tax drove miners out of mining.",
+  "general": "Find the verb the passage ties to the tax.\n1. The passage says White Californians pushed Chinese immigrants out of mining.\n2. The tool named for that push is the Foreign Miners' License Tax of 1852.\n3. So the tax pushed Chinese immigrants out of mining.\n4. Payments, votes, and railroads are not tied to the tax at all.\nRemember: when a passage names a law, match it to the action the passage ties to it."
+ }
+}

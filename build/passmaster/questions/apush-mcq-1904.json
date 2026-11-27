@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1904",
+ "lesson": "apush-u6-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.11"
+ ],
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Challenges to the Dominant Corporate Ethic"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "Social Criticism in the Gilded Age"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+   }
+  ],
+  "primary_sources": [
+   "Henry George, Progress and Poverty (1879)"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "u6-611-george",
+ "stimulus": {
+  "kind": "text",
+  "text": "“We plow new fields, we open new mines, we found new cities; we drive back the Indian and exterminate the buffalo; we girdle the land with iron roads and lace the air with telegraph wires; we add knowledge to knowledge, and utilize invention after invention; we build schools and endow colleges; yet it becomes no easier for the masses of our people to make a living. On the contrary, it is becoming harder. . . . It is not that laborers have increased faster than capital; it is not that population is pressing against subsistence; it is not that machinery has made “work scarce;” it is not that there is any real antagonism between labor and capital—it is simply that land is becoming more valuable; that the terms on which labor can obtain access to the natural opportunities which alone enable it to produce, are becoming harder and harder.”\n\n(Henry George, Progress and Poverty, 1879, Book VII, Chapter 5)",
+  "source_note": "Henry George, Progress and Poverty (1879), Book VII, Chapter 5, “Of Property in Land in the United States.” Public domain; wording checked against the 1879 D. Appleton text, scanned page (Wikisource, IA progresspovertyi00georiala.pdf p. 379, printed p. 353). Ellipsis marks sentences omitted between complete sentences."
+ },
+ "stem": "Why does progress itself fail to make living easier, in George’s account?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Gains from new fields, mines, and cities are captured as rising land values"
+  },
+  {
+   "key": "B",
+   "text": "Machines have made so much work scarce that wages must fall",
+   "misconception": "George says it is not machinery making work scarce that causes the hardship."
+  },
+  {
+   "key": "C",
+   "text": "Workers have grown faster in number than the capital that hires them",
+   "misconception": "George says it is not laborers increasing faster than capital."
+  },
+  {
+   "key": "D",
+   "text": "Farmers refuse to use the new railroads and telegraph wires",
+   "misconception": "George never says farmers refuse new tools; he lists them as signs of progress."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Fields, mines, cities, and railroads grow, but land grows more valuable, so access to opportunity grows harder.",
+  "B": "George rules out machinery making work scarce as the cause.",
+  "C": "George rules out laborers increasing faster than capital as the cause.",
+  "D": "The new tools are George’s proof of progress, not something farmers refuse.",
+  "general": "Ask where the progress goes.\n1. George’s progress list is long: fields, mines, cities, iron roads, telegraph wires.\n2. Still, making a living grows harder for the masses.\n3. The reason he gives is land becoming more valuable.\n4. When land takes the gain, progress enriches landowners while labor pays more for access.\nRemember: progress helps labor only if labor keeps some of what progress adds."
+ }
+}

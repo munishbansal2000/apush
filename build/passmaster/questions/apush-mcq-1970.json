@@ -1,0 +1,79 @@
+{
+  "id": "apush-mcq-1970",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.13"
+  ],
+  "skills": [
+    "1.A"
+  ],
+  "themes": [
+    "PCE",
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "difficulty": 2,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "The Politics of Tariff Rates"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Gilded Age Politics"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "National Politics"
+      }
+    ],
+    "primary_sources": [
+      "Grover Cleveland, annual message to Congress, December 6, 1887"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-613-cleveland-tariff",
+  "stimulus": {
+    "kind": "text",
+    "text": "President Grover Cleveland, annual message to Congress, December 6, 1887. Cleveland devoted the whole message to the tariff.\n\n“When we consider that the theory of our institutions guarantees to every citizen the full enjoyment of all the fruits of his industry and enterprise, with only such deduction as may be his share toward the careful and economical maintenance of the Government which protects him, it is plain that the exaction of more than this is indefensible extortion and a culpable betrayal of American fairness and justice. . . . The public Treasury, which should only exist as a conduit conveying the people’s tribute to its legitimate objects of expenditure, becomes a hoarding place for money needlessly withdrawn from trade and the people’s use, thus crippling our national energies, suspending our country’s development, preventing investment in productive enterprise, threatening financial disturbance, and inviting schemes of public plunder.”\n\nHigh tariff taxes had left the Treasury with a large surplus.",
+    "source_note": "Grover Cleveland, annual message to Congress, December 6, 1887 (Congressional Record, via Teaching American History). Both quoted sentences are exact; the ellipsis between them skips one complete sentence."
+  },
+  "stem": "What is Cleveland's view of the tariff in this message?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The tariff should rise to protect American factory workers",
+      "misconception": "Cleveland calls the tariff's extra tax 'indefensible extortion,' not protection."
+    },
+    {
+      "key": "B",
+      "text": "The tariff should stay exactly as it was in 1887",
+      "misconception": "Cleveland calls the tariff an unjust burden, so he does not defend keeping it."
+    },
+    {
+      "key": "C",
+      "text": "The tariff takes more from the people than government needs"
+    },
+    {
+      "key": "D",
+      "text": "The tariff should be replaced by a tax on farm exports",
+      "misconception": "Cleveland never proposes a farm export tax in this message."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "Cleveland calls the extra tax extortion, not protection for workers.",
+    "B": "Cleveland calls the tariff's extra tax unjust, so he wants change.",
+    "C": "Cleveland says the tariff takes more than the government needs to run.",
+    "D": "The message proposes no new tax on farm exports.",
+    "general": "Follow Cleveland's own charge.\n1. Cleveland says the tariff takes more than the government needs.\n2. He calls that extra taking 'indefensible extortion' and a betrayal of fairness.\n3. A president who calls a tax extortion wants it cut, not kept.\n4. The surplus in the Treasury is his proof: money piled up instead of serving the people.\nRemember: when a source names a wrong, its remedy is to end that wrong."
+  }
+}

@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1633",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "stem": "According to McCoy, what made the long cattle drives north from Texas worth attempting in 1866?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Joseph G. McCoy, Historic Sketches of the Cattle Trade of the West and Southwest (1874), ch. 2. Public domain. Text verified against the 1874 edition as quoted in the Stanford-adjacent SVHS lesson (svhs.co/lesson/d1-5-9-12/) and the SweetStudy transcription of the same chapter.",
+  "text": "Joseph G. McCoy, Historic Sketches of the Cattle Trade of the West and Southwest (1874), Chapter 2:\n\n\"Many ranchmen entirely neglected their stock, for they were regarded as not worth caring for. Stocks of cattle were, in certain sections, offered at prices ranging from one to two dollars per head, and that often without finding a purchaser. ... a select, matured animal, worth five or six dollars in Texas — was worth in the Northern markets more than ten times that amount.\"\n\n\"We have heard the number of cattle that had crossed Red river during 1866 put down as high as 260,000 head.\"\n\n\"Twenty-five to thirty-five days is the usual time required to bring a drove from Red river to the southern line of Kansas, a distance of between two hundred and fifty and three hundred miles...\""
+ },
+ "stimulus_set": "long-drive-mccoy",
+ "options": [
+  {
+   "key": "A",
+   "text": "Texas cattle worth a few dollars at home sold for ten times as much in Northern markets"
+  },
+  {
+   "key": "B",
+   "text": "The federal government paid drovers a bounty for every head delivered north",
+   "misconception": "Background: no federal bounty paid for the drives; the profit came from the price gap between Texas and the North."
+  },
+  {
+   "key": "C",
+   "text": "Texas ranchers had run out of grass and had to move their herds or lose them",
+   "misconception": "Background: McCoy says ranchmen neglected their stock because cattle were nearly worthless in Texas, not because the grass had failed."
+  },
+  {
+   "key": "D",
+   "text": "Railroads had already reached every Texas ranch, so the drives were short and easy",
+   "misconception": "Background: the drives existed because the railroads had not reached Texas; the cattle had to walk 250 to 300 miles to the Kansas railheads."
+  }
+ ],
+ "rationales": {
+  "A": "McCoy states the arithmetic: a mature animal worth five or six dollars in Texas was worth more than ten times that in Northern markets. That gap paid for the drive.",
+  "B": "Background: the drives were private speculation, not a government program. No bounty appears in McCoy's account or in the books.",
+  "C": "Background: McCoy says the cattle were neglected because they were worth almost nothing at home, not because the grass ran out.",
+  "D": "Background: the whole point of the drive was to reach a railroad that Texas lacked. The herds walked 250 to 300 miles to Kansas.",
+  "general": "Follow the money across the map: cheap in Texas, dear in the North.\n1. Take McCoy's prices: five or six dollars a head in Texas, more than ten times that in Northern markets.\n2. Count the herds: 260,000 head crossed the Red River in 1866 alone, chasing that gap.\n3. Name the motive. The drive was a bet that the price gap would pay for the trail.\nRemember: when the same thing costs ten times more somewhere else, somebody will find a way to move it."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The Ranching Frontier"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

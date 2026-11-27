@@ -1,0 +1,78 @@
+{
+  "answerKey": "A",
+  "difficulty": 2,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ],
+    "primary_sources": [
+      "William Graham Sumner, What Social Classes Owe to Each Other (1883)"
+    ]
+  },
+  "id": "apush-mcq-1741",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "text": "The industrious workman who pays for help he never asked for"
+    },
+    {
+      "key": "B",
+      "misconception": "That is Carnegie’s philanthropist, not Sumner’s Forgotten Man.",
+      "text": "The rich businessman who funds libraries and schools"
+    },
+    {
+      "key": "C",
+      "misconception": "Sumner pities the drunkard, but the man who bears the penalty is the workman.",
+      "text": "The drunkard in the gutter whom the police pick up"
+    },
+    {
+      "key": "D",
+      "misconception": "The policeman does the carrying; the workman pays for it.",
+      "text": "The policeman who carries the drunkard away"
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "Sumner names him directly: the industrious and sober workman whose wages pay the policeman, and who is never noticed.",
+    "B": "Background from the books: the rich man who funds libraries is Carnegie’s ideal. Sumner’s Forgotten Man is an ordinary worker.",
+    "C": "The drunkard is the man who incurred the penalty, not the man who bears it after it is shifted.",
+    "D": "The policeman is paid out of the workman’s wages, so the cost falls on the workman, not on the policeman.",
+    "general": "Find the name in the passage, then check who pays.\n1. Sumner says the workman is mulcted, or taxed, from his wages to pay the policeman.\n2. That workman behaved himself, kept his contracts, and asked for nothing.\n3. Sumner calls him the Forgotten Man because he is never noticed.\n4. The drunkard and the policeman are in the scene, but neither one pays.\nRemember: when a passage names a person, match the name to the person who bears the cost."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "1.A"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "According to the passage, who is the “Forgotten Man”?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "William Graham Sumner, What Social Classes Owe to Each Other (1883), public domain. Excerpts joined with ellipses.",
+    "text": "“A drunkard in the gutter is just where he ought to be, according to the fitness and tendency of things. Nature has set up on him the process of decline and dissolution by which she removes things which have survived their usefulness. . . . Now, we never can annihilate a penalty. We can only divert it from the head of the man who has incurred it to the heads of others who have not incurred it. . . . The industrious and sober workman, who is mulcted of a percentage of his day’s wages to pay the policeman, is the one who bears the penalty. But he is the Forgotten Man.”"
+  },
+  "stimulus_set": "sumner-forgotten-man",
+  "themes": [
+    "SOC"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

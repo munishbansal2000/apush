@@ -1,0 +1,78 @@
+{
+  "answerKey": "C",
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ],
+    "primary_sources": [
+      "Ida M. Tarbell, The History of the Standard Oil Company (1904)"
+    ]
+  },
+  "id": "apush-mcq-1752",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Tarbell writes about a business combination, not a partnership with the government.",
+      "text": "A partnership between Standard Oil and the federal government"
+    },
+    {
+      "key": "B",
+      "misconception": "Background: oil workers did not form the combination; the companies did.",
+      "text": "A group of oil workers who joined a union"
+    },
+    {
+      "key": "C",
+      "text": "The group of oil companies joined under Standard Oil’s control"
+    },
+    {
+      "key": "D",
+      "misconception": "Background: Standard Oil worked with railroads, but the combination was the oil trust itself.",
+      "text": "A merger of Standard Oil with the railroads"
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "The government investigated Standard Oil; it did not join it.",
+    "B": "Background: the combination joined companies, not workers. Workers and unions belong to the labor story.",
+    "C": "Background from the books: Standard Oil was a trust, formed when the stockholders of many oil companies put their shares under one board’s control.",
+    "D": "Background: Standard Oil made deals with railroads, but the trust joined oil companies, not railroads.",
+    "general": "Use the passage and the word’s meaning.\n1. Tarbell calls Standard Oil a combination that makes huge profits.\n2. Background from the books: a trust joined many companies in one industry under a single board.\n3. Standard Oil was the best-known trust, built by joining oil companies.\n4. So “the combination” is the joined companies, not a partner or a union.\nRemember: when a passage uses a business term, match it to the business form."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "1.A"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "In the passage, what does Tarbell mean by “the combination”?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Ida M. Tarbell, The History of the Standard Oil Company, Vol. 2, Chapter 18 (1904), public domain.",
+    "text": "“The profits of the present Standard Oil Company are enormous. For five years the dividends have been averaging about forty-five million dollars a year, or nearly fifty per cent. on its capitalisation, a sum which capitalised at five per cent. would give $900,000,000. Of course this is not all that the combination makes in a year. It allows an annual average of 5.77 per cent. for deficit, and it carries always an ample reserve fund.”"
+  },
+  "stimulus_set": "tarbell-standard-oil",
+  "themes": [
+    "WXT"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

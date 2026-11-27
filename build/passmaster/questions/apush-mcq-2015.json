@@ -1,0 +1,86 @@
+{
+  "answerKey": "C",
+  "difficulty": 3,
+  "figures": [
+    {
+      "alt": "1889 Puck cartoon showing giant top-hatted figures labeled with trust names looming over small senators at their desks",
+      "caption": "Joseph Keppler, “The Bosses of the Senate,” Puck, January 23, 1889. Giant figures labeled with trust names loom over the small senators.",
+      "file": "pt01/fig3-bosses-of-senate-1889.jpg",
+      "id": "fig-apush-mcq-2015",
+      "license": "No known restrictions on publication",
+      "source_url": "https://www.loc.gov/pictures/item/2002718861/"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "America Transformed into the Industrial Giant"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-2015",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Laissez-faire industrialists would challenge Carnegie.",
+      "text": "Industrialists who supported laissez-faire policies"
+    },
+    {
+      "key": "B",
+      "misconception": "Social Darwinists would challenge Carnegie.",
+      "text": "Supporters of Social Darwinism who defended inequality as natural"
+    },
+    {
+      "key": "C",
+      "text": "Union members who wanted higher wages and better conditions"
+    },
+    {
+      "key": "D",
+      "misconception": "Advocates for lower tariffs would challenge Carnegie.",
+      "text": "Advocates for lower tariffs on imported goods"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Industrialists who supported laissez-faire would largely agree with Carnegie's defense of inequality.",
+    "B": "Supporters of Social Darwinism defended inequality as natural, close to Carnegie's view.",
+    "C": "Union members argued workers deserved fair wages and conditions in the first place, not charity after exploitation. Carnegie's gospel asked the rich to give back; unions asked that workers be paid fairly to begin with.",
+    "D": "Tariffs are not the core dispute over wealth and labor.",
+    "general": "1. Ask what Carnegie offers workers. Philanthropy after the fact, not higher wages.\n2. Ask who would reject that bargain. Workers who want fair pay and conditions now.\n3. Test the others. Laissez-faire industrialists and Social Darwinists largely agree with Carnegie; tariffs miss the point.\n4. Match the challenger. The challenge comes from labor, not from Carnegie's allies.\nRemember: the sharpest challenge to an idea comes from the people it leaves out."
+  },
+  "reasoning": "comparison",
+  "skills": [
+    "2.B"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from Carnegie, “The Gospel of Wealth” (1889) with the Keppler 1889 Puck cartoon",
+  "status": "final",
+  "stem": "Which of the following groups would have been most likely to challenge Carnegie’s perspective?",
+  "stimulus": {
+    "kind": "mixed",
+    "source_note": "Andrew Carnegie, “The Gospel of Wealth,” 1889, public domain. Cartoon: Joseph Keppler, “The Bosses of the Senate,” Puck, January 23, 1889, Library of Congress.",
+    "text": "“The problem of our age is the proper administration of wealth, so that the ties of brotherhood may still bind together the rich and poor in harmonious relationship. . . . The man who dies thus rich dies disgraced.”"
+  },
+  "stimulus_set": "carnegie-gospel-wealth-1889",
+  "themes": [
+    "WXT",
+    "SOC"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

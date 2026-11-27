@@ -1,0 +1,76 @@
+{
+  "id": "apush-mcq-1727",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "answerKey": "B",
+  "skills": [
+    "3.B",
+    "1.A"
+  ],
+  "themes": [
+    "WXT"
+  ],
+  "reasoning": "continuity-change",
+  "stem": "According to the table, how did American steel production change between 1870 and 1900?",
+  "stimulus": {
+    "kind": "table",
+    "source_note": "United States steel production, in thousands of long tons, from the Encyclopaedia Britannica, 11th edition (1911), Table IX, Production of Steel. Public domain.",
+    "text": "United States steel production, in thousands of long tons:\n\n| Year | Steel produced |\n| 1870 | 69 |\n| 1880 | 1,247 |\n| 1890 | 4,277 |\n| 1900 | 10,188 |"
+  },
+  "stimulus_set": "steel-output",
+  "options": [
+    {
+      "key": "A",
+      "text": "It fell from 10,188 thousand tons to 69 thousand tons",
+      "misconception": "Background: the table runs the other way; production rose from 69 thousand tons in 1870 to 10,188 thousand tons in 1900."
+    },
+    {
+      "key": "B",
+      "text": "It rose from 69 thousand to over 10 million tons"
+    },
+    {
+      "key": "C",
+      "text": "It stayed near 1,000 thousand tons for the whole period",
+      "misconception": "Background: production passed 1,000 thousand tons by 1880 and kept climbing to 4,277 in 1890 and 10,188 in 1900."
+    },
+    {
+      "key": "D",
+      "text": "It doubled once, then stopped growing after 1880",
+      "misconception": "Background: production roughly tripled between 1880 and 1890 and more than doubled again by 1900."
+    }
+  ],
+  "rationales": {
+    "A": "The table runs the other way: 69 thousand tons in 1870, then 1,247, 4,277, and 10,188 by 1900. Production rose, it did not fall.",
+    "B": "Read the first and last rows: 69 thousand long tons in 1870 and 10,188 thousand in 1900. That is more than 10 million tons, about 150 times the 1870 figure.",
+    "C": "Production passed 1,000 thousand tons by 1880 and kept climbing, to 4,277 in 1890 and 10,188 in 1900. It never stood still.",
+    "D": "Production roughly tripled between 1880 and 1890 and more than doubled again by 1900. The growth ran through the whole period.",
+    "general": "Compare the first row with the last row.\n1. In 1870 the table shows 69 thousand long tons of steel.\n2. By 1900 it shows 10,188 thousand tons, more than 10 million.\n3. The middle rows show the climb was steep in every decade, not a single jump.\nRemember: a table tells its story in its first and last rows."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Steel and the Bessemer Process"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "The Second Industrial Revolution"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Age of Invention and Economic Growth"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)"
+}

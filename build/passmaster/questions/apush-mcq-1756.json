@@ -1,0 +1,78 @@
+{
+  "answerKey": "A",
+  "difficulty": 4,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ],
+    "primary_sources": [
+      "Sherman Antitrust Act, Section 1 (1890)"
+    ]
+  },
+  "id": "apush-mcq-1756",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "text": "Because trusts were the device companies used to join together"
+    },
+    {
+      "key": "B",
+      "misconception": "Background: trusts were one business form among many; most firms were not trusts.",
+      "text": "Because trusts were the only businesses in the United States"
+    },
+    {
+      "key": "C",
+      "misconception": "Background: courts later used the act against unions, but the act names business combinations, not unions.",
+      "text": "Because the act was written to ban labor unions only"
+    },
+    {
+      "key": "D",
+      "misconception": "The act declares combinations illegal; it attacks trusts, not protects them.",
+      "text": "Because Congress wanted to protect the trusts from competition"
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "Background from the books: a trust joined the stockholders of many companies under one board, and Rockefeller’s Standard Oil Trust was the best-known example. The words “or otherwise” close the loophole for any other form.",
+    "B": "Background: most American firms were small businesses or ordinary corporations. Trusts were the giants, not the only form.",
+    "C": "Background: the act was aimed at business trusts, though courts later turned it against unions too. Its words name business combinations.",
+    "D": "The act’s first sentence declares such combinations illegal, which is an attack on trusts, not a shield for them.",
+    "general": "Ask what problem the wording solves.\n1. Background from the books: companies joined by forming trusts, with many firms under one board.\n2. A law naming only trusts would let companies join in some other form.\n3. “Or otherwise” covers every form of joining.\n4. So the wording is written to leave no way around the ban.\nRemember: when a law says “or otherwise,” it is closing loopholes."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "3.B"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "Why did the act name “combination in the form of trust or otherwise”?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Sherman Antitrust Act, Section 1, approved July 2, 1890. Public domain.",
+    "text": "“Every contract, combination in the form of trust or otherwise, or conspiracy, in restraint of trade or commerce among the several States, or with foreign nations, is hereby declared to be illegal.”"
+  },
+  "stimulus_set": "sherman-act",
+  "themes": [
+    "PCE"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

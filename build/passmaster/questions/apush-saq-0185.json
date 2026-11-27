@@ -1,0 +1,90 @@
+{
+ "id": "apush-saq-0185",
+ "lesson": "apush-u6-l4",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "3.A",
+  "2.B"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, written for this question from Barron’s Premium 2027 Chapter 8 (Topic 6.8), 5 Steps to a 5, 2024, Chapter 18, and Princeton Review, Chapter 10.",
+  "text": "Original secondary passage, written for this question from the grounding books:\n\nBefore 1880, most immigrants to the United States came from northern and western Europe, above all Ireland, Germany, and Britain. The Irish shared a language with Americans, and the Germans came from a society much like America’s, so both groups settled in fairly easily. After 1880 the pattern changed. The “new immigrants” came from southern and eastern Europe: Italy, Russia, Poland, and the Balkans. They spoke little English, most were very poor, and many were Catholic or Jewish in a largely Protestant country. Many fled religious persecution and the breakdown of old farming ways at home. They crowded into the tenements of the big coastal cities and found work in the factories, and their arrival alarmed many native-born Americans."
+ },
+ "source": "original; stimulus written for this question from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "status": "final",
+ "saq_slot": 1,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one difference between the “old” immigration before 1880 and the “new” immigration after 1880.",
+   "modelAnswer": "The old immigrants came mainly from northern and western Europe, such as Ireland, Germany, and Britain, while the new immigrants came mainly from southern and eastern Europe, such as Italy, Russia, and Poland. The two waves differed in origin, language, and religion.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one difference between the old and new immigration, such as origin, language, or religion.",
+     "notEarned": "Naming an immigrant group without stating how the waves differed does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain one push factor that drove new immigrants from southern and eastern Europe to the United States.",
+   "modelAnswer": "Many new immigrants fled religious persecution, such as Jews leaving Russia to escape anti-Semitic massacres called pogroms. Others fled poverty and the lack of social mobility as old farming ways broke down in their home regions.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one push factor, such as religious persecution, pogroms, poverty, or the breakdown of farming life.",
+     "notEarned": "Naming a home country without explaining what pushed its people out does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain one way the new immigrants changed American cities.",
+   "modelAnswer": "The new immigrants crowded into tenements in the big coastal cities, making neighborhoods like New York’s Lower East Side the most densely populated places in the world. They also built ethnic neighborhoods with their own churches, newspapers, and shops, remaking the city’s map by nationality.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one way new immigrants changed cities, such as crowding tenements or building ethnic neighborhoods.",
+     "notEarned": "Naming a city without explaining how immigrants changed it does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

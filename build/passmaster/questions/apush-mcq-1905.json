@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1905",
+ "lesson": "apush-u6-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.11"
+ ],
+ "skills": [
+  "3.C"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Challenges to the Dominant Corporate Ethic"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "Social Criticism in the Gilded Age"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+   }
+  ],
+  "primary_sources": [
+   "Henry George, Progress and Poverty (1879)"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "u6-611-george",
+ "stimulus": {
+  "kind": "text",
+  "text": "“We plow new fields, we open new mines, we found new cities; we drive back the Indian and exterminate the buffalo; we girdle the land with iron roads and lace the air with telegraph wires; we add knowledge to knowledge, and utilize invention after invention; we build schools and endow colleges; yet it becomes no easier for the masses of our people to make a living. On the contrary, it is becoming harder. . . . It is not that laborers have increased faster than capital; it is not that population is pressing against subsistence; it is not that machinery has made “work scarce;” it is not that there is any real antagonism between labor and capital—it is simply that land is becoming more valuable; that the terms on which labor can obtain access to the natural opportunities which alone enable it to produce, are becoming harder and harder.”\n\n(Henry George, Progress and Poverty, 1879, Book VII, Chapter 5)",
+  "source_note": "Henry George, Progress and Poverty (1879), Book VII, Chapter 5, “Of Property in Land in the United States.” Public domain; wording checked against the 1879 D. Appleton text, scanned page (Wikisource, IA progresspovertyi00georiala.pdf p. 379, printed p. 353). Ellipsis marks sentences omitted between complete sentences."
+ },
+ "stem": "What does George’s list of causes he rejects show about his argument?",
+ "options": [
+  {
+   "key": "A",
+   "text": "He believed the poor were lazy and unwilling to work",
+   "misconception": "George never blames the poor; he blames the terms on which labor reaches land."
+  },
+  {
+   "key": "B",
+   "text": "He located the problem in land ownership rules, not in people or machines"
+  },
+  {
+   "key": "C",
+   "text": "He believed the government should own every factory and mine",
+   "misconception": "George’s passage is about land, not about the government owning factories and mines."
+  },
+  {
+   "key": "D",
+   "text": "He believed the nation had too little good land left to farm",
+   "misconception": "George says the public domain is receding, but his cause is land’s rising value, not its amount."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "George blames the price of access to land, not the character of workers.",
+  "B": "He rejects population, machinery, and class conflict, leaving private property in land as the cause.",
+  "C": "The passage argues about land ownership, not state ownership of factories and mines.",
+  "D": "A receding public domain is part of the picture, but rising land value is the cause he names.",
+  "general": "Read the rejections as a map of the argument.\n1. George rejects faster-growing labor, population pressure, and scarce work from machines.\n2. He also rejects a real antagonism between labor and capital.\n3. What remains is private property in land and its rising value.\n4. The problem, then, sits in the rules of land ownership, not in people or machines.\nRemember: what an author rules out tells you where the argument lives."
+ }
+}

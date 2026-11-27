@@ -1,0 +1,86 @@
+{
+  "answerKey": "B",
+  "difficulty": 3,
+  "figures": [
+    {
+      "alt": "A giant octopus labeled Standard Oil wraps its tentacles around the Capitol and a state capitol and reaches toward the White House while crushing small businessmen below",
+      "caption": "Standard Oil as a giant octopus reaching for government buildings, Puck, 1904",
+      "file": "u6/5s24-ch18-mcq-07.jpg",
+      "id": "fig-apush-mcq-1747",
+      "license": "Public domain: 1904 cartoon, Library of Congress print.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Standard_oil_octopus_loc_color.jpg"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ]
+  },
+  "id": "apush-mcq-1747",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "text": "Small businessmen welcomed Standard Oil's arrival",
+      "misconception": "The men at the bottom are pinned down and struggling, not welcoming the octopus."
+    },
+    {
+      "key": "B",
+      "text": "Standard Oil crushed its smaller rivals"
+    },
+    {
+      "key": "C",
+      "text": "Small businessmen owned Standard Oil",
+      "misconception": "The octopus is labeled Standard Oil; the small men are its victims, not its owners."
+    },
+    {
+      "key": "D",
+      "text": "Standard Oil sold its oil only to small shops",
+      "misconception": "The cartoon shows the trust crushing rivals, not selling only to small shops."
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "The men at the bottom are pinned under the octopus's arms, still clutching their papers; nothing about them looks welcoming.",
+    "B": "At the bottom of the picture, small businessmen are pinned under the octopus's arms, still clutching their papers. The cartoon shows the trust crushing the smaller rivals in its way.",
+    "C": "The octopus wears the Standard Oil label; the small businessmen are the ones being crushed, not the owners.",
+    "D": "The cartoon is about power over rivals and government, not about who the company sold oil to.",
+    "general": "Look at the bottom of the picture, not just the top.\n1. The octopus's arms reach across the land to the Capitol and the White House.\n2. At the bottom, small businessmen are pinned under its arms.\n3. They clutch papers and struggle while the octopus holds them down.\n4. So the cartoon shows the trust crushing smaller rivals as well as reaching for government.\nRemember: in a cartoon, the figures at the bottom are victims, not decoration."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "3.A"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "What do the small businessmen at the bottom of the cartoon show?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Udo Keppler, 'Next!', Puck, September 7, 1904. Public domain, Library of Congress print.",
+    "text": "Udo Keppler's cartoon 'Next!' (Puck, September 7, 1904) shows a giant octopus with 'STANDARD OIL' written across its head. Its tentacles reach across the land, wrapping around the Capitol and a state capitol and reaching toward the White House, and squeezing small businessmen at the bottom of the picture."
+  },
+  "stimulus_set": "standard-oil-octopus",
+  "themes": [
+    "PCE",
+    "WXT"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

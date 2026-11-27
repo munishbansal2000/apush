@@ -1,0 +1,79 @@
+{
+  "id": "apush-mcq-1957",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.13"
+  ],
+  "skills": [
+    "1.A"
+  ],
+  "themes": [
+    "PCE",
+    "GEO"
+  ],
+  "reasoning": "comparison",
+  "difficulty": 2,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "B. Politics, Big Business, and Corruption in the Gilded Age"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Gilded Age Politics"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "National Politics"
+      }
+    ],
+    "primary_sources": [
+      "Presidential election returns, 1876-1896 (American Presidency Project)"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-613-elections-table",
+  "stimulus": {
+    "kind": "table",
+    "text": "Presidential elections, 1876–1896. Popular vote shares and electoral votes for the leading candidates.\n\n| Year | Candidate | Party | Popular vote | Electoral votes |\n|---|---|---|---|---:|\n| 1876 | Rutherford B. Hayes | Republican | 48.0% | 185 |\n| 1876 | Samuel J. Tilden | Democratic | 51.0% | 184 |\n| 1880 | James A. Garfield | Republican | 48.3% | 214 |\n| 1880 | Winfield S. Hancock | Democratic | 48.2% | 155 |\n| 1884 | Grover Cleveland | Democratic | 48.9% | 219 |\n| 1884 | James G. Blaine | Republican | 48.3% | 182 |\n| 1888 | Benjamin Harrison | Republican | 47.8% | 233 |\n| 1888 | Grover Cleveland | Democratic | 48.6% | 168 |\n| 1892 | Grover Cleveland | Democratic | 46.0% | 277 |\n| 1892 | Benjamin Harrison | Republican | 43.0% | 145 |\n| 1892 | James B. Weaver | People’s Party | 8.5% | 22 |\n| 1896 | William McKinley | Republican | 51.0% | 271 |\n| 1896 | William Jennings Bryan | Democratic | 46.7% | 176 |\n\nIn 1896 the People’s Party also nominated Bryan.",
+    "source_note": "Presidential election returns, 1876–1896, American Presidency Project (via the Gilder Lehrman Institute). Popular vote shares rounded to one decimal place."
+  },
+  "stem": "In the election of 1888, what does the table show?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Harrison won both the popular vote and the electoral vote",
+      "misconception": "Cleveland won the popular vote in 1888, not Harrison."
+    },
+    {
+      "key": "B",
+      "text": "Cleveland won both the popular vote and the electoral vote",
+      "misconception": "Cleveland won the popular vote but lost the electoral vote in 1888."
+    },
+    {
+      "key": "C",
+      "text": "Cleveland won the popular vote but lost the electoral vote"
+    },
+    {
+      "key": "D",
+      "text": "Harrison lost the popular vote and the electoral vote",
+      "misconception": "Harrison lost the popular vote but won the electoral vote in 1888."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "The table gives Cleveland 48.6 percent and Harrison 47.8 percent.",
+    "B": "Cleveland took 168 electoral votes to Harrison's 233.",
+    "C": "Cleveland leads in popular vote, 48.6 to 47.8, but trails 168 to 233.",
+    "D": "Harrison won the electoral vote with 233 votes.",
+    "general": "Compare the two columns for 1888.\n1. Find the 1888 rows and read the popular vote column first.\n2. Cleveland has 48.6 percent and Harrison has 47.8 percent.\n3. Then read the electoral vote column: Harrison has 233 and Cleveland has 168.\n4. The two columns point opposite ways, so the popular winner lost the election.\nRemember: popular votes and electoral votes are counted separately, so check both."
+  }
+}

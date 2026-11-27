@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1933",
+ "lesson": "apush-u6-l5",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 6,
+ "topics": [
+  "6.12"
+ ],
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.12 Controversies over the Role of Government in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "Agrarian Anger and Populism"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "National Politics"
+   }
+  ],
+  "primary_sources": [
+   "Interstate Commerce Act, Section 1, February 4, 1887",
+   "Munn v. Illinois, 94 U.S. 113 (1877)"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "u6-612-railroad-regulation",
+ "stimulus": {
+  "kind": "table",
+  "text": "Government and the railroads:\n\n| Year | Event |\n| 1877 | In Munn v. Illinois, the Supreme Court upholds an Illinois law setting maximum charges for grain storage, ruling that property used in a way that affects the public may be regulated. |\n| 1886 | In Wabash v. Illinois, the Supreme Court rules that a state may not regulate railroad rates on shipments crossing state lines. |\n| 1887 | Congress passes the Interstate Commerce Act, creating the Interstate Commerce Commission to regulate railroads. The Act requires that railroad charges “shall be reasonable and just.” |\n| 1897 | In the Maximum Rate Case, the Supreme Court rules that the Interstate Commerce Commission may not set railroad rates. |",
+  "source_note": "Munn v. Illinois, 94 U.S. 113 (1877); Wabash, St. Louis and Pacific Railway Co. v. Illinois, 118 U.S. 557 (1886); Interstate Commerce Act, February 4, 1887, Section 1 (quoted clause exact); Interstate Commerce Commission v. Cincinnati, New Orleans and Texas Pacific Railway Co., 167 U.S. 479 (1897), the Maximum Rate Case."
+ },
+ "stem": "According to the table, what did Munn v. Illinois decide?",
+ "options": [
+  {
+   "key": "A",
+   "text": "States may not regulate any business at all",
+   "misconception": "Munn upheld a state regulation, so states could regulate in this case."
+  },
+  {
+   "key": "B",
+   "text": "Only Congress may set grain storage charges for farmers",
+   "misconception": "Munn upheld an Illinois state law, not a federal one."
+  },
+  {
+   "key": "C",
+   "text": "Railroad rates may never be regulated by any government",
+   "misconception": "Munn upheld regulation of grain storage charges, so regulation was allowed."
+  },
+  {
+   "key": "D",
+   "text": "A state may regulate a business that affects the public"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Munn upheld the Illinois law, so states could regulate here.",
+  "B": "The law Munn upheld was an Illinois law, not a federal one.",
+  "C": "Munn allowed regulation of grain storage, so regulation was not barred.",
+  "D": "The Court upheld Illinois's maximum charges for grain storage, a business affecting the public.",
+  "general": "Take the holding from the row.\n1. The 1877 row says the Court upheld an Illinois law on grain storage charges.\n2. The law set maximum charges, so the state was regulating prices.\n3. The Court allowed it because the business affected the public.\n4. Munn opened the door to regulation; it did not close it.\nRemember: a table row states its own result, so read the row, not the pattern."
+ }
+}

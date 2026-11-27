@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-1881",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.10"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "GEO",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.10 Development of the Middle Class"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Rise of the Modern American City"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Electric streetcars on Canal Street, New Orleans, Detroit Publishing Company postcard, 1907"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "canal-streetcars",
+ "stimulus": {
+  "kind": "image",
+  "text": "The image is a hand-colored postcard of Canal Street, New Orleans, copyrighted 1907 by the Detroit Publishing Company. It shows a wide city street with several sets of streetcar tracks running down its middle and three electric streetcars carrying passengers. Tall commercial buildings line both sides of the street, and a horse-drawn carriage stands at the right edge.",
+  "source_note": "Electric streetcars on Canal Street, New Orleans, 1907 postcard view (Detroit Publishing Company). Public domain image from Wikimedia Commons; viewed by the writer."
+ },
+ "stem": "What does the postcard show in the middle of Canal Street?",
+ "options": [
+  {
+   "key": "A",
+   "text": "A railroad train carrying passengers between cities",
+   "misconception": "The vehicles run on street tracks in the city, not on a railroad between cities."
+  },
+  {
+   "key": "B",
+   "text": "Streetcar tracks with electric streetcars carrying passengers"
+  },
+  {
+   "key": "C",
+   "text": "A parade of soldiers marching to war",
+   "misconception": "No soldiers or parade appear in the postcard."
+  },
+  {
+   "key": "D",
+   "text": "A farmers' market with stalls selling produce",
+   "misconception": "No market stalls appear; the street is filled with tracks and cars."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Intercity trains do not run down a city street with stops. These are streetcars.",
+  "B": "Several sets of tracks run down the middle of the street, and three electric streetcars carry passengers on them.",
+  "C": "The people in the street are passengers and pedestrians, not a marching parade.",
+  "D": "The street holds tracks and streetcars, not market stalls.",
+  "general": "Look at the middle of the street first.\n1. Tracks run down the center of the street in several sets.\n2. Two electric streetcars stand on those tracks.\n3. Tall commercial buildings line both sides.\n4. Tracks plus streetcars in a city street are the picture's main subject.\nRemember: describe the center of the image before you describe its edges."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1881",
+   "file": "u6/original-u6-midclass-06.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/CanalMagazineStreetcarsPub1907.jpg",
+   "license": "Public domain",
+   "caption": "Electric streetcars on Canal Street, New Orleans, 1907 postcard",
+   "alt": "Hand-colored postcard of a wide city street with streetcar tracks and three electric streetcars, tall commercial buildings on both sides, and a horse-drawn carriage at the right"
+  }
+ ]
+}

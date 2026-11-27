@@ -1,0 +1,89 @@
+{
+ "id": "apush-saq-0187",
+ "lesson": "apush-u6-l4",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.9"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.9 Responses to Immigration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "status": "final",
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, written for this question from Barron’s Premium 2027 Chapter 8 (Topic 6.9), 5 Steps to a 5, 2024, Chapter 18, and Princeton Review, Chapter 10.",
+  "text": "Original secondary passage, written for this question from the grounding books:\n\nThe new immigration of the 1880s brought millions of people from southern and eastern Europe into American cities, and Americans answered in sharply different ways. Nativists such as Henry Cabot Lodge warned that the newcomers were alien in language and custom and unfit for citizenship, and the Immigration Restriction League, founded in 1894, demanded a literacy test for immigrants. At the same time, Social Darwinists such as William Graham Sumner argued that inequality was natural and that helping the poor would only weaken society, while settlement workers such as Jane Addams opened houses like Hull House in Chicago to teach English, run kindergartens, and aid immigrant families."
+ },
+ "saq_slot": 1,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one argument nativists made against the new immigrants.",
+   "modelAnswer": "Nativists argued that the new immigrants from southern and eastern Europe were alien in language and custom and unfit for American citizenship. They demanded a literacy test to keep such immigrants out.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one nativist argument, such as alien language and custom, unfitness for citizenship, or the need for a literacy test.",
+     "notEarned": "Naming the Immigration Restriction League without stating its argument does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain one way Social Darwinism justified inequality in the Gilded Age.",
+   "modelAnswer": "Sumner argued that inequality came from a natural law of competition in which the fittest survived. Helping the poor would only interfere with nature, so the rich owed the poor nothing and government aid would weaken society.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one Social Darwinist justification, such as survival of the fittest as a law of nature or aid to the poor weakening society.",
+     "notEarned": "Naming Social Darwinism without explaining how it justified inequality does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain one way the settlement house movement responded to immigrants differently from the nativists.",
+   "modelAnswer": "Instead of shutting immigrants out, settlement workers such as Jane Addams at Hull House taught English, ran kindergartens, and offered childcare and employment help. They tried to bring immigrant families into American city life rather than keeping them out of the country.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one settlement house response that differs from nativism, such as teaching English, running kindergartens, or aiding immigrant families.",
+     "notEarned": "Naming Hull House without explaining how its work differed from nativism does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

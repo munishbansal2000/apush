@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1930",
+ "lesson": "apush-u6-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.12"
+ ],
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.12 Controversies over the Role of Government in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "Gilded Age Politics"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+   }
+  ],
+  "primary_sources": [
+   "Sherman Antitrust Act, Section 1, July 2, 1890",
+   "United States v. E. C. Knight Co., 156 U.S. 1 (1895)"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "u6-612-sherman-knight",
+ "stimulus": {
+  "kind": "text",
+  "text": "Section 1 of the Sherman Antitrust Act (July 2, 1890):\n\n“Every contract, combination in the form of trust or otherwise, or conspiracy, in restraint of trade or commerce among the several States, or with foreign nations, is hereby declared to be illegal.”\n\nFive years later, the Supreme Court decided United States v. E. C. Knight Company (1895). The American Sugar Refining Company had bought four Philadelphia refineries and gained control of about 98 percent of sugar manufacturing in the United States. The Court ruled 8–1 against the government, holding that manufacturing was a local activity, not interstate commerce. Chief Justice Fuller wrote, “Commerce succeeds to manufacture, and is not a part of it.” In the same year, the Supreme Court upheld the use of the Sherman Act against Eugene V. Debs and the leaders of the Pullman strike, on the ground that the strike restrained interstate commerce.",
+  "source_note": "Sherman Antitrust Act, Section 1, July 2, 1890 (Statutes at Large, 26 Stat. 209); United States v. E. C. Knight Co., 156 U.S. 1 (1895), 8-1, Chief Justice Fuller; In re Debs, 158 U.S. 564 (1895). The 98 percent figure follows the Supreme Court Historical Society account of the case."
+ },
+ "stem": "According to Section 1, what did the Sherman Act declare illegal?",
+ "options": [
+  {
+   "key": "A",
+   "text": "All manufacturing carried on inside a single state",
+   "misconception": "Section 1 reaches trade among the states, not manufacturing inside one state."
+  },
+  {
+   "key": "B",
+   "text": "Contracts, combinations, and conspiracies in restraint of interstate trade"
+  },
+  {
+   "key": "C",
+   "text": "Every large corporation, whatever business it did",
+   "misconception": "The Act bans restraints of trade, not large corporations as such."
+  },
+  {
+   "key": "D",
+   "text": "Every strike by workers in any industry at all",
+   "misconception": "Section 1 says nothing about strikes; it bans combinations in restraint of trade."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Section 1 names trade among the states, not manufacturing inside one state.",
+  "B": "Section 1 declares illegal every contract, combination, or conspiracy in restraint of trade.",
+  "C": "The Act bans restraints of trade, not the mere fact of being large.",
+  "D": "Section 1 says nothing about strikes, so a strike is not its target here.",
+  "general": "Read the section for its target.\n1. Section 1 names contracts, combinations, and conspiracies as its target.\n2. It reaches only trade or commerce among the states or with foreign nations.\n3. It does not ban manufacturing, size alone, or strikes in these words.\n4. The target is an agreement that restrains trade across state or national lines.\nRemember: a law's first section names what it bans, so start there."
+ }
+}

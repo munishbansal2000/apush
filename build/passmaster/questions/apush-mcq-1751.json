@@ -1,0 +1,78 @@
+{
+  "answerKey": "B",
+  "difficulty": 2,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ],
+    "primary_sources": [
+      "Ida M. Tarbell, The History of the Standard Oil Company (1904)"
+    ]
+  },
+  "id": "apush-mcq-1751",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Tarbell stresses enormous profits, not losses.",
+      "text": "That it lost money every year"
+    },
+    {
+      "key": "B",
+      "text": "That its profits and dividends were enormous"
+    },
+    {
+      "key": "C",
+      "misconception": "Standard Oil was a private company, not a government firm.",
+      "text": "That it was owned by the federal government"
+    },
+    {
+      "key": "D",
+      "misconception": "Tarbell says nothing about how many workers the company employed.",
+      "text": "That it employed very few workers"
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "Tarbell says the company makes far more than it pays out, and carries an ample reserve fund.",
+    "B": "Tarbell opens with the company’s enormous profits and counts dividends of about forty-five million dollars a year.",
+    "C": "Background: Standard Oil was Rockefeller’s private company. The government investigated it; it did not own it.",
+    "D": "The passage is about profits and dividends, not about the size of the workforce.",
+    "general": "Start with Tarbell’s first sentence.\n1. Her first sentence calls the company’s profits enormous.\n2. She then counts them: about forty-five million dollars a year in dividends.\n3. She adds that the company keeps a reserve fund besides.\n4. The whole passage is a count of how much money the combination made.\nRemember: an author’s first sentence usually names what the passage is about."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "3.A"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "What does Tarbell emphasize about the Standard Oil Company?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Ida M. Tarbell, The History of the Standard Oil Company, Vol. 2, Chapter 18 (1904), public domain.",
+    "text": "“The profits of the present Standard Oil Company are enormous. For five years the dividends have been averaging about forty-five million dollars a year, or nearly fifty per cent. on its capitalisation, a sum which capitalised at five per cent. would give $900,000,000. Of course this is not all that the combination makes in a year. It allows an annual average of 5.77 per cent. for deficit, and it carries always an ample reserve fund.”"
+  },
+  "stimulus_set": "tarbell-standard-oil",
+  "themes": [
+    "WXT"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

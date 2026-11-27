@@ -1,0 +1,85 @@
+{
+  "answerKey": "B",
+  "difficulty": 4,
+  "figures": [
+    {
+      "alt": "A stereoscopic view of the huge Montgomery Ward and Company building in Chicago, a multi-story block with a tall tower, captioned one of the sights of the city",
+      "caption": "The Montgomery Ward and Company establishment, Chicago, stereoscopic view",
+      "file": "u6/original-u6-midclass-05.jpg",
+      "id": "fig-apush-mcq-1771",
+      "license": "Public domain: stereoscopic view from the Robert N. Dennis collection.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/The_establilshment_of_the_Montgomery_Ward_%26_Co.%2C_one_of_the_sights_of_the_city%2C_Chicago%2C_Ill.%2C_U.S.A%2C_from_Robert_N._Dennis_collection_of_stereoscopic_views.jpg"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ]
+  },
+  "id": "apush-mcq-1771",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Mail-order houses sold factory goods; they did not stop factories from selling.",
+      "text": "They stopped factories from selling goods"
+    },
+    {
+      "key": "B",
+      "text": "They carried factory goods to a national market"
+    },
+    {
+      "key": "C",
+      "misconception": "Background: mail-order houses depended on the railroads to deliver goods, not on wagons.",
+      "text": "They replaced the railroads with horse-drawn wagons"
+    },
+    {
+      "key": "D",
+      "misconception": "Catalogs reached farm families far from cities, not only wealthy shoppers.",
+      "text": "They made goods only for wealthy city shoppers"
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "Mail-order houses were the sellers of factory goods, not their enemy. They moved the factories’ output.",
+    "B": "Background from the books: factories made goods cheaply in large numbers, catalogs offered them to people far from stores, and railroads delivered them. Ward joined production, selling, and transport.",
+    "C": "Background: the railroads carried Ward’s goods across the country. Wagons could not serve a national market.",
+    "D": "Background: the books stress that catalogs reached farm families far from cities. The market was broad, not only wealthy.",
+    "general": "Link the catalog to the factory and the railroad.\n1. Background from the books: factories made goods cheaply in large numbers.\n2. Those goods needed buyers beyond the factory town.\n3. Catalogs offered the goods to farm families, and railroads delivered them.\n4. Ward’s house is the link that joined making, selling, and carrying.\nRemember: a business that joins production to a national market is part of industrial capitalism."
+  },
+  "reasoning": "continuity-change",
+  "skills": [
+    "6.C"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "How did mail-order houses like Montgomery Ward connect to the rise of industrial capitalism?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "“The Establishment of Montgomery Ward and Co., One of the Sights of the City, Chicago,” stereoscopic view, Robert N. Dennis collection. Public domain.",
+    "text": "A stereoscopic view of the Montgomery Ward and Company establishment in Chicago, a huge multi-story building with a tall tower rising over the neighboring blocks. The caption calls it “one of the sights of the city,” and the building’s many windows show floor after floor of goods."
+  },
+  "stimulus_set": "montgomery-ward",
+  "themes": [
+    "WXT"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

@@ -1,0 +1,101 @@
+{
+ "id": "apush-saq-0172",
+ "type": "saq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 3,
+ "totalPoints": 3,
+ "skills": [
+  "1.B",
+  "5.A"
+ ],
+ "themes": [
+  "GEO",
+  "MIG"
+ ],
+ "reasoning": "continuity-change",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph by Solomon Butcher, 1886. Public domain. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Chrisman_sisters_by_Solomon_Butcher.jpg",
+  "text": "The photograph shows four sisters standing before their sod house on the Nebraska Plains in 1886, with two saddled horses and open grassland around them. The house is built of blocks of cut prairie sod, with grass still growing from its roof."
+ },
+ "stimulus_set": null,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one challenge of farming on the Great Plains that is visible in the photograph.",
+   "modelAnswer": "The house itself shows the challenge: with almost no trees on the Plains, the sisters built their home from blocks of cut sod. Settlers had to cut through thick prairie sod to reach soil they could farm.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one visible challenge, such as the lack of timber shown by the sod house, the treeless open prairie, or the isolation of the farm.",
+     "notEarned": "Describing the photograph without identifying a farming challenge, or naming a challenge that is not visible in it, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain one way American settlement rapidly transformed the West in the 25 years following the Civil War.",
+   "modelAnswer": "The Homestead Act of 1862 offered 160 acres to settlers, and the transcontinental railroad, completed in 1869, carried families west and their wheat east. Millions of settlers poured onto the Plains, and eight new western states joined the Union by 1890.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one transformation, such as homesteading, railroad building, the growth of farming or ranching, or the admission of new states.",
+     "notEarned": "Naming a transformation with no explanation, or describing a change from another period, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain one way Native Americans attempted to resist American settlement in the West in the 25 years following the Civil War.",
+   "modelAnswer": "The Sioux and their Cheyenne allies destroyed Custer's command at the Battle of the Little Bighorn in 1876, the most famous Native victory of the Indian wars. Later, the Ghost Dance movement offered spiritual resistance, promising the return of the buffalo and the disappearance of white settlers.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one form of resistance, such as armed resistance at Little Bighorn, the Ghost Dance movement, or another specific resistance.",
+     "notEarned": "Naming a resistance with no explanation, or describing cooperation rather than resistance, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "Challenges for Western Farmers"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The End of Native American Independence"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "figures": [
+  {
+   "id": "fig-apush-saq-0172",
+   "file": "u6/5s24-ch17-mcq-01.jpg",
+   "caption": "The Chrisman sisters beside their sod house in Nebraska, photographed by Solomon Butcher, 1886",
+   "alt": "Four young women in long dresses stand in tall prairie grass before a low house built of sod blocks, with two saddled horses at either side and open grassland behind",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Chrisman_sisters_by_Solomon_Butcher.jpg"
+  }
+ ]
+}

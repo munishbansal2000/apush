@@ -1,0 +1,78 @@
+{
+  "answerKey": "D",
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ],
+    "primary_sources": [
+      "William Graham Sumner, What Social Classes Owe to Each Other (1883)"
+    ]
+  },
+  "id": "apush-mcq-1742",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Sumner calls such relief a shifting of penalties onto the industrious.",
+      "text": "A federal program giving food and money to the unemployed"
+    },
+    {
+      "key": "B",
+      "misconception": "Sumner argues the state owes people only peace, order, and the guarantees of rights.",
+      "text": "A law taxing the rich to build public housing for the poor"
+    },
+    {
+      "key": "C",
+      "misconception": "Background: Sumner writes that inspection throws the cost onto taxpayers, including the Forgotten Man.",
+      "text": "Government inspectors sent to protect workers in factories"
+    },
+    {
+      "key": "D",
+      "text": "Leaving businesses and workers alone to succeed or fail on their own efforts"
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "A relief program is the kind of interference Sumner attacks: it moves the penalty onto people who did not earn it.",
+    "B": "Background: Sumner writes that the state owes people nothing but peace, order, and the guarantees of rights. A tax for housing goes beyond that.",
+    "C": "Background: Sumner writes that providing things by boards and inspectors throws the cost onto taxpayers. He distrusts that remedy.",
+    "D": "Sumner argues that penalties cannot be destroyed, only shifted, and that the state should not interfere with the natural working of society. Leaving people alone follows from that argument.",
+    "general": "Apply Sumner’s rule to each policy.\n1. Sumner’s rule is that a penalty can only be shifted, never destroyed.\n2. Relief, taxes for housing, and inspectors all shift costs onto people who did not earn them.\n3. Only leaving people alone fits a writer who distrusts interference.\n4. Background: his rule is laissez-faire, the idea that government should stay out of business and relief.\nRemember: to predict what a writer would support, apply the rule the passage states."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "1.B"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "Which of the following policies would Sumner most likely have supported?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "William Graham Sumner, What Social Classes Owe to Each Other (1883), public domain. Excerpts joined with ellipses.",
+    "text": "“A drunkard in the gutter is just where he ought to be, according to the fitness and tendency of things. Nature has set up on him the process of decline and dissolution by which she removes things which have survived their usefulness. . . . Now, we never can annihilate a penalty. We can only divert it from the head of the man who has incurred it to the heads of others who have not incurred it. . . . The industrious and sober workman, who is mulcted of a percentage of his day’s wages to pay the policeman, is the one who bears the penalty. But he is the Forgotten Man.”"
+  },
+  "stimulus_set": "sumner-forgotten-man",
+  "themes": [
+    "PCE"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

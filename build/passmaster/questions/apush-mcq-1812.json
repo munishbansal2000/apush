@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1812",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "riis-tenements",
+ "stimulus": {
+  "kind": "text",
+  "text": "“To-day three-fourths of its people live in the tenements, and the nineteenth century drift of the population to the cities is sending ever-increasing multitudes to crowd them. The fifteen thousand tenant houses that were the despair of the sanitarian in the past generation have swelled into thirty-seven thousand, and more than twelve hundred thousand persons call them home.”\n\nJacob A. Riis, How the Other Half Lives (1890), Introduction.",
+  "source_note": "Jacob A. Riis, How the Other Half Lives (New York: Charles Scribner’s Sons, 1890), Introduction. Public domain; text checked against Project Gutenberg eBook 45502."
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Jacob A. Riis, How the Other Half Lives (1890)"
+  ]
+ },
+ "status": "final",
+ "stem": "According to Riis, what share of New York’s people lived in the tenements?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Three-fourths"
+  },
+  {
+   "key": "B",
+   "text": "One-fourth",
+   "misconception": "Picks the opposite fraction."
+  },
+  {
+   "key": "C",
+   "text": "One-half",
+   "misconception": "Guesses a half instead of reading the fraction."
+  },
+  {
+   "key": "D",
+   "text": "One-tenth",
+   "misconception": "Guesses a tenth instead of reading the fraction."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Riis writes that “three-fourths of its people live in the tenements.”",
+  "B": "One-fourth is the opposite share. Riis says three-fourths.",
+  "C": "One-half is too small. Riis says three-fourths.",
+  "D": "One-tenth is far too small. Riis says three-fourths.",
+  "general": "Find the fraction in the first sentence.\n1. Riis says three-fourths of the city’s people live in the tenements.\n2. Three-fourths means three out of every four people.\n3. That is most of the city, not a small part.\n4. The other fractions in the options do not match the text.\nRemember: when a passage gives you a number, use that number."
+ }
+}

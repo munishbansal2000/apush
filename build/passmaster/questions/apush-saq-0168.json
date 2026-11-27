@@ -1,0 +1,82 @@
+{
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.1 Contextualizing Period 6"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-saq-0168",
+ "lesson": "apush-u6-l1",
+ "parts": [
+  {
+   "modelAnswer": "With federal troops gone, Southern white leaders moved quickly to restore white rule: states rewrote constitutions with poll taxes and literacy tests that stripped Black men of the vote, and Jim Crow laws soon divided daily life by race. The federal government, which had once protected Black rights, no longer stood in the way.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify ONE way the end of Reconstruction changed the South after 1877.",
+   "scoring": [
+    {
+     "criterion": "Names a Southern change after 1877, such as disfranchisement constitutions, Jim Crow laws, or the withdrawal of federal protection of Black rights.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Railroads and factories pulled millions of people into cities, where immigrants and rural migrants crowded into tenements and worked long shifts in mills and plants. The nation shifted from a rural, farming society to an urban, industrial one, with new wealth for owners and new hardships for workers.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE way industrialization changed American life in the decades after the Civil War.",
+   "scoring": [
+    {
+     "criterion": "Explains an industrial change, such as urban growth, tenement life, factory work, or the shift from a rural to an urban society.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Racial inequality continued: slavery was gone, but Black Southerners still faced violence, disfranchisement, and segregation, a second-class status enforced by law and custom. The promise of the Reconstruction amendments survived on paper while daily life preserved much of the old racial order.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE continuity from the years before the Civil War that carried into the Gilded Age.",
+   "scoring": [
+    {
+     "criterion": "Explains a continuity, such as racial inequality, disfranchisement, or segregation surviving the end of slavery.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "continuity-change",
+ "saq_slot": 1,
+ "skills": [
+  "4.A",
+  "1.B"
+ ],
+ "source": "original; stimulus is an original secondary passage written for this question.",
+ "status": "final",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question, following 5 Steps to a 5, 2024, Chapter 16, and Barron's Premium 2027, Chapter 8, Topic 6.1.",
+  "text": "Historians often describe the Compromise of 1877 as the hinge between Reconstruction and the Gilded Age. In that bargain, Republican Rutherford B. Hayes took the presidency and the last federal troops left the South. With Washington's attention turned elsewhere, Southern states rewrote their laws and constitutions to strip Black citizens of political power, while the nation's energy poured into railroads, factories, and cities."
+ },
+ "stimulus_set": null,
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "topics": [
+  "6.1"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 6
+}

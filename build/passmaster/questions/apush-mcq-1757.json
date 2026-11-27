@@ -1,0 +1,78 @@
+{
+  "answerKey": "B",
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ],
+    "primary_sources": [
+      "Sherman Antitrust Act, Section 1 (1890)"
+    ]
+  },
+  "id": "apush-mcq-1757",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "text": "Only trade within a single state",
+      "misconception": "The act names trade “among the several States” — trade inside one state is not named."
+    },
+    {
+      "key": "B",
+      "text": "Trade between the states and foreign nations"
+    },
+    {
+      "key": "C",
+      "text": "Only businesses that sell oil",
+      "misconception": "The act names no industry; it bans combinations in restraint of trade."
+    },
+    {
+      "key": "D",
+      "text": "Only contracts signed before 1890",
+      "misconception": "The act names no date; it bans combinations whenever made."
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "The act names trade “among the several States, or with foreign nations”; trade inside one state is not in those words.",
+    "B": "The act declares illegal combinations “in restraint of trade or commerce among the several States, or with foreign nations” — its reach is interstate and foreign trade, not trade inside one state.",
+    "C": "The act bans combinations in restraint of trade; it names no industry at all.",
+    "D": "The act sets no date; it declares such combinations illegal whenever they are made.",
+    "general": "Read the last words of the section.\n1. The act bans combinations “in restraint of trade or commerce.”\n2. Then it names the trade: “among the several States, or with foreign nations.”\n3. Trade inside one state is not named.\n4. So the act reaches trade that crosses state or national lines, and stops there.\nRemember: a law's last clause often sets its boundary."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "1.A"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "According to the act's own words, what trade does it reach?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Sherman Antitrust Act, Section 1, approved July 2, 1890. Public domain.",
+    "text": "“Every contract, combination in the form of trust or otherwise, or conspiracy, in restraint of trade or commerce among the several States, or with foreign nations, is hereby declared to be illegal.”"
+  },
+  "stimulus_set": "sherman-act",
+  "themes": [
+    "PCE"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

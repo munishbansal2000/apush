@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-1834",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "exodusters-west",
+ "stimulus": {
+  "kind": "text",
+  "text": "Original secondary passage, written for this question from the grounding books:\n\nAfter Reconstruction ended, many African Americans left the rural South. Starting in the late 1870s, about 40,000 Black migrants known as Exodusters crossed the Mississippi River to settle in Kansas, with smaller numbers going on to Oklahoma and Colorado. They left behind Jim Crow laws and Ku Klux Klan violence, and they hoped to find land of their own and a fair chance to vote. At the same time, farm families across the country were leaving the countryside: machines let fewer hands farm more land, so younger sons and daughters moved to the cities for factory work.",
+  "source_note": "Original secondary passage, written for this question from Barron’s Premium 2027 Chapter 8 (Topic 6.8), 5 Steps to a 5, 2024, Chapter 18, and Princeton Review, Chapter 10."
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "status": "final",
+ "stem": "The passage gives two push factors that drove Exodusters from the South. They were what?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Jim Crow laws and Ku Klux Klan violence"
+  },
+  {
+   "key": "B",
+   "text": "The opening of Ellis Island and the Chinese Exclusion Act",
+   "misconception": "Confuses immigration policy with the Southern push factors."
+  },
+  {
+   "key": "C",
+   "text": "Factory wages and tenement housing",
+   "misconception": "Swaps a pull to the city for a push from the South."
+  },
+  {
+   "key": "D",
+   "text": "The Homestead Act and the transcontinental railroad",
+   "misconception": "Swaps a pull west for a push from the South."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The passage says the Exodusters left behind Jim Crow laws and Ku Klux Klan violence.",
+  "B": "Ellis Island and the Exclusion Act concern immigrants from abroad, not Black migrants leaving the South.",
+  "C": "Factory wages and tenements pulled people to cities. They did not push Exodusters from the South.",
+  "D": "The Homestead Act and the railroad pulled settlers west. They did not push Exodusters out of the South.",
+  "general": "Find what the Exodusters left behind.\n1. The passage says they left behind Jim Crow laws.\n2. It also says they left behind Ku Klux Klan violence.\n3. Those are the things that pushed them out.\n4. Ellis Island, wages, and railroads belong to other migrations.\n5. The push is in what they fled, not in what drew others on.\nRemember: a push factor is what people flee, not what draws them on."
+ }
+}

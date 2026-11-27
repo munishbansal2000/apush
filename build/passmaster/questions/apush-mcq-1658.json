@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1658",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.3"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "5.A",
+  "3.A"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "stem": "A historian argues that Pratt's schools and the Dawes Act were two halves of one policy. Which evidence best supports that argument?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Richard Henry Pratt, 'The Advantages of Mingling Indians with Whites,' address to the National Conference of Charities and Correction, Denver, 1892. Public domain. Text verified against the Carlisle Indian School Digital Resource Center (Dickinson College) and the Minnesota Historical Society transcription.",
+  "text": "Richard Henry Pratt, founder of the Carlisle Indian Industrial School (1879), in a speech to the National Conference of Charities and Correction, 1892 (ellipses mark omissions):\n\n\"A great general has said that the only good Indian is a dead one. In a sense, I agree with the sentiment, but only in this: that all the Indian there is in the race should be dead. Kill the Indian in him, and save the man.\""
+ },
+ "stimulus_set": "carlisle-pratt",
+ "options": [
+  {
+   "key": "A",
+   "text": "Both were written into law by the same Congress in the same year",
+   "misconception": "Background: Carlisle opened in 1879 and the Dawes Act passed in 1887; they were different instruments in different years."
+  },
+  {
+   "key": "B",
+   "text": "Both were opposed by Helen Hunt Jackson and other reformers",
+   "misconception": "Background: the reformers who followed Jackson pushed for allotment; they saw allotment as humane reform, not as an enemy."
+  },
+  {
+   "key": "C",
+   "text": "Both paid Native families to keep their children at home on the reservation",
+   "misconception": "Background: the schools removed children from home, and allotment broke up the reservation itself."
+  },
+  {
+   "key": "D",
+   "text": "Both attacked tribal life by remaking the individual, one through land, one through children"
+  }
+ ],
+ "rationales": {
+  "A": "Background: Carlisle opened in 1879 and the Dawes Act passed in 1887. A shared year would prove little, and the years do not match.",
+  "B": "Background: the reformers who followed Jackson pushed for allotment. They saw allotment as humane reform, not as an enemy.",
+  "C": "Background: the schools removed children from home, and allotment broke up the reservation itself.",
+  "D": "Background: The Dawes Act divided tribal land into individual plots, and the schools divided tribal identity by remaking each child. Different tools, one goal: the end of the tribe as a tribe.",
+  "general": "Picture two reform projects side by side, one handing out land deeds and one cutting children's hair.\n1. Ask what each one breaks apart. Background: Allotment breaks the shared reservation; the school breaks the shared culture.\n2. Ask what each one builds. Background: An individual farmer on his own plot, and an English-speaking worker in white society.\n3. Name the pattern. Two tools, one program: dissolve the tribe by remaking the person.\nRemember: a policy can wear two faces, a land law and a school, and still be one policy."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Indian Boarding Schools"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The End of Native American Independence"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

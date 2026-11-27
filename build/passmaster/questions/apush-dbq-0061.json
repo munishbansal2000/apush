@@ -1,0 +1,163 @@
+{
+ "id": "apush-dbq-0061",
+ "lesson": "apush-u6-l4",
+ "type": "dbq",
+ "pool": "test",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": null,
+ "source": "original; documents are public-domain primary sources, public data, or labeled paraphrases (see each document’s sourcing note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Rise of the Modern American City"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Chinese Exclusion Act, May 6, 1882 (22 Stat. 58)",
+   "Emma Lazarus, “The New Colossus” (1883)",
+   "Jacob A. Riis, How the Other Half Lives (1890)",
+   "Jacob A. Riis, “Bandits’ Roost, 59 1-2 Mulberry Street” (1888)",
+   "U.S. Bureau of the Census, Population of the 100 Largest Urban Places, 1870 and 1890",
+   "Jane Addams, Twenty Years at Hull-House (1910)",
+   "Denis Kearney, speeches to the Workingmen’s Party of California (1877–1878)"
+  ]
+ },
+ "status": "final",
+ "prompt": "Evaluate the extent to which immigration changed American cities between 1865 and 1898.",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "1882",
+   "title": "The Chinese Exclusion Act",
+   "source": "Chinese Exclusion Act, May 6, 1882 (22 Stat. 58), Section 1. Public domain.",
+   "sourcing": "The law itself; shows Congress singling out one nationality for exclusion.",
+   "text": "“Whereas in the opinion of the Government of the United States the coming of Chinese laborers to this country endangers the good order of certain localities within the territory thereof. . . . That from and after the expiration of ninety days next after the passage of this act, and until the expiration of ten years next after the passage of this act, the coming of Chinese laborers to the United States be, and the same is hereby, suspended.”"
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "1883",
+   "title": "Lazarus welcomes the poor",
+   "source": "Emma Lazarus, “The New Colossus” (1883). Public domain.",
+   "sourcing": "A poem for the Statue of Liberty; shows America pictured as a refuge for the poor.",
+   "text": "“Give me your tired, your poor,\nYour huddled masses yearning to breathe free,\nThe wretched refuse of your teeming shore.\nSend these, the homeless, tempest-tost to me,\nI lift my lamp beside the golden door!”"
+  },
+  {
+   "n": 3,
+   "kind": "text",
+   "date": "1890",
+   "title": "Riis on the tenements",
+   "source": "Jacob A. Riis, How the Other Half Lives (1890), Introduction. Public domain.",
+   "sourcing": "A reformer’s own account; shows how far tenement crowding had gone by 1890.",
+   "text": "“To-day three-fourths of its people live in the tenements, and the nineteenth century drift of the population to the cities is sending ever-increasing multitudes to crowd them. The fifteen thousand tenant houses that were the despair of the sanitarian in the past generation have swelled into thirty-seven thousand, and more than twelve hundred thousand persons call them home.”"
+  },
+  {
+   "n": 4,
+   "kind": "image",
+   "date": "1888",
+   "title": "An alley in the slums",
+   "source": "Jacob A. Riis, “Bandits’ Roost, 59 1-2 Mulberry Street,” 1888. Public domain.",
+   "sourcing": "A photograph from the slums; shows a crowded tenement alley as Riis’s readers saw it.",
+   "figure": "u7/5s24-exam2-mcq-12.jpg"
+  },
+  {
+   "n": 5,
+   "kind": "table",
+   "date": "1890",
+   "title": "Cities grow",
+   "source": "U.S. Bureau of the Census, Population of the 100 Largest Urban Places, 1870 and 1890. Public data.",
+   "sourcing": "Census counts; shows how fast the great cities grew in twenty years.",
+   "text": "| City | 1870 | 1890 |\n| New York | 942,292 | 1,515,301 |\n| Chicago | 298,977 | 1,099,850 |\n| Philadelphia | 674,022 | 1,046,964 |\n| St. Louis | 310,864 | 451,770 |\n| Boston | 250,526 | 448,477 |"
+  },
+  {
+   "n": 6,
+   "kind": "text",
+   "date": "1889",
+   "title": "Hull House opens",
+   "source": "Paraphrased from Jane Addams, Twenty Years at Hull-House (1910).",
+   "sourcing": "A settlement founder’s account; shows reformers moving into immigrant neighborhoods to help.",
+   "text": "Paraphrased from Jane Addams: in September 1889, Addams and Ellen Starr opened Hull House in a poor immigrant neighborhood on Chicago’s West Side, offering classes, a kindergarten, and a meeting place for the area’s Italian, Irish, Jewish, and German neighbors."
+  },
+  {
+   "n": 7,
+   "kind": "text",
+   "date": "1878",
+   "title": "Kearney demands exclusion",
+   "source": "Paraphrased from Denis Kearney’s speeches to the Workingmen’s Party of California, 1877–1878.",
+   "sourcing": "A nativist leader’s own slogan; shows the demand for restriction that Congress answered in 1882.",
+   "text": "Paraphrased from Kearney’s speeches: Chinese laborers undercut white wages, and “the Chinese must go.” The Workingmen’s Party demanded that Congress exclude Chinese immigrants."
+  }
+ ],
+ "rubric": [
+  {
+   "criterion": "Earns the point for a thesis that makes a historically defensible claim about the extent to which immigration changed American cities between 1865 and 1898, with a line of reasoning.",
+   "notEarned": "A thesis that merely restates the prompt, or one that makes no claim about extent, does not earn the point.",
+   "points": 1,
+   "skill": "6.A"
+  },
+  {
+   "criterion": "Earns the point for describing a broader historical context relevant to the prompt, such as post-Civil War industrialization, the growth of cities, or the rise of mass immigration.",
+   "notEarned": "A context that is only background on one document, or one set outside the period, does not earn the point.",
+   "points": 1,
+   "skill": "4.B"
+  },
+  {
+   "criterion": "Earns the point for using the content of at least three documents to support the argument.",
+   "notEarned": "Using fewer than three documents, or quoting documents without connecting them to the argument, does not earn the point.",
+   "points": 1,
+   "skill": "6.B"
+  },
+  {
+   "criterion": "Earns the point for using at least six documents to support the argument, with specific evidence from each.",
+   "notEarned": "Using fewer than six documents, or listing documents without using their content, does not earn the point.",
+   "points": 1,
+   "skill": "6.B"
+  },
+  {
+   "criterion": "Earns the point for using at least one piece of specific outside evidence, such as the opening of Ellis Island in 1892, the Exoduster movement, or the settlement house movement, to support the argument.",
+   "notEarned": "Repeating document content without adding outside evidence does not earn the point.",
+   "points": 1,
+   "skill": "6.B"
+  },
+  {
+   "criterion": "Earns the point for explaining how at least one document’s point of view, purpose, historical situation, or audience matters to the argument.",
+   "notEarned": "Identifying a document’s author without explaining why that matters does not earn the point.",
+   "points": 1,
+   "skill": "3.B"
+  },
+  {
+   "criterion": "Earns the point for a complex argument, such as showing that immigration changed some parts of American life while leaving others unchanged, or that the same changes helped some Americans and hurt others.",
+   "notEarned": "A one-sided argument that ignores counter-evidence, or a complexity move stated without support, does not earn the point.",
+   "points": 1,
+   "skill": "6.D"
+  }
+ ],
+ "modelOutline": "Thesis: Between 1865 and 1898 immigration changed American cities profoundly, remaking who lived in them, where they lived, and how the cities were governed and reformed, although the change was uneven, since the cities’ business districts and wealthy quarters carried on much as before.\nContext: After the Civil War, factories drew workers from abroad and from American farms into the cities, and the 1880s brought the largest immigration wave yet, mostly from southern and eastern Europe.\nEvidence: Document 5 shows the scale: New York grew from 942,292 to 1,515,301 between 1870 and 1890, and Chicago nearly quadrupled. Document 3 shows where the newcomers lived: three-fourths of New Yorkers in tenements, with tenant houses rising from fifteen thousand to thirty-seven thousand. Document 4 shows the same crowding in one alley.\nEvidence continued: Document 2 shows the welcome America promised the poor, while Document 1 shows the opposite answer: Congress suspending Chinese laborers for ten years. Document 7 shows the nativist demand behind that law. Document 6 shows the reform answer: Hull House opening in an immigrant neighborhood in 1889.\nOutside evidence: Ellis Island opened in New York harbor in 1892 to receive the new immigrants, and the Lower East Side became the most densely populated place in the world by the end of the century.\nComplexity: the same immigration that crowded the tenements also built the cities’ workforce and their ethnic neighborhoods, so the change was both a burden the cities struggled with and the labor that made their growth possible.",
+ "totalPoints": 7
+}

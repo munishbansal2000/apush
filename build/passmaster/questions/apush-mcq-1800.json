@@ -1,0 +1,76 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "id": "apush-mcq-1800",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The passage says nothing about children refusing school.",
+   "text": "Children in the cities refused to attend any school at all."
+  },
+  {
+   "key": "B",
+   "text": "Simple machine tasks let children work for low pay."
+  },
+  {
+   "key": "C",
+   "misconception": "The passage says families needed extra wages, not that they grew wealthy.",
+   "text": "Families grew wealthy and no longer needed any wages at all."
+  },
+  {
+   "key": "D",
+   "misconception": "The passage says nothing about a ban on adult workers.",
+   "text": "The government banned all adult workers from the factories entirely."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The passage says nothing about children refusing school.",
+  "B": "The passage says work was broken into simple tasks and children’s pay was lower, so children could do the work cheaply.",
+  "C": "The passage says families needed extra wages, not that they grew wealthy.",
+  "D": "The passage says nothing about a ban on adult workers.",
+  "general": "Join the two facts the passage gives.\n1. Machines broke work into simple, repeated tasks.\n2. Simple tasks need little training, so children could do them.\n3. Children’s pay was lower than men’s, so employers preferred them.\n4. Simple work plus cheap pay is why child labor grew.\n5. Simple work plus cheap pay explains growth better than any single fact alone.\nRemember: an explanation often joins two facts from the same passage."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.B"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "Which fact from the passage best explains why child labor grew in the Gilded Age?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, written for this question from Barron’s Premium 2027 Chapter 8 (Topic 6.7), 5 Steps to a 5, 2024, Chapter 18, and Princeton Review, Chapter 10.",
+  "text": "Original secondary passage, written for this question from the grounding books:\n\nAs factory work was broken into simple, repeated tasks, employers hired more women and children, whose pay was lower than men’s. Families often needed the extra wages because a working-class man’s pay alone was low. By 1900, children aged ten to fifteen made up 18 percent of the industrial workforce, and women made up 17 percent. Machines also took skill out of work: a craftsman who once set his own pace now repeated one task at a machine for hours, and unsafe mills and mines injured workers in large numbers."
+ },
+ "stimulus_set": "women-children-workforce",
+ "themes": [
+  "WOR",
+  "SOC"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

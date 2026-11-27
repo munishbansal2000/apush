@@ -1,0 +1,79 @@
+{
+ "answerKey": "D",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "In re Debs, 158 U.S. 564 (1895)"
+  ]
+ },
+ "id": "apush-mcq-1793",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The passage gives the power to the national government, not to the states alone.",
+   "text": "Strikes are a matter for the states alone, and the national government may not act."
+  },
+  {
+   "key": "B",
+   "misconception": "The passage says the nation may compel obedience to its laws.",
+   "text": "Courts may never order striking workers back to their jobs, whatever the strike blocks."
+  },
+  {
+   "key": "C",
+   "misconception": "The passage roots the power in the Constitution, not in a new law.",
+   "text": "The government may act only after Congress passes a new law for the purpose."
+  },
+  {
+   "key": "D",
+   "text": "A strike blocking interstate trains and the mail can be met with federal force."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The passage gives the power to the national government, not to the states alone.",
+  "B": "The passage says the nation may compel obedience to its laws.",
+  "C": "The passage roots the power in the Constitution, not in a new law.",
+  "D": "Trains and mail are the passage’s own examples, and the army and militia are its own answer, so a strike blocking them can be met with federal force.",
+  "general": "Trace the passage from power to result.\n1. The national government controls interstate commerce and the mails.\n2. Its strong arm may brush away obstructions to both.\n3. The army and militia stand ready to compel obedience.\n4. So a strike that blocks trains and mail can be met with federal force.\nRemember: a court’s examples are the safest ground for a “follows from” claim."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.D"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "Which claim best follows from the Court’s reasoning in the passage?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Justice David J. Brewer, opinion of the Court, In re Debs, 158 U.S. 564 (1895). Public domain.",
+  "text": "“The strong arm of the national government may be put forth to brush away all obstructions to the freedom of interstate commerce or the transportation of the mails. If the emergency arises, the army of the Nation, and all its militia, are at the service of the Nation to compel obedience to its laws.”"
+ },
+ "stimulus_set": "in-re-debs-1895",
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

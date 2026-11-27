@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-1846",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.9"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "MIG",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.9 Responses to Immigration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "origin-shares-table",
+ "stimulus": {
+  "kind": "table",
+  "text": "Share of all immigrants to the United States, by country of birth (percent).\n\n| Country | 1861–1870 | 1891–1900 |\n| Great Britain | 24.5 | 7.5 |\n| Ireland | 18.8 | 10.0 |\n| Germany | 34.0 | 14.0 |\n| Austria-Hungary | 0.3 | 16.0 |\n| Russia and Poland | 0.2 | 14.0 |\n| Italy | 0.5 | 18.0 |",
+  "source_note": "Encyclopaedia Britannica, 11th edition (1911), article “Migration,” table of nationality of immigrants, compiled from official United States immigration figures. Public domain."
+ },
+ "stem": "The table best supports which of the following conclusions about the change in immigration between 1861-1870 and 1891-1900?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The share from northern and western Europe grew while the share from southern and eastern Europe fell",
+   "misconception": "Reads the table backwards, swapping the rising and falling groups."
+  },
+  {
+   "key": "B",
+   "text": "The share from southern and eastern Europe grew sharply while the share from Britain, Ireland, and Germany fell"
+  },
+  {
+   "key": "C",
+   "text": "Every country's share stayed about the same across the thirty years",
+   "misconception": "Claims sameness the paired numbers disprove."
+  },
+  {
+   "key": "D",
+   "text": "Italy and Austria-Hungary sent almost no immigrants in either period",
+   "misconception": "Claims two groups sent almost no one, but both grew large."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "The shares from Britain, Ireland, and Germany all fall, while the shares from Austria-Hungary, Russia and Poland, and Italy all rise. The movement runs the other way.",
+  "B": "The old sources all fall: Britain from 24.5 to 7.5, Ireland from 18.8 to 10.0, Germany from 34.0 to 14.0. The new sources all rise sharply: Austria-Hungary to 16.0, Russia and Poland to 14.0, Italy to 18.0.",
+  "C": "No share stays the same: Britain falls by 17 points and Italy rises by 17.5. The table shows large change, not sameness.",
+  "D": "Italy rises from 0.5 to 18.0 and Austria-Hungary from 0.3 to 16.0. Both sent large shares by the 1890s.",
+  "general": "Compare the two columns country by country.\n1. Great Britain falls from 24.5 to 7.5, Ireland from 18.8 to 10.0, and Germany from 34.0 to 14.0.\n2. Austria-Hungary rises from 0.3 to 16.0, Russia and Poland from 0.2 to 14.0, and Italy from 0.5 to 18.0.\n3. So the old sources shrank while the new sources grew sharply.\n4. The table shows a change in origins, not sameness or an ending.\nRemember: a change over time is read by pairing each row's two numbers."
+ }
+}

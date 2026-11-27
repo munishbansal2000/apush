@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-1875",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.10"
+ ],
+ "skills": [
+  "5.A"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.10 Development of the Middle Class"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "Uneven Affluence"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Floor plan of the first floor of Macy's Department Store, New York, as built 1901-1902"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "macy-floor-plan",
+ "stimulus": {
+  "kind": "image",
+  "text": "The image is a floor plan of the first floor of Macy's Department Store in New York, as built 1901–1902. It shows one very large open floor crossed by a grid of columns, with a grand staircase at its center, entrances on Broadway and 35th Street, and small rooms for stairs and lifts along the edges. The plan is labeled “FIRST FLOOR.”",
+  "source_note": "Floor plan of the first floor of Macy's Department Store, New York, as built 1901-1902. Public domain image from Wikimedia Commons; viewed by the writer."
+ },
+ "stem": "As a piece of historical evidence, the floor plan best supports which conclusion about department stores?",
+ "options": [
+  {
+   "key": "A",
+   "text": "They were large, carefully organized stores built to display many goods under one roof"
+  },
+  {
+   "key": "B",
+   "text": "Most Americans did their shopping in department stores by 1902",
+   "misconception": "The plan shows one store, not where most Americans shopped."
+  },
+  {
+   "key": "C",
+   "text": "They caused every small-town general store to close for good",
+   "misconception": "The plan shows one building; it says nothing about small-town shops."
+  },
+  {
+   "key": "D",
+   "text": "They sold a larger volume of goods than any other retailer in the country",
+   "misconception": "The plan shows size and layout, not sales totals."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "A whole city block of open selling floor, planned around columns, stairs, and entrances, is a retail business organized on a large scale.",
+  "B": "One store's plan cannot show what most Americans did. Most still shopped in small stores or by mail.",
+  "C": "Small shops survived alongside department stores. The plan says nothing about them closing.",
+  "D": "Sales totals are numbers, and the plan gives none. Size of floor is not a sales figure.",
+  "general": "Ask what a plan can prove and what it cannot.\n1. The plan proves the store was large: a full open floor with stairs and lifts.\n2. It proves the space was planned: columns, entrances, and a central staircase.\n3. It proves nothing about shoppers nationwide or about sales totals.\n4. So the sound conclusion is about the store's scale and organization.\nRemember: a plan proves shape and size; it does not prove popularity or profit."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1875",
+   "file": "u6/original-u6-midclass-04.png",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Macy_first_floor.png",
+   "license": "Public domain",
+   "caption": "Floor plan of the first floor of Macy's Department Store, New York, as built 1901-1902",
+   "alt": "Floor plan of one large open store floor crossed by a grid of columns, with a grand staircase at the center and entrances marked on Broadway and 35th Street"
+  }
+ ]
+}

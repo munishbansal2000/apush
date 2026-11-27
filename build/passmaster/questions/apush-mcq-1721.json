@@ -1,0 +1,87 @@
+{
+  "id": "apush-mcq-1721",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "answerKey": "D",
+  "skills": [
+    "1.B",
+    "5.B"
+  ],
+  "themes": [
+    "WXT",
+    "GEO"
+  ],
+  "reasoning": "causation",
+  "stem": "How did the railroads change mining in the West after the transcontinental line was finished?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "A. J. Russell, Golden Spike ceremony, Promontory Summit, Utah, May 10, 1869. Public domain. https://commons.wikimedia.org/wiki/File:Golden_Spike_ceremony%2C_Promontory%2C_Utah%2C_May_10%2C_1869.jpg",
+    "text": "The photograph shows two locomotives standing nose to nose on a single track at Promontory Summit, Utah, on May 10, 1869. A large crowd of workers and officials stands between and around the engines, shaking hands and cheering. One man in the center holds a bottle. The engines face each other where the Union Pacific and Central Pacific tracks met."
+  },
+  "stimulus_set": "golden-spike",
+  "options": [
+    {
+      "key": "A",
+      "text": "Mining ended, because the railroads carried all the gold and silver east",
+      "misconception": "Background: mining grew after the railroads arrived; the trains carried ore and machinery, they did not end the mines."
+    },
+    {
+      "key": "B",
+      "text": "Individual prospectors with picks and pans took over every mine in the West",
+      "misconception": "Background: lone prospectors found the first strikes, but big companies with machines soon took the mines over."
+    },
+    {
+      "key": "C",
+      "text": "The railroads banned mining near their tracks to protect the trains",
+      "misconception": "Background: no such ban existed; railroads served mining towns and hauled their ore."
+    },
+    {
+      "key": "D",
+      "text": "Big mining companies with heavy machinery replaced lone prospectors"
+    }
+  ],
+  "rationales": {
+    "A": "Background: the railroads carried ore out and machinery in, and mining towns boomed along the lines. Mining grew, it did not end.",
+    "B": "Background: a lone prospector could stake a claim, but digging deep ore took machines and money. Large companies bought the claims and ran the mines.",
+    "C": "Background: railroads ran straight to mining towns like those of the Comstock Lode. They profited from the mines, they did not ban them.",
+    "D": "Background from the books: most prospectors never found anything of value, and those who did rarely had the means to work a mine. Large corporations like the Anaconda Copper Mining Company of Butte, Montana, came to dominate mining, working copper, silver, and gold for industry.",
+    "general": "Follow the ore from the ground to the mill.\n1. Background: a lone prospector could find a rich vein, but digging it out took drills, pumps, and mills.\n2. Background: the railroads hauled that heavy machinery in and hauled ore out, so big companies could work mines a single miner never could.\n3. Background: the pick and pan gave way to the corporation and the payroll.\nRemember: when the tool gets too big for one person, the business gets bigger too."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Government Support for Transcontinental Railroads"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 17",
+        "section": "Government Encouragement of Western Settlement"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Railroads and Developments in the West"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)",
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1721",
+      "file": "u6/5s24-ch17-mcq-07.jpg",
+      "caption": "The Golden Spike ceremony at Promontory Summit, Utah, May 10, 1869",
+      "alt": "Two locomotives stand nose to nose at Promontory Summit while a large crowd of workers and officials celebrates between them",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Golden_Spike_ceremony%2C_Promontory%2C_Utah%2C_May_10%2C_1869.jpg",
+      "license": "Public domain: photograph by A. J. Russell, 1869."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "apush-mcq-1713",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 3,
+  "answerKey": "C",
+  "skills": [
+    "2.A",
+    "3.A"
+  ],
+  "themes": [
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "stem": "What does this document show?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Alexander Graham Bell's telephone patent drawing, U.S. Patent No. 174,465, patented March 7, 1876, National Archives (NARA 302052). Public domain. https://commons.wikimedia.org/wiki/File:Alexander_Graham_Bell%27s_Telephone_Patent_Drawing_and_Oath_-_NARA_-_302052_%28page_2%29.jpg",
+    "text": "The image is a page from Alexander Graham Bell's patent application. At the top it reads \"A. G. BELL. TELEGRAPHY. No. 174,465. Patented March 7, 1876.\" Below are two labeled diagrams: Fig. 6 shows three panels of electrical instruments wired together, and Fig. 7 shows a transmitter and receiver joined by a wire. At the bottom, the inventor signs \"A. Graham Bell.\""
+  },
+  "stimulus_set": "bell-patent",
+  "options": [
+    {
+      "key": "A",
+      "text": "A telegraph key that sent Morse code messages by wire",
+      "misconception": "Background: telegraph keys sent coded dots and dashes; this drawing shows instruments for carrying the human voice, not code."
+    },
+    {
+      "key": "B",
+      "text": "A design for the first electric light bulb",
+      "misconception": "Background: the light bulb was Edison's work, patented later; Bell's drawing is for transmitting sound, not light."
+    },
+    {
+      "key": "C",
+      "text": "Bell's patent for an apparatus that transmitted the human voice by wire"
+    },
+    {
+      "key": "D",
+      "text": "A map of the first telephone lines between Boston and New York",
+      "misconception": "Background: the page holds diagrams of instruments and a patent number, not a map of lines between cities."
+    }
+  ],
+  "rationales": {
+    "A": "Background: the telegraph sent coded signals, and its keys clicked out dots and dashes. Bell's diagrams show a transmitter and receiver for carrying the voice itself.",
+    "B": "Background: Edison patented the practical light bulb in 1879 and 1880. This 1876 patent belongs to Bell and covers sound, not light.",
+    "C": "The page says it plainly: \"A. G. Bell. Telegraphy. No. 174,465. Patented March 7, 1876.\" The diagrams show transmitters and receivers joined by wire, the apparatus for sending the voice.",
+    "D": "Background: the page shows labeled instrument diagrams, not a map. The first telephone lines came after the patent, not on this page.",
+    "general": "Read the heading before the diagrams.\n1. The page names its inventor, its number, and its date: Bell, 174,465, March 7, 1876.\n2. The diagrams show a transmitter and a receiver joined by a wire, built to carry sound.\n3. Put the two together and the document is a patent for sending the human voice by wire.\nRemember: a patent page answers its own question in its heading."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "The Telegraph and the Telephone"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "The Second Industrial Revolution"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Age of Invention and Economic Growth"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)",
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1713",
+      "file": "u6/original-u6-tech-01.jpg",
+      "caption": "Bell's telephone patent drawing, U.S. Patent No. 174,465, March 7, 1876",
+      "alt": "A patent page headed A. G. Bell, Telegraphy, No. 174,465, patented March 7, 1876, with two labeled diagrams of transmitters and receivers joined by wires",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Alexander_Graham_Bell%27s_Telephone_Patent_Drawing_and_Oath_-_NARA_-_302052_%28page_2%29.jpg",
+      "license": "Public domain: U.S. patent drawing, National Archives."
+    }
+  ]
+}

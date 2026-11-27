@@ -1,0 +1,87 @@
+{
+  "id": "apush-mcq-1718",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "answerKey": "A",
+  "skills": [
+    "1.B",
+    "4.B"
+  ],
+  "themes": [
+    "WXT",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "stem": "Why did Edison's Pearl Street power station, opened in New York in 1882, matter more than the light bulb alone?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "First page of Thomas A. Edison's patent application for the incandescent light bulb, filed 1879, National Archives. Public domain. https://commons.wikimedia.org/wiki/File:Drawing_of_the_Incandescent_Light_Bulb_by_Thomas_Edison%2C_01-27-1880_%28Page_1_of_2%29_%285286032634%29.jpg",
+    "text": "The image is the first page of Thomas Edison's patent application. At the top, an eagle and a robed figure hold the scales of justice above inventors' tools. The handwritten petition reads: \"To the Honorable Commissioner of Patents: Your Petitioner Thomas A. Edison of Menlo Park in the State of New Jersey prays that LETTERS PATENT may be granted to him for the invention of an Improvement in Electric Lamps and in the method of manufacturing the same.\" The page is dated 1879."
+  },
+  "stimulus_set": "edison-bulb-petition",
+  "options": [
+    {
+      "key": "A",
+      "text": "It showed electricity could be made in one place and sent to many customers"
+    },
+    {
+      "key": "B",
+      "text": "It proved that electric light worked only in New York City",
+      "misconception": "Background: Pearl Street was the first commercial station in the United States, but the same system soon spread to other cities."
+    },
+    {
+      "key": "C",
+      "text": "It ended the use of kerosene lamps in the same year it opened",
+      "misconception": "Background: kerosene lamps stayed common for decades; electric light spread slowly, house by house."
+    },
+    {
+      "key": "D",
+      "text": "It let Edison sell light bulbs without ever building another station",
+      "misconception": "Background: every new city needed its own station and wires; one station could serve only about a square mile."
+    }
+  ],
+  "rationales": {
+    "A": "Background from the books: Pearl Street was the first commercial power station in the United States, serving customers in about a square mile of lower Manhattan. A bulb alone lights one room; a station lights a city.",
+    "B": "Background: Pearl Street was a model, not a limit. Power stations soon opened in other cities, copying the same central system.",
+    "C": "Background: kerosene lamps lit most homes for decades after 1882. Electric light spread one wired street at a time.",
+    "D": "Background: a Pearl Street station served about a square mile. New stations had to be built wherever the wires reached.",
+    "general": "A bulb is a device; a station is a system.\n1. Background: Edison's lamp worked in his laboratory, but a lamp alone lights only the room it sits in.\n2. Background: Pearl Street made electricity in one place and sent it through wires to hundreds of customers at once.\n3. Background: that central system is what turned a clever lamp into the electric age.\nRemember: an invention changes the world when someone builds the system around it."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Coal and Oil"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "The Second Industrial Revolution"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Age of Invention and Economic Growth"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)",
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1718",
+      "file": "u6/original-u6-tech-02.jpg",
+      "caption": "First page of Edison's patent application for the electric lamp, 1879",
+      "alt": "The first page of Edison's patent petition, with an eagle and robed figure at the top and Edison's handwritten request for a patent on an improvement in electric lamps",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Drawing_of_the_Incandescent_Light_Bulb_by_Thomas_Edison%2C_01-27-1880_%28Page_1_of_2%29_%285286032634%29.jpg",
+      "license": "Public domain: U.S. patent application, National Archives."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1685",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.3"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "3.C"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "stem": "A student claims the Homestead Act made the West a land of independent small farmers. Which row of the table best challenges that claim?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Figures from Barron's Premium 2027, Chapter 8; 5 Steps to a 5, 2024, Chapter 17; and the Unit 6 period review (land-loss figures).",
+  "text": "| Measure | Figure |\n| Native land held by tribes, 1887 | about 138 million acres |\n| Native land held by tribes, 1934 | about 48 million acres |\n| Population of Minnesota, the Dakotas, Kansas, and Nebraska, 1865 | about 300,000 |\n| Population of the same states, 1900 | about 5 million |\n| Homestead claims proved up by 1900 | 610,000 claims, 85 million acres |\n| Homesteaders who had given up their farms by 1900 | about two-thirds |"
+ },
+ "stimulus_set": "west-table",
+ "options": [
+  {
+   "key": "A",
+   "text": "Two-thirds of homesteaders had given up their farms by 1900"
+  },
+  {
+   "key": "B",
+   "text": "610,000 claims were proved up by 1900",
+   "misconception": "Background: many claims did succeed, so this row supports the student's claim instead of challenging it."
+  },
+  {
+   "key": "C",
+   "text": "The Plains states grew from 300,000 to 5 million people",
+   "misconception": "Background: growth alone does not say who owned the farms; the people could be tenants and laborers."
+  },
+  {
+   "key": "D",
+   "text": "Native land fell from 138 million to 48 million acres",
+   "misconception": "Background: that row is about Native land loss, not about whether homesteaders kept their farms."
+  }
+ ],
+ "rationales": {
+  "A": "Six hundred ten thousand claims sound like success, but the last row gives the other half: about two-thirds of the homesteaders gave up. Background: debt, drought, and the costs of mechanization pushed many off the land, and large farms bought up what they left.",
+  "B": "Background: many claims did succeed, so this row supports the student's claim instead of challenging it.",
+  "C": "Background: growth alone does not say who owned the farms. The people could be tenants and laborers.",
+  "D": "Background: that row is about Native land loss, not about whether homesteaders kept their farms.",
+  "general": "Picture a student pointing at 610,000 successful claims and calling the West a farmers' paradise.\n1. Ask what the last row adds. About two-thirds of homesteaders had given up by 1900.\n2. Ask what that means. Most of the farmers who tried did not stay farmers.\n3. Name the challenge. A land of independent farmers would keep its farmers.\nRemember: a count of beginnings is not a count of endings, so always read the last row."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.3 Westward Expansion: Social and Cultural Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The End of Native American Independence"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

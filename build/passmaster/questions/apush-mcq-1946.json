@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1946",
+ "lesson": "apush-u6-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.12"
+ ],
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.12 Controversies over the Role of Government in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "Social Criticism in the Gilded Age"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+   }
+  ],
+  "primary_sources": [
+   "William Graham Sumner, 'The Forgotten Man,' in What Social Classes Owe to Each Other (1883)",
+   "Andrew Carnegie, 'Wealth,' North American Review, June 1889"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "u6-612-sumner-carnegie",
+ "stimulus": {
+  "kind": "text",
+  "text": "William Graham Sumner, “The Forgotten Man,” in What Social Classes Owe to Each Other (1883):\n\n“The type and formula of most schemes of philanthropy or humanitarianism is this: A and B put their heads together to decide what C shall be made to do for D. The radical vice of all these schemes, from a sociological point of view, is that C is not allowed a voice in the matter, and his position, character, and interests, as well as the ultimate effects on society through C’s interests, are entirely overlooked. I call C the Forgotten Man.”\n\nAndrew Carnegie, “Wealth,” North American Review, June 1889:\n\n“The problem of our age is the proper administration of wealth, so that the ties of brotherhood may still bind together the rich and poor in harmonious relationship.”",
+  "source_note": "William Graham Sumner, 'The Forgotten Man,' in What Social Classes Owe to Each Other (1883); Andrew Carnegie, 'Wealth,' North American Review, June 1889. Both quotations are exact."
+ },
+ "stem": "According to Sumner, who is the Forgotten Man?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The rich industrialist who funds the scheme himself",
+   "misconception": "Sumner calls C the Forgotten Man, and C is the one made to pay, not the rich funder."
+  },
+  {
+   "key": "B",
+   "text": "The worker made to pay for schemes he never chose"
+  },
+  {
+   "key": "C",
+   "text": "The government official who writes the new law",
+   "misconception": "A and B design the scheme; C, the Forgotten Man, is the one made to pay for it."
+  },
+  {
+   "key": "D",
+   "text": "The poor man who receives the aid money himself",
+   "misconception": "D receives the aid; C is the Forgotten Man who pays for it."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "C is the one made to pay, not the rich man funding the scheme.",
+  "B": "C is made to do something for D, with no voice in the matter.",
+  "C": "A and B design the scheme; C is the one made to pay for it.",
+  "D": "D receives the aid; C is the Forgotten Man who pays for it.",
+  "general": "Follow the letters in Sumner's formula.\n1. A and B plan a scheme to help D, the person in need.\n2. C is the one made to pay for it, with no voice in the matter.\n3. Sumner calls C the Forgotten Man, because reformers overlook him.\n4. The Forgotten Man is the ordinary worker who pays, not the giver or the receiver.\nRemember: a formula's letters name the roles, so track each letter."
+ }
+}

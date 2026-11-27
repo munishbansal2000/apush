@@ -1,0 +1,86 @@
+{
+  "answerKey": "A",
+  "difficulty": 3,
+  "figures": [
+    {
+      "alt": "A giant octopus labeled Standard Oil wraps its tentacles around the Capitol and a state capitol and reaches toward the White House while crushing small businessmen below",
+      "caption": "Standard Oil as a giant octopus reaching for government buildings, Puck, 1904",
+      "file": "u6/5s24-ch18-mcq-07.jpg",
+      "id": "fig-apush-mcq-1744",
+      "license": "Public domain: 1904 cartoon, Library of Congress print.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Standard_oil_octopus_loc_color.jpg"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ]
+  },
+  "id": "apush-mcq-1744",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "text": "Standard Oil’s power reached into government and across the country"
+    },
+    {
+      "key": "B",
+      "misconception": "The cartoon shows power and reach, not the quality of the oil.",
+      "text": "Standard Oil sold better oil than any of its competitors"
+    },
+    {
+      "key": "C",
+      "misconception": "Background: the breakup came in 1911, years after this 1904 cartoon.",
+      "text": "The government had already broken Standard Oil into small companies"
+    },
+    {
+      "key": "D",
+      "misconception": "The tentacles reach government buildings and small businesses, not only railroads.",
+      "text": "Railroads were the only industry Standard Oil controlled"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "The octopus’s tentacles wrap around the Capitol and a state capitol and reach toward the White House, and squeeze small businessmen below. The picture is about reach and control.",
+    "B": "Nothing in the cartoon compares the quality of Standard Oil’s products with anyone else’s.",
+    "C": "Background: the Supreme Court ordered the breakup of Standard Oil in 1911. In 1904 the company was still whole.",
+    "D": "The cartoon shows the octopus gripping governments and small men, so its reach goes well beyond railroads.",
+    "general": "Read the picture like a sentence.\n1. The octopus is labeled Standard Oil, so it stands for the company.\n2. Its tentacles wrap around the Capitol and a state capitol and reach toward the White House.\n3. At the bottom, small businessmen are crushed under its arms.\n4. Together the details say one company had power over government and rivals alike.\nRemember: in a cartoon, the animal’s reach is the argument."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "3.A"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "What is the cartoonist’s main point?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Udo Keppler, 'Next!', Puck, September 7, 1904. Public domain, Library of Congress print.",
+    "text": "Udo Keppler's cartoon 'Next!' (Puck, September 7, 1904) shows a giant octopus with 'STANDARD OIL' written across its head. Its tentacles reach across the land, wrapping around the Capitol and a state capitol and reaching toward the White House, and squeezing small businessmen at the bottom of the picture."
+  },
+  "stimulus_set": "standard-oil-octopus",
+  "themes": [
+    "WXT",
+    "PCE"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

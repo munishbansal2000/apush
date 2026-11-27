@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1680",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.3"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "1.B",
+  "5.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "stem": "Why did Wyoming grant women the vote in 1869, decades before most states?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "An Act to Grant to the Women of Wyoming Territory the Right of Suffrage and to Hold Office, approved December 10, 1869. Public domain. Text verified against the American Battlefield Trust transcription (from the Library of Congress) and History of Woman Suffrage, vol. 3.",
+  "text": "An Act to Grant to the Women of Wyoming Territory the Right of Suffrage and to Hold Office, approved December 10, 1869:\n\n\"SECTION 1. That every woman of the age of twenty-one years, residing in this territory, may, at every election to be holden under the laws thereof, cast her vote. And her rights to the elective franchise and to hold office shall be the same under the election laws of the territory, as those of electors.\"\n\n\"SECTION 2. This act shall take effect and be in force from and after its passage.\""
+ },
+ "stimulus_set": "wyoming-suffrage",
+ "options": [
+  {
+   "key": "A",
+   "text": "Women's work was central to frontier life, and women were scarce"
+  },
+  {
+   "key": "B",
+   "text": "The federal government ordered all territories to grant women's suffrage",
+   "misconception": "Background: no federal order existed; Wyoming acted on its own, and the nation waited until 1920."
+  },
+  {
+   "key": "C",
+   "text": "Wyoming's legislature was led by women elected in 1868",
+   "misconception": "Background: the 1869 legislature was all men; William Bright, a saloonkeeper, introduced the bill."
+  },
+  {
+   "key": "D",
+   "text": "Wyoming had no men left to vote after the Civil War",
+   "misconception": "Background: Wyoming's voters were men; the territory's problem was too few women settlers, not too few men."
+  }
+ ],
+ "rationales": {
+  "A": "Background: women were scarce in the territory and their labor held frontier households together, and the territory wanted more settlers. The all-male legislature passed the bill, and Wyoming kept it when it became a state in 1890.",
+  "B": "Background: no federal order existed. Wyoming acted on its own, and the nation waited until 1920.",
+  "C": "Background: the 1869 legislature was all men. William Bright, a saloonkeeper, introduced the bill.",
+  "D": "Background: Wyoming's voters were men. The territory's problem was too few women settlers, not too few men.",
+  "general": "Picture a territorial legislature of men, voting to share the ballot with the few women in Wyoming.\n1. Ask what those women did. Background: They ran farms, taught, kept households, and held isolated settlements together.\n2. Ask what the territory wanted. Background: More settlers, and women were the settlers it lacked most.\n3. Name the reason. Background: Work that could be seen every day, and a territory eager to grow.\nRemember: rights often arrive first where the work is most visible, not where the speeches are loudest."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.3 Westward Expansion: Social and Cultural Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "Women and Minorities on the Agricultural Frontier"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

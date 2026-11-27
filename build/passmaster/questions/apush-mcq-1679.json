@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1679",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.3"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "3.C",
+  "5.A"
+ ],
+ "themes": [
+  "WOR",
+  "SOC"
+ ],
+ "reasoning": "comparison",
+ "stem": "Which statement best captures the real history of the cowboy, against the dime-novel image?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Charles A. Siringo, A Texas Cow Boy (1885), title page and Preface. Public domain. Text verified against Project Gutenberg (eBook #38309).",
+  "text": "Charles A. Siringo, A Texas Cow Boy (1885), title page and Preface (ellipses mark omissions):\n\nTitle page: AN OLD STOVE UP \"COW PUNCHER,\" WHO HAS SPENT NEARLY TWENTY YEARS ON THE GREAT WESTERN CATTLE RANGES\n\nPreface: \"My excuse for writing this book is money—and lots of it.\" ...\n\n\"While ranching on the Indian Territory line, close to Caldwell, Kansas, in the winter of '82 and '83, we boys, there being nine of us, made an iron-clad rule that whoever was heard swearing or caught picking grey backs off and throwing them on the floor without first killing them, should pay a fine of ten cents for each and every offense. The proceeds to be used for buying choice literature, something that would have a tendency to raise us above the average cow-puncher. ... There being two young Texans present who could neither read nor write, we let them speak their choice after the rest of us got our votes deposited. At the word given them to cut loose they both yelled 'Police Gazette', and on asking why they voted for that wicked Sheet, they both replied as though with one voice: 'Cause we can read the pictures.'\""
+ },
+ "stimulus_set": "siringo-cowboy",
+ "options": [
+  {
+   "key": "A",
+   "text": "Cowboys were lone gunmen who owned all the herds they drove",
+   "misconception": "Background: most cowboys were hired hands; the herds belonged to ranchers."
+  },
+  {
+   "key": "B",
+   "text": "Cowboys were all white easterners seeking adventure",
+   "misconception": "Background: up to a third of the men on the drives were Mexican or African American, and the ranching culture came from Mexican vaqueros."
+  },
+  {
+   "key": "C",
+   "text": "Cowboying was a lifetime career that ended in wealth",
+   "misconception": "Background: most cowboys were young wage workers; Siringo himself ended 'stove up,' broke and crippled."
+  },
+  {
+   "key": "D",
+   "text": "Cowboys were hired hands, many Mexican or Black, doing hard seasonal work"
+  }
+ ],
+ "rationales": {
+  "A": "Background: most cowboys were hired hands. The herds belonged to ranchers.",
+  "B": "Background: up to a third of the men on the drives were Mexican or African American, and the ranching culture came from Mexican vaqueros.",
+  "C": "Background: most cowboys were young wage workers. Siringo himself ended 'stove up,' broke and crippled.",
+  "D": "Background: the drives were done by hired hands, up to a third Mexican or African American, working for wages under ranch managers. The lone owner-hero of the novels was the exception, not the rule.",
+  "general": "Picture the drive: dust, cattle, and a dozen men on horseback, none of whom owns a single steer.\n1. Ask who owns the herd. Background: The rancher, back at the ranch house, not the men on the trail.\n2. Ask who rides it. Background: Hired hands, many of them Mexican or Black, working for wages.\n3. Name the reality. Background: Seasonal wage work, hard and short-lived, not a hero's life.\nRemember: the novel gives the cowboy a herd and a fortune; the payroll gives him a wage and a season."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Ranching and the Era of the Cowboy in the West"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The Ranching Frontier"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

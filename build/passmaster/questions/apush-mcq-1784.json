@@ -1,0 +1,78 @@
+{
+ "answerKey": "D",
+ "difficulty": 2,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Historical Statistics of the United States, Table Ba4954-4964 (work stoppages, workers involved)"
+  ]
+ },
+ "id": "apush-mcq-1784",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Stoppages rose from 485 to 1,572, so they did not fall.",
+   "text": "Stoppages fell sharply in number while workers involved rose sharply instead."
+  },
+  {
+   "key": "B",
+   "misconception": "Both columns rise, so neither fell.",
+   "text": "Both the stoppages and the workers involved fell sharply together."
+  },
+  {
+   "key": "C",
+   "misconception": "Stoppages more than tripled, from 485 to 1,572.",
+   "text": "Stoppages stayed flat in number while workers involved doubled over time instead."
+  },
+  {
+   "key": "D",
+   "text": "Both the number of stoppages and the number of workers involved rose sharply."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Stoppages rose from 485 to 1,572, so they did not fall.",
+  "B": "Both columns rise, so neither fell.",
+  "C": "Stoppages more than tripled, from 485 to 1,572, so they did not stay flat.",
+  "D": "Stoppages rose from 485 to 1,572 and workers from 165,000 to 610,000, a sharp rise in both.",
+  "general": "Compare the two columns, year by year.\n1. In 1884 there were 485 stoppages and 165,000 workers involved.\n2. In 1885 both numbers rise, to 695 and 258,000.\n3. In 1886 both jump again, to 1,572 and 610,000.\n4. So between 1884 and 1886, both columns rose sharply.\n5. A rise in both columns at once is a surge, not a drift.\nRemember: a pattern question needs both columns checked, not just one."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "1.A"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "What pattern does the table show between 1884 and 1886?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Historical Statistics of the United States, Table Ba4954-4964 (work stoppages, workers involved, 1881-1998), U.S. Bureau of Labor Statistics historical series. Figures rounded to the nearest thousand.",
+  "text": "| Year | Work stoppages (strikes and lockouts) | Workers involved |\n| 1881 | 477 | 130,000 |\n| 1882 | 476 | 159,000 |\n| 1883 | 506 | 170,000 |\n| 1884 | 485 | 165,000 |\n| 1885 | 695 | 258,000 |\n| 1886 | 1,572 | 610,000 |\n| 1887 | 1,503 | 439,000 |\n| 1888 | 946 | 163,000 |"
+ },
+ "stimulus_set": "strikes-1881-1888",
+ "themes": [
+  "WOR"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

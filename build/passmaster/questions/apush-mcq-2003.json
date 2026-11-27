@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-2003",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.14"
+  ],
+  "skills": [
+    "2.B"
+  ],
+  "themes": [
+    "PCE"
+  ],
+  "reasoning": "comparison",
+  "difficulty": 2,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.14 Subject to Debate"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Gilded Age Politics"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ],
+    "primary_sources": [
+      "People’s Party Platform (Omaha Platform), July 4, 1892"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-614-omaha",
+  "stimulus": {
+    "kind": "text",
+    "text": "The conditions which surround us best justify our co-operation; we meet in the midst of a nation brought to the verge of moral, political, and material ruin. Corruption dominates the ballot-box, the Legislatures, the Congress, and touches even the ermine of the bench. The people are demoralized; most of the States have been compelled to isolate the voters at the polling places to prevent universal intimidation and bribery. The newspapers are largely subsidized or muzzled, public opinion silenced, business prostrated, homes covered with mortgages, labor impoverished, and the land concentrating in the hands of capitalists. … From the same prolific womb of governmental injustice we breed the two great classes—tramps and millionaires.",
+    "source_note": "People’s Party (Populist) Platform, Omaha, July 4, 1892, preamble. Public domain; wording and punctuation follow the platform as printed in McPherson, A Handbook of Politics for 1892. Ellipsis marks an omission between complete sentences."
+  },
+  "stem": "The platform says corruption “touches even the ermine of the bench” — ermine is the fur worn on judges’ robes. What does this claim?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Farmers controlled the courts",
+      "misconception": "The platform says corruption reached the courts, not that farmers ran them."
+    },
+    {
+      "key": "B",
+      "text": "The courts had ended corruption in politics",
+      "misconception": "The platform says corruption reached the courts, not that courts ended it."
+    },
+    {
+      "key": "C",
+      "text": "Corruption had reached even the judges"
+    },
+    {
+      "key": "D",
+      "text": "Judges had grown too powerful in farm disputes",
+      "misconception": "The platform says corruption touched judges, not that judges grew powerful."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "The platform gives the courts to corruption, not to farmers.",
+    "B": "The platform says corruption touched the bench, not that the bench ended it.",
+    "C": "The ermine stands for judges, so corruption reaching it means judges too were touched.",
+    "D": "The platform says nothing about judges growing powerful in farm disputes.",
+    "general": "Read the image in the sentence.\n1. The platform says corruption dominates the ballot box, the legislatures, and Congress.\n2. Then it goes one step further: it touches even the ermine of the bench.\n3. The bench is the judges, so the claim is that corruption reached the courts too.\n4. Background from the books: the Populists believed the whole system served the rich.\nRemember: when a list climbs to the highest office, the point is that no one escaped."
+  }
+}

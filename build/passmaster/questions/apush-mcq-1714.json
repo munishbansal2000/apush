@@ -1,0 +1,87 @@
+{
+  "id": "apush-mcq-1714",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "answerKey": "A",
+  "skills": [
+    "1.B",
+    "5.B"
+  ],
+  "themes": [
+    "WXT",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "stem": "How did the telephone most change the way large American businesses operated?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Alexander Graham Bell's telephone patent drawing, U.S. Patent No. 174,465, patented March 7, 1876, National Archives (NARA 302052). Public domain. https://commons.wikimedia.org/wiki/File:Alexander_Graham_Bell%27s_Telephone_Patent_Drawing_and_Oath_-_NARA_-_302052_%28page_2%29.jpg",
+    "text": "The image is a page from Alexander Graham Bell's patent application. At the top it reads \"A. G. BELL. TELEGRAPHY. No. 174,465. Patented March 7, 1876.\" Below are two labeled diagrams: Fig. 6 shows three panels of electrical instruments wired together, and Fig. 7 shows a transmitter and receiver joined by a wire. At the bottom, the inventor signs \"A. Graham Bell.\""
+  },
+  "stimulus_set": "bell-patent",
+  "options": [
+    {
+      "key": "A",
+      "text": "Managers in far-apart cities could talk at once, instead of waiting for letters"
+    },
+    {
+      "key": "B",
+      "text": "Businesses no longer needed railroads, since orders could travel by phone",
+      "misconception": "Background: orders still had to travel as goods on trains; the phone carried words, not freight."
+    },
+    {
+      "key": "C",
+      "text": "Small shops replaced big corporations, since anyone could now call a customer",
+      "misconception": "Background: the telephone helped big firms coordinate across distance; it did not break them into small shops."
+    },
+    {
+      "key": "D",
+      "text": "Written contracts disappeared, since a phone call counted as a legal agreement",
+      "misconception": "Background: businesses still used written contracts; a phone call could arrange a deal, but it did not replace the paperwork."
+    }
+  ],
+  "rationales": {
+    "A": "Background from the books: the telephone let corporations with a national reach coordinate quickly, because a manager in one city could speak to a manager in another at once. Letters took days and telegrams took hours.",
+    "B": "Background: goods still moved by rail, and the railroads kept growing after the telephone arrived. The phone moved words, not wheat or steel.",
+    "C": "Background: the telephone favored firms big enough to run offices in many cities. It helped corporations grow, not shrink into small shops.",
+    "D": "Background: businesses kept written contracts and records. A phone call arranged business faster, but the paperwork stayed.",
+    "general": "Think about what a manager waits for: an answer.\n1. Background: before the telephone, orders and questions crossed the country by letter or by telegram, slowly and in writing.\n2. Background: the telephone let a manager in Chicago speak to a manager in New York at once, so a national firm could act as one firm.\n3. Background: that speed is why the telephone became a business tool first and a household tool second.\nRemember: a tool that kills waiting time changes who can run a big business."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "The Telegraph and the Telephone"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "The Second Industrial Revolution"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Age of Invention and Economic Growth"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)",
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1714",
+      "file": "u6/original-u6-tech-01.jpg",
+      "caption": "Bell's telephone patent drawing, U.S. Patent No. 174,465, March 7, 1876",
+      "alt": "A patent page headed A. G. Bell, Telegraphy, No. 174,465, patented March 7, 1876, with two labeled diagrams of transmitters and receivers joined by wires",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Alexander_Graham_Bell%27s_Telephone_Patent_Drawing_and_Oath_-_NARA_-_302052_%28page_2%29.jpg",
+      "license": "Public domain: U.S. patent drawing, National Archives."
+    }
+  ]
+}

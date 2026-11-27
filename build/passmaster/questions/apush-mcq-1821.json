@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-1821",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "MIG",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "kearney-workingmen",
+ "stimulus": {
+  "kind": "text",
+  "text": "Original secondary passage, written for this question from the grounding books:\n\nIn California in the 1870s, the Workingmen’s Party, led by the Irish immigrant Denis Kearney, blamed Chinese laborers for low wages and unemployment after the Panic of 1873. At rallies in San Francisco, Kearney ended his speeches with the slogan “The Chinese must go.” The party demanded that Congress exclude Chinese immigrants, and its campaign helped push Congress to pass the Chinese Exclusion Act of 1882.",
+  "source_note": "Original secondary passage, written for this question from Barron’s Premium 2027 Chapter 8 (Topics 6.3 and 6.8), 5 Steps to a 5, 2024, Chapter 18, and Princeton Review, Chapter 10."
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "status": "final",
+ "stem": "According to the passage, Kearney and the Workingmen’s Party blamed Chinese laborers mainly for what?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Building the transcontinental railroad",
+   "misconception": "Confuses work the Chinese did with the blame Kearney laid on them."
+  },
+  {
+   "key": "B",
+   "text": "Refusing to work in California’s factories",
+   "misconception": "Invents a refusal to work the passage never mentions."
+  },
+  {
+   "key": "C",
+   "text": "Low wages and unemployment after the Panic"
+  },
+  {
+   "key": "D",
+   "text": "The growth of San Francisco’s Chinatown",
+   "misconception": "Picks a place instead of the economic blame."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Chinese workers did help build the railroad, but the passage blames them for wages and jobs, not for building it.",
+  "B": "The passage never says Chinese laborers refused factory work.",
+  "C": "The passage says the party blamed Chinese laborers for low wages and unemployment after the Panic of 1873.",
+  "D": "Chinatown’s growth is not the blame the passage describes.",
+  "general": "Find the blame in the passage.\n1. The party blamed Chinese laborers for low wages and unemployment.\n2. The blame followed the Panic of 1873.\n3. Railroad building and Chinatown are background, not the blame.\n4. The slogan “The Chinese must go” follows from that economic blame.\nRemember: blame is the charge a passage states, not the background around it."
+ }
+}

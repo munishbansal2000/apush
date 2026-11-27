@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1828",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "MIG",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "stimulus_set": "city-growth-table",
+ "stimulus": {
+  "kind": "text",
+  "text": "Population of leading American cities (U.S. Bureau of the Census)\n\n| City | 1870 | 1890 |\n| New York | 942,292 | 1,515,301 |\n| Chicago | 298,977 | 1,099,850 |\n| Philadelphia | 674,022 | 1,046,964 |\n| St. Louis | 310,864 | 451,770 |\n| Boston | 250,526 | 448,477 |\n\nPopulations are from the decennial census of each year.",
+  "source_note": "U.S. Bureau of the Census, Population of the 100 Largest Urban Places, 1870 and 1890. Public data."
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Rise of the Modern American City"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "U.S. Bureau of the Census, Population of the 100 Largest Urban Places, 1870 and 1890"
+  ]
+ },
+ "status": "final",
+ "stem": "The table best supports which claim about American cities in the Gilded Age?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Cities in the South grew faster than cities in the North",
+   "misconception": "Compares regions the table never shows."
+  },
+  {
+   "key": "B",
+   "text": "New York lost population while Chicago gained it",
+   "misconception": "Turns New York’s gain of 573,000 into a loss."
+  },
+  {
+   "key": "C",
+   "text": "Most Americans still lived on farms in 1890",
+   "misconception": "Reads farm life out of a table that counts only cities."
+  },
+  {
+   "key": "D",
+   "text": "Industrial cities in the Northeast and Midwest grew rapidly"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "No Southern city is in the table. Nothing here compares the South with the North.",
+  "B": "New York grew from 942,292 to 1,515,301. It gained, not lost.",
+  "C": "The table counts city people only. It says nothing about how many Americans lived on farms.",
+  "D": "Every city in the table grew, and Chicago nearly quadrupled, so the industrial cities of the Northeast and Midwest grew fast.",
+  "general": "Ask what all five rows have in common.\n1. Every city in the table grew between 1870 and 1890.\n2. Chicago nearly quadrupled, and New York added over half a million people.\n3. All five are Northeastern or Midwestern cities.\n4. Shared rapid growth in one region is the claim the table supports.\nRemember: a claim a table supports must fit every row, not one row."
+ }
+}

@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-1667",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.3"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "3.C",
+  "5.A"
+ ],
+ "themes": [
+  "WOR",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "stem": "A student says the photograph proves the Ghost Dance caused Wounded Knee. What is the strongest reply?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph of the burial of Lakota dead at Wounded Knee, South Dakota, winter of 1890-1891. Public domain (Library of Congress via Wikimedia Commons). Image viewed before writing.",
+  "text": "The photograph shows men loading Lakota dead onto a wagon at Wounded Knee Creek, South Dakota, in the winter of 1890-1891, while soldiers on horseback watch from the ridge behind them. The dead were Lakota men, women, and children killed on December 29, 1890, when the Seventh Cavalry opened fire during the disarmament of Big Foot's band."
+ },
+ "stimulus_set": "wounded-knee",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Ghost Dance began after Wounded Knee, so it could not have caused it",
+   "misconception": "Background: the Ghost Dance began in 1889, a year before Wounded Knee."
+  },
+  {
+   "key": "B",
+   "text": "The soldiers at Wounded Knee were themselves Ghost Dancers",
+   "misconception": "Background: the Seventh Cavalry was the army unit that did the killing, not a band of dancers."
+  },
+  {
+   "key": "C",
+   "text": "Wounded Knee happened in the East, far from the Ghost Dance",
+   "misconception": "Background: Wounded Knee Creek is in South Dakota, in the heart of Lakota country."
+  },
+  {
+   "key": "D",
+   "text": "Fear of the dance brought soldiers, but the killing came from the disarmament"
+  }
+ ],
+ "rationales": {
+  "A": "Background: the Ghost Dance began in 1889, a year before Wounded Knee.",
+  "B": "Background: the Seventh Cavalry was the army unit that did the killing, not a band of dancers.",
+  "C": "Background: Wounded Knee Creek is in South Dakota, in the heart of Lakota country.",
+  "D": "The dance alarmed the agents, and that fear put soldiers around Big Foot's band. But the photograph shows the result of soldiers opening fire during a disarmament; no Ghost Dance attack happened at Wounded Knee.",
+  "general": "Picture a student pointing at the burial wagon and blaming the dance.\n1. Grant what is true. Fear of the dance did bring soldiers to the Lakota reservations.\n2. Ask what actually killed these people. Soldiers opened fire while disarming Big Foot's band.\n3. Name the difference. A fear can set a scene, but it is not the same as an attack.\nRemember: a cause and a pretext are not the same thing, and the dead deserve the true one."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Wounded Knee and the End of Autonomous American Indian Groups"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The End of Native American Independence"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1667",
+   "file": "u6/original-misc-ghostdance-05.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Burial_Party_Wounded_Knee.jpg",
+   "license": "Public domain",
+   "caption": "Burial of the Lakota dead at Wounded Knee, winter of 1890-1891",
+   "alt": "A black-and-white photograph of men loading bodies onto a horse-drawn wagon in the snow at Wounded Knee, with mounted soldiers watching from a ridge behind them"
+  }
+ ]
+}

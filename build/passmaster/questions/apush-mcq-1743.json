@@ -1,0 +1,79 @@
+{
+  "answerKey": "D",
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ],
+    "primary_sources": [
+      "William Graham Sumner, What Social Classes Owe to Each Other (1883)"
+    ]
+  },
+  "id": "apush-mcq-1743",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "text": "The police should leave the drunkard alone forever",
+      "misconception": "The passage says the workman pays the policeman, so the police do act; Sumner objects to shifting the cost, not to the police."
+    },
+    {
+      "key": "B",
+      "text": "The drunkard should be given the workman's wages",
+      "misconception": "Nothing in the passage gives the drunkard the workman's wages; the workman is the one who pays."
+    },
+    {
+      "key": "C",
+      "text": "The state should pay the drunkard to stop drinking",
+      "misconception": "Sumner argues against state help, not for paying the drunkard."
+    },
+    {
+      "key": "D",
+      "text": "The drunkard's decline is nature's penalty for his actions"
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "The passage says the workman is mulcted to pay the policeman, so the police do pick the drunkard up; Sumner never says to leave him alone forever.",
+    "B": "The workman is the one who pays; nothing in the passage hands his wages to the drunkard.",
+    "C": "Sumner argues that helping only shifts penalties onto others, so he would never call for the state to pay the drunkard.",
+    "D": "Sumner says nature has set up “the process of decline and dissolution” for the drunkard — his condition is the natural penalty for his own actions, not a wrong the state must fix.",
+    "general": "Read what Sumner says nature does to the drunkard.\n1. The passage says the drunkard “is just where he ought to be, according to the fitness and tendency of things.”\n2. Nature has set up “the process of decline and dissolution” for things that have survived their usefulness.\n3. That decline is the penalty for his own actions, not an accident the state caused.\n4. So “where he ought to be” means suffering the natural consequence, not being rescued from it.\nRemember: when a writer calls a condition natural, ask what caused it."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "3.A"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "What does Sumner mean when he says the drunkard in the gutter “is just where he ought to be”?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "William Graham Sumner, What Social Classes Owe to Each Other (1883), public domain. Excerpts joined with ellipses.",
+    "text": "“A drunkard in the gutter is just where he ought to be, according to the fitness and tendency of things. Nature has set up on him the process of decline and dissolution by which she removes things which have survived their usefulness. . . . Now, we never can annihilate a penalty. We can only divert it from the head of the man who has incurred it to the heads of others who have not incurred it. . . . The industrious and sober workman, who is mulcted of a percentage of his day’s wages to pay the policeman, is the one who bears the penalty. But he is the Forgotten Man.”"
+  },
+  "stimulus_set": "sumner-forgotten-man",
+  "themes": [
+    "WXT",
+    "SOC"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

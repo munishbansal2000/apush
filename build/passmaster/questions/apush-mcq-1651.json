@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1651",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "1.B",
+  "6.B"
+ ],
+ "themes": [
+  "ARC",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "stem": "According to Turner, what had the frontier done for the United States?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Frederick Jackson Turner, \"The Significance of the Frontier in American History,\" paper read July 12, 1893. Public domain. Text verified against the University of Colorado transcription (spot.colorado.edu/~mcguire/turner.html) and Project Gutenberg's The Frontier in American History (pg22994).",
+  "text": "Frederick Jackson Turner, \"The Significance of the Frontier in American History\" (1893):\n\n\"In a recent bulletin of the Superintendent of the Census for 1890 appear these significant words: 'Up to and including 1880 the country had a frontier of settlement, but at present the unsettled area has been so broken into by isolated bodies of settlement that there can hardly be said to be a frontier line.'\"\n\n\"What the Mediterranean Sea was to the Greeks, breaking the bond of custom, offering new experiences, calling out new institutions and activities, that, and more, the ever retreating frontier has been to the United States directly, and to the nations of Europe more remotely. And now, four centuries from the discovery of America, at the end of a hundred years of life under the Constitution, the frontier has gone, and with its going has closed the first period of American history.\""
+ },
+ "stimulus_set": "turner-frontier",
+ "options": [
+  {
+   "key": "A",
+   "text": "It had made Americans dependent on the federal government for land",
+   "misconception": "Background: Turner argued the frontier made Americans self-reliant, not dependent; federal land policy aided settlement but was not his thesis."
+  },
+  {
+   "key": "B",
+   "text": "It had kept Americans tied to European customs and institutions",
+   "misconception": "Background: Turner says the frontier broke the bond of custom; it loosened Europe's hold, it did not preserve it."
+  },
+  {
+   "key": "C",
+   "text": "It had prevented the growth of American cities and industry",
+   "misconception": "Background: Turner wrote as cities and industry were booming; the frontier did not prevent that growth, and his essay never claims it did."
+  },
+  {
+   "key": "D",
+   "text": "It broke custom, called out new institutions, and shaped American democracy"
+  }
+ ],
+ "rationales": {
+  "A": "Background: Turner's frontier breeds self-reliance and democracy, not dependence. Federal aid is part of the story, but it is not the thesis.",
+  "B": "Background: Turner says the frontier broke the bond of custom. Europe's institutions were what the frontier left behind.",
+  "C": "Background: the frontier era and industrial growth overlapped. Turner never argues the frontier held cities back.",
+  "D": "Turner says it in his own image: like the Mediterranean Sea for the Greeks, the retreating frontier broke custom, offered new experiences, and called out new institutions, and American democracy grew from that experience.",
+  "general": "Turner gives the frontier a job description: it made Americans American.\n1. Take his comparison: the frontier was to the United States what the Mediterranean was to the Greeks.\n2. List what it did: broke the bond of custom, offered new experiences, called out new institutions.\n3. Name the product. A democracy shaped by the repeated experience of settling new land.\nRemember: a thesis is a claim about what caused what, so find the cause and the effect."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The Idea of the West"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

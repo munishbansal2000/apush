@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1810",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "MIG",
+  "NAT"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "lazarus-colossus",
+ "stimulus": {
+  "kind": "text",
+  "text": "“Give me your tired, your poor,\nYour huddled masses yearning to breathe free,\nThe wretched refuse of your teeming shore.\nSend these, the homeless, tempest-tost to me,\nI lift my lamp beside the golden door!”\n\nEmma Lazarus, “The New Colossus” (1883), written for the Statue of Liberty.",
+  "source_note": "Emma Lazarus, “The New Colossus” (1883). Public domain."
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Emma Lazarus, “The New Colossus” (1883)"
+  ]
+ },
+ "status": "final",
+ "stem": "The poem’s welcome contrasts most directly with which development of the same decade?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The opening of Ellis Island in 1892",
+   "misconception": "Picks a later event that received immigrants instead of excluding them."
+  },
+  {
+   "key": "B",
+   "text": "The Chinese Exclusion Act of 1882"
+  },
+  {
+   "key": "C",
+   "text": "The founding of Hull House in 1889",
+   "misconception": "Confuses a settlement house that helped immigrants with a law that excluded them."
+  },
+  {
+   "key": "D",
+   "text": "The growth of ethnic neighborhoods in cities",
+   "misconception": "Treats where immigrants lived as a contradiction of the welcome."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Ellis Island opened in 1892, in the next decade, and it received immigrants rather than excluding them.",
+  "B": "The poem, written in 1883, welcomes all the poor, while the 1882 act shut out Chinese laborers by nationality.",
+  "C": "Hull House aided immigrants. It did not contradict the poem’s welcome.",
+  "D": "Ethnic neighborhoods show immigrants settling together. They do not contradict the welcome.",
+  "general": "Match the poem’s welcome against a law from the same years.\n1. The poem welcomes the poor of every land, without exception.\n2. The 1882 act shut out Chinese laborers because of their nationality.\n3. A welcome for all and a ban on one group point in opposite directions.\n4. Ellis Island and Hull House both fit the welcome, so they do not contrast with it.\nRemember: a contrast needs two things that pull in opposite directions."
+ }
+}

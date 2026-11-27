@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1629",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "stem": "Why did the Pacific Railway Act except mineral lands from the railroad land grants?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Pacific Railway Act, July 1, 1862, 12 Stat. 489, Sec. 3. Public domain. Text verified against the Gilder Lehrman excerpt (Our Documents) and the Supreme Court's quotation of Sec. 3 in Platt v. Union Pacific Railroad Co., 99 U.S. 48 (1878).",
+  "text": "Pacific Railway Act of 1862, Section 3 (ellipses mark omissions):\n\n\"That there be, and is hereby, granted to the said company, for the purpose of aiding in the construction of said railroad and telegraph line, and to secure the safe and speedy transportation of the mails, troops, munitions of war, and public stores thereon, every alternate section of public land, designated by odd numbers, to the amount of five alternate sections per mile on each side of said railroad, on the line thereof, and within the limits of ten miles on each side of said road, not sold, reserved, or otherwise disposed of by the United States, and to which a preemption or homestead claim may not have attached, at the time the line of said road is definitely fixed: Provided, That all mineral lands shall be excepted from the operation of this act...\""
+ },
+ "stimulus_set": "railroad-land-grants",
+ "options": [
+  {
+   "key": "A",
+   "text": "The railroads refused to build through mountainous mining country",
+   "misconception": "Background: the railroads did build through mining country; the Central Pacific crossed the Sierra Nevada and the lines served mining towns."
+  },
+  {
+   "key": "B",
+   "text": "There were no valuable minerals anywhere near the railroad routes",
+   "misconception": "Background: the Comstock Lode in Nevada and gold in the Black Hills lay near the routes, which is exactly why the exception mattered."
+  },
+  {
+   "key": "C",
+   "text": "Congress kept gold and silver mines out of the railroad grants"
+  },
+  {
+   "key": "D",
+   "text": "The act gave all mineral lands to the states instead",
+   "misconception": "Background: the act said nothing about giving mineral lands to the states; it simply excepted them from the railroad grant."
+  }
+ ],
+ "rationales": {
+  "A": "Background: the Central Pacific bored through the Sierra Nevada, and the lines served Virginia City and other mining towns. Mountains did not stop them.",
+  "B": "Background: the Comstock silver lode and later Black Hills gold lay close to the routes. The exception mattered because the minerals were there.",
+  "C": "Section 3's proviso is the clue: all mineral lands shall be excepted from the operation of this act. Congress kept the mines out of the companies' hands.",
+  "D": "Background: the act excepts mineral lands from the grant; it does not hand them to the states. They stayed public land.",
+  "general": "An exception in a law is a fence, so ask what it was built to protect.\n1. Find the fence in Section 3: all mineral lands shall be excepted from the operation of this act.\n2. Ask what sat behind it. Background: silver and gold strikes lay near the routes, and Congress did not want the railroads to own the mines too.\n3. Name the purpose. The government kept the richest ground public while giving the rest away.\nRemember: read the exceptions first; they show what the law's authors feared giving away."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "Government Encouragement of Western Settlement"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

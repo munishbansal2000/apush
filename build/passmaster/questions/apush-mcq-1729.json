@@ -1,0 +1,76 @@
+{
+  "id": "apush-mcq-1729",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "answerKey": "D",
+  "skills": [
+    "5.B",
+    "6.B"
+  ],
+  "themes": [
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "stem": "Which statement best explains the relationship between steel production and railroad building in this period?",
+  "stimulus": {
+    "kind": "table",
+    "source_note": "United States steel production, in thousands of long tons, from the Encyclopaedia Britannica, 11th edition (1911), Table IX, Production of Steel. Public domain.",
+    "text": "United States steel production, in thousands of long tons:\n\n| Year | Steel produced |\n| 1870 | 69 |\n| 1880 | 1,247 |\n| 1890 | 4,277 |\n| 1900 | 10,188 |"
+  },
+  "stimulus_set": "steel-output",
+  "options": [
+    {
+      "key": "A",
+      "text": "Steel mills and railroads competed, so each one's growth hurt the other",
+      "misconception": "Background: the two industries bought from each other; railroads were the steel mills' best customers, not their rivals."
+    },
+    {
+      "key": "B",
+      "text": "Railroads used only iron, so steel production grew without any help from them",
+      "misconception": "Background: by 1882 most American steel went into rails; the railroads were the steel industry's biggest market."
+    },
+    {
+      "key": "C",
+      "text": "Steel production grew only after the railroads stopped expanding in 1900",
+      "misconception": "Background: the table shows steel growing fastest while the railroads were still expanding, from 1870 to 1900."
+    },
+    {
+      "key": "D",
+      "text": "Railroads bought most of the steel, and steel let railroads lay more track"
+    }
+  ],
+  "rationales": {
+    "A": "Background: steel mills and railroads fed each other. The railroads bought the steel, and the steel let the railroads grow; neither hurt the other.",
+    "B": "Background: by 1882 most American steel went into rails. The railroads were the steel mills' biggest customers, not bystanders.",
+    "C": "Background: the table shows steel output climbing from 69 thousand tons in 1870 to over 10 million in 1900, the very decades the railroads were expanding fastest.",
+    "D": "Background from the books: steel was used extensively as the railroad system developed, and by 1882 most American steel went into rails. Cheap steel let railroads lay more track, and more track ordered more steel.",
+    "general": "Look for who buys what.\n1. The table shows steel output exploding from 69 thousand tons to over 10 million.\n2. Background: most of that steel went into rails, so the railroads were the mills' best customers.\n3. Background: each mile of new track ordered more steel, and each ton of cheap steel made the next mile affordable.\nRemember: the biggest customer and the biggest supplier grow together."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Steel and the Bessemer Process"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "The Second Industrial Revolution"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Age of Invention and Economic Growth"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)"
+}

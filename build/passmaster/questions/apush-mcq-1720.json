@@ -1,0 +1,87 @@
+{
+  "id": "apush-mcq-1720",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "answerKey": "C",
+  "skills": [
+    "1.B",
+    "4.B"
+  ],
+  "themes": [
+    "PCE",
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "stem": "Why did the federal government give railroad companies more than 175 million acres of public land?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "A. J. Russell, Golden Spike ceremony, Promontory Summit, Utah, May 10, 1869. Public domain. https://commons.wikimedia.org/wiki/File:Golden_Spike_ceremony%2C_Promontory%2C_Utah%2C_May_10%2C_1869.jpg",
+    "text": "The photograph shows two locomotives standing nose to nose on a single track at Promontory Summit, Utah, on May 10, 1869. A large crowd of workers and officials stands between and around the engines, shaking hands and cheering. One man in the center holds a bottle. The engines face each other where the Union Pacific and Central Pacific tracks met."
+  },
+  "stimulus_set": "golden-spike",
+  "options": [
+    {
+      "key": "A",
+      "text": "To punish the railroads for charging farmers high freight rates",
+      "misconception": "Background: the land came before the high rates; the grants were a reward for building, not a punishment."
+    },
+    {
+      "key": "B",
+      "text": "To keep the railroads from ever reaching the Pacific Ocean",
+      "misconception": "Background: the grants were meant to speed the lines to the Pacific, not to stop them."
+    },
+    {
+      "key": "C",
+      "text": "To pay for building lines across empty land with few customers"
+    },
+    {
+      "key": "D",
+      "text": "To give the railroads land they could sell to Native peoples",
+      "misconception": "Background: the railroads sold granted land to settlers, not to Native peoples, whose lands the grants took."
+    }
+  ],
+  "rationales": {
+    "A": "Background: the grants came with the Pacific Railway Acts of the 1860s, before the rate fights of the 1870s. They were payment for building, not punishment for rates.",
+    "B": "Background: the whole point of the grants was to reach the Pacific. The government wanted the lines built, and land was how it paid for them.",
+    "C": "Background from the books: the Pacific Railway Act of 1862 gave land to the railroad companies, more than 175 million acres in all. The companies sold that land to settlers to pay for laying track across country with almost no customers yet.",
+    "D": "Background: the railroads sold their granted land to settlers from the East and from Europe. The grants took land from Native peoples; they did not give land to them.",
+    "general": "Ask how a railroad pays for track nobody rides yet.\n1. Background: a line across the Plains and the mountains cost a fortune before it carried a single paying passenger.\n2. Background: the government paid the builders in public land, over 175 million acres, which the companies sold to settlers.\n3. Background: the land sales turned empty country into the railroad's own funding.\nRemember: when a project cannot pay for itself, watch what the government gives it instead."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Government Support for Transcontinental Railroads"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 17",
+        "section": "Government Encouragement of Western Settlement"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Railroads and Developments in the West"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)",
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1720",
+      "file": "u6/5s24-ch17-mcq-07.jpg",
+      "caption": "The Golden Spike ceremony at Promontory Summit, Utah, May 10, 1869",
+      "alt": "Two locomotives stand nose to nose at Promontory Summit while a large crowd of workers and officials celebrates between them",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Golden_Spike_ceremony%2C_Promontory%2C_Utah%2C_May_10%2C_1869.jpg",
+      "license": "Public domain: photograph by A. J. Russell, 1869."
+    }
+  ]
+}

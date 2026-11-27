@@ -1,0 +1,87 @@
+{
+  "id": "apush-mcq-1722",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "answerKey": "A",
+  "skills": [
+    "1.B",
+    "3.A"
+  ],
+  "themes": [
+    "WXT",
+    "GEO"
+  ],
+  "reasoning": "causation",
+  "stem": "Why was the Eads Bridge, completed in 1874, an engineering landmark?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "The Eads Bridge at St. Louis, 1874, Library of Congress (ppmsca08973u). Public domain. https://commons.wikimedia.org/wiki/File:Eads_Bridge_St_Louis_1874_ppmsca08973u.jpg",
+    "text": "The image is a large 1874 print titled \"THE BRIDGE AT ST. LOUIS.\" In the center, a great three-arched bridge crosses the wide Mississippi River, with steamboats passing beneath it and the city of St. Louis on the far bank. Smaller panels around the edges show the bridge under construction, its stone piers, and a portrait of its designer, James B. Eads. A table of measurements runs along the bottom."
+  },
+  "stimulus_set": "eads-bridge",
+  "options": [
+    {
+      "key": "A",
+      "text": "It was the first steel bridge, strong enough for long spans"
+    },
+    {
+      "key": "B",
+      "text": "It was the first bridge ever built across any American river",
+      "misconception": "Background: bridges had crossed American rivers for decades; the Eads Bridge was the first across the Mississippi at St. Louis, not the first bridge anywhere."
+    },
+    {
+      "key": "C",
+      "text": "It was built entirely of wood, the last great wooden bridge",
+      "misconception": "Background: the bridge was famous for steel, not wood; its arches were steel tubes, and it carried trains on two decks."
+    },
+    {
+      "key": "D",
+      "text": "It was built without any design or engineer, by the workers alone",
+      "misconception": "Background: the print names its designer, James B. Eads, whose portrait appears in the panels; the bridge was his design."
+    }
+  ],
+  "rationales": {
+    "A": "Background from the books and the Library of Congress record: the Eads Bridge was the first steel bridge, completed in 1874. Steel's strength let its three arches span the wide Mississippi, which weaker metals could not do.",
+    "B": "Background: bridges had crossed smaller American rivers long before 1874. The Eads Bridge was the first across the Mississippi at St. Louis, and the first built of steel.",
+    "C": "Background: the bridge's fame came from steel, not wood. Its arches were steel tubes, and it carried a railroad below and a roadway above.",
+    "D": "Background: the print itself names James B. Eads as chief engineer and shows his portrait. The bridge was his design, built by workers under his direction.",
+    "general": "Look for what the bridge is made of, not just where it stands.\n1. The print celebrates a three-arched crossing of the wide Mississippi at St. Louis.\n2. Background: it was the first bridge built of steel, and steel's strength is what let the arches span so far.\n3. Background: a new metal made a crossing possible that older metals could not hold.\nRemember: a landmark is often a first use of a material, not just a first place."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Steel and the Bessemer Process"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "The Second Industrial Revolution"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Age of Invention and Economic Growth"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)",
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1722",
+      "file": "u6/original-u6-tech-08.jpg",
+      "caption": "The Eads Bridge at St. Louis, 1874, with construction panels",
+      "alt": "A large 1874 print shows the three-arched Eads Bridge crossing the Mississippi at St. Louis, with steamboats below and construction scenes and a portrait of James B. Eads around the edges",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Eads_Bridge_St_Louis_1874_ppmsca08973u.jpg",
+      "license": "Public domain: Library of Congress print of the Eads Bridge, 1874."
+    }
+  ]
+}

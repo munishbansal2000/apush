@@ -1,0 +1,78 @@
+{
+  "answerKey": "C",
+  "difficulty": 2,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ],
+    "primary_sources": [
+      "Sherman Antitrust Act, Section 1 (1890)"
+    ]
+  },
+  "id": "apush-mcq-1755",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "The act bans combinations that restrain trade, not every corporation.",
+      "text": "All corporations that have more than one owner"
+    },
+    {
+      "key": "B",
+      "misconception": "The act protects interstate trade; it bans restraints on it, not the trade itself.",
+      "text": "All trade between the states"
+    },
+    {
+      "key": "C",
+      "text": "Contracts and combinations that restrain trade between the states"
+    },
+    {
+      "key": "D",
+      "misconception": "The act bans restraints of trade, not large profits as such.",
+      "text": "All businesses that earn large profits from trade"
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "The act leaves ordinary corporations alone; it bans only combinations that restrain trade.",
+    "B": "Interstate trade is what the act protects, not what it bans.",
+    "C": "The act’s first sentence declares illegal every contract, combination, or conspiracy in restraint of trade among the states or with foreign nations.",
+    "D": "Large profits alone break no part of this law; restraining trade does.",
+    "general": "Read the act’s first sentence word by word.\n1. It names three things: contract, combination, and conspiracy.\n2. Each one counts only when it restrains trade.\n3. The trade must cross state lines or reach foreign nations to count.\n4. Put together, the law bans agreements that choke interstate trade.\nRemember: a law’s first sentence usually states exactly what it bans."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "1.A"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "According to the act, what is declared illegal?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Sherman Antitrust Act, Section 1, approved July 2, 1890. Public domain.",
+    "text": "“Every contract, combination in the form of trust or otherwise, or conspiracy, in restraint of trade or commerce among the several States, or with foreign nations, is hereby declared to be illegal.”"
+  },
+  "stimulus_set": "sherman-act",
+  "themes": [
+    "PCE"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

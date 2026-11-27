@@ -1,0 +1,79 @@
+{
+  "id": "apush-mcq-1958",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "test",
+  "unit": 6,
+  "topics": [
+    "6.13"
+  ],
+  "skills": [
+    "5.A"
+  ],
+  "themes": [
+    "PCE",
+    "GEO"
+  ],
+  "reasoning": "comparison",
+  "difficulty": 3,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "B. Politics, Big Business, and Corruption in the Gilded Age"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Gilded Age Politics"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "National Politics"
+      }
+    ],
+    "primary_sources": [
+      "Presidential election returns, 1876-1896 (American Presidency Project)"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-613-elections-table",
+  "stimulus": {
+    "kind": "table",
+    "text": "Presidential elections, 1876–1896. Popular vote shares and electoral votes for the leading candidates.\n\n| Year | Candidate | Party | Popular vote | Electoral votes |\n|---|---|---|---|---:|\n| 1876 | Rutherford B. Hayes | Republican | 48.0% | 185 |\n| 1876 | Samuel J. Tilden | Democratic | 51.0% | 184 |\n| 1880 | James A. Garfield | Republican | 48.3% | 214 |\n| 1880 | Winfield S. Hancock | Democratic | 48.2% | 155 |\n| 1884 | Grover Cleveland | Democratic | 48.9% | 219 |\n| 1884 | James G. Blaine | Republican | 48.3% | 182 |\n| 1888 | Benjamin Harrison | Republican | 47.8% | 233 |\n| 1888 | Grover Cleveland | Democratic | 48.6% | 168 |\n| 1892 | Grover Cleveland | Democratic | 46.0% | 277 |\n| 1892 | Benjamin Harrison | Republican | 43.0% | 145 |\n| 1892 | James B. Weaver | People’s Party | 8.5% | 22 |\n| 1896 | William McKinley | Republican | 51.0% | 271 |\n| 1896 | William Jennings Bryan | Democratic | 46.7% | 176 |\n\nIn 1896 the People’s Party also nominated Bryan.",
+    "source_note": "Presidential election returns, 1876–1896, American Presidency Project (via the Gilder Lehrman Institute). Popular vote shares rounded to one decimal place."
+  },
+  "stem": "What pattern in the table best describes presidential elections from 1876 to 1896?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Winners usually took less than half of the popular vote"
+    },
+    {
+      "key": "B",
+      "text": "Winners usually took more than half of the popular vote",
+      "misconception": "Only McKinley in 1896 passed half the popular vote."
+    },
+    {
+      "key": "C",
+      "text": "Third-party candidates usually won electoral votes in every election",
+      "misconception": "Only Weaver in 1892 won electoral votes in this table."
+    },
+    {
+      "key": "D",
+      "text": "The popular vote winner always won the electoral vote as well",
+      "misconception": "In 1876 and 1888 the popular winner lost the electoral vote."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "Five of six winners sit below 50 percent; only McKinley in 1896 clears it.",
+    "B": "Hayes, Garfield, Cleveland, and Harrison all won with less than half.",
+    "C": "Weaver is the only third-party candidate with electoral votes here.",
+    "D": "Tilden in 1876 and Cleveland in 1888 won the popular vote and lost.",
+    "general": "Read down the winner's popular vote column.\n1. Hayes won with 48.0 percent, Garfield with 48.3, Cleveland with 48.9 and 46.0.\n2. Harrison won with 47.8 percent, so five of six winners fall short of half.\n3. Only McKinley in 1896 clears half, with 51.0 percent.\n4. Close elections were the rule, not the exception, in these years.\nRemember: a pattern needs the whole column, not one row."
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "apush-mcq-1974",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.13"
+  ],
+  "skills": [
+    "1.A"
+  ],
+  "themes": [
+    "PCE",
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "difficulty": 3,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "The Election of 1896 and the “Cross of Gold” Speech"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Gilded Age Politics"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Silver Issue and the Populist Movement"
+      }
+    ],
+    "primary_sources": [
+      "Frederick Burr Opper, 'The Silver-Tongued Ventriloquist and His Dummies,' Puck, August 12, 1896"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-613-silver-ventriloquist",
+  "stimulus": {
+    "kind": "image",
+    "text": "Political cartoon, “The Silver-Tongued Ventriloquist and His Dummies,” by Frederick Burr Opper, Puck, August 12, 1896. A large bearded man wearing a sash labeled “Silver Mine Owner” sits on a box marked “16 to 1.” He holds a small dummy labeled “Bryan” who waves a paper reading “Free Silver Harangues.” At the left, three more small dummies sit in a box, labeled “Tillman,” “Peffer,” and “Altgeld.” At the right, another dummy labeled “Sewall” sits in a box. The caption reads, “If the Show Succeeds, He’ll Get All the Profits.”",
+    "source_note": "Frederick Burr Opper, ‘The Silver-Tongued Ventriloquist and His Dummies,’ Puck, August 12, 1896. Public domain: cartoon published 1896 (pre-1930); Library of Congress, LCCN2012648552. Labels and caption checked against the image."
+  },
+  "stem": "What does the '16 to 1' on the ventriloquist's box mean?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Sixteen states would vote for silver and one for gold",
+      "misconception": "The ratio is about coinage, not about counting states."
+    },
+    {
+      "key": "B",
+      "text": "Silver and gold would be coined at 16 to 1"
+    },
+    {
+      "key": "C",
+      "text": "Bryan would win sixteen electoral votes for every one McKinley won",
+      "misconception": "The box marks the coinage ratio, not an election result."
+    },
+    {
+      "key": "D",
+      "text": "Sixteen silver mines would open for every gold mine closed",
+      "misconception": "The ratio sets how silver and gold are coined, not how mines open."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The ratio concerns coinage, not a count of states.",
+    "B": "Free silver meant coining silver and gold at 16 to 1.",
+    "C": "The box shows a money ratio, not votes in the election.",
+    "D": "The ratio fixes coinage, not the number of mines.",
+    "general": "Read the box with the rest of the cartoon.\n1. The ventriloquist sits on a box marked '16 to 1.'\n2. He is a silver mine owner, and Bryan waves 'Free Silver Harangues.'\n3. Background from the books: the free-silver demand was coinage of silver and gold at 16 to 1.\n4. The number sits on the ventriloquist's own box, so it names his program.\nRemember: a number on a cartoon prop names the policy it stands for."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1974",
+      "file": "u6/pr25e-test1-q29.jpg",
+      "caption": "“The Silver-Tongued Ventriloquist and His Dummies,” Puck, August 12, 1896",
+      "alt": "Opper cartoon: a giant silver mine owner seated on a box marked 16 to 1 holds a small Bryan dummy waving a paper reading Free Silver Harangues, with other small dummies in boxes at each side.",
+      "license": "Public domain: Puck cartoon published 1896.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/The_silver-tongued_ventriloquist_and_his_dummies_-_F._Opper._LCCN2012648552.jpg"
+    }
+  ]
+}

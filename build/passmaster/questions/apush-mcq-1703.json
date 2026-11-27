@@ -1,0 +1,72 @@
+{
+ "id": "apush-mcq-1703",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.4"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 2,
+ "status": "final",
+ "lesson": "apush-u6-l2",
+ "stem": "The table most directly shows that between 1896 and 1900, Black voter registration in Louisiana",
+ "options": [
+  {
+   "key": "A",
+   "text": "rose steadily as more Black men reached voting age",
+   "misconception": "Black registration kept rising."
+  },
+  {
+   "key": "B",
+   "text": "stayed roughly the same while white registration fell",
+   "misconception": "Black registration held steady."
+  },
+  {
+   "key": "C",
+   "text": "collapsed, falling from over 130,000 to about 5,000"
+  },
+  {
+   "key": "D",
+   "text": "grew faster than white voter registration",
+   "misconception": "Black registration outpaced white registration."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "The numbers fall every year; nothing rises.",
+  "B": "Black registration falls far more steeply than white registration.",
+  "C": "The Black column falls from 130,344 in 1896 to 12,902 in 1898 and 5,320 in 1900. That is a collapse of more than 95 percent in four years.",
+  "D": "White registration ends at 125,437, far above the Black figure.",
+  "general": "1. Read the Black column. 130,344, then 12,902, then 5,320.\n2. Read the direction. Down, steeply, at every step.\n3. Compare with the white column. White registration dips and recovers; Black registration does not.\n4. Match the change. A fall of more than 95 percent is a collapse, not a wobble.\nRemember: a table’s story is in the direction and the size of the change."
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Louisiana voter registration, 1896–1900. Figures from the Historic New Orleans Collection (64 Parishes) and the U.S. Commission on Civil Rights briefing paper, Barriers to Voting in Louisiana (2018).",
+  "text": "| Year | Black voters registered | White voters registered |\n| 1896 | 130,344 | 164,088 |\n| 1898 | 12,902 | 74,133 |\n| 1900 | 5,320 | 125,437 |\n\nSource: Louisiana voter registration figures, 1896–1900. Louisiana adopted a new constitution in 1898 with a poll tax, a literacy test, a property requirement, and a grandfather clause."
+ },
+ "stimulus_set": "louisiana-voters-1896-1900",
+ "source": "original; stimulus is a table of Louisiana voter registration figures from the Historic New Orleans Collection and the U.S. Commission on Civil Rights",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.4 The “New South”"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10"
+   }
+  ],
+  "primary_sources": [
+   "Louisiana voter registration figures, 1896–1900 (Historic New Orleans Collection; U.S. Commission on Civil Rights)"
+  ]
+ }
+}

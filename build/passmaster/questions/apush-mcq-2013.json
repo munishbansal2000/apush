@@ -1,0 +1,86 @@
+{
+  "answerKey": "B",
+  "difficulty": 2,
+  "figures": [
+    {
+      "alt": "1889 Puck cartoon showing giant top-hatted figures labeled with trust names looming over small senators at their desks",
+      "caption": "Joseph Keppler, “The Bosses of the Senate,” Puck, January 23, 1889. Giant figures labeled with trust names loom over the small senators.",
+      "file": "pt01/fig3-bosses-of-senate-1889.jpg",
+      "id": "fig-apush-mcq-2013",
+      "license": "No known restrictions on publication",
+      "source_url": "https://www.loc.gov/pictures/item/2002718861/"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "America Transformed into the Industrial Giant"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-2013",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Carnegie wanted the government to confiscate large fortunes.",
+      "text": "That the government should confiscate all large fortunes"
+    },
+    {
+      "key": "B",
+      "text": "That the wealthy should use fortunes for public benefit"
+    },
+    {
+      "key": "C",
+      "misconception": "Carnegie wanted workers to own all factories.",
+      "text": "That workers should own all factories collectively"
+    },
+    {
+      "key": "D",
+      "misconception": "Carnegie thought wealth should pass on without public obligation.",
+      "text": "That wealth should be inherited without any public obligations"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Confiscation is the opposite of voluntary philanthropy.",
+    "B": "Carnegie argued the wealthy should administer surplus wealth for public benefit, through libraries, universities, and similar institutions, rather than hoard or waste it.",
+    "C": "Worker ownership of factories is not Carnegie's view.",
+    "D": "Inheritance without obligation is what Carnegie criticized.",
+    "general": "1. Read Carnegie's rule. A rich man who dies rich dies disgraced.\n2. Ask what he wants instead. The wealthy should administer surplus wealth for public benefit.\n3. Test the opposites. Confiscation, worker ownership, and inheritance without obligation are not his view.\n4. Match the view. Wealth carries a responsibility to use it for others.\nRemember: a writer's rule for wealth is found in what he says the wealthy must do with it."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "3.A"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from Carnegie, “The Gospel of Wealth” (1889) with the Keppler 1889 Puck cartoon",
+  "status": "final",
+  "stem": "Carnegie’s argument most directly reflects which of the following views of wealth in the Gilded Age?",
+  "stimulus": {
+    "kind": "mixed",
+    "source_note": "Andrew Carnegie, “The Gospel of Wealth,” 1889, public domain. Cartoon: Joseph Keppler, “The Bosses of the Senate,” Puck, January 23, 1889, Library of Congress.",
+    "text": "“The problem of our age is the proper administration of wealth, so that the ties of brotherhood may still bind together the rich and poor in harmonious relationship. . . . The man who dies thus rich dies disgraced.”"
+  },
+  "stimulus_set": "carnegie-gospel-wealth-1889",
+  "themes": [
+    "WXT",
+    "PCE"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

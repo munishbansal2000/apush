@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-1925",
+ "lesson": "apush-u6-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.12"
+ ],
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.12 Controversies over the Role of Government in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "Gilded Age Politics"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "National Politics"
+   }
+  ],
+  "primary_sources": [
+   "Joseph Keppler, 'The Bosses of the Senate,' Puck, January 23, 1889"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "u6-612-bosses-senate",
+ "stimulus": {
+  "kind": "image",
+  "text": "Political cartoon, “The Bosses of the Senate,” by Joseph Keppler, Puck, January 23, 1889. In the Senate chamber, giant figures in top hats, their bodies huge money bags labeled “Standard Oil Trust,” “Copper Trust,” “Steel Beam Trust,” “Iron Trust,” “Sugar Trust,” “Coal Trust,” and “Nail Trust,” tower over the small senators seated at their desks below. A sign on the wall reads, “This is a Senate of the Monopolists by the Monopolists and for the Monopolists.” A door at the left marked “People’s Entrance” is labeled “Closed,” while a door at the right marks the monopolists’ entrance.",
+  "source_note": "Joseph Keppler, 'The Bosses of the Senate,' Puck, January 23, 1889. Public domain: chromolithograph published 1889 (pre-1930); United States Senate historical images collection. Labels and sign wording checked against the image."
+ },
+ "stem": "Which development of the Gilded Age does the cartoon criticize?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The growth of labor unions and their strikes",
+   "misconception": "The cartoon shows trusts, not unions, towering over the Senate."
+  },
+  {
+   "key": "B",
+   "text": "The settlement of the West by farmers",
+   "misconception": "The cartoon is set in the Senate chamber, not on the western frontier."
+  },
+  {
+   "key": "C",
+   "text": "The arrival of immigrants in American cities",
+   "misconception": "No immigrants appear in the cartoon; the giants are labeled as trusts."
+  },
+  {
+   "key": "D",
+   "text": "The growth of trusts and their influence over government"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "The giants are labeled as trusts, not as unions, so unions are not the target.",
+  "B": "Nothing in the cartoon shows western settlement or farming.",
+  "C": "The cartoon shows money-bag trusts, not newly arrived immigrants.",
+  "D": "The trusts are drawn as giants running the Senate, so their power over government is the target.",
+  "general": "Ask what the artist blames.\n1. The giants wear top hats and carry money bags labeled with trust names.\n2. They fill the Senate chamber while the senators sit small below them.\n3. The sign says the Senate belongs to the monopolists, not to the people.\n4. The artist blames the power of big business over the government, not unions, farmers, or immigrants.\nRemember: a cartoon names its target with labels, so read the labels first."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1925",
+   "file": "u6/u6-bosses-of-senate.jpg",
+   "caption": "“The Bosses of the Senate,” Puck, January 23, 1889",
+   "alt": "Keppler cartoon: giant money-bag trusts labeled Standard Oil, Copper, Steel Beam, Iron, Sugar, Coal, and Nail tower over tiny senators at their desks in the Senate chamber.",
+   "license": "Public domain: Puck cartoon published 1889.",
+   "source_url": "https://www.senate.gov/art-artifacts/historical-images/political-cartoons-caricatures/38_00392_001.htm"
+  }
+ ]
+}

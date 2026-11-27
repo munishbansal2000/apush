@@ -1,0 +1,79 @@
+{
+ "answerKey": "D",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Samuel Gompers, address to the International Labor Congress (August 28, 1893)"
+  ]
+ },
+ "id": "apush-mcq-1779",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Wages are never named anywhere in the passage.",
+   "text": "It lists higher wages first, before all other demands in the passage."
+  },
+  {
+   "key": "B",
+   "misconception": "The passage says nothing about striking for pay alone.",
+   "text": "It says unions should strike for pay alone and for nothing else."
+  },
+  {
+   "key": "C",
+   "misconception": "Gompers asks for more schoolhouses, not for employers to fund them.",
+   "text": "It asks employers to pay for all schooling for the workers’ children."
+  },
+  {
+   "key": "D",
+   "text": "It lists schools, books, leisure, and justice, none of which is a wage."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Wages are never named anywhere in the passage, so they cannot be listed first.",
+  "B": "The passage says nothing about striking, let alone striking for pay alone.",
+  "C": "Gompers asks for more schoolhouses; he never says employers must pay for them.",
+  "D": "Schools, books, leisure, and justice fill the list, and none of them is a wage demand.",
+  "general": "Test the claim against the whole list.\n1. The claim is that Gompers wanted only higher wages.\n2. Read the list: schoolhouses, books, learning, leisure, justice.\n3. Not one item in the list is a wage.\n4. A list with no wage in it answers a wages-only claim.\nRemember: to answer an “only” claim, count what the source actually lists."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.D"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "A student claims Gompers wanted only higher wages. The passage best answers that claim in which way?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Samuel Gompers, address to the International Labor Congress, August 28, 1893. Public domain (Samuel Gompers Papers, University of Maryland).",
+  "text": "“What does labor want? . . . We want more schoolhouses and less jails; more books and less arsenals; more learning and less vice; more constant work and less crime; more leisure and less greed; more justice and less revenge; in fact, more of the opportunities to cultivate our better natures, to make manhood more noble, womanhood more beautiful and childhood more happy and bright.”"
+ },
+ "stimulus_set": "gompers-what-labor-wants-1893",
+ "themes": [
+  "WOR",
+  "SOC"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-1877",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.10"
+ ],
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.10 Development of the Middle Class"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "Uneven Affluence"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Montgomery Ward and Company stereoscopic card, Chicago"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "u6-610-montgomery-ward",
+ "stimulus": {
+  "kind": "image",
+  "text": "The image is a hand-colored stereoscopic card, one of a “Travelers Series” published by Montgomery Ward and Company of Chicago. It shows the firm's large Chicago building twice, side by side: a tall tower rising over a many-windowed block with an arched ground floor. Printed beneath the two views is the caption “Class A, No. 12. The Establishment of Montgomery Ward and Co., One of the Sights of the City, Chicago, Ill., U. S. A.”",
+  "source_note": "Stereoscopic view of the Montgomery Ward and Company establishment, Chicago, from the Robert N. Dennis collection of stereoscopic views. Public domain image from Wikimedia Commons; viewed by the writer."
+ },
+ "stem": "Firms like Montgomery Ward built their business on mail-order catalogs. The stereoscopic card shows the firm's huge Chicago building. Taken together, the card and the catalog business best illustrate which development?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Wealthy shoppers visiting marble halls in person",
+   "misconception": "Catalog customers ordered from far away; they did not visit in person."
+  },
+  {
+   "key": "B",
+   "text": "A national market in which rural customers ordered goods by mail"
+  },
+  {
+   "key": "C",
+   "text": "Factory owners buying heavy machinery by mail",
+   "misconception": "Catalogs sold household goods to families, not heavy machinery to factories."
+  },
+  {
+   "key": "D",
+   "text": "Immigrants arriving at Ellis Island buying passage tickets to Chicago",
+   "misconception": "The card shows a Chicago retail firm, not a ticket office."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Mail order served people who could not visit the store. The building's size shows the scale of the business, not its visitors.",
+  "B": "A huge Chicago building plus catalog sales means one firm reaching customers across the country by mail, rail, and post.",
+  "C": "Heavy machinery was not the catalog trade. Catalogs sold goods for homes and farms.",
+  "D": "Ellis Island and passage tickets have nothing to do with this Chicago firm.",
+  "general": "Put the building and the business together.\n1. The card shows a very large Chicago building, a firm of national scale.\n2. The firm's business was mail-order catalogs.\n3. Background from the books: catalogs let families far from city stores order goods by mail.\n4. Together they show one national market, not a neighborhood shop.\nRemember: when a local building serves a national business, the development is the market's size."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1877",
+   "file": "u6/original-u6-midclass-05.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/The_establilshment_of_the_Montgomery_Ward_%26_Co.%2C_one_of_the_sights_of_the_city%2C_Chicago%2C_Ill.%2C_U.S.A%2C_from_Robert_N._Dennis_collection_of_stereoscopic_views.jpg",
+   "license": "Public domain",
+   "caption": "Stereoscopic card showing the Montgomery Ward and Company building, Chicago",
+   "alt": "Hand-colored stereoscopic card showing the tall tower and many-windowed Montgomery Ward building in Chicago twice, side by side"
+  }
+ ]
+}

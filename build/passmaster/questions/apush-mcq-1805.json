@@ -1,0 +1,80 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "August Spies, address to the court (October 7, 1886)"
+  ]
+ },
+ "id": "apush-mcq-1805",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "text": "It is deep, widespread, and cannot be stamped out."
+  },
+  {
+   "key": "B",
+   "misconception": "A fire that cannot be put out is not weak or dying.",
+   "text": "It is weak, dying, and nearly out already."
+  },
+  {
+   "key": "C",
+   "misconception": "Spies says the flames will blaze up everywhere, not only in Chicago.",
+   "text": "It exists only in Chicago and nowhere else."
+  },
+  {
+   "key": "D",
+   "misconception": "Spies says the fire burns underground everywhere, not in one man.",
+   "text": "It depends entirely on one leader to survive."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "A subterranean fire burns deep underground and spreads unseen, and Spies says it cannot be put out.",
+  "B": "A fire that cannot be put out is not weak or dying.",
+  "C": "Spies says the flames will blaze up everywhere, not only in Chicago.",
+  "D": "Spies says the fire burns underground everywhere, not in one man.",
+  "general": "Unpack the image word by word.\n1. Subterranean means underground, below the surface.\n2. A fire underground burns out of reach and out of sight.\n3. Spies says it cannot be put out, even by hanging the defendants.\n4. So the movement is deep, widespread, and beyond stamping out.\n5. Underground and unquenchable together mean the movement is beyond the court’s reach.\nRemember: an image’s adjectives carry the argument."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.A",
+  "2.C"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "Spies calls the labor movement “a subterranean fire.” What does that image best suggest about his view of the movement?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "August Spies, address to the court, October 7, 1886, in The Chicago Martyrs (1899). Public domain (Wikisource).",
+  "text": "“If you think that by hanging us you can stamp out the labor movement, the movement from which the downtrodden millions, the millions who toil and live in want and misery, the wage slaves, expect salvation, if this is your opinion, then hang us! Here you will tread upon a spark, but there, and there, and behind you and in front of you, and everywhere, flames will blaze up. It is a subterranean fire. You cannot put it out.”"
+ },
+ "stimulus_set": "spies-address-1886",
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

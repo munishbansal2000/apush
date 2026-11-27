@@ -1,0 +1,79 @@
+{
+  "id": "apush-mcq-1971",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.13"
+  ],
+  "skills": [
+    "3.A"
+  ],
+  "themes": [
+    "PCE",
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "difficulty": 3,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "The Politics of Tariff Rates"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Gilded Age Politics"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "National Politics"
+      }
+    ],
+    "primary_sources": [
+      "Grover Cleveland, annual message to Congress, December 6, 1887"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-613-cleveland-tariff",
+  "stimulus": {
+    "kind": "text",
+    "text": "President Grover Cleveland, annual message to Congress, December 6, 1887. Cleveland devoted the whole message to the tariff.\n\n“When we consider that the theory of our institutions guarantees to every citizen the full enjoyment of all the fruits of his industry and enterprise, with only such deduction as may be his share toward the careful and economical maintenance of the Government which protects him, it is plain that the exaction of more than this is indefensible extortion and a culpable betrayal of American fairness and justice. . . . The public Treasury, which should only exist as a conduit conveying the people’s tribute to its legitimate objects of expenditure, becomes a hoarding place for money needlessly withdrawn from trade and the people’s use, thus crippling our national energies, suspending our country’s development, preventing investment in productive enterprise, threatening financial disturbance, and inviting schemes of public plunder.”\n\nHigh tariff taxes had left the Treasury with a large surplus.",
+    "source_note": "Grover Cleveland, annual message to Congress, December 6, 1887 (Congressional Record, via Teaching American History). Both quoted sentences are exact; the ellipsis between them skips one complete sentence."
+  },
+  "stem": "Why did Cleveland call the Treasury surplus a problem?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The surplus showed that the government had stopped collecting taxes",
+      "misconception": "The surplus grew because tariffs collected too much, not because taxes stopped."
+    },
+    {
+      "key": "B",
+      "text": "Surplus money sat idle instead of serving trade and the people"
+    },
+    {
+      "key": "C",
+      "text": "The surplus forced the government to borrow money from banks abroad",
+      "misconception": "A surplus means extra money on hand, not a need to borrow."
+    },
+    {
+      "key": "D",
+      "text": "The surplus proved that American factories could not compete abroad",
+      "misconception": "Cleveland blames the tariff for hoarding money, not for weak factories."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The surplus came from heavy tariff taxes, not from taxes stopping.",
+    "B": "Cleveland calls the Treasury a hoarding place for money withdrawn from trade.",
+    "C": "Extra money in the Treasury means no borrowing is needed.",
+    "D": "Cleveland's complaint is hoarded money, not factory competition.",
+    "general": "Read the second quoted sentence closely.\n1. Cleveland calls the Treasury a 'hoarding place' for money.\n2. The money was 'needlessly withdrawn from trade and the people's use.'\n3. Hoarded money cannot fund investment or ease trade, so it cripples energies.\n4. A surplus is only good if the money serves a purpose, and this one did not.\nRemember: a surplus can be a problem when the money sits idle."
+  }
+}

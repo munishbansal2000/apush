@@ -1,0 +1,76 @@
+{
+  "answerKey": "A",
+  "difficulty": 4,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Corporations Look Abroad"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ]
+  },
+  "id": "apush-mcq-1767",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "text": "The panic shrank home demand, so firms sought buyers abroad"
+    },
+    {
+      "key": "B",
+      "misconception": "Background: foreign trade grew after the panic; ports did not close.",
+      "text": "The panic closed all foreign ports to American goods"
+    },
+    {
+      "key": "C",
+      "misconception": "Background: production fell in the panic but recovered; factories kept running.",
+      "text": "The panic ended industrial production in the United States"
+    },
+    {
+      "key": "D",
+      "misconception": "Background: the government never banned exports; businessmen sought foreign markets on their own.",
+      "text": "The panic made the federal government ban all exports"
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "Background from the books: the downturn after the Panic of 1893 encouraged businessmen to seek new markets abroad, and the sense that the frontier had closed pushed them the same way.",
+    "B": "Background: exports rose to about $1,400 million by 1900, so foreign ports stayed open to American goods.",
+    "C": "Background: the panic caused a sharp downturn, not the end of industry. Factories recovered and kept producing.",
+    "D": "Background: no ban on exports existed. The push abroad came from businessmen looking for buyers, not from a government order.",
+    "general": "Connect a panic at home to a search abroad.\n1. A panic means hard times: buyers at home have less money to spend.\n2. Background from the books: after the Panic of 1893, businessmen looked for new markets abroad.\n3. Factories still had goods to sell, so they needed buyers somewhere.\n4. Foreign markets gave them buyers when home demand fell.\nRemember: when home demand falls, sellers look for buyers elsewhere."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "6.B"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "Why did the Panic of 1893 push American businessmen to look harder for foreign markets?",
+  "stimulus": {
+    "kind": "table",
+    "source_note": "Figures from Barron’s Premium 2027, Chapter 8 (Topic 6.6, Corporations Look Abroad).",
+    "text": "| Year | Value of American exports |\n| 1870 | About $400 million |\n| 1880 | About $850 million |\n| 1900 | About $1,400 million |"
+  },
+  "stimulus_set": "exports-table",
+  "themes": [
+    "WXT",
+    "PCE"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

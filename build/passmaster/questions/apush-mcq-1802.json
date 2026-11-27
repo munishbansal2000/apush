@@ -1,0 +1,77 @@
+{
+ "answerKey": "B",
+ "difficulty": 2,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "id": "apush-mcq-1802",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The passage never says the AFL led the bombing.",
+   "text": "The AFL itself led the bombing at Haymarket Square in 1886."
+  },
+  {
+   "key": "B",
+   "text": "The public linked the Knights with violence, while the AFL kept growing."
+  },
+  {
+   "key": "C",
+   "misconception": "The passage says the AFL kept growing, not that it had no members.",
+   "text": "The AFL had no members left at all by the year 1886."
+  },
+  {
+   "key": "D",
+   "misconception": "The passage says the Knights campaigned for the eight-hour day.",
+   "text": "The Knights refused to support the eight-hour day demand."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The passage never says the AFL led the bombing.",
+  "B": "The passage says the public linked the Knights with violence and their membership fell, while the AFL kept growing.",
+  "C": "The passage says the AFL kept growing, not that it had no members.",
+  "D": "The passage says the Knights campaigned for the eight-hour day.",
+  "general": "Follow the passage past 1886.\n1. The Haymarket bombing of 1886 turned the public against labor violence.\n2. The public linked the Knights with that violence.\n3. The Knights’ membership fell after the bombing.\n4. The AFL, meanwhile, kept growing.\n5. A union the public fears loses members, while a union the public tolerates keeps them.\nRemember: “while” in a passage often marks the two sides of a comparison."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.B",
+  "5.B"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "Why did the AFL survive the backlash after Haymarket while the Knights declined, according to the passage?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, written for this question from Barron’s Premium 2027 Chapter 8 (Topic 6.7), 5 Steps to a 5, 2024, Chapter 18, and Princeton Review, Chapter 10.",
+  "text": "Original secondary passage, written for this question from the grounding books:\n\nThe Knights of Labor, founded in 1869, welcomed skilled and unskilled workers, women, and Black workers, and campaigned for broad reforms such as the eight-hour day, an end to child labor, and equal pay for equal work. The American Federation of Labor, founded in 1886 under Samuel Gompers, took a different path: it organized only skilled workers by craft and sought higher wages and shorter hours, leaving broader reform aside. After the Haymarket bombing of 1886, the public linked the Knights with violence and their membership fell, while the AFL kept growing."
+ },
+ "stimulus_set": "knights-vs-afl",
+ "themes": [
+  "WOR",
+  "SOC"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

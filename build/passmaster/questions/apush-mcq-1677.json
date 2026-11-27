@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1677",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.3"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "SOC",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "stem": "What does Siringo's story about the newspaper vote show about the cowboys on the range?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Charles A. Siringo, A Texas Cow Boy (1885), title page and Preface. Public domain. Text verified against Project Gutenberg (eBook #38309).",
+  "text": "Charles A. Siringo, A Texas Cow Boy (1885), title page and Preface (ellipses mark omissions):\n\nTitle page: AN OLD STOVE UP \"COW PUNCHER,\" WHO HAS SPENT NEARLY TWENTY YEARS ON THE GREAT WESTERN CATTLE RANGES\n\nPreface: \"My excuse for writing this book is money—and lots of it.\" ...\n\n\"While ranching on the Indian Territory line, close to Caldwell, Kansas, in the winter of '82 and '83, we boys, there being nine of us, made an iron-clad rule that whoever was heard swearing or caught picking grey backs off and throwing them on the floor without first killing them, should pay a fine of ten cents for each and every offense. The proceeds to be used for buying choice literature, something that would have a tendency to raise us above the average cow-puncher. ... There being two young Texans present who could neither read nor write, we let them speak their choice after the rest of us got our votes deposited. At the word given them to cut loose they both yelled 'Police Gazette', and on asking why they voted for that wicked Sheet, they both replied as though with one voice: 'Cause we can read the pictures.'\""
+ },
+ "stimulus_set": "siringo-cowboy",
+ "options": [
+  {
+   "key": "A",
+   "text": "They were wealthy ranch owners with large libraries",
+   "misconception": "Background: Siringo's boys pool ten-cent fines to buy one paper; ranch owners did not live on fines."
+  },
+  {
+   "key": "B",
+   "text": "They were mostly college-educated easterners",
+   "misconception": "Background: two of the nine cannot read or write at all."
+  },
+  {
+   "key": "C",
+   "text": "Many were working men, some unable to read, who bought cheap picture papers"
+  },
+  {
+   "key": "D",
+   "text": "They refused to spend any of their money on reading at all",
+   "misconception": "Background: the story is about them spending the fine money on a newspaper subscription."
+  }
+ ],
+ "rationales": {
+  "A": "Background: Siringo's boys pool ten-cent fines to buy one paper. Ranch owners did not live on fines.",
+  "B": "Background: two of the nine cannot read or write at all.",
+  "C": "Two of the nine cannot read or write, and they vote for the Police Gazette because 'we can read the pictures.' These are hired hands pooling fines for a paper, not gentlemen ranchers.",
+  "D": "Background: the story is about them spending the fine money on a newspaper subscription.",
+  "general": "Picture nine cowboys in a line camp, fining each other ten cents for swearing.\n1. Ask what the fines buy. One newspaper subscription, chosen by a vote.\n2. Ask who cannot vote in writing. Two young Texans who cannot read or write, who pick the paper with pictures.\n3. Name the men. Working hands, short on schooling and spare cash, not rich ranchers.\nRemember: the men who lived the West read it in pictures, while the men who wrote about it read it in books."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Ranching and the Era of the Cowboy in the West"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The Ranching Frontier"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

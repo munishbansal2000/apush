@@ -1,0 +1,76 @@
+{
+  "id": "apush-mcq-1730",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "answerKey": "A",
+  "skills": [
+    "2.A",
+    "3.A"
+  ],
+  "themes": [
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "stem": "What did Bell's words in the excerpt demonstrate for the first time?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Alexander Graham Bell's first transmitted words, March 10, 1876, as recorded in his laboratory notebook and reported by the Smithsonian Institution and the Library of Congress. Public domain.",
+    "text": "\"Mr. Watson, come here, I want to see you.\"\n\n— Alexander Graham Bell, speaking into his experimental telephone to his assistant Thomas Watson, March 10, 1876, three days after Bell received U.S. Patent No. 174,465 for the telephone."
+  },
+  "stimulus_set": "bell-first-words",
+  "options": [
+    {
+      "key": "A",
+      "text": "That the human voice could be sent over a wire and understood"
+    },
+    {
+      "key": "B",
+      "text": "That a telephone could send written messages across the ocean",
+      "misconception": "Background: the first words were spoken, not written, and they traveled only between two rooms in Boston; the transatlantic telephone came decades later."
+    },
+    {
+      "key": "C",
+      "text": "That Bell had invented the telegraph forty years earlier",
+      "misconception": "Background: the telegraph came before the telephone, and Samuel Morse built it, not Bell."
+    },
+    {
+      "key": "D",
+      "text": "That Watson had invented the telephone and Bell had only watched",
+      "misconception": "Background: Bell held the patent and spoke the words; Watson was his assistant, who heard and answered them."
+    }
+  ],
+  "rationales": {
+    "A": "Bell spoke into his telephone in one room, and Watson, in another room, heard the words and came. The voice itself had traveled over a wire and been understood.",
+    "B": "Background: the words were spoken aloud, not written, and they traveled between two rooms. The telephone across the ocean came decades later.",
+    "C": "Background: the telegraph was decades older than the telephone, and Morse built it. Bell's 1876 patent was for the telephone, not the telegraph.",
+    "D": "Background: Bell held Patent No. 174,465, and Watson was his assistant. Watson heard the first call; he did not invent the telephone.",
+    "general": "Ask what Watson did when he heard the words.\n1. Bell spoke nine ordinary words into a device in one room.\n2. Watson heard them in another room and came, which proved the voice itself had traveled over the wire.\n3. Background: nothing like that had ever happened before March 10, 1876.\nRemember: a first is proved by what the listener does."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "The Telegraph and the Telephone"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "The Second Industrial Revolution"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Age of Invention and Economic Growth"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)"
+}

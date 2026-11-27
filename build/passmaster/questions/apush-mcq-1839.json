@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-1839",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.9"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "MIG",
+  "GEO"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.9 Responses to Immigration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "irish-map-1890",
+ "stimulus": {
+  "kind": "map",
+  "text": "Described: a pair of statistical maps from the United States Census Office (1898) showing where Irish-born residents lived in 1890. The darkest shading, marking the heaviest concentrations of Irish-born residents relative to population, falls over the industrial Northeast and the Great Lakes port cities, with far lighter shading across the rural South and the far West.",
+  "source_note": "Described from the Census Office maps, Density of Distribution of the Natives of Ireland: 1890, Government release of 11th Census Results, 1898. Public domain. Rewrite of staged survivor pr25e-test2-q36 (Princeton Practice Test 2), reframed to Gilded Age restriction measures; stem, options, and explanations are original."
+ },
+ "stem": "The maps best support which of the following conclusions about Irish immigrants by 1890?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Most Irish immigrants had returned to Ireland by 1890",
+   "misconception": "Reads a map of where people lived as a map of people leaving."
+  },
+  {
+   "key": "B",
+   "text": "Irish immigrants settled mainly in the rural South and the far West",
+   "misconception": "Picks the lightest-shaded regions instead of the darkest."
+  },
+  {
+   "key": "C",
+   "text": "Irish immigrants clustered in the industrial cities of the Northeast and Great Lakes"
+  },
+  {
+   "key": "D",
+   "text": "Irish immigrants avoided port cities and settled inland",
+   "misconception": "Says the opposite of what the port-city shading shows."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "The maps show where Irish-born residents lived in 1890, not who left. Nothing here shows a return to Ireland.",
+  "B": "The South and the far West carry the lightest shading. The heaviest shading is in the Northeast and Great Lakes.",
+  "C": "The darkest shading falls over the industrial Northeast and the Great Lakes port cities, where Irish-born residents were most concentrated relative to population. The map shows clustering in industrial cities, not a spread across the country.",
+  "D": "The port cities carry the darkest shading of all. Irish immigrants clustered at the ports, not away from them.",
+  "general": "Read the shading the way the map maker meant it.\n1. The darkest shading marks the heaviest concentrations of Irish-born residents.\n2. That shading falls over the industrial Northeast and the Great Lakes port cities.\n3. The rural South and the far West are lightly shaded.\n4. So the Irish clustered in industrial cities, not across the countryside.\nRemember: on a shaded map, start with what the darkest shading marks, then name where it falls."
+ }
+}

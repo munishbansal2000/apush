@@ -1,0 +1,85 @@
+{
+  "answerKey": "C",
+  "difficulty": 3,
+  "figures": [
+    {
+      "alt": "A stereoscopic view of the huge Montgomery Ward and Company building in Chicago, a multi-story block with a tall tower, captioned one of the sights of the city",
+      "caption": "The Montgomery Ward and Company establishment, Chicago, stereoscopic view",
+      "file": "u6/original-u6-midclass-05.jpg",
+      "id": "fig-apush-mcq-1768",
+      "license": "Public domain: stereoscopic view from the Robert N. Dennis collection.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/The_establilshment_of_the_Montgomery_Ward_%26_Co.%2C_one_of_the_sights_of_the_city%2C_Chicago%2C_Ill.%2C_U.S.A%2C_from_Robert_N._Dennis_collection_of_stereoscopic_views.jpg"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ]
+  },
+  "id": "apush-mcq-1768",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "The building is a store and warehouse, not a railroad office.",
+      "text": "A railroad company"
+    },
+    {
+      "key": "B",
+      "misconception": "The building holds goods for sale, not furnaces for making steel.",
+      "text": "A steel mill"
+    },
+    {
+      "key": "C",
+      "text": "A mail-order house selling goods by catalog"
+    },
+    {
+      "key": "D",
+      "misconception": "The building is a retail establishment, not a bank.",
+      "text": "A bank that lent money to farmers"
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "Railroads carried Ward’s goods, but the building itself is the mail-order house, not a railroad.",
+    "B": "Steel mills made steel with furnaces and converters. This building stored and shipped goods for sale.",
+    "C": "Background from the books: Montgomery Ward printed mail-order catalogs and encouraged people far from stores to buy from them. The huge Chicago building was the house that filled those orders.",
+    "D": "Banks lent money, while Ward sold goods by catalog. The caption calls the building a sight of the city, not a bank.",
+    "general": "Use the caption and the building together.\n1. The caption calls the building the establishment of Montgomery Ward and Company.\n2. Background from the books: Ward sold by mail-order catalog to people far from any store.\n3. A mail-order house needs a huge building to store goods and fill orders.\n4. The tower and the many floors fit a house that shipped goods across the country.\nRemember: a building’s size can tell you how a business worked."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "1.A"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "What kind of business did Montgomery Ward run from the building shown?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "“The Establishment of Montgomery Ward and Co., One of the Sights of the City, Chicago,” stereoscopic view, Robert N. Dennis collection. Public domain.",
+    "text": "A stereoscopic view of the Montgomery Ward and Company establishment in Chicago, a huge multi-story building with a tall tower rising over the neighboring blocks. The caption calls it “one of the sights of the city,” and the building’s many windows show floor after floor of goods."
+  },
+  "stimulus_set": "montgomery-ward",
+  "themes": [
+    "WXT"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

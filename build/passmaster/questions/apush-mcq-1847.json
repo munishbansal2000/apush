@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-1847",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.9"
+ ],
+ "skills": [
+  "3.C"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.9 Responses to Immigration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "origin-shares-table",
+ "stimulus": {
+  "kind": "table",
+  "text": "Share of all immigrants to the United States, by country of birth (percent).\n\n| Country | 1861–1870 | 1891–1900 |\n| Great Britain | 24.5 | 7.5 |\n| Ireland | 18.8 | 10.0 |\n| Germany | 34.0 | 14.0 |\n| Austria-Hungary | 0.3 | 16.0 |\n| Russia and Poland | 0.2 | 14.0 |\n| Italy | 0.5 | 18.0 |",
+  "source_note": "Encyclopaedia Britannica, 11th edition (1911), article “Migration,” table of nationality of immigrants, compiled from official United States immigration figures. Public domain."
+ },
+ "stem": "A nativist in the 1890s could have used this table to argue that",
+ "options": [
+  {
+   "key": "A",
+   "text": "immigration had ended because the old sources had dried up",
+   "misconception": "Reads falling old shares as an ending, ignoring the rising new shares."
+  },
+  {
+   "key": "B",
+   "text": "the new immigrants came from the same countries as before",
+   "misconception": "Claims the same origins, but the table shows the sources changing."
+  },
+  {
+   "key": "C",
+   "text": "the newcomers were increasingly unlike the earlier immigrants in origin"
+  },
+  {
+   "key": "D",
+   "text": "the British share proved that America was still British",
+   "misconception": "Reads a falling British share as proof of British America."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "The old sources fell, but the new sources rose past them. Immigration did not end; its origins changed.",
+  "B": "The table shows the opposite: the largest shares moved from Britain, Ireland, and Germany to Italy, Austria-Hungary, and Russia and Poland.",
+  "C": "The table shows the largest shares moving from Germany, Britain, and Ireland to Italy, Austria-Hungary, and Russia and Poland. A nativist could point to that shift as proof that the newcomers were unlike the earlier immigrants.",
+  "D": "The British share falls from 24.5 to 7.5. The table shows Britain fading, not America staying British.",
+  "general": "Read the table the way a nativist would have read it.\n1. In 1861-1870 the largest shares came from Germany, Britain, and Ireland.\n2. By 1891-1900 the largest shares came from Italy, Austria-Hungary, and Russia and Poland.\n3. Background from the books: nativists judged the new immigrants unlike earlier Americans in language and custom.\n4. So the table hands the nativist a picture of newcomers unlike the old ones.\nRemember: a table argues when its shift matches the fear it is used to feed."
+ }
+}

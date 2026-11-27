@@ -1,0 +1,80 @@
+{
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.1 Contextualizing Period 6"
+   }
+  ],
+  "primary_sources": [
+   "William Jennings Bryan, 'Cross of Gold' speech, July 1896"
+  ]
+ },
+ "id": "apush-saq-0169",
+ "lesson": "apush-u6-l1",
+ "parts": [
+  {
+   "modelAnswer": "Bryan argues that cities depend on farms, not the other way around: the great cities rest on the broad and fertile prairies, and if the farms were destroyed, grass would grow in the streets of every city. Farming is the foundation of the nation's prosperity.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify Bryan's argument about the relationship between farms and cities.",
+   "scoring": [
+    {
+     "criterion": "Names Bryan's argument, such as cities resting on farms or farming as the foundation of prosperity.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Farmers were debtors in a time of falling crop prices, and coining silver would expand the money supply and raise prices, making their debts easier to repay. Gold alone kept money tight and prices low, which favored bankers and creditors over the farmers who owed them.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE reason farmers in the 1890s supported Bryan's call for free silver.",
+   "scoring": [
+    {
+     "criterion": "Explains why farmers backed free silver, such as debt, falling prices, or the hope that more money would raise prices.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Bryan's farm coalition was outnumbered by industrial America: McKinley carried the cities and the factory vote, while Bryan's strength lay in the rural South and West. The election showed that the industrial North and East now held more votes than the farming regions.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE reason Bryan lost the election of 1896 despite his popular message.",
+   "scoring": [
+    {
+     "criterion": "Explains why Bryan lost, such as McKinley's city and factory vote outnumbering the farm coalition.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "causation",
+ "saq_slot": 2,
+ "skills": [
+  "2.B",
+  "3.A"
+ ],
+ "source": "original; stimulus is William Jennings Bryan, 'Cross of Gold' speech, July 1896, public domain.",
+ "status": "final",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "William Jennings Bryan, 'Cross of Gold' speech, Democratic National Convention, Chicago, July 1896. Public domain.",
+  "text": "\"You come to us and tell us that the great cities are in favor of the gold standard; we reply that the great cities rest upon our broad and fertile prairies. Burn down your cities and leave our farms, and your cities will spring up again as if by magic; but destroy our farms and the grass will grow in the streets of every city in the country.\"\n— William Jennings Bryan, 'Cross of Gold' speech, Democratic National Convention, Chicago, July 1896"
+ },
+ "stimulus_set": null,
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "topics": [
+  "6.1"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 6
+}

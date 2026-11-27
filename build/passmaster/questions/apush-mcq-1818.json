@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1818",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "MIG",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 2,
+ "stimulus_set": "immigration-decade-table",
+ "stimulus": {
+  "kind": "text",
+  "text": "Immigration to the United States (U.S. Bureau of the Census, Statistical Abstract of the United States)\n\n| Period | Immigrants |\n| 1861–1870 | 2,314,824 |\n| 1871–1880 | 2,812,191 |\n| 1881–1890 | 5,246,613 |\n| 1891–1900 | 3,687,564 |\n\nFigures are totals for each ten-year period.\n\nIn single years: 1882 saw 788,992 immigrants arrive, and 1890 saw 455,302.",
+  "source_note": "U.S. Bureau of the Census, Statistical Abstract of the United States (1943), Table 107. Public data."
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "U.S. Bureau of the Census, Statistical Abstract of the United States (1943), Table 107"
+  ]
+ },
+ "status": "final",
+ "stem": "According to the table, in which decade did the most immigrants arrive?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The decade 1861–1870",
+   "misconception": "Picks the smallest decade instead of the largest."
+  },
+  {
+   "key": "B",
+   "text": "The decade 1881–1890"
+  },
+  {
+   "key": "C",
+   "text": "The decade 1871–1880",
+   "misconception": "Picks the decade before the peak."
+  },
+  {
+   "key": "D",
+   "text": "The decade 1891–1900",
+   "misconception": "Picks the decade after the peak."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "The 1861–1870 total of 2,314,824 is the smallest in the table.",
+  "B": "The 1881–1890 total of 5,246,613 is larger than every other decade in the table.",
+  "C": "The 1871–1880 total of 2,812,191 is well below the 1880s total.",
+  "D": "The 1891–1900 total of 3,687,564 is below the 1880s total.",
+  "general": "Compare the four totals in the table.\n1. 1861–1870 brought 2,314,824 immigrants.\n2. 1871–1880 brought 2,812,191.\n3. 1881–1890 brought 5,246,613, nearly double the decade before.\n4. 1891–1900 brought 3,687,564, below the 1880s.\n5. The largest number in the table is the peak decade, and the 1880s hold it.\n6. No other decade in the table comes close to the 1880s total.\nRemember: in a table, the largest number is the peak."
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0188",
+ "lesson": "apush-u6-l4",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.9"
+ ],
+ "skills": [
+  "2.A",
+  "3.B"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.9 Responses to Immigration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Jane Addams, “The Subjective Necessity for Social Settlements,” in Philanthropy and Social Progress (1893)"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Jane Addams, “The Subjective Necessity for Social Settlements,” in Philanthropy and Social Progress (1893). Public domain; text checked against the Teaching American History transcript of the 1893 volume.",
+  "text": "“Hull House, which was Chicago’s first Settlement, was established in September 1889. It represented no association, but was opened by two women, backed by many friends, in the belief that the mere foothold of a house, easily accessible, ample in space, hospitable and tolerant in spirit, situated in the midst of the large foreign colonies which so easily isolate themselves in American cities, would be in itself a serviceable thing for Chicago. Hull House endeavors to make social intercourse express the growing sense of the economic unity of society. It is an effort to add the social function to democracy.”\n\nJane Addams, “The Subjective Necessity for Social Settlements,” in Philanthropy and Social Progress (1893)."
+ },
+ "saq_slot": 2,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one purpose Hull House served in its immigrant neighborhood, according to Addams.",
+   "modelAnswer": "Hull House offered a hospitable house in the midst of the large foreign colonies, a place where neighbors of different classes could meet in social intercourse. It gave the neighborhood a shared meeting place it did not have before.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one purpose Addams names, such as a hospitable meeting place in the foreign colonies or a place for social intercourse between classes.",
+     "notEarned": "Naming Hull House without stating a purpose Addams gives for it does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain why Addams believed a settlement house was needed in an immigrant neighborhood.",
+   "modelAnswer": "Addams says the large foreign colonies easily isolate themselves in American cities. A settlement house was needed to break that isolation by bringing neighbors together and adding a social function to democracy.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one reason Addams gives, such as the isolation of the foreign colonies or the need to add a social function to democracy.",
+     "notEarned": "Naming the year Hull House opened without explaining why Addams thought it was needed does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain one way Addams believed Hull House could change its immigrant neighborhood.",
+   "modelAnswer": "Addams believed a hospitable house in the midst of the foreign colonies would break their isolation. It would bring neighbors of different classes together in social intercourse and add a social function to democracy.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one change Addams expects, such as breaking the isolation of the foreign colonies or bringing neighbors together in social intercourse.",
+     "notEarned": "Naming Hull House without explaining how Addams thought it would change the neighborhood does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

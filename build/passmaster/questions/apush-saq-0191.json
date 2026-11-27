@@ -1,0 +1,90 @@
+{
+ "id": "apush-saq-0191",
+ "lesson": "apush-u6-l5",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.11"
+ ],
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "source": "original; stimulus written from the grounding books or verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Gender, Voluntary Organizations, and Social Reform"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "Gilded Age Politics"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "National Politics"
+   }
+  ]
+ },
+ "status": "final",
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "text",
+  "text": "Original secondary passage, written for this question from the grounding books:\n\nIn the 1880s and 1890s, middle-class women in towns and cities across the country formed clubs that studied poverty, working conditions, and pollution, and pressed local governments to act. In 1890 the clubs joined in a national body, the General Federation of Women’s Clubs. Clubwomen defended their public work as an extension of their work as mothers, a pairing they called maternalism. Many of the same women threw their energy into temperance: the Women’s Christian Temperance Union, founded in 1874 and led after 1879 by Frances Willard, grew into a mass organization. Its members went on to join the Populist movement of the 1890s, and women kept pressing for the vote, forming the National American Woman Suffrage Association in 1890 from two older suffrage groups.",
+  "source_note": "Original secondary passage, written for this question from Barron’s Premium 2027, Chapter 8 (Topic 6.11, Gender, Voluntary Organizations, and Social Reform) and Princeton Review Chapter 10 (National Politics). Club, federation, WCTU, and suffrage association dates follow Barron’s."
+ },
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one way women’s clubs changed women’s public role in the Gilded Age.",
+   "modelAnswer": "Women’s clubs moved women from private charity into public investigation and advocacy, as clubwomen studied poverty and pollution and pressed local governments to act. The clubs gave women an organized voice in civic life outside the home.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one club-driven change in women’s public role, such as investigating social problems, pressing government to act, or joining in a national federation.",
+     "notEarned": "Naming women’s clubs without stating a change in their public role does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how the idea of maternalism helped women justify reform work outside the home.",
+   "modelAnswer": "Maternalism framed reform as mothering on a larger scale, so clubwomen could claim that protecting children and homes required work in streets, factories, and city halls. The same duty that kept women at home now sent them into public life with a respectable reason.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one link between maternalism and public action, such as reform presented as an extension of motherhood or home protection used to justify work outside the home.",
+     "notEarned": "Restating the term maternalism without linking it to public action does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Evaluate the extent to which women’s reform organizations changed American politics in the Gilded Age.",
+   "modelAnswer": "They changed politics a great deal at the local and movement level: temperance women built a mass organization, entered Populist politics, and kept the suffrage cause alive. But the change was limited, because women still could not vote in most states and held no national office.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for a judgment about the extent of change that weighs both women’s political gains and a limit on them, such as the lack of the vote or of office.",
+     "notEarned": "Describing women’s clubs without judging how far the political change reached does not earn the point."
+    }
+   ]
+  }
+ ]
+}

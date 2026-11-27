@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1814",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "riis-tenements",
+ "stimulus": {
+  "kind": "text",
+  "text": "“To-day three-fourths of its people live in the tenements, and the nineteenth century drift of the population to the cities is sending ever-increasing multitudes to crowd them. The fifteen thousand tenant houses that were the despair of the sanitarian in the past generation have swelled into thirty-seven thousand, and more than twelve hundred thousand persons call them home.”\n\nJacob A. Riis, How the Other Half Lives (1890), Introduction.",
+  "source_note": "Jacob A. Riis, How the Other Half Lives (New York: Charles Scribner’s Sons, 1890), Introduction. Public domain; text checked against Project Gutenberg eBook 45502."
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Jacob A. Riis, How the Other Half Lives (1890)"
+  ]
+ },
+ "status": "final",
+ "stem": "Riis links the growth of the tenements to “the nineteenth century drift of the population to the cities.” That link best supports which claim?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Tenements were built mainly for wealthy families moving downtown",
+   "misconception": "Puts wealthy families in housing Riis describes for the poor."
+  },
+  {
+   "key": "B",
+   "text": "Migration into cities, from abroad and farms, outran the housing available"
+  },
+  {
+   "key": "C",
+   "text": "The federal government built the tenements to house new immigrants",
+   "misconception": "Credits the government with building what private landlords built."
+  },
+  {
+   "key": "D",
+   "text": "Immigrants preferred tenements to other kinds of housing",
+   "misconception": "Treats crowded housing as a free choice."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Riis writes about the poor in tenements, not wealthy families moving downtown.",
+  "B": "A drift of people into the cities that crowded ever more multitudes into tenements means the housing could not keep up with the migration.",
+  "C": "Riis never says the government built the tenements. Private landlords built them for profit.",
+  "D": "Riis describes crowding people were pushed into, not a housing choice they preferred.",
+  "general": "Join the drift to the crowding.\n1. People drifted into the cities in ever-increasing multitudes.\n2. Those multitudes crowded into the tenements.\n3. Crowding that keeps growing means housing could not keep up.\n4. The drift, not a preference for tenements, is what Riis blames.\nBackground: the books say the drift came from abroad and from farms, as machines cut farm labor.\nRemember: when people outrun housing, crowding is the result, not the choice."
+ }
+}

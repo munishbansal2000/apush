@@ -1,0 +1,97 @@
+{
+  "id": "apush-mcq-2012",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "test",
+  "unit": 6,
+  "topics": [
+    "6.14"
+  ],
+  "skills": [
+    "5.B"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "continuity-change",
+  "difficulty": 4,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.11 Reform in the Gilded Age"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Gilded Age Politics"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ],
+    "primary_sources": [
+      "Coxey’s Army photograph, 1894; Coney Island trade card, about 1885–1896"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-614-coxey-coney",
+  "stimulus": {
+    "kind": "mixed",
+    "text": "Image 1: An 1894 photograph shows a column of men marching down a dirt road toward Washington, carrying banners. One banner reads “More Money! Less Misery! Good Roads!” A placard shows a portrait with the words “Death to Interest on Bonds.” The caption reads “Coxey’s Army approaching Washington.” Image 2: A color trade card from about 1885–1896, “Scene at Coney Island,” shows boys in suits digging in the sand on a crowded beach, with a sailboat and a paddle steamer on the water and amusement buildings, a tall tower, and an elephant-shaped hotel behind them.",
+    "source_note": "Image 1: 1894 stereograph, Library of Congress (LC-DIG-stereo-1s09209), public domain; image viewed by the writer (shared pool: u6/original-u6-coxeys-army-approaching-washington.jpg). Image 2: chromolithograph trade card, Lindner, Eddy and Clauss, New York, about 1885-1896, public domain; image viewed by the writer (shared pool: u6/u6-coney-island-scene.jpg)."
+  },
+  "stem": "Taken together, what do the two images best show about the United States in the 1890s?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Ordinary people entered public life to demand help and enjoy leisure"
+    },
+    {
+      "key": "B",
+      "text": "Americans agreed that the federal government should stay out of the economy",
+      "misconception": "The marchers demanded federal action, so they did not agree government should stay out."
+    },
+    {
+      "key": "C",
+      "text": "City life had replaced all rural life",
+      "misconception": "Millions still farmed in the 1890s, so city life had not replaced all rural life."
+    },
+    {
+      "key": "D",
+      "text": "Protest and leisure both disappeared during the depression",
+      "misconception": "Both images show protest and leisure alive in the 1890s, so neither disappeared."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "One image shows a march on Washington and the other a crowded resort: new public action and new public fun.",
+    "B": "The marchers ask the federal government to act, so they do not want it to stay out.",
+    "C": "Farming still employed millions in the 1890s, so cities had not replaced the countryside.",
+    "D": "The images themselves show protest and leisure happening, not disappearing.",
+    "general": "Put the two pictures side by side.\n1. Image 1 shows unemployed men marching to Washington with demands.\n2. Image 2 shows well-dressed children playing at a crowded commercial resort.\n3. One is protest, the other is leisure, and both are mass and public.\n4. Background from the books: the 1890s mixed depression and protest with a growing middle-class world of amusements.\nRemember: two pictures from one decade can show two sides of the same change."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-2012",
+      "file": "u6/original-u6-coxeys-army-approaching-washington.jpg",
+      "source_url": "https://www.loc.gov/item/2002718487/",
+      "license": "Public domain",
+      "caption": "“More Money! Less Misery! Good Roads!” Coxey’s Army approaching Washington, 1894",
+      "alt": "Stereograph photograph showing a column of men marching down a dirt road carrying banners, one reading More Money Less Misery Good Roads, toward Washington in 1894"
+    },
+    {
+      "id": "fig-apush-mcq-2012-b",
+      "file": "u6/u6-coney-island-scene.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Scene_at_Coney_Island_-_DPLA_-_7037785ea62fdba714a144b9b402a640.jpg",
+      "license": "Public domain",
+      "caption": "“Scene at Coney Island,” trade card, about 1885–1896",
+      "alt": "Color trade card showing boys in suits digging in the sand on a crowded Coney Island beach, with a sailboat and paddle steamer on the water and an elephant-shaped hotel behind them"
+    }
+  ]
+}

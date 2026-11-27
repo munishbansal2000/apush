@@ -1,0 +1,85 @@
+{
+  "answerKey": "A",
+  "difficulty": 3,
+  "figures": [
+    {
+      "alt": "1889 Puck cartoon showing giant top-hatted figures labeled with trust names looming over small senators at their desks",
+      "caption": "Joseph Keppler, “The Bosses of the Senate,” Puck, January 23, 1889. Giant figures labeled with trust names loom over the small senators.",
+      "file": "pt01/fig3-bosses-of-senate-1889.jpg",
+      "id": "fig-apush-mcq-2014",
+      "license": "No known restrictions on publication",
+      "source_url": "https://www.loc.gov/pictures/item/2002718861/"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "America Transformed into the Industrial Giant"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-2014",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "text": "The growth of large-scale industrial corporations and new business organization"
+    },
+    {
+      "key": "B",
+      "misconception": "Wealth concentrated because railroads and steel declined.",
+      "text": "The decline of railroad and steel production after the Civil War"
+    },
+    {
+      "key": "C",
+      "misconception": "Wealth concentrated because immigration ended.",
+      "text": "The end of immigration to the United States"
+    },
+    {
+      "key": "D",
+      "misconception": "Wealth concentrated because the government banned corporations.",
+      "text": "The federal government’s ban on all corporate activity"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Background: large-scale corporations, vertical integration, and new forms of business organization concentrated wealth in the Gilded Age. Carnegie's own steel empire was built on exactly that concentration of scale and control.",
+    "B": "Railroad and steel production boomed; they did not decline.",
+    "C": "Immigration increased; it did not end.",
+    "D": "The government did not ban corporate activity.",
+    "general": "1. Ask what Carnegie is describing. Great wealth held by a few men.\n2. Ask what produced it. Background: large corporations, vertical integration, and new business organization.\n3. Test the reversals. Railroads and steel boomed, immigration increased, and corporations were not banned.\n4. Connect the organization to the wealth. New business forms let a few men control whole industries.\nRemember: concentrated wealth usually follows a change in how business is organized."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "2.B"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from Carnegie, “The Gospel of Wealth” (1889) with the Keppler 1889 Puck cartoon",
+  "status": "final",
+  "stem": "Which of the following most directly helps explain the concentration of wealth Carnegie describes?",
+  "stimulus": {
+    "kind": "mixed",
+    "source_note": "Andrew Carnegie, “The Gospel of Wealth,” 1889, public domain. Cartoon: Joseph Keppler, “The Bosses of the Senate,” Puck, January 23, 1889, Library of Congress.",
+    "text": "“The problem of our age is the proper administration of wealth, so that the ties of brotherhood may still bind together the rich and poor in harmonious relationship. . . . The man who dies thus rich dies disgraced.”"
+  },
+  "stimulus_set": "carnegie-gospel-wealth-1889",
+  "themes": [
+    "WXT"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

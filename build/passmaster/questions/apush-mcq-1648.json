@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1648",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "D",
+ "skills": [
+  "1.B",
+  "6.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "stem": "Why did Plains and Midwestern farmers care so much about the charges of Chicago grain elevators?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Munn v. Illinois, 94 U.S. 113 (1877), opinion of Chief Justice Waite. Public domain. Text verified against Cornell LII (law.cornell.edu/supremecourt/text/94/113) and the Bochum source collection.",
+  "text": "Munn v. Illinois, 94 U.S. 113 (1877). Illinois had set maximum charges for storing grain in Chicago warehouses. Munn, who owned a grain elevator, argued the law took his property without due process. Chief Justice Waite, for the Court:\n\n\"Property does become clothed with a public interest when used in a manner to make it of public consequence, and affect the community at large. When, therefore, one devotes his property to a use in which the public has an interest, he, in effect, grants to the public an interest in that use, and must submit to be controlled by the public for the common good, to the extent of the interest he has thus created.\""
+ },
+ "stimulus_set": "munn-illinois",
+ "options": [
+  {
+   "key": "A",
+   "text": "The elevators were owned by the farmers themselves as cooperatives",
+   "misconception": "Background: the elevators were private businesses owned by men like Munn, not farmer cooperatives."
+  },
+  {
+   "key": "B",
+   "text": "The elevators set the price of farmland across the Midwest",
+   "misconception": "Background: elevators charged for storage, not for land; farmland prices came from the land market."
+  },
+  {
+   "key": "C",
+   "text": "The elevators refused to store any wheat grown west of the Mississippi",
+   "misconception": "Background: the elevators stored western grain by the millions of bushels; refusing it would have destroyed their own business."
+  },
+  {
+   "key": "D",
+   "text": "Elevators charged farmers to store grain shipped through Chicago"
+  }
+ ],
+ "rationales": {
+  "A": "Background: Munn's elevators were private companies. Farmers formed cooperatives to fight them, not to own them.",
+  "B": "Background: the charge was for storing and handling grain. Land prices were a different market entirely.",
+  "C": "Background: the elevators lived on western grain. Their business was storing it, not refusing it.",
+  "D": "Background: the warehouses held the region's grain, mixed together, on its way to market, so farmers shipping through Chicago paid the elevator's charge before earning a cent.",
+  "general": "A tollgate on the only road is a tax by another name.\n1. Follow a bushel of wheat from a Plains farm to an eastern buyer. Background: it passes through a Chicago elevator on the way.\n2. Note the farmer's position: the elevator's charge comes out of the sale before the farmer is paid.\n3. See why the Grange fought. Background: the charge was set by a private business the farmer could not avoid.\nRemember: whoever controls the bottleneck controls the price."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The Grange and Farmers' Alliances"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

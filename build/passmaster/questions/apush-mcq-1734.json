@@ -1,0 +1,86 @@
+{
+  "id": "apush-mcq-1734",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "answerKey": "A",
+  "skills": [
+    "1.B",
+    "5.B"
+  ],
+  "themes": [
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "stem": "The men in the image are laying tubes under a New York street in 1882. What larger change does this work show?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Harper's Weekly, June 24, 1882, \"The Electric Light in Houses — Laying the Tubes for Wires in the Streets of New York,\" drawn by W. P. Snyder. Public domain. https://commons.wikimedia.org/wiki/File:Laying_electric_lines_under_street_Edison_Pearl_Street_Utility_June_21_1882_Harpers_Weekly.png",
+    "text": "The image is a page from Harper's Weekly, June 24, 1882, titled \"THE ELECTRIC LIGHT IN HOUSES — LAYING THE TUBES FOR WIRES IN THE STREETS OF NEW YORK.\" The top panel, \"Laying the Electrical Tubes,\" shows workers digging a New York street and lowering thick tubes into the ground. The bottom panel, \"Testing Tubes for Insulation,\" shows a worker at a tripod instrument and others handling coiled wire. An inset at the top right shows a worker pouring insulation."
+  },
+  "stimulus_set": "pearl-street-tubes",
+  "options": [
+    {
+      "key": "A",
+      "text": "Electricity was shifting from single machines to a central system that served whole neighborhoods"
+    },
+    {
+      "key": "B",
+      "text": "Every home had begun generating its own electricity with a private dynamo",
+      "misconception": "Background: homes did not run their own dynamos; a central station made the power and sent it through wires to many customers."
+    },
+    {
+      "key": "C",
+      "text": "New York had banned electricity, so the work was done in secret at night",
+      "misconception": "Background: the work was public and celebrated in Harper's Weekly; the city welcomed the new light, it did not ban it."
+    },
+    {
+      "key": "D",
+      "text": "Electric light had failed, and the men were digging the wires back up",
+      "misconception": "Background: the men are laying new tubes, not removing old ones; the Pearl Street station opened weeks later, in September 1882."
+    }
+  ],
+  "rationales": {
+    "A": "Background from the books: Edison's Pearl Street station, opened in September 1882, was the first commercial power station in the United States, serving customers across about a square mile. The tubes in the street carried its power from one central station to many homes.",
+    "B": "Background: a home dynamo would have been costly and dangerous. The whole point of the tubes was to bring power from one big station to many homes.",
+    "C": "Background: Harper's Weekly pictured the work proudly in a full-page illustration inside the June 24, 1882 issue. The city did not ban the light; it dug its streets to welcome it.",
+    "D": "Background: the men are laying tubes, not pulling them up, and the station opened in September 1882. The work was a beginning, not a cleanup.",
+    "general": "Ask where the power comes from: one place or many.\n1. The tubes run under a whole street, not into a single house.\n2. Background: they carried power from Edison's Pearl Street station, which served a whole square mile of customers at once.\n3. Background: one central station feeding many homes is a system, not a gadget.\nRemember: wires under a street mean power has left the workshop and become a utility."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Coal and Oil"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "The Second Industrial Revolution"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Age of Invention and Economic Growth"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)",
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1734",
+      "file": "u6/original-u6-tech-04.png",
+      "caption": "Workers laying tubes for electric wires in New York, Harper's Weekly, 1882",
+      "alt": "A Harper's Weekly page from June 1882 shows workers digging a New York street and laying thick tubes for electric wires, with a second panel testing the tubes for insulation",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Laying_electric_lines_under_street_Edison_Pearl_Street_Utility_June_21_1882_Harpers_Weekly.png",
+      "license": "Public domain: Harper's Weekly engraving, June 24, 1882."
+    }
+  ]
+}

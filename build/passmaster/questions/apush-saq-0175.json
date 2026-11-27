@@ -1,0 +1,92 @@
+{
+ "id": "apush-saq-0175",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.4"
+ ],
+ "skills": [
+  "1.B",
+  "5.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u6-l2",
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of the argument in C. Vann Woodward, Origins of the New South, 1877–1913 (1951).",
+  "text": "Historian C. Vann Woodward argued that the “New South” was less new than its promoters claimed. Industry did grow in the South, he wrote, but the region stayed poor and mostly rural, and it still depended on Northern capital. Meanwhile, he argued, Southern politics were rebuilt on white supremacy, so the new order kept much of the old order’s shape."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus paraphrases C. Vann Woodward, Origins of the New South (1951)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.4 The “New South”"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "America Transformed into the Industrial Giant"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10"
+   }
+  ],
+  "primary_sources": [
+   "C. Vann Woodward, Origins of the New South, 1877–1913 (1951)"
+  ]
+ },
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly describe Woodward’s argument about the “New South.”",
+   "modelAnswer": "Woodward argues that the New South changed less than its boosters promised. He says Southern industry did grow, but the region stayed poor, mostly rural, and dependent on Northern capital. At the same time, he argues, Southern politics were rebuilt on white supremacy, so the new order carried much of the old order forward.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for describing Woodward’s argument: real industrial growth, but a region that stayed poor, rural, and dependent on Northern capital, with politics rebuilt on white supremacy.",
+     "notEarned": "Describing only that the South industrialized, without the limits Woodward stresses, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE specific historical development between 1865 and 1900 that supports Woodward’s argument.",
+   "modelAnswer": "Sharecropping supports his argument because most Black Southerners worked land they did not own and paid rent with a share of the crop. The crop-lien system kept them in debt to white landowners year after year. That economic dependence shows the old order surviving inside the new economy.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one specific development, such as sharecropping and the crop-lien system, and explaining how it shows continuity with the old order.",
+     "notEarned": "Naming sharecropping with no explanation of how it supports Woodward’s argument does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE specific historical development between 1865 and 1900 that challenges or qualifies Woodward’s argument.",
+   "modelAnswer": "The growth of Southern textile mills qualifies his argument because cotton spindles in the South rose from 561,000 in 1880 to 4,368,000 in 1900. New mill towns and steel cities like Birmingham showed real industrial change. That growth proves the New South was not only the old order in new clothes.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one specific development, such as the growth of Southern textile mills or Birmingham steel, and explaining how it shows real change.",
+     "notEarned": "Naming a mill or a city with no explanation of how it challenges Woodward’s argument does not earn the point."
+    }
+   ]
+  }
+ ]
+}

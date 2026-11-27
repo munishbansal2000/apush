@@ -1,0 +1,93 @@
+{
+  "id": "apush-saq-0178",
+  "type": "saq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "saq_slot": 2,
+  "totalPoints": 3,
+  "skills": [
+    "2.B",
+    "6.A"
+  ],
+  "themes": [
+    "WXT",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Andrew Carnegie, \"Wealth,\" North American Review, June 1889. Public domain. Text verified against the North American Review text (Wikisource) and the Fordham Internet History Sourcebooks transcription.",
+    "text": "\"The problem of our age is the proper administration of wealth, so that the ties of brotherhood may still bind together the rich and poor in harmonious relationship. ... Thus is the problem of rich and poor to be solved. The laws of accumulation will be left free; the laws of distribution free. Individualism will continue, but the millionaire will be but a trustee for the poor.\"\n\n— Andrew Carnegie, \"Wealth,\" North American Review, June 1889"
+  },
+  "stimulus_set": null,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify Carnegie's main claim about what wealthy people should do with their fortunes.",
+      "modelAnswer": "Carnegie claims that the rich should act as trustees for the poor, administering their surplus wealth during their own lives for the good of the community. He argues that giving wealth away wisely, not hoarding it or leaving it to heirs, solves the problem of rich and poor.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for identifying Carnegie's claim that the rich should administer their wealth as trustees for the community's good.",
+          "notEarned": "Describing Carnegie without stating his claim about administering wealth does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Briefly explain how technological innovation made a fortune like Carnegie's possible.",
+      "modelAnswer": "The Bessemer process made steel cheap, and cheap steel built the railroads, bridges, and skyscrapers of the Gilded Age. Carnegie built a steel empire by controlling every step of production, from iron ore and coal mines to mills and transport, and the new technology let him produce steel on a scale no earlier ironmaster could match.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for explaining how an innovation such as the Bessemer process, cheap steel, or the railroad network made large steel fortunes possible.",
+          "notEarned": "Naming Carnegie or steel without explaining how technology created the fortune does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Briefly explain one way other Americans in the Gilded Age responded differently to concentrated wealth.",
+      "modelAnswer": "Workers organized unions such as the Knights of Labor and the American Federation of Labor and struck for higher wages and shorter hours, arguing that wealth should be shared through pay, not charity. Reformers and farmers also demanded government action, from railroad regulation to the Sherman Antitrust Act of 1890.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for explaining one different response, such as labor organizing and strikes, Populist or reform demands, or calls for government regulation of big business.",
+          "notEarned": "Naming a group without explaining how it responded to concentrated wealth does not earn the point."
+        }
+      ]
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Steel and the Bessemer Process"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "The Second Industrial Revolution"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Age of Invention and Economic Growth"
+      }
+    ],
+    "primary_sources": [
+      "Andrew Carnegie, \"Wealth,\" North American Review, June 1889"
+    ]
+  },
+  "source": "original; stimulus written for this question from the grounding books"
+}

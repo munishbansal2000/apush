@@ -1,0 +1,93 @@
+{
+  "id": "apush-saq-0199",
+  "lesson": "apush-u6-l5",
+  "type": "saq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.14"
+  ],
+  "skills": [
+    "2.A",
+    "3.A"
+  ],
+  "themes": [
+    "SOC",
+    "NAT"
+  ],
+  "reasoning": "continuity-change",
+  "difficulty": 3,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.4 The “New South”"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "America Transformed into the Industrial Giant of the World (1870–1910)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ],
+    "primary_sources": [
+      "Booker T. Washington, Atlanta Exposition address, September 18, 1895"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": null,
+  "stimulus": {
+    "kind": "text",
+    "text": "In his 1895 address at the Atlanta Exposition, Booker T. Washington told this story: “A ship lost at sea for many days suddenly sighted a friendly vessel. From the mast of the unfortunate vessel was seen a signal, ‘Water, water; we die of thirst!’ The answer from the friendly vessel at once came back, ‘Cast down your bucket where you are.’” He then applied the story to Black Southerners: “To those of my race who depend on bettering their condition in a foreign land or who underestimate the importance of cultivating friendly relations with the Southern white man, who is their nextdoor neighbour, I would say: ‘Cast down your bucket where you are’-cast it down in making friends in every manly way of the people of all races by whom we are surrounded. Cast it down in agriculture, mechanics, in commerce, in domestic service, and in the professions.” And he told the white South that the races could live together this way: “In all things that are purely social we can be as separate as the fingers, yet one as the hand in all things essential to mutual progress.”",
+    "source_note": "Booker T. Washington, Atlanta Exposition address, September 18, 1895. Public domain; wording and punctuation follow The Booker T. Washington Papers, vol. 3. The lead-in and bridge sentences are the writer’s framing; the quoted story, the application passage, and the ‘separate as the fingers’ sentence are Washington’s own words."
+  },
+  "saq_slot": 2,
+  "totalPoints": 3,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify Washington’s advice to Black Southerners in this passage.",
+      "modelAnswer": "Washington advised Black Southerners to seek opportunity where they already lived, in the South. Instead of looking elsewhere for help, they should “cast down their bucket” and build their lives through work in agriculture, mechanics, and business. The passage presents the South itself as the place to find a future.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for identifying Washington’s advice to seek opportunity in the South through work, such as farming, mechanics, or business.",
+          "notEarned": "Saying only that Washington gave a speech, without naming his advice, does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain how Washington’s advice reflected continuity in race relations in the South.",
+      "modelAnswer": "Washington’s advice accepted the racial order of the South as it stood. He did not call for an immediate end to segregation or for Black Southerners to claim full political rights at once. By urging work within the existing system, he continued the approach of accommodation rather than direct challenge.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for explaining that Washington’s advice worked within the existing racial order, such as accepting segregation or setting aside immediate claims to political rights.",
+          "notEarned": "Saying only that Washington was patient, without linking his advice to the racial order, does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Evaluate the extent to which Washington’s strategy addressed the problems facing Black Americans in the 1890s.",
+      "modelAnswer": "Washington’s strategy addressed Black Americans’ economic problems only in part. It offered a real path to skills, property, and self-support, yet it left segregation and disfranchisement in place, as Plessy v. Ferguson showed in 1896. Economic progress without political rights proved an incomplete answer to the problems of the decade.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for a judgment about the extent of change that weighs both what Washington’s strategy offered and what it left unaddressed, such as segregation or disfranchisement.",
+          "notEarned": "Praising or criticizing Washington without judging how far his strategy addressed the problems does not earn the point."
+        }
+      ]
+    }
+  ]
+}

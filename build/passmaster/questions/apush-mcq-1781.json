@@ -1,0 +1,90 @@
+{
+ "answerKey": "C",
+ "difficulty": 2,
+ "figures": [
+  {
+   "alt": "A Harper’s Weekly engraving of the Haymarket Square bombing in 1886, showing a speaker on a wagon at left, police moving through smoke in the center, and men falling in the street",
+   "caption": "The Haymarket Square bombing, Chicago, May 4, 1886, Harper’s Weekly",
+   "file": "u6/pr25e-ch10-q05.jpg",
+   "id": "fig-apush-mcq-1781",
+   "license": "Public domain: Harper’s Weekly engraving, May 15, 1886.",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/61/HaymarketRiot-Harpers.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Harper’s Weekly engraving of the Haymarket Square bombing (May 15, 1886)"
+  ]
+ },
+ "id": "apush-mcq-1781",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "No courtroom or debate appears; the street is full of smoke and falling men.",
+   "text": "As a quiet debate among lawyers in a courtroom."
+  },
+  {
+   "key": "B",
+   "misconception": "No machines or celebration appear; the scene is a street in chaos.",
+   "text": "As a celebration of new machines and inventions."
+  },
+  {
+   "key": "C",
+   "text": "As a violent clash between police and a crowd."
+  },
+  {
+   "key": "D",
+   "misconception": "The police are moving through smoke, not marching home in a parade.",
+   "text": "As a parade of soldiers marching home from war."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "No courtroom or debate appears; the street is full of smoke and falling men.",
+  "B": "No machines or celebration appear; the scene is a street in chaos.",
+  "C": "Police move through thick smoke while men fall and scatter, which is a clash, not a calm meeting.",
+  "D": "The police are moving through smoke, not marching home in a parade.",
+  "general": "Read the picture like a sentence.\n1. At the left, a speaker addresses a crowd from a wagon.\n2. In the center, police move through thick smoke.\n3. Men fall and scatter in the street around them.\n4. A meeting, a blast, and police in the smoke add up to a violent clash.\nRemember: in an engraving, smoke and falling figures are the artist’s way of showing violence."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.A",
+  "2.A"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "What does the engraving suggest about how Americans at the time pictured the Haymarket meeting?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Harper’s Weekly engraving, May 15, 1886. Public domain (Wikimedia Commons).",
+  "text": "Harper’s Weekly engraving of the Haymarket Square bombing in Chicago, May 4, 1886. At the left, a speaker stands on a wagon with one arm raised, addressing the crowd. In the center, police officers move through thick smoke as the bomb explodes, and men fall and scatter in the street. A street sign on a building at the upper left reads “N. JEFFERSON ST.”"
+ },
+ "stimulus_set": "haymarket-harper-1886",
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

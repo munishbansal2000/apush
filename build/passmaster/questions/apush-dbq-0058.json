@@ -1,0 +1,159 @@
+{
+  "difficulty": 4,
+  "documents": [
+    {
+      "date": "1877",
+      "kind": "text",
+      "n": 1,
+      "source": "U.S. Supreme Court, Munn v. Illinois, 94 U.S. 113 (1877). Public domain.",
+      "sourcing": "The Court’s own words upholding state regulation of grain warehouses; shows the legal basis for regulating business.",
+      "text": "“When private property is devoted to a public use, it is subject to public regulation.”",
+      "title": "Munn v. Illinois"
+    },
+    {
+      "date": "1890",
+      "kind": "text",
+      "n": 2,
+      "source": "Sherman Antitrust Act, Section 1, approved July 2, 1890. Public domain.",
+      "sourcing": "The law itself; shows the federal response to combinations in restraint of trade.",
+      "text": "“Every contract, combination in the form of trust or otherwise, or conspiracy, in restraint of trade or commerce among the several States, or with foreign nations, is hereby declared to be illegal.”",
+      "title": "Sherman Antitrust Act, Section 1"
+    },
+    {
+      "date": "1889",
+      "figure": "u6/original-u6-tech-12.jpg",
+      "kind": "image",
+      "n": 3,
+      "source": "Joseph Keppler, “The Bosses of the Senate,” Puck, January 23, 1889. Public domain, Library of Congress.",
+      "sourcing": "A cartoon of trusts looming over the Senate; shows the claim that business power reached into government itself.",
+      "title": "The Bosses of the Senate"
+    },
+    {
+      "date": "1895",
+      "kind": "text",
+      "n": 4,
+      "source": "Paraphrase of United States v. E. C. Knight Company (1895), from Princeton Review, Chapter 10, and the Court’s opinion. The facts are from the Court’s decision.",
+      "sourcing": "A paraphrase of the Court’s ruling; shows how judges narrowed the antitrust law.",
+      "text": "In 1895 the Supreme Court ruled that the American Sugar Refining Company’s acquisition of the E. C. Knight Company and three other Philadelphia refineries — giving it control of about 98 percent of the sugar refining in the United States — had not violated the Sherman Antitrust Act. The Court held that manufacturing was local activity, not interstate commerce, so the act did not reach it.",
+      "title": "The Court limits the Sherman Act"
+    },
+    {
+      "date": "1865-1890",
+      "kind": "table",
+      "n": 5,
+      "source": "Emory R. Johnson, American Railway Transportation (1908), using Interstate Commerce Commission figures. Public domain.",
+      "sourcing": "Official railroad figures across the period; shows the scale of the industry government tried to regulate.",
+      "text": "| Year | Miles of railroad |\n| 1865 | 35,085 |\n| 1870 | 52,922 |\n| 1880 | 93,296 |\n| 1890 | 163,597 |",
+      "title": "Miles of railroad in operation"
+    },
+    {
+      "date": "1890",
+      "kind": "text",
+      "n": 6,
+      "source": "Senator John Sherman, speech in the Senate, March 21, 1890 (Congressional Record, vol. 21, p. 2457). Public domain.",
+      "sourcing": "The bill's author on the Senate floor; shows why Congress believed the trusts had to be checked.",
+      "text": "“If we will not endure a king as a political power we should not endure a king over the production, transportation, and sale of any of the necessaries of life.”",
+      "title": "Senator Sherman defends his bill"
+    },
+    {
+      "date": "1880",
+      "figure": "u6/original-u6-tech-22.jpg",
+      "kind": "image",
+      "n": 7,
+      "source": "John D. Rockefeller, photographed by Napoleon Sarony, 1880. Public domain.",
+      "sourcing": "A portrait of the founder of Standard Oil; shows the man whose company the government tried, and largely failed, to check.",
+      "title": "John D. Rockefeller"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ],
+    "primary_sources": [
+      "U.S. Supreme Court, Munn v. Illinois (1877)",
+      "Sherman Antitrust Act, Section 1 (1890)",
+      "Senator John Sherman, speech in the Senate, March 21, 1890"
+    ]
+  },
+  "id": "apush-dbq-0058",
+  "lesson": "apush-u6-l3",
+  "modelOutline": "Thesis: Between 1865 and 1898 government action limited the power of big business only slightly, because the laws were broad but the courts and the regulators were weak, and the great combinations stayed whole until the next century.\nContext: After the Civil War the government promoted growth with land grants and patents, and most leaders believed in laissez-faire, leaving business to the market.\nEvidence: Documents 1 and 2 show the tools government had: Munn upheld state regulation of property devoted to a public use, and the Sherman Act banned combinations in restraint of trade.\nEvidence continued: Documents 3 and 7 show the limits: trusts loomed over the Senate in Keppler’s cartoon, and Rockefeller’s Standard Oil kept growing. Document 4 shows the courts narrowing the law, as the Knight ruling put manufacturing beyond the Sherman Act. Document 5 shows the scale government faced, with railroads growing to about 164,000 miles by 1890, and Document 6 shows why Congress acted: Sherman warned Americans should not endure a king over the production and sale of necessities.\nOutside evidence: the Interstate Commerce Act of 1887 and its weak commission, and the Wabash decision of 1886 limiting state railroad regulation.\nComplexity: government action was real but uneven, winning the principle of regulation in Munn and the words of the Sherman Act while losing the practice to narrow court readings and business influence.",
+  "pool": "practice",
+  "prompt": "Evaluate the extent to which government action limited the power of big business in the United States between 1865 and 1898.",
+  "reasoning": "causation",
+  "rubric": [
+    {
+      "criterion": "Earns the point for a thesis that makes a historically defensible claim about the extent to which big business transformed the American economy between 1865 and 1898, with a line of reasoning.",
+      "notEarned": "A thesis that merely restates the prompt, or one that makes no claim about extent, does not earn the point.",
+      "points": 1,
+      "skill": "6.A"
+    },
+    {
+      "criterion": "Earns the point for describing a broader historical context relevant to the prompt, such as post-Civil War industrialization, the growth of corporations, or the settlement of the West.",
+      "notEarned": "A context that is only background on one document, or one set outside the period, does not earn the point.",
+      "points": 1,
+      "skill": "4.B"
+    },
+    {
+      "criterion": "Earns the point for using the content of at least three documents to support the argument.",
+      "notEarned": "Using fewer than three documents, or quoting documents without connecting them to the argument, does not earn the point.",
+      "points": 1,
+      "skill": "6.B"
+    },
+    {
+      "criterion": "Earns the point for using at least six documents to support the argument, with specific evidence from each.",
+      "notEarned": "Using fewer than six documents, or listing documents without using their content, does not earn the point.",
+      "points": 1,
+      "skill": "6.B"
+    },
+    {
+      "criterion": "Earns the point for using at least one piece of specific outside evidence, such as the transcontinental railroad, the Bessemer process, or the Interstate Commerce Act, to support the argument.",
+      "notEarned": "Repeating document content without adding outside evidence does not earn the point.",
+      "points": 1,
+      "skill": "6.B"
+    },
+    {
+      "criterion": "Earns the point for explaining how at least one document’s point of view, purpose, historical situation, or audience matters to the argument.",
+      "notEarned": "Identifying a document’s author without explaining why that matters does not earn the point.",
+      "points": 1,
+      "skill": "3.B"
+    },
+    {
+      "criterion": "Earns the point for a complex argument, such as showing that big business transformed some parts of American life while leaving others unchanged, or that the same changes helped some Americans and hurt others.",
+      "notEarned": "A one-sided argument that ignores counter-evidence, or a complexity move stated without support, does not earn the point.",
+      "points": 1,
+      "skill": "6.D"
+    }
+  ],
+  "skills": [
+    "6.A",
+    "6.B"
+  ],
+  "source": "original; documents are public-domain primary sources, public data, or labeled paraphrases (see each document’s sourcing note)",
+  "status": "final",
+  "stimulus_set": null,
+  "themes": [
+    "WXT",
+    "SOC"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "totalPoints": 7,
+  "type": "dbq",
+  "unit": 6
+}

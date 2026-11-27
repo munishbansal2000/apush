@@ -1,0 +1,83 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "figures": [
+  {
+   "alt": "Color cartoon of a giant businessman in a suit straddling the nation, holding strings that control the railroads below him, with two small men beneath his feet",
+   "caption": "The Modern Colossus of (Rail) Roads, Joseph Keppler, Puck, 1879",
+   "file": "u6/original-u6-tech-10.jpg",
+   "id": "fig-apush-mcq-1608",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Modern_Colossus_of_Rail_Roads_-_Keppler_1879.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.1 Contextualizing Period 6"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-1608",
+ "lesson": "apush-u6-l1",
+ "options": [
+  {
+   "key": "A",
+   "text": "A few railroad owners could tax the nation's commerce as they pleased"
+  },
+  {
+   "key": "B",
+   "misconception": "The sign at Vanderbilt's feet speaks of freight tolls, not passenger fares; the cartoon attacks control of commerce.",
+   "text": "Railroad owners had made train travel too expensive for ordinary passengers"
+  },
+  {
+   "key": "C",
+   "misconception": "Background: federal railroad regulation began with the Interstate Commerce Act in 1887 and was weak at first; no breakup happened in 1879.",
+   "text": "The federal government had broken up the railroad monopolies by 1879"
+  },
+  {
+   "key": "D",
+   "misconception": "Background: workers lost the Great Railroad Strike of 1877, and owners kept control of the lines.",
+   "text": "Railroad workers had won control of the companies from their owners"
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "Vanderbilt strides across the nation holding the strings, and his sign sets the terms: all freight must pass here and pay any tolls we demand. That is the power to tax commerce.",
+  "B": "The cartoon's sign speaks of freight, not passengers. Its charge is control over the nation's trade, not the price of a train ticket.",
+  "C": "Background: the government had broken up nothing by 1879. The Interstate Commerce Act came in 1887 and was weakly enforced at first.",
+  "D": "Background: workers had won nothing of the kind. Federal troops broke the Great Railroad Strike of 1877, and the owners kept control.",
+  "general": "Read the cartoon like a Wanted poster: the giant, the strings, and the sign are the whole argument.\n1. Look at the size. Vanderbilt towers over the nation because his railroad empire reaches across it.\n2. Read the sign at his feet. All freight must pass here and pay any tolls we demand.\n3. Translate the picture into power. A few owners could tax the nation's commerce as they pleased.\nRemember: in a cartoon, size is an argument — the giant is the point, not the decoration."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.A",
+  "2.B"
+ ],
+ "source": "original; stimulus viewed before writing — Joseph Keppler, Puck, 1879, public domain.",
+ "status": "final",
+ "stem": "The cartoonist's main argument about railroads in the Gilded Age is best stated as which of the following?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Joseph Keppler, 'The Modern Colossus of (Rail) Roads,' Puck magazine, 1879. Public domain. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Modern_Colossus_of_Rail_Roads_-_Keppler_1879.jpg",
+  "text": "The cartoon shows railroad magnate William Henry Vanderbilt as a giant straddling the nation, holding the strings that control the railroads below him. Two smaller figures, railroad men Jay Gould and Cyrus Field, stand beneath his feet. A sign at his feet reads: 'All freight seeking the seaboard MUST pass here and pay any tolls WE DEMAND.'"
+ },
+ "stimulus_set": "rail-colossus",
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "topics": [
+  "6.1"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

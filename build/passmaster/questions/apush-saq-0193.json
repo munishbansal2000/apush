@@ -1,0 +1,103 @@
+{
+ "id": "apush-saq-0193",
+ "lesson": "apush-u6-l5",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.11"
+ ],
+ "skills": [
+  "2.A",
+  "1.B"
+ ],
+ "themes": [
+  "SOC",
+  "MIG"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "source": "original; stimulus written from the grounding books or verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "The Settlement House Movement"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.11 Reform in the Gilded Age"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "The Hull House, Chicago postcard, V.O. Hammon, early 1900s"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "image",
+  "text": "A color postcard titled “The Hull House, Chicago” shows a large complex of red-brick buildings, three and four stories high, with many windows, chimneys, and gabled roofs. The buildings fill a whole city block along a paved street with sidewalks, young trees, and a street lamp. No people are visible in the street. The postcard dates from the early 1900s and shows the settlement as it had grown by then.",
+  "source_note": "Vintage V.O. Hammon (Chicago) postcard of Hull House, early 1900s. Public domain; image viewed by the writer (shared pool: u6/5s24-exam1-mcq-01.jpg). The postcard dates from after 1898 and shows the settlement as it had grown by the early 1900s; the full complex shown was complete around 1911–1912, and a surviving dated example of this postcard is June 1, 1915 (Eastern Illinois University Booth Library). Hull House itself opened in 1889."
+ },
+ "saq_slot": 3,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify what the postcard shows about the scale of Hull-House.",
+   "modelAnswer": "The postcard shows that Hull-House had grown into a large multi-building complex filling a whole city block, with three- and four-story brick buildings. A single house had become a small campus in the neighborhood.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying the scale shown, such as a large complex of several buildings filling a city block.",
+     "notEarned": "Calling Hull-House a single small house does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one way the postcard shows that Hull-House had become an established institution by the early 1900s.",
+   "modelAnswer": "The postcard shows a large permanent complex of brick buildings filling a whole city block, with paved streets, sidewalks, and a street lamp. That scale and permanence show a settlement that had put down roots and grown from a single house into a fixture of its neighborhood.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining permanence or scale as evidence of an established institution, such as several brick buildings filling a city block, or a paved street with sidewalks and a lamp.",
+     "notEarned": "Describing the buildings without explaining what their scale shows about the settlement does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Evaluate the extent to which this postcard is useful evidence about how settlement houses served immigrants.",
+   "modelAnswer": "The postcard is useful only in a limited way: it shows how large and permanent Hull-House had become, but it shows no people, no classes or services, and no immigrant residents. A student can learn how big the settlement grew, but not what it did for its neighbors.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for a judgment weighing what the postcard shows, its size and permanence, against what it cannot show, the people served and the services offered.",
+     "notEarned": "Describing the postcard without judging how far it serves as evidence about settlement work does not earn the point."
+    }
+   ]
+  }
+ ],
+ "figures": [
+  {
+   "id": "fig-apush-saq-0193",
+   "file": "u6/5s24-exam1-mcq-01.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/The_Hull_House%2C_Chicago_%28front%29.tif",
+   "license": "Public domain",
+   "caption": "The Hull House, Chicago, V.O. Hammon postcard, early 1900s",
+   "alt": "Color postcard of a large complex of red-brick buildings three and four stories high filling a city block, titled The Hull House, Chicago"
+  }
+ ]
+}

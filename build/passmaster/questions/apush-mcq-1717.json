@@ -1,0 +1,87 @@
+{
+  "id": "apush-mcq-1717",
+  "type": "mcq",
+  "unit": 6,
+  "topics": [
+    "6.5"
+  ],
+  "lesson": "apush-u6-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "answerKey": "D",
+  "skills": [
+    "1.B",
+    "5.B"
+  ],
+  "themes": [
+    "WXT",
+    "SOC"
+  ],
+  "reasoning": "continuity-change",
+  "stem": "Before Edison's electric lamp spread, what most commonly lit American homes and streets at night?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "First page of Thomas A. Edison's patent application for the incandescent light bulb, filed 1879, National Archives. Public domain. https://commons.wikimedia.org/wiki/File:Drawing_of_the_Incandescent_Light_Bulb_by_Thomas_Edison%2C_01-27-1880_%28Page_1_of_2%29_%285286032634%29.jpg",
+    "text": "The image is the first page of Thomas Edison's patent application. At the top, an eagle and a robed figure hold the scales of justice above inventors' tools. The handwritten petition reads: \"To the Honorable Commissioner of Patents: Your Petitioner Thomas A. Edison of Menlo Park in the State of New Jersey prays that LETTERS PATENT may be granted to him for the invention of an Improvement in Electric Lamps and in the method of manufacturing the same.\" The page is dated 1879."
+  },
+  "stimulus_set": "edison-bulb-petition",
+  "options": [
+    {
+      "key": "A",
+      "text": "Candles made from whale oil, the only light anyone could afford",
+      "misconception": "Background: candles were common, but by the 1870s kerosene lamps lit most homes; whale oil had grown scarce and costly."
+    },
+    {
+      "key": "B",
+      "text": "Gas light in every home, since gas pipes reached the whole country",
+      "misconception": "Background: gas lighting served cities with gas works; most rural homes had no gas pipes and burned kerosene instead."
+    },
+    {
+      "key": "C",
+      "text": "Electric arc lamps, which had already replaced every other kind of light",
+      "misconception": "Background: arc lamps lit a few streets and factories, but they were too harsh and costly for homes."
+    },
+    {
+      "key": "D",
+      "text": "Kerosene lamps, fed by oil drilled and refined in Pennsylvania"
+    }
+  ],
+  "rationales": {
+    "A": "Background: candles were still used, but they were not the main light by the 1870s. Kerosene lamps had taken over most homes because kerosene was cheap and bright.",
+    "B": "Background: gas pipes reached city streets, not farmhouses. Most Americans lived outside the gas-lit cities and burned kerosene at home.",
+    "C": "Background: arc lamps were bright, harsh lights for streets and factories. They were far too strong and costly to light a living room.",
+    "D": "Background from the books: Edwin Drake drilled the first oil well at Titusville, Pennsylvania, in 1859, and refined oil became kerosene. Kerosene lamps lit most American homes until the electric bulb replaced them.",
+    "general": "Ask what a farmhouse burned before the bulb.\n1. Background: gas pipes stopped at the edge of town, so most homes needed a lamp they could fill themselves.\n2. Background: oil from Drake's 1859 Pennsylvania well was refined into kerosene, and kerosene lamps lit most homes.\n3. Background: Edison's bulb had to beat that cheap, familiar light before it could spread.\nRemember: a new invention competes with the old habit, not with nothing."
+  },
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Coal and Oil"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "The Second Industrial Revolution"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Age of Invention and Economic Growth"
+      }
+    ]
+  },
+  "source": "original; stimulus verified against its source (see source_note)",
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1717",
+      "file": "u6/original-u6-tech-02.jpg",
+      "caption": "First page of Edison's patent application for the electric lamp, 1879",
+      "alt": "The first page of Edison's patent petition, with an eagle and robed figure at the top and Edison's handwritten request for a patent on an improvement in electric lamps",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Drawing_of_the_Incandescent_Light_Bulb_by_Thomas_Edison%2C_01-27-1880_%28Page_1_of_2%29_%285286032634%29.jpg",
+      "license": "Public domain: U.S. patent application, National Archives."
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "answerKey": "A",
+  "difficulty": 3,
+  "figures": [
+    {
+      "alt": "An 1890 newspaper advertisement headed We Have, listing ladies’ and gentlemen’s shoes at reduced prices for H. Leh and Company of Allentown, Pennsylvania",
+      "caption": "H. Leh and Company shoe advertisement, Allentown, Pennsylvania, 1890",
+      "file": "u6/original-u6-midclass-03.jpg",
+      "id": "fig-apush-mcq-1762",
+      "license": "Public domain: 1890 newspaper advertisement, Allentown, Pennsylvania.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/1890_-_H_Leh_%26_Company_Newspaper_Ad_Allentown_PA.jpg"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ]
+  },
+  "id": "apush-mcq-1762",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "text": "Because they are old lots cleared after the annual inventory"
+    },
+    {
+      "key": "B",
+      "text": "Because the government set low prices for all shoes",
+      "misconception": "The ad says nothing about the government setting prices."
+    },
+    {
+      "key": "C",
+      "text": "Because shoemakers worked alone in their homes",
+      "misconception": "The ad says the shoes are “hand sewed,” but that is how they were made, not why they are cheap."
+    },
+    {
+      "key": "D",
+      "text": "Because the store gave its shoes away for free",
+      "misconception": "The shoes are offered at reduced prices, not given away."
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "The ad says the store “just completed our annual inventory and found some old lots of SHOES” offered “at such reduced prices that will move them in a few days” — the low prices are a clearance, not a gift or a law.",
+    "B": "The ad never mentions the government; its prices are the store's own clearance prices.",
+    "C": "The ad calls the shoes “hand sewed,” which describes how they were made, not why they are cheap.",
+    "D": "The shoes are listed at reduced prices — $4.50 shoes now $2.95 — not given away.",
+    "general": "Let the ad give its own reason.\n1. The ad opens: “Just completed our annual inventory and found some old lots of SHOES.”\n2. Those old lots are offered “at such reduced prices that will move them in a few days.”\n3. The shoes are “hand sewed,” and the ad's reason is the inventory find, not how they were made.\n4. So the low prices come from clearing old stock after inventory.\nRemember: an ad's first sentence often states its own reason."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "1.B"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "According to the advertisement itself, why are these shoes offered at prices far below what they once cost?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "H. Leh and Company newspaper advertisement, Allentown, Pennsylvania, 1890. Public domain.",
+    "text": "A newspaper advertisement from 1890 for H. Leh and Company, a dry goods and shoe dealer in Allentown, Pennsylvania. Under the heading “WE HAVE,” it lists pair after pair of ladies’ and gentlemen’s shoes at reduced prices — $4.50 shoes now $2.95, $3 shoes now $2 — and invites shoppers to “come and look through before your size is sold out.”"
+  },
+  "stimulus_set": "leh-department-store",
+  "themes": [
+    "WXT"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

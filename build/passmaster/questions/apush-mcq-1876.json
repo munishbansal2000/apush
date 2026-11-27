@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-1876",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.10"
+ ],
+ "skills": [
+  "3.B",
+  "4.A"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.10 Development of the Middle Class"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "Uneven Affluence"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Floor plan of the first floor of Macy's Department Store, New York, as built 1901-1902"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "macy-floor-plan",
+ "stimulus": {
+  "kind": "image",
+  "text": "The image is a floor plan of the first floor of Macy's Department Store in New York, as built 1901–1902. It shows one very large open floor crossed by a grid of columns, with a grand staircase at its center, entrances on Broadway and 35th Street, and small rooms for stairs and lifts along the edges. The plan is labeled “FIRST FLOOR.”",
+  "source_note": "Floor plan of the first floor of Macy's Department Store, New York, as built 1901-1902. Public domain image from Wikimedia Commons; viewed by the writer."
+ },
+ "stem": "The plan is dated 1901–1902, a few years after Period 6 ends in 1898. What does that date mean for a historian using the plan as evidence about Gilded Age department stores?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It proves the store did not exist at all before 1901",
+   "misconception": "Macy's existed long before 1901; this plan is of its new building."
+  },
+  {
+   "key": "B",
+   "text": "It makes the plan useless for any question at all about the 1890s",
+   "misconception": "A later plan can still show the form the store had reached; useless is too strong."
+  },
+  {
+   "key": "C",
+   "text": "It shows the store's form at 1901, not proof of the 1890s store"
+  },
+  {
+   "key": "D",
+   "text": "It proves department stores caused the growth of the middle class",
+   "misconception": "A floor plan cannot prove a cause of class growth."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "The date is the date of this building, not the founding of the firm. Macy's sold goods decades earlier.",
+  "B": "A source slightly later than a period can still show a form that grew in that period. The limit is narrower than useless.",
+  "C": "The plan shows the large open selling floor the department store had become by 1901. To claim the 1890s store looked the same, a historian needs evidence from the 1890s.",
+  "D": "A plan shows a building, not a cause. Class growth needs other evidence.",
+  "general": "Use the date to set the source's reach.\n1. The plan dates to 1901-1902, just after the period ends.\n2. It therefore shows the department-store form at the turn of the century.\n3. Background from the books: that form grew in the 1870s to 1890s, but the plan alone cannot date it.\n4. So the plan supports claims about the form, not claims about the 1890s store itself.\nRemember: a source proves its own time first; earlier times need earlier evidence."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1876",
+   "file": "u6/original-u6-midclass-04.png",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Macy_first_floor.png",
+   "license": "Public domain",
+   "caption": "Floor plan of the first floor of Macy's Department Store, New York, as built 1901-1902",
+   "alt": "Floor plan of one large open store floor crossed by a grid of columns, with a grand staircase at the center and entrances marked on Broadway and 35th Street"
+  }
+ ]
+}

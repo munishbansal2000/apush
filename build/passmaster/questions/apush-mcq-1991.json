@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-1991",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.14"
+  ],
+  "skills": [
+    "3.B"
+  ],
+  "themes": [
+    "WXT"
+  ],
+  "reasoning": "comparison",
+  "difficulty": 3,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.14 Subject to Debate"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "America Transformed into the Industrial Giant of the World (1870–1910)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ],
+    "primary_sources": [
+      "Emory R. Johnson, American Railway Transportation (1908), Interstate Commerce Commission railroad mileage; Encyclopaedia Britannica, 11th edition (1911), Table IX, steel output"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-614-growth-table",
+  "stimulus": {
+    "kind": "table",
+    "text": "The table shows two measures of American industrial growth, 1870-1900.\n\n| Year | Miles of railroad in operation | Steel produced (millions of tons) |\n| 1870 | 52,922 | 0.07 |\n| 1880 | 93,296 | 1.25 |\n| 1890 | 163,597 | 4.28 |\n| 1900 | 193,346 | 10.19 |",
+    "source_note": "Railroad mileage from Emory R. Johnson, American Railway Transportation (1908), using Interstate Commerce Commission figures; steel output from the Encyclopaedia Britannica, 11th edition (1911), Table IX. The lesson script gives the same scale in round numbers: about 35,000 miles of track in 1865 and over 190,000 by 1900."
+  },
+  "stem": "Which of the following is the best example of a limitation of the table as evidence about the period?",
+  "options": [
+    {
+      "key": "A",
+      "text": "It covers too short a span to show any change",
+      "misconception": "Thirty years is enough for both series to grow several times over."
+    },
+    {
+      "key": "B",
+      "text": "It proves that industrial growth raised every worker’s wages",
+      "misconception": "Output figures say nothing about wages, so the table cannot prove that."
+    },
+    {
+      "key": "C",
+      "text": "It shows how much was produced, but not who gained"
+    },
+    {
+      "key": "D",
+      "text": "It shows that railroads caused the growth of steel",
+      "misconception": "Parallel growth in a table is not proof that one caused the other."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "Thirty years shows very large change in both columns.",
+    "B": "The table has no wage figures, so it cannot prove anything about wages.",
+    "C": "Production totals say nothing about how the gains were shared.",
+    "D": "Two series rising together does not prove that one caused the other.",
+    "general": "Ask what the numbers leave out.\n1. The table counts miles of track and tons of steel.\n2. Counts of output say nothing about wages, prices, or who owned the mills.\n3. A table that measures size cannot measure sharing.\n4. Background from the books: owners grew rich while many workers stayed poor.\nRemember: ask what a source counts, then ask what it cannot count."
+  }
+}

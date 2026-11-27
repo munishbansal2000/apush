@@ -1,0 +1,85 @@
+{
+  "answerKey": "D",
+  "difficulty": 3,
+  "figures": [
+    {
+      "alt": "A giant octopus labeled Standard Oil wraps its tentacles around the Capitol and a state capitol and reaches toward the White House while crushing small businessmen below",
+      "caption": "Standard Oil as a giant octopus reaching for government buildings, Puck, 1904",
+      "file": "u6/5s24-ch18-mcq-07.jpg",
+      "id": "fig-apush-mcq-1745",
+      "license": "Public domain: 1904 cartoon, Library of Congress print.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Standard_oil_octopus_loc_color.jpg"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ]
+  },
+  "id": "apush-mcq-1745",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "The cartoon shows the company gripping the buildings, not building them.",
+      "text": "Standard Oil built the Capitol and the White House"
+    },
+    {
+      "key": "B",
+      "misconception": "The octopus is the company, and the buildings are its prey, not its owner.",
+      "text": "The government owned Standard Oil"
+    },
+    {
+      "key": "C",
+      "misconception": "The cartoon says nothing about taxes; it shows influence over government.",
+      "text": "Standard Oil paid no taxes to the government"
+    },
+    {
+      "key": "D",
+      "text": "Standard Oil could influence the government meant to regulate it"
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "The buildings stood long before Standard Oil, and the cartoon shows them being gripped, not built.",
+    "B": "The octopus is Standard Oil itself, so the company is the actor, not the property of the government.",
+    "C": "Background: taxes are a separate question. The cartoon’s point is influence, not tax payments.",
+    "D": "The tentacles wrap around the Capitol and reach toward the White House — the seats of government — which shows the company reaching into the very places that might check its power.",
+    "general": "Ask what the tentacles are doing to the buildings.\n1. The tentacles wrap around the Capitol and reach toward the White House.\n2. An octopus grips what it wants to control.\n3. Those buildings hold the lawmakers and the president.\n4. So the picture says the company could reach the people who made the laws.\nRemember: when a cartoon grips a building, ask who works inside it."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "2.B"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "What do the octopus’s tentacles around the Capitol and its reach toward the White House suggest?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Udo Keppler, 'Next!', Puck, September 7, 1904. Public domain, Library of Congress print.",
+    "text": "Udo Keppler's cartoon 'Next!' (Puck, September 7, 1904) shows a giant octopus with 'STANDARD OIL' written across its head. Its tentacles reach across the land, wrapping around the Capitol and a state capitol and reaching toward the White House, and squeezing small businessmen at the bottom of the picture."
+  },
+  "stimulus_set": "standard-oil-octopus",
+  "themes": [
+    "PCE"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

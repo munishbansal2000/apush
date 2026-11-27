@@ -1,0 +1,84 @@
+{
+ "id": "apush-leq-0062",
+ "lesson": "apush-u6-l4",
+ "type": "leq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus": null,
+ "stimulus_set": null,
+ "source": "original",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "status": "final",
+ "prompt": "Evaluate the extent to which immigration changed the United States in the period from 1865 to 1898.",
+ "rubric": [
+  {
+   "criterion": "Earns the point for a thesis that makes a historically defensible claim about the extent to which immigration changed the United States between 1865 and 1898.",
+   "notEarned": "A thesis that merely restates the prompt, or one that makes no claim about extent, does not earn the point.",
+   "points": 1,
+   "skill": "6.A"
+  },
+  {
+   "criterion": "Earns the point for describing a broader historical context relevant to the prompt, such as the Civil War’s end, the growth of factories and railroads, or the flood of immigrants into industrial work.",
+   "notEarned": "A context that is only background on one example, or one set outside the period, does not earn the point.",
+   "points": 1,
+   "skill": "4.B"
+  },
+  {
+   "criterion": "Earns the point for supporting the argument with specific evidence about at least one immigrant group, such as the Chinese, the Irish, the Germans, or the new immigrants from southern and eastern Europe.",
+   "notEarned": "General claims about immigrants without specific groups or examples do not earn the point.",
+   "points": 1,
+   "skill": "6.B"
+  },
+  {
+   "criterion": "Earns the point for supporting the argument with specific evidence about a second part of the story, such as the growth of cities, the Chinese Exclusion Act, or the settlement house movement.",
+   "notEarned": "Repeating the same example, or adding examples without connecting them to the argument, does not earn the point.",
+   "points": 1,
+   "skill": "6.B"
+  },
+  {
+   "criterion": "Earns the point for using historical reasoning to explain how the evidence connects, such as showing a chain from a panic to nativist demands to a restriction law.",
+   "notEarned": "Listing evidence without explaining the links between the pieces does not earn the point.",
+   "points": 1,
+   "skill": "6.C"
+  },
+  {
+   "criterion": "Earns the point for a complex argument, such as showing that immigration changed some parts of American life while leaving others unchanged, or that the same arrivals were welcomed as workers and feared as strangers.",
+   "notEarned": "A one-sided argument that ignores counter-evidence, or a complexity move stated without support, does not earn the point.",
+   "points": 1,
+   "skill": "6.D"
+  }
+ ],
+ "modelOutline": "Thesis: Between 1865 and 1898 immigration changed the United States profoundly but unevenly, supplying the labor that built industrial America, remaking the cities into crowded immigrant worlds, and forcing a national debate over who counted as American, while exclusion laws and nativist resistance limited how far that change could go.\nContext: The Civil War ended with factories, railroads, and mines growing fast, and with the 1880s bringing the largest immigration wave yet, mostly from southern and eastern Europe, on top of older Irish, German, and Chinese arrivals.\nEvidence: The new immigrants crowded into the tenements of New York, Chicago, and other industrial cities, where three-fourths of New Yorkers lived in tenements by 1890, and they built ethnic neighborhoods with their own churches, newspapers, and shops. Chinese workers had helped build the transcontinental railroad, and up to 12,000 of them made up most of its workforce.\nEvidence continued: The backlash was just as real: the Workingmen’s Party blamed Chinese laborers for low wages after the Panic of 1873, Congress passed the Chinese Exclusion Act of 1882, the first federal ban on one nationality, and the Immigration Restriction League demanded a literacy test in 1894. Settlement houses answered differently: Jane Addams opened Hull House in Chicago in 1889 to teach English, run a kindergarten, and aid immigrant families.\nComplexity: the same immigration that filled the factories also filled the tenements and fed the nativism that tried to shut the door, so immigration both built industrial America and divided it over what America should be.",
+ "totalPoints": 6
+}

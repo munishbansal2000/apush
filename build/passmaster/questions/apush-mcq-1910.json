@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-1910",
+ "lesson": "apush-u6-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.11"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "ARC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.13 Politics in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "Gilded Age Politics"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "National Politics"
+   }
+  ],
+  "primary_sources": [
+   "Thomas Nast, “The Brains,” Harper’s Weekly, October 21, 1871"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "u6-611-nast",
+ "stimulus": {
+  "kind": "image",
+  "text": "The cartoon, by Thomas Nast in Harper’s Weekly, October 21, 1871, shows a fat man in a suit with a money bag for a head. The bag is marked with a dollar sign. Below the figure the caption reads “THE ‘BRAINS’” and “That achieved the Tammany Victory at the Rochester Democratic Convention.” The figure is William M. “Boss” Tweed of New York City’s Tammany Hall.",
+  "source_note": "Thomas Nast, “The Brains,” Harper’s Weekly, October 21, 1871. Public domain; image viewed by the writer (shared pool: u6/5s24-ch03-mcq-20.jpg)."
+ },
+ "stem": "What was Nast doing with this cartoon?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Reporting the results of a court trial of Tweed",
+   "misconception": "The cartoon shows no trial. It is a charge, drawn before Tweed’s fall."
+  },
+  {
+   "key": "B",
+   "text": "Advertising Tammany Hall’s candidates to voters",
+   "misconception": "Nast mocked Tweed; he did not advertise Tammany’s candidates."
+  },
+  {
+   "key": "C",
+   "text": "Using the press to expose a corrupt political boss"
+  },
+  {
+   "key": "D",
+   "text": "Defending the spoils system against its critics",
+   "misconception": "Nast attacked the machine, so he did not defend the spoils system."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "No courtroom appears. The cartoon accuses Tweed of winning by money.",
+  "B": "A money-bag head is mockery, not an advertisement for Tammany candidates.",
+  "C": "Nast drew Tweed as money-headed brains to show voters how the machine won.",
+  "D": "Exposing a boss is an attack on the spoils system, not a defense of it.",
+  "general": "Ask what the drawing was made to do.\n1. The figure is Tweed, drawn with a money bag for a head.\n2. The caption ties the money head to a Tammany election victory.\n3. A magazine cartoon that ties money to victory is an exposure, not a report.\n4. Nast used the press to show readers the corruption behind the machine.\nRemember: a cartoon that mocks a boss is the press acting as a reformer."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1910",
+   "file": "u6/5s24-ch03-mcq-20.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Boss_Tweed%2C_Thomas_Nast.jpg",
+   "license": "Public domain",
+   "caption": "Thomas Nast, “The Brains,” Harper’s Weekly, October 21, 1871",
+   "alt": "Cartoon of a fat man in a suit with a money bag marked with a dollar sign for a head, captioned THE BRAINS, about the Tammany victory at the Rochester Democratic Convention"
+  }
+ ]
+}

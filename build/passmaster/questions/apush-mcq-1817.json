@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-1817",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "opper-castle-garden-1882",
+ "stimulus": {
+  "kind": "image",
+  "text": "Political cartoon, “Castle Garden Emigrant-Catchers,” by Frederick Burr Opper, Puck, June 14, 1882. Newly arrived immigrants carrying bags and bundles stand outside the Castle Garden immigrant depot in New York, whose signs read “ENTRANCE FOR MEN” and “ENTRANCE FOR WOMEN.” In front of them, six figures buried to the neck in holes each hold a chain leading to a pair of spring-loaded steel jaws. Four of their signs read “MONEY CHANGER,” “TEMPTRESS,” “CONFIDENCE MAN,” and “FRIEND FROM THE OLD COUNTRY.” Two more figures wait in holes beside them. Two policemen look on without helping.",
+  "source_note": "Frederick Burr Opper, “Castle Garden Emigrant-Catchers,” Puck, vol. 11, no. 275 (June 14, 1882), back page. Image file: scan of the issue held by the Internet Archive (archive.org/details/sim_puck_1882-06-14_11_275); the cartoon is also catalogued by the Historical Society of Pennsylvania and the United States Holocaust Memorial Museum (Katz Ehrenthal Collection). Public domain: published 1882."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1817",
+   "file": "u6/original-u6-castle-garden-emigrant-catchers.jpg",
+   "alt": "Opper cartoon: six swindlers wait in holes with spring-loaded steel jaws for newly arrived immigrants outside Castle Garden, while two policemen look on.",
+   "caption": "Castle Garden Emigrant-Catchers, Puck, June 14, 1882",
+   "license": "Public domain: 1882 cartoon, Puck magazine.",
+   "source_url": "https://archive.org/details/sim_puck_1882-06-14_11_275"
+  }
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Frederick Burr Opper, “Castle Garden Emigrant-Catchers,” Puck, vol. 11, no. 275 (June 14, 1882)"
+  ]
+ },
+ "status": "final",
+ "stem": "A historian using this cartoon as evidence about the 1880s would most reasonably conclude what?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Most Americans in the 1880s welcomed the new immigrants",
+   "misconception": "Takes one cartoon for the whole public."
+  },
+  {
+   "key": "B",
+   "text": "Castle Garden officials protected every immigrant from fraud",
+   "misconception": "Reverses what the cartoon shows the officials doing."
+  },
+  {
+   "key": "C",
+   "text": "Cheating newly arrived immigrants was a known public problem"
+  },
+  {
+   "key": "D",
+   "text": "Congress had already ended all immigration by 1882",
+   "misconception": "Ends immigration decades before it peaked."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "One cartoon cannot prove what most Americans thought. It proves only that this voice existed.",
+  "B": "The cartoon shows the opposite: policemen look on while the swindlers wait, and no official protects anyone.",
+  "C": "The cartoon was printed in Puck in 1882, so the cheating of newcomers was a problem its readers would recognize — at least some voices were warning about it.",
+  "D": "Background: immigration was not ended in 1882 — the 1880s saw the largest immigration wave yet.",
+  "general": "Ask what one cartoon can and cannot prove.\n1. The cartoon exists, so at least one public voice warned about the cheating of newcomers.\n2. Background: Puck was a widely read magazine, so readers would have recognized the problem it pictured.\n3. One magazine cartoon cannot prove what most Americans believed.\n4. A single source proves a voice existed, not a majority.\nRemember: one source proves one voice, not a whole public."
+ }
+}

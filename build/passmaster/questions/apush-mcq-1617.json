@@ -1,0 +1,69 @@
+{
+ "answerKey": "C",
+ "difficulty": 2,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.1 Contextualizing Period 6"
+   }
+  ],
+  "primary_sources": [
+   "William Jennings Bryan, 'Cross of Gold' speech, July 1896"
+  ]
+ },
+ "id": "apush-mcq-1617",
+ "lesson": "apush-u6-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Those are the gold-standard supporters Bryan attacks in the speech.",
+   "text": "Bankers and railroad owners in the great eastern cities"
+  },
+  {
+   "key": "B",
+   "misconception": "Background: Bryan's base was farmers and workers; the plantation system had died with slavery.",
+   "text": "Southern plantation owners rebuilding after the Civil War"
+  },
+  {
+   "key": "C",
+   "text": "Farmers and working people burdened by debt and falling prices"
+  },
+  {
+   "key": "D",
+   "misconception": "Immigrants are not Bryan's subject here; his subject is the money question.",
+   "text": "European immigrants arriving at Ellis Island in New York"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Those are the gold-standard supporters Bryan attacks in the speech, not the people he speaks for.",
+  "B": "Background: Bryan's base was farmers and workers. The plantation system had died with slavery.",
+  "C": "The producing masses are the people who grow the food and do the work: farmers and laborers. Background: they were squeezed by debt while crop prices fell.",
+  "D": "Immigrants are not Bryan's subject here. His subject is the money question and who it helps or hurts.",
+  "general": "Translate Bryan's grand phrases into plain people: 'producing masses' means the workers.\n1. Ask who produces. Farmers grow the food, laborers do the work, toilers keep the country running.\n2. Ask who is squeezed. Background: debtors paying fixed debts while crop prices fall.\n3. Name the group. Background: farmers and working people burdened by debt and falling prices.\nRemember: grand phrases name plain people — 'producing masses' means the farmers and workers."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.A"
+ ],
+ "source": "original; stimulus is William Jennings Bryan, 'Cross of Gold' speech, July 1896, public domain.",
+ "status": "final",
+ "stem": "In the speech, Bryan speaks for 'the producing masses' and 'the toilers.' Whom is he speaking for?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "William Jennings Bryan, 'Cross of Gold' speech, Democratic National Convention, Chicago, July 1896. Public domain.",
+  "text": "\"Having behind us the producing masses of this nation and the world, supported by the commercial interests, the laboring interests, and the toilers everywhere, we will answer their demand for a gold standard by saying to them: You shall not press down upon the brow of labor this crown of thorns, you shall not crucify mankind upon a cross of gold.\"\n— William Jennings Bryan, \"Cross of Gold\" speech, Democratic National Convention, Chicago, July 1896"
+ },
+ "stimulus_set": "cross-gold",
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "topics": [
+  "6.1"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

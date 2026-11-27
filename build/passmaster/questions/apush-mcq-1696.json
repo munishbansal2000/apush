@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-1696",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.4"
+ ],
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 4,
+ "status": "final",
+ "lesson": "apush-u6-l2",
+ "stem": "The growth shown in the chart best supports which of the following conclusions about the New South?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The South had fully caught up with Northern industry by 1900",
+   "misconception": "Growth in one sector means the South caught up."
+  },
+  {
+   "key": "B",
+   "text": "Industrial growth was real but concentrated in a few sectors like textiles"
+  },
+  {
+   "key": "C",
+   "text": "Southern industry was owned entirely by Southern investors",
+   "misconception": "The South financed its own industry."
+  },
+  {
+   "key": "D",
+   "text": "Most Southerners had left farming for factory work by 1900",
+   "misconception": "Most Southerners became factory workers."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Background: the South stayed the nation’s poorest region; one booming sector did not close the gap.",
+  "B": "The chart proves one sector boomed: Southern mills multiplied. Background: even so, most Southerners still farmed, the mills made coarse goods, and much of the capital came from the North, so the growth was real but narrow.",
+  "C": "Background: Northern money financed much of the new Southern industry.",
+  "D": "Background: the South remained predominantly agrarian; sharecropping still dominated.",
+  "general": "1. Take the chart at its word. Textile spindles multiplied eightfold in twenty years.\n2. Ask what the chart cannot show. Who owned the mills, what they made, and where most Southerners worked.\n3. Weigh the claims. Full catch-up, Southern ownership, and a factory majority all go beyond the bars.\n4. Match the careful conclusion. Background: the growth was real, but it sat in a few sectors while most Southerners still farmed.\nRemember: a chart proves its own numbers — the rest of the story needs other evidence."
+ },
+ "stimulus": {
+  "kind": "chart",
+  "source_note": "Chart plotted from the same figures: U.S. Bureau of the Census, Statistical Abstract of the United States, 1925, Table 749. The 1880 figure is corroborated by Southern Historical Society Papers, vol. 34, p. 347.",
+  "text": "| Year | Cotton spindles in the Southern states (thousands) |\n| 1880 | 561 |\n| 1890 | 1,570 |\n| 1900 | 4,368 |\n\nSource: U.S. Bureau of the Census, Statistical Abstract of the United States, 1925, Table 749."
+ },
+ "stimulus_set": "southern-spindles-1880-1900",
+ "source": "original; stimulus is a chart plotted from U.S. Census Bureau figures (Statistical Abstract, 1925, Table 749)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.4 The “New South”"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "America Transformed into the Industrial Giant"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10"
+   }
+  ],
+  "primary_sources": [
+   "U.S. Bureau of the Census, Statistical Abstract of the United States, 1925, Table 749"
+  ]
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1696",
+   "file": "u6/u6-southern-spindles-1880-1900.png",
+   "caption": "Cotton spindles in the Southern states, 1880-1900. Source: U.S. Census Bureau, Statistical Abstract, 1925.",
+   "alt": "Bar chart showing cotton spindles in the Southern states rising from 561 thousand in 1880 to 1,570 thousand in 1890 and 4,368 thousand in 1900",
+   "source_url": "https://www.yumpu.com/en/document/view/59564938/united-states-yearbook-1925-1/923",
+   "license": "Chart data: public U.S. government data"
+  }
+ ]
+}

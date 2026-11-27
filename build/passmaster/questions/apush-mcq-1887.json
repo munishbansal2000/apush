@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1887",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.10"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "SOC",
+  "MIG"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 2,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.10 Development of the Middle Class"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Rise of the Modern American City"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Jacob A. Riis, How the Other Half Lives (1890)"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "u6-610-riis-tenements",
+ "stimulus": {
+  "kind": "text",
+  "text": "“Long ago it was said that “one half of the world does not know how the other half lives.” That was true then. It did not know because it did not care. The half that was on top cared little for the struggles, and less for the fate of those who were underneath, so long as it was able to hold them there and keep its own seat.”\n\n“To-day three-fourths of its people live in the tenements, and the nineteenth century drift of the population to the cities is sending ever-increasing multitudes to crowd them. The fifteen thousand tenant houses that were the despair of the sanitarian in the past generation have swelled into thirty-seven thousand, and more than twelve hundred thousand persons call them home.”\n\n(Jacob A. Riis, How the Other Half Lives, 1890, Introduction)",
+  "source_note": "Jacob A. Riis, How the Other Half Lives (Charles Scribner's Sons, 1890), Introduction. Public domain; wording checked against the Project Gutenberg text."
+ },
+ "stem": "According to Riis, how had New York's tenement population changed?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Tenant houses had swelled from fifteen thousand to thirty-seven thousand, housing over twelve hundred thousand"
+  },
+  {
+   "key": "B",
+   "text": "Tenements had disappeared as the city built suburbs outside town",
+   "misconception": "Riis says tenements grew, not that they disappeared."
+  },
+  {
+   "key": "C",
+   "text": "Three-fourths of New Yorkers had moved out of the tenements and into the suburbs",
+   "misconception": "Riis says three-fourths live in the tenements, not that they moved out."
+  },
+  {
+   "key": "D",
+   "text": "The tenement population had fallen to half a million souls",
+   "misconception": "The passage gives more than twelve hundred thousand, not half a million."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Riis gives both numbers: fifteen thousand tenant houses had become thirty-seven thousand, and more than twelve hundred thousand persons called them home.",
+  "B": "The passage describes growth and crowding, not disappearance.",
+  "C": "Three-fourths of the people live in the tenements. That is the opposite of moving out.",
+  "D": "Twelve hundred thousand is the figure Riis gives. Half a million is far smaller.",
+  "general": "Take the numbers from the passage, not from memory.\n1. Find the sentence about tenant houses swelling in number.\n2. It gives fifteen thousand growing into thirty-seven thousand.\n3. It then gives the people: more than twelve hundred thousand.\n4. Growth in houses and growth in people is the change.\nRemember: when a passage gives numbers, the answer is those numbers."
+ }
+}

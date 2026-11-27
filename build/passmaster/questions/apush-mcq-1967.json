@@ -1,0 +1,89 @@
+{
+  "id": "apush-mcq-1967",
+  "lesson": "apush-u6-l5",
+  "type": "mcq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.13"
+  ],
+  "skills": [
+    "2.A"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "difficulty": 3,
+  "source": "original; stimulus verified against its source (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "A. Farmers and the Populist Party"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 17",
+        "section": "The Populist Revolt"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "The Silver Issue and the Populist Movement"
+      }
+    ],
+    "primary_sources": [
+      "Frank Leslie's Illustrated Newspaper, 'The People's Party Convention - Delegates Who Were Not In It,' 1892"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": "u6-613-peoples-convention",
+  "stimulus": {
+    "kind": "image",
+    "text": "Political cartoon, Frank Leslie’s Illustrated Newspaper, 1892, “The People’s Party Convention—Delegates Who Were Not In It.” At the top left, a group is labeled “A Mixed Delegation.” At the right, a tall figure with his back turned is labeled “Farmers Alliance.” In the center, two men shake hands under the label “Lobby Debate.” In the foreground, a man sleeps on the floor, captioned “Away from the Excitement.”",
+    "source_note": "Frank Leslie’s Illustrated Newspaper, 1892, “The People’s Party Convention—Delegates Who Were Not In It.” Public domain: cartoon published 1892 (pre-1930); Library of Congress, LCCN2004677367. Labels checked against the image."
+  },
+  "stem": "What does the title 'Delegates Who Were Not In It' mean?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The convention barred all farmers from attending its sessions",
+      "misconception": "Farmers formed the party; the cartoon shows groups that stayed away, not a ban."
+    },
+    {
+      "key": "B",
+      "text": "The cartoon shows people who stayed away from the convention"
+    },
+    {
+      "key": "C",
+      "text": "The convention met in secret with no delegates present at all",
+      "misconception": "The convention happened in Omaha in 1892 with delegates present."
+    },
+    {
+      "key": "D",
+      "text": "The delegates voted to keep the convention's debates private",
+      "misconception": "Nothing in the cartoon shows a vote about keeping debates private."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The People's Party was a farmers' party, not a closed shop.",
+    "B": "The title points to absentees, and the drawings show them.",
+    "C": "The convention happened in Omaha in 1892 with delegates present.",
+    "D": "No vote about secrecy appears in the cartoon.",
+    "general": "Start with the title itself.\n1. The title says these are delegates who were 'not in it.'\n2. The drawings show a mixed delegation, a back-turned Alliance man, and a sleeper.\n3. Each figure stands apart from a convention the cartoon never shows.\n4. The joke is about absence: important people stayed away.\nRemember: a cartoon's title tells you what to look for in the picture."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-1967",
+      "file": "u6/saq-set-02-q3.jpg",
+      "caption": "“The People’s Party Convention—Delegates Who Were Not In It,” 1892",
+      "alt": "Leslie cartoon: a mixed delegation, a back-turned Farmers Alliance figure, a lobby debate, and a man asleep captioned Away from the Excitement",
+      "license": "Public domain: cartoon published 1892.",
+      "source_url": "https://www.loc.gov/pictures/item/2004677367/"
+    }
+  ]
+}

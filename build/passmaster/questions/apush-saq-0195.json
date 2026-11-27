@@ -1,0 +1,94 @@
+{
+ "id": "apush-saq-0195",
+ "lesson": "apush-u6-l5",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.12"
+ ],
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.12 Controversies over the Role of Government in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "Gilded Age Politics"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "National Politics"
+   }
+  ],
+  "primary_sources": [
+   "Grover Cleveland, veto message on the Texas Seed Bill, February 16, 1887",
+   "People’s Party, Omaha Platform, July 4, 1892"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "text",
+  "text": "President Grover Cleveland, veto message on the Texas Seed Bill, February 16, 1887:\n\n“Federal aid in such cases encourages the expectation of paternal care on the part of the government and weakens the sturdiness of our national character, while it prevents the indulgence among our people of that kindly sentiment and conduct which strengthens the bonds of a common brotherhood.”\n\nCongress had voted $10,000 to buy seed grain for Texas farmers after a drought, and Cleveland vetoed the bill.\n\nThe People’s Party, Omaha Platform, July 4, 1892:\n\n“Transportation being a means of exchange and a public necessity, the government should own and operate the railroads in the interest of the people.”\n\n“We demand free and unlimited coinage of silver and gold at the present legal ratio of 16 to 1.”",
+  "source_note": "Grover Cleveland, veto message, February 16, 1887 (American Presidency Project transcript). The quoted sentence is exact; the $10,000 appropriation and the drought are stated in the message. People’s Party, Omaha Platform, July 4, 1892 (American Presidency Project); both quoted sentences are exact."
+ },
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify Cleveland’s view of federal aid to individuals in need.",
+   "modelAnswer": "Cleveland believed the federal government should not give aid to individuals in need. He argued that such aid was outside the government's limited mission and weakened the national character.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying Cleveland's view that federal aid to individuals was improper, outside the Constitution, or harmful to character.",
+     "notEarned": "Saying Cleveland vetoed a bill without stating his view of federal aid does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how the Populists challenged Cleveland’s view of government’s role.",
+   "modelAnswer": "The Populists demanded that government do far more, including owning the railroads and coining silver freely at 16 to 1. Their Omaha Platform of 1892 treated government as the people's tool against corporations, the opposite of Cleveland's limited view.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one Populist demand that enlarges government's role, such as government ownership of railroads or free silver at 16 to 1.",
+     "notEarned": "Naming the Populists without stating a demand that enlarges government's role does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Evaluate the extent to which the federal government’s role in the economy changed between 1865 and 1898.",
+   "modelAnswer": "The federal role changed a great deal in what people asked of it, as farmers, workers, and reformers demanded regulation, relief, and public works. Yet the change stayed partial, because presidents like Cleveland vetoed aid and the courts narrowed the new regulatory laws.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for a judgment about the extent of change that weighs both new demands on government and a limit, such as vetoes or court decisions.",
+     "notEarned": "Describing demands or vetoes without judging how far the change reached does not earn the point."
+    }
+   ]
+  }
+ ]
+}

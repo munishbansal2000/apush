@@ -1,0 +1,90 @@
+{
+ "answerKey": "C",
+ "difficulty": 3,
+ "figures": [
+  {
+   "alt": "An 1892 cartoon showing Andrew Carnegie sitting on piles of money bags holding a whip, above a steel mill with signs reading Closed Strike, Closed, and Lock-Out, with crowds of workers outside the gates",
+   "caption": "“Promise and Performance” cartoon on the Homestead strike, 1892",
+   "file": "u6/barrons-2027-pt2-17.png",
+   "id": "fig-apush-mcq-1789",
+   "license": "Public domain: cartoon published 1892.",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Promise_and_Performance_Political_Cartoon_Andrew_Carnegie_sitting_on_bags_of_money_Homestead_Strike_1892.png"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "“Promise and Performance” political cartoon on the Homestead strike (1892)"
+  ]
+ },
+ "id": "apush-mcq-1789",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Carnegie sits on the money while workers stand outside, so he did not share it.",
+   "text": "Carnegie shared his great fortune fairly with his workers."
+  },
+  {
+   "key": "B",
+   "misconception": "The cartoon shows Carnegie in charge, whip in hand, above his own mill.",
+   "text": "Carnegie knew nothing about the Homestead mill at all."
+  },
+  {
+   "key": "C",
+   "text": "Carnegie grew rich while refusing his workers a living wage."
+  },
+  {
+   "key": "D",
+   "misconception": "The cartoon shows Carnegie keeping the mill and the money, not selling it.",
+   "text": "Carnegie sold the Homestead mill outright to its workers."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Carnegie sits on the money while workers stand outside, so he did not share it.",
+  "B": "The cartoon shows Carnegie in charge, whip in hand, above his own mill.",
+  "C": "Carnegie reclines on money bags with a whip while crowds of workers stand outside a closed mill: rich above, workers shut out below.",
+  "D": "The cartoon shows Carnegie keeping the mill and the money, not selling it.",
+  "general": "Put the two halves of the picture together.\n1. On top, Carnegie reclines on piles of money bags, whip in hand.\n2. Below, crowds of workers stand outside a mill marked closed and lock-out.\n3. Rich above and shut-out workers below is a contrast, not a partnership.\n4. So the point is that Carnegie grew rich while his workers went without.\nRemember: a cartoon’s top and bottom often argue against each other."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.A",
+  "2.B"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "What is the cartoonist’s main point about Carnegie?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Political cartoon “Promise and Performance,” 1892. Public domain (Wikimedia Commons).",
+  "text": "Political cartoon “Promise and Performance,” published in 1892. A large Andrew Carnegie sits on piles of money bags, holding a whip. Below him stretches a steel mill with signs reading “CLOSED—STRIKE,” “CLOSED,” and “LOCK-OUT.” Crowds of workers stand outside the mill gates."
+ },
+ "stimulus_set": "homestead-promise-performance-1892",
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

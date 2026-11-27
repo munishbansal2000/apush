@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1819",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "MIG",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "stimulus_set": "immigration-decade-table",
+ "stimulus": {
+  "kind": "text",
+  "text": "Immigration to the United States (U.S. Bureau of the Census, Statistical Abstract of the United States)\n\n| Period | Immigrants |\n| 1861–1870 | 2,314,824 |\n| 1871–1880 | 2,812,191 |\n| 1881–1890 | 5,246,613 |\n| 1891–1900 | 3,687,564 |\n\nFigures are totals for each ten-year period.\n\nIn single years: 1882 saw 788,992 immigrants arrive, and 1890 saw 455,302.",
+  "source_note": "U.S. Bureau of the Census, Statistical Abstract of the United States (1943), Table 107. Public data."
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "U.S. Bureau of the Census, Statistical Abstract of the United States (1943), Table 107"
+  ]
+ },
+ "status": "final",
+ "stem": "The table shows immigration nearly doubling between 1871–1880 and 1881–1890. That jump lines up best with which change described in the books?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The arrival of “new immigrants” from southern and eastern Europe"
+  },
+  {
+   "key": "B",
+   "text": "The end of all immigration from Ireland and Germany",
+   "misconception": "Ends an immigration flow that continued."
+  },
+  {
+   "key": "C",
+   "text": "The closing of Ellis Island",
+   "misconception": "Closes a station that opened later and received immigrants."
+  },
+  {
+   "key": "D",
+   "text": "The repeal of the Chinese Exclusion Act",
+   "misconception": "Repeals a law that was actually renewed."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The books say the 1880s brought the new wave from southern and eastern Europe, which drove the decade’s surge.",
+  "B": "Irish and German immigration continued. It was joined by new groups, not ended.",
+  "C": "Ellis Island opened in 1892, after the 1880s surge, and it received immigrants rather than closing.",
+  "D": "The Exclusion Act was never repealed in this period. It was renewed and made permanent in 1902.",
+  "general": "Match the surge to the wave the books describe.\n1. The 1880s total nearly doubles the 1870s total.\n2. The books say the 1880s brought the new wave from southern and eastern Europe.\n3. That wave is the change that fits the timing and the size.\n4. Irish and German immigration went on, and Ellis Island came later.\nBackground: before 1880 most immigrants came from Ireland, Germany, and Britain.\nRemember: match a jump in the numbers to the change that fits its timing."
+ }
+}

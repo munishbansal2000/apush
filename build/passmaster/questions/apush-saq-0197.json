@@ -1,0 +1,92 @@
+{
+  "id": "apush-saq-0197",
+  "lesson": "apush-u6-l5",
+  "type": "saq",
+  "pool": "practice",
+  "unit": 6,
+  "topics": [
+    "6.13"
+  ],
+  "skills": [
+    "1.B",
+    "2.A"
+  ],
+  "themes": [
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "difficulty": 3,
+  "source": "original; stimulus is the Pendleton Act text (see source_note)",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "The Pendleton Act"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Gilded Age Politics"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Civil Service Reform"
+      }
+    ],
+    "primary_sources": [
+      "Pendleton Civil Service Reform Act, January 16, 1883"
+    ]
+  },
+  "status": "final",
+  "stimulus_set": null,
+  "stimulus": {
+    "kind": "text",
+    "text": "An Act to regulate and improve the civil service of the United States, January 16, 1883, Section 2:\n\n“First, for open, competitive examinations for testing the fitness of applicants for the public service now classified or to be classified hereunder. Such examinations shall be practical in their character, and so far as may be shall relate to those matters which will fairly test the relative capacity and fitness of the persons examined to discharge the duties of the service into which they seek to be appointed.”\n\n“Second, that all the offices, places, and employments so arranged or to be arranged in classes shall be filled by selections according to grade from among those graded highest as the results of such competitive examinations.”\n\nPresident James A. Garfield had been shot in July 1881 by a disappointed office seeker and died that September.",
+    "source_note": "Pendleton Civil Service Reform Act, January 16, 1883, Section 2 (National Archives transcript). Both quoted rules are exact."
+  },
+  "saq_slot": 2,
+  "totalPoints": 3,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify the change the Pendleton Act made in federal hiring.",
+      "modelAnswer": "The act replaced party favor with open, competitive examinations for classified federal jobs. Applicants had to show fitness for the duties of the job, and offices went to those graded highest on the examinations. Hiring would rest on merit rather than on service to the winning party.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for identifying competitive examinations or merit hiring as the act's change to federal hiring.",
+          "notEarned": "Saying only that the act reformed the civil service, without naming examinations or merit, does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain how the assassination of President Garfield led Congress to pass the Pendleton Act.",
+      "modelAnswer": "Garfield was shot by a disappointed office seeker, which showed the country the danger of the spoils system. The killing gave civil-service reform a public urgency it had lacked before. Congress, which had resisted reform, passed the Pendleton Act in 1883 in answer to that shock.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for explaining that Garfield's killing by a disappointed office seeker created the public pressure that moved Congress to pass the act.",
+          "notEarned": "Saying only that Garfield died, without linking the killing to the pressure for reform, does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Evaluate the extent to which the Pendleton Act ended the spoils system.",
+      "modelAnswer": "The act ended the spoils system only partly. At first it covered only a small share of federal jobs, so most patronage hiring stayed in place. Top policy posts still changed with each president, though the share of merit jobs grew over time.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for a judgment that the act ended patronage only partly, noting the small initial coverage or the posts that stayed political.",
+          "notEarned": "Saying only that the act helped or hurt, without judging how far it ended patronage, does not earn the point."
+        }
+      ]
+    }
+  ]
+}

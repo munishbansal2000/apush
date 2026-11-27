@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-1670",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.3"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "B",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "MIG"
+ ],
+ "reasoning": "causation",
+ "stem": "According to the act, how long was the coming of Chinese laborers suspended?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Chinese Exclusion Act, 22 Stat. 58, approved May 6, 1882. Public domain. Text verified against the Avalon Project (Yale Law School) and the Gilder Lehrman Institute transcription.",
+  "text": "Chinese Exclusion Act, May 6, 1882 (ellipses mark omissions):\n\n\"Whereas, in the opinion of the Government of the United States the coming of Chinese laborers to this country endangers the good order of certain localities within the territory thereof: Therefore, Be it enacted ... That from and after the expiration of ninety days next after the passage of this act, and until the expiration of ten years next after the passage of this act, the coming of Chinese laborers to the United States be, and the same is hereby, suspended...\"\n\n\"SEC. 14. That hereafter no State court or court of the United States shall admit Chinese to citizenship...\"\n\n\"SEC. 15. That the words 'Chinese laborers,' wherever used in this act, shall be construed to mean both skilled and unskilled laborers and Chinese employed in mining.\""
+ },
+ "stimulus_set": "chinese-exclusion",
+ "options": [
+  {
+   "key": "A",
+   "text": "Ninety days",
+   "misconception": "Background: ninety days is when the suspension begins, not how long it lasts."
+  },
+  {
+   "key": "B",
+   "text": "Ten years"
+  },
+  {
+   "key": "C",
+   "text": "One year",
+   "misconception": "Background: the act names ten years, not one."
+  },
+  {
+   "key": "D",
+   "text": "Permanently, with no time limit",
+   "misconception": "Background: the act set ten years; Congress later renewed it and made it permanent in 1902."
+  }
+ ],
+ "rationales": {
+  "A": "Background: ninety days is when the suspension begins, not how long it lasts.",
+  "B": "Section 1 names the span plainly: 'until the expiration of ten years next after the passage of this act.' Ninety days is only the delay before the ban starts.",
+  "C": "Background: the act names ten years, not one.",
+  "D": "Background: the act set ten years. Congress later renewed it and made it permanent in 1902.",
+  "general": "Picture a clerk reading the new law aloud on the day it passes.\n1. Find the two numbers in Section 1. Ninety days, then ten years.\n2. Ask what each number does. Ninety days delays the start; ten years sets the length.\n3. Name the answer. Ten years.\nRemember: in a statute, the number that starts a clock and the number that stops it are different numbers."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Chinese Communities in the West"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The End of Native American Independence"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

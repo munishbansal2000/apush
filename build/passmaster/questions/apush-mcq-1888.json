@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1888",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 6,
+ "topics": [
+  "6.10"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "SOC",
+  "MIG"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.10 Development of the Middle Class"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Rise of the Modern American City"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Jacob A. Riis, How the Other Half Lives (1890)"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "u6-610-riis-tenements",
+ "stimulus": {
+  "kind": "text",
+  "text": "“Long ago it was said that “one half of the world does not know how the other half lives.” That was true then. It did not know because it did not care. The half that was on top cared little for the struggles, and less for the fate of those who were underneath, so long as it was able to hold them there and keep its own seat.”\n\n“To-day three-fourths of its people live in the tenements, and the nineteenth century drift of the population to the cities is sending ever-increasing multitudes to crowd them. The fifteen thousand tenant houses that were the despair of the sanitarian in the past generation have swelled into thirty-seven thousand, and more than twelve hundred thousand persons call them home.”\n\n(Jacob A. Riis, How the Other Half Lives, 1890, Introduction)",
+  "source_note": "Jacob A. Riis, How the Other Half Lives (Charles Scribner's Sons, 1890), Introduction. Public domain; wording checked against the Project Gutenberg text."
+ },
+ "stem": "According to Riis, why did one half of the world not know how the other half lived?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The poor hid their lives from everyone",
+   "misconception": "Riis says the half on top did not care, not that the poor hid."
+  },
+  {
+   "key": "B",
+   "text": "No one had ever written about the tenements before",
+   "misconception": "Riis does not claim he was the first to write; he claims the rich did not care."
+  },
+  {
+   "key": "C",
+   "text": "It did not know because it did not care"
+  },
+  {
+   "key": "D",
+   "text": "The rich had never visited New York",
+   "misconception": "Riis writes about New Yorkers; visiting is not his point."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Hiding is not in the passage. The cause Riis names is indifference.",
+  "B": "Riis says nothing about being first. His claim is about caring, not about writing.",
+  "C": "Riis writes it plainly: “It did not know because it did not care.”",
+  "D": "The half on top lived in the same city. The problem was caring, not visiting.",
+  "general": "Quote the sentence that answers the question.\n1. Find the sentence that begins “Long ago it was said...”\n2. Riis agrees it was true, then gives the reason.\n3. The reason is one clause: it did not know because it did not care.\n4. That clause is the answer.\nRemember: when a passage states its reason in one clause, that clause is the answer."
+ }
+}

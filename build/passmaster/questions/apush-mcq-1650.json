@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1650",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "GEO",
+  "MIG"
+ ],
+ "reasoning": "continuity-change",
+ "stem": "According to the census bulletin Turner quotes, what had happened to the American frontier by 1890?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Frederick Jackson Turner, \"The Significance of the Frontier in American History,\" paper read July 12, 1893. Public domain. Text verified against the University of Colorado transcription (spot.colorado.edu/~mcguire/turner.html) and Project Gutenberg's The Frontier in American History (pg22994).",
+  "text": "Frederick Jackson Turner, \"The Significance of the Frontier in American History\" (1893):\n\n\"In a recent bulletin of the Superintendent of the Census for 1890 appear these significant words: 'Up to and including 1880 the country had a frontier of settlement, but at present the unsettled area has been so broken into by isolated bodies of settlement that there can hardly be said to be a frontier line.'\"\n\n\"What the Mediterranean Sea was to the Greeks, breaking the bond of custom, offering new experiences, calling out new institutions and activities, that, and more, the ever retreating frontier has been to the United States directly, and to the nations of Europe more remotely. And now, four centuries from the discovery of America, at the end of a hundred years of life under the Constitution, the frontier has gone, and with its going has closed the first period of American history.\""
+ },
+ "stimulus_set": "turner-frontier",
+ "options": [
+  {
+   "key": "A",
+   "text": "The unsettled area was so broken by settlement that no frontier line remained"
+  },
+  {
+   "key": "B",
+   "text": "The frontier had moved beyond the Pacific Ocean to Hawaii and Alaska",
+   "misconception": "Background: the frontier in Turner's essay is the line of settlement inside the United States, not an overseas expansion."
+  },
+  {
+   "key": "C",
+   "text": "The census had stopped counting people west of the Mississippi",
+   "misconception": "Background: the census kept counting westerners; its bulletin reported that settlement had broken up the frontier, not that counting had stopped."
+  },
+  {
+   "key": "D",
+   "text": "The frontier had been closed by a federal law forbidding further settlement",
+   "misconception": "Background: no law closed the frontier; the census observed that settlement itself had filled the space in."
+  }
+ ],
+ "rationales": {
+  "A": "Turner quotes the bulletin directly: the unsettled area had been so broken into by isolated bodies of settlement that there could hardly be said to be a frontier line.",
+  "B": "Background: Turner's frontier is the moving line of settlement across the continent. Hawaii and Alaska play no part in his 1893 essay.",
+  "C": "Background: the bulletin Turner quotes comes from the census itself. The census counted the settlers; their numbers are what broke up the frontier.",
+  "D": "Background: the closing was a fact of settlement, not an act of law. No federal statute forbade moving west.",
+  "general": "The census did not close the frontier; the settlers did, one claim at a time.\n1. Read the bulletin's own words: the unsettled area had been so broken into by isolated bodies of settlement.\n2. Note what that means: settlement no longer advanced as one line, but as scattered pockets filling the map.\n3. Name the finding. By 1890 there was hardly a frontier line left to draw.\nRemember: a line disappears when the space on both sides of it fills in."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The Idea of the West"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

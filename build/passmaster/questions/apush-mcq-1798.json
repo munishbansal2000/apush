@@ -1,0 +1,76 @@
+{
+ "answerKey": "A",
+ "difficulty": 2,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.7 Labor in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Emergence of Labor Unions"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ]
+ },
+ "id": "apush-mcq-1798",
+ "lesson": "apush-u6-l3",
+ "options": [
+  {
+   "key": "A",
+   "text": "18 percent of the industrial workforce."
+  },
+  {
+   "key": "B",
+   "misconception": "17 percent is the passage’s figure for women, not for children.",
+   "text": "17 percent of the industrial workforce."
+  },
+  {
+   "key": "C",
+   "misconception": "20 percent is the share of children who worked, a different figure.",
+   "text": "20 percent of the industrial workforce."
+  },
+  {
+   "key": "D",
+   "misconception": "No figure near 25 percent appears in the passage.",
+   "text": "25 percent of the industrial workforce."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The passage states that children aged ten to fifteen made up 18 percent of the industrial workforce by 1900.",
+  "B": "17 percent is the passage’s figure for women, not for children.",
+  "C": "Background from the books: 20 percent is the share of children aged ten to fifteen who worked, a different figure from their share of the workforce.",
+  "D": "No figure near 25 percent appears in the passage.",
+  "general": "Match the group to its number.\n1. The passage gives two shares for 1900.\n2. Women made up 17 percent of the industrial workforce.\n3. Children aged ten to fifteen made up 18 percent.\n4. So the children’s share is 18 percent.\n5. A share of the workforce is not the same as a share of all children, so keep the two straight.\nRemember: when a passage gives two numbers, match each number to its group."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.A"
+ ],
+ "source": "original; stimulus verified against its source (see source_note)",
+ "status": "final",
+ "stem": "According to the passage, what share of the industrial workforce were children aged ten to fifteen by 1900?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, written for this question from Barron’s Premium 2027 Chapter 8 (Topic 6.7), 5 Steps to a 5, 2024, Chapter 18, and Princeton Review, Chapter 10.",
+  "text": "Original secondary passage, written for this question from the grounding books:\n\nAs factory work was broken into simple, repeated tasks, employers hired more women and children, whose pay was lower than men’s. Families often needed the extra wages because a working-class man’s pay alone was low. By 1900, children aged ten to fifteen made up 18 percent of the industrial workforce, and women made up 17 percent. Machines also took skill out of work: a craftsman who once set his own pace now repeated one task at a machine for hours, and unsafe mills and mines injured workers in large numbers."
+ },
+ "stimulus_set": "women-children-workforce",
+ "themes": [
+  "WOR",
+  "SOC"
+ ],
+ "topics": [
+  "6.7"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

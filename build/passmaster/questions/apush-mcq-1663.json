@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1663",
+ "type": "mcq",
+ "unit": 6,
+ "topics": [
+  "6.3"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "2.B",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "stem": "Why did federal officials treat the Ghost Dance as a threat, even though Wovoka's message forbade fighting?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Wovoka's message ('The Messiah Letter'), obtained by ethnologist James Mooney from a Cheyenne delegate in 1891 and published in Mooney, The Ghost-Dance Religion and the Sioux Outbreak of 1890 (1896). Public domain. Text verified against the Digital History (University of Houston) transcription of Mooney's report.",
+  "text": "Wovoka, the Northern Paiute prophet, 'The Messiah Letter,' as recorded by ethnologist James Mooney, 1891 (ellipses mark omissions):\n\n\"When you get home you must make a dance to continue five days. Dance four successive nights, and the last night keep up the dance until the morning of the fifth day, when all must bathe in the river and then disperse to their homes. ... The dead are still alive again. ... When the time comes there will be no more sickness and everyone will be young again. Do not refuse to work for the whites and do not make any trouble with them until you leave them. ... I want you to dance every six weeks.\""
+ },
+ "stimulus_set": "wovoka-messiah",
+ "options": [
+  {
+   "key": "A",
+   "text": "The dance was held on land the army had claimed for forts",
+   "misconception": "Background: the dances were held on the reservations themselves; the army's fear was the gathering, not the ground."
+  },
+  {
+   "key": "B",
+   "text": "Wovoka had ordered his followers to attack the reservations' agents",
+   "misconception": "Background: the message says the opposite: 'Do not refuse to work for the whites and do not make any trouble with them.'"
+  },
+  {
+   "key": "C",
+   "text": "Officials read a mass spiritual movement as the start of a war"
+  },
+  {
+   "key": "D",
+   "text": "The dance required followers to stop working for whites at once",
+   "misconception": "Background: the message says 'Do not refuse to work for the whites.'"
+  }
+ ],
+ "rationales": {
+  "A": "Background: the dances were held on the reservations themselves. The army's fear was the gathering, not the ground.",
+  "B": "Background: the message says the opposite: 'Do not refuse to work for the whites and do not make any trouble with them.'",
+  "C": "Wovoka's own words forbid trouble, but agents and settlers saw thousands dancing and feared an uprising. Background: the fear, not the message, brought soldiers, and Sitting Bull's arrest and Wounded Knee followed.",
+  "D": "Background: the message says 'Do not refuse to work for the whites.'",
+  "general": "Picture a reservation agent watching hundreds of people dance for days.\n1. Read what Wovoka actually says. Do not fight, do not make trouble, keep working for whites.\n2. Ask what the agent sees instead. Background: A mass movement among a people who had fought the army for decades.\n3. Name the gap. Officials feared what the dance might become, not what it said.\nRemember: fear reads a prayer as a war cry."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "The Ghost Dance Movement"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "The End of Native American Independence"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

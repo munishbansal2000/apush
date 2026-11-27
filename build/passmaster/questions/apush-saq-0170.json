@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0170",
+ "type": "saq",
+ "unit": 6,
+ "topics": [
+  "6.2"
+ ],
+ "lesson": "apush-u6-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "skills": [
+  "1.B",
+  "5.A"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question; facts from Barron's Premium 2027 Ch 8, 5 Steps to a 5 2024 Ch 17, and Princeton Review Ch 10.",
+  "text": "Original secondary passage, written for this question from the grounding books:\n\nBetween 1865 and 1900 the federal government pushed the settlement of the West with land and steel. The Homestead Act of 1862 offered 160 acres to any settler who would live on the land for five years, and the Pacific Railway Acts gave railroad companies more than 175 million acres to finance the transcontinental lines. The railroads carried settlers west and carried wheat and cattle east, while new machines let fewer farmers grow far more grain.\n\nThe same expansion destroyed the world of the Plains peoples: their buffalo were hunted nearly to extinction, their lands were taken for farms and ranches, and the Dawes Act of 1887 broke what remained of their reservations into individual allotments."
+ },
+ "stimulus_set": null,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one federal policy that encouraged settlement of the West after the Civil War.",
+   "modelAnswer": "The Homestead Act of 1862 offered 160 acres of public land to settlers who would live on and farm it for five years. It drew hundreds of thousands of families onto the Plains.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one federal policy from the passage, such as the Homestead Act or the Pacific Railway Acts' land grants.",
+     "notEarned": "Naming a policy that is not in the passage, or a vague answer with no policy identified, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one way railroads changed farming on the Great Plains.",
+   "modelAnswer": "Railroads carried settlers west and carried their wheat and cattle east to market, tying Plains farms to national and world prices. They also made the land beside the tracks valuable, so railroad companies sold it and towns grew along the lines.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one change railroads brought to Plains farming, such as carrying crops to market, bringing settlers, or raising land values along the lines.",
+     "notEarned": "Restating that railroads were important, with no specific change to farming explained, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way westward expansion changed the lives of Native peoples.",
+   "modelAnswer": "The buffalo herds that fed and sheltered the Plains peoples were hunted nearly to extinction, and their lands were taken for farms and ranches. The Dawes Act then broke the remaining reservations into individual allotments, leaving Native peoples with far less land.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one change, such as the loss of the buffalo, the loss of land, confinement to reservations, or allotment under the Dawes Act.",
+     "notEarned": "Naming a change with no explanation, or describing a change that came from another period, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.2 Westward Expansion: Economic Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 17",
+    "section": "Government Encouragement of Western Settlement"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Railroads and Developments in the West"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus verified against its source (see source_note)"
+}

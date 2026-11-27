@@ -1,0 +1,75 @@
+{
+ "answerKey": "D",
+ "difficulty": 4,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.1 Contextualizing Period 6"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+   }
+  ],
+  "primary_sources": [
+   "Andrew Carnegie, 'Wealth,' North American Review, June 1889"
+  ]
+ },
+ "id": "apush-mcq-1611",
+ "lesson": "apush-u6-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Libraries were Carnegie's favorite gift; donor-funded libraries show his program working, not failing.",
+   "text": "The growth of public libraries funded by wealthy donors"
+  },
+  {
+   "key": "B",
+   "misconception": "Social Darwinism agreed with Carnegie that inequality was natural; it defended the rich rather than challenging them.",
+   "text": "The spread of Social Darwinism defending great fortunes as natural"
+  },
+  {
+   "key": "C",
+   "misconception": "Background: McKinley's victory favored business and left Carnegie's world intact; it challenged nothing he argued.",
+   "text": "The election of William McKinley on a pro-business platform in 1896"
+  },
+  {
+   "key": "D",
+   "text": "The Homestead Strike of 1892, where Carnegie Steel locked out its workers"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Libraries were Carnegie's favorite gift. Donor-funded libraries show his program working, not failing.",
+  "B": "Social Darwinism agreed with Carnegie that great fortunes were natural. It defended the rich; it did not challenge his duty to give.",
+  "C": "Background: McKinley's 1896 victory favored business and left Carnegie's world intact. It challenged nothing in his argument.",
+  "D": "Background: in 1892 Carnegie Steel locked out its Homestead workers and hired Pinkertons to break them. The trustee of the poor's own company fought its workers — deeds against words.",
+  "general": "Hold Carnegie's words next to his company's deeds and watch the tension appear.\n1. State his claim. The millionaire is a trustee for the poor, bound to administer surplus wealth for the community.\n2. Bring in Homestead. In 1892 his own steel company locked out its workers and hired Pinkertons to break them.\n3. Name the challenge. The trustee's company fought its workers, setting deeds against words.\nRemember: an idea is tested by its author's own conduct — compare the essay with the strike."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "3.D",
+  "5.B"
+ ],
+ "source": "original; stimulus is Andrew Carnegie, 'Wealth,' North American Review, June 1889, public domain.",
+ "status": "final",
+ "stem": "Carnegie's argument was most directly challenged by which of the following developments of the Gilded Age?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Andrew Carnegie, 'Wealth,' North American Review, June 1889. Public domain.",
+  "text": "\"The problem of our age is the proper administration of wealth, that the ties of brotherhood may still bind together the rich and poor in harmonious relationship. . . . The millionaire will be but a trustee for the poor, intrusted for a season with a great part of the increased wealth of the community, but administering it for the community far better than it could or would have done for itself.\"\n— Andrew Carnegie, \"Wealth\" (The Gospel of Wealth), North American Review, June 1889"
+ },
+ "stimulus_set": "gospel-wealth",
+ "themes": [
+  "SOC",
+  "WXT"
+ ],
+ "topics": [
+  "6.1"
+ ],
+ "type": "mcq",
+ "unit": 6
+}

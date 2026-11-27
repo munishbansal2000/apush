@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1951",
+ "lesson": "apush-u6-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.12"
+ ],
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.12 Controversies over the Role of Government in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "Gilded Age Politics"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "The Silver Issue and the Populist Movement"
+   }
+  ],
+  "primary_sources": [
+   "United States presidential election of 1896, official returns"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "u6-612-election-1896",
+ "stimulus": {
+  "kind": "table",
+  "text": "Results of the presidential election of 1896:\n\n| Candidate | Party | Popular vote | Share | Electoral vote |\n| William McKinley | Republican | about 7.1 million | 51% | 271 |\n| William Jennings Bryan | Democratic and Populist | about 6.5 million | 47% | 176 |\n\nBryan, the Democratic nominee, also won the Populist Party’s nomination. He campaigned for the free coinage of silver. McKinley campaigned for the gold standard. The Panic of 1893 had begun a severe depression, and the election was fought during that depression.",
+  "source_note": "Election figures follow the standard record: McKinley 271 electoral votes, Bryan 176; popular shares about 51 percent and 47 percent. Popular totals vary slightly by source, so rounded figures are given. Bryan's dual nomination and the candidates' money positions follow Barron's Premium 2027, Chapter 8, and 5 Steps to a 5, 2024, Chapter 18."
+ },
+ "stem": "Which group benefited most from McKinley’s victory in 1896?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Farmers in debt, who wanted cheaper money to pay",
+   "misconception": "Debtors wanted free silver to raise prices; McKinley's gold victory kept money tight."
+  },
+  {
+   "key": "B",
+   "text": "Creditors and business interests who favored the gold standard"
+  },
+  {
+   "key": "C",
+   "text": "The silver mine owners of the far West",
+   "misconception": "Mine owners backed Bryan and free silver, so McKinley's win hurt them."
+  },
+  {
+   "key": "D",
+   "text": "The Populist Party, which gained the presidency at last",
+   "misconception": "The Populists backed Bryan and lost, so they did not gain the presidency."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Debtors wanted free silver to raise prices; gold kept money tight.",
+  "B": "Gold protected the value of money owed to creditors and suited business.",
+  "C": "Mine owners backed Bryan and free silver, so McKinley's win hurt them.",
+  "D": "The Populists backed Bryan and lost, so they did not gain the presidency.",
+  "general": "Ask who wanted gold to win.\n1. McKinley campaigned for the gold standard, and Bryan for free silver.\n2. Gold kept money scarce and its value steady, which favors those owed money.\n3. Debtors and mine owners wanted silver to raise prices and expand the money supply.\n4. The winners were the creditors and business interests who trusted gold.\nRemember: a money policy always has winners, so ask who is owed and who owes."
+ }
+}

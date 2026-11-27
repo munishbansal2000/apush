@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0190",
+ "lesson": "apush-u6-l4",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 6,
+ "topics": [
+  "6.10"
+ ],
+ "skills": [
+  "3.B",
+  "2.A"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "source": "original; stimulus is a verbatim public-domain primary source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.10 Development of the Middle Class"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The Rise of the Modern American City"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Jacob A. Riis, How the Other Half Lives (1890)"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "text",
+  "text": "“What are you going to do about it? is the question of to-day. It was asked once of our city in taunting defiance by a band of political cutthroats, the legitimate outgrowth of life on the tenement-house level. Law and order found the answer then and prevailed.”\n\n“The story is dark enough, drawn from the plain public records, to send a chill to any heart. If it shall appear that the sufferings and the sins of the “other half,” and the evil they breed, are but as a just punishment upon the community that gave it no other choice, it will be because that is the truth.”\n\n(Jacob A. Riis, How the Other Half Lives, 1890, Introduction)",
+  "source_note": "Jacob A. Riis, How the Other Half Lives (Charles Scribner's Sons, 1890), Introduction. Public domain; wording checked against the Project Gutenberg text."
+ },
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify the question Riis says faces the city in the passage.",
+   "modelAnswer": "The question is what the city will do about the tenements. Riis quotes it directly in the passage, and he notes that law and order found the answer once before.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying the question Riis names, “What are you going to do about it?”, as the question facing the city about tenement conditions.",
+     "notEarned": "Quoting the passage without naming the question it poses does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain why Riis believed the sufferings of the “other half” were the community's fault.",
+   "modelAnswer": "Riis argues that the community gave tenement dwellers no other choice of housing, so their sufferings and the evils that grew from them were a just punishment upon that community. The blame falls on the city that allowed the tenements, not only on the people who lived in them.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining Riis's reasoning, such as the community giving the poor no other choice of housing and therefore bearing the blame for the suffering that followed.",
+     "notEarned": "Saying only that tenement life was hard, without explaining why Riis blamed the community, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Evaluate the extent to which Riis's book changed how middle-class Americans viewed the poor.",
+   "modelAnswer": "It changed views a great deal among reform-minded readers: his photographs and reporting made slum conditions visible and fed settlement houses, charity work, and later housing reform. But the change was limited, because many readers still blamed the poor themselves, and the first strong tenement law came only in 1901, more than a decade after his book.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for a judgment about the extent of change that weighs both the book's effect on reform-minded readers and a limit on it, such as continued blame of the poor or the slow arrival of tenement law.",
+     "notEarned": "Saying only that the book was popular, without judging how far views changed, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

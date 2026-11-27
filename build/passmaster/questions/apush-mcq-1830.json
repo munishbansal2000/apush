@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-1830",
+ "lesson": "apush-u6-l4",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 6,
+ "topics": [
+  "6.8"
+ ],
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "riis-bandits-roost",
+ "stimulus": {
+  "kind": "image",
+  "text": "The photograph shows a narrow alley between tall tenement buildings in New York City. Laundry hangs on lines overhead. Men stand in doorways and on a wooden balcony, and a man in the foreground holds a long stick. The alley floor is wet stone, with barrels at one side and a cart in the distance.",
+  "source_note": "Jacob A. Riis, “Bandits’ Roost, 59 1-2 Mulberry Street,” 1888. Photograph from the shared image pool; public domain."
+ },
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.8 Immigration and Migration in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "The New Immigration"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "Factories and City Life"
+   }
+  ],
+  "primary_sources": [
+   "Jacob A. Riis, “Bandits’ Roost, 59 1-2 Mulberry Street” (1888); Jacob A. Riis, How the Other Half Lives (1890)"
+  ]
+ },
+ "status": "final",
+ "stem": "What does the photograph show about life in the immigrant neighborhoods of New York?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Many people lived crowded in narrow alleys between tenement buildings"
+  },
+  {
+   "key": "B",
+   "text": "Immigrants lived in large houses with wide yards",
+   "misconception": "Puts wide yards into a narrow alley photograph."
+  },
+  {
+   "key": "C",
+   "text": "The city had cleared the slums by 1888",
+   "misconception": "Claims the slums were cleared in the year the photograph shows them standing."
+  },
+  {
+   "key": "D",
+   "text": "Tenement alleys were empty because residents worked on farms",
+   "misconception": "Calls a crowded alley empty."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The alley is narrow, the buildings press close on both sides, and men crowd the doorways and balcony, so the photograph shows crowded tenement life.",
+  "B": "The photograph shows a narrow alley between tall buildings, not large houses with yards.",
+  "C": "The photograph was taken in 1888 and the slum alley is still there. Nothing was cleared.",
+  "D": "The alley is full of people. It is not empty.",
+  "general": "Look at what fills the frame.\n1. The alley is narrow, with tall buildings close on both sides.\n2. Laundry hangs overhead, and men crowd the doorways and balcony.\n3. Crowded buildings plus crowded people is crowded living.\n4. Nothing in the frame shows large houses, yards, or empty streets.\n5. The photograph’s claim is the crowding you can see in it.\nRemember: a photograph’s claim is what fills its frame."
+ },
+ "figures": [
+  {
+   "file": "u7/5s24-exam2-mcq-12.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Bandits%27_Roost%2C_59_1-2_Mulberry_Street_by_Jacob_August_Riis%2C_1888.jpg",
+   "license": "Public domain",
+   "caption": "Bandits’ Roost, Mulberry Street, New York, photographed by Jacob Riis in 1888",
+   "alt": "A narrow alley between tall tenement buildings, with laundry on lines overhead and men standing in doorways and on a wooden balcony",
+   "id": "fig-apush-mcq-1830"
+  }
+ ]
+}

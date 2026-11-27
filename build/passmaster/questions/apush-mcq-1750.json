@@ -1,0 +1,76 @@
+{
+  "answerKey": "A",
+  "difficulty": 4,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "The Rise of the Corporation and Mass Production"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ]
+  },
+  "id": "apush-mcq-1750",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "text": "Easier incorporation laws, the railroad model, and the need for capital"
+    },
+    {
+      "key": "B",
+      "misconception": "Background: the government never banned small businesses; they kept operating alongside corporations.",
+      "text": "The federal government’s ban on all small businesses"
+    },
+    {
+      "key": "C",
+      "misconception": "Background: competition stayed fierce; corporations were built to survive it, not to end it.",
+      "text": "The end of all competition between American firms"
+    },
+    {
+      "key": "D",
+      "misconception": "Background: banks and financiers like J. P. Morgan funded the great corporations; they did not refuse them.",
+      "text": "The refusal of banks to lend money to large companies"
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "Background from the books: states eased incorporation before the war, railroads showed the model worked at scale, and only corporations could gather the capital that steel mills and railroads needed.",
+    "B": "Background: small businesses did not vanish. Corporations grew beside them, and the passage starts with small firms still in business.",
+    "C": "Background: the books stress cutthroat competition between firms. Corporations formed to win that competition, not because it had ended.",
+    "D": "Background: financiers funded the new corporations. J. P. Morgan’s control of railroads and industry is the opposite of a refusal to lend.",
+    "general": "Combine the passage with what the books add.\n1. The passage names two causes: easier incorporation laws and the railroad model.\n2. Background from the books: railroads and steel mills needed more capital than any one owner could supply.\n3. Only a corporation could gather that capital from many investors.\n4. Together, law, model, and capital explain why the form spread.\nRemember: a big change usually has more than one cause, so gather them all."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "6.B"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "Which of the following best explains why the corporation spread so widely after the Civil War?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Original secondary passage, written for this question from Barron’s Premium 2027, Chapter 8 (Topic 6.6), 5 Steps to a 5, 2024, Chapter 18, and Princeton Review, Chapter 10.",
+    "text": "Before the Civil War, most American businesses were small firms run by their owners. After the war, new laws made it easier to form corporations, and the railroads showed how a corporation could work: the Pennsylvania Railroad, incorporated in 1846, grew into a business too large for any one owner to run. Large corporations hired layers of managers, kept careful cost accounts, and divided the work among departments for buying, selling, and shipping. A new class of middle managers ran the daily work while top executives planned for the future."
+  },
+  "stimulus_set": "corporation-managerial",
+  "themes": [
+    "WXT",
+    "PCE"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}

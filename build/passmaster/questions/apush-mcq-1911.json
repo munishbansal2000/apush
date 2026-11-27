@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-1911",
+ "lesson": "apush-u6-l5",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 6,
+ "topics": [
+  "6.11"
+ ],
+ "skills": [
+  "3.D"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "source": "original; stimulus verified against its source (see source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 8",
+    "section": "Topic 6.12 Controversies over the Role of Government in the Gilded Age"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 18",
+    "section": "Gilded Age Politics"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 10",
+    "section": "National Politics"
+   }
+  ],
+  "primary_sources": [
+   "Joseph Keppler, “The Bosses of the Senate,” Puck, January 23, 1889"
+  ]
+ },
+ "status": "final",
+ "stimulus_set": "u6-611-bosses-senate",
+ "stimulus": {
+  "kind": "image",
+  "text": "The cartoon, “The Bosses of the Senate,” by Joseph Keppler in Puck magazine, January 23, 1889, shows the United States Senate chamber. Tiny senators sit at small desks in the lower half of the picture. Towering over them are huge men in top hats whose swollen bodies are money bags labeled with the names of trusts: “Standard Oil Trust,” “Copper Trust,” “Steel Beam Trust,” “Iron Trust,” “Sugar Trust,” “Coal Trust,” and “Nail Trust.” A sign on the wall reads: “This is a Senate of the Monopolists by the Monopolists and for the Monopolists!” A door at the left is marked “People’s Entrance” and “Closed.”",
+  "source_note": "Joseph Keppler, “The Bosses of the Senate,” Puck, January 23, 1889. Public domain; image viewed by the writer (new pool file: u6/u6-bosses-of-senate.jpg, catalogued in CATALOG-u6.json)."
+ },
+ "stem": "The cartoon shows the trusts entering through their own door while the people’s entrance is closed. What does that detail argue?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Senators preferred to meet the trusts in secret",
+   "misconception": "The cartoon shows the trusts entering openly, not in secret."
+  },
+  {
+   "key": "B",
+   "text": "The Senate building had too few doors for visitors",
+   "misconception": "The doors are a symbol, not a complaint about the building."
+  },
+  {
+   "key": "C",
+   "text": "Ordinary voters had grown bored with politics",
+   "misconception": "A closed door shows voters shut out, not voters bored."
+  },
+  {
+   "key": "D",
+   "text": "The Senate served organized wealth while shutting out ordinary voters"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "The trusts loom openly over the chamber. Secrecy is not the charge.",
+  "B": "Keppler draws doors as symbols of access, not as architecture.",
+  "C": "The sign says the people’s entrance is closed, which is exclusion, not boredom.",
+  "D": "The trusts have their own entrance and the people’s is closed, under a sign naming the Senate the monopolists’ own.",
+  "general": "Read the doors as part of the argument.\n1. The trusts tower over the senators, each labeled with its industry.\n2. The wall sign calls the chamber the Senate of the monopolists.\n3. The people’s entrance is marked closed while the trusts walk in.\n4. Access for wealth and exclusion for voters is the cartoon’s charge.\nRemember: in a cartoon, a door that is closed is an argument, not a detail."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1911",
+   "file": "u6/u6-bosses-of-senate.jpg",
+   "source_url": "https://www.senate.gov/art-artifacts/historical-images/political-cartoons-caricatures/38_00392_001.htm",
+   "license": "Public domain",
+   "caption": "Joseph Keppler, “The Bosses of the Senate,” Puck, January 23, 1889",
+   "alt": "Cartoon of giant money-bag figures in top hats labeled with trust names towering over tiny senators at their desks, under a sign reading This is a Senate of the Monopolists by the Monopolists and for the Monopolists"
+  }
+ ]
+}

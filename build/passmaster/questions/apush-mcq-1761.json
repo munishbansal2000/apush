@@ -1,0 +1,86 @@
+{
+  "answerKey": "B",
+  "difficulty": 2,
+  "figures": [
+    {
+      "alt": "An 1890 newspaper advertisement headed We Have, listing ladies’ and gentlemen’s shoes at reduced prices for H. Leh and Company of Allentown, Pennsylvania",
+      "caption": "H. Leh and Company shoe advertisement, Allentown, Pennsylvania, 1890",
+      "file": "u6/original-u6-midclass-03.jpg",
+      "id": "fig-apush-mcq-1761",
+      "license": "Public domain: 1890 newspaper advertisement, Allentown, Pennsylvania.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/1890_-_H_Leh_%26_Company_Newspaper_Ad_Allentown_PA.jpg"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 8",
+        "section": "Topic 6.6 The Rise of Industrial Capitalism"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 18",
+        "section": "Big Business"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 10",
+        "section": "Industrialization, Corporate Consolidation, and the Gospel of Wealth"
+      }
+    ]
+  },
+  "id": "apush-mcq-1761",
+  "lesson": "apush-u6-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "The ad lists low prices for ordinary shoppers, not luxuries for the rich.",
+      "text": "They sold only to wealthy customers"
+    },
+    {
+      "key": "B",
+      "text": "They sold cheap goods in large numbers and advertised widely"
+    },
+    {
+      "key": "C",
+      "misconception": "The ad invites shoppers to come into the store and look through the goods.",
+      "text": "They sold goods only by mail order"
+    },
+    {
+      "key": "D",
+      "misconception": "The ad lists dozens of pairs at set prices, which is ready-made selling, not custom work.",
+      "text": "They made every shoe by hand for each customer"
+    }
+  ],
+  "pool": "practice",
+  "rationales": {
+    "A": "The prices are cut to move goods in a few days, which aims at ordinary shoppers, not only the rich.",
+    "B": "The ad lists pair after pair of shoes at reduced prices and invites shoppers to come and look before their size is sold out. That is mass selling by advertising.",
+    "C": "The ad tells shoppers to come into the store, so it is shop selling, not mail order.",
+    "D": "Dozens of pairs at set prices means ready-made shoes sold off the shelf, not shoes made to order.",
+    "general": "Read the ad like a shopkeeper’s pitch.\n1. The ad lists many pairs of shoes at prices cut below what they once cost.\n2. It tells shoppers to come and look before their size is sold out.\n3. Low prices plus an invitation is how a store moves large stocks of goods.\n4. That is mass selling: many goods, low prices, and advertising.\nRemember: an ad’s prices and its invitation tell you how the store sold."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "3.A"
+  ],
+  "source": "original; stimulus verified against its source (see source_note)",
+  "status": "final",
+  "stem": "What does the advertisement show about how stores like Leh’s sold goods?",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "H. Leh and Company newspaper advertisement, Allentown, Pennsylvania, 1890. Public domain.",
+    "text": "A newspaper advertisement from 1890 for H. Leh and Company, a dry goods and shoe dealer in Allentown, Pennsylvania. Under the heading “WE HAVE,” it lists pair after pair of ladies’ and gentlemen’s shoes at reduced prices — $4.50 shoes now $2.95, $3 shoes now $2 — and invites shoppers to “come and look through before your size is sold out.”"
+  },
+  "stimulus_set": "leh-department-store",
+  "themes": [
+    "WXT",
+    "SOC"
+  ],
+  "topics": [
+    "6.6"
+  ],
+  "type": "mcq",
+  "unit": 6
+}
