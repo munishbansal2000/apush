@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0111",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.5"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "skills": [
+  "2.B",
+  "3.A"
+ ],
+ "themes": [
+  "WOR",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 Market Revolution: Economic Transformations, D. Regional Specialization"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The North and the Textile Industry"
+   }
+  ],
+  "primary_sources": [
+   "\"Dignity of Labor,\" The Lowell Offering, 1842"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "\"From whence originated the idea, that it was derogatory to a lady's dignity, or a blot upon the female character, to labor? . . . Homer tells us of princesses who used to draw water from the springs, and wash with their own hands the finest of the linen of their respective families. The famous Lucretia used to spin in the midst of her attendants; and the wife of Ulysses, after the siege of Troy, employed herself in weaving, until her husband returned to Ithaca. . . . Few American fortunes will support a woman who is above the calls of her family. . . . To be able to earn one's own living by laboring with the hands, should be reckoned among female accomplishments.\" — \"Dignity of Labor,\" The Lowell Offering, 1842",
+  "source_note": "\"Dignity of Labor,\" The Lowell Offering, 1842; wording verified against the Project Gutenberg text of Mind Amongst the Spindles (Lowell Offering selections) and the CrackAP transcription. Public domain."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus as described in the stimulus source note",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly identify the group of women who wrote the Lowell Offering.",
+   "modelAnswer": "The Lowell Offering was written by the young women working in the textile mills of Lowell, Massachusetts. They were mostly farm daughters who had come to the mills to earn cash wages for a few years.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying the writers as the young women working in the Lowell textile mills.",
+     "notEarned": "Naming Lowell with no identification of the writers does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE purpose of the essay \"Dignity of Labor.\"",
+   "modelAnswer": "The essay defends the respectability of women who earn wages by manual labor. It answers the charge that factory work was degrading to a lady by showing that respected women of the past, from princesses to Lucretia, labored with their hands.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one purpose of the essay, such as defending the dignity of women's wage labor against the charge that it was degrading.",
+     "notEarned": "Summarizing an example from the essay with no purpose stated does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limitation of the Lowell Offering as evidence about the lives of all mill workers.",
+   "modelAnswer": "The Offering was written by literate young women who chose to write, and the mill owners approved of it. It shows the views of a small group of workers, not the views of all mill hands, and it says little about later immigrant workers or about those who left unhappy.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limitation of the Offering as evidence, such as its narrow authorship, owner approval, or silence about other workers.",
+     "notEarned": "Naming the Offering with no limitation explained does not earn the point."
+    }
+   ]
+  }
+ ]
+}

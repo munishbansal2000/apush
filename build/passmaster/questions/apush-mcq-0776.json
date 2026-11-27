@@ -1,0 +1,87 @@
+{
+  "id": "apush-mcq-0776",
+  "type": "mcq",
+  "unit": 4,
+  "topics": [
+    "4.1"
+  ],
+  "lesson": "apush-u4-l1",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "answerKey": "B",
+  "skills": [
+    "4.A"
+  ],
+  "themes": [
+    "GEO",
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 6",
+        "section": "Topic 4.1 Contextualizing Period 4"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 6",
+        "section": "Topic 4.5 The Market Revolution: Economic Transformations"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 12",
+        "section": "Jeffersonian Revolution (1800-1820)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "image",
+    "source_note": "View on the Erie Canal, published 1832 (New York Public Library); public domain.",
+    "text": "An 1832 view of the Erie Canal at night: a canal boat carrying passengers glides along the water under a full moon, with trees lining both banks and a bridge ahead."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-0776",
+      "file": "u4/pr25e-ch08-q10.jpg",
+      "caption": "View on the Erie Canal, 1832",
+      "alt": "An 1832 night view of the Erie Canal, a passenger boat gliding on moonlit water between tree-lined banks",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/%28View_on_the_Erie_Canal.%29_%283990000597%29.jpg",
+      "license": "Public domain"
+    }
+  ],
+  "stimulus_set": "erie-canal",
+  "source": "original; stimulus image from the shared pool, View on the Erie Canal (1832), public domain",
+  "stem": "The canal shown in this 1832 image linked the Great Lakes to the Hudson River. Which of the following best describes the canal's most important economic effect?",
+  "options": [
+    {
+      "key": "A",
+      "text": "It gave the federal government its first direct control over interstate trade.",
+      "misconception": "The canal was a New York State project, not a federal one; federal power over trade came from court rulings."
+    },
+    {
+      "key": "B",
+      "text": "It cut the cost of moving goods between western farms and Atlantic markets."
+    },
+    {
+      "key": "C",
+      "text": "It ended the South's reliance on enslaved labor by drawing workers north to factory jobs.",
+      "misconception": "The canal moved western grain east and southern cotton still flowed out; it did nothing to end slavery."
+    },
+    {
+      "key": "D",
+      "text": "It allowed the United States to trade directly with China without using British ships.",
+      "misconception": "The canal ran inland, from Buffalo to Albany; trade with China still crossed the Pacific by ship."
+    }
+  ],
+  "rationales": {
+    "A": "The canal was built and paid for by New York State, not by the federal government. Federal power over interstate trade grew through court decisions, not through this canal.",
+    "B": "The canal joined Lake Erie to the Hudson River, so goods from the West could reach New York City by water instead of by slow wagon roads. Background: freight costs fell sharply, and western farmers began growing for distant markets instead of only for their neighbors.",
+    "C": "The canal moved western grain east, and the cotton South grew richer on the same trade. It did nothing to end slavery in the South.",
+    "D": "The canal ran inland, from Buffalo to Albany. Trade with China still crossed the Pacific in ocean-going ships.",
+    "general": "1. Picture the trip before the canal. Moving goods from Ohio to New York meant weeks on muddy wagon roads at high cost.\n2. Now picture the boat in the image. Water carried the same load cheaply and quickly, day and night.\n3. Ask who gained. Western farmers could sell far away, and eastern ports and factories found new customers inland.\n4. Put it together. The canal stitched the West and the East into one market, the heart of the Market Revolution.\nRemember: cheap water transport turned separate local economies into one national market."
+  }
+}

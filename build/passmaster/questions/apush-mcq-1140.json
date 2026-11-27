@@ -1,0 +1,73 @@
+{
+ "id": "apush-mcq-1140",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.13"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "3.A",
+  "3.D"
+ ],
+ "themes": [
+  "SOC",
+  "WXT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.13 The Society of the South in the Early Republic, B. Cotton, Slavery, and the Southern Exception"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "Enslaved people counted in the United States, by census year:\n\n| Census year | Enslaved people |\n|---|---|\n| 1790 | 697,681 |\n| 1800 | 893,602 |\n| 1820 | 1,538,022 |\n| 1840 | 2,487,355 |\n\nSource: United States census counts, 1790–1840.",
+  "source_note": "Figures from the United States census counts, 1790–1840, as carried by the Historical Census Browser; checked against Barron's Premium 2027, Chapter 6, Topic 4.13 B (about 700,000 in 1790; 2 million by 1830)."
+ },
+ "stimulus_set": "enslaved-population-census",
+ "source": "original; data table from United States census counts, 1790–1840",
+ "stem": "Congress banned the importation of enslaved people in 1808, yet the table shows the enslaved population growing after that date. What does that growth show?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Most enslaved people after 1808 were brought in illegally from Africa",
+   "misconception": "Illegal imports continued but were small next to the growth shown; the main growth was born in the United States."
+  },
+  {
+   "key": "B",
+   "text": "The enslaved population grew by natural increase and the domestic slave trade"
+  },
+  {
+   "key": "C",
+   "text": "Southern planters freed most enslaved people and then hired them back",
+   "misconception": "Planters did not free most enslaved people; the table counts people still held in slavery."
+  },
+  {
+   "key": "D",
+   "text": "The census after 1808 counted free Black people as enslaved",
+   "misconception": "The census counted enslaved and free Black people in separate columns; the table uses the enslaved column."
+  }
+ ],
+ "rationales": {
+  "A": "Illegal imports continued but were small next to the growth shown. The main growth was born in the United States.",
+  "B": "With imports banned, the enslaved population grew because enslaved families had children and because traders moved enslaved people from the Upper South to the Deep South.",
+  "C": "Planters did not free most enslaved people. The table counts people still held in slavery.",
+  "D": "The census counted enslaved and free Black people in separate columns. The table uses the enslaved column.",
+  "general": "1. Note the ban. Congress ended the legal importation of enslaved people in 1808.\n2. Read the table anyway. The enslaved population rose from about 1,538,000 in 1820 to about 2,487,000 in 1840.\n3. Ask where the growth came from. With no legal imports, it came from children born enslaved and from the domestic trade.\nBackground: The Constitution protected the slave trade only until 1808, and Congress banned it as soon as it could.\nRemember: a ban on imports does not end a system that can grow from within."
+ }
+}

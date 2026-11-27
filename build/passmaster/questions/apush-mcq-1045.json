@@ -1,0 +1,75 @@
+{
+ "id": "apush-mcq-1045",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.10"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "3.A",
+  "6.B"
+ ],
+ "themes": [
+  "ARC",
+  "SOC"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.10 The Second Great Awakening, A. Religious and Spiritual Movements in Antebellum America"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Religious and Social Movements"
+   }
+  ],
+  "primary_sources": [
+   "Charles G. Finney, \"What a Revival of Religion Is\" (Lectures on Revivals of Religion), 1835"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "\"When the churches are thus awakened and reformed, the reformation and salvation of sinners will follow.... Their hearts will be broken down and changed. Very often the most abandoned profligates are among the subjects. Harlots, and drunkards, and infidels, and all sorts of abandoned characters, are awakened and converted.\" — Charles G. Finney, \"What a Revival of Religion Is,\" 1835",
+  "source_note": "Verbatim public-domain quotation from Charles G. Finney, Lectures on Revivals of Religion (1835), Lecture 1. Wording checked against the staged survivor barrons-2027-ch06-07 and the standard published text of the lecture."
+ },
+ "stimulus_set": "finney-revival-35",
+ "source": "original; stimulus is a verbatim public-domain quotation from Finney, Lectures on Revivals of Religion (1835)",
+ "stem": "The passage best illustrates which of the following contrasts in antebellum American religion?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The revivalist belief that sinners choose conversion, against the older Calvinist belief in predestination"
+  },
+  {
+   "key": "B",
+   "text": "The Catholic belief in salvation through the sacraments, against the Protestant belief in scripture alone",
+   "misconception": "Catholic and Protestant differences are the famous religious divide, so they seem to fit any religion question."
+  },
+  {
+   "key": "C",
+   "text": "The deist belief in a distant creator, against the Unitarian belief in human reason",
+   "misconception": "Deism and Unitarianism are both Enlightenment faiths, so they look like the right pair for a contrast."
+  },
+  {
+   "key": "D",
+   "text": "The Quaker belief in silent worship, against the Anglican belief in bishops and liturgy",
+   "misconception": "Quakers and Anglicans worship very differently, so their contrast seems to fit a passage about preaching."
+  }
+ ],
+ "rationales": {
+  "A": "Finney says the abandoned can be awakened and converted, which means they choose. That choice is the opposite of predestination, where God fixed each soul's fate.",
+  "B": "Finney never mentions sacraments or scripture alone. His passage is about who can be converted, not about Catholic and Protestant doctrine.",
+  "C": "Neither deism nor Unitarianism appears in the passage. Finney is an evangelical revivalist, not an Enlightenment rationalist arguing about a distant God.",
+  "D": "The passage says nothing about silent worship, bishops, or liturgy. Its contrast is between choosing conversion and being predestined to it.",
+  "general": "1. Find Finney's actors: harlots, drunkards, and infidels, the people old doctrine called lost.\n2. Watch what happens to them: they are awakened and converted, so conversion is something they do.\n3. Name the old idea that blocks: predestination said God had already fixed each fate, leaving no choice.\nBackground: Finney's Rochester revivals of 1830-1831 made him the best-known preacher of the Awakening.\nRemember: a revivalist's proof text is always the sinner nobody expected to convert."
+ }
+}

@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-1002",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.8"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "GEO",
+  "MIG"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, B. Contention Between Whites and American Indians over Western Lands"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "Native American Removal"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "The National Park Service map shows the Trail of Tears National Historic Trail. Three kinds of routes run from the Cherokee homelands in Georgia, Tennessee, and North Carolina west to Tahlequah in present-day Oklahoma: a dotted land route through Nashville, Hopkinsville, Cape Girardeau, and Springfield; a blue water route along the Tennessee and Mississippi Rivers; and green 'other major routes.'",
+  "source_note": "Map: 'Trail of Tears National Historic Trail,' U.S. National Park Service (work of the U.S. federal government, public domain). Public domain; image viewed before writing."
+ },
+ "stimulus_set": "trail-tears-map-48",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The map's three kinds of routes best show that the removal was",
+ "options": [
+  {
+   "key": "A",
+   "text": "a large forced migration west by several routes"
+  },
+  {
+   "key": "B",
+   "text": "a voluntary migration of a few families seeking land",
+   "misconception": "A map of lines looks like any migration, so it is easy to read it as people moving by choice."
+  },
+  {
+   "key": "C",
+   "text": "a journey made entirely by river, with no overland travel",
+   "misconception": "The rivers are the boldest lines on the map, so it is easy to think the whole journey was by water."
+  },
+  {
+   "key": "D",
+   "text": "a march that ended in Florida, far to the south",
+   "misconception": "Florida is where another removal war was fought, so it is easy to send the Cherokee there."
+  }
+ ],
+ "rationales": {
+  "A": "Land, water, and other major routes all running west show a mass movement of thousands, organized across many paths.",
+  "B": "Three route systems crossing half a continent do not fit a few families moving by choice; the Cherokee were forced west by federal troops.",
+  "C": "The blue water route is only one of three; the dotted land route and the green routes run overland.",
+  "D": "The routes end in present-day Oklahoma, far from Florida, where the Seminole, not the Cherokee, resisted removal.",
+  "general": "1. Count the routes. The map shows three kinds: dotted land, blue water, and green 'other major routes.'\n2. Ask what three routes mean. One family takes one road; thousands of people, moved in many groups, need many roads.\nBackground: federal troops rounded up the Cherokee in 1838 and escorted them west, and thousands died on the way.\nRemember: a map's variety is evidence — many routes mean many people, not one small party."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1002",
+   "file": "u4/pr25e-test3-q19.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Trail_of_tears_map_NPS.jpg",
+   "license": "Public domain",
+   "caption": "Trail of Tears National Historic Trail map. Land, water, and other routes run west to Tahlequah, Oklahoma.",
+   "alt": "A National Park Service map of the Trail of Tears: dotted land routes, a blue water route along the Tennessee and Mississippi Rivers, and green other major routes running west to Tahlequah"
+  }
+ ]
+}

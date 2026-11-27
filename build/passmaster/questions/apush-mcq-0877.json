@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0877",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.4"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "GEO",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.4 America on the World Stage, A. Trade, Diplomacy, and the Expansion of American Influence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "The War of 1812"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Effects of the War of 1812"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "map",
+  "text": "This map, titled “Eastern United States, 1812: The War of 1812 — Principal Campaigns of the War,” shows the theaters of the war. Notes on the map describe three theaters. The Canadian theater note says the Americans tried to invade Canada from three directions at once in June 1812 and “all of these operations were failures,” but after the victory on Lake Erie in September 1813 they launched successful operations. The Chesapeake theater note says British naval supremacy let Britain attack Washington and Baltimore, and that Washington was burned in August 1814. The New Orleans theater note says the British attacked New Orleans in January 1815, after the Treaty of Ghent was signed, and were defeated by Andrew Jackson's forces. A timeline along the bottom runs from the declaration of war in June 1812 to the Battle of New Orleans in January 1815.",
+  "source_note": "Principal Campaigns of the War of 1812, map (Cartography Associates); public domain."
+ },
+ "stimulus_set": "war-of-1812-campaigns-map",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The map's Canadian theater note shows that the American plan to conquer Canada",
+ "options": [
+  {
+   "key": "A",
+   "text": "succeeded in taking Montreal and Quebec City in 1813",
+   "misconception": "Montreal was never taken; the note's later successes were at the Thames and on the lakes."
+  },
+  {
+   "key": "B",
+   "text": "was never tried because Congress refused to fund the invasions",
+   "misconception": "Invasions were attempted from several directions."
+  },
+  {
+   "key": "C",
+   "text": "failed in 1812, then won ground after Lake Erie in 1813"
+  },
+  {
+   "key": "D",
+   "text": "was abandoned after British troops burned Washington in 1814",
+   "misconception": "The first invasions failed in 1812, before Washington burned."
+  }
+ ],
+ "rationales": {
+  "A": "Montreal was never taken. The note's successes came after Lake Erie, at the Thames and on the lakes — not at Montreal.",
+  "B": "The invasions were tried, from Lake Champlain, from Sackett's Harbor, and from the Niagara Peninsula. They failed in the field, not in Congress.",
+  "C": "The note says the June 1812 invasions from three directions all failed, but after the Lake Erie victory in September 1813 the Americans launched successful operations. The plan failed first, then gained ground.",
+  "D": "Washington burned in August 1814, long after the first Canada invasions had failed. The burning did not cause the failure.",
+  "general": "1. Read the Canadian note. The June 1812 invasions from three directions all failed. 2. Read what changed. After the Lake Erie victory in September 1813, the Americans launched successful operations. 3. Put it together. The plan failed first, then gained ground once American ships controlled the lake. Background: The War Hawks had promised that taking Canada would be easy; the first invasions showed the American army was small and ill-prepared. Remember: a plan can fail at first and still win ground later — read the whole note."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0877",
+   "file": "u4/saq-set-14-q3.gif",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Principal_Campaigns_of_the_War_of_1812.gif",
+   "license": "Public domain",
+   "caption": "Eastern United States, 1812: principal campaigns of the War of 1812",
+   "alt": "Map of the eastern United States showing the Canadian, Chesapeake, and New Orleans theaters of the War of 1812, with battle sites and a timeline"
+  }
+ ]
+}

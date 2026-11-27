@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1012",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.8"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "D",
+ "skills": [
+  "3.C"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, A. The Second Two-Party System: The Democrats and the Whigs"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Whig Party and the Second Party System"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The Jackson Presidency and Jacksonian Democracy"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "| | Democrats | Whigs |\n|---|---|---|\n| Leading figure | Andrew Jackson | Henry Clay |\n| Federal government | Limited; opposed a national bank, high tariffs, and internal improvements | Active; favored a national bank, tariffs, and internal improvements |\n| Main supporters | Southern planters, western farmers, and urban immigrants | Northern manufacturers, commercial interests, and evangelical Protestants |",
+  "source_note": "Table compiled from Barron's Premium 2027, Chapter 6, Topic 4.8 A, and 5 Steps to a 5, 2024, Chapter 13, 'The Whig Party and the Second Party System.' Original synthesis of book content, not a quotation."
+ },
+ "stimulus_set": "parties-democrats-whigs-48",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The table best supports which conclusion about the Second Party System?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The two parties agreed on nearly everything",
+   "misconception": "Both parties were national parties, so it is easy to think they must have agreed on most things."
+  },
+  {
+   "key": "B",
+   "text": "The two parties differed mainly over slavery",
+   "misconception": "Slavery destroyed the Whigs in the end, so it is easy to read it back into their founding divide."
+  },
+  {
+   "key": "C",
+   "text": "The Democrats were the party of northern manufacturers",
+   "misconception": "Manufacturers are the modern party, so it is easy to attach them to the Democrats by habit."
+  },
+  {
+   "key": "D",
+   "text": "The parties offered opposing visions of federal economic power"
+  }
+ ],
+ "rationales": {
+  "A": "The table shows opposite programs on the Bank, tariffs, and improvements; the parties disagreed sharply.",
+  "B": "Slavery does not appear in the table, and it became the parties' great divide only in the 1850s, when it destroyed the Whigs.",
+  "C": "The table puts northern manufacturers with the Whigs, not the Democrats, whose base was planters, farmers, and immigrants.",
+  "D": "Every row of the table turns on the same divide: a limited federal government against an active one that builds the economy.",
+  "general": "1. Read the table as a whole. The Bank, the tariff, and improvements all point the same way in each column.\n2. Name the divide. One party wants the federal government small, the other wants it building the economy.\nBackground: slavery is absent here; the 1830s parties split over the economy, not yet over slavery.\nRemember: a table's argument lives in the pattern of its rows, not in any single cell."
+ }
+}

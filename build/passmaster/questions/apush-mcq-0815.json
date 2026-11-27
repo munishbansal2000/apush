@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-0815",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.2"
+ ],
+ "lesson": "apush-u4-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "B",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.2 The Rise of Political Parties and the Era of Jefferson, A. Political Parties and the Rise of the First Two-Party System"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "Renewal of War in Europe"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Jefferson's Second Term"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Export values from Digital History (University of Houston), “The Embargo of 1807”: exports fell from $108 million in 1807 to $22 million in 1808; imports fell by about half.",
+  "text": "| Year | Value of American exports |\n|---|---|\n| 1807 | $108 million |\n| 1808 | $22 million |\n\nImports fell by about half over the same year."
+ },
+ "stimulus_set": "embargo-exports-table",
+ "source": "original; stimulus is a table of real export values from Digital History",
+ "stem": "The table best supports which of the following conclusions about the Embargo Act of 1807?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The embargo increased American exports by opening new markets",
+   "misconception": "Exports collapsed, they did not grow; the table shows a fall from $108 million to $22 million."
+  },
+  {
+   "key": "B",
+   "text": "The embargo devastated American foreign trade in a single year"
+  },
+  {
+   "key": "C",
+   "text": "The embargo had almost no effect on American merchants",
+   "misconception": "A fall of about four-fifths in one year is a devastating effect, not a small one."
+  },
+  {
+   "key": "D",
+   "text": "The embargo hurt Britain and France more than it hurt the United States",
+   "misconception": "The table measures American exports, and it shows Americans losing their trade, not Britain or France."
+  }
+ ],
+ "rationales": {
+  "A": "Exports collapsed, they did not grow. The table shows a fall from $108 million to $22 million.",
+  "B": "In one year American exports fell from $108 million to $22 million, about four-fifths gone, and imports fell by about half. A law meant to pressure Britain and France instead shut down American ports, idled ships, and left farmers and merchants with goods they could not sell. Background: the collapse is why the embargo became deeply unpopular and was repealed in 1809.",
+  "C": "A fall of about four-fifths in one year is a devastating effect, not a small one.",
+  "D": "The table measures American exports, and it shows Americans losing their trade, not Britain or France.",
+  "general": "1. Read the numbers. Exports fall from $108 million to $22 million in one year.\n2. Do the arithmetic. That is about four-fifths of American foreign trade, gone.\n3. Ask who loses. American merchants, sailors, farmers, and planters, all at once.\n4. Put it together. The table is the embargo's report card, and it failed at home.\nRemember: a table of numbers is an argument, so do the arithmetic before you judge the policy."
+ }
+}

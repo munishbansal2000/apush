@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0105",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.2"
+ ],
+ "lesson": "apush-u4-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 3,
+ "totalPoints": 3,
+ "skills": [
+  "4.B",
+  "1.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.2 The Rise of Political Parties and the Era of Jefferson, C. The Louisiana Purchase and Territorial Expansion"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "The Louisiana Purchase"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Jefferson's Second Term"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Timeline drawn from the grounding books (5 Steps Ch. 12; Barron's Ch. 6). Original synthesis, not a historical document.",
+  "text": "| Year | Event |\n|---|---|\n| 1803 | Louisiana Purchase: Napoleon sells Louisiana to the United States |\n| 1807 | Embargo Act halts American trade with Britain and France |\n| 1812-1815 | War of 1812 with Britain |\n| 1814 | Hartford Convention of anti-war Federalists |\n| 1815 | Battle of New Orleans makes Andrew Jackson a hero |"
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus is a timeline drawn from the grounding books; question reworked from staged item 5s24-ch12-saq-01",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly explain ONE example of how foreign wars influenced American policy in the period 1801-1812.",
+   "modelAnswer": "Napoleon's failure to crush the slave revolt in Haiti, combined with looming war against Britain, convinced him to sell Louisiana in 1803. The purchase doubled the United States at a stroke, and it happened only because a foreign war made the territory a burden to France.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one example, such as Napoleon's Haitian defeat and looming war with Britain leading him to sell Louisiana.",
+     "notEarned": "Naming the Louisiana Purchase with no link to a foreign war does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain a SECOND example of how foreign wars influenced American policy in the period 1801-1812.",
+   "modelAnswer": "The Napoleonic Wars put American shipping between Britain and France, and both powers seized American ships and sailors. Jefferson answered with the Embargo Act of 1807, halting American trade to pressure both powers without going to war.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining a second example, such as British and French seizures of American ships leading to the Embargo Act.",
+     "notEarned": "Repeating the answer to part (a), or naming the Embargo Act with no link to a foreign war, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE consequence of the War of 1812.",
+   "modelAnswer": "The war discredited the Federalists, whose Hartford Convention had denounced it while it was still being fought. Their collapse left the Democratic-Republicans alone in national politics, opening the Era of Good Feelings.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one consequence, such as the Federalist collapse after Hartford, or the Era of Good Feelings that followed.",
+     "notEarned": "Naming the Battle of New Orleans with no consequence explained does not earn the point."
+    }
+   ]
+  }
+ ]
+}

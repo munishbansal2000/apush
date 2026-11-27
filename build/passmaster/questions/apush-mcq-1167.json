@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-1167",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.14"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "1.B",
+  "3.A"
+ ],
+ "themes": [
+  "WXT",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 The Market Revolution: Economic Transformations"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.14 Subject to Debate"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   }
+  ],
+  "primary_sources": [
+   "New York celebration for the Erie Canal, 1825 (print)"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "This print shows New York harbor in 1825, crowded with sailing ships and steamboats flying flags to celebrate the opening of the Erie Canal.\n\nThe Erie Canal, completed in 1825, joined the Hudson River to the Great Lakes. Canal boats soon carried farm goods east to New York City and manufactured goods west to the Great Lakes.",
+  "source_note": "Print: New York celebration for the Erie Canal, 1825, public domain (Wikimedia Commons). Canal facts from Barron's Premium 2027, Chapter 6, Topic 4.5."
+ },
+ "stimulus_set": "erie-celebration-1825",
+ "source": "original; print public domain, New York celebration for the Erie Canal, 1825",
+ "stem": "The print shows sailing ships and steamboats sharing the harbor in 1825. What does that mix best explain about how the market revolution spread?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It spread step by step, reaching different regions at different times"
+  },
+  {
+   "key": "B",
+   "text": "It reached every region at the same speed in the same year",
+   "misconception": "Old sail and new steam shared the harbor, so the change was not finished everywhere at once."
+  },
+  {
+   "key": "C",
+   "text": "It ended all river trade the moment the canal opened",
+   "misconception": "River trade grew after the canal opened; it did not end."
+  },
+  {
+   "key": "D",
+   "text": "It began only after the Civil War had ended",
+   "misconception": "The canal opened in 1825, decades before the Civil War began."
+  }
+ ],
+ "rationales": {
+  "A": "Sail still filled the harbor beside the new steamboats. The market revolution did not arrive everywhere at once; it spread step by step, region by region.",
+  "B": "The mix itself disproves this. Old sail and new steam shared the harbor, so the change was under way, not finished everywhere at once.",
+  "C": "River trade grew, it did not end. The canal and the steamboats carried more goods, not fewer.",
+  "D": "The canal opened in 1825, decades before the Civil War. The market revolution was already under way.",
+  "general": "1. Look at the mix. Tall sailing ships stand beside low steamboats in the same harbor.\n2. Ask what the mix means. If the change had finished, one kind of ship would be gone. Both are there, so the change is still under way.\n3. Name the pattern. The market revolution spread step by step, reaching different regions at different times, not all at once.\nRemember: when old and new appear side by side, the change is still under way."
+ },
+ "figures": [
+  {
+   "file": "u4/original-misc-us-culture-02.png",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/New_York_celebration_for_the_Erie_Canal_1825.png",
+   "license": "Public domain",
+   "caption": "New York harbor celebrates the Erie Canal's opening, 1825. Flag-decked ships and steamboats crowd the water.",
+   "alt": "A print of New York harbor in 1825: dozens of sailing ships and steamboats, flags flying, crowd the water to celebrate the opening of the Erie Canal",
+   "id": "fig-apush-mcq-1167"
+  }
+ ]
+}

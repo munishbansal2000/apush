@@ -1,0 +1,106 @@
+{
+ "id": "apush-leq-0040",
+ "type": "leq",
+ "unit": 4,
+ "topics": [
+  "4.8"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, A. The Second Two-Party System: The Democrats and the Whigs"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, B. Contention Between Whites and American Indians over Western Lands"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Bank War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Nullification Controversy"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Whig Party and the Second Party System"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The Jackson Presidency and Jacksonian Democracy"
+   }
+  ],
+  "primary_sources": [
+   "Andrew Jackson, veto message, July 10, 1832",
+   "Andrew Jackson, Proclamation on Nullification, December 10, 1832"
+  ]
+ },
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "stimulus_set": null,
+ "source": "original; prompt written for this question",
+ "prompt": "Evaluate the extent to which Andrew Jackson's presidency changed the balance of power between the federal government and the states in the period 1829-1848.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which Jackson's presidency changed the federal-state balance, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of change does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the Marshall Court's assertion of federal power, the Era of Good Feelings, or the expansion of white male suffrage.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples of how Jackson's presidency shifted power toward the federal government, such as the Force Bill, the nullification proclamation, or the Bank veto.",
+   "notEarned": "General statements about change with no specific example do not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples of the limits of that shift, such as Jackson's refusal to enforce Worcester v. Georgia, the states' continued control of slavery, or the Compromise Tariff.",
+   "notEarned": "Repeating an example of federal growth, or naming a limit with no specific detail, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (continuity and change): earns the point for explaining how the balance changed and where it stayed the same, linking examples to the thesis rather than listing them.",
+   "notEarned": "Listing examples of change with no explanation of how the balance shifted does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the thesis by showing where federal power grew and where state power held.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: Jackson's presidency changed the federal-state balance to a great extent, making the federal government the master of the Union when a state defied it, yet it left the states sovereign where Jackson chose not to act, so the balance shifted unevenly.\nContext: The Marshall Court had asserted federal supremacy for thirty years, and the 1820s brought mass parties and a broader electorate that gave Jackson a popular mandate no earlier president had held.\nEvidence for federal growth: Jackson answered South Carolina's nullification with a proclamation that the Constitution 'forms a government, not a league,' and Congress backed him with the Force Bill. He vetoed the Bank's recharter, claimed each branch must judge the Constitution for itself, and moved federal deposits by executive will. Federal troops removed the Cherokee west in 1838, carrying out the removal policy Jackson had set.\nEvidence for limits: Jackson refused to enforce Worcester v. Georgia, letting Georgia defy the Court. The Compromise Tariff bent federal policy to a state's demand. Slavery stayed entirely under state control, and Tyler's vetoes of Whig bank bills showed a president could also block federal action.\nComplexity: The shift was one of will more than law: the same presidency that crushed nullification bowed to Georgia, so federal power grew where Jackson pushed it and stopped where he did not.",
+ "totalPoints": 6
+}

@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0901",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.5"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 Market Revolution: Economic Transformations, B. Advances in Technology"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 Market Revolution: Economic Transformations, C. Improvements in Transportation and Regional Interdependence"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Transportation: Canals, Railroads, Highways, and Steamships"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "A nineteenth-century book illustration shows Robert Fulton's steamboat Clermont at a New York dock in 1807. A large paddle wheel turns at the boat's side, smoke rises from its funnel, and workers load barrels while a crowd watches. Fulton demonstrated the boat on the Hudson River in 1807.",
+  "source_note": "Robert Fulton boards his steamboat the Clermont in New York, 1807, illustration by Louis Figuier (1819-1894), via Wikimedia Commons. Public domain; image viewed before writing. Date from Barron's Premium 2027, Chapter 6, Topic 4.5 B."
+ },
+ "stimulus_set": "clermont-1807",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The development shown in the image most directly led to",
+ "options": [
+  {
+   "key": "A",
+   "text": "the end of all sailing ships on American rivers",
+   "misconception": "Sailing ships kept working the oceans long after 1807; steam took over river commerce first, not all sailing at once."
+  },
+  {
+   "key": "B",
+   "text": "the immediate construction of a transcontinental railroad",
+   "misconception": "The first railroad tracks were laid in 1829, and a transcontinental line came decades later, not at once."
+  },
+  {
+   "key": "C",
+   "text": "faster, cheaper movement of inland goods to the coast"
+  },
+  {
+   "key": "D",
+   "text": "the decline of New York City as a port",
+   "misconception": "Steam shipping strengthened New York's trade; the city grew into the nation's commercial capital."
+  }
+ ],
+ "rationales": {
+  "A": "Sail did not vanish in 1807. Steamboats took over river and canal shipping within twenty years; ocean sailing lasted longer.",
+  "B": "Railroads grew out of the same steam technology, but the first American tracks came in 1829 and the continent was crossed much later.",
+  "C": "Steamboats moved freight up and down rivers quickly and on schedule, tying farms in the interior to markets on the coast.",
+  "D": "The Clermont sailed from New York, and steam trade through that port only grew. The city rose, not fell.",
+  "general": "1. Ask what the steamboat changed. River travel stopped depending on wind and current.\n2. Ask who gained. Farmers and merchants in the interior could ship goods to coastal markets quickly and cheaply.\n3. Put it together. The steamboat tied the interior to the coast, which is the market revolution in motion.\nBackground: Steam power later moved to locomotives and then into factories, replacing the waterwheels of early mills.\nRemember: trace a transport change to the markets it connects, not only to the machine itself."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0901",
+   "file": "u4/fulton-clermont-1807.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Robert_Fulton_boards_his_steamboat%2C_the_%27Clermont%27%2C_in_New_York%2C_1807.jpg",
+   "license": "Public domain",
+   "caption": "Fulton's steamboat Clermont at New York, 1807. Paddle wheel, smoke, and loading barrels.",
+   "alt": "A book illustration of the steamboat Clermont at a New York dock in 1807: a large paddle wheel at its side, smoke from its funnel, workers loading barrels, and a crowd watching"
+  }
+ ]
+}

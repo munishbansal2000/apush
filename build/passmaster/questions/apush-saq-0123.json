@@ -1,0 +1,88 @@
+{
+ "id": "apush-saq-0123",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.10"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "3.A",
+  "3.D"
+ ],
+ "themes": [
+  "ARC",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.10 The Second Great Awakening, A. Religious and Spiritual Movements in Antebellum America"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Religious and Social Movements"
+   }
+  ],
+  "primary_sources": [
+   "Charles G. Finney, \"What a Revival of Religion Is\" (Lectures on Revivals of Religion), 1835"
+  ]
+ },
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "text": "\"When the churches are thus awakened and reformed, the reformation and salvation of sinners will follow.... Their hearts will be broken down and changed. Very often the most abandoned profligates are among the subjects. Harlots, and drunkards, and infidels, and all sorts of abandoned characters, are awakened and converted.\" — Charles G. Finney, \"What a Revival of Religion Is,\" 1835",
+  "source_note": "Verbatim public-domain quotation from Charles G. Finney, Lectures on Revivals of Religion (1835), Lecture 1."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus is a verbatim public-domain quotation from Finney (1835)",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly identify ONE claim Finney makes in the passage about who can be converted.",
+   "modelAnswer": "Finney claims that even the most abandoned people, harlots, drunkards, and infidels, can be awakened and converted. He says their hearts will be broken down and changed.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one claim from the passage, such as that the most abandoned sinners can be converted or that conversion follows when churches are awakened and reformed.",
+     "notEarned": "Naming a claim Finney does not make in the passage does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE way Finney's claim differs from the older Puritan doctrine of predestination.",
+   "modelAnswer": "Predestination held that God had fixed each person's eternal fate in advance, so no sinner could change it. Finney claims the opposite: any sinner can choose to repent and be converted.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining the difference, such as predestination fixing fate in advance while Finney gives sinners the choice to convert, or the elect being chosen by God while Finney opens conversion to all.",
+     "notEarned": "Saying Finney disagreed with the Puritans without explaining how does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limitation of Finney's passage as evidence about the effects of revivals.",
+   "modelAnswer": "Finney was a revivalist describing his own work, so he had reason to present revivals as powerful and successful. His passage shows what he promised, not how many converts stayed in the church afterward.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limit, such as Finney's interest in promoting revivals, the passage showing intent rather than measured results, or the absence of evidence about lasting conversions.",
+     "notEarned": "Saying the passage is biased without explaining how that limits it does not earn the point."
+    }
+   ]
+  }
+ ]
+}

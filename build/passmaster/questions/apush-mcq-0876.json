@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-0876",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.4"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "3.B",
+  "4.A"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.4 America on the World Stage, A. Trade, Diplomacy, and the Expansion of American Influence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "The War of 1812"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Effects of the War of 1812"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "map",
+  "text": "This map, titled “Eastern United States, 1812: The War of 1812 — Principal Campaigns of the War,” shows the theaters of the war. Notes on the map describe three theaters. The Canadian theater note says the Americans tried to invade Canada from three directions at once in June 1812 and “all of these operations were failures,” but after the victory on Lake Erie in September 1813 they launched successful operations. The Chesapeake theater note says British naval supremacy let Britain attack Washington and Baltimore, and that Washington was burned in August 1814. The New Orleans theater note says the British attacked New Orleans in January 1815, after the Treaty of Ghent was signed, and were defeated by Andrew Jackson's forces. A timeline along the bottom runs from the declaration of war in June 1812 to the Battle of New Orleans in January 1815.",
+  "source_note": "Principal Campaigns of the War of 1812, map (Cartography Associates); public domain."
+ },
+ "stimulus_set": "war-of-1812-campaigns-map",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The map's New Orleans note best supports which of the following conclusions?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Battle of New Orleans forced Britain to sign the Treaty of Ghent",
+   "misconception": "Ghent was signed first, in December 1814."
+  },
+  {
+   "key": "B",
+   "text": "The battle was fought after the war had officially ended"
+  },
+  {
+   "key": "C",
+   "text": "Jackson's victory gave the United States control of Canada",
+   "misconception": "Canada was never taken; the invasions there were repulsed."
+  },
+  {
+   "key": "D",
+   "text": "The battle ended British aid to Native peoples in the West",
+   "misconception": "That aid had already faded, and the battle was about New Orleans."
+  }
+ ],
+ "rationales": {
+  "A": "The Treaty of Ghent was signed on December 24, 1814, two weeks before the battle. The battle could not have forced a treaty that already existed.",
+  "B": "The note says the British attacked New Orleans in January 1815, after the Treaty of Ghent was signed. Neither side knew the war was over.",
+  "C": "The Canadian theater note says every American invasion of Canada was repulsed. New Orleans changed nothing in Canada.",
+  "D": "British aid to western tribes had mattered before the war, but the New Orleans battle was fought over the port city, not over that aid.",
+  "general": "1. Read the dates. The Treaty of Ghent was signed in December 1814, and the battle was fought in January 1815.\n2. Ask what the fighters knew. News crossed the Atlantic by ship, so Jackson and the British both fought unaware the war was over.\n3. Put it together. The war's most famous American victory happened after the war had officially ended.\nBackground: The Treaty of Ghent restored the prewar boundary and said nothing about impressment or aid to Native peoples.\nRemember: when a battle comes after a treaty, ask how long the news took to travel."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0876",
+   "file": "u4/saq-set-14-q3.gif",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Principal_Campaigns_of_the_War_of_1812.gif",
+   "license": "Public domain",
+   "caption": "Eastern United States, 1812: principal campaigns of the War of 1812",
+   "alt": "Map of the eastern United States showing the Canadian, Chesapeake, and New Orleans theaters of the War of 1812, with battle sites and a timeline"
+  }
+ ]
+}

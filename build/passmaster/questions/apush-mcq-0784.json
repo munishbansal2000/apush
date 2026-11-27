@@ -1,0 +1,82 @@
+{
+  "id": "apush-mcq-0784",
+  "type": "mcq",
+  "unit": 4,
+  "topics": [
+    "4.1"
+  ],
+  "lesson": "apush-u4-l1",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 3,
+  "answerKey": "A",
+  "skills": [
+    "5.A"
+  ],
+  "themes": [
+    "WXT",
+    "SOC"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 6",
+        "section": "Topic 4.1 Contextualizing Period 4"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 6",
+        "section": "Topic 4.5 The Market Revolution: Economic Transformations"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "image",
+    "source_note": "View of Lowell, Massachusetts, published 1840-1860 (Library of Congress, LCCN94515606); public domain.",
+    "text": "A view of Lowell, Massachusetts, published between 1840 and 1860: a row of large brick textile mills lines the Merrimack River, with houses, churches, and green fields in the foreground."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-0784",
+      "file": "u4/barrons-2027-ch06-02.jpg",
+      "caption": "View of Lowell, Massachusetts, 1840-1860",
+      "alt": "A view of Lowell, Massachusetts, with a row of large brick textile mills along the Merrimack River",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/View_of_Lowell%2C_Massachusetts_at_the_confluence_of_the_Merrimack_and_Concord_rivers%2C_with_a_row_of_textile_mills_or_factories_mainly_along_the_Merrimack_River_LCCN94515606.jpg",
+      "license": "Public domain"
+    }
+  ],
+  "stimulus_set": "lowell-mills",
+  "source": "original; stimulus image from the shared pool, View of Lowell, Massachusetts (1840-1860), public domain",
+  "stem": "The mills in the image were part of the Market Revolution. Which of the following best describes how the mills changed work?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Farm women took wage jobs tending machines, earning cash instead of making goods at home."
+    },
+    {
+      "key": "B",
+      "text": "Enslaved workers were brought north from plantations to run the mills under overseers.",
+      "misconception": "Lowell's mills hired free young women, not enslaved workers; slavery was a southern system."
+    },
+    {
+      "key": "C",
+      "text": "Skilled craftsmen took over the mills and set their own prices for the cloth.",
+      "misconception": "The mills replaced skilled craftsmen with machines tended by low-paid workers."
+    },
+    {
+      "key": "D",
+      "text": "Farmers stopped growing crops and moved into the mills to work as owners.",
+      "misconception": "Farmers' daughters took mill jobs, but farmers themselves kept farming; few became mill owners."
+    }
+  ],
+  "rationales": {
+    "A": "The Lowell mills hired young women straight off New England farms. Background: they lived in company boarding houses, tended power looms for cash wages, and sent money home.",
+    "B": "Lowell's mills hired free young women, not enslaved workers. Slavery was a southern system.",
+    "C": "The mills replaced skilled craftsmen with machines tended by low-paid workers.",
+    "D": "Farmers' daughters took mill jobs, but farmers themselves kept farming. Few became mill owners.",
+    "general": "1. Start with the old way. A farm family made its own cloth at home, by hand.\n2. Look at the new way. Machines in a big mill do the spinning and weaving, and one worker tends many machines.\n3. Ask who the worker is. A young farm woman, paid in cash wages, living away from home.\n4. Put it together. Work moved out of the home and into the factory, and pay became money, not goods.\nRemember: the Market Revolution turned making things at home into working for wages."
+  }
+}

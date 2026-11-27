@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0861",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.4"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 2,
+ "answerKey": "C",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.4 America on the World Stage, A. Trade, Diplomacy, and the Expansion of American Influence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "The Louisiana Purchase"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The Louisiana Purchase"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "This painting shows the transfer of Louisiana at New Orleans in 1803. In a public square, the American flag rises on a tall flagpole while the French tricolor is lowered beside it. Soldiers in uniform fire a salute, drums beat, and a crowd watches from the balconies of the buildings around the square.",
+  "source_note": "Thure de Thulstrup, Louisiana Purchase flag-raising ceremony at New Orleans, 1803; public domain."
+ },
+ "stimulus_set": "louisiana-transfer-new-orleans",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The ceremony in the painting marked",
+ "options": [
+  {
+   "key": "A",
+   "text": "the end of the War of 1812",
+   "misconception": "The painting is dated 1803, nine years before the war began."
+  },
+  {
+   "key": "B",
+   "text": "the signing of the Adams-Onís Treaty with Spain in 1819",
+   "misconception": "That treaty with Spain came in 1819, sixteen years later."
+  },
+  {
+   "key": "C",
+   "text": "the transfer of Louisiana from France to the United States"
+  },
+  {
+   "key": "D",
+   "text": "the opening of the Erie Canal",
+   "misconception": "The canal opened in 1825, in New York, not New Orleans."
+  }
+ ],
+ "rationales": {
+  "A": "The War of 1812 began in 1812. This ceremony took place in 1803, so it cannot mark the war's end.",
+  "B": "The Adams-Onís Treaty transferred Florida from Spain in 1819. This is the Louisiana transfer from France in 1803.",
+  "C": "One flag comes down and the other goes up: the French tricolor is lowered as the American flag rises over New Orleans in 1803.",
+  "D": "The Erie Canal opened in 1825 and linked New York City to the Great Lakes. It has nothing to do with this New Orleans ceremony.",
+  "general": "1. Read the flags. The French tricolor comes down while the American flag goes up.\n2. Read the date. The transfer happened at New Orleans in 1803, when the Louisiana Purchase took effect.\n3. Put it together. A flag ceremony with one flag lowered and another raised marks a change of ownership.\nBackground: Jefferson first tried to buy only New Orleans.\nRemember: when two flags trade places in a ceremony, ask which country is giving up the land."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0861",
+   "file": "u4/louisiana-purchase-thulstrup.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Louisiana_Purchase_New_Orleans_Thure_de_Thulstrup.jpg",
+   "license": "Public domain",
+   "caption": "The transfer of Louisiana at New Orleans, 1803",
+   "alt": "Painting of soldiers firing a salute as the American flag rises and the French flag is lowered in a New Orleans square"
+  }
+ ]
+}

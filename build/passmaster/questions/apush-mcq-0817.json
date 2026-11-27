@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-0817",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.2"
+ ],
+ "lesson": "apush-u4-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.2 The Rise of Political Parties and the Era of Jefferson, A. Political Parties and the Rise of the First Two-Party System"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "Renewal of War in Europe"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Jefferson's Second Term"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Export values from Digital History (University of Houston), “The Embargo of 1807”: exports fell from $108 million in 1807 to $22 million in 1808; imports fell by about half.",
+  "text": "| Year | Value of American exports |\n|---|---|\n| 1807 | $108 million |\n| 1808 | $22 million |\n\nImports fell by about half over the same year."
+ },
+ "stimulus_set": "embargo-exports-table",
+ "source": "original; stimulus is a table of real export values from Digital History",
+ "stem": "One unintended consequence of the trade collapse shown in the table was that",
+ "options": [
+  {
+   "key": "A",
+   "text": "Americans began making goods they could no longer import"
+  },
+  {
+   "key": "B",
+   "text": "The Federalist Party won the presidency in 1808",
+   "misconception": "Madison won the 1808 election; the Federalists gained seats in Congress but never retook the presidency."
+  },
+  {
+   "key": "C",
+   "text": "Britain stopped impressing American sailors",
+   "misconception": "Impressment went on until the War of 1812; the embargo never stopped it."
+  },
+  {
+   "key": "D",
+   "text": "American farmers found richer foreign markets for their crops",
+   "misconception": "Farmers lost their foreign markets, which is why the table's collapse hurt them so badly."
+  }
+ ],
+ "rationales": {
+  "A": "Cut off from British manufactured goods, Americans had to make their own, and the embargo years pushed workshops and mills into being. Background: the War of 1812 did the same thing on a larger scale, and together the two cutoffs gave American manufacturing its first real start, just as Hamilton had hoped it would.",
+  "B": "Madison won the 1808 election, and the Democratic-Republicans kept the presidency. The embargo cost them seats, and Federalists gained in New England, but they never retook the White House.",
+  "C": "Impressment went on until the War of 1812. The embargo never stopped it.",
+  "D": "Farmers lost their foreign markets, which is why the table's collapse hurt them so badly.",
+  "general": "1. Ask what the table takes away. Imports, cut by about half, including British goods.\n2. Ask what Americans still needed. Cloth, tools, goods once bought abroad.\n3. Ask who supplied them. American workshops and mills, built because imports were gone.\n4. Put it together. A ban meant to punish foreigners accidentally built American industry.\nRemember: a cutoff can build as well as break, so ask what people make when they cannot buy."
+ }
+}

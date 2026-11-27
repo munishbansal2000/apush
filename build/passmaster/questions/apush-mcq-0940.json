@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-0940",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.6"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "D",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "GEO",
+  "MIG"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.6 Market Revolution: Society and Culture, B. The Market Revolution's Impact on Economic Class"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The North and American Cities"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "SOCIAL HISTORY, 1800-1860"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "Population of leading American cities, from the United States census (U.S. Census Bureau, Working Paper 27):\n\n| City | 1800 | 1850 |\n| --- | ---: | ---: |\n| New York | 60,515 | 515,547 |\n| Philadelphia | 41,220 | 121,376 |\n| Baltimore | 26,514 | 169,054 |\n| Boston | 24,937 | 136,881 |",
+  "source_note": "U.S. Census Bureau, Working Paper 27, Population of the 100 Largest Cities and Other Urban Places, Tables 3 (1800) and 8 (1850). Figures verified against the Census Bureau tables."
+ },
+ "stimulus_set": "cities-table-1850",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "Between 1800 and 1850, the city in the table that grew the most was",
+ "options": [
+  {
+   "key": "A",
+   "text": "Boston",
+   "misconception": "Boston grew from about 25,000 to about 137,000, a gain of about 112,000, far less than New York's."
+  },
+  {
+   "key": "B",
+   "text": "Philadelphia",
+   "misconception": "Philadelphia grew from about 41,000 to about 121,000, a gain of about 80,000."
+  },
+  {
+   "key": "C",
+   "text": "Baltimore",
+   "misconception": "Baltimore grew from about 27,000 to about 169,000, a gain of about 143,000, still far behind New York."
+  },
+  {
+   "key": "D",
+   "text": "New York"
+  }
+ ],
+ "rationales": {
+  "A": "Boston's gain is about 112,000, from 24,937 to 136,881. That is less than a quarter of New York's gain.",
+  "B": "Philadelphia's gain is about 80,000, from 41,220 to 121,376. It grew the least of the four.",
+  "C": "Baltimore's gain is about 143,000, from 26,514 to 169,054. It is the second largest gain, still far behind New York.",
+  "D": "Subtract across each row. New York grew by about 455,000 people, from 60,515 to 515,547, more than the other three cities combined.",
+  "general": "1. Subtract across each row. Find each city's gain from 1800 to 1850.\n2. Compare the gains. New York gained about 455,000, Baltimore about 143,000, Boston about 112,000, Philadelphia about 80,000.\n3. Pick the largest. New York grew the most, by far.\nBackground: New York passed 500,000 people by 1850, the first American city to do so.\nRemember: with a table, do the subtraction before you trust your eye."
+ }
+}

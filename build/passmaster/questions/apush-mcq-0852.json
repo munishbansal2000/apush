@@ -1,0 +1,92 @@
+{
+ "id": "apush-mcq-0852",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.3"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "C",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.3 Politics and Regional Interests, A. The Persistence of Regional Priorities"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.3 Politics and Regional Interests, B. The American System and Sectionalism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Monroe's Presidency"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "| Region | Main work | Labor | Link to other regions |\n|---|---|---|---|\n| North | Mills and workshops | Wage labor | Canals and roads east and west |\n| South | Cotton for export | Enslaved labor | Rivers and ports, mostly southward |\n| West (Ohio Valley) | Grain and livestock | Family farms | Canals and rivers to eastern markets |\n\nThe Erie Canal, opened in 1825, joined the Great Lakes to New York City.",
+  "source_note": "Table drawn from Barron's Premium 2027, Chapter 6, Topic 4.3 A-B, and 5 Steps 2024, Chapter 13, 'The Rise of Manufacturing.' Original synthesis. Image: view on the Erie Canal, published 1832 (New York Public Library)."
+ },
+ "stimulus_set": "regional-economies",
+ "source": "original; stimulus is a table drawn from the grounding books plus an 1832 Erie Canal view (public domain, in the shared image pool as pr25e-ch08-q10)",
+ "stem": "Cotton’s importance to the Southern economy grew in this period mainly because",
+ "options": [
+  {
+   "key": "A",
+   "text": "the federal government banned cotton imports",
+   "misconception": "The United States exported cotton; no ban on cotton imports drove its growth."
+  },
+  {
+   "key": "B",
+   "text": "the South had stopped growing all other crops besides cotton",
+   "misconception": "The South still grew tobacco, rice, sugar, and food crops; cotton grew alongside them."
+  },
+  {
+   "key": "C",
+   "text": "the cotton gin made short-staple cotton profitable, and British mills wanted it"
+  },
+  {
+   "key": "D",
+   "text": "slavery had been abolished in the border states by 1820 already",
+   "misconception": "Slavery continued in the border states; its abolition there is not part of this story."
+  }
+ ],
+ "rationales": {
+  "A": "The United States sold cotton abroad, it did not buy it. A ban on imports cannot explain an export boom.",
+  "B": "Tobacco, rice, and sugar stayed important Southern crops. Cotton grew fastest, but it did not replace the rest.",
+  "C": "Whitney’s cotton gin cleaned short-staple cotton cheaply, so planters could grow it across the South, and British textile mills bought all they could. Supply and demand grew together.",
+  "D": "Slavery was not abolished in the border states in this period. The cotton boom ran on enslaved labor, not on its end.",
+  "general": "1. Ask what changed on the supply side. The cotton gin made short-staple cotton cheap to clean.\n2. Ask what changed on the demand side. British mills needed ever more raw cotton for their cloth.\n3. Ask what tied them together. Planters with enslaved labor grew the fiber the mills wanted.\n4. Put it together. A cheaper supply met a hungry market, and cotton became king.\nBackground: Eli Whitney’s cotton gin let Southern planters greatly increase cotton production, which fed the Industrial Revolution in Britain and the United States.\nRemember: a boom usually needs both a supply change and a demand change, so look for both."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0852",
+   "file": "u4/pr25e-ch08-q10.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/%28View_on_the_Erie_Canal.%29_%283990000597%29.jpg",
+   "license": "Public domain",
+   "caption": "View on the Erie Canal, published 1832",
+   "alt": "A canal boat on a calm waterway between low banks, with a towpath and trees, showing the Erie Canal in use"
+  }
+ ]
+}

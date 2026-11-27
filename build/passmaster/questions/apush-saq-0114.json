@@ -1,0 +1,86 @@
+{
+ "id": "apush-saq-0114",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.7"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "skills": [
+  "1.B",
+  "4.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.7 Expanding Democracy, A. Participatory Democracy and an Expanding Electorate"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Election of 1828"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.7 A: As the electorate grew, candidates had to campaign more aggressively and tailor their appeal to reach a broader audience. Related to the democratization of voting was an increased focus on character and personality: voters judged candidates as men, not only as bearers of policies. The election of 1828 showed the new style, as Jackson's supporters painted John Quincy Adams as out of touch and elitist, while Adams's supporters portrayed Jackson as ill-tempered.",
+  "source_note": "Secondary text: paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.7 A. Paraphrased, not quoted."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus as described in the stimulus source note",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly identify ONE way political campaigning changed in the 1820s.",
+   "modelAnswer": "Candidates began campaigning directly to a broad electorate. They held rallies and shaped appeals to ordinary voters rather than speaking only to elites.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one change in campaigning, such as direct appeals to ordinary voters, rallies, or appeals built on character.",
+     "notEarned": "Naming a candidate or an election with no change in campaigning does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason candidates campaigned more aggressively in the 1820s.",
+   "modelAnswer": "Most states had reduced or removed property qualifications for voting. Most free white men could now vote, so candidates had to win over a much larger and less elite electorate.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason for more aggressive campaigning, such as the expanded electorate, the fall of property qualifications, or the rise of mass parties.",
+     "notEarned": "Saying campaigning grew without giving a reason does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limit on how democratic politics had become by 1840.",
+   "modelAnswer": "The expanded electorate still covered only free white men. Women, enslaved people, and many free Black men could not vote, so the “common man” in politics was a white man.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limit, such as the exclusion of women, enslaved people, or free Black men, or a surviving taxpayer or property rule.",
+     "notEarned": "Saying democracy was incomplete without naming who was left out does not earn the point."
+    }
+   ]
+  }
+ ]
+}

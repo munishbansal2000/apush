@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-0800",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.2"
+ ],
+ "lesson": "apush-u4-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.2 The Rise of Political Parties and the Era of Jefferson, A. Political Parties and the Rise of the First Two-Party System"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "Election of 1800"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The “Revolution of 1800”"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Electoral vote totals from the National Archives, 1800 Electoral College Results. 138 electors; 70 votes needed to win.",
+  "text": "| Candidate | Party | Electoral votes |\n|---|---|---|\n| Thomas Jefferson | Democratic-Republican | 73 |\n| Aaron Burr | Democratic-Republican | 73 |\n| John Adams | Federalist | 65 |\n| Charles C. Pinckney | Federalist | 64 |\n| John Jay | Federalist | 1 |"
+ },
+ "stimulus_set": "election-1800-table",
+ "source": "original; stimulus is a table of electoral votes from the National Archives",
+ "stem": "Jefferson finally won the presidency on the 36th ballot in the House, after Alexander Hamilton urged Federalists to back him. Hamilton's support for Jefferson best shows which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Hamilton thought Burr the more dangerous man, despite years of fighting Jefferson"
+  },
+  {
+   "key": "B",
+   "text": "Hamilton had switched parties and become a Democratic-Republican",
+   "misconception": "Hamilton stayed a Federalist; he backed Jefferson only as the lesser danger."
+  },
+  {
+   "key": "C",
+   "text": "Burr conceded the election and asked the House to choose Jefferson",
+   "misconception": "Burr did not concede; he gathered Federalist votes for himself and tried to win."
+  },
+  {
+   "key": "D",
+   "text": "The House was required by law to follow Hamilton's instructions",
+   "misconception": "Hamilton held no office in 1801 and could only persuade, not command, the House."
+  }
+ ],
+ "rationales": {
+  "A": "Hamilton and Jefferson had fought for a decade, yet Hamilton told Federalists to vote for Jefferson because he thought Burr was, in his words, the most unfit man for the presidency. Personal judgment beat party loyalty: Hamilton would rather hand power to his old enemy than to a man he saw as an opportunist. Background: the rivalry did not end there; Burr killed Hamilton in a duel three years later.",
+  "B": "Hamilton stayed a Federalist. He backed Jefferson only as the lesser danger.",
+  "C": "Burr did not concede. He gathered Federalist votes for himself and tried to win.",
+  "D": "Hamilton held no office in 1801 and could only persuade, not command, the House.",
+  "general": "1. Start with the surprise. Hamilton, Jefferson's great rival, helps Jefferson win.\n2. Ask why. Hamilton distrusted Burr more than he disliked Jefferson.\n3. Ask what that tells you. In 1800 personal judgment could still beat party loyalty.\n4. Put it together. The tie forced Federalists to choose between two men they disliked, and Hamilton chose the one he feared less.\nRemember: when an enemy helps a rival win, ask which danger scared him more."
+ }
+}

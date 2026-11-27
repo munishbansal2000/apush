@@ -1,0 +1,75 @@
+{
+ "id": "apush-mcq-1142",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.13"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "3.A",
+  "5.A"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.13 The Society of the South in the Early Republic, B. Cotton, Slavery, and the Southern Exception"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   }
+  ],
+  "primary_sources": [
+   "Alexis de Tocqueville, Democracy in America, 1835"
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "United States cotton crop, in thousands of 500-pound bales:\n\n| Year | Cotton crop |\n|---|---|\n| 1800 | 73 |\n| 1820 | 335 |\n| 1840 | 1,348 |\n\nSource: National Bureau of Economic Research cotton crop series, from United States Department of Agriculture Circular 32.\n\nAlexis de Tocqueville, visiting in the 1830s, wrote that the cultivation of tobacco, of cotton, and especially of the sugar-cane, “demands . . . unremitting attention” from laborers.",
+  "source_note": "Crop figures from the NBER cotton crop series (USDA Circular 32), checked on FRED. World-share line from Barron's Premium 2027, Chapter 6, Topic 4.13 B. Tocqueville line verbatim from Democracy in America, vol. 1, ch. 18, as printed on historycarper.com."
+ },
+ "stimulus_set": "cotton-crop-table",
+ "source": "original; data table from the NBER cotton crop series (USDA Circular 32); Tocqueville line verbatim from Democracy in America, 1835, public domain",
+ "stem": "Cotton output rose from 73,000 bales in 1800 to more than 1.3 million bales in 1840. Which development most directly made that rise possible?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The cotton gin, which let workers clean short-staple cotton quickly"
+  },
+  {
+   "key": "B",
+   "text": "The Erie Canal, which carried cotton from Southern farms to market",
+   "misconception": "The Erie Canal linked the Great Lakes to New York City; it did not carry Southern cotton."
+  },
+  {
+   "key": "C",
+   "text": "The end of the international slave trade, which freed planters to grow cotton",
+   "misconception": "Ending the slave trade did not free planters to grow cotton; it cut off one supply of labor."
+  },
+  {
+   "key": "D",
+   "text": "The Tariff of 1828, which protected Southern cotton from British competition",
+   "misconception": "The tariff taxed imported goods; Southerners opposed it, and it did not protect cotton."
+  }
+ ],
+ "rationales": {
+  "A": "Before the gin, cleaning short-staple cotton by hand was slow work. The gin made it fast, so planters grew far more cotton.",
+  "B": "The Erie Canal linked the Great Lakes to New York City. It did not carry Southern cotton.",
+  "C": "Ending the slave trade did not free planters to grow cotton. It cut off one supply of labor.",
+  "D": "The tariff taxed imported goods. Southerners opposed it, and it did not protect cotton.",
+  "general": "1. Read the table. The crop rose from 73,000 bales in 1800 to 1,348,000 bales in 1840.\n2. Ask what held cotton back before. Short-staple cotton was hard to clean by hand, so little of it was grown.\n3. Name the change. Whitney's gin of 1793 cleaned it quickly, and planters planted cotton across the South.\nBackground: British textile mills wanted more cotton than the old hand-cleaned supply could give.\nRemember: a machine that cuts one hard step can remake a whole region."
+ }
+}

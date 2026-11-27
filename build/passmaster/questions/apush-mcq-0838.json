@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-0838",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.3"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "D",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.3 Politics and Regional Interests, B. The American System and Sectionalism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Nullification Controversy"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Monroe's Presidency"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "| Tariff | Average duty on imports |\n|---|---|---|\n| Tariff of 1816 | about 25 percent |\n| Tariff of 1824 | about 33 percent |\n| Tariff of 1828 | about 43 percent |\n\nThe Tariff of 1828, the highest of the three, was called the Tariff of Abominations by its Southern critics.",
+  "source_note": "Rates: Tariff of 1816 about 25 percent (5 Steps 2024, Chapter 13); 1824 about 33 percent and 1828 about 43 percent (Carl Schurz, Speeches, Correspondence and Political Papers, vol. 5). Original table."
+ },
+ "stimulus_set": "tariff-rates",
+ "source": "original; stimulus is a table of average tariff rates from 5 Steps 2024 Ch. 13 and Schurz's history of the tariffs",
+ "stem": "The table best supports which conclusion about tariff policy between 1816 and 1828?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Congress lowered duties to help Southern exporters",
+   "misconception": "The rates rise from 25 to 43 percent; lowered is the reverse of the table."
+  },
+  {
+   "key": "B",
+   "text": "tariff rates stayed the same across all three laws",
+   "misconception": "The rates climb from about 25 to about 33 to about 43 percent; they did not stay the same."
+  },
+  {
+   "key": "C",
+   "text": "the tariff of 1816 was the highest of the three",
+   "misconception": "The 1816 tariff is the lowest of the three, at about 25 percent."
+  },
+  {
+   "key": "D",
+   "text": "Congress raised import duties in each new tariff law"
+  }
+ ],
+ "rationales": {
+  "A": "Duties rose from about 25 percent to about 43 percent. A Congress lowering duties would show falling numbers, not rising ones.",
+  "B": "Read the column: 25, then 33, then 43. Three different numbers cannot mean the rates stayed the same.",
+  "C": "The 1816 tariff sits at the bottom of the table, about 25 percent. The highest is 1828, at about 43 percent.",
+  "D": "Each new law sets a higher average duty than the last: 25, then 33, then 43. The table shows a steady climb in protection.",
+  "general": "1. Read the numbers down the column. About 25, then about 33, then about 43.\n2. Ask the direction. Every step goes up.\n3. Ask what that means. Congress raised the tax on imports three times in twelve years.\n4. Put it together. The table is a record of rising protection, not of cuts or stability.\nRemember: read a table down its column before you read across its rows."
+ }
+}

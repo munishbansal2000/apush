@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-0869",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.4"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "C",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.4 America on the World Stage, A. Trade, Diplomacy, and the Expansion of American Influence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "The War of 1812"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Madison's Presidency and the War of 1812"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "The table shows the value of American foreign trade before and after the Embargo Act of 1807, which banned American ships from sailing to foreign ports.\n\n| Year | Value of U.S. exports | Value of U.S. imports |\n|------|----------------------|----------------------|\n| 1807 | $108 million | $138 million |\n| 1808 | $22 million | $56 million |",
+  "source_note": "Trade figures from U.S. trade statistics; export figures corroborated by Digital History, University of Houston."
+ },
+ "stimulus_set": "embargo-trade-table",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "According to the table, the Embargo Act was followed by",
+ "options": [
+  {
+   "key": "A",
+   "text": "a small rise in both exports and imports",
+   "misconception": "Both columns fall sharply, so nothing rose."
+  },
+  {
+   "key": "B",
+   "text": "a rise in exports and a fall in imports",
+   "misconception": "Exports fell from $108 million to $22 million."
+  },
+  {
+   "key": "C",
+   "text": "a sharp fall in both exports and imports"
+  },
+  {
+   "key": "D",
+   "text": "no change in the value of American trade",
+   "misconception": "Exports fell by about four-fifths in a single year."
+  }
+ ],
+ "rationales": {
+  "A": "Both columns fall: exports from $108 million to $22 million, imports from $138 million to $56 million.",
+  "B": "Exports did not rise. They fell from $108 million in 1807 to $22 million in 1808.",
+  "C": "Both columns drop hard in one year. Exports fall by about four-fifths and imports by more than half.",
+  "D": "Trade changed a great deal. Exports fell from $108 million to $22 million, and imports from $138 million to $56 million.",
+  "general": "1. Read the 1807 row. Exports were $108 million and imports $138 million.\n2. Read the 1808 row. Exports were $22 million and imports $56 million.\n3. Put it together. Both columns fell sharply in the year the embargo took hold.\nBackground: The Embargo Act banned American ships from sailing to foreign ports, so harbors went quiet.\nRemember: when a table shows before and after, compare the same column across the two rows."
+ }
+}

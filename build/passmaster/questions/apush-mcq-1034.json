@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-1034",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.9"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "5.A"
+ ],
+ "themes": [
+  "ARC",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.9 The Development of an American Culture, B. European Romanticism and American Culture"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Religious and Social Movements"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "Thomas Cole, The Course of Empire: Destruction, 1836, is the fourth of five paintings tracing an imaginary city's rise and fall. A burning classical city fills the canvas: crowds flee across a bridge, a great statue topples from its pedestal at right, and smoke darkens the sky. Cole signed and dated the pedestal \"1836.\"",
+  "source_note": "Painting: Thomas Cole, The Course of Empire: Destruction, 1836 (New-York Historical Society). Public domain; image viewed before writing. Description records only what the painting visibly shows."
+ },
+ "stimulus_set": "cole-course-empire-49",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The Course of Empire series as a whole best reflects which concern of the 1830s?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Fear that the young republic could decline like earlier republics"
+  },
+  {
+   "key": "B",
+   "text": "Confidence that American cities would never change at all",
+   "misconception": "America was growing fast, so it is easy to think everyone trusted growth to last forever."
+  },
+  {
+   "key": "C",
+   "text": "The belief that history always moves upward",
+   "misconception": "The series starts with a rise, so it is easy to stop there and miss the fall."
+  },
+  {
+   "key": "D",
+   "text": "A call to build more classical temples",
+   "misconception": "The paintings are full of temples, so it is easy to read them as an architect's wish list."
+  }
+ ],
+ "rationales": {
+  "A": "The series ends in ruin, and its American audience in the 1830s was arguing over the republic's future.",
+  "B": "A series that ends with a burning city is not a vote of confidence in changeless cities.",
+  "C": "The arc runs up and then down; Cole's history is a cycle, not a staircase.",
+  "D": "Cole painted temples to show a civilization's pride, not to order more of them built.",
+  "general": "1. Follow the whole arc. Wilderness, glory, destruction: the series is a rise and a fall.\n2. Ask who needed that warning. Americans in the 1830s, proud of their republic and arguing about its fate.\nBackground from the books: the five-part series warned that empires, like republics, could fall.\nRemember: judge a series by its ending, not its brightest canvas."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1034",
+   "file": "u4/original-misc-us-culture-14.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Cole_Thomas_The_Course_of_Empire_Destruction_1836.jpg",
+   "license": "Public domain",
+   "caption": "Thomas Cole, The Course of Empire: Destruction, 1836. A burning classical city, crowds fleeing, a statue toppling.",
+   "alt": "Thomas Cole's 1836 painting of a burning classical city: crowds flee across a bridge while a huge statue topples from its pedestal at right and smoke fills the sky"
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+{
+ "id": "apush-saq-0124",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.11"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "3.A"
+ ],
+ "themes": [
+  "SOC",
+  "ARC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.11 An Age of Reform, A. Reform Movements in the Antebellum Period"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "An Age of Reform"
+   }
+  ],
+  "primary_sources": []
+ },
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "text": "In the first half of the nineteenth century, reform movements grew in importance. The largest was the temperance movement, which sought to limit or ban alcohol. The American Temperance Society, founded in 1826, claimed 1.5 million members by 1835, and drinking per person fell by about half between 1830 and 1860. Reformers also built new institutions, including asylums for people with mental illness and free public schools. The reform impulse came partly from the Second Great Awakening, whose perfectionism taught that people could improve themselves and then improve society.",
+  "source_note": "Paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.11, A. Reform Movements in the Antebellum Period. Original synthesis, not a quotation."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus as described in the stimulus source note",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly identify ONE reform movement described in the passage.",
+   "modelAnswer": "The passage describes the temperance movement, which sought to limit or ban alcohol. The American Temperance Society, founded in 1826, led that movement.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one movement from the passage, such as temperance, the asylum movement, or public-school reform.",
+     "notEarned": "Naming a reform movement not described in the passage does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason the temperance movement attracted a large following.",
+   "modelAnswer": "Temperance attracted women because heavy drinking cost families dearly: men spent their pay in taverns and came home drunk, sometimes abusing their wives and children. The movement promised to protect the home from that harm.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason for the following, such as the harm drinking did to women and families, the peak in alcohol use around 1830, or the moral energy of the Second Great Awakening.",
+     "notEarned": "Restating that temperance was popular without giving a reason does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limitation of the passage as evidence about reform in the antebellum period.",
+   "modelAnswer": "The passage describes Northern, mostly Protestant reform movements such as temperance, asylums, and public schools. It says nothing about Southern resistance to reform, or about Black reformers such as Frederick Douglass, who fought slavery rather than drink.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limit, such as the focus on Northern Protestant reformers, the absence of Southern resistance, or the absence of Black reformers and the abolition movement.",
+     "notEarned": "Saying the passage is incomplete without naming what it leaves out does not earn the point."
+    }
+   ]
+  }
+ ]
+}

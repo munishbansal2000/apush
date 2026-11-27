@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-0893",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.5"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "3.A",
+  "1.B"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 Market Revolution: Economic Transformations, D. Regional Specialization"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The North and the Textile Industry"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "A print of Lowell, Massachusetts, made between 1840 and 1860, looks across the Merrimack River toward a long row of large brick mill buildings standing side by side along the water. Smaller houses stand nearby, and the river runs in the foreground. Lowell was built as a factory town, and its mills turned Southern cotton into cloth.",
+  "source_note": "View of Lowell, Massachusetts, 1840-1860, Library of Congress (LCCN94515606), via Wikimedia Commons. Public domain; image viewed before writing."
+ },
+ "stimulus_set": "lowell-view",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The arrangement of the buildings in the print best illustrates which feature of the Waltham-Lowell system?",
+ "options": [
+  {
+   "key": "A",
+   "text": "All textile production under one roof in a planned mill town"
+  },
+  {
+   "key": "B",
+   "text": "Small family workshops scattered across farmland",
+   "misconception": "The print shows large mills in a row, not small workshops spread over farms."
+  },
+  {
+   "key": "C",
+   "text": "Mills owned and run by the women who worked in them",
+   "misconception": "The mill girls worked the looms; the mills were owned by companies, not by the workers."
+  },
+  {
+   "key": "D",
+   "text": "Factories powered by coal shipped in from Pennsylvania",
+   "misconception": "The mills stand on the river because falling water powered them, not coal from Pennsylvania."
+  }
+ ],
+ "rationales": {
+  "A": "The big brick buildings in a row are whole factories, each holding every step from spinning to weaving, in a town built for the mills.",
+  "B": "Look again: the buildings are large, uniform, and packed together along the river. That is a factory town, not scattered home workshops.",
+  "C": "The system housed its women workers in company boardinghouses, but the companies owned the mills. The workers earned wages; they did not own the works.",
+  "D": "Lowell's mills ran on water power from the Merrimack. That is why they crowd the riverbank in the print.",
+  "general": "1. Look at what the print shows. Large brick buildings stand in a row along the river, with houses close by.\n2. Ask why they are built that way. Each mill held all the steps of making cloth, and the town was planned around the mills.\n3. Name the system. That is the Waltham-Lowell system: whole production under one roof, workers in company housing.\nBackground: By the early 1830s, more than 40,000 women worked in New England textile mills.\nRemember: in an image question, let the arrangement of things in the picture do the work."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0893",
+   "file": "u4/barrons-2027-ch06-02.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:View_of_Lowell,_Massachusetts_at_the_confluence_of_the_Merrimack_and_Concord_rivers,_with_a_row_of_textile_mills_or_factories_mainly_along_the_Merrimack_River_LCCN94515606.jpg",
+   "license": "Public domain",
+   "caption": "View of Lowell, Massachusetts, 1840-1860. Brick mills line the Merrimack River.",
+   "alt": "A wide print of Lowell, Massachusetts: a long row of large brick mill buildings stands along the Merrimack River, with smaller houses nearby and the river in the foreground"
+  }
+ ]
+}

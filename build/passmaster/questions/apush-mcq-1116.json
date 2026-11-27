@@ -1,0 +1,73 @@
+{
+ "id": "apush-mcq-1116",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.12"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "A",
+ "skills": [
+  "3.B",
+  "1.A"
+ ],
+ "themes": [
+  "SOC",
+  "MIG"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.12 African Americans in the Early Republic, A. Slave Rebellions"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.12 African Americans in the Early Republic, B. The Cultures of African-American Communities"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "Black population of the United States, counted by the federal census:\n\n| Year | Enslaved people | Free Black people |\n| --- | --- | --- |\n| 1790 | 697,681 | 59,527 |\n| 1800 | 893,602 | 108,435 |\n| 1820 | 1,538,022 | 233,634 |\n| 1840 | 2,487,355 | 386,293 |\n\nCongress banned the importation of enslaved people from abroad, effective January 1, 1808.",
+  "source_note": "Data table from the United States federal census, 1790-1840: free and enslaved Black population. Totals checked against the Census Bureau's Negro Population 1790-1915 and Gannett, Statistics of the Negroes in the United States (1894)."
+ },
+ "stimulus_set": "census-table",
+ "source": "original; data table from the United States federal census, 1790-1840",
+ "stem": "According to the table, the free Black population between 1790 and 1840",
+ "options": [
+  {
+   "key": "A",
+   "text": "grew in every census shown, from about 60,000 to about 386,000"
+  },
+  {
+   "key": "B",
+   "text": "fell as Northern states tightened their voting laws",
+   "misconception": "The table shows growth in every row, not a fall."
+  },
+  {
+   "key": "C",
+   "text": "remained smaller than the enslaved population in the North alone",
+   "misconception": "The table gives national totals, not a Northern split."
+  },
+  {
+   "key": "D",
+   "text": "passed the enslaved population by 1820",
+   "misconception": "In 1820 the enslaved numbered over 1.5 million and the free about 234,000."
+  }
+ ],
+ "rationales": {
+  "A": "Read the free column top to bottom: 59,527, then 108,435, then 233,634, then 386,293. It rises every time.",
+  "B": "Voting laws tightened in the North, but the free population still grew in every census the table shows.",
+  "C": "The table counts the whole United States. It never splits either group by region.",
+  "D": "In 1820 the enslaved still outnumbered the free by more than six to one. The free never passed them.",
+  "general": "1. Read the free column top to bottom. It rises at every census shown.\n2. Compare the first and last counts. About 60,000 in 1790 becomes about 386,000 in 1840.\n3. Note the scale. The growth is real, but free people stayed a minority of Black Americans.\nBackground: The census counted free and enslaved Black people separately every ten years.\nRemember: read a table down each column before comparing across columns."
+ }
+}

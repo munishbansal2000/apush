@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0109",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.4"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "skills": [
+  "3.A",
+  "4.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.4 America on the World Stage, A. Trade, Diplomacy, and the Expansion of American Influence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "Monroe Doctrine"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Monroe's Presidency"
+   }
+  ],
+  "primary_sources": [
+   "James Monroe, seventh annual message to Congress, December 2, 1823"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "President James Monroe spoke to Congress on December 2, 1823:\n\n“With the existing colonies or dependencies of any European power we have not interfered and shall not interfere. But with the Governments who have declared their independence and maintain it, and whose independence we have, on great consideration and on just principles, acknowledged, we could not view any interposition for the purpose of oppressing them, or controlling in any other manner their destiny, by any European power in any other light than as the manifestation of an unfriendly disposition toward the United States.”",
+  "source_note": "James Monroe, seventh annual message to Congress, December 2, 1823; wording verified against the Avalon Project, Yale Law School. Public domain."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus is a verbatim excerpt from Monroe's seventh annual message to Congress, December 2, 1823 (public domain, verified against the Avalon Project)",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify ONE principle about existing European colonies that Monroe states in the excerpt.",
+   "modelAnswer": "Monroe states that the United States has not interfered with existing European colonies and will not interfere with them. The Doctrine warned against new colonization and intervention, not against colonies that already existed.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying Monroe's principle of noninterference with existing European colonies.",
+     "notEarned": "Stating the non-colonization principle with no mention of existing colonies does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason Monroe issued this warning in 1823.",
+   "modelAnswer": "Latin American nations had won independence from Spain, and Monroe feared the Holy Alliance of Russia, Prussia, and Austria would help Spain take them back. He also opposed Russia's claim to the Pacific Northwest above the 51st parallel.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason for the 1823 warning, such as the Holy Alliance threatening Latin American independence or Russia's claim in the Pacific Northwest.",
+     "notEarned": "Naming the Monroe Doctrine with no reason for its timing does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limit of the Monroe Doctrine as a statement of American power in 1823.",
+   "modelAnswer": "The United States had no navy strong enough to enforce the Doctrine against Europe. It was respected mainly because the British navy, which also wanted Latin American trade open, kept other European powers out.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limit of the Doctrine, such as the small American navy or the reliance on British naval power for enforcement.",
+     "notEarned": "Saying the Doctrine was weak with no specific limit explained does not earn the point."
+    }
+   ]
+  }
+ ]
+}

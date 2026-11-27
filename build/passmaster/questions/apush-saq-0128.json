@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0128",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.12"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "3.A",
+  "2.B"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.12 African Americans in the Early Republic, A. Slave Rebellions"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.12 African Americans in the Early Republic, B. The Cultures of African-American Communities"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The Abolition Movement"
+   }
+  ],
+  "primary_sources": [
+   "David Walker, Appeal to the Coloured Citizens of the World, 1829"
+  ]
+ },
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "text": "\"We, (coloured people of these United States,) are the most degraded, wretched, and abject set of beings that ever lived since the world began. . . . My object is, if possible, to awaken in the breasts of my afflicted, degraded and slumbering brethren, a spirit of inquiry and investigation respecting our miseries and wretchedness in this Republican Land of Liberty.\" — David Walker, Appeal to the Coloured Citizens of the World, September 28, 1829",
+  "source_note": "Verbatim public-domain quotation from David Walker, Appeal to the Coloured Citizens of the World (Boston, September 28, 1829). Wording checked against the Documenting the American South electronic edition."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus is a verbatim public-domain quotation from David Walker (1829)",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly identify ONE claim Walker makes about the condition of Black Americans.",
+   "modelAnswer": "Walker claims Black Americans are the most degraded, wretched, and abject people who ever lived. He says they suffer miseries and wretchedness in a land that calls itself free.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one claim in the passage, such as the degraded condition of Black Americans or their suffering in a land of liberty.",
+     "notEarned": "Naming a claim Walker does not make in the passage does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain how Walker’s aim differs from the colonization plan.",
+   "modelAnswer": "Walker wants to awaken his Black readers to investigate their own condition and claim their rights at home. Colonization instead asked free Black Americans to leave the United States for Africa.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one difference, such as Walker seeking change at home while colonization sought removal to Africa.",
+     "notEarned": "Describing colonization without contrasting it with Walker’s aim does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limitation of the passage as evidence about Black opinion in 1829.",
+   "modelAnswer": "Walker was one activist writing to persuade, so his pamphlet shows his own argument, not what most Black Americans believed. Southern states also banned the pamphlet, so its reach in the South was limited.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limit, such as Walker speaking for himself rather than for all Black Americans, or the pamphlet’s banned reach.",
+     "notEarned": "Saying the passage is one-sided without naming the limit does not earn the point."
+    }
+   ]
+  }
+ ]
+}

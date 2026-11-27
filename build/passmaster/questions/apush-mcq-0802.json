@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-0802",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.2"
+ ],
+ "lesson": "apush-u4-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.2 The Rise of Political Parties and the Era of Jefferson, B. The Supreme Court Asserts Federal Power and the Power of the Judiciary"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "An Assertive Supreme Court"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Jefferson's First Term"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Chief Justice John Marshall, Marbury v. Madison (1803), public domain. Abridged.",
+  "text": "“It is emphatically the province and duty of the judicial department to say what the law is. Those who apply the rule to particular cases, must of necessity expound and interpret that rule. If two laws conflict with each other, the courts must decide on the operation of each.”\n— Chief Justice John Marshall, Marbury v. Madison, 1803 (abridged)"
+ },
+ "stimulus_set": "marbury-1803",
+ "source": "original; stimulus is a verbatim public-domain excerpt from Marbury v. Madison (1803)",
+ "stem": "The principle stated in the passage is best known by which name?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Popular sovereignty",
+   "misconception": "Popular sovereignty means rule by the people, usually through voting, not the courts saying what the law is."
+  },
+  {
+   "key": "B",
+   "text": "States' rights",
+   "misconception": "States' rights claims power for the states, while this passage claims power for the federal courts."
+  },
+  {
+   "key": "C",
+   "text": "Judicial review"
+  },
+  {
+   "key": "D",
+   "text": "The spoils system",
+   "misconception": "The spoils system is the practice of giving government jobs to supporters, which has nothing to do with the courts."
+  }
+ ],
+ "rationales": {
+  "A": "Popular sovereignty means rule by the people, usually through voting, not the courts saying what the law is.",
+  "B": "States' rights claims power for the states, while this passage claims power for the federal courts.",
+  "C": "Marshall claims it is the courts' duty to say what the law is, and when a law conflicts with the Constitution the courts must decide. That claim is judicial review: the power to declare acts of Congress unconstitutional. Background: before Marbury the Court's power was ill-defined and its prestige limited; after it, the Court became the final interpreter of the Constitution.",
+  "D": "The spoils system is the practice of giving government jobs to supporters, which has nothing to do with the courts.",
+  "general": "1. Read the claim. It is the courts' duty to say what the law is.\n2. Ask what that lets a court do. When a law conflicts with the Constitution, the court decides.\n3. Name the power. A court striking down a law as unconstitutional is judicial review.\n4. Put it together. One sentence in 1803 gave the weakest branch its greatest power.\nRemember: a claim to interpret the law is a claim to set laws aside."
+ }
+}

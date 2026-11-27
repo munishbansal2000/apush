@@ -1,0 +1,72 @@
+{
+ "id": "apush-mcq-1141",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.13"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "D",
+ "skills": [
+  "1.A",
+  "3.A"
+ ],
+ "themes": [
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.13 The Society of the South in the Early Republic, B. Cotton, Slavery, and the Southern Exception"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "Enslaved people counted in the United States, by census year:\n\n| Census year | Enslaved people |\n|---|---|\n| 1790 | 697,681 |\n| 1800 | 893,602 |\n| 1820 | 1,538,022 |\n| 1840 | 2,487,355 |\n\nSource: United States census counts, 1790–1840.",
+  "source_note": "Figures from the United States census counts, 1790–1840, as carried by the Historical Census Browser; checked against Barron's Premium 2027, Chapter 6, Topic 4.13 B (about 700,000 in 1790; 2 million by 1830)."
+ },
+ "stimulus_set": "enslaved-population-census",
+ "source": "original; data table from United States census counts, 1790–1840",
+ "stem": "What does the table best show about slavery in the United States between 1790 and 1840?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Slavery was dying out as the country moved west",
+   "misconception": "The table shows the enslaved population growing, not shrinking."
+  },
+  {
+   "key": "B",
+   "text": "Slavery stayed the same size while the country grew",
+   "misconception": "The table shows the enslaved population rising from about 698,000 to about 2,487,000."
+  },
+  {
+   "key": "C",
+   "text": "Slavery ended in the South after the cotton gin failed",
+   "misconception": "The cotton gin succeeded, and slavery grew with cotton."
+  },
+  {
+   "key": "D",
+   "text": "The enslaved population grew steadily over fifty years"
+  }
+ ],
+ "rationales": {
+  "A": "The table shows the enslaved population growing, not shrinking.",
+  "B": "The table shows the enslaved population rising from about 698,000 to about 2,487,000.",
+  "C": "The cotton gin succeeded, and slavery grew with cotton.",
+  "D": "The table rises at every census shown, from about 698,000 in 1790 to about 2,487,000 in 1840, which is more than three times as many.",
+  "general": "1. Read the first row. About 698,000 enslaved people were counted in 1790.\n2. Read the last row. About 2,487,000 were counted in 1840.\n3. Compare. The number rose at every census shown, to more than three times its 1790 size.\nBackground: Many people in 1790 expected slavery to fade; the cotton boom proved them wrong.\nRemember: a table answers a trend question before any single year does."
+ }
+}

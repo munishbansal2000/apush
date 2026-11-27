@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-0939",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.6"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "2.C",
+  "3.B"
+ ],
+ "themes": [
+  "MIG"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.6 Market Revolution: Society and Culture, A. Migrations and New Communities in the Age of the Market Revolution"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Irish Immigration in the Early 19th century"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "SOCIAL HISTORY, 1800-1860"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "Immigration to the United States, by decade (alien passengers arriving; Statistical Abstract of the United States):\n\n| Decade | Immigrants |\n| --- | ---: |\n| 1821–1830 | 143,439 |\n| 1831–1840 | 599,125 |\n| 1841–1850 | 1,713,251 |\n\nFigures are totals for each ten-year period.",
+  "source_note": "Statistical Abstract of the United States, Table 107, Immigration 1821 to 1943 (U.S. Census Bureau). Figures verified against the Census Bureau publication."
+ },
+ "stimulus_set": "immigration-table-1840",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The table gives the number of immigrants each decade. To learn where the immigrants settled and what work they did, a historian would need",
+ "options": [
+  {
+   "key": "A",
+   "text": "census records and city directories showing where immigrants lived and worked"
+  },
+  {
+   "key": "B",
+   "text": "the total number of immigrants in a later decade",
+   "misconception": "More totals would only extend the count; they would not say where anyone settled or what work they did."
+  },
+  {
+   "key": "C",
+   "text": "a list of the ships that carried immigrants across the Atlantic",
+   "misconception": "Ship lists show arrival, not where immigrants settled or what jobs they took."
+  },
+  {
+   "key": "D",
+   "text": "the text of the laws that limited immigration in the 1840s",
+   "misconception": "There were no laws limiting immigration in the 1840s; and laws would not show where immigrants lived or worked."
+  }
+ ],
+ "rationales": {
+  "A": "The table counts arrivals by decade and nothing else. Where immigrants settled and what work they did needs records made where they lived, like census lists and city directories.",
+  "B": "Another decade's total is more of the same number. It cannot say where anyone lived or worked.",
+  "C": "A ship list records a crossing. Settlement and work happen after landing, in records made on land.",
+  "D": "The 1840s had no laws limiting immigration. Even a law would state a rule, not where people lived or what jobs they held.",
+  "general": "1. Say what the table holds. One number per decade: how many arrived.\n2. Say what the question asks. Where they settled, and what work they did.\n3. Match the gap to a source. Settlement and work need records made where immigrants lived.\nBackground: Four-fifths of Irish immigrants settled in Northeast port cities, working on railroads, canals, and in mills, while Germans moved on to Midwestern cities.\nRemember: a table answers only the question it was built to count."
+ }
+}

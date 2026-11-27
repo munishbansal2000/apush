@@ -1,0 +1,176 @@
+{
+ "id": "apush-dbq-0027",
+ "type": "dbq",
+ "unit": 4,
+ "topics": [
+  "4.8"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, A. The Second Two-Party System: The Democrats and the Whigs"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, B. Contention Between Whites and American Indians over Western Lands"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Bank War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Nullification Controversy"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The Jackson Presidency and Jacksonian Democracy"
+   }
+  ],
+  "primary_sources": [
+   "Daniel Webster, Second Reply to Hayne, January 26, 1830",
+   "Andrew Jackson, veto message, July 10, 1832",
+   "Andrew Jackson, Proclamation on Nullification, December 10, 1832"
+  ]
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Seven documents, 1830-1840. See documents."
+ },
+ "stimulus_set": null,
+ "source": "original; documents are public-domain primary sources or paraphrases of them (see each document's sourcing note)",
+ "prompt": "Evaluate the extent to which Andrew Jackson's presidency changed the power of the presidency in the period 1829-1841.",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "1830",
+   "title": "Webster closes the debate",
+   "source": "Daniel Webster, Second Reply to Hayne, January 26, 1830. Public domain.",
+   "sourcing": "A Massachusetts senator closes a Senate debate on nullification with a defense of the Union.",
+   "text": "\"Liberty and Union, now and forever, one and inseparable!\""
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "1832",
+   "title": "Jackson vetoes the Bank",
+   "source": "Andrew Jackson, veto message, July 10, 1832. Public domain.",
+   "sourcing": "The president returns the Bank recharter bill to the Senate with his objections.",
+   "text": "\"It is to be regretted that the rich and powerful too often bend the acts of government to their selfish purposes. ... [W]hen the laws undertake to add to these natural and just advantages artificial distinctions, to grant titles, gratuities, and exclusive privileges, to make the rich richer and the potent more powerful, the humble members of society — the farmers, mechanics, and laborers — have a right to complain of the injustice of their government.\""
+  },
+  {
+   "n": 3,
+   "kind": "image",
+   "date": "1832",
+   "title": "King Andrew the First",
+   "source": "Political cartoon \"King Andrew the First,\" published 1832, artist unknown (Library of Congress). Public domain.",
+   "sourcing": "Jackson's opponents publish a cartoon attacking his use of presidential power.",
+   "text": "The cartoon shows President Andrew Jackson in a crown and royal robes, holding a scepter and a scroll labeled \"VETO.\" He stands on torn papers, including one labeled \"CONSTITUTION of the UNITED STATES.\" The caption reads \"KING ANDREW THE FIRST.\"",
+   "figure": "u4/pr25e-test2-q27.jpg"
+  },
+  {
+   "n": 4,
+   "kind": "text",
+   "date": "1832",
+   "title": "Jackson answers nullification",
+   "source": "Andrew Jackson, Proclamation on Nullification, December 10, 1832. Public domain.",
+   "sourcing": "The president answers South Carolina's nullification ordinance.",
+   "text": "\"The Constitution of the United States forms a government, not a league... I consider the power to annul a law of the United States incompatible with the existence of the Union, contradicted expressly by the letter of the Constitution, and destructive of the great object for which it was formed.\""
+  },
+  {
+   "n": 5,
+   "kind": "image",
+   "date": "1836",
+   "title": "General Jackson slaying the many headed monster",
+   "source": "Henry R. Robinson, \"General Jackson Slaying the Many Headed Monster,\" lithograph, 1836 (Library of Congress). Public domain.",
+   "sourcing": "A pro-Jackson print celebrates his attack on the Bank of the United States.",
+   "text": "The lithograph shows President Andrew Jackson, at right, striking with a cane at a many-headed serpent. The serpent's heads carry state names, and the largest head is Nicholas Biddle, president of the Second Bank of the United States. The caption reads \"GENERAL JACKSON SLAYING THE MANY HEADED MONSTER.\"",
+   "figure": "u4/5s24-ch13-mcq-08.jpg"
+  },
+  {
+   "n": 6,
+   "kind": "text",
+   "date": "1836",
+   "title": "The Specie Circular",
+   "source": "Paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.8 A. Public domain.",
+   "sourcing": "A textbook account of Jackson's order on land sales and its effects.",
+   "text": "In 1836 Jackson ordered that federal land be sold only for gold or silver coin, not paper money. Land prices fell, and the order, together with the destruction of the Bank, helped bring on the Panic of 1837."
+  },
+  {
+   "n": 7,
+   "kind": "image",
+   "date": "1840",
+   "title": "General Wm. H. Harrison",
+   "source": "Campaign lithograph, published 1840 (Library of Congress). Public domain.",
+   "sourcing": "The Whigs present their candidate as a military hero in the mold of Jackson.",
+   "text": "The lithograph shows General William Henry Harrison in military uniform with a sword. A wreath names his victories: 'Tippecanoe, Fort Meigs and the Thames.' The caption reads 'GENERAL WM. H. HARRISON.'",
+   "figure": "u4/barrons-2027-ch06-09.jpg"
+  }
+ ],
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent of the change, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of change does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the expansion of white male suffrage, the fall of the congressional caucus, or the rise of mass parties.",
+   "notEarned": "A sentence of background with no link to the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (first point): earns the point for describing the content of at least three documents relevant to the argument.",
+   "notEarned": "Quoting documents without describing what they show does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support the argument.",
+   "notEarned": "Using fewer than six documents, or using six without tying them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence beyond the documents: earns the point for describing a specific relevant example not in the documents, such as the spoils system, the removal of federal deposits to pet banks, or Tyler's vetoes of Whig bank bills.",
+   "notEarned": "A vague reference to outside knowledge with no specific example does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "3.B",
+   "criterion": "Sourcing: earns the point for explaining how the audience, purpose, historical situation, or point of view of at least two documents shapes the argument.",
+   "notEarned": "Naming a document's author without explaining how it shapes the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.D",
+   "criterion": "Complexity: earns the point for a complex argument, such as qualifying the thesis by showing where presidential power grew and where it met limits, such as the Panic of 1837 or the Whig victory of 1840.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: Jackson's presidency changed the presidency to a great extent, turning the veto into a popular weapon and the president into the voice of the people, yet the new power was bounded by Congress, the courts, and the economy.\nContext: In the 1820s most states dropped property qualifications, and mass parties turned elections into popular contests. Jackson won in 1828 as the people's candidate against the elites.\nGrouping: Documents 2, 4, and 6 show the new presidency in action: the Bank veto, the nullification proclamation, and the Specie Circular, all issued by Jackson's will. Documents 3 and 5 show how the new presidency looked to its time, feared as a king by its enemies and cheered as a hero by its friends. Documents 1 and 7 show the limits and the legacy: Webster's defense of the Union and the Whigs copying Jackson's own heroic style to beat his successor.\nBeyond the documents: Jackson vetoed 12 bills, more than all his predecessors combined, and moved federal deposits to state pet banks, using the presidency against Congress and the Bank alike.\nComplexity: The presidency grew stronger in Jackson's hands, but the growth was uneven: he defended the Union against South Carolina while letting Georgia defy the Court, and his economic policies helped cause the Panic that cost his party the White House.",
+ "totalPoints": 7
+}

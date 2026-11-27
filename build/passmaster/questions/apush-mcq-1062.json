@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-1062",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.10"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 2,
+ "answerKey": "B",
+ "skills": [
+  "1.B",
+  "3.A"
+ ],
+ "themes": [
+  "ARC",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.10 The Second Great Awakening, Utopian Communities"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Religious and Social Movements"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "The photograph shows the Oneida Community in New York in the 1860s and 1870s: a large brick communal building with a tower, set on open grounds where small groups of people walk and gather. The Oneida Community was founded in 1848 by John Humphrey Noyes as a utopian community in which members shared property and labor and practiced complex marriage, the sharing of spouses within the community.",
+  "source_note": "Description records only what the photograph visibly shows; the facts about Oneida's founding, Noyes, shared property, and complex marriage come from Princeton Review, Chapter 8, and the standard account of the community. Photograph: Oneida Commune, c. 1865-1875, by Moulton and Dopp, public domain; image viewed before writing."
+ },
+ "stimulus_set": "oneida-community",
+ "source": "original; stimulus describes a public-domain photograph of the Oneida Community (c. 1865-1875)",
+ "stem": "The photograph most directly illustrates which of the following features of antebellum utopian communities?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Members lived alone in cabins scattered through the wilderness",
+   "misconception": "Thoreau lived alone in a cabin, so a utopian community can look like solitary cabins in the woods."
+  },
+  {
+   "key": "B",
+   "text": "Members lived together in one large building and shared property and labor"
+  },
+  {
+   "key": "C",
+   "text": "Members worked in factories owned by outside investors for cash wages",
+   "misconception": "Factories and wages were the era's economy, so a community can look like a factory town."
+  },
+  {
+   "key": "D",
+   "text": "Members built walled forts to defend themselves against the federal army",
+   "misconception": "Communities that broke the rules can look like forts, and the army fought in the West then."
+  }
+ ],
+ "rationales": {
+  "A": "The photograph shows one large building housing the community, not scattered solitary cabins. Thoreau's cabin was a different experiment.",
+  "B": "The big brick building with shared grounds is communal living made visible: one home, shared property, shared labor.",
+  "C": "Oneida shared property and labor among its own members; it was not a factory town paying cash wages to workers for outside investors.",
+  "D": "No walls, forts, or soldiers appear. Oneida was a peaceful community, not a fort defending itself against the army.",
+  "general": "1. Look at the building: one large brick home with a tower, not separate houses.\n2. Look at the grounds: open lawns where members walk and gather together.\n3. Name the pattern: communal living, where property and labor are shared by the whole group.\nBackground: John Humphrey Noyes founded Oneida in 1848; members also practiced complex marriage.\nRemember: the building is the belief, and one big house means one shared life."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1062",
+   "file": "u4/pr25e-ch08-q08.png",
+   "license": "Public domain",
+   "caption": "The Oneida Community in New York, photographed about 1865-1875. Members shared one large home.",
+   "alt": "An 1860s photograph of the Oneida Community's large brick communal building with a tower, set on open grounds with people walking"
+  }
+ ]
+}

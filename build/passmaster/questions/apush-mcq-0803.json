@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-0803",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.2"
+ ],
+ "lesson": "apush-u4-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.2 The Rise of Political Parties and the Era of Jefferson, B. The Supreme Court Asserts Federal Power and the Power of the Judiciary"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "An Assertive Supreme Court"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Jefferson's First Term"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Chief Justice John Marshall, Marbury v. Madison (1803), public domain. Abridged.",
+  "text": "“It is emphatically the province and duty of the judicial department to say what the law is. Those who apply the rule to particular cases, must of necessity expound and interpret that rule. If two laws conflict with each other, the courts must decide on the operation of each.”\n— Chief Justice John Marshall, Marbury v. Madison, 1803 (abridged)"
+ },
+ "stimulus_set": "marbury-1803",
+ "source": "original; stimulus is a verbatim public-domain excerpt from Marbury v. Madison (1803)",
+ "stem": "Marshall ruled that William Marbury had a right to his commission, yet Marbury lost the case. Which of the following best explains why?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Judiciary Act of 1789, the law Marbury relied on, was itself unconstitutional"
+  },
+  {
+   "key": "B",
+   "text": "The Supreme Court had no power to hear any case about federal appointments",
+   "misconception": "The Court heard the case and ruled on it; it lacked only the power to issue the order Marbury wanted."
+  },
+  {
+   "key": "C",
+   "text": "Jefferson had already delivered Marbury's commission before the case was decided",
+   "misconception": "Madison refused to deliver the commission, which is why Marbury sued in the first place."
+  },
+  {
+   "key": "D",
+   "text": "The Constitution forbids the Court from ruling on laws passed by Congress",
+   "misconception": "The whole point of the ruling was that the Court can judge whether a law fits the Constitution."
+  }
+ ],
+ "rationales": {
+  "A": "Marshall agreed Marbury had a right to his commission, but the writ Marbury wanted came from Section 13 of the Judiciary Act of 1789, which gave the Court power the Constitution did not allow it. Marshall struck that part of the law down, so the Court could not issue the order. He gave Jefferson the small victory and took the large one: the power to void a law.",
+  "B": "The Court heard the case and ruled on it. It lacked only the power to issue the order Marbury wanted.",
+  "C": "Madison refused to deliver the commission, which is why Marbury sued in the first place.",
+  "D": "The whole point of the ruling was that the Court can judge whether a law fits the Constitution.",
+  "general": "1. Split the ruling in two. Marshall says Marbury has a right, then refuses him the remedy.\n2. Ask what blocks the remedy. The law Marbury relies on gives the Court more power than Article III allows.\n3. Ask what Marshall does with that law. He declares it unconstitutional and sets it aside.\n4. Put it together. Losing the small fight over one commission won the Court the power to judge laws.\nRemember: a judge can rule against the man in front of him and still win the larger point."
+ }
+}

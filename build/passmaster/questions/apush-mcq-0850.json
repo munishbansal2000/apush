@@ -1,0 +1,92 @@
+{
+ "id": "apush-mcq-0850",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.3"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "5.A"
+ ],
+ "themes": [
+  "GEO",
+  "WXT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.3 Politics and Regional Interests, A. The Persistence of Regional Priorities"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.3 Politics and Regional Interests, B. The American System and Sectionalism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Monroe's Presidency"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "| Region | Main work | Labor | Link to other regions |\n|---|---|---|---|\n| North | Mills and workshops | Wage labor | Canals and roads east and west |\n| South | Cotton for export | Enslaved labor | Rivers and ports, mostly southward |\n| West (Ohio Valley) | Grain and livestock | Family farms | Canals and rivers to eastern markets |\n\nThe Erie Canal, opened in 1825, joined the Great Lakes to New York City.",
+  "source_note": "Table drawn from Barron's Premium 2027, Chapter 6, Topic 4.3 A-B, and 5 Steps 2024, Chapter 13, 'The Rise of Manufacturing.' Original synthesis. Image: view on the Erie Canal, published 1832 (New York Public Library)."
+ },
+ "stimulus_set": "regional-economies",
+ "source": "original; stimulus is a table drawn from the grounding books plus an 1832 Erie Canal view (public domain, in the shared image pool as pr25e-ch08-q10)",
+ "stem": "By the 1830s the South was growing more isolated from the North and the Midwest mainly because",
+ "options": [
+  {
+   "key": "A",
+   "text": "the South had no ports at all for exporting cotton abroad",
+   "misconception": "Southern ports shipped cotton around the world; the South’s isolation was about links, not ports."
+  },
+  {
+   "key": "B",
+   "text": "Northerners refused to buy Southern cotton",
+   "misconception": "Northern mills bought Southern cotton; the trade between them continued."
+  },
+  {
+   "key": "C",
+   "text": "the South had banned all roads and canals within its borders",
+   "misconception": "The South built roads and canals too; the point is that the great new links ran North to Midwest, not South."
+  },
+  {
+   "key": "D",
+   "text": "roads, canals, and migration tied North to Midwest, bypassing the South"
+  }
+ ],
+ "rationales": {
+  "A": "The South had busy ports: Charleston, Savannah, and New Orleans shipped cotton worldwide. Isolation came from missing links, not missing ports.",
+  "B": "Northern textile mills ran on Southern cotton. The two regions traded; what they did not share was the new transport web or its migrants.",
+  "C": "The South did not ban roads and canals. It built some, but the Erie Canal and the great road and rail links joined the North to the Midwest, and Southern routes ran a different way.",
+  "D": "The new roads and canals connected Northern factories with Midwestern farms, and migrants from the North settled the Midwest. The South sat outside that web, and over time the distance became political as well as economic.",
+  "general": "1. Ask what the table links. The North to the West by canal and road, and the South to the sea by river.\n2. Ask who moved. Migrants from New England and the Middle States settled Ohio and Illinois, not the Deep South.\n3. Ask what that leaves. A North and Midwest tied by trade and migration, and a South outside the tie.\n4. Put it together. Isolation is about the links that missed the South, not what the South lacked.\nBackground: roads and railroads connected the North and the Midwest but tended to bypass the South, and migration tied the North to the Midwest culturally.\nRemember: isolation is a claim about connections, so trace the links, not the inventory."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0850",
+   "file": "u4/pr25e-ch08-q10.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/%28View_on_the_Erie_Canal.%29_%283990000597%29.jpg",
+   "license": "Public domain",
+   "caption": "View on the Erie Canal, published 1832",
+   "alt": "A canal boat on a calm waterway between low banks, with a towpath and trees, showing the Erie Canal in use"
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-0986",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.8"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, A. The Second Two-Party System: The Democrats and the Whigs"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Bank War"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "Published in 1832, the cartoon shows President Andrew Jackson in a crown and royal robes, holding a scepter in one hand and a scroll labeled \"VETO\" in the other. He stands on torn papers, including one labeled \"CONSTITUTION of the UNITED STATES.\" The caption reads \"KING ANDREW THE FIRST.\"",
+  "source_note": "Political cartoon \"King Andrew the First,\" published 1832, artist unknown (Library of Congress). Public domain; image viewed before writing."
+ },
+ "stimulus_set": "king-andrew-48",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The cartoonist's decision to show Jackson standing on the torn Constitution most directly suggests that his critics believed Jackson had",
+ "options": [
+  {
+   "key": "A",
+   "text": "ignored the Supreme Court's ruling in Worcester v. Georgia",
+   "misconception": "Jackson's defiance of the Court is a famous charge, so it is easy to attach it to any image of him breaking rules."
+  },
+  {
+   "key": "B",
+   "text": "given the states too much power over federal law",
+   "misconception": "Jackson came from a states'-rights tradition, so it is easy to assume he always sided with the states."
+  },
+  {
+   "key": "C",
+   "text": "allowed Congress to control the Second Bank",
+   "misconception": "The Bank fight involved Congress, so it is easy to read the cartoon as a fight about who controls the Bank."
+  },
+  {
+   "key": "D",
+   "text": "claimed presidential power beyond the Constitution's limits"
+  }
+ ],
+ "rationales": {
+  "A": "Jackson did refuse to enforce Worcester, but the cartoon's veto scroll and crown point to his vetoes, not to the Cherokee cases.",
+  "B": "Jackson defended federal power against South Carolina's nullification, so giving states too much power is the opposite of his record.",
+  "C": "Jackson fought to destroy the Bank, not to hand it to Congress, and the cartoon shows him trampling the Constitution, not Congress.",
+  "D": "Torn paper labeled 'CONSTITUTION of the UNITED STATES' under a crowned president says his power broke constitutional limits.",
+  "general": "1. Read the floor. The torn paper under Jackson's feet is labeled 'CONSTITUTION of the UNITED STATES.'\n2. Read the figure. A crowned president standing on the Constitution says his power went past what the document allows.\nBackground: his critics called his vetoes and his removal of Bank deposits the acts of a king, not a president.\nRemember: in a cartoon, what lies underfoot is the thing the artist says was crushed."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0986",
+   "file": "u4/pr25e-test2-q27.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/King_Andrew_the_First_%28political_cartoon_of_President_Andrew_Jackson%29.jpg",
+   "license": "Public domain",
+   "caption": "King Andrew the First, 1832. Jackson in crown and robes, holding a veto scroll.",
+   "alt": "A political cartoon of President Andrew Jackson in a crown and royal robes, holding a scepter and a scroll labeled VETO, standing on torn papers including the Constitution"
+  }
+ ]
+}

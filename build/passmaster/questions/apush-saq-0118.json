@@ -1,0 +1,87 @@
+{
+ "id": "apush-saq-0118",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.8"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "skills": [
+  "3.A",
+  "2.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, A. The Second Two-Party System: The Democrats and the Whigs"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Bank War"
+   }
+  ],
+  "primary_sources": [
+   "Andrew Jackson, veto message, July 10, 1832"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "\"It is to be regretted that the rich and powerful too often bend the acts of government to their selfish purposes. Distinctions in society will always exist under every just government. ... [W]hen the laws undertake to add to these natural and just advantages artificial distinctions, to grant titles, gratuities, and exclusive privileges, to make the rich richer and the potent more powerful, the humble members of society — the farmers, mechanics, and laborers — who have neither the time nor the means of securing like favors to themselves, have a right to complain of the injustice of their government.\" — Andrew Jackson, veto message, July 10, 1832",
+  "source_note": "Andrew Jackson, veto message returning the Bank bill to the Senate, July 10, 1832. Public domain; wording verified against the Library of Congress text."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus as described in the stimulus source note",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly identify Jackson's claim about who benefits from the Bank.",
+   "modelAnswer": "Jackson claimed the Bank's privileges benefited the rich and powerful, who bent government acts to their selfish purposes. Ordinary farmers, mechanics, and laborers were left without like favors.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying Jackson's claim, such as the Bank serving the rich and powerful at the expense of ordinary people.",
+     "notEarned": "Naming the Bank or the veto without stating who Jackson says benefits does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason Jackson vetoed the Bank's recharter in 1832.",
+   "modelAnswer": "Jackson believed the Bank granted exclusive privileges that made the rich richer and the potent more powerful. He saw the recharter as a departure from equal protection under the law.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason for the veto, such as the Bank's privileges for the rich, its concentration of power, or its breach of equal protection.",
+     "notEarned": "Saying Jackson disliked the Bank without giving a reason does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE way the veto message shows Jackson's view of the presidency.",
+   "modelAnswer": "Jackson used the veto as a popular weapon, speaking directly to ordinary voters against Congress and the Bank. He also claimed each branch must judge the Constitution for itself, rather than deferring to the Supreme Court.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one feature of Jackson's view of the presidency, such as the veto as a popular tool or the president's independent judgment of the Constitution.",
+     "notEarned": "Describing the Bank's powers without addressing Jackson's view of the presidency does not earn the point."
+    }
+   ]
+  }
+ ]
+}

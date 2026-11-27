@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-0860",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.4"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "3.A",
+  "2.C"
+ ],
+ "themes": [
+  "MIG",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.4 America on the World Stage, A. Trade, Diplomacy, and the Expansion of American Influence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "The Louisiana Purchase"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The Louisiana Purchase"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "map",
+  "text": "This map, titled “Territory of Louisiana 1803–1819,” shows the Louisiana Purchase territory shaded red and labeled “LOUISIANA PURCHASE.” A note in the corner reads: “Louisiana Purchase Territory ceded by FRANCE to the UNITED STATES by treaty of April 30, 1803, as asserted and maintained by the American Government.” The shaded land stretches from the Mississippi River west to the Rocky Mountains and from the Gulf of Mexico north to Canada. New Orleans sits at the mouth of the Mississippi River.",
+  "source_note": "Map of the Louisiana Purchase Territory, National Archives (NARA 594889); public domain."
+ },
+ "stimulus_set": "louisiana-purchase-map",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "A historian studying the map would most likely note that it leaves out which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Native peoples who already lived on the shaded land"
+  },
+  {
+   "key": "B",
+   "text": "The Mississippi River as the eastern edge of the purchase",
+   "misconception": "The river is drawn on the map and forms the eastern edge of the red shading."
+  },
+  {
+   "key": "C",
+   "text": "The city of New Orleans at the river's mouth",
+   "misconception": "New Orleans appears on the map at the mouth of the Mississippi."
+  },
+  {
+   "key": "D",
+   "text": "The date the treaty was signed",
+   "misconception": "The corner note gives the date: April 30, 1803."
+  }
+ ],
+ "rationales": {
+  "A": "The map shades a vast territory as if it were empty land changing hands between France and the United States. Dozens of Native nations already lived there, and none consented to the sale.",
+  "B": "The Mississippi River is drawn clearly and bounds the red shading on the east, so it is not left out.",
+  "C": "New Orleans is marked on the map at the mouth of the Mississippi, so it is shown, not left out.",
+  "D": "The corner note states the treaty date, April 30, 1803, so the date is on the map.",
+  "general": "1. Ask what the map shows. It shows a transfer of land between two governments, France and the United States.\n2. Ask who is missing. The red shading covers the homelands of dozens of Native nations, and no Native name appears on the transfer.\n3. Put it together. A map of a sale that leaves out the people living on the land is telling a one-sided story.\nBackground: Jefferson hoped Native peoples would become farmers, but he also laid the ground for removal policies that later presidents carried out.\nRemember: when a map shows land changing hands, ask whose home that land already was."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0860",
+   "file": "u3/saq-set-24-q3.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Map_of_the_Louisiana_Purchase_Territory_-_NARA_-_594889.jpg",
+   "license": "Public domain",
+   "caption": "Territory of Louisiana, 1803–1819, showing the Louisiana Purchase",
+   "alt": "Map of the United States with the Louisiana Purchase territory shaded red from the Mississippi River to the Rocky Mountains"
+  }
+ ]
+}

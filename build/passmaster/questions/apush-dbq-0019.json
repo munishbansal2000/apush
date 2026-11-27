@@ -1,0 +1,154 @@
+{
+ "id": "apush-dbq-0019",
+ "type": "dbq",
+ "unit": 4,
+ "topics": [
+  "4.2"
+ ],
+ "lesson": "apush-u4-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.2 The Rise of Political Parties and the Era of Jefferson, B. The Supreme Court Asserts Federal Power and the Power of the Judiciary"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "An Assertive Supreme Court"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Jefferson's First Term"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus_set": null,
+ "source": "original; documents are public-domain primary sources or paraphrases of them (see each document's sourcing note)",
+ "prompt": "Evaluate the extent to which the Marshall Court strengthened the federal government, 1801-1832.",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "1828",
+   "title": "The South Carolina Exposition and Protest",
+   "source": "South Carolina Exposition and Protest (John C. Calhoun, 1828), paraphrased. Public domain.",
+   "sourcing": "Calhoun, writing anonymously as Vice President, protesting the Tariff of 1828; his argument restates the 1798 claim that a state may judge federal overreach, a claim the Court had spent thirty years rejecting.",
+   "text": "The Exposition argued that the states had formed the Constitution as a compact, that each state kept the right to judge when the federal government overstepped it, and that a state could declare an unauthorized federal act void within its own borders — the same claim Jefferson and Madison had made in 1798, now aimed at the tariff."
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "1803",
+   "title": "Marbury: a law against the Constitution is void",
+   "source": "Chief Justice John Marshall, Marbury v. Madison (1803), abridged. Public domain.",
+   "sourcing": "Marshall writing the Court's opinion in a case about an undelivered judicial commission.",
+   "text": "“Certainly all those who have framed written constitutions contemplate them as forming the fundamental and paramount law of the nation, and consequently the theory of every such government must be, that an act of the legislature, repugnant to the constitution, is void.”"
+  },
+  {
+   "n": 3,
+   "kind": "text",
+   "date": "1819",
+   "title": "McCulloch on the bank and the tax",
+   "source": "Chief Justice John Marshall, McCulloch v. Maryland (1819), abridged. Public domain.",
+   "sourcing": "Marshall writing for a unanimous Court in a fight over Maryland's tax on the Second Bank.",
+   "text": "“Let the end be legitimate, let it be within the scope of the constitution, and all means which are appropriate, which are plainly adapted to that end, which are not prohibited, but consist with the letter and spirit of the constitution, are constitutional. That the power to tax involves the power to destroy.”"
+  },
+  {
+   "n": 4,
+   "kind": "text",
+   "date": "1821",
+   "title": "Cohens v. Virginia",
+   "source": "Cohens v. Virginia (1821), paraphrased. Public domain.",
+   "sourcing": "The Court ruling in a case that began in a Virginia court over the sale of lottery tickets.",
+   "text": "The Court ruled that it could hear appeals from state courts, affirming federal judicial power over the states. At the same time it upheld Virginia's right to forbid the sale of lottery tickets inside Virginia."
+  },
+  {
+   "n": 5,
+   "kind": "text",
+   "date": "1824",
+   "title": "Gibbons v. Ogden",
+   "source": "Gibbons v. Ogden (1824), paraphrased. Public domain.",
+   "sourcing": "The Court ruling in a fight over a New York steamboat monopoly.",
+   "text": "The Court struck down New York's grant of a steamboat monopoly on waters between New York and New Jersey, ruling that only Congress could regulate commerce between the states."
+  },
+  {
+   "n": 6,
+   "kind": "text",
+   "date": "September 1819",
+   "title": "Jefferson warns against the judiciary",
+   "source": "Thomas Jefferson to Spencer Roane, September 6, 1819, abridged. Public domain.",
+   "sourcing": "Jefferson writing privately after McCulloch, alarmed at the Court's growing power.",
+   "text": "“The constitution, on this hypothesis, is a mere thing of wax in the hands of the judiciary, which they may twist, and shape into any form they please.”"
+  },
+  {
+   "n": 7,
+   "kind": "text",
+   "date": "1832",
+   "title": "Worcester v. Georgia",
+   "source": "Chief Justice John Marshall, Worcester v. Georgia (1832), abridged. Public domain.",
+   "sourcing": "Marshall writing for the Court in a case the Jackson administration then ignored.",
+   "text": "“The Cherokee nation is a distinct community, occupying its own territory, in which the laws of Georgia can have no force.”"
+  }
+ ],
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which the Marshall Court strengthened the federal government, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of strengthening does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the party battles of the 1790s, the new republic's fragile institutions, or the Napoleonic Wars in Europe.",
+   "notEarned": "A sentence of background with no link to the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (first point): earns the point for describing the content of at least three documents relevant to the argument, such as Marbury on judicial review, McCulloch on the bank, or Gibbons on commerce.",
+   "notEarned": "Quoting documents without describing what they show does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support the argument, including documents that show the limits of the Court's power.",
+   "notEarned": "Using fewer than six documents, or using six without tying them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence beyond the documents: earns the point for describing a specific relevant example not in the documents, such as Fletcher v. Peck (1810), Dartmouth College v. Woodward (1819), or Martin v. Hunter's Lessee (1816).",
+   "notEarned": "A vague reference to outside knowledge with no specific example does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Sourcing: earns the point for explaining how the audience, purpose, historical situation, or point of view of at least two documents shapes the argument, such as Jefferson writing privately to Roane, or Marshall writing a unanimous opinion to speak for the whole Court.",
+   "notEarned": "Naming a document's author without explaining how it shapes the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Complexity: earns the point for a complex argument, such as qualifying the thesis by showing where the Court strengthened the federal government and where its power stopped, or weighing the Court's rulings against the resistance they met.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: The Marshall Court strengthened the federal government decisively, giving it the final word on the Constitution and shielding its institutions from the states, but its strength had a hard limit: it could rule, and others could refuse to obey.\nContext: The Constitution left the Court's power undefined, and the 1790s had seen states claim the right to judge federal law for themselves, in the Kentucky and Virginia Resolutions. The Federalists lost the elected branches in 1800 and turned to the bench.\nEvidence of strengthening: Document 2 claims judicial review, the power to void a law. Document 3 reads Congress's powers broadly and bars a state from taxing a federal bank. Document 5 gives Congress alone the power over trade between states, and Document 4 brings state courts under federal appeal.\nEvidence of limits: Document 1 shows the states'-rights claim outliving the Court's answers: in 1828 South Carolina restated it against the tariff, and Document 6 shows Jefferson's fury at what he saw as judicial overreach. Document 7 shows the limit in action: the Court ruled for the Cherokees, and the Jackson administration ignored it.\nBeyond the documents: Fletcher v. Peck (1810) first voided a state law, and Dartmouth College v. Woodward (1819) shielded private contracts from state interference, extending the same federal logic.\nSourcing: Jefferson writes privately to Roane, so his alarm is candid, while Marshall writes unanimous opinions meant to speak for the whole Court and bind the country.\nComplexity: The Court's strength was legal, not physical: it built a doctrine of federal supremacy that outlived Marshall, yet Worcester proves a ruling without an enforcer is only words, so the Court's power depended on the other branches after all.",
+ "totalPoints": 7
+}

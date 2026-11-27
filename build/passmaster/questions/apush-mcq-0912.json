@@ -1,0 +1,72 @@
+{
+ "id": "apush-mcq-0912",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.5"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 Market Revolution: Economic Transformations, B. Advances in Technology"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Market Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.5 B: The major advance in communication in this period was the telegraph. Samuel Morse developed and patented it and sent the first message, \"What hath God wrought?\", in 1844. The first line ran from Washington, D.C., to Baltimore. By 1850, telegraph lines, usually built alongside railroad tracks, connected the country. A clothing maker in Massachusetts could send orders to Southern cotton growers in minutes; before, it could take days to send information that far.",
+  "source_note": "Secondary text: paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.5 B. The 1844 first message is quoted from Morse's own words as given in Barron's. Paraphrased, not quoted, except for the short Morse phrase."
+ },
+ "stimulus_set": "telegraph-1844",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "Telegraph lines were usually built alongside railroad tracks mainly because",
+ "options": [
+  {
+   "key": "A",
+   "text": "the two systems served the same routes between the same towns"
+  },
+  {
+   "key": "B",
+   "text": "trains needed telegraph wires to pull their cars",
+   "misconception": "Locomotives ran on steam, not on telegraph wires; the wires carried messages, not pulling power."
+  },
+  {
+   "key": "C",
+   "text": "the Constitution required them to share one right of way",
+   "misconception": "No constitutional rule joined telegraphs and railroads; builders chose the shared route for practical reasons."
+  },
+  {
+   "key": "D",
+   "text": "Morse owned the railroad companies",
+   "misconception": "Morse developed the telegraph; he did not own the railroads, which were separate companies."
+  }
+ ],
+ "rationales": {
+  "A": "Railroads and telegraphs both linked the same commercial towns, so the wire followed the graded, cleared rail route.",
+  "B": "A steam locomotive pulls its own cars. The telegraph wire beside the track carried messages, not motive power.",
+  "C": "The Constitution says nothing about telegraph routes. The shared path was a practical choice, not a legal order.",
+  "D": "Morse patented the telegraph. The railroads belonged to many different companies, not to him.",
+  "general": "1. Ask what the railroad already had. A graded, cleared path joining the same towns the telegraph needed to reach.\n2. Ask what the telegraph needed. Poles and wire along a route between those towns.\n3. Put it together. Building beside the tracks was the cheapest way to follow the routes commerce already used.\nBackground: By 1850, telegraph lines connected the country, mostly running beside the rails.\nRemember: new networks often follow old ones; ask what path already exists."
+ }
+}

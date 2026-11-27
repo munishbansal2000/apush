@@ -1,0 +1,172 @@
+{
+ "id": "apush-dbq-0026",
+ "type": "dbq",
+ "unit": 4,
+ "topics": [
+  "4.7"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.7 Expanding Democracy, A. Participatory Democracy and an Expanding Electorate"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, A. The Second Two-Party System: The Democrats and the Whigs"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Election of 1824"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "President Jackson"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Whig Party and the Second Party System"
+   }
+  ],
+  "primary_sources": [
+   "Alexis de Tocqueville, Democracy in America, vol. 2 (1840)"
+  ]
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Seven documents, 1824-1841. See documents."
+ },
+ "stimulus_set": null,
+ "source": "original; documents are public-domain primary sources or paraphrases of them (see each document's sourcing note); Tocqueville wording verified against the Bill of Rights Institute excerpts",
+ "prompt": "Evaluate the extent to which political parties transformed American democracy in the period 1824-1848.",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "table",
+   "date": "1824",
+   "title": "The election of 1824",
+   "source": "Electoral vote totals for the presidential election of 1824 (public record).",
+   "sourcing": "Election returns for a four-way race that no candidate won outright.",
+   "text": "Electoral votes: Andrew Jackson 99, John Quincy Adams 84, William H. Crawford 41, Henry Clay 37. No candidate won a majority, so the House of Representatives chose the president. The House chose Adams, and Adams named Clay secretary of state."
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "1829",
+   "title": "Jackson defends rotation in office",
+   "source": "Andrew Jackson, first annual message to Congress, 1829, paraphrased. Public domain.",
+   "sourcing": "The new president explains his policy of replacing officeholders.",
+   "text": "Jackson argued that long tenure in office corrupted public officials and that rotation in office would keep government honest. He replaced many of Adams's officeholders with his own supporters, holding that any reasonably capable citizen could do a government job."
+  },
+  {
+   "n": 3,
+   "kind": "text",
+   "date": "1833",
+   "title": "The Whigs organize",
+   "source": "Account of the formation of the Whig Party, paraphrased from Barron's Premium 2027, Chapter 6, Topic 4.8 A. Public domain.",
+   "sourcing": "An account of the formation of the second party system, written from the opposition's side.",
+   "text": "Jackson's opponents, led by Henry Clay, organized the Whig Party in 1833. The Whigs opposed Jackson's strong presidency and favored a national bank, protective tariffs, and federally funded internal improvements."
+  },
+  {
+   "n": 4,
+   "kind": "text",
+   "date": "1836",
+   "title": "Van Buren wins",
+   "source": "Account of the election of 1836, paraphrased from 5 Steps to a 5 2024, Chapter 13. Public domain.",
+   "sourcing": "An account of the 1836 election and of party organization.",
+   "text": "Jackson's chosen successor, Martin Van Buren, won the election of 1836. Van Buren had built the Democratic Party into a disciplined national organization, the first highly organized political party in American history."
+  },
+  {
+   "n": 5,
+   "kind": "image",
+   "date": "1840",
+   "title": "Harrison campaign lithograph",
+   "source": "Lithograph “General Wm. H. Harrison of Tippecanoe, Fort Meigs and the Thames,” published 1840 (Library of Congress). Public domain.",
+   "sourcing": "A campaign portrait published in the election year, meant to sell the candidate to voters.",
+   "figure": "u4/barrons-2027-ch06-09.jpg",
+   "text": "The lithograph shows General William Henry Harrison in military uniform, with a wreath below naming him “of Tippecanoe, Fort Meigs and the Thames.”"
+  },
+  {
+   "n": 6,
+   "kind": "text",
+   "date": "1840",
+   "title": "Log cabin and hard cider",
+   "source": "Account of the Whig campaign of 1840, paraphrased from standard histories. Public domain.",
+   "sourcing": "An account of the Whig campaign of 1840, telling the campaign's own story.",
+   "text": "Democrats sneered that Harrison would be content with a log cabin and hard cider. The Whigs embraced the image, presenting the wealthy Virginia general as a humble frontiersman, and campaigned under the slogan “Tippecanoe and Tyler Too.”"
+  },
+  {
+   "n": 7,
+   "kind": "text",
+   "date": "1841",
+   "title": "Tyler takes the oath",
+   "source": "Account of the presidential succession of 1841, paraphrased from 5 Steps to a 5 2024, Chapter 13. Public domain.",
+   "sourcing": "An account of the first time a vice president succeeded a dead president.",
+   "text": "Harrison died a month after his inauguration in 1841. Vice President John Tyler took the presidential oath and claimed the full powers of the presidency, setting the precedent that a vice president becomes president, not merely acting president, on a president's death."
+  }
+ ],
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent of the change, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of change does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the Era of Good Feelings, the fall of property qualifications, or the rise of mass parties.",
+   "notEarned": "A sentence of background with no link to the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (first point): earns the point for describing the content of at least three documents relevant to the argument.",
+   "notEarned": "Quoting documents without describing what they show does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support the argument, including documents that show the limits of the change.",
+   "notEarned": "Using fewer than six documents, or using six without tying them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence beyond the documents: earns the point for describing a specific relevant example not in the documents, such as the spoils system, the nominating convention, or the election of 1840.",
+   "notEarned": "A vague reference to outside knowledge with no specific example does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "3.B",
+   "criterion": "Sourcing: earns the point for explaining how the audience, purpose, historical situation, or point of view of at least two documents shapes the argument.",
+   "notEarned": "Naming a document's author without explaining how it shapes the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.D",
+   "criterion": "Complexity: earns the point for a complex argument, such as qualifying the thesis by showing where politics became more democratic and where older limits held.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: Political parties transformed American democracy to a great extent between 1824 and 1848, turning elections from elite contests into mass campaigns run by disciplined organizations, though the parties still served only the white male electorate and left the deepest exclusions untouched.\nContext: In the Era of Good Feelings one party ruled and congressmen picked nominees in caucus. The disputed election of 1824 broke that order, and by the 1830s two mass parties, Democrats and Whigs, competed for a broadened electorate.\nGrouping: Documents 1 and 2 show the break: a disputed election and Jackson's rotation in office. Documents 3 and 4 show the new organizations: the Whigs and Van Buren's disciplined Democrats. Documents 5, 6, and 7 show mass campaigning and its consequences: a hero's portrait, a log-cabin slogan, and a succession no one had planned for.\nBeyond the documents: Tocqueville observed that Americans constantly formed associations, and parties were the largest of them; nominating conventions replaced the caucus, so party members chose nominees.\nComplexity: Parties made democracy mass and organized, yet they also made it tribal: campaigns ran on personality and slogan, and the spoils system tied government jobs to party loyalty.",
+ "totalPoints": 7
+}

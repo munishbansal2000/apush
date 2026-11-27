@@ -1,0 +1,96 @@
+{
+ "id": "apush-saq-0106",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.3"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "skills": [
+  "1.B",
+  "5.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.3 Politics and Regional Interests, A. The Persistence of Regional Priorities"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.3 Politics and Regional Interests, B. The American System and Sectionalism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Monroe's Presidency"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of Barron’s Premium 2027, Chapter 6, on Topic 4.3: In the early nineteenth century, what each region earned a living from mattered more in politics than what the nation as a whole needed. Factories and wage work were starting in the North, while the South’s wealth came increasingly from cotton grown by enslaved people. Trade tied the regions closer together, yet the split between free labor and slave labor kept widening.",
+  "source_note": "Secondary text: paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.3 A. Paraphrased, not quoted."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus is a secondary-text paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.3 A",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly explain ONE way the growth of industry in the North shaped national politics in the period 1816-1840.",
+   "modelAnswer": "Northern manufacturers wanted protection from British goods, so they pressed Congress for tariffs like those of 1816, 1824, and 1828. The tariff became a national fight because it helped Northern mills while raising prices for everyone else.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one way Northern industry shaped national politics, such as manufacturers pressing for protective tariffs.",
+     "notEarned": "Naming the tariff with no link to Northern industry does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain a SECOND way regional economic interests shaped national politics in the same period.",
+   "modelAnswer": "Southern planters depended on exporting cotton and importing manufactured goods, so they opposed protective tariffs and backed the claim that a state could judge federal law. Their opposition led to South Carolina’s nullification of the tariff in 1832.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining a second way regional interests shaped national politics, such as Southern planters opposing tariffs or backing nullification.",
+     "notEarned": "Repeating the answer to part (a), or naming nullification with no link to Southern economic interests, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE way the federal government tried to link the regions, and why that effort had limited success.",
+   "modelAnswer": "Clay’s American System promised roads, canals, tariffs, and a national bank to bind the regions together. It had limited success because the tariff and the Bank split the sections, and federal road-building stalled on constitutional doubts, so New York built the Erie Canal itself.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one federal effort to link the regions and why it had limited success, such as the American System splitting the sections or constitutional doubts blocking internal improvements.",
+     "notEarned": "Naming the American System with no effort and no limit explained does not earn the point."
+    }
+   ]
+  }
+ ]
+}

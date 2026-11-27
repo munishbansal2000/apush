@@ -1,0 +1,88 @@
+{
+ "id": "apush-saq-0115",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.7"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "SOC",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.7 Expanding Democracy, A. Participatory Democracy and an Expanding Electorate"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "Jacksonian Democracy"
+   }
+  ],
+  "primary_sources": [
+   "Alexis de Tocqueville, Democracy in America, vol. 2 (1840)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "“Americans of all ages, all conditions, and all dispositions, constantly form associations. They have not only commercial and manufacturing companies, in which all take part, but associations of a thousand other kinds — religious, moral, serious, futile, extensive, or restricted, enormous or diminutive.” — Alexis de Tocqueville, Democracy in America, Volume 2 (1840).",
+  "source_note": "Alexis de Tocqueville, Democracy in America, vol. 2 (1840), Chapter 5. Verbatim quotation (Reeve translation), verified against the Bill of Rights Institute excerpts. Public domain."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus as described in the stimulus source note",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly identify what Tocqueville observed Americans doing.",
+   "modelAnswer": "Tocqueville observed that Americans of all ages and conditions constantly formed voluntary associations. They associated for every purpose, from business to religion to charity.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying Tocqueville's observation that Americans constantly formed voluntary associations.",
+     "notEarned": "Restating the quotation with no identification of the observation does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE way voluntary associations supported democracy in the 1830s.",
+   "modelAnswer": "Associations let ordinary people act together without waiting for government or a great lord. Democratic citizens learned to pursue common goals on their own.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one way associations supported democracy, such as letting ordinary people act together, building civic habits, or replacing aristocratic leadership.",
+     "notEarned": "Saying associations were important without explaining how they supported democracy does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limitation of Tocqueville's observation as evidence about American democracy.",
+   "modelAnswer": "Tocqueville visited for nine months and saw the free states most closely. His picture reflects the world of free white men more than the enslaved South or Native peoples.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limitation, such as the short visit, the focus on free states and free white men, or the exclusion of enslaved people and Native peoples.",
+     "notEarned": "Saying the observation is limited without naming what it leaves out does not earn the point."
+    }
+   ]
+  }
+ ]
+}

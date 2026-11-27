@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-0996",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.8"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, A. The Second Two-Party System: The Democrats and the Whigs"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Bank War"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "The engraving, published in London in March 1831, shows the Second Bank of the United States in Philadelphia: a Greek temple front with tall columns, wide steps, and well-dressed people coming and going. In 1836, Jackson ordered that federal land be sold only for gold or silver coin, not paper money. The order was called the Specie Circular.",
+  "source_note": "Engraving: 'United States Bank, Philadelphia,' drawn by C. Burton, engraved by Fenner, Sears & Co., published London, March 1831. Public domain; image viewed before writing. Specie Circular described from Barron's Premium 2027, Chapter 6, Topic 4.8 A."
+ },
+ "stimulus_set": "bank-economy-48",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "Why did Jackson issue the Specie Circular in 1836?",
+ "options": [
+  {
+   "key": "A",
+   "text": "To raise money to pay for the Bank's recharter",
+   "misconception": "The Circular is a Jackson money policy, so it is easy to tie it to the Bank he fought."
+  },
+  {
+   "key": "B",
+   "text": "To make it easier for settlers to buy land on credit",
+   "misconception": "Helping settlers buy land sounds like Jackson's politics, so it is easy to read the order as help."
+  },
+  {
+   "key": "C",
+   "text": "To curb land speculation by requiring gold or silver for land"
+  },
+  {
+   "key": "D",
+   "text": "To fund the Force Bill against South Carolina",
+   "misconception": "The Force Bill is Jackson's other famous use of force, so it is easy to attach the Circular to it."
+  }
+ ],
+ "rationales": {
+  "A": "Jackson had killed the recharter with his veto in 1832; the Circular was about land sales, not paying for a bank he opposed.",
+  "B": "Requiring gold or silver made buying land harder, not easier, since settlers holding paper money could no longer use it.",
+  "C": "Paper money from state banks was fueling a land boom, so Jackson ordered land sold only for hard coin to slow the speculation.",
+  "D": "The Force Bill belonged to the nullification crisis of 1833, three years earlier, and needed no funding from land sales.",
+  "general": "1. Name the order. From 1836, federal land could be bought only with gold or silver coin, called specie, not paper money.\n2. Ask what paper money was doing. State banks, freed from the Bank's discipline, had printed paper that fed a rush to buy land.\nBackground: Jackson distrusted paper money and wanted hard coin to cool the speculation.\nRemember: when a policy names a kind of money, ask what the other kind of money was doing."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0996",
+   "file": "u4/second-bank-philadelphia.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:United_States_Bank%2C_Philadelphia_-_drawn_by_C._Burton%2C_N.Y._%3B_engraved_%26_printed_by_Fenner%2C_Sears_%26_Co._LCCN2015650264.jpg",
+   "license": "Public domain",
+   "caption": "The Second Bank of the United States, Philadelphia, 1831. A Greek temple front with tall columns.",
+   "alt": "An engraving of the Second Bank of the United States in Philadelphia: a Greek temple front with tall columns, wide steps, and well-dressed people coming and going"
+  }
+ ]
+}

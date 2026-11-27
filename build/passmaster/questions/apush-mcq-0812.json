@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0812",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.2"
+ ],
+ "lesson": "apush-u4-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 2,
+ "answerKey": "C",
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.2 The Rise of Political Parties and the Era of Jefferson, A. Political Parties and the Rise of the First Two-Party System"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "Renewal of War in Europe"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Jefferson's Second Term"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "American cartoon, 1807-1808, public domain, via Wikimedia Commons (Ograbme.jpg). The cartoon's caption reads “OGRABME, or The American Snapping-turtle.”",
+  "text": "An American cartoon of 1807-1808: a snapping turtle labeled “Ograbme” — “embargo” spelled backward — bites an American merchant carrying a barrel of goods for export, while a ship waits in the harbor. The merchant cries, “Oh! this cursed Ograbme.”"
+ },
+ "stimulus_set": "ograbme-1808",
+ "source": "original; stimulus image from the shared pool, the Ograbme cartoon (1807-1808), public domain",
+ "stem": "The cartoon most directly criticizes which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Tariff of 1816, which taxed imported manufactured goods",
+   "misconception": "The tariff came in 1816, years after this cartoon, and it taxed imports rather than banning exports."
+  },
+  {
+   "key": "B",
+   "text": "The Non-Intercourse Act, which reopened trade with most nations",
+   "misconception": "The Non-Intercourse Act replaced the embargo in 1809, after this cartoon was drawn."
+  },
+  {
+   "key": "C",
+   "text": "The Embargo Act of 1807, which banned exports to all foreign ports"
+  },
+  {
+   "key": "D",
+   "text": "The Louisiana Purchase, which doubled the size of the United States",
+   "misconception": "The purchase was a land deal of 1803; the cartoon shows a turtle stopping exports, not a map of new land."
+  }
+ ],
+ "rationales": {
+  "A": "The tariff came in 1816, years after this cartoon, and it taxed imports rather than banning exports.",
+  "B": "The Non-Intercourse Act replaced the embargo in 1809, after this cartoon was drawn.",
+  "C": "The turtle's name gives it away: “Ograbme” is “embargo” spelled backward, and the beast is stopping an American merchant from exporting his goods. Jefferson's Embargo Act of 1807 banned all American exports in the hope of forcing Britain and France to respect American shipping. Background: the cartoon ran in 1807-1808, while the embargo was strangling the ports it was meant to protect.",
+  "D": "The purchase was a land deal of 1803. The cartoon shows a turtle stopping exports, not a map of new land.",
+  "general": "1. Read the turtle's name. “Ograbme” is “embargo” spelled backward.\n2. Look at the victim. An American merchant, bitten while carrying goods for export.\n3. Ask which law did that. The Embargo Act of 1807 banned American exports to all foreign ports.\n4. Put it together. The cartoon turns a law into a snapping turtle biting its own countryman.\nRemember: a cartoon's joke is usually its argument, so read the label before the picture."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0812",
+   "file": "u4/original-misc-worldstage-02.jpg",
+   "caption": "Ograbme, the American snapping-turtle, 1807-1808",
+   "alt": "A snapping turtle labeled Ograbme bites an American merchant carrying a barrel, while a ship waits in the harbor",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Ograbme.jpg",
+   "license": "Public domain"
+  }
+ ]
+}

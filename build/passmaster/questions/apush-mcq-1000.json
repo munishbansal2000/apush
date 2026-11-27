@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-1000",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.8"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, B. Contention Between Whites and American Indians over Western Lands"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "Native American Removal"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The Jackson Presidency and Jacksonian Democracy"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "The portrait, published in 1838, shows Sequoyah (Se-Quo-Yah), a Cherokee leader, holding a tablet covered with the characters of the Cherokee syllabary, the writing system he invented. The Cherokee used the syllabary to print their own newspaper, the Cherokee Phoenix, beginning in 1828.",
+  "source_note": "Portrait 'Se-Quo-Yah,' McKenney-Hall series, drawn, printed and coloured at I. T. Bowen's Lithographic Establishment, Philadelphia, published 1838 (Library of Congress). Public domain; image viewed before writing."
+ },
+ "stimulus_set": "cherokee-removal-48",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "In Worcester v. Georgia (1832), the Supreme Court ruled that Georgia's laws had no force in Cherokee territory. Why did the ruling not stop removal?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Supreme Court reversed itself the next year",
+   "misconception": "A ruling that changed nothing invites the thought that the Court itself took it back."
+  },
+  {
+   "key": "B",
+   "text": "The Cherokee agreed to leave immediately",
+   "misconception": "A treaty exists, so it is easy to think the whole nation agreed to leave."
+  },
+  {
+   "key": "C",
+   "text": "Jackson refused to enforce the ruling"
+  },
+  {
+   "key": "D",
+   "text": "Congress repealed the Indian Removal Act",
+   "misconception": "A law that failed invites the thought that Congress repealed it."
+  }
+ ],
+ "rationales": {
+  "A": "The Court never reversed Worcester; the ruling stood, but no one in power enforced it.",
+  "B": "Most Cherokee, led by John Ross, resisted removal for years; only a small minority signed the Treaty of New Echota in 1835.",
+  "C": "Jackson sided with Georgia and did not enforce the Court's decision, so Georgia kept pressing removal and federal troops later carried it out.",
+  "D": "Congress never repealed the Removal Act of 1830; the law stayed on the books while removal went ahead.",
+  "general": "1. Read the ruling. Worcester said the Cherokee were a distinct community where Georgia's laws had no force.\n2. Ask who enforces a ruling. Courts decide; presidents enforce, and Jackson, who backed Georgia, did not act.\nBackground: Georgia pressed on, and in 1838 federal troops forced the Cherokee west on the Trail of Tears.\nRemember: a court ruling is only as strong as the enforcement behind it — ask who was supposed to enforce it."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1000",
+   "file": "u4/barrons-2027-ch06-04.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Se-Quo-Yah_-_R.T._%3B_drawn%2C_printed_%26_coloured_at_I.T._Bowen%27s_Lithographic_Establishment%2C_No._94_Walnut_St._LCCN93504544.jpg",
+   "license": "Public domain",
+   "caption": "Se-Quo-Yah, 1838. Sequoyah holds a tablet of Cherokee syllabary characters.",
+   "alt": "A portrait of Sequoyah, a Cherokee leader in a red turban, holding a tablet covered with the characters of the Cherokee syllabary"
+  }
+ ]
+}

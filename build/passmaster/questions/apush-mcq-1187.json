@@ -1,0 +1,86 @@
+{
+  "answerKey": "C",
+  "difficulty": 2,
+  "figures": [
+    {
+      "alt": "1836 map showing lands assigned to emigrant Indians west of Arkansas and Missouri, with tribal territories outlined and labeled",
+      "caption": "Map showing the lands assigned to emigrant Indians west of Arkansas and Missouri, Topographical Bureau, February 23, 1836.",
+      "file": "pt01/fig2-removal-map-1836.jpg",
+      "id": "fig-apush-mcq-1187",
+      "license": "Public domain",
+      "source_url": "https://www.loc.gov/item/99446197/"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 6",
+        "section": "Topic 4.8 Jackson and Federal Power"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 13",
+        "section": "Rise of Manufacturing and the Age of Jackson (1820–1845)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 8"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-1187",
+  "lesson": "apush-u4-l4",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Worcester decided whether Congress could regulate interstate commerce.",
+      "text": "Whether Congress could regulate interstate commerce"
+    },
+    {
+      "key": "B",
+      "misconception": "Worcester decided whether enslaved people could sue for freedom.",
+      "text": "Whether enslaved people could sue for freedom in federal court"
+    },
+    {
+      "key": "C",
+      "text": "Whether state law could override federal treaties with Indigenous nations"
+    },
+    {
+      "key": "D",
+      "misconception": "Worcester decided whether the president could declare war.",
+      "text": "Whether the president could declare war without Congress"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "The case was about treaties and state law, not interstate commerce.",
+    "B": "Enslaved people suing for freedom is Dred Scott, not Worcester.",
+    "C": "Worcester held that Georgia law had no force in Cherokee territory because federal treaties governed relations with Indigenous nations. The Court treated the Cherokee as a distinct political community, not as subjects of Georgia law.",
+    "D": "The case was not about the president declaring war.",
+    "general": "1. Read the holding. The Cherokee are a distinct community, and Georgia's laws have no force in their territory.\n2. Ask what question that answers. Whether state law can override federal treaties with Indigenous nations.\n3. Test the other questions. Commerce, a freedom suit, and war powers are not what the opinion decides.\n4. Match the case to its question. The opinion is about treaties against state law.\nRemember: a court case answers the question its holding states."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "3.A"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from Worcester v. Georgia (1832) with the 1836 Topographical Bureau removal map",
+  "status": "final",
+  "stem": "The Supreme Court’s decision in *Worcester v. Georgia* most directly addressed which of the following questions?",
+  "stimulus": {
+    "kind": "mixed",
+    "source_note": "Worcester v. Georgia, 1832, majority opinion by Chief Justice John Marshall, public domain. Map: Topographical Bureau, 1836, Library of Congress.",
+    "text": "“The Cherokee Nation . . . are . . . a distinct community, occupying its own territory . . . in which the laws of Georgia can have no force . . . The Acts of Georgia are repugnant to the Constitution, laws, and treaties of the United States.”"
+  },
+  "stimulus_set": "worcester-georgia-1832",
+  "themes": [
+    "PCE",
+    "GEO"
+  ],
+  "topics": [
+    "4.8"
+  ],
+  "type": "mcq",
+  "unit": 4
+}

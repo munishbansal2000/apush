@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0104",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.2"
+ ],
+ "lesson": "apush-u4-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "skills": [
+  "3.A",
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.2 The Rise of Political Parties and the Era of Jefferson, A. Political Parties and the Rise of the First Two-Party System"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "Election of 1800"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Jefferson's First Term"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Thomas Jefferson, First Inaugural Address, March 4, 1801, public domain (Avalon Project text). Abridged.",
+  "text": "“Equal and exact justice to all men, of whatever state or persuasion, religious or political; … absolute acquiescence in the decisions of the majority, the vital principle of republics, from which is no appeal but to force, the vital principle and immediate parent of despotism.”\n— Thomas Jefferson, First Inaugural Address, March 4, 1801 (abridged)"
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus is a verbatim public-domain excerpt from Jefferson's First Inaugural Address (1801)",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one principle Jefferson states in the passage.",
+   "modelAnswer": "Jefferson states that the government must give equal and exact justice to all men, whatever their state, religion, or politics. He also states that the decisions of the majority must be accepted, since majority rule is the vital principle of republics.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one principle from the passage, such as equal and exact justice, or acquiescence in the decisions of the majority.",
+     "notEarned": "Naming a principle Jefferson does not state in the passage does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how one action of Jefferson's presidency contradicted the limited-government principles he stated in his inaugural address.",
+   "modelAnswer": "Jefferson bought the Louisiana Territory even though the Constitution gave the government no power to buy foreign land. He set aside his strict reading of the Constitution because the purchase doubled the nation and secured room for farmers.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one contradiction, such as the Louisiana Purchase going beyond the Constitution's plain text.",
+     "notEarned": "Naming the Louisiana Purchase with no explanation of the contradiction does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain how the Marshall Court limited Jefferson's vision of a limited national government.",
+   "modelAnswer": "In Marbury v. Madison the Court claimed the power of judicial review, giving the federal judiciary the last word on the Constitution. In McCulloch v. Maryland the Court upheld the Second Bank and barred Maryland from taxing it, asserting federal power over the states.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limit the Court placed on Jefferson's vision, such as judicial review, or McCulloch's defense of federal power.",
+     "notEarned": "Naming a Court decision with no explanation of how it limited Jefferson's vision does not earn the point."
+    }
+   ]
+  }
+ ]
+}

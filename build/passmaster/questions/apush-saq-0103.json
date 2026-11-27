@@ -1,0 +1,90 @@
+{
+ "id": "apush-saq-0103",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.2"
+ ],
+ "lesson": "apush-u4-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "skills": [
+  "1.B",
+  "5.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.2 The Rise of Political Parties and the Era of Jefferson, A. Political Parties and the Rise of the First Two-Party System"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "Election of 1800"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The “Revolution of 1800”"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question; facts from the grounding books.",
+  "text": "By 1800 two parties had formed in the United States, though the founders had never planned for them. The Federalists, following Alexander Hamilton, wanted a strong national government that would promote commerce and manufacturing through a national bank and tariffs. The Democratic-Republicans, following Thomas Jefferson, wanted a limited national government, with most power kept in the states, and a republic of independent farmers.\n\nThe election of 1800 passed the presidency from the Federalists to the Democratic-Republicans, and the transfer happened peacefully, without violence. Yet the old arguments did not vanish: the Federalist program lived on in the Supreme Court under Chief Justice John Marshall, and in Henry Clay's American System after the War of 1812."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one difference between the Federalist and Democratic-Republican visions of government.",
+   "modelAnswer": "Federalists wanted a strong national government that would promote commerce and manufacturing. Democratic-Republicans wanted a limited national government with most power kept in the states.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one difference from the passage, such as a strong national government versus a limited one, or commerce and manufacturing versus farming.",
+     "notEarned": "Naming a party with no difference identified does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one reason the election of 1800 is sometimes called the “Revolution of 1800.”",
+   "modelAnswer": "The election passed power peacefully from one party to another, the first such transfer in American history. Jefferson claimed it returned the nation to its founding principles after Federalist rule. No violence accompanied the change, which was rare for a change of government at the time.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason, such as the first peaceful transfer of power between parties, or Jefferson's claim that it restored founding principles.",
+     "notEarned": "Stating only that Jefferson won the election, with no reason given, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one continuity in American politics after 1800.",
+   "modelAnswer": "Political parties stayed at the center of American politics after 1800, organizing debate around national issues. The Federalist program also survived its party, living on in Marshall's Court and in Clay's American System.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one continuity, such as parties remaining central to politics, or the Federalist program surviving in the courts or in the American System.",
+     "notEarned": "Naming a change instead of a continuity, or giving a continuity with no explanation, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

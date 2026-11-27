@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0924",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.6"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "A",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.6 Market Revolution: Society and Culture, C. Workers and New Methods of Production"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The North and the Textile Industry"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "An engraving of the Boott Cotton Mills at Lowell, Massachusetts. Long brick mill buildings with rows of windows stand along a river, with smoking chimneys, a bridge, and small figures of workers and horse-drawn wagons in the foreground. The caption reads “BOOTT COTTON MILLS. LOWELL, MASS.”",
+  "source_note": "Engraving of the Boott Cotton Mills, Lowell, Mass., by Van Slyck & Co., Boston, via Wikimedia Commons (public domain). Image viewed before writing."
+ },
+ "stimulus_set": "boott-mills-lowell",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The mills in the engraving stand along a river because",
+ "options": [
+  {
+   "key": "A",
+   "text": "falling water powered the mill machinery"
+  },
+  {
+   "key": "B",
+   "text": "the river carried cotton from Southern plantations directly to the mills",
+   "misconception": "Cotton reached Lowell by ship and wagon, not straight up the river from the South."
+  },
+  {
+   "key": "C",
+   "text": "workers lived on boats on the river",
+   "misconception": "Workers lived in boardinghouses near the mills, not on the river."
+  },
+  {
+   "key": "D",
+   "text": "the mills needed river water to dye finished cloth",
+   "misconception": "Dyeing used water, but the mills stood on the river because its falling water drove the machines."
+  }
+ ],
+ "rationales": {
+  "A": "Lowell's mills were water-powered. The Merrimack River's fall turned the wheels that drove the spinning and weaving machines.",
+  "B": "Southern cotton came north by sea to Boston and then overland to Lowell. No river carried it straight from a plantation to these mills.",
+  "C": "Mill workers lived in company boardinghouses on land near the mills. The river powered the machines; it did not house the workers.",
+  "D": "Water mattered for power first. The river's fall drove the machinery, which is why the mills line its banks.",
+  "general": "1. Look where the mills stand. They line the riverbank in a long row.\n2. Ask what a mill needs from a river. Falling water turns wheels.\n3. Answer from the power. Lowell ran on water power before steam took over.\nBackground: The Merrimack River powered Lowell's mills from the 1820s; steam power came later.\nRemember: where a factory stands usually tells you what powers it."
+ },
+ "figures": [
+  {
+   "file": "u4/original-misc-us-culture-03.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Engraving_of_Boott_Cotton_Mills_%284983c864-09e6-455f-870e-23eba17c7da7%29.jpg",
+   "license": "Public domain",
+   "caption": "Engraving of the Boott Cotton Mills at Lowell, Massachusetts, with mill buildings along the river.",
+   "alt": "Engraving of the Boott Cotton Mills at Lowell: long brick mill buildings with rows of windows stand along a river, with smoking chimneys, a bridge, and small figures of workers and wagons",
+   "id": "fig-apush-mcq-0924"
+  }
+ ]
+}

@@ -1,0 +1,85 @@
+{
+  "answerKey": "A",
+  "difficulty": 3,
+  "figures": [
+    {
+      "alt": "Panoramic 1856 view of Lowell, Massachusetts, showing brick textile mills along the Merrimack River with the town spread behind them",
+      "caption": "John Bachelder, View of Lowell, Massachusetts, 1856. Panoramic view sketched from the Tuxbury residence, Dracut Heights, across the Merrimack River, showing the brick textile mills.",
+      "file": "pt01/fig1-lowell-1856-bachelder.jpg",
+      "id": "fig-apush-mcq-1184",
+      "license": "Public domain"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 6",
+        "section": "Topic 4.5 Market Revolution: Industrialization"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 13",
+        "section": "Rise of Manufacturing and the Age of Jackson (1820–1845)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 8"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-1184",
+  "lesson": "apush-u4-l3",
+  "options": [
+    {
+      "key": "A",
+      "text": "The expansion of canals, railroads, and transportation that linked factories to markets"
+    },
+    {
+      "key": "B",
+      "misconception": "The Lowell system depended on banning immigration.",
+      "text": "The prohibition of all immigration into the United States"
+    },
+    {
+      "key": "C",
+      "misconception": "The Lowell system depended on free trade with Britain.",
+      "text": "The adoption of a national policy of free trade with Britain"
+    },
+    {
+      "key": "D",
+      "misconception": "The Lowell system depended on the California gold discovery.",
+      "text": "The discovery of gold in California"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Background: canals, railroads, and improved roads let factories get raw cotton in and finished cloth out to a national market.",
+    "B": "Immigration continued; it was not prohibited.",
+    "C": "The United States used protective tariffs, not a policy of free trade with Britain.",
+    "D": "California gold came later and does not explain Lowell.",
+    "general": "1. Ask what a factory town needs. Raw cotton in, finished cloth out, to buyers far away.\n2. Name what supplied it. Background: canals, railroads, and other transportation linked factories to markets.\n3. Test the other options. Immigration continued, tariffs protected American goods, and gold came later.\n4. Connect transport to the system. Without links to markets, the mills could not run at scale.\nRemember: a factory system needs roads to markets as much as it needs machines."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "2.B"
+  ],
+  "source": "original; stimulus is a paraphrase of a Lowell mill worker’s letter (early 1840s) with the Bachelder 1856 view of Lowell",
+  "status": "final",
+  "stem": "The Lowell system described in the excerpt was most directly made possible by which of the following?",
+  "stimulus": {
+    "kind": "mixed",
+    "source_note": "Letter attributed to a Lowell mill worker, early 1840s, paraphrased from contemporary accounts. Image: John Bachelder, View of Lowell, Massachusetts, 1856, public domain (Library of Congress, LC-DIG-pga-07376).",
+    "text": "I have worked in the Lowell mills from 5 o’clock in the morning until 7 o’clock at night. The work is hard yet many of us have improved our minds by reading and we send money home to help our families."
+  },
+  "stimulus_set": "lowell-mills-1840s",
+  "themes": [
+    "WXT",
+    "GEO"
+  ],
+  "topics": [
+    "4.5"
+  ],
+  "type": "mcq",
+  "unit": 4
+}

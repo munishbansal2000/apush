@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0127",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.12"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "3.A",
+  "4.A"
+ ],
+ "themes": [
+  "SOC",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.12 African Americans in the Early Republic, A. Slave Rebellions"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.12 African Americans in the Early Republic, B. The Cultures of African-American Communities"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "An Age of Reform"
+   }
+  ],
+  "primary_sources": []
+ },
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "text": "In the early republic, the market for cotton drove the growth of slavery. Enslaved and free Black Americans answered that growth in many ways. Some plotted rebellions, like Gabriel in 1800 and Nat Turner in 1831. Some built churches and newspapers of their own, like the African Methodist Episcopal Church, founded in 1816, and Freedom’s Journal, founded in 1827. Some spoke and wrote against slavery, like David Walker and Frederick Douglass. Their answers did not end slavery, but they kept alive the claim that Black Americans were citizens with rights.",
+  "source_note": "Paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.12 A and B."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus paraphrased from Barron's Premium 2027, Chapter 6, Topic 4.12",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly identify ONE response to the growth of slavery described in the passage.",
+   "modelAnswer": "The passage describes enslaved people plotting rebellions, such as Gabriel’s rising in 1800 and Nat Turner’s in 1831. It also describes free Black Americans building their own churches and newspapers.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one response the passage describes, such as a rebellion, a church, a newspaper, or antislavery speaking and writing.",
+     "notEarned": "Naming a response the passage does not describe does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason slavery grew as the passage describes.",
+   "modelAnswer": "Slavery grew because the market for cotton grew, and cotton farming needed enslaved labor. As planters opened new cotton land in the South, they bought more enslaved workers to farm it.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one cause of slavery’s growth, such as the cotton market or the demand for enslaved labor on new cotton land.",
+     "notEarned": "Restating that slavery grew, without giving a cause, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limitation of the passage as evidence about Black responses to slavery.",
+   "modelAnswer": "The passage lists many responses together, but it does not show which ones mattered most or how many people took part in each. It also says nothing about white opposition, such as the laws passed after Turner’s rebellion.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limit, such as the passage grouping many responses without weighing them, or its silence about white opposition.",
+     "notEarned": "Saying the passage is incomplete without naming what it leaves out does not earn the point."
+    }
+   ]
+  }
+ ]
+}

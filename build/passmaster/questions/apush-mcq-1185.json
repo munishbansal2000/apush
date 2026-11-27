@@ -1,0 +1,85 @@
+{
+  "answerKey": "C",
+  "difficulty": 3,
+  "figures": [
+    {
+      "alt": "Panoramic 1856 view of Lowell, Massachusetts, showing brick textile mills along the Merrimack River with the town spread behind them",
+      "caption": "John Bachelder, View of Lowell, Massachusetts, 1856. Panoramic view sketched from the Tuxbury residence, Dracut Heights, across the Merrimack River, showing the brick textile mills.",
+      "file": "pt01/fig1-lowell-1856-bachelder.jpg",
+      "id": "fig-apush-mcq-1185",
+      "license": "Public domain"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 6",
+        "section": "Topic 4.5 Market Revolution: Industrialization"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 13",
+        "section": "Rise of Manufacturing and the Age of Jackson (1820–1845)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 8"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-1185",
+  "lesson": "apush-u4-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "The factory system reduced the number of women working outside the home.",
+      "text": "A sharp decline in the number of women working outside the home"
+    },
+    {
+      "key": "B",
+      "misconception": "The factory system strengthened the household economy.",
+      "text": "A strengthening of the traditional household economy as the dominant form of production"
+    },
+    {
+      "key": "C",
+      "text": "New debates about working hours, wages, and the conditions of wage labor"
+    },
+    {
+      "key": "D",
+      "misconception": "The factory system ended child labor immediately.",
+      "text": "The immediate end of child labor in all American industries"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "More women worked outside the home; the number did not fall.",
+    "B": "Household production declined; it did not strengthen as the dominant form.",
+    "C": "Factory labor produced new disputes over hours, wages, discipline, and the meaning of free labor. Mill workers struck and petitioned over the ten-hour day, showing that wage labor itself became contested.",
+    "D": "Child labor persisted for decades; it did not end at once.",
+    "general": "1. Name the new conditions. Long hours from 5 in the morning to 7 at night, under a bell.\n2. Ask what such conditions produce. Disputes over hours, wages, and the conditions of wage labor.\n3. Test the reversals. More women worked outside the home, household production declined, and child labor persisted.\n4. Match the effect. The factory system made work itself a subject of public debate.\nRemember: a new way of working creates new arguments about work."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "2.B"
+  ],
+  "source": "original; stimulus is a paraphrase of a Lowell mill worker’s letter (early 1840s) with the Bachelder 1856 view of Lowell",
+  "status": "final",
+  "stem": "Which of the following was a most direct effect of the factory system described in the excerpt?",
+  "stimulus": {
+    "kind": "mixed",
+    "source_note": "Letter attributed to a Lowell mill worker, early 1840s, paraphrased from contemporary accounts. Image: John Bachelder, View of Lowell, Massachusetts, 1856, public domain (Library of Congress, LC-DIG-pga-07376).",
+    "text": "I have worked in the Lowell mills from 5 o’clock in the morning until 7 o’clock at night. The work is hard yet many of us have improved our minds by reading and we send money home to help our families."
+  },
+  "stimulus_set": "lowell-mills-1840s",
+  "themes": [
+    "WXT",
+    "SOC"
+  ],
+  "topics": [
+    "4.5"
+  ],
+  "type": "mcq",
+  "unit": 4
+}

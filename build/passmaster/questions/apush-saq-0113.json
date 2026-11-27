@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0113",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.6"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "SOC",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.6 Market Revolution: Society and Culture, C. Workers and New Methods of Production"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The North and the Textile Industry"
+   }
+  ],
+  "primary_sources": [
+   "Charles Dickens, American Notes (1842)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Charles Dickens visited Lowell, Massachusetts, in 1842 and wrote about the mills in American Notes: “These girls, as I have said, were all well dressed: and that phrase necessarily includes extreme cleanliness. They had serviceable bonnets, good warm cloaks, and shawls. . . . They were healthy in appearance, many of them remarkably so, and had the manners and deportment of young women: not of degraded brutes of burden.” Dickens also wrote that “in July, 1841, no fewer than nine hundred and seventy-eight of these girls were depositors in the Lowell Savings Bank.”",
+  "source_note": "Charles Dickens, American Notes (1842), Chapter 4. Verbatim quotations verified against the Project Gutenberg text."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus as described in the stimulus source note",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly identify the group of workers Dickens describes.",
+   "modelAnswer": "Dickens describes the young women working in the textile mills of Lowell, Massachusetts. They were mostly farm daughters from New England who came to the mills for a few years to earn cash wages before returning home.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying the group as the young women, or mill girls, working in the Lowell textile mills.",
+     "notEarned": "Naming factory workers generally, with no link to Lowell or to young women, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE thing Dickens's account shows about mill work in Lowell.",
+   "modelAnswer": "Dickens shows that Lowell mill work paid cash wages the girls could save, since 978 of them held deposits in the Lowell Savings Bank by July 1841. His account presents mill work as respectable wage labor for farm daughters, not as degrading toil.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one thing the account shows about mill work, such as cash wages, savings, respectable conditions, or the temporary nature of the work.",
+     "notEarned": "Restating a quotation with no explanation of what it shows does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limitation of Dickens's account as evidence about the lives of all mill workers.",
+   "modelAnswer": "Dickens visited Lowell briefly and saw the mills as the owners showed them, so his account captures a favorable first impression rather than daily life over time. It also says nothing about the immigrant workers who replaced the farm daughters in the 1840s, or about the strikes over wages and rents.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limitation, such as a short visit, an owner's-eye view, the absence of immigrant workers, or silence about strikes and wages.",
+     "notEarned": "Saying the account is limited without naming what it leaves out does not earn the point."
+    }
+   ]
+  }
+ ]
+}

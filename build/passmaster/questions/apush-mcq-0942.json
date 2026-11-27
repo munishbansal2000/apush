@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-0942",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.6"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "5.A",
+  "1.B"
+ ],
+ "themes": [
+  "SOC",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.6 Market Revolution: Society and Culture, B. The Market Revolution's Impact on Economic Class"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The North and American Cities"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "SOCIAL HISTORY, 1800-1860"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "Population of leading American cities, from the United States census (U.S. Census Bureau, Working Paper 27):\n\n| City | 1800 | 1850 |\n| --- | ---: | ---: |\n| New York | 60,515 | 515,547 |\n| Philadelphia | 41,220 | 121,376 |\n| Baltimore | 26,514 | 169,054 |\n| Boston | 24,937 | 136,881 |",
+  "source_note": "U.S. Census Bureau, Working Paper 27, Population of the 100 Largest Cities and Other Urban Places, Tables 3 (1800) and 8 (1850). Figures verified against the Census Bureau tables."
+ },
+ "stimulus_set": "cities-table-1850",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The growth of cities shown in the table went along with which change in American society?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The end of wage labor and a return to farming",
+   "misconception": "City growth meant more wage labor, not less; farming still employed most Americans, but cities ran on wages."
+  },
+  {
+   "key": "B",
+   "text": "The closing of the West to new settlement",
+   "misconception": "The West was opening, not closing; more than four million Americans crossed the Appalachians between 1800 and 1840."
+  },
+  {
+   "key": "C",
+   "text": "The growth of a middle class alongside a large laboring poor"
+  },
+  {
+   "key": "D",
+   "text": "The disappearance of religious revivals from city life",
+   "misconception": "Revivals flourished in cities as well as the countryside during the Second Great Awakening."
+  }
+ ],
+ "rationales": {
+  "A": "Cities ran on wage labor: factory hands, dock workers, and servants. Growth meant more wages, not a return to farming.",
+  "B": "The same decades saw the West fill with settlers. Cities grew while the West opened, not while it closed.",
+  "C": "Cities needed banks, offices, and shops, which made work for clerks, lawyers, and other white-collar workers. At the same time, the poor crowded into the same cities, so growth widened the gap between rich and poor.",
+  "D": "The Second Great Awakening filled city churches and revival meetings. Religion did not leave the cities as they grew.",
+  "general": "1. Ask what a growing city needs. Banks, offices, shops, and shipping all need workers.\n2. Split those workers in two. White-collar clerks and professionals form a middle class; factory hands and laborers form a laboring poor.\n3. Name the change. Cities grew a middle class and a poor class at the same time.\nBackground: On the eve of the Civil War, about 5 percent of Americans controlled half the country's wealth.\nRemember: growth that lifts some people and crowds others is two changes at once."
+ }
+}

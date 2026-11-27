@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-0969",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.7"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "2.C",
+  "3.D"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, A. The Second Two-Party System: The Democrats and the Whigs"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "President Jackson"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "The cartoon shows President Andrew Jackson, at left, raising a cane marked “VETO” against a many-headed serpent. The serpent's heads carry state names, and the largest head, wearing a top hat, is Nicholas Biddle, president of the Second Bank of the United States. Vice President Martin Van Buren stands at the center, and the fictional common man Jack Downing stands at right with an axe. The caption reads “GENERAL JACKSON SLAYING THE MANY HEADED MONSTER.” Lithograph by Henry R. Robinson, 1836.",
+  "source_note": "Henry R. Robinson, “General Jackson Slaying the Many Headed Monster,” lithograph, 1836 (Library of Congress). Public domain; description verified against the Library of Congress and Smithsonian records; viewed before writing."
+ },
+ "stimulus_set": "monster-bank",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The largest head, wearing a top hat, belongs to Nicholas Biddle. What does giving Biddle the largest head tell the viewer?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Biddle was the largest shareholder in the Bank",
+   "misconception": "The cartoon never says that; the big head marks Biddle as the mind behind the monster, not its biggest owner."
+  },
+  {
+   "key": "B",
+   "text": "Biddle led the Whig Party",
+   "misconception": "Henry Clay led the Whigs; Biddle ran the Bank, which is why his head leads the serpent."
+  },
+  {
+   "key": "C",
+   "text": "Biddle commanded the American army",
+   "misconception": "Biddle was a banker, not a general; the uniformed figure is not him."
+  },
+  {
+   "key": "D",
+   "text": "One powerful banker stood behind the whole system"
+  }
+ ],
+ "rationales": {
+  "A": "The cartoon gives no facts about shares; size marks importance, not ownership.",
+  "B": "Clay led the Whigs; Biddle led the Bank.",
+  "C": "Biddle was a banker, not a soldier.",
+  "D": "Making Biddle's head the largest turns a spread-out banking system into one villain the viewer can blame.",
+  "general": "1. Find the biggest head. It wears a top hat and belongs to Biddle, the Bank's president.\n2. Ask why size matters. In a cartoon, the largest figure is the most important, and here it is one man.\n3. Name the trick. A system of branches becomes a single villain with a face.\nBackground: Jackson's veto message attacked the Bank as a privilege for the few, and Biddle, its president, became the face of that privilege.\nRemember: when a cartoon makes one head biggest, it is naming who to blame."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0969",
+   "file": "u4/5s24-ch13-mcq-08.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/General_Jackson_slaying_the_many_headed_monster_LCCN2008661279.jpg",
+   "license": "Public domain",
+   "caption": "General Jackson slaying the many headed monster, 1836. Jackson attacks the Bank.",
+   "alt": "Andrew Jackson raising a cane marked VETO against a many-headed serpent, with Martin Van Buren at the center and Jack Downing at right with an axe"
+  }
+ ]
+}

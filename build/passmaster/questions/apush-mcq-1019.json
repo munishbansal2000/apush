@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1019",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.9"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "ARC",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.9 The Development of an American Culture, B. European Romanticism and American Culture"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "Thomas Cole's The Oxbow (View from Mount Holyoke, Northampton, Massachusetts, after a Thunderstorm), painted in 1836, looks down from a high, storm-darkened hillside. On the left, a gnarled tree leans over wild forest under black clouds. On the right, the Connecticut River bends through sunny, cleared farmland dotted with fields and small boats. A tiny figure with an easel stands on the rocks at lower right.",
+  "source_note": "Painting: Thomas Cole, The Oxbow, 1836 (Metropolitan Museum of Art). Public domain; image viewed before writing. Description records only what the painting visibly shows."
+ },
+ "stimulus_set": "cole-oxbow-49",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "Cole's tiny figure with an easel at lower right most likely shows which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The painter was paid by the farmers whose land he painted",
+   "misconception": "The figure stands near the farmland, so it is easy to assume the farmers hired him."
+  },
+  {
+   "key": "B",
+   "text": "The scene was painted outdoors in a single stormy afternoon",
+   "misconception": "The storm looks freshly observed, so it is easy to think Cole finished it on the spot."
+  },
+  {
+   "key": "C",
+   "text": "Cole thought artists should stay out of nature entirely",
+   "misconception": "The figure is so small that it is easy to read it as unimportant or unwelcome."
+  },
+  {
+   "key": "D",
+   "text": "The artist placing himself inside the landscape, watching civilization meet wilderness"
+  }
+ ],
+ "rationales": {
+  "A": "Nothing in the painting says who paid Cole; the figure is an artist at work, not a receipt.",
+  "B": "A canvas this large was finished in the studio from sketches, not in one afternoon on a hilltop.",
+  "C": "The figure is painting the view, not avoiding it; Cole put himself in the scene on purpose.",
+  "D": "The tiny easel figure is Cole himself, standing where wild land and farmed land meet.",
+  "general": "1. Find the figure. The stimulus places a tiny artist with an easel on the rocks at lower right.\n2. Ask why Cole shrank himself into his own painting. He is a witness, small against the land, watching the change.\nBackground: Hudson River School painters often set small figures in vast nature to show its scale.\nRemember: a tiny figure in a huge landscape is usually there to show you how big the land is."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1019",
+   "file": "u4/original-misc-us-culture-13.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Cole_Thomas_The_Oxbow_%28The_Connecticut_River_near_Northampton_1836%29.jpg",
+   "license": "Public domain",
+   "caption": "Thomas Cole, The Oxbow, 1836. Stormy wilderness at left, sunny farmland at right.",
+   "alt": "Thomas Cole's 1836 painting The Oxbow: a storm-darkened wooded hillside at left, the Connecticut River bending through sunny farmland at right, a tiny artist with an easel on the rocks below"
+  }
+ ]
+}

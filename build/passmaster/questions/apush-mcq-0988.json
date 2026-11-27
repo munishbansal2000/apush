@@ -1,0 +1,81 @@
+{
+ "id": "apush-mcq-0988",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.8"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, A. The Second Two-Party System: The Democrats and the Whigs"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Bank War"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "The lithograph, published in 1836, shows President Andrew Jackson at right, striking with a cane at a many-headed serpent. The serpent's heads carry the names of states, and the largest head is Nicholas Biddle, president of the Second Bank of the United States. The caption reads 'GENERAL JACKSON SLAYING THE MANY HEADED MONSTER.' In his veto of the Bank's recharter in 1832, Jackson wrote: 'It is to be regretted that the rich and powerful too often bend the acts of government to their selfish purposes.' He also wrote that the Court's opinion 'ought not to control the coordinate authorities of this Government,' and that 'the Congress, the Executive, and the Court must each for itself be guided by its own opinion of the Constitution.'",
+  "source_note": "Lithograph 'General Jackson Slaying the Many Headed Monster,' Henry R. Robinson, 1836 (Library of Congress). Public domain; image viewed before writing. Veto quotation: Andrew Jackson, veto message, July 10, 1832, public domain."
+ },
+ "stimulus_set": "bank-war-monster-48",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "Why did Jackson's opponents in Congress bring the Bank recharter bill to a vote in 1832, four years before the charter expired?",
+ "options": [
+  {
+   "key": "A",
+   "text": "They expected Jackson's veto to hurt his chances of reelection"
+  },
+  {
+   "key": "B",
+   "text": "The Bank's charter required renewal every four years",
+   "misconception": "Four years is the length of a presidential term, so it is easy to assume the charter matched it."
+  },
+  {
+   "key": "C",
+   "text": "Biddle had asked Congress to close the Bank early",
+   "misconception": "Biddle is the villain of the lithograph, so it is easy to cast him as the one who wanted the Bank gone."
+  },
+  {
+   "key": "D",
+   "text": "The Supreme Court had ordered Congress to recharter the Bank",
+   "misconception": "McCulloch is the famous Bank case, so it is easy to think the Court ordered the recharter."
+  }
+ ],
+ "rationales": {
+  "A": "Clay and Biddle forced the vote early so a veto would become a campaign issue, but Jackson turned the veto into a popular victory.",
+  "B": "The charter ran twenty years from 1816, so it did not expire until 1836; no four-year renewal rule existed.",
+  "C": "Biddle wanted the Bank to live on, not to close; he pushed for the early vote to save it, not to end it.",
+  "D": "The Court upheld the Bank in McCulloch v. Maryland in 1819, but it never ordered Congress to recharter it.",
+  "general": "1. Check the calendar. The Bank's charter ran until 1836, so a vote in 1832 was early by four years.\n2. Ask who gains from an early vote. Background: Henry Clay, running against Jackson, wanted to force a veto before the election.\n3. Judge the gamble. The veto came, but voters cheered it, and Jackson won reelection easily.\nRemember: an early vote is a signal — ask what election the vote was timed for."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0988",
+   "file": "u4/5s24-ch13-mcq-08.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/General_Jackson_slaying_the_many_headed_monster_LCCN2008661279.jpg",
+   "license": "Public domain",
+   "caption": "General Jackson slaying the many headed monster, 1836. Jackson strikes a serpent whose heads bear state names.",
+   "alt": "A lithograph of President Andrew Jackson striking a many-headed serpent with a cane; the serpent's heads carry state names and the largest head is Nicholas Biddle"
+  }
+ ]
+}

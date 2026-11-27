@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-1032",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.9"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "2.C"
+ ],
+ "themes": [
+  "ARC",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.9 The Development of an American Culture, B. European Romanticism and American Culture"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Religious and Social Movements"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "Thomas Cole, The Course of Empire: Destruction, 1836, is the fourth of five paintings tracing an imaginary city's rise and fall. A burning classical city fills the canvas: crowds flee across a bridge, a great statue topples from its pedestal at right, and smoke darkens the sky. Cole signed and dated the pedestal \"1836.\"",
+  "source_note": "Painting: Thomas Cole, The Course of Empire: Destruction, 1836 (New-York Historical Society). Public domain; image viewed before writing. Description records only what the painting visibly shows."
+ },
+ "stimulus_set": "cole-course-empire-49",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "Cole's painting most directly warns that which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "American cities should copy Roman buildings",
+   "misconception": "The city looks Roman, so it is easy to think Cole wanted Americans to copy it."
+  },
+  {
+   "key": "B",
+   "text": "The United States had already fallen like Rome",
+   "misconception": "The city is in ruins, so it is easy to think Cole meant America was already ruined."
+  },
+  {
+   "key": "C",
+   "text": "Only war can destroy a great nation",
+   "misconception": "Soldiers and flames fill the scene, so it is easy to name war as the only cause."
+  },
+  {
+   "key": "D",
+   "text": "Empires collapsing when luxury and pride overtake them"
+  }
+ ],
+ "rationales": {
+  "A": "Cole paints Rome burning, not shining; the classical city is a warning, not a model.",
+  "B": "The city is imaginary and the series traces a full rise and fall; America is the audience, not the ruin.",
+  "C": "The series blames decline on luxury and pride as much as on invaders; war is the end, not the whole cause.",
+  "D": "Five paintings carry one city from wilderness to glory to ruin, so the warning is that no empire is safe.",
+  "general": "1. Place this canvas in its series. It is the fourth of five: the city has already risen, and now it falls.\n2. Ask what the series is for. A warning that empires, like republics, can fall.\nBackground from the books: Cole's Course of Empire warned that republics could fall as empires had.\nRemember: a series tells its story across all its parts — never judge one canvas alone."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1032",
+   "file": "u4/original-misc-us-culture-14.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Cole_Thomas_The_Course_of_Empire_Destruction_1836.jpg",
+   "license": "Public domain",
+   "caption": "Thomas Cole, The Course of Empire: Destruction, 1836. A burning classical city, crowds fleeing, a statue toppling.",
+   "alt": "Thomas Cole's 1836 painting of a burning classical city: crowds flee across a bridge while a huge statue topples from its pedestal at right and smoke fills the sky"
+  }
+ ]
+}

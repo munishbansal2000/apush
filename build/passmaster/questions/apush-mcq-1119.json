@@ -1,0 +1,73 @@
+{
+ "id": "apush-mcq-1119",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.12"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "3.D",
+  "1.B"
+ ],
+ "themes": [
+  "SOC",
+  "WXT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.12 African Americans in the Early Republic, A. Slave Rebellions"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.12 African Americans in the Early Republic, B. The Cultures of African-American Communities"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "Black population of the United States, counted by the federal census:\n\n| Year | Enslaved people | Free Black people |\n| --- | --- | --- |\n| 1790 | 697,681 | 59,527 |\n| 1800 | 893,602 | 108,435 |\n| 1820 | 1,538,022 | 233,634 |\n| 1840 | 2,487,355 | 386,293 |\n\nCongress banned the importation of enslaved people from abroad, effective January 1, 1808.",
+  "source_note": "Data table from the United States federal census, 1790-1840: free and enslaved Black population. Totals checked against the Census Bureau's Negro Population 1790-1915 and Gannett, Statistics of the Negroes in the United States (1894)."
+ },
+ "stimulus_set": "census-table",
+ "source": "original; data table from the United States federal census, 1790-1840",
+ "stem": "A historian claims the census proves slavery was dying out by 1840. The table best answers that claim with which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The free Black population grew faster than the enslaved population",
+   "misconception": "True, but it does not answer the claim: enslaved numbers still grew hugely."
+  },
+  {
+   "key": "B",
+   "text": "Congress banned the importation of enslaved people in 1808",
+   "misconception": "The ban is real, but the table shows growth continued anyway."
+  },
+  {
+   "key": "C",
+   "text": "The enslaved population more than tripled between 1790 and 1840"
+  },
+  {
+   "key": "D",
+   "text": "New York ended slavery gradually, with final emancipation in 1827",
+   "misconception": "One state’s law does not answer a national claim."
+  }
+ ],
+ "rationales": {
+  "A": "Faster free growth is true, but it leaves the claim standing: the enslaved population still grew by millions.",
+  "B": "The 1808 ban closed imports, yet the enslaved column keeps rising. The ban does not show slavery dying.",
+  "C": "The enslaved rose from 697,681 in 1790 to 2,487,355 in 1840, more than triple. A dying institution does not triple.",
+  "D": "New York’s gradual emancipation is one state’s story. The table counts the whole country.",
+  "general": "1. Test the claim against the enslaved column. It rises in every census shown.\n2. Measure the rise. About 698,000 in 1790 becomes about 2,487,000 in 1840, more than triple.\n3. Name the answer. A dying institution does not more than triple.\nBackground: The census counted enslaved people every ten years from 1790.\nRemember: test a claim about dying out against the numbers, not against the hopes."
+ }
+}

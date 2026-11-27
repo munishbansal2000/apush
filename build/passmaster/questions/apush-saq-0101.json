@@ -1,0 +1,92 @@
+{
+ "id": "apush-saq-0101",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.1"
+ ],
+ "lesson": "apush-u4-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "skills": [
+  "1.B",
+  "5.A"
+ ],
+ "themes": [
+  "WXT",
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.1 Contextualizing Period 4"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 The Market Revolution: Economic Transformations"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "Jeffersonian Revolution (1800-1820)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question; facts from the grounding books.",
+  "text": "Between 1800 and 1848, the United States changed more in fifty years than it had in the century before. A market economy replaced much of the old semi-subsistence farming: canals, steamboats, and railroads tied distant regions into one commercial web, and factory towns like Lowell drew young women off farms into wage work. The nation's land grew as well, doubling with the Louisiana Purchase in 1803 and stretching toward the Pacific by the 1840s. Politics changed too, as property requirements for voting fell away and mass parties carried ordinary white men into public life. Yet some things did not change. Slavery grew stronger in the South on the strength of cotton, and Native peoples were forced off their lands as settlers moved west."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one economic change of the Market Revolution described in the passage.",
+   "modelAnswer": "Canals, steamboats, and railroads tied distant regions into one commercial web, replacing much of the old semi-subsistence farming. Factory towns like Lowell also drew young women off farms into wage work for cash.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one economic change from the passage, such as new transport linking regions or factory wage work.",
+     "notEarned": "Naming a change not in the passage, or a vague answer with no change identified, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one way territorial expansion changed the United States in the period 1800-1848.",
+   "modelAnswer": "The Louisiana Purchase of 1803 doubled the nation's land, and by the 1840s the country stretched toward the Pacific. This growth gave settlers new farmland and drew the nation into conflicts over Native lands and over whether slavery would spread west.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one effect of expansion, such as new farmland, westward settlement, or conflict over Native lands or slavery.",
+     "notEarned": "Restating that the country grew, with no effect explained, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one continuity in American life across the period 1800-1848.",
+   "modelAnswer": "Slavery did not fade as the nation grew; it grew stronger in the South on the strength of cotton. Native peoples were also forced off their lands throughout the period as settlers moved west, before and after the Market Revolution.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one continuity, such as slavery strengthening or Native peoples being forced off their lands.",
+     "notEarned": "Naming a change instead of a continuity, or giving a continuity with no explanation, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-0902",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.5"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "D",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 Market Revolution: Economic Transformations, D. Regional Specialization"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 Market Revolution: Economic Transformations, B. Advances in Technology"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Market Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "Cotton in the American economy, from Barron's Premium 2027, Chapter 6, Topic 4.5 D:\n\n| Measure | 1830 | 1860 |\n|---|---|---|\n| Cotton bales produced | about 700,000 | nearly 5,000,000 |\n| Cotton as a share of American exports | — | 58 percent |\n\nBy 1860, American cotton also made up about three-quarters of the world's supply of cotton.",
+  "source_note": "Figures from Barron's Premium 2027, Chapter 6, Topic 4.5 D (cotton production, export share, world share). Data table, not an image."
+ },
+ "stimulus_set": "king-cotton-table",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The growth shown in the table was made possible most directly by",
+ "options": [
+  {
+   "key": "A",
+   "text": "the steel plow, which cleared new cotton land",
+   "misconception": "The steel plow of 1847 helped grain farmers on the prairie; it did not process cotton."
+  },
+  {
+   "key": "B",
+   "text": "the telegraph, which sent cotton prices instantly",
+   "misconception": "The telegraph came in 1844, after the growth was well under way, and it carried news, not cotton."
+  },
+  {
+   "key": "C",
+   "text": "the Erie Canal, which carried cotton to New York",
+   "misconception": "The Erie Canal linked the Great Lakes to New York; Southern cotton traveled by river and sea, not by that canal."
+  },
+  {
+   "key": "D",
+   "text": "the cotton gin, which cleaned cotton seeds quickly"
+  }
+ ],
+ "rationales": {
+  "A": "John Deere's steel plow cut prairie soil for grain. Cotton's bottleneck was removing seeds, not plowing.",
+  "B": "Morse's telegraph first sent a message in 1844. The table's growth began decades earlier, in the 1790s and 1800s.",
+  "C": "The Erie Canal served the Great Lakes trade. Cotton left the South through its own rivers and ports.",
+  "D": "Eli Whitney's cotton gin of 1793 cleaned short-staple cotton fast. Once seeds came out quickly, planters could grow far more of it.",
+  "general": "1. Ask what held cotton back before 1793. Picking seeds out of short-staple cotton by hand was slow work.\n2. Ask what removed that limit. Whitney's gin cleaned the fiber fast, so one worker could process far more cotton.\n3. Put it together. The gin let production climb from thousands to millions of bales, as the table shows.\nBackground: The gin was invented in 1793, and demand from British and Northern mills kept growing after it.\nRemember: find the bottleneck first; the invention that breaks it explains the growth."
+ }
+}

@@ -1,0 +1,75 @@
+{
+ "id": "apush-mcq-1144",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.13"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "B",
+ "skills": [
+  "1.B",
+  "3.A"
+ ],
+ "themes": [
+  "SOC",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.13 The Society of the South in the Early Republic, B. Cotton, Slavery, and the Southern Exception"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   }
+  ],
+  "primary_sources": [
+   "Alexis de Tocqueville, Democracy in America, 1835"
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "United States cotton crop, in thousands of 500-pound bales:\n\n| Year | Cotton crop |\n|---|---|\n| 1800 | 73 |\n| 1820 | 335 |\n| 1840 | 1,348 |\n\nSource: National Bureau of Economic Research cotton crop series, from United States Department of Agriculture Circular 32.\n\nAlexis de Tocqueville, visiting in the 1830s, wrote that the cultivation of tobacco, of cotton, and especially of the sugar-cane, “demands . . . unremitting attention” from laborers.",
+  "source_note": "Crop figures from the NBER cotton crop series (USDA Circular 32), checked on FRED. World-share line from Barron's Premium 2027, Chapter 6, Topic 4.13 B. Tocqueville line verbatim from Democracy in America, vol. 1, ch. 18, as printed on historycarper.com."
+ },
+ "stimulus_set": "cotton-crop-table",
+ "source": "original; data table from the NBER cotton crop series (USDA Circular 32); Tocqueville line verbatim from Democracy in America, 1835, public domain",
+ "stem": "Cotton farming needed many hands all year, and the cotton crop grew fast. Taken together, the table and that fact best explain which change?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The movement of free white workers into Southern factories",
+   "misconception": "The South built few factories in this period; its workers were enslaved farm laborers."
+  },
+  {
+   "key": "B",
+   "text": "The rising demand for enslaved labor on Southern cotton farms"
+  },
+  {
+   "key": "C",
+   "text": "The decline of the domestic slave trade after 1820",
+   "misconception": "The domestic slave trade grew with cotton; traders moved enslaved people to the new cotton lands."
+  },
+  {
+   "key": "D",
+   "text": "The decision of Southern states to ban slavery by 1850",
+   "misconception": "No Southern state banned slavery by 1850; slavery grew with cotton."
+  }
+ ],
+ "rationales": {
+  "A": "The South built few factories in this period. Its workers were enslaved farm laborers.",
+  "B": "A fast-growing crop that needs hands all year means planters wanted more workers, and in the South those workers were enslaved people.",
+  "C": "The domestic slave trade grew with cotton. Traders moved enslaved people to the new cotton lands.",
+  "D": "No Southern state banned slavery by 1850. Slavery grew with cotton.",
+  "general": "1. Read the table. The crop rose from 73,000 bales in 1800 to 1,348,000 bales in 1840.\n2. Read Tocqueville. Cotton demands unremitting attention, so the work needs hands all year, not just at harvest.\n3. Put them together. More cotton plus year-round work means planters wanted more enslaved laborers.\nBackground: Planters met that demand by buying enslaved people through the domestic slave trade.\nRemember: a labor-hungry crop and a rising crop together mean rising demand for workers."
+ }
+}

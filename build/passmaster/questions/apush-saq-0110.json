@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0110",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.5"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "skills": [
+  "1.B",
+  "5.B"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 Market Revolution: Economic Transformations, D. Regional Specialization"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 Market Revolution: Economic Transformations, A. The Market Revolution"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Market Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.5 D: The market revolution affected the North and the South in different ways. The North developed banking, manufacturing, and shipping industries, while the South focused on increasing its cotton production. Both regions were growing economically in the first decades of the nineteenth century, and the growth of each region reinforced the growth of the other. Cotton was bought and sold in New York City and processed into cloth in New England. Northern banks lent money to plantation owners, and Northern insurance companies insured their slaves.",
+  "source_note": "Secondary text: paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.5 D. Paraphrased, not quoted."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus as described in the stimulus source note",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly explain ONE way the growth of cotton production in the South shaped the economy of the North in the period 1800-1848.",
+   "modelAnswer": "Southern cotton fed New England textile mills, so mill towns like Lowell grew around spinning that cotton into cloth. Northern merchants in New York bought and sold the crop, and Northern banks lent money to the planters who grew it.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one way Southern cotton shaped the Northern economy, such as feeding New England mills, enriching New York merchants, or giving work to Northern banks and shippers.",
+     "notEarned": "Naming cotton with no Northern effect explained does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain a SECOND way the growth of cotton production in the South shaped the economy of the North in the same period.",
+   "modelAnswer": "The cotton trade gave work to Northern shipping and insurance. Northern ships carried the fiber to Britain and to New England, and Northern insurance companies insured enslaved workers, so the trade spread beyond the mills into finance and transport.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining a second, different way Southern cotton shaped the Northern economy, such as shipping, insurance, or finance.",
+     "notEarned": "Repeating the answer to part (a) with no new Northern effect does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE way the growth of cotton production deepened the differences between the North and the South in the same period.",
+   "modelAnswer": "Cotton made the South more committed to enslaved labor, since more acres of cotton meant more enslaved workers. The North, meanwhile, moved toward free wage labor in its mills, so the two regions built their wealth on opposite kinds of labor.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one way cotton growth deepened North-South differences, such as the South's deepening reliance on enslaved labor against the North's wage labor.",
+     "notEarned": "Naming a difference with no link to cotton growth does not earn the point."
+    }
+   ]
+  }
+ ]
+}

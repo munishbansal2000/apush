@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-0962",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.7"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "B",
+ "skills": [
+  "2.A",
+  "1.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, A. The Second Two-Party System: The Democrats and the Whigs"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The Jackson Presidency and Jacksonian Democracy"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "The cartoon shows President Andrew Jackson standing in royal robes and a crown, holding a scepter in one hand and a scroll labeled “VETO” in the other. He stands on torn papers, including one labeled “CONSTITUTION of the UNITED STATES” and others for “Internal Improvements” and the “U.S. Bank.” The captions read “BORN TO COMMAND,” “HAD I BEEN CONSULTED,” “OF VETO MEMORY,” and “KING ANDREW THE FIRST.” Published 1832.",
+  "source_note": "Political cartoon “King Andrew the First,” published 1832, artist unknown (Library of Congress). Public domain; viewed before writing."
+ },
+ "stimulus_set": "king-andrew",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The scroll labeled “VETO” in Jackson's hand most directly refers to his",
+ "options": [
+  {
+   "key": "A",
+   "text": "veto of the Maysville Road bill in 1830 funding internal improvements",
+   "misconception": "Jackson did veto that road bill, but the torn “U.S. Bank” paper at his feet points to the Bank veto."
+  },
+  {
+   "key": "B",
+   "text": "veto of the recharter of the Second Bank of the United States"
+  },
+  {
+   "key": "C",
+   "text": "refusal to veto the Force Bill in 1833",
+   "misconception": "Jackson signed the Force Bill; he did not veto it, and it is not what the cartoon attacks."
+  },
+  {
+   "key": "D",
+   "text": "veto of the Tariff of Abominations in 1828",
+   "misconception": "The 1828 tariff was passed under Adams, before Jackson was president, so he could not have vetoed it."
+  }
+ ],
+ "rationales": {
+  "A": "The Maysville Road veto was real, but this cartoon's target is the Bank.",
+  "B": "The cartoon appeared in 1832, the year Jackson vetoed the Bank's recharter, and the Bank's paper lies torn at his feet.",
+  "C": "Jackson signed the Force Bill; the cartoon attacks his vetoes, not his signatures.",
+  "D": "Jackson was not yet president when the 1828 tariff passed.",
+  "general": "1. Date the cartoon. It was published in 1832, the year of the Bank veto fight.\n2. Match the props. The torn paper at Jackson's feet reads “U.S. Bank,” and the scroll in his hand reads “VETO.”\n3. Weigh the rival. The Maysville Road veto of 1830 was real, but this cartoon's target is the Bank.\nBackground: Jackson's opponents hoped the veto would cost him reelection; instead he won, and the veto became his signature.\nRemember: cartoons date themselves, so match the props to the year."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0962",
+   "file": "u4/pr25e-test2-q27.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/King_Andrew_the_First_%28political_cartoon_of_President_Andrew_Jackson%29.jpg",
+   "license": "Public domain",
+   "caption": "King Andrew the First, 1832. Jackson in crown and robes, holding a veto scroll.",
+   "alt": "Andrew Jackson dressed as a king in crown and ermine robe, holding a scepter and a scroll labeled VETO, standing on a torn copy of the Constitution"
+  }
+ ]
+}

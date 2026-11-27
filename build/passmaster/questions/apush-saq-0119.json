@@ -1,0 +1,96 @@
+{
+ "id": "apush-saq-0119",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.8"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 3,
+ "totalPoints": 3,
+ "skills": [
+  "3.A",
+  "2.C"
+ ],
+ "themes": [
+  "MIG",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, B. Contention Between Whites and American Indians over Western Lands"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "Native American Removal"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "map",
+  "text": "The National Park Service map shows the Trail of Tears National Historic Trail. Routes run from the Cherokee homelands in Georgia, Tennessee, and North Carolina west to Tahlequah in present-day Oklahoma. A dotted line marks the land route through Nashville and Cape Girardeau; a blue line marks the water route along the Tennessee and Mississippi Rivers.",
+  "source_note": "Map: 'Trail of Tears National Historic Trail,' U.S. National Park Service (work of the U.S. federal government, public domain). Public domain; image viewed before writing."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus as described in the stimulus source note",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly identify ONE route shown on the map.",
+   "modelAnswer": "The map shows a dotted land route running west from Tennessee through Nashville, Hopkinsville, and Cape Girardeau to Oklahoma. It also shows a blue water route along the Tennessee and Mississippi Rivers.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one route shown on the map, such as the dotted land route, the blue water route, or a named town along a route.",
+     "notEarned": "Naming the Trail of Tears without identifying a route does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason the Cherokee were forced to travel these routes.",
+   "modelAnswer": "The Indian Removal Act of 1830 authorized moving eastern tribes west, and Georgia pressed for Cherokee land after gold was found there. In 1838 federal troops rounded up the Cherokee and escorted them west.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason for the removal, such as the Removal Act, Georgia's demand for Cherokee land, the gold discovery, or Jackson's refusal to enforce Worcester.",
+     "notEarned": "Saying the Cherokee moved west without giving a reason does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limitation of the map as evidence about the Cherokee removal.",
+   "modelAnswer": "The map shows lines on a landscape, but it cannot show what the journey felt like or how many died along the way. A reader learns the routes but not the suffering, coercion, or deaths of the march.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limit of the map, such as its silence on deaths, suffering, coercion, or the Cherokee point of view.",
+     "notEarned": "Saying the map is incomplete without naming what it leaves out does not earn the point."
+    }
+   ]
+  }
+ ],
+ "figures": [
+  {
+   "id": "fig-apush-saq-0119",
+   "file": "u4/pr25e-test3-q19.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Trail_of_tears_map_NPS.jpg",
+   "license": "Public domain",
+   "caption": "Trail of Tears National Historic Trail map. Land, water, and other routes run west to Tahlequah, Oklahoma.",
+   "alt": "A National Park Service map of the Trail of Tears: dotted land routes, a blue water route along the Tennessee and Mississippi Rivers, and green other major routes running west to Tahlequah"
+  }
+ ]
+}

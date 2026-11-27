@@ -1,0 +1,86 @@
+{
+ "id": "apush-saq-0122",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.10"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "3.A"
+ ],
+ "themes": [
+  "ARC",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.10 The Second Great Awakening, A. Religious and Spiritual Movements in Antebellum America"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Second Great Awakening"
+   }
+  ],
+  "primary_sources": []
+ },
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "text": "In the early nineteenth century, American clergy sought to revive religious feeling. The result was the Second Great Awakening: large camp meetings began in Kentucky and spread to other states, strongest in upstate New York and western Pennsylvania. Preachers such as Charles Grandison Finney told audiences that a person could determine his or her own eternal life, rejecting the old Puritan idea of predestination. That sense that salvation lay in one's own hands encouraged the work of perfecting society.",
+  "source_note": "Paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.10, A. Religious and Spiritual Movements in Antebellum America: the Second Great Awakening, camp meetings, the burned-over district, Finney, and the rejection of predestination. Original synthesis, not a quotation."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus as described in the stimulus source note",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly identify ONE feature of revival preaching described in the passage.",
+   "modelAnswer": "The passage describes large outdoor camp meetings that began in Kentucky and spread to other states. It also describes preachers like Finney telling audiences that a person could determine his or her own eternal life.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one feature from the passage, such as the large camp meetings, the spread from Kentucky to New York and Pennsylvania, or Finney's teaching that salvation lay in one's own hands.",
+     "notEarned": "Naming a feature of religion not described in the passage does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason the Second Great Awakening spread as widely as the passage describes.",
+   "modelAnswer": "Revival preaching told ordinary people that salvation was in their own hands, which spoke to farmers, merchants, and workers entering a new market society. The message matched the market's own lesson that success or failure depended on the individual.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason for the spread, such as the appeal of personal salvation to people entering market society, the emotional style of camp meetings, or the work of traveling preachers like Finney.",
+     "notEarned": "Restating that the Awakening spread without giving a reason does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limitation of the passage as evidence about religion in the early nineteenth century.",
+   "modelAnswer": "The passage describes Protestant revival preaching, mostly among white Americans in the North and the frontier. It says nothing about Catholic immigrants, enslaved people's religion, or Native spiritual movements such as Handsome Lake's Longhouse Religion.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limit, such as the focus on Protestant revivals, the absence of Catholic, Black, or Native religious life, or the focus on the North and the frontier.",
+     "notEarned": "Saying the passage is incomplete without naming what it leaves out does not earn the point."
+    }
+   ]
+  }
+ ]
+}

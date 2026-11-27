@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0857",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.3"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.3 Politics and Regional Interests, B. The American System and Sectionalism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Monroe's Presidency"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "The Panic of 1819 began when the Second Bank of the United States, fearing it had lent too much, called in its loans. Borrowers could not pay, banks failed, and farms and shops were sold at auction. In the West and South, many blamed the Bank in Philadelphia for the ruin.",
+  "source_note": "Summary drawn from 5 Steps 2024, Chapter 13, timeline (Panic of 1819) and Princeton Review 25e, Chapter 8, 'Monroe's Presidency.' Original synthesis. Image: Second Bank of the United States, Philadelphia, engraved 1831."
+ },
+ "stimulus_set": "panic-bank",
+ "source": "original; stimulus summarizes the Panic of 1819 from the grounding books, with an 1831 engraving of the Second Bank (public domain, in the shared image pool as ch41-second-bank-philadelphia)",
+ "stem": "The Panic of 1819 deepened sectional feeling mainly because",
+ "options": [
+  {
+   "key": "A",
+   "text": "New England banks were the only ones that failed in the Panic",
+   "misconception": "Banks failed across the country; the Panic was national, not a New England event."
+  },
+  {
+   "key": "B",
+   "text": "the Panic hurt only the South",
+   "misconception": "The Panic hurt the whole country, West and South and East alike."
+  },
+  {
+   "key": "C",
+   "text": "Congress blamed the Panic on the tariff",
+   "misconception": "Blame fell on the Bank and on speculation, not on the tariff."
+  },
+  {
+   "key": "D",
+   "text": "Westerners and Southerners blamed an Eastern-run national institution for their ruin"
+  }
+ ],
+ "rationales": {
+  "A": "Failures were widespread, and foreclosures hit the West and South hardest. A New England-only panic would not have produced a national crisis.",
+  "B": "The Panic hurt the whole country. What made it sectional was not who suffered, but who got blamed for the suffering.",
+  "C": "Congress did not blame the tariff for 1819. The tariff fights came later, and the Panic’s blame fell on the Bank.",
+  "D": "The Bank sat in Philadelphia and lent across the country, then called its loans in all at once. To Westerners and Southerners it looked like an Eastern power ruining them from afar, and that picture fed sectional resentment for years.",
+  "general": "1. Ask who suffered. Borrowers everywhere, but the ruin felt worst in the West and South.\n2. Ask who they blamed. The Second Bank, run from Philadelphia.\n3. Ask what the blame meant. A national institution looked like a sectional weapon.\n4. Put it together. The Panic turned an economic crash into a regional grievance.\nBackground: the Panic threw many into poverty, yet Monroe still won reelection in 1820; the resentment lasted longer than the crisis.\nRemember: a crash becomes sectional when one region names another as its cause."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0857",
+   "file": "u4/second-bank-philadelphia.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:United_States_Bank%2C_Philadelphia_-_drawn_by_C._Burton%2C_N.Y._%3B_engraved_%26_printed_by_Fenner%2C_Sears_%26_Co._LCCN2015650264.jpg",
+   "license": "Public domain",
+   "caption": "Second Bank of the United States, Philadelphia, engraved 1831",
+   "alt": "A Greek Revival bank building with tall columns and street trees, the Second Bank of the United States in Philadelphia"
+  }
+ ]
+}

@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-1166",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.14"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "1.B",
+  "3.A"
+ ],
+ "themes": [
+  "WXT",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 The Market Revolution: Economic Transformations"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.14 Subject to Debate"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   }
+  ],
+  "primary_sources": [
+   "New York celebration for the Erie Canal, 1825 (print)"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "This print shows New York harbor in 1825, crowded with sailing ships and steamboats flying flags to celebrate the opening of the Erie Canal.\n\nThe Erie Canal, completed in 1825, joined the Hudson River to the Great Lakes. Canal boats soon carried farm goods east to New York City and manufactured goods west to the Great Lakes.",
+  "source_note": "Print: New York celebration for the Erie Canal, 1825, public domain (Wikimedia Commons). Canal facts from Barron's Premium 2027, Chapter 6, Topic 4.5."
+ },
+ "stimulus_set": "erie-celebration-1825",
+ "source": "original; print public domain, New York celebration for the Erie Canal, 1825",
+ "stem": "The print celebrates the canal that tied western farms to New York instead of to New Orleans. What did that shift in trade routes most directly cause?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Western farmers stopped selling their grain to any eastern buyer",
+   "misconception": "The canal gave western farmers a better market, not a reason to stop selling."
+  },
+  {
+   "key": "B",
+   "text": "New Orleans grew into the nation's busiest port, passing New York",
+   "misconception": "New Orleans lost western trade to the canal; New York became the busiest port."
+  },
+  {
+   "key": "C",
+   "text": "The West grew tied to the Northeast, not to the South"
+  },
+  {
+   "key": "D",
+   "text": "Southern cotton began moving north through the canal to New York",
+   "misconception": "Cotton moved down the Mississippi, not north through the canal."
+  }
+ ],
+ "rationales": {
+  "A": "Western farmers did not stop selling. The canal gave them a better market to sell to, in the East.",
+  "B": "New Orleans lost western trade to the canal route. New York, not New Orleans, became the nation's busiest port.",
+  "C": "Before the canal, western grain floated down the Mississippi to New Orleans. The canal gave it a cheaper eastern route to New York, so the West's trade — and its interests — turned toward the Northeast.",
+  "D": "Cotton traveled down the Mississippi to New Orleans, not north through the canal. The canal ran east and west.",
+  "general": "1. Ask where western grain went before the canal. It floated down the Mississippi to New Orleans.\n2. Ask what the canal changed. It opened a cheaper route east, to New York and the Atlantic.\n3. Name the result. The West's trade turned toward the Northeast, and the two regions grew tied together while the South traded on a different river.\nBackground: The canal joined the Hudson River to the Great Lakes in 1825.\nRemember: a new road can redraw a region's friendships."
+ },
+ "figures": [
+  {
+   "file": "u4/original-misc-us-culture-02.png",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/New_York_celebration_for_the_Erie_Canal_1825.png",
+   "license": "Public domain",
+   "caption": "New York harbor celebrates the Erie Canal's opening, 1825. Flag-decked ships and steamboats crowd the water.",
+   "alt": "A print of New York harbor in 1825: dozens of sailing ships and steamboats, flags flying, crowd the water to celebrate the opening of the Erie Canal",
+   "id": "fig-apush-mcq-1166"
+  }
+ ]
+}

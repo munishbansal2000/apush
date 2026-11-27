@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-0822",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.2"
+ ],
+ "lesson": "apush-u4-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "5.A"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.2 The Rise of Political Parties and the Era of Jefferson, B. The Supreme Court Asserts Federal Power and the Power of the Judiciary"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "An Assertive Supreme Court"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Jefferson's First Term"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Chief Justice John Marshall, McCulloch v. Maryland (1819), public domain. Abridged. The Gibbons sentence is a paraphrase of the decision, labeled as such.",
+  "text": "“That the power to tax involves the power to destroy; that the power to destroy may defeat and render useless the power to create.”\n— Chief Justice John Marshall, McCulloch v. Maryland, 1819 (abridged)\n\n[Paraphrase: In Gibbons v. Ogden (1824) the Court ruled that only Congress could regulate trade between the states, and struck down New York's grant of a steamboat monopoly on waters between New York and New Jersey.]"
+ },
+ "stimulus_set": "marshall-federal-power",
+ "source": "original; stimulus is a verbatim public-domain excerpt from McCulloch v. Maryland (1819) plus a labeled paraphrase of Gibbons v. Ogden",
+ "stem": "Taken together, the McCulloch and Gibbons decisions in the stimulus best show that the Marshall Court",
+ "options": [
+  {
+   "key": "A",
+   "text": "gave the states the power to tax federal banks and control interstate trade",
+   "misconception": "Both decisions went the other way: the states lost the tax fight and the trade monopoly."
+  },
+  {
+   "key": "B",
+   "text": "limited Congress to only the powers the Constitution lists by name",
+   "misconception": "McCulloch read Congress's powers broadly through the Necessary and Proper Clause; Gibbons read the commerce power broadly."
+  },
+  {
+   "key": "C",
+   "text": "refused to hear disputes between the states and the federal government",
+   "misconception": "The Court heard both cases and decided them, asserting federal power in each."
+  },
+  {
+   "key": "D",
+   "text": "consistently asserted federal power over state power"
+  }
+ ],
+ "rationales": {
+  "A": "Both decisions went the other way: the states lost the tax fight and the trade monopoly.",
+  "B": "McCulloch read Congress's powers broadly through the Necessary and Proper Clause. Gibbons read the commerce power broadly.",
+  "C": "The Court heard both cases and decided them, asserting federal power in each.",
+  "D": "In McCulloch the Court shielded a federal bank from a state tax, and in Gibbons it gave Congress alone the power over trade between states. Two different subjects, one direction: federal law above state law. Background: Jefferson hated this direction and later called the judiciary a body that would twist the Constitution into any form it pleased.",
+  "general": "1. Take the first case. McCulloch: a state may not tax a federal bank.\n2. Take the second. Gibbons: a state may not fence off interstate trade.\n3. Ask what points the same way. In both, the state loses and the federal government wins.\n4. Put it together. The Marshall Court spent thirty years building federal supremacy, case by case.\nRemember: a court's direction is clearer from two cases than from one, so pair them before you judge."
+ }
+}

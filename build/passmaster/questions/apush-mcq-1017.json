@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-1017",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.9"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "2.C"
+ ],
+ "themes": [
+  "ARC",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.9 The Development of an American Culture, B. European Romanticism and American Culture"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Religious and Social Movements"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "Thomas Cole's The Oxbow (View from Mount Holyoke, Northampton, Massachusetts, after a Thunderstorm), painted in 1836, looks down from a high, storm-darkened hillside. On the left, a gnarled tree leans over wild forest under black clouds. On the right, the Connecticut River bends through sunny, cleared farmland dotted with fields and small boats. A tiny figure with an easel stands on the rocks at lower right.",
+  "source_note": "Painting: Thomas Cole, The Oxbow, 1836 (Metropolitan Museum of Art). Public domain; image viewed before writing. Description records only what the painting visibly shows."
+ },
+ "stimulus_set": "cole-oxbow-49",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The contrast between the two halves of the painting most directly suggests which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Cole believed farming would destroy every American forest within a decade",
+   "misconception": "The dark storm clouds look like a warning, so it is easy to read a fixed deadline into them."
+  },
+  {
+   "key": "B",
+   "text": "The Connecticut River valley was still unsettled wilderness in 1836",
+   "misconception": "The wild left half is so vivid that it is easy to miss the farms on the right."
+  },
+  {
+   "key": "C",
+   "text": "American nature, both wild and being settled, held meaning for painters"
+  },
+  {
+   "key": "D",
+   "text": "European ruins were the best subject for American painters",
+   "misconception": "European landscape painting used ruins, so it is easy to assume Cole wanted them too."
+  }
+ ],
+ "rationales": {
+  "A": "Cole shows farms already thriving on the right; he does not predict a date for the forests to vanish.",
+  "B": "The sunny right half plainly shows cleared fields and boats, so the valley was already settled.",
+  "C": "The painting holds wilderness and farmland side by side, and the storm light makes the meeting feel momentous.",
+  "D": "America had no ancient ruins, so Cole painted wilderness instead; ruins were Europe's subject, not his.",
+  "general": "1. Read the painting in two halves. Left: storm, wild forest, a leaning tree. Right: sun, river, farms.\n2. Ask what the split means. Cole is watching settlement arrive in the wilderness, and he paints the meeting itself.\nBackground from the books: Hudson River School painters prized wild nature and felt civilization closing in on it.\nRemember: when a painting splits its scene in two, compare the halves before you decide what it means."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1017",
+   "file": "u4/original-misc-us-culture-13.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Cole_Thomas_The_Oxbow_%28The_Connecticut_River_near_Northampton_1836%29.jpg",
+   "license": "Public domain",
+   "caption": "Thomas Cole, The Oxbow, 1836. Stormy wilderness at left, sunny farmland at right.",
+   "alt": "Thomas Cole's 1836 painting The Oxbow: a storm-darkened wooded hillside at left, the Connecticut River bending through sunny farmland at right, a tiny artist with an easel on the rocks below"
+  }
+ ]
+}

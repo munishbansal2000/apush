@@ -1,0 +1,83 @@
+{
+ "id": "apush-mcq-1105",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.11"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "2.A",
+  "3.D"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.11 An Age of Reform, A. Reform Movements in the Antebellum Period"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "An Age of Reform"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "This view of Lowell, Massachusetts, published between 1840 and 1860, shows a row of large brick textile mills along the Merrimack River, with church steeples and houses behind them and farm fields in the foreground.",
+  "source_note": "View of Lowell, Massachusetts, 1840-1860, Library of Congress (LCCN94515606), public domain. Image viewed before writing."
+ },
+ "stimulus_set": "lowell-mills-view",
+ "source": "original; stimulus image from the shared pool, View of Lowell, 1840-1860, public domain",
+ "stem": "The view shows mills, churches, and houses standing together in one planned town. That layout best supports which of the following claims about Lowell's founders?",
+ "options": [
+  {
+   "key": "A",
+   "text": "They built the mills far from the workers' homes",
+   "misconception": "Houses stand beside the mills in the view, not far away."
+  },
+  {
+   "key": "B",
+   "text": "They let the town grow up without any planning",
+   "misconception": "The mills, housing, and churches stand in one orderly plan, not a random sprawl."
+  },
+  {
+   "key": "C",
+   "text": "They planned Lowell as one factory community"
+  },
+  {
+   "key": "D",
+   "text": "They built Lowell a full century before the mills",
+   "misconception": "The town grew with the mills after 1823; it did not predate them by a century."
+  }
+ ],
+ "rationales": {
+  "A": "The view shows houses and churches close behind the mills. Workers lived beside their work, not far from it.",
+  "B": "The neat rows of mills, the bridge, and the town behind them show a company-planned town, not an accident.",
+  "C": "Lowell's mill companies planned the town as a whole: mills on the river, boardinghouses nearby, and churches for the workers. The view shows that plan.",
+  "D": "Lowell was founded as a mill town in the 1820s. The first mill opened in 1823, so no century gap exists.",
+  "general": "1. Read the layout. Mills line the river, houses and church steeples rise just behind them.\n2. Ask who arranged it. The mill companies planned the town as a whole, not lot by lot.\n3. Name the idea. Lowell was a factory community, where work, home, and church stood together.\nBackground: The Merrimack Manufacturing Company was incorporated in 1822, and its first mill opened in 1823.\nRemember: a town's layout is a plan you can read — ask who drew it and what life it was meant to shape."
+ },
+ "figures": [
+  {
+   "file": "u4/barrons-2027-ch06-02.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/View_of_Lowell%2C_Massachusetts_at_the_confluence_of_the_Merrimack_and_Concord_rivers%2C_with_a_row_of_textile_mills_or_factories_mainly_along_the_Merrimack_River_LCCN94515606.jpg",
+   "license": "Public domain",
+   "caption": "View of Lowell, Massachusetts, with its textile mills along the Merrimack River, 1840-1860.",
+   "alt": "A view of Lowell, Massachusetts, showing a row of large brick textile mills along the Merrimack River with the town behind them",
+   "id": "fig-apush-mcq-1105"
+  }
+ ]
+}

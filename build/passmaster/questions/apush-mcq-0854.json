@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0854",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.3"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.3 Politics and Regional Interests, B. The American System and Sectionalism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Monroe's Presidency"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "The Panic of 1819 began when the Second Bank of the United States, fearing it had lent too much, called in its loans. Borrowers could not pay, banks failed, and farms and shops were sold at auction. In the West and South, many blamed the Bank in Philadelphia for the ruin.",
+  "source_note": "Summary drawn from 5 Steps 2024, Chapter 13, timeline (Panic of 1819) and Princeton Review 25e, Chapter 8, 'Monroe's Presidency.' Original synthesis. Image: Second Bank of the United States, Philadelphia, engraved 1831."
+ },
+ "stimulus_set": "panic-bank",
+ "source": "original; stimulus summarizes the Panic of 1819 from the grounding books, with an 1831 engraving of the Second Bank (public domain, in the shared image pool as ch41-second-bank-philadelphia)",
+ "stem": "The Panic of 1819 best shows the Second Bank’s power because the Bank",
+ "options": [
+  {
+   "key": "A",
+   "text": "printed the only money used in the United States at the time",
+   "misconception": "State banks also issued notes; the Bank was not the only source of money."
+  },
+  {
+   "key": "B",
+   "text": "was owned entirely by the federal government",
+   "misconception": "The Bank was part private: the government held a share, and private investors held the rest."
+  },
+  {
+   "key": "C",
+   "text": "could call in loans across the country and ruin borrowers in many states"
+  },
+  {
+   "key": "D",
+   "text": "refused to lend money to anyone after 1816",
+   "misconception": "The Bank lent freely after its 1816 charter; the Panic came when it suddenly tightened."
+  }
+ ],
+ "rationales": {
+  "A": "State banks printed their own notes all over the country. The Second Bank’s power was not a monopoly on money.",
+  "B": "The Bank mixed public and private money. The government owned a fifth of it; private investors owned the rest.",
+  "C": "The Bank had lent widely, and when it called its loans in, borrowers from the West to the South could not pay. One decision in Philadelphia ruined farms and shops across the country, and that reach is the power the Panic showed.",
+  "D": "The Bank lent heavily in its first years, which is why it had so much to call in. The Panic came from sudden tightening, not from never lending.",
+  "general": "1. Ask what the Bank did. It called in its loans, fearing it had lent too much.\n2. Ask what followed. Borrowers could not pay, banks failed, and property was sold at auction.\n3. Ask how far it reached. The ruin spread through the West and the South, far from Philadelphia.\n4. Put it together. One bank’s decision reached across the country, and that reach is its power.\nBackground: the Panic followed growth, inflation, and land speculation, and when the Bank called in its loans many borrowers could not repay them.\nRemember: power is reach, so ask how far one decision travels."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0854",
+   "file": "u4/second-bank-philadelphia.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:United_States_Bank%2C_Philadelphia_-_drawn_by_C._Burton%2C_N.Y._%3B_engraved_%26_printed_by_Fenner%2C_Sears_%26_Co._LCCN2015650264.jpg",
+   "license": "Public domain",
+   "caption": "Second Bank of the United States, Philadelphia, engraved 1831",
+   "alt": "A Greek Revival bank building with tall columns and street trees, the Second Bank of the United States in Philadelphia"
+  }
+ ]
+}

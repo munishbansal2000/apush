@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0899",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.5"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "B",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 Market Revolution: Economic Transformations, B. Advances in Technology"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 Market Revolution: Economic Transformations, C. Improvements in Transportation and Regional Interdependence"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Transportation: Canals, Railroads, Highways, and Steamships"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "A nineteenth-century book illustration shows Robert Fulton's steamboat Clermont at a New York dock in 1807. A large paddle wheel turns at the boat's side, smoke rises from its funnel, and workers load barrels while a crowd watches. Fulton demonstrated the boat on the Hudson River in 1807.",
+  "source_note": "Robert Fulton boards his steamboat the Clermont in New York, 1807, illustration by Louis Figuier (1819-1894), via Wikimedia Commons. Public domain; image viewed before writing. Date from Barron's Premium 2027, Chapter 6, Topic 4.5 B."
+ },
+ "stimulus_set": "clermont-1807",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The steamboat in the image mattered most because it",
+ "options": [
+  {
+   "key": "A",
+   "text": "was the first ship ever to cross the Atlantic Ocean",
+   "misconception": "Sailing ships had crossed the Atlantic for centuries; the Clermont ran on the Hudson River, not across the ocean."
+  },
+  {
+   "key": "B",
+   "text": "could travel upstream against the river current on a schedule"
+  },
+  {
+   "key": "C",
+   "text": "replaced the railroad as the main way to move freight",
+   "misconception": "Railroads came later and eventually overshadowed canals and steamboats; the steamboat did not replace them."
+  },
+  {
+   "key": "D",
+   "text": "carried enslaved laborers to the cotton fields",
+   "misconception": "Steamboats carried freight and passengers on rivers; they were not the way enslaved people were moved to cotton fields."
+  }
+ ],
+ "rationales": {
+  "A": "The Atlantic had been crossed by sail since 1492. The Clermont's feat was a powered trip up the Hudson River.",
+  "B": "Steam power freed river travel from wind and current. Boats could now go upstream on a timetable, and river commerce grew fast.",
+  "C": "The first railroad tracks were laid in 1829, after the Clermont. Steamboats came first; railroads later took the lead.",
+  "D": "The barrels and crowd in the picture show ordinary commerce. Steamboats moved freight and passengers, not enslaved field workers.",
+  "general": "1. Look at the boat. A paddle wheel and a smoking funnel mean it runs on steam, not wind.\n2. Ask what steam changes on a river. A sailing vessel drifts downstream and struggles back; a steamboat goes both ways.\n3. Put it together. Reliable upstream travel on a schedule is what made the steamboat matter.\nBackground: Within twenty years of the Clermont, steamboats dominated commercial shipping on American rivers and canals.\nRemember: a new power source matters when it frees travel from wind and current."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0899",
+   "file": "u4/fulton-clermont-1807.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Robert_Fulton_boards_his_steamboat%2C_the_%27Clermont%27%2C_in_New_York%2C_1807.jpg",
+   "license": "Public domain",
+   "caption": "Fulton's steamboat Clermont at New York, 1807. Paddle wheel, smoke, and loading barrels.",
+   "alt": "A book illustration of the steamboat Clermont at a New York dock in 1807: a large paddle wheel at its side, smoke from its funnel, workers loading barrels, and a crowd watching"
+  }
+ ]
+}

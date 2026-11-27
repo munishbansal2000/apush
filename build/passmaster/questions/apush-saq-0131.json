@@ -1,0 +1,92 @@
+{
+ "id": "apush-saq-0131",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.14"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "2.B"
+ ],
+ "themes": [
+  "WXT",
+  "SOC",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.1 Contextualizing Period 4"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.14 Subject to Debate"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   }
+  ],
+  "primary_sources": []
+ },
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.1: The first half of the nineteenth century witnessed a series of economic, territorial, and demographic changes that led to struggles over the definition and limits of democratic control. The economy was rapidly changing and growing, as an older semi-subsistence economy gave way to a market economy with national, and even international, reach. The “market revolution” affected various parts of the country differently. In some ways, the regions became more interlinked as local economies were drawn into national markets, but at the same time, the issue of free labor versus slave labor pushed the country further apart.",
+  "source_note": "Paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.1 (economic, territorial, and demographic change; market revolution; free labor versus slave labor)."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus paraphrased from Barron's Premium 2027, Chapter 6, Topic 4.1",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly identify ONE change described in the passage that reshaped the United States in the first half of the nineteenth century.",
+   "modelAnswer": "The passage describes an older semi-subsistence economy giving way to a market economy with national and international reach. It also describes rapid territorial and population growth.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one change the passage describes, such as the rise of a market economy, territorial growth, or population growth.",
+     "notEarned": "Naming a change the passage does not describe does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE way the market revolution pushed the regions further apart, as the passage describes.",
+   "modelAnswer": "The market revolution gave the North wage labor and factories while the South grew cotton with enslaved labor. The two regions therefore came to depend on opposite labor systems, free labor and slave labor, which pulled them apart.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one way the market revolution divided the regions, such as opposite labor systems or different regional economies.",
+     "notEarned": "Restating that the regions grew apart without explaining how does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limitation of the passage as evidence about how ordinary Americans experienced the market revolution.",
+   "modelAnswer": "The passage is a textbook summary that describes the whole period in broad terms. It gives no voice to the farmers, mill workers, or enslaved people who lived through the change, so it cannot show how they experienced it.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limit, such as the passage being a broad summary with no voices of ordinary people.",
+     "notEarned": "Saying the passage is short without naming whose experience it leaves out does not earn the point."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+{
+ "id": "apush-saq-0130",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.13"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.13 The Society of the South in the Early Republic, A. Slavery and the Southern “Way of Life”"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "An Age of Reform"
+   }
+  ],
+  "primary_sources": [
+   "Thomas R. Dew, Review of the Debate in the Virginia Legislature of 1831 and 1832, 1832"
+  ]
+ },
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "text": "Thomas R. Dew, Review of the Debate in the Virginia Legislature of 1831 and 1832 (1832), written after Nat Turner's rebellion and the Virginia debate over ending slavery:\n\n“Any question must be determined by its circumstances, and if, as really is the case, we cannot get rid of slavery without producing a greater injury to both the masters and slaves, there is no rule of conscience or revealed law of God which can condemn us.”",
+  "source_note": "Quotation verbatim from Thomas R. Dew, Review of the Debate in the Virginia Legislature of 1831 and 1832 (1832), as printed on natturnerproject.org. Public domain."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus verbatim from Thomas R. Dew, Review of the Debate in the Virginia Legislature of 1831 and 1832 (1832), public domain",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly identify ONE claim Dew makes in the passage about ending slavery.",
+   "modelAnswer": "Dew claims that ending slavery would cause greater injury to both masters and slaves. He says no rule of conscience or law of God condemns slaveholders.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one claim the passage makes, such as ending slavery causing greater injury, or no law of God condemning slaveholders.",
+     "notEarned": "Naming a claim the passage does not make does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE way Dew's argument differs from the older view of slavery as a necessary evil.",
+   "modelAnswer": "The older view admitted slavery was wrong but said it could not be ended safely. Dew goes further, saying slavery is not condemned by God and causes no wrong that needs excusing.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one difference, such as Dew denying any wrong while the older view admitted one, or Dew defending slavery rather than excusing it.",
+     "notEarned": "Restating Dew's claim without comparing it to the older view does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limitation of the passage as evidence about how enslaved people viewed slavery.",
+   "modelAnswer": "Dew was a slaveholding professor defending slavery, so he speaks for owners, not for enslaved people. The passage shows the owners' argument, not what enslaved people themselves thought.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limit, such as Dew speaking as a slaveholding defender rather than as an enslaved person.",
+     "notEarned": "Saying the passage is one-sided without naming whose view it leaves out does not earn the point."
+    }
+   ]
+  }
+ ]
+}

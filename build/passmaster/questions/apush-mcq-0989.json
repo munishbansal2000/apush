@@ -1,0 +1,83 @@
+{
+ "id": "apush-mcq-0989",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.8"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "3.D"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, A. The Second Two-Party System: The Democrats and the Whigs"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Bank War"
+   }
+  ],
+  "primary_sources": [
+   "Andrew Jackson, veto message, July 10, 1832"
+  ]
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "The lithograph, published in 1836, shows President Andrew Jackson at right, striking with a cane at a many-headed serpent. The serpent's heads carry the names of states, and the largest head is Nicholas Biddle, president of the Second Bank of the United States. The caption reads 'GENERAL JACKSON SLAYING THE MANY HEADED MONSTER.' In his veto of the Bank's recharter in 1832, Jackson wrote: 'It is to be regretted that the rich and powerful too often bend the acts of government to their selfish purposes.' He also wrote that the Court's opinion 'ought not to control the coordinate authorities of this Government,' and that 'the Congress, the Executive, and the Court must each for itself be guided by its own opinion of the Constitution.'",
+  "source_note": "Lithograph 'General Jackson Slaying the Many Headed Monster,' Henry R. Robinson, 1836 (Library of Congress). Public domain; image viewed before writing. Veto quotation: Andrew Jackson, veto message, July 10, 1832, public domain."
+ },
+ "stimulus_set": "bank-war-monster-48",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "In his veto message, Jackson argued that the Supreme Court's decision upholding the Bank did not settle the question. What did he claim instead?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Constitution forbade Congress to charter any bank at all",
+   "misconception": "Jackson's attack sounds absolute, so it is easy to hear it as a claim that banks are banned outright."
+  },
+  {
+   "key": "B",
+   "text": "Each branch of government must judge the Constitution for itself"
+  },
+  {
+   "key": "C",
+   "text": "Only the states could decide whether a federal law was constitutional",
+   "misconception": "States judging laws was a live idea of the era, so it is easy to attach it to Jackson too."
+  },
+  {
+   "key": "D",
+   "text": "The president alone could declare a federal law unconstitutional",
+   "misconception": "Jackson sounds like he is claiming the last word, so it is easy to read him as claiming it for himself alone."
+  }
+ ],
+ "rationales": {
+  "A": "Jackson argued the Bank was unwise and unconstitutional as chartered, but he did not claim the Constitution banned all banks by its words.",
+  "B": "Jackson wrote that the Court's opinion 'ought not to control the coordinate authorities,' so each branch must be guided by its own opinion of the Constitution.",
+  "C": "Letting states judge federal laws was Calhoun's nullification doctrine, which Jackson rejected, not Jackson's own claim.",
+  "D": "Jackson claimed each branch judges for itself, not that the president alone decides; Congress and the Court keep their own judgment too.",
+  "general": "1. Find the veto's constitutional move. Jackson did not just attack the Bank's policy; he answered the Court's ruling in McCulloch v. Maryland.\n2. Read his answer. The Court's opinion, he wrote, ought not to control the other branches, and each must judge the Constitution for itself.\nBackground: McCulloch had upheld the Bank in 1819, so Jackson had to explain why a president could still say no.\nRemember: a veto can argue law as well as policy — look for the sentence that answers the Court."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0989",
+   "file": "u4/5s24-ch13-mcq-08.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/General_Jackson_slaying_the_many_headed_monster_LCCN2008661279.jpg",
+   "license": "Public domain",
+   "caption": "General Jackson slaying the many headed monster, 1836. Jackson strikes a serpent whose heads bear state names.",
+   "alt": "A lithograph of President Andrew Jackson striking a many-headed serpent with a cane; the serpent's heads carry state names and the largest head is Nicholas Biddle"
+  }
+ ]
+}

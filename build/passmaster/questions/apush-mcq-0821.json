@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-0821",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.2"
+ ],
+ "lesson": "apush-u4-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.2 The Rise of Political Parties and the Era of Jefferson, B. The Supreme Court Asserts Federal Power and the Power of the Judiciary"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "An Assertive Supreme Court"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Jefferson's First Term"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Chief Justice John Marshall, McCulloch v. Maryland (1819), public domain. Abridged. The Gibbons sentence is a paraphrase of the decision, labeled as such.",
+  "text": "“That the power to tax involves the power to destroy; that the power to destroy may defeat and render useless the power to create.”\n— Chief Justice John Marshall, McCulloch v. Maryland, 1819 (abridged)\n\n[Paraphrase: In Gibbons v. Ogden (1824) the Court ruled that only Congress could regulate trade between the states, and struck down New York's grant of a steamboat monopoly on waters between New York and New Jersey.]"
+ },
+ "stimulus_set": "marshall-federal-power",
+ "source": "original; stimulus is a verbatim public-domain excerpt from McCulloch v. Maryland (1819) plus a labeled paraphrase of Gibbons v. Ogden",
+ "stem": "In McCulloch v. Maryland, the Court ruled that",
+ "options": [
+  {
+   "key": "A",
+   "text": "Congress could charter the Second Bank, and Maryland could not tax it"
+  },
+  {
+   "key": "B",
+   "text": "Maryland could tax the Second Bank because states control banks in their borders",
+   "misconception": "Marshall ruled the opposite: a state tax on a federal institution was unconstitutional."
+  },
+  {
+   "key": "C",
+   "text": "Congress had no power to charter a bank, since the Constitution never names one",
+   "misconception": "The Court upheld the bank under the Necessary and Proper Clause, reading Congress's powers broadly."
+  },
+  {
+   "key": "D",
+   "text": "the Supreme Court could not hear cases about state taxes",
+   "misconception": "The Court heard the case and decided it; it also affirmed in Cohens v. Virginia that it could hear appeals from state courts."
+  }
+ ],
+ "rationales": {
+  "A": "Marshall upheld the Second Bank as a proper means for Congress to carry out its listed powers, and held Maryland's tax on it unconstitutional, because the power to tax involves the power to destroy. A state could not tax a federal institution out of existence. Background: the decision read the Necessary and Proper Clause broadly, the loose construction Jefferson had always opposed.",
+  "B": "Marshall ruled the opposite: a state tax on a federal institution was unconstitutional.",
+  "C": "The Court upheld the bank under the Necessary and Proper Clause, reading Congress's powers broadly.",
+  "D": "The Court heard the case and decided it. It also affirmed in Cohens v. Virginia that it could hear appeals from state courts.",
+  "general": "1. Read the warning. The power to tax involves the power to destroy.\n2. Ask who is taxing whom. Maryland is taxing the Second Bank, a federal institution.\n3. Ask what Marshall concludes. A state cannot tax a federal creation out of existence.\n4. Put it together. The bank stands because federal power stands above state interference.\nRemember: when a state taxes a federal thing, ask whether the tax is really a veto."
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0132",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.14"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "2.B",
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.3 Politics and Regional Interests"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.14 Subject to Debate"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Chapter 8 Summary"
+   }
+  ],
+  "primary_sources": [
+   "John Quincy Adams, diary, January 10, 1820"
+  ]
+ },
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "text": "John Quincy Adams, diary, January 10, 1820, writing as Secretary of State during the Missouri crisis:\n\n“I take it for granted that the present question is a mere preamble—a title-page to a great tragic volume. ... The President thinks this question will be winked away by a compromise. But so do not I. Much am I mistaken if it is not destined to survive his political and individual life and mine.”\n\nBackground: The Missouri Compromise, admitting Missouri as a slave state and Maine as a free state, was completed in Congress in March 1820.",
+  "source_note": "Quotation verbatim from John Quincy Adams, diary, January 10, 1820, Memoirs of John Quincy Adams, vol. 5, public domain."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus verbatim from John Quincy Adams, diary, January 10, 1820, public domain",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly identify ONE claim Adams makes in the passage about the Missouri question.",
+   "modelAnswer": "Adams claims the Missouri question is only a preamble, a title page to a great tragic volume. He says it will outlive both President Monroe and himself.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one claim the passage makes, such as the Missouri question being only a preamble, or its outliving Monroe and Adams.",
+     "notEarned": "Naming a claim the passage does not make does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason Adams doubted the compromise would settle the question.",
+   "modelAnswer": "Adams doubted the compromise because it settled only Missouri, while the underlying fight over slavery's spread would return with each new territory. A bargain over one state could not end a conflict rooted in the whole country.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason for Adams's doubt, such as the compromise settling one state while the slavery question remained, or the fight returning with new territories.",
+     "notEarned": "Restating Adams's claim without explaining why he doubted the compromise does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limitation of the passage as evidence about how most Americans viewed the Missouri crisis.",
+   "modelAnswer": "Adams was one man, the Secretary of State, writing privately in his diary. His passage shows his own fear, not what most Americans, North or South, thought about the crisis.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limit, such as Adams writing as one elite official in a private diary rather than speaking for most Americans.",
+     "notEarned": "Saying the passage is one-sided without naming whose view it leaves out does not earn the point."
+    }
+   ]
+  }
+ ]
+}

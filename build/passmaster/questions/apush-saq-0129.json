@@ -1,0 +1,86 @@
+{
+ "id": "apush-saq-0129",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.13"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "3.A",
+  "4.A"
+ ],
+ "themes": [
+  "SOC",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.13 The Society of the South in the Early Republic, B. Cotton, Slavery, and the Southern Exception"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   }
+  ],
+  "primary_sources": []
+ },
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "text": "In the early republic, cotton and slavery remade the South. Eli Whitney's cotton gin, invented in 1793, made short-staple cotton profitable, and planters spread cotton farming westward across the South. The enslaved population grew from about 700,000 in 1790 to about 2 million in 1830, and by 1840 the cotton crop had grown to more than 1.3 million bales. Slavery, which had once been called a necessary evil, came to be defended as a positive good, and the South grew distinct from the rest of the country.",
+  "source_note": "Paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.13 A and B."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus paraphrased from Barron's Premium 2027, Chapter 6, Topic 4.13 A and B",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly identify ONE development described in the passage that changed the Southern economy.",
+   "modelAnswer": "The passage describes the cotton gin making short-staple cotton profitable, so planters spread cotton farming westward across the South. Cotton became the region's great crop.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one development the passage describes, such as the cotton gin, the westward spread of cotton farming, or the growth of the enslaved population.",
+     "notEarned": "Naming a development the passage does not describe does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason the enslaved population grew as the passage describes.",
+   "modelAnswer": "The enslaved population grew because cotton farming needed many workers, and planters bought enslaved laborers to work the new cotton land. The growth came after the 1808 ban on importing enslaved people, so it came from natural increase and the domestic slave trade.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one cause of the growth, such as the demand for labor on new cotton land, natural increase, or the domestic slave trade.",
+     "notEarned": "Restating that the population grew, without giving a cause, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limitation of the passage as evidence about Southern society.",
+   "modelAnswer": "The passage describes the cotton economy and the defense of slavery, but it says nothing about the lives of enslaved people themselves. It also says nothing about white Southerners who owned no slaves.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limit, such as the passage's silence about enslaved people's lives or about non-slaveholding white Southerners.",
+     "notEarned": "Saying the passage is incomplete without naming what it leaves out does not earn the point."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-0995",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.8"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "A",
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "ARC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, A. The Second Two-Party System: The Democrats and the Whigs"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Bank War"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "The engraving, published in London in March 1831, shows the Second Bank of the United States in Philadelphia: a Greek temple front with tall columns, wide steps, and well-dressed people coming and going. In 1836, Jackson ordered that federal land be sold only for gold or silver coin, not paper money. The order was called the Specie Circular.",
+  "source_note": "Engraving: 'United States Bank, Philadelphia,' drawn by C. Burton, engraved by Fenner, Sears & Co., published London, March 1831. Public domain; image viewed before writing. Specie Circular described from Barron's Premium 2027, Chapter 6, Topic 4.8 A."
+ },
+ "stimulus_set": "bank-economy-48",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The engraving's grand temple design most directly suggests that the Bank was meant to appear",
+ "options": [
+  {
+   "key": "A",
+   "text": "permanent and trustworthy, like a national institution"
+  },
+  {
+   "key": "B",
+   "text": "small and local, serving only one city",
+   "misconception": "The building sits in one city, so it is easy to read it as a local bank."
+  },
+  {
+   "key": "C",
+   "text": "a government mint that coined money",
+   "misconception": "A grand building that handles money looks like a mint, so it is easy to call it one."
+  },
+  {
+   "key": "D",
+   "text": "open only to wealthy merchants",
+   "misconception": "The people on the steps look wealthy, so it is easy to think the Bank served only the rich."
+  }
+ ],
+ "rationales": {
+  "A": "Tall columns, wide steps, and a temple front are the look of a solid public institution, which is how the Bank presented itself.",
+  "B": "The building's scale and the crowds on its steps say national, not small and local.",
+  "C": "The Bank issued notes and held deposits; it did not mint coins, and the engraving shows a bank building, not a mint.",
+  "D": "Well-dressed people crowd the steps, but the image shows a public building, not a private club, and the Bank served the whole country.",
+  "general": "1. Look at the architecture. A temple front with tall columns is built to look solid and lasting.\n2. Ask what the look was for. A national bank needed the public's trust, and a temple says 'your money is safe here.'\nBackground: the Bank held federal deposits and regulated state banks' paper money.\nRemember: buildings argue too — columns and steps are a claim about trust."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0995",
+   "file": "u4/second-bank-philadelphia.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:United_States_Bank%2C_Philadelphia_-_drawn_by_C._Burton%2C_N.Y._%3B_engraved_%26_printed_by_Fenner%2C_Sears_%26_Co._LCCN2015650264.jpg",
+   "license": "Public domain",
+   "caption": "The Second Bank of the United States, Philadelphia, 1831. A Greek temple front with tall columns.",
+   "alt": "An engraving of the Second Bank of the United States in Philadelphia: a Greek temple front with tall columns, wide steps, and well-dressed people coming and going"
+  }
+ ]
+}

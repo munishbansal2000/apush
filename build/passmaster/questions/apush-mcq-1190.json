@@ -1,0 +1,86 @@
+{
+  "answerKey": "B",
+  "difficulty": 2,
+  "figures": [
+    {
+      "alt": "1836 map showing lands assigned to emigrant Indians west of Arkansas and Missouri, with tribal territories outlined and labeled",
+      "caption": "Map showing the lands assigned to emigrant Indians west of Arkansas and Missouri, Topographical Bureau, February 23, 1836.",
+      "file": "pt01/fig2-removal-map-1836.jpg",
+      "id": "fig-apush-mcq-1190",
+      "license": "Public domain",
+      "source_url": "https://www.loc.gov/item/99446197/"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 6",
+        "section": "Topic 4.8 Jackson and Federal Power"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 13",
+        "section": "Rise of Manufacturing and the Age of Jackson (1820–1845)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 8"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-1190",
+  "lesson": "apush-u4-l4",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "The Homestead Act was the federal government's removal action.",
+      "text": "The Homestead Act’s distribution of western land to settlers"
+    },
+    {
+      "key": "B",
+      "text": "The Indian Removal Act of 1830 and the Trail of Tears"
+    },
+    {
+      "key": "C",
+      "misconception": "The Freedmen's Bureau was the federal government's removal action.",
+      "text": "The establishment of the Freedmen’s Bureau after the Civil War"
+    },
+    {
+      "key": "D",
+      "misconception": "The Interstate Commerce Commission was the federal government's removal action.",
+      "text": "The creation of the Interstate Commerce Commission"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "The Homestead Act distributed land to settlers; it was not the federal removal of the Cherokee.",
+    "B": "The Indian Removal Act and the Trail of Tears are how the federal government carried out Cherokee removal: a law authorizing it and a forced migration enforcing it.",
+    "C": "The Freedmen's Bureau came after the Civil War, in a different context.",
+    "D": "The Interstate Commerce Commission regulated railroads, not removal.",
+    "general": "1. Ask what the federal government did. It passed a law authorizing removal and then forced the migration.\n2. Name the two parts. The Indian Removal Act and the Trail of Tears.\n3. Test the other options. Homestead land, the Freedmen's Bureau, and railroad regulation are different federal actions.\n4. Match the action to the removal. The Act and the forced march are the removal itself, carried out.\nRemember: to name what a government did, find its law and its enforcement."
+  },
+  "reasoning": "comparison",
+  "skills": [
+    "2.B"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from Worcester v. Georgia (1832) with the 1836 Topographical Bureau removal map",
+  "status": "final",
+  "stem": "Which of the following most directly describes how the federal government carried out Cherokee removal?",
+  "stimulus": {
+    "kind": "mixed",
+    "source_note": "Worcester v. Georgia, 1832, majority opinion by Chief Justice John Marshall, public domain. Map: Topographical Bureau, 1836, Library of Congress.",
+    "text": "“The Cherokee Nation . . . are . . . a distinct community, occupying its own territory . . . in which the laws of Georgia can have no force . . . The Acts of Georgia are repugnant to the Constitution, laws, and treaties of the United States.”"
+  },
+  "stimulus_set": "worcester-georgia-1832",
+  "themes": [
+    "PCE",
+    "MIG"
+  ],
+  "topics": [
+    "4.8"
+  ],
+  "type": "mcq",
+  "unit": 4
+}

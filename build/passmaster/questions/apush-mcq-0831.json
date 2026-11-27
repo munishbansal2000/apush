@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0831",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.3"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "D",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "GEO",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.3 Politics and Regional Interests, C. A Temporary Truce on the Slavery Question in the Pre-Civil War Period"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "Missouri Compromise"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The Missouri Compromise, 1820"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "An abolitionist wall map of the United States, published in the 1850s, colors free states and slave states differently and draws a line across the western territories labeled as the Missouri Compromise line. The territories beyond the line are marked as lands “whose destiny is yet to be decided.”",
+  "source_note": "Map of the United States, showing by colors the area of freedom and slavery, published 1850s (abolitionist wall map; scan of pre-1930 original). Public domain."
+ },
+ "stimulus_set": "missouri-map",
+ "source": "original; stimulus is an 1850s abolitionist wall map showing the Missouri Compromise line (public domain, in the shared image pool as 5s24-ch14-mcq-01)",
+ "stem": "The mapmaker colors Missouri as a slave state even though it lies north of the compromise line because",
+ "options": [
+  {
+   "key": "A",
+   "text": "Missouri had voted to ban slavery when it joined the Union in 1821",
+   "misconception": "Missouri entered as a slave state; a ban reverses the Compromise."
+  },
+  {
+   "key": "B",
+   "text": "the line applied only to states, not to territories",
+   "misconception": "The line applied to the remaining Louisiana territory; Missouri was the exception written into the law."
+  },
+  {
+   "key": "C",
+   "text": "the mapmaker made an error in coloring the map",
+   "misconception": "The coloring follows the law; Missouri slave and Maine free was the bargain itself."
+  },
+  {
+   "key": "D",
+   "text": "the Compromise admitted Missouri as a slave state, the exception to its own line"
+  }
+ ],
+ "rationales": {
+  "A": "Missouri joined the Union as a slave state in 1821. A state that banned slavery would not need a compromise to get in.",
+  "B": "The 36°30′ line governed the rest of the Louisiana territory. Missouri was the one state the line did not bind, because the Compromise named it.",
+  "C": "There is no error to fix. Missouri slave and Maine free was the deal, and the map colors it as the deal was made.",
+  "D": "The Compromise drew the line and then made Missouri the exception to it, admitting it as a slave state north of the line. The map shows the law as written.",
+  "general": "1. Find Missouri on the map. It is colored as a slave state, north of the line.\n2. Ask what the Compromise said. Missouri enters slave, Maine free, and slavery is barred north of 36°30′ elsewhere.\n3. Ask how both can be true. A law can draw a rule and name its own exception.\n4. Put it together. Missouri is the exception the Compromise wrote for itself.\nBackground: free and slave states stood eleven to eleven, so Missouri alone would have tipped the Senate.\nRemember: when a rule and a case seem to clash, check whether the rule names an exception."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0831",
+   "file": "u5/5s24-ch14-mcq-01.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Map_of_the_United_States%2C_showing_by_colors_the_area_of_freedom_and_slavery%2C_and_the_territories_whose_destiny_is_yet_to_be_decided%2C_exhibiting_also_the_Missouri_compromise_line%2C_and_the_routes_of_%284578788503%29.jpg",
+   "license": "Public domain",
+   "caption": "Abolitionist wall map of the 1850s showing free and slave areas and the Missouri Compromise line",
+   "alt": "Map of the United States with free states and slave states in different colors, a line drawn across the western territories, and western lands labeled as not yet decided"
+  }
+ ]
+}

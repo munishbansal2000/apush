@@ -1,0 +1,88 @@
+{
+ "id": "apush-saq-0121",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.9"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "ARC",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.10 The Second Great Awakening, Transcendentalism"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Religious and Social Movements"
+   }
+  ],
+  "primary_sources": [
+   "Ralph Waldo Emerson, \"The American Scholar,\" 1837"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Ralph Waldo Emerson, \"The American Scholar,\" an address delivered at Cambridge, Massachusetts, August 31, 1837: \"Our day of dependence, our long apprenticeship to the learning of other lands, draws to a close. The millions that around us are rushing into life cannot always be fed on the sere remains of foreign harvests. Events, actions arise, that must be sung, that will sing themselves.\"",
+  "source_note": "Verbatim quotation from Ralph Waldo Emerson, \"The American Scholar\" (1837). Public domain; wording checked against the published text. Oliver Wendell Holmes later called the address America's intellectual Declaration of Independence."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus as described in the stimulus source note",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly identify Emerson's main claim in this passage.",
+   "modelAnswer": "Emerson claims that America's long dependence on European learning is ending. Americans must now think and write for themselves instead of feeding on foreign books.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying the claim that American dependence on European learning was ending.",
+     "notEarned": "Restating the quotation without stating the claim does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE way the address reflects cultural nationalism after the War of 1812.",
+   "modelAnswer": "After the War of 1812, Americans wanted a culture to match their political independence. Emerson's call for an intellectual Declaration of Independence turns that national pride into a demand for American thought and literature.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for connecting the address to post-1812 nationalism, such as the wish for a distinct American culture or literature.",
+     "notEarned": "Naming nationalism without linking it to the address does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limitation of the address as evidence about American culture in the 1830s.",
+   "modelAnswer": "Emerson spoke to the Phi Beta Kappa Society at Harvard, an audience of educated men. His call speaks for a small, elite, male circle and says little about the popular culture of farmers, workers, or enslaved people.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limit, such as the elite Harvard audience, the male and educated circle, or the silence on popular culture.",
+     "notEarned": "Saying the address is limited without naming the limit does not earn the point."
+    }
+   ]
+  }
+ ]
+}

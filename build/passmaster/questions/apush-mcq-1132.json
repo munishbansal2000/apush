@@ -1,0 +1,85 @@
+{
+ "id": "apush-mcq-1132",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.12"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "5.B",
+  "2.B"
+ ],
+ "themes": [
+  "ARC",
+  "SOC"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.12 African Americans in the Early Republic, B. The Cultures of African-American Communities"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The Abolition Movement"
+   }
+  ],
+  "primary_sources": [
+   "Frederick Douglass, Narrative of the Life of Frederick Douglass, 1845"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "This daguerreotype portrait of Frederick Douglass, made by Samuel J. Miller in 1847–1852, shows Douglass from the chest up, dressed as a respectable gentleman in a dark coat, white shirt, and bow tie, staring straight at the viewer with a stern expression.\n\n\"You have seen how a man was made a slave; you shall see how a slave was made a man.\" — Frederick Douglass, Narrative of the Life of Frederick Douglass, 1845, on his fight with the overseer Edward Covey in August 1833.",
+  "source_note": "Portrait viewed before writing: Samuel J. Miller, daguerreotype of Frederick Douglass, 1847-1852, Art Institute of Chicago. Quotation verbatim from Frederick Douglass, Narrative of the Life of Frederick Douglass, 1845."
+ },
+ "stimulus_set": "douglass-portrait",
+ "source": "original; stimulus image from the shared pool, Miller daguerreotype of Douglass, 1847-1852, public domain",
+ "stem": "The portrait and the Covey passage together best show Douglass’s strategy of",
+ "options": [
+  {
+   "key": "A",
+   "text": "proving Black manhood both by living it and by showing it"
+  },
+  {
+   "key": "B",
+   "text": "asking white abolitionists to describe slavery for him in print",
+   "misconception": "Douglass told his own story in his own words and image."
+  },
+  {
+   "key": "C",
+   "text": "keeping his past as an enslaved man a secret",
+   "misconception": "The Narrative told his past openly; the portrait advertised the man."
+  },
+  {
+   "key": "D",
+   "text": "urging enslaved people to wait patiently for gradual emancipation",
+   "misconception": "Douglass resisted Covey and demanded freedom; he did not counsel waiting."
+  }
+ ],
+ "rationales": {
+  "A": "The fight proves his manhood in life, and the portrait shows it to the public. Douglass lived the proof, then displayed it.",
+  "B": "Douglass did not ask others to speak for him. He wrote the Narrative and sat for the portrait himself.",
+  "C": "Nothing is secret. The Narrative tells his enslavement openly, and the portrait puts his face before the public.",
+  "D": "Douglass did not counsel waiting. He fought Covey, escaped in 1838, and demanded freedom now.",
+  "general": "1. Take the passage. Douglass proves his manhood by fighting Covey and refusing to be broken.\n2. Take the portrait. Douglass shows that manhood to the public, dressed as a gentleman and staring straight out.\n3. Name the strategy. Live the proof, then show it.\nBackground: Douglass escaped slavery in 1838 and published the Narrative in 1845.\nRemember: a life and a portrait can make the same argument in two forms."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1132",
+   "file": "u4/frederick-douglass-miller-1847-52.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Frederick_Douglass_by_Samuel_J_Miller,_1847-52.jpg",
+   "license": "Public domain",
+   "caption": "Frederick Douglass, daguerreotype by Samuel J. Miller, 1847-1852.",
+   "alt": "A daguerreotype portrait of Frederick Douglass from the chest up, wearing a dark coat, white shirt, and bow tie, staring straight at the viewer"
+  }
+ ]
+}

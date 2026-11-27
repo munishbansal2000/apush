@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0875",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.4"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "D",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "GEO",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.4 America on the World Stage, A. Trade, Diplomacy, and the Expansion of American Influence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "The War of 1812"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Effects of the War of 1812"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "map",
+  "text": "This map, titled “Eastern United States, 1812: The War of 1812 — Principal Campaigns of the War,” shows the theaters of the war. Notes on the map describe three theaters. The Canadian theater note says the Americans tried to invade Canada from three directions at once in June 1812 and “all of these operations were failures,” but after the victory on Lake Erie in September 1813 they launched successful operations. The Chesapeake theater note says British naval supremacy let Britain attack Washington and Baltimore, and that Washington was burned in August 1814. The New Orleans theater note says the British attacked New Orleans in January 1815, after the Treaty of Ghent was signed, and were defeated by Andrew Jackson's forces. A timeline along the bottom runs from the declaration of war in June 1812 to the Battle of New Orleans in January 1815.",
+  "source_note": "Principal Campaigns of the War of 1812, map (Cartography Associates); public domain."
+ },
+ "stimulus_set": "war-of-1812-campaigns-map",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "According to the map, the British attack on Washington in 1814 was possible because",
+ "options": [
+  {
+   "key": "A",
+   "text": "the United States had no army at all to defend its capital",
+   "misconception": "The United States had an army; it was small and ill-prepared."
+  },
+  {
+   "key": "B",
+   "text": "American forces had already captured Montreal",
+   "misconception": "The Canada invasions were repulsed; Montreal was never taken."
+  },
+  {
+   "key": "C",
+   "text": "the Treaty of Ghent had already ended the war",
+   "misconception": "Ghent was signed in December 1814, after Washington burned in August."
+  },
+  {
+   "key": "D",
+   "text": "British control of the sea let them strike the Chesapeake coast"
+  }
+ ],
+ "rationales": {
+  "A": "The United States did have an army, but it was small, and much of the fighting went badly. Having no army at all is not what the map shows.",
+  "B": "The Canadian theater note says all the American invasions of Canada were repulsed. Montreal stayed British.",
+  "C": "The timeline runs to January 1815, and Ghent was signed in December 1814, months after Washington burned in August.",
+  "D": "The Chesapeake note says British naval supremacy on the high seas let Britain strike Washington and Baltimore. Command of the sea put the capital within reach.",
+  "general": "1. Read the Chesapeake note. It credits British naval supremacy for the attack on Washington.\n2. Check the date. Washington burned in August 1814, months before the Treaty of Ghent.\n3. Put it together. A navy that owned the sea could land troops almost anywhere on the coast.\nBackground: With Napoleon defeated in Europe, Britain could send veteran troops and ships against the United States.\nRemember: when an enemy reaches your capital, ask which road, land or sea, let them in."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0875",
+   "file": "u4/saq-set-14-q3.gif",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Principal_Campaigns_of_the_War_of_1812.gif",
+   "license": "Public domain",
+   "caption": "Eastern United States, 1812: principal campaigns of the War of 1812",
+   "alt": "Map of the eastern United States showing the Canadian, Chesapeake, and New Orleans theaters of the War of 1812, with battle sites and a timeline"
+  }
+ ]
+}

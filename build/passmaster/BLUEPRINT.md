@@ -245,6 +245,49 @@ Keys A109/B105/C102/D99. Test pool 76 MCQ / 4 SAQ (0072, 0100, 0088,
 L1 3.1+3.2 (58), L2 3.3+3.4 (84), L3 3.5+3.6 (85), L4 3.7+3.8+3.9 (121),
 L5 3.10+3.11+3.12+3.13 (129).
 
+### Unit 4 per-topic quotas (set 2026-11-26; closed 2026-11-27)
+
+Period 4, 1800-1848. 476 questions: 415 MCQ + 33 SAQ + 17 DBQ + 11 LEQ.
+Test pool 76 MCQ + 3 SAQ + 2 DBQ + 1 LEQ = 82.
+
+| Topic | Title | MCQ | SAQ | DBQ | LEQ | Total |
+|---|---|---:|---:|---:|---:|---:|
+| 4.1 | Contextualizing Period 4 | 16 | 2 | 0 | 0 | 18 |
+| 4.2 | The Rise of Political Parties and the Era of Jefferson | 34 | 3 | 2 | 1 | 40 |
+| 4.3 | Politics and Regional Interests | 32 | 2 | 1 | 1 | 36 |
+| 4.4 | America on the World Stage | 32 | 2 | 1 | 1 | 36 |
+| 4.5 | Market Revolution: Industrialization | 34 | 3 | 2 | 1 | 40 |
+| 4.6 | Market Revolution: Society and Culture | 32 | 2 | 1 | 1 | 36 |
+| 4.7 | Expanding Democracy | 32 | 3 | 2 | 1 | 38 |
+| 4.8 | Jackson and Federal Power | 34 | 3 | 2 | 1 | 40 |
+| 4.9 | The Development of an American Culture | 30 | 2 | 1 | 1 | 34 |
+| 4.10 | The Second Great Awakening | 30 | 2 | 1 | 1 | 34 |
+| 4.11 | An Age of Reform | 32 | 3 | 2 | 1 | 38 |
+| 4.12 | African Americans in the Early Republic | 30 | 2 | 1 | 1 | 34 |
+| 4.13 | The Society of the South in the Early Republic | 30 | 2 | 1 | 0 | 33 |
+| 4.14 | Causation in Period 4 | 17 | 2 | 0 | 0 | 19 |
+| **Total** | | **415** | **33** | **17** | **11** | **476** |
+
+### Unit 4 — LANDED (closed 2026-11-27; push 10)
+
+Question counts landed exactly on quota in every topic. MCQ difficulty
+lands easy 84 / medium 161 / hard 170 vs target 83/145/187 (hard short
+17). Per-topic lands: 4.1: 5/6/5, 4.2: 7/14/13, 4.3: 6/12/14,
+4.4: 7/11/14, 4.5: 7/14/13, 4.6: 6/12/14, 4.7: 6/12/14, 4.8: 9/12/13,
+4.9: 6/11/13, 4.10: 6/11/13, 4.11: 5/13/14, 4.12: 5/12/13,
+4.13: 6/11/13, 4.14: 3/10/4. Keys A109/B106/C99/D101.
+Test pool: 76 MCQ / 3 SAQ (0133, 0118, 0126) / 2 DBQ (0022, 0027) /
+1 LEQ (0040). Exam 01 holds 8 of 4.5/4.8's test MCQs (1183-1190) + SAQ
+0133. Lessons: L1 4.1+4.2 (58), L2 4.3+4.4 (72), L3 4.5+4.6 (76),
+L4 4.7+4.8+4.9 (112), L5 4.10+4.11+4.12+4.13+4.14 (158).
+Blind-read record: L1 FAIL 11 -> PASS, L2 FAIL 10 -> PASS,
+L3 FAIL 9 -> PASS, L4 FAIL 15 -> FAIL 1 -> FAIL 1 -> PASS,
+L5 FAIL 8 -> FAIL 1 -> FAIL 4 -> FAIL 1 -> focused PASS. 0 wrong keys
+in any round; no bank changes in any lesson fix round — every gap was
+fixed in the lesson. L4 carries 8 narrative sections (spec wants 4-6),
+forced by its 3-topic scope — no adjacent pair merges under the 300w
+cap; validator WARN only, recorded as structural.
+
 ### Unit 7 per-topic quotas (set 2026-11-26; closed 2026-11-27)
 
 Period 7, 1890-1945. 476 questions: 415 MCQ + 34 SAQ + 16 DBQ + 11 LEQ.

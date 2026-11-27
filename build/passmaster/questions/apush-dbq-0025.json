@@ -1,0 +1,166 @@
+{
+ "id": "apush-dbq-0025",
+ "type": "dbq",
+ "unit": 4,
+ "topics": [
+  "4.7"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.7 Expanding Democracy, A. Participatory Democracy and an Expanding Electorate"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, A. The Second Two-Party System: The Democrats and the Whigs"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "Jacksonian Democracy"
+   }
+  ],
+  "primary_sources": [
+   "Daniel Webster, speech to the Massachusetts Constitutional Convention, 1820-1821",
+   "Andrew Jackson, letter to Henry Lee, October 7, 1825",
+   "Alexis de Tocqueville, Democracy in America, vol. 1 (1835)"
+  ]
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Seven documents, 1821-1841. See documents."
+ },
+ "stimulus_set": null,
+ "source": "original; documents are public-domain primary sources or paraphrases of them (see each document's sourcing note); Jackson and Tocqueville wording verified against the Library of Congress citation and the Bill of Rights Institute excerpts",
+ "prompt": "Evaluate the extent to which American politics became more democratic in the period 1800-1848.",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "1821",
+   "title": "Webster defends property",
+   "source": "Daniel Webster, speech to the Massachusetts Constitutional Convention, 1820-1821, paraphrased; short phrase quoted. Public domain.",
+   "sourcing": "A leading conservative speaks against wider voting at a state convention called to revise the constitution.",
+   "text": "Webster argued that “power naturally and necessarily follows property,” and led the opponents of the convention's more egalitarian proposals. Massachusetts did end its property requirement for voting, but it kept the rule that voters must be taxpayers."
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "1825",
+   "title": "Jackson charges a corrupt bargain",
+   "source": "Andrew Jackson, letter to Henry Lee, October 7, 1825. Public domain.",
+   "sourcing": "The losing candidate in the election of 1824 writes to a friend about how Adams won the presidency.",
+   "text": "“Mr. Adams is the Constitutional President and as such I would myself be the last man in the Commonwealth to oppose him upon any other ground than that of principle. How he reached the office is an enquiry for the succeeding canvass, when the principles of the Constitution, apart from his ministerial acts, or at least without necessary opposition to them, will sanction the investigation.”"
+  },
+  {
+   "n": 3,
+   "kind": "image",
+   "date": "1832",
+   "title": "King Andrew the First",
+   "source": "Political cartoon “King Andrew the First,” published 1832, artist unknown (Library of Congress). Public domain.",
+   "sourcing": "Opponents of Jackson publish a cartoon attacking his use of presidential power.",
+   "figure": "u4/pr25e-test2-q27.jpg",
+   "text": "The cartoon shows President Andrew Jackson in royal robes and a crown, holding a scepter and a scroll labeled “VETO.” He stands on torn papers, including one labeled “CONSTITUTION of the UNITED STATES.” The caption reads “KING ANDREW THE FIRST.”"
+  },
+  {
+   "n": 4,
+   "kind": "text",
+   "date": "1835",
+   "title": "Tocqueville on equality",
+   "source": "Alexis de Tocqueville, Democracy in America, vol. 1 (1835), Introduction. Public domain.",
+   "sourcing": "A French visitor describes what struck him most about American society after his 1831 tour.",
+   "text": "“Amongst the novel objects that attracted my attention during my stay in the United States, nothing struck me more forcibly than the general equality of conditions. . . . The more I advanced in the study of American society, the more I perceived that the equality of conditions is the fundamental fact from which all others seem to be derived.”"
+  },
+  {
+   "n": 5,
+   "kind": "image",
+   "date": "1836",
+   "title": "General Jackson slaying the many headed monster",
+   "source": "Henry R. Robinson, “General Jackson Slaying the Many Headed Monster,” lithograph, 1836 (Library of Congress). Public domain.",
+   "sourcing": "A pro-Jackson print celebrates his attack on the Bank of the United States.",
+   "figure": "u4/5s24-ch13-mcq-08.jpg",
+   "text": "The cartoon shows President Andrew Jackson, at left, raising a cane marked “VETO” against a many-headed serpent. The serpent's heads carry state names, and the largest head is Nicholas Biddle, president of the Second Bank of the United States. The caption reads “GENERAL JACKSON SLAYING THE MANY HEADED MONSTER.”"
+  },
+  {
+   "n": 6,
+   "kind": "table",
+   "date": "1840",
+   "title": "Voter turnout, 1824-1840",
+   "source": "U.S. Bureau of the Census, Historical Statistics of the United States, Colonial Times to 1970. Public domain.",
+   "sourcing": "Official turnout figures for presidential elections, compiled by the Census Bureau.",
+   "text": "Share of eligible voters who voted: 1824, 26.9%; 1828, 57.6%; 1832, 55.4%; 1836, 57.8%; 1840, 80.2%."
+  },
+  {
+   "n": 7,
+   "kind": "text",
+   "date": "1841",
+   "title": "The People's Convention in Rhode Island",
+   "source": "Account of the Dorr Rebellion, 1841, paraphrased from Barron's Premium 2027, Chapter 6, Topic 4.7 A. Public domain.",
+   "sourcing": "A description of the Dorr Rebellion from the reformers' point of view.",
+   "text": "Rhode Island held onto property qualifications for voting longer than any other state. In 1841, democratic reformers organized a People's Convention, wrote a new, more democratic state constitution, and held an unsanctioned statewide referendum on it, which passed overwhelmingly. They then tried to put the new constitution into effect and inaugurate Thomas Dorr as governor. President Tyler promised federal support and sent an observer, but no federal troops were sent; Dorr was briefly imprisoned, and the state militia quickly put the rebellion down."
+  }
+ ],
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent of the change, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of change does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the Era of Good Feelings, the fall of property qualifications, or the rise of mass parties.",
+   "notEarned": "A sentence of background with no link to the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (first point): earns the point for describing the content of at least three documents relevant to the argument.",
+   "notEarned": "Quoting documents without describing what they show does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support the argument, including documents that show the limits of the change.",
+   "notEarned": "Using fewer than six documents, or using six without tying them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence beyond the documents: earns the point for describing a specific relevant example not in the documents, such as the spoils system, the nominating convention, or the election of 1840.",
+   "notEarned": "A vague reference to outside knowledge with no specific example does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "3.B",
+   "criterion": "Sourcing: earns the point for explaining how the audience, purpose, historical situation, or point of view of at least two documents shapes the argument.",
+   "notEarned": "Naming a document's author without explaining how it shapes the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.D",
+   "criterion": "Complexity: earns the point for a complex argument, such as qualifying the thesis by showing where politics became more democratic and where older limits held.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: American politics became much more democratic between 1800 and 1848, as voting spread to most free white men and mass parties turned elections into popular contests, but the change stopped at the color line and the ballot box stayed closed to women and enslaved people.\nContext: In 1800 only five states let voters choose presidential electors directly, and property rules kept most men from voting. In the 1820s most states dropped those rules, and the Era of Good Feelings gave way to open party competition.\nGrouping: Documents 2, 4, and 6 show the expansion: Jackson's campaign, Tocqueville's equality, and turnout rising to 80.2 percent. Documents 1 and 7 show resistance: Webster's defense of property and the crushing of the Dorr Rebellion. Documents 3 and 5 show the new presidency that mass democracy produced, feared as a king by its enemies and cheered as a hero by its friends.\nBeyond the documents: The spoils system put party loyalists in office, and nominating conventions replaced the congressional caucus, so ordinary party men, not congressmen, chose nominees.\nComplexity: The expansion was real but bounded: the same decades that opened voting to white men kept the vote from women and Black Americans, and a popular president could still look like a king to his critics.",
+ "totalPoints": 7
+}

@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-0963",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.7"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "3.D",
+  "5.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.7 Expanding Democracy, A. Participatory Democracy and an Expanding Electorate"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, A. The Second Two-Party System: The Democrats and the Whigs"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The Jackson Presidency and Jacksonian Democracy"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "The cartoon shows President Andrew Jackson standing in royal robes and a crown, holding a scepter in one hand and a scroll labeled “VETO” in the other. He stands on torn papers, including one labeled “CONSTITUTION of the UNITED STATES” and others for “Internal Improvements” and the “U.S. Bank.” The captions read “BORN TO COMMAND,” “HAD I BEEN CONSULTED,” “OF VETO MEMORY,” and “KING ANDREW THE FIRST.” Published 1832.",
+  "source_note": "Political cartoon “King Andrew the First,” published 1832, artist unknown (Library of Congress). Public domain; viewed before writing."
+ },
+ "stimulus_set": "king-andrew",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The cartoon best supports which conclusion about Jacksonian democracy?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Jackson's opponents wanted a monarchy in America instead of a republic",
+   "misconception": "The cartoonists used a king as an insult; they wanted Jackson restrained, not a real king."
+  },
+  {
+   "key": "B",
+   "text": "The cartoon proves Jackson broke the law and violated the Constitution",
+   "misconception": "A cartoon is an accusation, not proof; Jackson's vetoes were lawful presidential acts."
+  },
+  {
+   "key": "C",
+   "text": "Even as voting expanded, critics feared the stronger presidency threatened republican limits"
+  },
+  {
+   "key": "D",
+   "text": "Voters rejected Jackson in the election of 1832",
+   "misconception": "Jackson won reelection in 1832; the cartoon shows his enemies' view, not the voters' verdict."
+  }
+ ],
+ "rationales": {
+  "A": "The king is an insult aimed at Jackson, not the cartoonist's wish.",
+  "B": "A cartoon accuses; it does not prove a crime, and vetoes were lawful.",
+  "C": "The cartoon answers a more democratic age with a royal image: the people could vote, yet their president, critics said, ruled like a king.",
+  "D": "Jackson won in 1832, so the fear did not decide the election.",
+  "general": "1. Hold two facts together. Voting spread to most free white men, and Jackson used presidential power more boldly than his predecessors.\n2. Ask what scared his critics. A popular president with a veto looked, to them, like a king above the law.\n3. Check the outcome. Jackson won in 1832, so the fear did not decide the election.\nBackground: Jackson used the veto more than all earlier presidents combined, which fed the “King Andrew” charge.\nRemember: wider voting and stronger presidents arrived together, and the cartoons show the worry."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0963",
+   "file": "u4/pr25e-test2-q27.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/King_Andrew_the_First_%28political_cartoon_of_President_Andrew_Jackson%29.jpg",
+   "license": "Public domain",
+   "caption": "King Andrew the First, 1832. Jackson in crown and robes, holding a veto scroll.",
+   "alt": "Andrew Jackson dressed as a king in crown and ermine robe, holding a scepter and a scroll labeled VETO, standing on a torn copy of the Constitution"
+  }
+ ]
+}

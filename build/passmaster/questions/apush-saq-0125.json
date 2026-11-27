@@ -1,0 +1,88 @@
+{
+ "id": "apush-saq-0125",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.11"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "2.B"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.11 An Age of Reform, D. The Women's Rights Movement"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Religious and Social Movements"
+   }
+  ],
+  "primary_sources": [
+   "Sarah Grimké, Letters on the Equality of the Sexes, 1838"
+  ]
+ },
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "text": "\"But I ask no favors for my sex. I surrender not our claim to equality. All I ask of our brethren is, that they will take their feet from off our necks, and permit us to stand upright on that ground which God designed us to occupy.\" — Sarah Grimké, Letters on the Equality of the Sexes, 1838",
+  "source_note": "Verbatim public-domain quotation from Sarah Grimké, Letters on the Equality of the Sexes (Boston: Isaac Knapp, 1838), Letter II, written July 1837. Wording checked against the Project Gutenberg edition. Note: the passage is Sarah Grimké's, not her sister Angelina's."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus is a verbatim public-domain quotation from Sarah Grimké, Letters (1838)",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly identify ONE claim Grimké makes about women's equality.",
+   "modelAnswer": "Grimké claims that women are equal to men and asks only that men stop holding them down. She says men should take their feet from off women's necks and let women stand upright.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one claim from the letter, such as women's equality, the refusal of favors, or men standing in the way of women.",
+     "notEarned": "Naming a claim Grimké does not make, such as a demand for the vote, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE way Grimké's abolitionist background shaped her argument for women's equality.",
+   "modelAnswer": "Grimké came to women's rights through abolitionism: she and her sister spoke against slavery and were condemned for speaking in public. That experience taught her that the fight against slavery and the fight for women's equality were the same fight.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one link, such as the sisters being silenced as abolitionist speakers, their firsthand knowledge of slavery, or their Quaker belief in equality.",
+     "notEarned": "Restating that Grimké was an abolitionist without linking it to her argument does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limitation of the letter as evidence about women's views in the 1830s.",
+   "modelAnswer": "Grimké writes as a committed reformer to a fellow abolitionist, so her letter shows what reformers believed, not what most American women thought. Most women in the 1830s did not speak in public or demand equality.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limit, such as the reformer audience, the focus on one educated white woman's views, or the absence of most women's voices.",
+     "notEarned": "Saying the letter is one person's view without explaining why that limits it does not earn the point."
+    }
+   ]
+  }
+ ]
+}

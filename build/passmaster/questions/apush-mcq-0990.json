@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-0990",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.8"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, A. The Second Two-Party System: The Democrats and the Whigs"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Bank War"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "The lithograph, published in 1836, shows President Andrew Jackson at right, striking with a cane at a many-headed serpent. The serpent's heads carry the names of states, and the largest head is Nicholas Biddle, president of the Second Bank of the United States. The caption reads 'GENERAL JACKSON SLAYING THE MANY HEADED MONSTER.' In his veto of the Bank's recharter in 1832, Jackson wrote: 'It is to be regretted that the rich and powerful too often bend the acts of government to their selfish purposes.' He also wrote that the Court's opinion 'ought not to control the coordinate authorities of this Government,' and that 'the Congress, the Executive, and the Court must each for itself be guided by its own opinion of the Constitution.'",
+  "source_note": "Lithograph 'General Jackson Slaying the Many Headed Monster,' Henry R. Robinson, 1836 (Library of Congress). Public domain; image viewed before writing. Veto quotation: Andrew Jackson, veto message, July 10, 1832, public domain."
+ },
+ "stimulus_set": "bank-war-monster-48",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "After the veto, Jackson moved federal deposits from the Second Bank to state banks in 1833. What was the most direct effect on the Bank's power?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Bank immediately closed its doors and stopped all lending at once",
+   "misconception": "Killing the Bank sounds instant, so it is easy to think the doors shut the day the deposits moved."
+  },
+  {
+   "key": "B",
+   "text": "State banks stopped issuing paper money and demanded gold instead",
+   "misconception": "Removing deposits sounds like punishment for printing money, so it is easy to think the printing stopped."
+  },
+  {
+   "key": "C",
+   "text": "Congress overrode Jackson's veto and ordered the deposits restored",
+   "misconception": "A famous veto invites the thought that Congress fought back and won, but no override happened."
+  },
+  {
+   "key": "D",
+   "text": "The Bank lost its check on state banks, which issued paper freely"
+  }
+ ],
+ "rationales": {
+  "A": "The Bank kept its charter until 1836 and then lived on under a state charter; the deposit removal weakened it but did not close it at once.",
+  "B": "State banks did the opposite: freed from the Bank's discipline, they issued more paper money, not less.",
+  "C": "Congress never overrode the veto; Jackson's veto stood, and the deposits moved as he ordered.",
+  "D": "Without federal deposits the Bank could no longer present state bank notes for payment, so state banks printed paper freely.",
+  "general": "1. Ask what the deposits did. Federal deposits gave the Bank leverage: it could demand gold for the paper notes of state banks.\n2. Take the deposits away. Without them the Bank lost its grip, and state banks, called 'pet banks' by Jackson's critics, printed paper freely.\nBackground: the flood of paper money fed land speculation, which the Specie Circular then tried to stop.\nRemember: follow the money's leash — whoever holds the deposits holds the discipline."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0990",
+   "file": "u4/5s24-ch13-mcq-08.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/General_Jackson_slaying_the_many_headed_monster_LCCN2008661279.jpg",
+   "license": "Public domain",
+   "caption": "General Jackson slaying the many headed monster, 1836. Jackson strikes a serpent whose heads bear state names.",
+   "alt": "A lithograph of President Andrew Jackson striking a many-headed serpent with a cane; the serpent's heads carry state names and the largest head is Nicholas Biddle"
+  }
+ ]
+}

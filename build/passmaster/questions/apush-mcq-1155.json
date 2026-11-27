@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1155",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.13"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "3.A",
+  "6.B"
+ ],
+ "themes": [
+  "GEO",
+  "MIG"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.13 The Society of the South in the Early Republic, C. Westward Expansion and the Politics of Slavery"
+   }
+  ],
+  "primary_sources": [
+   "John Arrowsmith, Map of Texas, 1841"
+  ]
+ },
+ "stimulus": {
+  "kind": "map",
+  "text": "John Arrowsmith's Map of Texas, published in London in 1841, was compiled from surveys in the Land Office of Texas. It shows the Republic of Texas with its own seal, settled counties in the east such as Fannin and Red River, the town of Bexar, and large western lands marked with Native peoples' names.",
+  "source_note": "Map viewed before writing: John Arrowsmith, Map of Texas, 1841, shared pool file u4/5s24-ch03-mcq-40.jpg, public domain. The seal reads Republic of Texas and notes recognition by Great Britain in November 1840."
+ },
+ "stimulus_set": "texas-map-1841",
+ "source": "original; stimulus image from the shared pool, John Arrowsmith, Map of Texas, 1841, public domain",
+ "stem": "The map names many counties in eastern Texas but shows the west as open land marked with Native peoples' names. That pattern best shows what?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Settlement clustered in the east, while the west stayed Native land"
+  },
+  {
+   "key": "B",
+   "text": "Texas had no Native peoples living within its claimed borders",
+   "misconception": "The map itself marks Native peoples' names across the west, so they lived there."
+  },
+  {
+   "key": "C",
+   "text": "Eastern Texas was empty while the west was fully settled",
+   "misconception": "The map shows the reverse: counties cluster in the east and open land in the west."
+  },
+  {
+   "key": "D",
+   "text": "The mapmaker had never visited Texas and invented the counties",
+   "misconception": "Arrowsmith compiled the map from the Texas Land Office surveys, not from invention."
+  }
+ ],
+ "rationales": {
+  "A": "The named counties sit in the east, near Louisiana, while the west shows open land with Native names, so settlement had not yet spread west.",
+  "B": "The map itself marks Native peoples' names across the west, so they lived there.",
+  "C": "The map shows the reverse: counties cluster in the east and open land in the west.",
+  "D": "Arrowsmith compiled the map from the Texas Land Office surveys, not from invention.",
+  "general": "1. Look east. The map names counties such as Fannin and Red River near the Louisiana border.\n2. Look west. The west shows open land marked with Native peoples' names and few towns.\n3. Read the pattern. Settlement had clustered where Americans arrived first, and the west was still Native land.\nBackground: American settlers reached Texas from Louisiana, so they settled the east first.\nRemember: on a map, what is named and what is blank are both evidence."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1154",
+   "file": "u4/5s24-ch03-mcq-40.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Arrowsmith_Map_of_Texas_1841_UTA.jpg",
+   "license": "Public domain",
+   "caption": "John Arrowsmith, Map of Texas, published London, 1841.",
+   "alt": "A map of Texas as an independent republic, with settled counties in the east, the town of Bexar, and large western lands marked with Native peoples' names"
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "id": "apush-mcq-1011",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.8"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "C",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, A. The Second Two-Party System: The Democrats and the Whigs"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Whig Party and the Second Party System"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "| | Democrats | Whigs |\n|---|---|---|\n| Leading figure | Andrew Jackson | Henry Clay |\n| Federal government | Limited; opposed a national bank, high tariffs, and internal improvements | Active; favored a national bank, tariffs, and internal improvements |\n| Main supporters | Southern planters, western farmers, and urban immigrants | Northern manufacturers, commercial interests, and evangelical Protestants |",
+  "source_note": "Table compiled from Barron's Premium 2027, Chapter 6, Topic 4.8 A, and 5 Steps to a 5, 2024, Chapter 13, 'The Whig Party and the Second Party System.' Original synthesis of book content, not a quotation."
+ },
+ "stimulus_set": "parties-democrats-whigs-48",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "According to the table, which party favored a national bank, tariffs, and internal improvements?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Democrats",
+   "misconception": "The Democrats were the larger party, so it is easy to credit them with the larger program."
+  },
+  {
+   "key": "B",
+   "text": "The Federalists",
+   "misconception": "The Federalists favored a bank, so it is easy to name them for any pro-bank position."
+  },
+  {
+   "key": "C",
+   "text": "The Whigs"
+  },
+  {
+   "key": "D",
+   "text": "The Anti-Masons",
+   "misconception": "The Anti-Masons were a real party of the era, so it is easy to pick them from the list."
+  }
+ ],
+ "rationales": {
+  "A": "The table says the Democrats opposed a national bank, high tariffs, and internal improvements.",
+  "B": "The Federalists had faded after the War of 1812 and do not appear in the table at all.",
+  "C": "The table lists a national bank, tariffs, and internal improvements under the Whigs' 'active' federal government.",
+  "D": "The Anti-Masonic Party is not listed in the table, and it did not champion Clay's economic program.",
+  "general": "1. Find the row. The 'Federal government' row lists each party's economic program.\n2. Read the Whig column. It favors a national bank, tariffs, and internal improvements — Clay's American System.\n3. Check the other column. The Democrats' column opposes the same three things the Whigs favor.\nBackground: the Democrats, following Jackson, called those programs privileges for the few.\nRemember: on a comparison table, read down one column before you compare across."
+ }
+}

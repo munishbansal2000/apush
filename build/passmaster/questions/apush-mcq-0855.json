@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0855",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.3"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.3 Politics and Regional Interests, B. The American System and Sectionalism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Monroe's Presidency"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "The Panic of 1819 began when the Second Bank of the United States, fearing it had lent too much, called in its loans. Borrowers could not pay, banks failed, and farms and shops were sold at auction. In the West and South, many blamed the Bank in Philadelphia for the ruin.",
+  "source_note": "Summary drawn from 5 Steps 2024, Chapter 13, timeline (Panic of 1819) and Princeton Review 25e, Chapter 8, 'Monroe's Presidency.' Original synthesis. Image: Second Bank of the United States, Philadelphia, engraved 1831."
+ },
+ "stimulus_set": "panic-bank",
+ "source": "original; stimulus summarizes the Panic of 1819 from the grounding books, with an 1831 engraving of the Second Bank (public domain, in the shared image pool as ch41-second-bank-philadelphia)",
+ "stem": "Western and Southern borrowers blamed the Bank for the Panic mainly because",
+ "options": [
+  {
+   "key": "A",
+   "text": "its sudden demand for payment took their land and property"
+  },
+  {
+   "key": "B",
+   "text": "the Bank had lent them no money at all",
+   "misconception": "The Bank had lent heavily; the Panic came when it called those loans in."
+  },
+  {
+   "key": "C",
+   "text": "the Bank supported the tariff of 1828",
+   "misconception": "The tariff of 1828 came nine years after the Panic; it cannot explain blame from 1819."
+  },
+  {
+   "key": "D",
+   "text": "the Bank had moved its headquarters to the West",
+   "misconception": "The Bank stayed in Philadelphia; its distance from borrowers was part of the complaint."
+  }
+ ],
+ "rationales": {
+  "A": "When the Bank called its loans, borrowers who could not pay lost farms, shops, and land at auction. People blame the hand that takes their property.",
+  "B": "The Bank had lent freely in the boom years. Borrowers blamed it for calling the money back, not for never lending it.",
+  "C": "The tariff of 1828 is dated 1828. Borrowers in 1819 blamed the Bank for the Panic, not for a tariff nine years away.",
+  "D": "The Bank’s headquarters stayed in Philadelphia. Westerners complained that a distant Eastern bank ruled their fortunes, which is the opposite of a move west.",
+  "general": "1. Ask what borrowers lost. Farms and shops, sold at auction when they could not pay.\n2. Ask who demanded payment. The Second Bank, calling in its loans all at once.\n3. Ask how that feels from the West. A distant bank in Philadelphia takes your land.\n4. Put it together. Blame follows the hand that collects.\nBackground: when the Bank called in its loans, numerous foreclosures and business failures followed, and many people were thrown into poverty.\nRemember: to explain blame, ask who took something and from whom."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0855",
+   "file": "u4/second-bank-philadelphia.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:United_States_Bank%2C_Philadelphia_-_drawn_by_C._Burton%2C_N.Y._%3B_engraved_%26_printed_by_Fenner%2C_Sears_%26_Co._LCCN2015650264.jpg",
+   "license": "Public domain",
+   "caption": "Second Bank of the United States, Philadelphia, engraved 1831",
+   "alt": "A Greek Revival bank building with tall columns and street trees, the Second Bank of the United States in Philadelphia"
+  }
+ ]
+}

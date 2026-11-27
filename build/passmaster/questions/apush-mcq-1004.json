@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-1004",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.8"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "MIG",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, B. Contention Between Whites and American Indians over Western Lands"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "Native American Removal"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "The National Park Service map shows the Trail of Tears National Historic Trail. Three kinds of routes run from the Cherokee homelands in Georgia, Tennessee, and North Carolina west to Tahlequah in present-day Oklahoma: a dotted land route through Nashville, Hopkinsville, Cape Girardeau, and Springfield; a blue water route along the Tennessee and Mississippi Rivers; and green 'other major routes.'",
+  "source_note": "Map: 'Trail of Tears National Historic Trail,' U.S. National Park Service (work of the U.S. federal government, public domain). Public domain; image viewed before writing."
+ },
+ "stimulus_set": "trail-tears-map-48",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "Which later development most directly followed from the removal shown on the map?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Cherokee disappeared as a people after the march",
+   "misconception": "A march that killed thousands sounds like an ending, so it is easy to think the nation ended with it."
+  },
+  {
+   "key": "B",
+   "text": "The Supreme Court banned all future removals of Native peoples",
+   "misconception": "Worcester ruled for the Cherokee, so it is easy to think the Court then banned removal outright."
+  },
+  {
+   "key": "C",
+   "text": "The Cherokee established a new homeland and government in Indian Territory"
+  },
+  {
+   "key": "D",
+   "text": "Georgia returned the Cherokee lands to their owners in 1840",
+   "misconception": "A wrong this large invites the thought that it was later undone."
+  }
+ ],
+ "rationales": {
+  "A": "The Cherokee survived removal and rebuilt in the West; the Trail of Tears killed thousands but did not destroy the nation.",
+  "B": "The Court never banned removal; Worcester was simply left unenforced, and removals of other tribes went on.",
+  "C": "In Indian Territory, present-day Oklahoma, the Cherokee rebuilt their nation with Tahlequah as its capital.",
+  "D": "Georgia never returned the lands; the Cherokee homeland stayed in white hands after removal.",
+  "general": "1. Follow the routes to their end. They stop at Tahlequah, in present-day Oklahoma, not at an empty frontier.\n2. Ask what a nation does after a forced march. The Cherokee rebuilt their government and made Tahlequah their capital.\nBackground: thousands died on the march, yet the nation endured and governed itself in its new home.\nRemember: a removal map's ending is a beginning too — ask what the people built where the lines stop."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1004",
+   "file": "u4/pr25e-test3-q19.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Trail_of_tears_map_NPS.jpg",
+   "license": "Public domain",
+   "caption": "Trail of Tears National Historic Trail map. Land, water, and other routes run west to Tahlequah, Oklahoma.",
+   "alt": "A National Park Service map of the Trail of Tears: dotted land routes, a blue water route along the Tennessee and Mississippi Rivers, and green other major routes running west to Tahlequah"
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0107",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.3"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "skills": [
+  "2.B",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.3 Politics and Regional Interests, C. A Temporary Truce on the Slavery Question in the Pre-Civil War Period"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "Missouri Compromise"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The Missouri Compromise, 1820"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Thomas Jefferson, retired at Monticello, wrote to Congressman John Holmes about the Missouri question on April 22, 1820:\n\n“but this momentous question, like a fire bell in the night, awakened and filled me with terror. I considered it at once as the knell of the Union. it is hushed indeed for the moment. but this is a reprieve only, not a final sentence.”",
+  "source_note": "Thomas Jefferson to John Holmes, April 22, 1820; text verified against Founders Online and the Library of Congress. Public domain."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus is a verbatim excerpt from Jefferson to John Holmes, April 22, 1820 (public domain, verified against Founders Online)",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly identify the “momentous question” Jefferson is writing about.",
+   "modelAnswer": "Jefferson is writing about the Missouri question: whether Missouri would enter the Union as a slave state and whether slavery could spread into the Louisiana territory. Missouri’s application had forced Congress to decide how far slavery would go.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying the Missouri question, such as Missouri’s admission as a slave state or the spread of slavery into the Louisiana territory.",
+     "notEarned": "Naming slavery in general with no link to Missouri does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain why the Missouri question alarmed Jefferson in 1820.",
+   "modelAnswer": "Missouri’s admission would break the eleven-to-eleven balance of free and slave states, and the compromise drew a geographical line over slavery. Jefferson thought the line would deepen the division, not heal it, because every new irritation would mark it deeper.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining why the question alarmed Jefferson, such as the broken balance of states or the geographical line deepening division.",
+     "notEarned": "Repeating the fire-bell image with no reason given does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE later development that showed Jefferson’s fear was justified.",
+   "modelAnswer": "The gag rule of 1836 showed the slavery debate had grown so bitter that the House banned it from the floor altogether. A question Jefferson called hushed for the moment had become too dangerous for Congress to discuss.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one later development showing the fear was justified, such as the gag rule, nullification, or the tariff fights over sectional interests.",
+     "notEarned": "Naming a later event with no link to Jefferson’s fear does not earn the point."
+    }
+   ]
+  }
+ ]
+}

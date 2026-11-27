@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-0823",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.2"
+ ],
+ "lesson": "apush-u4-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "B",
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.2 The Rise of Political Parties and the Era of Jefferson, B. The Supreme Court Asserts Federal Power and the Power of the Judiciary"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "An Assertive Supreme Court"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Jefferson's First Term"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Chief Justice John Marshall, McCulloch v. Maryland (1819), public domain. Abridged. The Gibbons sentence is a paraphrase of the decision, labeled as such.",
+  "text": "“That the power to tax involves the power to destroy; that the power to destroy may defeat and render useless the power to create.”\n— Chief Justice John Marshall, McCulloch v. Maryland, 1819 (abridged)\n\n[Paraphrase: In Gibbons v. Ogden (1824) the Court ruled that only Congress could regulate trade between the states, and struck down New York's grant of a steamboat monopoly on waters between New York and New Jersey.]"
+ },
+ "stimulus_set": "marshall-federal-power",
+ "source": "original; stimulus is a verbatim public-domain excerpt from McCulloch v. Maryland (1819) plus a labeled paraphrase of Gibbons v. Ogden",
+ "stem": "Which earlier decision gave the Court the authority it used in McCulloch and Gibbons to judge whether laws fit the Constitution?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Judiciary Act of 1801, which created new federal judgeships",
+   "misconception": "The act created judgeships; it gave the Court no power to judge laws, and Jefferson's Congress repealed it."
+  },
+  {
+   "key": "B",
+   "text": "Marbury v. Madison (1803), which established judicial review"
+  },
+  {
+   "key": "C",
+   "text": "The Twelfth Amendment, which changed how electors vote",
+   "misconception": "The amendment fixed presidential elections; it says nothing about the courts."
+  },
+  {
+   "key": "D",
+   "text": "Worcester v. Georgia (1832), which limited state power over Native nations",
+   "misconception": "Worcester came thirteen years after McCulloch and could not have authorized it."
+  }
+ ],
+ "rationales": {
+  "A": "The act created judgeships. It gave the Court no power to judge laws, and Jefferson's Congress repealed it.",
+  "B": "Marbury established judicial review: the Court's power to declare laws unconstitutional. McCulloch and Gibbons both rest on that power, using it to strike down a state tax and a state monopoly. Background: Marshall claimed the power in a case he decided against the man who brought it, so no one could say he had seized it for a friend.",
+  "C": "The amendment fixed presidential elections. It says nothing about the courts.",
+  "D": "Worcester came thirteen years after McCulloch and could not have authorized it.",
+  "general": "1. Ask what McCulloch and Gibbons both do. They judge state laws against the Constitution.\n2. Ask where that power came from. It is not written plainly in the Constitution.\n3. Recall Marbury. Marshall claimed it there, saying it is the courts' duty to say what the law is.\n4. Put it together. One case in 1803 supplied the tool for the next thirty years of decisions.\nRemember: a later case often runs on an earlier one's engine, so trace the power back to its source."
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "id": "apush-saq-0117",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.8"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "skills": [
+  "1.B",
+  "4.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, A. The Second Two-Party System: The Democrats and the Whigs"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Bank War"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.8 A: Jackson revived the old criticism of a national bank. Despite the fact that the bank was performing its function admirably, Jackson insisted that it put too much power into the hands of a small elite. His opponents brought the recharter to Congress in 1832, four years before the charter expired, thinking a veto would hurt his reelection. Jackson vetoed the bill, and his forceful veto message played well with voters, so he won reelection. He then moved federal deposits from the Bank to state banks in Democratic-leaning states.",
+  "source_note": "Secondary text: paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.8 A. Paraphrased, not quoted."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus as described in the stimulus source note",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly identify ONE reason Jackson opposed the Second Bank of the United States.",
+   "modelAnswer": "Jackson believed the Bank put too much power in the hands of a small elite. He saw it as a privilege for the rich that worked against ordinary farmers, mechanics, and laborers.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one reason for Jackson's opposition, such as the Bank's power in few hands, its privileges for the rich, or its threat to ordinary people.",
+     "notEarned": "Naming the Bank or the veto with no reason for opposing it does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE way Jackson's veto of the recharter changed American politics.",
+   "modelAnswer": "The veto made the presidency a popular weapon, since Jackson used it against Congress and won reelection on it. It showed that a president could defy Congress and the Court and still gain votes.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one political change from the veto, such as the veto becoming a popular tool, the growth of presidential power, or the Bank becoming a campaign issue.",
+     "notEarned": "Saying Jackson vetoed the bill without explaining a change in politics does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limitation of this passage as evidence about the Bank itself.",
+   "modelAnswer": "The passage reports Jackson's charge that the Bank served an elite, but it also says the Bank was performing its function admirably. A reader cannot tell from Jackson's motives alone whether the Bank actually harmed ordinary people.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limit, such as the passage giving Jackson's motives rather than the Bank's record, or its silence on how the Bank actually worked.",
+     "notEarned": "Saying the passage is biased without naming what it leaves out does not earn the point."
+    }
+   ]
+  }
+ ]
+}

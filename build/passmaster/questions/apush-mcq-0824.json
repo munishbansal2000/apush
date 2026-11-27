@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-0824",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.2"
+ ],
+ "lesson": "apush-u4-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.2 The Rise of Political Parties and the Era of Jefferson, A. Political Parties and the Rise of the First Two-Party System"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "A Federalist Debacle and the Era of Good Feelings"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Monroe's Presidency"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Electoral vote totals from the National Archives and Britannica historical election results.",
+  "text": "| Election | Winner | Electoral votes | Runner-up | Electoral votes |\n|---|---|---|---|---|\n| 1816 | James Monroe (Democratic-Republican) | 183 | Rufus King (Federalist) | 34 |\n| 1820 | James Monroe (Democratic-Republican) | 231 | John Quincy Adams | 1 |"
+ },
+ "stimulus_set": "era-good-feelings",
+ "source": "original; stimulus is a table of electoral votes from the National Archives; stem idea reworked from staged item pr25e-ch08-q03 (Hartford Convention)",
+ "stem": "As a result of the Hartford Convention, held as the War of 1812 drew to a close, the Federalist Party",
+ "options": [
+  {
+   "key": "A",
+   "text": "won the presidency in 1816 with Rufus King",
+   "misconception": "The table shows King losing badly in 1816, 34 votes to Monroe's 183."
+  },
+  {
+   "key": "B",
+   "text": "forced Congress to limit the president to two terms",
+   "misconception": "No amendment limiting presidents to two terms came out of Hartford; the two-term limit stayed a custom until 1951."
+  },
+  {
+   "key": "C",
+   "text": "lost credibility and faded away, as the table's lopsided elections show"
+  },
+  {
+   "key": "D",
+   "text": "led the New England states to secede from the Union",
+   "misconception": "A few delegates talked of secession, but the convention issued grievances and proposed amendments; no state seceded."
+  }
+ ],
+ "rationales": {
+  "A": "The table shows King losing badly in 1816, 34 votes to Monroe's 183.",
+  "B": "No amendment limiting presidents to two terms came out of Hartford. The two-term limit stayed a custom until 1951.",
+  "C": "New England Federalists met at Hartford in 1814 to denounce a war most Americans soon saw as a second war of independence, and some delegates even discussed secession. Background: when the war ended and Jackson triumphed at New Orleans, the Federalists looked unpatriotic, and the table shows the result: Monroe won 183 votes to 34 in 1816, and nearly all of them in 1820.",
+  "D": "A few delegates talked of secession, but the convention issued grievances and proposed amendments. No state seceded.",
+  "general": "1. Date the convention. Federalists met at Hartford in 1814, while the war was still on.\n2. Ask how it looked. Opposing a war that ended in victory made the party look unpatriotic.\n3. Read the table. Monroe crushes the Federalist King in 1816 and runs nearly unopposed in 1820.\n4. Put it together. A party that bets against a popular war pays for it at the ballot box.\nRemember: a convention's timing can matter more than its words, so check what happened right after it met."
+ }
+}

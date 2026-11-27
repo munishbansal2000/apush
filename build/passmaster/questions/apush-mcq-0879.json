@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-0879",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.4"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "1.B",
+  "5.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.4 America on the World Stage, A. Trade, Diplomacy, and the Expansion of American Influence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "The War of 1812"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Effects of the War of 1812"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "This lithograph, entered in 1840, shows the Battle of New Orleans on January 8, 1815. American troops fire from behind earthworks along the Mississippi River while British soldiers advance in formation across an open field. The title printed below the image reads “BATTLE OF NEW-ORLEANS. January 8th 1815.”",
+  "source_note": "Battle of New Orleans, lithograph by P. S. Duval after Laclotte, drawn on stone by A. Hoffy, entered 1840; public domain."
+ },
+ "stimulus_set": "battle-new-orleans-1815",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "Jackson's victory at New Orleans mattered most politically because it",
+ "options": [
+  {
+   "key": "A",
+   "text": "won Florida for the United States",
+   "misconception": "Florida came through the Adams-Onís Treaty in 1819."
+  },
+  {
+   "key": "B",
+   "text": "forced Britain to end the practice of impressment of American sailors",
+   "misconception": "The Treaty of Ghent said nothing about impressment."
+  },
+  {
+   "key": "C",
+   "text": "gave the United States control of the Mississippi River",
+   "misconception": "The United States had controlled the river since 1803."
+  },
+  {
+   "key": "D",
+   "text": "made Jackson a national hero and fed a wave of postwar nationalism"
+  }
+ ],
+ "rationales": {
+  "A": "Florida was gained by treaty in 1819, four years after New Orleans. The battle did not win it.",
+  "B": "Impressment was never mentioned in the Treaty of Ghent. The practice ended because the Napoleonic Wars ended, not because of this battle.",
+  "C": "The Mississippi had been American since the Louisiana Purchase of 1803. The battle defended New Orleans, it did not win the river.",
+  "D": "The victory was the war's only clear-cut American triumph, and it came after the treaty was signed, so its power was symbolic: it made Jackson a hero and fed the national pride that followed the war.",
+  "general": "1. Ask what the battle changed on paper. Nothing: the Treaty of Ghent was already signed and restored the old boundary.\n2. Ask what it changed in people's minds. A lopsided victory over the British army felt like a triumph, not a draw.\n3. Put it together. Its power was political: a hero, a story, and a wave of national feeling.\nBackground: Jackson's fame carried him to the White House in 1828.\nRemember: when a battle changes no borders, ask what it changed in reputation and feeling."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0879",
+   "file": "u4/battle-of-new-orleans-duval.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Battle_of_New_Orleans_Duval_engraving.jpg",
+   "license": "Public domain",
+   "caption": "Battle of New Orleans, January 8, 1815, lithograph entered 1840",
+   "alt": "Lithograph of American troops firing from earthworks at British soldiers advancing across a field beside the Mississippi River"
+  }
+ ]
+}

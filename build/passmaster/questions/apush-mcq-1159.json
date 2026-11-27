@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1159",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.13"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "3.A",
+  "6.C"
+ ],
+ "themes": [
+  "SOC",
+  "ARC"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.13 The Society of the South in the Early Republic, B. Cotton, Slavery, and the Southern Exception"
+   }
+  ],
+  "primary_sources": [
+   "The Old Plantation, attributed to John Rose, c. 1785-1790"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "The Old Plantation, a watercolor painted in South Carolina around 1785-1790 and attributed to John Rose, shows enslaved people dancing to banjo music outside their quarters, with the planter's house and other cabins in the background.",
+  "source_note": "Painting viewed before writing: The Old Plantation, attributed to John Rose, c. 1785-1790, shared pool file u3/old-plantation-john-rose-1790.jpg, public domain. Painted before 1800; used here for the continuity of enslaved culture into the early republic, with its date stated."
+ },
+ "stimulus_set": "old-plantation-culture",
+ "source": "original; stimulus image from the shared pool, The Old Plantation, attributed to John Rose, c. 1785-1790, public domain",
+ "stem": "The banjo music and dance in the painting point to which longer pattern in Southern life?",
+ "options": [
+  {
+   "key": "A",
+   "text": "African traditions survived slavery and shaped Southern music and culture"
+  },
+  {
+   "key": "B",
+   "text": "Enslaved people adopted only European music and forgot African ways",
+   "misconception": "The banjo itself came from Africa, so the music shows African ways kept, not forgotten."
+  },
+  {
+   "key": "C",
+   "text": "Southern planters wrote the songs enslaved people sang",
+   "misconception": "The painting shows enslaved people playing their own music; it does not show planters writing songs."
+  },
+  {
+   "key": "D",
+   "text": "Music disappeared from Southern plantations after 1800",
+   "misconception": "Music stayed central to enslaved life through the whole period, as songs and dances show."
+  }
+ ],
+ "rationales": {
+  "A": "The banjo came from Africa, and its music lived on in the South, shaping the music white Southerners later heard as their own.",
+  "B": "The banjo itself came from Africa, so the music shows African ways kept, not forgotten.",
+  "C": "The painting shows enslaved people playing their own music. It does not show planters writing songs.",
+  "D": "Music stayed central to enslaved life through the whole period, as songs and dances show.",
+  "general": "1. Name the instrument. The banjo came from Africa with enslaved people.\n2. Ask what survived. African music and dance lived on in the quarters, as the painting shows.\n3. Name the pattern. Enslaved culture did not vanish under slavery; it shaped the wider Southern culture.\nBackground: By 1850 nearly a third of the South's people were Black, so Black culture shaped the region.\nRemember: a culture can survive the system that tries to erase it."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1157",
+   "file": "u3/old-plantation-john-rose-1790.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Gullah_s_carolina_1790.jpg",
+   "license": "Public domain",
+   "caption": "The Old Plantation, South Carolina, about 1785-1790, attributed to John Rose.",
+   "alt": "A watercolor of enslaved people dancing to banjo music outside their quarters, with the planter's house and cabins in the background"
+  }
+ ]
+}

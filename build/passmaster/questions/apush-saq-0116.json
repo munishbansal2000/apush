@@ -1,0 +1,85 @@
+{
+ "id": "apush-saq-0116",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.7"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 3,
+ "totalPoints": 3,
+ "skills": [
+  "3.B",
+  "4.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.7 Expanding Democracy, A. Participatory Democracy and an Expanding Electorate"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "Jacksonian Democracy"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "The table shows the share of eligible voters who cast ballots in presidential elections, \nfrom 1824 to 1840, as recorded by the U.S. Bureau of the Census.\n| Year | Share of eligible voters who voted |\n| 1824 | 26.9% |\n| 1828 | 57.6% |\n| 1832 | 55.4% |\n| 1836 | 57.8% |\n| 1840 | 80.2% |",
+  "source_note": "U.S. Bureau of the Census, Historical Statistics of the United States, Colonial Times to 1970. Public domain."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus as described in the stimulus source note",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly identify the trend in voter participation shown in the table.",
+   "modelAnswer": "Voter participation rose sharply, from 26.9 percent of eligible voters in 1824 to 80.2 percent in 1840. The biggest jump came between 1824 and 1828.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying the trend of sharply rising participation, with at least one correct figure from the table.",
+     "notEarned": "Naming a single year with no trend does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason for the sharp rise in participation between 1824 and 1828.",
+   "modelAnswer": "Most states had dropped property qualifications for voting. Jackson's campaign against the “corrupt bargain” of 1824 then mobilized the new voters, so turnout more than doubled.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason for the rise, such as the fall of property qualifications, the larger electorate, or Jackson's mass campaign.",
+     "notEarned": "Restating the numbers with no reason does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limitation of the table as evidence about how democratic the United States had become.",
+   "modelAnswer": "The table counts only eligible voters, who were mostly free white men. High turnout says nothing about the women, enslaved people, and others who could not vote at all.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limitation, such as counting only eligible voters, or the exclusion of women, enslaved people, and others from the electorate.",
+     "notEarned": "Saying the table is limited without naming what it leaves out does not earn the point."
+    }
+   ]
+  }
+ ]
+}

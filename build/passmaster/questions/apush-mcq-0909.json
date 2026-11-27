@@ -1,0 +1,72 @@
+{
+ "id": "apush-mcq-0909",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.5"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WXT",
+  "ARC"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 Market Revolution: Economic Transformations, B. Advances in Technology"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Market Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.5 B, and Princeton Review, Chapter 8: Eli Whitney, who had earlier developed the cotton gin, proposed making musket parts to exact specifications so that any part would fit any musket. He showed the idea to Thomas Jefferson and James Madison by taking apart several rifles, mixing the parts, and rebuilding the rifles from whatever parts he picked up. Makers of clocks, watches, tools, and farm implements soon used the same method.",
+  "source_note": "Secondary text: paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.5 B, and Princeton Review, Chapter 8. Paraphrased, not quoted."
+ },
+ "stimulus_set": "interchangeable-parts",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "Before interchangeable parts, a broken musket was hard to repair because",
+ "options": [
+  {
+   "key": "A",
+   "text": "muskets were made of steel that could not be cut",
+   "misconception": "Musket parts were metal that could be cut and filed; the problem was fit, not the material."
+  },
+  {
+   "key": "B",
+   "text": "the federal government banned private gunsmiths",
+   "misconception": "No such ban existed; private gunsmiths made and repaired firearms throughout this period."
+  },
+  {
+   "key": "C",
+   "text": "each weapon was hand-built, so its parts fit only that weapon"
+  },
+  {
+   "key": "D",
+   "text": "muskets were imported from Britain and could not be opened",
+   "misconception": "American muskets were made at home, and gunsmiths opened them often; the trouble was that no two were alike."
+  }
+ ],
+ "rationales": {
+  "A": "Gunsmiths cut and filed metal every day. The repair problem was that each part was shaped for one gun only.",
+  "B": "Private gunsmiths worked openly in this period. The passage says nothing about a ban, because there was none.",
+  "C": "Craftsmen custom-fitted every part, so each weapon was unique. A spare from another musket would not fit without reshaping.",
+  "D": "Whitney built his muskets for the United States Army in America. The parts existed; they simply did not match from gun to gun.",
+  "general": "1. Ask how a musket was made before Whitney. A craftsman built it by hand, fitting each part to that one weapon.\n2. Ask what breaks when a part fails. No spare exists, because no other musket has a matching part.\n3. Put it together. Hand fitting made every weapon unique, so repair meant remaking the part.\nBackground: Replacing broken parts was extremely difficult before parts were standardized.\nRemember: compare old and new by asking what happens when something breaks."
+ }
+}

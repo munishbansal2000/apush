@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-0828",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.3"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "A",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.3 Politics and Regional Interests, C. A Temporary Truce on the Slavery Question in the Pre-Civil War Period"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "Missouri Compromise"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The Missouri Compromise, 1820"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Thomas Jefferson, retired at Monticello, wrote to Congressman John Holmes about the Missouri question on April 22, 1820:\n\n“but this momentous question, like a fire bell in the night, awakened and filled me with terror. I considered it at once as the knell of the Union. it is hushed indeed for the moment. but this is a reprieve only, not a final sentence. a geographical line, coinciding with a marked principle, moral and political, once conceived and held up to the angry passions of men, will never be obliterated; and every new irritation will mark it deeper and deeper.”",
+  "source_note": "Thomas Jefferson to John Holmes, April 22, 1820; text verified against Founders Online and the Library of Congress. Public domain."
+ },
+ "stimulus_set": "jefferson-fire-bell",
+ "source": "original; stimulus is a verbatim excerpt from Jefferson to John Holmes, April 22, 1820 (public domain, verified against Founders Online)",
+ "stem": "Jefferson wrote this letter because",
+ "options": [
+  {
+   "key": "A",
+   "text": "Missouri’s application as a slave state threatened the balance of free and slave states"
+  },
+  {
+   "key": "B",
+   "text": "Maine had applied for statehood as a slave state, not as a free state",
+   "misconception": "Maine entered as a free state; Missouri was the slave-state applicant."
+  },
+  {
+   "key": "C",
+   "text": "Congress had voted to ban slavery in all new territories",
+   "misconception": "Congress banned slavery only north of 36°30′ in the Louisiana territory, not everywhere."
+  },
+  {
+   "key": "D",
+   "text": "the Supreme Court had ruled on slavery in the territories",
+   "misconception": "No Court ruling on slavery in the territories existed in 1820; the Court first took up the question decades later."
+  }
+ ],
+ "rationales": {
+  "A": "Missouri applied as a slave state when free and slave states stood eleven to eleven. One more slave state would tip the Senate, and that balance is what the letter is about.",
+  "B": "The pairing was Missouri slave and Maine free. Maine as a slave state reverses the Compromise.",
+  "C": "The Compromise drew a line at 36°30′: slavery barred north of it in the Louisiana territory, allowed south of it. That is a line, not a ban everywhere.",
+  "D": "The Court said nothing on slavery in the territories in 1820. The Missouri fight was fought in Congress, not in court.",
+  "general": "1. Ask what Jefferson is answering. He thanks Holmes for a letter to his constituents “on the Missouri question.”\n2. Ask why Missouri mattered. A slave state would break the eleven-to-eleven balance of free and slave states.\n3. Check the letter’s fear. The “geographical line” only exists because Missouri’s admission forced Congress to draw one.\n4. Put it together. The letter exists because Missouri’s application turned slavery’s expansion into a national crisis.\nRemember: start from what the writer is answering, and the occasion usually names itself."
+ }
+}

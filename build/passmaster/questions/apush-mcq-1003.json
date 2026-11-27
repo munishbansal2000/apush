@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-1003",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.8"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, B. Contention Between Whites and American Indians over Western Lands"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "Native American Removal"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "The National Park Service map shows the Trail of Tears National Historic Trail. Three kinds of routes run from the Cherokee homelands in Georgia, Tennessee, and North Carolina west to Tahlequah in present-day Oklahoma: a dotted land route through Nashville, Hopkinsville, Cape Girardeau, and Springfield; a blue water route along the Tennessee and Mississippi Rivers; and green 'other major routes.'",
+  "source_note": "Map: 'Trail of Tears National Historic Trail,' U.S. National Park Service (work of the U.S. federal government, public domain). Public domain; image viewed before writing."
+ },
+ "stimulus_set": "trail-tears-map-48",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The map shows routes beginning in Georgia, Tennessee, and North Carolina. Which of the following best explains why the Cherokee were leaving that region?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Cherokee chose to move west to better farmland",
+   "misconception": "A map shows people moving, so it is easy to read the movement as a choice."
+  },
+  {
+   "key": "B",
+   "text": "The whole Cherokee nation approved a treaty to move west",
+   "misconception": "A treaty exists, so it is easy to think the whole nation approved it."
+  },
+  {
+   "key": "C",
+   "text": "The Cherokee were fleeing the Panic of 1837",
+   "misconception": "The Panic and the removal happened a year apart, so it is easy to link them as cause and effect."
+  },
+  {
+   "key": "D",
+   "text": "Federal removal policy, pressed by Georgia after gold was found"
+  }
+ ],
+ "rationales": {
+  "A": "The Cherokee were forced west by federal troops in 1838; they did not choose to leave their homeland.",
+  "B": "Only a small minority signed the Treaty of New Echota in 1835; most Cherokee, led by John Ross, opposed removal.",
+  "C": "The Panic of 1837 was an economic crash, not a cause of removal; the removal policy dated to the Act of 1830.",
+  "D": "The Removal Act of 1830 authorized moving eastern tribes west, and Georgia, hungry for Cherokee land after the gold discovery, pressed the policy forward.",
+  "general": "1. Start the routes where they start: the Cherokee homelands in Georgia, Tennessee, and North Carolina.\n2. Ask what pushed people out. The Removal Act of 1830 set the policy, and Georgia's hunger for Cherokee land, sharpened by gold, drove it.\nBackground: in 1838 federal troops escorted the Cherokee west, and thousands died on the march.\nRemember: a map shows where people went; the law and the land rush explain why they left."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1003",
+   "file": "u4/pr25e-test3-q19.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Trail_of_tears_map_NPS.jpg",
+   "license": "Public domain",
+   "caption": "Trail of Tears National Historic Trail map. Land, water, and other routes run west to Tahlequah, Oklahoma.",
+   "alt": "A National Park Service map of the Trail of Tears: dotted land routes, a blue water route along the Tennessee and Mississippi Rivers, and green other major routes running west to Tahlequah"
+  }
+ ]
+}

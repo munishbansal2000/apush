@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0925",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.6"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.6 Market Revolution: Society and Culture, C. Workers and New Methods of Production"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The North and the Textile Industry"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "An engraving of the Boott Cotton Mills at Lowell, Massachusetts. Long brick mill buildings with rows of windows stand along a river, with smoking chimneys, a bridge, and small figures of workers and horse-drawn wagons in the foreground. The caption reads “BOOTT COTTON MILLS. LOWELL, MASS.”",
+  "source_note": "Engraving of the Boott Cotton Mills, Lowell, Mass., by Van Slyck & Co., Boston, via Wikimedia Commons (public domain). Image viewed before writing."
+ },
+ "stimulus_set": "boott-mills-lowell",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The engraving is most useful as evidence about",
+ "options": [
+  {
+   "key": "A",
+   "text": "the scale and appearance of the factory buildings"
+  },
+  {
+   "key": "B",
+   "text": "the wages the mill owners paid their workers",
+   "misconception": "An engraving of buildings shows no pay records; wages come from company books and workers' accounts."
+  },
+  {
+   "key": "C",
+   "text": "the number of hours the workers spent at the looms",
+   "misconception": "The picture shows buildings and a few small figures, not a workday; hours come from written records."
+  },
+  {
+   "key": "D",
+   "text": "the opinions of the workers about their jobs",
+   "misconception": "Workers' views are in their writings, like the Lowell Offering, not in a picture of mill buildings."
+  }
+ ],
+ "rationales": {
+  "A": "The engraving shows what the mills looked like and how large they were. It shows no wages, no hours, and no opinions, so it answers questions about buildings, not about workers' lives.",
+  "B": "Wages are numbers in account books. A picture of mill buildings cannot show what anyone was paid.",
+  "C": "Hours are in work rules and workers' accounts. The engraving shows buildings, not a working day.",
+  "D": "Opinions live in words. The workers' views are in the Lowell Offering and in strike records, not in this engraving.",
+  "general": "1. List what you can actually see. Brick buildings, rows of windows, chimneys, a bridge, tiny figures.\n2. List what you cannot see. No pay, no hours, no opinions appear anywhere in the picture.\n3. Match the question to the source. The engraving answers questions about buildings.\nBackground: The Boott mills were among the largest in Lowell; by 1830 eight Lowell mills employed more than 6,000 women.\nRemember: match the question to what the source can show."
+ },
+ "figures": [
+  {
+   "file": "u4/original-misc-us-culture-03.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Engraving_of_Boott_Cotton_Mills_%284983c864-09e6-455f-870e-23eba17c7da7%29.jpg",
+   "license": "Public domain",
+   "caption": "Engraving of the Boott Cotton Mills at Lowell, Massachusetts, with mill buildings along the river.",
+   "alt": "Engraving of the Boott Cotton Mills at Lowell: long brick mill buildings with rows of windows stand along a river, with smoking chimneys, a bridge, and small figures of workers and wagons",
+   "id": "fig-apush-mcq-0925"
+  }
+ ]
+}

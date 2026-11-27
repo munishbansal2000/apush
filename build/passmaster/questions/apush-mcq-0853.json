@@ -1,0 +1,92 @@
+{
+ "id": "apush-mcq-0853",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.3"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.3 Politics and Regional Interests, A. The Persistence of Regional Priorities"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.3 Politics and Regional Interests, B. The American System and Sectionalism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Monroe's Presidency"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "| Region | Main work | Labor | Link to other regions |\n|---|---|---|---|\n| North | Mills and workshops | Wage labor | Canals and roads east and west |\n| South | Cotton for export | Enslaved labor | Rivers and ports, mostly southward |\n| West (Ohio Valley) | Grain and livestock | Family farms | Canals and rivers to eastern markets |\n\nThe Erie Canal, opened in 1825, joined the Great Lakes to New York City.",
+  "source_note": "Table drawn from Barron's Premium 2027, Chapter 6, Topic 4.3 A-B, and 5 Steps 2024, Chapter 13, 'The Rise of Manufacturing.' Original synthesis. Image: view on the Erie Canal, published 1832 (New York Public Library)."
+ },
+ "stimulus_set": "regional-economies",
+ "source": "original; stimulus is a table drawn from the grounding books plus an 1832 Erie Canal view (public domain, in the shared image pool as pr25e-ch08-q10)",
+ "stem": "The table best supports the conclusion that the market revolution",
+ "options": [
+  {
+   "key": "A",
+   "text": "linked the regions into one economy while deepening the free-slave labor divide"
+  },
+  {
+   "key": "B",
+   "text": "made every region richer in the same way at the same time",
+   "misconception": "The regions grew differently: mills in the North, cotton in the South, grain in the West."
+  },
+  {
+   "key": "C",
+   "text": "ended regional differences by 1830",
+   "misconception": "Regional differences deepened by 1830, through the tariff fights, Missouri, and nullification."
+  },
+  {
+   "key": "D",
+   "text": "affected only the North, leaving the South unchanged",
+   "misconception": "The cotton boom transformed the South as surely as mills transformed the North."
+  }
+ ],
+ "rationales": {
+  "A": "The table shows one economy: canals, roads, and rivers moving goods between regions. It also shows two labor systems, wage labor in the North and enslaved labor in the South, growing side by side and pulling apart.",
+  "B": "Richer in the same way would mean the same work and the same labor everywhere. The table shows mills, cotton, and grain, and two different labor systems.",
+  "C": "By 1830 the regions were further apart, not closer. The tariff fights and the Missouri crisis had already shown how deep the divide ran.",
+  "D": "The South changed enormously: cotton spread across the Black Belt, slavery grew with it, and the region’s whole economy turned on one export crop.",
+  "general": "1. Ask what the table links. Canals, roads, and rivers carry goods between all three regions.\n2. Ask what the table divides. The labor column: wage labor in the North, enslaved labor in the South.\n3. Ask whether the divide shrank. The tariff fights and the Missouri crisis say it grew.\n4. Put it together. One market, two labor systems, and a widening gap between them.\nBackground: the books note that the regions became more interlinked as local economies joined national markets, while free versus slave labor steadily divided the country.\nRemember: a table with a link column and a divide column is arguing both halves at once."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0853",
+   "file": "u4/pr25e-ch08-q10.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/%28View_on_the_Erie_Canal.%29_%283990000597%29.jpg",
+   "license": "Public domain",
+   "caption": "View on the Erie Canal, published 1832",
+   "alt": "A canal boat on a calm waterway between low banks, with a towpath and trees, showing the Erie Canal in use"
+  }
+ ]
+}

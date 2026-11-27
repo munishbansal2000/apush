@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-0807",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.2"
+ ],
+ "lesson": "apush-u4-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.2 The Rise of Political Parties and the Era of Jefferson, C. The Louisiana Purchase and Territorial Expansion"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "The Louisiana Purchase"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The Louisiana Purchase"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "The Louisiana Purchase treaty, 1803, in its embroidered presentation binding bearing the seal of the United States. U.S. National Archives, via Wikimedia Commons. Public domain.",
+  "text": "The Louisiana Purchase treaty, signed in Paris in 1803, shown in its embroidered presentation binding bearing the seal of the United States. By the treaty France sold the Louisiana Territory to the United States for $15 million."
+ },
+ "stimulus_set": "louisiana-treaty-1803",
+ "source": "original; stimulus image from the shared pool, the Louisiana Purchase treaty binding (1803), public domain",
+ "stem": "Which of the following most directly led Napoleon to sell the Louisiana Territory to the United States?",
+ "options": [
+  {
+   "key": "A",
+   "text": "His army in Haiti had perished, and war with Britain left Louisiana indefensible"
+  },
+  {
+   "key": "B",
+   "text": "Jefferson threatened to declare war on France if Napoleon kept Louisiana",
+   "misconception": "Jefferson sought a diplomatic purchase, sending envoys to buy New Orleans, not threatening war."
+  },
+  {
+   "key": "C",
+   "text": "Spain forced Napoleon to give up Louisiana and return it to Spanish rule",
+   "misconception": "Spain had ceded Louisiana to France; it was Napoleon who chose to sell, not Spain that forced him."
+  },
+  {
+   "key": "D",
+   "text": "Napoleon wanted to strengthen the French empire in North America",
+   "misconception": "Napoleon was abandoning his American empire, not strengthening it; he needed cash for war in Europe."
+  }
+ ],
+ "rationales": {
+  "A": "Napoleon's army sent to crush the slave revolt in Haiti died of disease, and renewed war with Britain meant the British navy would cut Louisiana off from France. The territory was indefensible and he needed money for war in Europe, so he sold the whole of it. Background: American envoys had come to buy only New Orleans, and were startled when Napoleon offered everything.",
+  "B": "Jefferson sought a diplomatic purchase, sending envoys to buy New Orleans, not threatening war.",
+  "C": "Spain had ceded Louisiana to France. It was Napoleon who chose to sell, not Spain that forced him.",
+  "D": "Napoleon was abandoning his American empire, not strengthening it. He needed cash for war in Europe.",
+  "general": "1. Ask what Napoleon wanted. Cash for war in Europe, not a colony across the ocean.\n2. Ask what went wrong in the Americas. His army in Haiti perished of disease.\n3. Ask what war with Britain meant. The British navy would cut Louisiana off from France.\n4. Put it together. An indefensible territory became a bargain, and the envoys bought the whole of it.\nRemember: a seller's price often tells you his problems, so ask what forced the sale."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0807",
+   "file": "u4/original-misc-worldstage-01.jpg",
+   "caption": "Louisiana Purchase treaty, 1803, in its presentation binding",
+   "alt": "The embroidered cover of the 1803 Louisiana Purchase treaty, with gold decoration and the seal of the United States",
+   "license": "Public domain"
+  }
+ ]
+}

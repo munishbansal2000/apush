@@ -1,0 +1,73 @@
+{
+ "id": "apush-mcq-1080",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.11"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "B",
+ "skills": [
+  "1.A",
+  "4.A"
+ ],
+ "themes": [
+  "SOC",
+  "WXT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.11 An Age of Reform, A. Reform Movements in the Antebellum Period"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "An Age of Reform"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "Alcohol use in the United States, in gallons of absolute alcohol per person aged 15 and older:\n\n| Year | Gallons per person |\n| --- | --- |\n| 1790 | 5.8 |\n| 1830 | 7.1 |\n| 1840–1860 | about 3.5 |\n\nThe American Temperance Society, founded in 1826, claimed 1.5 million members by 1835.",
+  "source_note": "Table figures from W. J. Rorabaugh's research on American alcohol consumption, as reported by the National Archives ('Spirited Republic'): 5.8 gallons in 1790, 7.1 in 1830, about 3.5 by 1840-1860, per person aged 15 and older. Membership figure from Barron's Premium 2027, Chapter 6, Topic 4.11, A."
+ },
+ "stimulus_set": "temperance-numbers",
+ "source": "original; stimulus table drawn from Rorabaugh / National Archives figures and Barron's",
+ "stem": "Which conclusion about American drinking is best supported by the table?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Alcohol use rose steadily from 1790 to 1860",
+   "misconception": "The table shows a peak in 1830 and a fall after, not a steady rise."
+  },
+  {
+   "key": "B",
+   "text": "Alcohol use peaked around 1830 and then fell sharply"
+  },
+  {
+   "key": "C",
+   "text": "Americans drank the least alcohol in 1830",
+   "misconception": "1830 is the highest number in the table, not the lowest."
+  },
+  {
+   "key": "D",
+   "text": "Alcohol use stayed about the same across the period",
+   "misconception": "The numbers move from 5.8 to 7.1 to about 3.5, which is a large change."
+  }
+ ],
+ "rationales": {
+  "A": "The numbers rise from 1790 to 1830, then fall to about 3.5. A steady rise would keep climbing.",
+  "B": "The table climbs to 7.1 gallons in 1830, the highest figure, then drops to about 3.5. That is a peak followed by a sharp fall.",
+  "C": "In 1830 the figure is 7.1 gallons, the highest in the table. The lowest comes later, after the temperance campaigns.",
+  "D": "The figures change by nearly half, from 7.1 down to about 3.5. That is a large change, not a flat line.",
+  "general": "1. Read the rows in order. The figure rises from 5.8 in 1790 to 7.1 in 1830.\n2. Read the last row. By 1840-1860 it has fallen to about 3.5 gallons.\n3. Name the shape. A rise to a peak, then a sharp fall.\nBackground: The temperance movement, the largest reform movement of the first half of the nineteenth century, campaigned against drinking in these decades.\nRemember: a table tells its story in order — read the rows one by one before judging the whole."
+ }
+}

@@ -1,0 +1,175 @@
+{
+ "id": "apush-dbq-0028",
+ "type": "dbq",
+ "unit": 4,
+ "topics": [
+  "4.8"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT",
+  "MIG"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, A. The Second Two-Party System: The Democrats and the Whigs"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, B. Contention Between Whites and American Indians over Western Lands"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "Native American Removal"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Nullification Controversy"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The Jackson Presidency and Jacksonian Democracy"
+   }
+  ],
+  "primary_sources": [
+   "John C. Calhoun, South Carolina Exposition and Protest, 1828",
+   "Robert Y. Hayne, speech in the Senate, January 1830"
+  ]
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Seven documents, 1830-1840. See documents."
+ },
+ "stimulus_set": null,
+ "source": "original; documents are public-domain primary sources or paraphrases of them (see each document's sourcing note)",
+ "prompt": "Evaluate the extent to which federal power grew relative to state power in the period 1828-1840.",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "1828",
+   "title": "Calhoun states the compact theory",
+   "source": "Paraphrase of John C. Calhoun, South Carolina Exposition and Protest, 1828 (published anonymously). Public domain.",
+   "sourcing": "The vice president, writing anonymously, sets out the doctrine South Carolina later used.",
+   "text": "Calhoun argued that the Constitution was a compact among sovereign states. Since the states created the federal government, any state could declare a federal law it found unconstitutional null and void within its borders."
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "1830",
+   "title": "Hayne defends the states",
+   "source": "Paraphrase of Robert Y. Hayne, speech in the Senate, January 1830. Public domain.",
+   "sourcing": "A South Carolina senator answers Webster in the debate over tariffs and nullification.",
+   "text": "Hayne argued that the Union was created by the states to serve their interests, so the states kept the right to judge federal laws. He warned that the tariff served northern manufacturers at the South's expense."
+  },
+  {
+   "n": 3,
+   "kind": "text",
+   "date": "1830",
+   "title": "The Removal Act",
+   "source": "Paraphrase of the Indian Removal Act of 1830 and Barron's Premium 2027, Chapter 6, Topic 4.8 B. Public domain.",
+   "sourcing": "A summary of the federal law that set removal in motion.",
+   "text": "Congress passed the Indian Removal Act, authorizing the president to negotiate the removal of tribes east of the Mississippi to land west of the river. Jackson presented the move as protection for the tribes; Georgia pressed for Cherokee land."
+  },
+  {
+   "n": 4,
+   "kind": "image",
+   "date": "1838",
+   "title": "Se-Quo-Yah",
+   "source": "Portrait 'Se-Quo-Yah,' McKenney-Hall series, published 1838 (Library of Congress). Public domain.",
+   "sourcing": "A portrait of the Cherokee leader who invented the Cherokee syllabary.",
+   "text": "The portrait shows Sequoyah (Se-Quo-Yah), a Cherokee leader, holding a tablet covered with the characters of the Cherokee syllabary, the writing system he invented. The Cherokee used the syllabary to print their own newspaper, the Cherokee Phoenix, beginning in 1828.",
+   "figure": "u4/barrons-2027-ch06-04.jpg"
+  },
+  {
+   "n": 5,
+   "kind": "text",
+   "date": "1833",
+   "title": "The Force Bill",
+   "source": "Paraphrase of the Force Bill and the Compromise Tariff of 1833. Public domain.",
+   "sourcing": "A summary of Congress's two-part answer to nullification.",
+   "text": "Congress passed the Force Bill, authorizing the president to use military force to collect the tariff in South Carolina. On the same day it passed a compromise tariff that cut rates gradually to 20 percent by 1842."
+  },
+  {
+   "n": 6,
+   "kind": "image",
+   "date": "1838",
+   "title": "The Trail of Tears map",
+   "source": "Map: 'Trail of Tears National Historic Trail,' U.S. National Park Service. Public domain.",
+   "sourcing": "A National Park Service map of the routes the Cherokee were forced to travel.",
+   "text": "The National Park Service map shows the Trail of Tears National Historic Trail. Routes run from the Cherokee homelands in Georgia, Tennessee, and North Carolina west to Tahlequah in present-day Oklahoma: a dotted land route, a blue water route along the Tennessee and Mississippi Rivers, and green 'other major routes.'",
+   "figure": "u4/pr25e-test3-q19.jpg"
+  },
+  {
+   "n": 7,
+   "kind": "table",
+   "date": "1840",
+   "title": "The election of 1840",
+   "source": "National Archives, Electoral College results, 1840; U.S. Bureau of the Census, Historical Statistics of the United States. Public domain.",
+   "sourcing": "Official results of the election that ended Van Buren's presidency.",
+   "text": "Electoral votes, 1840: William Henry Harrison (Whig), 234; Martin Van Buren (Democratic), 60. Share of eligible voters who voted: 80.2 percent."
+  }
+ ],
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent of the change, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of change does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the Marshall Court's assertion of federal power, the fall of property qualifications, or the rise of mass parties.",
+   "notEarned": "A sentence of background with no link to the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (first point): earns the point for describing the content of at least three documents relevant to the argument.",
+   "notEarned": "Quoting documents without describing what they show does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support the argument.",
+   "notEarned": "Using fewer than six documents, or using six without tying them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence beyond the documents: earns the point for describing a specific relevant example not in the documents, such as the Bank War, Jackson's refusal to enforce Worcester v. Georgia, or the Webster-Hayne debate.",
+   "notEarned": "A vague reference to outside knowledge with no specific example does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "3.B",
+   "criterion": "Sourcing: earns the point for explaining how the audience, purpose, historical situation, or point of view of at least two documents shapes the argument.",
+   "notEarned": "Naming a document's author without explaining how it shapes the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.D",
+   "criterion": "Complexity: earns the point for a complex argument, such as qualifying the thesis by showing where federal power grew and where states still held power, such as Georgia defying the Court or the states keeping control of slavery.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: Federal power grew to a great extent between 1828 and 1840, as the presidency and Congress asserted the Union over a defiant state and over Native nations, yet states kept real power where federal leaders chose not to use it.\nContext: The Marshall Court had spent three decades asserting federal supremacy, and the 1820s brought mass parties and a broader electorate that gave presidents a popular mandate.\nGrouping: Documents 1 and 2 state the states'-rights claim: the compact theory and Hayne's defense of it. Documents 3, 5, and 6 show federal power in action: the Removal Act, the Force Bill, and the forced march west. Documents 4 and 7 show the human stakes and the political verdict: a Cherokee nation with its own press, and voters turning Jackson's successor out by 234 to 60.\nBeyond the documents: Jackson vetoed the Bank's recharter and claimed each branch must judge the Constitution for itself, while refusing to enforce Worcester v. Georgia, which had ruled for the Cherokee.\nComplexity: Federal power grew unevenly: it crushed nullification and removed Native peoples, but it bowed to Georgia on removal and left slavery entirely to the states.",
+ "totalPoints": 7
+}

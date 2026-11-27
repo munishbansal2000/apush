@@ -1,0 +1,92 @@
+{
+ "id": "apush-saq-0112",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.6"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "skills": [
+  "1.B",
+  "5.B"
+ ],
+ "themes": [
+  "MIG",
+  "SOC",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.6 Market Revolution: Society and Culture, A. Migrations and New Communities in the Age of the Market Revolution"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.6 Market Revolution: Society and Culture, B. The Market Revolution's Impact on Economic Class"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Irish Immigration in the Early 19th century"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.6 A and B: Between 1800 and 1860, most immigrants to the United States came from northern and western Europe, with the two largest groups from Ireland and the German states. Four-fifths of Irish immigrants settled in port cities of the Northeast, while German immigrants often moved on to Midwestern cities. At the same time, the market revolution widened the gap between rich and poor: on the eve of the Civil War, about 5 percent of the population controlled half of the country's wealth, while a large class of laboring poor grew in the cities.",
+  "source_note": "Secondary text: paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.6 A and B. Paraphrased, not quoted."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus as described in the stimulus source note",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly explain ONE way immigration changed the cities of the North in the period 1800-1848.",
+   "modelAnswer": "Irish immigrants crowded into Northeast port cities like New York and Boston, where they took work building canals and railroads and laboring in mills. Their arrival made Northern cities larger, poorer, and more crowded, with whole immigrant neighborhoods forming near the docks and factories.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one way immigration changed Northern cities, such as growth, crowding, new immigrant neighborhoods, or a larger supply of low-wage labor.",
+     "notEarned": "Naming an immigrant group with no change to the cities explained does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain a SECOND way immigration changed the cities of the North in the same period.",
+   "modelAnswer": "Immigration gave Northern employers a large supply of workers willing to take low wages, which undercut earlier workers. In Lowell, Irish immigrants replaced the farm daughters in the mills in the 1840s, so the mill workforce became a permanent class of low-paid laborers instead of a passing group of farm girls.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining a second, different way immigration changed Northern cities, such as cheaper labor, the weakening of strikes, or the replacement of earlier workers.",
+     "notEarned": "Repeating the answer to part (a) with no new change explained does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE way the market revolution widened the gap between the rich and the poor in the same period.",
+   "modelAnswer": "The market revolution let merchants, bank owners, and industrialists gather vast fortunes, while factory hands and laborers stayed in low-wage work. By the eve of the Civil War, about 5 percent of Americans controlled half of the country's wealth, so growth enriched a few while the laboring poor crowded into the cities.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one way the market revolution widened the rich-poor gap, such as fortunes for owners against low wages for workers, or the growth of a laboring poor alongside a business elite.",
+     "notEarned": "Saying the gap grew with no mechanism explained does not earn the point."
+    }
+   ]
+  }
+ ]
+}

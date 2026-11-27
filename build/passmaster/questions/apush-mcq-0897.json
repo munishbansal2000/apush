@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-0897",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.5"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "1.B",
+  "4.A"
+ ],
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 Market Revolution: Economic Transformations, C. Improvements in Transportation and Regional Interdependence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Transportation: Canals, Railroads, Highways, and Steamships"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "An 1832 view titled \"View on the Erie Canal\" shows a canal boat on still water at night, its lanterns lit, with trees along the banks and the moon behind clouds. The Erie Canal, completed in 1825, joined the Hudson River to the Great Lakes. Moving a ton of freight from Buffalo to New York City cost about 90 percent less after the canal opened.",
+  "source_note": "\"View on the Erie Canal,\" 1832, New York Public Library, via Wikimedia Commons. Public domain; image viewed before writing. Freight-cost figure from Barron's Premium 2027, Chapter 6, Topic 4.5 C."
+ },
+ "stimulus_set": "erie-canal-1825",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The Erie Canal was built by New York State rather than by the federal government mainly because",
+ "options": [
+  {
+   "key": "A",
+   "text": "the Constitution forbade states to build canals",
+   "misconception": "The Constitution does not forbid states to build canals; New York built this one itself."
+  },
+  {
+   "key": "B",
+   "text": "New York City merchants refused to pay for it",
+   "misconception": "New York merchants backed the canal; the state paid for it with state funds and loans."
+  },
+  {
+   "key": "C",
+   "text": "presidents doubted the Constitution allowed federal spending on internal improvements"
+  },
+  {
+   "key": "D",
+   "text": "Congress had already built a larger canal in the West",
+   "misconception": "Congress built no western canal to rival the Erie; federal road and canal building lagged in this period."
+  }
+ ],
+ "rationales": {
+  "A": "Nothing in the Constitution bars a state from building a canal. New York did exactly that.",
+  "B": "New York's merchants wanted the canal and its trade. The state, not private merchants alone, financed the work.",
+  "C": "Madison vetoed the Bonus Bill for internal improvements in 1817 on constitutional grounds, so the great canal of the age became a state project.",
+  "D": "No federal canal matched the Erie. Federal spending on roads and canals stayed small while states took the lead.",
+  "general": "1. Ask who paid. The canal was a New York State project, built with state money.\n2. Ask why Washington did not build it. Presidents questioned whether the Constitution let the federal government fund roads and canals.\n3. Put it together. Constitutional doubt left the work to the states, and New York built the canal itself.\nBackground: The Erie Canal was the most important internal improvement of the period, yet it was not a federal project.\nRemember: when a big project is built by a state, ask what stopped the federal government."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0897",
+   "file": "u4/pr25e-ch08-q10.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:(View_on_the_Erie_Canal.)_(3990000597).jpg",
+   "license": "Public domain",
+   "caption": "View on the Erie Canal, 1832. A canal boat travels at night, lanterns lit.",
+   "alt": "An 1832 night view of a canal: a boat with lit lanterns floats on still water between tree-lined banks under a moonlit sky"
+  }
+ ]
+}

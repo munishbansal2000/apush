@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0102",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.1"
+ ],
+ "lesson": "apush-u4-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "skills": [
+  "2.A",
+  "4.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.1 Contextualizing Period 4"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.2 The Rise of Political Parties and the Era of Jefferson"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The \"Revolution of 1800\""
+   }
+  ],
+  "primary_sources": [
+   "Thomas Jefferson, First Inaugural Address, March 4, 1801"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Thomas Jefferson, First Inaugural Address, March 4, 1801; public domain.",
+  "text": "Thomas Jefferson, First Inaugural Address, March 4, 1801: “But every difference of opinion is not a difference of principle. We have called by different names brethren of the same principle. We are all Republicans, we are all Federalists.” He went on to list his principles: “Equal and exact justice to all men, of whatever state or persuasion, religious or political; peace, commerce, and honest friendship with all nations, entangling alliances with none...”"
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus quoted verbatim from Thomas Jefferson, First Inaugural Address, March 4, 1801, public domain",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one principle Jefferson names in the passage.",
+   "modelAnswer": "Jefferson names equal and exact justice to all men, of whatever state or persuasion, religious or political. He also names peace, commerce, and honest friendship with all nations, with entangling alliances with none.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one principle from the passage, such as equal and exact justice or peace and honest friendship with all nations.",
+     "notEarned": "Naming a principle Jefferson held but did not state in this passage does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how the election of 1800 shaped the message Jefferson gives in this passage.",
+   "modelAnswer": "The election of 1800 was bitter, and the tie between Jefferson and Aaron Burr threw the choice to the House of Representatives. Jefferson therefore used his inaugural to calm fears, telling Federalists and Democratic-Republicans that they were brethren of the same principle.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how the bitter election or the tie shaped Jefferson's message of unity.",
+     "notEarned": "Restating that Jefferson wanted unity, with no link to the election of 1800, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way Jefferson's presidency later departed from the principles in this passage.",
+   "modelAnswer": "Jefferson bought Louisiana in 1803 even though the Constitution says nothing about buying land, setting aside his strict reading of the Constitution. His Embargo Act of 1807 also broke with his promise of commerce and honest friendship by banning American trade abroad.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one departure, such as the Louisiana Purchase stretching strict construction or the Embargo Act restricting commerce.",
+     "notEarned": "Naming a Jefferson policy with no link to a principle in the passage does not earn the point."
+    }
+   ]
+  }
+ ]
+}

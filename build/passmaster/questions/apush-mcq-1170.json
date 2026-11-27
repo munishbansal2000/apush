@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1170",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.14"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "2.B",
+  "3.A"
+ ],
+ "themes": [
+  "GEO",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.1 Contextualizing Period 4"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.14 Subject to Debate"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   }
+  ],
+  "primary_sources": [
+   "United States census counts, 1800-1840"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Population of the United States, counted by the federal census:\n\n| Year | Population |\n| --- | --- |\n| 1800 | 5,308,483 |\n| 1820 | 9,638,453 |\n| 1840 | 17,069,453 |\n\nMiles of railroad track in operation: 23 miles in 1830 and 2,818 miles in 1840.\n\nSource: United States census counts, 1800–1840; National Bureau of Economic Research, Business Annals, railroad mileage.",
+  "source_note": "Population from United States census counts, 1800-1840; railroad mileage from National Bureau of Economic Research, Business Annals (23 miles in 1830; 2,818 miles in 1840)."
+ },
+ "stimulus_set": "population-railroads-1840",
+ "source": "original; data from United States census counts and National Bureau of Economic Research, Business Annals",
+ "stem": "The population more than tripled while railroad mileage grew from 23 miles to more than 2,800 miles. Taken together, what do the two tables best show about the United States by 1840?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The nation had grown smaller and easier to govern",
+   "misconception": "Both tables show growth, not shrinking."
+  },
+  {
+   "key": "B",
+   "text": "Farming had given way to factory work for most Americans by 1840",
+   "misconception": "Most Americans still farmed in 1840; factories employed only a small share."
+  },
+  {
+   "key": "C",
+   "text": "The nation had grown far larger and more connected than in 1800"
+  },
+  {
+   "key": "D",
+   "text": "Railroads had replaced farming as the main American livelihood",
+   "misconception": "Railroads carried goods; they did not employ most Americans, who still farmed."
+  }
+ ],
+ "rationales": {
+  "A": "The tables point the other way. Population tripled and railroads spread, so the nation grew larger, not smaller.",
+  "B": "The tables say nothing about factory jobs. In 1840 most Americans still worked the land.",
+  "C": "Three times the people and a hundred times the railroad miles mean a bigger, better-linked nation than the small republic of 1800.",
+  "D": "Railroads moved goods and people. They did not replace farming, which still fed and employed most Americans.",
+  "general": "1. Put the two tables together. People tripled, and railroad miles grew more than a hundred times over in a single decade.\n2. Ask what both changes mean. More people spread over more land, joined by faster transport, is a larger and more connected nation.\n3. Name the scale. The republic of 1800 was small and coastal; by 1840 it was continental in reach.\nRemember: when two measures of size both jump, the whole country has changed scale."
+ }
+}

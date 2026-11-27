@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0895",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.5"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "GEO",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 Market Revolution: Economic Transformations, D. Regional Specialization"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 Market Revolution: Economic Transformations, B. Advances in Technology"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The North and the Textile Industry"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "A print of Lowell, Massachusetts, made between 1840 and 1860, looks across the Merrimack River toward a long row of large brick mill buildings standing side by side along the water. Smaller houses stand nearby, and the river runs in the foreground. Lowell was built as a factory town, and its mills turned Southern cotton into cloth.",
+  "source_note": "View of Lowell, Massachusetts, 1840-1860, Library of Congress (LCCN94515606), via Wikimedia Commons. Public domain; image viewed before writing."
+ },
+ "stimulus_set": "lowell-view",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The mills in the print stand along the Merrimack River mainly because",
+ "options": [
+  {
+   "key": "A",
+   "text": "the river carried raw cotton up from the South",
+   "misconception": "Cotton reached Lowell by ship and wagon, not up the Merrimack; the river's job was power, not transport."
+  },
+  {
+   "key": "B",
+   "text": "falling water powered the mill machinery"
+  },
+  {
+   "key": "C",
+   "text": "federal law required textile mills to be built on rivers",
+   "misconception": "No federal law placed mills on rivers; owners chose river sites for the power the water gave."
+  },
+  {
+   "key": "D",
+   "text": "the river kept the mill buildings cool in summer",
+   "misconception": "Cooling was not the point. The river turned waterwheels that drove the looms and spindles."
+  }
+ ],
+ "rationales": {
+  "A": "Cotton came to Lowell from Southern ports by sea and road. The Merrimack's value to the mills was its falling water.",
+  "B": "Early factories ran on water power. Lowell was built where the Merrimack's falls could turn the wheels that drove the machinery.",
+  "C": "Mill owners picked river sites freely. The government did not order factories onto rivers.",
+  "D": "The buildings needed power far more than cool air. Waterwheels, not breezes, ran the looms.",
+  "general": "1. Look at the print. The mills crowd the riverbank, and the river runs fast in the foreground.\n2. Ask what a river gave a factory in 1820. Before steam spread, falling water was the power source.\n3. Put it together. Lowell sits on the Merrimack because its water turned the mill wheels.\nBackground: Steam power only began replacing waterwheels in factories in the years before the Civil War.\nRemember: for an early factory, place follows power; find the power source first."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0895",
+   "file": "u4/barrons-2027-ch06-02.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:View_of_Lowell,_Massachusetts_at_the_confluence_of_the_Merrimack_and_Concord_rivers,_with_a_row_of_textile_mills_or_factories_mainly_along_the_Merrimack_River_LCCN94515606.jpg",
+   "license": "Public domain",
+   "caption": "View of Lowell, Massachusetts, 1840-1860. Brick mills line the Merrimack River.",
+   "alt": "A wide print of Lowell, Massachusetts: a long row of large brick mill buildings stands along the Merrimack River, with smaller houses nearby and the river in the foreground"
+  }
+ ]
+}

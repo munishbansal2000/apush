@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1156",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.13"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "3.A",
+  "4.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.13 The Society of the South in the Early Republic, C. Westward Expansion and the Politics of Slavery"
+   }
+  ],
+  "primary_sources": [
+   "John Arrowsmith, Map of Texas, 1841"
+  ]
+ },
+ "stimulus": {
+  "kind": "map",
+  "text": "John Arrowsmith's Map of Texas, published in London in 1841, was compiled from surveys in the Land Office of Texas. It shows the Republic of Texas with its own seal, settled counties in the east such as Fannin and Red River, the town of Bexar, and large western lands marked with Native peoples' names.",
+  "source_note": "Map viewed before writing: John Arrowsmith, Map of Texas, 1841, shared pool file u4/5s24-ch03-mcq-40.jpg, public domain. The seal reads Republic of Texas and notes recognition by Great Britain in November 1840."
+ },
+ "stimulus_set": "texas-map-1841",
+ "source": "original; stimulus image from the shared pool, John Arrowsmith, Map of Texas, 1841, public domain",
+ "stem": "Texas won independence in 1836 but was not annexed by the United States until 1845. What most directly explains the delay?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Texas refused to join the United States until 1845",
+   "misconception": "Texans were eager to join; one of the republic's first acts was to offer annexation."
+  },
+  {
+   "key": "B",
+   "text": "Mexico agreed to annexation at once and asked Congress to wait",
+   "misconception": "Mexico opposed annexation; it had lost Texas by rebellion and still claimed it."
+  },
+  {
+   "key": "C",
+   "text": "Presidents feared admitting a large slave state would deepen sectional conflict"
+  },
+  {
+   "key": "D",
+   "text": "The Supreme Court ruled annexation unconstitutional in 1836",
+   "misconception": "The Court never ruled annexation unconstitutional; the delay was political, not legal."
+  }
+ ],
+ "rationales": {
+  "A": "Texans were eager to join. One of the republic's first acts was to offer annexation.",
+  "B": "Mexico opposed annexation. It had lost Texas by rebellion and still claimed it.",
+  "C": "Jackson blocked annexation because he did not want to worsen sectional tensions by admitting a large slave state, and his successors avoided the issue too.",
+  "D": "The Court never ruled annexation unconstitutional. The delay was political, not legal.",
+  "general": "1. Note the gap. Texas was independent from 1836, as the map shows, but joined the Union only in 1845.\n2. Ask who waited. Texans wanted to join at once, so the delay came from Washington, not Texas.\n3. Ask why Washington waited. Admitting a large slave state would reopen the fight over slavery, so presidents avoided it.\nBackground: Tyler pushed annexation through only after Polk, an expansionist, won the election of 1844.\nRemember: when one side wants something and waits, look at who gains by waiting."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1154",
+   "file": "u4/5s24-ch03-mcq-40.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Arrowsmith_Map_of_Texas_1841_UTA.jpg",
+   "license": "Public domain",
+   "caption": "John Arrowsmith, Map of Texas, published London, 1841.",
+   "alt": "A map of Texas as an independent republic, with settled counties in the east, the town of Bexar, and large western lands marked with Native peoples' names"
+  }
+ ]
+}

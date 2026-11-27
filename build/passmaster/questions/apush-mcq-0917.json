@@ -1,0 +1,72 @@
+{
+ "id": "apush-mcq-0917",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.5"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 Market Revolution: Economic Transformations, C. Improvements in Transportation and Regional Interdependence"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Transportation: Canals, Railroads, Highways, and Steamships"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "The cost of moving goods, from Barron's Premium 2027, Chapter 6, Topic 4.5 C, and Princeton Review, Chapter 8:\n\n| Way to move a ton of wheat one mile | Cost, about |\n|---|---|\n| By wagon, 1800 | 30 to 70 cents |\n| By railroad, 1860 | about 1.2 cents |\n\nThe first railroad tracks in the United States were laid in 1829 by the Baltimore and Ohio Railroad. By 1853, New York and Chicago were linked by rail.",
+  "source_note": "Figures from Barron's Premium 2027, Chapter 6, Topic 4.5 C (wagon and railroad costs per ton-mile); railroad dates from Barron's and Princeton Review, Chapter 8. Data table, not an image."
+ },
+ "stimulus_set": "railroad-costs",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The figures in the table best show that railroads",
+ "options": [
+  {
+   "key": "A",
+   "text": "were cheaper than wagons from the very first year",
+   "misconception": "The table compares a wagon in 1800 with a railroad in 1860, after decades of building; it does not price the first railroad."
+  },
+  {
+   "key": "B",
+   "text": "carried only wheat and no other freight",
+   "misconception": "Wheat is the example measured in the table; railroads carried many goods, not wheat alone."
+  },
+  {
+   "key": "C",
+   "text": "cut the cost of moving goods far below wagon rates"
+  },
+  {
+   "key": "D",
+   "text": "were built mainly to carry passengers, not freight",
+   "misconception": "The table measures freight cost per ton, and railroads moved freight heavily; passengers were only part of the business."
+  }
+ ],
+ "rationales": {
+  "A": "The railroad figure is from 1860, thirty years after the first tracks. The table shows the mature cost, not the first year's.",
+  "B": "The table uses wheat as its measure because wheat was a common bulk freight. Railroads also carried cotton, coal, timber, and more.",
+  "C": "A ton of wheat moved one mile for 30 to 70 cents by wagon in 1800, but about 1.2 cents by rail in 1860. That is a steep fall.",
+  "D": "Freight is what the table prices, and freight paid for the railroads. Passenger travel mattered, but the table is about goods.",
+  "general": "1. Read the two numbers. Wagon freight in 1800 cost 30 to 70 cents a ton-mile; rail freight in 1860 cost about 1.2 cents.\n2. Compare them. The railroad figure is a small fraction of the wagon figure.\n3. Put it together. Railroads made moving goods far cheaper than wagons ever had.\nBackground: By 1860, railroads connected the far reaches of the country east of the Mississippi River.\nRemember: in a table, compare the numbers before you compare the things."
+ }
+}

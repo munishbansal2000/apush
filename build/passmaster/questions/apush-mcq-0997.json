@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-0997",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.8"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, A. The Second Two-Party System: The Democrats and the Whigs"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Bank War"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "The engraving, published in London in March 1831, shows the Second Bank of the United States in Philadelphia: a Greek temple front with tall columns, wide steps, and well-dressed people coming and going. In 1836, Jackson ordered that federal land be sold only for gold or silver coin, not paper money. The order was called the Specie Circular.",
+  "source_note": "Engraving: 'United States Bank, Philadelphia,' drawn by C. Burton, engraved by Fenner, Sears & Co., published London, March 1831. Public domain; image viewed before writing. Specie Circular described from Barron's Premium 2027, Chapter 6, Topic 4.8 A."
+ },
+ "stimulus_set": "bank-economy-48",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The Bank War and the Specie Circular together best explain which later development?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The rapid growth of the Second Bank after 1836",
+   "misconception": "The Bank is the subject, so it is easy to think the story ends with the Bank growing."
+  },
+  {
+   "key": "B",
+   "text": "The Panic of 1837"
+  },
+  {
+   "key": "C",
+   "text": "A sharp rise in federal land sales in 1837",
+   "misconception": "A land boom was under way, so it is easy to think sales kept rising."
+  },
+  {
+   "key": "D",
+   "text": "A new federal program to aid unemployed workers",
+   "misconception": "A panic that hurt workers invites the thought that government stepped in to help them."
+  }
+ ],
+ "rationales": {
+  "A": "The Bank's charter expired in 1836 and it never grew again; the Bank War ended it, not enlarged it.",
+  "B": "Killing the Bank loosened credit, then the Circular tightened it all at once: land prices fell, banks failed, and the Panic of 1837 followed.",
+  "C": "Land sales fell sharply after the Circular, since buyers could no longer pay with paper money.",
+  "D": "No federal aid program followed the Panic; the idea that government should help victims of downturns did not gain ground until the twentieth century.",
+  "general": "1. Stack the two policies. The Bank War flooded the country with paper money, and the Circular then demanded hard coin for land.\n2. Watch the snap. Land buyers holding paper could not pay, land prices fell, and banks that had lent freely began to fail.\nBackground: the Panic of 1837 lasted about five years and was the worst crisis the country had yet seen.\nRemember: a boom built on easy money and a sudden demand for hard coin is a recipe for a panic."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0997",
+   "file": "u4/second-bank-philadelphia.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:United_States_Bank%2C_Philadelphia_-_drawn_by_C._Burton%2C_N.Y._%3B_engraved_%26_printed_by_Fenner%2C_Sears_%26_Co._LCCN2015650264.jpg",
+   "license": "Public domain",
+   "caption": "The Second Bank of the United States, Philadelphia, 1831. A Greek temple front with tall columns.",
+   "alt": "An engraving of the Second Bank of the United States in Philadelphia: a Greek temple front with tall columns, wide steps, and well-dressed people coming and going"
+  }
+ ]
+}

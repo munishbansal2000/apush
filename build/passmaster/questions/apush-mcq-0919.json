@@ -1,0 +1,72 @@
+{
+ "id": "apush-mcq-0919",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.5"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 Market Revolution: Economic Transformations, C. Improvements in Transportation and Regional Interdependence"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Transportation: Canals, Railroads, Highways, and Steamships"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "The cost of moving goods, from Barron's Premium 2027, Chapter 6, Topic 4.5 C, and Princeton Review, Chapter 8:\n\n| Way to move a ton of wheat one mile | Cost, about |\n|---|---|\n| By wagon, 1800 | 30 to 70 cents |\n| By railroad, 1860 | about 1.2 cents |\n\nThe first railroad tracks in the United States were laid in 1829 by the Baltimore and Ohio Railroad. By 1853, New York and Chicago were linked by rail.",
+  "source_note": "Figures from Barron's Premium 2027, Chapter 6, Topic 4.5 C (wagon and railroad costs per ton-mile); railroad dates from Barron's and Princeton Review, Chapter 8. Data table, not an image."
+ },
+ "stimulus_set": "railroad-costs",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "Railroad growth in the 1830s and 1840s was slowed at first mainly because",
+ "options": [
+  {
+   "key": "A",
+   "text": "no American knew how to build a steam locomotive",
+   "misconception": "Americans built and ran locomotives from the start; the Baltimore and Ohio laid track in 1829."
+  },
+  {
+   "key": "B",
+   "text": "farmers refused to sell grain to eastern cities",
+   "misconception": "Farmers wanted eastern markets; cheap freight is what let them reach those buyers."
+  },
+  {
+   "key": "C",
+   "text": "the federal government banned railroads west of the Appalachians",
+   "misconception": "No such ban existed; railroads spread west across the Appalachians in this period."
+  },
+  {
+   "key": "D",
+   "text": "different track widths kept cars from running line to line"
+  }
+ ],
+ "rationales": {
+  "A": "The first American railroad tracks were laid in 1829. Know-how was not the problem; connecting the lines was.",
+  "B": "Western farmers were eager to sell grain east. The railroad's problem was its own network, not unwilling farmers.",
+  "C": "Railroads crossed the mountains in these decades. The government did not ban them from the West.",
+  "D": "Each line chose its own gauge, the width between its rails, so freight had to be unloaded and reloaded where lines met.",
+  "general": "1. Ask what a railroad network needs. Cars must run from one company's line onto another's.\n2. Ask what stopped that. Lines were built to different gauges, so their tracks could not join.\n3. Put it together. Different track widths forced slow transfers of freight and held back the network.\nBackground: When railways later converted to compatible systems, often with government help, progress quickened.\nRemember: a network is only as connected as its shared standard."
+ }
+}

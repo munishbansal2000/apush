@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-0856",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.3"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.3 Politics and Regional Interests, B. The American System and Sectionalism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Monroe's Presidency"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "The Panic of 1819 began when the Second Bank of the United States, fearing it had lent too much, called in its loans. Borrowers could not pay, banks failed, and farms and shops were sold at auction. In the West and South, many blamed the Bank in Philadelphia for the ruin.",
+  "source_note": "Summary drawn from 5 Steps 2024, Chapter 13, timeline (Panic of 1819) and Princeton Review 25e, Chapter 8, 'Monroe's Presidency.' Original synthesis. Image: Second Bank of the United States, Philadelphia, engraved 1831."
+ },
+ "stimulus_set": "panic-bank",
+ "source": "original; stimulus summarizes the Panic of 1819 from the grounding books, with an 1831 engraving of the Second Bank (public domain, in the shared image pool as ch41-second-bank-philadelphia)",
+ "stem": "The Panic of 1819 and McCulloch v. Maryland (1819) together show that",
+ "options": [
+  {
+   "key": "A",
+   "text": "the Court closed the Bank after the Panic of 1819 struck the country",
+   "misconception": "The Court upheld the Bank in McCulloch; it did not close it."
+  },
+  {
+   "key": "B",
+   "text": "the year that tested the Bank’s economic power also tested it in court"
+  },
+  {
+   "key": "C",
+   "text": "Maryland’s tax had caused the Panic",
+   "misconception": "The Panic came from tightened credit and speculation; a state tax on the Bank did not cause it."
+  },
+  {
+   "key": "D",
+   "text": "the Panic proved the Bank was unconstitutional",
+   "misconception": "McCulloch ruled the Bank constitutional; the Panic proved nothing about the Constitution."
+  }
+ ],
+ "rationales": {
+  "A": "McCulloch upheld the Bank and barred Maryland from taxing it. A Court that closes the Bank would have ruled the other way.",
+  "B": "In 1819 the Bank’s lending shook the economy, and in the same year the Court had to decide whether the Bank could even exist and whether a state could tax it. The Bank was on trial in two places at once.",
+  "C": "Maryland’s tax was a challenge to the Bank, not a cause of the Panic. The Panic came from the Bank calling in its loans after a speculative boom.",
+  "D": "The Panic is economic evidence, not constitutional evidence. The Constitution was decided in McCulloch, which ruled the Bank constitutional.",
+  "general": "1. Note the year. Both events are dated 1819.\n2. Ask what each tested. The Panic tested the Bank’s power over borrowers; McCulloch tested it against the states.\n3. Ask what the Court decided. The Bank was constitutional, and Maryland could not tax it.\n4. Put it together. One year put the Bank on trial in the market and in the law at the same time.\nBackground: McCulloch (1819) ruled the states could not tax the National Bank, affirming federal power.\nRemember: when two events share a year, ask what question they both answer."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0856",
+   "file": "u4/second-bank-philadelphia.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:United_States_Bank%2C_Philadelphia_-_drawn_by_C._Burton%2C_N.Y._%3B_engraved_%26_printed_by_Fenner%2C_Sears_%26_Co._LCCN2015650264.jpg",
+   "license": "Public domain",
+   "caption": "Second Bank of the United States, Philadelphia, engraved 1831",
+   "alt": "A Greek Revival bank building with tall columns and street trees, the Second Bank of the United States in Philadelphia"
+  }
+ ]
+}

@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0813",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.2"
+ ],
+ "lesson": "apush-u4-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.2 The Rise of Political Parties and the Era of Jefferson, A. Political Parties and the Rise of the First Two-Party System"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "Renewal of War in Europe"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Jefferson's Second Term"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "American cartoon, 1807-1808, public domain, via Wikimedia Commons (Ograbme.jpg). The cartoon's caption reads “OGRABME, or The American Snapping-turtle.”",
+  "text": "An American cartoon of 1807-1808: a snapping turtle labeled “Ograbme” — “embargo” spelled backward — bites an American merchant carrying a barrel of goods for export, while a ship waits in the harbor. The merchant cries, “Oh! this cursed Ograbme.”"
+ },
+ "stimulus_set": "ograbme-1808",
+ "source": "original; stimulus image from the shared pool, the Ograbme cartoon (1807-1808), public domain",
+ "stem": "The cartoon shows the turtle biting an American merchant rather than a British or French ship. That choice best supports which conclusion about the Embargo Act?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The embargo damaged American commerce more than it hurt Britain or France"
+  },
+  {
+   "key": "B",
+   "text": "The embargo ended British impressment of American sailors",
+   "misconception": "Impressment continued after the embargo; Britain kept seizing sailors until the War of 1812 ended the practice."
+  },
+  {
+   "key": "C",
+   "text": "The embargo enriched merchants in New England ports",
+   "misconception": "New England merchants were the embargo's loudest critics, because their ships sat idle and their trade dried up."
+  },
+  {
+   "key": "D",
+   "text": "The embargo was popular with farmers and planters in the South",
+   "misconception": "Planters and farmers were hurt because they could not get their products to foreign markets."
+  }
+ ],
+ "rationales": {
+  "A": "Jefferson meant the turtle to bite Britain and France, but the cartoon shows it biting an American instead. Exports fell from about $108 million in 1807 to about $22 million in 1808, and merchants, sailors, and farmers all lost their livelihoods, while Britain and France carried on. Background: the embargo's pain at home is why Congress repealed it in 1809, just before Jefferson left office.",
+  "B": "Impressment continued after the embargo. Britain kept seizing sailors until the War of 1812 ended the practice.",
+  "C": "New England merchants were the embargo's loudest critics, because their ships sat idle and their trade dried up.",
+  "D": "Planters and farmers were hurt because they could not get their products to foreign markets.",
+  "general": "1. Ask who the turtle bites. Not a British warship, but an American merchant.\n2. Ask what that means. The law meant to punish foreigners is hurting Americans instead.\n3. Check the numbers. Exports fell from about $108 million in 1807 to about $22 million in 1808.\n4. Put it together. The cartoonist's point is the policy backfired at home.\nRemember: in a cartoon, the victim tells you who paid the price."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0813",
+   "file": "u4/original-misc-worldstage-02.jpg",
+   "caption": "Ograbme, the American snapping-turtle, 1807-1808",
+   "alt": "A snapping turtle labeled Ograbme bites an American merchant carrying a barrel, while a ship waits in the harbor",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Ograbme.jpg",
+   "license": "Public domain"
+  }
+ ]
+}

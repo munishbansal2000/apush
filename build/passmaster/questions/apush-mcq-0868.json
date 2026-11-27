@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-0868",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.4"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "1.B",
+  "5.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.4 America on the World Stage, A. Trade, Diplomacy, and the Expansion of American Influence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "The War of 1812"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Madison's Presidency and the War of 1812"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "This American cartoon from 1807–1808 is titled “OGRABME, or, The American Snapping-turtle.” A giant snapping turtle labeled “Ograbme” bites the leg of an American merchant who is carrying a barrel of goods toward the harbor. The merchant cries, “Oh! this cursed Ograbme.” A man standing behind the turtle says, “D—n it, how he nicks 'em.” In the harbor behind them, a British ship waits with its sails ready.",
+  "source_note": "Ograbme, or, The American Snapping-turtle, American cartoon, 1807–1808; public domain."
+ },
+ "stimulus_set": "ograbme-cartoon",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "One unintended result of the Embargo Act and the War of 1812 was that they",
+ "options": [
+  {
+   "key": "A",
+   "text": "pushed Americans to build their own factories instead of buying British goods"
+  },
+  {
+   "key": "B",
+   "text": "made the United States dependent on French manufactured goods",
+   "misconception": "France was cut off too; the point is that Americans began making goods at home."
+  },
+  {
+   "key": "C",
+   "text": "ended the trade in enslaved people to the American South",
+   "misconception": "The 1807 ban on the slave trade was a separate law; cotton and slavery kept growing."
+  },
+  {
+   "key": "D",
+   "text": "gave New England merchants a monopoly on all trade with Canada",
+   "misconception": "Smuggling happened, but no monopoly followed; the lasting effect was manufacturing."
+  }
+ ],
+ "rationales": {
+  "A": "Cut off from British goods, Americans had to make their own. New England became a manufacturing center during the war, and the United States came out less dependent on imports.",
+  "B": "France was also blockaded and embargoed, so Americans could not simply switch to French goods. They had to produce at home.",
+  "C": "Congress did ban the international slave trade in 1807, but that was a different law, and slavery expanded with cotton after the war.",
+  "D": "Some merchants smuggled goods across the Canadian border, but smuggling is not a monopoly, and the lasting change was in manufacturing.",
+  "general": "1. Start with the cutoff. The embargo and then the war stopped British goods from reaching American shops.\n2. Ask what Americans did. With nothing to buy, they built mills and workshops to make the goods themselves.\n3. Put it together. A policy meant to punish Britain ended up building American industry.\nBackground: The Tariff of 1816 then protected those new factories, and the Second Bank of the United States was chartered the same year.\nRemember: when trade is cut off, ask what the cut-off country starts making for itself."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0868",
+   "file": "u4/original-misc-worldstage-02.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Ograbme.jpg",
+   "license": "Public domain",
+   "caption": "Ograbme, or, The American Snapping-turtle, 1807–1808",
+   "alt": "Cartoon of a snapping turtle labeled Ograbme biting an American merchant carrying a barrel, with a British ship waiting in the harbor"
+  }
+ ]
+}

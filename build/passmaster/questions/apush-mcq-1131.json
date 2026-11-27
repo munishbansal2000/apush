@@ -1,0 +1,85 @@
+{
+ "id": "apush-mcq-1131",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.12"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "C",
+ "skills": [
+  "3.A",
+  "1.B"
+ ],
+ "themes": [
+  "ARC",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.12 African Americans in the Early Republic, B. The Cultures of African-American Communities"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The Abolition Movement"
+   }
+  ],
+  "primary_sources": [
+   "Frederick Douglass, Narrative of the Life of Frederick Douglass, 1845"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "This daguerreotype portrait of Frederick Douglass, made by Samuel J. Miller in 1847–1852, shows Douglass from the chest up, dressed as a respectable gentleman in a dark coat, white shirt, and bow tie, staring straight at the viewer with a stern expression.\n\n\"You have seen how a man was made a slave; you shall see how a slave was made a man.\" — Frederick Douglass, Narrative of the Life of Frederick Douglass, 1845, on his fight with the overseer Edward Covey in August 1833.",
+  "source_note": "Portrait viewed before writing: Samuel J. Miller, daguerreotype of Frederick Douglass, 1847-1852, Art Institute of Chicago. Quotation verbatim from Frederick Douglass, Narrative of the Life of Frederick Douglass, 1845."
+ },
+ "stimulus_set": "douglass-portrait",
+ "source": "original; stimulus image from the shared pool, Miller daguerreotype of Douglass, 1847-1852, public domain",
+ "stem": "In the Covey passage, “how a slave was made a man” refers to Douglass",
+ "options": [
+  {
+   "key": "A",
+   "text": "learning to read in secret as a boy",
+   "misconception": "That is the reading story; this passage is about the fight with Covey."
+  },
+  {
+   "key": "B",
+   "text": "buying his freedom from Thomas Auld",
+   "misconception": "Douglass escaped in 1838; his freedom was bought later by English friends."
+  },
+  {
+   "key": "C",
+   "text": "resisting Covey’s beating and refusing to be broken"
+  },
+  {
+   "key": "D",
+   "text": "leaving Maryland for New York in 1838",
+   "misconception": "The fight happened in August 1833, five years before the escape."
+  }
+ ],
+ "rationales": {
+  "A": "Reading matters in the Narrative, but this passage is about Covey. The manhood here comes from the fight.",
+  "B": "Douglass did not buy his freedom from Auld. He escaped in 1838, and English friends later bought his freedom.",
+  "C": "Covey made a man into a slave by breaking him. Douglass fought him for two hours and was never whipped again.",
+  "D": "The escape came in 1838. The fight with Covey came first, in August 1833.",
+  "general": "1. Follow the sentence. Covey made a man into a slave by breaking him; Douglass reverses it.\n2. Find the turning point. Douglass fights Covey for two hours and is never whipped again.\n3. Name the meaning. Manhood means refusing to be broken.\nBackground: Douglass was sixteen when Thomas Auld rented him out to Covey, a man known as a slave-breaker.\nRemember: when a writer flips a sentence, follow the flip."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1131",
+   "file": "u4/frederick-douglass-miller-1847-52.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Frederick_Douglass_by_Samuel_J_Miller,_1847-52.jpg",
+   "license": "Public domain",
+   "caption": "Frederick Douglass, daguerreotype by Samuel J. Miller, 1847-1852.",
+   "alt": "A daguerreotype portrait of Frederick Douglass from the chest up, wearing a dark coat, white shirt, and bow tie, staring straight at the viewer"
+  }
+ ]
+}

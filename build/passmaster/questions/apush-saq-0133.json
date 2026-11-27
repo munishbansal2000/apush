@@ -1,0 +1,93 @@
+{
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 6",
+        "section": "Topic 4.6 Market Revolution: Society and Culture"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 13",
+        "section": "Rise of Manufacturing and the Age of Jackson (1820–1845)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 8"
+      }
+    ],
+    "primary_sources": [
+      "Charles Sellers, The Market Revolution: Jacksonian America, 1815–1846 (1991)"
+    ]
+  },
+  "id": "apush-saq-0133",
+  "lesson": "apush-u4-l3",
+  "parts": [
+    {
+      "modelAnswer": "Sellers argues the Market Revolution was not just more production. It changed how Americans experienced time, work, and community. Clock-regulated factory labor replaced the sun and the season as the measure of the day, while a national market linked distant regions and created new inequalities and debates about who benefited.",
+      "part": "a",
+      "points": 1,
+      "prompt": "Briefly describe the historian’s argument about the Market Revolution.",
+      "scoring": [
+        {
+          "criterion": "Earns the point for describing Sellers’s argument: the Market Revolution changed time, work, and community, not just production, with clock-regulated labor, a national market, and new inequalities and debates.",
+          "notEarned": "Restating that “things changed” without naming time, work, community, inequality, or debate does not earn the point.",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "modelAnswer": "The Erie Canal, completed in 1825, supports Sellers’s argument. It tied the Great Lakes to New York City and created a national market for farm goods. It also imposed clock-regulated schedules on the boatmen and merchants who moved goods on its timetable.",
+      "part": "b",
+      "points": 1,
+      "prompt": "Briefly explain how ONE specific historical event or development that is not explicitly mentioned in the excerpt could be used to support Sellers’s argument.",
+      "scoring": [
+        {
+          "criterion": "Earns the point for naming one specific development not in the excerpt and explaining how it supports Sellers, such as the Erie Canal creating a national market or Lowell mills imposing clock-regulated work.",
+          "notEarned": "Copying “canals and railroads” from the excerpt without a specific, explained example does not earn the point.",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "modelAnswer": "The persistence of enslaved labor in the South challenges Sellers’s argument. Plantation slavery expanded with the market for cotton rather than giving way to factory wage labor. Market growth there rested on coercion, not only on new ideas about time and work.",
+      "part": "c",
+      "points": 1,
+      "prompt": "Briefly explain how ONE specific historical event or development that is not explicitly mentioned in the excerpt could be used to challenge Sellers’s argument.",
+      "scoring": [
+        {
+          "criterion": "Earns the point for naming one specific development not in the excerpt and explaining how it challenges Sellers, such as the persistence of household production, the expansion of enslaved labor, or Indigenous dispossession.",
+          "notEarned": "Naming a different topic with no explanation of how it challenges Sellers does not earn the point.",
+          "points": 1
+        }
+      ]
+    }
+  ],
+  "pool": "test",
+  "reasoning": "causation",
+  "saq_slot": 1,
+  "skills": [
+    "1.B",
+    "2.A"
+  ],
+  "source": "original; stimulus is an adapted secondary passage from Sellers (1991); model answers written for this question",
+  "status": "final",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Adapted from Charles Sellers, The Market Revolution: Jacksonian America, 1815–1846 (1991).",
+    "text": "The Market Revolution did more than increase production. It reshaped how Americans understood time, work, and community. Factories introduced clock-regulated labor. Canals and railroads linked distant regions into a national market. At the same time, these changes created new inequalities and new debates about who benefited from economic growth, and they subordinated older forms of household and communal life to the discipline of the market."
+  },
+  "stimulus_set": null,
+  "themes": [
+    "WXT",
+    "SOC"
+  ],
+  "topics": [
+    "4.6",
+    "4.5"
+  ],
+  "totalPoints": 3,
+  "type": "saq",
+  "unit": 4
+}

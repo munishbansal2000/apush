@@ -1,0 +1,92 @@
+{
+ "id": "apush-mcq-0851",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.3"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "B",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "GEO",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.3 Politics and Regional Interests, A. The Persistence of Regional Priorities"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.3 Politics and Regional Interests, B. The American System and Sectionalism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Monroe's Presidency"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "| Region | Main work | Labor | Link to other regions |\n|---|---|---|---|\n| North | Mills and workshops | Wage labor | Canals and roads east and west |\n| South | Cotton for export | Enslaved labor | Rivers and ports, mostly southward |\n| West (Ohio Valley) | Grain and livestock | Family farms | Canals and rivers to eastern markets |\n\nThe Erie Canal, opened in 1825, joined the Great Lakes to New York City.",
+  "source_note": "Table drawn from Barron's Premium 2027, Chapter 6, Topic 4.3 A-B, and 5 Steps 2024, Chapter 13, 'The Rise of Manufacturing.' Original synthesis. Image: view on the Erie Canal, published 1832 (New York Public Library)."
+ },
+ "stimulus_set": "regional-economies",
+ "source": "original; stimulus is a table drawn from the grounding books plus an 1832 Erie Canal view (public domain, in the shared image pool as pr25e-ch08-q10)",
+ "stem": "The Erie Canal mattered to the link between the North and the Midwest because it",
+ "options": [
+  {
+   "key": "A",
+   "text": "was built and paid for by the federal government in Washington",
+   "misconception": "New York State built and paid for the canal; the federal government doubted it had the power to do so."
+  },
+  {
+   "key": "B",
+   "text": "gave western farmers a cheap water route to New York City markets"
+  },
+  {
+   "key": "C",
+   "text": "carried Southern cotton to British mills",
+   "misconception": "Cotton moved by river and sea from Southern ports, not through a New York canal."
+  },
+  {
+   "key": "D",
+   "text": "ended the need for roads in the West",
+   "misconception": "Roads still mattered; the canal added a water link, it did not replace roads."
+  }
+ ],
+ "rationales": {
+  "A": "The canal was New York’s work, built from 1817 to 1825 with state money. Federal internal improvements had stalled on constitutional doubts.",
+  "B": "Before the canal, moving grain east overland cost more than the grain was worth. The canal let Ohio farmers ship cheaply to New York City, tying the Midwest to the eastern market.",
+  "C": "Cotton traveled down the Mississippi and out of Southern ports to Britain. A canal across New York State carried no part of that trade.",
+  "D": "The canal did not end roads. Farmers still needed roads to reach the canal, and roads kept being built alongside it.",
+  "general": "1. Ask what the canal joined. The Great Lakes to New York City, by water.\n2. Ask who used it. Western farmers shipping grain and livestock east, and eastern goods shipping west.\n3. Ask what changed. A trip that was too costly by wagon became cheap by boat.\n4. Put it together. The canal made the Midwest part of the eastern market.\nBackground: New York State built the Erie Canal between 1817 and 1825, and it made New York City the country’s commercial capital.\nRemember: a link matters when it changes what it costs to move something."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0851",
+   "file": "u4/pr25e-ch08-q10.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/%28View_on_the_Erie_Canal.%29_%283990000597%29.jpg",
+   "license": "Public domain",
+   "caption": "View on the Erie Canal, published 1832",
+   "alt": "A canal boat on a calm waterway between low banks, with a towpath and trees, showing the Erie Canal in use"
+  }
+ ]
+}

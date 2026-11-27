@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-0937",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.6"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "B",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "MIG",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.6 Market Revolution: Society and Culture, A. Migrations and New Communities in the Age of the Market Revolution"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Irish Immigration in the Early 19th century"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "SOCIAL HISTORY, 1800-1860"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "Immigration to the United States, by decade (alien passengers arriving; Statistical Abstract of the United States):\n\n| Decade | Immigrants |\n| --- | ---: |\n| 1821–1830 | 143,439 |\n| 1831–1840 | 599,125 |\n| 1841–1850 | 1,713,251 |\n\nFigures are totals for each ten-year period.",
+  "source_note": "Statistical Abstract of the United States, Table 107, Immigration 1821 to 1943 (U.S. Census Bureau). Figures verified against the Census Bureau publication."
+ },
+ "stimulus_set": "immigration-table-1840",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The table shows that immigration to the United States",
+ "options": [
+  {
+   "key": "A",
+   "text": "fell in every decade after 1820",
+   "misconception": "The numbers rise in every decade, from about 143,000 to about 1.7 million."
+  },
+  {
+   "key": "B",
+   "text": "grew sharply in each decade to the 1840s"
+  },
+  {
+   "key": "C",
+   "text": "stayed about the same from 1821 to 1850",
+   "misconception": "The 1840s total is more than ten times the 1820s total."
+  },
+  {
+   "key": "D",
+   "text": "came mostly from Asia in the 1840s",
+   "misconception": "The largest groups in this period came from Ireland and the German states, in northern and western Europe."
+  }
+ ],
+ "rationales": {
+  "A": "Read the column again: 143,439, then 599,125, then 1,713,251. The numbers climb, they do not fall.",
+  "B": "Read the column down: 143,439, then 599,125, then 1,713,251. Each decade is far larger than the one before it.",
+  "C": "Compare the first and last rows. The 1840s total is more than ten times the 1820s total, so the flow did not stay the same.",
+  "D": "The table counts arrivals, not origins, and the books name the largest groups as Irish and German, not Asian.",
+  "general": "1. Read the numbers column down. 143,439, then 599,125, then 1,713,251.\n2. Compare each decade with the one before. Each is far larger than the last.\n3. Name the pattern. Immigration grew sharply in every decade.\nBackground: Records of immigration begin in 1820, and the flow rose with each decade as travel got cheaper and troubles at home pushed people out.\nRemember: with a table, read down the column before you read across the rows."
+ }
+}

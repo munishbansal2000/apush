@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-1001",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.8"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "B",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "GEO",
+  "MIG"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.8 Jackson and Federal Power, B. Contention Between Whites and American Indians over Western Lands"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "Native American Removal"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "The National Park Service map shows the Trail of Tears National Historic Trail. Three kinds of routes run from the Cherokee homelands in Georgia, Tennessee, and North Carolina west to Tahlequah in present-day Oklahoma: a dotted land route through Nashville, Hopkinsville, Cape Girardeau, and Springfield; a blue water route along the Tennessee and Mississippi Rivers; and green 'other major routes.'",
+  "source_note": "Map: 'Trail of Tears National Historic Trail,' U.S. National Park Service (work of the U.S. federal government, public domain). Public domain; image viewed before writing."
+ },
+ "stimulus_set": "trail-tears-map-48",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "According to the map, where did the removal routes shown end?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Charleston, Tennessee",
+   "misconception": "Charleston is a named town on the map, so it is easy to pick the first town you notice."
+  },
+  {
+   "key": "B",
+   "text": "Tahlequah in present-day Oklahoma"
+  },
+  {
+   "key": "C",
+   "text": "Nashville, Tennessee",
+   "misconception": "Nashville is a big city on the route, so it is easy to take it for the destination."
+  },
+  {
+   "key": "D",
+   "text": "Fort Smith, Arkansas",
+   "misconception": "Fort Smith sits near the western edge, so it is easy to stop the journey there."
+  }
+ ],
+ "rationales": {
+  "A": "Charleston, Tennessee, sits near the eastern start of the routes, not at their end.",
+  "B": "All three kinds of routes converge on Tahlequah, at the western end of the map in present-day Oklahoma.",
+  "C": "Nashville lies along the dotted land route, partway west, not at the journey's end.",
+  "D": "Fort Smith stands on the southern routes, but the routes run past it to Tahlequah.",
+  "general": "1. Find the western end. The routes cross the Mississippi and run on to Tahlequah in present-day Oklahoma.\n2. Check the other towns. Charleston, Nashville, and Fort Smith all sit along the way, not at the end.\nBackground: Tahlequah became the capital of the Cherokee Nation in its new western home.\nRemember: on a route map, follow the lines to where they stop, not where they start."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1001",
+   "file": "u4/pr25e-test3-q19.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Trail_of_tears_map_NPS.jpg",
+   "license": "Public domain",
+   "caption": "Trail of Tears National Historic Trail map. Land, water, and other routes run west to Tahlequah, Oklahoma.",
+   "alt": "A National Park Service map of the Trail of Tears: dotted land routes, a blue water route along the Tennessee and Mississippi Rivers, and green other major routes running west to Tahlequah"
+  }
+ ]
+}

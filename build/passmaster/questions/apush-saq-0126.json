@@ -1,0 +1,98 @@
+{
+ "id": "apush-saq-0126",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.11"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "skills": [
+  "3.A",
+  "4.A"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.11 An Age of Reform, D. The Women's Rights Movement"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Religious and Social Movements"
+   }
+  ],
+  "primary_sources": [
+   "Declaration of Sentiments, Seneca Falls, 1848"
+  ]
+ },
+ "saq_slot": 3,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "image",
+  "text": "This \"Roll of Honor\" lists the signatures to the \"Declaration of Sentiments\" set forth by the first Woman's Rights Convention, held at Seneca Falls, New York, July 19–20, 1848. The visible list is headed \"LADIES\" and begins with Lucretia Mott, Harriet Cady Eaton, Margaret Pryor, and Elizabeth Cady Stanton.",
+  "source_note": "Roll of Honor, 1848, Library of Congress, public domain. Image viewed before writing."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus image from the shared pool, Roll of Honor, 1848, public domain",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly identify ONE feature shown in the image.",
+   "modelAnswer": "The image shows a printed list of signatures headed \"LADIES,\" beginning with Lucretia Mott and Elizabeth Cady Stanton. It records the names of the women who signed the Declaration of Sentiments at Seneca Falls.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one visible feature, such as the \"LADIES\" heading, the names of Mott or Stanton, or the convention's title and dates.",
+     "notEarned": "Naming a feature that does not appear in the image does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain what the image shows about how the women's rights movement began.",
+   "modelAnswer": "The image shows that the movement began with women putting their names publicly to a written demand for equal rights. Signing a roll of honor meant owning the demand in public, not whispering it in private.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one thing the image shows, such as the public signing, the leading role of abolitionist women, or the movement's roots in upstate New York reform networks.",
+     "notEarned": "Describing the image without explaining what it shows about the movement does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limitation of the image as evidence about the women's rights movement.",
+   "modelAnswer": "The image lists names but not arguments, so it cannot show what the signers believed beyond signing. It also shows only the people who attended one convention in upstate New York, not women elsewhere.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limit, such as the absence of arguments, the small and local group of signers, or the absence of enslaved women and most working women.",
+     "notEarned": "Saying the image is incomplete without naming what it leaves out does not earn the point."
+    }
+   ]
+  }
+ ],
+ "figures": [
+  {
+   "id": "fig-apush-saq-0126",
+   "file": "u4/barrons-2027-pt1-50.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Declaration_sentiments_foote_lrg.jpg",
+   "license": "Public domain",
+   "caption": "Roll of Honor listing the signatures to the Declaration of Sentiments, Seneca Falls, 1848.",
+   "alt": "A printed Roll of Honor listing the signatures to the Declaration of Sentiments from the first Woman's Rights Convention at Seneca Falls, July 19-20, 1848, headed Ladies"
+  }
+ ]
+}

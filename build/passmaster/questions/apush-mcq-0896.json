@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0896",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.5"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "A",
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "GEO",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 Market Revolution: Economic Transformations, C. Improvements in Transportation and Regional Interdependence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Transportation: Canals, Railroads, Highways, and Steamships"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "An 1832 view titled \"View on the Erie Canal\" shows a canal boat on still water at night, its lanterns lit, with trees along the banks and the moon behind clouds. The Erie Canal, completed in 1825, joined the Hudson River to the Great Lakes. Moving a ton of freight from Buffalo to New York City cost about 90 percent less after the canal opened.",
+  "source_note": "\"View on the Erie Canal,\" 1832, New York Public Library, via Wikimedia Commons. Public domain; image viewed before writing. Freight-cost figure from Barron's Premium 2027, Chapter 6, Topic 4.5 C."
+ },
+ "stimulus_set": "erie-canal-1825",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The canal shown in the image most directly helped",
+ "options": [
+  {
+   "key": "A",
+   "text": "western farmers selling grain to eastern buyers"
+  },
+  {
+   "key": "B",
+   "text": "Southern planters ship cotton directly to Europe",
+   "misconception": "Cotton left the South through Southern ports; the Erie Canal linked the Great Lakes to New York, not the South to Europe."
+  },
+  {
+   "key": "C",
+   "text": "New England mills find workers from the frontier",
+   "misconception": "Mill workers came from nearby farms, not by canal from the frontier; the canal moved goods, not the mill workforce."
+  },
+  {
+   "key": "D",
+   "text": "the federal government collect tariffs at inland ports",
+   "misconception": "Tariffs were collected at seaports on imports. The canal cut freight costs; it did not collect duties."
+  }
+ ],
+ "rationales": {
+  "A": "The canal joined the Great Lakes to New York City, so western grain could reach eastern buyers cheaply. That is its direct work.",
+  "B": "The canal runs east-west across New York. Southern cotton never traveled it on its way to Europe.",
+  "C": "The canal carried freight and passengers, but Lowell's mill girls came from New England farms, not from the West by canal.",
+  "D": "The canal lowered shipping costs. Tariff collection happened at ocean ports, not on a canal.",
+  "general": "1. Trace the canal's route. It joins the Hudson River, and New York City, to the Great Lakes.\n2. Ask what travels that route. Western grain moves east; eastern goods move west.\n3. Put it together. The canal let western farmers sell to eastern buyers, cheaply and by water.\nBackground: The canal's success pushed other states to build canals of their own in the 1830s.\nRemember: trace a transport route on the map before you judge what it carried."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0896",
+   "file": "u4/pr25e-ch08-q10.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:(View_on_the_Erie_Canal.)_(3990000597).jpg",
+   "license": "Public domain",
+   "caption": "View on the Erie Canal, 1832. A canal boat travels at night, lanterns lit.",
+   "alt": "An 1832 night view of a canal: a boat with lit lanterns floats on still water between tree-lined banks under a moonlit sky"
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-0799",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.2"
+ ],
+ "lesson": "apush-u4-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "B",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.2 The Rise of Political Parties and the Era of Jefferson, A. Political Parties and the Rise of the First Two-Party System"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "Election of 1800"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The “Revolution of 1800”"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Electoral vote totals from the National Archives, 1800 Electoral College Results. 138 electors; 70 votes needed to win.",
+  "text": "| Candidate | Party | Electoral votes |\n|---|---|---|\n| Thomas Jefferson | Democratic-Republican | 73 |\n| Aaron Burr | Democratic-Republican | 73 |\n| John Adams | Federalist | 65 |\n| Charles C. Pinckney | Federalist | 64 |\n| John Jay | Federalist | 1 |"
+ },
+ "stimulus_set": "election-1800-table",
+ "source": "original; stimulus is a table of electoral votes from the National Archives",
+ "stem": "Why did the tie between Jefferson and Burr shown in the table throw the election to the House of Representatives?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Constitution gave the Senate the power to break electoral ties",
+   "misconception": "The Senate does not break presidential ties; the House decides, voting by state."
+  },
+  {
+   "key": "B",
+   "text": "Each elector cast two votes, neither marked for president or vice president"
+  },
+  {
+   "key": "C",
+   "text": "Adams and Pinckney refused to concede defeat to Jefferson",
+   "misconception": "Adams accepted defeat and left the capital; the tie was between Jefferson and Burr, not Adams."
+  },
+  {
+   "key": "D",
+   "text": "No candidate won a majority of the popular vote",
+   "misconception": "The popular vote did not decide the presidency; the tie was in electoral votes."
+  }
+ ],
+ "rationales": {
+  "A": "The Senate does not break presidential ties. The House decides, voting by state.",
+  "B": "Before 1804 each elector cast two undifferentiated votes, one meant for president and one for vice president. Every Jefferson elector voted for both Jefferson and Burr, so the two men tied at 73. The Constitution then sent the choice to the House, which voted by state and took 36 ballots to pick Jefferson.",
+  "C": "Adams accepted defeat and left the capital. The tie was between Jefferson and Burr, not Adams.",
+  "D": "The popular vote did not decide the presidency. The tie was in electoral votes.",
+  "general": "1. Read the table. Jefferson and Burr tie at 73 votes each.\n2. Ask how electors voted. Each cast two votes with no mark for president or vice president.\n3. Ask what a tie means. With no way to tell the two apart, the Constitution sends the choice to the House.\n4. Put it together. A missing label on the ballot turned a win into a deadlock.\nRemember: when a table shows a tie, ask what rule the tie triggers."
+ }
+}

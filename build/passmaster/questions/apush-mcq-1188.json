@@ -1,0 +1,85 @@
+{
+  "answerKey": "A",
+  "difficulty": 3,
+  "figures": [
+    {
+      "alt": "1836 map showing lands assigned to emigrant Indians west of Arkansas and Missouri, with tribal territories outlined and labeled",
+      "caption": "Map showing the lands assigned to emigrant Indians west of Arkansas and Missouri, Topographical Bureau, February 23, 1836.",
+      "file": "pt01/fig2-removal-map-1836.jpg",
+      "id": "fig-apush-mcq-1188",
+      "license": "Public domain",
+      "source_url": "https://www.loc.gov/item/99446197/"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 6",
+        "section": "Topic 4.8 Jackson and Federal Power"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 13",
+        "section": "Rise of Manufacturing and the Age of Jackson (1820–1845)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 8"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-1188",
+  "lesson": "apush-u4-l4",
+  "options": [
+    {
+      "key": "A",
+      "text": "President Andrew Jackson declined to enforce federal protection for the Cherokee"
+    },
+    {
+      "key": "B",
+      "misconception": "The Court reversed Worcester within a year.",
+      "text": "The Supreme Court reversed the decision within one year"
+    },
+    {
+      "key": "C",
+      "misconception": "Georgia voluntarily repealed its laws.",
+      "text": "Georgia voluntarily repealed all of its laws affecting the Cherokee"
+    },
+    {
+      "key": "D",
+      "misconception": "The Cherokee accepted Georgia's authority.",
+      "text": "The Cherokee Nation agreed to accept Georgia’s authority over its territory"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Background: President Andrew Jackson declined to enforce federal protection for the Cherokee, so the legal victory did not prevent removal.",
+    "B": "The decision was not reversed within one year.",
+    "C": "Georgia did not repeal its laws affecting the Cherokee.",
+    "D": "The Cherokee did not accept Georgia's authority over its territory.",
+    "general": "1. Note the gap. The Court ruled for the Cherokee, yet removal went ahead.\n2. Ask who had to act. Background: Jackson declined to use federal power to protect the Cherokee.\n3. Test the other explanations. No reversal, no repeal, and no Cherokee acceptance occurred.\n4. Connect the inaction to the outcome. A ruling without enforcement had limited practical effect.\nRemember: a court decision matters only as far as someone enforces it."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "2.B"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from Worcester v. Georgia (1832) with the 1836 Topographical Bureau removal map",
+  "status": "final",
+  "stem": "Which of the following most directly explains why the *Worcester* decision had limited practical effect in the 1830s?",
+  "stimulus": {
+    "kind": "mixed",
+    "source_note": "Worcester v. Georgia, 1832, majority opinion by Chief Justice John Marshall, public domain. Map: Topographical Bureau, 1836, Library of Congress.",
+    "text": "“The Cherokee Nation . . . are . . . a distinct community, occupying its own territory . . . in which the laws of Georgia can have no force . . . The Acts of Georgia are repugnant to the Constitution, laws, and treaties of the United States.”"
+  },
+  "stimulus_set": "worcester-georgia-1832",
+  "themes": [
+    "PCE"
+  ],
+  "topics": [
+    "4.8"
+  ],
+  "type": "mcq",
+  "unit": 4
+}

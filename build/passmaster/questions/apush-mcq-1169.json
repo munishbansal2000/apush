@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1169",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.14"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 2,
+ "answerKey": "A",
+ "skills": [
+  "1.A",
+  "3.A"
+ ],
+ "themes": [
+  "MIG",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.1 Contextualizing Period 4"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.14 Subject to Debate"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   }
+  ],
+  "primary_sources": [
+   "United States census counts, 1800-1840"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Population of the United States, counted by the federal census:\n\n| Year | Population |\n| --- | --- |\n| 1800 | 5,308,483 |\n| 1820 | 9,638,453 |\n| 1840 | 17,069,453 |\n\nMiles of railroad track in operation: 23 miles in 1830 and 2,818 miles in 1840.\n\nSource: United States census counts, 1800–1840; National Bureau of Economic Research, Business Annals, railroad mileage.",
+  "source_note": "Population from United States census counts, 1800-1840; railroad mileage from National Bureau of Economic Research, Business Annals (23 miles in 1830; 2,818 miles in 1840)."
+ },
+ "stimulus_set": "population-railroads-1840",
+ "source": "original; data from United States census counts and National Bureau of Economic Research, Business Annals",
+ "stem": "According to the tables, about how many times larger was the population in 1840 than in 1800?",
+ "options": [
+  {
+   "key": "A",
+   "text": "About three times larger"
+  },
+  {
+   "key": "B",
+   "text": "About two times larger",
+   "misconception": "Two times 5.3 million is about 10.6 million, well short of 17 million."
+  },
+  {
+   "key": "C",
+   "text": "About ten times larger",
+   "misconception": "Ten times 5.3 million is about 53 million, far above 17 million."
+  },
+  {
+   "key": "D",
+   "text": "About the same size",
+   "misconception": "The population more than tripled, so it was far from the same size."
+  }
+ ],
+ "rationales": {
+  "A": "Divide 17 million by 5.3 million. The answer is about 3.2, so about three times larger is right.",
+  "B": "Two times 5.3 million is 10.6 million. The 1840 count of 17 million is much larger than that.",
+  "C": "Ten times 5.3 million is 53 million. The 1840 count of 17 million is much smaller than that.",
+  "D": "The table shows 5.3 million in 1800 and 17 million in 1840. The population grew, so it was not the same size.",
+  "general": "1. Read the two numbers. The census counted about 5.3 million people in 1800 and about 17.1 million in 1840.\n2. Divide to compare. Seventeen divided by five is about three, with a little left over.\n3. Name the size of the change. A country that triples in forty years is growing fast.\nRemember: to compare two counts, divide the later one by the earlier one."
+ }
+}

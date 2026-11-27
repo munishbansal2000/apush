@@ -1,0 +1,75 @@
+{
+ "id": "apush-mcq-1143",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.13"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "3.C",
+  "5.A"
+ ],
+ "themes": [
+  "WXT",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.13 The Society of the South in the Early Republic, B. Cotton, Slavery, and the Southern Exception"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   }
+  ],
+  "primary_sources": [
+   "Alexis de Tocqueville, Democracy in America, 1835"
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "United States cotton crop, in thousands of 500-pound bales:\n\n| Year | Cotton crop |\n|---|---|\n| 1800 | 73 |\n| 1820 | 335 |\n| 1840 | 1,348 |\n\nSource: National Bureau of Economic Research cotton crop series, from United States Department of Agriculture Circular 32.\n\nAlexis de Tocqueville, visiting in the 1830s, wrote that the cultivation of tobacco, of cotton, and especially of the sugar-cane, “demands . . . unremitting attention” from laborers.",
+  "source_note": "Crop figures from the NBER cotton crop series (USDA Circular 32), checked on FRED. World-share line from Barron's Premium 2027, Chapter 6, Topic 4.13 B. Tocqueville line verbatim from Democracy in America, vol. 1, ch. 18, as printed on historycarper.com."
+ },
+ "stimulus_set": "cotton-crop-table",
+ "source": "original; data table from the NBER cotton crop series (USDA Circular 32); Tocqueville line verbatim from Democracy in America, 1835, public domain",
+ "stem": "By 1840 the cotton crop had grown to more than 1.3 million bales, most of it grown by enslaved labor and sold abroad. That fact best supports which conclusion about the South?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The South had become self-sufficient and no longer needed foreign buyers",
+   "misconception": "Selling half the world's cotton abroad means the South needed foreign buyers more, not less."
+  },
+  {
+   "key": "B",
+   "text": "The South's economy depended on Northern factories buying all its cotton",
+   "misconception": "Most Southern cotton was sold abroad, above all to Britain, not to Northern factories."
+  },
+  {
+   "key": "C",
+   "text": "The South's prosperity rested on enslaved labor and the world market"
+  },
+  {
+   "key": "D",
+   "text": "The South had industrialized faster than Britain by 1850",
+   "misconception": "The South stayed farm-based; Britain was the industrial power buying its cotton."
+  }
+ ],
+ "rationales": {
+  "A": "Selling half the world's cotton abroad means the South needed foreign buyers more, not less.",
+  "B": "Most Southern cotton was sold abroad, above all to Britain, not to Northern factories.",
+  "C": "The table shows the crop growing to more than 1.3 million bales by 1840, and the cotton was grown by enslaved labor and sold abroad, so Southern wealth rested on both.",
+  "D": "The South stayed farm-based. Britain was the industrial power buying its cotton.",
+  "general": "1. Read the scale. By 1840 the cotton crop had grown to more than 1.3 million bales.\n2. Ask who grew it. Tocqueville says cotton demands unremitting attention, and that labor was enslaved labor.\n3. Ask who bought it. A crop sold around the world ties the South to the world market, not to self-sufficiency.\nBackground: Cotton became the leading United States export, which is why it was called King Cotton.\nRemember: ask who does the work and who buys the product."
+ }
+}

@@ -1,0 +1,85 @@
+{
+  "answerKey": "D",
+  "difficulty": 3,
+  "figures": [
+    {
+      "alt": "Panoramic 1856 view of Lowell, Massachusetts, showing brick textile mills along the Merrimack River with the town spread behind them",
+      "caption": "John Bachelder, View of Lowell, Massachusetts, 1856. Panoramic view sketched from the Tuxbury residence, Dracut Heights, across the Merrimack River, showing the brick textile mills.",
+      "file": "pt01/fig1-lowell-1856-bachelder.jpg",
+      "id": "fig-apush-mcq-1186",
+      "license": "Public domain"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 6",
+        "section": "Topic 4.5 Market Revolution: Industrialization"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 13",
+        "section": "Rise of Manufacturing and the Age of Jackson (1820–1845)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 8"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-1186",
+  "lesson": "apush-u4-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Mill workers were passive victims with no goals.",
+      "text": "Wage laborers were passive victims with no goals of their own"
+    },
+    {
+      "key": "B",
+      "misconception": "Mill workers had no connection to their families.",
+      "text": "Mill workers had no connection to their families or communities"
+    },
+    {
+      "key": "C",
+      "misconception": "Factory work offered no chance of advancement.",
+      "text": "Factory work offered no opportunities for personal advancement"
+    },
+    {
+      "key": "D",
+      "text": "Many workers viewed factory labor as temporary support for family goals"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "The letter shows agency, not passive victimhood.",
+    "B": "Sending money home shows a connection to family, not the absence of one.",
+    "C": "Learning and saving show opportunities for advancement, not none.",
+    "D": "Reading and sending money home show workers using mill wages strategically, for family and self-improvement, often as a temporary stage.",
+    "general": "1. List what the workers do. They read to improve their minds and send money home to help their families.\n2. Ask what those acts show. Workers using wages strategically, for family goals and self-improvement.\n3. Test the denials. Passivity, disconnection, and no advancement all contradict the letter.\n4. Name the conclusion. Many workers saw factory labor as a temporary means, not a life sentence.\nRemember: what people do with their wages tells you what the wages meant to them."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "3.A"
+  ],
+  "source": "original; stimulus is a paraphrase of a Lowell mill worker’s letter (early 1840s) with the Bachelder 1856 view of Lowell",
+  "status": "final",
+  "stem": "The mill workers’ emphasis on reading and sending money home best supports which of the following conclusions?",
+  "stimulus": {
+    "kind": "mixed",
+    "source_note": "Letter attributed to a Lowell mill worker, early 1840s, paraphrased from contemporary accounts. Image: John Bachelder, View of Lowell, Massachusetts, 1856, public domain (Library of Congress, LC-DIG-pga-07376).",
+    "text": "I have worked in the Lowell mills from 5 o’clock in the morning until 7 o’clock at night. The work is hard yet many of us have improved our minds by reading and we send money home to help our families."
+  },
+  "stimulus_set": "lowell-mills-1840s",
+  "themes": [
+    "WXT",
+    "SOC"
+  ],
+  "topics": [
+    "4.5"
+  ],
+  "type": "mcq",
+  "unit": 4
+}

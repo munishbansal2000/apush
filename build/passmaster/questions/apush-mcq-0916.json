@@ -1,0 +1,73 @@
+{
+ "id": "apush-mcq-0916",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.5"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "1.B",
+  "5.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 Market Revolution: Economic Transformations, A. The Market Revolution"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Market Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.5 A: The Panic of 1819 showed how connected and volatile the new market economy was. Farm exports grew while the Napoleonic Wars disrupted European agriculture, and that growth set off a land boom in the West. The boom was fed by easy credit: wildcat banks and established banks freely lent notes, often in sums larger than the gold and silver they held. When the Second Bank of the United States called in its loans, borrowers across the West and South lost farms and shops.",
+  "source_note": "Secondary text: paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.5 A. Paraphrased, not quoted."
+ },
+ "stimulus_set": "panic-1819",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "Many Americans blamed the Second Bank of the United States for the Panic of 1819 mainly because the Bank",
+ "options": [
+  {
+   "key": "A",
+   "text": "called in its loans, forcing quick repayment"
+  },
+  {
+   "key": "B",
+   "text": "refused to lend money to any western farmer",
+   "misconception": "The Bank had lent widely, including to land buyers; its fault in the panic was calling loans in, not refusing to lend."
+  },
+  {
+   "key": "C",
+   "text": "printed the paper money used by wildcat banks",
+   "misconception": "Wildcat banks printed their own notes; the Second Bank did not print money for them."
+  },
+  {
+   "key": "D",
+   "text": "closed the Erie Canal to western grain shipments",
+   "misconception": "The canal was a New York State waterway, not run by the Bank, and it stayed open to grain."
+  }
+ ],
+ "rationales": {
+  "A": "When the Bank demanded repayment, borrowers who had bought land on credit could not pay and lost farms and shops at auction.",
+  "B": "The Bank and its branches had lent freely during the boom. The anger came from the sudden demand for repayment, not from a refusal to lend.",
+  "C": "Each wildcat bank issued its own notes. The Second Bank's notes were its own, and its power was in calling loans, not printing others' money.",
+  "D": "The Bank had no hand in the canal. New York State built and ran it, and grain kept moving east on it.",
+  "general": "1. Ask what the Bank did in the panic. The passage says it called in its loans.\n2. Ask what that meant for a borrower. A farmer who bought land on credit had to pay at once or lose the land.\n3. Put it together. The Bank's demand turned a credit squeeze into lost farms, so Americans blamed the Bank.\nBackground: The Second Bank, chartered in 1816, extended credit across the country through its branches.\nRemember: blame follows the action people felt; find the action first."
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "id": "apush-saq-0120",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.9"
+ ],
+ "lesson": "apush-u4-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "skills": [
+  "1.B",
+  "3.A"
+ ],
+ "themes": [
+  "ARC",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.9 The Development of an American Culture, A. The Emergence of a National Culture"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.9 The Development of an American Culture, B. European Romanticism and American Culture"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "In the decades before the Civil War, American literature flowered. The early 1850s saw Herman Melville's Moby-Dick (1851), the first edition of Walt Whitman's Leaves of Grass (1855), Nathaniel Hawthorne's The Scarlet Letter (1850) and The House of the Seven Gables (1851), and Henry David Thoreau's Walden (1854). This literature grappled with religious and existential questions raised by the legacy of the Puritans and with the promise and the contradictions of America's democratic experiment.",
+  "source_note": "Paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.9 A: the antebellum period experienced a renaissance in literature, reaching its peak in the early 1850s with these works, which grappled with the Puritan legacy and the promise and contradictions of the democratic experiment. Original synthesis, not a quotation."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus as described in the stimulus source note",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly identify ONE work named in the passage and its author.",
+   "modelAnswer": "The passage names The Scarlet Letter by Nathaniel Hawthorne, published in 1850. It also names Moby-Dick by Herman Melville and Walden by Henry David Thoreau.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one work from the passage with its author, such as The Scarlet Letter by Hawthorne or Moby-Dick by Melville.",
+     "notEarned": "Naming a work without its author, or naming a work not in the passage, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason American literature flowered in the decades before the Civil War.",
+   "modelAnswer": "National pride after the War of 1812 made Americans want a culture of their own instead of living on British books. Writers like Cooper and Irving showed that American settings could sell, so a new generation wrote American stories.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason for the flowering, such as post-1812 nationalism, the example of Cooper and Irving, or the market for American books.",
+     "notEarned": "Saying literature improved without giving a reason does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limitation of the passage as evidence about American culture in the 1850s.",
+   "modelAnswer": "The passage covers a small circle of mostly New England writers, nearly all white men. It says nothing about the culture of enslaved people, immigrants, or frontier settlers, so it shows only one corner of American life.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limit, such as the narrow circle of authors, the absence of enslaved or immigrant voices, or the focus on elite literature.",
+     "notEarned": "Saying the passage is incomplete without naming what it leaves out does not earn the point."
+    }
+   ]
+  }
+ ]
+}

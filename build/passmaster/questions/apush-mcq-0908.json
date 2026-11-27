@@ -1,0 +1,73 @@
+{
+ "id": "apush-mcq-0908",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.5"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "1.B",
+  "5.B"
+ ],
+ "themes": [
+  "WXT",
+  "ARC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 Market Revolution: Economic Transformations, B. Advances in Technology"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Market Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.5 B, and Princeton Review, Chapter 8: Eli Whitney, who had earlier developed the cotton gin, proposed making musket parts to exact specifications so that any part would fit any musket. He showed the idea to Thomas Jefferson and James Madison by taking apart several rifles, mixing the parts, and rebuilding the rifles from whatever parts he picked up. Makers of clocks, watches, tools, and farm implements soon used the same method.",
+  "source_note": "Secondary text: paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.5 B, and Princeton Review, Chapter 8. Paraphrased, not quoted."
+ },
+ "stimulus_set": "interchangeable-parts",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The method described in the passage mattered most because it",
+ "options": [
+  {
+   "key": "A",
+   "text": "allowed quicker, cheaper building and repair of machines"
+  },
+  {
+   "key": "B",
+   "text": "let each musket be decorated differently for its owner",
+   "misconception": "Identical parts make weapons uniform, not decorated; the point is sameness, not variety."
+  },
+  {
+   "key": "C",
+   "text": "proved that American muskets were better than British muskets",
+   "misconception": "Whitney's demonstration showed parts could be swapped, not that American guns outshot British ones."
+  },
+  {
+   "key": "D",
+   "text": "ended the need for skilled workers in American factories",
+   "misconception": "Skilled workers were still needed to run machines and fit assemblies; the method changed their work, not ended it."
+  }
+ ],
+ "rationales": {
+  "A": "When every part is made to the same pattern, workers can assemble products fast and swap in a spare part instead of rebuilding the whole thing.",
+  "B": "The method's whole point is that parts are identical. Decoration and custom fitting are what it replaced.",
+  "C": "The demonstration was about fit, not firepower. Whitney mixed parts from several rifles and rebuilt them; he did not test them against British guns.",
+  "D": "The machine-tool industry that grew from this method needed skilled machinists. Interchangeable parts changed skilled work; they did not erase it.",
+  "general": "1. Ask what Whitney showed. Parts from different rifles, mixed together, still built working rifles.\n2. Ask what that allows. A broken part can be replaced with a matching spare, and workers can assemble goods fast.\n3. Put it together. Standard parts made machines cheaper to build and easier to fix, which is the base of mass production.\nBackground: By the 1850s, many industrial processes relied on interchangeable parts.\nRemember: ask what a standard part replaces: hand fitting, one piece at a time."
+ }
+}

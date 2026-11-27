@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-0801",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.2"
+ ],
+ "lesson": "apush-u4-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "D",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.2 The Rise of Political Parties and the Era of Jefferson, A. Political Parties and the Rise of the First Two-Party System"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "Election of 1800"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The “Revolution of 1800”"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Electoral vote totals from the National Archives, 1800 Electoral College Results. 138 electors; 70 votes needed to win.",
+  "text": "| Candidate | Party | Electoral votes |\n|---|---|---|\n| Thomas Jefferson | Democratic-Republican | 73 |\n| Aaron Burr | Democratic-Republican | 73 |\n| John Adams | Federalist | 65 |\n| Charles C. Pinckney | Federalist | 64 |\n| John Jay | Federalist | 1 |"
+ },
+ "stimulus_set": "election-1800-table",
+ "source": "original; stimulus is a table of electoral votes from the National Archives",
+ "stem": "The Twelfth Amendment, ratified in 1804, most directly fixed which flaw shown in the table?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Electors were chosen by state legislatures instead of by voters",
+   "misconception": "The amendment says nothing about how electors are chosen; that was left to the states."
+  },
+  {
+   "key": "B",
+   "text": "The House of Representatives voted by state in a tied election",
+   "misconception": "The House still votes by state when no candidate wins a majority; the amendment did not change that."
+  },
+  {
+   "key": "C",
+   "text": "The vice president was chosen by the Senate",
+   "misconception": "The Senate never chose the vice president; before 1804 the runner-up became vice president."
+  },
+  {
+   "key": "D",
+   "text": "Electors voted for two people without saying which one was for president"
+  }
+ ],
+ "rationales": {
+  "A": "The amendment says nothing about how electors are chosen. That was left to the states.",
+  "B": "The House still votes by state when no candidate wins a majority. The amendment did not change that.",
+  "C": "The Senate never chose the vice president. Before 1804 the runner-up became vice president.",
+  "D": "The table shows the flaw: Jefferson and Burr each got 73 votes because every elector cast two votes with no label for president or vice president. The Twelfth Amendment fixed it by requiring separate ballots, one for president and one for vice president.",
+  "general": "1. Find the flaw in the table. Two men tie at 73 because the ballots had no labels.\n2. Ask what rule caused it. Each elector cast two votes without marking one for president.\n3. Ask what the amendment changed. It required separate ballots for the two offices.\n4. Put it together. A tie born of an unlabeled ballot led straight to a labeled one.\nRemember: a constitutional amendment often has a single embarrassment behind it, so find the embarrassment first."
+ }
+}

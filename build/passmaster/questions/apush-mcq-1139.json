@@ -1,0 +1,73 @@
+{
+ "id": "apush-mcq-1139",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.13"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "3.A",
+  "5.A"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.13 The Society of the South in the Early Republic, B. Cotton, Slavery, and the Southern Exception"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "Enslaved people counted in the United States, by census year:\n\n| Census year | Enslaved people |\n|---|---|\n| 1790 | 697,681 |\n| 1800 | 893,602 |\n| 1820 | 1,538,022 |\n| 1840 | 2,487,355 |\n\nSource: United States census counts, 1790–1840.",
+  "source_note": "Figures from the United States census counts, 1790–1840, as carried by the Historical Census Browser; checked against Barron's Premium 2027, Chapter 6, Topic 4.13 B (about 700,000 in 1790; 2 million by 1830)."
+ },
+ "stimulus_set": "enslaved-population-census",
+ "source": "original; data table from United States census counts, 1790–1840",
+ "stem": "The table shows the enslaved population more than doubling between 1800 and 1840. Which development most directly explains that growth?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The reopening of the Atlantic slave trade by Congress in 1808",
+   "misconception": "Congress banned the importation of enslaved people in 1808; it did not reopen the trade."
+  },
+  {
+   "key": "B",
+   "text": "The spread of factory wage labor in Southern cities",
+   "misconception": "The South stayed farm-based in this period; factory wage labor grew in the North."
+  },
+  {
+   "key": "C",
+   "text": "The cotton gin, which made short-staple cotton profitable"
+  },
+  {
+   "key": "D",
+   "text": "The end of slavery in the northern states, which freed enslaved people to move south",
+   "misconception": "Northern emancipation freed few people, and it did not send them south as enslaved labor."
+  }
+ ],
+ "rationales": {
+  "A": "Congress banned the importation of enslaved people in 1808. It did not reopen the trade.",
+  "B": "The South stayed farm-based in this period. Factory wage labor grew in the North.",
+  "C": "The cotton gin made short-staple cotton profitable, planters grew far more cotton, and cotton farming needed enslaved labor.",
+  "D": "Northern emancipation freed few people, and it did not send them south as enslaved labor.",
+  "general": "1. Read the table. The enslaved population rose from about 894,000 in 1800 to about 2,487,000 in 1840.\n2. Ask what changed in those years. The cotton gin made short-staple cotton profitable, and cotton spread across the South.\n3. Link the two. Cotton farming needed many hands, so planters bought more enslaved workers.\nBackground: Congress banned importing enslaved people in 1808, so this growth came from natural increase and the domestic slave trade.\nRemember: when two trends rise together, ask which one drives the other."
+ }
+}

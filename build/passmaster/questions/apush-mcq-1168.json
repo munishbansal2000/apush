@@ -1,0 +1,91 @@
+{
+ "id": "apush-mcq-1168",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.14"
+ ],
+ "lesson": "apush-u4-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "2.B",
+  "4.A"
+ ],
+ "themes": [
+  "WXT",
+  "SOC",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 The Market Revolution: Economic Transformations"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.14 Subject to Debate"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   }
+  ],
+  "primary_sources": [
+   "New York celebration for the Erie Canal, 1825 (print)"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "This print shows New York harbor in 1825, crowded with sailing ships and steamboats flying flags to celebrate the opening of the Erie Canal.\n\nThe Erie Canal, completed in 1825, joined the Hudson River to the Great Lakes. Canal boats soon carried farm goods east to New York City and manufactured goods west to the Great Lakes.",
+  "source_note": "Print: New York celebration for the Erie Canal, 1825, public domain (Wikimedia Commons). Canal facts from Barron's Premium 2027, Chapter 6, Topic 4.5."
+ },
+ "stimulus_set": "erie-celebration-1825",
+ "source": "original; print public domain, New York celebration for the Erie Canal, 1825",
+ "stem": "The canal tied the East to the West, yet by the 1840s the nation was more divided than in 1825. Which fact best explains that puzzle?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The canal's tolls drove New York City into bankruptcy",
+   "misconception": "Tolls made the canal pay, and New York City grew into the nation's busiest port."
+  },
+  {
+   "key": "B",
+   "text": "Western farmers stopped selling grain to the East after 1825",
+   "misconception": "Western farm trade to the East grew after the canal opened."
+  },
+  {
+   "key": "C",
+   "text": "The canal carried only Southern cotton, so the North gained nothing",
+   "misconception": "The canal ran east and west, carrying grain east; cotton traveled down the Mississippi."
+  },
+  {
+   "key": "D",
+   "text": "The canal linked free-labor regions, while Southern cotton depended on enslaved labor"
+  }
+ ],
+ "rationales": {
+  "A": "The canal paid for itself from tolls. New York City grew, so bankruptcy is the wrong story.",
+  "B": "The canal's purpose was western grain for eastern buyers. That trade grew, so farmers did not stop selling.",
+  "C": "Check the map. The canal runs east and west, not south. Cotton went down the Mississippi, not through the canal.",
+  "D": "The same market tied the free-labor North and West together, while the cotton South ran on enslaved labor. One market held two labor systems, and the gap between them widened.",
+  "general": "1. Start with what the canal did. It tied eastern cities to western farms, so the free-labor regions grew together.\n2. Ask what it did not tie. The South sold cotton grown by enslaved labor, a different economy on a different river system.\n3. Name the puzzle's answer. Better links joined the like-minded regions and left the unlike region further apart.\nBackground: The South's cotton crop grew from 73,000 bales in 1800 to more than 1.3 million bales in 1840.\nRemember: a link that joins similar places can still leave different places further apart."
+ },
+ "figures": [
+  {
+   "file": "u4/original-misc-us-culture-02.png",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/New_York_celebration_for_the_Erie_Canal_1825.png",
+   "license": "Public domain",
+   "caption": "New York harbor celebrates the Erie Canal's opening, 1825. Flag-decked ships and steamboats crowd the water.",
+   "alt": "A print of New York harbor in 1825: dozens of sailing ships and steamboats, flags flying, crowd the water to celebrate the opening of the Erie Canal",
+   "id": "fig-apush-mcq-1168"
+  }
+ ]
+}

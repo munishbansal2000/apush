@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-0900",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.5"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 Market Revolution: Economic Transformations, B. Advances in Technology"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.5 Market Revolution: Economic Transformations, C. Improvements in Transportation and Regional Interdependence"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "A nineteenth-century book illustration shows Robert Fulton's steamboat Clermont at a New York dock in 1807. A large paddle wheel turns at the boat's side, smoke rises from its funnel, and workers load barrels while a crowd watches. Fulton demonstrated the boat on the Hudson River in 1807.",
+  "source_note": "Robert Fulton boards his steamboat the Clermont in New York, 1807, illustration by Louis Figuier (1819-1894), via Wikimedia Commons. Public domain; image viewed before writing. Date from Barron's Premium 2027, Chapter 6, Topic 4.5 B."
+ },
+ "stimulus_set": "clermont-1807",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The barrels, workers, and crowd in the image best show that the steamboat was",
+ "options": [
+  {
+   "key": "A",
+   "text": "part of a growing commercial trade in goods"
+  },
+  {
+   "key": "B",
+   "text": "a warship built for the War of 1812",
+   "misconception": "The Clermont was a commercial boat demonstrated in 1807, five years before the war, and it carried freight, not guns."
+  },
+  {
+   "key": "C",
+   "text": "a ferry carrying only local passengers",
+   "misconception": "The barrels being loaded show freight, not just passengers; the boat served trade along the river, not a short ferry run."
+  },
+  {
+   "key": "D",
+   "text": "an experimental craft that never carried cargo",
+   "misconception": "The picture itself shows cargo being loaded. The Clermont ran as a working boat, not a bare experiment."
+  }
+ ],
+ "rationales": {
+  "A": "Workers load barrels while a crowd watches a working dock. The steamboat is a tool of trade, moving goods for sale.",
+  "B": "The boat has no guns and no war errand. It was demonstrated in 1807 as a commercial vessel, before the War of 1812 began.",
+  "C": "A ferry moves people across a river. The barrels show this boat moves freight along the river for trade.",
+  "D": "The loading barrels prove the point: the Clermont carried cargo in regular service, not only a trial run.",
+  "general": "1. Look past the boat to the dock. Workers roll barrels aboard while onlookers gather.\n2. Ask what barrels mean. They are goods being shipped, the stuff of commerce.\n3. Put it together. The image shows a working commercial vessel, not a warship or a bare experiment.\nBackground: Steamboats soon plied the major rivers, canals, and Great Lakes carrying freight and passengers.\nRemember: in an image, the small details around the main subject often name its purpose."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0900",
+   "file": "u4/fulton-clermont-1807.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Robert_Fulton_boards_his_steamboat%2C_the_%27Clermont%27%2C_in_New_York%2C_1807.jpg",
+   "license": "Public domain",
+   "caption": "Fulton's steamboat Clermont at New York, 1807. Paddle wheel, smoke, and loading barrels.",
+   "alt": "A book illustration of the steamboat Clermont at a New York dock in 1807: a large paddle wheel at its side, smoke from its funnel, workers loading barrels, and a crowd watching"
+  }
+ ]
+}

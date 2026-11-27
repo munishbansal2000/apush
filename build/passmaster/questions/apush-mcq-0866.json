@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0866",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.4"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 2,
+ "answerKey": "B",
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.4 America on the World Stage, A. Trade, Diplomacy, and the Expansion of American Influence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "The War of 1812"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Madison's Presidency and the War of 1812"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "This American cartoon from 1807–1808 is titled “OGRABME, or, The American Snapping-turtle.” A giant snapping turtle labeled “Ograbme” bites the leg of an American merchant who is carrying a barrel of goods toward the harbor. The merchant cries, “Oh! this cursed Ograbme.” A man standing behind the turtle says, “D—n it, how he nicks 'em.” In the harbor behind them, a British ship waits with its sails ready.",
+  "source_note": "Ograbme, or, The American Snapping-turtle, American cartoon, 1807–1808; public domain."
+ },
+ "stimulus_set": "ograbme-cartoon",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The name “Ograbme” in the cartoon is",
+ "options": [
+  {
+   "key": "A",
+   "text": "the name of a British warship that attacked American trade",
+   "misconception": "The ship in the harbor is British, but Ograbme is the turtle."
+  },
+  {
+   "key": "B",
+   "text": "the word “embargo” spelled backward"
+  },
+  {
+   "key": "C",
+   "text": "the nickname of the president who signed the Embargo Act",
+   "misconception": "Jefferson signed the act; the name is a word trick, not his nickname."
+  },
+  {
+   "key": "D",
+   "text": "a French word for the tax on American exports",
+   "misconception": "There was no such tax, and Ograbme is English spelled backward."
+  }
+ ],
+ "rationales": {
+  "A": "A British ship does wait in the harbor, but the label “Ograbme” is written on the turtle, not on the ship.",
+  "B": "Read the label backward: O-g-r-a-b-m-e spells embargo. The turtle is the Embargo Act itself, biting the merchant.",
+  "C": "President Jefferson signed the Embargo Act of 1807, but nobody called him Ograbme. The name is a backward spelling.",
+  "D": "Ograbme is not French and not a tax. Reverse the letters and the English word embargo appears.",
+  "general": "1. Read the label. The turtle is marked “Ograbme.”\n2. Reverse the letters. O-g-r-a-b-m-e spelled backward is e-m-b-a-r-g-o.\n3. Put it together. The turtle is the Embargo Act, drawn as an animal biting the merchant it was supposed to help.\nBackground: Jefferson's Embargo Act of 1807 banned American ships from sailing to foreign ports.\nRemember: when a cartoon labels an animal with a strange word, try reading the word backward."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0866",
+   "file": "u4/original-misc-worldstage-02.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Ograbme.jpg",
+   "license": "Public domain",
+   "caption": "Ograbme, or, The American Snapping-turtle, 1807–1808",
+   "alt": "Cartoon of a snapping turtle labeled Ograbme biting an American merchant carrying a barrel, with a British ship waiting in the harbor"
+  }
+ ]
+}

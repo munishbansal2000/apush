@@ -1,0 +1,86 @@
+{
+ "id": "apush-saq-0108",
+ "type": "saq",
+ "unit": 4,
+ "topics": [
+  "4.4"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "skills": [
+  "1.B",
+  "5.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.4 America on the World Stage, A. Trade, Diplomacy, and the Expansion of American Influence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of Barron's Premium 2027, Chapter 6, on Topic 4.4: In the early 1800s the United States tried to build trade across both oceans. In the Mediterranean, the Barbary states of North Africa demanded tribute payments from trading nations and seized the ships of those that refused. Jefferson refused a higher demand from Tripoli in 1801, and the First Barbary War followed; a second war in 1815 finally ended American tribute payments. In Asia, American merchants opened a profitable trade with China after the Revolution, selling furs and buying tea, porcelain, and silk. The Chinese saw this trade as a favor granted by the emperor in return for tribute, while Americans saw trade as a right. In 1844 the Treaty of Wanghia gave the United States the same trading privileges in China that Britain held.",
+  "source_note": "Secondary text: paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.4 A. Paraphrased, not quoted."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus is a secondary-text paraphrase of Barron's Premium 2027, Chapter 6, Topic 4.4 A",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason the United States fought the Barbary Wars in the early 1800s.",
+   "modelAnswer": "The Barbary states demanded tribute payments and seized American merchant ships that did not pay. Jefferson refused Tripoli's higher demand in 1801, and the war was fought to protect American shipping in the Mediterranean without paying tribute.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason the United States fought the Barbary Wars, such as protecting American shipping from seizure or refusing to pay tribute.",
+     "notEarned": "Naming the Barbary Wars with no reason for fighting them does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE way American trade with China differed from the way the Chinese government viewed that trade.",
+   "modelAnswer": "Americans saw trade as a basic right and a way to build wealth, so they expected open commerce. Chinese officials saw trade as a favor the emperor granted in return for tribute, and they looked down on commerce itself.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one difference between the American and Chinese views of trade, such as trade as a right versus trade as an imperial favor for tribute.",
+     "notEarned": "Naming a traded good with no difference in views explained does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE similarity between the Barbary Wars and the China trade as examples of early American foreign policy.",
+   "modelAnswer": "Both show the United States pushing American commerce into new parts of the world. In the Mediterranean it used warships to protect its merchants, and in China it used diplomacy to win the same trading rights Britain held.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one similarity between the Barbary Wars and the China trade, such as both extending American commerce abroad by force or by diplomacy.",
+     "notEarned": "Repeating the answer to part (a) or part (b) with no similarity drawn does not earn the point."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0811",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.2"
+ ],
+ "lesson": "apush-u4-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "A",
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "MIG",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.2 The Rise of Political Parties and the Era of Jefferson, C. The Louisiana Purchase and Territorial Expansion"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "The Louisiana Purchase"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The Louisiana Purchase and the Lewis and Clark Expedition"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Charles M. Russell, Lewis and Clark Meeting Indians at Ross' Hole, September 4, 1805, mural painted 1912, public domain (artist died 1926). A later depiction, not a record made on the expedition.",
+  "text": "Charles M. Russell's 1912 mural of Lewis and Clark meeting Native peoples at Ross' Hole, September 4, 1805: mounted Native riders approach the expedition party on the right, with tipis, mountains, and clouds behind them. The mural was painted more than a century after the meeting it shows."
+ },
+ "stimulus_set": "lewis-clark-ross-hole",
+ "source": "original; stimulus image from the shared pool, Charles M. Russell's 1912 mural of the Ross' Hole meeting",
+ "stem": "The reports Lewis and Clark brought home most directly encouraged which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Westward exploration and settlement by American pioneers"
+  },
+  {
+   "key": "B",
+   "text": "The immediate construction of a canal across the Rocky Mountains",
+   "misconception": "No canal crossed the Rockies; the party found mountains, not a water route to the Pacific."
+  },
+  {
+   "key": "C",
+   "text": "The end of all trade between Americans and Native peoples",
+   "misconception": "Trade with Native peoples continued and grew after the expedition, it did not end."
+  },
+  {
+   "key": "D",
+   "text": "The return of the Louisiana Territory to France",
+   "misconception": "France had sold Louisiana and never got it back; the expedition advertised the land, it did not undo the sale."
+  }
+ ],
+ "rationales": {
+  "A": "The explorers returned with favorable reports on the lands they had crossed, and those reports whetted the appetite for further western exploration and settlement. Pioneers turned their eyes westward, and Jefferson's hope for a continent of farmers gained a map. Background: the party also reported British and French posts still standing in the territory, a reminder that the land was bought before it was held.",
+  "B": "No canal crossed the Rockies. The party found mountains, not a water route to the Pacific.",
+  "C": "Trade with Native peoples continued and grew after the expedition; it did not end.",
+  "D": "France had sold Louisiana and never got it back. The expedition advertised the land, it did not undo the sale.",
+  "general": "1. Ask what the explorers brought home. Journals, maps, and favorable reports on the West.\n2. Ask who read them. Americans hungry for land and new chances.\n3. Ask what the reports did. They turned a rumor of a continent into a mapped country worth settling.\n4. Put it together. Knowledge came first; the wagons followed the knowledge.\nRemember: a good report can settle a country, so ask who acts on the news."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0811",
+   "file": "u4/lewis-clark-ross-hole.jpg",
+   "caption": "Lewis and Clark meet Native peoples at Ross' Hole, 1805",
+   "alt": "Charles M. Russell's 1912 mural showing mounted Native riders approaching the Lewis and Clark party, with tipis and mountains behind",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Lewis_and_Clark_Meeting_the_Flatheads_in_Ross_Hole%2C_September_4%2C_1805.jpg",
+   "license": "Public domain"
+  }
+ ]
+}

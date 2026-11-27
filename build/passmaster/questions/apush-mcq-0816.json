@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-0816",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.2"
+ ],
+ "lesson": "apush-u4-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.2 The Rise of Political Parties and the Era of Jefferson, A. Political Parties and the Rise of the First Two-Party System"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "Renewal of War in Europe"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Jefferson's Second Term"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Export values from Digital History (University of Houston), “The Embargo of 1807”: exports fell from $108 million in 1807 to $22 million in 1808; imports fell by about half.",
+  "text": "| Year | Value of American exports |\n|---|---|\n| 1807 | $108 million |\n| 1808 | $22 million |\n\nImports fell by about half over the same year."
+ },
+ "stimulus_set": "embargo-exports-table",
+ "source": "original; stimulus is a table of real export values from Digital History",
+ "stem": "The trade collapse shown in the table most directly led Jefferson's successor to take which step?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Declare war on Britain immediately in 1809",
+   "misconception": "War came in 1812, after three more years of failed trade policies, not in 1809."
+  },
+  {
+   "key": "B",
+   "text": "Repeal the embargo and replace it with nothing at all",
+   "misconception": "Congress replaced the embargo with the Non-Intercourse Act, which still banned trade with Britain and France."
+  },
+  {
+   "key": "C",
+   "text": "Replace the embargo with the Non-Intercourse Act of 1809"
+  },
+  {
+   "key": "D",
+   "text": "Raise tariffs on British goods to pay for a larger navy",
+   "misconception": "The protective Tariff of 1816 came seven years later, after the War of 1812, not as the embargo's replacement."
+  }
+ ],
+ "rationales": {
+  "A": "War came in 1812, after three more years of failed trade policies, not in 1809.",
+  "B": "Congress replaced the embargo with the Non-Intercourse Act, which still banned trade with Britain and France.",
+  "C": "Madison saw that the embargo had to go, and in 1809 Congress replaced it with the Non-Intercourse Act, reopening trade with all nations except Britain and France. Background: the new law was almost as unpopular, since Britain and France were America's two biggest trading partners, and it too failed to stop seizures of American ships.",
+  "D": "The protective Tariff of 1816 came seven years later, after the War of 1812, not as the embargo's replacement.",
+  "general": "1. Start with the table. The embargo destroyed American trade in a year.\n2. Ask what a new president must do. End the policy that is strangling his own ports.\n3. Ask what replaced it. The Non-Intercourse Act of 1809, which reopened most trade.\n4. Put it together. The embargo died of its own numbers, but the quarrel with Britain and France lived on.\nRemember: when a policy collapses, ask what replaced it, not just what ended it."
+ }
+}

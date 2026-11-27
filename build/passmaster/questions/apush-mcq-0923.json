@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-0923",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.6"
+ ],
+ "lesson": "apush-u4-l3",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "1.B",
+  "3.A"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.6 Market Revolution: Society and Culture, C. Workers and New Methods of Production"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 13",
+    "section": "The Rise of Manufacturing"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "The North and the Textile Industry"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "An engraving of the Boott Cotton Mills at Lowell, Massachusetts. Long brick mill buildings with rows of windows stand along a river, with smoking chimneys, a bridge, and small figures of workers and horse-drawn wagons in the foreground. The caption reads “BOOTT COTTON MILLS. LOWELL, MASS.”",
+  "source_note": "Engraving of the Boott Cotton Mills, Lowell, Mass., by Van Slyck & Co., Boston, via Wikimedia Commons (public domain). Image viewed before writing."
+ },
+ "stimulus_set": "boott-mills-lowell",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The engraving best illustrates which feature of the factory system?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Workers made goods at home for merchants, paid by the piece",
+   "misconception": "That is the putting-out system, the older way of making goods at home, not the factory system in the engraving."
+  },
+  {
+   "key": "B",
+   "text": "Each mill produced only one part of a finished product",
+   "misconception": "The Waltham-Lowell system put every stage of making cloth under one roof, not one part per mill."
+  },
+  {
+   "key": "C",
+   "text": "All stages of making cloth came together under one roof"
+  },
+  {
+   "key": "D",
+   "text": "Mills were small workshops owned by the workers themselves",
+   "misconception": "The engraving shows huge mill buildings owned by companies, with wage workers, not small shops owned by workers."
+  }
+ ],
+ "rationales": {
+  "A": "Home piecework for merchants is the putting-out system. The engraving shows the system that replaced it: large factory buildings.",
+  "B": "Lowell mills spun yarn and wove cloth in the same place. The system gathered the stages together, it did not split them across mills.",
+  "C": "The engraving shows vast mill buildings, not cottages or small shops. Under the Waltham-Lowell system, spinning, weaving, and finishing all happened in one place, with wage workers tending machines.",
+  "D": "The buildings are company mills, far too large for a worker to own. The workers inside earned wages; they did not own the shops.",
+  "general": "1. Look at the scale. The buildings are huge, with rows of windows and smoking chimneys.\n2. Ask what work fits that scale. Home piecework needs a cottage, not a mill like this.\n3. Name the system. Lowell gathered every stage of making cloth under one roof.\nBackground: Slater's mill spun yarn; Lowell added power looms in 1813, so cloth was finished in the same mill.\nRemember: when an image shows scale, ask what system needs that scale."
+ },
+ "figures": [
+  {
+   "file": "u4/original-misc-us-culture-03.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Engraving_of_Boott_Cotton_Mills_%284983c864-09e6-455f-870e-23eba17c7da7%29.jpg",
+   "license": "Public domain",
+   "caption": "Engraving of the Boott Cotton Mills at Lowell, Massachusetts, with mill buildings along the river.",
+   "alt": "Engraving of the Boott Cotton Mills at Lowell: long brick mill buildings with rows of windows stand along a river, with smoking chimneys, a bridge, and small figures of workers and wagons",
+   "id": "fig-apush-mcq-0923"
+  }
+ ]
+}

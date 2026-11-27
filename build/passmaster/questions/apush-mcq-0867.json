@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-0867",
+ "type": "mcq",
+ "unit": 4,
+ "topics": [
+  "4.4"
+ ],
+ "lesson": "apush-u4-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "D",
+ "skills": [
+  "3.A",
+  "3.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.4 America on the World Stage, A. Trade, Diplomacy, and the Expansion of American Influence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 12",
+    "section": "The War of 1812"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 8",
+    "section": "Madison's Presidency and the War of 1812"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "This American cartoon from 1807–1808 is titled “OGRABME, or, The American Snapping-turtle.” A giant snapping turtle labeled “Ograbme” bites the leg of an American merchant who is carrying a barrel of goods toward the harbor. The merchant cries, “Oh! this cursed Ograbme.” A man standing behind the turtle says, “D—n it, how he nicks 'em.” In the harbor behind them, a British ship waits with its sails ready.",
+  "source_note": "Ograbme, or, The American Snapping-turtle, American cartoon, 1807–1808; public domain."
+ },
+ "stimulus_set": "ograbme-cartoon",
+ "source": "original; stimulus as described in the stimulus source note",
+ "stem": "The cartoonist's main point is that the Embargo Act",
+ "options": [
+  {
+   "key": "A",
+   "text": "forced Britain to respect American ships at sea",
+   "misconception": "The British ship waits unharmed; the bite lands on the American."
+  },
+  {
+   "key": "B",
+   "text": "was popular with merchants in New England",
+   "misconception": "The merchant is the victim here, and New England's trade collapsed under the embargo."
+  },
+  {
+   "key": "C",
+   "text": "opened new markets for American goods in Asia",
+   "misconception": "The embargo closed ports; the China trade came through other means."
+  },
+  {
+   "key": "D",
+   "text": "hurt American merchants more than it hurt Britain"
+  }
+ ],
+ "rationales": {
+  "A": "Britain is shown waiting in the harbor, sails ready and untouched. The embargo did not force Britain to respect American ships.",
+  "B": "The merchant is being bitten, not cheering. New England merchants hated the embargo because it stopped their trade.",
+  "C": "Nothing in the cartoon shows new markets. The merchant cannot even reach the harbor with his barrel.",
+  "D": "The turtle bites the American merchant while the British ship sails on untouched. The embargo punished the Americans it was meant to protect.",
+  "general": "1. Find the victim. The turtle's teeth are in the American merchant's leg, not in the British ship.\n2. Find the bystander. The British ship waits in the harbor, ready to sail, unhurt by the embargo.\n3. Put it together. A policy that bites its own people while its target sails on has backfired.\nBackground: American exports fell from $108 million in 1807 to $22 million in 1808, while Britain found new markets elsewhere.\nRemember: in a cartoon, ask who gets bitten and who walks away unhurt."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0867",
+   "file": "u4/original-misc-worldstage-02.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Ograbme.jpg",
+   "license": "Public domain",
+   "caption": "Ograbme, or, The American Snapping-turtle, 1807–1808",
+   "alt": "Cartoon of a snapping turtle labeled Ograbme biting an American merchant carrying a barrel, with a British ship waiting in the harbor"
+  }
+ ]
+}
