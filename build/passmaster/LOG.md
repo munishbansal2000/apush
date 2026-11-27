@@ -6445,3 +6445,73 @@ Redo re-verifier (4e82e4be) from the properly stripped blind file: PASS, 3/3 par
 
 ## Unit 6 difficulty census CORRECTION (2026-11-27, coordinator — recomputed from disk at unit close)
 - The unit-close table ("Unit 6 difficulty (fresh): ... easy 114 / medium 213 / hard 80") is a MIS-SUM: its per-topic rows undercount topics 6.4 (24 vs 28 MCQ on disk) and 6.6 (32 vs 36 MCQ on disk); all twelve other topic rows match disk exactly. Recomputed from disk (415 MCQ, difficulty 2=easy/3=medium/4=hard, mapping verified against the 6.13 and 6.14 close entries): **easy 117 / medium 218 / hard 80**. Reconciliation: practice MCQ 100/175/64 + test MCQ 17/43/16 = 117/218/80. Keys (all MCQ): A113/B109/C98/D95; practice A91/B88/C80/D80; test A22/B21/C18/D15. The hard shortfall vs target 83/145/187 stands (hard short 107); honest labels govern, never relabel.
+
+## Unit 6 COMPLETE + PUSHED (push 13 `36bfde91`) (2026-11-27 ~09:09 PST)
+- Coordinator 26ab91b9 (replacement for stalled a47604f0) completed
+  2026-11-27 ~08:51 PST; parent verified from disk before pushing.
+- 476/476 final (415 MCQ + 33 SAQ + 17 DBQ + 11 LEQ), 5/5 lessons final,
+  validator 3,500 questions / 45 lessons / 0 errors / 1 warning (U4-L4).
+  Difficulty lands easy 117 / medium 218 / hard 80 vs 83/145/187 (hard
+  short 107 — largest in the book); 6.8 and 6.10 land zero hard. Keys
+  A113/B109/C98/D95. Test pool 76/3/2/1 (SAQ 0170, 0180, 0200; DBQ
+  0057, 0061; LEQ 0060).
+- Blind-read record: L1 FAIL 11 -> PASS (parent-flipped 07:35 PST after
+  verifying both genuine PASSes), L2 FAIL 4 -> PASS, L3 FAIL 3 -> PASS,
+  L4 FAIL 3 -> FAIL 1 (Social Darwinism absent from the narrative) ->
+  PASS, L5 FAIL 2 -> PASS. Bank fixes: Bessemer-converter stimulus
+  rewritten (1710-1712 — image shows no workers, upright vessel);
+  Pullman photo mislabeled "of Pullman strikers" corrected to Illinois
+  National Guard troops (SAQ 0184, DBQ 0060 doc 5); Chrisman sisters
+  photo 1887 -> 1886 (SAQ 0172, DBQ 0053 doc 2, L1, catalog).
+  L2 re-check's one FAIL was the coordinator's own fix miss (1710
+  rationale A "tilted vessel pouring sparks"); fixed and verified on
+  disk by the parent (0 tilted/pouring in the set), no third round per
+  the 0195/0063/0347/0469 precedent.
+- First push-13 run died in a runtime restart mid-run (exec
+  proc_b515469af5f5, empty log); remote HEAD verified still 84933b66
+  before re-running. Re-run landed in ~7 min: 494 files changed,
+  3,332 in sync, new root 3de82e75, 8,285 paths verified.
+- Parent verified from the remote tree alone: HEAD == .git-api-sha ==
+  36bfde91, 8,285 blobs, all 476 U6 questions + 5 lessons present,
+  CATALOG 353 (u6 7 entries merged), exam-01 correctly ABSENT. The one
+  "blind-" path on the remote outside verdicts/solves is
+  build/tagging-audit/gapfill-u3u4u5-blind-audit.md — an audit doc from
+  an earlier whole-tree push, not a blind input; not in the FILES list.
+- BLUEPRINT.md gained the Unit 6 quotas + LANDED sections (before the
+  Unit 7 section). LOG's first unit-close difficulty table (114/213/80)
+  was a mis-sum; corrected to 117/218/80 in LOG.md (coordinator entry)
+  and recomputed by the parent from disk.
+
+## Exam 01 PUSHED (push 14 `82e757d2`) (2026-11-27 ~09:15 PST)
+- exams/apush-exam-01.json (60 questions, status final) + CATALOG.json
+  with the 8 CATALOG-pt01 entries merged (count 353 -> 361). 2 files
+  changed, 3,825 in sync, new root 4724f6a4, 8,286 paths verified.
+- Parent verified from the remote tree alone: HEAD == .git-api-sha ==
+  82e757d2, exam file present, 60 unique section IDs (55 MCQ + 3 SAQ +
+  1 DBQ + 1 LEQ), 8 examOnly objects, all 8 pt01 figures on the remote
+  (all 8 were already live from the unit pushes as referenced images).
+- The book is now fully live: 3,500 questions + 45 lessons + Exam 01.
+
+## Final calibration check (2026-11-27 ~09:20 PST, parent)
+- Census from disk: 3,500/3,500 final; MCQ 3,000 at easy 681 / medium
+  1,351 / hard 968; test pool exactly 600 (550 MCQ / 30 SAQ / 10 DBQ /
+  10 LEQ); practice 2,900. Per-unit MCQ lands: U1 36/60/54, U2 43/106/61,
+  U3 78/206/131, U4 84/161/170, U5 85/152/178, U6 117/218/80,
+  U7 82/215/118, U8 87/158/170, U9 69/75/6. (U1 reads 36/60/54 on disk
+  now vs 37/60/53 recorded at its close — one item relabeled in a later
+  fix round; disk governs.)
+- Voice/structure census: 0 MCQ key notes over 3 sentences; trap-word
+  census 11 hits, all legitimate historical uses (fur trappers, Donner
+  Party trapped by snow, sharecropping debt) — none is trap language.
+  Validator 0 errors. The blind-read record across all 45 lessons is
+  the voice check in practice; no full stylistic re-audit was run.
+- Unit 9 Topic 9.2 flags VERIFIED, no fixes owed: Ferraro tax-returns
+  detail (2874 key C) confirmed — Smithsonian + Michigan Daily Oct 11,
+  1984: separate returns, Zaccaro's refusal, Aug 20 release amid the
+  controversy; 1990 Bush budget deal (2883/2884, SAQ 0275) states the
+  standard history correctly (OBRA 1990, bipartisan deficit deal, Bush
+  signed, conservative trust broken); ACA "no Republican voted"
+  (2885 misconception D) confirmed — Congress.gov: House 219-212
+  (Mar 21, 2010) and Senate 60-39 (Dec 24, 2009), all yes votes
+  Democratic; Cao's yes was on the earlier House version, not the
+  final law.
