@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1363",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.6"
+ ],
+ "lesson": "apush-u5-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "A",
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.6 Failure to compromise"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Dred Scott v. Sandford, 60 U.S. 393 (1857), majority opinion"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Chief Justice Roger B. Taney, majority opinion in Dred Scott v. Sandford, 60 U.S. 393 (1857), decided March 6, 1857. Public domain. Wording verified against the full opinion (UMKC Famous Trials; SAGE). The two passages appear in this order in the opinion; the omission between them is marked.",
+  "text": "They had for more than a century before been regarded as beings of an inferior order, and altogether unfit to associate with the white race, either in social or political relations; and so far inferior, that they had no rights which the white man was bound to respect; and that the negro might justly and lawfully be reduced to slavery for his benefit. . . . the right of property in a slave is distinctly and expressly affirmed in the Constitution."
+ },
+ "stimulus_set": "dred-scott-1857",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "In the passage, Taney describes Black people as",
+ "options": [
+  {
+   "key": "A",
+   "text": "inferior beings with no rights whites must respect."
+  },
+  {
+   "key": "B",
+   "text": "citizens of the states in which they lived.",
+   "misconception": "Taney says the opposite: Black people were not citizens and could claim none of a citizen’s rights."
+  },
+  {
+   "key": "C",
+   "text": "free people protected by the Constitution.",
+   "misconception": "Taney says Black people had no rights a white man was bound to respect, not freedom under the Constitution."
+  },
+  {
+   "key": "D",
+   "text": "voters entitled to cast ballots in federal elections.",
+   "misconception": "Taney’s point is that Black people could not be citizens at all, so voting was never in question."
+  }
+ ],
+ "rationales": {
+  "A": "Taney writes that Black people were “beings of an inferior order” with “no rights which the white man was bound to respect.”",
+  "B": "Taney says the opposite: Black people were not citizens and could claim none of a citizen’s rights.",
+  "C": "Taney says Black people had no rights a white man was bound to respect, not freedom under the Constitution.",
+  "D": "Taney’s point is that Black people could not be citizens at all, so voting was never in question.",
+  "general": "1. Read Taney’s history: he claims Black people had long been regarded as an inferior order.\n2. Read his conclusion: they had no rights a white man was bound to respect.\n3. See the reach: the ruling covers free Black people too, not only enslaved people.\nRemember: when a court defines who counts as a person, read who it leaves out."
+ }
+}

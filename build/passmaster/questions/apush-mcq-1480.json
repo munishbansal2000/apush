@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1480",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.9"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.9 Government Policies During the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Thirteenth Amendment to the Constitution (ratified December 6, 1865)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Thirteenth Amendment to the Constitution, proposed by Congress January 31, 1865, ratified December 6, 1865. Public domain. Wording verified against the Constitution Annotated text.",
+  "text": "“Section 1. Neither slavery nor involuntary servitude, except as a punishment for crime whereof the party shall have been duly convicted, shall exist within the United States, or any place subject to their jurisdiction.\n\nSection 2. Congress shall have power to enforce this article by appropriate legislation.”\n\n—Thirteenth Amendment, as ratified December 6, 1865"
+ },
+ "stimulus_set": "thirteenth-amendment-1865",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The amendment keeps one exception: slavery or involuntary servitude may continue “as a punishment for crime whereof the party shall have been duly convicted.” That exception means the amendment",
+ "options": [
+  {
+   "key": "A",
+   "text": "bans all forced labor everywhere, including prison labor.",
+   "misconception": "Background: the text expressly excepts punishment for a crime after conviction, so prison labor is not banned by it."
+  },
+  {
+   "key": "B",
+   "text": "applies only to people convicted of crimes before 1865.",
+   "misconception": "Background: the exception has no date limit; it covers punishment for a crime after a conviction, whenever it happens."
+  },
+  {
+   "key": "C",
+   "text": "still allows forced labor as punishment after a criminal conviction."
+  },
+  {
+   "key": "D",
+   "text": "leaves slavery legal on Southern plantations after the war.",
+   "misconception": "Background: the amendment bans slavery throughout the country; the exception covers only punishment for a crime after conviction."
+  }
+ ],
+ "rationales": {
+  "A": "Background: the text expressly excepts punishment for a crime after conviction, so prison labor is not banned by it.",
+  "B": "Background: the exception has no date limit; it covers punishment for a crime after a conviction, whenever it happens.",
+  "D": "Background: the amendment bans slavery throughout the country; the exception covers only punishment for a crime after conviction.",
+  "C": "The amendment bans slavery except as punishment for a crime after conviction, so forced labor as a criminal punishment survives it.",
+  "general": "1. Read the ban and then read the small word that follows it: except.\n2. The exception is narrow: punishment for crime, and only after conviction.\n3. Everything else is banned, everywhere in the country.\n4. A ban with one narrow door is not a ban with no doors at all.\nRemember: in a legal text, the exception is part of the rule, so read it as carefully as the ban."
+ }
+}

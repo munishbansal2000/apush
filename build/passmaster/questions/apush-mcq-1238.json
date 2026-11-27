@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1238",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.2"
+ ],
+ "lesson": "apush-u5-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "3.B",
+  "3.C"
+ ],
+ "themes": [
+  "GEO",
+  "NAT"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "A. Westward Migrations"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Table of United States territorial acquisitions; areas and prices from the historical record. See Barron's Premium 2027, Chapter 7.",
+  "text": "| Acquisition | Year | Area | Price |\n| Louisiana Purchase | 1803 | 827,987 sq mi | $15 million |\n| Florida | 1819 | 72,101 sq mi | $5 million in assumed claims |\n| Texas annexation | 1845 | 389,166 sq mi | Annexation |\n| Oregon Treaty | 1846 | 286,541 sq mi | Treaty |\n| Mexican Cession | 1848 | 529,189 sq mi | $15 million plus $3.25 million in assumed claims |\n| Gadsden Purchase | 1853 | 29,670 sq mi | $10 million |"
+ },
+ "stimulus_set": "acquisitions-table",
+ "source": "original; stimulus is a table of United States territorial acquisitions compiled from the historical record",
+ "stem": "A student claims the Mexican Cession was the largest single addition of land in the 1840s. The table shows that claim is",
+ "options": [
+  {
+   "key": "A",
+   "text": "correct, because the Mexican Cession added more land than Texas or Oregon."
+  },
+  {
+   "key": "B",
+   "text": "incorrect, because the Louisiana Purchase added more land.",
+   "misconception": "The Louisiana Purchase was larger, but it was in 1803, not the 1840s."
+  },
+  {
+   "key": "C",
+   "text": "incorrect, because the Gadsden Purchase added more land.",
+   "misconception": "The Gadsden Purchase added only 29,670 square miles, far less than the Mexican Cession."
+  },
+  {
+   "key": "D",
+   "text": "incorrect, because Texas and Oregon together were smaller than the cession.",
+   "misconception": "Texas and Oregon together were larger than the cession, so this comparison does not refute the claim."
+  }
+ ],
+ "rationales": {
+  "A": "In the 1840s the cession's 529,189 square miles beat Texas's 389,166 and Oregon's 286,541, so it was the largest single addition of that decade.",
+  "B": "The Louisiana Purchase was larger, but it happened in 1803, not in the 1840s, so it does not touch a claim about the 1840s.",
+  "C": "The Gadsden Purchase added only 29,670 square miles, the smallest addition in the table.",
+  "D": "Texas and Oregon together covered 675,707 square miles, more than the cession — but two additions combined are not one single addition.",
+  "general": "1. Read the claim carefully. It says the largest single addition of land in the 1840s.\n2. Compare the 1840s rows. The Mexican Cession's 529,189 square miles tops Texas at 389,166 and Oregon at 286,541.\n3. Check the tempting rows. Louisiana was bigger but in 1803, and Texas plus Oregon is two additions, not one.\nRemember: a claim has a time and a unit. Check both — “in the 1840s” rules out Louisiana, and “single” rules out adding two rows together."
+ }
+}

@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1414",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.7"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.7 Election of 1860 and Secession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Jefferson Davis, Inaugural Address (February 18, 1861)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Jefferson Davis, Inaugural Address as provisional president of the Confederate States of America, Montgomery, Alabama, February 18, 1861. Public domain. Wording verified against The Papers of Jefferson Davis, vol. 7 (jeffersondavis.rice.edu) and the Avalon Project (avalon.law.yale.edu/19th_century/csa_csainau.asp). Passages appear in this order; '. . .' marks omitted text.",
+  "text": "Jefferson Davis, inaugurated as provisional president of the Confederate States of America at Montgomery, Alabama, on February 18, 1861, declared:\n\n. . . Our present condition, achieved in a manner unprecedented in the history of nations, illustrates the American idea that governments rest upon the consent of the governed, and that it is the right of the people to alter or abolish governments whenever they become destructive of the ends for which they were established. . . . We have changed the constituent parts, but not the system of our Government. The Constitution formed by our fathers is that of these Confederate States, in their exposition of it, and in the judicial construction it has received, we have a light which reveals its true meaning."
+ },
+ "stimulus_set": "davis-montgomery-1861",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Which of the following best explains why Davis's argument would have failed to persuade Northerners in 1861?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Northerners had never heard of the consent of the governed.",
+   "misconception": "Background: the consent of the governed was a familiar American idea; Northerners knew it well."
+  },
+  {
+   "key": "B",
+   "text": "Davis delivered the address in secret.",
+   "misconception": "Background: Davis delivered the address publicly at Montgomery on February 18, 1861."
+  },
+  {
+   "key": "C",
+   "text": "The Confederacy had no constitution at all.",
+   "misconception": "Background: the Confederacy adopted a provisional constitution on February 8, 1861."
+  },
+  {
+   "key": "D",
+   "text": "Northerners held that the Union was perpetual and secession unlawful."
+  }
+ ],
+ "rationales": {
+  "A": "Background: the consent of the governed was a familiar American idea; Northerners knew it well.",
+  "B": "Background: Davis delivered the address publicly at Montgomery on February 18, 1861.",
+  "C": "Background: the Confederacy adopted a provisional constitution on February 8, 1861.",
+  "D": "Davis claims a right to alter or abolish a government, but Lincoln's inaugural answered that no state can lawfully leave the Union on its own. Background: the two sides read the same Constitution and reached opposite verdicts on secession.",
+  "general": "1. Davis argues from consent: a people may alter its government.\n2. The North argued from perpetuity: the Union cannot be unmade by one party.\n3. Background: Lincoln's inaugural made the same point, calling secession ordinances legally void.\n4. The same book gave both sides their text.\nRemember: when two sides quote the same founding words, the argument is about which words count most."
+ }
+}

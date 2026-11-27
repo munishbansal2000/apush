@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-1597",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.12",
+  "5.9"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "5.B",
+  "6.A"
+ ],
+ "themes": [
+  "NAT",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.12 Comparison in Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "The Civil War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844-1877)"
+   }
+  ],
+  "primary_sources": [
+   "The Declaration of Independence, July 4, 1776",
+   "Abraham Lincoln, Gettysburg Address, November 19, 1863"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Source 1: The Declaration of Independence, July 4, 1776:\n“... We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.”\n\nSource 2: Abraham Lincoln, the Gettysburg Address, November 19, 1863:\n“... Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. ... we here highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth.”",
+  "source_note": "Source 1: The Declaration of Independence, July 4, 1776, quoted verbatim (National Archives). The leading ellipsis marks dropped opening words. Source 2: Abraham Lincoln, Gettysburg Address, November 19, 1863 (Bliss copy), quoted verbatim; ellipses mark omissions between non-adjacent passages. Both sources are public domain."
+ },
+ "stimulus_set": "two-revolutions",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Compared with the Revolutionaries of 1776, the Union in 1863 faced which difference in the fight for the idea that all men are created equal?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Union had to extend that idea to enslaved people the founders had left out."
+  },
+  {
+   "key": "B",
+   "text": "The Union fought to win independence from a foreign king across the sea.",
+   "misconception": "Background: the Union fought to preserve itself against secession, not to leave an empire."
+  },
+  {
+   "key": "C",
+   "text": "The Union rejected the Declaration's words entirely.",
+   "misconception": "Lincoln quotes the Declaration's central claim as the nation's founding proposition."
+  },
+  {
+   "key": "D",
+   "text": "The Union fought only for territory, not for any idea about freedom or equality.",
+   "misconception": "The Gettysburg Address frames the war as a test of whether a nation dedicated to equality can endure."
+  }
+ ],
+ "rationales": {
+  "A": "In 1776 the promise was written while slavery stood; by 1863 the war was fought over whether that promise would finally include enslaved people.",
+  "B": "Background: independence from Britain was the Revolution's fight; the Union's fight was against secession at home.",
+  "C": "Lincoln builds his whole address on the Declaration's words, the opposite of rejecting them.",
+  "D": "The address says the war tests whether any nation dedicated to the proposition can long endure.",
+  "general": "1. Ask what the idea covered in 1776: the founders wrote equality while slavery stood.\n2. Ask what it had to cover in 1863: the war was deciding whether enslaved people would be free.\n3. Background: the Emancipation Proclamation of 1863 and the Thirteenth Amendment of 1865 extended the promise.\n4. The idea stayed the same; the people it had to include grew.\nRemember: compare two eras by asking who the shared idea left out the first time."
+ }
+}

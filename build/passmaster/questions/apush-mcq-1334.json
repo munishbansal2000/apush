@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1334",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.5"
+ ],
+ "lesson": "apush-u5-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "3.A",
+  "2.A"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.5 Sectional Conflict: Regional Differences"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Figures from the United States census of 1860 and Historical Statistics of the United States. Rounded figures.",
+  "text": "| | Free states | Slave states |\n| Total population, 1860 | about 19 million | about 12 million |\n| Railroad miles, 1860 | about 22,000 | about 9,000 |\n| Cotton bales grown, 1860 | almost none | about 4.9 million |"
+ },
+ "stimulus_set": "two-sections-1860-table",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "A historian using this table to compare the sections would most need to remember that the table",
+ "options": [
+  {
+   "key": "A",
+   "text": "proves the South was poorer than the North in every way.",
+   "misconception": "The table shows cotton wealth on the Southern side; it measures people, railroads, and cotton, not total wealth."
+  },
+  {
+   "key": "B",
+   "text": "measures only a few things, so it cannot settle relative wealth."
+  },
+  {
+   "key": "C",
+   "text": "shows that the South had no industry at all.",
+   "misconception": "Background from the books: the table gives no industry row at all; it cannot show what it does not measure, and the South had some mills and ironworks."
+  },
+  {
+   "key": "D",
+   "text": "counts enslaved people as free-state residents.",
+   "misconception": "The population row counts all residents; the table’s free-state figure is the free states’ total, and slavery lived in the slave states."
+  }
+ ],
+ "rationales": {
+  "A": "The table shows cotton wealth on the Southern side; it measures people, railroads, and cotton, not total wealth.",
+  "B": "Three rows can show a lead in people and railroads and a lead in cotton, but wealth, income, and industry need more rows than this table holds.",
+  "C": "Background from the books: the table gives no industry row at all; it cannot show what it does not measure, and the South had some mills and ironworks.",
+  "D": "The population row counts all residents; the table’s free-state figure is the free states’ total, and slavery lived in the slave states.",
+  "general": "1. List what the table measures: people, railroad miles, cotton bales.\n2. List what it leaves out: wealth, wages, factory output, and land values.\n3. Hold the line: a table proves what it measures and stays silent on the rest, so a claim about total wealth needs a different table.\nRemember: the strongest use of a table is also the most modest; claim only what its rows show."
+ }
+}

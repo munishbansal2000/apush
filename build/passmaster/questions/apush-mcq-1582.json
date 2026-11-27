@@ -1,0 +1,81 @@
+{
+ "id": "apush-mcq-1582",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.12",
+  "5.10"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 2,
+ "answerKey": "D",
+ "skills": [
+  "5.A",
+  "1.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.12 Comparison in Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865-1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844-1877)"
+   }
+  ],
+  "primary_sources": [
+   "United States Constitution, Amendments XIII, XIV, XV, Section 1"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Thirteenth Amendment, Section 1 (ratified 1865):\n“Neither slavery nor involuntary servitude, except as a punishment for crime whereof the party shall have been duly convicted, shall exist within the United States, or any place subject to their jurisdiction.”\n\nFourteenth Amendment, Section 1 (ratified 1868):\n“All persons born or naturalized in the United States, and subject to the jurisdiction thereof, are citizens of the United States and of the State wherein they reside. No State shall make or enforce any law which shall abridge the privileges or immunities of citizens of the United States; nor shall any State deprive any person of life, liberty, or property, without due process of law; nor deny to any person within its jurisdiction the equal protection of the laws.”\n\nFifteenth Amendment, Section 1 (ratified 1870):\n“The right of citizens of the United States to vote shall not be denied or abridged by the United States or by any State on account of race, color, or previous condition of servitude.”",
+  "source_note": "Section 1 of each amendment, quoted verbatim from the United States Constitution (Constitution Annotated, Library of Congress, constitution.congress.gov). Public domain."
+ },
+ "stimulus_set": "three-amendments",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The Thirteenth Amendment differs from the Fourteenth Amendment in that the Thirteenth Amendment does which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Defines who is a citizen of the United States.",
+   "misconception": "The Fourteenth Amendment's first sentence defines citizenship, not the Thirteenth."
+  },
+  {
+   "key": "B",
+   "text": "Protects the right to vote against denial on account of race.",
+   "misconception": "The Fifteenth Amendment protects voting; the Thirteenth ends slavery."
+  },
+  {
+   "key": "C",
+   "text": "Guarantees the equal protection of the laws.",
+   "misconception": "The equal protection clause is the last clause of the Fourteenth Amendment, not the Thirteenth."
+  },
+  {
+   "key": "D",
+   "text": "Ends slavery itself, rather than defining the rights of free people."
+  }
+ ],
+ "rationales": {
+  "A": "The citizenship sentence opens the Fourteenth Amendment, not the Thirteenth.",
+  "B": "The voting clause belongs to the Fifteenth Amendment.",
+  "C": "Equal protection is the closing clause of the Fourteenth Amendment.",
+  "D": "The Thirteenth says slavery shall not exist anywhere under United States jurisdiction, while the Fourteenth builds rights for people now free.",
+  "general": "1. Read the Thirteenth first: it bans slavery and involuntary servitude everywhere in the country.\n2. Read the Fourteenth: it starts by saying who is a citizen, then lists rights.\n3. The Thirteenth removes a status; the Fourteenth defines what follows from being free.\n4. That is the difference: one ends slavery, the other builds citizenship on top of freedom.\nRemember: read each amendment for the job it does, not for the year it passed."
+ }
+}

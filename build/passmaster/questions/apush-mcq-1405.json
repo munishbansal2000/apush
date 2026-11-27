@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1405",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.7"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.7 Election of 1860 and Secession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Mississippi, Declaration of the Immediate Causes of Secession (January 9, 1861)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Mississippi, A Declaration of the Immediate Causes Which Induce and Justify the Secession of the State of Mississippi from the Federal Union, January 9, 1861. Public domain. Wording verified against the Mississippi Department of Archives and History text (mshistory.mdah.ms.gov) and Wikisource. Passages appear in this order; '. . .' marks omitted text.",
+  "text": ". . . Our position is thoroughly identified with the institution of slavery—the greatest material interest of the world. Its labor supplies the product which constitutes by far the largest and most important portions of the commerce of the earth. . . . That blow has been long aimed at the institution, and was at the point of reaching its consummation. There was no choice left us but submission to the mandates of abolition, or a dissolution of the Union, whose principles had been subverted to work out our ruin. . . . We must either submit to degradation, and to the loss of property worth four billions of money, or we must secede from the Union framed by our fathers to secure this as well as every other species of property."
+ },
+ "stimulus_set": "mississippi-declaration-1861",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The declaration's mention of “property worth four billions of money” is best understood as an appeal to which concern?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The fear that Northern factories would outproduce Southern farms",
+   "misconception": "The figure counts the value of enslaved people as property, not factory output."
+  },
+  {
+   "key": "B",
+   "text": "The hope that Europe would buy the Confederacy's cotton",
+   "misconception": "The passage says nothing about Europe or cotton buyers; it counts what secession would protect."
+  },
+  {
+   "key": "C",
+   "text": "The cost of building a Confederate army and navy",
+   "misconception": "The four billions is the value of slave property at risk, not the price of an army."
+  },
+  {
+   "key": "D",
+   "text": "The economic value of enslaved labor to Mississippi's economy"
+  }
+ ],
+ "rationales": {
+  "A": "The figure counts the value of enslaved people as property, not factory output.",
+  "B": "The passage says nothing about Europe or cotton buyers; it counts what secession would protect.",
+  "C": "The four billions is the value of slave property at risk, not the price of an army.",
+  "D": "The declaration treats enslaved people as property worth four billion dollars and says secession will secure it. Background: that sum was the planters' measure of what abolition would cost them.",
+  "general": "1. Four billion dollars is the price tag the declaration puts on slavery.\n2. It calls secession the way to secure that property.\n3. Background: cotton grown by enslaved labor was Mississippi's chief export and its planters' main wealth.\n4. The declaration argues in dollars because its audience counted in dollars.\nRemember: when a political document names a sum, it is telling you what its authors stood to lose."
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-1196",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.1"
+ ],
+ "lesson": "apush-u5-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "4.A"
+ ],
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.1 Contextualizing Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "map",
+  "source_note": "Map of the United States, the Area of Freedom and Slavery, published by G. W. Elliott, New York, 1856; public domain.",
+  "text": "A wall map printed in New York in 1856 is titled “Map of the United States, the Area of Freedom and Slavery, and the Territories Whose Destiny Is Yet to Be Decided.” It colors the free states pink and the slave states gray, draws the Missouri Compromise line at 36°30′ across the West, and shows portraits of John C. Frémont (left) and William L. Dayton (right) at the top. Below the map, tables compare the free states and the slave states using figures from the United States census of 1850."
+ },
+ "stimulus_set": "freedom-slavery-map-1856",
+ "source": "original; stimulus image from the shared pool, Map of the United States, the Area of Freedom and Slavery (1856), public domain",
+ "stem": "A historian comparing this 1856 map with the Compromise of 1820 would most likely conclude that",
+ "options": [
+  {
+   "key": "A",
+   "text": "the Missouri Compromise line still governed every territory shown on the map, from Kansas to California and Oregon.",
+   "misconception": "Kansas-Nebraska repealed the line in 1854, so it no longer governed the territories."
+  },
+  {
+   "key": "B",
+   "text": "the map’s makers believed the slavery question had been settled long ago by drawing a line across the West.",
+   "misconception": "The map calls the territories “yet to be decided,” so its makers thought the question was open."
+  },
+  {
+   "key": "C",
+   "text": "by 1856 the old geographic line had failed, and slavery’s fate in the territories was an open political fight."
+  },
+  {
+   "key": "D",
+   "text": "the free and slave states had agreed to divide all future territory evenly between them forever, in a lasting bargain.",
+   "misconception": "Nothing on the map shows such an agreement; the map presents a contest, not a deal."
+  }
+ ],
+ "rationales": {
+  "A": "The line is drawn on the map, but the Kansas-Nebraska Act had already repealed it two years earlier.",
+  "B": "A settled question would not be labeled “yet to be decided” in the map’s own title.",
+  "C": "The 1820 compromise drew the 36°30′ line to settle where slavery could go, but the map still draws the line while calling the territories undecided. Background: the Kansas-Nebraska Act of 1854 repealed the line and let settlers vote, so by 1856 no line settled the question.",
+  "D": "The map shows two sections in competition, with portraits of one side’s candidates, not a signed division.",
+  "general": "1. Recall the old answer. In 1820 the Missouri Compromise drew a line at 36°30′ to settle where slavery could go.\n2. Read this map’s title. The territories are “yet to be decided,” even though the line is still drawn on the map.\n3. Ask what changed between 1820 and 1856. The Kansas-Nebraska Act of 1854 repealed the line and let settlers vote on slavery.\n4. Draw the conclusion. A line on a map could no longer settle the question, so the fight moved into politics.\nRemember: when an old solution stops working, look for the law or event that broke it."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1196",
+   "file": "u5/5s24-ch14-mcq-01.jpg",
+   "caption": "Map of the United States, the Area of Freedom and Slavery, 1856",
+   "alt": "An 1856 wall map coloring the free states pink and the slave states gray, with the Missouri Compromise line drawn across the West and portraits of Frémont and Dayton at the top",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Map_of_the_United_States,_showing_by_colors_the_area_of_freedom_and_slavery,_and_the_territories_whose_destiny_is_yet_to_be_decided,_exhibiting_also_the_Missouri_compromise_line,_and_the_routes_of_(4578788503).jpg",
+   "license": "Public domain"
+  }
+ ]
+}

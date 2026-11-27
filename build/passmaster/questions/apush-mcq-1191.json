@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-1191",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.1"
+ ],
+ "lesson": "apush-u5-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "C",
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "GEO",
+  "MIG"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.1 Contextualizing Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "John Gast, “American Progress,” 1872, chromolithograph; public domain.",
+  "text": "A woman in flowing white robes, a star on her forehead, strides westward across the painting, carrying a book labeled “SCHOOL BOOK” in one hand and stringing telegraph wire with the other. Behind her follow covered wagons, a stagecoach, farmers plowing, and trains on new tracks. Ahead of her, to the west, Native American families on horseback and herds of buffalo flee into dark storm clouds."
+ },
+ "stimulus_set": "gast-american-progress",
+ "source": "original; stimulus image from the shared pool, John Gast, “American Progress” (1872), public domain",
+ "stem": "The painting most directly expresses which idea about the United States in the 1870s?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The federal government had ordered settlers to leave the western territories alone.",
+   "misconception": "The painting celebrates settlement; it does not show the government holding settlers back."
+  },
+  {
+   "key": "B",
+   "text": "Native American nations welcomed American settlers and shared their lands willingly.",
+   "misconception": "The Native families in the painting are fleeing west, not welcoming settlers."
+  },
+  {
+   "key": "C",
+   "text": "American expansion westward carried progress, schooling, and new technology across the continent."
+  },
+  {
+   "key": "D",
+   "text": "The western territories were empty land with no people living there before settlers arrived.",
+   "misconception": "Native families and buffalo are shown fleeing ahead of the settlers, so the land was inhabited."
+  }
+ ],
+ "rationales": {
+  "A": "The painting celebrates settlement, so it cannot show the government ordering settlers to stay out.",
+  "B": "The Native families ride away from the settlers, not toward them, so they are not shown welcoming anyone.",
+  "C": "The woman leads settlers, wagons, and trains west while carrying a school book and stringing telegraph wire, so the painting pictures expansion as the spread of learning and technology. Background: this was the era’s Manifest Destiny idea, that the United States was meant to carry its ways across the whole continent.",
+  "D": "Native families and herds of buffalo fill the western half of the painting, so the land was not empty.",
+  "general": "1. Start with the woman. She strides west carrying a school book and stringing telegraph wire.\n2. Look at what follows her. Covered wagons, a stagecoach, farmers plowing, and trains fill the land behind her.\n3. Look at what runs ahead of her. Native families and buffalo flee west into dark storm clouds.\n4. Put the two sides together. One side brings light, schools, and new tools, while the other side is pushed away into the dark.\nRemember: a painting can argue a point of view, so ask what the artist put in the light and what was pushed into the dark."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1191",
+   "file": "u5/original-ctx-u5-02.jpg",
+   "caption": "John Gast, “American Progress,” 1872",
+   "alt": "John Gast's 1872 painting “American Progress” — a woman in white strides westward carrying a school book and telegraph wire, followed by wagons and trains, while Native Americans and buffalo flee ahead of her",
+   "source_url": "https://commons.wikimedia.org/wiki/File:American_Progress_(John_Gast_painting).jpg",
+   "license": "Public domain"
+  }
+ ]
+}

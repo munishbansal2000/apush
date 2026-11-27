@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1464",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.9"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "2.B",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.9 Government Policies During the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Abraham Lincoln, Emancipation Proclamation (January 1, 1863)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Abraham Lincoln, Emancipation Proclamation, January 1, 1863. Public domain. Wording verified against the Avalon Project text. Leading “...” marks the omitted opening of the quoted sentence; “. . .” marks omitted text between passages, quoted in their order in the source.",
+  "text": "“... And by virtue of the power, and for the purpose aforesaid, I do order and declare that all persons held as slaves within said designated States, and parts of States, are, and henceforward shall be free; and that the Executive government of the United States, including the military and naval authorities thereof, will recognize and maintain the freedom of said persons. . . . And I further declare and make known, that such persons of suitable condition, will be received into the armed service of the United States to garrison forts, positions, stations, and other places, and to man vessels of all sorts in said service. . . . And upon this act, sincerely believed to be an act of justice, warranted by the Constitution, upon military necessity, I invoke the considerate judgment of mankind, and the gracious favor of Almighty God.”\n\n—Abraham Lincoln, Emancipation Proclamation, January 1, 1863"
+ },
+ "stimulus_set": "ep-order-and-arms-1863",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The proclamation says freed people “will be received into the armed service of the United States.” That line shows that Lincoln intended emancipation to",
+ "options": [
+  {
+   "key": "A",
+   "text": "add Black soldiers to the Union army and take labor away from the Confederacy."
+  },
+  {
+   "key": "B",
+   "text": "end slavery at once in every state in the Union, including the loyal border states.",
+   "misconception": "Background: the proclamation freed people only in rebel territory, not in the loyal border states."
+  },
+  {
+   "key": "C",
+   "text": "give freed people the right to vote in the presidential election of 1864.",
+   "misconception": "Background: the proclamation says nothing about voting; Black men did not gain the vote nationwide until the Fifteenth Amendment in 1870."
+  },
+  {
+   "key": "D",
+   "text": "send freed people away to settle in Africa under a colonization plan.",
+   "misconception": "Background: the proclamation invites freed people into Union service, not out of the country."
+  }
+ ],
+ "rationales": {
+  "B": "Background: the proclamation freed people only in rebel territory, not in the loyal border states.",
+  "C": "Background: the proclamation says nothing about voting; Black men did not gain the vote nationwide until the Fifteenth Amendment in 1870.",
+  "D": "Background: the proclamation invites freed people into Union service, not out of the country.",
+  "A": "The proclamation opens Union ranks to freed people, so emancipation becomes a source of soldiers as well as a blow to Confederate labor.",
+  "general": "1. The passage does two things at once: it declares people free, then it enlists them.\n2. Enlisting them puts new soldiers in Union ranks.\n3. Every enslaved person who leaves also takes labor the Confederacy counted on.\n4. Lincoln is turning the South’s workforce into the North’s army.\nRemember: when a war order frees people and arms them, it is a weapon aimed at the enemy’s strength."
+ }
+}

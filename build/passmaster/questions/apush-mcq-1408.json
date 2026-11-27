@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1408",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.7"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "3.C"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.7 Election of 1860 and Secession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Crittenden Compromise, proposed Article 1 (December 18, 1860)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Senator John J. Crittenden, proposed amendments to the Constitution (S. No. 50), Article 1, introduced December 18, 1860. Public domain. Wording verified against the Teaching American History text (teachingamericanhistory.org/document/crittenden-compromise/) and the Congressional Globe text (vlib.us/amdocs/texts/critte~1.html). '. . .' marks the omitted resolution preamble.",
+  "text": ". . . In all the territory of the United States now held, or hereafter acquired, situate north of 36 degrees 30 minutes, slavery or involuntary servitude, except as a punishment for crime, is prohibited while such territory shall remain under territorial government. In all the territory south of said line of latitude, slavery of the African race is hereby recognized as existing, and shall not be interfered with by Congress, but shall be protected as property by all the departments of the territorial government during its continuance."
+ },
+ "stimulus_set": "crittenden-compromise",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The Crittenden Compromise failed most directly because Republicans refused to accept which part of it?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The ban on slavery north of 36 degrees 30 minutes",
+   "misconception": "Background: Republicans had no quarrel with banning slavery north of the line; they had run on keeping slavery out of the territories."
+  },
+  {
+   "key": "B",
+   "text": "Federal protection of slavery south of the line"
+  },
+  {
+   "key": "C",
+   "text": "The payment of slaveholders for fugitive slaves",
+   "misconception": "Background: the fugitive-slave payment was one of Crittenden's later articles, not the part that sank the compromise."
+  },
+  {
+   "key": "D",
+   "text": "The admission of New Mexico as a slave state",
+   "misconception": "Background: no state was admitted under the compromise; it died before any territory applied."
+  }
+ ],
+ "rationales": {
+  "A": "Background: Republicans had no quarrel with banning slavery north of the line; they had run on keeping slavery out of the territories.",
+  "B": "Protecting slavery south of the line would have surrendered the free-soil position that had just won Republicans the election. Background: Lincoln and his party would not give up the one principle their victory rested on.",
+  "C": "Background: the fugitive-slave payment was one of Crittenden's later articles, not the part that sank the compromise.",
+  "D": "Background: no state was admitted under the compromise; it died before any territory applied.",
+  "general": "1. The article offers the North a ban above the line and the South protection below it.\n2. The protection below the line was the price of the deal.\n3. Background: the Republican platform promised to keep slavery out of all the territories, and Lincoln would not trade that away.\n4. A compromise fails when its price is the winner's platform.\nRemember: a deal dies on the clause the winner cannot sign, not on the clause everyone already accepts."
+ }
+}

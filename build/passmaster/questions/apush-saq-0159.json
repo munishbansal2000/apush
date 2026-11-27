@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0159",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.9"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "3.B",
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.9 Government Policies During the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Abraham Lincoln, Emancipation Proclamation (January 1, 1863)"
+  ]
+ },
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "saq_slot": 2,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Abraham Lincoln, Emancipation Proclamation, January 1, 1863. Public domain. Wording verified against the Avalon Project text.",
+  "text": "“And I hereby enjoin upon the people so declared to be free to abstain from all violence, unless in necessary self-defence; and I recommend to them that, in all cases when allowed, they labor faithfully for reasonable wages.”\n\n—Abraham Lincoln, Emancipation Proclamation, January 1, 1863"
+ },
+ "stimulus_set": null,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify and briefly explain ONE thing Lincoln asks freed people to do in this passage.",
+   "modelAnswer": "Lincoln asks freed people to abstain from violence except in self-defence and to labor faithfully for reasonable wages. He is telling them to accept freedom peacefully and to work for pay rather than to rise against their former owners. The passage shows him urging order at the very moment he declares them free.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying and explaining one thing Lincoln asks, such as abstaining from violence or laboring faithfully for wages.",
+     "notEarned": "Quoting the passage with no explanation of what Lincoln asks does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason Lincoln included this appeal to freed people in the proclamation.",
+   "modelAnswer": "Lincoln included the appeal because he feared white Northerners and border-state Unionists would see emancipation as an invitation to slave rebellion. By urging freed people to work peacefully for wages, he presented emancipation as orderly and safe. The appeal also answered critics who claimed he meant to incite violence in the South.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason for the appeal, such as reassuring whites that emancipation would be peaceful.",
+     "notEarned": "Saying Lincoln wanted peace, with no reason tied to his audience or critics, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE way the Emancipation Proclamation changed the Union’s war aims.",
+   "modelAnswer": "The proclamation added ending slavery to the Union’s war aims, which had been only to restore the Union. It also opened the Union army to Black soldiers, so freed people could fight for their own freedom. From 1863 on, a Union victory meant freedom as well as reunion.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one change in Union war aims, such as adding emancipation or opening the army to Black soldiers.",
+     "notEarned": "Saying the aims changed, with no specific change explained, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

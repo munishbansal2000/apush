@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-1446",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.8"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "B",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.8 Military Conflict in the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Abraham Lincoln, Gettysburg Address (November 19, 1863)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Abraham Lincoln, Gettysburg Address, delivered November 19, 1863. Public domain; Bliss copy text. The two quoted passages appear in this order in the address; “. . .” marks omitted text. The figure shows the Bliss copy in Lincoln’s hand.",
+  "text": "“Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. . . . But, in a larger sense, we can not dedicate—we can not consecrate—we can not hallow—this ground. . . . It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us—that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion—that we here highly resolve that these dead shall not have died in vain. . . . that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth.”\n\n—Abraham Lincoln, Gettysburg Address, November 19, 1863 (Bliss copy)"
+ },
+ "stimulus_set": "gettysburg-address",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Lincoln opens by dating the nation to “four score and seven years ago.” He is dating it to",
+ "options": [
+  {
+   "key": "A",
+   "text": "the end of the Revolutionary War.",
+   "misconception": "Background: the war ended in 1783, six years after the date Lincoln names."
+  },
+  {
+   "key": "B",
+   "text": "the Declaration of Independence in 1776."
+  },
+  {
+   "key": "C",
+   "text": "the Constitution in 1789.",
+   "misconception": "Background: the Constitution came thirteen years after the date Lincoln names."
+  },
+  {
+   "key": "D",
+   "text": "his own election as president in 1860.",
+   "misconception": "Background: Lincoln was elected in 1860, three years before the address, not 87 years before."
+  }
+ ],
+ "rationales": {
+  "A": "Background: the war ended in 1783, six years after the date Lincoln names.",
+  "B": "Four score and seven is 87 years; 1863 minus 87 is 1776, the year of the Declaration.",
+  "C": "Background: the Constitution came thirteen years after the date Lincoln names.",
+  "D": "Background: Lincoln was elected in 1860, three years before the address, not 87 years before.",
+  "general": "1. A score is twenty years, so four score and seven is 87 years.\n2. Count back 87 years from November 1863 and you land in 1776.\n3. Background: in 1776 the founders declared that all men are created equal.\n4. Lincoln starts there on purpose: the war must be judged against that promise.\nRemember: a score is twenty: do the subtraction before you guess the date."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1446",
+   "file": "u5/original-ctx-u5-07.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Gettysburg_Address_Bliss_copy.jpg",
+   "license": "Public domain (written by Abraham Lincoln, 1863)",
+   "caption": "The Bliss copy of the Gettysburg Address, in Lincoln’s hand.",
+   "alt": "A handwritten page shows the Gettysburg Address in Abraham Lincoln’s own handwriting, the Bliss copy."
+  }
+ ]
+}

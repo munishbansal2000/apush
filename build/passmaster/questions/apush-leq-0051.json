@@ -1,0 +1,87 @@
+{
+ "id": "apush-leq-0051",
+ "type": "leq",
+ "unit": 5,
+ "topics": [
+  "5.8"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.8 Military Conflict in the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ]
+ },
+ "source": "original; prompt written for this question",
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "stimulus_set": null,
+ "prompt": "The Civil War began in 1861 as a war to preserve the Union. By 1865 it had become a war that ended slavery and vastly expanded the power of the federal government.\n\nEvaluate the extent to which Union military victory in the Civil War caused the expansion of federal power in the period 1861–1877.\n\nYour argument must address causation, and must be supported by specific evidence from the period 1861–1877.",
+ "totalPoints": 6,
+ "modelOutline": "Thesis: Union military victory caused the expansion of federal power to a great extent, because winning the war required the federal government to raise armies, print money, and free enslaved people, and the victory then let Washington impose new terms on the defeated South, though the expansion was checked after 1877 when federal troops left the South and the old order returned in new forms.\nEvidence bucket 1 — the war itself: Lincoln’s suspension of habeas corpus, the draft of 1863, greenbacks and the National Banks Acts, and the Emancipation Proclamation as a war measure.\nEvidence bucket 2 — victory’s settlement: the Thirteenth, Fourteenth, and Fifteenth Amendments, the Freedmen’s Bureau, and the Reconstruction Acts with federal troops in the South.\nEvidence bucket 3 — the limits: the Supreme Court’s narrowing of the amendments, the Compromise of 1877, and the return of home rule in the South.\nComplexity: the same victory that expanded federal power also showed its limits, since the government that could win a war could not hold the South’s consent once its armies left.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which Union military victory caused the expansion of federal power, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the secession crisis, the war’s outbreak, or the antebellum limits on federal power.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing at least two specific and relevant pieces of evidence, such as the examples named in the outline.",
+   "notEarned": "General statements with no specific example do not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for using evidence to support the argument throughout, not as a list, showing how the evidence builds the claim step by step.",
+   "notEarned": "Listing examples with no explanation of how they support the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.C",
+   "criterion": "Analysis and reasoning (causation): earns the point for explaining how the evidence shows the causation claimed, linking examples to the thesis.",
+   "notEarned": "Listing examples with no explanation of how they show causation does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.D",
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the thesis by region or by group, or weighing change against continuity.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ]
+}

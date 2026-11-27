@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0139",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.3"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "skills": [
+  "1.B",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.3 The Mexican-American War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "David Wilmot, speech defending the Wilmot Proviso, February 8, 1847"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question; facts from the grounding books.",
+  "text": "The war with Mexico ended in 1848 with the Treaty of Guadalupe Hidalgo. For $15 million the United States took California and the Southwest, land that had been Mexico's northern provinces. The victory completed the dream of a nation stretching to the Pacific Ocean.\n\nBut every new acre raised the same question: would slavery be allowed there? In 1846 David Wilmot had proposed banning slavery in any land taken from Mexico. The Proviso failed, yet it made the future of slavery in the West the central question of American politics, and new parties soon formed around it."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one territorial gain the United States made in the Mexican-American War, as described in the passage.",
+   "modelAnswer": "The United States took California from Mexico in the war, along with the Southwest, the region that became New Mexico, Nevada, Utah, and parts of other present-day states. Any one of these gains answers the question.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one territorial gain from the passage, such as California or the Southwest.",
+     "notEarned": "Naming a gain from outside the war, or a vague answer with no gain identified, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how the Wilmot Proviso showed that the war had made slavery a national political question.",
+   "modelAnswer": "The Proviso tried to ban slavery in all land taken from Mexico, and it split Congress by section rather than by party. Northerners in both parties voted for it and Southerners in both parties voted against it, so a war over land had become a national fight over slavery.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how the Proviso divided Congress by section over slavery in the new lands, with at least one specific detail from the passage or the vote.",
+     "notEarned": "Restating that the Proviso was about slavery, with no explanation of the sectional split, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one political development that resulted from the argument over slavery in the territories taken from Mexico.",
+   "modelAnswer": "The Free-Soil Party formed in 1848 around opposition to slavery's expansion, with Martin Van Buren as its candidate for president. It won about 10 percent of the popular vote, showing that the argument over the new lands had created a new political force.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one political development from the argument, such as the Free-Soil Party's formation in 1848 or its vote in that election.",
+     "notEarned": "Naming a development with no explanation of how the argument over the new lands caused it does not earn the point."
+    }
+   ]
+  }
+ ]
+}

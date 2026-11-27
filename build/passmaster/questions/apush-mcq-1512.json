@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1512",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.10"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.10 Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "First Military Reconstruction Act (March 2, 1867)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "“Whereas no legal State governments or adequate protection for life or property now exists in the rebel States of Virginia, North Carolina, South Carolina, Georgia, Mississippi, Alabama, Louisiana, Florida, Texas, and Arkansas; and whereas it is necessary that peace and good order should be enforced in said States until loyal and republican State governments can be legally established: Therefore, Be it enacted . . . That said rebel States shall be divided into military districts and made subject to the military authority of the United States as hereinafter prescribed, and for that purpose Virginia shall constitute the first district; North Carolina and South Carolina the second district; Georgia, Alabama, and Florida the third district; Mississippi and Arkansas the fourth district; and Louisiana and Texas the fifth district.”\n\n—First Military Reconstruction Act, March 2, 1867",
+  "source_note": "First Military Reconstruction Act, March 2, 1867. Public domain. Wording verified against the act text reproduced by the Andrew Johnson National Historic Site, National Park Service. Ellipsis marks omitted words in the enacting clause."
+ },
+ "stimulus_set": "military-reconstruction-act",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Tennessee is not named in this act. The best explanation is that Tennessee",
+ "options": [
+  {
+   "key": "A",
+   "text": "had never seceded from the Union in 1861.",
+   "misconception": "Background: Tennessee did secede in 1861, though its Unionists, including Andrew Johnson, stayed loyal."
+  },
+  {
+   "key": "B",
+   "text": "was still fighting the war in 1867.",
+   "misconception": "Background: the war had been over for two years when the act passed."
+  },
+  {
+   "key": "C",
+   "text": "had already ratified the Fourteenth Amendment and been readmitted."
+  },
+  {
+   "key": "D",
+   "text": "was governed by the Freedmen’s Bureau instead.",
+   "misconception": "Background: the Bureau worked in Tennessee too, but it never governed the state."
+  }
+ ],
+ "rationales": {
+  "A": "Background: Tennessee did secede in 1861, though its Unionists, including Andrew Johnson, stayed loyal.",
+  "B": "Background: the war had been over for two years when the act passed.",
+  "C": "Tennessee ratified the Fourteenth Amendment in 1866 and regained representation, so Congress had no need to put it under military rule. The act names only the ten states still outside the Union.",
+  "D": "Background: the Bureau worked in Tennessee too, but it never governed the state.",
+  "general": "1. The act lists ten states, and Tennessee is missing from the list.\n2. Background: Tennessee had ratified the Fourteenth Amendment the year before and been readmitted.\n3. The act was written for states still outside, so Tennessee simply did not belong in it.\n4. An absence in a list can be as telling as a name on it.\nRemember: when a list leaves someone out, ask what that someone already did."
+ }
+}

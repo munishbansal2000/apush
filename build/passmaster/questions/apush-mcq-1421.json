@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-1421",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.7"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "D",
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.7 Election of 1860 and Secession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "map",
+  "source_note": "Presidential election results by county, 1860 (Tilden76, Wikimedia Commons, File:PresidentialCounty1860Colorbrewer.gif; data: Minnesota Population Center, National Historical Geographic Information System v2.0, 2011). Viewed before writing. The file page confirms: “No vote was taken in South Carolina because presidential electors were chosen by the state legislature.” License: attribution — free use with credit to the holder.",
+  "text": "A map of the presidential election of 1860, by county. Red shades mark counties won by Abraham Lincoln, green shades counties won by John C. Breckinridge, blue shades counties won by Stephen A. Douglas, and yellow shades counties won by John Bell. Purple shades mark counties where fusion tickets won. Hatched counties mark ties. Darker shades mean a larger share of the vote. Gray marks counties where no vote was recorded. The territories in the West cast no electoral votes."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1421",
+   "file": "u5/election-1860-county-map.gif",
+   "caption": "Presidential election of 1860, results by county",
+   "alt": "A county map of the United States in 1860: the North and West are shaded red for Lincoln, the Deep South green for Breckinridge, with yellow for Bell in Virginia, Kentucky, and Tennessee and blue for Douglas in Missouri and scattered Northern counties",
+   "source_url": "https://commons.wikimedia.org/wiki/File:PresidentialCounty1860Colorbrewer.gif",
+   "license": "CC BY — Tilden76, Wikimedia Commons; data: Minnesota Population Center, NHGIS v2.0 (2011)"
+  }
+ ],
+ "stimulus_set": "election-1860-map",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "According to the map, which candidate won the counties of the Deep South?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Abraham Lincoln",
+   "misconception": "The map shades the North red for Lincoln; the Deep South is green."
+  },
+  {
+   "key": "B",
+   "text": "Stephen A. Douglas",
+   "misconception": "The map shades Douglas's counties blue, scattered in the North and Missouri, not the Deep South."
+  },
+  {
+   "key": "C",
+   "text": "John Bell",
+   "misconception": "The map shades Bell's counties yellow in Virginia, Kentucky, and Tennessee, not the Deep South."
+  },
+  {
+   "key": "D",
+   "text": "John C. Breckinridge"
+  }
+ ],
+ "rationales": {
+  "A": "The map shades the North red for Lincoln; the Deep South is green.",
+  "B": "The map shades Douglas's counties blue, scattered in the North and Missouri, not the Deep South.",
+  "C": "The map shades Bell's counties yellow in Virginia, Kentucky, and Tennessee, not the Deep South.",
+  "D": "The Deep South is shaded green, and the map's key gives green to Breckinridge.",
+  "general": "1. Find the Deep South on the map: the states along the Gulf.\n2. Their color is green.\n3. The key says green is Breckinridge.\n4. Color plus key is the whole answer.\n5. Background: Breckinridge also won Maryland and Delaware, the border slave states in green.\nRemember: a map question is a key question — read the key first, then the map."
+ }
+}

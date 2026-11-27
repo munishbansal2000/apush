@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1221",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.2"
+ ],
+ "lesson": "apush-u5-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "3.A",
+  "5.A"
+ ],
+ "themes": [
+  "NAT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "A. Westward Migrations"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Table compiled from the historical record; boundaries and dates from the Oregon boundary dispute. See Barron's Premium 2027, Chapter 7, and 5 Steps to a 5, 2024, Chapter 14.",
+  "text": "| Proposal | Year | Boundary |\n| United States claim | 1844–1846 | 54°40′ (the southern edge of Russian Alaska) |\n| Offer made by the United States | 1845 | 49th parallel |\n| British counter-proposal | 1845 | Columbia River |\n| Oregon Treaty | June 15, 1846 | 49th parallel to the Strait of Georgia, then through the Strait of Juan de Fuca |"
+ },
+ "stimulus_set": "oregon-boundary-table",
+ "source": "original; stimulus is a table compiled from the historical record of the Oregon boundary dispute",
+ "stem": "The slogan “54°40′ or Fight” is best understood in light of the table as",
+ "options": [
+  {
+   "key": "A",
+   "text": "a promise Polk made in his inaugural address to go to war with Britain.",
+   "misconception": "The slogan was aimed at Polk, not spoken by him; Polk settled the dispute by treaty, not war."
+  },
+  {
+   "key": "B",
+   "text": "the line Britain proposed as a compromise in 1845.",
+   "misconception": "Britain proposed the Columbia River; 54°40′ was the American claim."
+  },
+  {
+   "key": "C",
+   "text": "the boundary the Oregon Treaty finally established.",
+   "misconception": "The treaty set the line at the 49th parallel, well south of 54°40′."
+  },
+  {
+   "key": "D",
+   "text": "a demand for the fullest American claim, which the United States later gave up."
+  }
+ ],
+ "rationales": {
+  "A": "The slogan was directed at Polk by expansionists, not spoken by him, and Polk compromised rather than fighting Britain. Background: Princeton notes the slogan was aimed at Polk, not his own words.",
+  "B": "Britain's counter-proposal was the Columbia River; 54°40′ was the American claim, not a British offer.",
+  "C": "The treaty line was the 49th parallel, not 54°40′, so the slogan's line was not the settlement.",
+  "D": "54°40′ was the fullest American claim in the table, and the United States gave it up to settle at the 49th parallel.",
+  "general": "1. Find 54°40′ in the table. It is the United States' opening claim, the farthest north.\n2. Find where the dispute ended. The treaty set the line at the 49th parallel, south of 54°40′.\n3. Read the slogan against that gap. It demanded the full claim — and the full claim was the part given up.\nRemember: a slogan can outlive the bargain. “54°40′ or Fight” sounds absolute, but the settlement was a compromise."
+ }
+}

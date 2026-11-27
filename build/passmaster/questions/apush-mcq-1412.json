@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1412",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.7"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "A",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.7 Election of 1860 and Secession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Jefferson Davis, Inaugural Address (February 18, 1861)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Jefferson Davis, Inaugural Address as provisional president of the Confederate States of America, Montgomery, Alabama, February 18, 1861. Public domain. Wording verified against The Papers of Jefferson Davis, vol. 7 (jeffersondavis.rice.edu) and the Avalon Project (avalon.law.yale.edu/19th_century/csa_csainau.asp). Passages appear in this order; '. . .' marks omitted text.",
+  "text": "Jefferson Davis, inaugurated as provisional president of the Confederate States of America at Montgomery, Alabama, on February 18, 1861, declared:\n\n. . . Our present condition, achieved in a manner unprecedented in the history of nations, illustrates the American idea that governments rest upon the consent of the governed, and that it is the right of the people to alter or abolish governments whenever they become destructive of the ends for which they were established. . . . We have changed the constituent parts, but not the system of our Government. The Constitution formed by our fathers is that of these Confederate States, in their exposition of it, and in the judicial construction it has received, we have a light which reveals its true meaning."
+ },
+ "stimulus_set": "davis-montgomery-1861",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Davis justifies the Confederacy's creation by appealing to which idea?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The consent of the governed"
+  },
+  {
+   "key": "B",
+   "text": "The divine right of kings",
+   "misconception": "Davis appeals to the people's consent, not to kings or divine right."
+  },
+  {
+   "key": "C",
+   "text": "The supremacy of the Supreme Court",
+   "misconception": "Davis cites the Constitution's meaning, not the Court's supremacy."
+  },
+  {
+   "key": "D",
+   "text": "The economic power of cotton",
+   "misconception": "The passage argues from the consent of the governed, not from cotton."
+  }
+ ],
+ "rationales": {
+  "A": "Davis says the Confederacy “illustrates the American idea that governments rest upon the consent of the governed.”",
+  "B": "Davis appeals to the people's consent, not to kings or divine right.",
+  "C": "Davis cites the Constitution's meaning, not the Court's supremacy.",
+  "D": "The passage argues from the consent of the governed, not from cotton.",
+  "general": "1. Davis opens with a principle, not a grievance: governments rest on consent.\n2. From that principle he claims a right to alter or abolish a government.\n3. Background: the argument borrows the Declaration of Independence, which the seceded states quoted against the Union.\n4. Old words, new cause.\nRemember: when a new government quotes the old revolution, check which words it keeps and which it drops."
+ }
+}

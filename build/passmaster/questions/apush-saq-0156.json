@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0156",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.8"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.8 Military Conflict in the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Abraham Lincoln, Second Inaugural Address (March 4, 1865)"
+  ]
+ },
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "saq_slot": 2,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Abraham Lincoln, Second Inaugural Address, March 4, 1865. Public domain.",
+  "text": "“With malice toward none, with charity for all, with firmness in the right as God gives us to see the right, let us strive on to finish the work we are in, to bind up the nation’s wounds, to care for him who shall have borne the battle and for his widow and his orphan, to do all which may achieve and cherish a just and lasting peace among ourselves and with all nations.”\n\n—Abraham Lincoln, Second Inaugural Address, March 4, 1865"
+ },
+ "stimulus_set": null,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one goal Lincoln sets for the nation in this passage.",
+   "modelAnswer": "One goal Lincoln sets is to bind up the nation’s wounds, caring for the soldiers who fought and for their widows and orphans. He calls for a peace built on charity rather than revenge, with firmness in the right but malice toward none.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one goal in the passage, such as binding up the nation’s wounds, caring for veterans and their families, or achieving a just and lasting peace.",
+     "notEarned": "Quoting the passage with no goal identified does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how the experience of the Civil War shaped the goals Lincoln states in this passage.",
+   "modelAnswer": "Four years of killing had left hundreds of thousands dead and wounded and much of the South in ruins, and more than 3 million men had fought. That cost demanded a peace that healed rather than punished, so Lincoln promises care for the wounded and the bereaved.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how the war’s experience shaped Lincoln’s goals, such as the death toll, the wounded, or the ruin of the South requiring healing and care.",
+     "notEarned": "Restating Lincoln’s words with no link to the war’s experience does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain how Lincoln’s call for “malice toward none” differed from the views of many Northerners in 1865.",
+   "modelAnswer": "Many Northerners wanted the South punished for secession and the war, with its leaders tried and its states kept under strict rule. Radical Republicans in Congress wanted a reconstruction that punished the South, while Lincoln offered reconciliation and a quick return to the Union.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how Lincoln’s call differed from harsher Northern views, such as Radical Republican demands to punish the South or try its leaders.",
+     "notEarned": "Naming the Radical Republicans with no explanation of the difference does not earn the point."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-1426",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.8"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "B",
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.8 Military Conflict in the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "J. B. Elliott, Scott’s Great Snake (1861)"
+  ]
+ },
+ "stimulus": {
+  "kind": "map",
+  "source_note": "J. B. Elliott, Scott’s Great Snake, entered according to Act of Congress in 1861 (Library of Congress, LOC 99447020). Public domain. Image from the shared pool.",
+  "text": "The cartoon map is titled “Scott’s Great Snake.” A giant snake coils around the Southern states, its head at the Mississippi River and its body wrapping the Atlantic and Gulf coasts. Small scenes fill the map: a train in Ohio, “Armed Neutrality” in Kentucky, and “Burning Massa Out” in Mississippi."
+ },
+ "stimulus_set": "scotts-great-snake",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Which part of the plan shown in the cartoon would have taken the longest for the Union to achieve?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Winning a single battle in Virginia.",
+   "misconception": "One battle is quick work; the snake shows a plan that takes years."
+  },
+  {
+   "key": "B",
+   "text": "Blockading about 3,500 miles of Southern coastline."
+  },
+  {
+   "key": "C",
+   "text": "Electing Abraham Lincoln president.",
+   "misconception": "Background: Lincoln was already elected in 1860, before the cartoon was drawn."
+  },
+  {
+   "key": "D",
+   "text": "Moving the Confederate capital to Richmond.",
+   "misconception": "Background: Richmond became the Confederate capital when Virginia seceded; it was not a Union task."
+  }
+ ],
+ "rationales": {
+  "A": "One battle is quick work; the snake shows a plan that takes years.",
+  "B": "Background from the books: the South had about 3,500 miles of coastline, and closing it took years.",
+  "C": "Background: Lincoln was already elected in 1860, before the cartoon was drawn.",
+  "D": "Background: Richmond became the Confederate capital when Virginia seceded; it was not a Union task.",
+  "general": "1. The snake’s coil is slow work: it has to close every port along a huge coast.\n2. Background from the books: the Confederacy had about 3,500 miles of coastline to guard and the Union had to cover.\n3. A battle in Virginia takes a day; a blockade takes years to build.\n4. The cartoon’s joke is that the snake squeezes slowly.\nRemember: a plan that wraps a whole coast is a plan measured in years, not days."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1426",
+   "file": "u5/5s24-ch15-mcq-06.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Scott%27s_great_snake._Entered_according_to_Act_of_Congress_in_the_year_1861_LOC_99447020.jpg",
+   "license": "Public domain (published 1861; Library of Congress)",
+   "caption": "J. B. Elliott, Scott’s Great Snake, 1861 cartoon map.",
+   "alt": "A cartoon map from 1861 shows a giant snake coiling around the Southern states, its head at the Mississippi River and its body along the coasts."
+  }
+ ]
+}

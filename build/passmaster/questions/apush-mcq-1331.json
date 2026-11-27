@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1331",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.5"
+ ],
+ "lesson": "apush-u5-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "D",
+ "skills": [
+  "2.A",
+  "1.A"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.5 Sectional Conflict: Regional Differences"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Figures from the United States census of 1860 and Historical Statistics of the United States. Rounded figures.",
+  "text": "| | Free states | Slave states |\n| Total population, 1860 | about 19 million | about 12 million |\n| Railroad miles, 1860 | about 22,000 | about 9,000 |\n| Cotton bales grown, 1860 | almost none | about 4.9 million |"
+ },
+ "stimulus_set": "two-sections-1860-table",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "According to the table, the free states in 1860 had more of which of the following than the slave states?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Cotton bales grown.",
+   "misconception": "The table gives cotton to the slave states, about 4.9 million bales, and almost none to the free states."
+  },
+  {
+   "key": "B",
+   "text": "Enslaved people.",
+   "misconception": "Background from the books: nearly 4 million enslaved people lived in the slave states in 1860; the free states held almost none."
+  },
+  {
+   "key": "C",
+   "text": "Land devoted to plantation agriculture.",
+   "misconception": "The table shows cotton, the plantation crop, grown in the slave states; the free states lead in people and railroads, not plantations."
+  },
+  {
+   "key": "D",
+   "text": "People and railroad miles."
+  }
+ ],
+ "rationales": {
+  "A": "The table gives cotton to the slave states, about 4.9 million bales, and almost none to the free states.",
+  "B": "Background from the books: nearly 4 million enslaved people lived in the slave states in 1860; the free states held almost none.",
+  "C": "The table shows cotton, the plantation crop, grown in the slave states; the free states lead in people and railroads, not plantations.",
+  "D": "The free states lead on both rows the table counts for them: about 19 million people to 12 million, and about 22,000 railroad miles to 9,000.",
+  "general": "1. Read each row across: people, railroads, cotton.\n2. Mark the winner in each row: free states take the first two, slave states take cotton.\n3. Answer from the table, not from memory: people and railroads are the free states’ lead, and cotton is the slave states’.\n4. Check the numbers once more: 19 million against 12 million, and 22,000 miles against 9,000.\nRemember: a two-column table answers by rows; read across before you decide."
+ }
+}

@@ -1,0 +1,81 @@
+{
+ "id": "apush-mcq-1583",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.12",
+  "5.10"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "B",
+ "skills": [
+  "5.A",
+  "6.A"
+ ],
+ "themes": [
+  "PCE",
+  "ARC"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.12 Comparison in Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865-1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844-1877)"
+   }
+  ],
+  "primary_sources": [
+   "United States Constitution, Amendments XIII, XIV, XV, Section 1"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Thirteenth Amendment, Section 1 (ratified 1865):\n“Neither slavery nor involuntary servitude, except as a punishment for crime whereof the party shall have been duly convicted, shall exist within the United States, or any place subject to their jurisdiction.”\n\nFourteenth Amendment, Section 1 (ratified 1868):\n“All persons born or naturalized in the United States, and subject to the jurisdiction thereof, are citizens of the United States and of the State wherein they reside. No State shall make or enforce any law which shall abridge the privileges or immunities of citizens of the United States; nor shall any State deprive any person of life, liberty, or property, without due process of law; nor deny to any person within its jurisdiction the equal protection of the laws.”\n\nFifteenth Amendment, Section 1 (ratified 1870):\n“The right of citizens of the United States to vote shall not be denied or abridged by the United States or by any State on account of race, color, or previous condition of servitude.”",
+  "source_note": "Section 1 of each amendment, quoted verbatim from the United States Constitution (Constitution Annotated, Library of Congress, constitution.congress.gov). Public domain."
+ },
+ "stimulus_set": "three-amendments",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Taken together, the three amendments in the stimulus show which pattern?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Each amendment took rights away from freedpeople in turn.",
+   "misconception": "Each amendment adds a right: freedom, then citizenship, then voting."
+  },
+  {
+   "key": "B",
+   "text": "Freedom widened in steps: slavery ended, then citizenship, then voting rights."
+  },
+  {
+   "key": "C",
+   "text": "Each amendment applied only to the Southern states.",
+   "misconception": "The Thirteenth reaches the whole country, and the Fourteenth and Fifteenth bind every state."
+  },
+  {
+   "key": "D",
+   "text": "Each amendment was written to protect the rights of former Confederates.",
+   "misconception": "The amendments protect freedpeople and all citizens, not former Confederates."
+  }
+ ],
+ "rationales": {
+  "A": "Read the three in order: each one adds something, and none takes a right away.",
+  "B": "The Thirteenth ends slavery, the Fourteenth makes freedpeople citizens, and the Fifteenth guards their vote.",
+  "C": "The Thirteenth says slavery shall not exist within the United States, not only in the South.",
+  "D": "The texts speak of citizens and persons generally; they grant nothing to former Confederates.",
+  "general": "1. Line the three up by date: 1865, 1868, 1870.\n2. Ask what each adds: the Thirteenth ends slavery, the Fourteenth adds citizenship, the Fifteenth adds the vote.\n3. Each step assumes the last one and builds on it.\n4. The pattern is widening freedom, one layer at a time.\nRemember: a sequence of amendments is a staircase, so check what each new step adds."
+ }
+}

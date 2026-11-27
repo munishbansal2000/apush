@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1366",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.6"
+ ],
+ "lesson": "apush-u5-l3",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "4.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.6 Failure to compromise"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Dred Scott v. Sandford, 60 U.S. 393 (1857), majority opinion"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Chief Justice Roger B. Taney, majority opinion in Dred Scott v. Sandford, 60 U.S. 393 (1857), decided March 6, 1857. Public domain. Wording verified against the full opinion (UMKC Famous Trials; SAGE). The two passages appear in this order in the opinion; the omission between them is marked.",
+  "text": "They had for more than a century before been regarded as beings of an inferior order, and altogether unfit to associate with the white race, either in social or political relations; and so far inferior, that they had no rights which the white man was bound to respect; and that the negro might justly and lawfully be reduced to slavery for his benefit. . . . the right of property in a slave is distinctly and expressly affirmed in the Constitution."
+ },
+ "stimulus_set": "dred-scott-1857",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Northerners who read the decision most likely concluded that",
+ "options": [
+  {
+   "key": "A",
+   "text": "the Court had finally settled the slavery debate for good.",
+   "misconception": "Northerners said the opposite: the ruling made things worse, and the debate raged on."
+  },
+  {
+   "key": "B",
+   "text": "Dred Scott himself would soon win his freedom.",
+   "misconception": "Background from the books: Scott remained enslaved; the Court ruled he was not a citizen and could not sue."
+  },
+  {
+   "key": "C",
+   "text": "slavery could spread anywhere, since Congress could not stop it."
+  },
+  {
+   "key": "D",
+   "text": "the territories would still vote slavery down by themselves.",
+   "misconception": "Background from the books: after Dred Scott, a territorial vote could not ban slavery, because the Court had made the ban unlawful."
+  }
+ ],
+ "rationales": {
+  "A": "Northerners said the opposite: the ruling made things worse, and the debate raged on.",
+  "B": "Background from the books: Scott remained enslaved; the Court ruled he was not a citizen and could not sue.",
+  "C": "If Congress cannot bar slavery from the territories, then no law stands between slavery and any territory.",
+  "D": "Background from the books: after Dred Scott, a territorial vote could not ban slavery, because the Court had made the ban unlawful.",
+  "general": "1. Read the ruling: Congress cannot prohibit slavery in the territories.\n2. Ask what stops slavery then: no law, no Congress, only the settlers’ own unfriendly laws.\n3. Hear the Northern fear: slavery looked national now, not sectional, and unstoppable by vote.\n4. See the result: the question moved from Congress to the frontier, where rifles answered what laws could not.\nRemember: when a court removes the referee, both sides assume the other will cheat."
+ }
+}

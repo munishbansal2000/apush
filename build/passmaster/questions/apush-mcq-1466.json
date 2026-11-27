@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1466",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.9"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "B",
+ "skills": [
+  "2.A",
+  "3.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.9 Government Policies During the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Abraham Lincoln, Emancipation Proclamation (January 1, 1863)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Abraham Lincoln, Emancipation Proclamation, January 1, 1863. Public domain. Wording verified against the Avalon Project text. Leading “...” marks the omitted opening of the quoted sentence; “. . .” marks omitted text between passages, quoted in their order in the source.",
+  "text": "“... And by virtue of the power, and for the purpose aforesaid, I do order and declare that all persons held as slaves within said designated States, and parts of States, are, and henceforward shall be free; and that the Executive government of the United States, including the military and naval authorities thereof, will recognize and maintain the freedom of said persons. . . . And I further declare and make known, that such persons of suitable condition, will be received into the armed service of the United States to garrison forts, positions, stations, and other places, and to man vessels of all sorts in said service. . . . And upon this act, sincerely believed to be an act of justice, warranted by the Constitution, upon military necessity, I invoke the considerate judgment of mankind, and the gracious favor of Almighty God.”\n\n—Abraham Lincoln, Emancipation Proclamation, January 1, 1863"
+ },
+ "stimulus_set": "ep-order-and-arms-1863",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The proclamation’s line about receiving freed people into armed service built on an earlier idea: enslaved people working for the Confederacy could be seized as war goods. That idea first appeared in federal law in",
+ "options": [
+  {
+   "key": "A",
+   "text": "the Fugitive Slave Act of 1850.",
+   "misconception": "Background: the Fugitive Slave Act of 1850 forced the return of escaped enslaved people; it protected slavery rather than seizing enslaved labor."
+  },
+  {
+   "key": "B",
+   "text": "the First Confiscation Act of 1861."
+  },
+  {
+   "key": "C",
+   "text": "the Thirteenth Amendment.",
+   "misconception": "Background: the Thirteenth Amendment was ratified in December 1865; it ended slavery everywhere rather than seizing Confederate war goods."
+  },
+  {
+   "key": "D",
+   "text": "the Enrollment Act of 1863.",
+   "misconception": "Background: the Enrollment Act of 1863 set up the Union draft; it said nothing about seizing enslaved labor."
+  }
+ ],
+ "rationales": {
+  "A": "Background: the Fugitive Slave Act of 1850 forced the return of escaped enslaved people; it protected slavery rather than seizing enslaved labor.",
+  "C": "Background: the Thirteenth Amendment was ratified in December 1865; it ended slavery everywhere rather than seizing Confederate war goods.",
+  "D": "Background: the Enrollment Act of 1863 set up the Union draft; it said nothing about seizing enslaved labor.",
+  "B": "The First Confiscation Act of 1861 let the Union seize enslaved people put to Confederate military use, and the proclamation carried that wartime logic to its full reach.",
+  "general": "1. The proclamation treats enslaved people as a Confederate resource the Union can take.\n2. That thinking did not start in 1863.\n3. Background: in 1861 Congress passed the First Confiscation Act, seizing property used for the rebellion.\n4. Background: the act stripped owners of their claim to enslaved laborers put to Confederate military use.\nRemember: big wartime changes usually arrive as small legal steps first."
+ }
+}

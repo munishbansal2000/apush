@@ -1,0 +1,76 @@
+{
+  "answerKey": "B",
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 7",
+        "section": "Topic 5.5 Sectional Conflict: Regional Differences"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 14",
+        "section": "Union Expanded and Challenged (1835–1860)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 9"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-1601",
+  "lesson": "apush-u5-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Women achieved full political equality by 1850.",
+      "text": "The rapid achievement of full political equality for women by 1850"
+    },
+    {
+      "key": "B",
+      "text": "The continued use of natural-rights claims to support women’s suffrage and civil rights"
+    },
+    {
+      "key": "C",
+      "misconception": "Reformers abandoned equality claims after the Civil War.",
+      "text": "The decision by reformers to abandon all claims to equality after the Civil War"
+    },
+    {
+      "key": "D",
+      "misconception": "Later reformers rejected the Declaration of Independence as a model.",
+      "text": "The rejection of the Declaration of Independence as a model by later reformers"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Full political equality for women was not achieved by 1850.",
+    "B": "Background: later reformers kept invoking natural-rights language for suffrage and civil rights, from the Nineteenth Amendment to the modern civil rights movement.",
+    "C": "Reformers persisted; they did not abandon all claims to equality after the Civil War.",
+    "D": "The Declaration remained a central model; it was not rejected.",
+    "general": "1. Name the idea. Natural rights, claimed by all, used to demand equality.\n2. Ask where the idea reappears. Background: suffrage and civil rights movements kept invoking it, into the Nineteenth Amendment and beyond.\n3. Test the endings. Equality was not won by 1850, reformers did not quit, and the Declaration stayed central.\n4. Match the continuity. The same language, used by later movements for the same purpose.\nRemember: an idea continues when later movements pick up its language and use it."
+  },
+  "reasoning": "continuity-change",
+  "skills": [
+    "5.B"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from the Declaration of Sentiments (1848)",
+  "status": "final",
+  "stem": "Which of the following later developments best demonstrates a continuity with the ideas in the Declaration of Sentiments?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Declaration of Sentiments, Seneca Falls Convention, 1848, public domain.",
+    "text": "“We hold these truths to be self-evident: that all men and women are created equal; that they are endowed by their Creator with certain inalienable rights; that among these are life, liberty, and the pursuit of happiness.”"
+  },
+  "stimulus_set": "seneca-falls-1848",
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "topics": [
+    "5.5"
+  ],
+  "type": "mcq",
+  "unit": 5
+}

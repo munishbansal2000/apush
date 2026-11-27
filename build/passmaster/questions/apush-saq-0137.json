@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0137",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.2"
+ ],
+ "lesson": "apush-u5-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "NAT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.2 Manifest Destiny"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "John L. O'Sullivan, “Annexation,” United States Magazine and Democratic Review, July 1845. Public domain.",
+  "text": "Why, were other reasoning wanting, in favor of now elevating this question of the reception of Texas into the Union, out of the lower region of our past party dissensions, up to its proper level of a high and broad nationality... It is now time for the opposition to the Annexation of Texas to cease, all further agitation of the waters of bitterness and strife, at least in connexion with this question..."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus is a verbatim excerpt from John L. O'Sullivan, “Annexation,” July 1845, public domain",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify the author's purpose in writing this passage.",
+   "modelAnswer": "O'Sullivan wants to lift the annexation of Texas out of party politics and make it a national cause. He asks his readers to stop opposing annexation and treat it as a matter of American nationality.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying that O'Sullivan wants to end opposition to annexation and make it a national rather than a party question.",
+     "notEarned": "Describing the passage without naming its purpose does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how the author's language shows that annexation was controversial in 1845.",
+   "modelAnswer": "O'Sullivan writes about “the opposition to the Annexation of Texas” and “the waters of bitterness and strife,” which shows a heated debate was raging. He also contrasts the “lower region” of party dissension with a “high and broad nationality,” admitting that partisanship had defined the question so far.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how O'Sullivan's words about opposition, bitterness, and strife show that annexation was contested, with at least one phrase from the passage used.",
+     "notEarned": "Quoting the passage without explaining what the language shows does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one reason the annexation of Texas was controversial in the 1840s.",
+   "modelAnswer": "Annexation raised the slavery question, because Texas would enter as a slave state and upset the balance between free and slave states. It also risked war with Mexico, which still claimed Texas and refused to recognize its independence.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason annexation was contested, such as the slavery balance or the risk of war with Mexico.",
+     "notEarned": "Naming a controversy with no reason explained does not earn the point."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1507",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.10"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.10 Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Fourteenth Amendment to the Constitution, Section 2 (ratified 1868)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "“Section 1. All persons born or naturalized in the United States, and subject to the jurisdiction thereof, are citizens of the United States and of the State wherein they reside. No State shall make or enforce any law which shall abridge the privileges or immunities of citizens of the United States; nor shall any State deprive any person of life, liberty, or property, without due process of law; nor deny to any person within its jurisdiction the equal protection of the laws.”\n\n—Fourteenth Amendment, Section 1, ratified 1868",
+  "source_note": "Fourteenth Amendment, Section 1, ratified 1868. Public domain. Wording verified against the Constitution Annotated (Congress.gov)."
+ },
+ "stimulus_set": "fourteenth-amendment",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Section 2 of the Fourteenth Amendment said a state that denied the vote to any male inhabitant would lose part of its representation in Congress. That provision best shows that the amendment’s authors",
+ "options": [
+  {
+   "key": "A",
+   "text": "hoped to pressure states into letting Black men vote."
+  },
+  {
+   "key": "B",
+   "text": "gave Black men the vote in every state at once.",
+   "misconception": "Background: Section 2 never grants the vote to anyone; the Fifteenth Amendment did that, two years later."
+  },
+  {
+   "key": "C",
+   "text": "barred all former Confederates from voting forever.",
+   "misconception": "Background: Section 3 barred some former Confederates from holding office, not from voting."
+  },
+  {
+   "key": "D",
+   "text": "left voting rules entirely to the states with no consequence.",
+   "misconception": "Background: the whole point of the section is a consequence, a smaller delegation, for denying the vote."
+  }
+ ],
+ "rationales": {
+  "A": "Section 2 does not order any state to let Black men vote; it threatens to shrink the state’s delegation if it refuses. That is pressure, not a command, and the authors hoped the threat would be enough.",
+  "B": "Background: Section 2 never grants the vote to anyone; the Fifteenth Amendment did that, two years later.",
+  "C": "Background: Section 3 barred some former Confederates from holding office, not from voting.",
+  "D": "Background: the whole point of the section is a consequence, a smaller delegation, for denying the vote.",
+  "general": "1. Section 2 never says “Black men shall vote.”\n2. It says a state that keeps them from voting loses seats in the House.\n3. That is a nudge with teeth: keep the vote closed, and lose power in Washington.\n4. The authors chose pressure over a direct order, and the states called their bluff.\nRemember: a penalty for doing something is not the same as a ban on doing it."
+ }
+}

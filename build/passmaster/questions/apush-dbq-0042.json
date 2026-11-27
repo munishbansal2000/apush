@@ -1,0 +1,162 @@
+{
+ "id": "apush-dbq-0042",
+ "type": "dbq",
+ "unit": 5,
+ "topics": [
+  "5.6"
+ ],
+ "lesson": "apush-u5-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.6 Failure to compromise"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "James K. Polk, war message to Congress, May 11, 1846",
+   "Wilmot Proviso, August 8, 1846",
+   "Kansas-Nebraska Act, Section 14 (May 30, 1854)",
+   "Map of the United States, the Area of Freedom and Slavery (G. W. Elliott, 1856)",
+   "Dred Scott v. Sandford, 60 U.S. 393 (1857)",
+   "Abraham Lincoln, “A House Divided” speech (June 16, 1858)"
+  ]
+ },
+ "source": "original; prompt rewritten from the staged seed princeton dbq-test3; documents are public-domain primary sources and real data (see each document’s sourcing note)",
+ "stimulus_set": null,
+ "prompt": "Evaluate the extent to which slavery challenged American national unity in the period from 1844 to 1861.",
+ "totalPoints": 7,
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "May 11, 1846",
+   "title": "Polk asks Congress for war with Mexico",
+   "source": "James K. Polk, message to Congress, May 11, 1846. Public domain.",
+   "sourcing": "Polk, the Democratic president, asking Congress to declare war on Mexico after fighting on the Rio Grande.",
+   "text": "As war exists, and, notwithstanding all our efforts to avoid it, exists by the act of Mexico herself, we are called upon by every consideration of duty and patriotism to vindicate with decision the honor, the rights, and the interests of our country."
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "August 8, 1846",
+   "title": "The Wilmot Proviso bars slavery from new territory",
+   "source": "Wilmot Proviso, introduced in the House of Representatives by David Wilmot, August 8, 1846. Public domain.",
+   "sourcing": "Wilmot, a Pennsylvania Democrat, proposing that slavery be barred from any land won from Mexico.",
+   "text": "Provided, That, as an express and fundamental condition to the acquisition of any territory from the Republic of Mexico by the United States, by virtue of any treaty which may be negotiated between them, and to the use by the Executive of the moneys herein appropriated, neither slavery nor involuntary servitude shall ever exist in any part of said territory, except for crime, whereof the party shall first be duly convicted."
+  },
+  {
+   "n": 3,
+   "kind": "text",
+   "date": "May 30, 1854",
+   "title": "The Kansas-Nebraska Act leaves slavery to the settlers",
+   "source": "Kansas-Nebraska Act, “An Act to Organize the Territories of Nebraska and Kansas,” Section 14, approved May 30, 1854. Public domain.",
+   "sourcing": "Congress, in Stephen A. Douglas’s act organizing Kansas and Nebraska, stating the principle of popular sovereignty.",
+   "text": "it being the true intent and meaning of this act not to legislate slavery into any Territory or State, nor to exclude it therefrom, but to leave the people thereof perfectly free to form and regulate their domestic institutions in their own way, subject only to the Constitution of the United States."
+  },
+  {
+   "n": 4,
+   "kind": "image",
+   "date": "1856",
+   "title": "A Republican map of freedom and slavery",
+   "source": "Map of the United States, the Area of Freedom and Slavery, and the Territories Whose Destiny Is Yet to Be Decided (G. W. Elliott, New York, 1856). Library of Congress, African American Odyssey exhibit. Public domain.",
+   "sourcing": "A Republican campaign map, made to sell Frémont and Dayton by picturing the nation as free soil against slave soil.",
+   "figure": "u5/5s24-ch14-mcq-01.jpg"
+  },
+  {
+   "n": 5,
+   "kind": "text",
+   "date": "March 6, 1857",
+   "title": "Taney: slave property is protected everywhere",
+   "source": "Chief Justice Roger B. Taney, majority opinion in Dred Scott v. Sandford, 60 U.S. 393 (1857). Public domain.",
+   "sourcing": "Taney, writing for a 7-2 Court, holding that the Constitution protects slave property and Congress cannot bar it from the territories.",
+   "text": "the right of property in a slave is distinctly and expressly affirmed in the Constitution. . . . And no word can be found in the Constitution which gives Congress a greater power over slave property, or which entitles property of that kind to less protection than property of any other description."
+  },
+  {
+   "n": 6,
+   "kind": "text",
+   "date": "June 16, 1858",
+   "title": "Lincoln: a house divided cannot stand",
+   "source": "Abraham Lincoln, “A House Divided” speech, Springfield, Illinois, June 16, 1858. Public domain.",
+   "sourcing": "Lincoln, accepting the Illinois Republican nomination for the Senate, warning that the Union must become all free or all slave.",
+   "text": "“A house divided against itself cannot stand.” I believe this government cannot endure, permanently half slave and half free. . . . It will become all one thing, or all the other."
+  },
+  {
+   "n": 7,
+   "kind": "table",
+   "date": "November 4, 1856",
+   "title": "The election of 1856",
+   "source": "Presidential election results, November 4, 1856. Figures from the American Presidency Project (presidency.ucsb.edu).",
+   "sourcing": "The returns of the first presidential election fought by the Republican Party, showing a sectional vote.",
+   "text": "| Candidate | Party | Popular votes | Share | Electoral votes |\n| James Buchanan | Democratic | 1,836,072 | 45.3% | 174 |\n| John C. Frémont | Republican | 1,342,345 | 33.1% | 114 |\n| Millard Fillmore | American (Know-Nothing) | 873,053 | 21.5% | 8 |"
+  }
+ ],
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which slavery challenged American national unity, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as westward expansion and the Mexican Cession, the Compromise of 1850, or the collapse of the Whig Party.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (first point): earns the point for describing specific and relevant evidence from at least three documents to support an argument about the prompt.",
+   "notEarned": "Using fewer than three documents, or quoting documents without describing what they show, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support an argument, with the evidence accurately described and tied to the claim.",
+   "notEarned": "Using fewer than six documents, or listing documents without connecting them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence beyond the documents: earns the point for describing a specific and relevant example beyond the documents, such as Bleeding Kansas, the beating of Charles Sumner, the Lincoln-Douglas debates, or John Brown’s raid on Harpers Ferry.",
+   "notEarned": "A general statement with no specific example beyond the documents does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "3.B",
+   "criterion": "Sourcing: earns the point for explaining the relevance of a document’s author, purpose, audience, or historical situation to the argument, for at least two documents.",
+   "notEarned": "Identifying an author without explaining why it matters, or sourcing only one document, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Complexity: earns the point for demonstrating a complex understanding, such as qualifying the extent of the claim, showing how the same development pulled in opposite directions, or weighing change against continuity.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: Slavery challenged American national unity to a great extent in the period 1844–1861, turning every step of expansion into a sectional quarrel and finally breaking the party system, though the Union itself held until Lincoln’s election forced the break.\nGrouping 1 — expansion opens the quarrel: Polk’s war message (Doc 1) brings new land, and the Wilmot Proviso (Doc 2) at once demands it be free soil.\nGrouping 2 — compromise fails: the Kansas-Nebraska Act (Doc 3) hands the choice to the settlers, and the Elliott map (Doc 4) shows the Republicans turning the territories’ fate into a campaign argument.\nGrouping 3 — the Court and the crisis: Taney (Doc 5) rules Congress cannot bar slavery anywhere, Lincoln (Doc 6) warns the house must become all one thing or all the other, and the 1856 table (Doc 7) shows a sectional vote with Frémont carrying only free states.\nOutside evidence: Bleeding Kansas, the beating of Charles Sumner, and John Brown’s raid on Harpers Ferry.\nComplexity: slavery challenged unity most where expansion forced a choice, yet the same expansion also built the railroads and markets that tied the sections together, which is why the break came over politics, not over trade."
+}

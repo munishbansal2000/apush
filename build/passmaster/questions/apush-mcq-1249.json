@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1249",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.3"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "D",
+ "skills": [
+  "3.A",
+  "5.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.3 The Mexican-American War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Wilmot Proviso, August 8, 1846"
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "House vote on the Wilmot Proviso, August 1846, as tabulated in Princeton Review, Chapter 9. The table is drawn from the book's account of the vote.",
+  "text": "How the House of Representatives voted on the Wilmot Proviso in August 1846, by section and by party:\n\n| Members | Whigs | Democrats |\n|---|---|---|\n| Northern | all in favor | all but four in favor |\n| Southern | all but two opposed | all opposed |"
+ },
+ "stimulus_set": "wilmot-vote-1846",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The pattern of the vote shown in the table best supports which of the following conclusions?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Members of Congress voted on the Proviso mainly along party lines, as Whigs and Democrats opposed each other.",
+   "misconception": "Whigs and Democrats from the same section voted differently, so party does not explain the pattern."
+  },
+  {
+   "key": "B",
+   "text": "Southern members of both parties united in favor of the Proviso.",
+   "misconception": "Southern members of both parties voted against it, not for it."
+  },
+  {
+   "key": "C",
+   "text": "Northern Democrats were the Proviso's most consistent opponents.",
+   "misconception": "Northern Democrats backed it almost unanimously; only four voted against it."
+  },
+  {
+   "key": "D",
+   "text": "The vote on slavery in the territories divided Congress by section rather than by party."
+  }
+ ],
+ "rationales": {
+  "A": "Party fails to explain the vote: Northern Whigs and Northern Democrats agreed, while Southern Whigs and Southern Democrats agreed.",
+  "B": "Southern members voted against the Proviso in both parties, not for it.",
+  "C": "Northern Democrats supported the Proviso; all but four voted for it.",
+  "D": "North voted yes and South voted no in both parties, so the dividing line was section, not party.",
+  "general": "1. Read the table row by row. Northern Whigs and Northern Democrats both voted yes; Southern Whigs and Southern Democrats both voted no.\n2. Ask what that pattern means. When the two parties split the same way inside each section, party is not driving the vote.\n3. Name the real split. Section decided it: North for the ban, South against it.\nRemember: when a vote cuts across both parties the same way, look for the line that does explain it — here, North against South."
+ }
+}

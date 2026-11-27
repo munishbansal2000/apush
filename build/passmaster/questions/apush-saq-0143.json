@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0143",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.4"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.4 The Compromise of 1850"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Henry Clay, resolutions offered in the Senate, January 29, 1850"
+  ]
+ },
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Henry Clay, resolutions offered in the Senate, January 29, 1850 (Congressional Globe, 31st Congress, 1st session). Public domain.",
+  "text": "5. Resolved, That it is inexpedient to abolish slavery in the District of Columbia whilst that institution continues to exist in the State of Maryland, without the consent of that State, without the consent of the people of the District, and without just compensation to the owners of slaves within the District.\n\n6. But, resolved, That it is expedient to prohibit, within the District, the slave trade in slaves brought into it from States or places beyond the limits of the District, either to be sold therein as merchandise, or to be transported to other markets without the District of Columbia."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one thing about slavery in the District of Columbia that Clay's resolutions would leave unchanged.",
+   "modelAnswer": "The resolutions would leave slavery itself in place in the District of Columbia. Clay calls it inexpedient to abolish slavery there while Maryland still permits it, so enslaved people in the capital would remain enslaved.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one thing left unchanged, such as slavery itself in the District.",
+     "notEarned": "Naming something the resolutions would change, or a vague answer, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how Clay's resolutions on the District tried to satisfy both Northerners and Southerners.",
+   "modelAnswer": "The resolutions offered the North a ban on bringing enslaved people into the District to sell them, while assuring the South that slavery already in the District would not be abolished. Each section got part of what it wanted on the capital question, without either side winning outright.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how the resolutions balanced Northern and Southern wishes on the District, with at least one specific detail from the resolutions.",
+     "notEarned": "Restating that the resolutions compromised, with no explanation of what each side got, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one reason the District of Columbia was a symbolic battleground in the slavery debate.",
+   "modelAnswer": "The District was the nation's capital, so slave pens and auctions there put slavery on display beside the Capitol. Abolitionists called it a disgrace to buy and sell people in the shadow of the Capitol, while Southerners saw any attack on slavery in the District as an attack on slavery itself.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason the District mattered symbolically, such as its status as the national capital or the visibility of its slave trade.",
+     "notEarned": "Naming the District without explaining why it mattered symbolically does not earn the point."
+    }
+   ]
+  }
+ ]
+}

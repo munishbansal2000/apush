@@ -1,0 +1,93 @@
+{
+ "id": "apush-mcq-1593",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.12",
+  "5.10"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "3.A",
+  "5.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.12 Comparison in Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Sectional Conflict and the Compromise of 1850"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865-1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844-1877)"
+   }
+  ]
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "The painting is John Gast's American Progress (1872). A woman in white leads settlers, railroads, and telegraph wire westward, while Native American families and buffalo herds move away ahead of her. The table below gives the United States at the two ends of Period 5:\n\n|  | 1844 | 1877 |\n|---|---|---|\n| States in the Union | 26 | 38 |\n| Slavery | Legal in 13 states, with nearly 3 million people enslaved | Abolished by the Thirteenth Amendment (1865) |\n| Crossing the continent | No railroad or telegraph spanned the continent | A transcontinental railroad had run since 1869, and telegraph wires crossed the country |\n| The West | Mostly Native American homelands and Mexican territory | Settled by miners, farmers, and railroads, with Native peoples pushed onto reservations |\n\nSource: figures from the United States census and the course books; the painting is John Gast, American Progress, 1872 (public domain).",
+  "source_note": "Painting: John Gast, American Progress, 1872, Wikimedia Commons (public domain). Table: original summary from census figures and the course books (Barron's Premium 2027, Chapter 7; 5 Steps 2024, Chapters 14-16)."
+ },
+ "stimulus_set": "america-1844-1877",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Which change between 1844 and 1877 was most directly caused by the Civil War?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The end of slavery, through the Thirteenth Amendment."
+  },
+  {
+   "key": "B",
+   "text": "The admission of twelve new states to the Union.",
+   "misconception": "Background: most new states came from settlement and the Mexican Cession, not from the war itself."
+  },
+  {
+   "key": "C",
+   "text": "The building of the transcontinental railroad.",
+   "misconception": "Background: the railroad was planned before the war and built after it, but the war did not cause it."
+  },
+  {
+   "key": "D",
+   "text": "The spread of the telegraph across the country.",
+   "misconception": "Background: the telegraph crossed the country before the war, with the first line in 1844."
+  }
+ ],
+ "rationales": {
+  "A": "The war destroyed slavery, and the Thirteenth Amendment wrote that destruction into the Constitution in 1865.",
+  "B": "Background: new states came from westward settlement and the lands won from Mexico, a longer process than the war.",
+  "C": "Background: the railroad was chartered in 1862 but built by companies after the war; the war cleared the politics, it did not lay the track.",
+  "D": "Background: the first telegraph line ran in 1844, before the war, and the network grew with settlement.",
+  "general": "1. Ask of each change whether the war itself produced it.\n2. New states, railroads, and telegraphs all grew from settlement and technology across the whole period.\n3. Slavery is different: it stood in 1861, and the war broke it.\n4. The Thirteenth Amendment of 1865 made the war's result permanent.\nRemember: a change caused by the war must need the war to happen, not merely happen after it."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1593",
+   "file": "u5/original-ctx-u5-02.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/American_Progress_%28John_Gast_painting%29.jpg",
+   "license": "Public domain",
+   "caption": "American Progress, John Gast, 1872",
+   "alt": "A painting of a woman in white floating westward leading settlers, a covered wagon, trains, and telegraph wire, while Native American families and buffalo herds flee ahead of her"
+  }
+ ]
+}

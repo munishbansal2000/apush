@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-1215",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.2"
+ ],
+ "lesson": "apush-u5-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "B",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "GEO",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "A. Westward Migrations"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "map",
+  "source_note": "John Haven, “Map of the United States, including Oregon, Texas, and the Californias,” 1846, Haven & Emmerson, New York. Public domain.",
+  "text": "A map of the United States published in New York in 1846. It shows the United States stretching to the Pacific, with Texas, Oregon, and the Californias drawn in. The map labels the boundary claimed by the United States, the boundary offered as a compromise, and the boundary proposed by Great Britain. It also marks the route of the contemplated Great Oregon Rail-Road and the route of the Santa Fe traders, and it carries tables of the population of principal cities, Texas, Mexico, and Oregon."
+ },
+ "stimulus_set": "map-1846-oregon-texas",
+ "source": "original; stimulus image from the shared pool, John Haven, “Map of the United States, including Oregon, Texas, and the Californias” (1846), public domain",
+ "stem": "The map's inclusion of both Texas and Oregon most directly reflects which of the following in 1846?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The completion of the transcontinental railroad across the continent.",
+   "misconception": "The railroad was only a contemplated route on the map; it was completed in 1869."
+  },
+  {
+   "key": "B",
+   "text": "American claims to land on the southern and northern frontiers."
+  },
+  {
+   "key": "C",
+   "text": "The admission of California as a free state.",
+   "misconception": "California became a state in 1850, four years after the map was drawn."
+  },
+  {
+   "key": "D",
+   "text": "The end of the war with Mexico.",
+   "misconception": "The war with Mexico had only just begun in 1846; it ended with the Treaty of Guadalupe Hidalgo in 1848."
+  }
+ ],
+ "rationales": {
+  "A": "The map marks the railroad route as contemplated, not built; the transcontinental railroad was finished in 1869. Background: the Pacific Railway Act came in 1862.",
+  "B": "The map draws Texas in the south and Oregon in the north with the boundaries the United States claimed, so it pictures both frontier claims at once.",
+  "C": "California was still Mexican territory in 1846; it became a state in 1850, after the war.",
+  "D": "The war with Mexico began in the spring of 1846 and ended in 1848, so the map appeared at its start, not its end.",
+  "general": "1. Find the two places. Texas sits on the southern frontier and Oregon on the northern one.\n2. See how the map treats them. Both are drawn inside the American picture, with the boundaries the United States claimed.\n3. Rule out the rest. The railroad was only planned, California was not yet a state, and the Mexican War had just begun.\nRemember: when a map puts two far-apart places in one frame, ask what claim ties them together — here, an American claim to both."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1215",
+   "file": "u4/pr25e-test1-q21.jpg",
+   "caption": "John Haven, “Map of the United States, including Oregon, Texas, and the Californias,” 1846",
+   "alt": "John Haven's 1846 map of the United States showing Texas, Oregon, and the Californias, with claimed and proposed boundaries, the route of a contemplated Oregon railroad, and tables of population and government",
+   "license": "Public domain"
+  }
+ ]
+}

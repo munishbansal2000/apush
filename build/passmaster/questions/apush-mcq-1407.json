@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1407",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.7"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "4.A"
+ ],
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.7 Election of 1860 and Secession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Crittenden Compromise, proposed Article 1 (December 18, 1860)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Senator John J. Crittenden, proposed amendments to the Constitution (S. No. 50), Article 1, introduced December 18, 1860. Public domain. Wording verified against the Teaching American History text (teachingamericanhistory.org/document/crittenden-compromise/) and the Congressional Globe text (vlib.us/amdocs/texts/critte~1.html). '. . .' marks the omitted resolution preamble.",
+  "text": ". . . In all the territory of the United States now held, or hereafter acquired, situate north of 36 degrees 30 minutes, slavery or involuntary servitude, except as a punishment for crime, is prohibited while such territory shall remain under territorial government. In all the territory south of said line of latitude, slavery of the African race is hereby recognized as existing, and shall not be interfered with by Congress, but shall be protected as property by all the departments of the territorial government during its continuance."
+ },
+ "stimulus_set": "crittenden-compromise",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The Crittenden proposal most directly attempted to revive which earlier settlement?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Missouri Compromise line of 1820"
+  },
+  {
+   "key": "B",
+   "text": "The Kansas-Nebraska Act of 1854",
+   "misconception": "Background: the Kansas-Nebraska Act repealed the Missouri line; Crittenden would have restored it."
+  },
+  {
+   "key": "C",
+   "text": "The Compromise of 1850",
+   "misconception": "Background: the Compromise of 1850 admitted California as a free state and left the territories to popular sovereignty, not to a line."
+  },
+  {
+   "key": "D",
+   "text": "The Northwest Ordinance of 1787",
+   "misconception": "Background: the Northwest Ordinance banned slavery north of the Ohio River, a different line in a different place."
+  }
+ ],
+ "rationales": {
+  "A": "Article 1 restores a line at 36 degrees 30 minutes, the Missouri Compromise line, and extends it to the Pacific. Background: the line had been repealed in 1854 and struck down in 1857, and Crittenden would have written it into the Constitution.",
+  "B": "Background: the Kansas-Nebraska Act repealed the Missouri line; Crittenden would have restored it.",
+  "C": "Background: the Compromise of 1850 admitted California as a free state and left the territories to popular sovereignty, not to a line.",
+  "D": "Background: the Northwest Ordinance banned slavery north of the Ohio River, a different line in a different place.",
+  "general": "1. The number gives it away: 36 degrees 30 minutes is the old Missouri line.\n2. Crittenden would have made it permanent, in the Constitution itself.\n3. Background: the line had already failed once, repealed by Kansas-Nebraska and voided by Dred Scott.\n4. Reviving a dead line was the compromise's whole gamble.\nRemember: when a proposal names a latitude, check which old settlement drew it first."
+ }
+}

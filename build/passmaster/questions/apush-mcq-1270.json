@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1270",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.3"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "5.B",
+  "6.C"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.3 The Mexican-American War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Ulysses S. Grant, Personal Memoirs, Chapter III, 1885"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Ulysses S. Grant, Personal Memoirs, Chapter III, published 1885. Public domain.",
+  "text": "Generally, the officers of the army were indifferent whether the annexation was consummated or not; but not so all of them. For myself, I was bitterly opposed to the measure, and to this day regard the war, which resulted, as one of the most unjust ever waged by a stronger against a weaker nation. It was an instance of a republic following the bad example of European monarchies, in not considering justice in their desire to acquire additional territory.\n\nThe Southern rebellion was largely the outgrowth of the Mexican war. Nations, like individuals, are punished for their transgressions. We got our punishment in the most sanguinary and expensive war of modern times."
+ },
+ "stimulus_set": "grant-memoirs-1885",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Grant writes that “the Southern rebellion was largely the outgrowth of the Mexican war.” That claim rests on which of the following connections?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Mexican War trained the generals who later fought the Civil War, so the two wars shared commanders.",
+   "misconception": "Shared commanders are true but not Grant's point; his claim is about punishment for an unjust war, and about slavery."
+  },
+  {
+   "key": "B",
+   "text": "Mexico allied with the Confederacy in 1861 and supplied it with arms.",
+   "misconception": "Mexico did not ally with the Confederacy; it was itself invaded by France in the 1860s."
+  },
+  {
+   "key": "C",
+   "text": "The Mexican War ended slavery in the territories the United States acquired.",
+   "misconception": "The war did not end slavery anywhere; it raised the question of whether slavery would spread into the new lands."
+  },
+  {
+   "key": "D",
+   "text": "The land taken from Mexico forced the question of slavery in the territories, which split the country."
+  }
+ ],
+ "rationales": {
+  "A": "Many Civil War generals did serve in Mexico, but Grant's sentence is about the war's consequences, not its officers.",
+  "B": "Mexico never allied with the Confederacy; France invaded Mexico in 1862 while the Civil War raged.",
+  "C": "Slavery was not ended by the war; the war made its expansion the question that divided the nation.",
+  "D": "The Cession forced the slavery question — the Wilmot Proviso, the Compromise of 1850, Kansas-Nebraska, and Dred Scott — and that chain ended in secession.",
+  "general": "1. Start with Grant's image: nations, like people, are punished for their wrongs.\n2. Trace the chain he has in mind. The war won the Cession, and the Cession forced the question of slavery in the territories.\n3. Follow it to the end. That question split the parties, produced Bleeding Kansas and Dred Scott, and ended in secession and civil war.\nRemember: Grant is making a causal chain, not a moral only — one war's prize became the next war's cause."
+ }
+}

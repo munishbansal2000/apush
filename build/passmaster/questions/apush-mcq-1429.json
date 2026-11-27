@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1429",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.8"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "1.A",
+  "2.A"
+ ],
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.8 Military Conflict in the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "General Winfield Scott, letter to General George B. McClellan (May 3, 1861)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "General Winfield Scott, letter to General George B. McClellan, May 3, 1861. Public domain; quoted as printed in 5 Steps to a 5, Chapter 15. Bracketed words are the book’s editorial note.",
+  "text": "“We rely greatly on the sure operation of a complete blockade of the Atlantic and Gulf ports soon to commence. In connection with such a blockade we propose a powerful movement down the Mississippi to the ocean, with a cordon of posts at proper points, and the capture of Forts Jackson and Saint Philip [at New Orleans]; the object being to clear out and keep open this great line of communication in connection with the strict blockade of the seaboard, so as to envelop the insurgent states and bring them to terms with less bloodshed than by any other plan.”\n\n—General Winfield Scott, letter to General George B. McClellan, May 3, 1861"
+ },
+ "stimulus_set": "scott-letter-1861",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Scott’s letter argues that the Union should defeat the Confederacy mainly by",
+ "options": [
+  {
+   "key": "A",
+   "text": "launching one decisive attack on Richmond.",
+   "misconception": "Scott proposes a blockade and a river campaign, not a single strike at Richmond."
+  },
+  {
+   "key": "B",
+   "text": "arming enslaved people at the start of the war.",
+   "misconception": "Scott says nothing about arming enslaved people. Background: Black enlistment came later, with emancipation."
+  },
+  {
+   "key": "C",
+   "text": "cutting off the South’s trade and transport."
+  },
+  {
+   "key": "D",
+   "text": "asking Britain to mediate a peace.",
+   "misconception": "Scott’s plan is a Union military operation, not an appeal to Britain."
+  }
+ ],
+ "rationales": {
+  "A": "Scott proposes a blockade and a river campaign, not a single strike at Richmond.",
+  "B": "Scott says nothing about arming enslaved people. Background: Black enlistment came later, with emancipation.",
+  "C": "The letter’s two arms are a blockade of the ports and a movement down the Mississippi, both meant to envelop the South.",
+  "D": "Scott’s plan is a Union military operation, not an appeal to Britain.",
+  "general": "1. Scott names two moves: a complete blockade of the Atlantic and Gulf ports.\n2. Then a powerful movement down the Mississippi, with posts to hold the river open.\n3. The object is to envelop the insurgent states, to wrap them up and cut them off.\n4. Nothing here is a single battle; the whole plan is about strangling supply lines.\nRemember: envelop means to wrap up: blockade plus river equals a closed fist."
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1550",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.11"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "4.A",
+  "5.A"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.11 Failure of Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Office of the House Historian, “Majority Changes in the House of Representatives, 1856 to Present”"
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "| House election | Democrats | Republicans | Others |\n| 1872 | 88 | 199 | 5 |\n| 1874 | 182 | 103 | 8 |\n\nSeats in the House of Representatives after the 1872 and 1874 elections.",
+  "source_note": "Seats in the House of Representatives after the 1872 and 1874 elections (the Historian’s initial division of seats), from the Office of the House Historian, “Majority Changes in the House of Representatives, 1856 to Present” (history.house.gov)."
+ },
+ "stimulus_set": "house-1874",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The Panic of 1873 began with the failure of the banking house Jay Cooke & Company and grew into a long depression. The 1874 result in the table most directly shows that the depression",
+ "options": [
+  {
+   "key": "A",
+   "text": "turned Northern voters from Reconstruction toward hard times."
+  },
+  {
+   "key": "B",
+   "text": "convinced Southern voters to support Republican candidates.",
+   "misconception": "The South voted Democratic; the swing came from Northern voters turning away from the Republicans."
+  },
+  {
+   "key": "C",
+   "text": "ended the Democratic Party’s opposition to Reconstruction.",
+   "misconception": "The Democrats who won in 1874 opposed Reconstruction; that is why the result mattered."
+  },
+  {
+   "key": "D",
+   "text": "caused Congress to pass new civil rights laws.",
+   "misconception": "Background: no new civil rights law followed the 1874 election; the 1875 Act came from the outgoing Congress."
+  }
+ ],
+ "rationales": {
+  "A": "Banks failed, railroads stalled, and jobs vanished, and voters blamed the party in power. Northern voters who had backed Reconstruction turned to their own empty pockets, and the Democrats rode that anger into the House.",
+  "B": "The South voted Democratic; the swing came from Northern voters turning away from the Republicans.",
+  "C": "The Democrats who won in 1874 opposed Reconstruction; that is why the result mattered.",
+  "D": "Background: no new civil rights law followed the 1874 election; the 1875 Act came from the outgoing Congress.",
+  "general": "1. The Panic began in September 1873, a year before the election, and the depression that followed was long and grinding.\n2. Background: banks failed, railroad building stopped, and unemployment rose across the North.\n3. Voters blamed the Republicans in power, and the table shows the punishment: half their seats gone.\n4. Reconstruction had depended on Northern voters caring about the South; hard times made them care about themselves.\nRemember: a depression does not argue about policy, it changes what voters care about first."
+ }
+}

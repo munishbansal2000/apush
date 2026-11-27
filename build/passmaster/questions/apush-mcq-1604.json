@@ -1,0 +1,75 @@
+{
+  "answerKey": "C",
+  "difficulty": 2,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 7",
+        "section": "Topic 5.9 Government Policies During the Civil War"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 15",
+        "section": "Union Divided: The Civil War (1861–1865)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 9"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-1604",
+  "lesson": "apush-u5-l4",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "The Proclamation ended all racial discrimination.",
+      "text": "The end of all racial discrimination in the United States"
+    },
+    {
+      "key": "B",
+      "misconception": "The Proclamation gave all Black men in the North voting rights at once.",
+      "text": "The immediate granting of voting rights to all Black men in the North"
+    },
+    {
+      "key": "C",
+      "text": "The passage of the Thirteenth Amendment abolishing slavery"
+    },
+    {
+      "key": "D",
+      "misconception": "The Proclamation followed the repeal of the Fugitive Slave Act.",
+      "text": "The repeal of the Fugitive Slave Act before the Civil War began"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Racial discrimination did not end with the Proclamation.",
+    "B": "Voting rights for Black men came unevenly and later.",
+    "C": "The Proclamation paved the way for the Thirteenth Amendment, which abolished slavery nationwide. Emancipation as a war measure became emancipation as constitutional law, binding the whole nation.",
+    "D": "The Fugitive Slave Act was not repealed before the war began.",
+    "general": "1. Ask what followed the Proclamation. A wartime measure needed a permanent settlement.\n2. Name the settlement. The Thirteenth Amendment abolished slavery nationwide.\n3. Test the overstatements. Discrimination persisted, voting rights came unevenly, and the Fugitive Slave Act was not repealed before the war.\n4. Connect the steps. The Proclamation made emancipation a war aim; the amendment made it law.\nRemember: a wartime measure often needs a constitutional change to last."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "2.B"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from the Emancipation Proclamation (1863)",
+  "status": "final",
+  "stem": "The Emancipation Proclamation most directly contributed to which of the following later developments?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Abraham Lincoln, Emancipation Proclamation, January 1, 1863, public domain.",
+    "text": "“And by virtue of the power, and for the purpose aforesaid, I do order and declare that all persons held as slaves within said designated States, and parts of States, are, and henceforward shall be free.”"
+  },
+  "stimulus_set": "emancipation-proclamation-1863",
+  "themes": [
+    "PCE"
+  ],
+  "topics": [
+    "5.9"
+  ],
+  "type": "mcq",
+  "unit": 5
+}

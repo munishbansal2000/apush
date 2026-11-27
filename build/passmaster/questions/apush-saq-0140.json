@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0140",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.3"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "skills": [
+  "3.A",
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.3 The Mexican-American War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Free-Soil Party platform, Buffalo, New York, August 9, 1848"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Free-Soil Party platform, adopted at Buffalo, New York, August 9, 1848. Public domain.",
+  "text": "Resolved, That we inscribe on our banner, “Free Soil, Free Speech, Free Labor, and Free Men,” and under it we will fight on, and fight ever, until a triumphant victory shall reward our exertions.\n\nResolved, That in the judgment of this Convention, Congress has no more power to make a Slave than to make a King; no more power to institute or establish Slavery than to institute or establish a Monarchy.\n\nResolved, That Slavery in the several States of this Union which recognize its existence, depends upon State laws alone, which cannot be repealed or modified by the Federal Government, and for which laws that government is not responsible. We therefore propose no interference by Congress with Slavery within the limits of any State."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one position the Free-Soil Party took on slavery in the territories taken from Mexico.",
+   "modelAnswer": "The Free-Soil Party held that Congress had no power to establish slavery in the territories, and it planted itself on “free soil” — the new lands should be free of slavery. Either position answers the question.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying the party's position that slavery should not extend into the territories, from the platform's words.",
+     "notEarned": "Naming a position the platform does not take, such as abolishing slavery in the states, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain why the Free-Soil Party formed in 1848.",
+   "modelAnswer": "The Mexican War had added California and the Southwest, and both major parties refused to take a stand on slavery there. The Whigs nominated the war hero Zachary Taylor and the Democrats nominated Lewis Cass, so opponents of slavery's expansion formed their own party.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining that the war's new lands raised the slavery question and both major parties avoided it, driving opponents of expansion to form a new party.",
+     "notEarned": "Restating that the party opposed slavery's expansion, with no reason for its formation in 1848, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one limit on the Free-Soil Party's antislavery position, as shown in the platform.",
+   "modelAnswer": "The platform promised no interference with slavery inside the states where it already existed, saying it depended on state laws alone. The party fought only the expansion of slavery into new lands, not its abolition where it stood.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining that the platform left slavery alone inside the states and opposed only its expansion into the territories.",
+     "notEarned": "Calling the party abolitionist, or claiming it sought to end slavery everywhere, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

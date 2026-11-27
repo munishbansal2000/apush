@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1492",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.9"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.9 Government Policies During the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Abraham Lincoln, message to Congress in special session (July 4, 1861)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Abraham Lincoln, message to Congress in special session, July 4, 1861. Public domain. Wording verified against the Teaching American History text of the message. “. . .” marks omitted text between passages, quoted in their order in the source.",
+  "text": "“Soon after the first call for militia, it was considered a duty to authorize the commanding general, in proper cases, according to his discretion, to suspend the privilege of the writ of habeas corpus; or, in other words, to arrest and detain, without resort to the ordinary processes and forms of law, such individuals as he might deem dangerous to the public safety. . . . To state the question more directly, are all the laws but one to go unexecuted, and the government itself go to pieces lest that one be violated? Even in such a case, would not the official oath be broken if the government should be overthrown, when it was believed that disregarding the single law would tend to preserve it?”\n\n—Abraham Lincoln, message to Congress in special session, July 4, 1861"
+ },
+ "stimulus_set": "lincoln-habeas-1861",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "After the war, the Supreme Court ruled in Ex parte Milligan (1866) that civilians could not be tried by military courts where civilian courts were operating. That ruling limited Lincoln’s wartime policy by",
+ "options": [
+  {
+   "key": "A",
+   "text": "declaring that Lincoln had never suspended habeas corpus at all.",
+   "misconception": "Background: Lincoln did suspend habeas corpus, and the Court did not deny it; it limited military trials of civilians."
+  },
+  {
+   "key": "B",
+   "text": "drawing a line: suspension did not license military trials of civilians."
+  },
+  {
+   "key": "C",
+   "text": "ordering the release of every Confederate prisoner at once, without exception.",
+   "misconception": "Background: the ruling freed Milligan, a civilian tried by a military court in Indiana; it did not order a general release."
+  },
+  {
+   "key": "D",
+   "text": "giving the president power to suspend habeas corpus permanently, even in peacetime.",
+   "misconception": "Background: the ruling limited wartime military power over civilians; it gave the president no permanent suspension power."
+  }
+ ],
+ "rationales": {
+  "A": "Background: Lincoln did suspend habeas corpus, and the Court did not deny it; it limited military trials of civilians.",
+  "C": "Background: the ruling freed Milligan, a civilian tried by a military court in Indiana; it did not order a general release.",
+  "D": "Background: the ruling limited wartime military power over civilians; it gave the president no permanent suspension power.",
+  "B": "Ex parte Milligan held that civilians could be tried by military courts only where civilian courts were not operating, so suspension alone did not license military trials.",
+  "general": "1. Lincoln’s suspension let the army arrest and detain people without ordinary courts.\n2. The question after the war was how far that power reached.\n3. Background: Milligan was a civilian in Indiana, where the civilian courts were open and working.\n4. The Court said military courts could not try him there.\nRemember: a wartime power ends where the ordinary courts are still open for business."
+ }
+}

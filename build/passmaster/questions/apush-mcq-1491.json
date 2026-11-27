@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1491",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.9"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "D",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.9 Government Policies During the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Abraham Lincoln, message to Congress in special session (July 4, 1861)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Abraham Lincoln, message to Congress in special session, July 4, 1861. Public domain. Wording verified against the Teaching American History text of the message. “. . .” marks omitted text between passages, quoted in their order in the source.",
+  "text": "“Soon after the first call for militia, it was considered a duty to authorize the commanding general, in proper cases, according to his discretion, to suspend the privilege of the writ of habeas corpus; or, in other words, to arrest and detain, without resort to the ordinary processes and forms of law, such individuals as he might deem dangerous to the public safety. . . . To state the question more directly, are all the laws but one to go unexecuted, and the government itself go to pieces lest that one be violated? Even in such a case, would not the official oath be broken if the government should be overthrown, when it was believed that disregarding the single law would tend to preserve it?”\n\n—Abraham Lincoln, message to Congress in special session, July 4, 1861"
+ },
+ "stimulus_set": "lincoln-habeas-1861",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Lincoln asks whether all the laws but one should “go unexecuted, and the government itself go to pieces lest that one be violated.” His argument is that",
+ "options": [
+  {
+   "key": "A",
+   "text": "the Constitution gives the president unlimited power in wartime emergencies.",
+   "misconception": "Background: Lincoln argues from necessity in a rebellion, not for unlimited presidential power."
+  },
+  {
+   "key": "B",
+   "text": "habeas corpus was never part of the Constitution at all.",
+   "misconception": "Background: Lincoln quotes the Constitution’s own habeas corpus clause; he never denies it exists."
+  },
+  {
+   "key": "C",
+   "text": "Congress had already voted to suspend habeas corpus in 1861.",
+   "misconception": "Background: Congress did not pass the Habeas Corpus Suspension Act until 1863; in July 1861 Lincoln acted alone."
+  },
+  {
+   "key": "D",
+   "text": "saving the government may require bending one law in a rebellion."
+  }
+ ],
+ "rationales": {
+  "A": "Background: Lincoln argues from necessity in a rebellion, not for unlimited presidential power.",
+  "B": "Background: Lincoln quotes the Constitution’s own habeas corpus clause; he never denies it exists.",
+  "C": "Background: Congress did not pass the Habeas Corpus Suspension Act until 1863; in July 1861 Lincoln acted alone.",
+  "D": "Lincoln argues that letting the government fall to save one law would break his oath, since disregarding that single law tended to preserve the government.",
+  "general": "1. Lincoln frames a choice: keep every law, or keep the government.\n2. One law, habeas corpus, stands in the way of holding the rebellion down.\n3. He asks whether saving that one law is worth losing the whole government.\n4. His answer is that the oath to preserve the government comes first.\nRemember: a necessity argument weighs one law against the survival of the government itself."
+ }
+}

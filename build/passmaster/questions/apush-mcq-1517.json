@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-1517",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.10"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "4.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.10 Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Tenure of Office Act (1867)"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "An engraving from Harper’s Weekly showing the United States Senate chamber during the impeachment trial of President Andrew Johnson in 1868. Senators sit at desks arranged in rows across the chamber floor, and the galleries above are packed with spectators. The caption below the image reads: “The Senate as a court of impeachment for the trial of Andrew Johnson, sketched by Theodore R. Davis.”",
+  "source_note": "Theodore R. Davis, “The Senate as a court of impeachment for the trial of Andrew Johnson,” Harper’s Weekly, 1868. Public domain. Image viewed before writing; caption verified against the image itself."
+ },
+ "stimulus_set": "johnson-impeachment-trial",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The impeachment best shows the larger conflict of Reconstruction, which was",
+ "options": [
+  {
+   "key": "A",
+   "text": "a fight between the North and the South over slavery itself.",
+   "misconception": "Background: slavery was already dead by 1868; the fight was over who would shape the peace."
+  },
+  {
+   "key": "B",
+   "text": "a fight between the president and Congress over who would control Reconstruction."
+  },
+  {
+   "key": "C",
+   "text": "a fight between the Supreme Court and the army.",
+   "misconception": "Background: the Court took no part in the impeachment; the Senate was the court here."
+  },
+  {
+   "key": "D",
+   "text": "a fight between freedpeople and the Freedmen’s Bureau.",
+   "misconception": "Background: freedpeople and the Bureau were allies, not enemies."
+  }
+ ],
+ "rationales": {
+  "A": "Background: slavery was already dead by 1868; the fight was over who would shape the peace.",
+  "B": "Johnson believed the president should run Reconstruction leniently, while Congress believed it should set the terms. The vetoes, the Tenure of Office Act, and the trial were all rounds in that one fight over control.",
+  "C": "Background: the Court took no part in the impeachment; the Senate was the court here.",
+  "D": "Background: freedpeople and the Bureau were allies, not enemies.",
+  "general": "1. Impeachment is Congress’s weapon against a president, so look for a fight between the two branches.\n2. Background: Johnson vetoed the Bureau bill, the Civil Rights Act, and the Reconstruction Acts, and Congress overrode him each time.\n3. The trial was the last round of that struggle over who would run Reconstruction.\n4. The charge named Stanton, but the cause was control.\nRemember: when Congress puts a president on trial, ask what power the two sides are fighting over."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1517",
+   "file": "u5/5s24-ch16-mcq-02.jpg",
+   "caption": "The Senate as a court of impeachment for the trial of Andrew Johnson, Harper’s Weekly, 1868",
+   "alt": "Harper’s Weekly engraving of the Senate chamber during the 1868 impeachment trial of President Andrew Johnson, with senators at desks and packed galleries above",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/The_Senate_as_a_court_of_impeachment_for_the_trial_of_Andrew_Johnson_-_sketched_by_Theodore_R._Davis._LCCN96521681.jpg",
+   "license": "Public domain"
+  }
+ ]
+}

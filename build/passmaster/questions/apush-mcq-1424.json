@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-1424",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.7"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.7 Election of 1860 and Secession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "map",
+  "source_note": "Presidential election results by county, 1860 (Tilden76, Wikimedia Commons, File:PresidentialCounty1860Colorbrewer.gif; data: Minnesota Population Center, National Historical Geographic Information System v2.0, 2011). Viewed before writing. The file page confirms: “No vote was taken in South Carolina because presidential electors were chosen by the state legislature.” License: attribution — free use with credit to the holder.",
+  "text": "A map of the presidential election of 1860, by county. Red shades mark counties won by Abraham Lincoln, green shades counties won by John C. Breckinridge, blue shades counties won by Stephen A. Douglas, and yellow shades counties won by John Bell. Purple shades mark counties where fusion tickets won. Hatched counties mark ties. Darker shades mean a larger share of the vote. Gray marks counties where no vote was recorded. The territories in the West cast no electoral votes."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1424",
+   "file": "u5/election-1860-county-map.gif",
+   "caption": "Presidential election of 1860, results by county",
+   "alt": "A county map of the United States in 1860: the North and West are shaded red for Lincoln, the Deep South green for Breckinridge, with yellow for Bell in Virginia, Kentucky, and Tennessee and blue for Douglas in Missouri and scattered Northern counties",
+   "source_url": "https://commons.wikimedia.org/wiki/File:PresidentialCounty1860Colorbrewer.gif",
+   "license": "CC BY — Tilden76, Wikimedia Commons; data: Minnesota Population Center, NHGIS v2.0 (2011)"
+  }
+ ],
+ "stimulus_set": "election-1860-map",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Which of the following is the best use of this map as evidence?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It proves Lincoln won a majority of the popular vote.",
+   "misconception": "A county map shows where votes were won, not how many were cast; it cannot give a national total."
+  },
+  {
+   "key": "B",
+   "text": "It proves Breckinridge would have won a two-man race.",
+   "misconception": "The map records a four-way race; it cannot show what a different race would have done."
+  },
+  {
+   "key": "C",
+   "text": "It shows that each candidate's support was concentrated in one region."
+  },
+  {
+   "key": "D",
+   "text": "It proves the territories voted for Douglas.",
+   "misconception": "The territories cast no electoral votes and appear blank on the map."
+  }
+ ],
+ "rationales": {
+  "A": "A county map shows where votes were won, not how many were cast; it cannot give a national total.",
+  "B": "The map records a four-way race; it cannot show what a different race would have done.",
+  "C": "The colors sit in blocs: Lincoln's red in the North, Breckinridge's green in the South, Bell's yellow in the Upper South. Background: the map is evidence of regional voting, not of national totals.",
+  "D": "The territories cast no electoral votes and appear blank on the map.",
+  "general": "1. A map shows place, not totals.\n2. What it shows well is where each man's strength lay.\n3. Background: the Electoral College turns those regional blocs into state victories, which is how Lincoln won.\n4. Use a source for what it measures, and ask what it cannot measure.\nRemember: a map answers “where,” not “how many” — match the claim to the evidence."
+ }
+}

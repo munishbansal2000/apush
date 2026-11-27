@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1403",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.7"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.7 Election of 1860 and Secession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Mississippi, Declaration of the Immediate Causes of Secession (January 9, 1861)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Mississippi, A Declaration of the Immediate Causes Which Induce and Justify the Secession of the State of Mississippi from the Federal Union, January 9, 1861. Public domain. Wording verified against the Mississippi Department of Archives and History text (mshistory.mdah.ms.gov) and Wikisource. Passages appear in this order; '. . .' marks omitted text.",
+  "text": ". . . Our position is thoroughly identified with the institution of slavery—the greatest material interest of the world. Its labor supplies the product which constitutes by far the largest and most important portions of the commerce of the earth. . . . That blow has been long aimed at the institution, and was at the point of reaching its consummation. There was no choice left us but submission to the mandates of abolition, or a dissolution of the Union, whose principles had been subverted to work out our ruin. . . . We must either submit to degradation, and to the loss of property worth four billions of money, or we must secede from the Union framed by our fathers to secure this as well as every other species of property."
+ },
+ "stimulus_set": "mississippi-declaration-1861",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The declaration's opening claim — that Mississippi's position is “thoroughly identified with the institution of slavery” — most directly supports which conclusion?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Mississippi seceded mainly to protect states' rights in the abstract.",
+   "misconception": "The declaration names slavery as the interest at stake, not states' rights in general."
+  },
+  {
+   "key": "B",
+   "text": "Mississippi's leaders were indifferent to the future of slavery.",
+   "misconception": "The declaration calls slavery “the greatest material interest of the world,” the opposite of indifference."
+  },
+  {
+   "key": "C",
+   "text": "Mississippi expected the North to pay for its slaves.",
+   "misconception": "The declaration demands no payment; it chooses secession over submission."
+  },
+  {
+   "key": "D",
+   "text": "Mississippi seceded primarily to defend slavery."
+  }
+ ],
+ "rationales": {
+  "A": "The declaration names slavery as the interest at stake, not states' rights in general.",
+  "B": "The declaration calls slavery “the greatest material interest of the world,” the opposite of indifference.",
+  "C": "The declaration demands no payment; it chooses secession over submission.",
+  "D": "The declaration opens by tying the state's whole position to slavery and calls it the greatest material interest of the world. Background: the rest of the document measures every grievance against the danger to slavery.",
+  "general": "1. The first sentence names the cause: the state's position is slavery itself.\n2. The next lines count the money: the world's commerce rests on slave labor.\n3. Background: Mississippi's cotton economy made slavery its largest form of wealth.\n4. When a declaration opens with its reason, believe it.\nRemember: the first line of a secession declaration is its thesis — the rest is evidence for it."
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1551",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.11"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 2,
+ "answerKey": "D",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.11 Failure of Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Office of the House Historian, “Majority Changes in the House of Representatives, 1856 to Present”"
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "| House election | Democrats | Republicans | Others |\n| 1872 | 88 | 199 | 5 |\n| 1874 | 182 | 103 | 8 |\n\nSeats in the House of Representatives after the 1872 and 1874 elections.",
+  "source_note": "Seats in the House of Representatives after the 1872 and 1874 elections (the Historian’s initial division of seats), from the Office of the House Historian, “Majority Changes in the House of Representatives, 1856 to Present” (history.house.gov)."
+ },
+ "stimulus_set": "house-1874",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Which of the following was the most important consequence of the 1874 House election for Reconstruction?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Grant resigned the presidency.",
+   "misconception": "Background: Grant served out his full second term, until March 1877."
+  },
+  {
+   "key": "B",
+   "text": "The Supreme Court overturned the Reconstruction Acts.",
+   "misconception": "Background: the Court never overturned the Reconstruction Acts."
+  },
+  {
+   "key": "C",
+   "text": "The Freedmen’s Bureau was created.",
+   "misconception": "Background: the Bureau was created in 1865, nine years earlier."
+  },
+  {
+   "key": "D",
+   "text": "Reconstruction’s party lost its grip on Congress."
+  }
+ ],
+ "rationales": {
+  "A": "Background: Grant served out his full second term, until March 1877.",
+  "B": "Background: the Court never overturned the Reconstruction Acts.",
+  "C": "Background: the Freedmen’s Bureau was created in 1865, nine years earlier.",
+  "D": "Reconstruction had been Congress’s project, and the Republicans had run Congress. After 1874 the Democrats held the House, so no new Reconstruction law could pass and the old ones could not be enforced with confidence.",
+  "general": "1. The table shows the Republicans losing half their House seats in a single election.\n2. Reconstruction was a program of laws, and laws need a Congress willing to pass and fund them.\n3. With Democrats holding the House, that willingness was gone.\n4. The 1874 result did not end Reconstruction in a day, but it cut off its supply line.\nRemember: a reform that loses its legislature loses its future, even before any law is repealed."
+ }
+}

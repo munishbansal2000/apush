@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1252",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.3"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "3.A",
+  "2.A"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.3 The Mexican-American War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Abraham Lincoln, “Spot Resolutions,” December 22, 1847"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Abraham Lincoln, “Spot Resolutions” in the House of Representatives, December 22, 1847. Public domain.",
+  "text": "And whereas this House is desirous to obtain a full knowledge of all the facts which go to establish whether the particular spot on which the blood of our citizens was so shed was or was not at that time our own soil:\n\nFirst. Whether the spot on which the blood of our citizens was shed, as in his message declared, was or was not within the territory of Spain, at least after the treaty of 1819, until the Mexican revolution.\n\nThird. Whether that spot is or is not within a settlement of people, which settlement has existed ever since long before the Texas revolution, and until its inhabitants fled before the approach of the United States army.\n\nSeventh. Whether our citizens, whose blood was shed, as in his message declared, were or were not, at that time, armed officers and soldiers, sent into that settlement by the military order of the President, through the Secretary of War."
+ },
+ "stimulus_set": "spot-resolutions-1847",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Lincoln's resolutions ask the president to answer which of the following questions?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Whether the ground where American blood was shed was American soil at the time."
+  },
+  {
+   "key": "B",
+   "text": "Whether General Taylor had disobeyed his orders by advancing his army into Mexico.",
+   "misconception": "Lincoln asks about the spot and the soldiers, not about Taylor disobeying orders."
+  },
+  {
+   "key": "C",
+   "text": "Whether Mexico had agreed to sell California and New Mexico to the United States.",
+   "misconception": "The resolutions say nothing about buying California; they ask where the blood was shed."
+  },
+  {
+   "key": "D",
+   "text": "Whether the Senate should ratify the Treaty of Guadalupe Hidalgo.",
+   "misconception": "The treaty was not yet signed when Lincoln offered the resolutions in December 1847."
+  }
+ ],
+ "rationales": {
+  "A": "Lincoln's preamble states the question plainly: was the spot where the blood was shed “our own soil” at the time?",
+  "B": "Taylor's obedience is not the issue; the issue is whether the ground itself was American.",
+  "C": "Buying California never enters the resolutions; they ask about the spot of the fighting.",
+  "D": "The Treaty of Guadalupe Hidalgo came in February 1848, two months after these resolutions.",
+  "general": "1. Read Lincoln's opening line. He wants one fact: was the spot where the blood was shed American soil?\n2. See how the questions work. Each one tests a piece of Polk's story: the spot's history, its people, and who sent the soldiers there.\n3. Notice the method. Lincoln does not call Polk a liar; he asks for the facts that would prove or break the claim.\nRemember: the sharpest challenge to a war story is not an insult — it is a request for the exact spot on the map."
+ }
+}

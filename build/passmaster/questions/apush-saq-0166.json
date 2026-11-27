@@ -1,0 +1,95 @@
+{
+ "id": "apush-saq-0166",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.12"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "5.A",
+  "2.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.12 Comparison in Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Sectional Conflict and the Compromise of 1850"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865-1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844-1877)"
+   }
+  ]
+ },
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "saq_slot": 1,
+ "stimulus": {
+  "kind": "text",
+  "text": "Historians often pair the Compromise of 1850 with the Compromise of 1877. Each ended a crisis that threatened to break the Union or block a presidency, and each did so by trading something one side wanted for something the other side wanted. But the two bargains pointed in opposite directions: the first kept the Union together for another decade, while the second brought Reconstruction to an end.",
+  "source_note": "Original secondary-style passage written for this question; not a quotation from any historian. Drawn from Barron's Premium 2027, Chapter 7, and 5 Steps 2024, Chapters 14 and 16."
+ },
+ "stimulus_set": null,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify ONE thing the Compromise of 1850 and the Compromise of 1877 had in common.",
+   "modelAnswer": "Both compromises settled an urgent crisis by trading concessions between the sides. In 1850 each side gave something up to hold the Union together, and in 1877 each side gave something up to settle the disputed election. Neither bargain solved the deeper conflict underneath the crisis.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one thing the two compromises had in common, such as trading concessions, settling an immediate crisis, or postponing the deeper conflict.",
+     "notEarned": "Naming a fact about only one compromise does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE way the Compromise of 1877 differed from the Compromise of 1850 in its effect on Black Americans.",
+   "modelAnswer": "The Compromise of 1850 left slavery in place and postponed the question of its spread, but the Compromise of 1877 took away the federal troops that protected Black voters and officeholders in the South. Once the troops left, Redeemer governments and terror groups could strip Black Southerners of the rights the amendments had promised. The 1877 bargain did not postpone Black rights; it abandoned their protection.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one way the 1877 compromise differed in its effect on Black Americans, such as ending federal protection, enabling Redeemer rule, or exposing Black voters to violence and disenfranchisement.",
+     "notEarned": "Saying only that the two compromises happened in different years does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE reason the Compromise of 1850 did not settle the sectional conflict over slavery.",
+   "modelAnswer": "The Compromise of 1850 settled the fight over the Mexican Cession lands, but it left open whether slavery could spread into the territories. Within four years the Kansas-Nebraska Act reopened that very question by letting settlers decide it, and the result was Bleeding Kansas. A bargain that leaves the central question open cannot hold once that question returns.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason the 1850 compromise did not settle the conflict, such as leaving slavery in the territories unresolved, the Kansas-Nebraska Act, or the Fugitive Slave Act's anger in the North.",
+     "notEarned": "Saying only that the compromise happened long ago does not earn the point."
+    }
+   ]
+  }
+ ]
+}

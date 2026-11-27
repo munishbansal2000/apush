@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1284",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.4"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "2.A",
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.4 The Compromise of 1850"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Daniel Webster, speech in the Senate, March 7, 1850"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Daniel Webster, speech in the Senate, March 7, 1850 (Congressional Globe, 31st Congress, 1st session, Appendix — Webster's revised text). Public domain.",
+  "text": "Mr. President, — I wish to speak to-day, not as a Massachusetts man, nor as a Northern man, but as an American, and a member of the Senate of the United States.\n\n. . .\n\nI speak to-day for the preservation of the Union. “Hear me for my cause.” I speak to-day, out of a solicitous and anxious heart, for the restoration to the country of that quiet and that harmony which make the blessings of this Union so rich and so dear to us all.\n\n. . .\n\nDesirous of immediate connection with the United States, [California's] Senators were appointed and representatives chosen, . . . asking, in behalf of their State, that the state may be admitted into this Union as one of the United States. This constitution, Sir, contains an express prohibition against slavery, or involuntary servitude, in the State of California. . . . This prohibition against slavery, it is said, was inserted with entire unanimity."
+ },
+ "stimulus_set": "webster-seventh-march-1850",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Webster's discussion of California's constitution best supports which conclusion about the admission question?",
+ "options": [
+  {
+   "key": "A",
+   "text": "California's voters were divided over slavery, so Congress had to choose for them.",
+   "misconception": "The ban was inserted “with entire unanimity,” the opposite of a divided vote."
+  },
+  {
+   "key": "B",
+   "text": "California asked to enter as a slave state, and Webster urged the Senate to refuse.",
+   "misconception": "California's constitution banned slavery; Webster reports the ban approvingly, not as a slave-state request."
+  },
+  {
+   "key": "C",
+   "text": "California's constitution said nothing about slavery, leaving the question open.",
+   "misconception": "Webster says the constitution contains an “express prohibition against slavery,” not silence."
+  },
+  {
+   "key": "D",
+   "text": "California had already banned slavery itself, so Congress could admit it without deciding the slavery question."
+  }
+ ],
+ "rationales": {
+  "A": "The ban was inserted “with entire unanimity,” the opposite of a divided vote.",
+  "B": "California's constitution banned slavery; Webster reports the ban approvingly, not as a slave-state request.",
+  "C": "Webster says the constitution contains an “express prohibition against slavery,” not silence.",
+  "D": "Webster says California's constitution “contains an express prohibition against slavery, or involuntary servitude, in the State of California,” and that the ban “was inserted with entire unanimity.”",
+  "general": "1. Find the fact Webster reports about California's constitution: an express ban on slavery.\n2. Note how he stresses it: the ban was inserted “with entire unanimity,” by Californians themselves.\n3. See what that fact lets Congress do: admit the state as Californians made it, without Congress ruling on slavery.\nRemember: when a territory has already answered the hard question itself, Congress can admit it without answering the question."
+ }
+}

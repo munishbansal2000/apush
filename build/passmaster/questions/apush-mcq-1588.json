@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-1588",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.12",
+  "5.7"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "D",
+ "skills": [
+  "5.A",
+  "1.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.12 Comparison in Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Sectional Conflict and the Compromise of 1850"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "The Civil War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844-1877)"
+   }
+  ],
+  "primary_sources": [
+   "Abraham Lincoln, First Inaugural Address, March 4, 1861",
+   "Jefferson Davis, Farewell Address to the Senate, January 21, 1861"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Source 1: Abraham Lincoln, First Inaugural Address, March 4, 1861:\n“I have no purpose, directly or indirectly, to interfere with the institution of slavery in the States where it exists. I believe I have no lawful right to do so, and I have no inclination to do so.”\n\nSource 2: Jefferson Davis, Farewell Address to the United States Senate, January 21, 1861:\n“... I have for many years advocated, as an essential attribute of State sovereignty, the right of a State to secede from the Union. Therefore, if I had not believed there was justifiable cause; if I had thought that Mississippi was acting without sufficient provocation, or without an existing necessity, I should still, under my theory of the Government, because of my allegiance to the State of which I am a citizen, have been bound by her action. I, however, may be permitted to say that I do think she has justifiable cause, and I approve of her act.”",
+  "source_note": "Source 1: Abraham Lincoln, First Inaugural Address, March 4, 1861, quoted verbatim (verified against Barron's Premium 2027, Chapter 7, and the Collected Works). Source 2: Jefferson Davis, Farewell Address to the Senate, January 21, 1861, quoted verbatim from the Papers of Jefferson Davis, Rice University (jeffersondavis.rice.edu). The leading ellipsis marks dropped opening words. Both sources are public domain."
+ },
+ "stimulus_set": "lincoln-davis-1861",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The two passages differ most importantly in what each man claims about the Union.",
+ "options": [
+  {
+   "key": "A",
+   "text": "Lincoln says the South may leave, while Davis says it must stay.",
+   "misconception": "The passages say the reverse: Lincoln will not interfere with slavery where it exists, and Davis defends leaving."
+  },
+  {
+   "key": "B",
+   "text": "Lincoln says slavery should be abolished at once, while Davis says it should spread into the territories.",
+   "misconception": "Lincoln says he has no purpose to interfere with slavery where it exists."
+  },
+  {
+   "key": "C",
+   "text": "Both men agree that states may leave the Union whenever they wish.",
+   "misconception": "Lincoln never grants a right to secede; his address defends the Union."
+  },
+  {
+   "key": "D",
+   "text": "Lincoln claims no right to touch slavery where it exists, while Davis claims a state's right to leave."
+  }
+ ],
+ "rationales": {
+  "A": "Lincoln's passage promises not to touch slavery; Davis's passage defends secession, the opposite pairing.",
+  "B": "Lincoln says plainly that he has no purpose to interfere with slavery where it exists.",
+  "C": "Davis claims a right to secede; Lincoln's whole address is a plea to keep the Union whole.",
+  "D": "Lincoln limits his own power over slavery, and Davis asserts the states' power to leave.",
+  "general": "1. Take Lincoln's claim first: he says he has no lawful right to interfere with slavery where it exists.\n2. Take Davis's claim: a state may secede because states are sovereign.\n3. One man shrinks federal power over slavery; the other grows state power to leave.\n4. The two claims pull in opposite directions, and that gap is the split of 1861.\nRemember: compare claims by asking what power each speaker asserts and what power each gives up."
+ }
+}

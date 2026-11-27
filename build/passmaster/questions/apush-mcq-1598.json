@@ -1,0 +1,76 @@
+{
+  "answerKey": "C",
+  "difficulty": 2,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 7",
+        "section": "Topic 5.5 Sectional Conflict: Regional Differences"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 14",
+        "section": "Union Expanded and Challenged (1835–1860)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 9"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-1598",
+  "lesson": "apush-u5-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "The authors modeled their argument on the Monroe Doctrine.",
+      "text": "The Monroe Doctrine"
+    },
+    {
+      "key": "B",
+      "misconception": "The authors modeled their argument on the Articles of Confederation.",
+      "text": "The Articles of Confederation"
+    },
+    {
+      "key": "C",
+      "text": "The Declaration of Independence"
+    },
+    {
+      "key": "D",
+      "misconception": "The authors modeled their argument on the Missouri Compromise.",
+      "text": "The Missouri Compromise"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "The Monroe Doctrine is a foreign-policy statement, not a rights model.",
+    "B": "The Articles of Confederation are a governing document, not a rights model.",
+    "C": "The Declaration of Sentiments deliberately rewrites the Declaration of Independence, substituting “all men and women are created equal.” That rewrite claims the Revolution's own language for women, turning its promise into a demand.",
+    "D": "The Missouri Compromise is a slavery settlement, not a rights model.",
+    "general": "1. Compare the opening lines. “All men and women are created equal” echoes “all men are created equal.”\n2. Ask what the echo means. The authors rewrote the Declaration of Independence.\n3. Test the other models. None matches these words.\n4. Match the model. Language and structure both come from 1776.\nRemember: when a text rewrites famous words, the model is the text it rewrites."
+  },
+  "reasoning": "comparison",
+  "skills": [
+    "1.B"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from the Declaration of Sentiments (1848)",
+  "status": "final",
+  "stem": "The authors of the Declaration of Sentiments most directly modeled their argument on which of the following?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Declaration of Sentiments, Seneca Falls Convention, 1848, public domain.",
+    "text": "“We hold these truths to be self-evident: that all men and women are created equal; that they are endowed by their Creator with certain inalienable rights; that among these are life, liberty, and the pursuit of happiness.”"
+  },
+  "stimulus_set": "seneca-falls-1848",
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "topics": [
+    "5.5"
+  ],
+  "type": "mcq",
+  "unit": 5
+}

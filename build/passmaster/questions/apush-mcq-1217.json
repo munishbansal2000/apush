@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-1217",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.2"
+ ],
+ "lesson": "apush-u5-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "D",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "GEO",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "A. Westward Migrations"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "map",
+  "source_note": "John Arrowsmith, “Map of Texas,” 1841, compiled from surveys in the Land Office of Texas, London. Public domain.",
+  "text": "A map of Texas published in London in 1841, compiled from surveys in the Land Office of Texas by John Arrowsmith. It shows Texas as an independent republic, with its claimed boundary running along the Rio Grande. The map carries the seals of the Republic of Texas, notes that Britain recognized Texas as an independent state on November 16, 1840, and includes an inset plan of Galveston Bay."
+ },
+ "stimulus_set": "arrowsmith-texas-1841",
+ "source": "original; stimulus image from the shared pool, John Arrowsmith, “Map of Texas” (1841), public domain",
+ "stem": "According to the map, the boundary claimed by Texas ran along which river?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Nueces River",
+   "misconception": "The Nueces was the boundary Mexico claimed, not the one Texas claimed."
+  },
+  {
+   "key": "B",
+   "text": "The Colorado River",
+   "misconception": "The Colorado River runs through central Texas; it was not the claimed boundary."
+  },
+  {
+   "key": "C",
+   "text": "The Sabine River",
+   "misconception": "The Sabine was the eastern boundary between Texas and Louisiana, not the southern boundary with Mexico."
+  },
+  {
+   "key": "D",
+   "text": "The Rio Grande"
+  }
+ ],
+ "rationales": {
+  "A": "The Nueces was Mexico's claimed boundary; Texas claimed farther south, to the Rio Grande.",
+  "B": "The Colorado River flows through the middle of Texas and is not a boundary with Mexico.",
+  "C": "The Sabine River marked Texas's eastern edge with Louisiana, not its southern edge with Mexico.",
+  "D": "The map draws Texas's claimed boundary along the Rio Grande, from its mouth to its source.",
+  "general": "1. Find the southern edge of Texas on the map. The line follows a river from the Gulf of Mexico to the mountains.\n2. Read the river's name. It is the Rio Grande, the river Texas claimed as its boundary.\n3. Keep the other river straight. Mexico claimed the Nueces, farther north, as the true boundary.\nRemember: two rivers, two claims. The Rio Grande was the Texan claim and the Nueces was the Mexican one — and the strip between them became a cause of war."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1217",
+   "file": "u4/5s24-ch03-mcq-40.jpg",
+   "caption": "John Arrowsmith, “Map of Texas,” 1841",
+   "alt": "John Arrowsmith's 1841 map of Texas as an independent republic, with the Rio Grande boundary, the seals of the Republic of Texas, and an inset plan of Galveston Bay",
+   "license": "Public domain"
+  }
+ ]
+}

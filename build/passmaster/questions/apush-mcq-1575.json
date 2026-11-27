@@ -1,0 +1,93 @@
+{
+ "id": "apush-mcq-1575",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.12",
+  "5.8"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "5.B",
+  "3.A"
+ ],
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.12 Comparison in Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Sectional Conflict and the Compromise of 1850"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "The Civil War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844-1877)"
+   }
+  ]
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "Railroads operating in the United States, 1860 (see map). The 1860 census counted about 31 million people in the United States. The table below gives the two sections in 1860, from census figures:\n\n|  | Free states (North) | Slave states (South) |\n|---|---|---|\n| Population | about 19 million | about 12 million, including about 4 million enslaved people |\n| Railroad miles | about 22,000 | about 9,000 |\n| Share of the nation's manufacturing output | about 90 percent | about 10 percent |\n| Leading product | manufactured goods, grain, and coal | cotton, grown by enslaved labor |\n\nSource: figures from the 1860 United States census, as summarized in the course books.",
+  "source_note": "Map: Railroads Operating in the U.S., 1860, Wikimedia Commons (public domain, pre-1930). Table: 1860 census figures as summarized in Barron's Premium 2027, Chapter 7, and 5 Steps 2024, Chapters 14-15. The map shows railroad lines in red; the dense web covers the Northeast and the Midwest, with far fewer lines in the South."
+ },
+ "stimulus_set": "railroads-1860-north-south",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Which of the following best explains why the Union’s wartime plan to blockade Southern ports and seize the Mississippi River would hurt the Confederacy more than a similar plan would have hurt the Union?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The South had few railroads and little manufacturing, so losing its rivers and ports cut off its movement of goods."
+  },
+  {
+   "key": "B",
+   "text": "The South had more railroad miles than the North, so it depended on trains instead of rivers for moving goods.",
+   "misconception": "The table gives the South about 9,000 railroad miles to the North's 22,000."
+  },
+  {
+   "key": "C",
+   "text": "The North's factories needed Southern cotton, so a blockade would starve Northern industry first.",
+   "misconception": "Background: Northern factories made goods and weapons; the blockade cut the South off from selling cotton abroad."
+  },
+  {
+   "key": "D",
+   "text": "The two sections had equal transport networks, so the plan would hurt both sides the same.",
+   "misconception": "The map shows a dense Northern network and a thin Southern one, not equal networks."
+  }
+ ],
+ "rationales": {
+  "A": "With few railroads and about 10 percent of manufacturing, the South leaned on its rivers and ports. Closing them cut its lifeline.",
+  "B": "The table gives the South far fewer railroad miles, so it could not fall back on trains.",
+  "C": "Background: the blockade stopped the South from exporting cotton and importing supplies; Northern factories kept running.",
+  "D": "The map shows the two networks are far from equal, and the table confirms it.",
+  "general": "1. Read the map as a transport system: the South's red lines are sparse, so rivers and ports carry the load.\n2. Read the table: about 9,000 railroad miles and about 10 percent of manufacturing leave no backup.\n3. A blockade plus control of the Mississippi takes away the rivers and the ports at once.\n4. The Union, with its dense rails and factories, could absorb the same blow; the Confederacy could not.\nRemember: a strategy works when it strikes the side that has no second way to move and make things."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1575",
+   "file": "unperioded/test-05-doc6.png",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Railroads_Operating_in_the_US_in_1860.png",
+   "license": "Public domain",
+   "caption": "Railroad lines operating in the United States in 1860",
+   "alt": "A map of the United States in 1860 with railroad lines in red, dense across the Northeast and Midwest and sparse across the South"
+  }
+ ]
+}

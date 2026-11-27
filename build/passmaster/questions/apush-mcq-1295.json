@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1295",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.4"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "3.B",
+  "5.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.4 The Compromise of 1850"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Statutes at Large, vol. 9 (1845–1851)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original summary table written for this question; facts from the grounding books and the Statutes at Large (9 Stat. 446–467).",
+  "text": "The five laws Congress passed in September 1850 settled the crisis over the Mexican Cession. Each law is listed below with what it did and when it was approved.\n\n| Law | What it did | Approved |\n| California Admission Act | Admitted California as a free state | September 9, 1850 |\n| Texas and New Mexico Act | Fixed Texas's boundary, paid Texas $10 million, and organized New Mexico Territory | September 9, 1850 |\n| Utah Territorial Act | Organized Utah Territory, leaving slavery to be decided when it sought statehood | September 9, 1850 |\n| Fugitive Slave Act | Required the return of people who had escaped slavery, with new federal commissioners | September 18, 1850 |\n| Slave Trade Suppression Act | Banned bringing enslaved people into the District of Columbia to sell them | September 20, 1850 |"
+ },
+ "stimulus_set": "compromise-five-measures-1850",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The table shows that the Compromise of 1850 was a package of separate bargains rather than a single principle. Which pair best illustrates that?",
+ "options": [
+  {
+   "key": "A",
+   "text": "California's admission and the Utah act, which both banned slavery.",
+   "misconception": "The Utah act did not ban slavery; it left the question to be decided when Utah sought statehood."
+  },
+  {
+   "key": "B",
+   "text": "The Texas act and the Fugitive Slave Act, which both applied only in the South.",
+   "misconception": "The Fugitive Slave Act applied in the free states, where renditions happened — not only in the South."
+  },
+  {
+   "key": "C",
+   "text": "California admitted free and a stronger Fugitive Slave Act, giving each section something it wanted."
+  },
+  {
+   "key": "D",
+   "text": "The District of Columbia act and the Utah act, which both organized new territories.",
+   "misconception": "The District act banned a trade, it did not organize a territory; only the Utah act did that."
+  }
+ ],
+ "rationales": {
+  "A": "The Utah act did not ban slavery; it left the question to be decided when Utah sought statehood.",
+  "B": "The Fugitive Slave Act applied in the free states, where renditions happened — not only in the South.",
+  "C": "The table pairs the two: a free California for the North and a stronger rendition law for the South — each side's prize in the same package.",
+  "D": "The District act banned a trade, it did not organize a territory; only the Utah act did that.",
+  "general": "1. Look for the two laws that point in opposite directions: one frees a state, the other tightens the return of runaways.\n2. Background from the books: the North cheered California, and the South cheered the Fugitive Slave Act.\n3. See the package for what it is: not one principle applied evenly, but two opposite prizes traded across the table.\nRemember: a compromise built from opposite prizes is a bargain, not a principle — and bargains can unravel."
+ }
+}

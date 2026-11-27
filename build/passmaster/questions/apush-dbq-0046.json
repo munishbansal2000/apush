@@ -1,0 +1,162 @@
+{
+ "id": "apush-dbq-0046",
+ "type": "dbq",
+ "unit": 5,
+ "topics": [
+  "5.8"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.8 Military Conflict in the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Abraham Lincoln, First Inaugural Address (March 4, 1861)",
+   "Abraham Lincoln, letter to Horace Greeley (August 22, 1862)",
+   "Abraham Lincoln, Emancipation Proclamation (January 1, 1863)",
+   "Abraham Lincoln, Gettysburg Address (November 19, 1863)",
+   "Frederick Douglass, “Men of Color, to Arms!” (March 1863)"
+  ]
+ },
+ "source": "original; documents are public-domain primary sources and real data (see each document’s sourcing note)",
+ "stimulus_set": null,
+ "prompt": "Evaluate the extent to which the Civil War changed the meaning of the war for the Union between 1861 and 1865.",
+ "totalPoints": 7,
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "March 4, 1861",
+   "title": "Lincoln: no interference with slavery",
+   "source": "Abraham Lincoln, First Inaugural Address, March 4, 1861. Public domain.",
+   "sourcing": "President Lincoln, on the day of his inauguration, reassuring the South before any fighting began.",
+   "text": "“I have no purpose, directly or indirectly, to interfere with the institution of slavery in the States where it exists. I believe I have no lawful right to do so, and I have no inclination to do so.”"
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "August 22, 1862",
+   "title": "Lincoln: whatever saves the Union",
+   "source": "Abraham Lincoln, letter to Horace Greeley, August 22, 1862. Public domain.",
+   "sourcing": "President Lincoln, answering a Northern editor’s demand for immediate emancipation by stating his war aims in public.",
+   "text": "“If I could save the Union without freeing any slave I would do it, and if I could save it by freeing all the slaves I would do it . . . What I do about slavery, and the colored race, I do because I believe it helps to save the Union. . . .”"
+  },
+  {
+   "n": 3,
+   "kind": "text",
+   "date": "January 1, 1863",
+   "title": "Emancipation as a war measure",
+   "source": "Abraham Lincoln, Emancipation Proclamation, as issued January 1, 1863. Public domain.",
+   "sourcing": "President Lincoln, acting as commander in chief, freeing enslaved people in the states still in rebellion.",
+   "text": "“That on the first day of January, in the year of our Lord one thousand eight hundred and sixty-three, all persons held as slaves within any State or designated part of a State, the people whereof shall then be in rebellion against the United States, shall be then, thenceforward, and forever free . . .”"
+  },
+  {
+   "n": 4,
+   "kind": "text",
+   "date": "November 19, 1863",
+   "title": "Gettysburg: a new birth of freedom",
+   "source": "Abraham Lincoln, Gettysburg Address, November 19, 1863 (Bliss copy). Public domain.",
+   "sourcing": "President Lincoln, dedicating a military cemetery four months after the Battle of Gettysburg.",
+   "text": "“Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. . . . that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth.”"
+  },
+  {
+   "n": 5,
+   "kind": "text",
+   "date": "March 1863",
+   "title": "Douglass: men of color, to arms",
+   "source": "Frederick Douglass, “Men of Color, to Arms!” March 1863. Public domain.",
+   "sourcing": "Frederick Douglass, the leading Black abolitionist, recruiting Black soldiers for the Union army after the Emancipation Proclamation.",
+   "text": "“Once let the black man get upon his person the brass letter, U.S., let him get an eagle on his button, and a musket on his shoulder and bullets in his pocket, there is no power on earth that can deny that he has earned the right to citizenship.”"
+  },
+  {
+   "n": 6,
+   "kind": "image",
+   "date": "1864",
+   "title": "The Pending Contest",
+   "source": "The Pending Contest, published by Oliver Evans Woods, Philadelphia, 1864 (Library of Congress, LCCN2008661659). Public domain; image from the shared image pool.",
+   "sourcing": "A Northern cartoon published in 1864, showing the war as a contest between Secession and the people’s right to rule.",
+   "figure": "u5/5s24-ch15-mcq-05.jpg",
+   "text": "The cartoon shows a man labeled “SECESSION” fighting a man labeled “The PEOPLE shall Rule!” while Napoleon of France and John Bull of England watch, and its caption distinguishes Copperheads from other Democrats."
+  },
+  {
+   "n": 7,
+   "kind": "table",
+   "date": "1863–1865",
+   "title": "Black soldiers in the Union army",
+   "source": "U.S. War Department records, as commonly cited in Civil War histories. Figures are rounded.",
+   "sourcing": "The War Department’s record of who served, showing what emancipation added to the Union army.",
+   "text": "| Black soldiers in the Union army, 1863–1865 |\n| Men who served | about 180,000 |\n| Share of all Union soldiers | about 1 in 10 |\n| Men who died in service | about 40,000 |"
+  }
+ ],
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which the Civil War changed the meaning of the war for the Union between 1861 and 1865, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the sectional crisis of the 1850s, secession, or the coming of war in 1861.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (first point): earns the point for describing specific and relevant evidence from at least three documents to support an argument about the prompt.",
+   "notEarned": "Using fewer than three documents, or quoting documents without describing what they show, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support an argument, with the evidence accurately described and tied to the claim.",
+   "notEarned": "Using fewer than six documents, or listing documents without connecting them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence beyond the documents: earns the point for describing a specific and relevant example beyond the documents, such as the Battle of Antietam in September 1862, the New York City draft riots of July 1863, or the Thirteenth Amendment.",
+   "notEarned": "A general statement with no specific example beyond the documents does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "3.B",
+   "criterion": "Sourcing: earns the point for explaining the relevance of a document’s author, purpose, audience, or historical situation to the argument, for at least two documents.",
+   "notEarned": "Identifying an author without explaining why it matters, or sourcing only one document, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Complexity: earns the point for demonstrating a complex understanding, such as qualifying the extent of the claim, showing how the same development pulled in opposite directions, or weighing change against continuity.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: The Civil War changed the meaning of the war for the Union to a great extent, from a war to restore the Union alone to a war for the Union and human equality, though the change was gradual and contested: Lincoln’s first aim never left, and the new aim had to be fought for at every step.\nGrouping 1 — the war as Union alone: Lincoln’s First Inaugural (Doc 1) promises not to touch slavery where it exists, and his Greeley letter (Doc 2) still weighs emancipation only by whether it saves the Union.\nGrouping 2 — the turn to emancipation: the Proclamation (Doc 3) frees enslaved people in the rebel states as a war measure, and Douglass (Doc 5) ties Black military service to citizenship, with the table (Doc 7) showing about 180,000 Black men in uniform.\nGrouping 3 — the new meaning stated: the Gettysburg Address (Doc 4) calls the war a test of equality and a new birth of freedom, and the 1864 cartoon (Doc 6) frames the fight as the people’s right to rule against secession.\nOutside evidence: the Battle of Antietam in September 1862, which gave Lincoln the victory he needed to issue the proclamation; the New York City draft riots of July 1863, showing Northern opposition to the war’s new meaning; and the Thirteenth Amendment, proposed in 1865, which finished the legal work.\nComplexity: the same war that widened its meaning also divided the North over that meaning, as the draft riots and the Copperheads show; the Union’s purpose changed, but the change was argued over in every year of the war."
+}

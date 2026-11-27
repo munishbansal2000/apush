@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0135",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.1"
+ ],
+ "lesson": "apush-u5-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "skills": [
+  "3.A",
+  "6.B"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.1 Contextualizing Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Frederick Douglass, “What to the Slave Is the Fourth of July?” Oration delivered in Corinthian Hall, Rochester, July 5, 1852"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Frederick Douglass, “What to the Slave Is the Fourth of July?” Oration delivered in Corinthian Hall, Rochester, July 5, 1852; public domain.",
+  "text": "“Fellow-citizens, pardon me, allow me to ask, why am I called upon to speak here to-day? What have I, or those I represent, to do with your national independence? Are the great principles of political freedom and of natural justice, embodied in that Declaration of Independence, extended to us? . . . What, to the American slave, is your 4th of July? I answer; a day that reveals to him, more than all other days in the year, the gross injustice and cruelty to which he is the constant victim. . . . The existence of slavery in this country brands your republicanism a sham, your humanity a base pretense, and your Christianity a lie.”\n— Frederick Douglass, “What to the Slave Is the Fourth of July?” Oration delivered in Corinthian Hall, Rochester, July 5, 1852"
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus is a verbatim excerpt from Frederick Douglass, “What to the Slave Is the Fourth of July?” (1852), public domain",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify Douglass’s main argument about the Fourth of July and slavery.",
+   "modelAnswer": "Douglass argues that the Fourth of July celebrates freedom and equality that enslaved Americans do not share. For the enslaved person, the holiday only exposes the injustice and cruelty of slavery in a nation that calls itself free.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying Douglass’s argument that the holiday’s promises of freedom do not extend to enslaved people.",
+     "notEarned": "Restating Douglass’s words with no argument identified, or describing his life instead of his claim, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how ONE specific development from the period 1844–1860 supports Douglass’s argument that slavery endangered the Union.",
+   "modelAnswer": "The fight over slavery in the territories acquired from Mexico, from the Wilmot Proviso through Bleeding Kansas, turned westward expansion into a sectional battleground. By the end of the 1850s, the sections could no longer agree on slavery’s future, which is exactly the danger Douglass named.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one specific 1844–1860 development and explaining how it shows slavery dividing the nation.",
+     "notEarned": "Naming a development with no link to Douglass’s argument, or a development from outside the period, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE specific development after 1865 that shows the promise of emancipation remained unfulfilled.",
+   "modelAnswer": "After 1865, Southern states passed Black Codes that restricted freedpeople’s movement and labor, and the Ku Klux Klan used terror against Black voters. The rights promised by the 13th, 14th, and 15th Amendments were written into the Constitution, yet in practice they were hollowed out, just as Douglass had warned that American promises could be empty.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one specific post-1865 development, such as Black Codes, Klan terror, or the Compromise of 1877, and explaining how it left emancipation’s promise unfulfilled.",
+     "notEarned": "Naming a development with no explanation of the unfulfilled promise, or a development from before 1865, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

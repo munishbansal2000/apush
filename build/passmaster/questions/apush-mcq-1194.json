@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-1194",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.1"
+ ],
+ "lesson": "apush-u5-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "D",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "GEO",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.1 Contextualizing Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "map",
+  "source_note": "Map of the United States, the Area of Freedom and Slavery, published by G. W. Elliott, New York, 1856; public domain.",
+  "text": "A wall map printed in New York in 1856 is titled “Map of the United States, the Area of Freedom and Slavery, and the Territories Whose Destiny Is Yet to Be Decided.” It colors the free states pink and the slave states gray, draws the Missouri Compromise line at 36°30′ across the West, and shows portraits of John C. Frémont (left) and William L. Dayton (right) at the top. Below the map, tables compare the free states and the slave states using figures from the United States census of 1850."
+ },
+ "stimulus_set": "freedom-slavery-map-1856",
+ "source": "original; stimulus image from the shared pool, Map of the United States, the Area of Freedom and Slavery (1856), public domain",
+ "stem": "According to the map’s title, what question about the western territories was still undecided in 1856?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Whether the territories would be sold back to Mexico after the war.",
+   "misconception": "Mexico had already ceded the land in 1848; the map asks about slavery, not ownership."
+  },
+  {
+   "key": "B",
+   "text": "Whether railroads would be built across the territories at all.",
+   "misconception": "Railroads appear in the era, but the title names freedom and slavery, not railroads."
+  },
+  {
+   "key": "C",
+   "text": "Whether the territories would be settled by farmers or by miners.",
+   "misconception": "The map’s title is about freedom and slavery, not about farming versus mining."
+  },
+  {
+   "key": "D",
+   "text": "Whether slavery would be allowed in the territories or kept out of them."
+  }
+ ],
+ "rationales": {
+  "A": "The land was already American by 1856, so selling it back to Mexico is not the map’s question.",
+  "B": "The title says nothing about railroads; it names freedom, slavery, and the territories.",
+  "C": "Farmers and miners are not in the title, while freedom and slavery are.",
+  "D": "The title names “the territories whose destiny is yet to be decided” right after naming “the area of freedom and slavery.” Background: after the Mexican Cession, the question of slavery in the new territories was the question that split national politics.",
+  "general": "1. Read the title slowly. It names “the area of freedom and slavery” and then “the territories whose destiny is yet to be decided.”\n2. Look at the colors. The free states are pink, the slave states are gray, and the western territories sit between them.\n3. Find the line. The Missouri Compromise line at 36°30′ still crosses the map, but the title says the territories are undecided.\n4. Put it together. The map’s question is whether slavery will go into the West.\nRemember: a map’s title often states its argument, so read the title before you read the borders."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1194",
+   "file": "u5/5s24-ch14-mcq-01.jpg",
+   "caption": "Map of the United States, the Area of Freedom and Slavery, 1856",
+   "alt": "An 1856 wall map coloring the free states pink and the slave states gray, with the Missouri Compromise line drawn across the West and portraits of Frémont and Dayton at the top",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Map_of_the_United_States,_showing_by_colors_the_area_of_freedom_and_slavery,_and_the_territories_whose_destiny_is_yet_to_be_decided,_exhibiting_also_the_Missouri_compromise_line,_and_the_routes_of_(4578788503).jpg",
+   "license": "Public domain"
+  }
+ ]
+}

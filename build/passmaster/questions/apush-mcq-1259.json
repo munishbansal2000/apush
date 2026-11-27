@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-1259",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.3"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "A",
+ "skills": [
+  "3.A",
+  "1.A"
+ ],
+ "themes": [
+  "GEO",
+  "WOR"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.3 The Mexican-American War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "E. Gilman, map of the United States after the Treaty of Guadalupe Hidalgo, 1848"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "E. Gilman, map of the United States after the Treaty of Guadalupe Hidalgo, published 1848. Public domain.",
+  "text": "A hand-colored map of the United States published in 1848, the year of the Treaty of Guadalupe Hidalgo. California and New Mexico Territory stretch across the Southwest, with Texas below them and Oregon at the upper left. Tables on the left and right list the areas of the states and territories in square miles and acres, with separate columns for free states and slave states."
+ },
+ "stimulus_set": "gilman-map-1848",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The map most directly shows which of the following changes brought by the Treaty of Guadalupe Hidalgo?",
+ "options": [
+  {
+   "key": "A",
+   "text": "California and New Mexico became territory of the United States."
+  },
+  {
+   "key": "B",
+   "text": "Texas became an independent republic separate from the United States.",
+   "misconception": "Texas had joined the United States in 1845, three years before this map was published."
+  },
+  {
+   "key": "C",
+   "text": "Oregon became part of Canada under the treaty with Britain.",
+   "misconception": "Oregon was settled with Britain in 1846, and the map shows it as American territory."
+  },
+  {
+   "key": "D",
+   "text": "Florida was returned to Spain.",
+   "misconception": "Florida had been American since 1819 and appears on the map as an American state."
+  }
+ ],
+ "rationales": {
+  "A": "The map, published in 1848 after the treaty, shows California and New Mexico Territory inside the United States.",
+  "B": "Texas was annexed in 1845 and appears on the map as an American state, not a republic.",
+  "C": "The map shows Oregon as American territory, settled with Britain in 1846.",
+  "D": "Florida appears on the map as an American state; Spain had ceded it in 1819.",
+  "general": "1. Look at the Southwest. California and New Mexico Territory now sit inside the United States.\n2. Check the date. The map was published in 1848, the year of the treaty that transferred them.\n3. That is the whole story of the map: a continent redrawn in a single year.\nRemember: a map's date is part of its argument — this one announces the new United States, fresh from the treaty."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1259",
+   "file": "u4/pr25e-ch09-q01.jpg",
+   "caption": "E. Gilman, map of the United States after the Treaty of Guadalupe Hidalgo, 1848",
+   "alt": "Gilman's 1848 hand-colored map of the United States: California and New Mexico Territory stretch across the Southwest, with Texas below and Oregon at the upper left, and tables listing the areas of the states and territories",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Gilman_%28United_States_%28after_the_Treaty_of_Guadalupe_Hidalgo%29%29_1848_UTA.jpg",
+   "license": "Public domain"
+  }
+ ]
+}

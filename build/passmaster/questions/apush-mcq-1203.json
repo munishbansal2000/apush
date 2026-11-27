@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1203",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.1"
+ ],
+ "lesson": "apush-u5-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "B",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "SOC",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.1 Contextualizing Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data: United States decennial censuses, 1840–1870.",
+  "text": "| Census | Total population | Enslaved people |\n|---|---|---|\n| 1840 | 17.1 million | 2.5 million |\n| 1850 | 23.2 million | 3.2 million |\n| 1860 | 31.4 million | 4.0 million |\n| 1870 | 38.6 million | — (slavery abolished in 1865) |\n\nSource: United States decennial censuses, 1840–1870."
+ },
+ "stimulus_set": "census-population-1840-1870",
+ "source": "original; stimulus is a data table from the United States decennial censuses, 1840–1870",
+ "stem": "Which conclusion is best supported by the data in the table?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The enslaved population fell sharply between 1840 and 1860 as slavery died out on its own across the whole South.",
+   "misconception": "The enslaved population rose from 2.5 million to 4.0 million; it grew, it did not fall."
+  },
+  {
+   "key": "B",
+   "text": "The enslaved population grew from 2.5 million in 1840 to 4.0 million in 1860, while the total population grew even faster."
+  },
+  {
+   "key": "C",
+   "text": "The total population of the United States shrank during the Civil War decade, from 1860 to 1870, instead of growing.",
+   "misconception": "The total rose from 31.4 million in 1860 to 38.6 million in 1870, so it kept growing."
+  },
+  {
+   "key": "D",
+   "text": "Slavery had already been abolished before the census of 1860 was taken, so no one was counted as enslaved at all.",
+   "misconception": "The table still counts 4.0 million enslaved people in 1860; abolition came in 1865."
+  }
+ ],
+ "rationales": {
+  "A": "The enslaved column rises in every row from 1840 to 1860, so it did not fall.",
+  "B": "Read the two columns together. The enslaved population rose from 2.5 million to 4.0 million, and the total population rose from 17.1 million to 31.4 million, a bigger jump. Background: the books note that cotton made enslaved labor more valuable even as the enslaved population kept growing.",
+  "C": "The 1870 total of 38.6 million is larger than the 1860 total, so the population grew through the war decade.",
+  "D": "The 1860 row still lists 4.0 million enslaved people, and the table marks abolition in 1865.",
+  "general": "1. Read the enslaved column first. It rises from 2.5 million in 1840 to 4.0 million in 1860.\n2. Read the total column next. It rises from 17.1 million to 31.4 million over the same years, a bigger jump.\n3. Compare the two. The enslaved population grew, and the whole nation grew even faster.\n4. Check the last row. In 1870 the total is 38.6 million and the enslaved column is empty, because slavery was abolished in 1865.\nRemember: in a table with two columns, read each one on its own before you compare them."
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-1425",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.8"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "B",
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.8 Military Conflict in the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "J. B. Elliott, Scott’s Great Snake (1861)"
+  ]
+ },
+ "stimulus": {
+  "kind": "map",
+  "source_note": "J. B. Elliott, Scott’s Great Snake, entered according to Act of Congress in 1861 (Library of Congress, LOC 99447020). Public domain. Image from the shared pool.",
+  "text": "The cartoon map is titled “Scott’s Great Snake.” A giant snake coils around the Southern states, its head at the Mississippi River and its body wrapping the Atlantic and Gulf coasts. Small scenes fill the map: a train in Ohio, “Armed Neutrality” in Kentucky, and “Burning Massa Out” in Mississippi."
+ },
+ "stimulus_set": "scotts-great-snake",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The snake in the cartoon most directly represents which Union strategy?",
+ "options": [
+  {
+   "key": "A",
+   "text": "A sudden attack on Richmond to end the war in one battle.",
+   "misconception": "The snake does not strike at one city; it wraps around a whole region."
+  },
+  {
+   "key": "B",
+   "text": "Blockading Southern ports and seizing the Mississippi River."
+  },
+  {
+   "key": "C",
+   "text": "Invading the South through Texas and Mexico.",
+   "misconception": "The snake’s head is at the Mississippi, not in Texas, and its body hugs the coasts."
+  },
+  {
+   "key": "D",
+   "text": "Asking Britain and France to recognize the Confederacy.",
+   "misconception": "The cartoon shows a Union plan against the South, not an appeal to Europe."
+  }
+ ],
+ "rationales": {
+  "A": "The snake does not strike at one city; it wraps around a whole region, so a single-battle plan is the wrong read.",
+  "B": "The snake’s body follows the coasts and its head sits on the Mississippi: a blockade plus control of the river.",
+  "C": "The snake’s head is at the Mississippi, not in Texas, and its body hugs the coasts.",
+  "D": "The cartoon shows a Union plan against the South, not an appeal to Europe.",
+  "general": "1. The snake is not a spear; it is a coil, squeezing.\n2. Its body runs along the Atlantic and Gulf coasts, the line of a naval blockade.\n3. Its head sits on the Mississippi River, the second arm of the plan.\n4. Background from the books: General Winfield Scott proposed a blockade plus a drive down the Mississippi.\n5. Together, the two arms would cut the South off and split it.\nRemember: when a picture shows a squeeze, look for the blockade and the river."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1425",
+   "file": "u5/5s24-ch15-mcq-06.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Scott%27s_great_snake._Entered_according_to_Act_of_Congress_in_the_year_1861_LOC_99447020.jpg",
+   "license": "Public domain (published 1861; Library of Congress)",
+   "caption": "J. B. Elliott, Scott’s Great Snake, 1861 cartoon map.",
+   "alt": "A cartoon map from 1861 shows a giant snake coiling around the Southern states, its head at the Mississippi River and its body along the coasts."
+  }
+ ]
+}

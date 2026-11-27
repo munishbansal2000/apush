@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1487",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.9"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "C",
+ "skills": [
+  "5.A",
+  "3.B"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.9 Government Policies During the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Figures from the Provost Marshal General’s report, as summarized in the 1956 report Veterans in Our Society (U.S. Government Printing Office). Figures are rounded.",
+  "text": "Results of the four drafts under the Enrollment Act of 1863.\n\n| Outcome | Men |\n| Names drawn | 776,829 |\n| Men who furnished substitutes | 73,607 |\n| Men who paid $300 commutation | 86,724 |\n| Men exempted | 315,509 |\n| Men who failed to report | 161,244 |\n| Men who entered the army as draftees | 46,347 |\n\nAltogether 119,954 men entered the army under the act: 46,347 draftees plus 73,607 hired substitutes. The rows overlap, so they do not add to the total drawn."
+ },
+ "stimulus_set": "union-draft-1863-1865",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The table shows 776,829 names drawn but only 46,347 men entering the army as draftees. The draft’s main effect was therefore to",
+ "options": [
+  {
+   "key": "A",
+   "text": "fill the Union army entirely with drafted men, and with no volunteers at all.",
+   "misconception": "Background: only 46,347 of the 776,829 men drawn entered as draftees; volunteers filled most of the ranks."
+  },
+  {
+   "key": "B",
+   "text": "end volunteering in the North once and for all, replacing it with the draft.",
+   "misconception": "Background: volunteering continued, and the draft was meant to stimulate it with bounties."
+  },
+  {
+   "key": "C",
+   "text": "push men to volunteer with bounties, rather than fill the ranks by force."
+  },
+  {
+   "key": "D",
+   "text": "draft every single man whose name was drawn, without exception.",
+   "misconception": "Background: most men drawn were exempted, paid commutation, furnished substitutes, or failed to report."
+  }
+ ],
+ "rationales": {
+  "A": "Background: only 46,347 of the 776,829 men drawn entered as draftees; volunteers filled most of the ranks.",
+  "B": "Background: volunteering continued, and the draft was meant to stimulate it with bounties.",
+  "D": "Background: most men drawn were exempted, paid commutation, furnished substitutes, or failed to report.",
+  "C": "Only 46,347 of 776,829 men drawn entered as draftees, so the draft worked mainly by pushing men to volunteer.",
+  "general": "1. Compare the two big numbers: 776,829 drawn, 46,347 draftees.\n2. That is fewer than one in sixteen.\n3. The rest escaped service by substitutes, commutation, exemption, or not reporting.\n4. The draft was a prod, not a net: it pushed men to volunteer before their names came up.\nRemember: a law’s numbers tell you what it really did, not what its name promises."
+ }
+}

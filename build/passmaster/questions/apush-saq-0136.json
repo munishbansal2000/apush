@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0136",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.2"
+ ],
+ "lesson": "apush-u5-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "skills": [
+  "1.B",
+  "3.A"
+ ],
+ "themes": [
+  "NAT",
+  "MIG"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.2 Manifest Destiny"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question; facts from the grounding books.",
+  "text": "By the 1840s, many Americans believed their nation had a special mission to spread across the continent. Newspaper editor John L. O'Sullivan gave the idea its name in 1845, calling it “manifest destiny” — the belief that Providence had allotted the continent to the United States. Presidents and politicians turned the idea into policy: Texas was annexed in 1845, the Oregon boundary was settled with Britain in 1846, and a war with Mexico in 1846–1848 brought California and the Southwest under the American flag.\n\nEach new piece of land raised the same question: would slavery be allowed there? The idea that justified expansion also deepened the argument over slavery that would split the nation."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one territorial gain the United States made between 1844 and 1848, as described in the passage.",
+   "modelAnswer": "The United States annexed Texas in 1845, settled the Oregon boundary with Britain in 1846, and took California and the Southwest from Mexico in the war of 1846–1848. Any one of these gains answers the question.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one territorial gain from the passage, such as annexing Texas, settling the Oregon boundary, or taking California and the Southwest from Mexico.",
+     "notEarned": "Naming a gain from outside the period, or a vague answer with no gain identified, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how the idea of Manifest Destiny encouraged territorial expansion.",
+   "modelAnswer": "Manifest Destiny taught that Providence had allotted the whole continent to the United States, so expansion looked like a duty rather than a choice. That belief gave leaders a reason to annex Texas, claim Oregon, and fight Mexico for California and the Southwest.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how the belief that the continent was allotted to the United States made expansion seem right or necessary, with at least one specific gain named.",
+     "notEarned": "Restating that Manifest Destiny encouraged expansion, with no mechanism or specific gain explained, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way expansion created conflict within the United States.",
+   "modelAnswer": "Each new territory raised the question of whether slavery would be allowed there, and Northerners and Southerners gave opposite answers. The Wilmot Proviso tried to ban slavery in land taken from Mexico, and the fight over that question deepened the sectional split.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how new land raised the slavery question and divided the sections, with at least one specific development named.",
+     "notEarned": "Naming a conflict with no explanation of how expansion caused it does not earn the point."
+    }
+   ]
+  }
+ ]
+}

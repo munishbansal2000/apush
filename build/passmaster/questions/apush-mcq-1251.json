@@ -1,0 +1,80 @@
+{
+  "id": "apush-mcq-1251",
+  "type": "mcq",
+  "unit": 5,
+  "topics": [
+    "5.3"
+  ],
+  "lesson": "apush-u5-l2",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "answerKey": "C",
+  "skills": [
+    "5.B",
+    "4.B"
+  ],
+  "themes": [
+    "PCE",
+    "NAT"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 7",
+        "section": "Topic 5.3 The Mexican-American War"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 14",
+        "section": "Union Expanded and Challenged (1835–1860)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 9",
+        "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+      }
+    ],
+    "primary_sources": [
+      "Wilmot Proviso, August 8, 1846"
+    ]
+  },
+  "stimulus": {
+    "kind": "table",
+    "source_note": "House vote on the Wilmot Proviso, August 1846, as tabulated in Princeton Review, Chapter 9. The table is drawn from the book's account of the vote.",
+    "text": "How the House of Representatives voted on the Wilmot Proviso in August 1846, by section and by party:\n\n| Members | Whigs | Democrats |\n|---|---|---|\n| Northern | all in favor | all but four in favor |\n| Southern | all but two opposed | all opposed |"
+  },
+  "stimulus_set": "wilmot-vote-1846",
+  "source": "original; stimulus as noted in stimulus.source_note",
+  "stem": "The Proviso passed the House twice but never passed the Senate. That outcome best illustrates which of the following about the politics of the 1840s?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The House was the more conservative chamber because its members served longer terms.",
+      "misconception": "House members served two-year terms and the House had a Northern majority, which is why the Proviso passed there."
+    },
+    {
+      "key": "B",
+      "text": "The Supreme Court had already ruled that Congress could not ban slavery in the territories.",
+      "misconception": "The Court did not rule on slavery in the territories until Dred Scott in 1857, and it ruled the other way."
+    },
+    {
+      "key": "C",
+      "text": "The Senate's equal balance of free and slave states let the South block the Proviso."
+    },
+    {
+      "key": "D",
+      "text": "President Polk vetoed the Proviso each time the House passed it.",
+      "misconception": "The Proviso never reached the president because the Senate never passed it."
+    }
+  ],
+  "rationales": {
+    "A": "The House was the less conservative chamber here: its Northern majority passed the ban twice.",
+    "B": "The Court stayed out of the territories question until Dred Scott in 1857.",
+    "C": "Each state had two senators, so the South's equal numbers in the Senate stopped a bill the Northern House majority wanted.",
+    "D": "A bill the Senate never passes never reaches the president's desk, so there was no veto.",
+    "general": "1. Compare the two chambers. The House, with its Northern majority, passed the ban twice.\n2. Ask why the Senate stopped it. Every state had two senators, so the slave states held half the Senate and could block it.\n3. See the larger point. The Constitution's equal Senate gave the South a veto over the North's numbers.\nRemember: when the House and Senate disagree, check who each chamber answers to — population in one, equal states in the other."
+  }
+}

@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1401",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.7"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.7 Election of 1860 and Secession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "South Carolina, Declaration of the Immediate Causes of Secession (December 24, 1860)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "South Carolina, Declaration of the Immediate Causes Which Induce and Justify the Secession of South Carolina from the Federal Union, December 24, 1860. Public domain. Wording verified against the Bochum source collection (ruhr-uni-bochum.de/gna/Quellensammlung/05/05_southcarolinasecession_1860.htm) and the Hillsdale reprint. Passages appear in this order; '. . .' marks omitted text.",
+  "text": ". . . In the present case, that fact is established with certainty. We assert that fourteen of the States have deliberately refused for years past to fulfil their constitutional obligations, and we refer to their own Statutes for the proof. . . . Thus the constitutional compact has been deliberately broken and disregarded by the non-slaveholding States, and the consequence follows that South Carolina is released from her obligation. . . . A geographical line has been drawn across the Union, and all the States north of that line have united in the election of a man to the high office of President of the United States whose opinions and purposes are hostile to Slavery. . . . On the 4th of March next this party will take possession of the Government. It has announced that the South shall be excluded from the common territory, that the judicial tribunals shall be made sectional, and that a war must be waged against Slavery until it shall cease throughout the United States."
+ },
+ "stimulus_set": "sc-declaration-1860",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The declaration's reference to “a geographical line” drawn across the Union most directly refers to which development?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Missouri Compromise line of 1820",
+   "misconception": "The line here is the one the election drew: all the states north of it voted for Lincoln, not the 1820 compromise line."
+  },
+  {
+   "key": "B",
+   "text": "The border between the United States and Mexico",
+   "misconception": "The line divides North from South in the election, not the United States from Mexico."
+  },
+  {
+   "key": "C",
+   "text": "The sectional split in the election of 1860"
+  },
+  {
+   "key": "D",
+   "text": "The Mason-Dixon line between Maryland and Pennsylvania",
+   "misconception": "The passage describes a line drawn by the election, not the old survey line between two states."
+  }
+ ],
+ "rationales": {
+  "A": "The line here is the one the election drew: all the states north of it voted for Lincoln, not the 1820 compromise line.",
+  "B": "The line divides North from South in the election, not the United States from Mexico.",
+  "C": "The passage says all the states north of the line “have united in the election of a man” hostile to slavery — the line is the sectional vote for Lincoln.",
+  "D": "The passage describes a line drawn by the election, not the old survey line between two states.",
+  "general": "1. The line separates states that voted one way from states that voted another.\n2. The passage ties it to an election, not to a survey or a treaty.\n3. Background: Lincoln won every free state and no slave state, so the map itself drew the line.\n4. The declaration reads the map as a verdict.\nRemember: when a document draws a line, ask what drew it — a law, a war, or a vote."
+ }
+}

@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-1262",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.3"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "D",
+ "skills": [
+  "1.B",
+  "4.A"
+ ],
+ "themes": [
+  "GEO",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.3 The Mexican-American War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "E. Gilman, map of the United States after the Treaty of Guadalupe Hidalgo, 1848"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "E. Gilman, map of the United States after the Treaty of Guadalupe Hidalgo, published 1848. Public domain.",
+  "text": "A hand-colored map of the United States published in 1848, the year of the Treaty of Guadalupe Hidalgo. California and New Mexico Territory stretch across the Southwest, with Texas below them and Oregon at the upper left. Tables on the left and right list the areas of the states and territories in square miles and acres, with separate columns for free states and slave states."
+ },
+ "stimulus_set": "gilman-map-1848",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "On the map, the Rio Grande runs along the southern edge of Texas down to the Gulf of Mexico. That line on the map best reflects which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The border Mexico had claimed since the Texas Revolution, the Nueces River.",
+   "misconception": "Mexico claimed the Nueces River, farther north, as the border of Texas."
+  },
+  {
+   "key": "B",
+   "text": "The border set by the Adams-Onís Treaty of 1819.",
+   "misconception": "The Adams-Onís Treaty set the border between the United States and Spanish territory, not the Texas line of 1848."
+  },
+  {
+   "key": "C",
+   "text": "The route of the Santa Fe Trail from Missouri to New Mexico, used by traders.",
+   "misconception": "The Santa Fe Trail ran overland from Missouri to Santa Fe, not along the Rio Grande to the Gulf."
+  },
+  {
+   "key": "D",
+   "text": "The boundary the United States claimed for Texas and won in the 1848 treaty."
+  }
+ ],
+ "rationales": {
+  "A": "Mexico drew the line at the Nueces River, not the Rio Grande.",
+  "B": "The Adams-Onís Treaty of 1819 settled an older border with Spain, not the Texas boundary.",
+  "C": "The Santa Fe Trail was an overland trade route, not a river boundary.",
+  "D": "The United States claimed the Rio Grande, fought the war over it, and the 1848 treaty fixed it as the boundary.",
+  "general": "1. Find the river on the map. The Rio Grande now marks the whole southern edge of Texas.\n2. Recall the two claims. Mexico said the border was the Nueces; the United States said the Rio Grande.\n3. See the winner. The map draws the American claim, because the treaty of 1848 made it the border.\nRemember: the line on the map is the war's verdict written in ink — the Rio Grande is there because the United States won the argument."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1262",
+   "file": "u4/pr25e-ch09-q01.jpg",
+   "caption": "E. Gilman, map of the United States after the Treaty of Guadalupe Hidalgo, 1848",
+   "alt": "Gilman's 1848 hand-colored map of the United States: California and New Mexico Territory stretch across the Southwest, with Texas below and Oregon at the upper left, and tables listing the areas of the states and territories",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Gilman_%28United_States_%28after_the_Treaty_of_Guadalupe_Hidalgo%29%29_1848_UTA.jpg",
+   "license": "Public domain"
+  }
+ ]
+}

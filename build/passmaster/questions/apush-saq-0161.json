@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0161",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.10"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "skills": [
+  "5.A",
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.10 Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "saq_slot": 1,
+ "stimulus": {
+  "kind": "text",
+  "text": "Reconstruction was the nation’s second founding in miniature. The war had ended slavery, but nobody agreed on what freedom should mean. President Lincoln wanted the Southern states back quickly, asking only a small oath of loyalty. President Johnson kept Lincoln’s lenient course, pardoning former Confederates and accepting new Southern governments. Congress answered with a sterner program: the Freedmen’s Bureau, the Civil Rights Act, the Fourteenth Amendment, and military rule for the South. Black Southerners used the opening to vote, hold office, and build schools and churches. Yet by 1877, federal troops had left the South, and the promises of Reconstruction were already fading.",
+  "source_note": "Original secondary passage written for this question; facts from the grounding books."
+ },
+ "stimulus_set": null,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify ONE way the federal government tried to help formerly enslaved people during Reconstruction.",
+   "modelAnswer": "One way was the Freedmen’s Bureau, created in 1865 to give freedpeople food, clothing, and shelter. The Bureau also opened schools and helped freedpeople sign labor contracts. It was the first large federal agency built to help ordinary people start new lives.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one federal effort to help formerly enslaved people, such as the Freedmen’s Bureau, with a brief explanation of what it did.",
+     "notEarned": "Naming the Bureau with no explanation of its work does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE way Congress and President Johnson disagreed about Reconstruction.",
+   "modelAnswer": "Johnson wanted a quick, lenient reunion, pardoning former Confederates and accepting their new state governments. Congress wanted stronger guarantees for freedpeople, so it passed the Civil Rights Act and the Fourteenth Amendment over his vetoes. The fight was over who would set the terms of reunion, the president or Congress.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one disagreement between Congress and Johnson, such as leniency versus guarantees for freedpeople.",
+     "notEarned": "Saying they disagreed, with no specific issue named, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE limit of Reconstruction’s help to formerly enslaved people.",
+   "modelAnswer": "One limit was that freedom came without land, so most freedpeople had to work as sharecroppers on white-owned farms. Sharecropping left them in debt to the landowner for seed and supplies, which tied them to the land. Legal freedom without economic independence kept most freed families poor.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limit, such as freedom without land leading to sharecropping and debt.",
+     "notEarned": "Saying Reconstruction failed, with no specific limit explained, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

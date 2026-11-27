@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1562",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.11"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "3.C",
+  "1.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.11 Failure of Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Civil Rights Act of March 1, 1875, Section 1, 18 Stat. 335",
+   "Civil Rights Cases, 109 U.S. 3 (1883), majority opinion of Justice Joseph P. Bradley"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "“That all persons within the jurisdiction of the United States shall be entitled to the full and equal enjoyment of the accommodations, advantages, facilities, and privileges of inns, public conveyances on land or water, theaters, and other places of public amusement; subject only to the conditions and limitations established by law, and applicable alike to citizens of every race and color, regardless of any previous condition of servitude.”\n\n—Civil Rights Act of 1875, Section 1 (March 1, 1875)",
+  "source_note": "Civil Rights Act of March 1, 1875, Section 1, 18 Stat. 335. Public domain (federal statute; text verified against Cornell LII, Civil Rights Cases, 109 U.S. 3 (1883))."
+ },
+ "stimulus_set": "civil-rights-act-1875",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "In the Civil Rights Cases of 1883, the Supreme Court struck down the act. Justice Bradley wrote that once a man “has emerged from slavery . . . he takes the rank of a mere citizen.” The Court’s ruling most directly meant that",
+ "options": [
+  {
+   "key": "A",
+   "text": "Congress could not reach discrimination by private businesses."
+  },
+  {
+   "key": "B",
+   "text": "states were forbidden to pass Jim Crow segregation laws.",
+   "misconception": "The ruling did the opposite: it left states free to segregate, as Plessy confirmed in 1896."
+  },
+  {
+   "key": "C",
+   "text": "the Fourteenth Amendment was repealed.",
+   "misconception": "Background: the amendment stayed in the Constitution; the Court narrowed what Congress could do under it."
+  },
+  {
+   "key": "D",
+   "text": "Black citizens lost their citizenship.",
+   "misconception": "Background: citizenship itself was never in question; the ruling was about what Congress could enforce."
+  }
+ ],
+ "rationales": {
+  "A": "Bradley held that the Fourteenth Amendment restrains states, not private innkeepers or railroad companies. A Black traveler turned away from a hotel had no federal remedy, only a state court that would not help.",
+  "B": "The ruling did the opposite: it left states free to segregate, as Plessy confirmed in 1896.",
+  "C": "Background: the amendment stayed in the Constitution; the Court narrowed what Congress could do under it.",
+  "D": "Background: citizenship itself was never in question; the ruling was about what Congress could enforce.",
+  "general": "1. Bradley’s phrase “mere citizen” means a person with no special federal protection left.\n2. Background: the Court held that the amendments restrain states, not private businesses.\n3. An innkeeper or a railroad that refused Black customers was a private actor, so the act could not reach him.\n4. The traveler’s only remedy was a Southern state court, which would not give one.\nRemember: a right with no remedy in the court that will hear it is a sentence, not a shield."
+ }
+}

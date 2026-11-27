@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1418",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.7"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.7 Election of 1860 and Secession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secession dates verified against the Ordinance of Secession table (en.wikipedia.org/wiki/Ordinance_of_Secession), the American Battlefield Trust Civil War timeline (battlefields.org), and Digital History, University of Houston (digitalhistory.uh.edu). Texas adopted its ordinance February 1, 1861, confirmed by popular referendum February 23; Virginia's ordinance was ratified by referendum May 23, 1861.",
+  "text": "Ordinances of secession, in the order the states adopted them. Seven states seceded before Lincoln's inauguration on March 4, 1861; four more followed after the firing on Fort Sumter.\n\n| State | Date of ordinance |\n| South Carolina | December 20, 1860 |\n| Mississippi | January 9, 1861 |\n| Florida | January 10, 1861 |\n| Alabama | January 11, 1861 |\n| Georgia | January 19, 1861 |\n| Louisiana | January 26, 1861 |\n| Texas | February 1, 1861 |\n| Virginia | April 17, 1861 |\n| Arkansas | May 6, 1861 |\n| Tennessee | May 6, 1861 |\n| North Carolina | May 20, 1861 |\n\nDelaware, Kentucky, Maryland, and Missouri were slave states that stayed in the Union and are not listed."
+ },
+ "stimulus_set": "secession-order-1861",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "According to the table, which state was the first to secede?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Virginia",
+   "misconception": "Virginia's ordinance came April 17, 1861, months after the first secession."
+  },
+  {
+   "key": "B",
+   "text": "Mississippi",
+   "misconception": "Mississippi seceded January 9, 1861, twenty days after South Carolina."
+  },
+  {
+   "key": "C",
+   "text": "South Carolina"
+  },
+  {
+   "key": "D",
+   "text": "Texas",
+   "misconception": "Texas adopted its ordinance February 1, 1861, the last of the first seven."
+  }
+ ],
+ "rationales": {
+  "A": "Virginia's ordinance came April 17, 1861, months after the first secession.",
+  "B": "Mississippi seceded January 9, 1861, twenty days after South Carolina.",
+  "C": "The table lists South Carolina first, with an ordinance dated December 20, 1860 — weeks before any other state.",
+  "D": "Texas adopted its ordinance February 1, 1861, the last of the first seven.",
+  "general": "1. Read the table top to bottom: the dates run in order.\n2. December 20, 1860 is the earliest date on the list.\n3. Background: South Carolina's convention voted unanimously, and six states followed within six weeks.\n4. First matters, because the first state tested whether secession would be answered.\nRemember: in a dated list, the earliest date is the answer — do not let a famous name later in the list pull you forward."
+ }
+}

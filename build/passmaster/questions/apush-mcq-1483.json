@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1483",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.9"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "A",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.9 Government Policies During the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Figures from Barron’s Premium AP U.S. History 2027, Chapter 7 (about $2.6 billion borrowed, about $400 million from individual savers; Legal Tender Acts 1862–1863; National Bank Acts 1863–1864; first income tax 1861) and the Gilder Lehrman Institute (about $450 million in greenbacks issued). Figures are rounded.",
+  "text": "How the Union paid for the war (approximate figures).\n\n| Measure | What happened |\n| Borrowing | About $2.6 billion in bonds sold; about $400 million of the bonds were bought by individual savers |\n| Greenbacks | About $450 million in paper money issued under the Legal Tender Acts of 1862–1863 |\n| Taxes | First federal income tax levied in 1861; rates stayed modest |\n| National banking | National Bank Acts of 1863–1864 created a national banking system |"
+ },
+ "stimulus_set": "union-war-finance-1861-1865",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The table shows the Union issued about $450 million in greenbacks. Greenbacks were paper money that was",
+ "options": [
+  {
+   "key": "A",
+   "text": "backed only by faith in the government, not by gold or silver."
+  },
+  {
+   "key": "B",
+   "text": "backed by gold held in vaults at Fort Knox.",
+   "misconception": "Background: greenbacks were backed only by faith in the government; Fort Knox was not built until the 1930s."
+  },
+  {
+   "key": "C",
+   "text": "issued only by state banks, and never by the federal government.",
+   "misconception": "Background: greenbacks were issued by the federal government under the Legal Tender Acts, not by state banks."
+  },
+  {
+   "key": "D",
+   "text": "worthless from the very day they were printed.",
+   "misconception": "Background: greenbacks were accepted and used through the war; their value moved with confidence in Union victory."
+  }
+ ],
+ "rationales": {
+  "B": "Background: greenbacks were backed only by faith in the government; Fort Knox was not built until the 1930s.",
+  "C": "Background: greenbacks were issued by the federal government under the Legal Tender Acts, not by state banks.",
+  "D": "Background: greenbacks were accepted and used through the war; their value moved with confidence in Union victory.",
+  "A": "Greenbacks were backed only by the people’s faith in the government, not by gold or silver.",
+  "general": "1. Find the greenbacks row: about 450 million dollars in paper money.\n2. The Legal Tender Acts made that paper lawful money, but no gold stood behind it.\n3. Its worth rested on one thing: trust that the government would survive and honor it.\n4. When Union fortunes rose or fell, the greenback rose or fell with them.\nRemember: paper money backed by trust is worth exactly as much as the trust behind it."
+ }
+}

@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1456",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.8"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "3.B",
+  "6.B"
+ ],
+ "themes": [
+  "WXT",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.8 Military Conflict in the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Population figures as stated in Barron’s, Chapter 7 (22 million versus less than 6 million, excluding enslaved people); railroad mileage and factory output from the 1860 census, as summarized in the books’ accounts of Northern industrial advantage. Figures are rounded.",
+  "text": "The North and the South on the eve of war, 1860.\n\n| Measure (1860) | Free states (Union) | Confederate states |\n| Free population | about 22,000,000 | under 6,000,000 |\n| Railroad miles | about 22,000 | about 9,000 |\n| Share of the nation’s factory output | about 9 in 10 | about 1 in 10 |"
+ },
+ "stimulus_set": "war-resources-1860",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "A historian would most likely use this table to support which argument about why the war lasted four years?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Northern advantages took time to matter against a defensive South."
+  },
+  {
+   "key": "B",
+   "text": "The South had more resources than the North.",
+   "misconception": "Every row of the table shows the North ahead, not the South."
+  },
+  {
+   "key": "C",
+   "text": "The North refused to use its railroads to move men and supplies.",
+   "misconception": "The table shows the North had the railroads. Background: the books say it used them to move men and supplies."
+  },
+  {
+   "key": "D",
+   "text": "The war was decided in a single battle.",
+   "misconception": "A four-year war is the opposite of a war decided in a single battle."
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: the Confederacy could fight a defensive war, and the Union had to conquer a huge territory.",
+  "B": "Every row of the table shows the North ahead, not the South.",
+  "C": "The table shows the North had the railroads. Background: the books say it used them to move men and supplies.",
+  "D": "A four-year war is the opposite of a war decided in a single battle.",
+  "general": "1. The table raises a puzzle: with numbers like these, why did the war last four years?\n2. The answer is in the kind of war each side fought.\n3. Background from the books: the Confederacy could fight a defensive war, and the Union had to conquer a huge territory.\n4. Factories and railroads win long wars, but they win them slowly, mile by mile.\nRemember: big advantages answer why the war ended as it did, not why it lasted."
+ }
+}

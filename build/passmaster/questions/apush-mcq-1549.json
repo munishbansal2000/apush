@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1549",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.11"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "B",
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.11 Failure of Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Office of the House Historian, “Majority Changes in the House of Representatives, 1856 to Present”"
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "| House election | Democrats | Republicans | Others |\n| 1872 | 88 | 199 | 5 |\n| 1874 | 182 | 103 | 8 |\n\nSeats in the House of Representatives after the 1872 and 1874 elections.",
+  "source_note": "Seats in the House of Representatives after the 1872 and 1874 elections (the Historian’s initial division of seats), from the Office of the House Historian, “Majority Changes in the House of Representatives, 1856 to Present” (history.house.gov)."
+ },
+ "stimulus_set": "house-1874",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The table best supports which of the following conclusions about the 1874 election?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Republicans kept control of the House by a narrow margin.",
+   "misconception": "The table shows Democrats with 182 seats, a clear majority."
+  },
+  {
+   "key": "B",
+   "text": "Democrats won the House for the first time since the Civil War."
+  },
+  {
+   "key": "C",
+   "text": "The Democrats won control of both houses of Congress.",
+   "misconception": "Background: Republicans kept the Senate in 1874; only the House changed hands."
+  },
+  {
+   "key": "D",
+   "text": "Third parties won enough seats to decide control of the House.",
+   "misconception": "The eight other seats were far too few to decide a 182-seat majority."
+  }
+ ],
+ "rationales": {
+  "A": "The table shows Democrats with 182 seats, a clear majority.",
+  "B": "The Democrats jumped from 88 seats to 182, a majority, while Republicans fell by half. It was the first Democratic House since before the war, and it meant Reconstruction’s party had lost half of Congress.",
+  "C": "Background: Republicans kept the Senate in 1874; only the House changed hands.",
+  "D": "The eight other seats were far too few to decide a 182-seat majority.",
+  "general": "1. Read the two rows side by side: Democrats rise from 88 seats to 182, Republicans fall from 199 to 103.\n2. A majority of the House is 147 seats, so 182 is control, not a tie.\n3. Background: no Democratic House had sat since before the Civil War.\n4. The party that had driven Reconstruction now faced a House run by its opponents.\nRemember: a table of seats is a story of power, and a swing of ninety seats is a landslide with a message."
+ }
+}

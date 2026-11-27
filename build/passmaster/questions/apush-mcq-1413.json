@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1413",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.7"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.7 Election of 1860 and Secession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Jefferson Davis, Inaugural Address (February 18, 1861)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Jefferson Davis, Inaugural Address as provisional president of the Confederate States of America, Montgomery, Alabama, February 18, 1861. Public domain. Wording verified against The Papers of Jefferson Davis, vol. 7 (jeffersondavis.rice.edu) and the Avalon Project (avalon.law.yale.edu/19th_century/csa_csainau.asp). Passages appear in this order; '. . .' marks omitted text.",
+  "text": "Jefferson Davis, inaugurated as provisional president of the Confederate States of America at Montgomery, Alabama, on February 18, 1861, declared:\n\n. . . Our present condition, achieved in a manner unprecedented in the history of nations, illustrates the American idea that governments rest upon the consent of the governed, and that it is the right of the people to alter or abolish governments whenever they become destructive of the ends for which they were established. . . . We have changed the constituent parts, but not the system of our Government. The Constitution formed by our fathers is that of these Confederate States, in their exposition of it, and in the judicial construction it has received, we have a light which reveals its true meaning."
+ },
+ "stimulus_set": "davis-montgomery-1861",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Davis's claim that the Confederacy changed “the constituent parts, but not the system” most directly means that the Confederate government",
+ "options": [
+  {
+   "key": "A",
+   "text": "abolished the Constitution entirely.",
+   "misconception": "Davis says the system is unchanged; the Constitution formed by our fathers is that of the Confederate States."
+  },
+  {
+   "key": "B",
+   "text": "gave the vote to enslaved people.",
+   "misconception": "The passage says nothing about voting rights for enslaved people."
+  },
+  {
+   "key": "C",
+   "text": "kept the old Constitution's framework with new states."
+  },
+  {
+   "key": "D",
+   "text": "made the president a king for life.",
+   "misconception": "The passage describes a constitutional system, not a monarchy."
+  }
+ ],
+ "rationales": {
+  "A": "Davis says the system is unchanged; the Constitution formed by our fathers is that of the Confederate States.",
+  "B": "The passage says nothing about voting rights for enslaved people.",
+  "C": "Davis says the parts changed — the states in the union — but the system did not: the fathers' Constitution is the Confederacy's Constitution. Background: the Confederate Constitution copied the United States Constitution, adding explicit protection for slavery.",
+  "D": "The passage describes a constitutional system, not a monarchy.",
+  "general": "1. “Constituent parts” means the member states; “the system” means the frame of government.\n2. Davis claims only the membership changed, not the machine.\n3. Background: the Confederate Constitution kept the old text and added slavery protection and a ban on protective tariffs.\n4. The claim is that secession was a change of address, not of government.\nRemember: “we changed nothing but the members” is a claim about legitimacy — test it against what actually changed."
+ }
+}

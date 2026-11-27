@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-1370",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.6"
+ ],
+ "lesson": "apush-u5-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "D",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.6 Failure to compromise"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Presidential election results, November 4, 1856. Figures from the American Presidency Project (presidency.ucsb.edu/statistics/elections/1856); 296 electoral votes in all, 149 needed to win. Fillmore carried only Maryland.",
+  "text": "| Candidate | Party | Popular votes | Share | Electoral votes |\n| James Buchanan | Democratic | 1,836,072 | 45.3% | 174 |\n| John C. Frémont | Republican | 1,342,345 | 33.1% | 114 |\n| Millard Fillmore | American (Know-Nothing) | 873,053 | 21.5% | 8 |"
+ },
+ "stimulus_set": "election-1856-table",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "According to the table, the winner of the 1856 election was",
+ "options": [
+  {
+   "key": "A",
+   "text": "John C. Frémont, the Republican candidate.",
+   "misconception": "Frémont ran second with 114 electoral votes, not first."
+  },
+  {
+   "key": "B",
+   "text": "Millard Fillmore, the American candidate.",
+   "misconception": "Fillmore carried only Maryland, for 8 electoral votes."
+  },
+  {
+   "key": "C",
+   "text": "William L. Dayton, the Republican for vice president.",
+   "misconception": "Dayton ran for vice president beside Frémont, and the ticket lost."
+  },
+  {
+   "key": "D",
+   "text": "James Buchanan, the Democratic candidate."
+  }
+ ],
+ "rationales": {
+  "A": "Frémont ran second with 114 electoral votes, not first.",
+  "B": "Fillmore carried only Maryland, for 8 electoral votes.",
+  "C": "Dayton ran for vice president beside Frémont, and the ticket lost.",
+  "D": "The table gives Buchanan 174 electoral votes and 45.3 percent of the popular vote, the most of any candidate.",
+  "general": "1. Read the electoral column: Buchanan 174, Frémont 114, Fillmore 8.\n2. Read the popular column: Buchanan 45.3 percent, Frémont 33.1, Fillmore 21.5.\n3. Name the winner: the Democrat, with a plurality of the people and a majority of the electors.\n4. Check the map: Frémont won eleven free states and no slave state, so the vote was sectional.\nRemember: in a three-way race, read both columns; the people’s choice and the electors’ choice can differ."
+ }
+}

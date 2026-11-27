@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-1441",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.8"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "3.B",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.8 Military Conflict in the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Abraham Lincoln, Emancipation Proclamation (January 1, 1863)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Emancipation Proclamation, as issued January 1, 1863. Public domain. The figure shows the cover of the printed proclamation (published September 22, 1862).",
+  "text": "“That on the first day of January, in the year of our Lord one thousand eight hundred and sixty-three, all persons held as slaves within any State or designated part of a State, the people whereof shall then be in rebellion against the United States, shall be then, thenceforward, and forever free . . .”\n\n—Emancipation Proclamation, as issued January 1, 1863"
+ },
+ "stimulus_set": "emancipation-proclamation",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Abolitionists complained that the proclamation freed enslaved people only where the Union had no power to enforce freedom. This complaint best shows that the proclamation was",
+ "options": [
+  {
+   "key": "A",
+   "text": "proof that Lincoln opposed emancipation.",
+   "misconception": "Lincoln issued the proclamation himself; the complaint is about its limits, not his opposition."
+  },
+  {
+   "key": "B",
+   "text": "a military order against rebels, not a law abolishing slavery."
+  },
+  {
+   "key": "C",
+   "text": "a promise to the border states that they could keep slavery forever.",
+   "misconception": "Background: the border states were outside the proclamation, but it promised them nothing."
+  },
+  {
+   "key": "D",
+   "text": "the act that ended slavery in the Northern states.",
+   "misconception": "Background: slavery had already ended in the Northern states before the war."
+  }
+ ],
+ "rationales": {
+  "A": "Lincoln issued the proclamation himself; the complaint is about its limits, not his opposition.",
+  "B": "Background from the books: Lincoln acted as commander in chief against rebels; only a constitutional amendment could abolish slavery everywhere.",
+  "C": "Background: the border states were outside the proclamation, but it promised them nothing.",
+  "D": "Background: slavery had already ended in the Northern states before the war.",
+  "general": "1. The abolitionists’ complaint is precise: freedom was declared where Union armies could not yet reach.\n2. That is exactly what a war measure does: it strikes at the enemy, not at the law books.\n3. Background from the books: Lincoln acted as commander in chief, and only a constitutional amendment could abolish slavery everywhere.\n4. The proclamation changed the war’s purpose; the Thirteenth Amendment later finished the legal work.\nRemember: ask what power the document uses: a general’s order is not a new law."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1441",
+   "file": "u5/barrons-2027-pt2-28.png",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/The_Proclamation_of_Emancipation%2C_by_the_President_of_the_United_States%2C_to_take_effect_January_1st%2C_1863.png",
+   "license": "Public domain (published September 22, 1862)",
+   "caption": "Cover of the printed Emancipation Proclamation, to take effect January 1, 1863.",
+   "alt": "The cover of a printed pamphlet reads The Proclamation of Emancipation, by the President of the United States, to take effect January 1st, 1863."
+  }
+ ]
+}

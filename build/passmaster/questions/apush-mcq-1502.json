@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1502",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.10"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "D",
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "SOC",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.10 Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Mississippi Black Code, Vagrant Law (1865)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "“...all freedmen, free negroes and mulattoes in this State, over the age of eighteen years, found on the second Monday in January, 1866, or thereafter, with no lawful employment or business, or found unlawfully assembling themselves together, either in the day or night time, and all white persons so assembling themselves with freedmen, free negroes or mulattoes, or usually associating with freedmen, free negroes or mulattoes, on terms of equality, or living in adultery or fornication with a freed woman, free negro or mulatto, shall be deemed vagrants. . . .”\n\n—Mississippi Vagrant Law, part of the Mississippi Black Code, 1865",
+  "source_note": "Mississippi Vagrant Law (1865), Laws of Mississippi, 1865. Public domain. Wording verified against the transcription of the Laws of Mississippi text. Leading and trailing ellipses mark omitted text."
+ },
+ "stimulus_set": "mississippi-black-code",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "A freedperson who could not show written proof of a job in January 1866 most likely faced",
+ "options": [
+  {
+   "key": "A",
+   "text": "a free grant of forty acres.",
+   "misconception": "Background: no law gave freedpeople forty acres; Sherman’s field order was reversed by Johnson."
+  },
+  {
+   "key": "B",
+   "text": "a seat in the state legislature.",
+   "misconception": "Background: Black men could not vote yet, so a legislative seat was out of reach."
+  },
+  {
+   "key": "C",
+   "text": "a trial in a federal court in Washington.",
+   "misconception": "Background: vagrancy was handled by local sheriffs and courts, not by federal courts in Washington."
+  },
+  {
+   "key": "D",
+   "text": "arrest as a vagrant and being hired out."
+  }
+ ],
+ "rationales": {
+  "A": "Background: no law gave freedpeople forty acres; Sherman’s field order was reversed by Johnson.",
+  "B": "Background: Black men could not vote yet, so a legislative seat was out of reach.",
+  "C": "Background: vagrancy was handled by local sheriffs and courts, not by federal courts in Washington.",
+  "D": "The law required every freedperson to have a lawful home or job by the second Monday of January, with written proof. Without it, the sheriff could arrest the person as a vagrant and hire them out to whoever would pay the fine.",
+  "general": "1. The law sets a deadline: the second Monday in January, with written proof of work.\n2. Missing the deadline made a person a vagrant under the law.\n3. The penalty was a fine, and the sheriff hired out anyone who could not pay it.\n4. So joblessness became a crime, and the punishment was forced labor.\nRemember: a deadline plus a fine can turn poverty into a crime."
+ }
+}

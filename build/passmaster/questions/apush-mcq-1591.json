@@ -1,0 +1,93 @@
+{
+ "id": "apush-mcq-1591",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.12",
+  "5.2"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "B",
+ "skills": [
+  "6.A",
+  "5.A"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.12 Comparison in Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Sectional Conflict and the Compromise of 1850"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865-1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844-1877)"
+   }
+  ]
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "The painting is John Gast's American Progress (1872). A woman in white leads settlers, railroads, and telegraph wire westward, while Native American families and buffalo herds move away ahead of her. The table below gives the United States at the two ends of Period 5:\n\n|  | 1844 | 1877 |\n|---|---|---|\n| States in the Union | 26 | 38 |\n| Slavery | Legal in 13 states, with nearly 3 million people enslaved | Abolished by the Thirteenth Amendment (1865) |\n| Crossing the continent | No railroad or telegraph spanned the continent | A transcontinental railroad had run since 1869, and telegraph wires crossed the country |\n| The West | Mostly Native American homelands and Mexican territory | Settled by miners, farmers, and railroads, with Native peoples pushed onto reservations |\n\nSource: figures from the United States census and the course books; the painting is John Gast, American Progress, 1872 (public domain).",
+  "source_note": "Painting: John Gast, American Progress, 1872, Wikimedia Commons (public domain). Table: original summary from census figures and the course books (Barron's Premium 2027, Chapter 7; 5 Steps 2024, Chapters 14-16)."
+ },
+ "stimulus_set": "america-1844-1877",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The painting and the table together best support which conclusion about the United States between 1844 and 1877?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The country stayed the same size and kept slavery through the whole period.",
+   "misconception": "The table shows 26 states becoming 38, and slavery abolished in 1865."
+  },
+  {
+   "key": "B",
+   "text": "Expansion, railroads, and emancipation together remade the nation in one generation."
+  },
+  {
+   "key": "C",
+   "text": "The West remained Native American homelands, untouched by settlement.",
+   "misconception": "The table and the painting both show settlers, railroads, and Native peoples pushed aside."
+  },
+  {
+   "key": "D",
+   "text": "The telegraph was the only important change of the period.",
+   "misconception": "The table lists new states, the end of slavery, and the railroad alongside the telegraph."
+  }
+ ],
+ "rationales": {
+  "A": "The table shows twelve new states and slavery abolished, the opposite of staying the same.",
+  "B": "The painting shows the push west, and the table adds twelve states, a transcontinental railroad, and the end of slavery.",
+  "C": "The painting shows Native families fleeing ahead of the settlers, and the table says they were pushed onto reservations.",
+  "D": "The table names the railroad, new states, and emancipation as well as the telegraph.",
+  "general": "1. Read the painting as movement: settlers, trains, and wires travel west together.\n2. Read the table: 26 states become 38, and the continent is spanned by rail and telegraph.\n3. Add the middle row: slavery, legal in 1844, is abolished by 1865.\n4. Three great changes in one generation: a bigger country, a connected country, and a country without slavery.\nRemember: a before-and-after table works when you read every row, not just the first one."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1591",
+   "file": "u5/original-ctx-u5-02.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/American_Progress_%28John_Gast_painting%29.jpg",
+   "license": "Public domain",
+   "caption": "American Progress, John Gast, 1872",
+   "alt": "A painting of a woman in white floating westward leading settlers, a covered wagon, trains, and telegraph wire, while Native American families and buffalo herds flee ahead of her"
+  }
+ ]
+}

@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1245",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.3"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "B",
+ "skills": [
+  "3.A",
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.3 The Mexican-American War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "James K. Polk, Special Message to Congress, May 11, 1846"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "James K. Polk, Special Message to Congress, May 11, 1846. Public domain.",
+  "text": "Upon the earnest appeal both of the Congress and convention of Texas I had ordered an efficient military force to take a position “between the Nueces and the Del Norte.”\n\nMexico has passed the boundary of the United States, has invaded our territory and shed American blood upon the American soil. She has proclaimed that hostilities have commenced, and that the two nations are now at war.\n\nAs war exists, and, notwithstanding all our efforts to avoid it, exists by the act of Mexico herself, we are called upon by every consideration of duty and patriotism to vindicate with decision the honor, the rights, and the interests of our country."
+ },
+ "stimulus_set": "polk-war-message-1846",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "In his message, Polk's central claim about how the war began was which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Mexico and the United States had agreed to share the land between the Nueces and the Rio Grande.",
+   "misconception": "Polk says the opposite: Mexico crossed a boundary the United States claimed and attacked American troops."
+  },
+  {
+   "key": "B",
+   "text": "Mexico invaded United States territory and shed American blood on American soil."
+  },
+  {
+   "key": "C",
+   "text": "Texas had refused to join the United States, so Polk ordered troops to force annexation.",
+   "misconception": "Texas had already joined the United States in 1845; Polk sent troops to the border Texas claimed."
+  },
+  {
+   "key": "D",
+   "text": "Great Britain had encouraged Mexico to attack the United States in Texas.",
+   "misconception": "Polk blames Mexico alone; Britain plays no part in his message."
+  }
+ ],
+ "rationales": {
+  "A": "Polk never says the two countries agreed to share the disputed land; he says Mexico crossed the boundary.",
+  "B": "Polk's words are plain: Mexico “passed the boundary,” invaded American territory, and shed American blood on American soil.",
+  "C": "Texas was already a state by 1846; the troops went to the border Texas claimed, not to force annexation.",
+  "D": "Britain appears nowhere in the message; Polk's whole case rests on Mexico's actions.",
+  "general": "1. Picture the scene Polk paints: American soldiers dead on ground he calls American soil.\n2. Ask who he blames. The message names Mexico, and only Mexico, as the one who crossed the line and started the fighting.\n3. Notice what that claim does: if Mexico started it, Congress is not choosing a war, only answering one.\nRemember: when a president asks for war, find who he says threw the first stone, then ask whether the ground was truly his."
+ }
+}

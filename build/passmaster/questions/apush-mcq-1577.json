@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1577",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.12",
+  "5.11"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "5.A",
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.12 Comparison in Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Sectional Conflict and the Compromise of 1850"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844-1877)"
+   }
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "Two bargains, twenty-seven years apart. The table below summarizes each compromise in the books' own terms:\n\n|  | Compromise of 1850 | Compromise of 1877 |\n|---|---|---|\n| The crisis | The Mexican Cession raised the question of slavery in new territories, and the Union seemed ready to break. | The election of 1876 was disputed, with both parties claiming the presidency. |\n| What each side gave up | The North accepted a stronger Fugitive Slave Act; the South accepted California as a free state and the end of the slave trade in Washington, D.C. | The Democrats accepted Rutherford B. Hayes as president; the Republicans agreed to withdraw the last federal troops from the South. |\n| What it settled | The immediate fight over the new territories, for a time. | Who would be president. |\n| What it left unresolved | Whether slavery could spread into the territories. | The rights and safety of Black Southerners once federal troops left. |\n\nSource: original summary table drawn from Barron's Premium 2027, Chapter 7, and 5 Steps 2024, Chapters 14 and 16.",
+  "source_note": "Original summary table written for this question from the course books; no quotation. Barron's Premium 2027, Chapter 7; 5 Steps 2024, Chapters 14 and 16."
+ },
+ "stimulus_set": "two-compromises",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "How did the Compromise of 1877 differ most importantly from the Compromise of 1850?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The 1850 bargain kept the Union together, while the 1877 bargain ended federal protection of Black Southerners."
+  },
+  {
+   "key": "B",
+   "text": "The 1850 bargain ended Reconstruction, while the 1877 bargain started it.",
+   "misconception": "Background: Reconstruction began in 1865 and ended with the 1877 bargain, not the other way around."
+  },
+  {
+   "key": "C",
+   "text": "The 1850 bargain withdrew federal troops, while the 1877 bargain sent new troops South.",
+   "misconception": "Background: the troop withdrawal belongs to 1877; in 1850 there were no federal troops enforcing Reconstruction."
+  },
+  {
+   "key": "D",
+   "text": "The 1850 bargain settled the election of 1876, while the 1877 bargain settled the Mexican Cession.",
+   "misconception": "The table assigns the Mexican Cession to 1850 and the disputed election to 1877, the reverse of this option."
+  }
+ ],
+ "rationales": {
+  "A": "The table shows 1850 buying time for the Union, while 1877 trades the presidency for pulling troops out of the South.",
+  "B": "Background: the dates run the other way. Reconstruction came after the war, and the 1877 bargain closed it.",
+  "C": "Background: the troop withdrawal is the 1877 side of the trade, not the 1850 side.",
+  "D": "The table pairs each crisis with its own bargain, and this option swaps them.",
+  "general": "1. Ask what each bargain did to the Union: 1850 held it together for another decade.\n2. Ask what 1877 did: it handed Hayes the presidency and pulled the last troops out.\n3. Troops were the federal shield for Black voters and officeholders in the South.\n4. So the two bargains point in opposite directions: one preserves the Union, the other abandons Reconstruction.\nRemember: compare bargains by their results, not only by their trades."
+ }
+}

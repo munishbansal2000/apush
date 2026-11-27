@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1255",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.3"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "C",
+ "skills": [
+  "1.A",
+  "3.A"
+ ],
+ "themes": [
+  "GEO",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.3 The Mexican-American War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Treaty of Guadalupe Hidalgo, February 2, 1848"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Treaty of Guadalupe Hidalgo, February 2, 1848, Articles V and XII (ratified text). Public domain.",
+  "text": "Article V. The boundary line between the two Republics shall commence in the Gulf of Mexico, three leagues from land, opposite the mouth of the Rio Grande, otherwise called Rio Bravo del Norte . . . from thence up the middle of that river, following the deepest channel, where it has more than one, to the point where it strikes the southern boundary of New Mexico . . . The southern and western limits of New Mexico, mentioned in the article, are those laid down in the map entitled \"Map of the United Mexican States, as organized and defined by various acts of the Congress of said republic, and constructed according to the best authorities. Revised edition. Published at New York, in 1847, by J. Disturnell,\" of which map a copy is added to this treaty, bearing the signatures and seals of the undersigned Plenipotentiaries.\n\nArticle XII. In consideration of the extension acquired by the boundaries of the United States, as defined in the fifth article of the present treaty, the Government of the United States engages to pay to that of the Mexican Republic the sum of fifteen millions of dollars."
+ },
+ "stimulus_set": "guadalupe-hidalgo-arts-v-xii",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "According to Article V, the new boundary between the United States and Mexico was to run along which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Nueces River, the line Mexico had claimed as the border of Texas since 1836.",
+   "misconception": "Mexico claimed the Nueces, but the treaty fixed the boundary on the Rio Grande instead."
+  },
+  {
+   "key": "B",
+   "text": "The 49th parallel, the line settled with Britain in the Oregon Treaty.",
+   "misconception": "The 49th parallel was the northern border with Canada, settled with Britain in 1846."
+  },
+  {
+   "key": "C",
+   "text": "The middle of the Rio Grande, from its mouth to the southern boundary of New Mexico."
+  },
+  {
+   "key": "D",
+   "text": "The Gila River, from its junction with the Colorado River to the Pacific Ocean.",
+   "misconception": "The Gila appears later in the article as part of the western boundary, not as the main line from the Gulf."
+  }
+ ],
+ "rationales": {
+  "A": "The Nueces was Mexico's claim; the treaty gave the United States the Rio Grande line it wanted.",
+  "B": "The 49th parallel belongs to the Oregon settlement with Britain, not to the Mexican treaty.",
+  "C": "Article V starts at the mouth of the Rio Grande and follows the middle of the river to New Mexico.",
+  "D": "The Gila marks part of the western stretch of the boundary, not the line from the Gulf of Mexico.",
+  "general": "1. Follow the treaty's own words: the line starts at the mouth of the Rio Grande.\n2. Trace it upstream. The boundary runs up the middle of the river to New Mexico.\n3. See what that settled. The Rio Grande line gave the United States the whole disputed strip Polk had marched into.\nRemember: a treaty line is the war's last battle — here it drew the border where the winner said it belonged."
+ }
+}

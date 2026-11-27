@@ -1,0 +1,103 @@
+{
+ "id": "apush-saq-0151",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.6"
+ ],
+ "lesson": "apush-u5-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.A",
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.6 Failure to compromise"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Reynolds’s Political Map of the United States (William C. Reynolds, 1856)"
+  ]
+ },
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "saq_slot": 3,
+ "stimulus": {
+  "kind": "map",
+  "source_note": "Reynolds’s Political Map of the United States, designed to exhibit the comparative area of the free and slave states and the territory open to slavery or freedom by the repeal of the Missouri Compromise (William C. Reynolds, New York, 1856). Library of Congress, g3701e.ct000604. Public domain.",
+  "text": "A campaign map published in New York in 1856, titled “Reynolds’s Political Map of the United States,” showing “the comparative area of the free and slave states, and the territory open to slavery or freedom by the repeal of the Missouri Compromise.” Portraits of John C. Frémont and William L. Dayton stand at the top corners. The free states are colored pink, the slave states dark gray, and the open territories green, with Kansas left pale in the middle. Tables at the foot compare the free and slave states from the census of 1850."
+ },
+ "stimulus_set": null,
+ "totalPoints": 3,
+ "figures": [
+  {
+   "id": "fig-apush-saq-0151",
+   "file": "u5/pr25e-ch09-q02.jpg",
+   "caption": "Reynolds’s Political Map of the United States, 1856",
+   "alt": "An 1856 Republican campaign map of the United States with portraits of Frémont and Dayton at the top, free states in pink, slave states in dark gray, open territories in green, and Kansas left pale in the middle",
+   "source_url": "https://www.loc.gov/resource/g3701e.ct000604/",
+   "license": "Public domain"
+  }
+ ],
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one feature of the map that shows the division between free and slave states.",
+   "modelAnswer": "One feature is the coloring: the free states are pink, the slave states dark gray, and the open territories green, so the division is visible at a glance. The map also draws the Missouri Compromise line across the middle of the country.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one feature showing the division, such as the coloring or the Missouri Compromise line.",
+     "notEarned": "Naming the map with no feature identified does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain what the map’s tables suggest about the free states and the slave states.",
+   "modelAnswer": "The tables compare the two sections by population, wealth, manufactures, and railroads, using the census of 1850. In nearly every column the free states lead, which suggests that free labor produced a stronger society than slavery.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining what the tables suggest, such as the free states leading in population, wealth, or railroads.",
+     "notEarned": "Restating that the map has tables with no explanation does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain how the map served the Republican campaign of 1856.",
+   "modelAnswer": "The map put Frémont’s and Dayton’s portraits above a picture of a nation divided over slavery, tying the candidates to the free-soil cause. It gave Republican speakers a visual argument that the territories’ future, and the nation’s wealth, lay with freedom.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how the map served the campaign, such as tying Frémont to free soil or picturing the territories’ future.",
+     "notEarned": "Naming the candidates with no explanation of how the map served them does not earn the point."
+    }
+   ]
+  }
+ ]
+}

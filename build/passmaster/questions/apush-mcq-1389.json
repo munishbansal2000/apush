@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-1389",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.7"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "B",
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.7 Election of 1860 and Secession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Election returns as published by the Library of Congress, Presidential Election of 1860: A Resource Guide (guides.loc.gov/presidential-election-1860), and the American Presidency Project (presidency.ucsb.edu/statistics/elections/1860). Popular-vote totals differ slightly between sources because of fusion tickets in New York and New Jersey.",
+  "text": "Results of the presidential election of November 6, 1860. The Electoral College had 303 votes; 152 were needed to win.\n\n| Candidate | Party | Popular votes | Share | Electoral votes |\n| Abraham Lincoln | Republican | 1,865,908 | 39.8% | 180 |\n| Stephen A. Douglas | Democratic | 1,380,202 | 29.5% | 12 |\n| John C. Breckinridge | Southern Democratic | 848,019 | 18.1% | 72 |\n| John Bell | Constitutional Union | 590,901 | 12.6% | 39 |"
+ },
+ "stimulus_set": "election-1860-results",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "According to the table, which candidate won the most electoral votes while winning less than 40 percent of the popular vote?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Stephen A. Douglas",
+   "misconception": "Background: Douglas came second in the popular vote, but the table gives him only 12 electoral votes."
+  },
+  {
+   "key": "B",
+   "text": "Abraham Lincoln"
+  },
+  {
+   "key": "C",
+   "text": "John C. Breckinridge",
+   "misconception": "Background: Breckinridge won 72 electoral votes, well short of Lincoln's 180."
+  },
+  {
+   "key": "D",
+   "text": "John Bell",
+   "misconception": "Background: Bell won 39 electoral votes, fewer than Breckinridge and far fewer than Lincoln."
+  }
+ ],
+ "rationales": {
+  "A": "Background: Douglas came second in the popular vote, but the table gives him only 12 electoral votes.",
+  "B": "Lincoln's row shows 180 electoral votes and 39.8 percent of the popular vote — the most electoral votes, and under 40 percent.",
+  "C": "Background: Breckinridge won 72 electoral votes, well short of Lincoln's 180.",
+  "D": "Background: Bell won 39 electoral votes, fewer than Breckinridge and far fewer than Lincoln.",
+  "general": "1. Read Lincoln's row across: 180 electoral votes, 39.8 percent of the popular vote.\n2. Check the others: no one else tops 72 electoral votes.\n3. Background: Lincoln won because his votes were packed in the populous North, where the Electoral College gave him whole states at once.\n4. So a candidate can sweep the Electoral College without winning a majority of the people.\nRemember: electoral votes are won state by state, so a regional sweep can beat a national plurality."
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1299",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.4"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "D",
+ "skills": [
+  "3.A",
+  "3.C"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.4 The Compromise of 1850"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Constitution of the State of California, Article I, Section 18 (1849)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Constitution of the State of California, Article I, Section 18, adopted at Monterey, 1849. Public domain.",
+  "text": "Neither slavery, nor involuntary servitude, unless for the punishment of crimes, shall ever be tolerated in this State.\n\n[Original summary: California's convention wrote this constitution at Monterey in the fall of 1849, after gold drew tens of thousands of settlers to the territory in a single year. The convention asked Congress to admit California as a free state.]"
+ },
+ "stimulus_set": "california-constitution-1849",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Why did California's free-state constitution create a crisis in Congress in 1849–1850?",
+ "options": [
+  {
+   "key": "A",
+   "text": "California asked to enter as a slave state, which the North refused.",
+   "misconception": "California asked to enter as a free state, not a slave state; its constitution banned slavery."
+  },
+  {
+   "key": "B",
+   "text": "California's constitution banned the gold trade, angering Eastern merchants.",
+   "misconception": "The section bans slavery and says nothing about gold. Background from the books: the crisis it caused was over the balance of free and slave states in the Senate."
+  },
+  {
+   "key": "C",
+   "text": "California demanded that Congress pay off Mexico's debts.",
+   "misconception": "California's convention asked Congress for admission as a state. Background from the books: the treaty ending the Mexican-American War was signed in 1848, two years before; California's constitution asked for statehood, not for payment."
+  },
+  {
+   "key": "D",
+   "text": "Admitting California free would give the free states a majority in the Senate."
+  }
+ ],
+ "rationales": {
+  "A": "California asked to enter as a free state, not a slave state; its constitution banned slavery.",
+  "B": "The section bans slavery and says nothing about gold. Background from the books: the crisis it caused was over the balance of free and slave states in the Senate.",
+  "C": "California's convention asked Congress for admission as a state. Background from the books: the treaty ending the Mexican-American War was signed in 1848, two years before; California's constitution asked for statehood, not for payment.",
+  "D": "Background from the books: the Senate stood at fifteen free states and fifteen slave states, so one more free state would tip the balance — and with it, control of the chamber.",
+  "general": "1. Background from the books: the Senate stood at fifteen free states and fifteen slave states before California asked in, dead even.\n2. Add one free California to that count, and the even split breaks.\n3. See why a constitution written in Monterey became a crisis in Washington: it was not about California's words, but about the Senate's arithmetic.\nRemember: in a balanced Senate, one new state is never just one new state."
+ }
+}

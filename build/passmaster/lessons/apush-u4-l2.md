@@ -170,10 +170,10 @@ Thomas Jefferson wrote to Congressman John Holmes on April 22, 1820:
 
 Jefferson feared the line itself: a geographical line drawn over a moral question would never be obliterated, and every new irritation would mark it deeper. The Compromise bought quiet, not peace.
 
-Look at the map below. Abolitionists made it in the 1850s, and it still draws the line across the West, with the territories beyond it labeled as lands whose destiny is yet to be decided.
+Look at the map below. Republicans made it in 1856, and it still draws the line across the West, with the territories beyond it labeled as lands whose destiny is yet to be decided.
 
-![Abolitionist wall map showing the Missouri Compromise line, 1850s](u5/5s24-ch14-mcq-01.jpg)
-Figure 2: Abolitionist wall map of the 1850s showing the Missouri Compromise line. Public domain.
+![Republican campaign broadside map showing the Missouri Compromise line, 1856](u5/5s24-ch14-mcq-01.jpg)
+Figure 2: Republican campaign broadside map of 1856 showing the Missouri Compromise line. Public domain.
 
 ## War with Britain, again
 

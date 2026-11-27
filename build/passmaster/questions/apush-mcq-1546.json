@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1546",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.11"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.11 Failure of Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "United States v. Cruikshank, 92 U.S. 542 (1876), majority opinion of Chief Justice Morrison Waite",
+   "United States v. Reese, 92 U.S. 214 (1876), majority opinion of Chief Justice Morrison Waite"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "“The fourteenth amendment prohibits a State from depriving any person of life, liberty, or property, without due process of law; but this adds nothing to the rights of one citizen as against another. . . . The fourteenth amendment prohibits a State from denying to any person within its jurisdiction the equal protection of the laws; but this provision does not, any more than the one which precedes it, and which we have just considered, add any thing to the rights which one citizen has under the Constitution against another.”\n\n—Chief Justice Morrison Waite, majority opinion, United States v. Cruikshank, 1876",
+  "source_note": "United States v. Cruikshank, 92 U.S. 542 (1876), majority opinion of Chief Justice Morrison Waite. Public domain (U.S. Supreme Court opinion; text verified against Cornell LII). Ellipses mark omissions inside the passage."
+ },
+ "stimulus_set": "cruikshank-reese",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Waite’s reasoning most directly meant that the federal government could NOT",
+ "options": [
+  {
+   "key": "A",
+   "text": "prosecute private citizens for violating another citizen’s rights."
+  },
+  {
+   "key": "B",
+   "text": "enforce the Fourteenth Amendment against a state law.",
+   "misconception": "Waite says the amendment does restrain states; the limit is on reaching private acts."
+  },
+  {
+   "key": "C",
+   "text": "use federal troops to keep order in the South.",
+   "misconception": "Background: the ruling was about criminal prosecutions, not about the Army’s presence."
+  },
+  {
+   "key": "D",
+   "text": "pass any law about voting rights.",
+   "misconception": "Background: the Fifteenth Amendment still let Congress punish race-based denial of the vote by officials."
+  }
+ ],
+ "rationales": {
+  "A": "Waite reads the amendment as a limit on states, not on private people. When a mob attacked Black citizens, the federal government could not step in; only the state could, and the state would not.",
+  "B": "Waite says the amendment does restrain states; the limit is on reaching private acts.",
+  "C": "Background: the ruling was about criminal prosecutions, not about the Army’s presence.",
+  "D": "Background: the Fifteenth Amendment still let Congress punish race-based denial of the vote by officials.",
+  "general": "1. Waite reads the amendment twice, and twice he stresses the same word: a State.\n2. The amendment stops a state from depriving a person of life, liberty, or property.\n3. But it adds nothing, he says, to the rights of one citizen as against another.\n4. So when private men attacked Black citizens, the federal courthouse door was shut.\nRemember: an amendment that binds only the government leaves private violence to the very state that looks away."
+ }
+}

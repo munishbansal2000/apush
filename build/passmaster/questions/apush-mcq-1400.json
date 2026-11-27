@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1400",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.7"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "B",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.7 Election of 1860 and Secession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "South Carolina, Declaration of the Immediate Causes of Secession (December 24, 1860)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "South Carolina, Declaration of the Immediate Causes Which Induce and Justify the Secession of South Carolina from the Federal Union, December 24, 1860. Public domain. Wording verified against the Bochum source collection (ruhr-uni-bochum.de/gna/Quellensammlung/05/05_southcarolinasecession_1860.htm) and the Hillsdale reprint. Passages appear in this order; '. . .' marks omitted text.",
+  "text": ". . . In the present case, that fact is established with certainty. We assert that fourteen of the States have deliberately refused for years past to fulfil their constitutional obligations, and we refer to their own Statutes for the proof. . . . Thus the constitutional compact has been deliberately broken and disregarded by the non-slaveholding States, and the consequence follows that South Carolina is released from her obligation. . . . A geographical line has been drawn across the Union, and all the States north of that line have united in the election of a man to the high office of President of the United States whose opinions and purposes are hostile to Slavery. . . . On the 4th of March next this party will take possession of the Government. It has announced that the South shall be excluded from the common territory, that the judicial tribunals shall be made sectional, and that a war must be waged against Slavery until it shall cease throughout the United States."
+ },
+ "stimulus_set": "sc-declaration-1860",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "According to the declaration, what did the fourteen non-slaveholding states do that released South Carolina from its obligation?",
+ "options": [
+  {
+   "key": "A",
+   "text": "They elected a president from the South.",
+   "misconception": "The declaration complains that the North elected a man hostile to slavery, not a Southerner."
+  },
+  {
+   "key": "B",
+   "text": "They refused to fulfill their constitutional obligations."
+  },
+  {
+   "key": "C",
+   "text": "They abolished slavery within their own borders.",
+   "misconception": "The declaration charges the Northern states with refusing duties, not with abolishing slavery at home."
+  },
+  {
+   "key": "D",
+   "text": "They invaded South Carolina with an army.",
+   "misconception": "The declaration charges broken promises and hostile laws, not an invasion."
+  }
+ ],
+ "rationales": {
+  "A": "The declaration complains that the North elected a man hostile to slavery, not a Southerner.",
+  "B": "The declaration says fourteen states “have deliberately refused for years past to fulfil their constitutional obligations,” and that this broke the compact.",
+  "C": "The declaration charges the Northern states with refusing duties, not with abolishing slavery at home.",
+  "D": "The declaration charges broken promises and hostile laws, not an invasion.",
+  "general": "1. The declaration frames the Union as a compact, a bargain between states.\n2. It charges fourteen Northern states with refusing their part of it.\n3. A broken bargain, it says, releases South Carolina from hers.\n4. The argument is legal before it is emotional, and the law is the compact itself.\nRemember: secession declarations argue law first — find the broken promise they name."
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0138",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.2"
+ ],
+ "lesson": "apush-u5-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 3,
+ "totalPoints": 3,
+ "skills": [
+  "3.A",
+  "4.A"
+ ],
+ "themes": [
+  "MIG",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.2 Manifest Destiny"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Population figures: United States Census, via the California Department of Finance.",
+  "text": "| Year | Population of California |\n| 1850 | 92,597 |\n| 1860 | 379,994 |\n| 1870 | 560,247 |"
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus is a table of United States Census population figures for California",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify the change in California's population between 1850 and 1860 shown in the table.",
+   "modelAnswer": "California's population rose from 92,597 in 1850 to 379,994 in 1860, an increase of about 287,000 people. The population more than quadrupled in a single decade.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying the increase from 92,597 in 1850 to 379,994 in 1860, with the size of the change stated.",
+     "notEarned": "Naming a population figure with no change identified, or a change with no figures, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one cause of the population change shown in the table.",
+   "modelAnswer": "The discovery of gold at Sutter's Mill in January 1848 drew about 80,000 migrants to California in 1849, and more than 300,000 had arrived by 1855. The gold rush turned a remote Mexican province into a booming American state almost overnight.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining that the gold discovery and the rush of migrants caused the population growth.",
+     "notEarned": "Naming the gold rush with no link to the population change does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one effect of the population growth shown in the table on the United States.",
+   "modelAnswer": "California's rapid growth led to its admission as a free state in 1850, which upset the balance between free and slave states. The Compromise of 1850 was Congress's answer to the crisis that California's sudden statehood created.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one effect of California's growth, such as admission as a free state or the Compromise of 1850.",
+     "notEarned": "Naming an effect with no link to California's population growth does not earn the point."
+    }
+   ]
+  }
+ ]
+}

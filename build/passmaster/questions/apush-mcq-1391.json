@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-1391",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.7"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.7 Election of 1860 and Secession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Election returns as published by the Library of Congress, Presidential Election of 1860: A Resource Guide (guides.loc.gov/presidential-election-1860), and the American Presidency Project (presidency.ucsb.edu/statistics/elections/1860). Popular-vote totals differ slightly between sources because of fusion tickets in New York and New Jersey.",
+  "text": "Results of the presidential election of November 6, 1860. The Electoral College had 303 votes; 152 were needed to win.\n\n| Candidate | Party | Popular votes | Share | Electoral votes |\n| Abraham Lincoln | Republican | 1,865,908 | 39.8% | 180 |\n| Stephen A. Douglas | Democratic | 1,380,202 | 29.5% | 12 |\n| John C. Breckinridge | Southern Democratic | 848,019 | 18.1% | 72 |\n| John Bell | Constitutional Union | 590,901 | 12.6% | 39 |"
+ },
+ "stimulus_set": "election-1860-results",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Which of the following is the best explanation for why Douglas, who won the second-most popular votes, won only 12 electoral votes?",
+ "options": [
+  {
+   "key": "A",
+   "text": "His support was spread thinly across states he did not carry."
+  },
+  {
+   "key": "B",
+   "text": "He won no votes in the Southern states.",
+   "misconception": "Background: Douglas did win votes in the South, including Missouri, the one state he carried."
+  },
+  {
+   "key": "C",
+   "text": "He was not on the ballot in the Northern states.",
+   "misconception": "Background: Douglas was on the ballot across the North; he lost those states to Lincoln, he did not skip them."
+  },
+  {
+   "key": "D",
+   "text": "His popular votes came mostly from non-voting territories.",
+   "misconception": "Background: territories cast no electoral votes, and Douglas's votes came from the states, not the territories."
+  }
+ ],
+ "rationales": {
+  "A": "Electoral votes go to the winner of each state, so votes piled up in states a candidate loses buy nothing. Background: Douglas ran second in state after state in the North, so his large national total turned into almost no electoral votes.",
+  "B": "Background: Douglas did win votes in the South, including Missouri, the one state he carried.",
+  "C": "Background: Douglas was on the ballot across the North; he lost those states to Lincoln, he did not skip them.",
+  "D": "Background: territories cast no electoral votes, and Douglas's votes came from the states, not the territories.",
+  "general": "1. The table shows the gap: 29.5 percent of the vote, but only 12 of 303 electors.\n2. The Electoral College awards whole states, not a national total.\n3. Background: Douglas finished second across the North, losing state after state to Lincoln by small margins.\n4. Second place everywhere wins almost nothing.\nRemember: in a winner-take-all state contest, where your votes sit matters more than how many you have."
+ }
+}

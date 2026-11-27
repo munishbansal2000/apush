@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0167",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.12"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.A",
+  "5.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.12 Comparison in Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "The Civil War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844-1877)"
+   }
+  ],
+  "primary_sources": [
+   "Abraham Lincoln, Second Inaugural Address, March 4, 1865"
+  ]
+ },
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "saq_slot": 2,
+ "stimulus": {
+  "kind": "text",
+  "text": "Abraham Lincoln, Second Inaugural Address, March 4, 1865:\n“On the occasion corresponding to this four years ago all thoughts were anxiously directed to an impending civil war. All dreaded it, all sought to avert it. ... Both parties deprecated war, but one of them would make war rather than let the nation survive, and the other would accept war rather than let it perish, and the war came. ... With malice toward none, with charity for all, with firmness in the right as God gives us to see the right, let us strive on to finish the work we are in, to bind up the nation's wounds, to care for him who shall have borne the battle and for his widow and his orphan, to do all which may achieve and cherish a just and lasting peace among ourselves and with all nations.”",
+  "source_note": "Abraham Lincoln, Second Inaugural Address, March 4, 1865, quoted verbatim from the Avalon Project, Yale Law School (avalon.law.yale.edu/19th_century/lincoln2.asp). Ellipses mark omissions between non-adjacent passages. Public domain."
+ },
+ "stimulus_set": null,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify ONE thing Lincoln says both sides agreed on in 1861.",
+   "modelAnswer": "Lincoln says that four years earlier all thoughts were anxiously directed to an impending civil war, and that all dreaded it and all sought to avert it. Both sides feared the war that was coming and tried to avoid it. Neither side went into 1861 wanting the war that followed.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one thing both sides agreed on, such as dreading the war, seeking to avert it, or fearing civil war.",
+     "notEarned": "Naming something only one side wanted does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE way Lincoln's account of who started the war differs from the Confederate view of the war's cause.",
+   "modelAnswer": "Lincoln says one side would make war rather than let the nation survive, placing the choice for war on the side that chose secession over the Union. The Confederate view, by contrast, held that the North forced the war by refusing to respect Southern rights and the states' choice to leave. Lincoln blames the decision to break the Union, while Confederates blamed Northern coercion.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one difference between Lincoln's account and the Confederate view, such as who chose war, secession versus coercion, or the role of slavery and Southern rights.",
+     "notEarned": "Restating Lincoln's words without comparing them to the Confederate view does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE way Lincoln's closing call for peace points to a different Reconstruction from the one Radical Republicans wanted.",
+   "modelAnswer": "Lincoln calls for malice toward none and charity for all, which points to a lenient peace that binds up the nation's wounds and brings the South back quickly. Radical Republicans, by contrast, wanted Congress to remake the South, protect Black rights with federal power, and bar former Confederate leaders from office. Lincoln's tone promises reconciliation, while the Radical plan promised a remade South.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one way Lincoln's closing points to a different Reconstruction, such as leniency versus punishment, quick reunion versus a remade South, or charity versus federal enforcement of Black rights.",
+     "notEarned": "Saying only that Lincoln wanted peace, without contrasting it with the Radical plan, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

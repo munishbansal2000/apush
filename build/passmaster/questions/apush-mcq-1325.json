@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-1325",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.5"
+ ],
+ "lesson": "apush-u5-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "C",
+ "skills": [
+  "1.A",
+  "3.B"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.5 Sectional Conflict: Regional Differences"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Uncle Sam’s Youngest Son, Citizen Know Nothing (Sarony & Co., lithograph, New York, 1854). Library of Congress, LCCN2003689281. Public domain.",
+  "text": "A lithograph published in New York in 1854, titled “Uncle Sam’s Youngest Son, Citizen Know Nothing.” It shows a young man in a wide-brimmed hat, wrapped in an American flag, with a plaque reading “CITIZEN” below him and an eagle above."
+ },
+ "stimulus_set": "know-nothing-cartoon-1854",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The cartoon’s title and the flag wrapped around the young man most directly present the Know-Nothing as",
+ "options": [
+  {
+   "key": "A",
+   "text": "a recent immigrant proud of his new home.",
+   "misconception": "The figure is Uncle Sam’s “youngest son,” born to the nation, not a newcomer; the cartoon claims native birth, not immigrant pride."
+  },
+  {
+   "key": "B",
+   "text": "a Southern planter defending slavery.",
+   "misconception": "Nothing in the image touches slavery or the plantation; the flag and the word “Citizen” point to nativism, not to the South."
+  },
+  {
+   "key": "C",
+   "text": "a native-born American, the truest kind of citizen."
+  },
+  {
+   "key": "D",
+   "text": "a Catholic priest leading his congregation.",
+   "misconception": "Background from the books: Know-Nothings attacked Catholic immigrants; the cartoon’s hero is the native-born Protestant, not a priest."
+  }
+ ],
+ "rationales": {
+  "A": "The figure is Uncle Sam’s “youngest son,” born to the nation, not a newcomer; the cartoon claims native birth, not immigrant pride.",
+  "B": "Nothing in the image touches slavery or the plantation; the flag and the word “Citizen” point to nativism, not to the South.",
+  "C": "Wrapped in the flag and named Uncle Sam’s son, the figure claims that true citizenship belongs to the native-born.",
+  "D": "Background from the books: Know-Nothings attacked Catholic immigrants; the cartoon’s hero is the native-born Protestant, not a priest.",
+  "general": "1. Read the title first: “Uncle Sam’s Youngest Son” claims a family tie to America itself.\n2. Add the picture: the flag wraps the young man, and “CITIZEN” is stamped below him.\n3. Put the two together: the cartoon says the native-born man is the real American.\nRemember: a cartoon’s title often states its argument; read it before the picture."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1325",
+   "file": "u5/5s24-ch14-mcq-05.jpg",
+   "caption": "Uncle Sam’s Youngest Son, Citizen Know Nothing, 1854",
+   "alt": "A young man in a wide-brimmed hat wrapped in an American flag, with a plaque reading Citizen below him and an eagle above, titled Uncle Sam’s Youngest Son, Citizen Know Nothing",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Uncle_Sam%27s_youngest_son%2C_Citizen_Know_Nothing_-_Sarony_%26_Co.%2C_lith.%2C_117_Fulton_St.%2C_N.Y._LCCN2003689281.jpg",
+   "license": "Public domain"
+  }
+ ]
+}

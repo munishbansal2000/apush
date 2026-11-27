@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0149",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.6"
+ ],
+ "lesson": "apush-u5-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.6 Failure to compromise"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "saq_slot": 1,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original summary of the collapse of compromise in the 1850s, drawn from Barron’s Premium 2027, Chapter 7, Topic 5.6, and 5 Steps to a 5 2024, Chapter 14. Rewritten from the staged seed 5s24-ch14-saq-01, whose David Potter quotation was replaced with original wording and whose parts were reframed to Topic 5.6.",
+  "text": "By the late 1850s, every attempt to settle the slavery question had left the sections angrier than before. The Missouri Compromise had drawn a line, the Compromise of 1850 had patched the Union together, and the Kansas-Nebraska Act had let the settlers vote — yet each settlement became a new quarrel. In Kansas, settlers fought with rifles as well as ballots, and in Washington, a senator was beaten at his desk for a speech about Kansas."
+ },
+ "stimulus_set": null,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one development in the period 1854–1859 that deepened sectional hostility between the North and the South.",
+   "modelAnswer": "One development was “Bleeding Kansas,” where proslavery and antislavery settlers fought for control of the territory after a rigged election. The violence showed Northerners that slavery would spread by fraud and force, not by fair votes.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one development that deepened sectional hostility, such as Bleeding Kansas, the Sumner beating, or the Dred Scott decision.",
+     "notEarned": "Naming a development from outside the period, or naming one with no link to sectional hostility, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how the Kansas-Nebraska Act deepened sectional hostility.",
+   "modelAnswer": "The act repealed the Missouri Compromise line and let settlers vote on slavery, which reopened a question Northerners thought settled. It also drove settlers of both sides into Kansas to decide the vote, turning the territory into a battleground.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how the act deepened hostility, such as repealing the Missouri line or driving rival settlers into Kansas.",
+     "notEarned": "Restating that the act deepened hostility with no explanation does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one reason the Dred Scott decision deepened sectional hostility.",
+   "modelAnswer": "The Court ruled that Congress could not bar slavery from the territories, which told Northerners that slavery could spread anywhere by law. It also ruled that Black people could not be citizens, which convinced many Northerners that the Court favored the slaveholders.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason the decision deepened hostility, such as barring Congress from the territories or denying Black citizenship.",
+     "notEarned": "Naming the decision with no explanation of its effect does not earn the point."
+    }
+   ]
+  }
+ ]
+}

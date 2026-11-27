@@ -1,0 +1,94 @@
+{
+ "id": "apush-saq-0158",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.9"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "2.B",
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.9 Government Policies During the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "James McPherson, Battle Cry of Freedom (1988), paraphrased",
+   "Abraham Lincoln, Emancipation Proclamation (January 1, 1863)"
+  ]
+ },
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "saq_slot": 1,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of historian James McPherson’s argument in Battle Cry of Freedom (1988) that the Emancipation Proclamation changed the war’s purpose and kept Europe out. Wording is a paraphrase, not a quotation.",
+  "text": "The Emancipation Proclamation did more than free enslaved people in rebel territory. It changed what the war was about: the Union now fought against slavery as well as for the Union. That change made it politically impossible for Britain or France to aid the Confederacy, and it opened the Union army to Black soldiers."
+ },
+ "stimulus_set": null,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify and briefly explain ONE way the Emancipation Proclamation changed the purpose of the Civil War.",
+   "modelAnswer": "One change was that the war became a fight against slavery as well as a fight to restore the Union. Before the proclamation, Lincoln had said his only goal was to save the Union, but the proclamation tied Union victory to freedom. That new purpose gave the war a moral cause that the whole world could see.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying and explaining one change in the war’s purpose, such as the war becoming a fight against slavery as well as for the Union.",
+     "notEarned": "Naming the proclamation with no explanation of how the purpose changed does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason Lincoln waited until after the Battle of Antietam to issue the preliminary Emancipation Proclamation.",
+   "modelAnswer": "Lincoln waited for a Union victory so emancipation would look like the act of a winning government, not a desperate plea. Antietam in September 1862 turned back Lee’s invasion of Maryland and gave him that victory. He issued the preliminary proclamation five days later, on September 22, 1862.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason Lincoln waited, such as needing a victory so emancipation would not look desperate.",
+     "notEarned": "Naming Antietam with no explanation of why a victory mattered does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limitation of the Emancipation Proclamation as a measure to end slavery.",
+   "modelAnswer": "One limitation was that it freed enslaved people only in states and parts of states in rebellion, so slavery continued in the loyal border states. It also freed no one where Union armies had not yet arrived, since Confederate leaders ignored it. Only the Thirteenth Amendment in December 1865 ended slavery everywhere in the country.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limitation, such as its reach to rebel territory only or its dependence on Union victory.",
+     "notEarned": "Saying the proclamation was limited, with no specific limit explained, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

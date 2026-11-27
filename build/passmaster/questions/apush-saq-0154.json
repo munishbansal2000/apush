@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0154",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.7"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "2.B",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.7 Election of 1860 and Secession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "saq_slot": 3,
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Election returns as published by the Library of Congress, Presidential Election of 1860: A Resource Guide (guides.loc.gov/presidential-election-1860), and the American Presidency Project (presidency.ucsb.edu/statistics/elections/1860). Popular-vote totals differ slightly between sources because of fusion tickets in New York and New Jersey.",
+  "text": "Results of the presidential election of November 6, 1860. The Electoral College had 303 votes; 152 were needed to win.\n\n| Candidate | Party | States carried | Popular votes | Electoral votes |\n| Abraham Lincoln | Republican | 18 | 1,865,908 | 180 |\n| Stephen A. Douglas | Democratic | 1 | 1,380,202 | 12 |\n| John C. Breckinridge | Southern Democratic | 11 | 848,019 | 72 |\n| John Bell | Constitutional Union | 3 | 590,901 | 39 |"
+ },
+ "stimulus_set": null,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one pattern in the election results shown in the table.",
+   "modelAnswer": "One pattern is that Lincoln won the most electoral votes by far, 180, while winning under 40 percent of the popular vote. No other candidate won more than 72 electoral votes. The winner of the Electoral College was not the choice of most voters.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one pattern in the table, such as Lincoln's 180 electoral votes with under 40 percent of the popular vote, or Douglas's second-place popular vote with only 12 electoral votes.",
+     "notEarned": "Naming a candidate with no pattern identified does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how the results in the table show the sectional division of the country.",
+   "modelAnswer": "The table shows a sectional split because Lincoln's 180 electoral votes came from the free states, while Breckinridge's 72 came from the Deep South and Bell's 39 from the Upper South. Each candidate's strength lay in one region, and no candidate won support across the whole country. The vote totals map onto the sections, not onto a national contest.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how the results show sectional division, such as Lincoln's strength in the free states against Breckinridge's in the Deep South and Bell's in the Upper South.",
+     "notEarned": "Restating the vote totals with no explanation of the sectional pattern does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain how the election results help explain why South Carolina seceded within weeks of the election.",
+   "modelAnswer": "Lincoln won the presidency with 180 electoral votes and no support in the South, so Southerners read the result as a sectional verdict against them. Background: South Carolina's leaders believed a Republican president would in time destroy slavery, even though Lincoln promised not to touch it where it existed. The state adopted its ordinance of secession on December 20, 1860, six weeks after the election.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how the results help explain South Carolina's secession, such as Lincoln winning with no Southern support, or the South reading the result as a threat to slavery.",
+     "notEarned": "Naming the secession date with no link to the election results does not earn the point."
+    }
+   ]
+  }
+ ]
+}

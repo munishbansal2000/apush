@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0160",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.9"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "5.A",
+  "3.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.9 Government Policies During the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "saq_slot": 3,
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Figures from the history of the greenback as commonly cited: gold stood at a 29 percent premium in December 1862, 152 greenbacks bought 100 dollars in gold in spring 1863, 131 after Gettysburg, 258 at the low point in July 1864, and 150 when the war ended in April 1865. Figures are rounded.",
+  "text": "Greenbacks needed to buy $100 in gold.\n\n| Time | Greenbacks for $100 in gold |\n| December 1862 | about $129 |\n| Spring 1863 | about $152 |\n| After Gettysburg, summer 1863 | about $131 |\n| July 1864 | about $258 |\n| April 1865 | about $150 |"
+ },
+ "stimulus_set": null,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify and briefly explain ONE conclusion supported by the data in the table.",
+   "modelAnswer": "One conclusion is that the greenback’s value rose and fell with Union battlefield fortunes. It fell to 152 greenbacks for 100 dollars in gold in the spring of 1863, then recovered to 131 after Gettysburg, and sank to 258 in July 1864 when Grant stalled before Richmond. The paper money was worth only as much as people trusted the Union to win.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying and explaining one conclusion from the table, such as the greenback tracking Union fortunes.",
+     "notEarned": "Restating a number from the table with no conclusion drawn does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason the value of greenbacks moved with the course of the war.",
+   "modelAnswer": "Greenbacks were backed only by faith in the federal government, not by gold or silver, so their value tracked confidence in Union victory. A defeat made people doubt the government would survive to honor its paper, and the greenback slid against gold. A victory restored confidence, and the greenback recovered, as it did after Gettysburg.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason greenback values moved with the war, such as faith in the government rising or falling with victories and defeats.",
+     "notEarned": "Saying greenbacks were paper money, with no link to confidence or the war, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limitation of the table for evaluating how the Union paid for the war.",
+   "modelAnswer": "One limitation is that the table shows only the value of paper money, not how much of the war borrowing or taxes paid for. Greenbacks funded only about 15 percent of Union war costs, while bonds supplied far more. The table alone cannot show whether printing money or borrowing carried the war.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limitation, such as the table’s silence on bonds and taxes or on the share of costs greenbacks covered.",
+     "notEarned": "Saying the numbers are rounded, with no explanation of what the table cannot show, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

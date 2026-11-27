@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1279",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.4"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "B",
+ "skills": [
+  "3.A",
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.4 The Compromise of 1850"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Henry Clay, resolutions offered in the Senate, January 29, 1850"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Henry Clay, resolutions offered in the Senate, January 29, 1850 (Congressional Globe, 31st Congress, 1st session). Public domain.",
+  "text": "It being desirable, for the peace, concord, and harmony of the Union of these States, to settle and adjust amicably all existing questions of controversy between them arising out of the institution of slavery upon a fair, equitable and just basis: therefore,\n\n1. Resolved, That California, with suitable boundaries, ought, upon her application to be admitted as one of the States of this Union, without the imposition by Congress of any restriction in respect to the exclusion or introduction of slavery within those boundaries.\n\n2. Resolved, That as slavery does not exist by law, and is not likely to be introduced into any of the territory acquired by the United States from the republic of Mexico, it is inexpedient for Congress to provide by law either for its introduction into, or exclusion from, any part of the said territory; and that appropriate territorial governments ought to be established by Congress in all of the said territory, not assigned as the boundaries of the proposed State of California, without the adoption of any restriction or condition on the subject of slavery."
+ },
+ "stimulus_set": "clay-resolutions-1850",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "According to Clay's first resolution, California should be admitted to the Union under which condition?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Only after Congress banned slavery in the new state.",
+   "misconception": "Clay says the opposite: admit California “without the imposition by Congress of any restriction” on slavery."
+  },
+  {
+   "key": "B",
+   "text": "Without Congress imposing any restriction on slavery within its boundaries."
+  },
+  {
+   "key": "C",
+   "text": "Only if its voters first approved the Missouri Compromise line.",
+   "misconception": "The Missouri Compromise line appears nowhere in these resolutions; Clay proposes no vote on it."
+  },
+  {
+   "key": "D",
+   "text": "As two states, one free and one slave, to keep the Senate balanced.",
+   "misconception": "Clay proposes admitting California as one state, “with suitable boundaries,” not splitting it in two."
+  }
+ ],
+ "rationales": {
+  "A": "Clay does not ask Congress to ban slavery in California; his resolution admits the state without any slavery restriction from Congress.",
+  "B": "Clay's first resolution says California ought to be admitted “without the imposition by Congress of any restriction in respect to the exclusion or introduction of slavery within those boundaries.” Admitting the state while saying nothing about slavery inside it was the heart of his plan.",
+  "C": "The Missouri Compromise line appears nowhere in these resolutions; Clay proposes no vote on the line.",
+  "D": "Clay proposes admitting California as one state, “with suitable boundaries,” not splitting it in two.",
+  "general": "1. Background from the books: California was asking to join the Union with a constitution that already bans slavery.\n2. Read what Clay asks Congress to do: admit the state and say nothing about slavery inside it.\n3. See the bargain in that silence: Congress admits the state and rules on slavery nowhere inside it.\nRemember: when a compromise stays silent on the hardest question, ask who gains from the silence."
+ }
+}

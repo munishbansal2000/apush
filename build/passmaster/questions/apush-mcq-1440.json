@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-1440",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.8"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "1.B",
+  "5.B"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.8 Military Conflict in the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Abraham Lincoln, Emancipation Proclamation (January 1, 1863)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Emancipation Proclamation, as issued January 1, 1863. Public domain. The figure shows the cover of the printed proclamation (published September 22, 1862).",
+  "text": "“That on the first day of January, in the year of our Lord one thousand eight hundred and sixty-three, all persons held as slaves within any State or designated part of a State, the people whereof shall then be in rebellion against the United States, shall be then, thenceforward, and forever free . . .”\n\n—Emancipation Proclamation, as issued January 1, 1863"
+ },
+ "stimulus_set": "emancipation-proclamation",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Lincoln issued the proclamation as a war measure after Antietam. Its most important military effect was to",
+ "options": [
+  {
+   "key": "A",
+   "text": "allow Black men to enlist in the Union army."
+  },
+  {
+   "key": "B",
+   "text": "free every enslaved person in the country at once.",
+   "misconception": "Background: the proclamation freed no one where the Union already held power, and it covered only rebel states."
+  },
+  {
+   "key": "C",
+   "text": "end the Union blockade of Southern ports.",
+   "misconception": "Background: the blockade continued and grew tighter until the end of the war."
+  },
+  {
+   "key": "D",
+   "text": "win the Battle of Gettysburg.",
+   "misconception": "Background: Gettysburg was fought six months later, in July 1863."
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: the proclamation opened large-scale enlistment of Black soldiers, about 180,000 men.",
+  "B": "Background: the proclamation freed no one where the Union already held power, and it covered only rebel states.",
+  "C": "Background: the blockade continued and grew tighter until the end of the war.",
+  "D": "Background: Gettysburg was fought six months later, in July 1863.",
+  "general": "1. The proclamation was a war measure, so ask what it did for the war effort.\n2. It declared that Black men could serve, and they did, in large numbers.\n3. Background from the books: about 180,000 Black men served in the Union army.\n4. It also closed the door to European help, since Britain and France would not back a slaveholders’ cause.\nRemember: a war measure is judged by what it adds to the army."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1440",
+   "file": "u5/barrons-2027-pt2-28.png",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/The_Proclamation_of_Emancipation%2C_by_the_President_of_the_United_States%2C_to_take_effect_January_1st%2C_1863.png",
+   "license": "Public domain (published September 22, 1862)",
+   "caption": "Cover of the printed Emancipation Proclamation, to take effect January 1, 1863.",
+   "alt": "The cover of a printed pamphlet reads The Proclamation of Emancipation, by the President of the United States, to take effect January 1st, 1863."
+  }
+ ]
+}

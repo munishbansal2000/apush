@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0162",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.10"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "5.A",
+  "2.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.10 Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Fourteenth Amendment to the Constitution, Section 1 (ratified 1868)"
+  ]
+ },
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "saq_slot": 2,
+ "stimulus": {
+  "kind": "text",
+  "text": "“Section 1. All persons born or naturalized in the United States, and subject to the jurisdiction thereof, are citizens of the United States and of the State wherein they reside. No State shall make or enforce any law which shall abridge the privileges or immunities of citizens of the United States; nor shall any State deprive any person of life, liberty, or property, without due process of law; nor deny to any person within its jurisdiction the equal protection of the laws.”\n\n—Fourteenth Amendment, Section 1, ratified 1868",
+  "source_note": "Fourteenth Amendment, Section 1, ratified 1868. Public domain. Wording verified against the Constitution Annotated (Congress.gov)."
+ },
+ "stimulus_set": null,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly explain ONE way the federal government attempted to assist African Americans in the South during Reconstruction.",
+   "modelAnswer": "One way was the Freedmen’s Bureau, created by Congress in 1865 to provide food, schools, and labor contracts for formerly enslaved people. The Bureau also ran courts where freedpeople could bring complaints against employers. It gave freed families a federal ally in a South that was writing Black Codes against them.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one federal effort to assist African Americans, such as the Freedmen’s Bureau, with what it did.",
+     "notEarned": "Naming a federal effort with no explanation of its work does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain a SECOND example of a way the federal government attempted to assist African Americans during Reconstruction.",
+   "modelAnswer": "A second way was the Fourteenth Amendment, ratified in 1868, which made freedpeople citizens and guaranteed them equal protection of the laws. The amendment gave the federal government a constitutional weapon against Southern discrimination. Congress then used the Reconstruction Acts to require Black suffrage before a Southern state could return.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining a second, different federal effort, such as the Fourteenth Amendment or the Reconstruction Acts.",
+     "notEarned": "Repeating the answer to part (a), or naming an effort with no explanation, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE way white Southerners resisted the federal government’s attempts to assist African Americans during Reconstruction.",
+   "modelAnswer": "White Southerners resisted through the Black Codes of 1865 and 1866, which restricted Black movement and labor and barred freedpeople from renting farmland. They also used terror groups like the Ku Klux Klan, founded in 1866, to murder Black and white Republicans and keep Black men from voting. Both the laws and the violence aimed to keep freedpeople subordinate despite federal help.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one form of white Southern resistance, such as the Black Codes or Klan violence.",
+     "notEarned": "Saying Southerners resisted, with no specific example, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

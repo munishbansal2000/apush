@@ -1,0 +1,103 @@
+{
+ "id": "apush-saq-0144",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.4"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "2.A",
+  "3.B"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.4 The Compromise of 1850"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Harriet Beecher Stowe, Uncle Tom's Cabin, vol. 1 (1852)"
+  ]
+ },
+ "saq_slot": 3,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Harriet Beecher Stowe, Uncle Tom's Cabin; or, Life Among the Lowly, vol. 1, title page (Boston: John P. Jewett & Company, 1852). Public domain.",
+  "text": "The title page of the first book edition of Uncle Tom's Cabin, published in Boston in 1852, reads “UNCLE TOM'S CABIN; OR, LIFE AMONG THE LOWLY. BY HARRIET BEECHER STOWE.” Below the title, an engraving shows a woman standing in the doorway of a log cabin, with children and a man carrying an axe nearby. The page also states “VOL. I.” and “TENTH THOUSAND,” meaning ten thousand copies had already been printed."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "figures": [
+  {
+   "id": "fig-apush-saq-0144",
+   "file": "u5/5s24-ch14-mcq-07.jpg",
+   "caption": "Title page of Uncle Tom's Cabin, vol. 1, Boston, 1852",
+   "alt": "Title page reading Uncle Tom's Cabin; or, Life Among the Lowly, by Harriet Beecher Stowe, with an engraving of a woman at a log cabin door with children nearby, marked Vol. I, Tenth Thousand, Boston, 1852",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Harriet_Beecher_Stowe%2C_Uncle_Tom%27s_Cabin%2C_vol._1%2C_1852%2C_title_page.jpg",
+   "license": "Public domain"
+  }
+ ],
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one feature of the title page that shows the book was selling well.",
+   "modelAnswer": "The title page marks the copy “TENTH THOUSAND,” meaning ten thousand copies had already been printed. A book reaching its tenth thousand in its first edition was selling fast by the standards of 1852.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one feature showing strong sales, such as the “TENTH THOUSAND” printing.",
+     "notEarned": "Describing the title or the engraving without linking it to sales does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how Uncle Tom's Cabin changed Northern attitudes toward slavery after the Fugitive Slave Act.",
+   "modelAnswer": "Stowe's novel gave Northern readers vivid scenes of enslaved families torn apart, making slavery feel human and cruel to people who had never seen a plantation. After the Fugitive Slave Act forced the slavery question into Northern streets, the novel turned many indifferent Northerners into opponents of slavery.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how the novel changed Northern attitudes, such as by making slavery vivid and human for Northern readers.",
+     "notEarned": "Restating that the novel was popular, with no explanation of how it changed attitudes, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one Southern response to Uncle Tom's Cabin.",
+   "modelAnswer": "Southerners answered Stowe with proslavery novels such as Aunt Phillis's Cabin, which pictured kind masters and contented enslaved people. Others tried to ban Uncle Tom's Cabin in the South, treating the novel as a political attack rather than harmless fiction.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one Southern response, such as a proslavery reply novel or an effort to ban the book.",
+     "notEarned": "Naming a response with no explanation of what it was or why Southerners made it does not earn the point."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,81 @@
+{
+ "id": "apush-mcq-1547",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.11"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "2.A",
+  "3.D"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.11 Failure of Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "United States v. Cruikshank, 92 U.S. 542 (1876), majority opinion of Chief Justice Morrison Waite",
+   "United States v. Reese, 92 U.S. 214 (1876), majority opinion of Chief Justice Morrison Waite"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "“The fourteenth amendment prohibits a State from depriving any person of life, liberty, or property, without due process of law; but this adds nothing to the rights of one citizen as against another. . . . The fourteenth amendment prohibits a State from denying to any person within its jurisdiction the equal protection of the laws; but this provision does not, any more than the one which precedes it, and which we have just considered, add any thing to the rights which one citizen has under the Constitution against another.”\n\n—Chief Justice Morrison Waite, majority opinion, United States v. Cruikshank, 1876",
+  "source_note": "United States v. Cruikshank, 92 U.S. 542 (1876), majority opinion of Chief Justice Morrison Waite. Public domain (U.S. Supreme Court opinion; text verified against Cornell LII). Ellipses mark omissions inside the passage."
+ },
+ "stimulus_set": "cruikshank-reese",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The Cruikshank decision came after the Colfax Massacre, in which white attackers killed Black defenders of a Louisiana courthouse. The decision’s most important result for Reconstruction was that",
+ "options": [
+  {
+   "key": "A",
+   "text": "the attackers were all convicted in federal court.",
+   "misconception": "Background: the Court overturned the convictions, so the attackers went free."
+  },
+  {
+   "key": "B",
+   "text": "Louisiana’s Republican government gained new federal protection.",
+   "misconception": "The ruling pulled federal protection away, leaving the state government exposed."
+  },
+  {
+   "key": "C",
+   "text": "white violence against Black voters largely escaped federal punishment."
+  },
+  {
+   "key": "D",
+   "text": "Congress immediately passed a stronger Enforcement Act.",
+   "misconception": "Background: Congress passed no stronger act; enforcement faded after the ruling."
+  }
+ ],
+ "rationales": {
+  "A": "Background: the Court overturned the convictions, so the attackers went free.",
+  "B": "The ruling pulled federal protection away, leaving the state government exposed.",
+  "C": "The Court threw out the federal convictions, ruling that private violence was a state matter. With the states unwilling to prosecute, white attackers learned that terror against Black voters would go unpunished.",
+  "D": "Background: Congress passed no stronger act; enforcement faded after the ruling.",
+  "general": "1. Background: at Colfax in 1873, white attackers killed more than 100 Black men defending a courthouse.\n2. Federal prosecutors convicted some of the attackers under the Enforcement Act.\n3. Waite’s Court threw those convictions out: the amendment binds states, not private men.\n4. The message to every armed group in the South was plain: the federal government could not touch you.\nRemember: when a court frees the attackers, it teaches the next attackers that they are safe."
+ }
+}

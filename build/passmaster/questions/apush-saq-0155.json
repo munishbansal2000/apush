@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0155",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.8"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "2.B",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.8 Military Conflict in the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "James McPherson, Battle Cry of Freedom (1988) (paraphrased)"
+  ]
+ },
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "saq_slot": 1,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of historian James McPherson’s argument in Battle Cry of Freedom (1988) that Americans in 1861 expected a short war. Post-1929 secondary source, paraphrased, not quoted.",
+  "text": "Historian James McPherson argues that Americans on both sides expected a short, glorious war in 1861, yet the conflict dragged on for four years. He writes that the South’s will to resist and the North’s need to conquer an entire society made anything swift impossible. (Paraphrase of McPherson, Battle Cry of Freedom, 1988.)"
+ },
+ "stimulus_set": null,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason the Civil War lasted longer than people in 1861 expected.",
+   "modelAnswer": "One reason the war lasted so long was the size of the Confederacy. The Union had to conquer and occupy the whole South while holding a 3,500-mile blockade. That task took years of marching, sieging, and garrisoning, not the single battle Northern newspapers had predicted.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason the war lasted longer than expected, such as the size of the Confederacy, the rifled musket favoring defense, skilled generals on both sides, or the determination of both peoples.",
+     "notEarned": "Naming a battle with no explanation of why it lengthened the war does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain a SECOND reason the Civil War lasted longer than people in 1861 expected.",
+   "modelAnswer": "A second reason was new weaponry. The rifled musket made close fighting far deadlier and gave the defense the advantage over the offense, so battles became longer-range firefights and less decisive, and neither army could win the war with one victory.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining a second, different reason the war lasted longer than expected, such as new weapons favoring defense, the skill of the generals, or popular determination on both sides.",
+     "notEarned": "Repeating the reason given in part (a) does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE important turning point of the Civil War.",
+   "modelAnswer": "One turning point came in July 1863, when the Union won at Gettysburg and captured Vicksburg in the same week. Lee’s invasion of the North failed, and Grant’s victory gave the Union the whole Mississippi River and split the Confederacy in two. After that summer the Confederacy was in retreat.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one turning point, such as Antietam opening the way to emancipation, Gettysburg and Vicksburg in July 1863, or the fall of Atlanta in 1864 securing Lincoln’s reelection.",
+     "notEarned": "Naming a battle with no explanation of why it turned the war does not earn the point."
+    }
+   ]
+  }
+ ]
+}

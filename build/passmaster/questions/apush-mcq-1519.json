@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-1519",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.10"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "SOC",
+  "ARC"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.10 Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Fifteenth Amendment to the Constitution (ratified 1870)"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "A color lithograph published in 1870, titled “The Fifteenth Amendment. Celebrated May 19th, 1870.” At the center, a parade fills a city street with marching soldiers, a band, and a carriage. Around the border are small scenes: a classroom full of Black children with their teacher, a wedding, a Black man casting a ballot, and Black men in formal dress. Portraits in oval frames around the border include President Ulysses S. Grant, Vice President Schuyler Colfax, and Abraham Lincoln.",
+  "source_note": "Thomas Kelly, publisher, “The Fifteenth Amendment. Celebrated May 19th, 1870,” lithograph after a design by James C. Beard, 1870 (Library of Congress, LCCN2003690776). Public domain. Image viewed before writing; scenes and portraits described from the image itself."
+ },
+ "stimulus_set": "fifteenth-amendment-print",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The small scenes around the border, a classroom, a wedding, and a ballot box, were meant to show that the amendment",
+ "options": [
+  {
+   "key": "A",
+   "text": "opened full citizenship to Black men in school, family, and politics."
+  },
+  {
+   "key": "B",
+   "text": "gave Black men forty acres of farmland of their own.",
+   "misconception": "Background: the amendment is about voting, and no law gave freedpeople forty acres."
+  },
+  {
+   "key": "C",
+   "text": "ended sharecropping in the South.",
+   "misconception": "Background: sharecropping was still spreading in 1870, and the amendment says nothing about it."
+  },
+  {
+   "key": "D",
+   "text": "made Black men citizens of Africa as well.",
+   "misconception": "Background: the amendment made Black men American citizens, not citizens of Africa."
+  }
+ ],
+ "rationales": {
+  "A": "Each small scene shows a part of ordinary life: children learning, a couple marrying, a man voting. Together they say the vote was not just a ballot, but a door into full citizenship, in the schoolroom, the home, and the statehouse.",
+  "B": "Background: the amendment is about voting, and no law gave freedpeople forty acres.",
+  "C": "Background: sharecropping was still spreading in 1870, and the amendment says nothing about it.",
+  "D": "Background: the amendment made Black men American citizens, not citizens of Africa.",
+  "general": "1. The print does not show the vote alone; it shows a classroom, a wedding, and a ballot box.\n2. Each scene is a piece of ordinary life that slavery had denied.\n3. Background: the amendment’s promise was the vote, but the print reads the vote as the key to everything else.\n4. So the border scenes turn one right into a picture of full citizenship.\nRemember: in a print, the small scenes around the edge often carry the real argument."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1519",
+   "file": "u5/5s24-ch16-mcq-05.jpg",
+   "caption": "The Fifteenth Amendment. Celebrated May 19th, 1870, lithograph after James C. Beard",
+   "alt": "Beard lithograph celebrating the Fifteenth Amendment in 1870: a parade fills the center, with scenes of a classroom, a wedding, and a ballot box around the border",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/The_Fifteenth_Amendment._Celebrated_May_19th%2C_1870_-_from_an_original_design_by_James_C._Beard._LCCN2003690776.jpg",
+   "license": "Public domain"
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0145",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.5"
+ ],
+ "lesson": "apush-u5-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.5 Sectional Conflict: Regional Differences"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original summary of the account in Barron’s Premium 2027, Chapter 7, Topic 5.5.",
+  "text": "By the 1850s the North and the South had grown into different economies. The North built factories, railroads, and cities, and its population grew rapidly with immigration. The South grew cotton with enslaved labor, and its free population grew slowly. Each section’s economy shaped how its people saw slavery’s future."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one economic difference between the North and the South in the 1850s.",
+   "modelAnswer": "One difference was the North’s factory and railroad economy against the South’s cotton economy worked by enslaved labor. The North built mills and rail lines, while the South’s wealth rested on cotton grown by enslaved people.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one economic difference, such as Northern factories and railroads versus Southern cotton worked by enslaved labor.",
+     "notEarned": "Naming a difference with no economic content, or a vague answer, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how immigration contributed to the North’s rapid population growth.",
+   "modelAnswer": "Large numbers of Irish and German immigrants arrived in the 1840s and 1850s and settled mainly in Northern cities, where factories and ports offered wage work. Their arrival swelled the North’s population and workforce, widening the population gap with the South.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how immigration added to Northern population, with at least one specific detail such as Irish and German arrivals settling in Northern cities.",
+     "notEarned": "Naming immigration with no explanation of how it grew the North’s population does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way the South’s cotton economy shaped Southern attitudes toward slavery.",
+   "modelAnswer": "Cotton made slavery the foundation of Southern wealth, so white Southerners defended it as a positive good rather than a necessary evil. Because their economy depended on enslaved labor, they saw any attack on slavery as an attack on their way of life.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one way the cotton economy shaped Southern attitudes, such as the shift to defending slavery as a positive good.",
+     "notEarned": "Naming cotton with no link to Southern attitudes toward slavery does not earn the point."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-1420",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.7"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "3.C"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.7 Election of 1860 and Secession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secession dates verified against the Ordinance of Secession table (en.wikipedia.org/wiki/Ordinance_of_Secession), the American Battlefield Trust Civil War timeline (battlefields.org), and Digital History, University of Houston (digitalhistory.uh.edu). Texas adopted its ordinance February 1, 1861, confirmed by popular referendum February 23; Virginia's ordinance was ratified by referendum May 23, 1861.",
+  "text": "Ordinances of secession, in the order the states adopted them. Seven states seceded before Lincoln's inauguration on March 4, 1861; four more followed after the firing on Fort Sumter.\n\n| State | Date of ordinance |\n| South Carolina | December 20, 1860 |\n| Mississippi | January 9, 1861 |\n| Florida | January 10, 1861 |\n| Alabama | January 11, 1861 |\n| Georgia | January 19, 1861 |\n| Louisiana | January 26, 1861 |\n| Texas | February 1, 1861 |\n| Virginia | April 17, 1861 |\n| Arkansas | May 6, 1861 |\n| Tennessee | May 6, 1861 |\n| North Carolina | May 20, 1861 |\n\nDelaware, Kentucky, Maryland, and Missouri were slave states that stayed in the Union and are not listed."
+ },
+ "stimulus_set": "secession-order-1861",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "A historian studying the table would most likely conclude that the Upper South's decision to secede depended most on",
+ "options": [
+  {
+   "key": "A",
+   "text": "the election of Lincoln in November 1860.",
+   "misconception": "The Upper South waited five months after the election; the election alone did not move it."
+  },
+  {
+   "key": "B",
+   "text": "Lincoln's response to the firing on Fort Sumter."
+  },
+  {
+   "key": "C",
+   "text": "the failure of the Crittenden Compromise in December.",
+   "misconception": "Background: the Crittenden Compromise failed in January 1861, but the Upper South still waited until April."
+  },
+  {
+   "key": "D",
+   "text": "the adoption of the Confederate Constitution in February.",
+   "misconception": "Background: the Confederate Constitution was adopted February 8, but the Upper South did not join for two more months."
+  }
+ ],
+ "rationales": {
+  "A": "The Upper South waited five months after the election; the election alone did not move it.",
+  "B": "Virginia, Arkansas, Tennessee, and North Carolina all seceded after April 12, within weeks of Sumter and the troop call. Background: the Upper South had refused to leave over the election, but coercion — war against fellow Southerners — changed the question.",
+  "C": "Background: the Crittenden Compromise failed in January 1861, but the Upper South still waited until April.",
+  "D": "Background: the Confederate Constitution was adopted February 8, but the Upper South did not join for two more months.",
+  "general": "1. The Upper South's dates all fall after April 12.\n2. Nothing in the winter moved them; something in April did.\n3. Background: Virginia voted to secede April 17, two days after Lincoln's call for 75,000 men.\n4. Timing is evidence: when the dates pile up after one event, that event is the cause.\nRemember: a cluster of dates after a single event is the strongest timing argument a table can give you."
+ }
+}

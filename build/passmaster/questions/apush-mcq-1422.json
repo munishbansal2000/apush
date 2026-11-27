@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-1422",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.7"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "B",
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.7 Election of 1860 and Secession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "map",
+  "source_note": "Presidential election results by county, 1860 (Tilden76, Wikimedia Commons, File:PresidentialCounty1860Colorbrewer.gif; data: Minnesota Population Center, National Historical Geographic Information System v2.0, 2011). Viewed before writing. The file page confirms: “No vote was taken in South Carolina because presidential electors were chosen by the state legislature.” License: attribution — free use with credit to the holder.",
+  "text": "A map of the presidential election of 1860, by county. Red shades mark counties won by Abraham Lincoln, green shades counties won by John C. Breckinridge, blue shades counties won by Stephen A. Douglas, and yellow shades counties won by John Bell. Purple shades mark counties where fusion tickets won. Hatched counties mark ties. Darker shades mean a larger share of the vote. Gray marks counties where no vote was recorded. The territories in the West cast no electoral votes."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1422",
+   "file": "u5/election-1860-county-map.gif",
+   "caption": "Presidential election of 1860, results by county",
+   "alt": "A county map of the United States in 1860: the North and West are shaded red for Lincoln, the Deep South green for Breckinridge, with yellow for Bell in Virginia, Kentucky, and Tennessee and blue for Douglas in Missouri and scattered Northern counties",
+   "source_url": "https://commons.wikimedia.org/wiki/File:PresidentialCounty1860Colorbrewer.gif",
+   "license": "CC BY — Tilden76, Wikimedia Commons; data: Minnesota Population Center, NHGIS v2.0 (2011)"
+  }
+ ],
+ "stimulus_set": "election-1860-map",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The map best supports which conclusion about the election of 1860?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Lincoln won counties in every section of the country.",
+   "misconception": "The map shows almost no red in the South; Lincoln's counties cluster in the North and West."
+  },
+  {
+   "key": "B",
+   "text": "The vote split sharply along sectional lines."
+  },
+  {
+   "key": "C",
+   "text": "Douglas won the most counties overall.",
+   "misconception": "The map shows Douglas's blue in scattered counties, far fewer than Lincoln's red or Breckinridge's green."
+  },
+  {
+   "key": "D",
+   "text": "Bell carried the counties of New England.",
+   "misconception": "New England is shaded red for Lincoln, not yellow for Bell."
+  }
+ ],
+ "rationales": {
+  "A": "The map shows almost no red in the South; Lincoln's counties cluster in the North and West.",
+  "B": "Red covers the North, green covers the Deep South, and yellow sits in between in the Upper South. Background: each candidate's strength sits in one region, and almost nowhere else.",
+  "C": "The map shows Douglas's blue in scattered counties, far fewer than Lincoln's red or Breckinridge's green.",
+  "D": "New England is shaded red for Lincoln, not yellow for Bell.",
+  "general": "1. Look at the colors as regions, not counties.\n2. Red North, green South, yellow Upper South.\n3. Background: Lincoln won no Southern state and Breckinridge won no Northern one.\n4. The map is the country voting in blocs, four candidates in four regions.\nRemember: step back from the counties and read the regions — the pattern is the argument, not any single county."
+ }
+}

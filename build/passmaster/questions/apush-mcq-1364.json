@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1364",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.6"
+ ],
+ "lesson": "apush-u5-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "B",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.6 Failure to compromise"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Dred Scott v. Sandford, 60 U.S. 393 (1857), majority opinion"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Chief Justice Roger B. Taney, majority opinion in Dred Scott v. Sandford, 60 U.S. 393 (1857), decided March 6, 1857. Public domain. Wording verified against the full opinion (UMKC Famous Trials; SAGE). The two passages appear in this order in the opinion; the omission between them is marked.",
+  "text": "They had for more than a century before been regarded as beings of an inferior order, and altogether unfit to associate with the white race, either in social or political relations; and so far inferior, that they had no rights which the white man was bound to respect; and that the negro might justly and lawfully be reduced to slavery for his benefit. . . . the right of property in a slave is distinctly and expressly affirmed in the Constitution."
+ },
+ "stimulus_set": "dred-scott-1857",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Taney’s claim about property in the passage most directly meant that Congress could not",
+ "options": [
+  {
+   "key": "A",
+   "text": "admit new states to the Union at all.",
+   "misconception": "Taney says nothing about admitting states; his ruling is about Congress and the territories."
+  },
+  {
+   "key": "B",
+   "text": "bar slaveholders from carrying enslaved people into the territories."
+  },
+  {
+   "key": "C",
+   "text": "tax the property that settlers held in the territories.",
+   "misconception": "Taney protects slave property, he does not give Congress a new power to tax it."
+  },
+  {
+   "key": "D",
+   "text": "regulate trade between the states of the Union.",
+   "misconception": "The ruling concerns the territories, not trade between the states."
+  }
+ ],
+ "rationales": {
+  "A": "Taney says nothing about admitting states; his ruling is about Congress and the territories.",
+  "B": "If slave property has the same protection as any other property, Congress cannot keep a slaveholder from carrying it into a territory.",
+  "C": "Taney protects slave property, he does not give Congress a new power to tax it.",
+  "D": "The ruling concerns the territories, not trade between the states.",
+  "general": "1. Start with Taney’s claim: slave property has the same constitutional protection as any property.\n2. Follow it: if the Constitution protects it, Congress cannot take it away in a territory.\n3. See the result: no law could bar slavery from the territories, including the Missouri Compromise.\nRemember: a property ruling can decide a political question without ever naming it."
+ }
+}

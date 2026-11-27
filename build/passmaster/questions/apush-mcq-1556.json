@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1556",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.11"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "3.C",
+  "5.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.11 Failure of Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Rutherford B. Hayes Presidential Library & Museums, “Frequently Asked Questions on the 1876 Election”"
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "| 1876 presidential election | Samuel J. Tilden (Democrat) | Rutherford B. Hayes (Republican) |\n| Popular vote | 4,288,546 | 4,034,311 |\n| Electoral votes, first count | 184 | 165 |\n\nTwenty electoral votes were disputed: Florida (4), Louisiana (8), South Carolina (7), and one from Oregon. A candidate needed 185 electoral votes to win.",
+  "source_note": "Popular and electoral vote figures from the Rutherford B. Hayes Presidential Library & Museums, “Frequently Asked Questions on the 1876 Election.”"
+ },
+ "stimulus_set": "election-1876",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Congress created a 15-member Electoral Commission of senators, representatives, and Supreme Court justices to settle the dispute. The commission gave all 20 disputed votes to Hayes. The Compromise of 1877 that followed is best understood as",
+ "options": [
+  {
+   "key": "A",
+   "text": "a court ruling that the Constitution required Hayes to win.",
+   "misconception": "Background: the commission was Congress’s creation, and the compromise was an informal political bargain, not a court ruling."
+  },
+  {
+   "key": "B",
+   "text": "a bargain trading Hayes’s presidency for the end of Reconstruction."
+  },
+  {
+   "key": "C",
+   "text": "a new amendment that changed how electoral votes are counted.",
+   "misconception": "Background: no amendment followed; the Electoral Count Act came a decade later, in 1887."
+  },
+  {
+   "key": "D",
+   "text": "an agreement that Tilden would become president in 1880.",
+   "misconception": "Background: no such promise was made; Hayes served the full term."
+  }
+ ],
+ "rationales": {
+  "A": "Background: the commission was Congress’s creation, and the compromise was an informal political bargain, not a court ruling.",
+  "B": "Democrats stopped blocking Hayes’s inauguration, and in return the last federal troops left the South. The presidency changed hands on a deal, and Reconstruction ended as the price of the deal.",
+  "C": "Background: no amendment followed; the Electoral Count Act came a decade later, in 1887.",
+  "D": "Background: no such promise was made; Hayes served the full term.",
+  "general": "1. The table shows why a deal was needed: the count was deadlocked and both sides held rival electors.\n2. Background: the commission voted 8 to 7, along party lines, for Hayes, and Democrats in the House threatened to block the count.\n3. At the Wormley Conference, party leaders struck an informal bargain to break the deadlock.\n4. Democrats accepted Hayes, and Hayes withdrew the troops; the presidency was the price of Reconstruction’s end.\nRemember: when the rules cannot name a winner, politicians trade something else, and here they traded Reconstruction."
+ }
+}

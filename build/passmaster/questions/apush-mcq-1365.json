@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1365",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.6"
+ ],
+ "lesson": "apush-u5-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.6 Failure to compromise"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Dred Scott v. Sandford, 60 U.S. 393 (1857), majority opinion"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Chief Justice Roger B. Taney, majority opinion in Dred Scott v. Sandford, 60 U.S. 393 (1857), decided March 6, 1857. Public domain. Wording verified against the full opinion (UMKC Famous Trials; SAGE). The two passages appear in this order in the opinion; the omission between them is marked.",
+  "text": "They had for more than a century before been regarded as beings of an inferior order, and altogether unfit to associate with the white race, either in social or political relations; and so far inferior, that they had no rights which the white man was bound to respect; and that the negro might justly and lawfully be reduced to slavery for his benefit. . . . the right of property in a slave is distinctly and expressly affirmed in the Constitution."
+ },
+ "stimulus_set": "dred-scott-1857",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The decision described in the passage most directly undercut",
+ "options": [
+  {
+   "key": "A",
+   "text": "the Fugitive Slave Act passed in 1850.",
+   "misconception": "Background from the books: the Fugitive Slave Act stayed law until the Civil War; Dred Scott left it untouched."
+  },
+  {
+   "key": "B",
+   "text": "the property rights that slaveholders claimed under the Constitution.",
+   "misconception": "Taney strengthened slaveholders’ rights; he did not undercut them."
+  },
+  {
+   "key": "C",
+   "text": "the Missouri Compromise line that barred slavery at 36°30′."
+  },
+  {
+   "key": "D",
+   "text": "states' power to ban slavery themselves.",
+   "misconception": "Background from the books: the decision said nothing about what states could do inside their own borders; Northern states kept their bans on slavery."
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: the Fugitive Slave Act stayed law until the Civil War; Dred Scott left it untouched.",
+  "B": "Taney strengthened slaveholders’ rights; he did not undercut them.",
+  "C": "Taney ruled Congress had no power to bar slavery from any territory, so the Missouri Compromise's line at 36°30′ — a congressional ban — was unconstitutional.",
+  "D": "Background from the books: the decision said nothing about what states could do inside their own borders; Northern states kept their bans on slavery.",
+  "general": "1. Name what the passage affirms: slave property is protected by the Constitution.\n2. Follow Taney's logic: if the Constitution protects slave property, Congress cannot ban it from a territory.\n3. See what falls: the Missouri Compromise line at 36°30′, which barred slavery north of it, was unconstitutional.\n4. Note what survives: the ruling said nothing about states banning slavery within their own borders.\nRemember: when a court says Congress lacks a power, every law built on that power falls with it."
+ }
+}

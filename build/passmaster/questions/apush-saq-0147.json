@@ -1,0 +1,101 @@
+{
+ "id": "apush-saq-0147",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.5"
+ ],
+ "lesson": "apush-u5-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.A",
+  "3.B"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.5 Sectional Conflict: Regional Differences"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "saq_slot": 3,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Uncle Sam’s Youngest Son, Citizen Know Nothing (Sarony & Co., lithograph, New York, 1854). Library of Congress, LCCN2003689281. Public domain.",
+  "text": "A lithograph published in New York in 1854, titled “Uncle Sam’s Youngest Son, Citizen Know Nothing.” It shows a young man in a wide-brimmed hat, wrapped in an American flag, with a plaque reading “CITIZEN” below him and an eagle above."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one feature of the cartoon that presents the Know-Nothing as a true American.",
+   "modelAnswer": "The young man is wrapped in the American flag and titled “Uncle Sam’s Youngest Son,” with the word “CITIZEN” stamped below him. The flag and the title present him as a native-born American, the truest kind of citizen.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one feature, such as the flag, the title, or the word “CITIZEN,” that presents the figure as a true American.",
+     "notEarned": "Describing the cartoon with no feature tied to American identity does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain why Irish and German immigration in the 1840s and 1850s provoked a nativist reaction.",
+   "modelAnswer": "Millions of Irish and German immigrants arrived in those decades, settling in Northern cities and keeping their Catholic faith and languages. Native-born Protestants feared the newcomers’ numbers and customs, and they organized to limit immigrant rights and political power.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining why the immigration wave provoked nativism, with at least one specific detail such as the newcomers’ numbers, Catholic faith, or city settlement.",
+     "notEarned": "Naming immigration with no explanation of the nativist reaction does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one political consequence of the Know-Nothing movement in the 1850s.",
+   "modelAnswer": "The Know-Nothing Party, formally the American Party, won elections in several states, especially in the Northeast, in the 1850s. Its rise showed that nativism could win votes, and many Know-Nothings later joined the new Republican Party.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one political consequence, such as Know-Nothing electoral wins or members joining the Republican Party.",
+     "notEarned": "Naming the party with no consequence does not earn the point."
+    }
+   ]
+  }
+ ],
+ "figures": [
+  {
+   "id": "fig-apush-saq-0147",
+   "file": "u5/5s24-ch14-mcq-05.jpg",
+   "caption": "Uncle Sam’s Youngest Son, Citizen Know Nothing, 1854",
+   "alt": "A young man in a wide-brimmed hat wrapped in an American flag, with a plaque reading Citizen below him and an eagle above, titled Uncle Sam’s Youngest Son, Citizen Know Nothing",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Uncle_Sam%27s_youngest_son%2C_Citizen_Know_Nothing_-_Sarony_%26_Co.%2C_lith.%2C_117_Fulton_St.%2C_N.Y._LCCN2003689281.jpg",
+   "license": "Public domain"
+  }
+ ]
+}

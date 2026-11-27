@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1253",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.3"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "3.D",
+  "4.A"
+ ],
+ "themes": [
+  "GEO",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.3 The Mexican-American War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Abraham Lincoln, “Spot Resolutions,” December 22, 1847"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Abraham Lincoln, “Spot Resolutions” in the House of Representatives, December 22, 1847. Public domain.",
+  "text": "And whereas this House is desirous to obtain a full knowledge of all the facts which go to establish whether the particular spot on which the blood of our citizens was so shed was or was not at that time our own soil:\n\nFirst. Whether the spot on which the blood of our citizens was shed, as in his message declared, was or was not within the territory of Spain, at least after the treaty of 1819, until the Mexican revolution.\n\nThird. Whether that spot is or is not within a settlement of people, which settlement has existed ever since long before the Texas revolution, and until its inhabitants fled before the approach of the United States army.\n\nSeventh. Whether our citizens, whose blood was shed, as in his message declared, were or were not, at that time, armed officers and soldiers, sent into that settlement by the military order of the President, through the Secretary of War."
+ },
+ "stimulus_set": "spot-resolutions-1847",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Lincoln's Third Resolution asks whether the spot lay in a settlement that existed long before the Texas Revolution. That question matters most because it would show which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "That the settlers had voted to join the United States before the war began.",
+   "misconception": "Lincoln's Fifth Resolution, not the Third, asks whether the settlers had ever submitted to Texas or United States law."
+  },
+  {
+   "key": "B",
+   "text": "That American troops had marched into a long-settled Mexican community, not empty American land."
+  },
+  {
+   "key": "C",
+   "text": "That Spain still legally owned Texas when the fighting started.",
+   "misconception": "The First Resolution asks about Spanish territory; the Third asks about the settlement's people."
+  },
+  {
+   "key": "D",
+   "text": "That General Taylor had warned Polk the movement was unnecessary.",
+   "misconception": "Lincoln asks about Taylor's warnings in the Eighth Resolution, which is not quoted here."
+  }
+ ],
+ "rationales": {
+  "A": "Whether the settlers had submitted to Texas law is the Fifth Resolution's question, not the Third's.",
+  "B": "A settlement older than the Texas Revolution, whose people fled the approaching army, was a Mexican community — not empty ground the United States owned.",
+  "C": "Spain's old claim is the First Resolution's subject; the Third is about the people living on the spot.",
+  "D": "Taylor's warnings appear in the Eighth Resolution, which is not part of this stimulus.",
+  "general": "1. Picture the settlement Lincoln describes: people living there since before Texas revolted, fleeing as the army approached.\n2. Ask what that picture destroys. Polk's story needs American soil; a long-settled Mexican town is not American soil.\n3. Connect the steps. If the blood was shed in a Mexican settlement, the invasion ran the other way.\nRemember: a place's history can undo a war claim — ask who lived there, and since when, before you ask who fired first."
+ }
+}

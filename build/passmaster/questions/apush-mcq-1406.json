@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1406",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.7"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "C",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.7 Election of 1860 and Secession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Crittenden Compromise, proposed Article 1 (December 18, 1860)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Senator John J. Crittenden, proposed amendments to the Constitution (S. No. 50), Article 1, introduced December 18, 1860. Public domain. Wording verified against the Teaching American History text (teachingamericanhistory.org/document/crittenden-compromise/) and the Congressional Globe text (vlib.us/amdocs/texts/critte~1.html). '. . .' marks the omitted resolution preamble.",
+  "text": ". . . In all the territory of the United States now held, or hereafter acquired, situate north of 36 degrees 30 minutes, slavery or involuntary servitude, except as a punishment for crime, is prohibited while such territory shall remain under territorial government. In all the territory south of said line of latitude, slavery of the African race is hereby recognized as existing, and shall not be interfered with by Congress, but shall be protected as property by all the departments of the territorial government during its continuance."
+ },
+ "stimulus_set": "crittenden-compromise",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Under Article 1, what would happen to slavery in territory south of 36 degrees 30 minutes?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It would be prohibited.",
+   "misconception": "Prohibition applies north of the line; south of it, slavery is recognized and protected."
+  },
+  {
+   "key": "B",
+   "text": "It would be decided by a vote of the settlers.",
+   "misconception": "Article 1 does not leave the question to the settlers; it settles it by the line."
+  },
+  {
+   "key": "C",
+   "text": "It would be recognized as existing and protected as property."
+  },
+  {
+   "key": "D",
+   "text": "It would be abolished after ten years.",
+   "misconception": "Article 1 sets no time limit; its protection runs “during its continuance,” with no end date."
+  }
+ ],
+ "rationales": {
+  "A": "Prohibition applies north of the line; south of it, slavery is recognized and protected.",
+  "B": "Article 1 does not leave the question to the settlers; it settles it by the line.",
+  "C": "South of the line, slavery “is hereby recognized as existing, and shall not be interfered with by Congress, but shall be protected as property by all the departments of the territorial government.”",
+  "D": "Article 1 sets no time limit; its protection runs “during its continuance,” with no end date.",
+  "general": "1. The article draws a line at 36 degrees 30 minutes.\n2. North of it, slavery is prohibited; south of it, slavery is recognized.\n3. “Protected as property” means the territorial government must guard it; Congress’s duty is not to interfere.\n4. The line decides the question so that Congress never has to.\nRemember: a compromise line settles a fight by geography — find the line, then read each side of it."
+ }
+}

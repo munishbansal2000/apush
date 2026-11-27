@@ -1,0 +1,76 @@
+{
+  "answerKey": "B",
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 7",
+        "section": "Topic 5.9 Government Policies During the Civil War"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 15",
+        "section": "Union Divided: The Civil War (1861–1865)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 9"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-1603",
+  "lesson": "apush-u5-l4",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Lincoln issued it as a military measure because Congress lacked the power.",
+      "text": "He believed Congress lacked the power to end slavery by statute"
+    },
+    {
+      "key": "B",
+      "text": "He sought to weaken the Confederacy by depriving it of enslaved labor"
+    },
+    {
+      "key": "C",
+      "misconception": "Lincoln issued it to punish loyal border states.",
+      "text": "He wanted to punish border states that had remained loyal to the Union"
+    },
+    {
+      "key": "D",
+      "misconception": "Lincoln issued it to negotiate a compromise with Confederate leaders.",
+      "text": "He hoped to end the war by negotiating a compromise with Confederate leaders"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Lincoln used war powers precisely because he doubted a peacetime route; the lack of congressional power is not the direct reason for the military form.",
+    "B": "As a war measure, emancipation deprived the Confederacy of labor, encouraged enslaved people to flee to Union lines, and made British recognition of the Confederacy politically harder.",
+    "C": "Border states were exempted, not punished.",
+    "D": "Lincoln sought to strengthen the Union cause, not to negotiate a compromise.",
+    "general": "1. Ask what a military measure does. It acts on the enemy's war effort.\n2. Name the effects. It took labor from the Confederacy, drew enslaved people to Union lines, and discouraged European support.\n3. Test the other explanations. Congress's limits are background, border states were exempt, and compromise was not the aim.\n4. Match the form to the purpose. A war measure is chosen because it weakens the enemy.\nRemember: the form of an order usually follows from what it is meant to do."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "4.B"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from the Emancipation Proclamation (1863)",
+  "status": "final",
+  "stem": "Which of the following most directly explains why Lincoln issued the Emancipation Proclamation as a military measure?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Abraham Lincoln, Emancipation Proclamation, January 1, 1863, public domain.",
+    "text": "“And by virtue of the power, and for the purpose aforesaid, I do order and declare that all persons held as slaves within said designated States, and parts of States, are, and henceforward shall be free.”"
+  },
+  "stimulus_set": "emancipation-proclamation-1863",
+  "themes": [
+    "PCE",
+    "WOR"
+  ],
+  "topics": [
+    "5.9"
+  ],
+  "type": "mcq",
+  "unit": 5
+}

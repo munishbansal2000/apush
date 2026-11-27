@@ -1,0 +1,76 @@
+{
+  "answerKey": "D",
+  "difficulty": 2,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 7",
+        "section": "Topic 5.9 Government Policies During the Civil War"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 15",
+        "section": "Union Divided: The Civil War (1861–1865)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 9"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-1602",
+  "lesson": "apush-u5-l4",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "The Proclamation ended slavery everywhere immediately.",
+      "text": "Ending slavery everywhere in the United States immediately"
+    },
+    {
+      "key": "B",
+      "misconception": "The Proclamation granted citizenship to formerly enslaved people.",
+      "text": "Granting citizenship to all formerly enslaved people"
+    },
+    {
+      "key": "C",
+      "misconception": "The Proclamation ended Black military recruitment.",
+      "text": "Ending all military recruitment of Black soldiers"
+    },
+    {
+      "key": "D",
+      "text": "Adding the destruction of slavery to Union war aims"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "It exempted border states and Union-held areas; it did not end slavery everywhere at once.",
+    "B": "Citizenship came later, with the Fourteenth Amendment.",
+    "C": "Black recruitment increased; it did not end.",
+    "D": "The Proclamation made ending slavery an explicit Union war aim, not just preserving the Union. Lincoln's order freed enslaved people in Confederate-held areas and invited them to serve in the Union army.",
+    "general": "1. Read what the order does. It declares enslaved people in designated states free.\n2. Ask what that changes about the war. Ending slavery joins preserving the Union as a stated war aim.\n3. Test the overstatements. Slavery did not end everywhere at once, citizenship came later, and Black recruitment grew.\n4. Match the change. The war's purpose widened, and that widening is the direct change.\nRemember: a war aim changes when a leader states a new purpose for fighting."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "2.B"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from the Emancipation Proclamation (1863)",
+  "status": "final",
+  "stem": "Lincoln’s Emancipation Proclamation most directly changed the Civil War by which of the following?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Abraham Lincoln, Emancipation Proclamation, January 1, 1863, public domain.",
+    "text": "“And by virtue of the power, and for the purpose aforesaid, I do order and declare that all persons held as slaves within said designated States, and parts of States, are, and henceforward shall be free.”"
+  },
+  "stimulus_set": "emancipation-proclamation-1863",
+  "themes": [
+    "PCE",
+    "WOR"
+  ],
+  "topics": [
+    "5.9"
+  ],
+  "type": "mcq",
+  "unit": 5
+}

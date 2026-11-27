@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-1263",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.3"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "C",
+ "skills": [
+  "1.A",
+  "3.A"
+ ],
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.3 The Mexican-American War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Théodore Gentilz, “Fall of the Alamo,” about 1844"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Théodore Gentilz, “Fall of the Alamo,” about 1844. Public domain.",
+  "text": "A black-and-white painting of the Alamo mission compound in San Antonio, seen from above and at a distance. Mexican soldiers in formation fill the foreground and surround the low adobe walls, while more troops advance across the plain behind."
+ },
+ "stimulus_set": "alamo-gentilz-1844",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The painting depicts which of the following events?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Battle of San Jacinto, where Sam Houston's army defeated Santa Anna in 1836.",
+   "misconception": "San Jacinto was a Texan victory on open ground; the painting shows an assault on the Alamo mission compound."
+  },
+  {
+   "key": "B",
+   "text": "The capture of Mexico City by General Winfield Scott in 1847.",
+   "misconception": "Scott took Mexico City in 1847, but the painting shows the Alamo in San Antonio, not the Mexican capital."
+  },
+  {
+   "key": "C",
+   "text": "The fall of the Alamo, where Mexican troops overwhelmed the Texan defenders in March 1836."
+  },
+  {
+   "key": "D",
+   "text": "The Bear Flag Revolt, in which American settlers declared California independent in 1846.",
+   "misconception": "The Bear Flag Revolt took place in California in 1846, not at the Alamo in Texas."
+  }
+ ],
+ "rationales": {
+  "A": "San Jacinto was Houston's victory in April 1836; the painting shows the storming of the Alamo mission.",
+  "B": "Mexico City fell to Scott in 1847; this is San Antonio in 1836.",
+  "C": "On March 6, 1836, Santa Anna's troops stormed the Alamo and killed its defenders, including Davy Crockett and Jim Bowie.",
+  "D": "The Bear Flag Revolt happened in California in 1846, a decade later and a thousand miles away.",
+  "general": "1. Look at the building. The low adobe mission compound is the Alamo in San Antonio.\n2. Look at the action. Soldiers in formation are storming the walls, not defending them.\n3. Match the scene to the date. On March 6, 1836, Mexican troops took the Alamo and killed every defender.\nRemember: a painting's subject is in its setting — a mission under assault in Texas can only be the Alamo."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1263",
+   "file": "u4/5s24-ch03-mcq-39.jpg",
+   "caption": "Théodore Gentilz, “Fall of the Alamo,” about 1844",
+   "alt": "Gentilz's painting of the fall of the Alamo: the mission compound in San Antonio seen from above, with Mexican soldiers in formation around the walls and more troops advancing across the plain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Fall-of-the-alamo-gentilz_1844.jpg",
+   "license": "Public domain"
+  }
+ ]
+}

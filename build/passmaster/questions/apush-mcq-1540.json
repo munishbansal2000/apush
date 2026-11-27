@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-1540",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.11"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.11 Failure of Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Thomas Nast, “The Union as It Was — The Lost Cause, Worse than Slavery,” Harper’s Weekly, October 24, 1874"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "Thomas Nast’s cartoon “The Union as It Was — The Lost Cause, Worse than Slavery,” Harper’s Weekly, October 24, 1874. A man marked “White League,” a rifle on his back, shakes hands with a hooded Klansman marked “K.K.” over a shield. Above them an eagle carries the words “The Union as It Was” and “This Is a White Man’s Government.” Inside the shield, a Black mother and father crouch over their baby in grief, while behind them a freedman hangs from a tree and a schoolhouse burns. A child’s primer lies dropped on the ground.",
+  "source_note": "Thomas Nast, “The Union as It Was — The Lost Cause, Worse than Slavery,” Harper’s Weekly, October 24, 1874, p. 878 (Library of Congress, LCCN2001696840). Public domain. Image viewed before writing; details described from the image itself."
+ },
+ "stimulus_set": "nast-lost-cause",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Nast’s cartoon most directly argues that",
+ "options": [
+  {
+   "key": "A",
+   "text": "white terrorist groups were undoing Reconstruction by violence."
+  },
+  {
+   "key": "B",
+   "text": "the federal government had already withdrawn its troops from the South.",
+   "misconception": "Background: federal troops stayed in the South until 1877, three years after the cartoon."
+  },
+  {
+   "key": "C",
+   "text": "Black Southerners welcomed the return of Democratic rule.",
+   "misconception": "The grieving family at the center shows fear, not welcome."
+  },
+  {
+   "key": "D",
+   "text": "the White League and the Ku Klux Klan were enemies of each other.",
+   "misconception": "The two men shake hands, so the cartoon shows them as partners, not enemies."
+  }
+ ],
+ "rationales": {
+  "A": "The White League man and the Klansman clasp hands over a grieving Black family, with a lynching and a burning schoolhouse behind them. Nast shows two violent groups working together to crush the freedom Reconstruction promised.",
+  "B": "Background: federal troops stayed in the South until 1877, three years after the cartoon.",
+  "C": "The grieving family at the center shows fear, not welcome.",
+  "D": "The two men shake hands, so the cartoon shows them as partners, not enemies.",
+  "general": "1. The handshake is the cartoon’s center: the White League and the Klan join hands.\n2. Above them the eagle proclaims a white man’s government, and below them a Black family grieves.\n3. Behind the family, a man hangs from a tree and a schoolhouse burns.\n4. Nast is not reporting a single crime; he is showing a system of terror at work.\nRemember: a cartoon’s handshake can name an alliance that words alone would take a paragraph to prove."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1540",
+   "file": "u5/5s24-exam2-mcq-17.jpg",
+   "caption": "Thomas Nast, “The Union as It Was — The Lost Cause, Worse than Slavery,” Harper’s Weekly, October 24, 1874",
+   "alt": "Nast cartoon from 1874: a White League man and a hooded Klansman shake hands over a shield showing a grieving Black family, with a lynched man and a burning schoolhouse behind them",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/The_Union_as_it_was_The_lost_cause%2C_worse_than_slavery_-_-_Th._Nast._LCCN2001696840.jpg",
+   "license": "Public domain"
+  }
+ ]
+}

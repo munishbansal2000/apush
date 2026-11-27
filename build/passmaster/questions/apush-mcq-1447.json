@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-1447",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.8"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "D",
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.8 Military Conflict in the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Abraham Lincoln, Gettysburg Address (November 19, 1863)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Abraham Lincoln, Gettysburg Address, delivered November 19, 1863. Public domain; Bliss copy text. The two quoted passages appear in this order in the address; “. . .” marks omitted text. The figure shows the Bliss copy in Lincoln’s hand.",
+  "text": "“Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. . . . But, in a larger sense, we can not dedicate—we can not consecrate—we can not hallow—this ground. . . . It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us—that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion—that we here highly resolve that these dead shall not have died in vain. . . . that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth.”\n\n—Abraham Lincoln, Gettysburg Address, November 19, 1863 (Bliss copy)"
+ },
+ "stimulus_set": "gettysburg-address",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Lincoln says the nation was “conceived in Liberty, and dedicated to the proposition that all men are created equal.” In the address, this claim redefines the war as",
+ "options": [
+  {
+   "key": "A",
+   "text": "a fight over tariffs and taxes.",
+   "misconception": "Lincoln says nothing about tariffs; his claim is about liberty and equality."
+  },
+  {
+   "key": "B",
+   "text": "a border dispute between two countries.",
+   "misconception": "Lincoln is speaking about one nation, not two countries disputing a border."
+  },
+  {
+   "key": "C",
+   "text": "a war to punish the South.",
+   "misconception": "Lincoln’s words are about the nation’s promise, not about punishment."
+  },
+  {
+   "key": "D",
+   "text": "a struggle for Union and for equality."
+  }
+ ],
+ "rationales": {
+  "A": "Lincoln says nothing about tariffs; his claim is about liberty and equality.",
+  "B": "Lincoln is speaking about one nation, not two countries disputing a border.",
+  "C": "Lincoln’s words are about the nation’s promise, not about punishment.",
+  "D": "Background from the books: the address helped redefine the war as a struggle for human equality.",
+  "general": "1. The address opens with the nation’s birth in liberty and equality, not with a battle report.\n2. That opening makes the war a test of whether that birth still means anything.\n3. Background from the books: the address helped redefine the war as a struggle for human equality.\n4. The Union must now be saved on those terms, not on the old terms of 1861.\nRemember: the opening defines the stakes: liberty and equality, not just territory."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1447",
+   "file": "u5/original-ctx-u5-07.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Gettysburg_Address_Bliss_copy.jpg",
+   "license": "Public domain (written by Abraham Lincoln, 1863)",
+   "caption": "The Bliss copy of the Gettysburg Address, in Lincoln’s hand.",
+   "alt": "A handwritten page shows the Gettysburg Address in Abraham Lincoln’s own handwriting, the Bliss copy."
+  }
+ ]
+}

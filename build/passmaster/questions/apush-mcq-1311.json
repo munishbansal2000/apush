@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1311",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.4"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "3.A",
+  "2.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.4 The Compromise of 1850"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question; facts from the grounding books.",
+  "text": "Clay's plan first went to the Senate as one large bill, the Omnibus Bill, meant to be voted on all at once. It failed in the Senate in July 1850: Northerners who liked California's admission would not vote for the Fugitive Slave Act, and Southerners who wanted that act would not vote for California. President Zachary Taylor, who opposed the package, died on July 9, 1850, and Millard Fillmore, who favored it, became president. Senator Stephen A. Douglas of Illinois then broke the package into five separate bills, and each one passed with a different mix of Northern and Southern votes. Fillmore signed all five between September 9 and September 20, 1850."
+ },
+ "stimulus_set": "douglas-unbundling-1850",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Douglas's solution to the Omnibus Bill's failure was to",
+ "options": [
+  {
+   "key": "A",
+   "text": "split the package into five bills, each passed by different votes."
+  },
+  {
+   "key": "B",
+   "text": "ask the president to sign the package as an executive order.",
+   "misconception": "Executive orders play no part; the bills passed Congress and Fillmore signed them."
+  },
+  {
+   "key": "C",
+   "text": "remove the Fugitive Slave Act from the compromise entirely.",
+   "misconception": "The Fugitive Slave Act was not removed; it passed as one of the five bills. Background from the books: it was approved on September 18, 1850."
+  },
+  {
+   "key": "D",
+   "text": "send the whole package back to Clay's committee for another year.",
+   "misconception": "The package did not go back to committee; Douglas carried the separate bills to passage in the same session."
+  }
+ ],
+ "rationales": {
+  "A": "The passage says Douglas “broke the package into five separate bills, and each one passed with a different mix of Northern and Southern votes.”",
+  "B": "Executive orders play no part; the bills passed Congress and Fillmore signed them.",
+  "C": "The Fugitive Slave Act was not removed; it passed as one of the five bills. Background from the books: it was approved on September 18, 1850.",
+  "D": "The package did not go back to committee; Douglas carried the separate bills to passage in the same session.",
+  "general": "1. Name the obstacle: one vote on five gifts, and no majority for all five together.\n2. Watch Douglas untie the knot: five separate votes, so each bill finds its own majority.\n3. Notice the trick: a senator could vote for California and against the Fugitive Slave Act, or the other way around.\nRemember: when a package cannot pass whole, splitting it lets each piece find the votes it needs."
+ }
+}

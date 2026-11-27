@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1455",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.8"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "D",
+ "skills": [
+  "2.A",
+  "5.A"
+ ],
+ "themes": [
+  "WXT",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.8 Military Conflict in the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Population figures as stated in Barron’s, Chapter 7 (22 million versus less than 6 million, excluding enslaved people); railroad mileage and factory output from the 1860 census, as summarized in the books’ accounts of Northern industrial advantage. Figures are rounded.",
+  "text": "The North and the South on the eve of war, 1860.\n\n| Measure (1860) | Free states (Union) | Confederate states |\n| Free population | about 22,000,000 | under 6,000,000 |\n| Railroad miles | about 22,000 | about 9,000 |\n| Share of the nation’s factory output | about 9 in 10 | about 1 in 10 |"
+ },
+ "stimulus_set": "war-resources-1860",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The table best supports which conclusion about the Confederacy’s war effort?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The South could win by outproducing the North.",
+   "misconception": "The table shows the South with about 1 in 10 of factory output, not more."
+  },
+  {
+   "key": "B",
+   "text": "The South had more men to replace its losses.",
+   "misconception": "The table shows under 6 million free people in the South against about 22 million in the North."
+  },
+  {
+   "key": "C",
+   "text": "The South’s factories made the blockade useless.",
+   "misconception": "Background: with so little factory output, the South needed imports, which the blockade cut off."
+  },
+  {
+   "key": "D",
+   "text": "The South had to win quickly, before Northern numbers told."
+  }
+ ],
+ "rationales": {
+  "A": "The table shows the South with about 1 in 10 of factory output, not more.",
+  "B": "The table shows under 6 million free people in the South against about 22 million in the North.",
+  "C": "Background: with so little factory output, the South needed imports, which the blockade cut off.",
+  "D": "Background from the books: Northern advantages grew more important as the war dragged on.",
+  "general": "1. The table is a snapshot of 1860, before a shot was fired.\n2. In every row the South starts behind, and behind by a lot.\n3. A side that starts behind in men and factories cannot afford a long war.\n4. Background from the books: Northern advantages grew more important as the war dragged on.\nRemember: a table of starting resources tells you who needs a short war."
+ }
+}

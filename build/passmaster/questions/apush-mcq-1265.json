@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-1265",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.3"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "2.C",
+  "3.D"
+ ],
+ "themes": [
+  "ARC",
+  "WOR"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.3 The Mexican-American War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Théodore Gentilz, “Fall of the Alamo,” about 1844"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Théodore Gentilz, “Fall of the Alamo,” about 1844. Public domain.",
+  "text": "A black-and-white painting of the Alamo mission compound in San Antonio, seen from above and at a distance. Mexican soldiers in formation fill the foreground and surround the low adobe walls, while more troops advance across the plain behind."
+ },
+ "stimulus_set": "alamo-gentilz-1844",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Gentilz painted this scene around 1844, eight years after the battle, after studying the site and interviewing people who had been in San Antonio. A historian using the painting should therefore treat it most cautiously as which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "A firsthand record of the battle drawn by a soldier who fought there.",
+   "misconception": "Gentilz was not at the battle; he painted it years later from research and interviews."
+  },
+  {
+   "key": "B",
+   "text": "A later reconstruction of the battle, shaped by the artist's research and by memory."
+  },
+  {
+   "key": "C",
+   "text": "A Mexican government report on the number of troops Santa Anna commanded.",
+   "misconception": "The painting is an artwork, not an official report, and it gives no troop numbers."
+  },
+  {
+   "key": "D",
+   "text": "Proof that the defenders of the Alamo survived the assault.",
+   "misconception": "Every defender died in the assault; the painting shows the attack, not a survival."
+  }
+ ],
+ "rationales": {
+  "A": "Gentilz reached Texas in 1844 and never saw the battle; his painting is a reconstruction, not an eyewitness sketch.",
+  "B": "Painted eight years later from study and eyewitness interviews, the scene shows how the battle was remembered, not a photograph of it.",
+  "C": "The painting carries no official numbers; it is art, not a Mexican army report.",
+  "D": "All the defenders died on March 6, 1836; the painting shows their last fight, not their escape.",
+  "general": "1. Check the dates. The battle was 1836; the painting is about 1844, and the artist was not there.\n2. Ask what he did instead. He studied the ground and talked to people who had been in San Antonio.\n3. Judge the painting by that. It is a careful reconstruction, and it carries the memory of the victors' enemies and the survivors who told the tale.\nRemember: a painting made years later is evidence of memory, not of the moment — ask who remembered, and for whom."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1265",
+   "file": "u4/5s24-ch03-mcq-39.jpg",
+   "caption": "Théodore Gentilz, “Fall of the Alamo,” about 1844",
+   "alt": "Gentilz's painting of the fall of the Alamo: the mission compound in San Antonio seen from above, with Mexican soldiers in formation around the walls and more troops advancing across the plain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Fall-of-the-alamo-gentilz_1844.jpg",
+   "license": "Public domain"
+  }
+ ]
+}

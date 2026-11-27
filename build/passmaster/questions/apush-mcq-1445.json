@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-1445",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.8"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "5.A",
+  "6.B"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.8 Military Conflict in the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Currier and Ives, Siege and Capture of Vicksburg (1863)"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Currier and Ives, Siege and Capture of Vicksburg, Miss. July 4th 1863 (Library of Congress, LCCN2001705838). Public domain. Image from the shared pool.",
+  "text": "The Currier and Ives lithograph is titled “Siege and Capture of Vicksburg, Miss. July 4th 1863.” It shows Union volunteers charging through the breach after a mine exploded under a Confederate fort, while the caption below reports the surrender on July 4th and lists over 30,000 prisoners taken. The siege lasted 47 days. The Confederate flag flies above the fort, and Union flags advance from the right."
+ },
+ "stimulus_set": "vicksburg-print",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Vicksburg fell on July 4, 1863, one day after the last day of fighting at Gettysburg. Together, the two victories best support which conclusion?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Confederacy won the war in the West.",
+   "misconception": "Background: the Confederacy lost Vicksburg and the Mississippi in the West that summer."
+  },
+  {
+   "key": "B",
+   "text": "The summer of 1863 was the war’s turning point."
+  },
+  {
+   "key": "C",
+   "text": "The war ended in 1863.",
+   "misconception": "Background: the war continued for almost two more years, until April 1865."
+  },
+  {
+   "key": "D",
+   "text": "Lee invaded the North again at once.",
+   "misconception": "Background: after Gettysburg Lee retreated and never again took the offensive in the North."
+  }
+ ],
+ "rationales": {
+  "A": "Background: the Confederacy lost Vicksburg and the Mississippi in the West that summer.",
+  "B": "Background from the books: after Gettysburg the Confederacy was in retreat, and Vicksburg split it in two.",
+  "C": "Background: the war continued for almost two more years, until April 1865.",
+  "D": "Background: after Gettysburg Lee retreated and never again took the offensive in the North.",
+  "general": "1. Two victories fell in the same week: one in Pennsylvania, one on the Mississippi.\n2. Background from the books: at Gettysburg, Lee’s invasion of the North failed, and his army lost a third of its men.\n3. Background from the books: at Vicksburg, the Confederacy lost the river and an army of over 30,000 prisoners.\n4. Background from the books: after Gettysburg the Confederacy was in retreat, and Vicksburg split it in two.\nRemember: when two fronts turn in the same week, that week is the turning point."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1445",
+   "file": "u5/5s24-ch15-mcq-04.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Siege_and_capture_of_Vicksburg%2C_Miss._July_4th_1863_LCCN2001705838.jpg",
+   "license": "Public domain (published 1863; Library of Congress)",
+   "caption": "Currier and Ives, Siege and Capture of Vicksburg, July 4, 1863.",
+   "alt": "A color lithograph from 1863 shows Union soldiers charging through a breach in a Confederate fort at Vicksburg, with a great explosion behind them."
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "id": "apush-mcq-1594",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.12",
+  "5.11"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "C",
+ "skills": [
+  "5.A",
+  "1.A"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.12 Comparison in Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865-1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844-1877)"
+   }
+  ]
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "Source 1: The Fifteenth Amendment. Celebrated May 19th, 1870, a lithograph after James C. Beard. The center shows a parade celebrating the amendment. Around the border are small scenes: Black men voting, a classroom, a wedding, Black legislators, and portraits of President Grant, Vice President Colfax, and Abraham Lincoln.\n\nSource 2: Thomas Nast, The Union as it was. The Lost Cause, worse than slavery, Harper's Weekly, October 24, 1874. A White League man on the left and a hooded Ku Klux Klan member on the right join hands over a skull and crossbones, above a Black family crouching in fear. Behind them are a lynched man and a burning schoolhouse.",
+  "source_note": "Source 1: The Fifteenth Amendment. Celebrated May 19th, 1870, lithograph after James C. Beard (Library of Congress, LCCN2003690776; public domain). Source 2: Thomas Nast, Harper's Weekly, October 24, 1874 (Library of Congress, LCCN2001696840; public domain). Both images viewed before writing."
+ },
+ "stimulus_set": "promise-and-reality",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The two images together show which contrast of Reconstruction?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The North and the South agreed on Black voting rights by 1874, ending the argument.",
+   "misconception": "The cartoon shows armed men terrorizing Black families, not agreement."
+  },
+  {
+   "key": "B",
+   "text": "The Fifteenth Amendment was never ratified by any state.",
+   "misconception": "Background: the amendment was ratified in 1870, and the print celebrates that ratification."
+  },
+  {
+   "key": "C",
+   "text": "The celebration of Black voting in 1870 gave way to terror against Black voters."
+  },
+  {
+   "key": "D",
+   "text": "Black Southerners stopped voting after 1870 because they lost interest.",
+   "misconception": "The cartoon shows fear and violence keeping them from the polls, not lost interest."
+  }
+ ],
+ "rationales": {
+  "A": "The 1874 cartoon shows a White League man and a Klansman joining hands over a skull, the opposite of agreement.",
+  "B": "Background: the amendment was ratified in 1870; the print is a celebration of that fact.",
+  "C": "The 1870 print shows Black men voting and holding office, and the 1874 cartoon shows armed terror driving them from the polls.",
+  "D": "The cartoon shows a crouching family, a lynched man, and a burning schoolhouse, which is fear, not lost interest.",
+  "general": "1. Read the 1870 print first: parades, ballots, classrooms, and Black legislators celebrate the vote.\n2. Read the 1874 cartoon: a White League man and a Klansman join hands over a skull.\n3. Four years separate the two images, and the mood has flipped from celebration to fear.\n4. Together they show the promise of Reconstruction meeting its undoing.\nRemember: two images from different years are a before-and-after, so ask what changed between them."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1594-a",
+   "file": "u5/5s24-ch16-mcq-05.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/The_Fifteenth_Amendment._Celebrated_May_19th%2C_1870_-_from_an_original_design_by_James_C._Beard._LCCN2003690776.jpg",
+   "license": "Public domain",
+   "caption": "The Fifteenth Amendment, celebrated May 19, 1870",
+   "alt": "A colorful 1870 lithograph with a central parade celebrating the Fifteenth Amendment, surrounded by small scenes of Black men voting, a classroom, a wedding, and Black legislators"
+  },
+  {
+   "id": "fig-apush-mcq-1594-b",
+   "file": "u5/5s24-exam2-mcq-17.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/The_Union_as_it_was_The_lost_cause%2C_worse_than_slavery_-_-_Th._Nast._LCCN2001696840.jpg",
+   "license": "Public domain",
+   "caption": "The Union as it was, Thomas Nast, 1874",
+   "alt": "A Thomas Nast cartoon from 1874 showing a White League man and a hooded Ku Klux Klan member joining hands over a skull, above a frightened Black family with a burning schoolhouse behind them"
+  }
+ ]
+}

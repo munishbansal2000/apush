@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-1361",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.6"
+ ],
+ "lesson": "apush-u5-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.6 Failure to compromise"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Southern Chivalry — Argument versus Club’s (John L. Magee, 1856)"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Southern Chivalry — Argument versus Club’s (John L. Magee, lithograph, 1856). Smithsonian, National Museum of American History (nmah_325684); Wikimedia Commons, File:Southern_Chivalry.jpg. Public domain.",
+  "text": "A lithograph published in 1856, titled “Southern Chivalry — Argument versus Club’s.” It shows Representative Preston Brooks of South Carolina standing over Senator Charles Sumner of Massachusetts, who has fallen from his chair on the Senate floor, bleeding from the head and still holding a quill. Brooks raises his cane for another blow. In Sumner’s other hand is a paper marked “KANSAS.” Other members of Congress watch from behind, some smiling, some reaching out to stop the fight."
+ },
+ "stimulus_set": "southern-chivalry-1856",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The paper marked “KANSAS” in Sumner’s hand most directly ties the beating to",
+ "options": [
+  {
+   "key": "A",
+   "text": "Sumner’s support for the Fugitive Slave Act of 1850.",
+   "misconception": "Background from the books: Sumner attacked the Fugitive Slave Act in other speeches, but this beating followed his speech on Kansas."
+  },
+  {
+   "key": "B",
+   "text": "the fight over Kansas as free or slave."
+  },
+  {
+   "key": "C",
+   "text": "the debate over a transcontinental railroad route.",
+   "misconception": "The paper says “KANSAS,” not “railroad”; the beating was about the territory, not a route west."
+  },
+  {
+   "key": "D",
+   "text": "Brooks’s opposition to the new tariff of 1857.",
+   "misconception": "Background from the books: the tariff of 1857 cut rates, but it had nothing to do with Sumner or Brooks."
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: Sumner attacked the Fugitive Slave Act in other speeches, but this beating followed his speech on Kansas.",
+  "B": "Sumner still holds the paper marked “KANSAS,” the subject of the speech that provoked Brooks.",
+  "C": "The paper says “KANSAS,” not “railroad”; the beating was about the territory, not a route west.",
+  "D": "Background from the books: the tariff of 1857 cut rates, but it had nothing to do with Sumner or Brooks.",
+  "general": "1. Find the paper in Sumner’s hand: it is marked “KANSAS.”\n2. Background from the books: Sumner’s “Crime Against Kansas” attacked the proslavery drive to make Kansas a slave state.\n3. Background from the books: the beating came the day after the Sack of Lawrence, so the cartoon links two Kansas outrages.\nRemember: in a cartoon, read what the victim is holding; it names the quarrel."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1361",
+   "file": "u5/southern-chivalry-magee-1856.jpg",
+   "caption": "Southern Chivalry — Argument versus Club’s, 1856",
+   "alt": "A lithograph of Preston Brooks raising his cane over Charles Sumner, who lies bleeding on the Senate floor holding a quill and a paper marked KANSAS, while other congressmen watch",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Southern_Chivalry.jpg",
+   "license": "Public domain"
+  }
+ ]
+}

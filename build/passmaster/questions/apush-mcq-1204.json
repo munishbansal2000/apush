@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1204",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.1"
+ ],
+ "lesson": "apush-u5-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "4.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.1 Contextualizing Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data: United States decennial censuses, 1840–1870.",
+  "text": "| Census | Total population | Enslaved people |\n|---|---|---|\n| 1840 | 17.1 million | 2.5 million |\n| 1850 | 23.2 million | 3.2 million |\n| 1860 | 31.4 million | 4.0 million |\n| 1870 | 38.6 million | — (slavery abolished in 1865) |\n\nSource: United States decennial censuses, 1840–1870."
+ },
+ "stimulus_set": "census-population-1840-1870",
+ "source": "original; stimulus is a data table from the United States decennial censuses, 1840–1870",
+ "stem": "The growth shown in the table most directly helps explain which development of the period?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Why the question of whether slavery would spread into new territories became the central fight of American politics."
+  },
+  {
+   "key": "B",
+   "text": "Why the North’s population stopped growing after 1850, even as new states joined the Union in the West.",
+   "misconception": "The North’s population kept growing; the table shows the national total rising every decade."
+  },
+  {
+   "key": "C",
+   "text": "Why Southern states agreed to end slavery peacefully in the 1850s, without a war or any bloodshed.",
+   "misconception": "The South did not agree to end slavery; the table shows the enslaved population still growing in 1860."
+  },
+  {
+   "key": "D",
+   "text": "Why the United States stopped admitting new states after 1845, closing the West to settlement altogether.",
+   "misconception": "New states kept joining, California in 1850 and more after, while the enslaved population grew."
+  }
+ ],
+ "rationales": {
+  "A": "A growing enslaved population meant slavery was not dying out, so every new territory raised the same question: would slavery go there too? Background from the books: the acquisition of new western lands opened the question of slavery’s expansion, and by the end of the 1850s positions on it had hardened on both sides.",
+  "B": "The total population rises in every row of the table, including the 1850s.",
+  "C": "A growing enslaved population in 1860 shows the South had not agreed to end slavery.",
+  "D": "California joined the Union in 1850, and the table’s growth years cover new admissions, not a stop.",
+  "general": "1. Look at what the numbers say. The enslaved population grew from 2.5 million to 4.0 million between 1840 and 1860.\n2. Ask what that growth meant. Slavery was not dying out, so its future had to be decided.\n3. Connect the growth to the land. Every new territory raised the question of whether slavery would spread there with it.\n4. Reach the politics. That question became the central fight of the period, from the Wilmot Proviso to secession.\nRemember: a number that keeps growing tells you the problem it measures is not going away."
+ }
+}

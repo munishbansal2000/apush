@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1488",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.9"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "3.B",
+  "5.A"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.9 Government Policies During the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Figures from the Provost Marshal General’s report, as summarized in the 1956 report Veterans in Our Society (U.S. Government Printing Office). Figures are rounded.",
+  "text": "Results of the four drafts under the Enrollment Act of 1863.\n\n| Outcome | Men |\n| Names drawn | 776,829 |\n| Men who furnished substitutes | 73,607 |\n| Men who paid $300 commutation | 86,724 |\n| Men exempted | 315,509 |\n| Men who failed to report | 161,244 |\n| Men who entered the army as draftees | 46,347 |\n\nAltogether 119,954 men entered the army under the act: 46,347 draftees plus 73,607 hired substitutes. The rows overlap, so they do not add to the total drawn."
+ },
+ "stimulus_set": "union-draft-1863-1865",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "A drafted man could pay $300 to escape service or hire a substitute. That rule fed the New York City draft riots of July 1863 mainly because it",
+ "options": [
+  {
+   "key": "A",
+   "text": "required every man in New York City to serve in the army.",
+   "misconception": "Background: the draft called men by district quotas, and most men drawn escaped service; it did not require every man to serve."
+  },
+  {
+   "key": "B",
+   "text": "let wealthy men buy their way out while working-class men faced the draft."
+  },
+  {
+   "key": "C",
+   "text": "freed enslaved people living in New York City at once.",
+   "misconception": "Background: the Enrollment Act said nothing about freeing enslaved people; New York had already ended slavery in 1827."
+  },
+  {
+   "key": "D",
+   "text": "banned all substitutes from serving in the army.",
+   "misconception": "Background: the act expressly allowed a drafted man to furnish an acceptable substitute."
+  }
+ ],
+ "rationales": {
+  "A": "Background: the draft called men by district quotas, and most men drawn escaped service; it did not require every man to serve.",
+  "C": "Background: the Enrollment Act said nothing about freeing enslaved people; New York had already ended slavery in 1827.",
+  "D": "Background: the act expressly allowed a drafted man to furnish an acceptable substitute.",
+  "B": "The 300 dollar commutation fee was beyond most working-class men, so the draft looked like a rich man’s escape and a poor man’s burden.",
+  "general": "1. The table shows the escape hatches: 86,724 paid commutation and 73,607 furnished substitutes.\n2. Both hatches cost money, and 300 dollars was a working man’s fortune.\n3. Background: in New York City in July 1863, protesters first attacked draft offices, then turned on Black residents.\n4. A draft that the rich can buy out of feels like a tax on the poor.\nRemember: when a law sells exemptions, ask who can afford to buy one."
+ }
+}

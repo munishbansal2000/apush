@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-1439",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.8"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "1.A",
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.8 Military Conflict in the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Abraham Lincoln, Emancipation Proclamation (January 1, 1863)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Emancipation Proclamation, as issued January 1, 1863. Public domain. The figure shows the cover of the printed proclamation (published September 22, 1862).",
+  "text": "“That on the first day of January, in the year of our Lord one thousand eight hundred and sixty-three, all persons held as slaves within any State or designated part of a State, the people whereof shall then be in rebellion against the United States, shall be then, thenceforward, and forever free . . .”\n\n—Emancipation Proclamation, as issued January 1, 1863"
+ },
+ "stimulus_set": "emancipation-proclamation",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "According to the proclamation, which enslaved people were declared free?",
+ "options": [
+  {
+   "key": "A",
+   "text": "All enslaved people in the United States.",
+   "misconception": "The proclamation limits itself to states in rebellion, not the whole country."
+  },
+  {
+   "key": "B",
+   "text": "Enslaved people in the border states.",
+   "misconception": "The border states stayed in the Union, so they were not in rebellion."
+  },
+  {
+   "key": "C",
+   "text": "Enslaved people in areas already held by Union armies.",
+   "misconception": "The proclamation names states in rebellion, not Union-held ground."
+  },
+  {
+   "key": "D",
+   "text": "Enslaved people in states still in rebellion."
+  }
+ ],
+ "rationales": {
+  "A": "The proclamation limits itself to states in rebellion, not the whole country.",
+  "B": "The border states stayed in the Union, so they were not in rebellion.",
+  "C": "The proclamation names states in rebellion, not Union-held ground.",
+  "D": "The text frees people “within any State . . . the people whereof shall then be in rebellion against the United States.”",
+  "general": "1. The key phrase is a condition: “shall then be in rebellion against the United States.”\n2. Only states meeting that condition are covered by the proclamation.\n3. The border states were slave states that stayed in the Union, so they fall outside it.\n4. Areas already under Union control were also left out, by the same condition.\nRemember: a proclamation that names a condition frees only those inside it."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1439",
+   "file": "u5/barrons-2027-pt2-28.png",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/The_Proclamation_of_Emancipation%2C_by_the_President_of_the_United_States%2C_to_take_effect_January_1st%2C_1863.png",
+   "license": "Public domain (published September 22, 1862)",
+   "caption": "Cover of the printed Emancipation Proclamation, to take effect January 1, 1863.",
+   "alt": "The cover of a printed pamphlet reads The Proclamation of Emancipation, by the President of the United States, to take effect January 1st, 1863."
+  }
+ ]
+}

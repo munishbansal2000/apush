@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0142",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.4"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.4 The Compromise of 1850"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "David Potter, The Impending Crisis, 1848–1861 (1976)"
+  ]
+ },
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Historian David Potter describes the 1850s as the decade when the slavery question stopped being a subject for debate and became a test of loyalty, with each section demanding the other prove its good faith. (Paraphrase of David Potter, The Impending Crisis, 1848–1861, 1976.)",
+  "text": "Historian David Potter describes the 1850s as the decade when the slavery question stopped being a subject for debate and became a test of loyalty, with each section demanding the other prove its good faith."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one issue over slavery in the territories that deepened sectional hostility in the period 1848–1850.",
+   "modelAnswer": "One issue was whether slavery could spread into the lands taken from Mexico. The Wilmot Proviso tried to ban slavery there in 1846, and the fight over it split Congress by section rather than by party.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one issue over slavery in the territories in the period, such as the Wilmot Proviso or California's admission.",
+     "notEarned": "Naming an issue from outside the period, or a vague answer with no issue identified, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how one measure of the Compromise of 1850 tried to settle that issue.",
+   "modelAnswer": "The Compromise of 1850 admitted California as a free state, which pleased the North, and it passed a stronger Fugitive Slave Act, which pleased the South. The package tried to settle the territorial question by giving each section something it wanted, instead of deciding the slavery question by a single rule.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how one Compromise measure tried to settle the issue, such as California's admission or the Fugitive Slave Act.",
+     "notEarned": "Naming a measure with no explanation of how it tried to settle the issue does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way the Fugitive Slave Act showed the Compromise had not settled the sectional conflict.",
+   "modelAnswer": "The Fugitive Slave Act showed the settlement had failed because it forced Northerners to help return accused runaways, and many Northerners who had ignored slavery now resisted the law. Rescues in Boston and Syracuse, and personal liberty laws in Northern states, proved the compromise had bought quiet in Congress but not peace in the country.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one way the Fugitive Slave Act showed the conflict unsettled, such as Northern resistance, rescues, or personal liberty laws.",
+     "notEarned": "Restating that the act was unpopular, with no explanation of how it showed the conflict unsettled, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1240",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.2"
+ ],
+ "lesson": "apush-u5-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "C",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "GEO",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "A. Westward Migrations"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Table of United States territorial acquisitions; areas and prices from the historical record. See Barron's Premium 2027, Chapter 7.",
+  "text": "| Acquisition | Year | Area | Price |\n| Louisiana Purchase | 1803 | 827,987 sq mi | $15 million |\n| Florida | 1819 | 72,101 sq mi | $5 million in assumed claims |\n| Texas annexation | 1845 | 389,166 sq mi | Annexation |\n| Oregon Treaty | 1846 | 286,541 sq mi | Treaty |\n| Mexican Cession | 1848 | 529,189 sq mi | $15 million plus $3.25 million in assumed claims |\n| Gadsden Purchase | 1853 | 29,670 sq mi | $10 million |"
+ },
+ "stimulus_set": "acquisitions-table",
+ "source": "original; stimulus is a table of United States territorial acquisitions compiled from the historical record",
+ "stem": "According to the table, which acquisition cost the United States $10 million?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Louisiana Purchase",
+   "misconception": "The Louisiana Purchase cost $15 million in 1803."
+  },
+  {
+   "key": "B",
+   "text": "Florida",
+   "misconception": "Florida cost $5 million in assumed claims in 1819."
+  },
+  {
+   "key": "C",
+   "text": "The Gadsden Purchase"
+  },
+  {
+   "key": "D",
+   "text": "The Mexican Cession",
+   "misconception": "The Mexican Cession cost $15 million plus $3.25 million in assumed claims."
+  }
+ ],
+ "rationales": {
+  "A": "Louisiana cost $15 million, not $10 million.",
+  "B": "Florida cost $5 million in assumed claims, not $10 million.",
+  "C": "The Gadsden Purchase row shows $10 million for 29,670 square miles in 1853.",
+  "D": "The Mexican Cession cost $15 million plus $3.25 million in assumed claims, not $10 million.",
+  "general": "1. Run down the price column. Louisiana $15 million, Florida $5 million, Texas annexation, Oregon treaty, Mexico $15 million.\n2. Find $10 million. It sits in the last row, the Gadsden Purchase of 1853.\n3. Note the size. At 29,670 square miles, it was the smallest addition in the table — and the last.\nRemember: when a question asks for a number, read the column, not the story. The price column answers it in one line."
+ }
+}

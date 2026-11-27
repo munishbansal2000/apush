@@ -1,0 +1,76 @@
+{
+  "answerKey": "D",
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 7",
+        "section": "Topic 5.5 Sectional Conflict: Regional Differences"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 14",
+        "section": "Union Expanded and Challenged (1835–1860)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 9"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-1599",
+  "lesson": "apush-u5-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Seneca Falls emerged from the movement to annex Texas.",
+      "text": "The movement to annex Texas as a slave state"
+    },
+    {
+      "key": "B",
+      "misconception": "Seneca Falls emerged from the debate over the National Bank.",
+      "text": "The debate over the National Bank"
+    },
+    {
+      "key": "C",
+      "misconception": "Seneca Falls emerged from the campaign for neutrality in the Napoleonic Wars.",
+      "text": "The campaign for American neutrality in the Napoleonic Wars"
+    },
+    {
+      "key": "D",
+      "text": "The abolitionist and other antebellum reform movements"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Texas annexation was a separate political issue.",
+    "B": "The National Bank debate does not explain a women's rights convention.",
+    "C": "Napoleonic neutrality was decades earlier.",
+    "D": "Background: Seneca Falls grew out of abolitionism and antebellum reform; many organizers met through anti-slavery work. The same networks that fought slavery carried the demand for women's rights into 1848.",
+    "general": "1. Ask where the organizers came from. Background: many met through abolitionist and other reform work.\n2. Connect the movements. Anti-slavery organizing taught the skills and the language the convention used.\n3. Test the other contexts. Texas, the Bank, and Napoleonic neutrality do not explain the convention.\n4. Match the emergence. Seneca Falls grew from the reform movements of its own decade.\nRemember: a movement's origins are usually found in the movements its organizers already belonged to."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "4.B"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from the Declaration of Sentiments (1848)",
+  "status": "final",
+  "stem": "The Seneca Falls Convention most directly emerged from which of the following contexts?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Declaration of Sentiments, Seneca Falls Convention, 1848, public domain.",
+    "text": "“We hold these truths to be self-evident: that all men and women are created equal; that they are endowed by their Creator with certain inalienable rights; that among these are life, liberty, and the pursuit of happiness.”"
+  },
+  "stimulus_set": "seneca-falls-1848",
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "topics": [
+    "5.5"
+  ],
+  "type": "mcq",
+  "unit": 5
+}

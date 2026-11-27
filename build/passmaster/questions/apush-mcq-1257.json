@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1257",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.3"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "4.B",
+  "6.C"
+ ],
+ "themes": [
+  "GEO",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.3 The Mexican-American War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Treaty of Guadalupe Hidalgo, February 2, 1848"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Treaty of Guadalupe Hidalgo, February 2, 1848, Articles V and XII (ratified text). Public domain.",
+  "text": "Article V. The boundary line between the two Republics shall commence in the Gulf of Mexico, three leagues from land, opposite the mouth of the Rio Grande, otherwise called Rio Bravo del Norte . . . from thence up the middle of that river, following the deepest channel, where it has more than one, to the point where it strikes the southern boundary of New Mexico . . . The southern and western limits of New Mexico, mentioned in the article, are those laid down in the map entitled \"Map of the United Mexican States, as organized and defined by various acts of the Congress of said republic, and constructed according to the best authorities. Revised edition. Published at New York, in 1847, by J. Disturnell,\" of which map a copy is added to this treaty, bearing the signatures and seals of the undersigned Plenipotentiaries.\n\nArticle XII. In consideration of the extension acquired by the boundaries of the United States, as defined in the fifth article of the present treaty, the Government of the United States engages to pay to that of the Mexican Republic the sum of fifteen millions of dollars."
+ },
+ "stimulus_set": "guadalupe-hidalgo-arts-v-xii",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Article V names a specific published map, the Disturnell map of 1847, as the guide for New Mexico's southern and western limits. That detail best shows which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The treaty was written in Spanish and English, so both sides needed a shared map.",
+   "misconception": "The treaty was written in both languages, but the map is named to fix the boundary line, not to translate the text."
+  },
+  {
+   "key": "B",
+   "text": "The treaty's boundary depended on a map that later proved faulty, leaving the border disputed."
+  },
+  {
+   "key": "C",
+   "text": "Mexico insisted on using its own map because it distrusted American surveyors.",
+   "misconception": "Both sides agreed to the Disturnell map in the treaty; the problem was the map's mistakes, not who made it."
+  },
+  {
+   "key": "D",
+   "text": "The United States had never surveyed any of the land it acquired from Mexico.",
+   "misconception": "American forces had marched across much of the land during the war; the map's errors were about details, not total ignorance."
+  }
+ ],
+ "rationales": {
+  "A": "The map is named to pin down the boundary on the ground, not to help translate the treaty.",
+  "B": "The Disturnell map misplaced places like El Paso, so the two countries read the same words differently and the border stayed disputed until the Gadsden Purchase of 1853.",
+  "C": "The treaty names the map with both sides' agreement; the trouble was that the map was wrong in places.",
+  "D": "American armies had crossed the region in the war; the dispute came from the map's errors, not from a blank map.",
+  "general": "1. Notice the odd detail: a treaty that names one commercial map as its guide.\n2. Ask what happens when the guide is wrong. The Disturnell map put towns and rivers in the wrong places.\n3. Follow the consequence. Each side read the boundary differently, and the argument lasted until the Gadsden Purchase redrew the line in 1853.\nRemember: a border drawn from a faulty map is a dispute postponed, not settled."
+ }
+}

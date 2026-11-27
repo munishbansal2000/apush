@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1548",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.11"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "5.B",
+  "1.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.11 Failure of Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "United States v. Cruikshank, 92 U.S. 542 (1876), majority opinion of Chief Justice Morrison Waite",
+   "United States v. Reese, 92 U.S. 214 (1876), majority opinion of Chief Justice Morrison Waite"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "“The fourteenth amendment prohibits a State from depriving any person of life, liberty, or property, without due process of law; but this adds nothing to the rights of one citizen as against another. . . . The fourteenth amendment prohibits a State from denying to any person within its jurisdiction the equal protection of the laws; but this provision does not, any more than the one which precedes it, and which we have just considered, add any thing to the rights which one citizen has under the Constitution against another.”\n\n—Chief Justice Morrison Waite, majority opinion, United States v. Cruikshank, 1876",
+  "source_note": "United States v. Cruikshank, 92 U.S. 542 (1876), majority opinion of Chief Justice Morrison Waite. Public domain (U.S. Supreme Court opinion; text verified against Cornell LII). Ellipses mark omissions inside the passage."
+ },
+ "stimulus_set": "cruikshank-reese",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "In the same year, the Court decided United States v. Reese, holding that “the Fifteenth Amendment does not confer the right of suffrage upon any one.” Taken together, Cruikshank and Reese most directly opened the way for Southern states to",
+ "options": [
+  {
+   "key": "A",
+   "text": "deny the vote to Black citizens openly because of their race.",
+   "misconception": "Background: Reese still barred denying the vote on account of race; the trick was to use rules that did not name race."
+  },
+  {
+   "key": "B",
+   "text": "leave the Union and form a separate confederacy.",
+   "misconception": "Background: secession had been settled by the Civil War; no state tried it again."
+  },
+  {
+   "key": "C",
+   "text": "pass laws that applied only to white citizens.",
+   "misconception": "Laws that named race were exactly what the amendments still barred."
+  },
+  {
+   "key": "D",
+   "text": "limit voting with race-neutral rules like poll taxes and literacy tests."
+  }
+ ],
+ "rationales": {
+  "A": "Background: Reese still barred denying the vote on account of race; the trick was to use rules that did not name race.",
+  "B": "Background: secession had been settled by the Civil War; no state tried it again.",
+  "C": "Laws that named race were exactly what the amendments still barred.",
+  "D": "Reese said the amendment only barred race-based denial of the vote, and Cruikshank said private acts were beyond federal reach. States then wrote poll taxes, literacy tests, and grandfather clauses that kept Black men from voting without ever naming race.",
+  "general": "1. Reese narrowed the Fifteenth Amendment to one thing: no denial of the vote on account of race.\n2. Cruikshank narrowed the Fourteenth Amendment the same way: it binds states, not private men.\n3. Together they left a wide open road: voting rules that never mention race.\n4. Poll taxes, literacy tests, and grandfather clauses walked straight down that road.\nRemember: a right that only bans naming the reason can be beaten by rules that never name it."
+ }
+}

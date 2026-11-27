@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1201",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.1"
+ ],
+ "lesson": "apush-u5-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.1 Contextualizing Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Abraham Lincoln, speech to the Illinois Republican State Convention, Springfield, June 16, 1858"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Abraham Lincoln, speech to the Illinois Republican State Convention, Springfield, June 16, 1858; public domain.",
+  "text": "“We are now far into the fifth year, since a policy was initiated, with the avowed object, and confident promise, of putting an end to slavery agitation. Under the operation of that policy, that agitation has not only, not ceased, but has constantly augmented. In my opinion, it will not cease, until a crisis shall have been reached, and passed — “A house divided against itself cannot stand.” I believe this government cannot endure, permanently half slave and half free. I do not expect the Union to be dissolved — I do not expect the house to fall — but I do expect it will cease to be divided. It will become all one thing, or all the other.”\n— Abraham Lincoln, speech to the Illinois Republican State Convention, Springfield, June 16, 1858"
+ },
+ "stimulus_set": "house-divided-1858",
+ "source": "original; stimulus is a verbatim excerpt from Abraham Lincoln, “House Divided” speech (1858), public domain",
+ "stem": "Lincoln says the country is “far into the fifth year” since a policy began that promised to end slavery agitation. Which policy is he describing?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Popular sovereignty, set by the Kansas-Nebraska Act of 1854, which let settlers vote on slavery."
+  },
+  {
+   "key": "B",
+   "text": "The Missouri Compromise of 1820, which drew a line at 36°30′ across the West.",
+   "misconception": "The Missouri Compromise began in 1820, nearly forty years before the speech, not five."
+  },
+  {
+   "key": "C",
+   "text": "The Compromise of 1850, which admitted California as a free state.",
+   "misconception": "The compromise came in 1850, eight years before the speech, not five."
+  },
+  {
+   "key": "D",
+   "text": "The Dred Scott decision of 1857, which ruled that Congress could not ban slavery in the territories.",
+   "misconception": "Dred Scott was a court ruling from the year before the speech, not a policy begun five years earlier."
+  }
+ ],
+ "rationales": {
+  "A": "Count back five years from 1858 and you land in 1854, the year of the Kansas-Nebraska Act. Background: the act let settlers decide slavery by vote, promising to settle the agitation, but the books show it did the opposite, bringing violence to Kansas and a new Republican Party into being.",
+  "B": "1820 is nearly forty years before 1858, so it cannot be the fifth year Lincoln counts.",
+  "C": "1850 is eight years before 1858, so it cannot be the fifth year Lincoln counts.",
+  "D": "A decision from 1857 is one year old in 1858, not five, and it is a ruling, not the policy Lincoln names.",
+  "general": "1. Count back from the speech. Lincoln speaks in 1858 and says “the fifth year,” so the policy began around 1854.\n2. Name the 1854 law. The Kansas-Nebraska Act let settlers in those territories vote on slavery.\n3. Recall its promise. It was sold as popular sovereignty, a way to end slavery agitation by letting the people decide.\n4. Check Lincoln’s verdict. The agitation had “constantly augmented,” so the promise failed.\nRemember: a date clue in a speech can name the law, so count the years the speaker counts."
+ }
+}

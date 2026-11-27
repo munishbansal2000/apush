@@ -1,0 +1,96 @@
+{
+ "id": "apush-mcq-1595",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.12",
+  "5.11"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "B",
+ "skills": [
+  "5.B",
+  "2.A"
+ ],
+ "themes": [
+  "SOC",
+  "ARC"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.12 Comparison in Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865-1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844-1877)"
+   }
+  ]
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "Source 1: The Fifteenth Amendment. Celebrated May 19th, 1870, a lithograph after James C. Beard. The center shows a parade celebrating the amendment. Around the border are small scenes: Black men voting, a classroom, a wedding, Black legislators, and portraits of President Grant, Vice President Colfax, and Abraham Lincoln.\n\nSource 2: Thomas Nast, The Union as it was. The Lost Cause, worse than slavery, Harper's Weekly, October 24, 1874. A White League man on the left and a hooded Ku Klux Klan member on the right join hands over a skull and crossbones, above a Black family crouching in fear. Behind them are a lynched man and a burning schoolhouse.",
+  "source_note": "Source 1: The Fifteenth Amendment. Celebrated May 19th, 1870, lithograph after James C. Beard (Library of Congress, LCCN2003690776; public domain). Source 2: Thomas Nast, Harper's Weekly, October 24, 1874 (Library of Congress, LCCN2001696840; public domain). Both images viewed before writing."
+ },
+ "stimulus_set": "promise-and-reality",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Nast's cartoon calls the Lost Cause “worse than slavery.” Compared with the 1870 print, the cartoon's message is which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Fifteenth Amendment had solved every problem facing Black Southerners.",
+   "misconception": "The cartoon shows terror and murder four years after the amendment, so the problems were not solved."
+  },
+  {
+   "key": "B",
+   "text": "The rights celebrated in 1870 were being undone by violence in 1874."
+  },
+  {
+   "key": "C",
+   "text": "Black Southerners welcomed the White League and the Ku Klux Klan.",
+   "misconception": "The cartoon shows a Black family crouching in fear beneath the two armed men."
+  },
+  {
+   "key": "D",
+   "text": "The federal government had already stopped all Southern violence by 1874.",
+   "misconception": "Background: the cartoon was drawn because violence continued; federal troops left the South in 1877."
+  }
+ ],
+ "rationales": {
+  "A": "The cartoon's burning schoolhouse and lynched man show the amendment's promise under attack, not fulfilled.",
+  "B": "The print celebrates the vote, the classroom, and the ballot box, and the cartoon shows each of them threatened by armed men.",
+  "C": "The family in the cartoon crouches in fear, and the men above them carry weapons.",
+  "D": "Background: violence went on until the troops withdrew in 1877; the cartoon protests that the government had not stopped it.",
+  "general": "1. List what the 1870 print celebrates: voting, school, marriage, and officeholding.\n2. List what the 1874 cartoon threatens: the same family, a schoolhouse on fire, and a lynched man.\n3. Nast calls the Lost Cause worse than slavery because it used terror to take back what the law had given.\n4. The cartoon is not a new subject; it is the print's promise under attack.\nRemember: when a later image attacks an earlier one's subject, the point is the reversal."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1595-a",
+   "file": "u5/5s24-ch16-mcq-05.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/The_Fifteenth_Amendment._Celebrated_May_19th%2C_1870_-_from_an_original_design_by_James_C._Beard._LCCN2003690776.jpg",
+   "license": "Public domain",
+   "caption": "The Fifteenth Amendment, celebrated May 19, 1870",
+   "alt": "A colorful 1870 lithograph with a central parade celebrating the Fifteenth Amendment, surrounded by small scenes of Black men voting, a classroom, a wedding, and Black legislators"
+  },
+  {
+   "id": "fig-apush-mcq-1595-b",
+   "file": "u5/5s24-exam2-mcq-17.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/The_Union_as_it_was_The_lost_cause%2C_worse_than_slavery_-_-_Th._Nast._LCCN2001696840.jpg",
+   "license": "Public domain",
+   "caption": "The Union as it was, Thomas Nast, 1874",
+   "alt": "A Thomas Nast cartoon from 1874 showing a White League man and a hooded Ku Klux Klan member joining hands over a skull, above a frightened Black family with a burning schoolhouse behind them"
+  }
+ ]
+}

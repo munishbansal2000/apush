@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-1515",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.10"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.10 Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Tenure of Office Act (1867)",
+   "First Military Reconstruction Act (March 2, 1867)"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "An engraving from Harper’s Weekly showing the United States Senate chamber during the impeachment trial of President Andrew Johnson in 1868. Senators sit at desks arranged in rows across the chamber floor, and the galleries above are packed with spectators. The caption below the image reads: “The Senate as a court of impeachment for the trial of Andrew Johnson, sketched by Theodore R. Davis.”",
+  "source_note": "Theodore R. Davis, “The Senate as a court of impeachment for the trial of Andrew Johnson,” Harper’s Weekly, 1868. Public domain. Image viewed before writing; caption verified against the image itself."
+ },
+ "stimulus_set": "johnson-impeachment-trial",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The event shown in this image came about because President Johnson",
+ "options": [
+  {
+   "key": "A",
+   "text": "fired Secretary of War Edwin Stanton, defying Congress."
+  },
+  {
+   "key": "B",
+   "text": "vetoed the Thirteenth Amendment.",
+   "misconception": "Background: the Thirteenth Amendment was ratified before Johnson’s presidency, and a president cannot veto an amendment."
+  },
+  {
+   "key": "C",
+   "text": "refused to sign the Compromise of 1877.",
+   "misconception": "Background: the Compromise of 1877 came nine years later, under President Hayes."
+  },
+  {
+   "key": "D",
+   "text": "ordered the army out of the South.",
+   "misconception": "Background: Johnson never ordered the army out of the South; withdrawing troops was the Compromise of 1877."
+  }
+ ],
+ "rationales": {
+  "A": "Congress had passed the Tenure of Office Act to stop Johnson from firing cabinet officers without Senate approval. When Johnson fired Stanton anyway, the House voted articles of impeachment, and the Senate sat as the court shown here.",
+  "B": "Background: the Thirteenth Amendment was ratified before Johnson’s presidency, and a president cannot veto an amendment.",
+  "C": "Background: the Compromise of 1877 came nine years later, under President Hayes.",
+  "D": "Background: Johnson never ordered the army out of the South; withdrawing troops was the Compromise of 1877.",
+  "general": "1. The image shows the Senate sitting as a court, which happens only in an impeachment trial.\n2. Background: Johnson had fired Secretary of War Edwin Stanton, Congress’s ally, in defiance of the Tenure of Office Act.\n3. The House impeached him for it, and the Senate tried him.\n4. So this crowded chamber is the climax of the fight between president and Congress.\nRemember: a trial scene is a clue to look for the charge that put the person there."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1515",
+   "file": "u5/5s24-ch16-mcq-02.jpg",
+   "caption": "The Senate as a court of impeachment for the trial of Andrew Johnson, Harper’s Weekly, 1868",
+   "alt": "Harper’s Weekly engraving of the Senate chamber during the 1868 impeachment trial of President Andrew Johnson, with senators at desks and packed galleries above",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/The_Senate_as_a_court_of_impeachment_for_the_trial_of_Andrew_Johnson_-_sketched_by_Theodore_R._Davis._LCCN96521681.jpg",
+   "license": "Public domain"
+  }
+ ]
+}

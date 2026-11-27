@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0134",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.1"
+ ],
+ "lesson": "apush-u5-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "skills": [
+  "1.B",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.1 Contextualizing Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question; facts from the grounding books.",
+  "text": "Between 1844 and 1877, the United States changed in ways that still shape the country. First, the nation spread across the continent: Texas was annexed, the Oregon boundary was settled, and a war with Mexico brought California and the Southwest under the American flag. Each new piece of land raised the same question: would slavery be allowed there?\n\nSecond, the question tore the nation apart. Compromises in 1820 and 1850 had papered over the slavery question for a time, but the Kansas-Nebraska Act, the Dred Scott decision, and John Brown’s raid hardened positions on both sides until Lincoln’s election in 1860 brought secession and civil war.\n\nThird, the war ended slavery and remade the Constitution: the 13th Amendment abolished slavery, and the 14th and 15th Amendments promised citizenship and the vote to Black men. Yet by 1877, federal troops had left the South, and much of what Reconstruction promised remained undone."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one way the United States expanded its territory between 1844 and 1848, as described in the passage.",
+   "modelAnswer": "The United States annexed Texas in 1845 and took California and the Southwest from Mexico in the war that followed. The Oregon boundary was also settled with Britain in 1846.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one territorial gain from the passage, such as annexing Texas, taking California and the Southwest from Mexico, or settling the Oregon boundary.",
+     "notEarned": "Naming an expansion from outside the period, or a vague answer with no gain identified, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how the expansion described in the passage caused sectional conflict over slavery.",
+   "modelAnswer": "Each new territory raised the question of whether slavery would be allowed there, and Northerners and Southerners gave opposite answers. The Kansas-Nebraska Act, the Dred Scott decision, and John Brown’s raid then hardened those positions until the sections could no longer compromise.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how new land raised the slavery question and hardened sectional positions, with at least one specific development named.",
+     "notEarned": "Restating that expansion caused conflict, with no mechanism or specific development explained, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one continuity in American life across the period 1844–1877, despite the changes described in the passage.",
+   "modelAnswer": "Even after slavery was abolished, white supremacy continued: Black Codes and terror groups worked to keep Black Americans subordinate, and the Compromise of 1877 withdrew federal protection. The nation’s racial hierarchy outlived the institution of slavery itself.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one continuity, such as white supremacy persisting through Black Codes, terror, or the withdrawal of federal protection.",
+     "notEarned": "Naming a change instead of a continuity, or giving a continuity with no explanation, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

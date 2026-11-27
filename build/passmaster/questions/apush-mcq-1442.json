@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-1442",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.8"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "C",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.8 Military Conflict in the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Currier and Ives, Siege and Capture of Vicksburg (1863)"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Currier and Ives, Siege and Capture of Vicksburg, Miss. July 4th 1863 (Library of Congress, LCCN2001705838). Public domain. Image from the shared pool.",
+  "text": "The Currier and Ives lithograph is titled “Siege and Capture of Vicksburg, Miss. July 4th 1863.” It shows Union volunteers charging through the breach after a mine exploded under a Confederate fort, while the caption below reports the surrender on July 4th and lists over 30,000 prisoners taken. The siege lasted 47 days. The Confederate flag flies above the fort, and Union flags advance from the right."
+ },
+ "stimulus_set": "vicksburg-print",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "According to the print’s title, Vicksburg surrendered on",
+ "options": [
+  {
+   "key": "A",
+   "text": "April 12, 1861.",
+   "misconception": "Background: that is the date of the attack on Fort Sumter, two years earlier."
+  },
+  {
+   "key": "B",
+   "text": "September 17, 1862.",
+   "misconception": "Background: that is the date of Antietam, the year before Vicksburg."
+  },
+  {
+   "key": "C",
+   "text": "July 4, 1863."
+  },
+  {
+   "key": "D",
+   "text": "April 9, 1865.",
+   "misconception": "Background: that is the date of Lee’s surrender at Appomattox."
+  }
+ ],
+ "rationales": {
+  "A": "Background: that is the date of the attack on Fort Sumter, two years earlier.",
+  "B": "Background: that is the date of Antietam, the year before Vicksburg.",
+  "C": "The title reads “Siege and Capture of Vicksburg, Miss. July 4th 1863.”",
+  "D": "Background: that is the date of Lee’s surrender at Appomattox.",
+  "general": "1. The title is printed under the picture, in large letters, with the date built in.\n2. It reads July 4th, 1863, the day the city surrendered after a 47-day siege.\n3. Background: the other dates belong to other famous days: Sumter, Antietam, Appomattox.\n4. A print made to celebrate a victory puts the victory’s date where no one can miss it.\nRemember: the title of a victory print is the date of the victory."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1442",
+   "file": "u5/5s24-ch15-mcq-04.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Siege_and_capture_of_Vicksburg%2C_Miss._July_4th_1863_LCCN2001705838.jpg",
+   "license": "Public domain (published 1863; Library of Congress)",
+   "caption": "Currier and Ives, Siege and Capture of Vicksburg, July 4, 1863.",
+   "alt": "A color lithograph from 1863 shows Union soldiers charging through a breach in a Confederate fort at Vicksburg, with a great explosion behind them."
+  }
+ ]
+}

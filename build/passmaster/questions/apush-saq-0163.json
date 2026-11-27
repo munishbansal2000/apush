@@ -1,0 +1,103 @@
+{
+ "id": "apush-saq-0163",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.10"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "3.B",
+  "2.A"
+ ],
+ "themes": [
+  "SOC",
+  "ARC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.10 Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Fifteenth Amendment to the Constitution (ratified 1870)"
+  ]
+ },
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "saq_slot": 3,
+ "stimulus": {
+  "kind": "image",
+  "text": "A color lithograph published in 1870, titled “The Fifteenth Amendment. Celebrated May 19th, 1870.” At the center, a parade fills a city street with marching soldiers, a band, and a carriage. Around the border are small scenes: a classroom full of Black children with their teacher, a wedding, a Black man casting a ballot, and Black men in formal dress. Portraits in oval frames around the border include President Ulysses S. Grant, Vice President Schuyler Colfax, and Abraham Lincoln.",
+  "source_note": "Thomas Kelly, publisher, “The Fifteenth Amendment. Celebrated May 19th, 1870,” lithograph after a design by James C. Beard, 1870 (Library of Congress, LCCN2003690776). Public domain. Image viewed before writing; scenes and portraits described from the image itself."
+ },
+ "stimulus_set": null,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify ONE right of citizenship that the print shows Black men gaining.",
+   "modelAnswer": "One right the print shows is the right to vote, pictured in the small scene of a Black man casting a ballot. The print also shows schooling and marriage, but the ballot box is the right the Fifteenth Amendment itself granted. Voting was the key that opened the other doors of citizenship.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one right of citizenship shown in the print, such as voting, schooling, or marriage, tied to the image.",
+     "notEarned": "Naming a right with no link to what the print shows does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE reason the print’s maker chose to show a classroom and a wedding alongside the ballot box.",
+   "modelAnswer": "The maker wanted to show that the vote was part of a larger citizenship, not a single act. A classroom shows education and a wedding shows family life, both of which slavery had denied. Together the scenes argue that voting would let Black men take a full part in American life.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason for the border scenes, such as showing the vote as part of full citizenship.",
+     "notEarned": "Describing the scenes with no reason given for including them does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE limitation of the print as evidence for how Black Southerners actually lived in 1870.",
+   "modelAnswer": "One limitation is that the print is a celebration, not a record, so it shows hopes rather than conditions. In 1870 most Black Southerners were sharecroppers in debt, and violence against Black voters was already rising. The print’s joyful scenes leave out the poverty and terror that limited the amendment’s promise.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limitation of the print as evidence, such as its celebratory purpose or what it leaves out.",
+     "notEarned": "Saying the print is old or colorful, with no link to its limits as evidence, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "figures": [
+  {
+   "id": "fig-apush-saq-0163",
+   "file": "u5/5s24-ch16-mcq-05.jpg",
+   "caption": "The Fifteenth Amendment. Celebrated May 19th, 1870, lithograph after James C. Beard",
+   "alt": "Beard lithograph celebrating the Fifteenth Amendment in 1870: a parade fills the center, with scenes of a classroom, a wedding, and a ballot box around the border",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/The_Fifteenth_Amendment._Celebrated_May_19th%2C_1870_-_from_an_original_design_by_James_C._Beard._LCCN2003690776.jpg",
+   "license": "Public domain"
+  }
+ ]
+}

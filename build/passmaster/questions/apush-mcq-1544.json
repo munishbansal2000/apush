@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1544",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.11"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "4.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.11 Failure of Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Slaughter-House Cases, 83 U.S. 36 (1873), majority opinion of Justice Samuel F. Miller"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "“It is quite clear, then, that there is a citizenship of the United States, and a citizenship of a State, which are distinct from each other, and which depend upon different characteristics or circumstances in the individual. . . . it is only the former which are placed by this clause under the protection of the Federal Constitution, and that the latter, whatever they may be, are not intended to have any additional protection by this paragraph of the amendment.”\n\n—Justice Samuel F. Miller, majority opinion, Slaughter-House Cases, 1873",
+  "source_note": "Slaughter-House Cases, 83 U.S. 36 (1873), majority opinion of Justice Samuel F. Miller. Public domain (U.S. Supreme Court opinion; text verified against the National Constitution Center excerpt and Cornell LII). Ellipses mark omissions inside the passage."
+ },
+ "stimulus_set": "slaughter-house",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Which of the following later developments best shows the effect of the Slaughter-House ruling on Reconstruction?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Southern states passed Jim Crow laws the federal courts left standing."
+  },
+  {
+   "key": "B",
+   "text": "Congress passed the Reconstruction Acts to put the South under military rule.",
+   "misconception": "Background: the Reconstruction Acts came in 1867, six years before the ruling."
+  },
+  {
+   "key": "C",
+   "text": "The Freedmen’s Bureau built schools across the South.",
+   "misconception": "Background: the Bureau’s schools came in the 1860s, before the ruling narrowed the amendment."
+  },
+  {
+   "key": "D",
+   "text": "The Fifteenth Amendment gave Black men the vote.",
+   "misconception": "Background: the amendment was ratified in 1870, three years before the ruling."
+  }
+ ],
+ "rationales": {
+  "A": "By reading the Privileges or Immunities Clause narrowly, the Court left state laws largely alone. Southern legislatures then wrote segregation into law, and the federal courts mostly let those laws stand.",
+  "B": "Background: the Reconstruction Acts came in 1867, six years before the ruling.",
+  "C": "Background: the Freedmen’s Bureau built its schools in the 1860s, before the ruling narrowed the amendment.",
+  "D": "Background: the Fifteenth Amendment was ratified in 1870, three years before the ruling.",
+  "general": "1. The ruling took the Privileges or Immunities Clause, the amendment’s broad shield, and made it narrow.\n2. Background: state laws on daily life, from schools to railroads, were left to the states.\n3. Southern legislatures used that opening to write segregation into law.\n4. The federal courts, following Miller’s lead, mostly refused to strike those laws down.\nRemember: a narrow reading of one clause can open a wide road for the laws it no longer blocks."
+ }
+}

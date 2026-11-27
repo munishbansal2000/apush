@@ -1,0 +1,175 @@
+{
+ "id": "apush-dbq-0048",
+ "type": "dbq",
+ "unit": 5,
+ "topics": [
+  "5.10"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.10 Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Thirteenth Amendment to the Constitution (ratified December 6, 1865)",
+   "Mississippi Black Code, Vagrant Law (1865)",
+   "Civil Rights Act of 1866 (April 9, 1866)",
+   "Fourteenth Amendment to the Constitution, Section 1 (ratified 1868)",
+   "First Military Reconstruction Act (March 2, 1867)",
+   "Senator Blanche K. Bruce, speech before the Senate (March 31, 1876)",
+   "Fifteenth Amendment to the Constitution (ratified 1870)"
+  ]
+ },
+ "source": "original; documents are public-domain primary sources and real data (see each document’s sourcing note)",
+ "stimulus": null,
+ "stimulus_set": null,
+ "prompt": "Evaluate the extent to which Reconstruction changed the political status of African Americans between 1865 and 1877.",
+ "totalPoints": 7,
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "December 6, 1865",
+   "title": "Thirteenth Amendment bans slavery",
+   "source": "Thirteenth Amendment to the Constitution, ratified December 6, 1865. Public domain.",
+   "sourcing": "The Constitution itself, as amended after the war, banning slavery everywhere in the country.",
+   "text": "“Section 1. Neither slavery nor involuntary servitude, except as a punishment for crime whereof the party shall have been duly convicted, shall exist within the United States, or any place subject to their jurisdiction. Section 2. Congress shall have power to enforce this article by appropriate legislation.”"
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "1865",
+   "title": "Mississippi Black Code: the vagrant law",
+   "source": "Mississippi Vagrant Law, part of the Mississippi Black Code, 1865 (Laws of Mississippi, 1865). Public domain.",
+   "sourcing": "The Mississippi legislature, writing the first Black Code weeks after the war ended, defining who counted as a vagrant.",
+   "text": "“...all freedmen, free negroes and mulattoes in this State, over the age of eighteen years, found on the second Monday in January, 1866, or thereafter, with no lawful employment or business, or found unlawfully assembling themselves together, either in the day or night time, and all white persons so assembling themselves with freedmen, free negroes or mulattoes, or usually associating with freedmen, free negroes or mulattoes, on terms of equality, or living in adultery or fornication with a freed woman, free negro or mulatto, shall be deemed vagrants. . . .”"
+  },
+  {
+   "n": 3,
+   "kind": "text",
+   "date": "April 9, 1866",
+   "title": "Civil Rights Act: freedpeople are citizens",
+   "source": "Civil Rights Act of 1866, Section 1, April 9, 1866. Public domain.",
+   "sourcing": "Congress, answering the Black Codes by declaring freedpeople citizens, passed over President Johnson’s veto.",
+   "text": "“...That all persons born in the United States and not subject to any foreign power, excluding Indians not taxed, are hereby declared to be citizens of the United States; and such citizens, of every race and color, without regard to any previous condition of slavery or involuntary servitude, except as a punishment for crime whereof the party shall have been duly convicted, shall have the same right, in every State and Territory in the United States, to make and enforce contracts, to sue, be parties, and give evidence, to inherit, purchase, lease, sell, hold, and convey real and personal property, and to full and equal benefit of all laws and proceedings for the security of person and property, as is enjoyed by white citizens...”"
+  },
+  {
+   "n": 4,
+   "kind": "text",
+   "date": "1868",
+   "title": "Fourteenth Amendment: citizenship and equal protection",
+   "source": "Fourteenth Amendment, Section 1, ratified 1868. Public domain.",
+   "sourcing": "The Constitution itself, as amended after Congress overrode Johnson’s opposition, writing citizenship into the nation’s basic law.",
+   "text": "“Section 1. All persons born or naturalized in the United States, and subject to the jurisdiction thereof, are citizens of the United States and of the State wherein they reside. No State shall make or enforce any law which shall abridge the privileges or immunities of citizens of the United States; nor shall any State deprive any person of life, liberty, or property, without due process of law; nor deny to any person within its jurisdiction the equal protection of the laws.”"
+  },
+  {
+   "n": 5,
+   "kind": "text",
+   "date": "March 2, 1867",
+   "title": "Military Reconstruction Act: five districts",
+   "source": "First Military Reconstruction Act, March 2, 1867. Public domain.",
+   "sourcing": "Congress, imposing military rule on the South after declaring its governments illegal, and setting the terms for readmission.",
+   "text": "“Whereas no legal State governments or adequate protection for life or property now exists in the rebel States of Virginia, North Carolina, South Carolina, Georgia, Mississippi, Alabama, Louisiana, Florida, Texas, and Arkansas; and whereas it is necessary that peace and good order should be enforced in said States until loyal and republican State governments can be legally established: Therefore, Be it enacted . . . That said rebel States shall be divided into military districts and made subject to the military authority of the United States as hereinafter prescribed, and for that purpose Virginia shall constitute the first district; North Carolina and South Carolina the second district; Georgia, Alabama, and Florida the third district; Mississippi and Arkansas the fourth district; and Louisiana and Texas the fifth district.”"
+  },
+  {
+   "n": 6,
+   "kind": "text",
+   "date": "March 31, 1876",
+   "title": "Bruce: confidence in his people’s future",
+   "source": "Senator Blanche K. Bruce, speech before the Senate, March 31, 1876. Public domain.",
+   "sourcing": "Blanche K. Bruce, a Black Republican senator from Mississippi, speaking to the Senate about election violence against Black voters.",
+   "text": "“I have confidence, not only in this country and her institutions, but in the endurance, capacity, and destiny of my people. We will, as opportunity offers and ability serves, seek our places, sometimes in the field of letters, arts, sciences, and the professions. More frequently mechanical pursuits will attract and elicit our efforts; more still of my people will find employment and livelihood as the cultivators of the soil. The bulk of this people—by surroundings, habits, adaption, and choice—will continue to find their homes in the South, and constitute the masses of its yeomanry.”"
+  },
+  {
+   "n": 7,
+   "kind": "image",
+   "date": "1870",
+   "title": "The Fifteenth Amendment, celebrated",
+   "source": "Thomas Kelly, publisher, “The Fifteenth Amendment. Celebrated May 19th, 1870,” lithograph after a design by James C. Beard, 1870 (Library of Congress, LCCN2003690776). Public domain.",
+   "sourcing": "A commercial lithograph sold to celebrate the Fifteenth Amendment, picturing the vote as the doorway into full citizenship.",
+   "figure": "u5/5s24-ch16-mcq-05.jpg",
+   "text": "A color lithograph titled “The Fifteenth Amendment. Celebrated May 19th, 1870.” At the center, a parade fills a city street with marching soldiers, a band, and a carriage. Around the border are small scenes: a classroom full of Black children with their teacher, a wedding, a Black man casting a ballot, and Black men in formal dress. Portraits in oval frames include President Ulysses S. Grant, Vice President Schuyler Colfax, and Abraham Lincoln."
+  }
+ ],
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which Reconstruction changed the political status of African Americans between 1865 and 1877, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as emancipation during the Civil War, the destruction of slavery, or the debate over who would control Reconstruction.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (first point): earns the point for describing specific and relevant evidence from at least three documents to support an argument about the prompt.",
+   "notEarned": "Using fewer than three documents, or quoting documents without describing what they show, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support an argument, with the evidence accurately described and tied to the claim.",
+   "notEarned": "Using fewer than six documents, or listing documents without connecting them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence beyond the documents: earns the point for describing a specific and relevant example beyond the documents, such as the Freedmen’s Bureau, the impeachment of Andrew Johnson, Black officeholding, the Fifteenth Amendment, or the Compromise of 1877.",
+   "notEarned": "A general statement with no specific example beyond the documents does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "3.B",
+   "criterion": "Sourcing: earns the point for explaining the relevance of a document’s author, purpose, audience, or historical situation to the argument, for at least two documents.",
+   "notEarned": "Identifying an author without explaining why it matters, or sourcing only one document, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Complexity: earns the point for demonstrating a complex understanding, such as qualifying the extent of the claim, showing how the same development pulled in opposite directions, or weighing change against continuity.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: Reconstruction changed the political status of African Americans to a great extent, because it made them citizens and voters and sent them to office, though the change rested on federal power that faded by 1877 and never reached economic independence.\nGrouping 1 — freedom written into law: the Thirteenth Amendment (Doc 1) ends slavery everywhere, and the Civil Rights Act (Doc 3) and Fourteenth Amendment (Doc 4) make freedpeople citizens with equal protection.\nGrouping 2 — the pushback and the answer: the Mississippi Black Code (Doc 2) rebuilds slavery’s labor rules, and the Military Reconstruction Act (Doc 5) answers with military rule and Black suffrage as the price of readmission.\nGrouping 3 — the lived result: Bruce (Doc 6) speaks from the Senate as proof of Black officeholding, and the Fifteenth Amendment print (Doc 7) pictures the vote as the doorway to schooling, marriage, and full citizenship.\nOutside evidence: the Freedmen’s Bureau and its schools; the impeachment of Andrew Johnson; Hiram Revels and Blanche K. Bruce in the Senate; the Fifteenth Amendment of 1870; the Compromise of 1877 withdrawing federal troops.\nComplexity: the same era that wrote citizenship into the Constitution left freedpeople landless, so political change outran economic change, and the rights that depended on federal troops faded once the troops left.",
+ "figures": [
+  {
+   "id": "fig-apush-dbq-0048",
+   "file": "u5/5s24-ch16-mcq-05.jpg",
+   "caption": "The Fifteenth Amendment. Celebrated May 19th, 1870, lithograph after James C. Beard",
+   "alt": "Beard lithograph celebrating the Fifteenth Amendment in 1870: a parade fills the center, with scenes of a classroom, a wedding, and a ballot box around the border",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/The_Fifteenth_Amendment._Celebrated_May_19th%2C_1870_-_from_an_original_design_by_James_C._Beard._LCCN2003690776.jpg",
+   "license": "Public domain"
+  }
+ ]
+}

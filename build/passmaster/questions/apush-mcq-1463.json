@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1463",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.9"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "C",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.9 Government Policies During the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Abraham Lincoln, Emancipation Proclamation (January 1, 1863)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Abraham Lincoln, Emancipation Proclamation, January 1, 1863. Public domain. Wording verified against the Avalon Project text. Leading “...” marks the omitted opening of the quoted sentence; “. . .” marks omitted text between passages, quoted in their order in the source.",
+  "text": "“... And by virtue of the power, and for the purpose aforesaid, I do order and declare that all persons held as slaves within said designated States, and parts of States, are, and henceforward shall be free; and that the Executive government of the United States, including the military and naval authorities thereof, will recognize and maintain the freedom of said persons. . . . And I further declare and make known, that such persons of suitable condition, will be received into the armed service of the United States to garrison forts, positions, stations, and other places, and to man vessels of all sorts in said service. . . . And upon this act, sincerely believed to be an act of justice, warranted by the Constitution, upon military necessity, I invoke the considerate judgment of mankind, and the gracious favor of Almighty God.”\n\n—Abraham Lincoln, Emancipation Proclamation, January 1, 1863"
+ },
+ "stimulus_set": "ep-order-and-arms-1863",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The proclamation frees enslaved people only in the places it names. Which of the following best describes the limit that places on its reach?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It freed enslaved people in every state, including the loyal border states.",
+   "misconception": "Background: the proclamation reached only states and parts of states in rebellion; slavery stayed legal in the loyal border states."
+  },
+  {
+   "key": "B",
+   "text": "It freed enslaved people only in places Union armies had already reached and held by force of arms.",
+   "misconception": "Background: the proclamation named rebel territory whether or not Union troops held it; Union-held parts were excepted from it."
+  },
+  {
+   "key": "C",
+   "text": "It freed enslaved people only in rebel states and parts of states, leaving the loyal border states untouched."
+  },
+  {
+   "key": "D",
+   "text": "It freed enslaved people only after Congress passed the Thirteenth Amendment in December 1865.",
+   "misconception": "Background: the proclamation came in January 1863; the Thirteenth Amendment was ratified in December 1865, nearly three years later."
+  }
+ ],
+ "rationales": {
+  "A": "Background: the proclamation reached only states and parts of states in rebellion; slavery stayed legal in the loyal border states.",
+  "B": "Background: the proclamation named rebel territory whether or not Union troops held it; Union-held parts were excepted from it.",
+  "D": "Background: the proclamation came in January 1863; the Thirteenth Amendment was ratified in December 1865, nearly three years later.",
+  "C": "The proclamation names only the designated states and parts of states in rebellion, so the border states it leaves out keep slavery.",
+  "general": "1. Read the order as a map, not as a blanket: it names designated states and parts of states.\n2. The places it names are the ones in rebellion against the United States.\n3. The loyal border states are not named, so slavery there is untouched by this order.\n4. Think of the proclamation as a key cut to fit rebel locks only.\nRemember: a wartime order frees people where it says it does, and nowhere else."
+ }
+}

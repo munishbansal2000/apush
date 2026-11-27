@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0148",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.5"
+ ],
+ "lesson": "apush-u5-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "2.B"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.5 Sectional Conflict: Regional Differences"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original summary of the account of the free-labor ideal and the Southern defense of slavery in Barron’s Premium 2027, Chapter 7, Topic 5.5.",
+  "text": "Northerners in the 1850s held a free-labor ideal: a free worker could earn wages, save, and rise to independence. They wanted Western land open to small farmers working their own soil, without competition from large plantations using enslaved labor. Southerners, by contrast, defended slavery as a positive good and wanted it protected wherever it spread."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one feature of the free-labor ideal.",
+   "modelAnswer": "One feature was the belief that a free worker could earn wages, save money, and rise to independence. Labor was a path upward, not a permanent condition.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one feature of the free-labor ideal, such as earning wages, saving, and rising.",
+     "notEarned": "Naming free labor with no feature does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain why free-labor Northerners opposed slavery’s expansion into the West.",
+   "modelAnswer": "They feared that slave labor would compete with free workers for Western land and wages, shutting small farmers out of the territories. Free soil meant land for free workers, not for plantations worked by enslaved people.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining the free-labor case against expansion, such as competition for land and wages from slave labor.",
+     "notEarned": "Restating opposition to expansion with no explanation does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way Southern defenders of slavery answered the free-labor argument.",
+   "modelAnswer": "Southern writers called slavery a positive good, arguing that it civilized and cared for Black Southerners better than wage labor cared for Northern workers. They presented slavery as a kinder system than the free labor the North praised.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one Southern answer, such as the positive-good defense or the claim that slavery treated workers better than wage labor.",
+     "notEarned": "Naming the positive-good defense with no explanation of how it answered free labor does not earn the point."
+    }
+   ]
+  }
+ ]
+}

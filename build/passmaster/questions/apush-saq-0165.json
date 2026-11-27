@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0165",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.11"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "3.B",
+  "2.A"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.11 Failure of Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Benjamin “Pap” Singleton, “Ho for Kansas!” handbill, Nashville, Tennessee, March 18, 1878"
+  ]
+ },
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "saq_slot": 2,
+ "stimulus": {
+  "kind": "text",
+  "text": "“Ho for Kansas! Brethren, Friends, & Fellow Citizens: I feel thankful to inform you that the Real Estate and Homestead Association, will leave here the 15th of April, 1878, In pursuit of Homes in the Southwestern Lands of America, at Transportation Rates, cheaper than ever was known before. … Beware of Speculators and Adventurers, as it is a dangerous thing to fall in their hands.”\n\n—“Ho for Kansas!” handbill, Benjamin “Pap” Singleton’s Real Estate and Homestead Association, Nashville, Tennessee, March 18, 1878",
+  "source_note": "Benjamin “Pap” Singleton, “Ho for Kansas!” handbill, Nashville, Tennessee, March 18, 1878 (Library of Congress, LC-DIG-ds-17729). Public domain. Wording verified against the Library of Congress copy as reproduced by the American Battlefield Trust and the National Park Service. Ellipses mark omissions inside the passage."
+ },
+ "stimulus_set": null,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify ONE thing the handbill promises to people who join the migration.",
+   "modelAnswer": "The handbill promises homes in the southwestern lands of America, reached at transportation rates cheaper than ever known before. It offers land of their own, not wages on someone else’s farm. The promise of a home is the heart of the appeal.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one promise in the handbill, such as homes, land, or cheap transportation to Kansas.",
+     "notEarned": "Naming a promise not in the handbill does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE reason Black Southerners chose to leave the South for Kansas in the late 1870s.",
+   "modelAnswer": "Black Southerners left because the end of Reconstruction had left them exposed to violence and to laws that stripped their rights. With federal troops gone and Redeemer governments in power, staying meant living under terror and debt. Kansas promised land and a government that would let them live as citizens.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason Black Southerners left the South, such as violence, loss of federal protection, disenfranchisement, or sharecropping debt.",
+     "notEarned": "Saying they left with no reason given does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE limitation of the handbill as evidence for what life in Kansas was actually like for the migrants.",
+   "modelAnswer": "One limitation is that the handbill is an advertisement, written to recruit migrants, so it promises the best and hides the worst. It says nothing about the hard winters, the scarce farmland, or the poverty that met the migrants in Kansas. A sales pitch shows what the organizer wanted people to believe, not what they found when they arrived.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limitation of the handbill as evidence, such as its purpose as an advertisement or what it leaves out about Kansas.",
+     "notEarned": "Saying the handbill is old, with no link to its limits as evidence, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

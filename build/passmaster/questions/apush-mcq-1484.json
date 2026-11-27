@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1484",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.9"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.9 Government Policies During the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Figures from Barron’s Premium AP U.S. History 2027, Chapter 7 (about $2.6 billion borrowed, about $400 million from individual savers; Legal Tender Acts 1862–1863; National Bank Acts 1863–1864; first income tax 1861) and the Gilder Lehrman Institute (about $450 million in greenbacks issued). Figures are rounded.",
+  "text": "How the Union paid for the war (approximate figures).\n\n| Measure | What happened |\n| Borrowing | About $2.6 billion in bonds sold; about $400 million of the bonds were bought by individual savers |\n| Greenbacks | About $450 million in paper money issued under the Legal Tender Acts of 1862–1863 |\n| Taxes | First federal income tax levied in 1861; rates stayed modest |\n| National banking | National Bank Acts of 1863–1864 created a national banking system |"
+ },
+ "stimulus_set": "union-war-finance-1861-1865",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The National Bank Acts of 1863 and 1864 created a national banking system. Their main purpose was to",
+ "options": [
+  {
+   "key": "A",
+   "text": "close every bank in the South at once.",
+   "misconception": "Background: the acts created a national banking system; they did not close Southern banks."
+  },
+  {
+   "key": "B",
+   "text": "end all borrowing by the federal government during the war.",
+   "misconception": "Background: the government borrowed about 2.6 billion dollars during the war; the acts did not end borrowing."
+  },
+  {
+   "key": "C",
+   "text": "standardize bank notes and give the country a uniform currency."
+  },
+  {
+   "key": "D",
+   "text": "replace taxes entirely with printing paper money.",
+   "misconception": "Background: the acts reformed banking and currency; taxes and borrowing still paid for most of the war."
+  }
+ ],
+ "rationales": {
+  "A": "Background: the acts created a national banking system; they did not close Southern banks.",
+  "B": "Background: the government borrowed about 2.6 billion dollars during the war; the acts did not end borrowing.",
+  "D": "Background: the acts reformed banking and currency; taxes and borrowing still paid for most of the war.",
+  "C": "The National Bank Acts created a national banking system to standardize bank notes, stabilize banking, and provide a uniform currency.",
+  "general": "1. Before the war there was no central bank, and state banks issued their own notes.\n2. A war needs money that works the same in every state.\n3. Background: the acts let banks join a national system and issue Treasury notes as currency.\n4. One system, one kind of note, and steadier banks behind it.\nRemember: a war can force a country to build the money system it lacked before."
+ }
+}

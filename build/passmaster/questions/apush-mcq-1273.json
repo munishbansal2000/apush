@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-1273",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.3"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "2.C",
+  "3.D"
+ ],
+ "themes": [
+  "WXT",
+  "ARC"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.3 The Mexican-American War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Arthur Nahl, “Sutter's Mill,” 1851"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Arthur Nahl, “Sutter's Mill,” 1851. Public domain.",
+  "text": "A black-and-white painting of Sutter's Mill on the American River at Coloma, California: a wooden mill building with a millrace in the foreground, small houses and trees around it, and hills rising behind."
+ },
+ "stimulus_set": "nahl-sutters-mill-1851",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Nahl painted this scene in 1851, three years after gold was discovered at the mill. A historian using the painting as evidence for the gold rush should be most careful about which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The painting shows a quiet working mill, not the crowded rush that followed the discovery."
+  },
+  {
+   "key": "B",
+   "text": "The painting was made before gold was discovered in California.",
+   "misconception": "Gold was discovered in January 1848 and Nahl painted in 1851, three years later."
+  },
+  {
+   "key": "C",
+   "text": "The painting shows the mill after it had been destroyed by fire in the gold rush.",
+   "misconception": "The painting shows the mill standing and working, with its millrace in front of it."
+  },
+  {
+   "key": "D",
+   "text": "The painting was commissioned by the Mexican government to record the mill.",
+   "misconception": "Mexico had ceded California in 1848; the painting is an American artist's later view, not a Mexican record."
+  }
+ ],
+ "rationales": {
+  "A": "Nahl's calm mill with its millrace shows the place as it was, not the thousands of miners who soon crowded the river.",
+  "B": "The gold came in January 1848; the painting dates to 1851, after the discovery.",
+  "C": "The mill stands intact in the painting, its flume and buildings in working order.",
+  "D": "California was American by 1851; the painting is a later American image, not a Mexican commission.",
+  "general": "1. Look at the mood of the scene: a quiet mill, a few small houses, empty hills.\n2. Compare it with what followed. Within a year, tens of thousands of miners crowded this river.\n3. Judge the painting's limits. It shows the place where the rush began, not the rush itself.\nRemember: a picture of the spark is not a picture of the fire — ask what the scene leaves out before you use it as evidence."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1273",
+   "file": "u4/pr25e-test1-q20.gif",
+   "caption": "Arthur Nahl, “Sutter's Mill,” 1851",
+   "alt": "Nahl's 1851 painting of Sutter's Mill on the American River at Coloma: a wooden mill building with a millrace in front, small houses and trees around it, and hills rising behind",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Arthur_Nahl%2C_Sutters%27s_Mill.gif",
+   "license": "Public domain"
+  }
+ ]
+}

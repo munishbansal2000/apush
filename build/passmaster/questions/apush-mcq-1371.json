@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-1371",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.6"
+ ],
+ "lesson": "apush-u5-l3",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.6 Failure to compromise"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Presidential election results, November 4, 1856. Figures from the American Presidency Project (presidency.ucsb.edu/statistics/elections/1856); 296 electoral votes in all, 149 needed to win. Fillmore carried only Maryland.",
+  "text": "| Candidate | Party | Popular votes | Share | Electoral votes |\n| James Buchanan | Democratic | 1,836,072 | 45.3% | 174 |\n| John C. Frémont | Republican | 1,342,345 | 33.1% | 114 |\n| Millard Fillmore | American (Know-Nothing) | 873,053 | 21.5% | 8 |"
+ },
+ "stimulus_set": "election-1856-table",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The table best supports the conclusion that the Republican Party in 1856",
+ "options": [
+  {
+   "key": "A",
+   "text": "was the nation’s second party at only two years old."
+  },
+  {
+   "key": "B",
+   "text": "had already won the support of Southern voters.",
+   "misconception": "Frémont won almost no votes in the slave states; the South voted for Buchanan and Fillmore."
+  },
+  {
+   "key": "C",
+   "text": "had carried the slave states of the South.",
+   "misconception": "Frémont’s 114 electoral votes all came from free states; he carried no slave state."
+  },
+  {
+   "key": "D",
+   "text": "had lost in every free state in the Union.",
+   "misconception": "Frémont won 11 free states, including the largest ones; he did not lose them all."
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: the party was born in 1854, yet by 1856 it ran second, with 114 electoral votes and a third of the popular vote.",
+  "B": "Frémont won almost no votes in the slave states; the South voted for Buchanan and Fillmore.",
+  "C": "Frémont’s 114 electoral votes all came from free states; he carried no slave state.",
+  "D": "Frémont won 11 free states, including the largest ones; he did not lose them all.",
+  "general": "1. Note the party’s age: Background from the books: the Republicans were born in 1854, two years before this election.\n2. Read its result: 114 electoral votes, 33.1 percent of the popular vote, second place.\n3. See what it means: a sectional party had become the nation’s second party in a single leap.\nRemember: a new party’s strength is measured by how fast it climbs, not by whether it wins at once."
+ }
+}

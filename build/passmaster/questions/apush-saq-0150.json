@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0150",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.6"
+ ],
+ "lesson": "apush-u5-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.6 Failure to compromise"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Republican Party Platform of 1856"
+  ]
+ },
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "saq_slot": 2,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Republican Party Platform, adopted at Philadelphia, June 17, 1856. Public domain. Wording verified against the American Presidency Project text (presidency.ucsb.edu, Republican Party Platform of 1856). The two resolves appear in this order in the platform; the omission between them is marked.",
+  "text": ". . . That we deny the authority of Congress, of a Territorial Legislation, of any individual, or association of individuals, to give legal existence to Slavery in any Territory of the United States, while the present Constitution shall be maintained. . . . Resolved: That the Constitution confers upon Congress sovereign powers over the Territories of the United States for their government; and that in the exercise of this power, it is both the right and the imperative duty of Congress to prohibit in the Territories those twin relics of barbarism — Polygamy, and Slavery."
+ },
+ "stimulus_set": null,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify the Republican Party’s position on slavery in the territories as stated in the platform.",
+   "modelAnswer": "The platform denied that Congress, a territorial legislature, or any person could give legal existence to slavery in any territory. It called on Congress to prohibit slavery in the territories as its right and duty.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying the platform’s position, such as denying slavery any legal existence in the territories or calling for Congress to prohibit it.",
+     "notEarned": "Naming the party with no position stated does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain why the Republican Party took the position described in part (a).",
+   "modelAnswer": "The party was built on the free-labor idea that western land should go to small farmers working their own soil. Letting slavery spread would put enslaved labor in competition with free workers and shut those farmers out of the West.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining why the party opposed slavery in the territories, such as the free-labor idea or competition from enslaved labor.",
+     "notEarned": "Restating the position with no explanation does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way Southerners responded to the new Republican Party.",
+   "modelAnswer": "Southerners read the platform as proof that the Republicans meant to fence slavery in until it died, and they warned that a Republican victory would break the Union. The Dred Scott decision then answered the platform by ruling that Congress could not prohibit slavery in the territories at all.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one Southern response, such as reading the platform as a threat to slavery or answering it with the Dred Scott ruling.",
+     "notEarned": "Naming a Southern response with no explanation of how it answered the platform does not earn the point."
+    }
+   ]
+  }
+ ]
+}

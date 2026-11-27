@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1432",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.8"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "2.B",
+  "3.D"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.8 Military Conflict in the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "General Winfield Scott, letter to General George B. McClellan (May 3, 1861)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "General Winfield Scott, letter to General George B. McClellan, May 3, 1861. Public domain; quoted as printed in 5 Steps to a 5, Chapter 15. Bracketed words are the book’s editorial note.",
+  "text": "“We rely greatly on the sure operation of a complete blockade of the Atlantic and Gulf ports soon to commence. In connection with such a blockade we propose a powerful movement down the Mississippi to the ocean, with a cordon of posts at proper points, and the capture of Forts Jackson and Saint Philip [at New Orleans]; the object being to clear out and keep open this great line of communication in connection with the strict blockade of the seaboard, so as to envelop the insurgent states and bring them to terms with less bloodshed than by any other plan.”\n\n—General Winfield Scott, letter to General George B. McClellan, May 3, 1861"
+ },
+ "stimulus_set": "scott-letter-1861",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Journalists nicknamed Scott’s plan the “Anaconda Plan.” The nickname best captures which feature of the plan?",
+ "options": [
+  {
+   "key": "A",
+   "text": "A slow squeezing that would strangle the Confederacy."
+  },
+  {
+   "key": "B",
+   "text": "A surprise strike at the enemy’s heart.",
+   "misconception": "A squeeze is the opposite of a surprise strike; the plan is deliberately slow."
+  },
+  {
+   "key": "C",
+   "text": "A plan to poison the South’s water supply.",
+   "misconception": "Nothing in the letter mentions poison; the plan is a blockade and a river campaign."
+  },
+  {
+   "key": "D",
+   "text": "A plan that relied on speed above all.",
+   "misconception": "Background: Scott’s plan is slow by design, which is why journalists mocked it."
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: the anaconda is a snake that kills by squeezing its prey.",
+  "B": "A squeeze is the opposite of a surprise strike; the plan is deliberately slow.",
+  "C": "Nothing in the letter mentions poison; the plan is a blockade and a river campaign.",
+  "D": "Background: Scott’s plan is slow by design, which is why journalists mocked it.",
+  "general": "1. An anaconda does not bite its prey to death; it coils around it and squeezes.\n2. Scott’s plan does the same: a blockade coils around the coast, the river drive coils around the interior.\n3. The nickname was a joke at Scott’s expense, because the public wanted a quick, glorious war.\n4. Background from the books: the plan’s slowness was the joke, and its slowness was also the point.\nRemember: animal nicknames describe the method: an anaconda squeezes, it does not charge."
+ }
+}

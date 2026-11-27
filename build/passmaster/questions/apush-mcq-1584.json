@@ -1,0 +1,81 @@
+{
+ "id": "apush-mcq-1584",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.12",
+  "5.11"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "5.B",
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.12 Comparison in Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865-1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844-1877)"
+   }
+  ],
+  "primary_sources": [
+   "United States Constitution, Amendments XIII, XIV, XV, Section 1"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Thirteenth Amendment, Section 1 (ratified 1865):\n“Neither slavery nor involuntary servitude, except as a punishment for crime whereof the party shall have been duly convicted, shall exist within the United States, or any place subject to their jurisdiction.”\n\nFourteenth Amendment, Section 1 (ratified 1868):\n“All persons born or naturalized in the United States, and subject to the jurisdiction thereof, are citizens of the United States and of the State wherein they reside. No State shall make or enforce any law which shall abridge the privileges or immunities of citizens of the United States; nor shall any State deprive any person of life, liberty, or property, without due process of law; nor deny to any person within its jurisdiction the equal protection of the laws.”\n\nFifteenth Amendment, Section 1 (ratified 1870):\n“The right of citizens of the United States to vote shall not be denied or abridged by the United States or by any State on account of race, color, or previous condition of servitude.”",
+  "source_note": "Section 1 of each amendment, quoted verbatim from the United States Constitution (Constitution Annotated, Library of Congress, constitution.congress.gov). Public domain."
+ },
+ "stimulus_set": "three-amendments",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Compared with the Fourteenth Amendment’s broad guarantee of “equal protection of the laws,” what feature of the Fifteenth Amendment’s wording left an opening that Southern states later used to keep Black men from voting?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It gave Congress no power to enforce the amendment.",
+   "misconception": "Background: Section 2 of each amendment gives Congress power to enforce it by appropriate legislation."
+  },
+  {
+   "key": "B",
+   "text": "It limited voting rights to people born in the United States, leaving immigrants without protection.",
+   "misconception": "The amendment says nothing about birthplace; that condition comes from the Fourteenth Amendment's citizenship clause."
+  },
+  {
+   "key": "C",
+   "text": "It barred denial of the vote only on account of race, color, or previous servitude."
+  },
+  {
+   "key": "D",
+   "text": "It applied only to federal elections, not to state elections.",
+   "misconception": "The amendment binds the United States and every state alike."
+  }
+ ],
+ "rationales": {
+  "A": "Background: Section 2 of the amendment gives Congress enforcement power; the gap lies in Section 1.",
+  "B": "The Fifteenth Amendment never mentions birthplace; the opening is in the list of forbidden reasons.",
+  "C": "Because only race, color, and previous servitude are named, states could demand poll taxes and literacy tests and claim the reason was not race.",
+  "D": "The text says the right shall not be denied by the United States or by any State, so it covers state elections too.",
+  "general": "1. Compare the two amendments: the Fourteenth promises equal protection of the laws in general, while the Fifteenth names only three forbidden reasons for denying the vote.\n2. Notice what the Fifteenth does not name: taxes on voting, reading tests, or property rules.\n3. Background: after Reconstruction, Southern states used poll taxes and literacy tests that fell hardest on Black voters.\n4. The gap is in the list itself: anything not listed could be used as a barrier.\nRemember: a ban that names only some reasons leaves every unlisted reason open."
+ }
+}

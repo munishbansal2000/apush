@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-1355",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.6"
+ ],
+ "lesson": "apush-u5-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "A",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "GEO",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.6 Failure to compromise"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Map of the United States, the Area of Freedom and Slavery (G. W. Elliott, 1856)"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Map of the United States, the Area of Freedom and Slavery, and the Territories Whose Destiny Is Yet to Be Decided (G. W. Elliott, New York, 1856). Republican campaign broadside map; portraits of John C. Frémont and William L. Dayton. Library of Congress, African American Odyssey exhibit; Cornell University Library, RMC2008_0909. Public domain.",
+  "text": "A Republican campaign map published in New York in 1856, titled “Map of the United States, the Area of Freedom and Slavery, and the Territories Whose Destiny Is Yet to Be Decided.” Portraits of John C. Frémont and William L. Dayton stand at the top corners. The free states are colored pink, the slave states gray, and the western territories pale yellow, with a heavy black line marking the Missouri Compromise line at 36°30′. Tables at the foot compare the free and slave states by population, wealth, and railroads, using the census of 1850."
+ },
+ "stimulus_set": "elliott-map-1856",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The map shows the Missouri Compromise line drawn across the continent to mark",
+ "options": [
+  {
+   "key": "A",
+   "text": "the boundary that had barred slavery north of 36°30′."
+  },
+  {
+   "key": "B",
+   "text": "the route of the first transcontinental railroad.",
+   "misconception": "Background from the books: the first transcontinental railroad was not built until the 1860s; the line on the map is the old Missouri Compromise line."
+  },
+  {
+   "key": "C",
+   "text": "the border between the United States and Mexico.",
+   "misconception": "The line runs east to west across the middle of the country, far north of the Mexican border."
+  },
+  {
+   "key": "D",
+   "text": "the path Frémont took to California.",
+   "misconception": "Frémont’s routes are the thin trails crossing the West; the heavy black line is the Missouri Compromise line."
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: the Missouri Compromise of 1820 drew that line at 36°30′ and barred slavery north of it.",
+  "B": "Background from the books: the first transcontinental railroad was not built until the 1860s; the line on the map is the old Missouri Compromise line.",
+  "C": "The line runs east to west across the middle of the country, far north of the Mexican border.",
+  "D": "Frémont’s routes are the thin trails crossing the West; the heavy black line is the Missouri Compromise line.",
+  "general": "1. Find the heavy black line running across the map at 36°30′.\n2. Read its label: it is the Missouri Compromise line.\n3. Background from the books: north of it, slavery had been barred since 1820.\n4. Now check the south: below the line, the map leaves the territories open to slavery’s spread.\nRemember: a line on a map is an argument; read its label before you read its shape."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1355",
+   "file": "u5/5s24-ch14-mcq-01.jpg",
+   "caption": "Map of the United States, the Area of Freedom and Slavery, 1856",
+   "alt": "An 1856 Republican campaign map of the United States with portraits of Frémont and Dayton at the top, free states in pink, slave states in gray, and the Missouri Compromise line drawn across the middle",
+   "source_url": "https://digital.library.cornell.edu/catalog/ss:550987",
+   "license": "Public domain"
+  }
+ ]
+}

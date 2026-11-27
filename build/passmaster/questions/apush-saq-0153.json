@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0153",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.7"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.A",
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.7 Election of 1860 and Secession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Abraham Lincoln, First Inaugural Address (March 4, 1861)"
+  ]
+ },
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "saq_slot": 2,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Abraham Lincoln, First Inaugural Address, March 4, 1861. Public domain. Wording verified against the Teaching American History text (teachingamericanhistory.org/document/first-inaugural-address-6/). Passages appear in this order; '. . .' marks omitted text.",
+  "text": "I hold that in contemplation of universal law, and of the Constitution, the Union of these states is perpetual. . . . no state, upon its own mere motion, can lawfully get out of the Union. . . . The power confided to me will be used to hold, occupy, and possess the property and places belonging to the government, and to collect the duties and imposts; but beyond what may be necessary for these objects, there will be no invasion—no using of force against or among the people anywhere."
+ },
+ "stimulus_set": null,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify Lincoln's position on whether a state could lawfully leave the Union.",
+   "modelAnswer": "Lincoln held that no state could lawfully leave the Union on its own. He called the Union perpetual and said that secession ordinances were legally void. A state could not simply vote itself out.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying Lincoln's position that no state could lawfully leave the Union on its own, such as calling the Union perpetual or secession ordinances void.",
+     "notEarned": "Quoting the passage with no position identified does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain what Lincoln promised he would do as president regarding federal property.",
+   "modelAnswer": "Lincoln promised to hold, occupy, and possess the property and places belonging to the federal government, and to collect duties and imposts. He named no invasion beyond what those objects required. The pledge pointed directly at forts like Sumter, which the Confederacy claimed.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining Lincoln's promise to hold federal property and collect duties, such as naming Fort Sumter as the property at issue.",
+     "notEarned": "Restating that Lincoln would enforce the laws, with no mention of federal property, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain why Lincoln's promises in this address did not prevent the outbreak of war.",
+   "modelAnswer": "The address could not prevent war because seven states had already seceded and formed a government at Montgomery before Lincoln took office. His pledge to hold federal forts collided with the Confederacy's demand that the forts be surrendered. When Lincoln sent food to Fort Sumter in April, Confederate guns fired on it, and the war began.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining why the address did not prevent war, such as the seven states already seceded, the clash over the forts, or the firing on Fort Sumter.",
+     "notEarned": "Saying the South ignored Lincoln, with no reason given, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

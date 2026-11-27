@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1481",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.9"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.9 Government Policies During the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Thirteenth Amendment to the Constitution (ratified December 6, 1865)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Thirteenth Amendment to the Constitution, proposed by Congress January 31, 1865, ratified December 6, 1865. Public domain. Wording verified against the Constitution Annotated text.",
+  "text": "“Section 1. Neither slavery nor involuntary servitude, except as a punishment for crime whereof the party shall have been duly convicted, shall exist within the United States, or any place subject to their jurisdiction.\n\nSection 2. Congress shall have power to enforce this article by appropriate legislation.”\n\n—Thirteenth Amendment, as ratified December 6, 1865"
+ },
+ "stimulus_set": "thirteenth-amendment-1865",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Section 2 gives Congress power “to enforce this article by appropriate legislation.” That enforcement clause matters most because it",
+ "options": [
+  {
+   "key": "A",
+   "text": "gave the federal government a new constitutional tool to protect freedom."
+  },
+  {
+   "key": "B",
+   "text": "let the states decide for themselves whether slavery continued after the war.",
+   "misconception": "Background: Section 2 gives the enforcement power to Congress, not to the states."
+  },
+  {
+   "key": "C",
+   "text": "repealed the Emancipation Proclamation and ended its effects at once.",
+   "misconception": "Background: the proclamation was a wartime order that had already done its work; the amendment completes it rather than repealing it."
+  },
+  {
+   "key": "D",
+   "text": "gave the Supreme Court the power to write new laws for the states.",
+   "misconception": "Background: Section 2 gives the enforcement power to Congress, which writes laws; the Court interprets them."
+  }
+ ],
+ "rationales": {
+  "B": "Background: Section 2 gives the enforcement power to Congress, not to the states.",
+  "C": "Background: the proclamation was a wartime order that had already done its work; the amendment completes it rather than repealing it.",
+  "D": "Background: Section 2 gives the enforcement power to Congress, which writes laws; the Court interprets them.",
+  "A": "Section 2 lets Congress pass laws enforcing the ban, so the federal government gained a constitutional tool to protect freedom.",
+  "general": "1. A ban alone is words on a page; someone must be able to enforce it.\n2. Section 2 names that someone: Congress, by appropriate legislation.\n3. That is a new federal power, written into the Constitution itself.\n4. The amendment does not just end slavery; it arms the government against its return.\nRemember: in a constitution, the power to enforce a right is half the right itself."
+ }
+}

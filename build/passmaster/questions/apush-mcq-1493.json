@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1493",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.9"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "3.B",
+  "4.A"
+ ],
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.9 Government Policies During the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Abraham Lincoln, message to Congress in special session (July 4, 1861)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Abraham Lincoln, message to Congress in special session, July 4, 1861. Public domain. Wording verified against the Teaching American History text of the message. “. . .” marks omitted text between passages, quoted in their order in the source.",
+  "text": "“Soon after the first call for militia, it was considered a duty to authorize the commanding general, in proper cases, according to his discretion, to suspend the privilege of the writ of habeas corpus; or, in other words, to arrest and detain, without resort to the ordinary processes and forms of law, such individuals as he might deem dangerous to the public safety. . . . To state the question more directly, are all the laws but one to go unexecuted, and the government itself go to pieces lest that one be violated? Even in such a case, would not the official oath be broken if the government should be overthrown, when it was believed that disregarding the single law would tend to preserve it?”\n\n—Abraham Lincoln, message to Congress in special session, July 4, 1861"
+ },
+ "stimulus_set": "lincoln-habeas-1861",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Lincoln suspended habeas corpus first in Maryland, where mobs had attacked Union troops passing through Baltimore. He acted there because Maryland was",
+ "options": [
+  {
+   "key": "A",
+   "text": "a border slave state whose secession would have cut off Washington."
+  },
+  {
+   "key": "B",
+   "text": "already part of the Confederacy, having seceded with the South.",
+   "misconception": "Background: Maryland stayed in the Union; it was a border slave state that did not secede."
+  },
+  {
+   "key": "C",
+   "text": "the only state in the country that supported the Union.",
+   "misconception": "Background: twenty-two states stayed in the Union; Maryland was one border state among several."
+  },
+  {
+   "key": "D",
+   "text": "the home of the Confederate capital and its government.",
+   "misconception": "Background: the Confederate capital was Richmond, Virginia, not in Maryland."
+  }
+ ],
+ "rationales": {
+  "B": "Background: Maryland stayed in the Union; it was a border slave state that did not secede.",
+  "C": "Background: twenty-two states stayed in the Union; Maryland was one border state among several.",
+  "D": "Background: the Confederate capital was Richmond, Virginia, not in Maryland.",
+  "A": "Maryland was a border slave state, and if it had seceded, Washington would have been cut off from the loyal North.",
+  "general": "1. Look at the map: Washington sits between Maryland and Virginia.\n2. Virginia had seceded, so Maryland was the only land link to the North.\n3. Background: Baltimore mobs had already attacked Union troops and cut rail and telegraph lines.\n4. Losing Maryland would have meant losing the capital itself.\nRemember: geography can make one state worth more than its size suggests."
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-1356",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.6"
+ ],
+ "lesson": "apush-u5-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.6 Failure to compromise"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Map of the United States, the Area of Freedom and Slavery (G. W. Elliott, 1856)"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Map of the United States, the Area of Freedom and Slavery, and the Territories Whose Destiny Is Yet to Be Decided (G. W. Elliott, New York, 1856). Republican campaign broadside map; portraits of John C. Frémont and William L. Dayton. Library of Congress, African American Odyssey exhibit; Cornell University Library, RMC2008_0909. Public domain.",
+  "text": "A Republican campaign map published in New York in 1856, titled “Map of the United States, the Area of Freedom and Slavery, and the Territories Whose Destiny Is Yet to Be Decided.” Portraits of John C. Frémont and William L. Dayton stand at the top corners. The free states are colored pink, the slave states gray, and the western territories pale yellow, with a heavy black line marking the Missouri Compromise line at 36°30′. Tables at the foot compare the free and slave states by population, wealth, and railroads, using the census of 1850."
+ },
+ "stimulus_set": "elliott-map-1856",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The tables of free-state and slave-state statistics at the foot of the map were most likely meant to persuade voters that",
+ "options": [
+  {
+   "key": "A",
+   "text": "the South held more people than the North.",
+   "misconception": "The tables show the free states ahead in people, wealth, and railroads, not the slave states."
+  },
+  {
+   "key": "B",
+   "text": "the territories should be left to settle slavery for themselves.",
+   "misconception": "The map is a Republican campaign piece arguing for free soil, not a neutral case for letting territories decide."
+  },
+  {
+   "key": "C",
+   "text": "Congress should admit Kansas to the Union as a slave state.",
+   "misconception": "The map’s argument runs the other way: it is a free-soil map, made to keep slavery out of Kansas."
+  },
+  {
+   "key": "D",
+   "text": "free labor produced a stronger, more prosperous society than slavery."
+  }
+ ],
+ "rationales": {
+  "A": "The tables show the free states ahead in people, wealth, and railroads, not the slave states.",
+  "B": "The map is a Republican campaign piece arguing for free soil, not a neutral case for letting territories decide.",
+  "C": "The map’s argument runs the other way: it is a free-soil map, made to keep slavery out of Kansas.",
+  "D": "The tables stack free-state numbers against slave-state numbers on population, wealth, and railroads, and the free states win every column.",
+  "general": "1. Look below the map: two long tables compare free states and slave states.\n2. Read the columns: people, wealth, manufactures, railroads, schools, all from the 1850 census.\n3. See the pattern: the free states lead in nearly every column, which is the map’s case for free labor.\nRemember: when a map prints a table, the numbers are the argument, not the decoration."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1356",
+   "file": "u5/5s24-ch14-mcq-01.jpg",
+   "caption": "Map of the United States, the Area of Freedom and Slavery, 1856",
+   "alt": "An 1856 Republican campaign map of the United States with portraits of Frémont and Dayton at the top, free states in pink, slave states in gray, and the Missouri Compromise line drawn across the middle",
+   "source_url": "https://digital.library.cornell.edu/catalog/ss:550987",
+   "license": "Public domain"
+  }
+ ]
+}

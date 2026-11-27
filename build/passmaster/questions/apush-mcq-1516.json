@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-1516",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.10"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.10 Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Tenure of Office Act (1867)"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "An engraving from Harper’s Weekly showing the United States Senate chamber during the impeachment trial of President Andrew Johnson in 1868. Senators sit at desks arranged in rows across the chamber floor, and the galleries above are packed with spectators. The caption below the image reads: “The Senate as a court of impeachment for the trial of Andrew Johnson, sketched by Theodore R. Davis.”",
+  "source_note": "Theodore R. Davis, “The Senate as a court of impeachment for the trial of Andrew Johnson,” Harper’s Weekly, 1868. Public domain. Image viewed before writing; caption verified against the image itself."
+ },
+ "stimulus_set": "johnson-impeachment-trial",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The trial shown here ended with Johnson",
+ "options": [
+  {
+   "key": "A",
+   "text": "removed from office by a large Senate majority vote.",
+   "misconception": "Background: conviction needed two thirds of the Senate, and Johnson survived by a single vote."
+  },
+  {
+   "key": "B",
+   "text": "resigning before the Senate could vote.",
+   "misconception": "Background: Johnson stayed and fought the trial to its end."
+  },
+  {
+   "key": "C",
+   "text": "acquitted by one vote, but too weak to block Congress."
+  },
+  {
+   "key": "D",
+   "text": "convicted and replaced by Ulysses S. Grant.",
+   "misconception": "Background: Grant won the presidency in the election of 1868, months after the trial ended."
+  }
+ ],
+ "rationales": {
+  "A": "Background: conviction needed two thirds of the Senate, and Johnson survived by a single vote.",
+  "B": "Background: Johnson stayed and fought the trial to its end.",
+  "C": "The Senate fell one vote short of the two thirds needed to convict. Johnson kept the presidency, but the trial left him powerless, and Congress carried out Reconstruction without him.",
+  "D": "Background: Grant won the presidency in the election of 1868, months after the trial ended.",
+  "general": "1. Conviction needed two thirds of the Senate, and Johnson escaped by one vote.\n2. Keeping his office did not mean keeping his power.\n3. Background: after the trial, Johnson could no longer stop Congress’s Reconstruction program.\n4. So the trial’s real result was a president left in office but out of the fight.\nRemember: surviving a vote and winning the fight are two different things."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1516",
+   "file": "u5/5s24-ch16-mcq-02.jpg",
+   "caption": "The Senate as a court of impeachment for the trial of Andrew Johnson, Harper’s Weekly, 1868",
+   "alt": "Harper’s Weekly engraving of the Senate chamber during the 1868 impeachment trial of President Andrew Johnson, with senators at desks and packed galleries above",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/The_Senate_as_a_court_of_impeachment_for_the_trial_of_Andrew_Johnson_-_sketched_by_Theodore_R._Davis._LCCN96521681.jpg",
+   "license": "Public domain"
+  }
+ ]
+}

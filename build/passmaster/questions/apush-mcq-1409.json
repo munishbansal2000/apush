@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1409",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.7"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.7 Election of 1860 and Secession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Corwin Amendment (March 2, 1861)",
+   "James Buchanan, Fourth Annual Message to Congress (December 3, 1860)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Corwin Amendment text verified against the National Archives (prologue.blogs.archives.gov, “Unratified Amendments: Protection of Slavery,” February 19, 2020) and the Congressional Globe, 36th Congress, 2nd Session, p. 1284. Buchanan's Fourth Annual Message, December 3, 1860, verified against Richardson's Messages and Papers of the Presidents, vol. 5 (civilwarcauses.org/buch.htm). '. . .' marks omitted text. Both public domain.",
+  "text": "The Corwin Amendment, passed by Congress on March 2, 1861, proposed: “No amendment shall be made to the Constitution which will authorize or give to Congress the power to abolish or interfere, within any State, with the domestic institutions thereof, including that of persons held to labor or service by the laws of said State.”\n\nPresident James Buchanan, in his annual message to Congress on December 3, 1860, argued: “. . . the election of any one of our fellow citizens to the office of President does not of itself afford just cause for dissolving the Union. . . . secession is neither more nor less than revolution.”"
+ },
+ "stimulus_set": "corwin-buchanan",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The Corwin Amendment and Buchanan's message agree most directly on which point?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Secession is a constitutional right of every state.",
+   "misconception": "Buchanan calls secession revolution, not a right, and the amendment says nothing about a right to secede."
+  },
+  {
+   "key": "B",
+   "text": "Slavery should be abolished in the territories at once.",
+   "misconception": "The amendment would shield slavery from Congress, the opposite of abolishing it."
+  },
+  {
+   "key": "C",
+   "text": "Lincoln's election justified the secession of the South.",
+   "misconception": "Buchanan says the election alone gives no just cause for dissolving the Union."
+  },
+  {
+   "key": "D",
+   "text": "Slavery where it already existed should be left alone."
+  }
+ ],
+ "rationales": {
+  "A": "Buchanan calls secession revolution, not a right, and the amendment says nothing about a right to secede.",
+  "B": "The amendment would shield slavery from Congress, the opposite of abolishing it.",
+  "C": "Buchanan says the election alone gives no just cause for dissolving the Union.",
+  "D": "The amendment would bar Congress from touching slavery inside the states, and Buchanan denies that Lincoln's election threatens it. Background: both men offered the South the same assurance — slavery where it stood was safe.",
+  "general": "1. The amendment locks the door: no future amendment may let Congress abolish slavery in a state.\n2. Buchanan adds that the election alone is no reason to leave.\n3. Background: even Lincoln endorsed the Corwin Amendment in his inaugural, calling it express and irrevocable.\n4. The North offered the South nearly everything except the territories.\nRemember: when two rivals offer the same guarantee, the fight is over what the guarantee leaves out."
+ }
+}

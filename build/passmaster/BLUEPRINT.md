@@ -288,6 +288,46 @@ fixed in the lesson. L4 carries 8 narrative sections (spec wants 4-6),
 forced by its 3-topic scope — no adjacent pair merges under the 300w
 cap; validator WARN only, recorded as structural.
 
+### Unit 5 per-topic quotas (set 2026-11-26; closed 2026-11-27)
+
+Period 5, 1844-1877. 477 questions: 415 MCQ + 34 SAQ + 17 DBQ + 11 LEQ.
+Test pool 76 MCQ + 4 SAQ + 2 DBQ + 1 LEQ = 83.
+
+| Topic | Title | MCQ | SAQ | DBQ | LEQ | Total |
+|---|---|---:|---:|---:|---:|---:|
+| 5.1 | Contextualizing Period 5 | 16 | 2 | 0 | 0 | 18 |
+| 5.2 | Manifest Destiny | 38 | 3 | 2 | 1 | 44 |
+| 5.3 | The Mexican-American War | 34 | 3 | 2 | 1 | 41 |
+| 5.4 | The Compromise of 1850 | 34 | 3 | 1 | 1 | 39 |
+| 5.5 | Sectional Conflict: Regional Differences | 42 | 4 | 2 | 2 | 50 |
+| 5.6 | Failure of Compromise | 38 | 3 | 2 | 1 | 44 |
+| 5.7 | Election of 1860 and Secession | 36 | 3 | 1 | 1 | 41 |
+| 5.8 | Military Conflict in the Civil War | 38 | 3 | 2 | 1 | 44 |
+| 5.9 | Government Policies During the Civil War | 36 | 3 | 1 | 1 | 41 |
+| 5.10 | Reconstruction | 42 | 3 | 2 | 1 | 48 |
+| 5.11 | Failure of Reconstruction | 36 | 2 | 2 | 1 | 41 |
+| 5.12 | Comparison in Period 5 | 25 | 2 | 0 | 0 | 27 |
+| **Total** | | **415** | **34** | **17** | **11** | **477** |
+
+### Unit 5 — LANDED (closed 2026-11-27; push 11)
+
+Question counts landed exactly on quota in every topic. Fresh MCQ
+difficulty lands easy 80 / medium 149 / hard 178 vs target 83/145/187
+(hard short 9); with the 8 Exam 01 MCQs (5 easy / 3 medium / 0 hard)
+the unit total is 85/152/178. Per-topic lands: 5.1: 3/6/7,
+5.2: 8/17/13, 5.3: 7/12/15, 5.4: 7/12/15, 5.5: 10/15/17,
+5.6: 8/13/17, 5.7: 7/13/16, 5.8: 7/14/17, 5.9: 8/13/15,
+5.10: 8/15/19, 5.11: 7/13/16, 5.12: 5/9/11. Keys A108/B104/C102/D101.
+Test pool: 76 MCQ / 4 SAQ (0139, 0146, 0157, 0161) / 2 DBQ (0040, 0051)
+/ 1 LEQ (0055). Lessons: L1 5.1+5.2 (62), L2 5.3+5.4 (79),
+L3 5.5+5.6 (94), L4 5.7+5.8+5.9 (126), L5 5.10+5.11+5.12 (116).
+Blind-read record: L4 FAIL 9 -> PASS 9/9, L5 FAIL 13 -> PASS 13/13;
+all 5 lessons blind-read, fixed, re-verified PASS. 0 wrong keys in any
+round. Known coverage weaknesses carried from topic close (logged, not
+defects): DBQ 0040 Docs 2 & 6 tangential; DBQ 0042 no 1859-1861 doc;
+DBQ 0045 thin counter-side; no Redeemer voice in primary text;
+5.12 no image stimulus for Lincoln-vs-Davis or amendments sets.
+
 ### Unit 7 per-topic quotas (set 2026-11-26; closed 2026-11-27)
 
 Period 7, 1890-1945. 476 questions: 415 MCQ + 34 SAQ + 16 DBQ + 11 LEQ.

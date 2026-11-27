@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1250",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.3"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "A",
+ "skills": [
+  "1.B",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.3 The Mexican-American War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Wilmot Proviso, August 8, 1846"
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "House vote on the Wilmot Proviso, August 1846, as tabulated in Princeton Review, Chapter 9. The table is drawn from the book's account of the vote.",
+  "text": "How the House of Representatives voted on the Wilmot Proviso in August 1846, by section and by party:\n\n| Members | Whigs | Democrats |\n|---|---|---|\n| Northern | all in favor | all but four in favor |\n| Southern | all but two opposed | all opposed |"
+ },
+ "stimulus_set": "wilmot-vote-1846",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The Wilmot Proviso, which the House was voting on, would have done which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Banned slavery in any territory the United States acquired from Mexico."
+  },
+  {
+   "key": "B",
+   "text": "Admitted California as a free state immediately.",
+   "misconception": "California did not become a state until 1850, and the Proviso was about all territory from Mexico, not California alone."
+  },
+  {
+   "key": "C",
+   "text": "Extended the Missouri Compromise line of 36°30′ to the Pacific Ocean.",
+   "misconception": "Extending the Missouri Compromise line was Polk's own proposal; the Proviso banned slavery outright in the new lands."
+  },
+  {
+   "key": "D",
+   "text": "Allowed the settlers of each new territory to vote on whether to permit slavery.",
+   "misconception": "Letting settlers vote was popular sovereignty, a later idea; the Proviso was a flat ban by Congress."
+  }
+ ],
+ "rationales": {
+  "A": "The Proviso said slavery “shall never exist” in any territory acquired from Mexico.",
+  "B": "California's statehood came in 1850 under the Compromise; the Proviso covered all the land from Mexico.",
+  "C": "Polk proposed extending the Missouri Compromise line; Wilmot proposed a total ban instead.",
+  "D": "Popular sovereignty let settlers decide; the Proviso left them no choice at all.",
+  "general": "1. Go back to Wilmot's words: no slavery “in any part of said territory” taken from Mexico.\n2. Notice how absolute that is. It bans slavery everywhere in the new lands, not just north of a line.\n3. That is why the vote split by section: the ban threatened the South's whole future in the West.\nRemember: the Proviso was a ban, not a line and not a vote — and its bluntness is what made it explosive."
+ }
+}

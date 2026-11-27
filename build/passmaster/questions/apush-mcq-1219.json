@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1219",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.2"
+ ],
+ "lesson": "apush-u5-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "3.B",
+  "5.A"
+ ],
+ "themes": [
+  "GEO",
+  "WOR"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "A. Westward Migrations"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Table compiled from the historical record; boundaries and dates from the Oregon boundary dispute. See Barron's Premium 2027, Chapter 7, and 5 Steps to a 5, 2024, Chapter 14.",
+  "text": "| Proposal | Year | Boundary |\n| United States claim | 1844–1846 | 54°40′ (the southern edge of Russian Alaska) |\n| Offer made by the United States | 1845 | 49th parallel |\n| British counter-proposal | 1845 | Columbia River |\n| Oregon Treaty | June 15, 1846 | 49th parallel to the Strait of Georgia, then through the Strait of Juan de Fuca |"
+ },
+ "stimulus_set": "oregon-boundary-table",
+ "source": "original; stimulus is a table compiled from the historical record of the Oregon boundary dispute",
+ "stem": "The table best supports which of the following conclusions about the Oregon settlement?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The United States gained all the land it had claimed.",
+   "misconception": "The United States claimed to 54°40′ but settled at the 49th parallel, so it did not gain all it claimed."
+  },
+  {
+   "key": "B",
+   "text": "Both sides gave up their extreme claims to reach agreement."
+  },
+  {
+   "key": "C",
+   "text": "Britain accepted the American claim to 54°40′.",
+   "misconception": "Britain never accepted 54°40′; the treaty line was the 49th parallel."
+  },
+  {
+   "key": "D",
+   "text": "The final boundary followed the Columbia River.",
+   "misconception": "The treaty set the line at the 49th parallel, not the Columbia River."
+  }
+ ],
+ "rationales": {
+  "A": "The United States claimed to 54°40′ and settled at the 49th parallel, so it gave up its northernmost claim.",
+  "B": "The United States dropped its 54°40′ claim and Britain dropped its Columbia River line, and both met at the 49th parallel.",
+  "C": "Britain never accepted 54°40′; that line was the southern edge of Russian Alaska, and the treaty stopped far south of it.",
+  "D": "The Columbia River was Britain's counter-proposal; the treaty line was the 49th parallel to the Strait of Georgia.",
+  "general": "1. Line up the claims. The United States wanted 54°40′, Britain wanted the Columbia River.\n2. Look at the settlement. The treaty drew the line at the 49th parallel, between the two claims.\n3. Ask what each side gave up. The United States gave up the far north, and Britain gave up the Columbia line.\nRemember: a compromise line that sits between two opening claims usually means both sides moved — check what each side dropped."
+ }
+}

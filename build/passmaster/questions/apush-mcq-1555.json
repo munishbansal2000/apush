@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1555",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.11"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "D",
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.11 Failure of Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Rutherford B. Hayes Presidential Library & Museums, “Frequently Asked Questions on the 1876 Election”"
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "| 1876 presidential election | Samuel J. Tilden (Democrat) | Rutherford B. Hayes (Republican) |\n| Popular vote | 4,288,546 | 4,034,311 |\n| Electoral votes, first count | 184 | 165 |\n\nTwenty electoral votes were disputed: Florida (4), Louisiana (8), South Carolina (7), and one from Oregon. A candidate needed 185 electoral votes to win.",
+  "source_note": "Popular and electoral vote figures from the Rutherford B. Hayes Presidential Library & Museums, “Frequently Asked Questions on the 1876 Election.”"
+ },
+ "stimulus_set": "election-1876",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The table shows that the 1876 election was disputed mainly because",
+ "options": [
+  {
+   "key": "A",
+   "text": "Hayes won the popular vote but lost the electoral vote.",
+   "misconception": "The table shows Tilden ahead in the popular vote; Hayes lost it by about 250,000 votes."
+  },
+  {
+   "key": "B",
+   "text": "neither candidate won a majority of the popular vote.",
+   "misconception": "Background: Tilden won a majority of the popular vote, about 51 percent; the problem was the electoral count."
+  },
+  {
+   "key": "C",
+   "text": "the House of Representatives had to choose the president.",
+   "misconception": "Background: the House never chose; Congress created an Electoral Commission instead."
+  },
+  {
+   "key": "D",
+   "text": "Tilden stood one electoral vote short, with 20 votes disputed."
+  }
+ ],
+ "rationales": {
+  "A": "The table shows Tilden ahead in the popular vote; Hayes lost it by about 250,000 votes.",
+  "B": "Background: Tilden won a majority of the popular vote, about 51 percent; the problem was the electoral count.",
+  "C": "Background: the House never chose; Congress created an Electoral Commission instead.",
+  "D": "Tilden needed 185 electoral votes and held 184, while 20 more sat in dispute. One disputed state either way would decide the presidency, so both parties claimed the same votes.",
+  "general": "1. Read the popular vote row: Tilden leads by about 250,000 votes, so the popular result is clear.\n2. Read the electoral row: Tilden has 184, one short of the 185 needed to win.\n3. Read the note: 20 more electoral votes are disputed across four states.\n4. With one vote short and twenty in doubt, the election had no lawful winner yet.\nRemember: an election becomes a crisis when the rules give no winner and both sides can claim the same votes."
+ }
+}

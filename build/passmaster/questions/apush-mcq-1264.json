@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-1264",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.3"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "5.B",
+  "4.B"
+ ],
+ "themes": [
+  "WOR",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.3 The Mexican-American War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Théodore Gentilz, “Fall of the Alamo,” about 1844"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Théodore Gentilz, “Fall of the Alamo,” about 1844. Public domain.",
+  "text": "A black-and-white painting of the Alamo mission compound in San Antonio, seen from above and at a distance. Mexican soldiers in formation fill the foreground and surround the low adobe walls, while more troops advance across the plain behind."
+ },
+ "stimulus_set": "alamo-gentilz-1844",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The battle shown in the painting most directly contributed to the Mexican-American War by doing which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Giving Texans a rallying cry, “Remember the Alamo!,” that kept the demand for annexation alive."
+  },
+  {
+   "key": "B",
+   "text": "Persuading Mexico to recognize the independence of Texas in 1836, ending the dispute.",
+   "misconception": "Mexico never recognized Texas independence; it treated Texas as a rebellious province until the war."
+  },
+  {
+   "key": "C",
+   "text": "Causing the United States to annex Texas immediately in 1836, the year of the battle.",
+   "misconception": "Annexation did not happen until 1845, nine years later, because the slavery question blocked it."
+  },
+  {
+   "key": "D",
+   "text": "Ending all American settlement in Texas for the next decade.",
+   "misconception": "American settlement in Texas continued and grew after the Alamo; the battle inspired more volunteers, not fewer."
+  }
+ ],
+ "rationales": {
+  "A": "The cry “Remember the Alamo!” carried the defeat into a cause, and the demand to annex Texas stayed alive until 1845.",
+  "B": "Mexico refused to recognize Texas independence, which is one reason the annexation led to war.",
+  "C": "The slavery question delayed annexation until 1845; the Alamo did not bring it about at once.",
+  "D": "Volunteers kept coming to Texas after the Alamo, drawn by the fight rather than driven away by it.",
+  "general": "1. Start with the defeat. Every defender died, and on its face the Alamo was a loss.\n2. Follow the cry it left behind. “Remember the Alamo!” turned a defeat into a reason to keep fighting for Texas.\n3. Trace it forward. The demand for annexation survived nine years of delay, and annexation in 1845 led straight to war with Mexico.\nRemember: a lost battle can win a cause — the Alamo mattered because its memory outlived its garrison."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1264",
+   "file": "u4/5s24-ch03-mcq-39.jpg",
+   "caption": "Théodore Gentilz, “Fall of the Alamo,” about 1844",
+   "alt": "Gentilz's painting of the fall of the Alamo: the mission compound in San Antonio seen from above, with Mexican soldiers in formation around the walls and more troops advancing across the plain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Fall-of-the-alamo-gentilz_1844.jpg",
+   "license": "Public domain"
+  }
+ ]
+}

@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-1543",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.11"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "1.B",
+  "3.C"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.11 Failure of Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Slaughter-House Cases, 83 U.S. 36 (1873), majority opinion of Justice Samuel F. Miller"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "“It is quite clear, then, that there is a citizenship of the United States, and a citizenship of a State, which are distinct from each other, and which depend upon different characteristics or circumstances in the individual. . . . it is only the former which are placed by this clause under the protection of the Federal Constitution, and that the latter, whatever they may be, are not intended to have any additional protection by this paragraph of the amendment.”\n\n—Justice Samuel F. Miller, majority opinion, Slaughter-House Cases, 1873",
+  "source_note": "Slaughter-House Cases, 83 U.S. 36 (1873), majority opinion of Justice Samuel F. Miller. Public domain (U.S. Supreme Court opinion; text verified against the National Constitution Center excerpt and Cornell LII). Ellipses mark omissions inside the passage."
+ },
+ "stimulus_set": "slaughter-house",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The Court’s distinction between the two kinds of citizenship most directly meant that",
+ "options": [
+  {
+   "key": "A",
+   "text": "states could no longer define citizenship at all.",
+   "misconception": "The ruling left state citizenship in the states’ hands; that is the point of the distinction."
+  },
+  {
+   "key": "B",
+   "text": "the Fourteenth Amendment protected every right a citizen held.",
+   "misconception": "The Court said the opposite: only federal rights got the amendment’s protection."
+  },
+  {
+   "key": "C",
+   "text": "the federal government could enforce the Bill of Rights against the states.",
+   "misconception": "Background: the Court refused to nationalize the Bill of Rights; that came much later."
+  },
+  {
+   "key": "D",
+   "text": "most everyday rights were left to the states, beyond federal protection."
+  }
+ ],
+ "rationales": {
+  "A": "The ruling left state citizenship in the states’ hands; that is the point of the distinction.",
+  "B": "The Court said the opposite: only federal rights got the amendment’s protection.",
+  "C": "Background: the Court refused to nationalize the Bill of Rights; that came much later.",
+  "D": "Miller split citizenship in two and put only the small set of federal rights under the amendment’s shield. Everyday rights, the ones state laws touched, stayed with the states, so the amendment could not reach them.",
+  "general": "1. Miller draws a sharp line: citizenship of the United States is one thing, citizenship of a State another.\n2. Only the first kind, he says, sits under the Federal Constitution’s protection.\n3. The second kind, the one that covers most of daily life, gets no new protection.\n4. So a state law that touched everyday rights could stand, even after the amendment.\nRemember: when a court splits one idea into two, ask which half carries the protection."
+ }
+}

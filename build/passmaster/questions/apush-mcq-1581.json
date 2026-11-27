@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-1581",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.12",
+  "5.10"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "5.A",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.12 Comparison in Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865-1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844-1877)"
+   }
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "Three plans for rebuilding the Union after the Civil War. The table below summarizes each plan in the books' own terms:\n\n|  | Lincoln's Ten Percent Plan (1863) | Johnson's Presidential Reconstruction (1865) | Congressional Reconstruction (1867) |\n|---|---|---|---|\n| Who led | The president | The president | Congress |\n| Terms for a state to return | Ten percent of its 1860 voters swear loyalty and accept emancipation | White voters swear loyalty, and the state ratifies the Thirteenth Amendment | New state constitutions written with Black men voting, and ratification of the Fourteenth Amendment |\n| Who could vote | White men who took the loyalty oath | White men, with pardons for most former Confederates | Black men could vote; leading former Confederates were barred from office |\n| Federal muscle | None beyond the army already in the field | None; Southern states ran their own affairs | The South was divided into military districts under federal generals |\n\nSource: original summary table drawn from Barron's Premium 2027, Chapter 7, and 5 Steps 2024, Chapter 16.",
+  "source_note": "Original summary table written for this question from the course books; no quotation. Barron's Premium 2027, Chapter 7; 5 Steps 2024, Chapter 16."
+ },
+ "stimulus_set": "reconstruction-plans",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Congressional Reconstruction differed from both presidential plans most importantly in its use of federal power.",
+ "options": [
+  {
+   "key": "A",
+   "text": "It used military districts and constitutional amendments to remake Southern politics and protect Black rights."
+  },
+  {
+   "key": "B",
+   "text": "It pardoned every former Confederate and restored them all to office at once.",
+   "misconception": "Background: the Congressional plan barred leading former Confederates from office, the opposite of a general pardon."
+  },
+  {
+   "key": "C",
+   "text": "It let each Southern state write its own terms of return without any conditions.",
+   "misconception": "The table shows Congress setting the terms: new constitutions, Black suffrage, and the Fourteenth Amendment."
+  },
+  {
+   "key": "D",
+   "text": "It ended Reconstruction by withdrawing all federal troops from the South.",
+   "misconception": "Background: the troop withdrawal came with the Compromise of 1877, ten years after the Congressional plan."
+  }
+ ],
+ "rationales": {
+  "A": "The table shows military districts, Black suffrage, and the Fourteenth Amendment together, a federal remaking of Southern politics.",
+  "B": "Background: the table bars leading former Confederates from office under the Congressional plan.",
+  "C": "The table lists Congress's conditions plainly: new constitutions, Black men voting, and the Fourteenth Amendment.",
+  "D": "Background: the withdrawal of troops ended Reconstruction in 1877; the Congressional plan of 1867 brought troops in.",
+  "general": "1. Compare the muscle row: only the Congressional plan divides the South into military districts.\n2. Compare the voting row: only the Congressional plan gives Black men the vote.\n3. Compare the terms row: only the Congressional plan demands the Fourteenth Amendment.\n4. Together those three rows are a federal rebuilding of Southern politics, not a pardon.\nRemember: a plan's use of power shows in its enforcement, its voters, and its conditions together."
+ }
+}

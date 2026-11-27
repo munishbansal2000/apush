@@ -1,0 +1,94 @@
+{
+ "id": "apush-saq-0164",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.11"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "2.A",
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.11 Failure of Reconstruction"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865–1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Barron’s Premium AP U.S. History 2027, Chapter 7, Topic 5.11 (secondary account, paraphrased)",
+   "Princeton Review, Chapter 9 supplement (secondary account, paraphrased)"
+  ]
+ },
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "saq_slot": 1,
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of the secondary account in Barron’s Premium AP U.S. History 2027, Chapter 7, Topic 5.11, and Princeton Review, Chapter 9 supplement: Reconstruction failed because several forces acted together. An economic depression after the Panic of 1873 turned Northern voters toward hard times. The Supreme Court narrowed the new amendments in the Slaughter-House Cases, Cruikshank, and Reese. White Southerners used violence and “Redeemer” governments to retake power, while Northern voters grew tired of the effort. By 1877 the troops were gone, but the amendments, Black churches, and Black schools remained.",
+  "source_note": "Paraphrase of the secondary account in Barron’s Premium AP U.S. History 2027, Chapter 7, Topic 5.11, and Princeton Review, Chapter 9 supplement. The wording is original; the facts follow the books."
+ },
+ "stimulus_set": null,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify ONE cause of the failure of Reconstruction named in the passage.",
+   "modelAnswer": "One cause named in the passage is the economic depression that followed the Panic of 1873. The depression turned Northern voters toward their own hard times and away from Reconstruction. Once Northern voters stopped caring, Congress lost the will to enforce the new amendments.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one cause of the failure of Reconstruction named in the passage, such as the depression, the Court’s rulings, Southern violence, or Northern fatigue.",
+     "notEarned": "Naming a cause not in the passage, with no link to it, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE way the Supreme Court contributed to the failure of Reconstruction.",
+   "modelAnswer": "The Court narrowed the new amendments so they protected freedpeople less. In the Slaughter-House Cases it read the Fourteenth Amendment to cover only federal rights, and in Cruikshank it ruled that private violence was a state matter. With the amendments narrowed, neither Congress nor the courts could reach the violence and laws that undid Black rights.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one way the Court contributed to the failure, such as narrowing the Fourteenth or Fifteenth Amendment in Slaughter-House, Cruikshank, or Reese.",
+     "notEarned": "Naming a case with no explanation of what it did does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE way Reconstruction’s legacy endured after 1877 despite its failure.",
+   "modelAnswer": "One legacy that endured was the set of Black institutions built during Reconstruction, especially churches and schools. Black churches became centers of community life and politics, and Black schools, including Howard and Fisk Universities, trained teachers and leaders. These institutions survived the Redeemers and carried the struggle forward into the next century.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one way Reconstruction’s legacy endured, such as the amendments, Black churches, Black schools, or Black colleges.",
+     "notEarned": "Naming a legacy with no explanation of how it endured does not earn the point."
+    }
+   ]
+  }
+ ]
+}

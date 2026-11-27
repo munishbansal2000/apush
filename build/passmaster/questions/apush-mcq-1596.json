@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-1596",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.12",
+  "5.9"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "D",
+ "skills": [
+  "5.A",
+  "2.A"
+ ],
+ "themes": [
+  "NAT",
+  "ARC"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.12 Comparison in Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "The Civil War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844-1877)"
+   }
+  ],
+  "primary_sources": [
+   "The Declaration of Independence, July 4, 1776",
+   "Abraham Lincoln, Gettysburg Address, November 19, 1863"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Source 1: The Declaration of Independence, July 4, 1776:\n“... We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.”\n\nSource 2: Abraham Lincoln, the Gettysburg Address, November 19, 1863:\n“... Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. ... we here highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth.”",
+  "source_note": "Source 1: The Declaration of Independence, July 4, 1776, quoted verbatim (National Archives). The leading ellipsis marks dropped opening words. Source 2: Abraham Lincoln, Gettysburg Address, November 19, 1863 (Bliss copy), quoted verbatim; ellipses mark omissions between non-adjacent passages. Both sources are public domain."
+ },
+ "stimulus_set": "two-revolutions",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Lincoln's use of the Declaration's words in 1863 shows which of the following about the Civil War?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Lincoln believed the Declaration had been a mistake.",
+   "misconception": "Lincoln quotes the Declaration's central claim approvingly and builds his speech on it."
+  },
+  {
+   "key": "B",
+   "text": "Lincoln wanted the United States to return to British rule.",
+   "misconception": "Background: the Gettysburg Address defends the Union, not a return to Britain."
+  },
+  {
+   "key": "C",
+   "text": "Lincoln thought the war had nothing to do with the founding of the nation.",
+   "misconception": "Lincoln opens by counting back to the founding, eighty-seven years before 1863."
+  },
+  {
+   "key": "D",
+   "text": "Lincoln tied the war to the Revolution's promise, making emancipation part of the founding."
+  }
+ ],
+ "rationales": {
+  "A": "Lincoln repeats the Declaration's words, all men are created equal, as the nation's founding proposition.",
+  "B": "Background: the address defends a government of the people that shall not perish, not a return to monarchy.",
+  "C": "Lincoln dates the nation from the founding, four score and seven years ago, and measures the war against it.",
+  "D": "By quoting the Declaration in 1863, Lincoln claims the war is finishing the founders' work on equality.",
+  "general": "1. Catch the borrowed words: all men are created equal appears in both sources.\n2. Lincoln does not quote by accident; he dates the nation from the founding and judges the war by it.\n3. In 1776 the promise left slavery in place; in 1863 Lincoln calls for a new birth of freedom.\n4. The war becomes the second founding, the moment the promise is extended.\nRemember: when a later speaker quotes a founding text, ask what new work the old words are doing."
+ }
+}

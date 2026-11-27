@@ -1,0 +1,97 @@
+{
+ "id": "apush-mcq-1586",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.12",
+  "5.9"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "1.A",
+  "5.A"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.12 Comparison in Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "The Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 16",
+    "section": "Era of Reconstruction (1865-1877)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844-1877)"
+   }
+  ],
+  "primary_sources": [
+   "Emancipation Proclamation, January 1, 1863",
+   "United States Constitution, Amendment XIII, Section 1"
+  ]
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "text": "Source 1: The painting shows President Lincoln reading the Emancipation Proclamation to his cabinet in 1862. It was painted by Francis Bicknell Carpenter in 1864.\n\nSource 2: The Emancipation Proclamation, January 1, 1863:\n“And by virtue of the power, and for the purpose aforesaid, I do order and declare that all persons held as slaves within said designated States, and parts of States, are, and henceforward shall be free; and that the Executive government of the United States, including the military and naval authorities thereof, will recognize and maintain the freedom of said persons.”\n\nSource 3: Thirteenth Amendment, Section 1 (ratified 1865):\n“Neither slavery nor involuntary servitude, except as a punishment for crime whereof the party shall have been duly convicted, shall exist within the United States, or any place subject to their jurisdiction.”",
+  "source_note": "Painting: Francis Bicknell Carpenter, First Reading of the Emancipation Proclamation of President Lincoln, 1864, U.S. Capitol collection (public domain). Proclamation: final Emancipation Proclamation, January 1, 1863, quoted verbatim (National Archives transcription). Amendment: U.S. Constitution, Amendment XIII, Section 1 (Constitution Annotated, Library of Congress)."
+ },
+ "stimulus_set": "emancipation-two-steps",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The painting in Source 1 best supports which conclusion about the Emancipation Proclamation?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Lincoln wrote the Proclamation alone, without consulting anyone.",
+   "misconception": "The painting shows Lincoln reading it to his cabinet, a room full of advisers."
+  },
+  {
+   "key": "B",
+   "text": "The Proclamation was issued the day Lincoln was inaugurated.",
+   "misconception": "Background: the Proclamation came in January 1863, nearly two years after the inauguration of March 1861."
+  },
+  {
+   "key": "C",
+   "text": "Emancipation was a deliberate presidential war measure, weighed with the cabinet first."
+  },
+  {
+   "key": "D",
+   "text": "The cabinet voted the Proclamation down and Lincoln issued it anyway.",
+   "misconception": "Background: the painting shows a reading to the cabinet, not a vote, and the Proclamation was issued."
+  }
+ ],
+ "rationales": {
+  "A": "The painting shows seven cabinet members gathered around the table, listening as Lincoln reads.",
+  "B": "Background: the Proclamation is dated January 1, 1863; Lincoln took office in March 1861.",
+  "C": "Lincoln reads the draft aloud to his advisers in 1862, months before it took effect, which is how a major war measure is prepared.",
+  "D": "Background: the image shows a reading, not a vote, and nothing in it shows the cabinet rejecting the plan.",
+  "general": "1. Look at the scene: Lincoln sits at a table reading a paper, and his cabinet listens.\n2. The painting is dated 1864 and shows a meeting in 1862, months before the Proclamation took effect.\n3. A president reading a draft to his advisers is deliberating, not acting on impulse.\n4. So the painting shows emancipation as a considered war measure, not a sudden stroke.\nRemember: a scene of deliberation is evidence about how a decision was made."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1586",
+   "file": "u5/pr25e-test2-q38.png",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/First_Reading_of_the_Emancipation_Proclamation_of_President_Lincoln_by_Francis_Bicknell_Carpenter.png",
+   "license": "Public domain",
+   "caption": "Lincoln reading the Emancipation Proclamation to his cabinet, 1862",
+   "alt": "A painting of Abraham Lincoln seated at a table reading a paper to seven men of his cabinet gathered around him"
+  }
+ ]
+}

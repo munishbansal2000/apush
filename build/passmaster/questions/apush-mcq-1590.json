@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-1590",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.12",
+  "5.9"
+ ],
+ "lesson": "apush-u5-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "5.B",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.12 Comparison in Period 5"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Sectional Conflict and the Compromise of 1850"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "The Civil War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844-1877)"
+   }
+  ],
+  "primary_sources": [
+   "Abraham Lincoln, First Inaugural Address, March 4, 1861",
+   "Jefferson Davis, Farewell Address to the Senate, January 21, 1861"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Source 1: Abraham Lincoln, First Inaugural Address, March 4, 1861:\n“I have no purpose, directly or indirectly, to interfere with the institution of slavery in the States where it exists. I believe I have no lawful right to do so, and I have no inclination to do so.”\n\nSource 2: Jefferson Davis, Farewell Address to the United States Senate, January 21, 1861:\n“... I have for many years advocated, as an essential attribute of State sovereignty, the right of a State to secede from the Union. Therefore, if I had not believed there was justifiable cause; if I had thought that Mississippi was acting without sufficient provocation, or without an existing necessity, I should still, under my theory of the Government, because of my allegiance to the State of which I am a citizen, have been bound by her action. I, however, may be permitted to say that I do think she has justifiable cause, and I approve of her act.”",
+  "source_note": "Source 1: Abraham Lincoln, First Inaugural Address, March 4, 1861, quoted verbatim (verified against Barron's Premium 2027, Chapter 7, and the Collected Works). Source 2: Jefferson Davis, Farewell Address to the Senate, January 21, 1861, quoted verbatim from the Papers of Jefferson Davis, Rice University (jeffersondavis.rice.edu). The leading ellipsis marks dropped opening words. Both sources are public domain."
+ },
+ "stimulus_set": "lincoln-davis-1861",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Lincoln's claim in Source 1 and his Emancipation Proclamation of 1863 together show which change in the Union's war aims?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Union began the war to end slavery and later gave up that goal.",
+   "misconception": "Background: Lincoln began by promising not to touch slavery where it existed; emancipation came later."
+  },
+  {
+   "key": "B",
+   "text": "The Union began the war to conquer the South and later settled for a truce instead of victory.",
+   "misconception": "Background: the Union fought to preserve itself, and emancipation strengthened that fight rather than replacing it."
+  },
+  {
+   "key": "C",
+   "text": "The Union began fighting to preserve itself alone, and later fought to preserve it by ending slavery."
+  },
+  {
+   "key": "D",
+   "text": "The Union never changed its war aims at any point in the war.",
+   "misconception": "The 1861 pledge and the 1863 proclamation state different aims, two years apart."
+  }
+ ],
+ "rationales": {
+  "A": "Background: the 1861 passage pledges not to interfere with slavery; ending slavery came later, not first.",
+  "B": "Background: the Union never settled for a truce; it fought until the Confederacy surrendered in 1865.",
+  "C": "In 1861 Lincoln promises to leave slavery alone; by 1863 he frees enslaved people in rebel states as a war measure.",
+  "D": "The two documents, two years apart, show the aim widening from union alone to union through emancipation.",
+  "general": "1. Fix the 1861 aim: Lincoln promises not to interfere with slavery where it exists.\n2. Fix the 1863 aim: the Proclamation frees enslaved people in the states in rebellion.\n3. Background: the Proclamation was a war measure, meant to weaken the Confederacy and strengthen the Union cause.\n4. The war aim did not flip; it widened, from saving the Union alone to saving it by ending slavery.\nRemember: a war aim can grow without changing its core, so track what is added."
+ }
+}

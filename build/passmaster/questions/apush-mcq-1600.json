@@ -1,0 +1,76 @@
+{
+  "answerKey": "B",
+  "difficulty": 2,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 7",
+        "section": "Topic 5.5 Sectional Conflict: Regional Differences"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 14",
+        "section": "Union Expanded and Challenged (1835–1860)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 9"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-1600",
+  "lesson": "apush-u5-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "The convention demanded an immediate federal voting amendment.",
+      "text": "Immediate passage of a federal amendment granting women the right to vote in all elections"
+    },
+    {
+      "key": "B",
+      "text": "Legal and social equality for women, including property rights, education, and suffrage"
+    },
+    {
+      "key": "C",
+      "misconception": "The convention wanted to abolish all religious institutions.",
+      "text": "The abolition of all religious institutions in the United States"
+    },
+    {
+      "key": "D",
+      "misconception": "The convention wanted to end all factory labor by women.",
+      "text": "The end of all factory labor by women"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "No immediate federal amendment for voting in all elections was the demand; the goal was broader and longer-term.",
+    "B": "The convention demanded legal and social equality: property, education, and suffrage, not a single immediate federal amendment. Its list of grievances covers the whole of women's legal standing, not one law alone.",
+    "C": "The convention did not seek to abolish religious institutions.",
+    "D": "The convention did not seek to end all factory labor by women.",
+    "general": "1. Read the claim. Created equal, with inalienable rights, and a demand for voice and representation.\n2. Name the goal it implies. Legal and social equality, including property rights, education, and suffrage.\n3. Test the narrow readings. An immediate amendment, abolishing religion, and ending factory labor are not in the document.\n4. Keep the goal at its own scale. A broad claim to equality, pursued over time.\nRemember: read a reform document's goal at the scale the document itself sets."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "3.A"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from the Declaration of Sentiments (1848)",
+  "status": "final",
+  "stem": "Which of the following was a most direct goal of the women who organized the Seneca Falls Convention?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Declaration of Sentiments, Seneca Falls Convention, 1848, public domain.",
+    "text": "“We hold these truths to be self-evident: that all men and women are created equal; that they are endowed by their Creator with certain inalienable rights; that among these are life, liberty, and the pursuit of happiness.”"
+  },
+  "stimulus_set": "seneca-falls-1848",
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "topics": [
+    "5.5"
+  ],
+  "type": "mcq",
+  "unit": 5
+}

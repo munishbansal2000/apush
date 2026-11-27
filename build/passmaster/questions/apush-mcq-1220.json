@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1220",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.2"
+ ],
+ "lesson": "apush-u5-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "C",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "GEO",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "A. Westward Migrations"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Table compiled from the historical record; boundaries and dates from the Oregon boundary dispute. See Barron's Premium 2027, Chapter 7, and 5 Steps to a 5, 2024, Chapter 14.",
+  "text": "| Proposal | Year | Boundary |\n| United States claim | 1844–1846 | 54°40′ (the southern edge of Russian Alaska) |\n| Offer made by the United States | 1845 | 49th parallel |\n| British counter-proposal | 1845 | Columbia River |\n| Oregon Treaty | June 15, 1846 | 49th parallel to the Strait of Georgia, then through the Strait of Juan de Fuca |"
+ },
+ "stimulus_set": "oregon-boundary-table",
+ "source": "original; stimulus is a table compiled from the historical record of the Oregon boundary dispute",
+ "stem": "According to the table, the final Oregon boundary was set at which line?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Columbia River",
+   "misconception": "The Columbia River was Britain's counter-proposal, not the final boundary."
+  },
+  {
+   "key": "B",
+   "text": "54°40′",
+   "misconception": "54°40′ was the United States' opening claim, not the line in the treaty."
+  },
+  {
+   "key": "C",
+   "text": "The 49th parallel"
+  },
+  {
+   "key": "D",
+   "text": "The Rocky Mountains",
+   "misconception": "The Rocky Mountains are a range, not the boundary line in the treaty."
+  }
+ ],
+ "rationales": {
+  "A": "The Columbia River was what Britain proposed; the treaty chose the 49th parallel instead.",
+  "B": "54°40′ was the American claim in 1844–1846; the treaty settled the line farther south.",
+  "C": "The Oregon Treaty of June 15, 1846, set the boundary at the 49th parallel to the Strait of Georgia.",
+  "D": "The treaty line was a parallel of latitude, not the Rocky Mountains.",
+  "general": "1. Find the treaty row in the table. It is the last row, dated June 15, 1846.\n2. Read its boundary. The line ran along the 49th parallel to the Strait of Georgia.\n3. Do not mix up the claims. 54°40′ was the American demand and the Columbia River was the British one.\nRemember: in a table of proposals, the treaty row is the answer — the other rows are the bargaining."
+ }
+}

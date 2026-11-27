@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1298",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.4"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "B",
+ "skills": [
+  "2.A",
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.4 The Compromise of 1850"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Constitution of the State of California, Article I, Section 18 (1849)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Constitution of the State of California, Article I, Section 18, adopted at Monterey, 1849. Public domain.",
+  "text": "Neither slavery, nor involuntary servitude, unless for the punishment of crimes, shall ever be tolerated in this State.\n\n[Original summary: California's convention wrote this constitution at Monterey in the fall of 1849, after gold drew tens of thousands of settlers to the territory in a single year. The convention asked Congress to admit California as a free state.]"
+ },
+ "stimulus_set": "california-constitution-1849",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "According to Article I, Section 18, slavery could be tolerated in California only",
+ "options": [
+  {
+   "key": "A",
+   "text": "in the gold mines, where labor was scarce.",
+   "misconception": "Gold mines appear nowhere in the section; the only exception is punishment for crimes."
+  },
+  {
+   "key": "B",
+   "text": "as punishment for a crime."
+  },
+  {
+   "key": "C",
+   "text": "on land owned by Californians before 1849.",
+   "misconception": "The section names no exception for earlier landowners; its only exception is punishment for crimes."
+  },
+  {
+   "key": "D",
+   "text": "until Congress voted to admit California.",
+   "misconception": "The section bans slavery in the state itself; it does not make the ban wait for Congress."
+  }
+ ],
+ "rationales": {
+  "A": "Gold mines appear nowhere in the section; the only exception is punishment for crimes.",
+  "B": "The section bans slavery outright, “unless for the punishment of crimes” — punishment is the only exception it names.",
+  "C": "The section names no exception for earlier landowners; its only exception is punishment for crimes.",
+  "D": "The section bans slavery in the state itself; it does not make the ban wait for Congress.",
+  "general": "1. Read the ban as Californians wrote it: neither slavery nor involuntary servitude shall ever be tolerated.\n2. Find the single crack in that wall: “unless for the punishment of crimes.”\n3. Test each answer against that crack: only punishment for a crime fits through it.\nRemember: in a legal ban, the exception clause is the whole answer — read it before the ban itself."
+ }
+}

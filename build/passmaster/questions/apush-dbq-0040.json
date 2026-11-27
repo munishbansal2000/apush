@@ -1,0 +1,162 @@
+{
+ "id": "apush-dbq-0040",
+ "type": "dbq",
+ "unit": 5,
+ "topics": [
+  "5.5"
+ ],
+ "lesson": "apush-u5-l3",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.5 Sectional Conflict: Regional Differences"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "William Lloyd Garrison, The Liberator, January 1, 1831",
+   "Declaration of Sentiments, Seneca Falls Convention, 1848",
+   "John C. Calhoun, speech in the Senate, February 6, 1837",
+   "Frederick Douglass, “What to the Slave Is the Fourth of July?”, July 5, 1852",
+   "Harriet Beecher Stowe, Uncle Tom’s Cabin, 1852",
+   "John Brown, note written December 2, 1859"
+  ]
+ },
+ "source": "original; documents are public-domain primary sources (see each document’s sourcing note)",
+ "stimulus_set": null,
+ "prompt": "Evaluate the extent to which regional differences between the North and the South deepened the sectional conflict over slavery in the United States in the period 1844–1860.",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "January 1, 1831",
+   "title": "Garrison launches The Liberator",
+   "source": "William Lloyd Garrison, The Liberator, January 1, 1831. Public domain.",
+   "sourcing": "Garrison, a Boston editor, launching the abolitionist paper The Liberator with a pledge of no compromise.",
+   "text": "I will be as harsh as truth, and as uncompromising as justice. On this subject, I do not wish to think, or speak, or write, with moderation. . . . I am in earnest — I will not equivocate — I will not excuse — I will not retreat a single inch — AND I WILL BE HEARD."
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "July 1848",
+   "title": "The Declaration of Sentiments lists its grievances",
+   "source": "Declaration of Sentiments, Seneca Falls Convention, July 1848. Public domain.",
+   "sourcing": "The Declaration of Sentiments, issued by the Seneca Falls Convention, listing the legal wrongs done to women.",
+   "text": "He has taken from her all right in property, even to the wages she earns. He has compelled her to submit to laws, in the formation of which she had no voice."
+  },
+  {
+   "n": 3,
+   "kind": "text",
+   "date": "February 6, 1837",
+   "title": "Calhoun calls slavery a positive good",
+   "source": "John C. Calhoun, speech in the Senate, February 6, 1837. Public domain.",
+   "sourcing": "Calhoun, the South Carolina senator, defending slavery in the Senate as a positive good.",
+   "text": "I hold that in the present state of civilization, where two races of different origin, and distinguished by color, and other physical differences, as well as intellectual, are brought together, the relation now existing in the slaveholding States between the two, is, instead of an evil, a good—a positive good."
+  },
+  {
+   "n": 4,
+   "kind": "text",
+   "date": "July 5, 1852",
+   "title": "Douglass asks what the Fourth of July means to the slave",
+   "source": "Frederick Douglass, “What to the Slave Is the Fourth of July?”, Rochester, New York, July 5, 1852. Public domain.",
+   "sourcing": "Douglass, a formerly enslaved abolitionist orator, speaking in Rochester on the meaning of the Fourth of July.",
+   "text": "The sunlight that brought life and healing to you, has brought stripes and death to me. . . . What, to the American slave, is your 4th of July? I answer; a day that reveals to him, more than all other days in the year, the gross injustice and cruelty to which he is the constant victim."
+  },
+  {
+   "n": 5,
+   "kind": "text",
+   "date": "1852",
+   "title": "Stowe reflects as Tom dies",
+   "source": "Harriet Beecher Stowe, Uncle Tom’s Cabin; or, Life Among the Lowly (Boston: John P. Jewett & Company, 1852), Chapter 40, \"The Martyr\". Public domain.",
+   "sourcing": "Stowe, a Northern novelist, promising in Uncle Tom’s Cabin that justice would come, as Tom dies.",
+   "text": "The longest way must have its close — the gloomiest night will wear on to a morning. An eternal, inexorable lapse of moments is ever hurrying the day of the evil to an eternal night, and the night of the just to an eternal day."
+  },
+  {
+   "n": 6,
+   "kind": "image",
+   "date": "1854",
+   "title": "Uncle Sam’s Youngest Son, Citizen Know Nothing",
+   "source": "Uncle Sam’s Youngest Son, Citizen Know Nothing (Sarony & Co., lithograph, New York, 1854). Library of Congress, LCCN2003689281. Public domain.",
+   "figure": "u5/5s24-ch14-mcq-05.jpg",
+   "sourcing": "A New York lithograph picturing the native-born “Citizen Know Nothing” wrapped in the flag, selling nativism as true Americanism."
+  },
+  {
+   "n": 7,
+   "kind": "text",
+   "date": "December 2, 1859",
+   "title": "John Brown’s last note",
+   "source": "John Brown, note written on the morning of his execution, December 2, 1859. Public domain.",
+   "sourcing": "Brown, writing on the morning of his execution for the Harpers Ferry raid, certain that slavery would end only in blood.",
+   "text": "I, John Brown, am now quite certain that the crimes of this guilty land will never be purged away but with blood. I had, as I now think, vainly flattered myself that without very much bloodshed it might be done."
+  }
+ ],
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which regional differences deepened the sectional conflict over slavery, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the Mexican-American War and the new territories, the Compromise of 1850, or the market revolution and the rise of the two regional economies.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (first point): earns the point for describing specific and relevant evidence from at least three documents to support an argument about the prompt.",
+   "notEarned": "Using fewer than three documents, or quoting documents without describing what they show, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support an argument, with the evidence accurately described and tied to the claim.",
+   "notEarned": "Using fewer than six documents, or listing documents without connecting them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence beyond the documents: earns the point for describing a specific and relevant example beyond the documents, such as the 1860 census figures for population, railroads, and cotton; the Maine Law of 1851; the personal liberty laws; or the Underground Railroad.",
+   "notEarned": "A general statement with no specific example beyond the documents does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "3.B",
+   "criterion": "Sourcing: earns the point for explaining the relevance of a document’s author, purpose, audience, or historical situation to the argument, for at least two documents.",
+   "notEarned": "Identifying an author without explaining why it matters, or sourcing only one document, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Complexity: earns the point for demonstrating a complex understanding, such as qualifying the extent of the claim, showing how the same development pulled in opposite directions, or weighing change against continuity.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: Regional differences deepened the sectional conflict to a great extent, because the North and the South had grown into rival economies and rival moral systems, so that every national question became a test of which section’s way of life would rule.\nGrouping 1 — two economies: the 1860 census figures (outside evidence: about 19 million people and 22,000 railroad miles in the free states against 12 million people and 9,000 miles in the slave states, and 4.9 million bales of cotton grown almost entirely in the South) show the material gap behind the argument.\nGrouping 2 — the moral attack: Garrison (Doc 1), Douglass (Doc 4), and Stowe (Doc 5) press the North’s case that slavery is a cruelty and an injustice whose days are numbered.\nGrouping 3 — the Southern answer: Calhoun (Doc 3) calls slavery a positive good, and Brown’s note (Doc 7) shows how that defense hardened into a fear of violent attack.\nGrouping 4 — the widening circle: the Declaration of Sentiments (Doc 2) and the Know-Nothing cartoon (Doc 6) show reform and nativism pulling more Americans into the sectional argument.\nOutside evidence: the Maine Law of 1851, the personal liberty laws, and the Underground Railroad.\nComplexity: the differences deepened the conflict, yet the sections still shared a nation, a Constitution, and a market in cotton; the conflict grew not from separation but from two systems forced to live under one government.",
+ "totalPoints": 7
+}

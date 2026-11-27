@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1392",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.7"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.7 Election of 1860 and Secession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Election returns as published by the Library of Congress, Presidential Election of 1860: A Resource Guide (guides.loc.gov/presidential-election-1860), and the American Presidency Project (presidency.ucsb.edu/statistics/elections/1860). Popular-vote totals differ slightly between sources because of fusion tickets in New York and New Jersey.",
+  "text": "Results of the presidential election of November 6, 1860. The Electoral College had 303 votes; 152 were needed to win.\n\n| Candidate | Party | Popular votes | Share | Electoral votes |\n| Abraham Lincoln | Republican | 1,865,908 | 39.8% | 180 |\n| Stephen A. Douglas | Democratic | 1,380,202 | 29.5% | 12 |\n| John C. Breckinridge | Southern Democratic | 848,019 | 18.1% | 72 |\n| John Bell | Constitutional Union | 590,901 | 12.6% | 39 |"
+ },
+ "stimulus_set": "election-1860-results",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Which of the following claims is best supported by reading the popular-vote and electoral-vote columns together?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The candidate with the most popular votes also won the most states.",
+   "misconception": "The table gives no state counts, so it cannot show how many states each candidate won."
+  },
+  {
+   "key": "B",
+   "text": "Breckinridge's support was the most evenly spread across the country.",
+   "misconception": "The table gives national totals only, so it cannot show where any candidate's votes were spread."
+  },
+  {
+   "key": "C",
+   "text": "Lincoln won the presidency without a majority of the popular vote."
+  },
+  {
+   "key": "D",
+   "text": "Bell's voters would have backed Douglas if Bell had not run.",
+   "misconception": "The table records what happened, not what voters would have done in a different race."
+  }
+ ],
+ "rationales": {
+  "A": "The table gives no state counts, so it cannot show how many states each candidate won.",
+  "B": "The table gives national totals only, so it cannot show where any candidate's votes were spread.",
+  "C": "Lincoln's row shows 39.8 percent of the popular vote, under half, beside 180 electoral votes, a clear majority of the 303. Background: winning the presidency took the Electoral College, not a popular majority.",
+  "D": "The table records what happened, not what voters would have done in a different race.",
+  "general": "1. Put the two columns side by side for Lincoln: 39.8 percent, and 180 votes.\n2. 180 of 303 is a majority of electors, while 39.8 percent is a minority of voters.\n3. Background: Lincoln's votes were concentrated in the free states, which held most of the electors.\n4. So the table shows a minority president elected by the map.\nRemember: compare the two columns, not one alone; the gap between them is the story."
+ }
+}

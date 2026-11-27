@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0146",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.5"
+ ],
+ "lesson": "apush-u5-l3",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "2.B"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 6",
+    "section": "Topic 4.11 An Age of Reform"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Declaration of Sentiments, Seneca Falls Convention, 1848"
+  ]
+ },
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Declaration of Sentiments, Seneca Falls Convention, July 1848. Public domain.",
+  "text": "He has taken from her all right in property, even to the wages she earns. He has compelled her to submit to laws, in the formation of which she had no voice."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one grievance the Declaration of Sentiments raises about married women’s legal rights.",
+   "modelAnswer": "One grievance is that a married woman lost all right to property, even to the wages she earned. Under the law, her husband controlled what she owned and earned, leaving her no property of her own.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one grievance about married women’s legal rights, such as the loss of property or wages.",
+     "notEarned": "Naming a grievance about something else, or a vague answer, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how the Seneca Falls Convention grew out of the abolitionist movement.",
+   "modelAnswer": "Its organizers, Elizabeth Cady Stanton and Lucretia Mott, were veterans of abolitionism who had been barred from the World Anti-Slavery Convention in London in 1840 because they were women. That exclusion pushed them to hold their own meeting, carrying abolitionism’s language of natural rights into the fight for women’s equality.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining the abolitionist roots of the convention, such as Stanton and Mott’s barring in London in 1840.",
+     "notEarned": "Naming abolitionism with no explanation of the link to Seneca Falls does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one reason the convention’s demand for women’s suffrage was its most controversial.",
+   "modelAnswer": "Even among reformers, the vote seemed a step too far in 1848, so the suffrage resolution was the only one that faced serious opposition. It passed only after Frederick Douglass spoke in its favor, showing that the ballot marked the edge of what reformers would accept.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason suffrage was the most controversial demand, such as the opposition it faced even among reformers or Douglass’s role in carrying it.",
+     "notEarned": "Restating that suffrage was controversial, with no reason, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

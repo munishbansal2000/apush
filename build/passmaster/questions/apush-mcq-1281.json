@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1281",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.4"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "3.B",
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.4 The Compromise of 1850"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Henry Clay, resolutions offered in the Senate, January 29, 1850"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Henry Clay, resolutions offered in the Senate, January 29, 1850 (Congressional Globe, 31st Congress, 1st session). Public domain.",
+  "text": "It being desirable, for the peace, concord, and harmony of the Union of these States, to settle and adjust amicably all existing questions of controversy between them arising out of the institution of slavery upon a fair, equitable and just basis: therefore,\n\n1. Resolved, That California, with suitable boundaries, ought, upon her application to be admitted as one of the States of this Union, without the imposition by Congress of any restriction in respect to the exclusion or introduction of slavery within those boundaries.\n\n2. Resolved, That as slavery does not exist by law, and is not likely to be introduced into any of the territory acquired by the United States from the republic of Mexico, it is inexpedient for Congress to provide by law either for its introduction into, or exclusion from, any part of the said territory; and that appropriate territorial governments ought to be established by Congress in all of the said territory, not assigned as the boundaries of the proposed State of California, without the adoption of any restriction or condition on the subject of slavery."
+ },
+ "stimulus_set": "clay-resolutions-1850",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Clay's resolutions are best understood as an attempt to",
+ "options": [
+  {
+   "key": "A",
+   "text": "settle every slavery question at once, ending the fight between the sections."
+  },
+  {
+   "key": "B",
+   "text": "admit California immediately and leave all other questions for a later Congress.",
+   "misconception": "Clay does not stop at California; his second resolution organizes governments for the rest of the Mexican Cession in the same breath."
+  },
+  {
+   "key": "C",
+   "text": "prove that Congress had the power to ban slavery in the territories.",
+   "misconception": "The resolutions never claim Congress can ban slavery in the territories; they say providing for its introduction or exclusion is “inexpedient.”"
+  },
+  {
+   "key": "D",
+   "text": "force the South to accept a ban on slavery in the West.",
+   "misconception": "Clay's plan does the opposite of a ban: it leaves slavery in the territories without any congressional restriction."
+  }
+ ],
+ "rationales": {
+  "A": "The preamble says the resolutions aim “to settle and adjust amicably all existing questions of controversy” about slavery “upon a fair, equitable and just basis.” A single settlement, not a series of fights, is the point.",
+  "B": "Clay does not stop at California; his second resolution organizes governments for the rest of the Mexican Cession in the same breath.",
+  "C": "The resolutions never claim Congress can ban slavery in the territories; they say providing for its introduction or exclusion is “inexpedient.”",
+  "D": "Clay's plan does the opposite of a ban: it leaves slavery in the territories without any congressional restriction.",
+  "general": "1. Start with the preamble, where Clay states his aim before any resolution.\n2. Note the sweep of it: “all existing questions of controversy,” settled “amicably,” on a fair basis.\n3. See how the resolutions match that aim: California in, territories organized, and the slavery question left undecided by Congress.\nRemember: read a proposal's preamble first; it tells you what problem the author thinks he is solving."
+ }
+}

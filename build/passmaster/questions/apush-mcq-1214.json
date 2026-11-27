@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-1214",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.2"
+ ],
+ "lesson": "apush-u5-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "2.B",
+  "2.C"
+ ],
+ "themes": [
+  "GEO",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "A. Westward Migrations"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "map",
+  "source_note": "John Haven, “Map of the United States, including Oregon, Texas, and the Californias,” 1846, Haven & Emmerson, New York. Public domain.",
+  "text": "A map of the United States published in New York in 1846. It shows the United States stretching to the Pacific, with Texas, Oregon, and the Californias drawn in. The map labels the boundary claimed by the United States, the boundary offered as a compromise, and the boundary proposed by Great Britain. It also marks the route of the contemplated Great Oregon Rail-Road and the route of the Santa Fe traders, and it carries tables of the population of principal cities, Texas, Mexico, and Oregon."
+ },
+ "stimulus_set": "map-1846-oregon-texas",
+ "source": "original; stimulus image from the shared pool, John Haven, “Map of the United States, including Oregon, Texas, and the Californias” (1846), public domain",
+ "stem": "A historian using the map as evidence for the popularity of Manifest Destiny would need to be most cautious about which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The map was a commercial broadside, so it shows what a publisher thought would sell."
+  },
+  {
+   "key": "B",
+   "text": "The map was drawn in 1846, after the Mexican War had already begun.",
+   "misconception": "The map appeared at the war's outset, so its timing matches the period it is used to describe."
+  },
+  {
+   "key": "C",
+   "text": "The map includes tables of population and government.",
+   "misconception": "The tables are data the map prints; they do not weaken the map as evidence about expansionist ideas."
+  },
+  {
+   "key": "D",
+   "text": "The map shows the route of a railroad that had not yet been built.",
+   "misconception": "The railroad is labeled as contemplated, so the map is honest that it is a plan, not a fact."
+  }
+ ],
+ "rationales": {
+  "A": "A commercial broadside proves a publisher expected buyers, not that the public already believed the idea; sales and belief are different things.",
+  "B": "The map appeared at the war's outset in 1846, so its timing matches the Manifest Destiny moment it is used to describe.",
+  "C": "Population and government tables are printed data; they do not make the map unreliable as evidence about expansionist ideas.",
+  "D": "The map labels the railroad route as contemplated, so it does not pretend the road already existed.",
+  "general": "1. Ask what the map proves by itself. It proves a New York publisher printed a continent-wide American map in 1846.\n2. Ask what it does not prove. One publisher's bet on buyers is not a poll of the whole country.\n3. Keep the rest in view. The date fits the period, the tables are data, and the planned railroad is labeled as planned.\nRemember: a source's origin is its limit. Ask who made it and why before you let it speak for a whole nation."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1214",
+   "file": "u4/pr25e-test1-q21.jpg",
+   "caption": "John Haven, “Map of the United States, including Oregon, Texas, and the Californias,” 1846",
+   "alt": "John Haven's 1846 map of the United States showing Texas, Oregon, and the Californias, with claimed and proposed boundaries, the route of a contemplated Oregon railroad, and tables of population and government",
+   "license": "Public domain"
+  }
+ ]
+}

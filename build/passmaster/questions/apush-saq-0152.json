@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0152",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.7"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.A",
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.7 Election of 1860 and Secession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "James Ford Rhodes, History of the Civil War, 1861–1865 (1917), Chapter 1"
+  ]
+ },
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "saq_slot": 1,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "James Ford Rhodes, History of the Civil War, 1861–1865 (New York: Macmillan, 1917), Chapter 1. Public domain. Wording verified against the Global Grey edition of the 1917 text (globalgreyebooks.com/ebooks/james-ford-rhodes_history-of-the-civil-war.pdf). '. . .' marks the omitted sentence about Chatham. Seed: staged 5s24-exam1-saq-01, rewritten against Barron's Chapter 7, 5 Steps Chapter 15, and the verified Rhodes text.",
+  "text": "The array was now complete. Twenty-three States were pitted against eleven; twenty-two million people against nine, and of the nine, three and one-half million were slaves. Each side had peculiar advantages. But neither section understood the other. If the South had known that secession must result in war and that the foe would be a united North, it is doubtful if she would have proceeded to the last extremity. It is still more doubtful if the North would have fought, had she known that she must contend against a united Southern people. . . . But now the North confronted five and a half million earnest and brave people, supported by three and a half million servants, who grew the food and took care of the women and children at home while the men fought in the field."
+ },
+ "stimulus_set": null,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify Rhodes's claim about what each side misunderstood at the start of the war.",
+   "modelAnswer": "Rhodes claims that neither section understood the other. The South did not know that secession would mean war against a united North, and the North did not know it would face a united Southern people. Each side expected the other to give way.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying Rhodes's claim that each side misunderstood the other, such as the South not expecting war or the North not expecting a united South.",
+     "notEarned": "Naming Rhodes or the war with no claim identified does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE event or development from 1860 or 1861 that supports Rhodes's claim that the South misjudged the North.",
+   "modelAnswer": "The Northern response to Fort Sumter supports Rhodes. After the bombardment of April 12, 1861, Lincoln's call for 75,000 volunteers was answered by men across the North, and the Northern states united behind the war. The South had expected the North to let it go in peace, but instead it faced a mobilized enemy.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one 1860–1861 event showing the South misjudged the North, such as the united Northern response to Fort Sumter or the flood of volunteers after Lincoln's call.",
+     "notEarned": "Naming an event with no explanation of how it supports Rhodes does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE event or development before the Civil War that shows one side's unwillingness to compromise.",
+   "modelAnswer": "The failure of the Crittenden Compromise shows unwillingness to compromise. Republicans in Congress refused to accept federal protection for slavery south of the Missouri Compromise line, the price of the deal, because it surrendered the free-soil position that had won them the election. With that refusal, the last political path back to union closed.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one pre-war development showing unwillingness to compromise, such as the Republican refusal of the Crittenden Compromise or South Carolina's secession within weeks of the election.",
+     "notEarned": "Naming a compromise with no explanation of who refused it or why does not earn the point."
+    }
+   ]
+  }
+ ]
+}

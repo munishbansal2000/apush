@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-1443",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.8"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "1.B",
+  "5.A"
+ ],
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.8 Military Conflict in the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Currier and Ives, Siege and Capture of Vicksburg (1863)"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Currier and Ives, Siege and Capture of Vicksburg, Miss. July 4th 1863 (Library of Congress, LCCN2001705838). Public domain. Image from the shared pool.",
+  "text": "The Currier and Ives lithograph is titled “Siege and Capture of Vicksburg, Miss. July 4th 1863.” It shows Union volunteers charging through the breach after a mine exploded under a Confederate fort, while the caption below reports the surrender on July 4th and lists over 30,000 prisoners taken. The siege lasted 47 days. The Confederate flag flies above the fort, and Union flags advance from the right."
+ },
+ "stimulus_set": "vicksburg-print",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The print celebrates the capture of Vicksburg. The victory mattered most because it",
+ "options": [
+  {
+   "key": "A",
+   "text": "gave the Union the Mississippi and split the Confederacy."
+  },
+  {
+   "key": "B",
+   "text": "captured Robert E. Lee and his whole army in Virginia.",
+   "misconception": "Background: Lee commanded in Virginia; the Confederate commander at Vicksburg was Pemberton, not Lee."
+  },
+  {
+   "key": "C",
+   "text": "ended the Union blockade of Southern ports.",
+   "misconception": "Background: the blockade kept running after Vicksburg; the victory was about the river, not the sea."
+  },
+  {
+   "key": "D",
+   "text": "freed all enslaved people in Mississippi.",
+   "misconception": "Background: emancipation in Mississippi came through the proclamation and the war, not through this siege."
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: with Vicksburg, Union forces gained the whole Mississippi and cut the Confederacy in two.",
+  "B": "Background: Lee commanded in Virginia; the Confederate commander at Vicksburg was Pemberton, not Lee.",
+  "C": "Background: the blockade kept running after Vicksburg; the victory was about the river, not the sea.",
+  "D": "Background: emancipation in Mississippi came through the proclamation and the war, not through this siege.",
+  "general": "1. Background from the books: Vicksburg sat on high bluffs above the Mississippi, the last Confederate stronghold on the river.\n2. Background from the books: its fall opened the river from its source to the Gulf.\n3. Background from the books: with Vicksburg, Union forces gained the whole Mississippi and cut the Confederacy in two.\n4. A split Confederacy could not move men or food between its eastern and western halves.\nRemember: a river victory is about the river: control it and the enemy splits."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1443",
+   "file": "u5/5s24-ch15-mcq-04.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Siege_and_capture_of_Vicksburg%2C_Miss._July_4th_1863_LCCN2001705838.jpg",
+   "license": "Public domain (published 1863; Library of Congress)",
+   "caption": "Currier and Ives, Siege and Capture of Vicksburg, July 4, 1863.",
+   "alt": "A color lithograph from 1863 shows Union soldiers charging through a breach in a Confederate fort at Vicksburg, with a great explosion behind them."
+  }
+ ]
+}

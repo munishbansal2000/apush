@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1419",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.7"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.7 Election of 1860 and Secession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secession dates verified against the Ordinance of Secession table (en.wikipedia.org/wiki/Ordinance_of_Secession), the American Battlefield Trust Civil War timeline (battlefields.org), and Digital History, University of Houston (digitalhistory.uh.edu). Texas adopted its ordinance February 1, 1861, confirmed by popular referendum February 23; Virginia's ordinance was ratified by referendum May 23, 1861.",
+  "text": "Ordinances of secession, in the order the states adopted them. Seven states seceded before Lincoln's inauguration on March 4, 1861; four more followed after the firing on Fort Sumter.\n\n| State | Date of ordinance |\n| South Carolina | December 20, 1860 |\n| Mississippi | January 9, 1861 |\n| Florida | January 10, 1861 |\n| Alabama | January 11, 1861 |\n| Georgia | January 19, 1861 |\n| Louisiana | January 26, 1861 |\n| Texas | February 1, 1861 |\n| Virginia | April 17, 1861 |\n| Arkansas | May 6, 1861 |\n| Tennessee | May 6, 1861 |\n| North Carolina | May 20, 1861 |\n\nDelaware, Kentucky, Maryland, and Missouri were slave states that stayed in the Union and are not listed."
+ },
+ "stimulus_set": "secession-order-1861",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The pattern in the table best supports which conclusion?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Secession came in two waves: Deep South first, Upper South later."
+  },
+  {
+   "key": "B",
+   "text": "All eleven states seceded in the same week in 1861.",
+   "misconception": "The dates run from December 1860 to May 1861, five months, not one week."
+  },
+  {
+   "key": "C",
+   "text": "The border states seceded last, after North Carolina.",
+   "misconception": "The border states never seceded; the table says they stayed in the Union."
+  },
+  {
+   "key": "D",
+   "text": "Texas seceded before South Carolina in December 1860.",
+   "misconception": "Texas adopted its ordinance February 1, 1861, six weeks after South Carolina."
+  }
+ ],
+ "rationales": {
+  "A": "Seven states cluster between December 20 and February 1, then nothing until April 17, when four more follow. Background: the gap is the Fort Sumter crisis — the second wave answered Lincoln's call for troops.",
+  "B": "The dates run from December 1860 to May 1861, five months, not one week.",
+  "C": "The border states never seceded; the table says they stayed in the Union.",
+  "D": "Texas adopted its ordinance February 1, 1861, six weeks after South Carolina.",
+  "general": "1. Group the dates: seven before March, four after April.\n2. The gap between February 1 and April 17 is the pause.\n3. Background: the Upper South waited through the winter, hoping for compromise, until Sumter and the troop call forced a choice.\n4. A table with a gap in the middle is telling you about the gap.\nRemember: cluster the dates before you read them one by one — the clusters are the argument."
+ }
+}

@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-1454",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.8"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 2,
+ "answerKey": "B",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.8 Military Conflict in the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Population figures as stated in Barron’s, Chapter 7 (22 million versus less than 6 million, excluding enslaved people); railroad mileage and factory output from the 1860 census, as summarized in the books’ accounts of Northern industrial advantage. Figures are rounded.",
+  "text": "The North and the South on the eve of war, 1860.\n\n| Measure (1860) | Free states (Union) | Confederate states |\n| Free population | about 22,000,000 | under 6,000,000 |\n| Railroad miles | about 22,000 | about 9,000 |\n| Share of the nation’s factory output | about 9 in 10 | about 1 in 10 |"
+ },
+ "stimulus_set": "war-resources-1860",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "According to the table, the Union’s largest advantage was in",
+ "options": [
+  {
+   "key": "A",
+   "text": "land area.",
+   "misconception": "The table lists people, railroads, and factories, not land area."
+  },
+  {
+   "key": "B",
+   "text": "population and industry."
+  },
+  {
+   "key": "C",
+   "text": "length of coastline.",
+   "misconception": "The table does not list coastline. Background: the South’s long coast was its own problem to defend."
+  },
+  {
+   "key": "D",
+   "text": "cotton exports.",
+   "misconception": "The table lists factory output, not cotton. Background: cotton was the South’s export, not the North’s."
+  }
+ ],
+ "rationales": {
+  "A": "The table lists people, railroads, and factories, not land area.",
+  "B": "The Union had about 22 million free people to under 6 million, and about 9 in 10 of factory output.",
+  "C": "The table does not list coastline. Background: the South’s long coast was its own problem to defend.",
+  "D": "The table lists factory output, not cotton. Background: cotton was the South’s export, not the North’s.",
+  "general": "1. Read the rows, not the title: people, railroads, factories.\n2. The population row is nearly four to one in the Union’s favor.\n3. The factory row is nine to one, and the railroad row is more than two to one.\n4. Every row points the same way: more men, more tracks, more factories.\nRemember: in a table, the advantage is the row where the gap is widest."
+ }
+}

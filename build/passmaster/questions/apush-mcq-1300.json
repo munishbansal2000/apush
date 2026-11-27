@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-1300",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.4"
+ ],
+ "lesson": "apush-u5-l2",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "3.B",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "MIG"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.4 The Compromise of 1850"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Constitution of the State of California, Article I, Section 18 (1849)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Constitution of the State of California, Article I, Section 18, adopted at Monterey, 1849. Public domain.",
+  "text": "Neither slavery, nor involuntary servitude, unless for the punishment of crimes, shall ever be tolerated in this State.\n\n[Original summary: California's convention wrote this constitution at Monterey in the fall of 1849, after gold drew tens of thousands of settlers to the territory in a single year. The convention asked Congress to admit California as a free state.]"
+ },
+ "stimulus_set": "california-constitution-1849",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The gold rush and California's statehood application are best understood together as showing that",
+ "options": [
+  {
+   "key": "A",
+   "text": "a rush of settlers forced Congress to face the slavery question early."
+  },
+  {
+   "key": "B",
+   "text": "the federal government planned California's settlement to keep slavery out of the West.",
+   "misconception": "The settlement was a rush of individual gold seekers, not a federal plan; the constitution was written by Californians at Monterey, not by Washington."
+  },
+  {
+   "key": "C",
+   "text": "Californians wrote their constitution mainly to please Southern senators.",
+   "misconception": "Background from the books: Southern senators opposed admitting California free, since it would tip the Senate; the convention wrote its constitution for Californians, not to please the South."
+  },
+  {
+   "key": "D",
+   "text": "gold mining made slavery profitable in California, so voters protected it.",
+   "misconception": "The constitution banned slavery in California, so voters did not protect it. Background from the books: the gold rush was driven by free prospectors seeking their own fortunes, and the convention wrote a free-state constitution."
+  }
+ ],
+ "rationales": {
+  "A": "Gold drew tens of thousands to California in a single year, and the convention asked Congress to admit the state free. Background from the books: Congress had spent years avoiding the slavery question, and the sudden application forced it onto the floor.",
+  "B": "The settlement was a rush of individual gold seekers, not a federal plan; the constitution was written by Californians at Monterey, not by Washington.",
+  "C": "Background from the books: Southern senators opposed admitting California free, since it would tip the Senate; the convention wrote its constitution for Californians, not to please the South.",
+  "D": "The constitution banned slavery in California, so voters did not protect it. Background from the books: the gold rush was driven by free prospectors seeking their own fortunes, and the convention wrote a free-state constitution.",
+  "general": "1. Start with the rush: gold pulled tens of thousands west in a single year, faster than any plan could manage.\n2. Follow the rush to its result: a convention at Monterey, a constitution banning slavery, and an application for statehood.\n3. Background from the books: Congress had dodged the slavery question for years, and now a finished fact from the far West demanded an answer.\nRemember: settlement can outrun politics; when people move faster than Congress, Congress has to catch up."
+ }
+}

@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1490",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.9"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "SOC",
+  "WOR"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.9 Government Policies During the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Figures from the Provost Marshal General’s report, as summarized in the 1956 report Veterans in Our Society (U.S. Government Printing Office). Figures are rounded.",
+  "text": "Results of the four drafts under the Enrollment Act of 1863.\n\n| Outcome | Men |\n| Names drawn | 776,829 |\n| Men who furnished substitutes | 73,607 |\n| Men who paid $300 commutation | 86,724 |\n| Men exempted | 315,509 |\n| Men who failed to report | 161,244 |\n| Men who entered the army as draftees | 46,347 |\n\nAltogether 119,954 men entered the army under the act: 46,347 draftees plus 73,607 hired substitutes. The rows overlap, so they do not add to the total drawn."
+ },
+ "stimulus_set": "union-draft-1863-1865",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The Confederacy drafted men first, in April 1862, before the Union. Its “Twenty Negro Law,” added in October 1862, exempted one white man for every twenty enslaved people on a plantation. That exemption fed the cry of “a rich man’s war and a poor man’s fight” because it",
+ "options": [
+  {
+   "key": "A",
+   "text": "drafted enslaved men into the Confederate army as soldiers in 1862.",
+   "misconception": "Background: the Twenty Negro Law exempted white overseers; it did not draft enslaved men, who were not enlisted as soldiers until 1865."
+  },
+  {
+   "key": "B",
+   "text": "freed twenty enslaved people for every white soldier who served.",
+   "misconception": "Background: the law freed no one; it kept white men at home to oversee enslaved laborers."
+  },
+  {
+   "key": "C",
+   "text": "banned hiring substitutes anywhere in the Confederacy at all.",
+   "misconception": "Background: the first Confederate conscription act allowed substitutes; the ban came only at the end of 1863."
+  },
+  {
+   "key": "D",
+   "text": "shielded the households of large slaveholders while ordinary men were conscripted."
+  }
+ ],
+ "rationales": {
+  "A": "Background: the Twenty Negro Law exempted white overseers; it did not draft enslaved men, who were not enlisted as soldiers until 1865.",
+  "B": "Background: the law freed no one; it kept white men at home to oversee enslaved laborers.",
+  "C": "Background: the first Confederate conscription act allowed substitutes; the ban came only at the end of 1863.",
+  "D": "The Twenty Negro Law let one white man stay home for every twenty enslaved people, shielding large slaveholders while ordinary men were drafted.",
+  "general": "1. The Confederacy drafted first, and its draft reached ordinary white men.\n2. Then came the exemption: one white man home for every twenty enslaved people.\n3. Only large slaveholders held twenty enslaved people, so only they could use it.\n4. The poor saw the pattern plainly, and named it a rich man’s war.\nRemember: an exemption tells you whose interests a draft protects, and whose it does not."
+ }
+}

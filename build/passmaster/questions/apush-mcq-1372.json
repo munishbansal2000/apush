@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1372",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.6"
+ ],
+ "lesson": "apush-u5-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "4.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.6 Failure to compromise"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Presidential election results, November 4, 1856. Figures from the American Presidency Project (presidency.ucsb.edu/statistics/elections/1856); 296 electoral votes in all, 149 needed to win. Fillmore carried only Maryland.",
+  "text": "| Candidate | Party | Popular votes | Share | Electoral votes |\n| James Buchanan | Democratic | 1,836,072 | 45.3% | 174 |\n| John C. Frémont | Republican | 1,342,345 | 33.1% | 114 |\n| Millard Fillmore | American (Know-Nothing) | 873,053 | 21.5% | 8 |"
+ },
+ "stimulus_set": "election-1856-table",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Fillmore’s showing in the table best illustrates that in 1856",
+ "options": [
+  {
+   "key": "A",
+   "text": "the old Whig Party had returned to power.",
+   "misconception": "Background from the books: the Whigs had dissolved by 1856; Fillmore ran for the American Party, not the Whigs."
+  },
+  {
+   "key": "B",
+   "text": "the Democrats had lost their hold on the South.",
+   "misconception": "Buchanan won every slave state except Maryland; the Democrats held the South."
+  },
+  {
+   "key": "C",
+   "text": "nativism still drew a fifth of the vote."
+  },
+  {
+   "key": "D",
+   "text": "Frémont had carried the slave states of the South.",
+   "misconception": "Frémont won no slave state; his 114 electoral votes came from the free states."
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: the Whigs had dissolved by 1856; Fillmore ran for the American Party, not the Whigs.",
+  "B": "Buchanan won every slave state except Maryland; the Democrats held the South.",
+  "C": "Fillmore, the American Party’s candidate, still won 21.5 percent of the popular vote, about a fifth.",
+  "D": "Frémont won no slave state; his 114 electoral votes came from the free states.",
+  "general": "1. Find Fillmore’s row: 873,053 votes, 21.5 percent, 8 electoral votes.\n2. Note his party: the American Party, the Know-Nothings, running on nativism.\n3. See the point: even as slavery split the country, nativism still drew a fifth of the voters.\n4. Note the geography: Fillmore’s only electoral votes came from Maryland, the one slave state he carried.\nRemember: a third party’s vote share tells you what else voters cared about besides the main quarrel."
+ }
+}

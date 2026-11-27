@@ -1,0 +1,76 @@
+{
+  "answerKey": "A",
+  "difficulty": 2,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 7",
+        "section": "Topic 5.9 Government Policies During the Civil War"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 15",
+        "section": "Union Divided: The Civil War (1861–1865)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 9"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-1605",
+  "lesson": "apush-u5-l4",
+  "options": [
+    {
+      "key": "A",
+      "text": "Abolitionists who had long demanded an end to slavery"
+    },
+    {
+      "key": "B",
+      "misconception": "Confederate planters supported Lincoln's action.",
+      "text": "Confederate planters who supported secession"
+    },
+    {
+      "key": "C",
+      "misconception": "European governments supported the Confederacy because of it.",
+      "text": "European governments seeking to recognize the Confederacy"
+    },
+    {
+      "key": "D",
+      "misconception": "Northern Democrats who opposed action against slavery supported it.",
+      "text": "Northern Democrats who opposed any action against slavery"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Abolitionists had long demanded emancipation and welcomed the Proclamation, even while pressing for more. They praised the step and kept pushing for full abolition and equal rights.",
+    "B": "Confederate planters opposed emancipation; they did not support it.",
+    "C": "European governments did not rally to the Confederacy because of it.",
+    "D": "Many Northern Democrats who opposed action against slavery criticized it.",
+    "general": "1. Ask who had demanded this. Abolitionists had long called for an end to slavery.\n2. Ask how they would receive it. As a welcome step, even while pressing for more.\n3. Test the opposites. Planters, pro-Confederate Europeans, and anti-emancipation Democrats all opposed it.\n4. Match the supporters. The group that asked for emancipation is the group that welcomed it.\nRemember: support usually comes from the people who asked for the change."
+  },
+  "reasoning": "comparison",
+  "skills": [
+    "2.B"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from the Emancipation Proclamation (1863)",
+  "status": "final",
+  "stem": "Which of the following groups would have been most likely to support Lincoln’s action in 1863?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Abraham Lincoln, Emancipation Proclamation, January 1, 1863, public domain.",
+    "text": "“And by virtue of the power, and for the purpose aforesaid, I do order and declare that all persons held as slaves within said designated States, and parts of States, are, and henceforward shall be free.”"
+  },
+  "stimulus_set": "emancipation-proclamation-1863",
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "topics": [
+    "5.9"
+  ],
+  "type": "mcq",
+  "unit": 5
+}

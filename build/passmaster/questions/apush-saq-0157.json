@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0157",
+ "type": "saq",
+ "unit": 5,
+ "topics": [
+  "5.8"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "skills": [
+  "2.B",
+  "3.C"
+ ],
+ "themes": [
+  "WOR",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.8 Military Conflict in the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "saq_slot": 3,
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Figures from the U.S. War Department’s postwar casualty compilations, as commonly cited in Civil War histories: about 360,000 Union dead and about 258,000 Confederate dead, with disease the largest killer in both armies. Figures are rounded.",
+  "text": "Civil War military deaths, 1861–1865 (rounded figures).\n\n| Army | Battle deaths | Deaths from disease and other causes | Total deaths |\n| Union | about 110,000 | about 250,000 | about 360,000 |\n| Confederate | about 94,000 | about 164,000 | about 258,000 |"
+ },
+ "stimulus_set": null,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify and briefly explain ONE conclusion supported by the data in the table.",
+   "modelAnswer": "One conclusion is that disease killed far more soldiers than battle did, in both armies. About 250,000 Union soldiers died of disease and other causes against about 110,000 in battle, and the same pattern holds for the Confederacy. Camps and hospitals, not just battlefields, decided who lived.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying and explaining one conclusion from the table, such as disease killing more men than battle, or the Union’s larger total losses.",
+     "notEarned": "Restating a number from the table with no conclusion drawn does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE way the scale of wartime death affected American society after 1865.",
+   "modelAnswer": "The nation built national cemeteries, and communities raised monuments and marked Memorial Day for the fallen. Hundreds of thousands of widows and orphans faced life without husbands and fathers, and the South’s heavier losses in proportion to its population deepened its grief.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one effect of the death toll on postwar society, such as national cemeteries, Memorial Day, monuments, or the many widows and orphans.",
+     "notEarned": "Naming a postwar development with no link to the scale of death does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limitation of the table for evaluating why the Union won the war.",
+   "modelAnswer": "One limitation is that the table counts the dead but says nothing about why men died or who held the advantage. It cannot show the Union’s railroads, factories, and blockade, or the Confederacy’s defensive position, so it cannot explain a military outcome by itself.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limitation of the table for evaluating why the Union won, such as its silence on resources, strategy, or leadership.",
+     "notEarned": "Saying the numbers are rounded, with no explanation of what the table cannot show, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

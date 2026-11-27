@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-1239",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.2"
+ ],
+ "lesson": "apush-u5-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "B",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "GEO",
+  "NAT"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "A. Westward Migrations"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Table of United States territorial acquisitions; areas and prices from the historical record. See Barron's Premium 2027, Chapter 7.",
+  "text": "| Acquisition | Year | Area | Price |\n| Louisiana Purchase | 1803 | 827,987 sq mi | $15 million |\n| Florida | 1819 | 72,101 sq mi | $5 million in assumed claims |\n| Texas annexation | 1845 | 389,166 sq mi | Annexation |\n| Oregon Treaty | 1846 | 286,541 sq mi | Treaty |\n| Mexican Cession | 1848 | 529,189 sq mi | $15 million plus $3.25 million in assumed claims |\n| Gadsden Purchase | 1853 | 29,670 sq mi | $10 million |"
+ },
+ "stimulus_set": "acquisitions-table",
+ "source": "original; stimulus is a table of United States territorial acquisitions compiled from the historical record",
+ "stem": "According to the table, which acquisition was settled by treaty with no payment listed?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Louisiana Purchase",
+   "misconception": "Louisiana was bought from France for $15 million in 1803."
+  },
+  {
+   "key": "B",
+   "text": "The Oregon Territory"
+  },
+  {
+   "key": "C",
+   "text": "The Mexican Cession",
+   "misconception": "The cession cost $15 million plus $3.25 million in assumed claims."
+  },
+  {
+   "key": "D",
+   "text": "The Gadsden Purchase",
+   "misconception": "The Gadsden Purchase cost $10 million."
+  }
+ ],
+ "rationales": {
+  "A": "Louisiana was bought from France for $15 million, so it was a purchase, not a no-payment treaty.",
+  "B": "The Oregon row lists “Treaty” as the price — the boundary was settled by agreement with Britain, with no money paid.",
+  "C": "The Mexican Cession came by treaty, but the United States paid $15 million plus $3.25 million in assumed claims for it.",
+  "D": "The Gadsden Purchase cost $10 million, so it was a purchase.",
+  "general": "1. Scan the price column. Four rows show money, one shows “Annexation,” and one shows “Treaty.”\n2. Find the treaty row. Oregon lists “Treaty” with no price — the boundary was settled by agreement.\n3. Do not confuse it with Mexico. The Mexican Cession also came by treaty, but the United States paid $15 million for it.\nRemember: “by treaty” and “for free” are different things. The table's price column tells you which treaty cost money and which did not."
+ }
+}

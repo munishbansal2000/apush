@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-1448",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.8"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "2.B",
+  "4.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.8 Military Conflict in the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "Abraham Lincoln, Gettysburg Address (November 19, 1863)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Abraham Lincoln, Gettysburg Address, delivered November 19, 1863. Public domain; Bliss copy text. The two quoted passages appear in this order in the address; “. . .” marks omitted text. The figure shows the Bliss copy in Lincoln’s hand.",
+  "text": "“Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. . . . But, in a larger sense, we can not dedicate—we can not consecrate—we can not hallow—this ground. . . . It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us—that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion—that we here highly resolve that these dead shall not have died in vain. . . . that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth.”\n\n—Abraham Lincoln, Gettysburg Address, November 19, 1863 (Bliss copy)"
+ },
+ "stimulus_set": "gettysburg-address",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "Lincoln delivered the address four months after the Battle of Gettysburg, while dedicating a cemetery there. The setting best explains why Lincoln stresses",
+ "options": [
+  {
+   "key": "A",
+   "text": "that the living must finish the work the dead began."
+  },
+  {
+   "key": "B",
+   "text": "that the Union should negotiate a peace with the Confederacy.",
+   "misconception": "Lincoln calls for finishing the work, not for negotiating a peace."
+  },
+  {
+   "key": "C",
+   "text": "that the South should be punished for the war.",
+   "misconception": "Lincoln’s address looks forward to a new birth of freedom, not to punishment."
+  },
+  {
+   "key": "D",
+   "text": "that the war had been a mistake.",
+   "misconception": "Lincoln honors the dead as having given their lives for a cause, not for a mistake."
+  }
+ ],
+ "rationales": {
+  "A": "Lincoln speaks over the graves and says the living must take up the unfinished work of the dead.",
+  "B": "Lincoln calls for finishing the work, not for negotiating a peace.",
+  "C": "Lincoln’s address looks forward to a new birth of freedom, not to punishment.",
+  "D": "Lincoln honors the dead as having given their lives for a cause, not for a mistake.",
+  "general": "1. Lincoln stands in a new cemetery, dedicating ground where thousands lie buried.\n2. He says the living cannot dedicate that ground; only the dead have consecrated it.\n3. What the living can do is take up the work the dead left unfinished.\n4. Background from the books: the address was given at the dedication of the Gettysburg military cemetery.\nRemember: a cemetery dedication turns the speech toward the living’s duty."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1448",
+   "file": "u5/original-ctx-u5-07.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Gettysburg_Address_Bliss_copy.jpg",
+   "license": "Public domain (written by Abraham Lincoln, 1863)",
+   "caption": "The Bliss copy of the Gettysburg Address, in Lincoln’s hand.",
+   "alt": "A handwritten page shows the Gettysburg Address in Abraham Lincoln’s own handwriting, the Bliss copy."
+  }
+ ]
+}

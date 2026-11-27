@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-1427",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.8"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "2.B",
+  "4.B"
+ ],
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.8 Military Conflict in the Civil War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 15",
+    "section": "Union Divided: The Civil War (1861–1865)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": [
+   "J. B. Elliott, Scott’s Great Snake (1861)"
+  ]
+ },
+ "stimulus": {
+  "kind": "map",
+  "source_note": "J. B. Elliott, Scott’s Great Snake, entered according to Act of Congress in 1861 (Library of Congress, LOC 99447020). Public domain. Image from the shared pool.",
+  "text": "The cartoon map is titled “Scott’s Great Snake.” A giant snake coils around the Southern states, its head at the Mississippi River and its body wrapping the Atlantic and Gulf coasts. Small scenes fill the map: a train in Ohio, “Armed Neutrality” in Kentucky, and “Burning Massa Out” in Mississippi."
+ },
+ "stimulus_set": "scotts-great-snake",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The small scene labeled “Armed Neutrality” in Kentucky shows what about the war in 1861?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Some slave states had not yet picked sides."
+  },
+  {
+   "key": "B",
+   "text": "Kentucky had already joined the Confederacy.",
+   "misconception": "Kentucky stayed in the Union; the label says it was neutral, not Confederate."
+  },
+  {
+   "key": "C",
+   "text": "Kentucky supplied most of the Union’s soldiers.",
+   "misconception": "Background: Kentucky was a border state, not the Union’s main source of troops."
+  },
+  {
+   "key": "D",
+   "text": "The Union snake avoided Kentucky entirely.",
+   "misconception": "The snake coils around the South, and Kentucky sits on its edge, not outside the war."
+  }
+ ],
+ "rationales": {
+  "A": "Background: Kentucky was a border slave state that tried to stay neutral in 1861. The cartoon marks that fact.",
+  "B": "Kentucky stayed in the Union; the label says it was neutral, not Confederate.",
+  "C": "Background: Kentucky was a border state, not the Union’s main source of troops.",
+  "D": "The snake coils around the South, and Kentucky sits on its edge, not outside the war.",
+  "general": "1. Kentucky sits on the map between the Union states and the Confederacy.\n2. Its label, “Armed Neutrality,” means it was armed but had picked neither side.\n3. Background from the books: Kentucky was a slave state that did not secede, one of the border states Lincoln worked to keep.\n4. The cartoonist drew the border states as a live question in 1861, not a settled fact.\nRemember: border states were the war’s undecided middle, and both sides courted them."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-1427",
+   "file": "u5/5s24-ch15-mcq-06.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Scott%27s_great_snake._Entered_according_to_Act_of_Congress_in_the_year_1861_LOC_99447020.jpg",
+   "license": "Public domain (published 1861; Library of Congress)",
+   "caption": "J. B. Elliott, Scott’s Great Snake, 1861 cartoon map.",
+   "alt": "A cartoon map from 1861 shows a giant snake coiling around the Southern states, its head at the Mississippi River and its body along the coasts."
+  }
+ ]
+}

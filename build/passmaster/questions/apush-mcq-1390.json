@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-1390",
+ "type": "mcq",
+ "unit": 5,
+ "topics": [
+  "5.7"
+ ],
+ "lesson": "apush-u5-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "D",
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 7",
+    "section": "Topic 5.7 Election of 1860 and Secession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 14",
+    "section": "Union Expanded and Challenged (1835–1860)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 9",
+    "section": "Unit 5: Toward the Civil War and Reconstruction (1844–1877)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Election returns as published by the Library of Congress, Presidential Election of 1860: A Resource Guide (guides.loc.gov/presidential-election-1860), and the American Presidency Project (presidency.ucsb.edu/statistics/elections/1860). Popular-vote totals differ slightly between sources because of fusion tickets in New York and New Jersey.",
+  "text": "Results of the presidential election of November 6, 1860. The Electoral College had 303 votes; 152 were needed to win.\n\n| Candidate | Party | Popular votes | Share | Electoral votes |\n| Abraham Lincoln | Republican | 1,865,908 | 39.8% | 180 |\n| Stephen A. Douglas | Democratic | 1,380,202 | 29.5% | 12 |\n| John C. Breckinridge | Southern Democratic | 848,019 | 18.1% | 72 |\n| John Bell | Constitutional Union | 590,901 | 12.6% | 39 |"
+ },
+ "stimulus_set": "election-1860-results",
+ "source": "original; stimulus as noted in stimulus.source_note",
+ "stem": "The table best supports which conclusion about the election of 1860?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Lincoln won a majority of the popular vote.",
+   "misconception": "The table gives Lincoln 39.8 percent, which is a plurality, not a majority."
+  },
+  {
+   "key": "B",
+   "text": "Douglas won the second-most electoral votes.",
+   "misconception": "The table gives Douglas only 12 electoral votes; Breckinridge won 72."
+  },
+  {
+   "key": "C",
+   "text": "Breckinridge won more popular votes than Douglas.",
+   "misconception": "The table gives Breckinridge 848,019 votes to Douglas's 1,380,202."
+  },
+  {
+   "key": "D",
+   "text": "The Democratic vote was split between two candidates."
+  }
+ ],
+ "rationales": {
+  "A": "The table gives Lincoln 39.8 percent, which is a plurality, not a majority.",
+  "B": "The table gives Douglas only 12 electoral votes; Breckinridge won 72.",
+  "C": "The table gives Breckinridge 848,019 votes to Douglas's 1,380,202.",
+  "D": "Douglas and Breckinridge both ran under Democratic labels, and together they won 2,228,221 popular votes. That is more than Lincoln's 1,865,908, yet the split left Lincoln the winner.",
+  "general": "1. Add the two Democratic rows: Douglas 1,380,202 plus Breckinridge 848,019 is 2,228,221.\n2. Compare that with Lincoln's 1,865,908: the divided Democrats won more votes between them.\n3. Background: the party had split at Charleston and Baltimore into Northern and Southern wings, each with its own nominee.\n4. The split, not Lincoln's popularity, decided the presidency.\nRemember: when a party runs two candidates, add their votes before judging who the people wanted."
+ }
+}
