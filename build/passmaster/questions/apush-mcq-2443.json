@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-2443",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.1"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "NAT",
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.1 Contextualizing Period 8"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Origins of the Cold War (1945-1960)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Office of Civil and Defense Mobilization, 'Sabotage' poster, Alert America Convoy, 1952, public domain (U.S. government poster).",
+  "text": "A 1952 poster from the Office of Civil and Defense Mobilization, headed with the single word 'SABOTAGE,' shows a bridge collapsed into a river and a building exploding in a city behind it, with smoke rising over the skyline."
+ },
+ "stimulus_set": "civil-defense-sabotage",
+ "source": "original; stimulus image from the shared pool: 'Sabotage' civil defense poster, Office of Civil and Defense Mobilization, 1952, public domain (U.S. government poster)",
+ "stem": "Posters like this one were part of a larger set of Cold War programs that also included loyalty oaths for federal workers. Which of the following best explains what these programs had in common?",
+ "options": [
+  {
+   "key": "A",
+   "text": "They were all ordered by the Supreme Court to punish Americans who criticized the government.",
+   "misconception": "Loyalty programs came from the executive branch, not from Supreme Court orders."
+  },
+  {
+   "key": "B",
+   "text": "They treated the communist danger as a threat inside the United States as well as abroad."
+  },
+  {
+   "key": "C",
+   "text": "They were all funded by the Marshall Plan to rebuild American cities after the war.",
+   "misconception": "Marshall Plan money went to Europe's rebuilding; civil defense at home was a separate program."
+  },
+  {
+   "key": "D",
+   "text": "They ended the Cold War by convincing the Soviet Union to stop building atomic weapons.",
+   "misconception": "Posters and oaths were about fear at home; they did not disarm the Soviet Union."
+  }
+ ],
+ "rationales": {
+  "A": "The Supreme Court did not order these programs. Loyalty oaths came from the president's executive orders, and the poster came from a civil defense agency.",
+  "B": "The poster warns of saboteurs inside America, and loyalty oaths screened federal workers for communist ties. Background from the books: both treated communism as a danger at home as well as abroad, which is why the Cold War reached into daily life.",
+  "C": "The Marshall Plan sent aid to rebuild Western Europe, not to fund American civil defense posters or loyalty programs.",
+  "D": "These programs did not end the Cold War or stop Soviet weapons building. The arms race kept growing through the 1950s.",
+  "general": "1. Start with the poster. It warns of sabotage at home, by enemies who look like ordinary people.\n2. Add the loyalty oaths. Background from the books: federal workers had to swear they were not communists, so suspicion reached into offices and classrooms.\n3. Ask what links them. Both programs hunt for the danger inside America, not only in Moscow or on a battlefield.\n4. Name the pattern. The Cold War blurred the line between foreign policy and daily life, and fear of communism shaped both.\nRemember: when a danger is imagined at home, government programs reach into daily life."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2443",
+   "file": "u8/pr25e-ch12-q02.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Sabotage_poster%2C_Alert_America_Convoy%2C_1952%2C_by_the_Office_of_Civil_and_Defense_Mobilization%2C_from_the_Digital_Commonwealth_-_commonwealth_h128rr37w.jpg",
+   "license": "Public domain (U.S. government poster)",
+   "caption": "'Sabotage' civil defense poster, 1952",
+   "alt": "A 1952 civil defense poster headed SABOTAGE showing a collapsed bridge and an exploding building in a city"
+  }
+ ]
+}

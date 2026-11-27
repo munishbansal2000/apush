@@ -1,0 +1,165 @@
+{
+ "id": "apush-dbq-0085",
+ "type": "dbq",
+ "unit": 8,
+ "topics": [
+  "8.2"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.2 The Cold War from 1945 to 1980"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Origins of the Cold War (1945-1960)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Truman and the Beginning of the Cold War (1945-1953)"
+   }
+  ],
+  "primary_sources": [
+   "Winston Churchill, 'Sinews of Peace' address, March 5, 1946",
+   "George Kennan, Long Telegram, February 1946",
+   "Harry S. Truman, address to Congress, March 12, 1947",
+   "North Atlantic Treaty, April 4, 1949",
+   "John F. Kennedy, address on the Cuban Missile Crisis, October 22, 1962"
+  ]
+ },
+ "stimulus": {
+  "kind": "none",
+  "source_note": "DBQ: documents below are the stimulus."
+ },
+ "stimulus_set": null,
+ "source": "original; documents are paraphrases of public sources or compiled tables (see each document's sourcing note)",
+ "prompt": "Evaluate the extent to which the Cold War changed American foreign policy between 1945 and 1962.",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "March 1946",
+   "title": "Churchill warns of an 'iron curtain'",
+   "source": "Winston Churchill, 'Sinews of Peace' address, Fulton, Missouri, March 5, 1946. Paraphrased.",
+   "sourcing": "Churchill, the former British prime minister, speaking in the United States months after the war's end, warning Americans about Soviet control of Eastern Europe. Paraphrased from the address.",
+   "text": "Churchill warned that a line of Communist-controlled states now cut Europe in two, from the Baltic Sea in the north to the Adriatic Sea in the south, and that the free nations of the West should take notice of the danger."
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "February 1946",
+   "title": "Kennan's Long Telegram",
+   "source": "George Kennan, Long Telegram from Moscow, February 1946. Paraphrased.",
+   "sourcing": "Kennan, an American diplomat in Moscow, reporting to Washington on Soviet motives and what American policy should be. Paraphrased from the telegram.",
+   "text": "Kennan argued that the Soviet Union was driven by ideology and old Russian insecurity to press outward wherever it met no firm resistance, and he urged the United States to answer with firm and patient containment over many years."
+  },
+  {
+   "n": 3,
+   "kind": "text",
+   "date": "March 1947",
+   "title": "The Truman Doctrine",
+   "source": "Harry S. Truman, address to a joint session of Congress, March 12, 1947. Paraphrased.",
+   "sourcing": "Truman, speaking to Congress to request aid for Greece and Turkey, stating the wider rule behind the request. Paraphrased from the address.",
+   "text": "Truman said the United States must support free peoples who were resisting attempted subjugation by armed minorities or by outside pressures, and he asked Congress for aid to Greece and Turkey, warning that the fall of Greece would spread disorder through the Middle East."
+  },
+  {
+   "n": 4,
+   "kind": "table",
+   "date": "1948-1952",
+   "title": "Marshall Plan aid to Western Europe",
+   "source": "Aid figures: U.S. Department of State, Office of the Historian, Marshall Plan figures (approximate).",
+   "sourcing": "A table of Marshall Plan aid by country, drawn from State Department figures, showing where American rebuilding money went.",
+   "text": "| Country | Aid received (billions of dollars) |\n| United Kingdom | 3.3 |\n| France | 2.7 |\n| Italy | 1.5 |\n| West Germany | 1.4 |\n| Netherlands | 1.1 |\n| All other recipients | 3.3 |\n| Total | about 13 |"
+  },
+  {
+   "n": 5,
+   "kind": "text",
+   "date": "April 1949",
+   "title": "The North Atlantic Treaty, Article 5",
+   "source": "North Atlantic Treaty, signed April 4, 1949. Paraphrased.",
+   "sourcing": "The founding treaty of NATO, signed by the United States, Canada, and ten Western European nations, setting out the alliance's central promise. Paraphrased from the treaty.",
+   "text": "The treaty said that an armed attack against one member in Europe or North America would be treated as an attack against them all, and that each member would help the one attacked with such action as it judged necessary."
+  },
+  {
+   "n": 6,
+   "kind": "text",
+   "date": "April 1950",
+   "title": "NSC-68 calls for a military buildup",
+   "source": "National Security Council Paper 68 (NSC-68), April 1950. Paraphrased.",
+   "sourcing": "A secret government planning paper, drafted under Secretary of State Dean Acheson and Paul Nitze, urging a much larger American military effort. Paraphrased from the paper.",
+   "text": "The paper argued that the Soviet Union sought to expand its power everywhere and that the United States must assume leadership of the free world, raising taxes and spending far more on its military to meet the threat."
+  },
+  {
+   "n": 7,
+   "kind": "text",
+   "date": "October 1962",
+   "title": "Kennedy announces the quarantine of Cuba",
+   "source": "John F. Kennedy, address on the Cuban Missile Crisis, October 22, 1962. Paraphrased.",
+   "sourcing": "Kennedy, speaking on television to announce the discovery of Soviet missiles in Cuba and the American answer. Paraphrased from the address.",
+   "text": "Kennedy announced a naval quarantine of Cuba and demanded the removal of the Soviet missiles, warning that any missile launched from Cuba against the Western Hemisphere would be treated as an attack by the Soviet Union itself."
+  }
+ ],
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which the Cold War changed American foreign policy between 1945 and 1962, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of change does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as American isolationism before World War II, the wartime alliance with the Soviet Union, or the postwar position of the United States as a superpower.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (first point): earns the point for describing specific and relevant evidence from at least three documents to support an argument about change in American foreign policy.",
+   "notEarned": "Using fewer than three documents, or quoting documents without describing what they show, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support an argument, with the evidence accurately described and tied to the claim.",
+   "notEarned": "Using fewer than six documents, or listing documents without connecting them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence beyond the documents: earns the point for describing a specific and relevant example beyond the documents, such as the Berlin airlift of 1948-1949, the Korean War, or the creation of the Warsaw Pact in 1955.",
+   "notEarned": "A general statement with no specific example beyond the documents does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "3.B",
+   "criterion": "Sourcing: earns the point for explaining the relevance of a document's author, purpose, audience, or historical situation to the argument, for at least two documents.",
+   "notEarned": "Identifying an author without explaining why it matters, or sourcing only one document, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Complexity: earns the point for demonstrating a complex understanding, such as qualifying the extent of change, explaining why change was uneven, or connecting the early Cold War to the crises of the 1960s.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: The Cold War changed American foreign policy fundamentally between 1945 and 1962, turning a country that had avoided peacetime alliances into the leader of a permanent military alliance and the world's policeman against communism, though the change was driven by Soviet actions as much as by American choice.\nContext: Before World War II the United States avoided permanent alliances and kept a small peacetime military. The war left America the strongest power on earth, with the Soviet Union as the only rival, and the two allies broke apart over Eastern Europe.\nEvidence: Documents 1-3 show the new thinking, Churchill's warning, Kennan's containment, and Truman's Doctrine. Documents 4-6 show the new instruments, Marshall Plan aid, the NATO alliance, and the NSC-68 buildup. Document 7 shows the new reach, a president blockading Cuba and threatening war over missiles ninety miles away.\nBeyond the documents: The Berlin airlift of 1948-1949 showed the new policy working without war, and the Korean War showed its cost, with American forces fighting under the United Nations flag to hold a border.\nSourcing: Kennan writes as a diplomat in Moscow warning Washington, so his call for patience carries the weight of an eyewitness. Kennedy speaks on television to the nation and the world, so his quarantine is both a policy and a public warning.\nComplexity: The change was real but uneven. The United States built alliances and a huge military, yet it also practiced restraint, refusing to roll back communism in Hungary and settling the missile crisis by negotiation.",
+ "totalPoints": 7
+}

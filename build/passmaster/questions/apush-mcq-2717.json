@@ -1,0 +1,88 @@
+{
+  "id": "apush-mcq-2717",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.11"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "1.B",
+    "3.C"
+  ],
+  "themes": [
+    "SOC",
+    "MIG"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Political Activism in the Latino Community"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Expansion of Rights Movements"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Photograph: Cesar Chavez leading a picket at the Ford Motor Company plant, Pico Rivera, California (Los Angeles Times photograph, CC BY 4.0, via Wikimedia Commons); the photograph was viewed before writing. Account drawn from the grounding books and verified against the National Park Service and EBSCO accounts of the Delano strike: Filipino workers struck September 8, 1965; the National Farm Workers Association joined; growers signed contracts July 29, 1970.",
+    "text": "The photograph shows Cesar Chavez, at left in a striped shirt, leading a picket line in front of a Ford Motor Company plant. The marchers carry signs reading \"SUPPORT STRIKING DELANO FARM WORKERS\" and \"VIVA LA CAUSA BOYCOTT GRAPES.\"\n\nIn September 1965, Filipino grape workers in Delano, California, went on strike for higher wages, and Chavez's National Farm Workers Association joined them. The strikers could not shut down the harvest alone, so the union asked shoppers across the country to stop buying California table grapes. In July 1970, growers signed contracts with the union."
+  },
+  "stimulus_set": "chavez-delano-grape-boycott",
+  "stem": "Which of the following best explains how the Delano grape strike began?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Filipino grape workers struck first, and Chavez's union then joined them"
+    },
+    {
+      "key": "B",
+      "text": "Chavez called the strike after Congress passed a farm labor law",
+      "misconception": "Background: Congress passed no farm labor law before the strike; the California farm labor law came in 1975, ten years later."
+    },
+    {
+      "key": "C",
+      "text": "The federal government ordered growers to raise wages, and the growers refused",
+      "misconception": "The passage says workers struck for higher wages; it does not say the government ordered a raise."
+    },
+    {
+      "key": "D",
+      "text": "Growers locked out their workers to break an existing union contract",
+      "misconception": "The passage says the workers walked out to win a contract, not that growers locked them out of one."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "Background from the books: Filipino workers in the Agricultural Workers Organizing Committee struck first in September 1965, and Chavez's National Farm Workers Association joined them days later.",
+    "B": "Background: The strike began in 1965, and California's farm labor law was not passed until 1975.",
+    "C": "The passage says the workers struck for higher wages; no government wage order is mentioned.",
+    "D": "The workers had no contract to be locked out of; winning a contract was the strike's goal.",
+    "general": "1. The passage says Filipino grape workers in Delano went on strike for higher wages in September 1965.\n2. It says Chavez's National Farm Workers Association joined them.\n3. Background: The first strikers were Filipino workers led by Larry Itliong, and the Mexican American union joined rather than breaking the strike.\n4. Background: The two groups then merged their unions and carried the strike and boycott together.\nRemember: The Delano strike began as a Filipino-led walkout that became a joint Mexican American and Filipino movement."
+  },
+  "figures": [
+    {
+      "file": "u8/chavez-picket-ford-1970s.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:C%C3%A9sar_Ch%C3%A1vez%2C_Paul_Schrade_and_other_strikers_picketing_Ford_Motor_Co._plant_at_Pico_Rivera.jpg",
+      "license": "CC BY 4.0 (Los Angeles Times photograph, via Wikimedia Commons)",
+      "caption": "Cesar Chavez leading a picket line in front of a Ford Motor Company plant",
+      "alt": "Cesar Chavez, a man in a striped short-sleeve shirt, walks at the front of a picket line; behind him marchers carry signs reading SUPPORT STRIKING DELANO FARM WORKERS and VIVA LA CAUSA BOYCOTT GRAPES, with a Ford Motor Company building behind them",
+      "id": "fig-apush-mcq-2717"
+    }
+  ]
+}

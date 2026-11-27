@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2493",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.3"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.3 The Red Scare"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "The Second Red Scare"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "McCarthyism"
+   }
+  ],
+  "primary_sources": [
+   "Harry S. Truman, Executive Order 9835, March 1947"
+  ]
+ },
+ "source": "original; stimulus paraphrased from Executive Order 9835, March 1947",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of President Harry S. Truman, Executive Order 9835, March 1947. Paraphrased, not quoted, because the source is after 1929.",
+  "text": "In March 1947, President Harry S. Truman issued Executive Order 9835, creating a loyalty program for federal employees. The order barred communists and fascists from federal jobs and set up boards to investigate the loyalty of millions of government workers. Employees could lose their jobs if investigators found disloyalty or associations that made them security risks."
+ },
+ "stimulus_set": "loyalty-program-1947",
+ "stem": "The program also dismissed some gay employees as security risks because the government argued that",
+ "options": [
+  {
+   "key": "A",
+   "text": "They had joined the Communist Party in large numbers.",
+   "misconception": "The dismissals were about private life, not party membership. The employees were removed as risks, not as party members."
+  },
+  {
+   "key": "B",
+   "text": "Their private lives left them open to blackmail."
+  },
+  {
+   "key": "C",
+   "text": "They refused to take the loyalty oath.",
+   "misconception": "Background from the books: the oath concerned Communist Party membership, not private life. Gay employees were dismissed as risks, not for refusing an oath."
+  },
+  {
+   "key": "D",
+   "text": "They worked in the movie industry.",
+   "misconception": "Background from the books: the movie industry faced HUAC, not the loyalty program. The program investigated federal employees, whatever their private lives."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "The dismissals were about private life, not party membership. Background from the books: some removed workers were homosexuals, seen as security risks, not as party members.",
+  "B": "Background from the books: gay employees were seen as security risks because their private lives could expose them to blackmail. The government treated a private secret as a lever an enemy could pull.",
+  "C": "Background from the books: the oath concerned Communist Party membership, not private life. Gay employees were dismissed as risks, not for refusing an oath.",
+  "D": "Background from the books: the movie industry faced HUAC, not the loyalty program. The program investigated federal employees, whatever their private lives.",
+  "general": "1. A security risk is a person an enemy could pressure into giving up secrets.\n2. Background from the books: gay employees were seen as security risks because their private lives could expose them to blackmail.\n3. The government therefore treated private life itself as a risk, even without any evidence of disloyalty.\nRemember: A security risk is about what an enemy could use against a person, not only about what the person believes."
+ }
+}

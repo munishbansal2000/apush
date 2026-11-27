@@ -1,0 +1,93 @@
+{
+  "id": "apush-mcq-2706",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.10"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A",
+    "1.B"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.10 The African-American Civil Rights Movement (1960s)"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Civil Rights Movement in the 1960s: From Integration to Black Power"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Selma to Montgomery March (1965)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus photograph viewed before writing; the quoted words are from Johnson's March 15, 1965 address to Congress (Public Papers of the Presidents)",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Photograph: President Lyndon Johnson signing the Voting Rights Act, August 6, 1965, public domain (U.S. federal government photograph via Wikimedia Commons). Account drawn from the grounding books (Barron's Ch. 10, Topic 8.10, \"The Selma to Montgomery March (1965)\" and \"The Voting Rights Act (1965)\"; 5 Steps Ch. 27; Princeton Ch. 12). The March 7 and March 15, 1965 dates are in the books; the registration table is from the U.S. Commission on Civil Rights, Political Participation (1968), as summarized in the EBSCO research starter on the act.",
+    "text": "The photograph shows President Lyndon Johnson signing the Voting Rights Act on August 6, 1965, with Martin Luther King Jr. standing behind him. The act followed the Selma campaign for voting rights. On March 7, 1965, marchers crossing the Edmund Pettus Bridge in Selma, Alabama, were attacked by state and county police with clubs and tear gas in an event known as Bloody Sunday; television carried the attack across the country. On March 15 Johnson addressed Congress in support of voting rights, saying, \"We shall overcome.\" The march from Selma to Montgomery was completed later that month. The Voting Rights Act outlawed literacy tests and authorized federal examiners to register voters in places where few Black citizens were registered. It also required places with a history of discrimination to get federal approval before changing their voting laws.\n\nAfrican American voter registration, percent of voting-age population (U.S. Commission on Civil Rights, 1968):\n\n| State | 1964 | 1967 |\n| Mississippi | 6.7% | 59.8% |\n| Alabama | 23.0% | 51.6% |\n| Georgia | 27.4% | 52.6% |\n| Louisiana | 31.6% | 58.9% |\n| South Carolina | 37.3% | 51.2% |\n| Virginia | 38.3% | 55.6% |"
+  },
+  "stimulus_set": "selma-voting-rights-1965",
+  "stem": "President Johnson's use of the words \"We shall overcome\" in his March 15, 1965 address most directly shows which of the following?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Johnson opposed the Selma campaign and wanted the marchers to stop",
+      "misconception": "Johnson addressed Congress in support of voting rights, not against the campaign."
+    },
+    {
+      "key": "B",
+      "text": "Johnson wrote the movement's songs and led its marches himself",
+      "misconception": "Johnson was the president speaking to Congress, not a marcher or a songwriter."
+    },
+    {
+      "key": "C",
+      "text": "Johnson believed the movement had already won everything it sought",
+      "misconception": "Johnson was asking Congress for a new voting rights law, so the fight was not over."
+    },
+    {
+      "key": "D",
+      "text": "Johnson publicly adopted the movement's own language and cause"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "The passage says Johnson addressed Congress in support of voting rights.",
+    "B": "Johnson spoke to Congress as president; he did not lead the marches.",
+    "C": "Johnson was asking for a voting rights law, which shows the work was unfinished.",
+    "D": "Background: \"We shall overcome\" was the movement's anthem, and the passage says Johnson used those words in an address supporting voting rights.",
+    "general": "1. Johnson addresses Congress eight days after Bloody Sunday, on March 15, 1965.\n2. He speaks in support of voting rights and promises a voting rights bill.\n3. Background: He uses the words \"We shall overcome,\" the movement's own anthem.\n4. A president borrowing the movement's words puts the White House publicly behind its cause.\nRemember: When a president quotes a movement, the quotation is the endorsement."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-2706",
+      "file": "u8/pr25e-test2-q54.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/81/LyndonJohnson_signs_Voting_Rights_Act_of_1965.jpg",
+      "license": "Public domain (work of the U.S. federal government, PD-USGov)",
+      "caption": "President Johnson signing the Voting Rights Act, August 6, 1965",
+      "alt": "President Lyndon Johnson seated at a desk signing a document, with Martin Luther King Jr. standing behind him among a crowd of onlookers in a formal room"
+    }
+  ]
+}

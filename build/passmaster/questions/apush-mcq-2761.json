@@ -1,0 +1,74 @@
+{
+  "id": "apush-mcq-2761",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.12"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "3.B"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Draft"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.12 Youth Culture of the 1960s"
+      }
+    ],
+    "primary_sources": [
+      "Twenty-sixth Amendment to the U.S. Constitution, ratified July 1, 1971"
+    ]
+  },
+  "source": "original; stimulus quotes the Twenty-sixth Amendment (public domain) with an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Twenty-sixth Amendment, Section 1 (public domain). Dates and ratification speed verified against Britannica, Smithsonian Magazine, and the National Archives.",
+    "text": "Section 1 of the Twenty-sixth Amendment to the Constitution, ratified July 1, 1971: ‘The right of citizens of the United States, who are eighteen years of age or older, to vote shall not be denied or abridged by the United States or by any State on account of age.’\n\nIn most states, the voting age had been 21, while young men could be drafted into the armed forces at 18. During the Vietnam War, the argument spread that anyone old enough to fight was old enough to vote. Congress proposed the amendment on March 23, 1971, and the states ratified it in about three months, the fastest ratification of any amendment."
+  },
+  "stimulus_set": "youth-vote-26th-amendment",
+  "stem": "The voting age was lowered to 18 mainly because",
+  "options": [
+    {
+      "key": "A",
+      "text": "young people had stopped voting in large numbers",
+      "misconception": "The passage never mentions youth turnout. The argument was about the draft."
+    },
+    {
+      "key": "B",
+      "text": "the Supreme Court ordered all fifty states to lower the voting age",
+      "misconception": "Congress proposed the amendment and the states ratified it; the Court did not order it."
+    },
+    {
+      "key": "C",
+      "text": "political parties wanted fewer voters",
+      "misconception": "The amendment added voters; it did not take voters away."
+    },
+    {
+      "key": "D",
+      "text": "young men could be drafted at 18 but could not vote"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "The passage says nothing about young people not voting. The argument was about the draft.",
+    "B": "Background: The Supreme Court did not order the change. Congress proposed an amendment and the states ratified it.",
+    "C": "The passage says nothing about parties wanting fewer voters. The amendment added voters.",
+    "D": "The passage says the voting age had been 21 while young men could be drafted at 18, and the argument spread that anyone old enough to fight was old enough to vote.",
+    "general": "1. In most states, you could vote at 21 but be drafted at 18.\n2. The Vietnam War made that gap hard to defend: the drafted were fighting a war they had no vote on.\n3. The argument was fairness: old enough to fight meant old enough to vote.\n4. An amendment, not a court order, closed the gap.\nRemember: A fairness argument works when the two ages in it cannot both be defended."
+  }
+}

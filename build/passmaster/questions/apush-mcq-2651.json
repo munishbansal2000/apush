@@ -1,0 +1,81 @@
+{
+ "id": "apush-mcq-2651",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.8"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "6.D"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.8 The Vietnam War"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "The Nature of the Vietnam War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Vietnam War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "American Involvement in Vietnam, World War II\u20131963"
+   }
+  ]
+ },
+ "source": "original; stimulus paraphrased from the grounding books' account of the debate over the war's nature",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of the debate over the nature of the Vietnam War, from the grounding books.",
+  "text": "Paraphrase of the debate over the nature of the Vietnam War. Historians disagree about what the Vietnam War was. One view sees it as a civil war: Vietnamese peasants and Vietcong guerrillas rebelling against an oppressive government in Saigon. The other view sees it as a Cold War struggle: North Vietnam, backed by China, using force to impose Communist rule on the South."
+ },
+ "stimulus_set": "war-powers-legacy",
+ "stem": "The two views in the passage lead to different judgments about American intervention. Accepting the civil-war view would most directly support which judgment?",
+ "options": [
+  {
+   "key": "A",
+   "text": "American intervention was clearly right, because the war was a Cold War struggle against China",
+   "misconception": "That judgment follows the Cold War view, not the civil-war view."
+  },
+  {
+   "key": "B",
+   "text": "American intervention was clearly right, because Saigon's government was fair and popular",
+   "misconception": "The civil-war view calls Saigon's government oppressive, so it does not support that judgment."
+  },
+  {
+   "key": "C",
+   "text": "American intervention was misguided, because it took sides in a Vietnamese struggle against an oppressive government"
+  },
+  {
+   "key": "D",
+   "text": "American intervention was clearly right, because the Vietcong had no support among peasants",
+   "misconception": "The civil-war view says the Vietcong had peasant support, so it does not support that judgment."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "That judgment follows the Cold War view in the passage, not the civil-war view.",
+  "B": "The civil-war view calls Saigon's government oppressive, so it does not support calling it fair and popular.",
+  "C": "Background: on the civil-war view, the war was Vietnamese peasants and guerrillas rebelling against an oppressive Saigon government, so American intervention backed the wrong side.",
+  "D": "The civil-war view says the Vietcong had peasant support, so it does not support claiming they had none.",
+  "general": "1. The passage gives two views of the same war: a civil war at home, or a Cold War struggle imposed from outside.\n2. On the civil-war view, the fighters are Vietnamese peasants and guerrillas rebelling against an oppressive government in Saigon.\n3. If that view is right, the United States stepped into a Vietnamese struggle and backed the oppressive side.\n4. The same facts therefore judge the intervention differently depending on which view a historian accepts.\nRemember: What a war was decides whether stepping in was wise."
+ }
+}

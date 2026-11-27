@@ -1,0 +1,81 @@
+{
+ "id": "apush-mcq-2635",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.8"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.8 The Vietnam War"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "The Escalation of the Vietnam War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Vietnam War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "American Involvement in Vietnam, World War II\u20131963"
+   }
+  ]
+ },
+ "source": "original; stimulus paraphrased from the grounding books' account of the fighting in South Vietnam",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of the fighting in South Vietnam, from the grounding books.",
+  "text": "Paraphrase of the fighting in South Vietnam. Vietcong guerrillas and North Vietnamese troops fought from jungles and villages, often blending in with civilians. There were no front lines and few cities to capture. American commanders measured progress by counting enemy dead and by clearing villages, a policy called pacification."
+ },
+ "stimulus_set": "guerrilla-war-my-lai",
+ "stem": "Why did the usual measures of victory in war, such as capturing territory, fail to show whether the United States was winning in Vietnam?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Guerrillas fought without front lines, so taking ground did not beat them"
+  },
+  {
+   "key": "B",
+   "text": "American commanders refused to keep any records of the fighting",
+   "misconception": "American commanders kept careful records, including body counts; the problem was what the records meant."
+  },
+  {
+   "key": "C",
+   "text": "The United States never sent any troops to Vietnam at all",
+   "misconception": "Background: the United States sent more than half a million troops to Vietnam at the peak."
+  },
+  {
+   "key": "D",
+   "text": "North Vietnam agreed to a cease-fire in 1965 and stopped fighting",
+   "misconception": "Background: North Vietnam kept fighting until 1975; no 1965 cease-fire ended the war."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background: guerrillas fought from jungles and villages with no front lines, so ground taken did not stay taken.",
+  "B": "Background: commanders measured progress by counting enemy dead, so they kept records; the records were a poor measure of victory.",
+  "C": "Background: American troop levels peaked above 500,000, so the United States sent a large army.",
+  "D": "Background: the fighting continued until 1975, so no 1965 cease-fire ended it.",
+  "general": "1. The passage states the key fact first: there were no front lines and few cities to capture.\n2. Background: the enemy fought as guerrillas, blending in with civilians in jungles and villages.\n3. In a war like that, taking a village does not beat the enemy, because the enemy slips away and returns.\n4. That is why commanders fell back on counting enemy dead, a measure that could rise while the war was still being lost.\nRemember: When there is no front line, ground taken is not victory."
+ }
+}

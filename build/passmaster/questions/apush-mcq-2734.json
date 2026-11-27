@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-2734",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.11"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "1.B",
+    "3.A"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Gay Liberation Movement"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Expansion of Rights Movements"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Original secondary account drawn from the grounding books and verified against Washington University Becker Library and EBSCO accounts: police raided the Stonewall Inn in the early morning of June 28, 1969; patrons resisted and crowds gathered for several nights; the Gay Liberation Front formed in the weeks after; the American Psychiatric Association removed homosexuality from its list of mental disorders on December 15, 1973.",
+    "text": "In the early morning of June 28, 1969, New York City police raided the Stonewall Inn, a bar in Greenwich Village that served gay men and lesbians. Raids on such bars were common, but this time the patrons fought back, and crowds gathered outside for several nights.\n\nIn the weeks that followed, activists in New York formed the Gay Liberation Front. The new group protested press coverage of gay people, supported gay prisoners, and challenged the American Psychiatric Association's classification of homosexuality as a mental disorder."
+  },
+  "stimulus_set": "stonewall-gay-liberation",
+  "stem": "According to the passage, what happened at the Stonewall Inn in June 1969?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Police raided the bar, and the patrons fought back instead of leaving quietly"
+    },
+    {
+      "key": "B",
+      "text": "The city council voted to close all gay bars in New York",
+      "misconception": "The passage describes a police raid and resistance, not a city council vote."
+    },
+    {
+      "key": "C",
+      "text": "Congress passed a law protecting gay rights",
+      "misconception": "The passage describes a raid and a protest, not a law passed by Congress."
+    },
+    {
+      "key": "D",
+      "text": "The bar's owners agreed to stop serving gay customers",
+      "misconception": "The passage says the patrons fought back, not that the owners gave in."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "The passage says police raided the Stonewall Inn, the patrons fought back, and crowds gathered outside for several nights.",
+    "B": "The passage describes a police raid and resistance, not a city council vote.",
+    "C": "The passage describes a raid and a protest, not a law passed by Congress.",
+    "D": "The passage says the patrons fought back, not that the owners gave in.",
+    "general": "1. Police raided the Stonewall Inn in the early morning of June 28, 1969.\n2. The passage says raids on such bars were common.\n3. This time, though, the patrons fought back, and crowds gathered outside for several nights.\n4. That resistance, not the raid itself, is what made Stonewall a turning point.\nRemember: Stonewall mattered because people refused a routine humiliation, not because the raid was new."
+  }
+}

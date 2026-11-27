@@ -1,0 +1,106 @@
+{
+  "id": "apush-saq-0257",
+  "type": "saq",
+  "unit": 8,
+  "topics": [
+    "8.10"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 3,
+  "skills": [
+    "1.A",
+    "3.A"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.10 The African-American Civil Rights Movement (1960s)"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Civil Rights Movement in the 1960s: From Integration to Black Power"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The March on Washington (1963)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus photograph viewed before writing",
+  "saq_slot": 3,
+  "totalPoints": 3,
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Photograph: March on Washington, August 28, 1963, public domain (per shared-pool catalog entry saq-set-18-q3).",
+    "text": "The photograph shows marchers at the March on Washington on August 28, 1963, walking arm in arm down a street. The marchers carry signs that read \"We march for jobs for all now,\" \"We demand voting rights now,\" \"End segregated rules in public schools,\" and \"We demand equal rights now.\" A man in the foreground, seen from behind with his arms spread wide, faces the marchers."
+  },
+  "stimulus_set": null,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify one demand shown on the signs in the photograph.",
+      "modelAnswer": "One sign reads \"We demand voting rights now,\" so voting rights is one demand the marchers show. Another sign reads \"We march for jobs for all now,\" so jobs is another demand visible in the photograph.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for identifying one demand visible on a sign, such as jobs for all, voting rights, an end to segregated rules in public schools, or equal rights.",
+          "notEarned": "Naming a demand that no sign in the photograph shows does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain one reason civil rights leaders held the march in Washington in 1963.",
+      "modelAnswer": "The leaders marched on the capital to press the president and Congress for a civil rights bill, which Kennedy had sent to Congress that summer. Marching in Washington put their demands directly before the federal government, and the Lincoln Memorial setting tied their cause to emancipation.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for explaining one reason for the march, such as pressing Congress and the president for civil rights legislation, showing the size and discipline of the movement, or linking the cause to Lincoln and emancipation.",
+          "notEarned": "Restating that the march happened, without a reason it was held, does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Explain one effect of the March on Washington on the civil rights movement.",
+      "modelAnswer": "The march showed the country a peaceful mass movement of more than 200,000 people, and it helped build support for the civil rights bill that became law in 1964. King's \"I Have a Dream\" speech at the Lincoln Memorial gave the movement its most famous statement of its goals.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for explaining one effect of the march, such as building support for the Civil Rights Act of 1964, showing the movement's size and discipline to the country, or giving the movement its best-known speech.",
+          "notEarned": "Saying only that the march was large, without an effect on the movement, does not earn the point."
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "fig-apush-saq-0257",
+      "file": "u8/saq-set-18-q3.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/March_on_washington_Aug_28_1963.jpg",
+      "license": "Public domain (U.S. Information Agency photograph, Record Group 306, NARA NAID 542002 — work of the U.S. federal government, PD-USGov)",
+      "caption": "Marchers at the March on Washington, August 28, 1963",
+      "alt": "A large crowd of marchers walking arm in arm down a street carrying signs reading We march for jobs for all now, We demand voting rights now, End segregated rules in public schools, and We demand equal rights now"
+    }
+  ]
+}

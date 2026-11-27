@@ -1,0 +1,85 @@
+{
+ "id": "apush-mcq-2507",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.3"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.3 The Red Scare"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Joseph McCarthy and McCarthyism"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "McCarthyism"
+   }
+  ]
+ },
+ "source": "original; stimulus image from the shared pool: Army-McCarthy hearings photograph, 1954, public domain",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph: Army-McCarthy hearings, 1954, public domain (PD-USGov-Congress), via Wikimedia Commons.",
+  "text": "The photograph, taken during the Army-McCarthy hearings in 1954, shows Senator Joseph McCarthy standing and pointing at a large map of the United States headed 'COMMUNIST PARTY.' The Army's lawyer, Joseph Welch, sits at the left with his hand to his forehead, while other men watch from behind the table."
+ },
+ "stimulus_set": "welch-mccarthy-hearings-1954",
+ "stem": "The photograph shows McCarthy",
+ "options": [
+  {
+   "key": "A",
+   "text": "Signing a bill into law at the White House.",
+   "misconception": "McCarthy was a senator, not a president, and he could not sign bills. The photograph shows him at a hearing table with a map, not at a signing desk."
+  },
+  {
+   "key": "B",
+   "text": "Testifying before the Supreme Court.",
+   "misconception": "The hearings were held by a Senate committee, not the Supreme Court. The map and the microphones mark a congressional hearing room."
+  },
+  {
+   "key": "C",
+   "text": "Pointing at a map headed 'COMMUNIST PARTY' during the hearings."
+  },
+  {
+   "key": "D",
+   "text": "Debating President Eisenhower on television.",
+   "misconception": "Eisenhower is not in the photograph. The man seated at left is Joseph Welch, the Army's lawyer, not the president."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "McCarthy was a senator, not a president, and he could not sign bills. The photograph shows him at a hearing table with a map, not at a signing desk.",
+  "B": "The hearings were held by a Senate committee, not the Supreme Court. The map and the microphones mark a congressional hearing room.",
+  "C": "The photograph shows McCarthy standing with a pointer at a map of the United States headed 'COMMUNIST PARTY,' during the 1954 hearings on the Army.",
+  "D": "Eisenhower is not in the photograph. The man seated at left is Joseph Welch, the Army's lawyer, not the president.",
+  "general": "1. Read what is visible: a standing man with a pointer, a large map, microphones on a table.\n2. The map is headed COMMUNIST PARTY, and the microphones and the crowded table mark a hearing room.\n3. The photograph therefore shows McCarthy presenting his case about communists during the hearings.\nRemember: Describe what the image shows before deciding what it means."
+ },
+ "figures": [
+  {
+   "file": "u8/5s24-ch25-mcq-01.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Welch-McCarthy-Hearings.jpg",
+   "license": "Public domain (U.S. Congress work, PD-USGov-Congress)",
+   "caption": "Senator Joseph McCarthy points at a map headed COMMUNIST PARTY during the 1954 Army-McCarthy hearings.",
+   "alt": "A black-and-white photograph of Senator Joseph McCarthy standing and pointing at a large map of the United States headed COMMUNIST PARTY, while Joseph Welch sits at the left with his hand to his forehead and other men watch from behind a table with microphones.",
+   "id": "fig-apush-mcq-2507"
+  }
+ ]
+}

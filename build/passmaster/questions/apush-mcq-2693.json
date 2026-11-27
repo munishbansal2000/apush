@@ -1,0 +1,93 @@
+{
+  "id": "apush-mcq-2693",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.10"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "1.A",
+    "2.B"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.10 The African-American Civil Rights Movement (1960s)"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Civil Rights Movement in the 1960s: From Integration to Black Power"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The March on Washington (1963)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus photograph viewed before writing",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Photograph: Martin Luther King Jr. and Mathew Ahmann at the March on Washington, August 28, 1963, public domain (U.S. federal government photograph, National Archives). Account drawn from the grounding books (Barron's Ch. 10, Topic 8.10, \"The March on Washington (1963)\"; 5 Steps Ch. 27; Princeton Ch. 12). The Lewis draft quotation is in Barron's; the jobs-and-freedom demands are in the march's own name, visible on the button.",
+    "text": "The photograph shows Martin Luther King Jr. at the March on Washington on August 28, 1963, wearing a button that reads \"March on Washington for Jobs and Freedom.\" Behind him a sign reads \"NOW.\" More than 200,000 people gathered in Washington that day to march, sing, and hear speeches, including King's \"I Have a Dream\" speech at the Lincoln Memorial. The march had been organized to demand both jobs and freedom: an end to segregation and a federal jobs program and a higher minimum wage. John Lewis, the young leader of the Student Nonviolent Coordinating Committee (SNCC), was told by older organizers to tone down his speech before he gave it. His original draft had urged the movement to march \"through the heart of Dixie the way Sherman did . . . and burn Jim Crow to the ground.\""
+  },
+  "stimulus_set": "march-on-washington-1963",
+  "stem": "What do the button and the sign in the photograph show the marchers were demanding?",
+  "options": [
+    {
+      "key": "A",
+      "text": "An end to American involvement in the Vietnam War",
+      "misconception": "The button reads jobs and freedom, and the sign reads NOW; Vietnam is not mentioned."
+    },
+    {
+      "key": "B",
+      "text": "Jobs and freedom, including an end to segregation and better work"
+    },
+    {
+      "key": "C",
+      "text": "A new constitutional amendment giving women the vote",
+      "misconception": "Background: Women won the vote with the Nineteenth Amendment in 1920, and the button says jobs and freedom."
+    },
+    {
+      "key": "D",
+      "text": "Statehood for Washington, D.C., and the right to vote there",
+      "misconception": "The marchers came to Washington to demand jobs and freedom, not D.C. statehood."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The button and sign say jobs and freedom, not anything about Vietnam.",
+    "B": "The button reads \"March on Washington for Jobs and Freedom,\" and the passage names the march's demands: an end to segregation, a jobs program, and a higher minimum wage.",
+    "C": "Background: Women won the vote with the Nineteenth Amendment in 1920, and the button in the photograph says jobs and freedom.",
+    "D": "The marchers gathered in Washington to press national demands, not to seek statehood for the city.",
+    "general": "1. King's button reads \"March on Washington for Jobs and Freedom.\"\n2. The sign behind him reads \"NOW.\"\n3. The passage names the demands: an end to segregation, a jobs program, and a higher minimum wage.\n4. The march pressed for economic and civil rights together, not one alone.\nRemember: Read what the signs say before guessing what a march wanted."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-2693",
+      "file": "u8/barrons-2027-pt2-12.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Civil_Rights_March_on_Washington%2C_D.C._%28Dr._Martin_Luther_King%2C_Jr._and_Mathew_Ahmann_in_a_crowd.%29_-_NARA_-_542015_-_Restoration.jpg",
+      "license": "Public domain (work of the U.S. federal government, PD-USGov)",
+      "caption": "Martin Luther King Jr. at the March on Washington, August 28, 1963",
+      "alt": "Martin Luther King Jr. in the foreground wearing a round button that reads March on Washington for Jobs and Freedom, with Mathew Ahmann at right and a sign reading NOW behind them"
+    }
+  ]
+}

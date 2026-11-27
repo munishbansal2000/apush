@@ -1,0 +1,81 @@
+{
+ "id": "apush-mcq-2543",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.4"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Stagflation"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ]
+ },
+ "source": "original; stimulus is a public-domain photograph viewed before writing (see figures)",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph: gasoline line, 1973. EPA DOCUMERICA photograph (NARA 555459), public domain (U.S. government photograph), via Wikimedia Commons.",
+  "text": "The photograph, taken during the gasoline shortage of 1973-1974, shows cars lined up at a Shell station. The car nearest the camera carries a red sign reading 'SORRY! TEMPORARILY OUT OF GAS.' A price board lists Shell Regular, Super Regular, and Super Shell."
+ },
+ "stimulus_set": "gas-lines-stagflation-1973",
+ "stem": "In 1977, President Carter signed the law creating the Department of Energy and urged Americans to conserve energy. Those steps best show which conclusion about the American economy in the 1970s?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The United States produced all the oil it needed at home",
+   "misconception": "Background from the books: much American oil came from the volatile Middle East, and the OPEC cutoff exposed that dependence."
+  },
+  {
+   "key": "B",
+   "text": "Energy had become a minor issue with no effect on prices",
+   "misconception": "Background from the books: fuel prices rose sharply through the 1970s, and oil costs pushed up the price of almost everything."
+  },
+  {
+   "key": "C",
+   "text": "Americans quickly adopted conservation and ended the energy crisis",
+   "misconception": "Background from the books: Americans resisted conservation measures, and the crisis continued into Carter's presidency."
+  },
+  {
+   "key": "D",
+   "text": "Dependence on foreign oil had become a central economic weakness"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Background from the books: much American oil came from the volatile Middle East, and the OPEC cutoff exposed that dependence.",
+  "B": "Background from the books: fuel prices rose sharply through the 1970s, and oil costs pushed up the price of almost everything.",
+  "C": "Background from the books: Americans resisted conservation measures, and the crisis continued into Carter's presidency.",
+  "D": "Background from the books: Carter signed the law creating a Cabinet department for energy and urged conservation because oil prices and foreign supply now drove the economy's troubles.",
+  "general": "1. A new Cabinet department is a big answer, so the problem must be big too.\n2. Background from the books: the OPEC cutoff raised oil prices, fuel prices rose through the 1970s, and Carter pushed Congress to create the Department of Energy to oversee the response.\n3. A government that builds a department and begs for conservation is naming a central weakness, not a minor issue.\nRemember: New institutions mark the problems a nation can no longer ignore."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2543",
+   "file": "u8/barrons-2027-pt2-40.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/AFTER_HOURS_IN_A_GASOLINE_LINE_A_DRIVER_COULD_ARRIVE_AT_THE_PUMPS_AND_FIND_OUT_THAT_THE_CAR_AHEAD_OF_HIM_WAS_THE_LAST..._-_NARA_-_555459.jpg",
+   "license": "Public domain (U.S. government photograph)",
+   "caption": "Cars wait in line at a gasoline station during the 1973-1974 shortage",
+   "alt": "Cars lined up at a Shell gasoline station during the 1973-1974 shortage, with a red sign on the nearest car reading sorry, temporarily out of gas"
+  }
+ ]
+}

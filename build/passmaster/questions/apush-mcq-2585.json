@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-2585",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.6"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.6 Early Steps in the Civil Rights Movement (1940s and 1950s)"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 26",
+    "section": "Prosperity and Anxiety: The 1950s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ],
+  "primary_sources": [
+   "Browder v. Gayle, 142 F. Supp. 707 (1956), affirmed 1956"
+  ]
+ },
+ "source": "original; stimulus Photograph: Rosa Parks being fingerprinted by Deputy Sheriff D. H. Lackey, February 22, 1956, Associated Press, public domain via Wikimedia Commons.",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph: Rosa Parks being fingerprinted by Deputy Sheriff D. H. Lackey, February 22, 1956, Associated Press, public domain via Wikimedia Commons.",
+  "text": "The photograph, taken on February 22, 1956, shows Rosa Parks being fingerprinted by Deputy Sheriff D. H. Lackey in Montgomery, Alabama, during the bus boycott. Parks, secretary of the Montgomery branch of the NAACP, had been arrested on December 1, 1955, for refusing to give up her bus seat to a white passenger. Black residents of Montgomery then refused to ride the city buses, walking or using carpools instead. The boycott lasted 381 days, ending on December 20, 1956, after the Supreme Court affirmed that bus segregation was unconstitutional."
+ },
+ "stimulus_set": "montgomery-bus-boycott-1955",
+ "stem": "Parks was chosen as the test case for the boycott mainly because of which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "She was a respected NAACP organizer with a steady reputation"
+  },
+  {
+   "key": "B",
+   "text": "She was the first person ever arrested on a Montgomery bus",
+   "misconception": "Background from the books: Claudette Colvin and others had been arrested on Montgomery buses before Parks."
+  },
+  {
+   "key": "C",
+   "text": "She had no ties to any civil rights group",
+   "misconception": "Background from the books: Parks was secretary of the Montgomery NAACP, so she had deep ties to the movement."
+  },
+  {
+   "key": "D",
+   "text": "She was a visitor from the North",
+   "misconception": "Background from the books: Parks lived and worked in Montgomery, so she was not a visitor from the North."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background from the books: local leaders wanted a person whose character no one could attack, and Parks was a longtime NAACP secretary.",
+  "B": "Background from the books: Claudette Colvin and others had been arrested on Montgomery buses before Parks.",
+  "C": "Parks was secretary of the Montgomery NAACP, so she had deep ties to the movement.",
+  "D": "Background from the books: Parks lived and worked in Montgomery, so she was not a visitor from the North.",
+  "general": "1. The stimulus says Parks was secretary of the Montgomery NAACP, not a stranger to the movement.\n2. A test case needs a plaintiff the other side cannot easily discredit.\n3. Background from the books: earlier arrests, including Claudette Colvin's, were passed over because leaders judged Parks the right person for the campaign.\n4. Her standing, not being first, made her the chosen case.\nRemember: a test case is chosen for the person, not only for the act."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2585",
+   "file": "u8/rosa-parks-fingerprint-1956.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Rosa_Parks_being_fingerprinted_by_Deputy_Sheriff_D.H._Lackey_after_being_arrested_on_February_22,_1956,_during_the_Montgomery_bus_boycott.jpg",
+   "license": "Public domain (photograph by Gene Herrick, Associated Press, February 22, 1956; Smithsonian National Portrait Gallery)",
+   "caption": "Rosa Parks being fingerprinted by a Montgomery deputy sheriff, February 1956",
+   "alt": "Rosa Parks, wearing glasses and a suit, having her fingers inked by a uniformed Montgomery deputy sheriff at a desk"
+  }
+ ]
+}

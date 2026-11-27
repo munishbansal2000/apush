@@ -1,0 +1,81 @@
+{
+ "id": "apush-mcq-2553",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.5"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "SOC",
+  "ARC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.5 Culture After 1945"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 26",
+    "section": "Life in Suburbia"
+   }
+  ]
+ },
+ "source": "original; stimulus is a public-domain photograph viewed before writing (see figures)",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph: Elvis Presley, 1956 publicity portrait. Public domain (published in the United States in 1956 without a copyright notice), via Wikimedia Commons.",
+  "text": "The photograph is a 1956 publicity portrait of Elvis Presley, a white singer from Memphis, Tennessee. Presley, with his slicked-back hair, became the most famous performer of the new rock 'n' roll music."
+ },
+ "stimulus_set": "elvis-rock-1956",
+ "stem": "Many adults in the 1950s feared rock 'n' roll most of all because of what about the music?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Its roots and many performers were Black"
+  },
+  {
+   "key": "B",
+   "text": "Its stars came from lower-class Southern families",
+   "misconception": "Background from the books: Elvis was Southern and working-class, but that was not what most frightened adults."
+  },
+  {
+   "key": "C",
+   "text": "Its lyrics openly promoted communism",
+   "misconception": "Background from the books: rock lyrics were about love, cars, and dancing, not communism."
+  },
+  {
+   "key": "D",
+   "text": "Its songs were written in foreign languages",
+   "misconception": "Rock songs were sung in English, so language was never the issue."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background from the books: rock grew out of rhythm and blues and other Black music, and its crossing of the color line frightened a segregated society.",
+  "B": "Background from the books: Elvis was Southern and working-class, but that was not what most frightened adults.",
+  "C": "Background from the books: rock lyrics were about love, cars, and dancing, not communism.",
+  "D": "Rock songs were sung in English, so language was never the issue.",
+  "general": "1. Ask what set rock apart from the music adults already knew.\n2. Background from the books: rock grew from Black music, rhythm and blues, gospel, and the blues, and Black performers reached white teenagers.\n3. Background from the books: in a segregated society, music that crossed the color line looked dangerous to many adults.\nRemember: Fear of a new music often points to the social line the music crosses."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2553",
+   "file": "u8/elvis-presley-1956.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Elvis_Presley_Love_Me_Tender_Publicity_Photo,_1956.jpg",
+   "license": "Public domain (published in the United States in 1956 without a copyright notice)",
+   "caption": "Elvis Presley in a 1956 publicity portrait",
+   "alt": "A black-and-white 1956 publicity portrait of a young Elvis Presley with slicked-back hair"
+  }
+ ]
+}

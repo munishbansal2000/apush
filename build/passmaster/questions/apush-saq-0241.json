@@ -1,0 +1,88 @@
+{
+ "id": "apush-saq-0241",
+ "type": "saq",
+ "unit": 8,
+ "topics": [
+  "8.3"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "2.A",
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.3 The Red Scare"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "The Second Red Scare"
+   }
+  ],
+  "primary_sources": [
+   "Harry S. Truman, veto message on the McCarran Internal Security Act, September 22, 1950"
+  ]
+ },
+ "source": "original; stimulus paraphrased from President Truman's veto message on the McCarran Internal Security Act, September 22, 1950",
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of President Harry S. Truman's veto message on the McCarran Internal Security Act, September 22, 1950. Paraphrased, not quoted, because the source is after 1929.",
+  "text": "President Harry S. Truman, vetoing the McCarran Internal Security Act in 1950, warned that the bill would move the government into controlling what Americans thought and said. He said the act threatened basic freedoms and took a long step toward the kind of government the United States opposed abroad. Congress passed the act over his veto."
+ },
+ "stimulus_set": null,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify Truman's main objection to the McCarran Internal Security Act.",
+   "modelAnswer": "Truman objected that the act would let the government control what Americans thought and said. He warned that it threatened basic freedoms and moved the country toward the kind of government it opposed abroad.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying Truman's objection, such as government control of thought and speech or the threat to basic freedoms.",
+     "notEarned": "Stating that Truman vetoed the act without giving his reason does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain why Congress passed the act over Truman's veto.",
+   "modelAnswer": "Congress passed the act because fear of communism was high after the Soviet atomic test and the Hiss case, and lawmakers wanted to show they were tough on the threat. Voting against the act would have exposed a member to charges of being soft on communism.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining why Congress overrode the veto, such as public fear of communism or the political cost of looking soft on communism.",
+     "notEarned": "Restating that Congress overrode the veto without explaining why does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one later development that showed Truman's concern about civil liberties was shared by others.",
+   "modelAnswer": "The Senate censured Joseph McCarthy in December 1954 after his attacks on the Army, showing that lawmakers had come to see his methods as a threat to fair treatment. The Supreme Court also overturned Smith Act convictions in Yates v. United States in 1957, limiting the government's power to punish communists for their beliefs.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one later development, such as the Senate censure of McCarthy in 1954 or the Yates decision of 1957, with the link to civil liberties stated.",
+     "notEarned": "Naming a later event without explaining how it shared Truman's concern does not earn the point."
+    }
+   ]
+  }
+ ]
+}

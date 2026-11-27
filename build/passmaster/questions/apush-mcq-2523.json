@@ -1,0 +1,71 @@
+{
+ "id": "apush-mcq-2523",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.4"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.4 The Economy After 1945"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 26",
+    "section": "The Return of Prosperity"
+   }
+  ]
+ },
+ "source": "original; survivor 5s24-ch26-mcq-01 rewritten against the books (EXCEPT stem replaced with a positive stem; options and explanations rewritten)",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data table from 5 Steps to a 5, 2024, Chapter 26: GNP figures, white-collar majority, Diner's Club card. Births figure corrected per U.S. Census Bureau, Series P-25 No. 173 (Feb 1958): 4,302,000 births in 1957.",
+  "text": "| Fact | Year | Value |\n| Gross national product | 1945 | $200 billion |\n| Gross national product | 1960 | More than $500 billion |\n| Babies born | 1957 | 4.3 million |\n| Workers in white-collar jobs | 1956 | A majority |\n| First Diner's Club card | 1950 | Offered to shoppers |"
+ },
+ "stimulus_set": "postwar-boom-data-1945-1960",
+ "stem": "Which of the following best explains why consumer spending rose in the 1950s?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Families spent wartime savings and credit on cars, homes, and appliances"
+  },
+  {
+   "key": "B",
+   "text": "A renewed rush to buy stocks drove most household spending",
+   "misconception": "Background from the books: families bought cars, homes, and appliances, not stocks; stock speculation did not drive the consumer boom."
+  },
+  {
+   "key": "C",
+   "text": "The government banned advertising so families saved instead of spending",
+   "misconception": "Background from the books: advertising boomed in the 1950s and stoked demand; the government never banned it."
+  },
+  {
+   "key": "D",
+   "text": "Wartime rationing continued and forced families to keep buying",
+   "misconception": "Background from the books: rationing ended with the war; spending rose because goods were available again."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background from the books: workers had earned money during the war but found few goods to buy, so they spent freely once factories returned to civilian goods.",
+  "B": "Background from the books: families bought cars, homes, and appliances, not stocks; stock speculation did not drive the consumer boom.",
+  "C": "Background from the books: advertising boomed in the 1950s and stoked demand; the government never banned it.",
+  "D": "Background from the books: rationing ended with the war, and spending rose because civilian goods were available again.",
+  "general": "1. Ask where the spending money came from and what it bought.\n2. Background from the books: wartime workers earned money with few goods to buy, and credit cards spread after the war to make buying easy.\n3. Cars, homes, and appliances were the purchases, not stocks, and rationing was over.\nRemember: A spending boom needs money saved, goods to buy, and a way to pay."
+ }
+}

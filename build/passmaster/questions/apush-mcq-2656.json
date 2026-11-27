@@ -1,0 +1,84 @@
+{
+ "id": "apush-mcq-2656",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.9"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.9 The Great Society"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "The Other America"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Liberal Hour of the 1960s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Lyndon Johnson's Social Agenda"
+   }
+  ],
+  "primary_sources": [
+   "Michael Harrington, The Other America: Poverty in the United States (1962) (paraphrased)"
+  ]
+ },
+ "source": "original; stimulus paraphrased from Harrington, The Other America (1962)",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Harrington, The Other America (1962); facts as given in the grounding books.",
+  "text": "Paraphrase of Michael Harrington, The Other America: Poverty in the United States (1962). Harrington wrote that forty to fifty million Americans lived in poverty, many in decaying urban slums and many in isolated rural towns. He noted that machines had taken work from people: the mechanization of agriculture and the automation of factory work displaced workers and left them in bitter poverty. His book helped shape the domestic agendas of President John F. Kennedy and his successor, President Lyndon Johnson."
+ },
+ "stimulus_set": "other-america-poverty",
+ "stem": "Harrington's main point in this passage is that poverty in the United States",
+ "options": [
+  {
+   "key": "A",
+   "text": "persisted for millions of people despite general prosperity"
+  },
+  {
+   "key": "B",
+   "text": "had been ended by the growth of the postwar economy",
+   "misconception": "Harrington counts forty to fifty million people still in poverty, so growth had not ended it."
+  },
+  {
+   "key": "C",
+   "text": "affected only people in isolated rural towns",
+   "misconception": "Harrington places the poor in urban slums as well as in rural towns."
+  },
+  {
+   "key": "D",
+   "text": "was caused mainly by the laziness of the poor",
+   "misconception": "Harrington blames machines taking work from people, not the character of the poor."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Harrington counts forty to fifty million Americans in poverty even as the economy grew.",
+  "B": "The passage counts millions still in poverty, so the growing economy had not ended it.",
+  "C": "Harrington places the poor in decaying urban slums as well as in isolated rural towns.",
+  "D": "Harrington blames the mechanization of farming and the automation of factory work, not the poor themselves.",
+  "general": "1. Harrington counts the poor: forty to fifty million Americans.\n2. He places them in two settings: decaying urban slums and isolated rural towns.\n3. That count comes from a time of general prosperity, which is the contrast he is making.\n4. Poverty therefore persisted for millions even as the nation grew richer.\nRemember: A big number beside a rich economy shows a gap, not a success."
+ }
+}

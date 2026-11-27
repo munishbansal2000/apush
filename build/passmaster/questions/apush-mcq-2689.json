@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-2689",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.10"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 4,
+  "skills": [
+    "1.B",
+    "3.A"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.10 The African-American Civil Rights Movement (1960s)"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Civil Rights Movement in the 1960s: From Integration to Black Power"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Account drawn from the grounding books (Barron's Ch. 10, Topic 8.10, \"The Freedom Rides (1961)\"; 5 Steps Ch. 27; Princeton Ch. 12). The Boynton date, the Anniston firebombing, and the November 1, 1961 effective date are verified against the Encyclopedia of Alabama and Britannica summaries of the ICC order (September 22, 1961).",
+    "text": "In December 1960 the Supreme Court ruled in Boynton v. Virginia that segregation in bus terminals serving interstate travel was unconstitutional. Southern states kept enforcing their own segregation rules anyway. In May 1961 the Congress of Racial Equality (CORE) sent Black and white riders together on buses through the South to test whether the ruling was being enforced. Near Anniston, Alabama, a white mob slashed a bus's tires and then firebombed the bus. Television carried pictures of the burning bus and beaten riders across the country. President Kennedy sent federal marshals to protect the riders, and Attorney General Robert Kennedy asked the Interstate Commerce Commission to ban segregation in interstate travel. In September 1961 the commission ordered segregation ended in interstate bus terminals, effective November 1, 1961."
+  },
+  "stimulus_set": "freedom-rides-1961",
+  "stem": "Which result of the Freedom Rides most directly shows that direct action could force a federal response?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The Supreme Court overturned the Boynton ruling after the rides",
+      "misconception": "The passage says nothing about Boynton being overturned; the rides enforced it."
+    },
+    {
+      "key": "B",
+      "text": "Southern states passed new laws requiring segregation on all buses",
+      "misconception": "The passage describes a federal order ending segregation in terminals, not new state segregation laws."
+    },
+    {
+      "key": "C",
+      "text": "The Interstate Commerce Commission ordered segregation ended in interstate bus terminals"
+    },
+    {
+      "key": "D",
+      "text": "CORE disbanded after the rides and left the movement",
+      "misconception": "The passage says nothing about CORE disbanding."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "Boynton was the ruling the riders were testing, and it was not overturned.",
+    "B": "The outcome in the passage is a federal order against segregation, not new state laws for it.",
+    "C": "The passage ends with the commission ordering segregation ended in interstate terminals, effective November 1, 1961.",
+    "D": "Nothing in the passage says CORE disbanded.",
+    "general": "1. Riders test the Boynton ruling and are met with mob violence.\n2. Television carries the violence across the country.\n3. The attorney general asks the Interstate Commerce Commission to act.\n4. The commission orders segregation ended in interstate terminals, effective November 1, 1961, turning a tested ruling into enforced federal policy.\nRemember: Direct action works when it makes ignoring a law cost more than enforcing it."
+  }
+}

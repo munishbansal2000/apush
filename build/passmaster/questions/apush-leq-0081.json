@@ -1,0 +1,87 @@
+{
+ "id": "apush-leq-0081",
+ "type": "leq",
+ "unit": 8,
+ "topics": [
+  "8.6"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "SOC",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.6 Early Steps in the Civil Rights Movement (1940s and 1950s)"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 26",
+    "section": "Prosperity and Anxiety: The 1950s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ]
+ },
+ "source": "original; prompt written for this question",
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "stimulus_set": null,
+ "prompt": "Evaluate the extent to which World War II changed the civil rights movement in the United States from 1941 to 1960. In your response, analyze the causes of the changes you describe.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which World War II changed the civil rights movement from 1941 to 1960, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of the war's effect does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as Jim Crow segregation, the Great Migration, or the Cold War that followed the war.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples of wartime change, such as the Double V campaign, the March on Washington Movement, or Black migration to war jobs in northern and western cities.",
+   "notEarned": "General statements about the war with no specific example do not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples of the postwar movement, such as Executive Order 9981, Brown v. Board of Education, the Montgomery Bus Boycott, or the Little Rock crisis.",
+   "notEarned": "Repeating the same wartime example, or naming a postwar event with no specific detail, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (causation): earns the point for explaining the causes of the changes, linking wartime service, migration, and Cold War pressure to the postwar movement's growth.",
+   "notEarned": "Listing wartime and postwar events with no explanation of how the war caused the change does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the thesis by showing what the war changed and what it left standing, or weighing the war's effect against the NAACP's longer legal strategy and local organizing.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: World War II changed the civil rights movement deeply, turning a legal campaign into a mass movement, because the war gave Black Americans new leverage, new leaders, and a new argument, though the movement's legal strategy and local organizing reached back before the war and carried on after it.\nContext: Before the war, Jim Crow ruled the South, the NAACP fought segregation case by case, and the armed forces were segregated. The war put the United States on the side of democracy against racist regimes abroad.\nEvidence of wartime change: A. Philip Randolph's threatened March on Washington in 1941 won Executive Order 8802 and fair employment in defense work. The Pittsburgh Courier's Double V campaign tied loyal service to a claim for rights at home. Black workers moved to northern and western cities for war jobs, and Black soldiers served in a segregated military.\nEvidence of postwar change: Returning veterans pressed for rights, Truman issued Executive Order 9981 in 1948, the NAACP won Brown in 1954, and the Montgomery Bus Boycott of 1955 to 1956 and the Little Rock crisis of 1957 made the movement a national cause.\nCauses: The war created defense jobs that pulled Black workers north and west, put Black soldiers in uniform where they faced the gap between American ideals and American practice, and made segregation a Cold War liability that the government could not ignore.\nComplexity: The war sped up a movement that already existed rather than starting one. The NAACP's legal strategy began in the 1930s, and local organizing in Montgomery had been planned for years before Rosa Parks, so the war changed the movement's size and speed more than its direction.",
+ "totalPoints": 6
+}

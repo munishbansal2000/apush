@@ -1,0 +1,165 @@
+{
+ "id": "apush-dbq-0087",
+ "type": "dbq",
+ "unit": 8,
+ "topics": [
+  "8.3"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.3 The Red Scare"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "The Second Red Scare"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "McCarthyism"
+   }
+  ],
+  "primary_sources": [
+   "Harry S. Truman, Executive Order 9835, March 1947",
+   "Whittaker Chambers, testimony before the House Committee on Un-American Activities, 1948",
+   "Joseph McCarthy, speech in Wheeling, West Virginia, February 9, 1950",
+   "Harry S. Truman, veto message on the McCarran Internal Security Act, September 22, 1950"
+  ]
+ },
+ "source": "original; documents are paraphrases of public sources (see each document's sourcing note)",
+ "stimulus": {
+  "kind": "none",
+  "source_note": "DBQ: documents below are the stimulus."
+ },
+ "stimulus_set": null,
+ "prompt": "Evaluate the extent to which the fear of communism changed American life and government between 1947 and 1957.",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "March 1947",
+   "title": "Truman creates the loyalty program",
+   "source": "Harry S. Truman, Executive Order 9835, March 1947. Paraphrased.",
+   "sourcing": "Truman, issuing an executive order to answer charges that his administration was soft on communism, setting up the first loyalty program.",
+   "text": "President Truman's order barred communists and fascists from federal jobs and set up loyalty boards to investigate millions of government workers. Employees could be dismissed if investigators found disloyalty or associations that made them security risks."
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "October 1947",
+   "title": "HUAC investigates Hollywood",
+   "source": "House Committee on Un-American Activities, hearings on the movie industry, 1947. Paraphrased.",
+   "sourcing": "HUAC, a House committee investigating communism in the movie industry, questioning witnesses in public hearings.",
+   "text": "The House Committee on Un-American Activities called writers and directors to testify about their politics and to name others with communist ties. Ten witnesses refused to answer, citing the First Amendment, and were jailed for contempt of Congress."
+  },
+  {
+   "n": 3,
+   "kind": "text",
+   "date": "1948",
+   "title": "The Hiss case",
+   "source": "Whittaker Chambers, testimony before the House Committee on Un-American Activities, 1948. Paraphrased.",
+   "sourcing": "Chambers, a former communist testifying before HUAC, accusing a respected official; his testimony made the spy threat seem real.",
+   "text": "Whittaker Chambers told HUAC that Alger Hiss, a former State Department official, had passed secret documents to the Soviet Union in the 1930s. Hiss denied the charges, Chambers produced copies of the documents, and Hiss was later convicted of perjury."
+  },
+  {
+   "n": 4,
+   "kind": "text",
+   "date": "February 1950",
+   "title": "McCarthy speaks at Wheeling",
+   "source": "Joseph McCarthy, speech in Wheeling, West Virginia, February 9, 1950. Paraphrased.",
+   "sourcing": "McCarthy, a junior senator seeking national attention, making a dramatic claim he never documented.",
+   "text": "Senator Joseph McCarthy told an audience in Wheeling, West Virginia, that he held a list of 205 communists working in the State Department. The number changed in later speeches, and the list was never fully shown."
+  },
+  {
+   "n": 5,
+   "kind": "text",
+   "date": "September 1950",
+   "title": "Truman vetoes the McCarran Act",
+   "source": "Harry S. Truman, veto message on the McCarran Internal Security Act, September 22, 1950. Paraphrased.",
+   "sourcing": "Truman, vetoing a bill he saw as a threat to civil liberties, speaking against the anti-communist measures of his own era.",
+   "text": "President Truman vetoed the McCarran Internal Security Act, warning that it threatened basic freedoms and moved the government toward controlling thought. Congress passed the act over his veto."
+  },
+  {
+   "n": 6,
+   "kind": "text",
+   "date": "June 1953",
+   "title": "The Rosenbergs are executed",
+   "source": "Account of the Rosenberg espionage case, 1950-1953. Paraphrased.",
+   "sourcing": "A newspaper-style account of the executions, showing how far the punishment of espionage reached.",
+   "text": "Julius and Ethel Rosenberg, convicted of passing atomic secrets to the Soviet Union, were executed in the electric chair. Both had insisted they were innocent, and pleas for clemency came from around the world."
+  },
+  {
+   "n": 7,
+   "kind": "image",
+   "date": "1954",
+   "title": "The Army-McCarthy hearings",
+   "source": "Photograph: Army-McCarthy hearings, 1954, public domain (PD-USGov-Congress), via Wikimedia Commons.",
+   "sourcing": "A photograph from the televised Army-McCarthy hearings, the event that turned public opinion against McCarthy.",
+   "figure": "u8/5s24-ch25-mcq-01.jpg",
+   "text": "The photograph shows Senator Joseph McCarthy standing at a hearing table, pointing at a large map of the United States headed COMMUNIST PARTY, while the Army's lawyer, Joseph Welch, sits at the left. The hearings were carried live on television, and Welch's public rebuke of McCarthy drew loud applause."
+  }
+ ],
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which the fear of communism changed American life and government between 1947 and 1957, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of change does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the wartime alliance with the Soviet Union, the Cold War abroad, or the First Red Scare of 1919-1920.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (first point): earns the point for describing specific and relevant evidence from at least three documents to support an argument about change in American life and government.",
+   "notEarned": "Using fewer than three documents, or quoting documents without describing what they show, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support an argument, with the evidence accurately described and tied to the claim.",
+   "notEarned": "Using fewer than six documents, or listing documents without connecting them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence beyond the documents: earns the point for describing a specific and relevant example beyond the documents, such as the Smith Act prosecutions, the Hollywood blacklist, the Taft-Hartley loyalty oath, or the Yates decision of 1957.",
+   "notEarned": "A general statement with no specific example beyond the documents does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "3.B",
+   "criterion": "Sourcing: earns the point for explaining the relevance of a document's author, purpose, audience, or historical situation to the argument, for at least two documents.",
+   "notEarned": "Identifying an author without explaining why it matters, or sourcing only one document, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Complexity: earns the point for demonstrating a complex understanding, such as qualifying the extent of change, explaining why the change was uneven, or connecting the Red Scare to the limits placed on it by the courts and the Senate.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: The fear of communism changed American life and government deeply between 1947 and 1957, building a loyalty apparatus that reached federal workers, Hollywood, and labor unions, though the change was checked by dissenters like Truman and by the courts.\nContext: The United States and the Soviet Union had been wartime allies, and the First Red Scare of 1919-1920 had already shown how fear of radicals could cost Americans their jobs and freedom.\nEvidence: Documents 1-4 show the change spreading, the loyalty program, the Hollywood hearings, the Hiss case, and McCarthy's list. Documents 5-7 show its reach and its limits, Truman's veto, the Rosenberg executions, and the televised hearings that broke McCarthy.\nBeyond the documents: The Smith Act prosecutions jailed Communist Party leaders, the Hollywood blacklist kept accused writers out of work until 1960, and the Yates decision of 1957 overturned Smith Act convictions.\nSourcing: Truman writes both as the author of the loyalty program and as the vetoer of the McCarran Act, so his two documents show the tension inside the government itself. McCarthy speaks as a junior senator seeking fame, so his list is a claim to weigh, not a fact to accept.\nComplexity: The change was real but uneven. The government grew powerful enough to investigate millions, yet it could not silence Truman's veto, Welch's rebuke, or the Supreme Court, so the scare ended where the Constitution pushed back.",
+ "totalPoints": 7
+}

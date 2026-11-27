@@ -1,0 +1,89 @@
+{
+  "id": "apush-mcq-2820",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.14"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "3.A",
+    "2.A"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.14 Society in Transition"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Decline of Public Trust in the 1970s"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Watergate, the Undoing of President Nixon, and the Limits of Presidential Power"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "The Presidency of Richard Nixon"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "University of Michigan National Election Study trust question, 1964-1980 (as reported by Gallup and Pew Research Center)"
+    ]
+  },
+  "source": "original; stimulus table compiled from the National Election Study trust question",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from the University of Michigan National Election Study trust question, as reported by Gallup and Pew Research Center. Account drawn from the grounding books (Barron's Ch. 10, Topic 8.14; 5 Steps Ch. 28; Princeton Ch. 12).",
+    "text": "Americans who said they trusted the government in Washington to do what is right 'just about always' or 'most of the time' (University of Michigan National Election Study, as reported by Gallup and Pew):\n\n| Year | Trusted Washington |\n| 1964 | 77% |\n| 1970 | 54% |\n| 1974 | 36% |\n| 1980 | 25% |"
+  },
+  "stimulus_set": "trust-government-1964-1980",
+  "stem": "The sharpest drop in the table, from 54 percent in 1970 to 36 percent in 1974, is best explained by which of the following?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The end of the Cold War in 1972.",
+      "misconception": "Background: The Cold War did not end in 1972; it lasted until 1991."
+    },
+    {
+      "key": "B",
+      "text": "A rise in trust after the moon landing.",
+      "misconception": "A rise in trust would push the numbers up, but the table shows them falling."
+    },
+    {
+      "key": "C",
+      "text": "The Watergate scandal and the impeachment drive against President Nixon."
+    },
+    {
+      "key": "D",
+      "text": "The passage of the Equal Rights Amendment in 1974.",
+      "misconception": "Background: The ERA was never ratified by the deadline, and it was Congress, not the states, that acted in 1972."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "Background: The Cold War did not end in 1972; it lasted until 1991.",
+    "B": "A rise in trust would push the numbers up, but the table shows them falling.",
+    "C": "Background: The Watergate break-in, the tapes, and the House Judiciary Committee's vote for impeachment articles in 1974 drove trust down in those years.",
+    "D": "Background: The ERA was never ratified by the deadline, and it was Congress, not the states, that acted in 1972.",
+    "general": "1. Find the biggest fall between two rows: 54 percent in 1970 to 36 percent in 1974.\n2. Background: Those are the Watergate years, ending with the House Judiciary Committee voting impeachment articles in 1974.\n3. A scandal that reached the president fits a sharp fall in trust in Washington.\nRemember: Match the dates of the drop to the dates of the event."
+  }
+}

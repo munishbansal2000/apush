@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2595",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.7"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WOR",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.2 The Cold War from 1945 to 1980"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Cold War (1945-1960)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ],
+  "primary_sources": [
+   "U.S. Department of State, Office of the Historian, Marshall Plan figures"
+  ]
+ },
+ "source": "original; stimulus table from U.S. Department of State, Office of the Historian, Marshall Plan figures (approximate)",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Aid figures: U.S. Department of State, Office of the Historian, Marshall Plan figures (approximate, rounded to one decimal place).",
+  "text": "Marshall Plan aid, 1948-1952 (billions of dollars, rounded)\n\n| Country | Aid received |\n| United Kingdom | 3.3 |\n| France | 2.7 |\n| Italy | 1.5 |\n| West Germany | 1.4 |\n| Netherlands | 1.1 |\n| All other recipients | 3.3 |\n| Total | about 13 |"
+ },
+ "stimulus_set": "marshall-plan-aid-1948-1952",
+ "stem": "According to the table, about how much Marshall Plan aid went to all recipients combined?",
+ "options": [
+  {
+   "key": "A",
+   "text": "About $3.3 billion",
+   "misconception": "3.3 billion dollars is the share of the United Kingdom alone, and also the share of all other recipients together, not the total."
+  },
+  {
+   "key": "B",
+   "text": "About $6 billion",
+   "misconception": "About 6 billion dollars is the United Kingdom and France together, not all recipients."
+  },
+  {
+   "key": "C",
+   "text": "About $10 billion",
+   "misconception": "10 billion dollars is the sum of the five countries named, leaving out all other recipients."
+  },
+  {
+   "key": "D",
+   "text": "About $13 billion"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "The table gives 3.3 billion dollars to the United Kingdom, and the same to all other recipients together. The total row reads about 13 billion.",
+  "B": "The United Kingdom and France together received about 6 billion dollars, but the table lists more recipients than those two.",
+  "C": "The five named countries add to 10 billion dollars, but the table also lists 3.3 billion for all other recipients, which brings the total to about 13 billion.",
+  "D": "The table's total row reads about 13 billion dollars, which covers the named countries and all other recipients together.",
+  "general": "1. Add the five named countries: 3.3 plus 2.7 plus 1.5 plus 1.4 plus 1.1 equals 10 billion dollars.\n2. The table also lists 3.3 billion dollars for all other recipients.\n3. 10 billion plus 3.3 billion is 13.3 billion, rounded to about 13 billion.\n4. The total row agrees: about 13 billion dollars.\nRemember: Check a total against its parts before trusting a partial sum."
+ }
+}

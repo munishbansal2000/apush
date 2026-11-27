@@ -1,0 +1,80 @@
+{
+  "id": "apush-mcq-2824",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.15"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 3,
+  "skills": [
+    "3.A",
+    "6.C"
+  ],
+  "themes": [
+    "PCE"
+  ],
+  "reasoning": "comparison",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.14 Society in Transition"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Watergate, the Undoing of President Nixon, and the Limits of Presidential Power"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "Decline and Rebirth (1968-1988)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ]
+  },
+  "source": "original; stimulus table compiled from the list of presidents in the grounding books",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from the list of presidents in the grounding books (Barron's Ch. 10 timeline; 5 Steps Chs. 25-28; Princeton Ch. 12).",
+    "text": "Presidents of the United States, 1945-1980:\n\n| President | Party | Years in office |\n| Harry S. Truman | Democratic | 1945-1953 |\n| Dwight D. Eisenhower | Republican | 1953-1961 |\n| John F. Kennedy | Democratic | 1961-1963 |\n| Lyndon B. Johnson | Democratic | 1963-1969 |\n| Richard Nixon | Republican | 1969-1974 |\n| Gerald Ford | Republican | 1974-1977 |\n| Jimmy Carter | Democratic | 1977-1981 |"
+  },
+  "stimulus_set": "presidents-1945-1980",
+  "stem": "What does the pattern of parties in the table best show about presidential politics from 1945 to 1980?",
+  "options": [
+    {
+      "key": "A",
+      "text": "One party controlled the White House without interruption for the whole period from 1945 to 1980.",
+      "misconception": "The table switches parties four times between 1945 and 1981."
+    },
+    {
+      "key": "B",
+      "text": "Voters never returned a sitting president to office, so each president served only a single term in the White House.",
+      "misconception": "Eisenhower served from 1953 to 1961, eight years, so voters did return a sitting president."
+    },
+    {
+      "key": "C",
+      "text": "Control of the White House changed hands regularly, with neither party holding it more than eight straight years."
+    },
+    {
+      "key": "D",
+      "text": "Presidential elections stopped mattering because the same few men stayed in office year after year without any change.",
+      "misconception": "The table names seven different presidents, so the office kept changing hands."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "The table switches parties four times between 1945 and 1981.",
+    "B": "Eisenhower served from 1953 to 1961, eight years, so voters did return a sitting president.",
+    "C": "The table changes parties in 1953, 1961, 1969, and 1977, and the longest run by one party is eight years.",
+    "D": "The table names seven different presidents, so the office kept changing hands.",
+    "general": "1. Walk down the Party column: Democrat, Republican, Democrat, Democrat, Republican, Republican, Democrat.\n2. The party changes in 1953, 1961, 1969, and 1977, so no party held the office for the whole period.\n3. Count the longest run: eight years, from 1945 to 1953, from 1953 to 1961, and from 1961 to 1969.\n4. Background: The regular switching fits a competitive two-party system, not one-party rule.\nRemember: To judge a pattern, count the runs in the table instead of remembering one election."
+  }
+}

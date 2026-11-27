@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-2608",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.7"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.7 America as a World Power"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Cold War (1945-1960)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ]
+ },
+ "source": "original; stimulus is an original secondary passage written for this question, facts from the grounding books",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question; facts from the grounding books.",
+  "text": "In the early 1950s, the Central Intelligence Agency helped remove two elected leaders. In Iran in 1953, Prime Minister Mohammad Mosaddegh had nationalized the oil industry; the CIA backed a coup that restored the Shah to power. In Guatemala in 1954, President Jacobo Arbenz had taken unused land from the United Fruit Company for redistribution to peasants; the CIA armed an opposition force that drove him from office."
+ },
+ "stimulus_set": "covert-action-iran-guatemala",
+ "stem": "The operations in Iran and Guatemala were most similar in that both",
+ "options": [
+  {
+   "key": "A",
+   "text": "were open invasions by large American armies",
+   "misconception": "The passage says the CIA backed a coup in Iran and armed an opposition force in Guatemala, not that American armies invaded."
+  },
+  {
+   "key": "B",
+   "text": "removed elected leaders whose policies threatened American interests"
+  },
+  {
+   "key": "C",
+   "text": "were ordered by the United Nations to restore peace",
+   "misconception": "Background from the books: the operations were secret American actions, not United Nations orders."
+  },
+  {
+   "key": "D",
+   "text": "installed Communist governments friendly to the Soviet Union",
+   "misconception": "The passage says the operations removed leaders and restored rulers friendly to the United States, not Communist governments."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "The passage describes a CIA-backed coup and an armed opposition force, not open invasions by large American armies.",
+  "B": "Background from the books: Mosaddegh nationalized oil and Arbenz took United Fruit Company land, and both were removed by American-backed action.",
+  "C": "Background from the books: the operations were secret CIA actions, not orders from the United Nations.",
+  "D": "The passage says the coup in Iran restored the Shah, and the force in Guatemala drove Arbenz out, which served American interests, not the Soviet Union's.",
+  "general": "1. In Iran, the leader removed had nationalized the oil industry.\n2. In Guatemala, the leader removed had taken land from an American company.\n3. Background from the books: both leaders were elected, and both policies cut against American interests.\n4. The shared pattern is removal of an elected leader by secret American action.\nRemember: to compare two cases, find what is the same in both before naming the difference."
+ }
+}

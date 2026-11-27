@@ -1,0 +1,71 @@
+{
+ "id": "apush-mcq-2531",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.4"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "GEO",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "The Interstate Highway Act"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 26",
+    "section": "The Return of Prosperity"
+   }
+  ]
+ },
+ "source": "original; stimulus paraphrased from Barron's Premium 2027, Chapter 10, Topic 8.4, The Interstate Highway Act",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Barron's Premium 2027, Chapter 10, Topic 8.4, The Interstate Highway Act and Suburban Growth and the Rise of the Sunbelt.",
+  "text": "The National Interstate and Defense Highways Act of 1956 launched a massive federal highway-building project. The highways were promoted as a defense measure, to move troops and military equipment quickly, and they let drivers travel fast from suburbs into cities. At the same time, Americans moved in large numbers to the Sunbelt states of the South and West, drawn by jobs, warm weather, and new industries. By 1956, a majority of American workers held white-collar jobs."
+ },
+ "stimulus_set": "interstate-highway-sunbelt-1956",
+ "stem": "The highway act was sold as a defense measure, yet its greatest lasting effect was on where Americans lived. Which statement best connects the defense purpose to the suburban result?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The highways were built only for tanks and never opened to civilian cars",
+   "misconception": "Background from the books: the highways let drivers travel fast from suburbs into cities; they were open to civilian drivers."
+  },
+  {
+   "key": "B",
+   "text": "The act banned suburbs so that highways could stay clear for troops",
+   "misconception": "Background from the books: suburbs grew along the highways; the act did not ban them."
+  },
+  {
+   "key": "C",
+   "text": "Defense spending ended as soon as the highways were finished",
+   "misconception": "Background from the books: defense spending stayed high through the Cold War; the highways were one part of it."
+  },
+  {
+   "key": "D",
+   "text": "Roads built for troops also let workers live far from city jobs"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Background from the books: the highways let drivers travel fast from suburbs into cities; they were open to civilian drivers.",
+  "B": "Background from the books: suburbs grew along the highways; the act did not ban them.",
+  "C": "Background from the books: defense spending stayed high through the Cold War; the highways were one part of it.",
+  "D": "The same road serves two purposes: it moves troops in a crisis and commuters every day, so a defense project also built the suburbs.",
+  "general": "1. One road can serve two masters: troops in wartime and commuters in peacetime.\n2. Background from the books: the act was promoted as defense, and the highways let drivers travel fast from suburbs into cities.\n3. The defense purpose paid for roads that made suburban living work, so the spending did double duty.\nRemember: A public project often reshapes daily life through its side effects, not its stated purpose."
+ }
+}

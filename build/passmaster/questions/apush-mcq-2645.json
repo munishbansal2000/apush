@@ -1,0 +1,84 @@
+{
+ "id": "apush-mcq-2645",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.8"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.8 The Vietnam War"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "The War and the Working Class"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Vietnam War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "American Involvement in Vietnam, World War II\u20131963"
+   }
+  ],
+  "primary_sources": [
+   "Selective Service System draft calls, 1965 (public record)"
+  ]
+ },
+ "source": "original; stimulus paraphrased from the grounding books' account of the draft",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of who served in Vietnam, from the grounding books.",
+  "text": "Paraphrase of who served in Vietnam. About 80 percent of the troops in Vietnam came from working-class and poor families. Middle-class young men often received college deferments or found places in the National Guard at home. In 1965 the number of young men drafted each month doubled, and the draft made the war a direct concern for millions of families."
+ },
+ "stimulus_set": "living-room-war",
+ "stem": "The draft made the Vietnam War a direct concern for millions of young families, and in 1971 the Twenty-Sixth Amendment lowered the voting age to 18. What links the draft to that amendment?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Young men were drafted to fight before they could vote for their leaders"
+  },
+  {
+   "key": "B",
+   "text": "The amendment ended the draft and closed the Selective Service System",
+   "misconception": "Background: the draft continued after 1971; the amendment changed the voting age, not the draft."
+  },
+  {
+   "key": "C",
+   "text": "The amendment raised the voting age to 21 to match the draft age",
+   "misconception": "The amendment lowered the voting age to 18; it did not raise it to 21."
+  },
+  {
+   "key": "D",
+   "text": "The amendment gave the vote only to men who had served in Vietnam",
+   "misconception": "The amendment gave the vote to all citizens aged 18 and older, not only to veterans."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background: young men were drafted at 18 but could not vote until 21, so the amendment let those old enough to fight also vote.",
+  "B": "Background: the draft continued after 1971; the amendment changed the voting age, not the draft itself.",
+  "C": "The amendment lowered the voting age to 18; it did not raise it to 21.",
+  "D": "The amendment gave the vote to all citizens aged 18 and older, not only to veterans.",
+  "general": "1. The passage says the draft doubled in 1965 and touched millions of families.\n2. Background: young men could be drafted at 18, but the voting age was still 21.\n3. That gap became the argument: if a man is old enough to be sent to war, he is old enough to vote.\n4. The Twenty-Sixth Amendment closed the gap in 1971 by lowering the voting age to 18.\nRemember: When the draft age and the voting age differ, the difference becomes the argument."
+ }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "apush-mcq-2794",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.14"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 4,
+  "skills": [
+    "3.B",
+    "2.A"
+  ],
+  "themes": [
+    "WXT",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.14 Society in Transition"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Decline of Public Trust in the 1970s"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "'Stagflation'"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "The Carter Administration"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "U.S. Bureau of Labor Statistics, annual average unemployment rates and CPI changes, 1970-1980"
+    ]
+  },
+  "source": "original; stimulus table compiled from U.S. Bureau of Labor Statistics annual averages",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from U.S. Bureau of Labor Statistics annual averages: unemployment rates and Consumer Price Index changes, 1970-1980. Account drawn from the grounding books (Barron's Ch. 10, Topic 8.14; 5 Steps Ch. 28; Princeton Ch. 12).",
+    "text": "Inflation and unemployment, annual averages (U.S. Bureau of Labor Statistics):\n\n| Year | Inflation (change in consumer prices) | Unemployment rate |\n| 1970 | 5.7% | 4.9% |\n| 1974 | 11.0% | 5.6% |\n| 1975 | 9.1% | 8.5% |\n| 1979 | 11.3% | 5.8% |\n| 1980 | 13.5% | 7.1% |"
+  },
+  "stimulus_set": "stagflation-data-1970-1980",
+  "stem": "Which conclusion needs two or more rows of the table together?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Inflation reached 11 percent in 1974 and 1979, while unemployment stayed below 6 percent."
+    },
+    {
+      "key": "B",
+      "text": "In 1975, unemployment reached 8.5 percent while inflation was 9.1 percent that year.",
+      "misconception": "That is one row of the table, not a conclusion built from two or more rows."
+    },
+    {
+      "key": "C",
+      "text": "In 1980, inflation reached 13.5 percent while unemployment was 7.1 percent that year.",
+      "misconception": "That is one row of the table, not a conclusion built from two or more rows."
+    },
+    {
+      "key": "D",
+      "text": "In 1974, inflation reached 11.0 percent while unemployment was 5.6 percent that year.",
+      "misconception": "That is one row of the table, not a conclusion built from two or more rows."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "Compare 1974 with 1979: inflation stood at 11.0 percent and then 11.3 percent, while unemployment stayed below 6 percent in both years, so a high-inflation year did not have to be a high-unemployment year.",
+    "B": "That fact comes from the 1975 row alone, so it does not need two or more rows.",
+    "C": "That fact comes from the 1980 row alone, so it does not need two or more rows.",
+    "D": "That fact comes from the 1974 row alone, so it does not need two or more rows.",
+    "general": "1. A single row gives a single fact, and options B, C, and D each repeat one row.\n2. Option A compares rows: unemployment was 5.6 percent in 1974 and 5.8 percent in 1979.\n3. Inflation was 11.0 percent in 1974 and 11.3 percent in 1979, so high inflation did not need high unemployment.\nRemember: A conclusion that compares rows is stronger than a fact copied from one row."
+  }
+}

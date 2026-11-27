@@ -1,0 +1,71 @@
+{
+ "id": "apush-mcq-2517",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.4"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "SOC",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Levittown and Suburban Development"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 26",
+    "section": "Life in Suburbia"
+   }
+  ]
+ },
+ "source": "original; stimulus paraphrased from Barron's Premium 2027, Chapter 10, Topic 8.4, Levittown and Suburban Development",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Barron's Premium 2027, Chapter 10, Topic 8.4, Levittown and Suburban Development.",
+  "text": "After the war, builder William Levitt bought farmland outside New York City and built Levittown, a development of thousands of nearly identical, modest houses put up quickly with mass-production methods. The houses were cheap enough for many returning veterans to buy with GI Bill loans. Levitt barred African American buyers with restrictive covenants, and Federal Housing Administration rules encouraged builders to sell only to white buyers. Songwriter Malvina Reynolds mocked the sameness of such developments in 'Little Boxes' (1962)."
+ },
+ "stimulus_set": "levittown-suburbs-1947",
+ "stem": "The covenants and FHA rules described in the passage best show which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Suburban builders refused to sell houses to veterans",
+   "misconception": "Background from the books: Levittown houses were built for veterans; the barrier was race, not veteran status."
+  },
+  {
+   "key": "B",
+   "text": "The federal government required suburbs to welcome all buyers",
+   "misconception": "Background from the books: FHA rules encouraged builders to sell only to white buyers, the opposite of requiring open sales."
+  },
+  {
+   "key": "C",
+   "text": "Federal and private rules kept suburbs white as homeownership grew"
+  },
+  {
+   "key": "D",
+   "text": "African American families preferred to remain in city neighborhoods",
+   "misconception": "Background from the books: the passage says Black buyers were barred by covenants, not that they chose to stay in cities."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Background from the books: Levittown was built for veterans buying with GI Bill loans; the barrier named is race, not veteran status.",
+  "B": "Background from the books: FHA rules pushed builders to sell only to white buyers, the opposite of requiring open sales.",
+  "C": "The covenants were private and the FHA rules were federal, yet both pointed the same way: new suburbs for white buyers while homeownership grew.",
+  "D": "Background from the books: the passage says Black buyers were barred by covenants, not that they chose to stay in cities.",
+  "general": "1. Notice who does the excluding: Levitt's covenants are private, and the FHA rules are federal.\n2. Background from the books: the FHA guaranteed millions of suburban loans while refusing to insure mortgages in redlined neighborhoods.\n3. Two different actors producing the same result is the point: homeownership expanded and suburbs stayed white at the same time.\nRemember: When private rules and public rules point the same way, look for the shared result."
+ }
+}

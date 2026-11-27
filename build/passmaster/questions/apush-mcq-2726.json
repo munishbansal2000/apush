@@ -1,0 +1,88 @@
+{
+  "id": "apush-mcq-2726",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.11"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "1.B",
+    "3.A"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The American Indian Movement"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Expansion of Rights Movements"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Photograph: American Indian Movement member at the Wounded Knee occupation, 1973 (Alliance Times-Herald photograph, public domain, via Wikimedia Commons); the photograph was viewed before writing. Account drawn from the grounding books and verified against HISTORY timelines: occupation began February 27, 1973 and ended May 8, 1973, lasting 71 days; Wounded Knee was the site of the 1890 killing of Lakota people.",
+    "text": "The photograph shows the back of an American Indian Movement member at Wounded Knee, South Dakota, in 1973. His jacket reads \"AIM\" and \"INDIAN & PROUD,\" and he holds a rifle.\n\nOn February 27, 1973, about 200 Oglala Lakota and American Indian Movement members took over the town of Wounded Knee, on the Pine Ridge Reservation. They chose the town because federal troops had killed Lakota people there in 1890, and they demanded that the government honor its treaties. Federal agents surrounded the town, and the occupation lasted 71 days, until May 8, 1973."
+  },
+  "stimulus_set": "wounded-knee-self-determination",
+  "stem": "According to the passage, what did the Wounded Knee occupiers demand?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Statehood for the Pine Ridge Reservation",
+      "misconception": "The passage says the occupiers demanded that the government honor its treaties, not statehood."
+    },
+    {
+      "key": "B",
+      "text": "Payment for the land lost at Alcatraz Island",
+      "misconception": "The passage says nothing about payment for Alcatraz; that was a different protest."
+    },
+    {
+      "key": "C",
+      "text": "That the government honor its treaties with Indian peoples"
+    },
+    {
+      "key": "D",
+      "text": "That the Bureau of Indian Affairs take over the reservation",
+      "misconception": "Background: The occupiers protested the Bureau's control; they did not ask it to take over."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "The passage says the occupiers demanded that the government honor its treaties, not statehood.",
+    "B": "The passage says nothing about payment for Alcatraz.",
+    "C": "The passage says the occupiers demanded that the government honor its treaties.",
+    "D": "Background: The occupiers protested the Bureau of Indian Affairs, so they would not ask it to take over.",
+    "general": "1. The occupiers took over Wounded Knee and held it for 71 days.\n2. The passage says they demanded that the government honor its treaties.\n3. That demand fits the site, where federal troops had killed Lakota people in 1890.\n4. The photograph's message, \"INDIAN & PROUD,\" matches a demand for respect for Indian nations and their treaties.\nRemember: A treaty demand is a demand that the government keep promises it already made."
+  },
+  "figures": [
+    {
+      "file": "u8/aim-wounded-knee-1973.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:AIM_trooper_at_Wounded_Knee_1973.jpg",
+      "license": "Public domain (Alliance Times-Herald photograph)",
+      "caption": "An American Indian Movement member at the Wounded Knee occupation, 1973",
+      "alt": "The back of an American Indian Movement member at Wounded Knee in 1973, his jacket reading AIM and INDIAN AND PROUD, holding a rifle",
+      "id": "fig-apush-mcq-2726"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "apush-mcq-2823",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.15"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "3.B",
+    "6.B"
+  ],
+  "themes": [
+    "PCE"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.14 Society in Transition"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Watergate, the Undoing of President Nixon, and the Limits of Presidential Power"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "Decline and Rebirth (1968-1988)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ]
+  },
+  "source": "original; stimulus table compiled from the list of presidents in the grounding books",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from the list of presidents in the grounding books (Barron's Ch. 10 timeline; 5 Steps Chs. 25-28; Princeton Ch. 12).",
+    "text": "Presidents of the United States, 1945-1980:\n\n| President | Party | Years in office |\n| Harry S. Truman | Democratic | 1945-1953 |\n| Dwight D. Eisenhower | Republican | 1953-1961 |\n| John F. Kennedy | Democratic | 1961-1963 |\n| Lyndon B. Johnson | Democratic | 1963-1969 |\n| Richard Nixon | Republican | 1969-1974 |\n| Gerald Ford | Republican | 1974-1977 |\n| Jimmy Carter | Democratic | 1977-1981 |"
+  },
+  "stimulus_set": "presidents-1945-1980",
+  "stem": "What changed most about the presidency itself between 1945 and 1980?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Presidents gained the power to declare war on their own, without asking Congress first.",
+      "misconception": "Background: Only Congress can declare war, and the War Powers Resolution of 1973 pushed the other way, toward limits on the president."
+    },
+    {
+      "key": "B",
+      "text": "New formal limits were placed on the presidency, including term limits and war powers limits."
+    },
+    {
+      "key": "C",
+      "text": "The presidency became a lifetime office that each man held until the day he died.",
+      "misconception": "The table shows seven different presidents in 36 years, so the office kept changing hands."
+    },
+    {
+      "key": "D",
+      "text": "Presidents stopped needing Congress at all in order to pass the laws they wanted.",
+      "misconception": "The table lists presidents, not lawmaking power. Background: Congress kept passing the laws of the period."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "Background: Only Congress can declare war, and the War Powers Resolution of 1973 pushed the other way, toward limits on the president.",
+    "B": "Background: The Twenty-Second Amendment, ratified in 1951, limited a president to two terms, and the War Powers Resolution of 1973 limited presidential war-making after Vietnam.",
+    "C": "The table shows seven different presidents in 36 years, so the office kept changing hands.",
+    "D": "The table lists presidents, not lawmaking power. Background: Congress kept passing the laws of the period.",
+    "general": "1. The table shows the office passing from one person to the next, so ask what changed about the office itself.\n2. Background: The Twenty-Second Amendment, ratified in 1951, set a two-term limit after Roosevelt's four terms.\n3. Background: The War Powers Resolution of 1973 then limited how a president could use the armed forces without Congress, after Vietnam.\n4. Nothing in the table shows presidents gaining war or lawmaking powers.\nRemember: When a question asks what changed about an office, look for new rules on the office, not for new people in it."
+  }
+}

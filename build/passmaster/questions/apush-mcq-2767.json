@@ -1,0 +1,82 @@
+{
+  "id": "apush-mcq-2767",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.12"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "3.B"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Students for a Democratic Society and the Rise of the New Left"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "New Left Versus Old Left"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Expansion of Rights Movements"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The New Left, Feminism, and the Counterculture"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; table from the National Center for Education Statistics, Table 303.10; SDS account drawn from the grounding books",
+  "stimulus": {
+    "kind": "table",
+    "source_note": "Table: National Center for Education Statistics, Digest of Education Statistics, Table 303.10 (total fall enrollment in degree-granting postsecondary institutions). SDS account drawn from the grounding books.",
+    "text": "Total fall enrollment in degree-granting colleges and universities in the United States, National Center for Education Statistics, Table 303.10.\n\n| Year | Total enrollment |\n| --- | ---: |\n| 1961 | 4,145,065 |\n| 1965 | 5,920,864 |\n| 1970 | 8,580,887 |\n\nStudents for a Democratic Society (SDS) was founded in 1960 and adopted the Port Huron Statement in 1962. Its chapters grew through the 1960s as the war in Vietnam escalated and the draft reached more young men. SDS splintered into factions at its national convention in June 1969."
+  },
+  "stimulus_set": "sds-growth-1960s",
+  "stem": "SDS chapters grew rapidly in the mid-1960s mainly because",
+  "options": [
+    {
+      "key": "A",
+      "text": "the civil rights movement had ended in the South",
+      "misconception": "Background: The civil rights movement continued through the 1960s; it had not ended."
+    },
+    {
+      "key": "B",
+      "text": "the Soviet Union stopped building nuclear weapons",
+      "misconception": "Background: The Cold War and the arms race continued through the 1960s."
+    },
+    {
+      "key": "C",
+      "text": "the draft sent more young men to Vietnam as the war escalated"
+    },
+    {
+      "key": "D",
+      "text": "the voting age was lowered to 18 by Congress in 1965",
+      "misconception": "Background: The voting age was lowered in 1971, after SDS’s growth."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "Background: The civil rights movement had not ended in the mid-1960s. The Voting Rights Act passed in 1965, and the movement continued.",
+    "B": "Background: The Soviet Union kept building nuclear weapons through the 1960s. The Cold War did not end.",
+    "C": "The passage says SDS chapters grew as the war escalated and the draft reached more young men.",
+    "D": "Background: The voting age was lowered in 1971, not 1965. It came after SDS’s growth, so it cannot explain it.",
+    "general": "1. The passage ties SDS growth to two things: the war escalating and the draft reaching more young men.\n2. The draft made the war personal for millions of students.\n3. A personal threat recruits faster than an abstract cause.\n4. Background: The other answers get the decade wrong: the movement continued, the arms race continued, and the vote came in 1971.\nRemember: A cause must come before its effect: check the dates before you credit a cause."
+  }
+}

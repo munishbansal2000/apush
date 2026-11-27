@@ -1,0 +1,89 @@
+{
+  "id": "apush-mcq-2809",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.14"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 4,
+  "skills": [
+    "3.A",
+    "6.B"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.14 Society in Transition"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Clashing Political Values"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Clashes over Equal Rights"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Expansion of Rights Movements"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "Equal Rights Amendment ratification record, 1972-1982 (Congress, March 22, 1972; Indiana, 35th state, 1977)"
+    ]
+  },
+  "source": "original; stimulus table compiled from the Equal Rights Amendment ratification record",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from the ratification record: Congress proposed the ERA March 22, 1972; Indiana was the 35th and last state to ratify, in 1977; the deadline was extended to June 30, 1982. Account drawn from the grounding books (Barron's Ch. 10, Topic 8.14; 5 Steps Ch. 27; Princeton Ch. 12).",
+    "text": "Equal Rights Amendment ratifications (Congress sent the amendment to the states on March 22, 1972; 38 states were needed):\n\n| Year | States ratifying that year | Total ratified |\n| 1972 | 22 | 22 |\n| 1973 | 8 | 30 |\n| 1974 | 3 | 33 |\n| 1975 | 1 | 34 |\n| 1976 | 0 | 34 |\n| 1977 | 1 (Indiana) | 35 |\n| 1978-1982 | 0 | 35 |\n\nCongress extended the deadline to June 30, 1982. The amendment fell three states short."
+  },
+  "stimulus_set": "era-ratification-1972-1982",
+  "stem": "Background: Phyllis Schlafly led the STOP ERA campaign. The table best supports which conclusion about her campaign?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Her campaign convinced Congress to pass the Equal Rights Amendment itself in 1972.",
+      "misconception": "Congress passed the ERA in 1972, before her campaign gathered force, and her campaign opposed it."
+    },
+    {
+      "key": "B",
+      "text": "Her campaign helped stall ratification after the fast start, leaving it three states short."
+    },
+    {
+      "key": "C",
+      "text": "Her campaign had no effect at all, since ratification sped up after 1973.",
+      "misconception": "The table shows ratification slowing after 1973, from 30 states to only 35 by 1982."
+    },
+    {
+      "key": "D",
+      "text": "Her campaign made all 50 states ratify the amendment by 1982.",
+      "misconception": "The table shows only 35 states ratifying, not 50."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "Background: Congress passed the ERA in 1972, before her campaign gathered force, and her campaign opposed it.",
+    "B": "Background: Schlafly warned that the ERA would harm the family, force women into combat, and end protections in divorce, and after 1973 only five more states ratified.",
+    "C": "The table shows ratification slowing after 1973, from 30 states to only 35 by 1982.",
+    "D": "The table shows only 35 states ratifying, not 50.",
+    "general": "1. The table shows a fast start: 30 states by the end of 1973.\n2. Background: Schlafly organized housewives and church groups against the amendment from 1972 on.\n3. After 1973 only five more states ratified, and the amendment ended three states short.\nRemember: A sharp bend in a table's totals often marks the point where organized opposition began to work."
+  }
+}

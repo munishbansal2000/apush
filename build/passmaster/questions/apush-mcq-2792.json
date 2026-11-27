@@ -1,0 +1,88 @@
+{
+  "id": "apush-mcq-2792",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.14"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "2.A"
+  ],
+  "themes": [
+    "WXT",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.14 Society in Transition"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Decline of Public Trust in the 1970s"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "'Stagflation'"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "The Carter Administration"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "U.S. Bureau of Labor Statistics, annual average unemployment rates and CPI changes, 1970-1980"
+    ]
+  },
+  "source": "original; stimulus table compiled from U.S. Bureau of Labor Statistics annual averages",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from U.S. Bureau of Labor Statistics annual averages: unemployment rates and Consumer Price Index changes, 1970-1980. Account drawn from the grounding books (Barron's Ch. 10, Topic 8.14; 5 Steps Ch. 28; Princeton Ch. 12).",
+    "text": "Inflation and unemployment, annual averages (U.S. Bureau of Labor Statistics):\n\n| Year | Inflation (change in consumer prices) | Unemployment rate |\n| 1970 | 5.7% | 4.9% |\n| 1974 | 11.0% | 5.6% |\n| 1975 | 9.1% | 8.5% |\n| 1979 | 11.3% | 5.8% |\n| 1980 | 13.5% | 7.1% |"
+  },
+  "stimulus_set": "stagflation-data-1970-1980",
+  "stem": "Which year in the table shows both inflation above 8 percent and unemployment above 8 percent?",
+  "options": [
+    {
+      "key": "A",
+      "text": "1970",
+      "misconception": "In 1970 inflation was 5.7 percent and unemployment was 4.9 percent, so neither was above 8 percent."
+    },
+    {
+      "key": "B",
+      "text": "1975"
+    },
+    {
+      "key": "C",
+      "text": "1979",
+      "misconception": "In 1979 inflation was 11.3 percent, but unemployment was only 5.8 percent."
+    },
+    {
+      "key": "D",
+      "text": "1980",
+      "misconception": "In 1980 inflation was 13.5 percent, but unemployment was 7.1 percent, below 8 percent."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "In 1970 both numbers were under 6 percent, so 1970 cannot be the year both topped 8 percent.",
+    "B": "In 1975 inflation was 9.1 percent and unemployment was 8.5 percent, the only row where both are above 8 percent.",
+    "C": "In 1979 inflation topped 11 percent, but unemployment was only 5.8 percent, so the row fails the second half.",
+    "D": "In 1980 inflation was the highest in the table, but unemployment was 7.1 percent, below 8 percent.",
+    "general": "1. Read across each row and check both columns, not just one.\n2. In 1970 both numbers are low, and in 1974, 1979, and 1980 one of the two is below 8 percent.\n3. Only 1975 has both numbers above 8 percent: inflation 9.1 percent and unemployment 8.5 percent.\nRemember: When a question asks for two conditions at once, check both columns in every row."
+  }
+}

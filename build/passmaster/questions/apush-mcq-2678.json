@@ -1,0 +1,85 @@
+{
+ "id": "apush-mcq-2678",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.9"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "3.A",
+  "5.A"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.9 The Great Society"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Immigration and Nationality Act of 1965"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Liberal Hour of the 1960s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Lyndon Johnson's Social Agenda"
+   }
+  ],
+  "primary_sources": [
+   "Immigration and Nationality Act of 1965, Public Law 89-236 (paraphrased)"
+  ]
+ },
+ "source": "original; stimulus paraphrased from the Immigration and Nationality Act of 1965",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of the Immigration and Nationality Act of 1965, Public Law 89-236.",
+  "text": "Paraphrase of the Immigration and Nationality Act of 1965, also called the Hart-Celler Act. The act abolished the national quota system based on national origins that had been in place since the 1920s. It set overall limits instead: 170,000 immigrants a year from the Eastern Hemisphere and, for the first time, 120,000 a year from the Western Hemisphere. Family members of people already in the United States were exempt from the limits, and preference went to immigrants with needed skills.\n\nIn the years that followed, migration from Asia, Africa, and Latin America rose sharply."
+ },
+ "stimulus_set": "immigration-1965",
+ "stem": "The sharp rise in migration from Asia, Africa, and Latin America after 1965 is best explained by which feature of the act?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The act banned family members from joining relatives here",
+   "misconception": "The act exempted family members from the limits, so it helped them join relatives, not banned them."
+  },
+  {
+   "key": "B",
+   "text": "The act ended origin quotas and exempted family members from the limits"
+  },
+  {
+   "key": "C",
+   "text": "The act gave every nation the same 120,000 visas",
+   "misconception": "The limits were 170,000 for the Eastern Hemisphere and 120,000 for the Western, not the same for every nation."
+  },
+  {
+   "key": "D",
+   "text": "The act closed the border to Europe for the first time",
+   "misconception": "The act set a 170,000 limit for the Eastern Hemisphere, which includes Europe; it did not close the border."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "The act exempted family members from the limits, so it helped them join relatives, not banned them.",
+  "B": "Ending origin quotas opened the door, and the family exemption let each new immigrant bring relatives outside the limits.",
+  "C": "The limits were 170,000 for the Eastern Hemisphere and 120,000 for the Western, not the same for every nation.",
+  "D": "The act set a 170,000 limit for the Eastern Hemisphere, which includes Europe; it did not close the border.",
+  "general": "1. Background: the old quotas had favored Europe and held back Asia, Africa, and Latin America.\n2. Ending those quotas removed the barrier that had kept those migrants out.\n3. The family exemption then let each new immigrant bring relatives outside the limits.\n4. The two features together explain the sharp rise from those regions.\nRemember: A door opens twice when a barrier falls and relatives can follow."
+ }
+}

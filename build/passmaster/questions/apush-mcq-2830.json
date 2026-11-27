@@ -1,0 +1,85 @@
+{
+  "id": "apush-mcq-2830",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.15"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "6.C",
+    "3.B"
+  ],
+  "themes": [
+    "SOC"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.5 Culture after 1945"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.14 Society in Transition"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 26",
+        "section": "Prosperity and Anxiety: The 1950s"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "America in an Era of Turmoil (1960-1975)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ]
+  },
+  "source": "original; stimulus table compiled from the Bureau of Labor Statistics, Monthly Labor Review, December 1999, Table 1",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from the Bureau of Labor Statistics, Monthly Labor Review, December 1999, Table 1.",
+    "text": "Share of adults in paid work (the civilian labor force), by sex (Bureau of Labor Statistics, Monthly Labor Review, December 1999, Table 1):\n\n| Year | Women | Men |\n| 1950 | 33.9% | 86.4% |\n| 1960 | 37.7% | 83.3% |\n| 1970 | 43.3% | 79.7% |\n| 1980 | 51.5% | 77.4% |"
+  },
+  "stimulus_set": "women-work-1950-1980",
+  "stem": "Which of the following is the best conclusion about continuity amid the change in the table?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Women's participation rose sharply, yet women still took part at much lower rates than men."
+    },
+    {
+      "key": "B",
+      "text": "The gap in participation between men and women had closed completely by 1980.",
+      "misconception": "In 1980 the table gives women 51.5 percent and men 77.4 percent, a gap of nearly 26 points."
+    },
+    {
+      "key": "C",
+      "text": "Men had left paid work almost entirely by 1980, with very few men still working.",
+      "misconception": "The men's column still reads 77.4 percent in 1980."
+    },
+    {
+      "key": "D",
+      "text": "Women earned more than men by 1980, reversing the old pay gap between the sexes entirely.",
+      "misconception": "The table says nothing about pay, so it cannot support a claim about pay."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "The women's column rises from 33.9 percent to 51.5 percent, yet men still stand at 77.4 percent in 1980.",
+    "B": "In 1980 the table gives women 51.5 percent and men 77.4 percent, a gap of nearly 26 points.",
+    "C": "The men's column still reads 77.4 percent in 1980.",
+    "D": "The table says nothing about pay, so it cannot support a claim about pay.",
+    "general": "1. Compare the two columns in 1980: women 51.5 percent, men 77.4 percent.\n2. The gap is about 26 points, smaller than the 1950 gap of about 53 points, but still large.\n3. The rise is real change, and the remaining gap is real continuity.\n4. A claim about pay cannot be checked here because the table records who worked, not what they earned.\nRemember: A rising line can still sit well below another line; check both columns before calling a gap closed."
+  }
+}

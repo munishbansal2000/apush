@@ -1,0 +1,81 @@
+{
+ "id": "apush-mcq-2661",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.9"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.9 The Great Society"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "The Great Society"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Liberal Hour of the 1960s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Lyndon Johnson's Social Agenda"
+   }
+  ]
+ },
+ "source": "original; stimulus is a data table from the U.S. Census Bureau, Historical Poverty Tables, Table 2",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data table from the U.S. Census Bureau, Current Population Survey, Historical Poverty Tables, Table 2.",
+  "text": "| Year | 1959 | 1964 | 1965 | 1966 | 1969 | 1973 |\n| Poverty rate | 22.4% | 19.0% | 17.3% | 14.7% | 12.1% | 11.1% |\n\nOfficial poverty rate, all people. Source: U.S. Census Bureau, Current Population Survey, Historical Poverty Tables, Table 2."
+ },
+ "stimulus_set": "poverty-rate-table",
+ "stem": "The table best supports which conclusion about the timing of the fall in poverty?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The fastest fall came in the Great Society years"
+  },
+  {
+   "key": "B",
+   "text": "Poverty fell fastest in the 1950s, before the table begins",
+   "misconception": "The table begins in 1959, so it shows nothing about the 1950s before that year."
+  },
+  {
+   "key": "C",
+   "text": "Poverty stopped falling once the Great Society ended",
+   "misconception": "The rate keeps falling after 1969, from 12.1 percent to 11.1 percent in 1973."
+  },
+  {
+   "key": "D",
+   "text": "Poverty fell by the same amount in every year shown",
+   "misconception": "The drops differ: 2.6 points from 1965 to 1966, but 1.7 points from 1964 to 1965."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The rate drops 6.9 points from 1964 to 1969, the largest fall over any five-year span in the table.",
+  "B": "The table starts in 1959, so it cannot show what happened in the 1950s before that year.",
+  "C": "The rate falls from 12.1 percent in 1969 to 11.1 percent in 1973, so it kept falling.",
+  "D": "The yearly drops differ, so the fall was not the same amount each year.",
+  "general": "1. Work out the falls: 3.4 points from 1959 to 1964, then 6.9 points from 1964 to 1969.\n2. The 1964 to 1969 fall is the largest five-year fall in the table.\n3. Background: those are the years Johnson's Great Society programs were being passed and put in place.\n4. The fastest fall therefore came during the Great Society years.\nRemember: The biggest change over time points to the busiest years."
+ }
+}

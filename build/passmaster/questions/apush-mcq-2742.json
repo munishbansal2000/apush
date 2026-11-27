@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-2742",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.11"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "1.B",
+    "3.A"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.11 The Civil Rights Movement Expands"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "Nixon's Southern Strategy"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Original secondary account drawn from the grounding books and verified against the Yale Balkin timeline and NPS accounts: Swann v. Charlotte-Mecklenburg Board of Education was decided April 20, 1971 and unanimously upheld busing; Boston's court-ordered busing plan in 1974 met violent protests; Milliken v. Bradley (1974) struck down a cross-district Detroit plan.",
+    "text": "In 1971, the Supreme Court ruled in Swann v. Charlotte-Mecklenburg Board of Education that busing students to different schools was a proper tool for ending school segregation, after the Charlotte district had failed to desegregate.\n\nCourt-ordered busing then spread to Northern cities, including Boston, where a 1974 plan met violent protests. In 1974, the Court ruled in Milliken v. Bradley that judges could not order busing between Detroit's city schools and its suburbs, because the suburbs had not themselves been found guilty of segregation."
+  },
+  "stimulus_set": "swann-busing-north",
+  "stem": "According to the passage, what did the Supreme Court decide in Swann v. Charlotte-Mecklenburg (1971)?",
+  "options": [
+    {
+      "key": "A",
+      "text": "That busing could never be used to desegregate schools",
+      "misconception": "The passage says the Court ruled busing was a proper tool for ending segregation."
+    },
+    {
+      "key": "B",
+      "text": "That schools could remain segregated if neighborhoods were segregated",
+      "misconception": "The passage says the Court approved busing precisely because the district had failed to desegregate."
+    },
+    {
+      "key": "C",
+      "text": "That busing was a proper tool for ending school segregation"
+    },
+    {
+      "key": "D",
+      "text": "That only Southern school districts had to desegregate",
+      "misconception": "The passage says busing spread to Northern cities such as Boston, so the issue was not Southern only."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "The passage says the Court ruled busing was a proper tool for ending segregation.",
+    "B": "The passage says the Court approved busing because the district had failed to desegregate.",
+    "C": "The passage says the Court ruled busing students to different schools was a proper tool for ending school segregation.",
+    "D": "The passage says busing spread to Northern cities such as Boston, so the issue was not Southern only.",
+    "general": "1. The Charlotte district had failed to desegregate. Background: Brown v. Board of Education had ordered school desegregation in 1954.\n2. The Court was asked whether busing could be used to fix that failure.\n3. It ruled that busing was a proper tool for ending school segregation.\n4. Background: The decision was unanimous, and it opened the way for busing plans in Northern cities as well.\nRemember: Swann answered a practical question: when a district will not desegregate on its own, what tools may a judge use?"
+  }
+}

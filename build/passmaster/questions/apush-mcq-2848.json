@@ -1,0 +1,75 @@
+{
+  "answerKey": "D",
+  "difficulty": 2,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.8 The Vietnam War"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "America in an Era of Turmoil (1960–1975)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-2848",
+  "lesson": "apush-u8-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "The Camp David Accords led to expanded involvement in Vietnam.",
+      "text": "The signing of the Camp David Accords"
+    },
+    {
+      "key": "B",
+      "misconception": "The Civil Rights Act led to expanded involvement in Vietnam.",
+      "text": "The passage of the Civil Rights Act of 1964"
+    },
+    {
+      "key": "C",
+      "misconception": "The end of the Korean War led to expanded involvement in Vietnam.",
+      "text": "The end of the Korean War in 1953"
+    },
+    {
+      "key": "D",
+      "text": "The Gulf of Tonkin Resolution and military escalation"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "The Camp David Accords came in 1978, after the escalation.",
+    "B": "The Civil Rights Act of 1964 was domestic policy, not the cause of escalation.",
+    "C": "The Korean War ended in 1953, a decade earlier.",
+    "D": "Background: the Gulf of Tonkin Resolution gave Johnson broad authority and preceded major escalation. Congress passed it after reported attacks on American ships, and Johnson used it to send combat troops.",
+    "general": "1. Ask what authorized the escalation. A congressional resolution giving the president broad authority.\n2. Name it. Background: the Gulf of Tonkin Resolution, followed by a major military buildup.\n3. Test the other events. Camp David was 1978, the Civil Rights Act was domestic, and Korea ended in 1953.\n4. Match the cause. The resolution is the step that opened the way to escalation.\nRemember: escalation usually follows a grant of authority. Find the grant."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "2.B"
+  ],
+  "source": "original; stimulus is a paraphrase of Lyndon B. Johnson’s addresses on Vietnam (1964–1965)",
+  "status": "final",
+  "stem": "Which of the following most directly led to expanded U.S. involvement in Vietnam in the mid-1960s?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Lyndon B. Johnson, address on Vietnam, 1964–1965, paraphrased from presidential addresses.",
+    "text": "We can continue to help the people of South Vietnam to defend their freedom or we can abandon them. I have chosen to continue our commitment to the freedom of South Vietnam."
+  },
+  "stimulus_set": "johnson-vietnam-1964",
+  "themes": [
+    "WOR"
+  ],
+  "topics": [
+    "8.8"
+  ],
+  "type": "mcq",
+  "unit": 8
+}

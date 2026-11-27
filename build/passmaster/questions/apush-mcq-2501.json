@@ -1,0 +1,71 @@
+{
+ "id": "apush-mcq-2501",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.3"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.3 The Red Scare"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "The Second Red Scare"
+   }
+  ]
+ },
+ "source": "original; stimulus paraphrased from the Rosenberg espionage case, 1950-1953",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of the Rosenberg espionage case, 1950-1953. Paraphrased, not quoted, because the source is after 1929.",
+  "text": "In 1950, Julius and Ethel Rosenberg were arrested and charged with passing secrets about the atomic bomb to the Soviet Union. Both were members of the Communist Party, and both insisted they were innocent. They were convicted of espionage and sentenced to death. Despite pleas for clemency from around the world, they were executed in the electric chair in 1953."
+ },
+ "stimulus_set": "rosenberg-trial-1953",
+ "stem": "The Rosenberg case deepened public fear mainly because it suggested that",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Soviet Union had never built an atomic bomb.",
+   "misconception": "The case was about how Soviet scientists learned the secrets, not whether they had a bomb."
+  },
+  {
+   "key": "B",
+   "text": "American communists had helped the Soviets gain atomic secrets."
+  },
+  {
+   "key": "C",
+   "text": "McCarthy had written the espionage laws himself.",
+   "misconception": "Background from the books: McCarthy was a senator who held hearings, not a lawmaker of espionage statutes. The Rosenbergs were tried under existing espionage law."
+  },
+  {
+   "key": "D",
+   "text": "The Rosenbergs worked as investigators for HUAC.",
+   "misconception": "The Rosenbergs were the accused, not investigators. Background from the books: the FBI investigated them and the Justice Department tried them; they never worked for the committee."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Background from the books: the Soviet Union had tested an atomic bomb in 1949. The Rosenberg case was about how Soviet scientists learned the secrets, not whether they had a bomb.",
+  "B": "The charge was that the Rosenbergs passed atomic secrets to Moscow. If American communists could hand over the bomb's secrets, the enemy within looked real.",
+  "C": "Background from the books: McCarthy was a senator who held hearings, not a lawmaker of espionage statutes. The Rosenbergs were tried under existing espionage law.",
+  "D": "The Rosenbergs were the accused, not investigators. They were arrested and tried for espionage; they never worked for any committee.",
+  "general": "1. Background from the books: the Soviet Union had tested an atomic bomb in 1949.\n2. The charge was that the Rosenbergs, American communists, had passed those secrets to Moscow.\n3. If American communists could hand over the bomb's secrets, the enemy within looked real.\nRemember: Espionage cases frighten most when the secret lost is the one that matters most."
+ }
+}

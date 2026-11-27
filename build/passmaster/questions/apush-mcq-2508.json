@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-2508",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.3"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.3 The Red Scare"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Joseph McCarthy and McCarthyism"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "McCarthyism"
+   }
+  ]
+ },
+ "source": "original; stimulus image from the shared pool: Army-McCarthy hearings photograph, 1954, public domain",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph: Army-McCarthy hearings, 1954, public domain (PD-USGov-Congress), via Wikimedia Commons.",
+  "text": "The photograph, taken during the Army-McCarthy hearings in 1954, shows Senator Joseph McCarthy standing and pointing at a large map of the United States headed 'COMMUNIST PARTY.' The Army's lawyer, Joseph Welch, sits at the left with his hand to his forehead, while other men watch from behind the table."
+ },
+ "stimulus_set": "welch-mccarthy-hearings-1954",
+ "stem": "Welch's public rebuke of McCarthy, asking whether the senator had any sense of decency left, mattered because it",
+ "options": [
+  {
+   "key": "A",
+   "text": "Proved that McCarthy had lied under oath.",
+   "misconception": "Welch asked a question about decency, not about a lie under oath. No perjury charge came out of the exchange."
+  },
+  {
+   "key": "B",
+   "text": "Exposed McCarthy's bullying before a national television audience."
+  },
+  {
+   "key": "C",
+   "text": "Ended the hearings on the same day it was asked.",
+   "misconception": "The hearings continued after the exchange. Welch's question turned opinion, but the hearings ran their course."
+  },
+  {
+   "key": "D",
+   "text": "Convicted McCarthy of a crime in the Senate.",
+   "misconception": "Background from the books: the Senate censured McCarthy months later; it never convicted him of a crime. Censure is a formal rebuke, not a criminal verdict."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Welch asked a question about decency, not about a lie under oath. No perjury charge came out of the exchange.",
+  "B": "Background from the books: the hearings were carried live by two television networks, and Welch's rebuke drew loud applause as viewers watched McCarthy behave like a bully.",
+  "C": "The hearings continued after the exchange. Welch's question turned opinion, but the hearings ran their course.",
+  "D": "Background from the books: the Senate censured McCarthy in December 1954; it never convicted him of a crime. Censure is a formal rebuke, not a criminal verdict.",
+  "general": "1. Background from the books: The hearings were carried live on television, so millions of Americans watched McCarthy's conduct directly.\n2. Background from the books: Welch's rebuke named that conduct in front of the cameras, and the room applauded.\n3. A single public rebuke can crystallize what an audience has been watching for weeks.\nRemember: Television lets the public judge conduct directly, and conduct can end a career faster than argument."
+ },
+ "figures": [
+  {
+   "file": "u8/5s24-ch25-mcq-01.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Welch-McCarthy-Hearings.jpg",
+   "license": "Public domain (U.S. Congress work, PD-USGov-Congress)",
+   "caption": "Senator Joseph McCarthy points at a map headed COMMUNIST PARTY during the 1954 Army-McCarthy hearings.",
+   "alt": "A black-and-white photograph of Senator Joseph McCarthy standing and pointing at a large map of the United States headed COMMUNIST PARTY, while Joseph Welch sits at the left with his hand to his forehead and other men watch from behind a table with microphones.",
+   "id": "fig-apush-mcq-2508"
+  }
+ ]
+}

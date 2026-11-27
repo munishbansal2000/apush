@@ -1,0 +1,71 @@
+{
+ "id": "apush-mcq-2524",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.4"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "WXT",
+  "MIG"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.4 The Economy After 1945"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 26",
+    "section": "The Return of Prosperity"
+   }
+  ]
+ },
+ "source": "original; stimulus is a data table built from 5 Steps to a 5, 2024, Chapter 26",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data table from 5 Steps to a 5, 2024, Chapter 26: GNP figures, white-collar majority, Diner's Club card. Births figure corrected per U.S. Census Bureau, Series P-25 No. 173 (Feb 1958): 4,302,000 births in 1957.",
+  "text": "| Fact | Year | Value |\n| Gross national product | 1945 | $200 billion |\n| Gross national product | 1960 | More than $500 billion |\n| Babies born | 1957 | 4.3 million |\n| Workers in white-collar jobs | 1956 | A majority |\n| First Diner's Club card | 1950 | Offered to shoppers |"
+ },
+ "stimulus_set": "postwar-boom-data-1945-1960",
+ "stem": "The table best supports which claim about the American workforce in the 1950s?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Most workers left white-collar jobs to return to farming",
+   "misconception": "Background from the books: white-collar jobs became the majority by 1956; the movement ran toward offices, not farms."
+  },
+  {
+   "key": "B",
+   "text": "Factory work disappeared entirely from the economy",
+   "misconception": "Background from the books: factories still made the cars and appliances families bought; the table shows office work growing, not factory work vanishing."
+  },
+  {
+   "key": "C",
+   "text": "Women stopped working outside the home in the 1950s",
+   "misconception": "Background from the books: more women worked in the late 1950s than during the war, many out of financial need."
+  },
+  {
+   "key": "D",
+   "text": "The economy shifted toward office and service work"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Background from the books: white-collar jobs became the majority by 1956, so the movement ran toward offices, not farms.",
+  "B": "Background from the books: factories still made the cars and appliances families bought; the table shows office work growing, not factory work vanishing.",
+  "C": "Background from the books: more women worked in the late 1950s than during the war, many out of financial need.",
+  "D": "A majority white-collar workforce beside a GNP over $500 billion shows an economy shifting toward office and service work.",
+  "general": "1. The workforce row is the clue: a majority of workers held white-collar jobs by 1956.\n2. Background from the books: GNP more than doubled in the same years, so the shift happened while the economy grew.\n3. Growth plus an office majority means the economy was shifting toward office and service work, not back to farms or factories alone.\nRemember: A workforce table shows where the jobs are moving, not just how many jobs exist."
+ }
+}

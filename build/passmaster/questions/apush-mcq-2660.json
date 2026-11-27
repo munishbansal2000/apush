@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-2660",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.9"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.9 The Great Society"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "The Great Society"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Liberal Hour of the 1960s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Lyndon Johnson's Social Agenda"
+   }
+  ]
+ },
+ "source": "original; stimulus is a data table from the U.S. Census Bureau, Historical Poverty Tables, Table 2",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data table from the U.S. Census Bureau, Current Population Survey, Historical Poverty Tables, Table 2.",
+  "text": "| Year | 1959 | 1964 | 1965 | 1966 | 1969 | 1973 |\n| Poverty rate | 22.4% | 19.0% | 17.3% | 14.7% | 12.1% | 11.1% |\n\nOfficial poverty rate, all people. Source: U.S. Census Bureau, Current Population Survey, Historical Poverty Tables, Table 2."
+ },
+ "stimulus_set": "poverty-rate-table",
+ "stem": "According to the table, what happened to the official poverty rate between 1959 and 1973?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It rose from 11.1 percent to 22.4 percent",
+   "misconception": "The table runs the other way: 22.4 percent in 1959 falls to 11.1 percent in 1973."
+  },
+  {
+   "key": "B",
+   "text": "It stayed at 19.0 percent for the whole period",
+   "misconception": "The rate is 19.0 percent only in 1964; it changes in every other year shown."
+  },
+  {
+   "key": "C",
+   "text": "It fell only after 1969, when Johnson left office",
+   "misconception": "The rate falls in every year shown, including 1964 to 1969, while Johnson was president."
+  },
+  {
+   "key": "D",
+   "text": "It fell from 22.4 percent to 11.1 percent"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "The table shows 22.4 percent in 1959 and 11.1 percent in 1973, a fall, not a rise.",
+  "B": "The rate is 19.0 percent only in 1964; it reads 22.4, 17.3, 14.7, 12.1, and 11.1 in the other years.",
+  "C": "The rate falls from 19.0 percent in 1964 to 12.1 percent in 1969, before Johnson left office.",
+  "D": "The table reads 22.4 percent in 1959 and 11.1 percent in 1973.",
+  "general": "1. Read the first and last years in the table: 22.4 percent in 1959 and 11.1 percent in 1973.\n2. The later number is smaller than the earlier number.\n3. Every year in between is also smaller than the year before it.\n4. The poverty rate therefore fell across the whole period shown.\nRemember: Compare the first and last numbers before judging a trend."
+ }
+}

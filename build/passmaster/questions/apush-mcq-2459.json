@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-2459",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.2"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "WXT",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.2 The Cold War from 1945 to 1980"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Origins of the Cold War (1945-1960)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Truman and the Beginning of the Cold War (1945-1953)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Aid figures: U.S. Department of State, Office of the Historian, Marshall Plan figures (approximate). Table compiled for this question from those figures.",
+  "text": "The table shows the distribution of Marshall Plan aid to Western Europe, 1948-1952, in billions of dollars (approximate).\n\n| Country | Aid received (billions of dollars) |\n| United Kingdom | 3.3 |\n| France | 2.7 |\n| Italy | 1.5 |\n| West Germany | 1.4 |\n| Netherlands | 1.1 |\n| All other recipients | 3.3 |\n| Total | about 13 |"
+ },
+ "stimulus_set": "marshall-plan-aid",
+ "source": "original; stimulus table compiled from U.S. Department of State, Office of the Historian, Marshall Plan figures (approximate)",
+ "stem": "The pattern of aid in the table best supports which conclusion about the Marshall Plan's purpose?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The plan aimed to punish Germany by denying it aid after the war.",
+   "misconception": "Germany got real aid in the table; punishment would have meant giving it nothing."
+  },
+  {
+   "key": "B",
+   "text": "The plan aimed to buy the loyalty of neutral nations outside the war.",
+   "misconception": "The table's biggest recipients are the major industrial powers, not neutral bystanders."
+  },
+  {
+   "key": "C",
+   "text": "The plan sent equal aid to every European country regardless of need.",
+   "misconception": "The table's figures differ in every row, so the aid was not equal."
+  },
+  {
+   "key": "D",
+   "text": "The plan rebuilt Western Europe's industry so prosperity would block Communist appeals."
+  }
+ ],
+ "rationales": {
+  "A": "West Germany received $1.4 billion, a large share, so the plan did not punish it by denying aid. Background from the books: rebuilding Germany's industry was part of reviving Europe's economy.",
+  "B": "The largest shares went to Britain, France, Italy, and West Germany, the core industrial states, not to neutrals. The table shows aid following economic weight, not neutrality.",
+  "C": "The shares are plainly unequal, from $3.3 billion down to $1.1 billion. Equal aid would show the same figure in every row.",
+  "D": "The biggest shares went to the largest industrial economies, the ones whose recovery mattered most to Europe. Background from the books: American leaders believed prosperity would keep war-weary voters from turning to communism.",
+  "general": "1. The aid is concentrated, not spread evenly: the biggest shares go to Britain, France, Italy, and West Germany.\n2. Those four were Western Europe's industrial core, the economies whose recovery would pull the rest of the region along.\n3. Background from the books: Rebuilding them served containment by economics: prosperity, not soldiers, would keep communism from spreading.\nRemember: Follow the money to the motive: where aid concentrates shows what the giver values most."
+ }
+}

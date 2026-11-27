@@ -1,0 +1,80 @@
+{
+  "id": "apush-mcq-2791",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.13"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "4.A",
+    "3.B"
+  ],
+  "themes": [
+    "PCE",
+    "GEO"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.13 The environment and natural resources from 1968 to 1980"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "Jimmy Carter"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "Federal Land Policy and Management Act, 1976 (paraphrased)",
+      "Nevada Assembly Bill 413, June 2, 1979 (paraphrased)"
+    ]
+  },
+  "source": "original; stimulus is an account of FLPMA and the Sagebrush Rebellion",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Account drawn from the grounding books (Barron's Ch. 10, Topic 8.13) and verified against the Congressional Research Service report on federal land ownership and the EBSCO research starter on the Sagebrush Rebellion: FLPMA (1976) made retention national policy; Nevada's law of June 2, 1979 claimed 48 million acres, 79 percent of the state; Hatch and Santini bills proposed transferring 544 million acres and failed in committee.",
+    "text": "In 1976 Congress passed the Federal Land Policy and Management Act (FLPMA). It declared that the public lands managed by the Bureau of Land Management would stay in federal ownership and be managed for many uses at once: grazing, mining, recreation, wildlife, and wilderness. The federal government owned about one-third of the nation's land, most of it in twelve western states.\n\nIn 1979 Nevada passed a law claiming title to the 48 million acres of federal land inside the state, about 79 percent of Nevada. Other western states passed similar laws, and bills in Congress proposed transferring 544 million acres to the states. The movement became known as the Sagebrush Rebellion."
+  },
+  "stimulus_set": "public-lands-sagebrush-1976-1979",
+  "stem": "The Sagebrush rebels' case rested most directly on which claim?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The federal government had never owned any western land.",
+      "misconception": "Background: The federal government owned about one-third of the nation's land, most of it in the West."
+    },
+    {
+      "key": "B",
+      "text": "Western states wanted the federal government to buy more land.",
+      "misconception": "The passage says the rebels wanted federal land transferred to the states, not more federal buying."
+    },
+    {
+      "key": "C",
+      "text": "The old promise was that federal lands would pass to the states."
+    },
+    {
+      "key": "D",
+      "text": "Ranchers and miners wanted all public land turned into national parks.",
+      "misconception": "Background: Ranchers and miners wanted the land for grazing and mining, not for parks."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "Background: The federal government owned about one-third of the nation's land, most of it in the West.",
+    "B": "The passage says the rebels wanted federal land transferred to the states, not more federal buying.",
+    "C": "Background: For generations federal policy had moved public land into private and state hands, and FLPMA reversed that course in 1976.",
+    "D": "Background: Ranchers and miners wanted the land for grazing and mining, not for parks.",
+    "general": "1. The passage says Nevada claimed title to 48 million acres of federal land in 1979.\n2. Background: That claim only makes sense if the rebels believed the land was meant to pass to the states all along.\n3. Background: FLPMA's 1976 declaration that the lands would stay federal is what turned that belief into open rebellion.\nRemember: A claim about a broken promise needs a promise first, then the break."
+  }
+}

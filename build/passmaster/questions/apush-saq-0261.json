@@ -1,0 +1,93 @@
+{
+  "id": "apush-saq-0261",
+  "type": "saq",
+  "unit": 8,
+  "topics": [
+    "8.12"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A",
+    "3.B"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.12 Youth Culture of the 1960s"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Expansion of Rights Movements"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The New Left, Feminism, and the Counterculture"
+      }
+    ],
+    "primary_sources": [
+      "Mario Savio, ‘Bodies Upon the Gears’ speech, December 2, 1964 (paraphrased)"
+    ]
+  },
+  "source": "original; stimulus is a paraphrase of Mario Savio’s speech of December 2, 1964",
+  "saq_slot": 2,
+  "totalPoints": 3,
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Paraphrase of Mario Savio’s ‘Bodies Upon the Gears’ speech, delivered at Sproul Hall, UC Berkeley, December 2, 1964.",
+    "text": "Paraphrase of Mario Savio’s speech at the University of California, Berkeley, on December 2, 1964.\n\nSavio told the rally that the university was run like a machine, and that when its workings became unbearable, students had to block them with their own bodies to bring the machine to a halt. He said students had to show the people who ran the university that unless students were free, the machine would not be allowed to work at all."
+  },
+  "stimulus_set": null,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify one claim Savio makes about the university in the speech.",
+      "modelAnswer": "Savio claims the university is run like a machine, and that its workings can become so unbearable that students can no longer take part in them. He says students must block the machine with their own bodies to bring it to a halt.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for identifying one claim from the speech, such as the university being run like a machine, its workings becoming unbearable, or students having to block it with their bodies.",
+          "notEarned": "Naming the Free Speech Movement without a claim from the speech does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain one reason students protested at Berkeley in 1964.",
+      "modelAnswer": "Background: Students protested because the university banned political activity on campus, including tables, leaflets, and fundraising for off-campus causes. Background: Many of the protesters had worked in the civil rights movement in the South and refused to accept a campus where they could not speak for those causes.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Background: Earns the point for explaining one reason, such as the ban on political tables and fundraising, the arrest of a student staffing a table on October 1, 1964, or the university’s refusal to allow free speech on campus.",
+          "notEarned": "Restating that students protested, without a reason, does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Explain one effect of the Free Speech Movement on student activism in the later 1960s.",
+      "modelAnswer": "Background: The Free Speech Movement showed students on other campuses that direct action could force a university to change its rules, and Berkeley-style protests spread across the country. Background: Veterans of the Berkeley protests went on to organize against the Vietnam War, carrying the sit-in tactic onto campuses nationwide.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Background: Earns the point for explaining one effect, such as Berkeley-style protests spreading to other campuses, students gaining a model for direct action against university rules, or FSM veterans carrying sit-in tactics into the antiwar movement.",
+          "notEarned": "Saying only that the Free Speech Movement happened, without an effect on later activism, does not earn the point."
+        }
+      ]
+    }
+  ]
+}

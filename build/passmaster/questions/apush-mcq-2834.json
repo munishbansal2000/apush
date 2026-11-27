@@ -1,0 +1,86 @@
+{
+  "id": "apush-mcq-2834",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.15"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 3,
+  "skills": [
+    "1.A",
+    "2.A"
+  ],
+  "themes": [
+    "SOC",
+    "ARC"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.4 Economy after 1945"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.12 Youth Culture of the 1960s"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 26",
+        "section": "Prosperity and Anxiety: The 1950s"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "America in an Era of Turmoil (1960-1975)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ]
+  },
+  "source": "original; stimulus table compiled from the National Center for Education Statistics, Digest of Education Statistics, Table 303.10",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from the National Center for Education Statistics, Digest of Education Statistics, Table 303.10.",
+    "text": "Students enrolled in colleges and universities each fall (National Center for Education Statistics, Digest of Education Statistics, Table 303.10):\n\n| Fall | Total enrollment | Women as a share of students |\n| 1950 | 2.3 million | 31.6% |\n| 1959 | 3.6 million | 35.9% |\n| 1970 | 8.6 million | 41.2% |\n| 1980 | 12.1 million | 51.4% |"
+  },
+  "stimulus_set": "college-enrollment-1950-1980",
+  "stem": "What does the table show about college enrollment from 1950 to 1980?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Enrollment grew about fivefold, and women went from under a third of students to over half."
+    },
+    {
+      "key": "B",
+      "text": "Enrollment fell after 1970 as the baby boom ended and fewer young students applied.",
+      "misconception": "The table rises from 8.6 million in 1970 to 12.1 million in 1980."
+    },
+    {
+      "key": "C",
+      "text": "Women were already the majority of students in 1950, well before the boom years began.",
+      "misconception": "The table gives women 31.6 percent of students in 1950."
+    },
+    {
+      "key": "D",
+      "text": "Enrollment stayed below 5 million students through 1980 and never rose above that mark.",
+      "misconception": "The table passes 5 million between 1959 and 1970 and reaches 12.1 million in 1980."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "Total enrollment rises from 2.3 million to 12.1 million, and the women's share rises from 31.6 percent to 51.4 percent.",
+    "B": "The table rises from 8.6 million in 1970 to 12.1 million in 1980.",
+    "C": "The table gives women 31.6 percent of students in 1950.",
+    "D": "The table passes 5 million between 1959 and 1970 and reaches 12.1 million in 1980.",
+    "general": "1. Read the total column first: 2.3, 3.6, 8.6, 12.1 million, rising at every step.\n2. Twelve million is about five times 2.3 million.\n3. Read the women's column the same way: 31.6, 35.9, 41.2, 51.4 percent, passing half only in 1980.\n4. An answer must fit both columns, not just one.\nRemember: A table with two columns asks for two readings, one per column."
+  }
+}

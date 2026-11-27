@@ -1,0 +1,88 @@
+{
+  "id": "apush-mcq-2720",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.11"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "1.B",
+    "3.A"
+  ],
+  "themes": [
+    "SOC",
+    "NAT"
+  ],
+  "reasoning": "comparison",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The American Indian Movement"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Expansion of Rights Movements"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Photograph: graffiti painted during the occupation of Alcatraz Island (National Park Service photograph, public domain, via Wikimedia Commons); the photograph was viewed before writing. Account drawn from the grounding books and verified against the National Park Service and HISTORY timelines: occupation began November 20, 1969; the island was a former federal prison closed in 1963; the occupation ended June 11, 1971.",
+    "text": "The photograph shows a wall on Alcatraz Island painted with the words \"WELCOME\" and \"INDIAN LAND.\" A sign on the wall reads \"UNITED INDIAN PROPERTY.\"\n\nOn November 20, 1969, a group of activists calling themselves Indians of All Tribes landed on Alcatraz Island, a former federal prison in San Francisco Bay that the government had closed in 1963. They claimed the island by right of discovery and said they would build an Indian school, cultural center, and museum there. The occupation lasted until June 1971."
+  },
+  "stimulus_set": "alcatraz-indians-of-all-tribes",
+  "stem": "According to the passage, on what basis did the occupiers claim Alcatraz Island?",
+  "options": [
+    {
+      "key": "A",
+      "text": "They claimed it by right of discovery, as the first inhabitants of the land"
+    },
+    {
+      "key": "B",
+      "text": "They bought it from the federal government for twenty-four dollars",
+      "misconception": "The passage says the occupiers claimed the island by right of discovery. Background: The twenty-four dollar offer was a sarcastic treaty proposal, not a purchase."
+    },
+    {
+      "key": "C",
+      "text": "They inherited it under the terms of the 1890 Wounded Knee settlement",
+      "misconception": "The passage says nothing about Wounded Knee or an 1890 settlement giving them Alcatraz."
+    },
+    {
+      "key": "D",
+      "text": "They won it in a federal court case against the Bureau of Indian Affairs",
+      "misconception": "The passage describes an occupation and a claim, not a court victory."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "The passage says the occupiers claimed the island by right of discovery.",
+    "B": "Background: The occupiers offered to buy the island for $24 in glass beads and red cloth as a sarcastic treaty proposal; they did not buy it.",
+    "C": "The passage mentions no Wounded Knee settlement and no inheritance of Alcatraz.",
+    "D": "The passage describes an occupation, not a court case or a court victory.",
+    "general": "1. The occupiers called themselves Indians of All Tribes and landed on the island in November 1969.\n2. The passage says they claimed the island by right of discovery.\n3. The photograph matches that claim, with \"INDIAN LAND\" painted on the wall and a sign reading \"UNITED INDIAN PROPERTY.\"\n4. They said they would build an Indian school, cultural center, and museum there.\nRemember: A claim \"by right of discovery\" turns the language of colonization back on the government that used it."
+  },
+  "figures": [
+    {
+      "file": "u8/alcatraz-welcome-indian-land-1969.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Alcatraz_Occupation_%22Welcome_to_Indian_Land%22_graffiti.jpeg",
+      "license": "Public domain (National Park Service photograph)",
+      "caption": "Graffiti reading WELCOME and INDIAN LAND on a wall on Alcatraz Island",
+      "alt": "A wall on Alcatraz Island painted with the words WELCOME and INDIAN LAND, with a sign reading UNITED INDIAN PROPERTY",
+      "id": "fig-apush-mcq-2720"
+    }
+  ]
+}

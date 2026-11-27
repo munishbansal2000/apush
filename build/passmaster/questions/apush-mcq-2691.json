@@ -1,0 +1,83 @@
+{
+  "id": "apush-mcq-2691",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.10"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "3.A",
+    "2.B"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.10 The African-American Civil Rights Movement (1960s)"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Civil Rights Movement in the 1960s: From Integration to Black Power"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "\"Bull\" Connor and the Birmingham Campaign (1963)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Account drawn from the grounding books (Barron's Ch. 10, Topic 8.10, \"'Bull' Connor and the Birmingham Campaign (1963)\"; 5 Steps Ch. 27; Princeton Ch. 12). The letter's date and the quoted sentence are from the letter itself, as published by the Stanford King Institute; the September 15, 1963 bombing date and the four girls are in the books and the National Park Service account of the church.",
+    "text": "In the spring of 1963 Martin Luther King Jr. and the Southern Christian Leadership Conference (SCLC) launched a campaign against segregation in Birmingham, Alabama. The city's public safety commissioner, Eugene \"Bull\" Connor, used fire hoses and police dogs against the demonstrators. In May 1963 thousands of Black schoolchildren joined the protests in what became known as the Children's Crusade, and Connor used violent tactics against them too. Television and newspapers carried pictures of police violence against children across the country, and public sympathy moved toward the movement. King was arrested during the campaign and wrote his \"Letter from a Birmingham Jail\" from his cell on April 16, 1963. In the letter he answered white clergymen who had urged him to wait, writing that \"'Wait' has almost always meant 'Never'.\" On September 15, 1963, a bomb at the Sixteenth Street Baptist Church in Birmingham killed four Black girls. The campaign helped build support for the civil rights bill that became law the next year."
+  },
+  "stimulus_set": "birmingham-1963",
+  "stem": "The Children's Crusade mattered most to the campaign because it did which of the following?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Put pictures of police violence against children before the whole country"
+    },
+    {
+      "key": "B",
+      "text": "Persuaded Bull Connor to join the campaign and desegregate Birmingham himself",
+      "misconception": "Connor used violent tactics against the children; he did not join the campaign."
+    },
+    {
+      "key": "C",
+      "text": "Ended the campaign by getting every demonstrator arrested on the first day",
+      "misconception": "The campaign continued and built support for the civil rights bill; it did not end there."
+    },
+    {
+      "key": "D",
+      "text": "Proved that the campaign had the support of Birmingham's white clergy",
+      "misconception": "The white clergymen in the passage urged King to wait, not to march."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "The passage says television and newspapers carried pictures of police violence against children across the country, moving public sympathy toward the movement.",
+    "B": "Connor met the children's march with violent tactics, not with support.",
+    "C": "The campaign went on to help build support for the civil rights bill.",
+    "D": "The white clergy urged waiting, which is the position King answers in his letter.",
+    "general": "1. Thousands of Black schoolchildren join the protests in May 1963.\n2. Connor uses violent tactics against them too.\n3. Pictures of that violence reach the whole country through television and newspapers.\n4. Public sympathy moves toward the movement, which is what the campaign needed.\nRemember: A protest gains power when the public can see what the protest is against."
+  }
+}

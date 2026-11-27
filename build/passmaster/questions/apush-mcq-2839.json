@@ -1,0 +1,81 @@
+{
+  "id": "apush-mcq-2839",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.15"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 3,
+  "skills": [
+    "2.B",
+    "3.A"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "comparison",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.15 Subject to Debate"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Civil Rights Movement: Top-Down or Grassroots?"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "America in an Era of Turmoil (1960-1975)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ]
+  },
+  "source": "original; stimulus paraphrased from the historians' debate in Barron's Premium 2027, Chapter 10, Topic 8.15",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Paraphrase of the historians' debate in Barron's Premium 2027, Chapter 10, Topic 8.15, 'The Civil Rights Movement: Top-Down or Grassroots?'",
+    "text": "Two historians describe the civil rights movement (paraphrased from the debate in Barron's Premium 2027, Chapter 10, Topic 8.15):\n\nView 1: The movement's victories came from Washington. The courts struck down segregation, presidents sent troops to enforce the law, and Congress passed the great civil rights laws.\n\nView 2: The victories came from ordinary people. Bus boycotts, sit-ins, and marches forced Washington to act, and without local protest the laws would never have passed."
+  },
+  "stimulus_set": "civil-rights-debate-top-down-grassroots",
+  "stem": "Which evidence would best support View 2, the grassroots view?",
+  "options": [
+    {
+      "key": "A",
+      "text": "President Eisenhower sending federal troops to Little Rock in Arkansas in the year 1957.",
+      "misconception": "Background: Eisenhower sent the troops, so that action came from Washington and supports View 1."
+    },
+    {
+      "key": "B",
+      "text": "The Montgomery bus boycott, organized by local Black residents and sustained for over a year."
+    },
+    {
+      "key": "C",
+      "text": "The text of the Civil Rights Act that Congress passed in the year 1964.",
+      "misconception": "The act is the law itself, and both views agree the law passed, so it does not favor one view."
+    },
+    {
+      "key": "D",
+      "text": "A presidential speech praising the movement and its leaders in public speeches to crowds.",
+      "misconception": "A speech from Washington supports View 1, not the grassroots view."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "Background: Eisenhower sent the troops, so that action came from Washington and supports View 1.",
+    "B": "Background: The boycott began with local residents in December 1955 and lasted 381 days, which is the local protest View 2 describes.",
+    "C": "The act is the law itself, and both views agree the law passed, so it does not favor one view.",
+    "D": "A speech from Washington supports View 1, not the grassroots view.",
+    "general": "1. View 2 claims ordinary people forced Washington to act, so the evidence must show ordinary people acting first.\n2. Background: The Montgomery boycott began with local Black residents in December 1955 and lasted 381 days.\n3. Troops, laws, and speeches all come from Washington, so they fit View 1 instead.\n4. The best evidence for a view is an example of what that view says did the work.\nRemember: Match the evidence to the actor the view names."
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "apush-saq-0255",
+  "type": "saq",
+  "unit": 8,
+  "topics": [
+    "8.10"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "1.B",
+    "3.A"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.10 The African-American Civil Rights Movement (1960s)"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Civil Rights Movement in the 1960s: From Integration to Black Power"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "\"Bull\" Connor and the Birmingham Campaign (1963)"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Civil Rights Act (1964)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is an original secondary passage written for this question, facts from the grounding books",
+  "saq_slot": 1,
+  "totalPoints": 3,
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Original secondary passage written for this question; facts from the grounding books.",
+    "text": "The Birmingham campaign of 1963 showed how a local protest could move the whole country. When police turned fire hoses and dogs on demonstrators, including schoolchildren, television and newspapers carried the pictures into homes across the United States. Public opinion shifted toward the movement, and President Kennedy sent a civil rights bill to Congress. After Kennedy's assassination, President Johnson pressed Congress to pass the bill, and it became the Civil Rights Act of 1964. The act banned segregation in public places and discrimination in jobs. Yet the act did not end poverty or the everyday segregation that Black Americans faced in housing and in Northern cities."
+  },
+  "stimulus_set": null,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify one way the Birmingham campaign gained national attention, as described in the passage.",
+      "modelAnswer": "Television and newspapers carried pictures of police turning fire hoses and dogs on demonstrators, including schoolchildren, into homes across the United States. Those pictures put the campaign before the whole country.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for identifying one way the campaign gained attention from the passage, such as television or newspapers carrying pictures of police violence against demonstrators or schoolchildren.",
+          "notEarned": "Naming the campaign without a way it gained attention does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain one reason President Johnson was able to get the Civil Rights Act passed in 1964.",
+      "modelAnswer": "Johnson took up Kennedy's bill after the assassination, when sympathy for Kennedy and Johnson's own skill in Congress gave him leverage. Johnson pressed reluctant legislators hard, and the bill passed in the summer of 1964.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for explaining one reason the act passed, such as sympathy after Kennedy's assassination, Johnson's skill as a legislator, the pressure of the Birmingham campaign and public opinion, or the Senate vote to end the Southern filibuster.",
+          "notEarned": "Restating that the act passed, without a reason it passed, does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Explain one limit of the Civil Rights Act of 1964 shown in the passage.",
+      "modelAnswer": "The passage says the act did not end poverty or the everyday segregation Black Americans faced in housing and in Northern cities. The act ended legal segregation in public places and jobs, but it left those daily conditions in place.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for explaining one limit from the passage, such as the act not ending poverty, not ending everyday segregation in housing, or not changing conditions in Northern cities.",
+          "notEarned": "Saying only that the act was a failure, without a limit from the passage, does not earn the point."
+        }
+      ]
+    }
+  ]
+}

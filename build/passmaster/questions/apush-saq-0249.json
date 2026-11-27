@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0249",
+ "type": "saq",
+ "unit": 8,
+ "topics": [
+  "8.7"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "3.A"
+ ],
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.7 America as a World Power"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Cold War (1945-1960)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ],
+  "primary_sources": [
+   "Dwight D. Eisenhower, special message to Congress, January 5, 1957 (paraphrased)"
+  ]
+ },
+ "source": "original; stimulus paraphrased from Eisenhower's message to Congress, January 5, 1957",
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of President Dwight D. Eisenhower's special message to Congress, January 5, 1957 (public domain, U.S. government speech; paraphrased because the source is after 1929).",
+  "text": "Paraphrase of President Dwight D. Eisenhower's message to Congress, January 5, 1957. Eisenhower asked Congress for authority to use American armed forces to help any Middle Eastern nation that asked for aid against armed aggression by any nation controlled by international communism. He also asked for funds for economic aid to the region. He said the Middle East mattered because it held the Suez Canal and much of the world's oil, and because a power hostile to the West could use those resources to threaten Europe."
+ },
+ "stimulus_set": null,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one thing Eisenhower asked Congress to authorize in the message.",
+   "modelAnswer": "Eisenhower asked Congress to authorize the use of American armed forces to help a Middle Eastern nation that asked for aid against aggression by a nation controlled by international communism. He also asked for funds for economic aid to the region.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one thing Eisenhower asked Congress to authorize, such as the use of American armed forces to aid a Middle Eastern nation, or funds for economic aid to the region.",
+     "notEarned": "Naming the Middle East without stating what Eisenhower asked Congress to authorize does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one reason the United States took on a larger role in the Middle East in the 1950s.",
+   "modelAnswer": "The United States took on a larger role because Britain and France had lost their standing in the region after the Suez Crisis. American leaders feared the Soviet Union would gain influence over the canal and the oil the region held.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason for the larger American role, such as the decline of British and French power after Suez, fear of Soviet influence in the region, or the importance of the Suez Canal and Middle Eastern oil to Europe.",
+     "notEarned": "Restating that Eisenhower asked for authority without explaining why the United States acted does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way the Eisenhower Doctrine was put into practice.",
+   "modelAnswer": "The doctrine was put into practice in July 1958, when Eisenhower sent American troops to Lebanon. They supported its pro-Western government against a rebellion sympathetic to Egypt's Nasser.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one way the doctrine was put into practice, such as the dispatch of American troops to Lebanon in 1958, or American economic and military aid to Middle Eastern states threatened by communism.",
+     "notEarned": "Naming a Middle Eastern country without explaining what the United States did there does not earn the point."
+    }
+   ]
+  }
+ ]
+}

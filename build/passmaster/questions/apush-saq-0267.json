@@ -1,0 +1,89 @@
+{
+  "id": "apush-saq-0267",
+  "type": "saq",
+  "unit": 8,
+  "topics": [
+    "8.15"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A",
+    "6.B"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Watergate, the Undoing of President Nixon, and the Limits of Presidential Power"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "Decline and Rebirth (1968-1988)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ]
+  },
+  "source": "original; stimulus paraphrased from President Richard Nixon's address to the nation, August 8, 1974",
+  "saq_slot": 2,
+  "totalPoints": 3,
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Paraphrase of President Richard Nixon's address to the nation, August 8, 1974.",
+    "text": "Paraphrase of President Richard Nixon's address to the nation, August 8, 1974. Nixon said he would resign the presidency effective at noon the next day. He said he no longer had a strong enough political base in Congress to justify continuing in office, and he said the country needed a full-time president and a full-time Congress, particularly at this time, with problems at home and abroad, rather than a presidency consumed by the Watergate matter."
+  },
+  "stimulus_set": null,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify one thing Nixon announced in the address.",
+      "modelAnswer": "Nixon announced that he would resign the presidency. He said the resignation would take effect at noon the next day.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for identifying one announcement from the passage, such as his resignation or its effective time of noon the next day.",
+          "notEarned": "Naming a fact about Nixon that the passage does not state does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain one reason Nixon resigned.",
+      "modelAnswer": "Background: Nixon resigned because of the Watergate scandal, in which a break-in at the Democratic Party headquarters and the cover-up that followed destroyed his support. Background: By August 1974 the House was moving toward impeachment and his support in Congress had collapsed, so he chose to resign rather than face removal.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Background: Earns the point for explaining one reason, such as the Watergate break-in and cover-up, the loss of support in Congress, or the prospect of impeachment and conviction.",
+          "notEarned": "Restating that Nixon resigned, without a reason, does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Explain one way Nixon's resignation changed the presidency by 1980.",
+      "modelAnswer": "Background: The resignation showed that a president could be forced from office. Background: Later presidents, including Ford and Carter, governed under closer congressional watch.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Background: Earns the point for explaining one change, such as closer congressional oversight, the pardon of Nixon shaping Ford's presidency, or a president being forced from office.",
+          "notEarned": "Restating that Nixon resigned, without a change to the presidency, does not earn the point."
+        }
+      ]
+    }
+  ]
+}

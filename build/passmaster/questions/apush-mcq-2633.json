@@ -1,0 +1,84 @@
+{
+ "id": "apush-mcq-2633",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.8"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.8 The Vietnam War"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "The Tet Offensive"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Vietnam War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "American Involvement in Vietnam, World War II\u20131963"
+   }
+  ],
+  "primary_sources": [
+   "Lyndon B. Johnson, address to the nation, March 31, 1968 (public record)"
+  ]
+ },
+ "source": "original; stimulus paraphrased from the grounding books' account of the spring of 1968",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of the spring of 1968, from the grounding books.",
+  "text": "Paraphrase of the spring of 1968. After the Tet Offensive, Senator Eugene McCarthy, running as a peace candidate, won 42 percent of the vote in the New Hampshire primary against President Lyndon Johnson's 48 percent. On March 31, 1968, Johnson told the nation he would not seek reelection as president."
+ },
+ "stimulus_set": "tet-offensive-1968",
+ "stem": "Johnson's decision not to seek reelection in March 1968 is best explained by which combination of causes?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Tet shook trust, and a peace candidate nearly beat Johnson in New Hampshire"
+  },
+  {
+   "key": "B",
+   "text": "The war had been won, and Johnson wanted to retire in triumph",
+   "misconception": "Background: the war was far from won in 1968, and Johnson left office with the war still raging."
+  },
+  {
+   "key": "C",
+   "text": "Congress had repealed the Gulf of Tonkin Resolution in early 1968",
+   "misconception": "Background: Congress did not repeal the Gulf of Tonkin Resolution until 1971, three years later."
+  },
+  {
+   "key": "D",
+   "text": "The Republican Party had already chosen Johnson as its candidate",
+   "misconception": "Background: Johnson was a Democrat, and the Republicans chose Richard Nixon in 1968."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background: Tet shook trust in official claims about the war, and McCarthy's 42 percent against a sitting president showed the party turning away.",
+  "B": "Background: the war continued for years after 1968, so it had not been won when Johnson stepped aside.",
+  "C": "Background: Congress repealed the Gulf of Tonkin Resolution in January 1971, not in early 1968.",
+  "D": "Background: Johnson was the Democratic president; the Republicans nominated Richard Nixon in 1968.",
+  "general": "1. The passage gives two facts side by side: a strong peace vote in New Hampshire and Johnson's announcement.\n2. Background: McCarthy won 42 percent against a sitting president's 48 percent, a poor showing for an incumbent.\n3. Background: that vote followed Tet, which shook public trust in claims that victory was near.\n4. The two blows together explain the decision: the war had cost Johnson his party's confidence.\nRemember: A president steps aside when two failures arrive at once."
+ }
+}

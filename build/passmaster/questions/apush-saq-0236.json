@@ -1,0 +1,97 @@
+{
+ "id": "apush-saq-0236",
+ "type": "saq",
+ "unit": 8,
+ "topics": [
+  "8.1"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "skills": [
+  "2.B",
+  "4.B"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.2 The Cold War from 1945 to 1980"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Origins of the Cold War (1945-1960)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Truman and the Beginning of the Cold War (1945-1953)"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9"
+   }
+  ],
+  "primary_sources": [
+   "Harry S. Truman, address to a joint session of Congress, March 12, 1947 (House Document No. 171)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrased from President Harry S. Truman's address to Congress, March 12, 1947 (House Document No. 171), public domain (U.S. government document).",
+  "text": "Paraphrased from President Harry S. Truman's address to Congress, March 12, 1947: The president told Congress that the world faced a grave moment and that American foreign policy and national security were at stake. Greece had asked urgently for financial and economic help, and American reports agreed that help was imperative if Greece was to survive as a free nation. Truman said the United States must support free peoples who were resisting subjugation, and he asked Congress to approve aid to Greece and Turkey."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus paraphrased from President Truman's address to Congress, March 12, 1947, public domain (U.S. government document)",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify the policy Truman announced in this address.",
+   "modelAnswer": "Truman announced that the United States would support free peoples resisting subjugation, a policy that became known as containment. He asked Congress to approve aid to Greece and Turkey as the first step in carrying it out.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying the policy as support for free peoples resisting subjugation, or as containment, with the aid to Greece and Turkey.",
+     "notEarned": "Naming only the aid to Greece and Turkey, with no wider policy identified, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain why Truman said Greece needed American help in 1947.",
+   "modelAnswer": "Greece had suffered invasion, occupation, and internal strife, and it asked urgently for financial and economic help to survive as a free nation. Britain, which had propped up Greece before, could no longer afford to do so, leaving the United States as the only power that could help.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining why Greece needed help, such as its wartime suffering and urgent appeal, or Britain's withdrawal leaving the United States as the only power able to help.",
+     "notEarned": "Restating that Truman asked for aid, with no reason explained, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way Truman's address marked a change from the foreign policy the United States followed in the 1920s.",
+   "modelAnswer": "In the 1920s the United States kept its distance from Europe's quarrels and stayed out of lasting commitments abroad. Truman's address accepted a permanent American role in defending other nations, turning the country into the leader of the non-communist world.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one change, such as accepting lasting commitments abroad or taking a leading role, against the distance kept in the 1920s.",
+     "notEarned": "Naming the Truman Doctrine without explaining how it differed from the 1920s does not earn the point."
+    }
+   ]
+  }
+ ]
+}

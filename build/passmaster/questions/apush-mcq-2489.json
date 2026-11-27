@@ -1,0 +1,73 @@
+{
+ "id": "apush-mcq-2489",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.3"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "5.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.3 The Red Scare"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "The Second Red Scare"
+   }
+  ],
+  "primary_sources": [
+   "Elizabeth Bentley, testimony before the House Committee on Un-American Activities, 1948"
+  ]
+ },
+ "source": "original; stimulus paraphrased from Elizabeth Bentley's testimony before HUAC, 1948; survivor 5s24-ch25-mcq-08 rewritten against the books (stimulus added, options rebuilt)",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Elizabeth Bentley's testimony before the House Committee on Un-American Activities, 1948. Paraphrased, not quoted, because the source is after 1929.",
+  "text": "In 1948, Elizabeth Bentley, a former courier for a Soviet spy ring, testified before the House Committee on Un-American Activities. She named government employees she said had passed her secret information, including material on aircraft production, for delivery to Soviet agents. The committee used her testimony to open a wider investigation of communists in the government."
+ },
+ "stimulus_set": "huac-bentley-1948",
+ "stem": "HUAC's investigations most directly continued the precedent of",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Whiskey Rebellion prosecutions of the 1790s.",
+   "misconception": "Background from the books: the Whiskey Rebellion prosecutions punished tax resistance in the 1790s, not hunting radicals for their beliefs."
+  },
+  {
+   "key": "B",
+   "text": "The Palmer Raids of 1919-1920."
+  },
+  {
+   "key": "C",
+   "text": "The Dred Scott decision of 1857.",
+   "misconception": "Background from the books: Dred Scott decided questions of slavery and citizenship in 1857, not an investigation of radicals."
+  },
+  {
+   "key": "D",
+   "text": "The Teapot Dome investigation of the 1920s.",
+   "misconception": "Background from the books: Teapot Dome investigated corruption in oil leases in the 1920s, not hunting communists."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Background: the Whiskey Rebellion prosecutions punished tax resistance in the 1790s. They were about enforcing a tax, not hunting radicals for their beliefs.",
+  "B": "Background: both were federal campaigns against suspected radicals driven by fear of revolution. The Palmer Raids rounded up and deported thousands of suspected radicals in the First Red Scare, as HUAC hunted suspected communists in the Second.",
+  "C": "Background: Dred Scott decided questions of slavery and citizenship in 1857. It was a court ruling about slavery, not an investigation of radicals.",
+  "D": "Background: Teapot Dome investigated corruption in oil leases in the 1920s. It was about bribery, not about hunting communists.",
+  "general": "1. HUAC hunted suspected communists in the government, using testimony like Bentley's to open wider investigations.\n2. Background: the Palmer Raids hunted suspected radicals after World War I, rounding up thousands in the First Red Scare.\n3. Background from the books: Both were federal campaigns against suspected radicals, driven by fear of revolution, while the other options concern taxes, slavery, and corruption.\nRemember: When two events share a purpose and a method, the earlier one is the precedent."
+ }
+}

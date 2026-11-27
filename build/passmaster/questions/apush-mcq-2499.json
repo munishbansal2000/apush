@@ -1,0 +1,73 @@
+{
+ "id": "apush-mcq-2499",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.3"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.3 The Red Scare"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "The Second Red Scare"
+   }
+  ],
+  "primary_sources": [
+   "Whittaker Chambers, testimony before the House Committee on Un-American Activities, 1948"
+  ]
+ },
+ "source": "original; stimulus paraphrased from Whittaker Chambers's testimony before HUAC, 1948",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Whittaker Chambers's testimony before the House Committee on Un-American Activities, 1948. Paraphrased, not quoted, because the source is after 1929.",
+  "text": "In 1948, Whittaker Chambers, a former communist and an editor at Time magazine, told the House Committee on Un-American Activities that Alger Hiss, a former State Department official, had been a communist and had passed secret documents to the Soviet Union in the 1930s. Hiss denied the charges. Chambers produced copies of documents he said Hiss had given him, and a young congressman, Richard Nixon, pursued the case. Hiss was later convicted of perjury."
+ },
+ "stimulus_set": "hiss-chambers-1948",
+ "stem": "Chambers's evidence mattered because he",
+ "options": [
+  {
+   "key": "A",
+   "text": "Produced documents he said came from Hiss."
+  },
+  {
+   "key": "B",
+   "text": "Was a Soviet official testifying for Moscow.",
+   "misconception": "Chambers was an American who had left the Communist Party. He testified against Hiss, not for Moscow."
+  },
+  {
+   "key": "C",
+   "text": "Testified in defense of Hiss at his trial.",
+   "misconception": "Chambers testified against Hiss before HUAC. He was the accuser, not a defense witness."
+  },
+  {
+   "key": "D",
+   "text": "Wrote the Smith Act used to prosecute communists.",
+   "misconception": "Background from the books: the Smith Act was a 1940 law, written years before the Hiss case. Chambers had no part in writing it."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Chambers produced copies of documents he said Hiss had given him. A former insider's testimony plus papers was far stronger than a rumor.",
+  "B": "Chambers was an American who had left the Communist Party. He testified against Hiss, not for Moscow.",
+  "C": "Chambers testified against Hiss before HUAC. He was the accuser, not a defense witness.",
+  "D": "Background from the books: the Smith Act was a 1940 law, written years before the Hiss case. Chambers had no part in writing it.",
+  "general": "1. Chambers was a former communist accusing a respected official, so his word alone might have been doubted.\n2. He produced copies of documents he said Hiss had given him, giving the committee papers to examine.\n3. An insider's story plus documents is far stronger than a rumor.\nRemember: Testimony gains weight when the witness can show papers, not only tell a story."
+ }
+}

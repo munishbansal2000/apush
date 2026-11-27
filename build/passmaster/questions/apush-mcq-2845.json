@@ -1,0 +1,85 @@
+{
+  "answerKey": "A",
+  "difficulty": 2,
+  "figures": [
+    {
+      "alt": "1955 photograph of Black and white schoolgirls standing together in a classroom at the Barnard School in Washington, D.C.",
+      "caption": "Thomas J. O’Halloran, school integration, Barnard School, Washington, D.C., May 27, 1955. Black and white schoolgirls stand together in a classroom.",
+      "file": "pt01/fig5-barnard-school-1955.jpg",
+      "id": "fig-apush-mcq-2845",
+      "license": "No known restrictions on publication",
+      "source_url": "https://www.loc.gov/pictures/item/2003654384/"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.6 Early Steps in the Civil Rights Movement (1940s and 1950s)"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 26",
+        "section": "Prosperity and Anxiety: The 1950s"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-2845",
+  "lesson": "apush-u8-l2",
+  "options": [
+    {
+      "key": "A",
+      "text": "Renewed legal challenges to segregation and civil rights momentum"
+    },
+    {
+      "key": "B",
+      "misconception": "Brown desegregated all public schools immediately.",
+      "text": "The immediate desegregation of all public schools without resistance"
+    },
+    {
+      "key": "C",
+      "misconception": "Brown led to the repeal of the Fourteenth Amendment.",
+      "text": "The repeal of the Fourteenth Amendment"
+    },
+    {
+      "key": "D",
+      "misconception": "Brown ended federal involvement in education.",
+      "text": "The end of federal involvement in education"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Brown energized legal challenges and gave the civil rights movement a major precedent, even though implementation was slow and resisted.",
+    "B": "Resistance was intense; desegregation was not immediate.",
+    "C": "The Fourteenth Amendment was the basis for Brown; it was not repealed.",
+    "D": "Federal involvement in education grew; it did not end.",
+    "general": "1. Ask what a Supreme Court precedent does. It gives later challenges a legal foundation.\n2. Name the effect. Brown energized legal challenges and gave the movement momentum.\n3. Test the overstatements. Desegregation was slow and resisted, the Fourteenth Amendment stands, and federal involvement grew.\n4. Keep the effect honest. A precedent matters even when implementation lags.\nRemember: a ruling's contribution can be momentum, not instant change."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "2.B"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from Brown v. Board of Education (1954) with the O’Halloran 1955 Barnard School photograph",
+  "status": "final",
+  "stem": "The *Brown* decision most directly contributed to which of the following developments?",
+  "stimulus": {
+    "kind": "mixed",
+    "source_note": "Brown v. Board of Education, 1954, unanimous opinion by Chief Justice Earl Warren, public domain. Photograph: Thomas J. O’Halloran, 1955, Library of Congress.",
+    "text": "“Segregation of white and colored children in public schools has a detrimental effect upon the colored children. The impact is greater when it has the sanction of the law . . . Separate educational facilities are inherently unequal.”"
+  },
+  "stimulus_set": "brown-v-board-1954",
+  "themes": [
+    "PCE"
+  ],
+  "topics": [
+    "8.6"
+  ],
+  "type": "mcq",
+  "unit": 8
+}

@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2596",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.7"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "WOR",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.2 The Cold War from 1945 to 1980"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Cold War (1945-1960)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ],
+  "primary_sources": [
+   "U.S. Department of State, Office of the Historian, Marshall Plan figures"
+  ]
+ },
+ "source": "original; stimulus table from U.S. Department of State, Office of the Historian, Marshall Plan figures (approximate)",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Aid figures: U.S. Department of State, Office of the Historian, Marshall Plan figures (approximate, rounded to one decimal place).",
+  "text": "Marshall Plan aid, 1948-1952 (billions of dollars, rounded)\n\n| Country | Aid received |\n| United Kingdom | 3.3 |\n| France | 2.7 |\n| Italy | 1.5 |\n| West Germany | 1.4 |\n| Netherlands | 1.1 |\n| All other recipients | 3.3 |\n| Total | about 13 |"
+ },
+ "stimulus_set": "marshall-plan-aid-1948-1952",
+ "stem": "The pattern of aid in the table best supports which conclusion about the Marshall Plan?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Aid went mostly to Eastern Europe, where Communist governments ruled",
+   "misconception": "Background from the books: the plan aided Western Europe; the Soviet Union kept Eastern Europe out of it."
+  },
+  {
+   "key": "B",
+   "text": "Aid was spread evenly among all the countries of Europe",
+   "misconception": "The table shows wide differences, from 3.3 billion dollars for the United Kingdom to 1.1 billion for the Netherlands."
+  },
+  {
+   "key": "C",
+   "text": "Aid went only to countries that had fought on the Axis side in the war",
+   "misconception": "Background from the books: Britain and France, both Allies, received the two largest shares."
+  },
+  {
+   "key": "D",
+   "text": "Aid went mainly to the largest economies of Western Europe"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Background from the books: the Marshall Plan aided Western Europe, and the Soviet Union barred Eastern Europe from taking part.",
+  "B": "The table shows uneven amounts, from 3.3 billion dollars down to 1.1 billion, not an even spread.",
+  "C": "Background from the books: Britain and France were Allies, and they received the two largest shares in the table.",
+  "D": "Background from the books: the largest shares went to Britain, France, Italy, and West Germany, the biggest Western European economies, to rebuild them.",
+  "general": "1. The two largest shares go to the United Kingdom and France, then Italy and West Germany.\n2. Background from the books: those four were the largest economies of Western Europe.\n3. Background from the books: the smallest listed share goes to the Netherlands, a smaller economy.\n4. The money therefore followed economic size in Western Europe, not an even spread.\nRemember: when a table ranks recipients, ask what the top recipients have in common."
+ }
+}

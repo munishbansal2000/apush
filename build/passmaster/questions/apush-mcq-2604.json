@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-2604",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.7"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "skills": [
+  "2.C",
+  "6.B"
+ ],
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.2 The Cold War from 1945 to 1980"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Cold War (1945-1960)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ],
+  "primary_sources": [
+   "U.S. Marine Corps photograph, Korean War, winter 1950-1951"
+  ]
+ },
+ "source": "original; stimulus photograph is a public-domain U.S. Marine Corps photograph, viewed before writing",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph: U.S. Marine Corps, Korean War, winter 1950-1951, public domain (PD-USGov-Military-Marines), via Wikimedia Commons.",
+  "text": "The photograph shows United States Marines resting in deep snow beside a jeep during the Korean War. The men wear heavy winter clothing covered in snow, and several sit or lie exhausted along a snowy roadside."
+ },
+ "stimulus_set": "korea-limited-war",
+ "stem": "Fighting in Korea stopped on July 27, 1953, when an armistice was signed at Panmunjom. What did that ending leave unfinished?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Korea was reunified under a single government chosen by its people",
+   "misconception": "Background: the armistice left two Korean states divided near the 38th parallel; Korea was not reunified."
+  },
+  {
+   "key": "B",
+   "text": "The United States and North Korea signed a formal peace treaty ending the war",
+   "misconception": "Background: the 1953 agreement was an armistice, a halt to fighting, not a peace treaty."
+  },
+  {
+   "key": "C",
+   "text": "South Korea signed the armistice alongside the other parties at Panmunjom",
+   "misconception": "Background: South Korea's president refused to sign the armistice, so South Korea never signed it."
+  },
+  {
+   "key": "D",
+   "text": "No peace treaty followed, so the two Koreas stayed divided and technically at war"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Background: the armistice left two Korean states divided near the 38th parallel, so Korea was not reunified.",
+  "B": "Background: the 1953 agreement was an armistice, a halt to the fighting, not a peace treaty between nations.",
+  "C": "Background: South Korea's president refused to sign, so South Korea never signed the armistice.",
+  "D": "Background: the armistice stopped the fighting on July 27, 1953, but no peace treaty ever followed, so the war never formally ended.",
+  "general": "1. The photograph shows the fighting the armistice stopped, but an armistice only halts fighting.\n2. Background: the agreement stopped the fighting and set up a demilitarized zone between the two sides.\n3. Background: no peace treaty was ever signed, so the war was never formally ended.\n4. Korea therefore stayed divided, with the two sides technically still at war.\nRemember: An armistice pauses a war; only a peace treaty ends it."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2604",
+   "file": "u8/pr25e-ch12-q06.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Marines_in_the_Korean_War_001.jpg",
+   "license": "Public domain (U.S. Marine Corps photograph, PD-USGov-Military-Marines)",
+   "caption": "United States Marines resting in deep snow beside a jeep during the Korean War.",
+   "alt": "A black-and-white photograph of United States Marines in heavy winter clothing covered in snow, resting beside a jeep on a snowy roadside during the Korean War, with snow-covered hills behind them."
+  }
+ ]
+}

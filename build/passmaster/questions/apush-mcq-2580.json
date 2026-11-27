@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-2580",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.6"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.6 Early Steps in the Civil Rights Movement (1940s and 1950s)"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 26",
+    "section": "Prosperity and Anxiety: The 1950s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ],
+  "primary_sources": [
+   "Sweatt v. Painter, 339 U.S. 629 (1950)",
+   "McLaurin v. Oklahoma State Regents, 339 U.S. 637 (1950)",
+   "Brown v. Board of Education, 347 U.S. 483 (1954)",
+   "Brown II, 349 U.S. 294 (1955)"
+  ]
+ },
+ "source": "original; stimulus Paraphrase of the NAACP legal strategy: Houston and Marshall; Sweatt v. Painter and McLaurin v. Oklahoma State Regents (1950); Brown (1954); Brown II (1955).",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of the NAACP legal strategy: Houston and Marshall; Sweatt v. Painter and McLaurin v. Oklahoma State Regents (1950); Brown (1954); Brown II (1955).",
+  "text": "Paraphrase of the NAACP's legal strategy as described in the books. Beginning in the 1930s, NAACP lawyers led by Charles Hamilton Houston and then Thurgood Marshall attacked segregation in graduate and professional schools first. In Sweatt v. Painter and McLaurin v. Oklahoma State Regents, both decided in 1950, the Supreme Court ruled that separate graduate schools were not equal. In 1948 the NAACP decided to attack segregation itself, rather than asking only for equal facilities. The cases were combined as Brown v. Board of Education, decided in 1954. A second ruling in 1955, Brown II, told schools to desegregate 'with all deliberate speed' but set no date."
+ },
+ "stimulus_set": "naacp-legal-strategy-1950",
+ "stem": "The NAACP began with graduate schools mainly because of which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Judges could see that a hastily built separate law school was not equal"
+  },
+  {
+   "key": "B",
+   "text": "Graduate schools had already admitted Black students before the NAACP sued",
+   "misconception": "Background from the books: graduate schools had refused Black students, which was why the NAACP sued them."
+  },
+  {
+   "key": "C",
+   "text": "The Constitution applied only to graduate schools and not to other public schools",
+   "misconception": "Background from the books: the Constitution applied to public schools at every level, not only to graduate schools."
+  },
+  {
+   "key": "D",
+   "text": "Black parents preferred graduate-school cases to cases about younger children",
+   "misconception": "Background from the books: the choice was a legal strategy by NAACP lawyers, not a preference of parents."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background from the books: Texas built a separate Black law school in a hurry, and the Court could see it lacked the faculty, library, and standing of the state law school.",
+  "B": "Graduate schools had refused Black students, which was why the NAACP sued them.",
+  "C": "Background from the books: the Constitution applied to public schools at every level, not only to graduate schools.",
+  "D": "The choice was a legal strategy by NAACP lawyers, not a preference of parents.",
+  "general": "1. The stimulus says the NAACP attacked graduate and professional schools first.\n2. A graduate school is a small, visible case: one law school against one law school.\n3. Background from the books: in Sweatt the Court weighed faculty, library, and reputation and found the separate school unequal.\n4. Starting where inequality was easiest to prove built the record for the larger attack on segregation itself.\nRemember: a good test case starts where the other side's claim is weakest."
+ }
+}

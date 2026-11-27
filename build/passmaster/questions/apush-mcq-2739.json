@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-2739",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.11"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "1.B",
+    "3.A"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.11 The Civil Rights Movement Expands"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "Nixon's Southern Strategy"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Original secondary account drawn from the grounding books and verified against the National Park Service and Yale Balkin timeline accounts of the decision: the medical school set aside 16 of 100 places; the Court decided June 28, 1978, striking down the quota while allowing race as one factor in admissions.",
+    "text": "Allan Bakke, a white man, applied twice to the medical school of the University of California at Davis and was rejected both times. The school had set aside 16 of its 100 places each year for minority applicants. Bakke sued, saying the set-aside denied him equal protection under the Fourteenth Amendment.\n\nOn June 28, 1978, the Supreme Court ruled in Regents of the University of California v. Bakke that the school could not use a fixed quota, but that race could be one factor among others in admissions decisions."
+  },
+  "stimulus_set": "bakke-affirmative-action",
+  "stem": "According to the passage, what did the Supreme Court decide in Regents of the University of California v. Bakke (1978)?",
+  "options": [
+    {
+      "key": "A",
+      "text": "That fixed racial quotas were unconstitutional, but race could be one factor"
+    },
+    {
+      "key": "B",
+      "text": "That race could never be considered in university admissions decisions",
+      "misconception": "The passage says race could be one factor among others, not that it could never be considered."
+    },
+    {
+      "key": "C",
+      "text": "That Bakke had to be admitted to the medical school at Davis",
+      "misconception": "The passage says the Court ruled on the quota and on race as a factor; it does not say the Court ordered Bakke admitted."
+    },
+    {
+      "key": "D",
+      "text": "That the Fourteenth Amendment did not apply to public universities at all",
+      "misconception": "Bakke's suit rested on the Fourteenth Amendment, and the Court decided the case under it."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "The passage says the Court ruled the school could not use a fixed quota, but race could be one factor among others.",
+    "B": "The passage says race could be one factor among others in admissions decisions.",
+    "C": "The passage says the Court ruled on the quota and on race as a factor; it does not say the Court ordered Bakke admitted.",
+    "D": "Bakke sued under the Fourteenth Amendment, and the Court decided the case under it.",
+    "general": "1. The school set aside 16 of 100 places for minority applicants.\n2. Bakke sued, saying the set-aside denied him equal protection.\n3. The Court agreed about the quota: a fixed set-aside was unconstitutional.\n4. But it also said race could still count as one factor among others in admissions.\nRemember: Bakke drew a line between a quota, which the Court struck down, and race as one factor, which it allowed."
+  }
+}

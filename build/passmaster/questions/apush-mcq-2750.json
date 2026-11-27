@@ -1,0 +1,89 @@
+{
+  "id": "apush-mcq-2750",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.12"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "4.B"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "comparison",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.12 Youth Culture of the 1960s"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Expansion of Rights Movements"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The New Left, Feminism, and the Counterculture"
+      }
+    ],
+    "primary_sources": [
+      "Mario Savio, ‘Bodies Upon the Gears’ speech, December 2, 1964 (paraphrased)"
+    ]
+  },
+  "source": "original; stimulus is a licensed photograph viewed before writing (see figures) with an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "mixed",
+    "source_note": "Photograph: Mario Savio on the steps of Sproul Hall, UC Berkeley, 1966, CC BY-SA 3.0, via Wikimedia Commons. Account drawn from the grounding books and verified against University of California and AP accounts of the Free Speech Movement.",
+    "text": "The photograph shows Mario Savio speaking at a rally on the steps of Sproul Hall at the University of California, Berkeley, in 1966, holding papers as a crowd with signs gathers behind him.\n\nParaphrase of an account of the Free Speech Movement. In the fall of 1964, the University of California at Berkeley banned political activity on campus, including tables, leaflets, and fundraising for off-campus causes. Students who had worked in the civil rights movement in the South set up tables anyway.\n\nOn October 1, 1964, campus police arrested a student staffing a table, and a crowd surrounded the police car for 32 hours. On December 2, 1964, Mario Savio told a rally that the university worked like a machine, and that when its workings became unbearable, students had to block them with their own bodies to bring it to a halt. About 1,500 students then occupied Sproul Hall, and nearly 800 were arrested."
+  },
+  "stimulus_set": "free-speech-berkeley-1964",
+  "stem": "Savio’s speech best reflects which broader trend of the 1960s?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Conservatives mobilized against juvenile delinquency and the decline of the traditional family",
+      "misconception": "Background: Savio attacked the liberal establishment from the left, not from the right."
+    },
+    {
+      "key": "B",
+      "text": "Artists and writers withdrew from politics into abstract expression",
+      "misconception": "Savio’s generation ran toward politics, not away from it."
+    },
+    {
+      "key": "C",
+      "text": "Activists on the left charged liberals with failing to transform the status quo"
+    },
+    {
+      "key": "D",
+      "text": "Working-class militants rebelled against complacent union leadership",
+      "misconception": "Savio’s fight was students against the university, not workers against unions."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "Background: Conservatives were Savio’s opponents, not his trend. Savio attacked the liberal university from the left, not from the right.",
+    "B": "Background: Withdrawing into abstract art describes the 1950s abstract expressionists. Savio’s generation did the opposite: it took politics onto the campus.",
+    "C": "Background: Savio attacked the liberal-run university as a machine serving the status quo. That is the New Left charging liberals with failing to transform society.",
+    "D": "Background: No union or working-class revolt appears in the passage. Savio spoke as a student against the university administration.",
+    "general": "1. Savio calls the university a machine and tells students to stop it with their bodies.\n2. Background: The machine is the liberal establishment that runs the university.\n3. Background: The New Left said liberal reforms left racial and economic structures unchanged.\n4. Background: So the speech is a left-wing charge that liberals had failed to transform society.\nRemember: Ask which side of the argument a speaker stands on before naming the trend."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-2750",
+      "file": "u8/mario-savio-sproul-1966.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:MarioSavio.JPG",
+      "license": "CC BY-SA 3.0",
+      "caption": "Mario Savio speaking at a rally on the steps of Sproul Hall, UC Berkeley, 1966",
+      "alt": "Mario Savio standing on the steps of Sproul Hall holding papers, with a crowd and protest signs behind him"
+    }
+  ]
+}

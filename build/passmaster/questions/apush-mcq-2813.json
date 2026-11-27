@@ -1,0 +1,89 @@
+{
+  "id": "apush-mcq-2813",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.14"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A",
+    "3.B"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.14 Society in Transition"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Christian Fundamentalism and the Religious Right"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Opposition to Roe v. Wade"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "The Presidency of Richard Nixon"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "Roe v. Wade, January 22, 1973; Griswold v. Connecticut, 1965 (paraphrased)"
+    ]
+  },
+  "source": "original; stimulus paraphrased from Roe v. Wade (1973)",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Paraphrase of Roe v. Wade, January 22, 1973, and Griswold v. Connecticut, 1965. Account drawn from the grounding books (Barron's Ch. 10, Topic 8.14; 5 Steps Ch. 28; Princeton Ch. 12).",
+    "text": "Paraphrase of the Supreme Court's decision in Roe v. Wade, January 22, 1973. The Court held that the right to privacy, first recognized in Griswold v. Connecticut (1965), covers a woman's decision to end a pregnancy, so states could not ban abortion in the early months of pregnancy. The decision struck down abortion bans in many states at once."
+  },
+  "stimulus_set": "roe-backlash-1973",
+  "stem": "According to the passage, what legal idea did Roe rest on?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The constitutional right to bear arms and to own guns freely.",
+      "misconception": "The passage says Roe rested on a right to privacy, not on the right to bear arms."
+    },
+    {
+      "key": "B",
+      "text": "A right to privacy recognized by the Court in Griswold in 1965."
+    },
+    {
+      "key": "C",
+      "text": "The right to a free public education for every child.",
+      "misconception": "The passage says Roe rested on a right to privacy, not on education."
+    },
+    {
+      "key": "D",
+      "text": "The right to vote at age eighteen under the Constitution.",
+      "misconception": "The passage says Roe rested on a right to privacy, not on voting."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The passage says Roe rested on a right to privacy, not on the right to bear arms.",
+    "B": "The passage says the right to privacy, first recognized in Griswold in 1965, covers a woman's decision to end a pregnancy.",
+    "C": "The passage says Roe rested on a right to privacy, not on education.",
+    "D": "The passage says Roe rested on a right to privacy, not on voting.",
+    "general": "1. The passage names the idea in its second sentence: the right to privacy.\n2. It adds where that right came from: the Griswold v. Connecticut decision in 1965.\n3. Roe then applied that privacy right to a woman's decision to end a pregnancy.\nRemember: A decision that builds on an earlier case names that case, so follow the chain."
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-2683",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.10"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "1.B",
+    "3.A"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.10 The African-American Civil Rights Movement (1960s)"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Civil Rights Movement in the 1960s: From Integration to Black Power"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Account drawn from the grounding books (Barron's Ch. 10, Topic 8.10, \"The Lunch Counter Sit-ins (1960)\"; 5 Steps Ch. 27; Princeton Ch. 12); the Greensboro date, the four students, and the Woolworth's counter are in all three books.",
+    "text": "On February 1, 1960, four Black freshmen from North Carolina Agricultural and Technical College sat down at the whites-only lunch counter of a Woolworth's store in Greensboro, North Carolina, and asked to be served. They were refused, but they stayed in their seats until the store closed. The next day more students joined them, and within weeks students in other Southern cities were holding sit-ins of their own. The students stayed polite and nonviolent even when crowds shouted at them or poured food on them. Stores that lost business to the sit-ins and to boycotts of their whole business began to serve Black customers."
+  },
+  "stimulus_set": "greensboro-sit-ins-1960",
+  "stem": "Which feature of the sit-ins best explains why they spread to other cities so quickly?",
+  "options": [
+    {
+      "key": "A",
+      "text": "They were ordered by the Supreme Court, so every city had to follow them",
+      "misconception": "No court ordered the sit-ins; the passage says students started them on their own."
+    },
+    {
+      "key": "B",
+      "text": "They were paid for by the federal government, so students in any city could join",
+      "misconception": "The passage says nothing about federal money paying for the sit-ins."
+    },
+    {
+      "key": "C",
+      "text": "Any small group of students could copy them with little money or planning"
+    },
+    {
+      "key": "D",
+      "text": "They were led by the president, so newspapers in every city covered them",
+      "misconception": "The president did not lead the sit-ins; students in Greensboro started them."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "The passage describes students acting on their own, not carrying out a court order.",
+    "B": "Nothing in the passage mentions federal money behind the sit-ins.",
+    "C": "The passage shows the pattern: four students sit down, more join the next day, and students in other cities do the same within weeks.",
+    "D": "The sit-ins began with students, not with the president.",
+    "general": "1. Four students sit at one counter, and more join the next day.\n2. Within weeks, students in other cities hold sit-ins of their own.\n3. The action needs only a counter, a seat, and the will to stay put.\n4. A tactic that simple can be copied anywhere, which is why it spread so fast.\nRemember: A protest spreads fast when any small group can copy it."
+  }
+}

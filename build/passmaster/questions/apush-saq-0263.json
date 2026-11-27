@@ -1,0 +1,92 @@
+{
+  "id": "apush-saq-0263",
+  "type": "saq",
+  "unit": 8,
+  "topics": [
+    "8.13"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A",
+    "3.B"
+  ],
+  "themes": [
+    "PCE",
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.13 The environment and natural resources from 1968 to 1980"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "Jimmy Carter"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "Jimmy Carter, televised energy address, July 15, 1979 (paraphrased)"
+    ]
+  },
+  "source": "original; stimulus is a paraphrase of Carter's July 15, 1979 address",
+  "saq_slot": 2,
+  "totalPoints": 3,
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Paraphrase of President Jimmy Carter's televised address on energy, July 15, 1979. Carter never used the word 'malaise' in the speech; the address is often called the 'malaise' speech.",
+    "text": "Paraphrase of President Jimmy Carter's televised address on energy, July 15, 1979.\n\nCarter told Americans the country faced a 'crisis of confidence' that went deeper than the energy shortage. He said the energy crisis was real and worldwide, and that the nation had to face it. He set out a program: a solar bank to help reach a goal of 20 percent of the nation's energy from solar power by the year 2000, a massive effort to develop synthetic fuels from coal and oil shale, an energy mobilization board to cut through delays, and a bold conservation program in every home. He called every act of conservation an act of patriotism."
+  },
+  "stimulus_set": null,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify one goal Carter set in his July 15, 1979, address.",
+      "modelAnswer": "In the address, Carter set a goal of getting 20 percent of the nation's energy from solar power by the year 2000, backed by a new solar bank. He also promised a massive effort to develop synthetic fuels from coal and oil shale.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for identifying one goal from the address, such as 20 percent solar energy by 2000, the solar bank, synthetic fuels from coal and oil shale, the energy mobilization board, or the conservation program.",
+          "notEarned": "Naming a goal Carter did not set in the address, such as ending all oil imports at once, does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain one cause of the energy crisis Carter addressed in 1979.",
+      "modelAnswer": "Background: The 1979 crisis came from a second oil shock: the Iranian Revolution cut oil production, and panic buying then drove prices and gas lines higher. Background: The United States depended on imported oil, so a disruption abroad at once became a shortage at home.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Background: Earns the point for explaining one cause, such as the Iranian Revolution disrupting oil supply, American dependence on imported oil, or the earlier 1973 embargo showing that dependence.",
+          "notEarned": "Restating that there was an energy crisis, without a cause, does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Explain one reason Carter's energy program faced political difficulty.",
+      "modelAnswer": "Background: Carter's program asked Americans to accept sacrifice and higher costs, which many voters resisted while gas lines and inflation were already hurting them. Background: His call for conservation sounded like blame to critics, and Congress moved slowly on his proposals.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Background: Earns the point for explaining one difficulty, such as voters resisting sacrifice and higher costs, critics reading the speech as blame, or Congress moving slowly on Carter's proposals.",
+          "notEarned": "Restating that the program was unpopular, without a reason, does not earn the point."
+        }
+      ]
+    }
+  ]
+}

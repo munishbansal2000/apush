@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0237",
+ "type": "saq",
+ "unit": 8,
+ "topics": [
+  "8.2"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "skills": [
+  "1.B",
+  "5.A"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.2 The Cold War from 1945 to 1980"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Origins of the Cold War (1945-1960)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Truman and the Beginning of the Cold War (1945-1953)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question; facts from the grounding books.",
+  "text": "After World War II, the United States and the Soviet Union emerged as the world's two superpowers, but their wartime alliance broke apart over the future of Europe. The United States answered Soviet expansion with containment: the Truman Doctrine promised aid to free peoples, the Marshall Plan rebuilt Western Europe, and NATO bound America to Europe's defense. Containment was tested in Berlin, where an airlift defeated a Soviet blockade, and in Korea, where American forces fought to restore the border between North and South. Over the next three decades, containment guided American policy through crises in Cuba and the Middle East, and it ended only when the Soviet Union itself collapsed."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one way the United States tried to contain communism after World War II.",
+   "modelAnswer": "The United States offered military aid to Greece and Turkey under the Truman Doctrine, promising support to free peoples resisting Communist pressure. It also rebuilt Western Europe through the Marshall Plan, so that prosperity would keep war-weary voters from turning to communism.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one containment effort from the passage, such as Truman Doctrine aid, Marshall Plan rebuilding, or the NATO alliance.",
+     "notEarned": "Naming the Cold War without identifying a specific effort does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how the Berlin blockade or the Korean War tested containment.",
+   "modelAnswer": "In Berlin, the Soviet Union closed the roads into West Berlin to force the West out, and the airlift answered by flying in supplies for nearly a year. In Korea, North Korea invaded the South, and American forces fought to restore the border at the 38th parallel. Both crises asked whether the United States would hold the line it had drawn.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how Berlin or Korea tested containment, such as the airlift holding Berlin or the Korean fighting restoring the border.",
+     "notEarned": "Naming Berlin or Korea without explaining how it tested containment does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way containment changed between 1947 and 1980.",
+   "modelAnswer": "Early containment relied on aid and alliances in Europe, but later presidents changed its tools. Nixon pursued detente, negotiating arms limits and opening relations with China, while Carter answered the Soviet invasion of Afghanistan with sanctions and a military buildup. The goal of blocking expansion stayed, but the methods shifted from confrontation to negotiation and back.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one change in containment, such as the shift to detente under Nixon or the return to confrontation after Afghanistan.",
+     "notEarned": "Describing containment without explaining a change over time does not earn the point."
+    }
+   ]
+  }
+ ]
+}

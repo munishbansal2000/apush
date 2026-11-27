@@ -1,0 +1,83 @@
+{
+  "id": "apush-mcq-2777",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.13"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "1.A"
+  ],
+  "themes": [
+    "PCE",
+    "GEO"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.13 The environment and natural resources from 1968 to 1980"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Environmental Movement"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "The Presidency of Richard Nixon"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "EPA, 'The Birth of EPA' and EPA History 1970-1985 (dates)"
+    ]
+  },
+  "source": "original; stimulus is a table of federal environmental actions",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from EPA histories: NEPA signed January 1, 1970; EPA opened December 2, 1970; Clean Air Act signed December 1970; Clean Water Act enacted October 18, 1972; Endangered Species Act enacted December 28, 1973; DDT uses cancelled in 1972. Dates verified against EPA, 'The Birth of EPA,' EPA History 1970-1985, and the Duke Nicholas School environmental timeline. Account drawn from the grounding books (Barron's Ch. 10, Topic 8.13; 5 Steps Ch. 28; Princeton Ch. 12).",
+    "text": "Major federal environmental actions, 1970-1973:\n\n| Action | Date | What it did |\n| National Environmental Policy Act (NEPA) | January 1, 1970 | Required federal agencies to assess the environmental effects of their projects |\n| Environmental Protection Agency (EPA) | December 2, 1970 | New federal agency to enforce environmental laws |\n| Clean Air Act | 1970 | Set national standards for air quality and auto emissions |\n| Clean Water Act | October 18, 1972 | Set federal limits on pollutants discharged into waters |\n| Endangered Species Act | December 28, 1973 | Protected species at risk of extinction and their habitats |\n| DDT ban | December 31, 1972 | EPA ended nearly all uses of the pesticide DDT |"
+  },
+  "stimulus_set": "epa-environmental-laws-1970-1973",
+  "stem": "According to the table, which new agency was created in 1970 to enforce environmental laws?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The Department of Energy.",
+      "misconception": "Background: The Department of Energy was created in 1977, not 1970, and it handled energy, not the environment."
+    },
+    {
+      "key": "B",
+      "text": "The National Park Service.",
+      "misconception": "Background: The National Park Service was created in 1916, long before 1970."
+    },
+    {
+      "key": "C",
+      "text": "The Environmental Protection Agency."
+    },
+    {
+      "key": "D",
+      "text": "The Food and Drug Administration.",
+      "misconception": "Background: The Food and Drug Administration enforced food and drug safety, not environmental laws."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "Background: The Department of Energy was created in 1977, not 1970, and it handled energy, not the environment.",
+    "B": "Background: The National Park Service was created in 1916, long before 1970.",
+    "C": "The table says the Environmental Protection Agency was created December 2, 1970, to enforce environmental laws.",
+    "D": "Background: The Food and Drug Administration enforced food and drug safety, not environmental laws.",
+    "general": "1. The table lists a new agency dated December 2, 1970: the Environmental Protection Agency.\n2. Its job is stated in the table: to enforce environmental laws.\n3. Background: The other agencies named belong to other years or other jobs: energy in 1977, parks in 1916, food and drugs.\nRemember: In a table question, the date and the job together point to the answer."
+  }
+}

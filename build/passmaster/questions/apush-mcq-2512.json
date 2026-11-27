@@ -1,0 +1,71 @@
+{
+ "id": "apush-mcq-2512",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.4"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "The G.I. Bill"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 26",
+    "section": "The Return of Prosperity"
+   }
+  ]
+ },
+ "source": "original; stimulus paraphrased from Barron's Premium 2027, Chapter 10, Topic 8.4, The G.I. Bill",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Barron's Premium 2027, Chapter 10, Topic 8.4, The G.I. Bill.",
+  "text": "The Servicemen's Readjustment Act of 1944, known as the GI Bill, offered returning veterans low-interest loans to buy homes and money to attend college. By the time the original bill expired in 1956, nearly eight million veterans had used its education benefits, out of sixteen million veterans in all. By 1955, the Veterans Administration had backed more than 4.3 million home loans. The benefits reached African American veterans unevenly: states set the rules for extending them, and in Mississippi in 1947 only two of 3,200 VA-backed home loans went to African American veterans."
+ },
+ "stimulus_set": "gi-bill-veterans-1944",
+ "stem": "The GI Bill most directly helped returning veterans do which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Buy homes and attend college with low-interest loans and federal aid"
+  },
+  {
+   "key": "B",
+   "text": "Collect a monthly pension for the rest of their lives",
+   "misconception": "Background from the books: the GI Bill offered loans and school aid, not a lifelong pension."
+  },
+  {
+   "key": "C",
+   "text": "Claim free farmland in the western states",
+   "misconception": "Background from the books: free western land came from the Homestead Act of 1862, not the GI Bill."
+  },
+  {
+   "key": "D",
+   "text": "Take jobs reserved for them in federal offices",
+   "misconception": "Background from the books: the bill gave loans and school aid, not reserved federal jobs."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The bill's loans let veterans buy houses and pay for college, which is why millions used both benefits.",
+  "B": "Background from the books: the GI Bill paid for school and backed home loans; it did not pay veterans a pension for life.",
+  "C": "Background from the books: free farmland in the West was the Homestead Act of 1862, eight decades before the GI Bill.",
+  "D": "Background from the books: the bill offered loans and school aid, not jobs held open in federal offices.",
+  "general": "1. Start with what the bill offered: low-interest home loans and money for college.\n2. Background from the books: nearly eight million veterans used the school aid, and the VA backed more than 4.3 million home loans by 1955.\n3. A pension for life, free farmland, and reserved federal jobs are not in the bill's offer, so they do not fit.\nRemember: When a law names its benefits, match the answer to those named benefits."
+ }
+}

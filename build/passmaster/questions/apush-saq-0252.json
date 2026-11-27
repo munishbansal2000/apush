@@ -1,0 +1,108 @@
+{
+ "id": "apush-saq-0252",
+ "type": "saq",
+ "unit": 8,
+ "topics": [
+  "8.8"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "2.B"
+ ],
+ "themes": [
+  "WOR",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.8 The Vietnam War"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "The Tet Offensive"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Vietnam War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "American Involvement in Vietnam, World War II\u20131963"
+   }
+  ],
+  "primary_sources": [
+   "U.S. Army Center of Military History photograph, Cholon after Tet, 1968"
+  ]
+ },
+ "source": "original; stimulus photograph is a public-domain U.S. Army photograph, viewed before writing",
+ "saq_slot": 3,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph: Cholon district, Saigon, after Tet Offensive operations, 1968. U.S. Army Center of Military History photograph, public domain, via Wikimedia Commons.",
+  "text": "The photograph shows the Cholon district of Saigon after fighting during the Tet Offensive in 1968. Burned-out buildings stand roofless above rubble, and civilians, including children, pick through the wreckage."
+ },
+ "stimulus_set": null,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one thing the photograph shows about the Tet Offensive.",
+   "modelAnswer": "The photograph shows that the Tet Offensive brought heavy fighting into a city district of Saigon. Burned-out buildings stand in ruins, and civilians pick through the rubble of their homes.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one thing the photograph shows, such as ruined buildings in a city, civilians picking through rubble, or fighting that reached Saigon's streets.",
+     "notEarned": "Naming a fact about Tet that the photograph does not show, such as casualty numbers, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one way the Tet Offensive changed American public opinion about the war.",
+   "modelAnswer": "Tet shocked Americans because the enemy attacked cities across South Vietnam even though officials had said victory was near. The gap between those claims and the images from Tet deepened distrust of the government and weakened support for the war.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one way Tet changed public opinion, such as shaking trust in official claims of progress, showing the enemy could still strike everywhere, or turning more Americans against the war.",
+     "notEarned": "Restating that Tet was a big battle without explaining how it changed opinion does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one effect of the Tet Offensive on President Johnson's decisions in 1968.",
+   "modelAnswer": "Tet and the shock it caused helped drive Johnson to announce on March 31, 1968, that he would not seek reelection. The offensive also pushed his administration to open peace talks and to question whether the war could be won.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one effect of Tet on Johnson's decisions, such as his announcement that he would not seek reelection, the opening of peace talks, or the review of whether the war could be won.",
+     "notEarned": "Naming a 1968 event without linking it to the Tet Offensive does not earn the point."
+    }
+   ]
+  }
+ ],
+ "figures": [
+  {
+   "id": "fig-apush-saq-0252",
+   "file": "u8/5s24-ch27-mcq-02.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Cholon_after_Tet_Offensive_operations_1968.jpg",
+   "license": "Public domain (U.S. Army Center of Military History photograph)",
+   "caption": "Ruined buildings in Cholon after the Tet Offensive, 1968.",
+   "alt": "A color photograph of a ruined city district in Cholon after the Tet Offensive in 1968, with burned-out buildings, rubble, and civilians picking through the wreckage."
+  }
+ ]
+}

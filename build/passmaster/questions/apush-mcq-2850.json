@@ -1,0 +1,76 @@
+{
+  "answerKey": "A",
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.8 The Vietnam War"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "America in an Era of Turmoil (1960–1975)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-2850",
+  "lesson": "apush-u8-l3",
+  "options": [
+    {
+      "key": "A",
+      "text": "The War Powers Resolution’s attempt to limit presidential war-making power"
+    },
+    {
+      "key": "B",
+      "misconception": "Vietnam led to the repeal of all congressional authority over foreign policy.",
+      "text": "The repeal of all congressional authority over foreign policy"
+    },
+    {
+      "key": "C",
+      "misconception": "Vietnam led to a permanent military draft without end.",
+      "text": "The establishment of a permanent military draft without end"
+    },
+    {
+      "key": "D",
+      "misconception": "Vietnam led to the end of all U.S. alliances in Asia.",
+      "text": "The end of all U.S. alliances in Asia"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Background: the War Powers Resolution of 1973 tried to reassert congressional limits on presidential war-making after Vietnam. It required the president to consult Congress and to withdraw troops after sixty days without approval.",
+    "B": "Congress sought more authority over war, not less; the repeal of its authority is the reverse.",
+    "C": "The draft ended; no permanent draft without end was established.",
+    "D": "Asian alliances continued; they did not end.",
+    "general": "1. Ask what Vietnam taught about presidential war-making. A president had taken the country deep into war.\n2. Name the response. Background: the War Powers Resolution of 1973 tried to limit presidential war-making power.\n3. Test the reversals. Congress sought more authority, the draft ended, and alliances continued.\n4. Match the change. A law limiting the president is the direct result of the Vietnam experience.\nRemember: a war that expands presidential power often produces a law to pull it back."
+  },
+  "reasoning": "continuity-change",
+  "skills": [
+    "5.B"
+  ],
+  "source": "original; stimulus is a paraphrase of Lyndon B. Johnson’s addresses on Vietnam (1964–1965)",
+  "status": "final",
+  "stem": "Which of the following later developments best illustrates a change resulting from the Vietnam War experience?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Lyndon B. Johnson, address on Vietnam, 1964–1965, paraphrased from presidential addresses.",
+    "text": "We can continue to help the people of South Vietnam to defend their freedom or we can abandon them. I have chosen to continue our commitment to the freedom of South Vietnam."
+  },
+  "stimulus_set": "johnson-vietnam-1964",
+  "themes": [
+    "PCE",
+    "WOR"
+  ],
+  "topics": [
+    "8.8"
+  ],
+  "type": "mcq",
+  "unit": 8
+}

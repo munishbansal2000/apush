@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-2471",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.2"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "D",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WOR",
+  "ARC"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.2 The Cold War from 1945 to 1980"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "America in an Era of Turmoil (1960-1975)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Photograph: NASA, Apollo 11, July 20, 1969, public domain (PD-USGov-NASA), via Wikimedia Commons. Text: original summary passage; facts from the grounding books.",
+  "text": "The photograph shows American astronaut Buzz Aldrin standing on the surface of the Moon on July 20, 1969, photographed by Neil Armstrong. Twelve years earlier, the Soviet Union had shocked the United States by launching Sputnik, the first artificial satellite, and American schools and the space program rushed to catch up."
+ },
+ "stimulus_set": "sputnik-space-race",
+ "source": "original; stimulus image from the shared pool: Buzz Aldrin on the Moon, Apollo 11, NASA photograph, public domain",
+ "stem": "The photograph best illustrates which Cold War development?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The first American satellite launch into orbit.",
+   "misconception": "A satellite launch has no astronaut on the Moon; this photograph shows a man standing on lunar soil."
+  },
+  {
+   "key": "B",
+   "text": "The Soviet Union's victory in the space race over America.",
+   "misconception": "The astronaut wears an American flag on his suit; a Soviet victory would not look like this."
+  },
+  {
+   "key": "C",
+   "text": "The end of the Vietnam War.",
+   "misconception": "The Moon landing and the Vietnam War are different stories in different places."
+  },
+  {
+   "key": "D",
+   "text": "The United States landing astronauts on the Moon in 1969."
+  }
+ ],
+ "rationales": {
+  "A": "The first American satellite, Explorer 1, launched in 1958, and no astronaut stood on the Moon in that mission. The photograph shows a Moon landing, not a satellite launch.",
+  "B": "The Soviet Union led the early space race with Sputnik, but it never landed a person on the Moon. The photograph shows an American astronaut, so it cannot show a Soviet victory.",
+  "C": "The Vietnam War ended in 1975, six years after this photograph, and it was fought in Southeast Asia, not on the Moon. The image has nothing to do with Vietnam.",
+  "D": "The photograph shows Aldrin on the lunar surface in July 1969. Background from the books: Apollo 11 answered Sputnik's challenge, giving the United States the space race's most visible prize.",
+  "general": "1. The photograph shows an astronaut in a spacesuit standing on gray, cratered ground under a black sky.\n2. The passage dates it to July 20, 1969, the Apollo 11 landing, photographed by Armstrong.\n3. That landing was the American answer to the Soviet lead that began with Sputnik twelve years earlier.\nRemember: Date the image first, then ask which story that date belongs to."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2471",
+   "file": "u8/pr25e-ch12-q04.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Aldrin_Apollo_11.jpg",
+   "license": "Public domain (NASA photograph, PD-USGov-NASA)",
+   "caption": "Astronaut Buzz Aldrin standing on the surface of the Moon, July 20, 1969.",
+   "alt": "A color photograph of astronaut Buzz Aldrin in a white spacesuit standing on the gray lunar surface, with bootprints in the dust around him and the gold-colored lunar module leg visible at the edge."
+  }
+ ]
+}

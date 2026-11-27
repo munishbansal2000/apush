@@ -1,0 +1,81 @@
+{
+  "id": "apush-mcq-2822",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.15"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "1.A",
+    "6.B"
+  ],
+  "themes": [
+    "PCE",
+    "WOR"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.14 Society in Transition"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Watergate, the Undoing of President Nixon, and the Limits of Presidential Power"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "Decline and Rebirth (1968-1988)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ]
+  },
+  "source": "original; stimulus table compiled from the list of presidents in the grounding books",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from the list of presidents in the grounding books (Barron's Ch. 10 timeline; 5 Steps Chs. 25-28; Princeton Ch. 12).",
+    "text": "Presidents of the United States, 1945-1980:\n\n| President | Party | Years in office |\n| Harry S. Truman | Democratic | 1945-1953 |\n| Dwight D. Eisenhower | Republican | 1953-1961 |\n| John F. Kennedy | Democratic | 1961-1963 |\n| Lyndon B. Johnson | Democratic | 1963-1969 |\n| Richard Nixon | Republican | 1969-1974 |\n| Gerald Ford | Republican | 1974-1977 |\n| Jimmy Carter | Democratic | 1977-1981 |"
+  },
+  "stimulus_set": "presidents-1945-1980",
+  "stem": "Which of the following was true of every presidency in the table?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Each president governed during the Cold War rivalry with the Soviet Union."
+    },
+    {
+      "key": "B",
+      "text": "Each president served two full terms in office, eight years in all.",
+      "misconception": "Background: Kennedy was assassinated in 1963, Nixon resigned in 1974, and Ford was never elected president."
+    },
+    {
+      "key": "C",
+      "text": "Each president belonged to the Democratic Party for his whole career.",
+      "misconception": "The table lists Republican presidents Eisenhower, Nixon, and Ford."
+    },
+    {
+      "key": "D",
+      "text": "Each president was elected president twice by the voters in national elections.",
+      "misconception": "Background: Truman first reached the White House when Roosevelt died, and Ford first reached it when Nixon resigned."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "Background: The Cold War ran from 1945 until 1991, so it covered every presidency in the table.",
+    "B": "Background: Kennedy was assassinated in 1963, Nixon resigned in 1974, and Ford was never elected president.",
+    "C": "The table lists Republican presidents Eisenhower, Nixon, and Ford.",
+    "D": "Background: Truman first reached the White House when Roosevelt died, and Ford first reached it when Nixon resigned.",
+    "general": "1. Read down the Years column: the table runs from 1945 to 1981 without a gap.\n2. Background: The Cold War rivalry with the Soviet Union ran through all those years.\n3. The parties switch back and forth, and several presidencies ended early, so no claim about terms or parties fits all seven.\nRemember: A claim about every president must survive the shortest presidency in the table."
+  }
+}

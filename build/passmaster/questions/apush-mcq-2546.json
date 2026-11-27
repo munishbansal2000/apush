@@ -1,0 +1,71 @@
+{
+ "id": "apush-mcq-2546",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.5"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.5 Culture After 1945"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 26",
+    "section": "Life in Suburbia"
+   }
+  ]
+ },
+ "source": "original; stimulus is a data table from the U.S. Census Bureau, table HS-42",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data table from U.S. Census Bureau, Statistical Abstract of the United States, table HS-42 (Selected Communications Media, 1920 to 2001).",
+  "text": "| Year | Share of American households owning a television |\n| 1950 | 9.0% |\n| 1955 | 64.5% |\n| 1960 | 87.1% |\n\nSource: U.S. Census Bureau, Statistical Abstract, table HS-42. The table gives the share of households owning at least one television set."
+ },
+ "stimulus_set": "tv-ownership-1950-1960",
+ "stem": "Critics such as William H. Whyte worried that the spread of television would deepen conformity in American life. The table best supports that worry in which way?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Television sets were too costly for most families to buy",
+   "misconception": "The table shows the opposite: by 1960 nearly nine in ten homes owned a set."
+  },
+  {
+   "key": "B",
+   "text": "Television reached only a small share of homes by 1960",
+   "misconception": "The table shows 87.1 percent of homes owned a set in 1960, a large share, not a small one."
+  },
+  {
+   "key": "C",
+   "text": "Television programs varied widely from one region to another",
+   "misconception": "Background from the books: three national networks fed most sets, so programs were much the same everywhere."
+  },
+  {
+   "key": "D",
+   "text": "Nearly nine in ten homes watched the same few national programs"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "The table shows nearly nine in ten homes owned a set by 1960, so cost had stopped being a barrier.",
+  "B": "The table shows 87.1 percent of homes owned a set in 1960, a large share, not a small one.",
+  "C": "Background from the books: three national networks fed most sets, so programs were much the same everywhere.",
+  "D": "Background from the books: with a set in nearly every home and only three national networks, the same few programs reached almost everyone.",
+  "general": "1. Whyte's worry was that Americans would think and live more alike.\n2. The table shows the means for that: a set in nearly nine of ten homes by 1960.\n3. Background from the books: only three national networks fed most of those sets, so the same few programs reached almost everyone.\nRemember: Conformity grows when one message reaches nearly everyone at once."
+ }
+}

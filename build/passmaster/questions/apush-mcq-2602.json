@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-2602",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.7"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.2 The Cold War from 1945 to 1980"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Cold War (1945-1960)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ],
+  "primary_sources": [
+   "U.S. Marine Corps photograph, Korean War, winter 1950-1951"
+  ]
+ },
+ "source": "original; stimulus photograph is a public-domain U.S. Marine Corps photograph, viewed before writing",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph: U.S. Marine Corps, Korean War, winter 1950-1951, public domain (PD-USGov-Military-Marines), via Wikimedia Commons.",
+  "text": "The photograph shows United States Marines resting in deep snow beside a jeep during the Korean War. The men wear heavy winter clothing covered in snow, and several sit or lie exhausted along a snowy roadside."
+ },
+ "stimulus_set": "korea-limited-war",
+ "stem": "The Korean War is often called a limited war because the United States",
+ "options": [
+  {
+   "key": "A",
+   "text": "fought to restore the 38th parallel, not to conquer the North"
+  },
+  {
+   "key": "B",
+   "text": "sent no American troops and fought the war entirely by air power",
+   "misconception": "Background from the books: hundreds of thousands of American ground troops fought in Korea, as the photograph shows."
+  },
+  {
+   "key": "C",
+   "text": "fought the war without any support from the United Nations",
+   "misconception": "Background from the books: the United States fought under a United Nations flag, with troops from other nations beside it."
+  },
+  {
+   "key": "D",
+   "text": "ended the war with a formal peace treaty that united Korea",
+   "misconception": "Background from the books: the war ended in 1953 with an armistice, and Korea stayed divided at the 38th parallel."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background from the books: the United States fought to push North Korea back across the 38th parallel and stopped there, rather than conquering North Korea or invading China.",
+  "B": "Background from the books: American ground troops fought in Korea, and the photograph shows them resting in the snow.",
+  "C": "Background from the books: the United States fought under United Nations sponsorship, with allied troops fighting beside it.",
+  "D": "Background from the books: the war ended with an armistice in 1953, not a peace treaty, and Korea stayed divided.",
+  "general": "1. A limited war has limited aims: the goal is set short of total victory.\n2. Background from the books: in Korea the aim was to restore South Korea and its border at the 38th parallel.\n3. Background from the books: the aim was to restore that line, not conquer North Korea or invade China.\n4. That restraint in aims is what makes the war limited, not its size.\nRemember: a war is limited by its aims, not by how many troops fight in it."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2602",
+   "file": "u8/pr25e-ch12-q06.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Marines_in_the_Korean_War_001.jpg",
+   "license": "Public domain (U.S. Marine Corps photograph, PD-USGov-Military-Marines)",
+   "caption": "United States Marines resting in deep snow beside a jeep during the Korean War.",
+   "alt": "A black-and-white photograph of United States Marines in heavy winter clothing covered in snow, resting beside a jeep on a snowy roadside during the Korean War, with snow-covered hills behind them."
+  }
+ ]
+}

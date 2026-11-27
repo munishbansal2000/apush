@@ -1,0 +1,85 @@
+{
+  "id": "apush-mcq-2770",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.13"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 4,
+  "skills": [
+    "3.A",
+    "3.B"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.13 The environment and natural resources from 1968 to 1980"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Environmental Movement"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Expansion of Rights Movements"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The New Left, Feminism, and the Counterculture"
+      }
+    ],
+    "primary_sources": [
+      "Rachel Carson, Silent Spring, September 27, 1962 (paraphrased)"
+    ]
+  },
+  "source": "original; stimulus is a paraphrase of Silent Spring (1962)",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Paraphrase of Rachel Carson, Silent Spring (Houghton Mifflin, September 27, 1962). Publication date verified against the Library of Congress / Columbia University record and HISTORY.com. Account drawn from the grounding books (Barron's Ch. 10, Topic 8.13, 'The Environmental Movement'; 5 Steps Ch. 27; Princeton Ch. 12).",
+    "text": "Paraphrase of Rachel Carson's Silent Spring, published September 27, 1962.\n\nCarson, a marine biologist, warned that the pesticide DDT and other chemicals were poisoning the natural world. She described how DDT built up in the bodies of animals, thinned the shells of birds' eggs, and spread through food chains from insects to fish to birds. She argued that people sprayed these chemicals without knowing their full effects, and that the chemical industry dismissed the danger. President John F. Kennedy asked his Science Advisory Committee to examine her claims."
+  },
+  "stimulus_set": "silent-spring-ddt-1962",
+  "stem": "Which conclusion about the debate over Silent Spring is best supported by the passage?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Carson's claims drew industry attacks but still won a presidential review."
+    },
+    {
+      "key": "B",
+      "text": "Scientists agreed at once that Carson's evidence was wrong.",
+      "misconception": "The passage describes industry attacks, not a scientific consensus against Carson."
+    },
+    {
+      "key": "C",
+      "text": "The chemical industry welcomed Carson's findings and changed its products.",
+      "misconception": "The passage says the industry dismissed the danger, the opposite of welcoming her findings."
+    },
+    {
+      "key": "D",
+      "text": "Kennedy's committee proved that DDT harmed no living thing.",
+      "misconception": "The passage says the committee was asked to examine her claims; it never says the committee cleared DDT."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "The passage says the industry dismissed the danger while Kennedy asked his Science Advisory Committee to examine her claims.",
+    "B": "The passage describes industry attacks, not a scientific consensus against Carson.",
+    "C": "The passage says the industry dismissed the danger, the opposite of welcoming her findings.",
+    "D": "The passage says the committee was asked to examine her claims; it never says the committee cleared DDT.",
+    "general": "1. The passage gives two reactions side by side: the chemical industry dismissed the danger.\n2. At the same time, President Kennedy asked his Science Advisory Committee to examine her claims.\n3. Background: A president does not order a review of claims nobody takes seriously, so the two reactions together show a contested book with official weight.\nRemember: When a passage pairs an attack with an official review, the point is that the argument mattered."
+  }
+}

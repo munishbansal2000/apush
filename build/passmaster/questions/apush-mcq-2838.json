@@ -1,0 +1,81 @@
+{
+  "id": "apush-mcq-2838",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.15"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "4.A",
+    "6.D"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "comparison",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.15 Subject to Debate"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Civil Rights Movement: Top-Down or Grassroots?"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "America in an Era of Turmoil (1960-1975)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ]
+  },
+  "source": "original; stimulus paraphrased from the historians' debate in Barron's Premium 2027, Chapter 10, Topic 8.15",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Paraphrase of the historians' debate in Barron's Premium 2027, Chapter 10, Topic 8.15, 'The Civil Rights Movement: Top-Down or Grassroots?'",
+    "text": "Two historians describe the civil rights movement (paraphrased from the debate in Barron's Premium 2027, Chapter 10, Topic 8.15):\n\nView 1: The movement's victories came from Washington. The courts struck down segregation, presidents sent troops to enforce the law, and Congress passed the great civil rights laws.\n\nView 2: The victories came from ordinary people. Bus boycotts, sit-ins, and marches forced Washington to act, and without local protest the laws would never have passed."
+  },
+  "stimulus_set": "civil-rights-debate-top-down-grassroots",
+  "stem": "What do the two views agree on?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Court decisions and federal laws were part of how change happened."
+    },
+    {
+      "key": "B",
+      "text": "Ordinary people mattered most of all in winning the change.",
+      "misconception": "View 1 credits Washington, not ordinary people, so the two views do not agree on this."
+    },
+    {
+      "key": "C",
+      "text": "The movement failed to change American life in any lasting way.",
+      "misconception": "Both views describe victories, such as the civil rights laws, so neither calls the movement a failure."
+    },
+    {
+      "key": "D",
+      "text": "Change came only from Washington and never from protest at all.",
+      "misconception": "View 2 says protest forced Washington to act, so the two views do not agree on this."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "View 1 names court decisions and laws as the victories, and View 2 says protest forced Washington to pass those laws.",
+    "B": "View 1 credits Washington, not ordinary people, so the two views do not agree on this.",
+    "C": "Both views describe victories, such as the civil rights laws, so neither calls the movement a failure.",
+    "D": "View 2 says protest forced Washington to act, so the two views do not agree on this.",
+    "general": "1. Agreement means a claim both views accept, so test each answer against both views.\n2. View 1 treats court decisions and federal laws as the victories themselves.\n3. View 2 treats those same laws as the result protest forced Washington to pass.\n4. Both views therefore place court decisions and federal laws in the story, even while disagreeing about what caused them.\nRemember: Two views can share the same facts and still disagree about what caused them."
+  }
+}

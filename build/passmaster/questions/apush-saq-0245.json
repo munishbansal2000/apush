@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0245",
+ "type": "saq",
+ "unit": 8,
+ "topics": [
+  "8.5"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "2.B",
+  "3.B"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.5 Culture After 1945"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Counterculture"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "The New Left, Feminism, and the Counterculture"
+   }
+  ],
+  "primary_sources": [
+   "Betty Friedan, The Feminine Mystique (1963)"
+  ]
+ },
+ "source": "original; stimulus paraphrased from Betty Friedan, The Feminine Mystique (1963)",
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Betty Friedan, The Feminine Mystique, 1963. Paraphrased, not quoted, except for two short phrases.",
+  "text": "Paraphrase of Betty Friedan, The Feminine Mystique (1963). Friedan wrote that many suburban housewives felt a deep dissatisfaction they could not name, which she called 'the problem that has no name.' These women had homes, husbands, and children, yet they felt empty and asked, in effect, 'Is this all?'"
+ },
+ "stimulus_set": null,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one group Friedan says felt 'the problem that has no name.'",
+   "modelAnswer": "Friedan says suburban housewives felt the problem. These women had homes, husbands, and children, yet they felt empty and unsatisfied with their lives.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying suburban housewives, or housewives with homes, husbands, and children, as the group Friedan describes.",
+     "notEarned": "Naming a group Friedan does not describe, such as factory workers or college students, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one reason many suburban women felt frustrated in the 1950s and early 1960s.",
+   "modelAnswer": "The postwar ideal told women that a home, a husband, and children should satisfy them fully. Women who wanted work, study, or a life beyond the house found that ideal left them with no respected role outside homemaking.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason for the frustration, such as the domestic ideal, limited careers or education, or isolation in the suburbs.",
+     "notEarned": "Restating Friedan's claim without explaining a reason for the frustration does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one effect of Friedan's book on the women's movement of the 1960s.",
+   "modelAnswer": "Friedan's book gave a name to feelings many women shared, which helped them organize together. In 1966 Friedan helped found the National Organization for Women, which pressed for laws on equal pay and equal opportunity.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one effect, such as the founding of NOW in 1966, the push for the Equal Rights Amendment, or the growth of women's groups on campuses and in suburbs.",
+     "notEarned": "Naming a later event without explaining how Friedan's book helped cause it does not earn the point."
+    }
+   ]
+  }
+ ]
+}

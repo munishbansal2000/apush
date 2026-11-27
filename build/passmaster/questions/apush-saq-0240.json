@@ -1,0 +1,88 @@
+{
+ "id": "apush-saq-0240",
+ "type": "saq",
+ "unit": 8,
+ "topics": [
+  "8.3"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "4.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.3 The Red Scare"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Joseph McCarthy and McCarthyism"
+   }
+  ],
+  "primary_sources": [
+   "Richard Hofstadter, 'The Paranoid Style in American Politics' (1964)"
+  ]
+ },
+ "source": "original; stimulus paraphrased from Richard Hofstadter's argument about the paranoid style",
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of the historian Richard Hofstadter's argument about the paranoid style in American politics. Paraphrased, not quoted.",
+  "text": "The historian Richard Hofstadter argued that American politics has often shown a paranoid style, marked by heated exaggeration, suspiciousness, and conspiratorial fantasy. He traced this style through movements from the Anti-Masonic Party of the 1820s to the Ku Klux Klan of the 1920s, and he saw it again in the anti-communist politics of the 1950s."
+ },
+ "stimulus_set": null,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one feature of the paranoid style that Hofstadter names.",
+   "modelAnswer": "Hofstadter names heated exaggeration as one feature of the paranoid style, the habit of blowing a threat far beyond its size. He also names suspiciousness and conspiratorial fantasy, the habit of seeing hidden plots behind ordinary events.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one feature Hofstadter names, such as heated exaggeration, suspiciousness, or conspiratorial fantasy.",
+     "notEarned": "Naming a feature Hofstadter does not list, such as violence or secrecy, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how McCarthyism showed the paranoid style.",
+   "modelAnswer": "McCarthyism showed heated exaggeration when McCarthy claimed that 205 communists worked in the State Department without ever showing the list. It showed conspiratorial fantasy when his followers treated every setback in the Cold War as proof that hidden communists were at work inside the government.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how McCarthyism showed the paranoid style, such as the unproven list of 205 names or treating Cold War setbacks as proof of hidden plots.",
+     "notEarned": "Restating a feature of the paranoid style without linking it to McCarthyism does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way the Red Scare of the 1950s differed from the earlier movements Hofstadter names.",
+   "modelAnswer": "The Red Scare of the 1950s was driven by the federal government itself, through loyalty boards, HUAC hearings, and Senate investigations, while the Anti-Masonic Party and the Ku Klux Klan were movements outside the government. It also rested on real espionage cases, like the Hiss case and the Rosenberg case, which gave the fear a basis that earlier panics lacked.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one difference, such as the federal government driving the scare or real espionage cases giving the fear a basis.",
+     "notEarned": "Naming a difference without explaining it, or describing a similarity instead of a difference, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

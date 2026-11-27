@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-2577",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.6"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.6 Early Steps in the Civil Rights Movement (1940s and 1950s)"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 26",
+    "section": "Prosperity and Anxiety: The 1950s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ],
+  "primary_sources": [
+   "Jackie Robinson debut, April 15, 1947 (Brooklyn Dodgers)"
+  ]
+ },
+ "source": "original; stimulus Photograph: Jackie Robinson, Brooklyn Dodgers, 1954, by Bob Sandberg, LOOK Magazine, public domain via Wikimedia Commons.",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph: Jackie Robinson, Brooklyn Dodgers, 1954, by Bob Sandberg, LOOK Magazine, public domain via Wikimedia Commons.",
+  "text": "The photograph, taken in 1954, shows Jackie Robinson of the Brooklyn Dodgers, wearing cap and uniform number 42, posed ready to swing a bat. Robinson first played for the Dodgers on April 15, 1947, the first Black player in the major leagues in the twentieth century. Branch Rickey, the Dodgers' general manager, had signed Robinson from the Kansas City Monarchs of the Negro leagues in 1945."
+ },
+ "stimulus_set": "jackie-robinson-1947",
+ "stem": "Branch Rickey chose Robinson in part because Robinson agreed to do which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Face abuse without fighting back, at least at first"
+  },
+  {
+   "key": "B",
+   "text": "Refuse to play against white teams on the road",
+   "misconception": "Background from the books: Robinson played against white teams, so he did not refuse to play them."
+  },
+  {
+   "key": "C",
+   "text": "Leave baseball after one season and return to the Negro leagues",
+   "misconception": "Background from the books: Robinson played ten seasons for the Dodgers, not one."
+  },
+  {
+   "key": "D",
+   "text": "Sue the league for back pay and lost wages",
+   "misconception": "Background from the books: Robinson sued no one for back pay; his agreement with Rickey was about conduct on the field."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background from the books: Rickey warned Robinson about the abuse he would face and asked him not to answer it, and Robinson agreed.",
+  "B": "Robinson played against white teams, so he did not refuse to play them.",
+  "C": "Background from the books: Robinson played ten seasons for the Dodgers, not one.",
+  "D": "Background from the books: Robinson sued no one for back pay; his agreement with Rickey was about conduct on the field.",
+  "general": "1. Background from the books: Rickey signed Robinson knowing that crowds, opponents, and even some teammates would abuse him.\n2. A player who answered every insult would give opponents a reason to say integration had failed.\n3. Background from the books: Rickey asked Robinson to take the abuse without fighting back, and Robinson agreed to that bargain.\n4. The choice was therefore about conduct under pressure, not about refusing to play.\nRemember: when a pioneer is chosen, ask what behavior the chooser needed from him."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2577",
+   "file": "u8/jackie-robinson-1954.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Jackie_Robinson,_Brooklyn_Dodgers,_1954.jpg",
+   "license": "Public domain (LOOK Magazine photograph by Bob Sandberg, 1954; Cowles Communications released all rights; Library of Congress)",
+   "caption": "Jackie Robinson of the Brooklyn Dodgers, posed ready to swing, 1954",
+   "alt": "Jackie Robinson in a Brooklyn Dodgers uniform and cap, holding a bat ready to swing, with number 42 on the back of his jersey"
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "apush-mcq-2755",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.12"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "1.A"
+  ],
+  "themes": [
+    "SOC",
+    "ARC"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Bob Dylan and the Folk Revival"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.12 Youth Culture of the 1960s"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Expansion of Rights Movements"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The New Left, Feminism, and the Counterculture"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Original account drawn from the grounding books: Barron’s Ch. 10, ‘Bob Dylan and the Folk Revival’; 5 Steps Ch. 27; Princeton Ch. 12. Newport date verified against Smithsonian Magazine and Britannica.",
+    "text": "Account of Bob Dylan and the folk revival, drawn from the grounding books.\n\nIn the early 1960s, Bob Dylan sang with a simple acoustic guitar and a rough, untrained voice. His early songs, including ‘The Times They Are a-Changin’’ and ‘Blowin’ in the Wind,’ became anthems of the protest movements, sung at civil rights marches and rallies. In July 1965, Dylan took the stage at the Newport Folk Festival with an electric guitar and a rock band. Some in the crowd booed. Dylan went on to a huge worldwide following, merging folk lyrics with rock music."
+  },
+  "stimulus_set": "dylan-newport-1965",
+  "stem": "Dylan’s early folk music appealed to young listeners in part because it",
+  "options": [
+    {
+      "key": "A",
+      "text": "used the smooth crooning style of their parents’ generation",
+      "misconception": "Dylan’s rough, untrained voice was the opposite of smooth crooning."
+    },
+    {
+      "key": "B",
+      "text": "was produced with large orchestras and studio effects",
+      "misconception": "Dylan’s early sound was one acoustic guitar, not an orchestra."
+    },
+    {
+      "key": "C",
+      "text": "sounded simple and direct, unlike overproduced pop songs"
+    },
+    {
+      "key": "D",
+      "text": "avoided any mention of politics or protest",
+      "misconception": "His songs were protest anthems, sung at marches and rallies."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "The passage says Dylan sang with a rough, untrained voice, the opposite of smooth crooning.",
+    "B": "The passage says Dylan sang with a simple acoustic guitar, not with orchestras and studio effects.",
+    "C": "The passage says Dylan sang with a simple acoustic guitar and a rough, untrained voice, and his songs became protest anthems.",
+    "D": "The passage says his songs became anthems of the protest movements, sung at marches and rallies.",
+    "general": "1. Dylan’s early sound was one acoustic guitar and a rough voice.\n2. Background: That plain sound stood against the polished pop of the record industry.\n3. His songs became anthems of the protest movements, sung at marches and rallies.\n4. Simple and direct can feel more honest than polished and produced.\nRemember: A plain style can be the message: it says the singer is not selling you something."
+  }
+}

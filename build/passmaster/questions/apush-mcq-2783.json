@@ -1,0 +1,79 @@
+{
+  "id": "apush-mcq-2783",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.13"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A",
+    "3.B"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.13 The environment and natural resources from 1968 to 1980"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "The Presidency of Richard Nixon"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "U.S. Energy Information Administration, average gasoline and crude oil prices, 1973-1980"
+    ]
+  },
+  "source": "original; stimulus is an account of the 1973 embargo with an EIA price table",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Account of the embargo drawn from the grounding books (5 Steps Ch. 28; Princeton Ch. 12) and the U.S. State Department's account: embargo imposed October 1973 after U.S. aid to Israel, lifted March 1974. Prices are U.S. Energy Information Administration annual averages: regular gasoline 39 cents in 1973, 53 cents in 1974, 86 cents in 1979, 119 cents in 1980; crude oil about $2.90 a barrel before the embargo and $11.65 by January 1974.",
+    "text": "In October 1973, Egypt and Syria attacked Israel, starting the Yom Kippur War. When the United States sent emergency military aid to Israel, Arab oil producers cut production and embargoed oil shipments to the United States. The embargo ended in March 1974, but oil prices stayed high.\n\nAverage prices (U.S. Energy Information Administration):\n\n| | 1973 | 1974 | 1979 | 1980 |\n| Crude oil, dollars per barrel | $2.90 | $11.65 | — | — |\n| Regular gasoline, cents per gallon | 39 | 53 | 86 | 119 |"
+  },
+  "stimulus_set": "oil-embargo-gas-prices-1973",
+  "stem": "The federal government responded to the energy crisis mainly by doing which of the following?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Banning all driving on American roads.",
+      "misconception": "Background: Driving continued; the government limited speeds and rationed fuel instead of banning driving."
+    },
+    {
+      "key": "B",
+      "text": "Closing every gas station in the country for good.",
+      "misconception": "Background: Gas stations stayed open, though many ran out of fuel and limited sales."
+    },
+    {
+      "key": "C",
+      "text": "Giving gasoline away for free.",
+      "misconception": "Background: Gasoline became more expensive, not free, during the crisis."
+    },
+    {
+      "key": "D",
+      "text": "Asking Americans to conserve fuel with a 55 mph limit."
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "Background: Driving continued; the government limited speeds and rationed fuel instead of banning driving.",
+    "B": "Background: Gas stations stayed open, though many ran out of fuel and limited sales.",
+    "C": "Background: Gasoline became more expensive, not free, during the crisis.",
+    "D": "Background: In early 1974 the national speed limit was set at 55 miles per hour, several states used odd-even rationing by license plate, and the country tried year-round daylight saving time.",
+    "general": "1. The passage shows a shortage, not a ban: oil was cut off and prices soared.\n2. Background: With less fuel to go around, the answer was to use less: a 55 mph limit, odd-even rationing, and daylight saving time.\n3. Background: None of those steps banned driving or closed stations; all of them asked Americans to conserve.\nRemember: A shortage calls for conservation, and conservation shows up as limits, not bans."
+  }
+}

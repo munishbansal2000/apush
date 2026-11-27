@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-2662",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.9"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "3.D",
+  "6.C"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.9 The Great Society"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "The Great Society"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Liberal Hour of the 1960s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Lyndon Johnson's Social Agenda"
+   }
+  ]
+ },
+ "source": "original; stimulus is a data table from the U.S. Census Bureau, Historical Poverty Tables, Table 2",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data table from the U.S. Census Bureau, Current Population Survey, Historical Poverty Tables, Table 2.",
+  "text": "| Year | 1959 | 1964 | 1965 | 1966 | 1969 | 1973 |\n| Poverty rate | 22.4% | 19.0% | 17.3% | 14.7% | 12.1% | 11.1% |\n\nOfficial poverty rate, all people. Source: U.S. Census Bureau, Current Population Survey, Historical Poverty Tables, Table 2."
+ },
+ "stimulus_set": "poverty-rate-table",
+ "stem": "The table best supports which judgment about Johnson's goal of ending poverty?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Johnson ended poverty completely by 1969",
+   "misconception": "The rate in 1969 is 12.1 percent, so more than one American in ten was still poor."
+  },
+  {
+   "key": "B",
+   "text": "Johnson's programs had no effect on poverty at all",
+   "misconception": "The rate falls steeply from 1964 to 1969, so the claim of no effect does not fit the table."
+  },
+  {
+   "key": "C",
+   "text": "Poverty fell sharply but was not ended"
+  },
+  {
+   "key": "D",
+   "text": "Poverty rose again as soon as Johnson left office",
+   "misconception": "The rate falls from 12.1 percent in 1969 to 11.1 percent in 1973, so it did not rise."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "The rate in 1969 is 12.1 percent, so poverty was still there for more than one American in ten.",
+  "B": "The rate falls from 19.0 percent in 1964 to 12.1 percent in 1969, a steep fall.",
+  "C": "The rate falls by more than a third from 1964 to 1969, yet 11.1 percent of Americans were still poor in 1973.",
+  "D": "The rate falls from 12.1 percent in 1969 to 11.1 percent in 1973, so it did not rise after Johnson left.",
+  "general": "1. The rate falls from 19.0 percent in 1964 to 12.1 percent in 1969: a sharp fall.\n2. A sharp fall is real progress toward Johnson's goal.\n3. But the last number in the table is 11.1 percent in 1973, not zero.\n4. Poverty therefore fell sharply but was not ended.\nRemember: A falling number and a zero are different results."
+ }
+}

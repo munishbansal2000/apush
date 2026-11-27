@@ -1,0 +1,87 @@
+{
+ "id": "apush-leq-0079",
+ "type": "leq",
+ "unit": 8,
+ "topics": [
+  "8.3"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.3 The Red Scare"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "The Second Red Scare"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "McCarthyism"
+   }
+  ]
+ },
+ "source": "original; prompt written for this question",
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "stimulus_set": null,
+ "prompt": "Evaluate the extent to which the fear of communism changed American government and society from 1947 to 1960. In your response, analyze the causes of the changes you describe.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which the fear of communism changed American government and society from 1947 to 1960, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of change does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the wartime alliance with the Soviet Union, the Cold War abroad, or the First Red Scare of 1919-1920.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples of change in government, such as the loyalty program, HUAC investigations, the McCarran Act, or the Smith Act prosecutions.",
+   "notEarned": "General statements about change with no specific example do not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples of change in society, such as the Hollywood blacklist, the Taft-Hartley loyalty oath, the dismissal of gay federal workers, or civil defense drills in schools.",
+   "notEarned": "Repeating the same government example, or naming a social change with no specific detail, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (causation): earns the point for explaining the causes of the changes, linking examples to the fear of communism and to specific causes such as Soviet espionage, the Soviet atomic test, or partisan attacks on Democrats as soft on communism.",
+   "notEarned": "Listing causes with no explanation of how they produced the changes does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the thesis by period, explaining why the changes were uneven, or weighing the government's power against the limits set by Truman's veto, the Senate censure, and the Yates decision.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: The fear of communism changed American government and society deeply from 1947 to 1960, building a loyalty apparatus that reached from federal offices into Hollywood and labor unions, though the change was driven by real espionage cases and checked by the Constitution.\nContext: The United States and the Soviet Union had been wartime allies, and the First Red Scare of 1919-1920 had already shown how fear of radicals could cost Americans their jobs and freedom.\nEvidence of change in government: Truman's loyalty program investigated millions of federal workers, HUAC held hearings on the government and Hollywood, the McCarran Act required Communist groups to register, and Smith Act prosecutions jailed party leaders.\nEvidence of change in society: The Hollywood blacklist kept accused writers out of work until 1960, the Taft-Hartley Act forced union leaders to swear they were not communists, gay federal workers were dismissed as security risks, and schools drilled children to duck and cover.\nCauses: The Soviet atomic test of 1949 and the Hiss and Rosenberg cases made the spy threat seem real, while Republican charges that Democrats were soft on communism pushed Truman and Congress to act tough.\nComplexity: The change was real but uneven. The government grew powerful enough to investigate millions, yet Truman vetoed the McCarran Act, the Senate censured McCarthy in 1954, and the Supreme Court overturned Smith Act convictions in Yates in 1957.",
+ "totalPoints": 6
+}

@@ -1,0 +1,90 @@
+{
+ "id": "apush-saq-0246",
+ "type": "saq",
+ "unit": 8,
+ "topics": [
+  "8.6"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "2.B"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.6 Early Steps in the Civil Rights Movement (1940s and 1950s)"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 26",
+    "section": "Prosperity and Anxiety: The 1950s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ]
+ },
+ "source": "original; stimulus is an original secondary passage written for this question, facts from the grounding books",
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question; facts from the grounding books.",
+  "text": "The Montgomery Bus Boycott did not begin with a single act of defiance. For years before Rosa Parks was arrested, the Women's Political Council in Montgomery had planned a boycott of the city buses. When Parks was arrested on December 1, 1955, its leader, Jo Ann Robinson, wrote a leaflet that night, and she and her students ran off thousands of copies overnight, and Black residents of Montgomery stayed off the buses the next day. The boycott then lasted for more than a year, held together by carpools, church networks, and the Montgomery Improvement Association, led by the young minister Martin Luther King Jr."
+ },
+ "stimulus_set": null,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one group the passage says helped plan or carry out the Montgomery Bus Boycott.",
+   "modelAnswer": "The passage says the Women's Political Council had planned a boycott. Its leader, Jo Ann Robinson, wrote a leaflet the night of the arrest and ran off thousands of copies overnight.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying the Women's Political Council, the Montgomery Improvement Association, or church networks, as named in the passage.",
+     "notEarned": "Naming a group the passage does not mention, such as the NAACP Legal Defense Fund, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one reason the boycott was able to last for more than a year.",
+   "modelAnswer": "The boycott lasted because the community built its own way to travel, with carpools and church networks carrying people who refused to ride the buses. That support system let ordinary residents keep the boycott going day after day.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason the boycott lasted, such as the carpool system, church networks, the Montgomery Improvement Association's organization, or the economic pressure on the bus company.",
+     "notEarned": "Restating that the boycott lasted a long time without explaining what sustained it does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one effect of the Montgomery Bus Boycott on the civil rights movement.",
+   "modelAnswer": "The boycott made Martin Luther King Jr. a national figure, since he led the Montgomery Improvement Association through the long campaign. It also showed that disciplined nonviolent protest could win, which encouraged the movement's later campaigns.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one effect, such as King's rise to national leadership, the founding of the Southern Christian Leadership Conference in 1957, or the spread of nonviolent protest as a tactic.",
+     "notEarned": "Naming a later event without explaining how the boycott helped cause it does not earn the point."
+    }
+   ]
+  }
+ ]
+}

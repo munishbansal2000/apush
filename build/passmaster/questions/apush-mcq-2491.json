@@ -1,0 +1,74 @@
+{
+ "id": "apush-mcq-2491",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.3"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.3 The Red Scare"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "The Second Red Scare"
+   }
+  ],
+  "primary_sources": [
+   "Elizabeth Bentley, testimony before the House Committee on Un-American Activities, 1948"
+  ]
+ },
+ "source": "original; stimulus paraphrased from Elizabeth Bentley's testimony before HUAC, 1948",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Elizabeth Bentley's testimony before the House Committee on Un-American Activities, 1948. Paraphrased, not quoted, because the source is after 1929.",
+  "text": "In 1948, Elizabeth Bentley, a former courier for a Soviet spy ring, testified before the House Committee on Un-American Activities. She named government employees she said had passed her secret information, including material on aircraft production, for delivery to Soviet agents. The committee used her testimony to open a wider investigation of communists in the government."
+ },
+ "stimulus_set": "huac-bentley-1948",
+ "stem": "The committee's use of Bentley's testimony best illustrates which feature of the Second Red Scare?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Congress waited for courts to convict spies before investigating anyone.",
+   "misconception": "HUAC investigated first and let accusations lead. Background from the books: courts convicted Hiss of perjury only after the committee's hearings had made the case famous."
+  },
+  {
+   "key": "B",
+   "text": "One witness's claims could open wide investigations of loyalty."
+  },
+  {
+   "key": "C",
+   "text": "The committee ignored claims of espionage in the government.",
+   "misconception": "Background from the books: the committee built its work on espionage claims, including Bentley's and Chambers's. Ignoring them would have left HUAC with no cases at all."
+  },
+  {
+   "key": "D",
+   "text": "The public demanded that HUAC stop its investigations.",
+   "misconception": "Background from the books: the public supported the hunt in the late 1940s, and HUAC's hearings drew wide attention. Demands to stop the committee came later, after McCarthy's fall."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "HUAC investigated first and let accusations lead. Background from the books: Hiss was convicted of perjury only after the committee's hearings had made the case famous.",
+  "B": "Bentley's claims about a spy ring led the committee to investigate communists across the government. A single witness's story opened a much wider hunt.",
+  "C": "Background from the books: the committee built its work on espionage claims, including Bentley's and Chambers's. Ignoring them would have left HUAC with no cases at all.",
+  "D": "Background: the public supported the hunt in the late 1940s, and HUAC's hearings drew wide attention. Demands to stop the committee came later, after McCarthy's fall.",
+  "general": "1. Bentley was one witness with a story about a spy ring and named government employees.\n2. HUAC used her story to open a wider investigation of communists across the government.\n3. That widening is the pattern of the era: one accusation licensed many more investigations, and each new name produced still more names to chase.\nRemember: In a scare, one accusation can license many more."
+ }
+}

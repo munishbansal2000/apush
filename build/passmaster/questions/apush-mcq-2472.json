@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-2472",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.2"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "5.A"
+ ],
+ "themes": [
+  "WOR",
+  "ARC"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.2 The Cold War from 1945 to 1980"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "America in an Era of Turmoil (1960-1975)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Photograph: NASA, Apollo 11, July 20, 1969, public domain (PD-USGov-NASA), via Wikimedia Commons. Text: original summary passage; facts from the grounding books.",
+  "text": "The photograph shows American astronaut Buzz Aldrin standing on the surface of the Moon on July 20, 1969, photographed by Neil Armstrong. Twelve years earlier, the Soviet Union had shocked the United States by launching Sputnik, the first artificial satellite, and American schools and the space program rushed to catch up."
+ },
+ "stimulus_set": "sputnik-space-race",
+ "source": "original; stimulus image from the shared pool: Buzz Aldrin on the Moon, Apollo 11, NASA photograph, public domain",
+ "stem": "The space race, from Sputnik to Apollo 11, best shows which feature of the Cold War?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The superpowers competed for prestige and technological superiority without fighting each other directly."
+  },
+  {
+   "key": "B",
+   "text": "The Soviet Union and the United States cooperated to explore space together.",
+   "misconception": "Joint spaceflight came in 1975, after the race; Sputnik to Apollo was a rivalry, not teamwork."
+  },
+  {
+   "key": "C",
+   "text": "Military spending fell as space spending rose in both countries.",
+   "misconception": "Both budgets grew together; space did not shrink the military."
+  },
+  {
+   "key": "D",
+   "text": "The United Nations controlled both space programs.",
+   "misconception": "Each superpower ran its own program; the United Nations controlled neither."
+  }
+ ],
+ "rationales": {
+  "A": "Sputnik and Apollo were rival firsts, each meant to prove one system superior to the other. Background from the books: the race channeled the rivalry into rockets and prestige instead of battlefields.",
+  "B": "The two programs were separate and secretive rivals, not a joint effort. The first joint mission, Apollo-Soyuz, did not fly until 1975, after Apollo 11.",
+  "C": "Military spending stayed high through the space race, as both sides built missiles and warheads alongside their rockets. Space spending added to the military budget rather than replacing it.",
+  "D": "The United Nations did not run either space program. NASA ran America's program and the Soviet military ran Moscow's.",
+  "general": "1. Sputnik and Apollo 11 were both firsts, and each side treated the other's first as a defeat.\n2. Yet neither first was won on a battlefield; the contest was fought with rockets, engineers, and television pictures.\n3. That is the Cold War in miniature: intense rivalry for prestige and technology, kept short of direct war.\nRemember: A rivalry can be total without being a shooting war; look for where the competition actually happens."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2472",
+   "file": "u8/pr25e-ch12-q04.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Aldrin_Apollo_11.jpg",
+   "license": "Public domain (NASA photograph, PD-USGov-NASA)",
+   "caption": "Astronaut Buzz Aldrin standing on the surface of the Moon, July 20, 1969.",
+   "alt": "A color photograph of astronaut Buzz Aldrin in a white spacesuit standing on the gray lunar surface, with bootprints in the dust around him and the gold-colored lunar module leg visible at the edge."
+  }
+ ]
+}

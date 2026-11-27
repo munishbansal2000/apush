@@ -1,0 +1,94 @@
+{
+  "id": "apush-saq-0266",
+  "type": "saq",
+  "unit": 8,
+  "topics": [
+    "8.15"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "4.A",
+    "3.B"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "comparison",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.15 Subject to Debate"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Civil Rights Movement: Top-Down or Grassroots?"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "America in an Era of Turmoil (1960-1975)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ]
+  },
+  "source": "original; stimulus paraphrased from the historians' debate in Barron's Premium 2027, Chapter 10, Topic 8.15",
+  "saq_slot": 1,
+  "totalPoints": 3,
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Paraphrase of Barron's Premium 2027, Chapter 10, Topic 8.15, 'The Civil Rights Movement: Top-Down or Grassroots?'",
+    "text": "Paraphrase of the debate described in Barron's Premium 2027, Chapter 10, Topic 8.15, 'The Civil Rights Movement: Top-Down or Grassroots?' Some historians stress the top-down view: the courts, elected officials, and other powerful institutions shaped events, and the 1964 Civil Rights Act might not have passed without presidential leadership. Other historians stress the grassroots view: ordinary people shaped change, and the Birmingham campaign of 1963, which drew a violent police reaction shown on the evening news, pushed the Kennedy and Johnson administrations to act."
+  },
+  "stimulus_set": null,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify one way historians disagree about the civil rights movement.",
+      "modelAnswer": "Historians disagree about who drove the movement's victories. Top-down historians credit courts, elected officials, and powerful institutions, while grassroots historians credit ordinary people and local protest.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for identifying one disagreement, such as who drove the movement's victories, whether change came from Washington or from ordinary people, or whether the 1964 Civil Rights Act needed presidential leadership.",
+          "notEarned": "Naming only one view, without the disagreement, does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain one piece of evidence that supports the grassroots view of the movement.",
+      "modelAnswer": "Background: The Montgomery bus boycott supports the grassroots view because local Black residents organized and sustained it for 381 days. Background: Their protest, not an order from Washington, forced the bus company and the courts to respond.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Background: Earns the point for explaining one piece of evidence, such as the Montgomery bus boycott, the sit-ins, or the Birmingham campaign, and linking it to ordinary people acting first.",
+          "notEarned": "Naming an event without linking it to ordinary people acting first does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Explain one piece of evidence that supports the top-down view of the movement.",
+      "modelAnswer": "Background: The Civil Rights Act of 1964 supports the top-down view because Congress passed it and the president signed it into law. Background: Federal action of that scale needed presidential leadership and votes in Congress, which local protest alone could not supply.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Background: Earns the point for explaining one piece of evidence, such as the Brown decision, the 1964 Civil Rights Act, or federal troops at Little Rock, and linking it to action by a federal institution.",
+          "notEarned": "Naming an event without linking it to action by a federal institution does not earn the point."
+        }
+      ]
+    }
+  ]
+}

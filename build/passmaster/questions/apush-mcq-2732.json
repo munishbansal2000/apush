@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-2732",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.11"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "1.B",
+    "3.A"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Title IX (1972)"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Expansion of Rights Movements"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "table",
+    "source_note": "Table: National Federation of State High School Associations (NFHS) High School Athletics Participation Survey, as reported by the NFHS. Figures verified against NFHS reporting: 294,015 girls in 1971-72; more than 2 million girls by 1977-78; total participation about 3.9 million in 1971-72 and about 6.4 million in 1977-78. Title IX date verified: signed June 23, 1972.",
+    "text": "Girls playing high school sports, National Federation of State High School Associations survey.\n\nSchool year | Girls playing high school sports\n1971-72 | 294,015\n1977-78 | More than 2,000,000\n\nAll high school athletes, boys and girls together: about 3.9 million in 1971-72; about 6.4 million in 1977-78.\n\nTitle IX of the Education Amendments of 1972 banned sex discrimination in any education program receiving federal money."
+  },
+  "stimulus_set": "title-ix-sports-table",
+  "stem": "How did Title IX work to open school sports to girls?",
+  "options": [
+    {
+      "key": "A",
+      "text": "It ordered every school to field the same number of girls' and boys' teams",
+      "misconception": "The passage says Title IX banned sex discrimination in federally funded programs; it does not say it ordered equal numbers of teams."
+    },
+    {
+      "key": "B",
+      "text": "It paid girls directly to join school sports teams",
+      "misconception": "The passage says nothing about paying girls to play sports."
+    },
+    {
+      "key": "C",
+      "text": "It banned girls from playing on boys' teams",
+      "misconception": "Title IX banned discrimination against girls; it did not ban girls from teams."
+    },
+    {
+      "key": "D",
+      "text": "It barred sex discrimination in any education program receiving federal money"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "The passage says Title IX banned sex discrimination in federally funded programs, not that it ordered equal numbers of teams.",
+    "B": "The passage says nothing about paying girls to play sports.",
+    "C": "Title IX banned discrimination against girls, not girls from teams.",
+    "D": "The passage says Title IX banned sex discrimination in any education program receiving federal money.",
+    "general": "1. Title IX applied to education programs that received federal money. Background: That covered most public schools.\n2. A school that shut girls out of sports risked losing that money.\n3. Background: Schools therefore opened teams, funding, and facilities to girls, and participation rose sharply.\n4. The table shows the result: girls' participation rose from 294,015 to more than 2,000,000 in six years.\nRemember: Title IX worked through the power of the purse, by tying federal money to equal treatment."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "id": "apush-mcq-2694",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.10"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 4,
+  "skills": [
+    "2.A"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.10 The African-American Civil Rights Movement (1960s)"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Civil Rights Movement in the 1960s: From Integration to Black Power"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The March on Washington (1963)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus photograph viewed before writing; proposition rewritten against the books from staged survivor 5s24-ch03-mcq-26",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Photograph: Martin Luther King Jr. and Mathew Ahmann at the March on Washington, August 28, 1963, public domain (U.S. federal government photograph, National Archives). Account drawn from the grounding books (Barron's Ch. 10, Topic 8.10, \"The March on Washington (1963)\"; 5 Steps Ch. 27; Princeton Ch. 12). The Lewis draft quotation is in Barron's; the jobs-and-freedom demands are in the march's own name, visible on the button.",
+    "text": "The photograph shows Martin Luther King Jr. at the March on Washington on August 28, 1963, wearing a button that reads \"March on Washington for Jobs and Freedom.\" Behind him a sign reads \"NOW.\" More than 200,000 people gathered in Washington that day to march, sing, and hear speeches, including King's \"I Have a Dream\" speech at the Lincoln Memorial. The march had been organized to demand both jobs and freedom: an end to segregation and a federal jobs program and a higher minimum wage. John Lewis, the young leader of the Student Nonviolent Coordinating Committee (SNCC), was told by older organizers to tone down his speech before he gave it. His original draft had urged the movement to march \"through the heart of Dixie the way Sherman did . . . and burn Jim Crow to the ground.\""
+  },
+  "stimulus_set": "march-on-washington-1963",
+  "stem": "King's choice of the Lincoln Memorial as the setting for his speech most directly connected his cause to which of the following?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The New Deal and its programs for unemployed workers",
+      "misconception": "The New Deal is not tied to the Lincoln Memorial, and the passage names no New Deal program."
+    },
+    {
+      "key": "B",
+      "text": "The Cold War struggle against the Soviet Union",
+      "misconception": "The Cold War has no link to the Lincoln Memorial setting in the passage."
+    },
+    {
+      "key": "C",
+      "text": "Westward expansion and the settlement of the frontier",
+      "misconception": "Westward expansion has no link to the Lincoln Memorial setting in the passage."
+    },
+    {
+      "key": "D",
+      "text": "Emancipation and the promise of freedom Lincoln stood for"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "The Lincoln Memorial honors Lincoln, not the New Deal.",
+    "B": "The setting points to Lincoln, not to the Cold War.",
+    "C": "The setting points to Lincoln, not to westward expansion.",
+    "D": "Background: Lincoln issued the Emancipation Proclamation, and the passage places King's speech at the memorial built to honor him.",
+    "general": "1. King speaks at the Lincoln Memorial, a national monument, not at an ordinary rally site.\n2. The memorial honors Abraham Lincoln.\n3. Background: Lincoln issued the Emancipation Proclamation, freeing enslaved people in the Confederacy.\n4. Speaking there ties the 1963 demand for freedom to Lincoln's promise of emancipation.\nRemember: A speaker's setting can make the argument before the first word."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-2694",
+      "file": "u8/barrons-2027-pt2-12.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Civil_Rights_March_on_Washington%2C_D.C._%28Dr._Martin_Luther_King%2C_Jr._and_Mathew_Ahmann_in_a_crowd.%29_-_NARA_-_542015_-_Restoration.jpg",
+      "license": "Public domain (work of the U.S. federal government, PD-USGov)",
+      "caption": "Martin Luther King Jr. at the March on Washington, August 28, 1963",
+      "alt": "Martin Luther King Jr. in the foreground wearing a round button that reads March on Washington for Jobs and Freedom, with Mathew Ahmann at right and a sign reading NOW behind them"
+    }
+  ]
+}

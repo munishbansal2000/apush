@@ -1,0 +1,83 @@
+{
+  "id": "apush-mcq-2713",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.10"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "1.B",
+    "3.A"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.10 The African-American Civil Rights Movement (1960s)"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Civil Rights Movement in the 1960s: From Integration to Black Power"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Urban Rioting"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Account drawn from the grounding books (Barron's Ch. 10, Topic 8.10, \"Urban Rioting\" and \"The Assassination of King (1968)\"; 5 Steps Ch. 27; Princeton Ch. 12). The Watts death toll is 34, verified against the Stanford King Institute and Britannica (Barron's gives 35, which is wrong). The Detroit toll of 43 and the Kerner quotation are in Barron's; the Fair Housing Act date of April 11, 1968 is the statute's signing date.",
+    "text": "The civil rights laws of 1964 and 1965 ended legal segregation, but many Black Americans in Northern cities still lived with poverty, poor housing, and hostile policing. In August 1965 the Watts neighborhood of Los Angeles erupted after a young Black motorist, Marquette Frye, was arrested following a traffic stop. Six days of rioting left 34 people dead, more than 1,000 injured, and more than $40 million in property damage. In the summer of 1967 more than 150 race riots broke out across the country, including a deadly riot in Detroit that left 43 people dead. President Johnson appointed the Kerner Commission to investigate the causes of the rioting. Its report, issued in February 1968, blamed poverty and segregation and warned that America was moving toward \"two societies, one black, one white -- separate and unequal.\" On April 4, 1968, Martin Luther King Jr. was assassinated in Memphis, Tennessee. A week later, on April 11, 1968, Johnson signed the Fair Housing Act, banning discrimination in the sale and rental of housing."
+  },
+  "stimulus_set": "urban-riots-kerner-1968",
+  "stem": "The Watts riot of 1965 best shows which limit of the civil rights victories of 1964 and 1965?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The 1964 and 1965 laws had never been signed by the president",
+      "misconception": "Johnson signed both acts, as the passage's account of the laws assumes."
+    },
+    {
+      "key": "B",
+      "text": "The laws had desegregated every Northern city completely by 1965",
+      "misconception": "The passage says Black Northerners still lived with poverty, poor housing, and hostile policing."
+    },
+    {
+      "key": "C",
+      "text": "The laws ended legal segregation but left daily life in Northern cities unchanged"
+    },
+    {
+      "key": "D",
+      "text": "The laws had no support from Black Americans in the North",
+      "misconception": "The passage says nothing about Northern Black opinion on the laws."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "The passage treats the 1964 and 1965 laws as passed and in force.",
+    "B": "The passage says poverty, poor housing, and hostile policing still pressed on Black Northerners.",
+    "C": "The passage opens with the laws ending legal segregation while Northern Black communities still faced poverty, poor housing, and hostile policing, and then shows Watts erupting.",
+    "D": "The passage does not report Northern Black opinion on the laws.",
+    "general": "1. The 1964 and 1965 laws end legal segregation.\n2. The passage still lists poverty, poor housing, and hostile policing in Northern cities.\n3. Watts erupts in August 1965 after a traffic-stop arrest.\n4. The riot shows the laws had not changed daily life in the North.\nRemember: A law can end a legal rule without ending the conditions around it."
+  }
+}

@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-2663",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.9"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.9 The Great Society"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "The Great Society"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Liberal Hour of the 1960s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Lyndon Johnson's Social Agenda"
+   }
+  ]
+ },
+ "source": "original; stimulus is a data table from the U.S. Census Bureau, Historical Poverty Tables, Table 2",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data table from the U.S. Census Bureau, Current Population Survey, Historical Poverty Tables, Table 2.",
+  "text": "| Year | 1959 | 1964 | 1965 | 1966 | 1969 | 1973 |\n| Poverty rate | 22.4% | 19.0% | 17.3% | 14.7% | 12.1% | 11.1% |\n\nOfficial poverty rate, all people. Source: U.S. Census Bureau, Current Population Survey, Historical Poverty Tables, Table 2."
+ },
+ "stimulus_set": "poverty-rate-table",
+ "stem": "What is the most important limit on using this table alone to judge the Great Society?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The table covers too many years to be useful",
+   "misconception": "The span of years is what lets a reader see the change; it is not a limit."
+  },
+  {
+   "key": "B",
+   "text": "The table shows the fall but not what caused it"
+  },
+  {
+   "key": "C",
+   "text": "The table hides the fact that poverty rose in 1966",
+   "misconception": "The table shows the rate falling in 1966, from 17.3 percent to 14.7 percent."
+  },
+  {
+   "key": "D",
+   "text": "The table counts only people over 65",
+   "misconception": "The table counts all people, not only those over 65."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "The span of years is what shows the change over time; it is not a limit on the table.",
+  "B": "A table of rates over time shows when poverty fell, but it cannot show which cause did the work.",
+  "C": "The table shows the rate falling in 1966, from 17.3 percent to 14.7 percent.",
+  "D": "The table gives the official poverty rate for all people, not only for people over 65.",
+  "general": "1. The table gives one number per year: the share of Americans in poverty.\n2. Those numbers show when the fall happened and how fast it ran.\n3. They say nothing about why it happened: programs, jobs, or a growing economy could all play a part.\n4. The table alone therefore cannot prove the Great Society caused the fall.\nRemember: A trend shows when; it never shows why by itself."
+ }
+}

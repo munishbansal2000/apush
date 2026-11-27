@@ -1,0 +1,81 @@
+{
+ "id": "apush-mcq-2582",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.6"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.6 Early Steps in the Civil Rights Movement (1940s and 1950s)"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 26",
+    "section": "Prosperity and Anxiety: The 1950s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ],
+  "primary_sources": [
+   "Sweatt v. Painter, 339 U.S. 629 (1950)",
+   "McLaurin v. Oklahoma State Regents, 339 U.S. 637 (1950)",
+   "Brown v. Board of Education, 347 U.S. 483 (1954)",
+   "Brown II, 349 U.S. 294 (1955)"
+  ]
+ },
+ "source": "original; stimulus Paraphrase of the NAACP legal strategy: Houston and Marshall; Sweatt v. Painter and McLaurin v. Oklahoma State Regents (1950); Brown (1954); Brown II (1955).",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of the NAACP legal strategy: Houston and Marshall; Sweatt v. Painter and McLaurin v. Oklahoma State Regents (1950); Brown (1954); Brown II (1955).",
+  "text": "Paraphrase of the NAACP's legal strategy as described in the books. Beginning in the 1930s, NAACP lawyers led by Charles Hamilton Houston and then Thurgood Marshall attacked segregation in graduate and professional schools first. In Sweatt v. Painter and McLaurin v. Oklahoma State Regents, both decided in 1950, the Supreme Court ruled that separate graduate schools were not equal. In 1948 the NAACP decided to attack segregation itself, rather than asking only for equal facilities. The cases were combined as Brown v. Board of Education, decided in 1954. A second ruling in 1955, Brown II, told schools to desegregate 'with all deliberate speed' but set no date."
+ },
+ "stimulus_set": "naacp-legal-strategy-1950",
+ "stem": "Brown II's phrase 'with all deliberate speed' most directly meant which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Every school had to desegregate within one year of the ruling",
+   "misconception": "Background from the books: Brown II set no date, so it did not require desegregation within one year."
+  },
+  {
+   "key": "B",
+   "text": "The Court would send federal troops to every school in the South",
+   "misconception": "Background from the books: the Court sent no troops; troops came later, from the president at Little Rock."
+  },
+  {
+   "key": "C",
+   "text": "Desegregation would proceed without a fixed deadline, so Southern districts could delay"
+  },
+  {
+   "key": "D",
+   "text": "Segregation could continue until Congress acted to end it by law",
+   "misconception": "Background from the books: Brown II ordered desegregation to begin, so it did not wait for Congress."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Brown II set no date, so it did not require desegregation within one year.",
+  "B": "Background from the books: the Court sent no troops; troops came later, from the president at Little Rock.",
+  "C": "Background from the books: the Court told districts to make a prompt start but gave no deadline, and Southern boards read that as room to delay.",
+  "D": "Brown II ordered desegregation to begin, so it did not wait for Congress.",
+  "general": "1. Background from the books: Brown in 1954 said segregation was unconstitutional, but it did not say how fast schools must change.\n2. Brown II in 1955 answered that question with 'with all deliberate speed.'\n3. Background from the books: the ruling set no specific deadline, and Southern school boards used the vague words to delay.\n4. The phrase therefore promised movement without a date, which let delay continue for years.\nRemember: a standard with no deadline is a direction that can be stretched."
+ }
+}

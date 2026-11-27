@@ -1,0 +1,88 @@
+{
+  "id": "apush-mcq-2716",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.11"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "1.B",
+    "3.A"
+  ],
+  "themes": [
+    "SOC",
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Political Activism in the Latino Community"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Expansion of Rights Movements"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Photograph: Cesar Chavez leading a picket at the Ford Motor Company plant, Pico Rivera, California (Los Angeles Times photograph, CC BY 4.0, via Wikimedia Commons); the photograph was viewed before writing. Account drawn from the grounding books and verified against the National Park Service and EBSCO accounts of the Delano strike: Filipino workers struck September 8, 1965; the National Farm Workers Association joined; growers signed contracts July 29, 1970.",
+    "text": "The photograph shows Cesar Chavez, at left in a striped shirt, leading a picket line in front of a Ford Motor Company plant. The marchers carry signs reading \"SUPPORT STRIKING DELANO FARM WORKERS\" and \"VIVA LA CAUSA BOYCOTT GRAPES.\"\n\nIn September 1965, Filipino grape workers in Delano, California, went on strike for higher wages, and Chavez's National Farm Workers Association joined them. The strikers could not shut down the harvest alone, so the union asked shoppers across the country to stop buying California table grapes. In July 1970, growers signed contracts with the union."
+  },
+  "stimulus_set": "chavez-delano-grape-boycott",
+  "stem": "According to the passage and the photograph, what was the United Farm Workers' main tactic for pressuring the grape growers?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Filing lawsuits in federal court to win union recognition",
+      "misconception": "The passage says the union asked shoppers to stop buying grapes, not that it sued the growers."
+    },
+    {
+      "key": "B",
+      "text": "Asking the president to send federal troops to Delano",
+      "misconception": "The passage describes a boycott by shoppers, not a request for troops."
+    },
+    {
+      "key": "C",
+      "text": "Asking shoppers nationwide to stop buying California table grapes"
+    },
+    {
+      "key": "D",
+      "text": "Calling a nationwide strike of all factory workers",
+      "misconception": "The strike was by grape workers in Delano, and the photograph shows a boycott picket, not a factory strike."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "The passage names the consumer boycott, not lawsuits, as the union's main pressure tactic.",
+    "B": "The passage says nothing about asking the president for troops.",
+    "C": "The passage says the union asked shoppers across the country to stop buying California table grapes.",
+    "D": "The passage says the grape workers struck, and the boycott, not a factory strike, was the wider tactic.",
+    "general": "1. The strikers could not shut down the harvest by walking out alone.\n2. The union therefore turned to shoppers, asking them to stop buying California table grapes.\n3. The signs in the photograph carry the same message: support the strikers and boycott grapes.\n4. Background: The boycott worked because it cost growers sales, and in July 1970 the growers signed contracts.\nRemember: When workers cannot stop production, they can still pressure an employer by cutting off its customers."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-2716",
+      "file": "u8/chavez-picket-ford-1970s.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:C%C3%A9sar_Ch%C3%A1vez%2C_Paul_Schrade_and_other_strikers_picketing_Ford_Motor_Co._plant_at_Pico_Rivera.jpg",
+      "license": "CC BY 4.0 (Los Angeles Times photograph, via Wikimedia Commons)",
+      "caption": "Cesar Chavez leading a picket line in front of a Ford Motor Company plant",
+      "alt": "Cesar Chavez, a man in a striped short-sleeve shirt, walks at the front of a picket line; behind him marchers carry signs reading SUPPORT STRIKING DELANO FARM WORKERS and VIVA LA CAUSA BOYCOTT GRAPES, with a Ford Motor Company building behind them"
+    }
+  ]
+}

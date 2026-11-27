@@ -1,0 +1,84 @@
+{
+ "id": "apush-mcq-2676",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.9"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.9 The Great Society"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Immigration and Nationality Act of 1965"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Liberal Hour of the 1960s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Lyndon Johnson's Social Agenda"
+   }
+  ],
+  "primary_sources": [
+   "Immigration and Nationality Act of 1965, Public Law 89-236 (paraphrased)"
+  ]
+ },
+ "source": "original; stimulus paraphrased from the Immigration and Nationality Act of 1965",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of the Immigration and Nationality Act of 1965, Public Law 89-236.",
+  "text": "Paraphrase of the Immigration and Nationality Act of 1965, also called the Hart-Celler Act. The act abolished the national quota system based on national origins that had been in place since the 1920s. It set overall limits instead: 170,000 immigrants a year from the Eastern Hemisphere and, for the first time, 120,000 a year from the Western Hemisphere. Family members of people already in the United States were exempt from the limits, and preference went to immigrants with needed skills.\n\nIn the years that followed, migration from Asia, Africa, and Latin America rose sharply."
+ },
+ "stimulus_set": "immigration-1965",
+ "stem": "The Immigration and Nationality Act of 1965 most directly ended which earlier policy?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The national-origins quota system of the 1920s"
+  },
+  {
+   "key": "B",
+   "text": "All limits on how many immigrants could enter",
+   "misconception": "The act set overall limits of 170,000 and 120,000 a year, so limits remained."
+  },
+  {
+   "key": "C",
+   "text": "The ban on all immigration from the Western Hemisphere",
+   "misconception": "The act set a Western Hemisphere limit of 120,000 a year; it did not lift a ban on all such immigration."
+  },
+  {
+   "key": "D",
+   "text": "The preference for immigrants with needed skills",
+   "misconception": "The act kept a preference for immigrants with needed skills; it did not end it."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The passage says the act abolished the national quota system based on national origins from the 1920s.",
+  "B": "The act set overall limits of 170,000 and 120,000 a year, so limits remained.",
+  "C": "The act set a Western Hemisphere limit of 120,000 a year; it did not lift a ban on all such immigration.",
+  "D": "The act kept a preference for immigrants with needed skills; it did not end it.",
+  "general": "1. The old system sorted immigrants by national origins, favoring some nations over others.\n2. The act abolished that system outright.\n3. It replaced quotas by origin with overall yearly limits.\n4. The 1965 act therefore ended the national-origins quota system.\n5. A law that ends one basis of selection and sets a new one changes who can come.\nRemember: Replacing a rule ends it, even when a new rule takes its place."
+ }
+}

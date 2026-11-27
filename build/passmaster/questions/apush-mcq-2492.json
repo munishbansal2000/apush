@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2492",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.3"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.3 The Red Scare"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "The Second Red Scare"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "McCarthyism"
+   }
+  ],
+  "primary_sources": [
+   "Harry S. Truman, Executive Order 9835, March 1947"
+  ]
+ },
+ "source": "original; stimulus paraphrased from Executive Order 9835, March 1947",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of President Harry S. Truman, Executive Order 9835, March 1947. Paraphrased, not quoted, because the source is after 1929.",
+  "text": "In March 1947, President Harry S. Truman issued Executive Order 9835, creating a loyalty program for federal employees. The order barred communists and fascists from federal jobs and set up boards to investigate the loyalty of millions of government workers. Employees could lose their jobs if investigators found disloyalty or associations that made them security risks."
+ },
+ "stimulus_set": "loyalty-program-1947",
+ "stem": "The loyalty program's main purpose was to",
+ "options": [
+  {
+   "key": "A",
+   "text": "Remove suspected communists and security risks from federal jobs."
+  },
+  {
+   "key": "B",
+   "text": "Give federal workers a pay raise for loyal service.",
+   "misconception": "Nothing in the order concerns pay. It created investigations and dismissals, not raises for loyal workers."
+  },
+  {
+   "key": "C",
+   "text": "Protect the jobs of accused communists in the government.",
+   "misconception": "The program removed accused workers rather than protecting them. A program meant to protect communists would not investigate their loyalty."
+  },
+  {
+   "key": "D",
+   "text": "Investigate communism in the Soviet Union.",
+   "misconception": "The program investigated American federal workers, not the Soviet Union. Its target was communists inside the United States government."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The order barred communists from federal jobs and set up boards to investigate workers. Background from the books: three or four million federal workers were investigated, and over a hundred were discharged.",
+  "B": "Nothing in the order concerns pay. It created investigations and dismissals, not raises for loyal workers.",
+  "C": "The program removed accused workers rather than protecting them. A program meant to protect communists would not investigate their loyalty.",
+  "D": "The program investigated American federal workers, not the Soviet Union. Its target was communists inside the United States government.",
+  "general": "1. The order barred communists and fascists from federal jobs and named them as enemies of the government.\n2. It set up boards to investigate the loyalty of millions of government workers.\n3. A program that bars a group from jobs and investigates workers exists to remove the group from the workforce.\nRemember: A loyalty program tests the loyalty of the government's own workers."
+ }
+}

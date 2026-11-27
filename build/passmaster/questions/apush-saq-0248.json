@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0248",
+ "type": "saq",
+ "unit": 8,
+ "topics": [
+  "8.7"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "2.B"
+ ],
+ "themes": [
+  "WOR",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.2 The Cold War from 1945 to 1980"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Cold War (1945-1960)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ],
+  "primary_sources": [
+   "U.S. Department of State, Office of the Historian, Marshall Plan figures"
+  ]
+ },
+ "source": "original; stimulus is an original secondary passage written for this question, facts from the grounding books",
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question; facts from the grounding books.",
+  "text": "After World War II, much of Western Europe lay in ruins, with factories idle, farms broken, and people short of food and fuel. American leaders feared that hunger and unemployment would push voters toward Communist parties, especially in France and Italy. The Marshall Plan, passed by Congress in 1948, sent about 13 billion dollars of American food, fuel, machinery, and loans to sixteen Western European countries over four years. The aid helped factories reopen and trade revive, and the countries that received it stayed outside the Soviet orbit."
+ },
+ "stimulus_set": null,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one aim of the Marshall Plan stated or implied in the passage.",
+   "modelAnswer": "The passage says the Marshall Plan aimed to rebuild Western Europe's economies. It sent food, fuel, machinery, and loans so factories could reopen and trade could revive.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one aim of the Marshall Plan from the passage, such as rebuilding Western Europe's economies, reopening factories, reviving trade, or relieving hunger and shortages.",
+     "notEarned": "Naming a country that received aid without stating an aim of the plan does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one reason American leaders believed economic aid would help contain communism.",
+   "modelAnswer": "American leaders believed hunger and unemployment would push voters toward Communist parties. Aid that fed people and reopened factories would remove the conditions that made communism appealing.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason economic aid was expected to contain communism, such as relieving hunger and unemployment that might drive voters to Communist parties, or strengthening capitalist economies as an alternative to Soviet-style communism.",
+     "notEarned": "Restating that the plan sent aid without explaining how aid worked against communism does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one effect of the Marshall Plan on the United States' role in the world.",
+   "modelAnswer": "The Marshall Plan made the United States the economic anchor of Western Europe. The countries that took American aid stayed outside the Soviet orbit and tied their recovery to American support.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one effect on the American role in the world, such as binding Western Europe to the United States, making the United States the leader of the non-Communist world, or turning containment into an economic as well as a military policy.",
+     "notEarned": "Naming an effect on Europe without explaining what it meant for the American role in the world does not earn the point."
+    }
+   ]
+  }
+ ]
+}

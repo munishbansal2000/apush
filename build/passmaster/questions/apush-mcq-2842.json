@@ -1,0 +1,81 @@
+{
+  "id": "apush-mcq-2842",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.15"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 4,
+  "skills": [
+    "6.B",
+    "6.C"
+  ],
+  "themes": [
+    "GEO",
+    "MIG"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.4 Economy after 1945"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.14 Society in Transition"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 26",
+        "section": "Prosperity and Anxiety: The 1950s"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ]
+  },
+  "source": "original; stimulus table compiled from the United States Census Bureau, decennial censuses 1950-1980",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from the United States Census Bureau, decennial censuses 1950-1980, and the Census Bureau's urban population series.",
+    "text": "Population of the United States (United States Census Bureau, decennial censuses; urban share from the Census Bureau):\n\n| Census | Population | Growth since last census | Living in urban areas |\n| 1950 | 151.3 million | 14.5% | 64.0% |\n| 1960 | 179.3 million | 18.5% | 69.9% |\n| 1970 | 203.2 million | 13.3% | 73.6% |\n| 1980 | 226.5 million | 11.5% | 73.7% |"
+  },
+  "stimulus_set": "population-urban-1950-1980",
+  "stem": "Which conclusion about continuity and change needs the whole table?",
+  "options": [
+    {
+      "key": "A",
+      "text": "America kept growing and urbanizing through 1980, but the pace of both slowed after the 1950s."
+    },
+    {
+      "key": "B",
+      "text": "America stopped growing and stopped urbanizing completely after 1960, with neither trend continuing at all.",
+      "misconception": "The population column rises in 1970 and 1980, and the urban column rises too."
+    },
+    {
+      "key": "C",
+      "text": "America grew fastest in the 1970s and also urbanized fastest then as well as ever.",
+      "misconception": "The growth column peaks in the 1950s at 18.5 percent, and the urban column barely moves in the 1970s."
+    },
+    {
+      "key": "D",
+      "text": "Population growth and urban living moved in opposite directions from each other throughout the whole period.",
+      "misconception": "Both columns rise across the table, so they move together, not in opposite directions."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "Population rises at every step while its growth rate falls from 18.5 percent to 11.5 percent, and the urban share rises while its gains shrink to 0.1 points.",
+    "B": "The population column rises in 1970 and 1980, and the urban column rises too.",
+    "C": "The growth column peaks in the 1950s at 18.5 percent, and the urban column barely moves in the 1970s.",
+    "D": "Both columns rise across the table, so they move together, not in opposite directions.",
+    "general": "1. Read all three columns together, not one row alone.\n2. Population rises at every step, yet the growth rate falls from 18.5 percent in the 1950s to 11.5 percent in the 1970s.\n3. The urban share rises too, yet its gains shrink from 5.9 points to 0.1 points.\n4. Growth that continues at a slower pace is continuity and change at once.\nRemember: A trend can continue and slow down at the same time; check the pace, not just the direction."
+  }
+}

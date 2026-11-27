@@ -1,0 +1,71 @@
+{
+ "id": "apush-mcq-2522",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.4"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.4 The Economy After 1945"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 26",
+    "section": "The Return of Prosperity"
+   }
+  ]
+ },
+ "source": "original; stimulus is a data table built from 5 Steps to a 5, 2024, Chapter 26",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data table from 5 Steps to a 5, 2024, Chapter 26: GNP figures, white-collar majority, Diner's Club card. Births figure corrected per U.S. Census Bureau, Series P-25 No. 173 (Feb 1958): 4,302,000 births in 1957.",
+  "text": "| Fact | Year | Value |\n| Gross national product | 1945 | $200 billion |\n| Gross national product | 1960 | More than $500 billion |\n| Babies born | 1957 | 4.3 million |\n| Workers in white-collar jobs | 1956 | A majority |\n| First Diner's Club card | 1950 | Offered to shoppers |"
+ },
+ "stimulus_set": "postwar-boom-data-1945-1960",
+ "stem": "Which conclusion about the postwar economy needs two or more rows of the table together?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The baby boom began because the Diner's Club card was offered",
+   "misconception": "Background from the books: the baby boom began as veterans returned and married; a credit card did not cause births."
+  },
+  {
+   "key": "B",
+   "text": "White-collar jobs caused the gross national product to fall",
+   "misconception": "Background from the books: the table shows GNP more than doubling while white-collar jobs grew; the two rose together."
+  },
+  {
+   "key": "C",
+   "text": "More money and more births drove demand for houses, cars, and schools"
+  },
+  {
+   "key": "D",
+   "text": "Credit cards replaced the dollar as the main form of payment",
+   "misconception": "Background from the books: credit cards became a convenient way to pay; they did not replace cash."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Background from the books: the baby boom began as veterans returned and married; a credit card did not cause births.",
+  "B": "Background from the books: the table shows GNP more than doubling while white-collar jobs grew, so the two rose together.",
+  "C": "GNP more than doubled while births peaked at 4.3 million, so more money and more children together meant more houses, cars, and schools.",
+  "D": "Background from the books: credit cards became a convenient way to pay; they did not replace cash.",
+  "general": "1. A conclusion that needs two rows must join two facts: more money and more babies.\n2. Background from the books: GNP rose from $200 billion to more than $500 billion while the baby boom peaked at 4.3 million births in 1957.\n3. More money plus more children means demand for houses, cars, and schools, which no single row shows alone.\nRemember: A table answers a joining question only when you read two rows at once."
+ }
+}

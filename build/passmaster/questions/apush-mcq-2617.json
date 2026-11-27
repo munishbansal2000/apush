@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2617",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.7"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.7 America as a World Power"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Cold War (1945-1960)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ],
+  "primary_sources": [
+   "R. S. Norris and H. M. Kristensen, 'Global Nuclear Stockpiles, 1945-2002,' Bulletin of the Atomic Scientists (2002)"
+  ]
+ },
+ "source": "original; stimulus table from Norris and Kristensen, Bulletin of the Atomic Scientists (2002), via Our World in Data",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Warhead counts: R. S. Norris and H. M. Kristensen, 'Global Nuclear Stockpiles, 1945-2002,' Bulletin of the Atomic Scientists (2002), via Our World in Data. Figures are approximate.",
+  "text": "Nuclear warheads held, by year (approximate)\n\n| Year | United States | Soviet Union |\n| 1949 | 235 | 1 |\n| 1955 | 2,422 | 200 |\n| 1960 | 18,638 | 1,627 |\n| 1965 | 31,139 | 6,144 |"
+ },
+ "stimulus_set": "nuclear-arsenals-1949-1965",
+ "stem": "According to the table, which statement is true?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The United States held more warheads than the Soviet Union every year"
+  },
+  {
+   "key": "B",
+   "text": "The Soviet Union held more warheads than the United States in 1949",
+   "misconception": "The table gives the Soviet Union 1 warhead in 1949 and the United States 235."
+  },
+  {
+   "key": "C",
+   "text": "The two countries held equal numbers of warheads in 1960",
+   "misconception": "The table gives the United States 18,638 warheads in 1960 and the Soviet Union 1,627."
+  },
+  {
+   "key": "D",
+   "text": "The American total fell after 1955",
+   "misconception": "The table shows the American total rising from 2,422 in 1955 to 18,638 in 1960 and 31,139 in 1965."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "In each row the American figure is larger: 235 to 1, 2,422 to 200, 18,638 to 1,627, and 31,139 to 6,144.",
+  "B": "The table gives the Soviet Union 1 warhead in 1949 and the United States 235.",
+  "C": "The table gives the United States 18,638 warheads in 1960 and the Soviet Union 1,627.",
+  "D": "The table shows the American total rising after 1955, to 18,638 in 1960 and 31,139 in 1965.",
+  "general": "1. Compare the two columns row by row, year by year.\n2. In 1949 the United States leads 235 to 1, and in 1955 it leads 2,422 to 200.\n3. In 1960 it leads 18,638 to 1,627, and in 1965 it leads 31,139 to 6,144.\n4. The American figure is larger in every row of the table.\nRemember: on a table, check every row before choosing a statement about all of them."
+ }
+}

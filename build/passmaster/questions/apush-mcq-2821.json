@@ -1,0 +1,89 @@
+{
+  "id": "apush-mcq-2821",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.14"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "3.B",
+    "6.B"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.14 Society in Transition"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Decline of Public Trust in the 1970s"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Watergate, the Undoing of President Nixon, and the Limits of Presidential Power"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "The Presidency of Richard Nixon"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "University of Michigan National Election Study trust question, 1964-1980 (as reported by Gallup and Pew Research Center)"
+    ]
+  },
+  "source": "original; stimulus table compiled from the National Election Study trust question",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from the University of Michigan National Election Study trust question, as reported by Gallup and Pew Research Center. Account drawn from the grounding books (Barron's Ch. 10, Topic 8.14; 5 Steps Ch. 28; Princeton Ch. 12).",
+    "text": "Americans who said they trusted the government in Washington to do what is right 'just about always' or 'most of the time' (University of Michigan National Election Study, as reported by Gallup and Pew):\n\n| Year | Trusted Washington |\n| 1964 | 77% |\n| 1970 | 54% |\n| 1974 | 36% |\n| 1980 | 25% |"
+  },
+  "stimulus_set": "trust-government-1964-1980",
+  "stem": "Taken together, the table best supports which conclusion about the 1970s?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Trust fell only because of one single scandal in the year 1974 alone.",
+      "misconception": "The table shows trust falling in 1970, 1974, and 1980, across the whole period, not in one year."
+    },
+    {
+      "key": "B",
+      "text": "Trust fell across the decade, through Vietnam, Watergate, and stagflation, not one event."
+    },
+    {
+      "key": "C",
+      "text": "Trust rose steadily through the whole of the 1970s instead of ever falling.",
+      "misconception": "The table shows trust falling from 54 percent in 1970 to 25 percent in 1980."
+    },
+    {
+      "key": "D",
+      "text": "Trust in 1980 was higher than trust had ever been back in 1964.",
+      "misconception": "The table shows trust at 25 percent in 1980, far below 77 percent in 1964."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The table shows trust falling in 1970, 1974, and 1980, across the whole period, not in one year.",
+    "B": "Background: The table falls at every step, and the decade held Vietnam, Watergate, stagflation, and the hostage crisis, so the fall had many causes.",
+    "C": "The table shows trust falling from 54 percent in 1970 to 25 percent in 1980.",
+    "D": "The table shows trust at 25 percent in 1980, far below 77 percent in 1964.",
+    "general": "1. Read all four rows, not just one: 77 percent, then 54, then 36, then 25 percent.\n2. The fall happens at every step of the table, so no single year explains it.\n3. Background: Vietnam, Watergate, stagflation, and the hostage crisis all fell inside these years.\nRemember: A fall at every step points to many causes working together, not one."
+  }
+}

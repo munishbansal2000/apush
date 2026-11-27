@@ -1,0 +1,84 @@
+{
+ "id": "apush-mcq-2622",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.8"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.8 The Vietnam War"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Background to American Involvement in Vietnam"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Vietnam War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "American Involvement in Vietnam, World War II\u20131963"
+   }
+  ],
+  "primary_sources": [
+   "Geneva Accords, 1954 (public record)"
+  ]
+ },
+ "source": "original; stimulus paraphrased from the grounding books' account of Dien Bien Phu and the Geneva Accords",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of the background to American involvement in Vietnam, from the grounding books. The source events are public record.",
+  "text": "Paraphrase of the background to American involvement in Vietnam. France had ruled Indochina since the mid-nineteenth century. After World War II, France tried to retake its colony, but Vietnamese forces led by Ho Chi Minh resisted. In 1954 French forces were defeated at Dien Bien Phu, and France withdrew. An agreement at Geneva divided Vietnam at the 17th parallel: a Communist North led by Ho Chi Minh, and a Western-allied South. Elections to reunite the country were planned for 1956."
+ },
+ "stimulus_set": "dien-bien-phu-1954",
+ "stem": "The French defeat at Dien Bien Phu in 1954 most directly led to which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The United States sending combat troops to Vietnam at once",
+   "misconception": "Background: American combat troops did not arrive until 1965; the defeat first brought France out, not the United States in."
+  },
+  {
+   "key": "B",
+   "text": "France withdrawing from Indochina and Vietnam being divided at the 17th parallel"
+  },
+  {
+   "key": "C",
+   "text": "Ho Chi Minh giving up his claim to lead a united Vietnam",
+   "misconception": "Ho Chi Minh kept leading the North and kept seeking a united Vietnam; defeat of France strengthened his claim."
+  },
+  {
+   "key": "D",
+   "text": "The Soviet Union taking direct control of North Vietnam",
+   "misconception": "North Vietnam was led by Ho Chi Minh and his own government, not ruled directly by the Soviet Union."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "The passage says France withdrew after its defeat. Background: American combat troops came only in 1965. Background: the United States first sent aid and advisors, not combat troops.",
+  "B": "Background: the passage states that France withdrew after Dien Bien Phu and that the Geneva agreement divided Vietnam at the 17th parallel.",
+  "C": "The passage shows Ho Chi Minh leading the Communist North after the division, not giving up his claim to a united Vietnam.",
+  "D": "The passage names Ho Chi Minh as the leader of the North; nothing in it puts the Soviet Union in direct control there.",
+  "general": "1. The passage traces a chain: France ruled Indochina, fought to keep it, and lost at Dien Bien Phu.\n2. Background: after the defeat, France withdrew from Indochina.\n3. Background: the Geneva agreement then divided Vietnam at the 17th parallel, with a Communist North and a Western-allied South.\n4. Background: the defeat therefore ended French rule and created the divided Vietnam the United States later defended.\nRemember: When a colonial power loses a war, look for what replaces it on the map."
+ }
+}

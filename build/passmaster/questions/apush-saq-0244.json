@@ -1,0 +1,89 @@
+{
+ "id": "apush-saq-0244",
+ "type": "saq",
+ "unit": 8,
+ "topics": [
+  "8.5"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "3.A",
+  "4.A"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.5 Culture After 1945"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 26",
+    "section": "Life in Suburbia"
+   }
+  ],
+  "primary_sources": [
+   "William H. Whyte, The Organization Man (1956)",
+   "David Riesman, Nathan Glazer, and Reuel Denney, The Lonely Crowd (1950)"
+  ]
+ },
+ "source": "original; stimulus paraphrased from William H. Whyte, The Organization Man (1956), and David Riesman and others, The Lonely Crowd (1950)",
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of the arguments in William H. Whyte, The Organization Man (1956), and David Riesman, Nathan Glazer, and Reuel Denney, The Lonely Crowd (1950). Paraphrased, not quoted.",
+  "text": "Paraphrase of two postwar studies of American life. William H. Whyte's The Organization Man (1956) described the modern corporation as a place where employees were expected to think like the group, and where fitting in mattered more than standing out. David Riesman and his co-authors, in The Lonely Crowd (1950), argued that Americans had grown more eager to shape their ideas to what society expected than to think for themselves."
+ },
+ "stimulus_set": null,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one way postwar American culture pushed people toward conformity, as described in the passage.",
+   "modelAnswer": "Whyte described corporations where employees were expected to think like the group, so fitting in mattered more than standing out. Riesman argued that Americans shaped their ideas to what society expected rather than thinking for themselves.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one push toward conformity from the passage, such as corporations expecting group thinking or Americans shaping ideas to social expectations.",
+     "notEarned": "Naming a fact about the 1950s that the passage does not describe, such as television ownership, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one reason conformity was strong in American life in the 1950s.",
+   "modelAnswer": "The domestic Cold War made standing out look risky, since McCarthyism punished people accused of disloyalty. Many Americans therefore kept quiet and agreed with the group rather than drawing attention to themselves.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason conformity was strong, such as Cold War fear and McCarthyism, suburban sameness, or the pull of mass media.",
+     "notEarned": "Naming a cause without explaining how it strengthened conformity does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way Americans challenged conformity in the 1950s.",
+   "modelAnswer": "The Beat writers rejected suburban life and the consumer society, praising spontaneity and freedom instead. Rock 'n' roll gave teenagers a separate youth culture, and abstract painters such as Jackson Pollock broke from realistic art.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one challenge to conformity, such as the Beat writers, rock 'n' roll, abstract expressionism, or criticism of suburban life.",
+     "notEarned": "Naming a rebel or a movement without explaining how it challenged conformity does not earn the point."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "apush-mcq-2788",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.13"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "3.B"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.13 The environment and natural resources from 1968 to 1980"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Dangers of Nuclear Energy and Three Mile Island"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "Photograph of the Three Mile Island plant, April 6, 1979 (National Archives)"
+    ]
+  },
+  "source": "original; stimulus photograph viewed before writing",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Photograph: Three Mile Island plant through trees, April 6, 1979, public domain (U.S. National Archives photograph, NARA 540038, via Wikimedia Commons). Accident date and facts verified against the U.S. Nuclear Regulatory Commission history and the University of Nevada Yucca Mountain timeline: partial meltdown of the Unit 2 reactor on March 28, 1979, with a release of radioactive gas. Account drawn from the grounding books (Barron's Ch. 10, Topic 8.13, 'The Dangers of Nuclear Energy and Three Mile Island'; Princeton Ch. 12).",
+    "text": "The photograph, taken April 6, 1979, shows the Three Mile Island nuclear plant in Pennsylvania. Four tall cooling towers rise beyond farm fields and houses, with bare trees in the foreground.\n\nOn March 28, 1979, the Unit 2 reactor at Three Mile Island partly melted down, releasing radioactive gas. The accident was the worst in the history of the American nuclear industry. Groups such as the Clamshell Alliance in New England and the Abalone Alliance in California had already been protesting nuclear power plants for years."
+  },
+  "stimulus_set": "three-mile-island-1979",
+  "stem": "The accident most directly strengthened which of the following?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The case for building nuclear plants faster.",
+      "misconception": "The passage says a reactor partly melted down, which argues against building faster, not for it."
+    },
+    {
+      "key": "B",
+      "text": "The antinuclear movement's warning that reactors could fail catastrophically."
+    },
+    {
+      "key": "C",
+      "text": "The oil industry's claim that nuclear power was free of risk.",
+      "misconception": "The passage says the reactor released radioactive gas, which shows real risk, the opposite of the oil industry's claim."
+    },
+    {
+      "key": "D",
+      "text": "The government's decision to end all safety rules.",
+      "misconception": "Background: The accident led to tighter safety review, not an end to safety rules."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The passage says a reactor partly melted down, which argues against building faster, not for it.",
+    "B": "Background: Groups like the Clamshell Alliance had warned for years that a reactor failure could be catastrophic, and Three Mile Island showed the public they had a point.",
+    "C": "The passage says the reactor released radioactive gas, which shows real risk, the opposite of the oil industry's claim.",
+    "D": "Background: The accident led to tighter safety review, not an end to safety rules.",
+    "general": "1. The passage says antinuclear groups had been protesting plants for years before 1979.\n2. Background: Their warning was that a reactor could fail badly, and the partial meltdown was exactly that failure.\n3. Background: A warning that comes true is far more persuasive than one that stays hypothetical.\n4. The photograph itself shows how close the plant sat to homes and fields.\nRemember: An accident strengthens the side that predicted it."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-2788",
+      "file": "u8/three-mile-island-1979.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Three_Mile_Island_plant_through_trees_-_NARA_-_540038.tif",
+      "license": "Public domain (U.S. National Archives photograph, NARA 540038)",
+      "caption": "Three Mile Island nuclear plant seen through trees, April 6, 1979",
+      "alt": "Four tall cooling towers rise beyond farm fields and houses, with bare trees in the foreground"
+    }
+  ]
+}

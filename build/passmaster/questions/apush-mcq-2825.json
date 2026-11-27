@@ -1,0 +1,86 @@
+{
+  "id": "apush-mcq-2825",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.15"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "1.A",
+    "2.A"
+  ],
+  "themes": [
+    "PCE",
+    "ARC"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.4 Economy after 1945"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.9 The Great Society"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 26",
+        "section": "Prosperity and Anxiety: The 1950s"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "America in an Era of Turmoil (1960-1975)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ]
+  },
+  "source": "original; stimulus table compiled from the Office of Management and Budget, Historical Tables, Table 1.3",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from the Office of Management and Budget, Historical Tables, Table 1.3, and the Census Bureau, Statistical Abstract, Table 539.",
+    "text": "Federal spending, 1950-1980 (Office of Management and Budget, Historical Tables, Table 1.3; defense shares from the Census Bureau, Statistical Abstract, Table 539, using Office of Management and Budget figures):\n\n| Fiscal year | Federal outlays as a percentage of gross domestic product (GDP) | Defense as a share of all federal outlays |\n| 1950 | 15.6% | 32% |\n| 1960 | 17.8% | 52% |\n| 1970 | 19.3% | 42% |\n| 1980 | 21.7% | 23% |"
+  },
+  "stimulus_set": "federal-outlays-1950-1980",
+  "stem": "What does the table show about the size of the federal government between 1950 and 1980?",
+  "options": [
+    {
+      "key": "A",
+      "text": "It shrank steadily as a share of the economy.",
+      "misconception": "The first column rises at every step, from 15.6 percent to 21.7 percent."
+    },
+    {
+      "key": "B",
+      "text": "It stayed exactly the same size.",
+      "misconception": "The first column rises from 15.6 percent in 1950 to 21.7 percent in 1980."
+    },
+    {
+      "key": "C",
+      "text": "It grew steadily as a share of the economy."
+    },
+    {
+      "key": "D",
+      "text": "It grew only in wartime and shrank in peacetime.",
+      "misconception": "The first column rises at every step, including the years 1960 and 1980."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "The first column rises at every step, from 15.6 percent to 21.7 percent.",
+    "B": "The first column rises from 15.6 percent in 1950 to 21.7 percent in 1980.",
+    "C": "The first column rises at every step, from 15.6 percent in 1950 to 21.7 percent in 1980.",
+    "D": "The first column rises at every step, including the years 1960 and 1980.",
+    "general": "1. Read the first column only: 15.6, 17.8, 19.3, 21.7 percent.\n2. Each number is larger than the one before it, so the share grew at every step.\n3. The second column is about what the money went to, not about size, so it cannot answer this question.\nRemember: When a table has two columns, answer from the column the question asks about."
+  }
+}

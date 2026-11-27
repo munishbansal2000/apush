@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-2810",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.14"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A"
+  ],
+  "themes": [
+    "PCE",
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.14 Society in Transition"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "The Carter Administration"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "California Proposition 13, Jarvis-Gann Initiative, June 6, 1978 (figures per California State Treasurer and Federal Reserve Bank of San Francisco)"
+    ]
+  },
+  "source": "original; stimulus paraphrased from California Proposition 13 (1978)",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Paraphrase of California Proposition 13 (Jarvis-Gann Initiative, June 6, 1978). Figures verified against the California State Treasurer's debt guide and the Federal Reserve Bank of San Francisco: 1 percent cap, 57 percent revenue cut, about $7 billion. Account drawn from the grounding books (5 Steps Ch. 28; Barron's Ch. 10, Topic 8.14; Princeton Ch. 12).",
+    "text": "Paraphrase of California's Proposition 13, the Jarvis-Gann Initiative, approved by voters on June 6, 1978. The measure capped property taxes at 1 percent of a property's assessed value, rolled assessments back to 1975-76 levels, limited yearly increases to 2 percent, and required a two-thirds vote to raise state or local taxes. Property tax revenue fell by about 57 percent, roughly $7 billion, in the first year. Similar tax limits soon appeared in other states."
+  },
+  "stimulus_set": "proposition-13-tax-revolt-1978",
+  "stem": "What did Proposition 13 do?",
+  "options": [
+    {
+      "key": "A",
+      "text": "It raised property taxes sharply to pay for new government programs.",
+      "misconception": "The measure cut property tax revenue by about 57 percent, the opposite of raising taxes."
+    },
+    {
+      "key": "B",
+      "text": "It ended every tax in California, both the state taxes and the local taxes.",
+      "misconception": "The measure cut property taxes, not all taxes, and it capped future increases."
+    },
+    {
+      "key": "C",
+      "text": "It gave the federal government control over all of California's taxes.",
+      "misconception": "The measure was a state ballot initiative that limited California's own taxes."
+    },
+    {
+      "key": "D",
+      "text": "It capped property taxes at 1 percent and cut local government revenue from them."
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "The measure cut property tax revenue by about 57 percent, the opposite of raising taxes.",
+    "B": "The measure cut property taxes, not all taxes, and it capped future increases.",
+    "C": "The measure was a state ballot initiative that limited California's own taxes.",
+    "D": "The passage says the cap was 1 percent of assessed value, and revenue fell by about 57 percent in the first year.",
+    "general": "1. The passage names the cap first: property taxes at 1 percent of assessed value.\n2. It then gives the result: revenue fell by about 57 percent, roughly $7 billion.\n3. A cap plus a steep revenue cut is a tax cut, not a tax rise or a federal takeover.\nRemember: A ballot measure's cap and its dollar result together state what it did."
+  }
+}

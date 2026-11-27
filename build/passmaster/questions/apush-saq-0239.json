@@ -1,0 +1,101 @@
+{
+ "id": "apush-saq-0239",
+ "type": "saq",
+ "unit": 8,
+ "topics": [
+  "8.2"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 3,
+ "totalPoints": 3,
+ "skills": [
+  "1.B",
+  "5.A"
+ ],
+ "themes": [
+  "WOR",
+  "ARC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.2 The Cold War from 1945 to 1980"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "America in an Era of Turmoil (1960-1975)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph: NASA, Apollo 11, July 1969, public domain (PD-USGov-NASA), via Wikimedia Commons.",
+  "text": "The photograph shows a single bootprint pressed into the gray, dusty surface of the Moon, left by an Apollo 11 astronaut in July 1969. Small rocks and craters are visible in the soil around the print."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus image from the shared pool: Apollo 11 bootprint, NASA photograph, July 1969, public domain",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one Cold War development the photograph reflects.",
+   "modelAnswer": "The photograph reflects the space race, the competition between the United States and the Soviet Union to lead in space. The bootprint marks the Apollo 11 Moon landing of July 1969, when American astronauts first walked on the Moon.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying the space race or the Apollo 11 Moon landing as the development the photograph reflects.",
+     "notEarned": "Describing the photograph without naming the Cold War development does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how the space race grew out of Cold War rivalry between the United States and the Soviet Union.",
+   "modelAnswer": "The Soviet Union launched Sputnik in 1957, the first artificial satellite, which shocked Americans and raised fears that Soviet rockets could also carry weapons. The United States answered by creating NASA and funding science education, and the two sides then competed for firsts in space. Each launch was treated as proof of which system, communism or capitalism, was superior.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how the space race grew from Cold War rivalry, such as Sputnik's shock and the American answer through NASA and science funding.",
+     "notEarned": "Naming Sputnik without explaining how rivalry drove the race does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way the Moon landing affected the Cold War.",
+   "modelAnswer": "The Moon landing gave the United States the space race's most visible prize, restoring American prestige after years of Soviet firsts. It showed the world that American technology and organization could achieve what the Soviet program could not. The landing did not end the rivalry, but it proved that the United States could win a contest both sides treated as a test of their systems.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one effect of the Moon landing on the Cold War, such as restored American prestige or proof of technological superiority.",
+     "notEarned": "Saying the landing was important without explaining its Cold War effect does not earn the point."
+    }
+   ]
+  }
+ ],
+ "figures": [
+  {
+   "id": "fig-apush-saq-0239",
+   "file": "u8/saq-set-23-q3.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Apollo_11_bootprint.jpg",
+   "license": "Public domain (NASA photograph, PD-USGov-NASA)",
+   "caption": "An astronaut's bootprint in the lunar soil, Apollo 11, July 1969.",
+   "alt": "A black-and-white NASA photograph of a single bootprint pressed into the gray, dusty surface of the Moon, with small rocks and craters visible around it."
+  }
+ ]
+}

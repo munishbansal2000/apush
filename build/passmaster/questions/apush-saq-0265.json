@@ -1,0 +1,102 @@
+{
+  "id": "apush-saq-0265",
+  "type": "saq",
+  "unit": 8,
+  "topics": [
+    "8.14"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A",
+    "3.B"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.14 Society in Transition"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Christian Fundamentalism and the Religious Right"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The 'Moral Majority' and Focus on the Family"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "The Election of 1980"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "Reverend Jerry Falwell, 'I Love America' rallies and Moral Majority founding, 1979 (paraphrased)"
+    ]
+  },
+  "source": "original; stimulus paraphrased from Falwell's late-1970s rallies and the Moral Majority founding",
+  "saq_slot": 2,
+  "totalPoints": 3,
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Paraphrase of the Reverend Jerry Falwell, speaking at 'I Love America' rallies in the late 1970s and in founding the Moral Majority in 1979.",
+    "text": "Paraphrase of the Reverend Jerry Falwell, speaking at 'I Love America' rallies in the late 1970s and in founding the Moral Majority in 1979. Falwell said America faced moral decay, naming abortion, pornography, and the decline of the family, and he said Christians could no longer stay out of politics but must register, vote, and defend traditional values."
+  },
+  "stimulus_set": null,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify one problem Falwell said America faced.",
+      "modelAnswer": "Falwell said America faced moral decay, and he named abortion as one sign of it. He also named pornography and the decline of the family.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for identifying one problem from the passage, such as moral decay, abortion, pornography, or the decline of the family.",
+          "notEarned": "Naming a problem the passage does not state, such as unemployment, does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain one reason evangelical Christians entered politics in the late 1970s.",
+      "modelAnswer": "Background: Evangelicals entered politics because the Supreme Court's Roe v. Wade decision in 1973 made abortion legal across the country. Background: That decision convinced pastors such as Falwell that staying out of politics had failed to protect their values.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Background: Earns the point for explaining one reason, such as the Roe v. Wade decision of 1973, the fight over the Equal Rights Amendment, or the sense that liberal social change threatened traditional values.",
+          "notEarned": "Restating that evangelicals entered politics, without a reason, does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Explain one effect of the Religious Right on American politics by 1980.",
+      "modelAnswer": "Background: The Religious Right helped Ronald Reagan win the presidency in 1980 by turning evangelical voters out for his message of traditional values. Background: It also helped pull the Republican Party toward opposition to abortion and the Equal Rights Amendment.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Background: Earns the point for explaining one effect, such as helping elect Reagan in 1980, registering evangelical voters, or moving the Republican Party toward opposition to abortion and the Equal Rights Amendment.",
+          "notEarned": "Restating that the Religious Right grew, without a political effect, does not earn the point."
+        }
+      ]
+    }
+  ]
+}

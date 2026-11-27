@@ -1,0 +1,92 @@
+{
+  "id": "apush-mcq-2697",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.10"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "1.B"
+  ],
+  "themes": [
+    "PCE",
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.10 The African-American Civil Rights Movement (1960s)"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Civil Rights Movement in the 1960s: From Integration to Black Power"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Civil Rights Act (1964)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus photograph viewed before writing",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Photograph: President Lyndon Johnson signing the Civil Rights Act, July 2, 1964, public domain (official White House photograph via Wikimedia Commons). Account drawn from the grounding books (Barron's Ch. 10, Topic 8.10, \"The Civil Rights Act (1964)\"; 5 Steps Ch. 27; Princeton Ch. 12). The signing date, the Evers murder date, and the Heart of Atlanta ruling are in the books and the Supreme Court decision itself (decided December 14, 1964).",
+    "text": "The photograph shows President Lyndon Johnson signing the Civil Rights Act on July 2, 1964, with Martin Luther King Jr. standing behind him. President Kennedy had sent the bill to Congress in June 1963, after the Birmingham campaign and the murder of civil rights leader Medgar Evers in Jackson, Mississippi. Southern senators filibustered the bill for months, and it passed only after the Senate voted to end debate. The act banned discrimination based on race, color, religion, sex, or national origin. Title II barred segregation in public accommodations such as hotels, restaurants, and theaters. Title VII barred discrimination in employment and created the Equal Employment Opportunity Commission (EEOC) to enforce the ban. In December 1964 the Supreme Court upheld Title II in Heart of Atlanta Motel v. United States, ruling that Congress could regulate hotels serving interstate travelers under its power over interstate commerce."
+  },
+  "stimulus_set": "civil-rights-act-1964",
+  "stem": "Title VII of the Civil Rights Act most directly changed American life by doing which of the following?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Banning segregation in hotels, restaurants, and theaters across the South",
+      "misconception": "That was Title II, not Title VII."
+    },
+    {
+      "key": "B",
+      "text": "Banning discrimination in jobs and creating the EEOC to enforce it"
+    },
+    {
+      "key": "C",
+      "text": "Ending literacy tests and poll taxes for voters",
+      "misconception": "Background: Literacy tests and poll taxes were ended by the Voting Rights Act of 1965."
+    },
+    {
+      "key": "D",
+      "text": "Ordering every school in the South to desegregate at once",
+      "misconception": "Background: School desegregation was ordered by the Brown decisions, not by Title VII."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The passage assigns public accommodations to Title II, not Title VII.",
+    "B": "The passage says Title VII barred discrimination in employment and created the Equal Employment Opportunity Commission to enforce the ban.",
+    "C": "Background: Literacy tests and poll taxes were ended by the Voting Rights Act of 1965, not by Title VII.",
+    "D": "Background: School desegregation was ordered by the Brown decisions, not by Title VII.",
+    "general": "1. Title II covers public places such as hotels, restaurants, and theaters.\n2. Title VII covers a different area: jobs and employment, not public places.\n3. The passage says Title VII barred discrimination in employment.\n4. It also created the Equal Employment Opportunity Commission to enforce that ban.\nRemember: Match each title of a law to its own subject before answering."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-2697",
+      "file": "u8/5s24-ch27-mcq-06.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Lyndon_Johnson_signing_Civil_Rights_Act%2C_July_2%2C_1964.jpg",
+      "license": "Public domain (official White House photograph, PD-USGov-POTUS)",
+      "caption": "President Johnson signing the Civil Rights Act, July 2, 1964",
+      "alt": "President Lyndon Johnson seated at a desk signing a document, with Martin Luther King Jr. standing behind him among a large group of onlookers and the presidential seal on the wall"
+    }
+  ]
+}

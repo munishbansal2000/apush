@@ -1,0 +1,108 @@
+{
+ "id": "apush-saq-0262",
+ "type": "saq",
+ "unit": 8,
+ "topics": [
+  "8.13"
+ ],
+ "lesson": "apush-u8-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "2.A",
+  "3.B"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.13 The environment and natural resources from 1968 to 1980"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "The Environmental Movement"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Expansion of Rights Movements"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "The New Left, Feminism, and the Counterculture"
+   }
+  ],
+  "primary_sources": [
+   "Photograph of the first Earth Day flag ceremony, Washington, D.C., April 22, 1970 (National Park Service)"
+  ]
+ },
+ "source": "original; stimulus photograph viewed before writing",
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph: protesters at the Earth Day flag ceremony, Washington Monument, Washington, D.C., April 22, 1970, public domain (U.S. National Park Service photograph, via Wikimedia Commons).",
+  "text": "The photograph shows the first Earth Day, April 22, 1970, at the Washington Monument in Washington, D.C. Seen from above, a large crowd gathers around an American flag on a paved plaza. One protester holds a sign reading 'END THE RAPE OF AMERICA,' and several photographers film the crowd."
+ },
+ "stimulus_set": null,
+ "figures": [
+  {
+   "id": "fig-apush-saq-0262",
+   "file": "u8/earth-day-1970.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Demonstrations._Protestors_at_the_National_Capital_Region_Earth_Day_flag_ceremony_in_Washington_DC._(1bfd12be1a48429fae160d14b10aade5).jpg",
+   "license": "Public domain (U.S. National Park Service photograph)",
+   "caption": "Protesters at the Earth Day flag ceremony, Washington Monument, April 22, 1970",
+   "alt": "Overhead color view of a large crowd gathered around an American flag on a paved plaza, with one protester holding a sign reading END THE RAPE OF AMERICA"
+  }
+ ],
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one feature of the first Earth Day shown in the image.",
+   "modelAnswer": "The image shows a large crowd gathered around an American flag on a paved plaza. One protester holds a sign reading 'END THE RAPE OF AMERICA,' showing a public protest about the abuse of the land.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one feature shown in the image, such as the large crowd, the American flag, or the protest sign.",
+     "notEarned": "Naming a feature the image does not show, such as a speech or a cleanup, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one reason the environmental movement grew in the late 1960s and early 1970s.",
+   "modelAnswer": "Background: The movement grew because visible disasters made pollution feel urgent: Rachel Carson's Silent Spring in 1962 warned that DDT poisoned wildlife, and the Santa Barbara oil spill in 1969 coated 35 miles of coastline. Background: Those warnings and disasters turned pollution from a hidden problem into a public cause.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Background: Earns the point for explaining one reason, such as Carson's Silent Spring warning about DDT, the Santa Barbara oil spill, the movement's roots in the antiwar and New Left movements, or the teach-in model that mobilized campuses.",
+     "notEarned": "Restating that the movement grew, without a reason, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way the first Earth Day changed American politics.",
+   "modelAnswer": "Background: Earth Day changed American politics by showing politicians that voters cared about pollution: about 20 million Americans took part on April 22, 1970. Background: Within months, President Nixon created the Environmental Protection Agency, and Congress passed the Clean Air Act.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Background: Earns the point for explaining one political change, such as the creation of the EPA in 1970, the Clean Air Act of 1970, the Clean Water Act of 1972, or the growth of environmental regulation as a federal responsibility.",
+     "notEarned": "Restating that Earth Day was large, without a political change, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

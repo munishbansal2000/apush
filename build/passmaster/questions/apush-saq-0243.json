@@ -1,0 +1,88 @@
+{
+ "id": "apush-saq-0243",
+ "type": "saq",
+ "unit": 8,
+ "topics": [
+  "8.4"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "3.A",
+  "4.A"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.4 The Economy After 1945"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 26",
+    "section": "The Return of Prosperity"
+   }
+  ],
+  "primary_sources": [
+   "Dwight D. Eisenhower, Farewell Address, January 17, 1961"
+  ]
+ },
+ "source": "original; stimulus paraphrased from Dwight D. Eisenhower, Farewell Address, January 17, 1961 (public domain, U.S. government)",
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Dwight D. Eisenhower, Farewell Address, January 17, 1961. Paraphrased, not quoted.",
+  "text": "Paraphrase of President Dwight D. Eisenhower's farewell address, January 17, 1961. Eisenhower warned that the United States had built a large military establishment and a huge arms industry. He said their combined influence, economic, political, and even spiritual, was felt in every city, every statehouse, and every federal office, and he warned Americans to guard against the acquisition of unwarranted influence by what he called the military-industrial complex."
+ },
+ "stimulus_set": null,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one part of the military-industrial complex Eisenhower names.",
+   "modelAnswer": "Eisenhower names a large military establishment, the armed forces built up during the Cold War. He also names a huge arms industry, the factories that made the weapons the military bought.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one part Eisenhower names, such as the large military establishment or the huge arms industry.",
+     "notEarned": "Naming something Eisenhower does not name, such as the interstate highways, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one reason defense spending grew after World War II.",
+   "modelAnswer": "Defense spending grew because the Cold War turned the Soviet Union into a rival that the United States felt it must match. The Korean War and the arms race that followed kept military budgets high through the 1950s.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason defense spending grew, such as the Cold War rivalry, the Korean War, or the arms race.",
+     "notEarned": "Naming a war or a rival without explaining how it raised defense spending does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way the military-industrial complex affected the postwar economy.",
+   "modelAnswer": "Defense spending stimulated the economy by pouring billions of dollars into weapons systems and technological research. That spending created jobs and new industries, which is why Eisenhower called the complex's influence economic as well as political.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one economic effect, such as billions spent on weapons and research or jobs and new industries created by defense spending.",
+     "notEarned": "Restating Eisenhower's warning without explaining an economic effect does not earn the point."
+    }
+   ]
+  }
+ ]
+}

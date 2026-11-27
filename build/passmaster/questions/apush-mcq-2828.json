@@ -1,0 +1,86 @@
+{
+  "id": "apush-mcq-2828",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.15"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "1.A",
+    "2.A"
+  ],
+  "themes": [
+    "SOC",
+    "WOR"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.5 Culture after 1945"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.14 Society in Transition"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 26",
+        "section": "Prosperity and Anxiety: The 1950s"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "America in an Era of Turmoil (1960-1975)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ]
+  },
+  "source": "original; stimulus table compiled from the Bureau of Labor Statistics, Monthly Labor Review, December 1999, Table 1",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from the Bureau of Labor Statistics, Monthly Labor Review, December 1999, Table 1.",
+    "text": "Share of adults in paid work (the civilian labor force), by sex (Bureau of Labor Statistics, Monthly Labor Review, December 1999, Table 1):\n\n| Year | Women | Men |\n| 1950 | 33.9% | 86.4% |\n| 1960 | 37.7% | 83.3% |\n| 1970 | 43.3% | 79.7% |\n| 1980 | 51.5% | 77.4% |"
+  },
+  "stimulus_set": "women-work-1950-1980",
+  "stem": "What does the table show about women and paid work from 1950 to 1980?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The share of women in paid work fell steadily.",
+      "misconception": "The women's column rises at every step, from 33.9 percent to 51.5 percent."
+    },
+    {
+      "key": "B",
+      "text": "The share of women in paid work stayed about the same.",
+      "misconception": "The women's column rises by nearly 18 points, from 33.9 percent to 51.5 percent."
+    },
+    {
+      "key": "C",
+      "text": "The share of women in paid work rose steadily, passing half by 1980."
+    },
+    {
+      "key": "D",
+      "text": "Women took part in paid work at higher rates than men by 1980.",
+      "misconception": "In 1980 the table gives women 51.5 percent and men 77.4 percent, so men were still higher."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "The women's column rises at every step, from 33.9 percent to 51.5 percent.",
+    "B": "The women's column rises by nearly 18 points, from 33.9 percent to 51.5 percent.",
+    "C": "The women's column rises at every step, from 33.9 percent in 1950 to 51.5 percent in 1980.",
+    "D": "In 1980 the table gives women 51.5 percent and men 77.4 percent, so men were still higher.",
+    "general": "1. Read the women's column only: 33.9, 37.7, 43.3, 51.5 percent.\n2. Each number is larger than the one before it, and the last one passes 50 percent.\n3. The men's column answers a different question, so it cannot change what the women's column shows.\nRemember: Read one column at a time and compare each number with the one before it."
+  }
+}

@@ -1,0 +1,100 @@
+{
+ "id": "apush-saq-0250",
+ "type": "saq",
+ "unit": 8,
+ "topics": [
+  "8.8"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "2.B"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.8 The Vietnam War"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "The Escalation of the Vietnam War"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "The Gulf of Tonkin Resolution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Vietnam War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "American Involvement in Vietnam, World War II\u20131963"
+   }
+  ]
+ },
+ "source": "original; stimulus is an original secondary passage written for this question, facts from the grounding books",
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question; facts from the grounding books.",
+  "text": "After 1964 the American war in Vietnam grew fast. Congress gave President Johnson broad power to use force, and in 1965 American combat troops landed in South Vietnam. Troop numbers climbed from about 184,000 at the end of 1965 to more than 500,000 by 1968. The bombing of North Vietnam grew heavier each year. At home, the war's cost rose into the hundreds of billions of dollars, and support for the war began to fall as casualties mounted."
+ },
+ "stimulus_set": null,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one step in the escalation of the Vietnam War described in the passage.",
+   "modelAnswer": "The passage says Congress gave President Johnson broad power to use force in 1964. That grant of power let Johnson send combat troops and expand the war without a declaration of war.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one step in the escalation from the passage, such as the grant of broad power to Johnson, the landing of combat troops in 1965, the rise in troop numbers, or the heavier bombing of North Vietnam.",
+     "notEarned": "Naming a fact about the war that is not a step in escalation, such as the war's cost alone, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one reason the United States escalated its involvement in Vietnam in the mid-1960s.",
+   "modelAnswer": "American leaders believed in the domino theory, so they feared that losing South Vietnam would let communism spread across Southeast Asia. Escalation was meant to stop that spread by holding South Vietnam.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason for escalation, such as the domino theory and the fear that communism would spread, the policy of containment, or the belief that South Vietnam would fall without American help.",
+     "notEarned": "Restating that the United States escalated without explaining why does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one effect of the escalation on American politics or society by the late 1960s.",
+   "modelAnswer": "Escalation made the war the central issue of American politics, and falling support for the war helped drive President Johnson from seeking reelection in 1968. The war divided the country and fed a large antiwar movement.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one effect of escalation on American politics or society, such as Johnson's decision not to seek reelection, the growth of the antiwar movement, falling public support for the war, or the drain on Great Society programs.",
+     "notEarned": "Naming an effect on Vietnam without explaining its effect in the United States does not earn the point."
+    }
+   ]
+  }
+ ]
+}

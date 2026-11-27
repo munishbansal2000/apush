@@ -1,0 +1,84 @@
+{
+  "id": "apush-mcq-2768",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.13"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "1.B"
+  ],
+  "themes": [
+    "SOC",
+    "GEO"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.13 The environment and natural resources from 1968 to 1980"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Environmental Movement"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Expansion of Rights Movements"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The New Left, Feminism, and the Counterculture"
+      }
+    ],
+    "primary_sources": [
+      "Rachel Carson, Silent Spring, September 27, 1962 (paraphrased)"
+    ]
+  },
+  "source": "original; stimulus is a paraphrase of Silent Spring (1962)",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Paraphrase of Rachel Carson, Silent Spring (Houghton Mifflin, September 27, 1962). Publication date verified against the Library of Congress / Columbia University record and HISTORY.com. Account drawn from the grounding books (Barron's Ch. 10, Topic 8.13, 'The Environmental Movement'; 5 Steps Ch. 27; Princeton Ch. 12).",
+    "text": "Paraphrase of Rachel Carson's Silent Spring, published September 27, 1962.\n\nCarson, a marine biologist, warned that the pesticide DDT and other chemicals were poisoning the natural world. She described how DDT built up in the bodies of animals, thinned the shells of birds' eggs, and spread through food chains from insects to fish to birds. She argued that people sprayed these chemicals without knowing their full effects, and that the chemical industry dismissed the danger. President John F. Kennedy asked his Science Advisory Committee to examine her claims."
+  },
+  "stimulus_set": "silent-spring-ddt-1962",
+  "stem": "According to the passage, what did Carson argue was the main danger of DDT?",
+  "options": [
+    {
+      "key": "A",
+      "text": "It made crops grow too fast for farmers to harvest.",
+      "misconception": "The passage says nothing about crop growth; it describes poisoned wildlife."
+    },
+    {
+      "key": "B",
+      "text": "It poisoned wildlife and spread through food chains."
+    },
+    {
+      "key": "C",
+      "text": "It caused the price of food to rise sharply.",
+      "misconception": "The passage says nothing about food prices."
+    },
+    {
+      "key": "D",
+      "text": "It drove most American farmers out of business.",
+      "misconception": "The passage says nothing about farmers going out of business."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The passage says nothing about crop growth; it describes poisoned wildlife.",
+    "B": "The passage says DDT built up in animals, thinned birds' eggshells, and spread through food chains.",
+    "C": "The passage says nothing about food prices.",
+    "D": "The passage says nothing about farmers going out of business.",
+    "general": "1. The passage names the danger directly: DDT built up in animals and spread through food chains.\n2. Its example is birds: the chemical thinned the shells of their eggs.\n3. Background: The other choices name effects the passage never mentions: faster crops, higher food prices, and failing farms.\nRemember: Match the answer to what the passage actually says, not to what sounds plausible."
+  }
+}

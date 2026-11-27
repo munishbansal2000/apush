@@ -1,0 +1,74 @@
+{
+ "id": "apush-mcq-2500",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.3"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.3 The Red Scare"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "The Second Red Scare"
+   }
+  ],
+  "primary_sources": [
+   "Whittaker Chambers, testimony before the House Committee on Un-American Activities, 1948"
+  ]
+ },
+ "source": "original; stimulus paraphrased from Whittaker Chambers's testimony before HUAC, 1948",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Whittaker Chambers's testimony before the House Committee on Un-American Activities, 1948. Paraphrased, not quoted, because the source is after 1929.",
+  "text": "In 1948, Whittaker Chambers, a former communist and an editor at Time magazine, told the House Committee on Un-American Activities that Alger Hiss, a former State Department official, had been a communist and had passed secret documents to the Soviet Union in the 1930s. Hiss denied the charges. Chambers produced copies of documents he said Hiss had given him, and a young congressman, Richard Nixon, pursued the case. Hiss was later convicted of perjury."
+ },
+ "stimulus_set": "hiss-chambers-1948",
+ "stem": "Richard Nixon's role in the Hiss case is best understood as an example of how",
+ "options": [
+  {
+   "key": "A",
+   "text": "A judge sentences a defendant after a trial.",
+   "misconception": "Background from the books: Nixon was a first-term congressman, not a judge. Judges sentence defendants, and Nixon held no judicial office."
+  },
+  {
+   "key": "B",
+   "text": "A prosecutor proves espionage in a court of law.",
+   "misconception": "Hiss was convicted of perjury, not espionage, and Nixon was not the prosecutor. The case was pursued in Congress and then in court by others."
+  },
+  {
+   "key": "C",
+   "text": "A president creates a loyalty program by executive order.",
+   "misconception": "Background from the books: the loyalty program was Truman's executive order of 1947. Nixon had no part in creating it."
+  },
+  {
+   "key": "D",
+   "text": "A congressman builds a national reputation from a famous case."
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Background from the books: Nixon was a first-term congressman, not a judge. Judges sentence defendants, and Nixon held no judicial office.",
+  "B": "Hiss was convicted of perjury, not espionage, and Nixon was not the prosecutor. The case was pursued in Congress and then in court by others.",
+  "C": "Background from the books: the loyalty program was Truman's executive order of 1947. Nixon had no part in creating it.",
+  "D": "Background from the books: a first-term Republican congressman, Nixon pursued the perjury charges against Hiss, and the case made him nationally famous.",
+  "general": "1. Background from the books: Nixon was a young, first-term congressman in the House when the Hiss case broke.\n2. He pursued the perjury charges against Hiss in public hearings, before the whole country, and kept pressing until the case reached a courtroom.\n3. Background from the books: the case made him nationally famous.\nRemember: A public investigation can launch a political career as surely as a law can."
+ }
+}

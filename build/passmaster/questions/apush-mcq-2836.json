@@ -1,0 +1,86 @@
+{
+  "id": "apush-mcq-2836",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.15"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "3.B",
+    "5.B"
+  ],
+  "themes": [
+    "SOC",
+    "ARC"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.4 Economy after 1945"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.12 Youth Culture of the 1960s"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 26",
+        "section": "Prosperity and Anxiety: The 1950s"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "America in an Era of Turmoil (1960-1975)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ]
+  },
+  "source": "original; stimulus table compiled from the National Center for Education Statistics, Digest of Education Statistics, Table 303.10",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from the National Center for Education Statistics, Digest of Education Statistics, Table 303.10.",
+    "text": "Students enrolled in colleges and universities each fall (National Center for Education Statistics, Digest of Education Statistics, Table 303.10):\n\n| Fall | Total enrollment | Women as a share of students |\n| 1950 | 2.3 million | 31.6% |\n| 1959 | 3.6 million | 35.9% |\n| 1970 | 8.6 million | 41.2% |\n| 1980 | 12.1 million | 51.4% |"
+  },
+  "stimulus_set": "college-enrollment-1950-1980",
+  "stem": "What does the table show about men as college students from 1950 to 1980?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Men's numbers fell sharply as women took their places on campus.",
+      "misconception": "Men's numbers rose from about 1.6 million in 1950 to about 5.9 million in 1980, even as their share fell."
+    },
+    {
+      "key": "B",
+      "text": "Men stayed the majority of students, and their numbers barely changed.",
+      "misconception": "Men's share fell below half by 1980, and their numbers rose from about 1.6 million to about 5.9 million."
+    },
+    {
+      "key": "C",
+      "text": "Men became a smaller share of students even as their numbers grew."
+    },
+    {
+      "key": "D",
+      "text": "Men stopped going to college altogether by 1980.",
+      "misconception": "Men were still 48.6 percent of 12.1 million students in 1980, about 5.9 million."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "Men's numbers rose from about 1.6 million in 1950 to about 5.9 million in 1980, even as their share fell.",
+    "B": "Men's share fell below half by 1980, and their numbers rose from about 1.6 million to about 5.9 million.",
+    "C": "In 1950 men were 68.4 percent of 2.3 million students, about 1.6 million; in 1980 they were 48.6 percent of 12.1 million, about 5.9 million, so their share fell while their numbers grew.",
+    "D": "Men were still 48.6 percent of 12.1 million students in 1980, about 5.9 million.",
+    "general": "1. The table gives a total and a women's share, so work out the men's side yourself.\n2. In 1950 men were 68.4 percent of 2.3 million students, about 1.6 million.\n3. In 1980 men were 48.6 percent of 12.1 million students, about 5.9 million, so their numbers grew even as their share fell.\n4. A falling share and a falling number are different things: always check both.\nRemember: When a table gives a share, multiply it out before judging who gained or lost."
+  }
+}

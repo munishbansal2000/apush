@@ -1,0 +1,93 @@
+{
+  "id": "apush-saq-0259",
+  "type": "saq",
+  "unit": 8,
+  "topics": [
+    "8.11"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A",
+    "3.B"
+  ],
+  "themes": [
+    "SOC",
+    "NAT"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The American Indian Movement"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Expansion of Rights Movements"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      }
+    ],
+    "primary_sources": [
+      "Indians of All Tribes, Proclamation to the Great White Father and All His People, November 1969 (paraphrased)"
+    ]
+  },
+  "source": "original; stimulus is a paraphrase of the Alcatraz Proclamation of November 1969",
+  "saq_slot": 2,
+  "totalPoints": 3,
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Paraphrase of Indians of All Tribes, Proclamation to the Great White Father and All His People, November 1969. The $24 offer, the claim by right of discovery, and the plan for a school, cultural center, and museum are in the proclamation, as reproduced by OpenStax and the Bill of Rights Institute.",
+    "text": "Paraphrase of the Proclamation to the Great White Father and All His People, issued by Indians of All Tribes in November 1969. The proclamation says: We, the Native Americans, reclaim the land known as Alcatraz Island in the name of all American Indians by right of discovery. We offer to buy the island for twenty-four dollars in glass beads and red cloth, following the white man's purchase of a similar island about 300 years ago.\n\nWe will build an Indian school, cultural center, and museum on the island. Alcatraz is suitable as an Indian reservation because it is isolated, has no fresh running water, no health care, and no industry, just as reservations do."
+  },
+  "stimulus_set": null,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify one claim the occupiers make about Alcatraz Island in the proclamation.",
+      "modelAnswer": "The proclamation claims Alcatraz Island for all American Indians by right of discovery. The occupiers say the island belongs to Indians as the first inhabitants of the land.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for identifying one claim from the proclamation, such as claiming the island by right of discovery, offering to buy it for $24 in glass beads and red cloth, or planning an Indian school, cultural center, and museum there.",
+          "notEarned": "Naming the occupation without a claim from the proclamation does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain one reason the occupiers chose Alcatraz Island for their protest.",
+      "modelAnswer": "Background: The occupiers chose Alcatraz because it was a closed federal prison on unused federal land. Background: They argued that treaty terms said such land should return to Indians, and the island sat in San Francisco Bay where reporters could see the protest.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Background: Earns the point for explaining one reason Alcatraz was chosen, such as it being abandoned federal land covered by a treaty claim, a closed prison that symbolized federal power, or a visible island in San Francisco Bay that drew press attention.",
+          "notEarned": "Restating that the occupiers went to Alcatraz, without a reason they chose it, does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Explain one effect of the Alcatraz occupation on the Native American rights movement.",
+      "modelAnswer": "Background: The occupation drew national press attention to Native grievances for nineteen months and inspired later actions. Background: Activists went on to the Trail of Broken Treaties in 1972 and the Wounded Knee occupation in 1973, and the federal government moved toward a policy of tribal self-determination in the 1970s.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Background: Earns the point for explaining one effect, such as drawing national attention to Native grievances, inspiring the Trail of Broken Treaties or Wounded Knee, or helping push federal policy toward tribal self-determination in the 1970s.",
+          "notEarned": "Saying only that the occupation happened, without an effect on the movement, does not earn the point."
+        }
+      ]
+    }
+  ]
+}

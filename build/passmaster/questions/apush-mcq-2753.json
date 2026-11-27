@@ -1,0 +1,92 @@
+{
+  "id": "apush-mcq-2753",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.12"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 3,
+  "skills": [
+    "3.B"
+  ],
+  "themes": [
+    "SOC",
+    "ARC"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The British Invasion"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.12 Youth Culture of the 1960s"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Expansion of Rights Movements"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The New Left, Feminism, and the Counterculture"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is a licensed photograph viewed before writing (see figures) with an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Photograph: The Beatles, 1964, by Bernard Gotfryd, public domain, via the Library of Congress and Wikimedia Commons. Audience figure verified against Smithsonian Magazine and the National Portrait Gallery.",
+    "text": "The photograph, taken in 1964, shows the four members of the Beatles — John Lennon, Paul McCartney, George Harrison, and Ringo Starr — in four studio portraits against a gold curtain. All four wear dark suits and have the same mop-top haircut, with hair combed forward over their foreheads.\n\nThe Beatles first appeared on The Ed Sullivan Show on February 9, 1964. About 73 million Americans watched, the largest television audience to that date. Their appearance launched Beatlemania in the United States and opened the way for other British bands, a wave called the British Invasion."
+  },
+  "stimulus_set": "beatles-ed-sullivan-1964",
+  "stem": "The Beatles’ first appearance on The Ed Sullivan Show is best seen as",
+  "options": [
+    {
+      "key": "A",
+      "text": "the end of rock ’n’ roll in the United States",
+      "misconception": "The Beatles spread rock ’n’ roll further; they did not end it."
+    },
+    {
+      "key": "B",
+      "text": "a minor event that few Americans noticed",
+      "misconception": "About 73 million viewers is the opposite of few Americans noticing."
+    },
+    {
+      "key": "C",
+      "text": "the moment television replaced radio for music",
+      "misconception": "Background: Radio stayed central to pop music; television did not replace it."
+    },
+    {
+      "key": "D",
+      "text": "the beginning of the British Invasion of American popular music"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "Background: Rock ’n’ roll did not end in 1964. The Beatles’ appearance spread it further.",
+    "B": "The passage says about 73 million Americans watched, the largest television audience to that date.",
+    "C": "Background: Radio stayed central to pop music through the 1960s. Television did not replace it.",
+    "D": "The passage says their appearance launched Beatlemania and opened the way for other British bands, the wave called the British Invasion.",
+    "general": "1. About 73 million Americans watched the Beatles on February 9, 1964.\n2. That night launched Beatlemania in the United States.\n3. Other British bands followed the Beatles across the Atlantic.\n4. One broadcast that opens a wave is a beginning, not an ending.\nRemember: A first that others follow is the start of a movement, not a one-time event."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-2753",
+      "file": "u8/beatles-ed-sullivan-1964.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Beatles_Ed_Sullivan_1964.jpg",
+      "license": "Public domain (Bernard Gotfryd, 1964, via Library of Congress)",
+      "caption": "The Beatles in 1964, around the time of their first Ed Sullivan Show appearance",
+      "alt": "Four studio portraits of the Beatles with matching mop-top haircuts and dark suits against a gold curtain"
+    }
+  ]
+}

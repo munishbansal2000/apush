@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-2470",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.2"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "B",
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "WOR",
+  "ARC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.2 The Cold War from 1945 to 1980"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "America in an Era of Turmoil (1960-1975)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Photograph: NASA, Apollo 11, July 20, 1969, public domain (PD-USGov-NASA), via Wikimedia Commons. Text: original summary passage; facts from the grounding books.",
+  "text": "The photograph shows American astronaut Buzz Aldrin standing on the surface of the Moon on July 20, 1969, photographed by Neil Armstrong. Twelve years earlier, the Soviet Union had shocked the United States by launching Sputnik, the first artificial satellite, and American schools and the space program rushed to catch up."
+ },
+ "stimulus_set": "sputnik-space-race",
+ "source": "original; stimulus image from the shared pool: Buzz Aldrin on the Moon, Apollo 11, NASA photograph, public domain",
+ "stem": "The American response to Sputnik most directly included which development?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The withdrawal of the United States from the NATO alliance.",
+   "misconception": "Sputnik pushed America to compete harder, not to quit its alliances."
+  },
+  {
+   "key": "B",
+   "text": "The creation of NASA and new federal support for science education."
+  },
+  {
+   "key": "C",
+   "text": "The end of the nuclear arms race with the Soviet Union.",
+   "misconception": "Sputnik sped up the arms race; it did not stop it."
+  },
+  {
+   "key": "D",
+   "text": "The signing of the SALT I treaty with the Soviet Union.",
+   "misconception": "SALT I came in 1972, long after Sputnik in 1957."
+  }
+ ],
+ "rationales": {
+  "A": "The United States stayed in NATO and deepened its alliances after Sputnik. A Soviet satellite did not drive America out of its own alliance.",
+  "B": "Sputnik showed that Soviet rockets could reach space, and Americans feared Soviet missiles could reach them. Background from the books: Eisenhower created NASA in 1958, and Congress funded science and mathematics teaching to train the engineers the space race needed.",
+  "C": "The arms race grew after Sputnik, as both sides built more missiles and warheads. A satellite launch did not end the competition in weapons.",
+  "D": "SALT I was signed in 1972, fifteen years after Sputnik. It cannot be the direct response to a 1957 satellite.",
+  "general": "1. Sputnik was a Soviet satellite, but Americans read it as a missile warning: if Moscow could orbit a satellite, it could reach the United States.\n2. Background from the books: That fear demanded a scientific answer, so Washington built a space agency and funded science teaching.\n3. NASA and the new education programs were the direct reply to being beaten into space.\nRemember: A rival's technical first can force a whole country to rebuild its schools and its science."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2470",
+   "file": "u8/pr25e-ch12-q04.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Aldrin_Apollo_11.jpg",
+   "license": "Public domain (NASA photograph, PD-USGov-NASA)",
+   "caption": "Astronaut Buzz Aldrin standing on the surface of the Moon, July 20, 1969.",
+   "alt": "A color photograph of astronaut Buzz Aldrin in a white spacesuit standing on the gray lunar surface, with bootprints in the dust around him and the gold-colored lunar module leg visible at the edge."
+  }
+ ]
+}

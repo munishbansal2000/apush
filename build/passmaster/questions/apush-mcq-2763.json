@@ -1,0 +1,74 @@
+{
+  "id": "apush-mcq-2763",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.12"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 2,
+  "skills": [
+    "1.A"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Draft"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.12 Youth Culture of the 1960s"
+      }
+    ],
+    "primary_sources": [
+      "Twenty-sixth Amendment to the U.S. Constitution, ratified July 1, 1971"
+    ]
+  },
+  "source": "original; stimulus quotes the Twenty-sixth Amendment (public domain) with an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Twenty-sixth Amendment, Section 1 (public domain). Dates and ratification speed verified against Britannica, Smithsonian Magazine, and the National Archives.",
+    "text": "Section 1 of the Twenty-sixth Amendment to the Constitution, ratified July 1, 1971: ‘The right of citizens of the United States, who are eighteen years of age or older, to vote shall not be denied or abridged by the United States or by any State on account of age.’\n\nIn most states, the voting age had been 21, while young men could be drafted into the armed forces at 18. During the Vietnam War, the argument spread that anyone old enough to fight was old enough to vote. Congress proposed the amendment on March 23, 1971, and the states ratified it in about three months, the fastest ratification of any amendment."
+  },
+  "stimulus_set": "youth-vote-26th-amendment",
+  "stem": "According to the amendment, what does Section 1 require?",
+  "options": [
+    {
+      "key": "A",
+      "text": "That all citizens serve in the armed forces at 18",
+      "misconception": "The amendment is about voting, not about military service."
+    },
+    {
+      "key": "B",
+      "text": "That the voting age be raised to 25",
+      "misconception": "The amendment lowers the voting age to 18; it does not raise it."
+    },
+    {
+      "key": "C",
+      "text": "That citizens 18 or older cannot be denied the vote because of age"
+    },
+    {
+      "key": "D",
+      "text": "That only citizens who have served in the military may vote at all",
+      "misconception": "The amendment gives the vote to all citizens 18 or older, not only veterans."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "The amendment is about voting, not military service.",
+    "B": "The amendment sets the voting age at 18, not 25.",
+    "C": "Section 1 says the right to vote of citizens 18 or older shall not be denied or abridged on account of age.",
+    "D": "The amendment gives the vote to citizens 18 or older, whether or not they served.",
+    "general": "1. Read Section 1: citizens 18 or older have the right to vote.\n2. That right shall not be denied or abridged on account of age.\n3. The amendment sets a floor at 18 for every state and for federal elections.\n4. It says nothing about military service or a higher age.\nRemember: Read the amendment’s own words first: the answer is usually in the sentence itself."
+  }
+}

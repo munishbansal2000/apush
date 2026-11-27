@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-2597",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.7"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "3.D",
+  "6.B"
+ ],
+ "themes": [
+  "WOR",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.2 The Cold War from 1945 to 1980"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Cold War (1945-1960)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ],
+  "primary_sources": [
+   "U.S. Department of State, Office of the Historian, Marshall Plan figures"
+  ]
+ },
+ "source": "original; stimulus table from U.S. Department of State, Office of the Historian, Marshall Plan figures (approximate)",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Aid figures: U.S. Department of State, Office of the Historian, Marshall Plan figures (approximate, rounded to one decimal place).",
+  "text": "Marshall Plan aid, 1948-1952 (billions of dollars, rounded)\n\n| Country | Aid received |\n| United Kingdom | 3.3 |\n| France | 2.7 |\n| Italy | 1.5 |\n| West Germany | 1.4 |\n| Netherlands | 1.1 |\n| All other recipients | 3.3 |\n| Total | about 13 |"
+ },
+ "stimulus_set": "marshall-plan-aid-1948-1952",
+ "stem": "The table shows Italy receiving 1.5 billion dollars and West Germany 1.4 billion. What does aid to these former enemies best show about the Marshall Plan?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It rebuilt Western Europe's economies, even former enemies, so hardship would not push them toward communism"
+  },
+  {
+   "key": "B",
+   "text": "It gave aid only to countries that had fought on the Axis side in the war",
+   "misconception": "Background from the books: Britain and France, both Allies, received the two largest shares in the table."
+  },
+  {
+   "key": "C",
+   "text": "It paid reparations to the countries the Allies had defeated in the war",
+   "misconception": "Reparations are payments a defeated country makes; this money was American aid to rebuild economies."
+  },
+  {
+   "key": "D",
+   "text": "It punished former enemies by giving them smaller shares than any other country",
+   "misconception": "The table gives Italy 1.5 billion dollars and West Germany 1.4 billion, both more than the Netherlands at 1.1 billion."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background from the books: the plan rebuilt Western Europe so that poverty and disorder would not drive its people toward communism, and that goal covered former enemies too.",
+  "B": "Background from the books: Britain and France were Allies, and the table gives them the two largest shares.",
+  "C": "Background from the books: the money was American aid to rebuild economies, not reparations, which are payments a defeated country makes.",
+  "D": "The table gives Italy 1.5 billion dollars and West Germany 1.4 billion, both more than the Netherlands at 1.1 billion.",
+  "general": "1. Background from the books: Italy and Germany fought against the United States in World War II.\n2. The table still gives them 1.5 and 1.4 billion dollars, more than the Netherlands received.\n3. Background from the books: the plan's goal was to rebuild Western Europe's economies, not to reward wartime friends.\n4. Background from the books: rebuilding even former enemies kept hardship from pushing their people toward communism.\nRemember: Aid that rebuilds an enemy's economy is strategy, not kindness: stable neighbors resist communism."
+ }
+}

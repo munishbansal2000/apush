@@ -1,0 +1,73 @@
+{
+ "id": "apush-mcq-2505",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.3"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.3 The Red Scare"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Joseph McCarthy and McCarthyism"
+   }
+  ],
+  "primary_sources": [
+   "Joseph McCarthy, speech in Wheeling, West Virginia, February 9, 1950"
+  ]
+ },
+ "source": "original; stimulus paraphrased from Senator Joseph McCarthy's speech in Wheeling, West Virginia, February 9, 1950",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Senator Joseph McCarthy's speech in Wheeling, West Virginia, February 9, 1950. Paraphrased, not quoted, because the source is after 1929.",
+  "text": "On February 9, 1950, Senator Joseph McCarthy of Wisconsin spoke in Wheeling, West Virginia. He claimed that he held a list of 205 communists working in the State Department. The number changed in later speeches, and the list was never fully shown. Within weeks, McCarthy was the most famous anti-communist in the country, and his name became the label for the whole movement."
+ },
+ "stimulus_set": "mccarthy-wheeling-1950",
+ "stem": "The changing number on McCarthy's list suggests that",
+ "options": [
+  {
+   "key": "A",
+   "text": "The charge was meant to persuade, not to prove a count."
+  },
+  {
+   "key": "B",
+   "text": "The State Department hired new communists in its offices every week.",
+   "misconception": "No evidence showed weekly hiring of communists. The number changed because McCarthy changed it, not because the department changed."
+  },
+  {
+   "key": "C",
+   "text": "McCarthy found fresh evidence in the files each day.",
+   "misconception": "McCarthy never produced the files behind the number. Fresh evidence would have fixed the count, not moved it."
+  },
+  {
+   "key": "D",
+   "text": "The Senate verified each name on the list.",
+   "misconception": "The list was never fully shown, so no count was ever verified."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The number rose and fell while the list was never fully shown. A count that changes with the audience is a rhetorical tool, not a documented finding.",
+  "B": "No evidence showed weekly hiring of communists. The number changed because McCarthy changed it, not because the department changed.",
+  "C": "McCarthy never produced the files behind the number. Fresh evidence would have fixed the count, not moved it.",
+  "D": "Background from the books: the list was never fully revealed, so no count was ever verified.",
+  "general": "1. The number on McCarthy's list rose and fell from speech to speech.\n2. The list itself was never fully shown, so no audience could check the count.\n3. A count that changes with the audience is a rhetorical tool, not a documented finding.\nRemember: When a number moves and the evidence never appears, the number is doing the persuading."
+ }
+}

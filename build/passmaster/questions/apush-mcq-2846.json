@@ -1,0 +1,86 @@
+{
+  "answerKey": "A",
+  "difficulty": 2,
+  "figures": [
+    {
+      "alt": "1955 photograph of Black and white schoolgirls standing together in a classroom at the Barnard School in Washington, D.C.",
+      "caption": "Thomas J. O’Halloran, school integration, Barnard School, Washington, D.C., May 27, 1955. Black and white schoolgirls stand together in a classroom.",
+      "file": "pt01/fig5-barnard-school-1955.jpg",
+      "id": "fig-apush-mcq-2846",
+      "license": "No known restrictions on publication",
+      "source_url": "https://www.loc.gov/pictures/item/2003654384/"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.6 Early Steps in the Civil Rights Movement (1940s and 1950s)"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 26",
+        "section": "Prosperity and Anxiety: The 1950s"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-2846",
+  "lesson": "apush-u8-l2",
+  "options": [
+    {
+      "key": "A",
+      "text": "Ongoing debates over school funding, busing, and equal educational opportunity"
+    },
+    {
+      "key": "B",
+      "misconception": "Debates over equality in schools ended by 1960.",
+      "text": "The complete elimination of debates over equality in American schools by 1960"
+    },
+    {
+      "key": "C",
+      "misconception": "Public schools were abolished after Brown.",
+      "text": "The decision to abolish public schools entirely"
+    },
+    {
+      "key": "D",
+      "misconception": "All regions agreed on school policy after 1954.",
+      "text": "The unanimous agreement on school policy in all regions after 1954"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Debates over funding, busing, and equal opportunity show the same struggle over equal education continuing. Brown settled the law, but the fight over how to make schooling equal continued for decades.",
+    "B": "Debates over equality in schools did not end by 1960.",
+    "C": "Public schools were not abolished.",
+    "D": "No unanimous agreement on school policy followed 1954.",
+    "general": "1. Name the struggle in Brown. Equal educational opportunity for Black and white children.\n2. Ask where that struggle reappears. In debates over funding, busing, and equal opportunity.\n3. Test the endings. Debates did not stop, schools were not abolished, and no unanimity followed.\n4. Match the continuity. The same question, argued over new policies.\nRemember: a struggle continues when the same question is fought over new policies."
+  },
+  "reasoning": "continuity-change",
+  "skills": [
+    "5.B"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from Brown v. Board of Education (1954) with the O’Halloran 1955 Barnard School photograph",
+  "status": "final",
+  "stem": "Which of the following later developments best illustrates a continuity with the struggle addressed in *Brown*?",
+  "stimulus": {
+    "kind": "mixed",
+    "source_note": "Brown v. Board of Education, 1954, unanimous opinion by Chief Justice Earl Warren, public domain. Photograph: Thomas J. O’Halloran, 1955, Library of Congress.",
+    "text": "“Segregation of white and colored children in public schools has a detrimental effect upon the colored children. The impact is greater when it has the sanction of the law . . . Separate educational facilities are inherently unequal.”"
+  },
+  "stimulus_set": "brown-v-board-1954",
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "topics": [
+    "8.6"
+  ],
+  "type": "mcq",
+  "unit": 8
+}

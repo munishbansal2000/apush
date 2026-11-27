@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-2538",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.4"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "SOC",
+  "WXT"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Poverty Amid Affluence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Great Society"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 26",
+    "section": "The Return of Prosperity"
+   }
+  ]
+ },
+ "source": "original; stimulus is a data table built from 5 Steps to a 5, 2024, Chapter 26",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data table from 5 Steps to a 5, 2024, Chapter 26: GNP figures, white-collar majority, Diner's Club card. Births figure corrected per U.S. Census Bureau, Series P-25 No. 173 (Feb 1958): 4,302,000 births in 1957.",
+  "text": "| Fact | Year | Value |\n| Gross national product | 1945 | $200 billion |\n| Gross national product | 1960 | More than $500 billion |\n| Babies born | 1957 | 4.3 million |\n| Workers in white-collar jobs | 1956 | A majority |\n| First Diner's Club card | 1950 | Offered to shoppers |"
+ },
+ "stimulus_set": "postwar-boom-data-1945-1960",
+ "stem": "The table shows the postwar boom. Michael Harrington's The Other America (1962) challenged the image of postwar affluence by showing which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "That no American lived in poverty after 1945",
+   "misconception": "Background from the books: Harrington wrote that 40 to 50 million Americans lived in poverty; the book proves poverty persisted."
+  },
+  {
+   "key": "B",
+   "text": "That the middle class had disappeared entirely",
+   "misconception": "Background from the books: the middle class grew after the war; Harrington showed poverty beside it, not its disappearance."
+  },
+  {
+   "key": "C",
+   "text": "That 40 to 50 million Americans still lived in poverty"
+  },
+  {
+   "key": "D",
+   "text": "That automation had ended all factory work in America",
+   "misconception": "Background from the books: Harrington said automation displaced workers and left them poor; it did not end factory work."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Background from the books: Harrington wrote that 40 to 50 million Americans lived in poverty, so the book proves poverty persisted.",
+  "B": "Background from the books: the middle class grew after the war; Harrington showed poverty beside it, not its disappearance.",
+  "C": "Background from the books: Harrington counted 40 to 50 million poor Americans, many in city slums and isolated rural towns.",
+  "D": "Background from the books: Harrington said automation displaced workers and left them poor; it did not end factory work.",
+  "general": "1. Affluence was real, so the challenge must show poverty beside it.\n2. Background from the books: Harrington counted 40 to 50 million Americans in poverty, in decaying city slums and isolated rural towns.\n3. No poverty, no middle class, and no factory work all contradict the book.\nRemember: A book that challenges a rosy picture does it with a number that will not fit the picture."
+ },
+ "figures": null
+}

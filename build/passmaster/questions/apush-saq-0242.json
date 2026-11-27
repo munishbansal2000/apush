@@ -1,0 +1,88 @@
+{
+ "id": "apush-saq-0242",
+ "type": "saq",
+ "unit": 8,
+ "topics": [
+  "8.4"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "4.A"
+ ],
+ "themes": [
+  "SOC",
+  "WXT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Poverty Amid Affluence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Great Society"
+   }
+  ],
+  "primary_sources": [
+   "Michael Harrington, The Other America (1962)"
+  ]
+ },
+ "source": "original; stimulus paraphrased from Michael Harrington, The Other America (1962), as summarized in Barron's Premium 2027, Chapter 10",
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Michael Harrington, The Other America (1962), as summarized in Barron's Premium 2027, Chapter 10, Poverty Amid Affluence.",
+  "text": "The writer Michael Harrington argued in The Other America (1962) that 40 to 50 million Americans lived in poverty in the early 1960s, many in decaying city slums and many in isolated rural towns. He wrote that machines and automation, which raised output for the nation, took jobs from farm workers and factory workers and left them poor."
+ },
+ "stimulus_set": null,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one group Harrington says lived in poverty.",
+   "modelAnswer": "Harrington says many poor Americans lived in decaying city slums, where old neighborhoods had fallen into disrepair. He also names poor Americans in isolated rural towns, far from the jobs and services of the cities.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one group Harrington names, such as the poor in decaying city slums or in isolated rural towns.",
+     "notEarned": "Naming a group Harrington does not name, such as suburban homeowners, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how Harrington's account challenged the image of postwar affluence.",
+   "modelAnswer": "Harrington challenged the affluent image by counting 40 to 50 million poor Americans beside a growing middle class. His number showed that prosperity had not reached everyone, since automation took jobs even as national output rose.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how Harrington challenged the affluent image, such as the 40 to 50 million poor or automation taking jobs amid rising output.",
+     "notEarned": "Restating the affluent image without explaining Harrington's challenge to it does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way the federal government responded to the poverty Harrington described.",
+   "modelAnswer": "The federal government answered with the Great Society, creating the Office of Economic Opportunity to oversee antipoverty programs. It also created Medicare and Medicaid in 1965, giving health care to older and poor Americans.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one federal response, such as the Office of Economic Opportunity, Medicare, or Medicaid.",
+     "notEarned": "Naming a program without explaining how it responded to poverty does not earn the point."
+    }
+   ]
+  }
+ ]
+}

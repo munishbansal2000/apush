@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-2464",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.2"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.2 The Cold War from 1945 to 1980"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Origins of the Cold War (1945-1960)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "The Korean War"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph: U.S. Marine Corps, Korean War, public domain (PD-USGov-Military-Marines), via Wikimedia Commons.",
+  "text": "The photograph shows United States Marines resting in deep snow beside a jeep during the Korean War. The men wear heavy winter clothing covered in snow, and several sit or lie exhausted along a roadside."
+ },
+ "stimulus_set": "korea-winter-1950",
+ "source": "original; stimulus image from the shared pool: U.S. Marines in the Korean War, U.S. Marine Corps photograph, public domain",
+ "stem": "President Truman's decision to remove General Douglas MacArthur from command in 1951 best illustrates which feature of the Korean War?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The United Nations refused to support the war against North Korea.",
+   "misconception": "The United Nations backed the war; Truman and MacArthur disagreed about its limits, not its backing."
+  },
+  {
+   "key": "B",
+   "text": "Civilian leaders kept the war limited rather than expanding it into China."
+  },
+  {
+   "key": "C",
+   "text": "Congress declared war on China in response to the invasion.",
+   "misconception": "No declaration of war on China was ever made; the war stayed undeclared and limited."
+  },
+  {
+   "key": "D",
+   "text": "American forces withdrew from Korea entirely after the removal.",
+   "misconception": "The war continued after MacArthur left; only the commander changed, not the commitment."
+  }
+ ],
+ "rationales": {
+  "A": "The United Nations authorized the war, and its flag flew over the force MacArthur commanded. The dispute was over how far the war should go, not over United Nations support.",
+  "B": "MacArthur wanted to attack China and use Nationalist forces, while Truman wanted to hold the war to Korea. Background from the books: Truman removed him in April 1951 because a wider war risked a clash with China and the Soviet Union.",
+  "C": "Congress never declared war on China or on anyone else in Korea. The war was fought under United Nations authority without a declaration of war.",
+  "D": "American forces stayed in Korea for two more years of fighting, until the 1953 armistice. Removing one general did not end the war.",
+  "general": "1. Background from the books: MacArthur wanted to widen the war by striking China, while Truman wanted to keep it inside Korea.\n2. A general who will not follow the president's limits on a war is a challenge to civilian control of the military.\n3. Truman removed him to keep the war limited, showing that in Korea the political limits mattered more than the general's plan.\nRemember: In a limited war, the limits are the policy; a commander who rejects them has to go."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2464",
+   "file": "u8/pr25e-ch12-q06.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Marines_in_the_Korean_War_001.jpg",
+   "license": "Public domain (U.S. Marine Corps photograph, PD-USGov-Military-Marines)",
+   "caption": "United States Marines resting in deep snow beside a jeep during the Korean War.",
+   "alt": "A black-and-white photograph of United States Marines in heavy winter clothing covered in snow, resting beside a jeep on a snowy roadside during the Korean War."
+  }
+ ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "apush-mcq-2800",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.14"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "3.B",
+    "6.B"
+  ],
+  "themes": [
+    "GEO",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.14 Society in Transition"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "The Election of 1980"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "U.S. Census Bureau, Historical Apportionment Data, 1960, 1970, and 1980 censuses"
+    ]
+  },
+  "source": "original; stimulus table compiled from U.S. Census Bureau apportionment data",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from U.S. Census Bureau apportionment data for the 1960, 1970, and 1980 censuses. Account drawn from the grounding books (Barron's Ch. 10, Topic 8.14; 5 Steps Ch. 28; Princeton Ch. 12).",
+    "text": "House of Representatives seats after each census (U.S. Census Bureau):\n\n| State or region | 1960 | 1970 | 1980 |\n| South (total) | 106 | 108 | 116 |\n| California | 38 | 43 | 45 |\n| Florida | 12 | 15 | 19 |\n| Texas | 23 | 24 | 27 |\n| New York | 41 | 39 | 34 |\n| Pennsylvania | 27 | 25 | 23 |"
+  },
+  "stimulus_set": "sunbelt-seats-1970-1980",
+  "stem": "The shift in the table most directly changed American politics by doing which of the following?",
+  "options": [
+    {
+      "key": "A",
+      "text": "It gave the Northeast more seats in the Senate, where each state has two.",
+      "misconception": "Every state has two senators no matter its population, so the Senate did not change this way."
+    },
+    {
+      "key": "B",
+      "text": "It moved House seats and Electoral College votes toward the more conservative Sunbelt."
+    },
+    {
+      "key": "C",
+      "text": "It ended all elections in the South and closed the state legislatures there.",
+      "misconception": "Elections continued in the South, and the table shows the South gaining seats, not losing elections."
+    },
+    {
+      "key": "D",
+      "text": "It made the House of Representatives smaller by cutting its total number of seats.",
+      "misconception": "Background: The House stayed at 435 seats; the table shows seats moving between states, not vanishing."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "Background: Every state has two senators no matter its population, so a population shift does not change the Senate this way.",
+    "B": "Background: House seats and Electoral College votes follow population, so the Sunbelt's gains gave its often more conservative voters more weight in Washington.",
+    "C": "Elections continued in the South, and the table shows the South gaining seats, not losing elections.",
+    "D": "Background: The House stayed at 435 seats; the table shows seats moving between states, not vanishing.",
+    "general": "1. Background: The House has 435 seats, so one state's gain is another state's loss.\n2. The table shows those seats moving from the Northeast and Midwest to the South and West.\n3. Background: Electoral College votes follow House seats, so the Sunbelt's often more conservative voters gained weight.\nRemember: Apportionment moves power, so follow the seats to see who gains a voice."
+  }
+}

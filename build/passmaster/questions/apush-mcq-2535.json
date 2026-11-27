@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-2535",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.4"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Poverty Amid Affluence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Great Society"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ]
+ },
+ "source": "original; stimulus is a public-domain photograph viewed before writing (see figures)",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph: President Lyndon B. Johnson signing the Medicare bill, July 30, 1965, Independence, Missouri. Former President Harry Truman sits beside him. Public domain (U.S. government photograph), via Wikimedia Commons.",
+  "text": "The photograph shows President Lyndon B. Johnson signing a bill at a desk, with Harry Truman seated beside him and Lady Bird Johnson standing behind him. Microphones stand on the desk, and American flags stand behind the group."
+ },
+ "stimulus_set": "medicare-great-society-1965",
+ "stem": "The bill Johnson is signing in the photograph created which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Medicare, health insurance for Americans over 65"
+  },
+  {
+   "key": "B",
+   "text": "Social Security retirement payments for workers",
+   "misconception": "Background from the books: Social Security dates to 1935; the 1965 bill created Medicare, health insurance for older Americans."
+  },
+  {
+   "key": "C",
+   "text": "The Interstate Highway System",
+   "misconception": "Background from the books: the highway act passed in 1956 under Eisenhower; the 1965 bill was Medicare."
+  },
+  {
+   "key": "D",
+   "text": "The Peace Corps for volunteers abroad",
+   "misconception": "Background from the books: the Peace Corps began under Kennedy in 1961; the 1965 bill was Medicare."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background from the books: the bill Johnson signed on July 30, 1965 created Medicare, health insurance for Americans over 65.",
+  "B": "Background from the books: Social Security dates to 1935; the 1965 bill created Medicare, not Social Security.",
+  "C": "Background from the books: the highway act passed in 1956 under Eisenhower; the 1965 bill was Medicare.",
+  "D": "Background from the books: the Peace Corps began under Kennedy in 1961; the 1965 bill was Medicare.",
+  "general": "1. The source note names the bill: Medicare, signed July 30, 1965, with Truman seated beside Johnson.\n2. Background from the books: Medicare gave health insurance to Americans over 65 as part of Johnson's Great Society.\n3. Social Security, the highways, and the Peace Corps belong to other years and other laws entirely.\nRemember: A signing photo's source note names the law, so start there."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2535",
+   "file": "u8/pr25e-test1-q52.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Lyndon_Johnson_signing_Medicare_bill%2C_with_Harry_Truman%2C_July_30%2C_1965.jpg",
+   "license": "Public domain (U.S. government photograph)",
+   "caption": "President Johnson signing the Medicare bill, July 30, 1965",
+   "alt": "President Lyndon Johnson signs the Medicare bill at a desk while former President Harry Truman sits beside him and Lady Bird Johnson stands behind him"
+  }
+ ]
+}

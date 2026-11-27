@@ -1,0 +1,191 @@
+{
+  "id": "apush-dbq-0100",
+  "type": "dbq",
+  "unit": 8,
+  "topics": [
+    "8.14"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "6.A",
+    "6.B"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.14 Society in Transition"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Decline of Public Trust in the 1970s"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Christian Fundamentalism and the Religious Right"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Clashing Political Values"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Clashes over Equal Rights"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "The Carter Administration"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "The Election of 1980"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "U.S. Bureau of Labor Statistics, annual average unemployment rates and CPI changes, 1970-1980",
+      "Roe v. Wade, 410 U.S. 113 (1973) (paraphrased)",
+      "Phyllis Schlafly, STOP ERA campaign (paraphrased)",
+      "Photograph by David E. Lucas, 'I Love America' rally, Ohio Statehouse, September 17, 1979",
+      "U.S. Census Bureau, Historical Apportionment Data, 1960-1980",
+      "Jimmy Carter, televised address, July 15, 1979 (paraphrased)",
+      "Furman v. Georgia, 1972, and Gregg v. Georgia, 1976 (paraphrased)"
+    ]
+  },
+  "source": "original; documents are paraphrases of public sources (see each document's sourcing note); the tables are from the U.S. Bureau of Labor Statistics and the U.S. Census Bureau; the photograph is public domain",
+  "stimulus": {
+    "kind": "none",
+    "source_note": "DBQ: documents below are the stimulus."
+  },
+  "stimulus_set": null,
+  "prompt": "Evaluate the extent to which the 1970s transformed American politics and society.",
+  "documents": [
+    {
+      "n": 1,
+      "kind": "table",
+      "date": "1970-1980",
+      "title": "Prices and jobs in the 1970s",
+      "source": "Table: inflation and unemployment, annual averages, U.S. Bureau of Labor Statistics.",
+      "sourcing": "The table gives yearly averages, so it shows the trend across the decade rather than the figures for any single month.",
+      "text": "Inflation (change in consumer prices) and unemployment, annual averages (U.S. Bureau of Labor Statistics): 1970, inflation 5.7 percent, unemployment 4.9 percent; 1974, inflation 11.0 percent, unemployment 5.6 percent; 1975, inflation 9.1 percent, unemployment 8.5 percent; 1979, inflation 11.3 percent, unemployment 5.8 percent; 1980, inflation 13.5 percent, unemployment 7.1 percent."
+    },
+    {
+      "n": 2,
+      "kind": "text",
+      "date": "January 22, 1973",
+      "title": "The Court decides Roe",
+      "source": "Paraphrase of Roe v. Wade, 410 U.S. 113 (1973).",
+      "sourcing": "The Court spoke as the final interpreter of the Constitution, so its ruling set the law for every state at once.",
+      "text": "Paraphrase of Roe v. Wade, decided January 22, 1973. The Supreme Court held that the Constitution protects a woman's right to choose an abortion, striking down abortion bans in many states at once. The decision rested on a right to privacy the Court had found in Griswold v. Connecticut in 1965."
+    },
+    {
+      "n": 3,
+      "kind": "text",
+      "date": "1972-1977",
+      "title": "Stop taking our privileges",
+      "source": "Paraphrase of Phyllis Schlafly's STOP ERA campaign against the Equal Rights Amendment, 1972-1977.",
+      "sourcing": "Schlafly wrote as the leader of a campaign against the amendment, so her words argue a case rather than describing both sides.",
+      "text": "Paraphrase of Phyllis Schlafly's STOP ERA campaign against the Equal Rights Amendment. Schlafly, a conservative lawyer and activist from Illinois, argued that the amendment would harm women and the family: it could lead to women being drafted into military combat, to the loss of protections for women in divorce, and to the end of the traditional family. Her campaign organized housewives and church groups in the states that had not yet ratified."
+    },
+    {
+      "n": 4,
+      "kind": "image",
+      "date": "September 17, 1979",
+      "title": "An 'I Love America' rally",
+      "source": "Photograph: Reverend Jerry Falwell speaking at an 'I Love America' rally, Ohio Statehouse, Columbus, Ohio, September 17, 1979, by David E. Lucas, public domain (Columbus Metropolitan Library, via DPLA).",
+      "sourcing": "The photograph was taken at a public rally on capitol steps, so it shows the movement presenting religion and patriotism together in public.",
+      "figure": "u8/falwell-i-love-america-1979.jpg"
+    },
+    {
+      "n": 5,
+      "kind": "table",
+      "date": "1960-1980",
+      "title": "Seats move south and west",
+      "source": "Table: House of Representatives seats after each census, U.S. Census Bureau.",
+      "sourcing": "The table counts seats after each census, so it shows where population moved over twenty years.",
+      "text": "House of Representatives seats after each census (U.S. Census Bureau): South, 106 in 1960, 108 in 1970, 116 in 1980; California, 38, 43, 45; Florida, 12, 15, 19; Texas, 23, 24, 27; New York, 41, 39, 34; Pennsylvania, 27, 25, 23."
+    },
+    {
+      "n": 6,
+      "kind": "text",
+      "date": "July 15, 1979",
+      "title": "A crisis of confidence",
+      "source": "Paraphrase of President Jimmy Carter's televised address on energy, July 15, 1979.",
+      "sourcing": "Carter spoke to the nation on television after days of seclusion at Camp David, so his address is a presidential appeal to the public, not a policy paper.",
+      "text": "Paraphrase of President Jimmy Carter's televised address, July 15, 1979. Carter told Americans the country faced a 'crisis of confidence' that went deeper than the energy shortage. He set a goal of 20 percent of the nation's energy from solar power by the year 2000 and called every act of conservation an act of patriotism."
+    },
+    {
+      "n": 7,
+      "kind": "text",
+      "date": "1972 and 1976",
+      "title": "The Court changes its mind",
+      "source": "Paraphrase of Furman v. Georgia, 1972, and Gregg v. Georgia, 1976.",
+      "sourcing": "The two decisions come from the same Court four years apart, so together they show the Court reconsidering its own ruling.",
+      "text": "Paraphrase of Furman v. Georgia, 1972, and Gregg v. Georgia, 1976. In Furman, the Supreme Court held that the death penalty as then used was unconstitutional, and executions halted across the country. In Gregg, the Court held that the death penalty could be used again under new state laws with guided procedures, and executions resumed."
+    }
+  ],
+  "rubric": [
+    {
+      "points": 1,
+      "skill": "6.A",
+      "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which the 1970s transformed American politics and society, with a clear line of reasoning.",
+      "notEarned": "Restating the prompt with no claim about the extent of the change does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "4.B",
+      "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the postwar boom and the liberalism of the 1960s, the Vietnam War and Watergate, or the rights movements of the 1960s.",
+      "notEarned": "A sentence of background with no link to the argument does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "6.B",
+      "criterion": "Evidence (first point): earns the point for describing specific examples from at least three documents that support the argument.",
+      "notEarned": "Quoting documents without describing what they show does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "6.B",
+      "criterion": "Evidence (second point): earns the point for using the content of at least six documents to support the argument.",
+      "notEarned": "Using fewer than six documents, or listing documents without using their content, does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "6.B",
+      "criterion": "Evidence (outside evidence): earns the point for describing at least one specific piece of evidence beyond the documents that supports the argument.",
+      "notEarned": "Repeating a document's content as outside evidence does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "3.B",
+      "criterion": "Sourcing: earns the point for explaining how the point of view, purpose, historical situation, or audience of at least one document shapes what it says.",
+      "notEarned": "Naming a document's author without explaining how that shapes the document does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "6.B",
+      "criterion": "Complexity: earns the point for showing a complex understanding, such as explaining both the change and its limits, or qualifying the argument with evidence that cuts the other way.",
+      "notEarned": "A one-sided argument with no qualification or counter-evidence does not earn the point."
+    }
+  ],
+  "totalPoints": 7,
+  "modelOutline": "Thesis: The 1970s transformed American politics deeply, turning the country from the liberal confidence of the 1960s toward a conservatism of limits, but the change stayed partial, since liberal laws and institutions survived.\nGrouping: Documents 1 and 6 show the decade's hardship (stagflation, Carter's call for sacrifice); Documents 2-4 show the decision that provoked the conservative answer and the answer itself (Roe, STOP ERA, Falwell's rally); Documents 5 and 7 show power shifting (Sunbelt seats, the Court's reversal on the death penalty).\nBackground: The economy that had boomed after the war stalled, with inflation at 11.0 percent in 1974 and 11.3 percent in 1979 and unemployment at 8.5 percent in 1975.\nBackground: The New Right that answered it grew from the fight over Roe and the ERA, which ended three states short, and through evangelical rallies such as Falwell's in 1979.\nBackground: The South gained 10 House seats between 1960 and 1980, and the Court that halted executions in Furman in 1972 allowed them again in Gregg in 1976.\nBackground: The same decade that elected Reagan in 1980 also kept the EPA, the Clean Air Act, and Roe v. Wade in place, so the change remade politics without erasing what came before."
+}

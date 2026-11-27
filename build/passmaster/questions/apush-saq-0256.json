@@ -1,0 +1,101 @@
+{
+  "id": "apush-saq-0256",
+  "type": "saq",
+  "unit": 8,
+  "topics": [
+    "8.10"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A",
+    "1.B"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.10 The African-American Civil Rights Movement (1960s)"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Civil Rights Movement in the 1960s: From Integration to Black Power"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Selma to Montgomery March (1965)"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Voting Rights Act (1965)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus paraphrases Johnson's March 15, 1965 address to Congress (Public Papers of the Presidents); quotations are from that address",
+  "saq_slot": 2,
+  "totalPoints": 3,
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Paraphrase of President Lyndon Johnson, address to a joint session of Congress, March 15, 1965; quotations are from the Public Papers of the Presidents.",
+    "text": "Paraphrase of President Lyndon Johnson's address to a joint session of Congress, March 15, 1965. Johnson said that what happened in Selma was part of a larger movement for freedom, and that at certain times history and fate meet to shape a turning point in the search for freedom. He said it had been so at Lexington and Concord, and so it was last week in Selma, Alabama. Johnson said, \"There is no Negro problem. There is no Southern problem. There is no Northern problem. There is only an American problem.\" He promised to send Congress a voting rights bill, and he closed by saying, \"We shall overcome.\""
+  },
+  "stimulus_set": null,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify one claim Johnson makes in the passage about the voting rights struggle.",
+      "modelAnswer": "Johnson claims that the voting rights struggle is not a Negro problem, a Southern problem, or a Northern problem, but only an American problem. He presents Selma as a turning point in the whole nation's search for freedom.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for identifying one claim from the passage, such as the struggle being an American problem rather than a regional or racial one, or Selma being a turning point in the search for freedom.",
+          "notEarned": "Naming Johnson without a claim from the passage does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain one reason Johnson spoke out for voting rights in March 1965.",
+      "modelAnswer": "Johnson spoke eight days after Bloody Sunday, when television had shown police attacking marchers on the Edmund Pettus Bridge in Selma. The televised violence and the pressure of the Selma campaign made voting rights a national issue the president could not ignore.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for explaining one reason Johnson spoke out, such as the televised violence of Bloody Sunday, pressure from the Selma campaign and the movement, or Johnson's own commitment to civil rights legislation.",
+          "notEarned": "Restating that Johnson gave a speech, without a reason he spoke, does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Explain one action Johnson took to carry out the view expressed in the passage.",
+      "modelAnswer": "Johnson sent Congress a voting rights bill, which became the Voting Rights Act of 1965. The act outlawed literacy tests and sent federal examiners to register voters where few Black citizens were registered.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for explaining one action Johnson took, such as sending the voting rights bill to Congress, signing the Voting Rights Act of 1965, or using federal examiners to register voters.",
+          "notEarned": "Naming a different law, such as the Civil Rights Act of 1964, without linking it to voting rights does not earn the point."
+        }
+      ]
+    }
+  ]
+}

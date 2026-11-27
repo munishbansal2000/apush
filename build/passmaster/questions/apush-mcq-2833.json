@@ -1,0 +1,86 @@
+{
+  "id": "apush-mcq-2833",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.15"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "6.C",
+    "3.B"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.6 Early Steps in the Civil Rights Movement (1940s and 1950s)"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.10 The African American Civil Rights Movement (1960s)"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 26",
+        "section": "Prosperity and Anxiety: The 1950s"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "America in an Era of Turmoil (1960-1975)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ]
+  },
+  "source": "original; stimulus summaries of Executive Order 9981, the Civil Rights Act of 1964, and Bakke",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Summaries of Executive Order 9981 (1948), the Civil Rights Act of 1964, and Regents of the University of California v. Bakke (1978), as covered in the grounding books (Barron's Ch. 10; 5 Steps Chs. 26-27; Princeton Ch. 12).",
+    "text": "Three federal actions on civil rights:\n\n1948: President Truman orders the armed forces desegregated by executive order.\n\n1964: Congress passes the Civil Rights Act, banning segregation in public places and discrimination in jobs.\n\n1978: In Regents of the University of California v. Bakke, the Supreme Court allows race to count as one factor in college admissions but bars racial quotas."
+  },
+  "stimulus_set": "rights-means-1948-1978",
+  "stem": "Which of the following best describes the arc of federal civil rights action from 1948 to 1978?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Rights expanded steadily with no limits ever set by anyone at any point in time.",
+      "misconception": "The 1978 decision bars racial quotas, so a limit was set."
+    },
+    {
+      "key": "B",
+      "text": "Rights expanded through federal action, then the Court began to set limits on race-based remedies."
+    },
+    {
+      "key": "C",
+      "text": "The federal government steadily gave up its role in civil rights over these years.",
+      "misconception": "The list shows the federal government acting in 1948, 1964, and 1978, not giving up."
+    },
+    {
+      "key": "D",
+      "text": "Nothing at all changed in civil rights between the years 1948 and 1978.",
+      "misconception": "The list moves from desegregating the armed forces to a national civil rights law to a Court limit."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The 1978 decision bars racial quotas, so a limit was set.",
+    "B": "The list runs from a presidential order to a civil rights law and ends with a Court decision that allows race as a factor but bars quotas.",
+    "C": "The list shows the federal government acting in 1948, 1964, and 1978, not giving up.",
+    "D": "The list moves from desegregating the armed forces to a national civil rights law to a Court limit.",
+    "general": "1. Read the list as a story in three parts: an order, a law, and a Court decision.\n2. The first two parts open doors: desegregated service and a ban on segregation in public places and jobs.\n3. The third part draws a line: race may count as one factor, but quotas are barred.\n4. An arc with an opening and then a limit is expansion followed by restraint, not steady growth or steady retreat.\nRemember: An arc needs a beginning, a middle, and an end; read all three before judging the shape."
+  }
+}

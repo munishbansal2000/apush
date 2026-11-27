@@ -1,0 +1,79 @@
+{
+  "id": "apush-mcq-2797",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.14"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "3.B",
+    "6.B"
+  ],
+  "themes": [
+    "WXT",
+    "GEO"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.14 Society in Transition"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "The Presidency of Richard Nixon"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "U.S. Bureau of Labor Statistics, Current Employment Statistics, annual averages, 1970 and 1980"
+    ]
+  },
+  "source": "original; stimulus table compiled from U.S. Bureau of Labor Statistics annual averages",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from U.S. Bureau of Labor Statistics, Current Employment Statistics, annual averages for 1970 and 1980. Account drawn from the grounding books (Barron's Ch. 10, Topic 8.14; 5 Steps Ch. 28; Princeton Ch. 12).",
+    "text": "Jobs by sector (U.S. Bureau of Labor Statistics, Current Employment Statistics, annual averages):\n\n| Year | Total nonfarm jobs | Manufacturing jobs | Manufacturing share of all jobs | Service-providing share of all jobs |\n| 1970 | 70.9 million | 17.8 million | 25% | 69% |\n| 1980 | 90.7 million | 18.7 million | 21% | 73% |"
+  },
+  "stimulus_set": "manufacturing-service-shift-1970-1980",
+  "stem": "A historian studying deindustrialization would most likely use this table to argue which of the following?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The 1970s destroyed American manufacturing completely, leaving no factory jobs anywhere in the country.",
+      "misconception": "The table shows 18.7 million manufacturing jobs in 1980, more than in 1970."
+    },
+    {
+      "key": "B",
+      "text": "The service economy grew because factories hired more workers than ever before in the decade.",
+      "misconception": "The table shows factory jobs growing by under 1 million while total jobs grew by about 20 million."
+    },
+    {
+      "key": "C",
+      "text": "Total employment fell through the 1970s as jobs vanished in factories, shops, and offices alike.",
+      "misconception": "The table shows total jobs rising from 70.9 million to 90.7 million."
+    },
+    {
+      "key": "D",
+      "text": "Manufacturing kept about the same jobs while the economy added about 20 million elsewhere."
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "The table shows 18.7 million manufacturing jobs in 1980, more than in 1970, so manufacturing was not destroyed.",
+    "B": "Factory jobs grew by under 1 million while total jobs grew by about 20 million, so services did not grow from factory hiring.",
+    "C": "The table shows total jobs rising from 70.9 million to 90.7 million, not falling.",
+    "D": "Factory jobs barely grew while the economy added about 20 million jobs, so the factory share fell from 25 percent to 21 percent.",
+    "general": "1. Do not read the table as a story of factories vanishing: factory jobs rose slightly, from 17.8 million to 18.7 million.\n2. The whole economy grew much faster, adding about 20 million jobs, mostly outside factories.\n3. So manufacturing kept its jobs but lost weight, which is what deindustrialization looked like in the 1970s.\nRemember: A falling share with a steady count still means decline in importance."
+  }
+}

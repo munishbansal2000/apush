@@ -372,6 +372,64 @@ own CPI sentence) -> PASS, L3 PASS + 4 closest-call fixes -> PASS,
 L4 FAIL 1 -> PASS, L5 FAIL 5 -> PASS. One bank fix in the read: SAQ
 0229 model answer "within two months" -> "in August 1944".
 
+### Unit 8 per-topic quotas (set 2026-11-26; closed 2026-11-27)
+
+Period 8, 1945-1980. 475 questions: 415 MCQ + 33 SAQ + 16 DBQ + 11 LEQ.
+Test pool 76 MCQ + 3 SAQ + 1 DBQ + 1 LEQ = 81.
+
+| Topic | Title | MCQ | SAQ | DBQ | LEQ | Total |
+|---|---|---:|---:|---:|---:|---:|
+| 8.1 | Contextualizing Period 8 | 16 | 2 | 0 | 0 | 18 |
+| 8.2 | The Cold War from 1945 to 1980 | 34 | 3 | 2 | 1 | 40 |
+| 8.3 | The Red Scare | 26 | 2 | 1 | 1 | 30 |
+| 8.4 | Economy after 1945 | 32 | 2 | 1 | 1 | 36 |
+| 8.5 | Culture after 1945 | 24 | 2 | 1 | 0 | 27 |
+| 8.6 | Early Steps in the Civil Rights Movement (1940s and 1950s) | 28 | 2 | 1 | 1 | 32 |
+| 8.7 | America as a World Power | 30 | 2 | 1 | 1 | 34 |
+| 8.8 | The Vietnam War | 34 | 3 | 2 | 1 | 40 |
+| 8.9 | The Great Society | 30 | 2 | 1 | 1 | 34 |
+| 8.10 | The African American Civil Rights Movement (1960s) | 34 | 3 | 2 | 1 | 40 |
+| 8.11 | The Civil Rights Movement Expands | 30 | 2 | 1 | 1 | 34 |
+| 8.12 | Youth Culture of the 1960s | 22 | 2 | 1 | 0 | 25 |
+| 8.13 | The Environment and Natural Resources from 1968 to 1980 | 24 | 2 | 1 | 1 | 28 |
+| 8.14 | Society in Transition | 30 | 2 | 1 | 1 | 34 |
+| 8.15 | Continuity and Change in Period 8 | 21 | 2 | 0 | 0 | 23 |
+| **Total** | | **415** | **33** | **16** | **11** | **475** |
+
+### Unit 8 — LANDED (closed 2026-11-27; push 12)
+
+Question counts landed exactly on quota in every topic. MCQ difficulty
+lands easy 87 / medium 158 / hard 170 vs target 83/145/187 (hard short
+17); fresh 81/156/170, the 8 Exam-01 MCQs add 6 easy / 2 medium / 0 hard.
+Per-topic lands: 8.1: 3/6/7, 8.2: 7/14/13, 8.3: 5/18/3, 8.4: 6/11/15,
+8.5: 5/8/11, 8.6: 8/9/11, 8.7: 6/11/13, 8.8: 9/12/13, 8.9: 6/12/12,
+8.10: 7/12/15, 8.11: 6/11/13, 8.12: 4/8/10, 8.13: 5/8/11, 8.14: 6/11/13,
+8.15: 4/7/10. Keys A108/B107/C98/D102.
+Test pool: 76 MCQ / 3 SAQ (0237, 0251, 0257) / 1 DBQ (0092) / 1 LEQ
+(0085). Exam 01 holds 8 test MCQs (2843-2846 in 8.6, 2847-2850 in 8.8).
+Lessons as proposed: L1 8.1+8.2+8.3 (88), L2 8.4+8.5+8.6 (95),
+L3 8.7+8.8+8.9 (108), L4 8.10+8.11+8.12 (99), L5 8.13+8.14+8.15 (85).
+Blind-read record: L1 FAIL 1 -> PASS, L2 FAIL 8 -> PASS, L3 FAIL 3 ->
+PASS, L4 FAIL 4 -> PASS, L5 FAIL 6 -> PASS. 0 wrong keys in any round.
+Bank fixes in the lessons phase (both re-verified PASS): HUD creator
+error in MCQ 2672-2675 (the Housing and Urban Development Act of 1965
+did not create HUD — P.L. 89-174, Sept 9, 1965, did; unconfirmed "$3
+billion" figure removed); EPA creator error in MCQ 2773/2776, SAQ 0262c,
+LEQ 0087 ("Congress created the EPA" — Nixon created it by
+Reorganization Plan No. 3). Parent fix at merge: DOE wording in MCQ
+2543 (stem, rationale D, general step 2), LEQ 0087 outline, and lesson
+u8-l5 ("President Carter created the Department of Energy" — Congress
+created it by statute, P.L. 95-91, Carter signed; re-checked 2/2 PASS).
+Coverage notes (logged, not defects): Furman/Gregg has no MCQ (DBQ doc
++ LEQ only); deindustrialization aggregate-only, no Youngstown case
+study; no Ken Kesey; 8.15 has no image-kind stimulus; L1's 8.1 narrative
+is foreign-policy-only (GI Bill/baby boom/suburbs are stimulus-carried);
+L4 narrative never mentions ERA, Asian American activism, ethnic
+studies, or reparations (LEQ/DBQ outside evidence and stimulus-driven
+items only). The BLUEPRINT-u8 FLAG about the exam questions' lesson
+fields is stale — 2843-2850 already carry the governing grouping
+(apush-u8-l2 for 8.6, apush-u8-l3 for 8.8) on disk.
+
 ### Unit 9 per-topic quotas (this tranche, set 2026-11-26; closed 2026-11-26)
 
 Unit 9: Period 9, 1980-present, exam weight 4-6%. No DBQs — the DBQ

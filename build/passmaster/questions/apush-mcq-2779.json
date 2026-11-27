@@ -1,0 +1,84 @@
+{
+  "id": "apush-mcq-2779",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.13"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "3.B",
+    "4.A"
+  ],
+  "themes": [
+    "PCE",
+    "GEO"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.13 The environment and natural resources from 1968 to 1980"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Environmental Movement"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "The Presidency of Richard Nixon"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "EPA, 'The Birth of EPA' and EPA History 1970-1985 (dates)"
+    ]
+  },
+  "source": "original; stimulus is a table of federal environmental actions",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from EPA histories: NEPA signed January 1, 1970; EPA opened December 2, 1970; Clean Air Act signed December 1970; Clean Water Act enacted October 18, 1972; Endangered Species Act enacted December 28, 1973; DDT uses cancelled in 1972. Dates verified against EPA, 'The Birth of EPA,' EPA History 1970-1985, and the Duke Nicholas School environmental timeline. Account drawn from the grounding books (Barron's Ch. 10, Topic 8.13; 5 Steps Ch. 28; Princeton Ch. 12).",
+    "text": "Major federal environmental actions, 1970-1973:\n\n| Action | Date | What it did |\n| National Environmental Policy Act (NEPA) | January 1, 1970 | Required federal agencies to assess the environmental effects of their projects |\n| Environmental Protection Agency (EPA) | December 2, 1970 | New federal agency to enforce environmental laws |\n| Clean Air Act | 1970 | Set national standards for air quality and auto emissions |\n| Clean Water Act | October 18, 1972 | Set federal limits on pollutants discharged into waters |\n| Endangered Species Act | December 28, 1973 | Protected species at risk of extinction and their habitats |\n| DDT ban | December 31, 1972 | EPA ended nearly all uses of the pesticide DDT |"
+  },
+  "stimulus_set": "epa-environmental-laws-1970-1973",
+  "stem": "Which statement best explains why the Endangered Species Act was a major expansion of federal power?",
+  "options": [
+    {
+      "key": "A",
+      "text": "It gave the states full control over wildlife.",
+      "misconception": "The table says the act protected species and habitats, a federal job, not a gift of control to the states."
+    },
+    {
+      "key": "B",
+      "text": "It ended all hunting and fishing in the United States.",
+      "misconception": "Background: The act protected listed species; it did not end all hunting and fishing."
+    },
+    {
+      "key": "C",
+      "text": "It applied only to animals in zoos.",
+      "misconception": "The table says the act protected species and their habitats, not only zoo animals."
+    },
+    {
+      "key": "D",
+      "text": "It let Washington protect a species even when that limited building."
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "The table says the act protected species and habitats, a federal job, not a gift of control to the states.",
+    "B": "Background: The act protected listed species; it did not end all hunting and fishing.",
+    "C": "The table says the act protected species and their habitats, not only zoo animals.",
+    "D": "Background: Protecting a species and its habitat meant Washington could block dams, roads, and other projects, which put federal power ahead of local development.",
+    "general": "1. The table says the act protected species at risk of extinction and their habitats.\n2. Background: Habitat is land, so protecting it meant the federal government could limit what was built on that land.\n3. Background: That power to stop a project for a single species was new, and it is why the act was a major expansion of federal power.\nRemember: Follow the power: ask who can now say no, and to what."
+  }
+}

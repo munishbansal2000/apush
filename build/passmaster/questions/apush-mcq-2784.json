@@ -1,0 +1,89 @@
+{
+  "id": "apush-mcq-2784",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.13"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "1.B"
+  ],
+  "themes": [
+    "PCE",
+    "GEO"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.13 The environment and natural resources from 1968 to 1980"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "Jimmy Carter"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "National Archives contact sheet, White House solar panel installation, April 19, 1979",
+      "Jimmy Carter, televised energy address, July 15, 1979 (paraphrased)"
+    ]
+  },
+  "source": "original; stimulus photograph viewed before writing",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Photograph: single frame cropped from a National Archives contact sheet of workers installing White House solar panels, April 19, 1979 (Carter Library, photographer Fitz-Patrick), public domain, via DPLA/Wikimedia Commons. Solar dedication verified against the Lafayette College solar policy archive and the White House Historical Association account: 32 panels dedicated June 20, 1979, heating water for the West Wing. July 15, 1979 address verified against the American Presidency Project text: Carter called the crisis a 'crisis of confidence' and set the 20 percent solar goal for 2000. Account drawn from the grounding books (5 Steps Ch. 28; Princeton Ch. 12).",
+    "text": "The photograph shows workers installing solar panels on a White House roof in April 1979. Two workers in hard hats carry a large, flat panel across the roof, with a white government building behind them.\n\nPresident Jimmy Carter made energy a central project of his presidency. Congress created the Department of Energy in 1977 to coordinate energy policy. In June 1979 Carter dedicated 32 solar panels on the White House roof, which heated water for the building. On July 15, 1979, in a televised address, he called the energy crisis a 'crisis of confidence' and set a goal of getting 20 percent of the nation's energy from solar power by the year 2000."
+  },
+  "stimulus_set": "carter-energy-solar-1979",
+  "stem": "What does the photograph show about Carter's energy policy?",
+  "options": [
+    {
+      "key": "A",
+      "text": "He banned all use of solar power.",
+      "misconception": "The photograph shows workers installing solar panels, the opposite of banning them."
+    },
+    {
+      "key": "B",
+      "text": "He promoted solar energy as an answer to the crisis."
+    },
+    {
+      "key": "C",
+      "text": "He ordered the White House torn down.",
+      "misconception": "The photograph shows a panel being carried on a roof, not a building being torn down."
+    },
+    {
+      "key": "D",
+      "text": "He sold the White House to an oil company.",
+      "misconception": "The photograph shows no sale; it shows solar panels being installed on the White House roof."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The photograph shows workers installing solar panels, the opposite of banning them.",
+    "B": "The photograph shows solar panels going onto the White House roof, and the text says Carter set a goal of 20 percent solar energy by 2000.",
+    "C": "The photograph shows a panel being carried on a roof, not a building being torn down.",
+    "D": "The photograph shows no sale; it shows solar panels being installed on the White House roof.",
+    "general": "1. The photograph shows workers carrying a large solar panel across a White House roof.\n2. Background: Carter put the panels there in 1979 to show that the sun could heat the nation's most famous house.\n3. Background: The text adds his goal: 20 percent of the nation's energy from solar power by 2000.\nRemember: A president's example is part of the policy, not just a photo opportunity."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-2784",
+      "file": "u8/carter-solar-install-1979.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Solar_panels_-_DPLA_-_01a53fcc23630a073869e632bdc3c67d.jpg",
+      "license": "Public domain (U.S. National Archives photograph, Carter Library)",
+      "caption": "Workers carry a solar panel across a White House roof, April 19, 1979",
+      "alt": "Two workers in hard hats carry a large flat solar panel across a roof terrace, with a white government building behind them"
+    }
+  ]
+}

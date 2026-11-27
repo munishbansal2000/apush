@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-2731",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.11"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "1.B",
+    "2.C"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Title IX (1972)"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Expansion of Rights Movements"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "table",
+    "source_note": "Table: National Federation of State High School Associations (NFHS) High School Athletics Participation Survey, as reported by the NFHS. Figures verified against NFHS reporting: 294,015 girls in 1971-72; more than 2 million girls by 1977-78; total participation about 3.9 million in 1971-72 and about 6.4 million in 1977-78. Title IX date verified: signed June 23, 1972.",
+    "text": "Girls playing high school sports, National Federation of State High School Associations survey.\n\nSchool year | Girls playing high school sports\n1971-72 | 294,015\n1977-78 | More than 2,000,000\n\nAll high school athletes, boys and girls together: about 3.9 million in 1971-72; about 6.4 million in 1977-78.\n\nTitle IX of the Education Amendments of 1972 banned sex discrimination in any education program receiving federal money."
+  },
+  "stimulus_set": "title-ix-sports-table",
+  "stem": "According to the table, what happened to girls' participation in high school sports between 1971-72 and 1977-78?",
+  "options": [
+    {
+      "key": "A",
+      "text": "It fell by about half",
+      "misconception": "The table shows girls' participation rising from 294,015 to more than 2,000,000, not falling."
+    },
+    {
+      "key": "B",
+      "text": "It rose from about 294,000 to more than 2,000,000"
+    },
+    {
+      "key": "C",
+      "text": "It stayed about the same",
+      "misconception": "The table shows a rise from 294,015 to more than 2,000,000, not a flat line."
+    },
+    {
+      "key": "D",
+      "text": "It passed boys' participation for the first time",
+      "misconception": "The table gives girls' numbers and a total for all athletes, but it does not give boys' numbers for 1977-78."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The table shows girls' participation rising from 294,015 to more than 2,000,000.",
+    "B": "The table gives 294,015 girls in 1971-72 and more than 2,000,000 girls in 1977-78.",
+    "C": "The table shows a large rise, not a flat line.",
+    "D": "The table does not give boys' numbers for 1977-78, so it cannot show girls passing boys.",
+    "general": "1. The table gives 294,015 girls playing high school sports in 1971-72.\n2. By 1977-78, the number was more than 2,000,000.\n3. That is a rise of more than six times in six school years.\n4. Total participation also rose, from about 3.9 million to about 6.4 million athletes.\nRemember: Read a table by comparing the same row across years before you draw a conclusion."
+  }
+}

@@ -1,0 +1,84 @@
+{
+ "id": "apush-mcq-2623",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.8"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.8 The Vietnam War"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Background to American Involvement in Vietnam"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Vietnam War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "American Involvement in Vietnam, World War II\u20131963"
+   }
+  ],
+  "primary_sources": [
+   "Geneva Accords, 1954 (public record)"
+  ]
+ },
+ "source": "original; stimulus paraphrased from the grounding books' account of Dien Bien Phu and the Geneva Accords",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of the background to American involvement in Vietnam, from the grounding books. The source events are public record.",
+  "text": "Paraphrase of the background to American involvement in Vietnam. France had ruled Indochina since the mid-nineteenth century. After World War II, France tried to retake its colony, but Vietnamese forces led by Ho Chi Minh resisted. In 1954 French forces were defeated at Dien Bien Phu, and France withdrew. An agreement at Geneva divided Vietnam at the 17th parallel: a Communist North led by Ho Chi Minh, and a Western-allied South. Elections to reunite the country were planned for 1956."
+ },
+ "stimulus_set": "dien-bien-phu-1954",
+ "stem": "The elections planned for 1956 were never held, and the division of Vietnam lasted for twenty years. Which of the following best explains why the division lasted?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Both North and South Vietnam agreed that the division should be permanent",
+   "misconception": "Background: the North never accepted the division as permanent; it kept working to reunite Vietnam under its rule."
+  },
+  {
+   "key": "B",
+   "text": "France returned to Indochina and blocked any vote on reunification",
+   "misconception": "Background: France withdrew after 1954 and did not return to block the vote; the block came from Saigon and Washington."
+  },
+  {
+   "key": "C",
+   "text": "The Geneva agreement had forbidden any future vote on reunification",
+   "misconception": "The Geneva agreement planned elections for 1956; it did not forbid them."
+  },
+  {
+   "key": "D",
+   "text": "The South's government, backed by the United States, refused elections it would lose"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "The passage says elections were planned to reunite the country, so the North never agreed to a permanent division.",
+  "B": "The passage says France withdrew in 1954; it was not France that blocked the vote.",
+  "C": "The passage says elections were planned for 1956, so the agreement called for a vote rather than forbidding one.",
+  "D": "Background: the South's leader, Ngo Dinh Diem, refused the 1956 elections with American backing, because Ho Chi Minh was expected to win.",
+  "general": "1. The passage says the Geneva agreement planned elections for 1956 to reunite Vietnam.\n2. The stem says those elections were never held, so someone stopped them.\n3. Background: the South's government, led by Ngo Dinh Diem, refused to hold them, with American backing.\n4. Background: Diem and Washington feared Ho Chi Minh would win a nationwide vote.\n5. The division therefore lasted because the side that feared losing would not risk the vote.\nRemember: A planned vote that never happens usually tells you who feared the result."
+ }
+}

@@ -1,0 +1,85 @@
+{
+  "id": "apush-mcq-2827",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.15"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "6.B",
+    "3.B"
+  ],
+  "themes": [
+    "PCE"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.4 Economy after 1945"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.9 The Great Society"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 26",
+        "section": "Prosperity and Anxiety: The 1950s"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "America in an Era of Turmoil (1960-1975)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ]
+  },
+  "source": "original; stimulus table compiled from the Office of Management and Budget, Historical Tables, Table 1.3",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from the Office of Management and Budget, Historical Tables, Table 1.3, and the Census Bureau, Statistical Abstract, Table 539.",
+    "text": "Federal spending, 1950-1980 (Office of Management and Budget, Historical Tables, Table 1.3; defense shares from the Census Bureau, Statistical Abstract, Table 539, using Office of Management and Budget figures):\n\n| Fiscal year | Federal outlays as a percentage of gross domestic product (GDP) | Defense as a share of all federal outlays |\n| 1950 | 15.6% | 32% |\n| 1960 | 17.8% | 52% |\n| 1970 | 19.3% | 42% |\n| 1980 | 21.7% | 23% |"
+  },
+  "stimulus_set": "federal-outlays-1950-1980",
+  "stem": "Taken together, the table best supports which conclusion about the federal government from 1950 to 1980?",
+  "options": [
+    {
+      "key": "A",
+      "text": "It grew because defense spending took a larger share of the budget every decade.",
+      "misconception": "The defense share falls after 1960, from 52 percent to 23 percent."
+    },
+    {
+      "key": "B",
+      "text": "Its size and its main job both stayed the same across all thirty years.",
+      "misconception": "Both columns change at every step, so neither size nor mix stayed the same."
+    },
+    {
+      "key": "C",
+      "text": "It grew smaller overall while spending more and more money on defense each year.",
+      "misconception": "The first column rises and the defense share falls, the opposite of this claim."
+    },
+    {
+      "key": "D",
+      "text": "It kept growing, but what it spent most on shifted from defense toward domestic programs."
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "The defense share falls after 1960, from 52 percent to 23 percent.",
+    "B": "Both columns change at every step, so neither size nor mix stayed the same.",
+    "C": "The first column rises and the defense share falls, the opposite of this claim.",
+    "D": "The first column rises at every step while the defense share falls from 52 percent in 1960 to 23 percent in 1980.",
+    "general": "1. Compare the first column's start and end: 15.6 percent in 1950, 21.7 percent in 1980, rising at every step.\n2. Compare the second column's peak and end: 52 percent in 1960, 23 percent in 1980.\n3. A bigger total with a smaller defense share means domestic spending filled the difference.\n4. Background: The shift matches the growth of Social Security, Medicare, and other domestic programs in the 1960s and 1970s.\nRemember: A table's story is in how its columns move together, not in one row alone."
+  }
+}

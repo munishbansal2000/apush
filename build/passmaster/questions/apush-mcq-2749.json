@@ -1,0 +1,89 @@
+{
+  "id": "apush-mcq-2749",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.12"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "3.B"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.12 Youth Culture of the 1960s"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Expansion of Rights Movements"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The New Left, Feminism, and the Counterculture"
+      }
+    ],
+    "primary_sources": [
+      "Mario Savio, ‘Bodies Upon the Gears’ speech, December 2, 1964 (paraphrased)"
+    ]
+  },
+  "source": "original; stimulus is a licensed photograph viewed before writing (see figures) with an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "mixed",
+    "source_note": "Photograph: Mario Savio on the steps of Sproul Hall, UC Berkeley, 1966, CC BY-SA 3.0, via Wikimedia Commons. Account drawn from the grounding books and verified against University of California and AP accounts of the Free Speech Movement.",
+    "text": "The photograph shows Mario Savio speaking at a rally on the steps of Sproul Hall at the University of California, Berkeley, in 1966, holding papers as a crowd with signs gathers behind him.\n\nParaphrase of an account of the Free Speech Movement. In the fall of 1964, the University of California at Berkeley banned political activity on campus, including tables, leaflets, and fundraising for off-campus causes. Students who had worked in the civil rights movement in the South set up tables anyway.\n\nOn October 1, 1964, campus police arrested a student staffing a table, and a crowd surrounded the police car for 32 hours. On December 2, 1964, Mario Savio told a rally that the university worked like a machine, and that when its workings became unbearable, students had to block them with their own bodies to bring it to a halt. About 1,500 students then occupied Sproul Hall, and nearly 800 were arrested."
+  },
+  "stimulus_set": "free-speech-berkeley-1964",
+  "stem": "According to the passage, what started the Free Speech Movement at Berkeley?",
+  "options": [
+    {
+      "key": "A",
+      "text": "A rise in tuition for California students",
+      "misconception": "The passage never mentions tuition. The fight was over political activity."
+    },
+    {
+      "key": "B",
+      "text": "A ban on fraternities and sororities",
+      "misconception": "The passage never mentions Greek life. The ban covered political activity."
+    },
+    {
+      "key": "C",
+      "text": "A faculty strike over low pay",
+      "misconception": "The passage never mentions a faculty strike. The fight was over political activity."
+    },
+    {
+      "key": "D",
+      "text": "A ban on political activity on campus"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "Background: Tuition was not the issue. The passage says the university banned political activity on campus.",
+    "B": "The passage says nothing about fraternities or sororities. The ban covered political tables, leaflets, and fundraising.",
+    "C": "Background: No faculty strike is mentioned. The passage says the university banned political activity on campus.",
+    "D": "The passage says the university banned political activity on campus, including tables, leaflets, and fundraising for off-campus causes.",
+    "general": "1. Look for the cause: the university banned political activity on campus.\n2. The ban covered tables, leaflets, and fundraising for off-campus causes.\n3. Students answered by setting up tables for off-campus causes anyway.\n4. The arrest at one of those tables set off the police-car standoff.\nRemember: A movement’s spark is the rule it defies, not the crowd it draws."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-2749",
+      "file": "u8/mario-savio-sproul-1966.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:MarioSavio.JPG",
+      "license": "CC BY-SA 3.0",
+      "caption": "Mario Savio speaking at a rally on the steps of Sproul Hall, UC Berkeley, 1966",
+      "alt": "Mario Savio standing on the steps of Sproul Hall holding papers, with a crowd and protest signs behind him"
+    }
+  ]
+}

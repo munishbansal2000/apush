@@ -1,0 +1,86 @@
+{
+  "answerKey": "D",
+  "difficulty": 3,
+  "figures": [
+    {
+      "alt": "1955 photograph of Black and white schoolgirls standing together in a classroom at the Barnard School in Washington, D.C.",
+      "caption": "Thomas J. O’Halloran, school integration, Barnard School, Washington, D.C., May 27, 1955. Black and white schoolgirls stand together in a classroom.",
+      "file": "pt01/fig5-barnard-school-1955.jpg",
+      "id": "fig-apush-mcq-2844",
+      "license": "No known restrictions on publication",
+      "source_url": "https://www.loc.gov/pictures/item/2003654384/"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.6 Early Steps in the Civil Rights Movement (1940s and 1950s)"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 26",
+        "section": "Prosperity and Anxiety: The 1950s"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-2844",
+  "lesson": "apush-u8-l2",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Brown was issued because the Voting Rights Act passed.",
+      "text": "The passage of the Voting Rights Act in 1965"
+    },
+    {
+      "key": "B",
+      "misconception": "Brown was issued because an anti-civil-rights president was elected.",
+      "text": "The election of a president who opposed all civil rights legislation"
+    },
+    {
+      "key": "C",
+      "misconception": "Brown was issued because segregation had already ended.",
+      "text": "The end of all segregation in Southern states before the case was decided"
+    },
+    {
+      "key": "D",
+      "text": "The Cold War context and growing pressure to address racial inequality in American democracy"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "The Voting Rights Act came in 1965, after Brown.",
+    "B": "No president who opposed all civil rights legislation was elected before Brown.",
+    "C": "Segregation persisted in Southern states; it had not ended.",
+    "D": "Background: the Cold War made American segregation a global liability, and domestic pressure made the Court's action more urgent in 1954.",
+    "general": "1. Ask why 1954. The decision came when it did, not decades earlier.\n2. Name the pressures. Background: the Cold War made segregation a global liability, and domestic pressure was rising.\n3. Test the later or false causes. The Voting Rights Act came in 1965, no such president was elected, and segregation persisted.\n4. Match the timing. Cold War pressure plus domestic pressure explain 1954.\nRemember: to explain a date, look for the pressures that were building at that date."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "4.B"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from Brown v. Board of Education (1954) with the O’Halloran 1955 Barnard School photograph",
+  "status": "final",
+  "stem": "Which of the following most directly helps explain why the *Brown* decision was issued in 1954?",
+  "stimulus": {
+    "kind": "mixed",
+    "source_note": "Brown v. Board of Education, 1954, unanimous opinion by Chief Justice Earl Warren, public domain. Photograph: Thomas J. O’Halloran, 1955, Library of Congress.",
+    "text": "“Segregation of white and colored children in public schools has a detrimental effect upon the colored children. The impact is greater when it has the sanction of the law . . . Separate educational facilities are inherently unequal.”"
+  },
+  "stimulus_set": "brown-v-board-1954",
+  "themes": [
+    "PCE",
+    "WOR"
+  ],
+  "topics": [
+    "8.6"
+  ],
+  "type": "mcq",
+  "unit": 8
+}

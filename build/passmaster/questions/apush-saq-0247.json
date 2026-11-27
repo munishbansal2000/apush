@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0247",
+ "type": "saq",
+ "unit": 8,
+ "topics": [
+  "8.6"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.6 Early Steps in the Civil Rights Movement (1940s and 1950s)"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 26",
+    "section": "Prosperity and Anxiety: The 1950s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ],
+  "primary_sources": [
+   "President Harry S. Truman, address to the NAACP, Lincoln Memorial, June 29, 1947 (paraphrased)"
+  ]
+ },
+ "source": "original; stimulus paraphrased from President Truman's address to the NAACP, June 29, 1947",
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of President Harry S. Truman's address to the National Association for the Advancement of Colored People at the Lincoln Memorial, June 29, 1947.",
+  "text": "Paraphrase of President Harry S. Truman's address to the NAACP at the Lincoln Memorial, June 29, 1947. Truman said that the United States could not claim to lead the free world while denying rights to its own citizens at home. He said the federal government had a duty to protect the civil rights of all Americans, and that the nation must act to secure those rights rather than wait."
+ },
+ "stimulus_set": null,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one claim Truman makes in the passage about the United States and civil rights.",
+   "modelAnswer": "Truman claims that the United States cannot lead the free world while denying rights to its own citizens. He says the federal government has a duty to protect the civil rights of all Americans.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one claim from the passage, such as the United States cannot lead the free world while denying rights at home, or the federal government has a duty to protect civil rights.",
+     "notEarned": "Naming a claim Truman does not make in the passage, such as a promise to end the Cold War, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one reason Truman spoke out on civil rights in 1947.",
+   "modelAnswer": "Truman spoke out because the Cold War made American racism a weakness abroad, since the Soviet Union pointed to segregation as proof that American democracy was false. Speaking for civil rights let Truman answer that charge and defend American leadership.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason, such as Cold War pressure and the need for credibility abroad, the findings of his Committee on Civil Rights, or pressure from Black voters and civil rights groups.",
+     "notEarned": "Restating Truman's claim without explaining why he spoke out in 1947 does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one action Truman took to carry out the view expressed in the passage.",
+   "modelAnswer": "Truman issued Executive Order 9981 on July 26, 1948, ordering equality of treatment and opportunity in the armed forces. He acted by executive order after Congress refused to pass the civil rights laws his committee had recommended.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one action, such as Executive Order 9981 desegregating the armed forces, Executive Order 9980 on fair employment in the federal workforce, or his February 1948 civil rights message to Congress.",
+     "notEarned": "Naming an action by another president, or naming Truman's speech itself as the action, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2498",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.3"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.3 The Red Scare"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "The Second Red Scare"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "McCarthyism"
+   }
+  ],
+  "primary_sources": [
+   "Whittaker Chambers, testimony before the House Committee on Un-American Activities, 1948"
+  ]
+ },
+ "source": "original; stimulus paraphrased from Whittaker Chambers's testimony before HUAC, 1948",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Whittaker Chambers's testimony before the House Committee on Un-American Activities, 1948. Paraphrased, not quoted, because the source is after 1929.",
+  "text": "In 1948, Whittaker Chambers, a former communist and an editor at Time magazine, told the House Committee on Un-American Activities that Alger Hiss, a former State Department official, had been a communist and had passed secret documents to the Soviet Union in the 1930s. Hiss denied the charges. Chambers produced copies of documents he said Hiss had given him, and a young congressman, Richard Nixon, pursued the case. Hiss was later convicted of perjury."
+ },
+ "stimulus_set": "hiss-chambers-1948",
+ "stem": "The Hiss case fueled the Red Scare mainly because it",
+ "options": [
+  {
+   "key": "A",
+   "text": "Proved that McCarthy's list of 205 names was accurate.",
+   "misconception": "McCarthy's list was never verified, and the Hiss case concerned one man. A single case cannot prove a list of 205 names."
+  },
+  {
+   "key": "B",
+   "text": "Ended the federal loyalty program within a year.",
+   "misconception": "Background from the books: the loyalty program continued through the early 1950s. The Hiss case strengthened the hunt for communists rather than ending it."
+  },
+  {
+   "key": "C",
+   "text": "Suggested that Soviet spies worked inside the State Department."
+  },
+  {
+   "key": "D",
+   "text": "Showed that the Rosenbergs were innocent of espionage.",
+   "misconception": "Background from the books: the Rosenbergs were a separate case tried in 1951. The Hiss case said nothing about their guilt or innocence."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Background from the books: McCarthy's list was never verified, and the Hiss case concerned one man. A single case cannot prove a list of 205 names.",
+  "B": "Background from the books: the loyalty program continued through the early 1950s. The Hiss case strengthened the hunt for communists rather than ending it.",
+  "C": "Hiss was a respected former State Department official accused of passing secrets to Moscow. If a man at that level could be a spy, the public reasoned, spies could be anywhere.",
+  "D": "Background from the books: the Rosenbergs were a separate case tried in 1951. The Hiss case said nothing about their guilt or innocence.",
+  "general": "1. Hiss was a respected former State Department official, not a marginal figure.\n2. Chambers charged that Hiss had passed secret documents to the Soviet Union.\n3. If a man at that level could be a spy, the public reasoned, spies could be anywhere in the government.\nRemember: One case at the top can make a whole institution look suspect."
+ }
+}

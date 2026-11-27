@@ -1,0 +1,96 @@
+{
+  "id": "apush-saq-0258",
+  "type": "saq",
+  "unit": 8,
+  "topics": [
+    "8.11"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "1.B",
+    "3.A"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The American Indian Movement"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Political Activism in the Latino Community"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Expansion of Rights Movements"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is an original secondary passage written for this question, facts from the grounding books",
+  "saq_slot": 1,
+  "totalPoints": 3,
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Original secondary passage written for this question; facts from the grounding books.",
+    "text": "The successes of the Black civil rights movement of the 1960s inspired other Americans to press their own claims. In California, farmworkers led by Cesar Chavez used strikes and a nationwide boycott of grapes to win union contracts in 1970.\n\nOn Alcatraz Island, Native activists occupied a closed federal prison from 1969 to 1971, demanding that the government honor its treaties. Women organized the National Organization for Women in 1966 and pressed the government to enforce the ban on sex discrimination in jobs. Each group borrowed tactics from the civil rights movement, such as marches, boycotts, and direct action, and each aimed them at a different injustice."
+  },
+  "stimulus_set": null,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify one group described in the passage that pressed its own claims after the Black civil rights movement.",
+      "modelAnswer": "The passage describes farmworkers led by Cesar Chavez, who used strikes and a grape boycott to win union contracts in 1970. They are one group that pressed its own claims after the Black civil rights movement.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for identifying one group from the passage, such as the farmworkers led by Cesar Chavez, the Native activists on Alcatraz Island, or the women who organized the National Organization for Women.",
+          "notEarned": "Naming a group without showing it from the passage does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain one reason the farmworkers' grape boycott helped win union contracts in 1970.",
+      "modelAnswer": "The boycott worked because shoppers across the country stopped buying California table grapes, which cost the growers sales they could not afford to lose. Background: The strikers alone could not shut down the harvest, but the boycott gave them allies among consumers, and the growers signed contracts in July 1970.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for explaining one reason the boycott helped, such as shoppers refusing to buy grapes costing growers sales, the boycott spreading the dispute beyond the fields, or public support pressuring growers to settle.",
+          "notEarned": "Restating that the boycott happened, without a reason it helped win contracts, does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Explain one way the Native activists' goals on Alcatraz differed from the goals of the Black civil rights movement of the early 1960s.",
+      "modelAnswer": "The Native activists demanded that the government honor its treaties with Indian peoples, which was a claim about tribal sovereignty and past promises. Background: They also claimed the return of land taken from them. Background: The early Black civil rights movement instead sought integration into American life and an end to segregation in public places and voting.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Background: Earns the point for explaining one difference in goals, such as Native activists seeking treaty rights and tribal self-government while the early Black movement sought integration and an end to segregation, or Native activists claiming land while the early Black movement claimed access to public places and the vote.",
+          "notEarned": "Saying only that the groups were different, without a difference in goals, does not earn the point."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-2460",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.2"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "3.C"
+ ],
+ "themes": [
+  "WOR",
+  "WXT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.2 The Cold War from 1945 to 1980"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Origins of the Cold War (1945-1960)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Truman and the Beginning of the Cold War (1945-1953)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Aid figures: U.S. Department of State, Office of the Historian, Marshall Plan figures (approximate). Table compiled for this question from those figures.",
+  "text": "The table shows the distribution of Marshall Plan aid to Western Europe, 1948-1952, in billions of dollars (approximate).\n\n| Country | Aid received (billions of dollars) |\n| United Kingdom | 3.3 |\n| France | 2.7 |\n| Italy | 1.5 |\n| West Germany | 1.4 |\n| Netherlands | 1.1 |\n| All other recipients | 3.3 |\n| Total | about 13 |"
+ },
+ "stimulus_set": "marshall-plan-aid",
+ "source": "original; stimulus table compiled from U.S. Department of State, Office of the Historian, Marshall Plan figures (approximate)",
+ "stem": "The Soviet Union's response to the Marshall Plan most directly showed which limit of American policy?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The plan failed because Congress refused to fund the European rebuilding program.",
+   "misconception": "The table itself proves the funding happened; the money reached Europe."
+  },
+  {
+   "key": "B",
+   "text": "Moscow barred Eastern Europe from the aid and built a rival bloc instead."
+  },
+  {
+   "key": "C",
+   "text": "Western Europeans rejected the Marshall Plan aid as American imperialism.",
+   "misconception": "The aid was taken, not rejected; the table records billions received."
+  },
+  {
+   "key": "D",
+   "text": "The plan ended the Cold War between East and West by 1950.",
+   "misconception": "The Cold War continued long past 1950, so the plan did not end it."
+  }
+ ],
+ "rationales": {
+  "A": "Congress funded the plan, and the table shows about $13 billion actually delivered. A refused program could not have paid out those sums.",
+  "B": "The Soviet Union forbade Poland and Czechoslovakia to take part and answered with its own aid program for the East. Background from the books: the result was two rival economic blocs, which hardened the division of Europe.",
+  "C": "Western Europeans accepted the aid eagerly, and the table shows large sums flowing to Britain, France, and Italy. Rejection would have left the table empty.",
+  "D": "The Cold War ran for decades after 1950, through Korea, the missile crisis, and Afghanistan. One aid program did not end it.",
+  "general": "1. The table shows aid flowing only to the West, with no Eastern European country listed among the recipients.\n2. Background from the books: That gap is not an accident: Moscow barred its satellites from taking part and built a rival Eastern bloc instead.\n3. So the plan's success in the West came with a limit: it deepened the very division of Europe it was meant to heal.\nRemember: A policy can succeed on its own side and still fail to cross the line it was drawn against."
+ }
+}

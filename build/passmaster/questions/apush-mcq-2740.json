@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-2740",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.11"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "3.C",
+    "4.B"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.11 The Civil Rights Movement Expands"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "Nixon's Southern Strategy"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Original secondary account drawn from the grounding books and verified against the National Park Service and Yale Balkin timeline accounts of the decision: the medical school set aside 16 of 100 places; the Court decided June 28, 1978, striking down the quota while allowing race as one factor in admissions.",
+    "text": "Allan Bakke, a white man, applied twice to the medical school of the University of California at Davis and was rejected both times. The school had set aside 16 of its 100 places each year for minority applicants. Bakke sued, saying the set-aside denied him equal protection under the Fourteenth Amendment.\n\nOn June 28, 1978, the Supreme Court ruled in Regents of the University of California v. Bakke that the school could not use a fixed quota, but that race could be one factor among others in admissions decisions."
+  },
+  "stimulus_set": "bakke-affirmative-action",
+  "stem": "Affirmative action programs in hiring and education in the late 1960s and 1970s were most directly intended to do which of the following?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Punish white applicants for past discrimination",
+      "misconception": "Background: Affirmative action was designed to open jobs and schools to groups shut out in the past, not to punish white applicants."
+    },
+    {
+      "key": "B",
+      "text": "Give minority applicants an advantage that would last forever",
+      "misconception": "Background: The programs were presented as a remedy for past exclusion, not as a permanent advantage."
+    },
+    {
+      "key": "C",
+      "text": "End segregation in the South by busing students across districts",
+      "misconception": "Busing was a school desegregation remedy, not an affirmative action program in hiring and admissions."
+    },
+    {
+      "key": "D",
+      "text": "Open jobs and schools to groups shut out by past discrimination"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "Background: Affirmative action was designed to open jobs and schools to groups shut out in the past, not to punish white applicants.",
+    "B": "Background: The programs were presented as a remedy for past exclusion, not as a permanent advantage.",
+    "C": "Background: Busing was a school desegregation remedy, not an affirmative action program in hiring and admissions.",
+    "D": "Background from the books: The Nixon administration encouraged affirmative action in hiring and education, to bring Black and other minority workers and students into jobs and schools that had excluded them.",
+    "general": "1. The passage shows a medical school reserving places for minority applicants, which is an affirmative action program.\n2. Background: Such programs began because past discrimination had shut Black and other minority Americans out of jobs and schools.\n3. Background: The Nixon administration encouraged affirmative action in hiring and education for that reason.\n4. The programs were a remedy aimed at opening doors, which is why they were also controversial, as Bakke shows.\nRemember: Affirmative action was a response to exclusion, so its purpose was access, not punishment."
+  }
+}

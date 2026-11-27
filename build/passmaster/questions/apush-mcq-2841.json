@@ -1,0 +1,81 @@
+{
+  "id": "apush-mcq-2841",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.15"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A",
+    "3.B"
+  ],
+  "themes": [
+    "GEO",
+    "MIG"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.4 Economy after 1945"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.14 Society in Transition"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 26",
+        "section": "Prosperity and Anxiety: The 1950s"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ]
+  },
+  "source": "original; stimulus table compiled from the United States Census Bureau, decennial censuses 1950-1980",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from the United States Census Bureau, decennial censuses 1950-1980, and the Census Bureau's urban population series.",
+    "text": "Population of the United States (United States Census Bureau, decennial censuses; urban share from the Census Bureau):\n\n| Census | Population | Growth since last census | Living in urban areas |\n| 1950 | 151.3 million | 14.5% | 64.0% |\n| 1960 | 179.3 million | 18.5% | 69.9% |\n| 1970 | 203.2 million | 13.3% | 73.6% |\n| 1980 | 226.5 million | 11.5% | 73.7% |"
+  },
+  "stimulus_set": "population-urban-1950-1980",
+  "stem": "What does the table show about where Americans lived?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The urban share fell steadily from 1950 to 1980 without a break.",
+      "misconception": "The urban column rises from 64.0 percent in 1950 to 73.7 percent in 1980."
+    },
+    {
+      "key": "B",
+      "text": "The urban share rose sharply from 1950 to 1970, then almost stopped rising."
+    },
+    {
+      "key": "C",
+      "text": "Almost no Americans at all lived in urban areas by the year 1980.",
+      "misconception": "The urban column reads 73.7 percent in 1980, nearly three in four Americans."
+    },
+    {
+      "key": "D",
+      "text": "The urban share doubled between the years 1970 and 1980 alone.",
+      "misconception": "The urban column moves only from 73.6 percent to 73.7 percent between 1970 and 1980."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The urban column rises from 64.0 percent in 1950 to 73.7 percent in 1980.",
+    "B": "The urban share climbs from 64.0 percent to 73.6 percent by 1970, then moves only to 73.7 percent by 1980.",
+    "C": "The urban column reads 73.7 percent in 1980, nearly three in four Americans.",
+    "D": "The urban column moves only from 73.6 percent to 73.7 percent between 1970 and 1980.",
+    "general": "1. Read the urban column: 64.0, 69.9, 73.6, 73.7 percent.\n2. The jumps are large from 1950 to 1960 and from 1960 to 1970, then tiny from 1970 to 1980.\n3. A rise that slows to almost nothing is a change in pace, not a reversal.\n4. The population column kept growing, so the leveling off is about where people lived, not how many there were.\nRemember: A column can keep rising while its pace of rise falls to nearly zero."
+  }
+}

@@ -1,0 +1,84 @@
+{
+ "id": "apush-mcq-2630",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.8"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.8 The Vietnam War"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "The Escalation of the Vietnam War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Vietnam War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "American Involvement in Vietnam, World War II\u20131963"
+   }
+  ],
+  "primary_sources": [
+   "U.S. Department of Defense troop-strength figures for Vietnam"
+  ]
+ },
+ "source": "original; data table from U.S. Department of Defense troop-strength figures",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data table compiled from U.S. Department of Defense troop-strength figures for Vietnam.",
+  "text": "U.S. troops in Vietnam (rounded):\n\n| Date | U.S. troops |\n|---|---:|\n| End of 1965 | about 184,000 |\n| End of 1966 | about 385,000 |\n| End of 1968 | about 536,000 |\n| Peak, April 1969 | about 543,000 |\n\nThe United States never declared war on North Vietnam."
+ },
+ "stimulus_set": "tonkin-escalation",
+ "stem": "The pattern in the table, together with the fact that the United States never declared war, best supports which conclusion?",
+ "options": [
+  {
+   "key": "A",
+   "text": "A small advisory mission grew into a large war fought without a declaration"
+  },
+  {
+   "key": "B",
+   "text": "American troop levels in Vietnam fell steadily after the 1965 peak",
+   "misconception": "The table shows the numbers rising from 184,000 to 543,000, not falling."
+  },
+  {
+   "key": "C",
+   "text": "Congress declared war in 1965 and then limited the troop buildup",
+   "misconception": "The passage states that the United States never declared war, and the table shows a buildup, not a limit."
+  },
+  {
+   "key": "D",
+   "text": "The United States fought in Vietnam only with advisors and never sent combat troops",
+   "misconception": "Troop levels above 500,000 mean a large combat force, not advisors alone."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background: the force grew from about 184,000 to a peak of about 543,000, all without a declaration of war.",
+  "B": "The table shows the numbers rising from about 184,000 to about 543,000, the opposite of a steady fall.",
+  "C": "The passage states that the United States never declared war on North Vietnam.",
+  "D": "A force of more than 500,000 troops is a large combat army, not an advisory mission.",
+  "general": "1. Read the table across: about 184,000 troops at the end of 1965, about 536,000 by the end of 1968, peaking near 543,000.\n2. That is a rapid, massive buildup over four years.\n3. Background: the buildup followed the Gulf of Tonkin Resolution, which let the president use force without a declaration of war.\n4. The table plus that fact shows a large war waged on a resolution, not on a declaration.\nRemember: When numbers climb fast and no war was declared, ask what authorized the fighting."
+ }
+}

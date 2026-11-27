@@ -1,0 +1,86 @@
+{
+  "id": "apush-mcq-2835",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.15"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "3.A",
+    "5.A"
+  ],
+  "themes": [
+    "SOC",
+    "ARC"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.4 Economy after 1945"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.12 Youth Culture of the 1960s"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 26",
+        "section": "Prosperity and Anxiety: The 1950s"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "America in an Era of Turmoil (1960-1975)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ]
+  },
+  "source": "original; stimulus table compiled from the National Center for Education Statistics, Digest of Education Statistics, Table 303.10",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from the National Center for Education Statistics, Digest of Education Statistics, Table 303.10.",
+    "text": "Students enrolled in colleges and universities each fall (National Center for Education Statistics, Digest of Education Statistics, Table 303.10):\n\n| Fall | Total enrollment | Women as a share of students |\n| 1950 | 2.3 million | 31.6% |\n| 1959 | 3.6 million | 35.9% |\n| 1970 | 8.6 million | 41.2% |\n| 1980 | 12.1 million | 51.4% |"
+  },
+  "stimulus_set": "college-enrollment-1950-1980",
+  "stem": "Which of the following best explains the growth in enrollment shown in the table?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The baby boom alone, because it explains the whole surge in 1950.",
+      "misconception": "Background: The baby boom's children reached college age in the 1960s, so the boom cannot explain the 2.3 million students already enrolled in 1950."
+    },
+    {
+      "key": "B",
+      "text": "The military draft alone, because it forced young students into college classrooms.",
+      "misconception": "The table says nothing about the draft, so it cannot support a claim about the draft."
+    },
+    {
+      "key": "C",
+      "text": "The GI Bill alone, because it paid for every student who enrolled after 1944.",
+      "misconception": "Background: The GI Bill helped veterans, but the table keeps growing into the 1970s, long after most veterans had used it."
+    },
+    {
+      "key": "D",
+      "text": "Several forces together: the GI Bill, the baby boom, prosperity, and new federal aid."
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "Background: The baby boom's children reached college age in the 1960s, so the boom cannot explain the 2.3 million students already enrolled in 1950.",
+    "B": "The table says nothing about the draft, so it cannot support a claim about the draft.",
+    "C": "Background: The GI Bill helped veterans, but the table keeps growing into the 1970s, long after most veterans had used it.",
+    "D": "Background: Veterans used the GI Bill, baby boomers filled campuses in the 1960s, and federal aid programs widened access in the 1960s and 1970s.",
+    "general": "1. The growth runs from 1950 to 1980 without a break, so the cause must work across all thirty years.\n2. Background: The GI Bill lifted the late 1940s, the baby boom filled the 1960s, and federal aid widened access in the 1960s and 1970s.\n3. Background: No single cause covers the whole span: the GI Bill alone fades too early, and the boom alone starts too late.\n4. The table shows the size of the growth, not its causes, so the answer must combine the table with what you know.\nRemember: A change that runs for thirty years usually has more than one cause behind it."
+  }
+}

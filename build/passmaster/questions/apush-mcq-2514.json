@@ -1,0 +1,71 @@
+{
+ "id": "apush-mcq-2514",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.4"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "The G.I. Bill"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 26",
+    "section": "The Return of Prosperity"
+   }
+  ]
+ },
+ "source": "original; stimulus paraphrased from Barron's Premium 2027, Chapter 10, Topic 8.4, The G.I. Bill",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Barron's Premium 2027, Chapter 10, Topic 8.4, The G.I. Bill.",
+  "text": "The Servicemen's Readjustment Act of 1944, known as the GI Bill, offered returning veterans low-interest loans to buy homes and money to attend college. By the time the original bill expired in 1956, nearly eight million veterans had used its education benefits, out of sixteen million veterans in all. By 1955, the Veterans Administration had backed more than 4.3 million home loans. The benefits reached African American veterans unevenly: states set the rules for extending them, and in Mississippi in 1947 only two of 3,200 VA-backed home loans went to African American veterans."
+ },
+ "stimulus_set": "gi-bill-veterans-1944",
+ "stem": "The Mississippi figure in the passage, two of 3,200 home loans, best supports which conclusion?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The GI Bill failed because almost no veterans used it",
+   "misconception": "Background from the books: nearly eight million veterans used the bill's school aid, so the program was widely used."
+  },
+  {
+   "key": "B",
+   "text": "Federal benefits reached Black veterans unevenly because states set the rules"
+  },
+  {
+   "key": "C",
+   "text": "Mississippi veterans refused the loans the bill offered them",
+   "misconception": "Background from the books: the passage says states set high barriers, not that veterans refused the loans."
+  },
+  {
+   "key": "D",
+   "text": "The Veterans Administration banned Black veterans from the program",
+   "misconception": "Background from the books: the bill itself did not ban Black veterans; state rules and local practice blocked them."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Background from the books: nearly eight million veterans used the school aid, so the program was widely used, not a failure.",
+  "B": "The passage ties the uneven result to state control: states set the rules, and Mississippi's rules let almost no Black veterans through.",
+  "C": "Background from the books: the passage blames high barriers set by the state, not veterans turning loans down.",
+  "D": "Background from the books: the uneven result came from state rules and local practice, not from a VA ban on Black veterans.",
+  "general": "1. Read the number as evidence about how the program worked, not about how many veterans used it.\n2. Background from the books: the bill's sponsor made sure states, not the federal government, set the rules for extending benefits.\n3. Two loans out of 3,200 in one state therefore shows a federal benefit filtered through state rules reaching Black veterans unevenly.\nRemember: A national program can still produce unequal results when local rules control who gets it."
+ }
+}

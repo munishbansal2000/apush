@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0238",
+ "type": "saq",
+ "unit": 8,
+ "topics": [
+  "8.2"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "skills": [
+  "1.A",
+  "2.A"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.2 The Cold War from 1945 to 1980"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Origins of the Cold War (1945-1960)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Truman and the Beginning of the Cold War (1945-1953)"
+   }
+  ],
+  "primary_sources": [
+   "Harry S. Truman, address to a joint session of Congress, March 12, 1947"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of President Harry S. Truman, address to a joint session of Congress, March 12, 1947. Paraphrased, not quoted, because the source is after 1929.",
+  "text": "President Truman told Congress in March 1947 that Greece needed aid against a Communist-led rebellion and that Turkey needed support against Soviet pressure on the straits to the Mediterranean. He said the United States must support free peoples who were resisting attempted subjugation by armed minorities or by outside pressures, and he warned that the fall of Greece would spread disorder through the whole Middle East."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus paraphrased from President Truman's address to Congress, March 12, 1947; survivor 5s24-ch25-saq-01 rewritten against the books (two overseas efforts kept, domestic part reframed as a later consequence)",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one country Truman says the United States should aid, and the reason he gives.",
+   "modelAnswer": "Truman says the United States should aid Greece, which faced a Communist-led rebellion that threatened its government. He also names Turkey, which faced Soviet pressure for control of the straits to the Mediterranean.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying Greece or Turkey with the reason Truman gives, such as the rebellion in Greece or Soviet pressure on Turkey.",
+     "notEarned": "Naming a country without giving Truman's reason does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how the Truman Doctrine applied the policy of containment.",
+   "modelAnswer": "Containment meant holding the line against Communist expansion, and the Doctrine did that by sending aid to governments still free rather than attacking Communist states. Truman stated the rule behind the aid, that the United States would support free peoples resisting subjugation, which turned one request into a standing policy. Later aid and alliances followed the same rule wherever communism threatened to spread.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how the Doctrine applied containment, such as aiding free governments to hold the line instead of rolling back communism.",
+     "notEarned": "Restating Truman's words without explaining the link to containment does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one later American action that followed from the Truman Doctrine.",
+   "modelAnswer": "The Marshall Plan followed the Doctrine by rebuilding Western Europe's economies, so that prosperity would block Communist appeals to voters. NATO followed as well, binding the United States to Europe's defense in a peacetime alliance. The Korean War also followed, when American forces fought to restore the border after North Korea invaded the South.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one later action following from the Doctrine, such as the Marshall Plan, NATO, or the Korean War, with the link to the Doctrine stated.",
+     "notEarned": "Naming a later event without explaining how it followed from the Doctrine does not earn the point."
+    }
+   ]
+  }
+ ]
+}

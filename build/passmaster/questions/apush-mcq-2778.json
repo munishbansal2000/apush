@@ -1,0 +1,83 @@
+{
+  "id": "apush-mcq-2778",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.13"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A"
+  ],
+  "themes": [
+    "PCE",
+    "GEO"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.13 The environment and natural resources from 1968 to 1980"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Environmental Movement"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "The Presidency of Richard Nixon"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "EPA, 'The Birth of EPA' and EPA History 1970-1985 (dates)"
+    ]
+  },
+  "source": "original; stimulus is a table of federal environmental actions",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from EPA histories: NEPA signed January 1, 1970; EPA opened December 2, 1970; Clean Air Act signed December 1970; Clean Water Act enacted October 18, 1972; Endangered Species Act enacted December 28, 1973; DDT uses cancelled in 1972. Dates verified against EPA, 'The Birth of EPA,' EPA History 1970-1985, and the Duke Nicholas School environmental timeline. Account drawn from the grounding books (Barron's Ch. 10, Topic 8.13; 5 Steps Ch. 28; Princeton Ch. 12).",
+    "text": "Major federal environmental actions, 1970-1973:\n\n| Action | Date | What it did |\n| National Environmental Policy Act (NEPA) | January 1, 1970 | Required federal agencies to assess the environmental effects of their projects |\n| Environmental Protection Agency (EPA) | December 2, 1970 | New federal agency to enforce environmental laws |\n| Clean Air Act | 1970 | Set national standards for air quality and auto emissions |\n| Clean Water Act | October 18, 1972 | Set federal limits on pollutants discharged into waters |\n| Endangered Species Act | December 28, 1973 | Protected species at risk of extinction and their habitats |\n| DDT ban | December 31, 1972 | EPA ended nearly all uses of the pesticide DDT |"
+  },
+  "stimulus_set": "epa-environmental-laws-1970-1973",
+  "stem": "The Clean Air Act of 1970 differed from earlier air-pollution laws mainly by doing which of the following?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Setting national standards the federal government could enforce."
+    },
+    {
+      "key": "B",
+      "text": "Banning all factories in the United States.",
+      "misconception": "Background: The act set standards for factories; it did not ban them."
+    },
+    {
+      "key": "C",
+      "text": "Leaving air quality entirely to the states.",
+      "misconception": "The table says the act set national standards, the opposite of leaving the job to the states."
+    },
+    {
+      "key": "D",
+      "text": "Applying only to national parks.",
+      "misconception": "The table says the act set national standards for air quality and auto emissions, not only for parks."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "Background: The first Clean Air Act, in 1955, only studied air pollution; the 1970 act set national standards and gave the EPA power to enforce them.",
+    "B": "Background: The act set standards for factories; it did not ban them.",
+    "C": "The table says the act set national standards, the opposite of leaving the job to the states.",
+    "D": "The table says the act set national standards for air quality and auto emissions, not only for parks.",
+    "general": "1. The table says the 1970 act set national standards for air quality and auto emissions.\n2. Background: Earlier law only studied the problem; national standards meant Washington could now enforce clean air.\n3. Background: That shift from study to enforcement is what made the 1970 act a turning point.\nRemember: A law's importance often lies in the power it creates, not just the problem it names."
+  }
+}

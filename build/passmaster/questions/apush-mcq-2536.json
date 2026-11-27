@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-2536",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.4"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Poverty Amid Affluence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Great Society"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ]
+ },
+ "source": "original; stimulus is a public-domain photograph viewed before writing (see figures)",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph: President Lyndon B. Johnson signing the Medicare bill, July 30, 1965, Independence, Missouri. Former President Harry Truman sits beside him. Public domain (U.S. government photograph), via Wikimedia Commons.",
+  "text": "The photograph shows President Lyndon B. Johnson signing a bill at a desk, with Harry Truman seated beside him and Lady Bird Johnson standing behind him. Microphones stand on the desk, and American flags stand behind the group."
+ },
+ "stimulus_set": "medicare-great-society-1965",
+ "stem": "Why was Harry Truman, seated beside Johnson in the photograph, a fitting guest at the Medicare signing?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Truman had signed Medicare into law twenty years earlier",
+   "misconception": "Background from the books: Truman proposed national health insurance in the 1940s but never passed it; Johnson signed Medicare in 1965."
+  },
+  {
+   "key": "B",
+   "text": "Truman was Johnson's vice president in 1965",
+   "misconception": "Background from the books: Hubert Humphrey was Johnson's vice president; Truman had left office in 1953."
+  },
+  {
+   "key": "C",
+   "text": "Truman had opposed all federal health programs",
+   "misconception": "Background from the books: Truman called for national healthcare in his Fair Deal; he supported federal health programs, not opposed them."
+  },
+  {
+   "key": "D",
+   "text": "Truman first proposed national health insurance, and Johnson honored him"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Background from the books: Truman proposed national health insurance in the 1940s but never passed it; Johnson signed Medicare in 1965.",
+  "B": "Background from the books: Hubert Humphrey was Johnson's vice president; Truman had left office in 1953.",
+  "C": "Background from the books: Truman called for national healthcare in his Fair Deal; he supported federal health programs, not opposed them.",
+  "D": "Background from the books: Truman called for national healthcare in the Fair Deal, so Johnson signed Medicare with its first champion beside him.",
+  "general": "1. Ask what Truman had to do with health insurance in the years before 1965.\n2. Background from the books: Truman called for national healthcare in his Fair Deal program of 1948.\n3. Johnson's choice of guest therefore honors the man who first proposed the idea that Truman himself could not pass into law.\nRemember: A guest at a signing usually stands for the idea's history."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2536",
+   "file": "u8/pr25e-test1-q52.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Lyndon_Johnson_signing_Medicare_bill%2C_with_Harry_Truman%2C_July_30%2C_1965.jpg",
+   "license": "Public domain (U.S. government photograph)",
+   "caption": "President Johnson signing the Medicare bill, July 30, 1965",
+   "alt": "President Lyndon Johnson signs the Medicare bill at a desk while former President Harry Truman sits beside him and Lady Bird Johnson stands behind him"
+  }
+ ]
+}

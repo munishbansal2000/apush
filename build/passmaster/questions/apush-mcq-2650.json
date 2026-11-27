@@ -1,0 +1,84 @@
+{
+ "id": "apush-mcq-2650",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.8"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.8 The Vietnam War"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Publication of the Pentagon Papers"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Vietnam War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "American Involvement in Vietnam, World War II\u20131963"
+   }
+  ],
+  "primary_sources": [
+   "Pentagon Papers, leaked by Daniel Ellsberg, 1971 (public record)"
+  ]
+ },
+ "source": "original; stimulus paraphrased from the grounding books' account of the Pentagon Papers",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of the Pentagon Papers, 1971, from the grounding books.",
+  "text": "Paraphrase of the Pentagon Papers. In 1971, newspapers published the Pentagon Papers, a secret Defense Department study of American involvement in Vietnam. The study showed a pattern of official deception: leaders had told the public the war was going well while their own reports said otherwise. Daniel Ellsberg, a Pentagon official, had leaked the study to the press."
+ },
+ "stimulus_set": "war-powers-legacy",
+ "stem": "The Pentagon Papers most directly deepened public distrust of the government because they showed which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "That the war had been won in secret while the public heard it was lost",
+   "misconception": "The study showed the opposite: leaders said the war was going well while their own reports said otherwise."
+  },
+  {
+   "key": "B",
+   "text": "That leaders told the public the war was going well while their reports said otherwise"
+  },
+  {
+   "key": "C",
+   "text": "That the newspapers had invented the war to sell more copies to readers",
+   "misconception": "The war was real and the study was a government document; the newspapers published it, they did not invent it."
+  },
+  {
+   "key": "D",
+   "text": "That Daniel Ellsberg had written the study to support the war effort",
+   "misconception": "Ellsberg leaked the study because he opposed the war's direction; he did not write it to support the war."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "The study showed leaders saying the war was going well while their own reports said otherwise, the reverse of this option.",
+  "B": "The passage states the pattern directly: public claims that the war was going well against private reports saying otherwise.",
+  "C": "The study was a secret Defense Department document, and the war was real; the newspapers published the study, they did not invent the war.",
+  "D": "Ellsberg leaked the study to the press because he opposed the war's direction; he did not write it to support the war.",
+  "general": "1. The passage names the document: a secret Defense Department study of American involvement in Vietnam.\n2. It then names the pattern inside it: official deception about how the war was going.\n3. Background: leaders told the public the war was going well while their own reports said otherwise.\n4. A public that learns it was told one story while officials held another stops trusting the storytellers.\nRemember: A leak hurts trust when it shows two stories, one public and one private."
+ }
+}

@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2627",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.8"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "2.C"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.8 The Vietnam War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Vietnam War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "American Involvement in Vietnam, World War II\u20131963"
+   }
+  ],
+  "primary_sources": [
+   "South Vietnamese coup of November 1, 1963 (public record)"
+  ]
+ },
+ "source": "original; stimulus paraphrased from the grounding books' account of the 1963 crisis in South Vietnam",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of the 1963 crisis in South Vietnam, from the grounding books.",
+  "text": "Paraphrase of the 1963 crisis in South Vietnam. President Ngo Dinh Diem's government moved against Buddhists, who protested in the streets. Buddhist monks set themselves on fire in protest, and the images spread around the world. American officials doubted Diem could hold the country together. On November 1, 1963, South Vietnamese generals overthrew Diem, and he was killed. Three weeks later, President Kennedy was assassinated."
+ },
+ "stimulus_set": "domino-advisors-diem",
+ "stem": "The events of 1963 described in the passage best show which weakness in the American position in Vietnam?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The United States had no advisors or aid in South Vietnam at all",
+   "misconception": "Background: the United States had thousands of advisors and large aid programs in South Vietnam by 1963."
+  },
+  {
+   "key": "B",
+   "text": "The Vietcong had already been defeated by the end of 1963",
+   "misconception": "Background: the Vietcong insurgency was growing in 1963, not defeated; the war went on for another decade."
+  },
+  {
+   "key": "C",
+   "text": "South Vietnam's army had refused to accept any American training",
+   "misconception": "Background: American advisors were training the South Vietnamese army throughout this period."
+  },
+  {
+   "key": "D",
+   "text": "The United States defended a South Vietnamese government too weak to stand alone"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Background: by 1963 the United States had about 16,000 advisors in South Vietnam, so it was deeply present there.",
+  "B": "Background: the Vietcong insurgency was growing in 1963, and the war continued for another decade.",
+  "C": "Background: American advisors were training the South Vietnamese army, so the army had not refused training.",
+  "D": "Background: Diem's repression of Buddhists, the coup that killed him, and American doubts about his government all show a weak ally.",
+  "general": "1. The passage shows Diem's government turning on Buddhists and losing public support.\n2. Background: American officials doubted Diem could hold the country together.\n3. The generals then overthrew and killed him, so the government the United States defended changed hands by force.\n4. A defense that depends on a government this weak and unpopular rests on shaky ground.\nRemember: When an ally falls by coup, ask whether the ally could stand alone."
+ }
+}

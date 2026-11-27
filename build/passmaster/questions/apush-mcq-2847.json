@@ -1,0 +1,76 @@
+{
+  "answerKey": "B",
+  "difficulty": 2,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.8 The Vietnam War"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "America in an Era of Turmoil (1960–1975)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-2847",
+  "lesson": "apush-u8-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Johnson's position reflected détente with the Soviet Union.",
+      "text": "Détente with the Soviet Union"
+    },
+    {
+      "key": "B",
+      "text": "Containment of communism"
+    },
+    {
+      "key": "C",
+      "misconception": "Johnson's position reflected isolationism.",
+      "text": "Isolationism and withdrawal from all alliances"
+    },
+    {
+      "key": "D",
+      "misconception": "Johnson's position reflected the Good Neighbor Policy.",
+      "text": "The Good Neighbor Policy toward Latin America"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Détente with the Soviet Union was a later Nixon policy.",
+    "B": "Johnson framed Vietnam as containment, stopping the spread of communism in Southeast Asia. His choice was to defend South Vietnam rather than abandon it to a communist takeover.",
+    "C": "Isolationism and withdrawal are the opposite of Johnson's commitment.",
+    "D": "The Good Neighbor Policy was a Latin America policy, not Vietnam.",
+    "general": "1. Read Johnson's choice. Help South Vietnam, or abandon it.\n2. Name the policy. Containment: stopping the spread of communism.\n3. Test the others. Détente came later; isolationism is the opposite; the Good Neighbor Policy was Latin America.\n4. Match the framing. Helping an ally resist communism is containment in action.\nRemember: name the Cold War policy — containment, détente, or withdrawal."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "4.B"
+  ],
+  "source": "original; stimulus is a paraphrase of Lyndon B. Johnson’s addresses on Vietnam (1964–1965)",
+  "status": "final",
+  "stem": "Johnson’s position on Vietnam most directly reflected which of the following Cold War policies?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Lyndon B. Johnson, address on Vietnam, 1964–1965, paraphrased from presidential addresses.",
+    "text": "We can continue to help the people of South Vietnam to defend their freedom or we can abandon them. I have chosen to continue our commitment to the freedom of South Vietnam."
+  },
+  "stimulus_set": "johnson-vietnam-1964",
+  "themes": [
+    "WOR",
+    "PCE"
+  ],
+  "topics": [
+    "8.8"
+  ],
+  "type": "mcq",
+  "unit": 8
+}

@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-2619",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.7"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "5.B",
+  "6.B"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.7 America as a World Power"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Cold War (1945-1960)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ],
+  "primary_sources": [
+   "R. S. Norris and H. M. Kristensen, 'Global Nuclear Stockpiles, 1945-2002,' Bulletin of the Atomic Scientists (2002)"
+  ]
+ },
+ "source": "original; stimulus table from Norris and Kristensen, Bulletin of the Atomic Scientists (2002), via Our World in Data",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Warhead counts: R. S. Norris and H. M. Kristensen, 'Global Nuclear Stockpiles, 1945-2002,' Bulletin of the Atomic Scientists (2002), via Our World in Data. Figures are approximate.",
+  "text": "Nuclear warheads held, by year (approximate)\n\n| Year | United States | Soviet Union |\n| 1949 | 235 | 1 |\n| 1955 | 2,422 | 200 |\n| 1960 | 18,638 | 1,627 |\n| 1965 | 31,139 | 6,144 |"
+ },
+ "stimulus_set": "nuclear-arsenals-1949-1965",
+ "stem": "The growth shown in the table helps explain the policy of mutually assured destruction because",
+ "options": [
+  {
+   "key": "A",
+   "text": "nuclear weapons had become useless and neither side feared them",
+   "misconception": "Background from the books: both sides feared nuclear war deeply; the weapons were not seen as useless."
+  },
+  {
+   "key": "B",
+   "text": "neither side could attack without facing devastating retaliation"
+  },
+  {
+   "key": "C",
+   "text": "the United States gave up its arsenal and trusted the Soviet Union",
+   "misconception": "The table shows the American arsenal growing to 31,139 warheads by 1965, not being given up."
+  },
+  {
+   "key": "D",
+   "text": "the Soviet Union agreed to disarm completely in 1960",
+   "misconception": "The table shows the Soviet arsenal growing after 1960, to 6,144 warheads by 1965."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Background from the books: both sides feared nuclear war deeply; the weapons were not seen as useless.",
+  "B": "Background from the books: with thousands of warheads on each side, any attack would bring a devastating reply, so the threat of reply deterred the attack itself.",
+  "C": "The table shows the American arsenal growing to 31,139 warheads by 1965, not being given up.",
+  "D": "The table shows the Soviet arsenal growing after 1960, to 6,144 warheads by 1965.",
+  "general": "1. The table shows both arsenals growing into the thousands of warheads.\n2. A side that attacks would still face thousands of warheads in reply.\n3. Background from the books: that certainty of reply is what mutually assured destruction means.\n4. The policy therefore rests on the arsenals themselves, not on trust.\nRemember: deterrence works when the reply is certain, not when the enemy is trusted."
+ }
+}

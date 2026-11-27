@@ -1,0 +1,83 @@
+{
+  "id": "apush-mcq-2714",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.10"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "1.B",
+    "6.B"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.10 The African-American Civil Rights Movement (1960s)"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Civil Rights Movement in the 1960s: From Integration to Black Power"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Urban Rioting"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Account drawn from the grounding books (Barron's Ch. 10, Topic 8.10, \"Urban Rioting\" and \"The Assassination of King (1968)\"; 5 Steps Ch. 27; Princeton Ch. 12). The Watts death toll is 34, verified against the Stanford King Institute and Britannica (Barron's gives 35, which is wrong). The Detroit toll of 43 and the Kerner quotation are in Barron's; the Fair Housing Act date of April 11, 1968 is the statute's signing date.",
+    "text": "The civil rights laws of 1964 and 1965 ended legal segregation, but many Black Americans in Northern cities still lived with poverty, poor housing, and hostile policing. In August 1965 the Watts neighborhood of Los Angeles erupted after a young Black motorist, Marquette Frye, was arrested following a traffic stop. Six days of rioting left 34 people dead, more than 1,000 injured, and more than $40 million in property damage. In the summer of 1967 more than 150 race riots broke out across the country, including a deadly riot in Detroit that left 43 people dead. President Johnson appointed the Kerner Commission to investigate the causes of the rioting. Its report, issued in February 1968, blamed poverty and segregation and warned that America was moving toward \"two societies, one black, one white -- separate and unequal.\" On April 4, 1968, Martin Luther King Jr. was assassinated in Memphis, Tennessee. A week later, on April 11, 1968, Johnson signed the Fair Housing Act, banning discrimination in the sale and rental of housing."
+  },
+  "stimulus_set": "urban-riots-kerner-1968",
+  "stem": "The Kerner Commission's report most directly concluded which of the following?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The riots were caused mainly by outside agitators with no local grievances",
+      "misconception": "The report blamed poverty and segregation, which are local conditions, not outside agitators."
+    },
+    {
+      "key": "B",
+      "text": "Poverty and segregation were the causes, and America was splitting into two unequal societies"
+    },
+    {
+      "key": "C",
+      "text": "The riots proved the civil rights laws of 1964 and 1965 had failed completely",
+      "misconception": "The report blamed poverty and segregation, not the laws, and warned about two societies."
+    },
+    {
+      "key": "D",
+      "text": "The federal government should end all of its antipoverty programs at once",
+      "misconception": "The report blamed poverty, which points toward more action on poverty, not ending programs."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The passage says the report blamed poverty and segregation, not outside agitators.",
+    "B": "The passage quotes the report: it blamed poverty and segregation and warned America was moving toward \"two societies, one black, one white -- separate and unequal.\"",
+    "C": "The report's blame falls on poverty and segregation, not on the civil rights laws.",
+    "D": "A report blaming poverty would not call for ending antipoverty programs.",
+    "general": "1. Johnson appoints the Kerner Commission to investigate the rioting of the summer of 1967.\n2. Its report, issued in February 1968, names causes.\n3. It blames poverty and segregation for the unrest.\n4. It warns America is moving toward two societies, one black, one white, separate and unequal.\nRemember: A commission's conclusion names the cause it found, not the cause people expected."
+  }
+}

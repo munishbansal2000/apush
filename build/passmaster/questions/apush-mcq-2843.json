@@ -1,0 +1,86 @@
+{
+  "answerKey": "D",
+  "difficulty": 2,
+  "figures": [
+    {
+      "alt": "1955 photograph of Black and white schoolgirls standing together in a classroom at the Barnard School in Washington, D.C.",
+      "caption": "Thomas J. O’Halloran, school integration, Barnard School, Washington, D.C., May 27, 1955. Black and white schoolgirls stand together in a classroom.",
+      "file": "pt01/fig5-barnard-school-1955.jpg",
+      "id": "fig-apush-mcq-2843",
+      "license": "No known restrictions on publication",
+      "source_url": "https://www.loc.gov/pictures/item/2003654384/"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.6 Early Steps in the Civil Rights Movement (1940s and 1950s)"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 26",
+        "section": "Prosperity and Anxiety: The 1950s"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-2843",
+  "lesson": "apush-u8-l2",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Brown overturned Marbury v. Madison.",
+      "text": "*Marbury v. Madison* (1803)"
+    },
+    {
+      "key": "B",
+      "misconception": "Brown overturned McCulloch v. Maryland.",
+      "text": "*McCulloch v. Maryland* (1819)"
+    },
+    {
+      "key": "C",
+      "misconception": "Brown overturned Gibbons v. Ogden.",
+      "text": "*Gibbons v. Ogden* (1824)"
+    },
+    {
+      "key": "D",
+      "text": "*Plessy v. Ferguson* (1896)"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Marbury v. Madison is judicial review; Brown did not overturn it.",
+    "B": "McCulloch v. Maryland is federal supremacy and the Bank; Brown did not overturn it.",
+    "C": "Gibbons v. Ogden is interstate commerce; Brown did not overturn it.",
+    "D": "Brown explicitly rejected the “separate but equal” doctrine of Plessy v. Ferguson. The Court held that separate schools are inherently unequal, so segregation in public education must end.",
+    "general": "1. Read the holding. Separate educational facilities are inherently unequal.\n2. Ask which doctrine that rejects. “Separate but equal,” the doctrine of Plessy v. Ferguson.\n3. Test the other cases. Marbury, McCulloch, and Gibbons are about other questions entirely.\n4. Match the precedent. The case Brown overturns is the one that made separation lawful.\nRemember: “inherently unequal” is aimed at the doctrine that said separation could be equal."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "2.B"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from Brown v. Board of Education (1954) with the O’Halloran 1955 Barnard School photograph",
+  "status": "final",
+  "stem": "The Court’s decision in *Brown v. Board of Education* most directly overturned which of the following precedents?",
+  "stimulus": {
+    "kind": "mixed",
+    "source_note": "Brown v. Board of Education, 1954, unanimous opinion by Chief Justice Earl Warren, public domain. Photograph: Thomas J. O’Halloran, 1955, Library of Congress.",
+    "text": "“Segregation of white and colored children in public schools has a detrimental effect upon the colored children. The impact is greater when it has the sanction of the law . . . Separate educational facilities are inherently unequal.”"
+  },
+  "stimulus_set": "brown-v-board-1954",
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "topics": [
+    "8.6"
+  ],
+  "type": "mcq",
+  "unit": 8
+}

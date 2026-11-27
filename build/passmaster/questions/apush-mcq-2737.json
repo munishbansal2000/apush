@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-2737",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.11"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "1.B",
+    "3.A"
+  ],
+  "themes": [
+    "SOC",
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Asian-American Civil Rights Movement"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Expansion of Rights Movements"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Original secondary account drawn from the grounding books and verified against the books' own figures: student strikes at San Francisco State University in 1968 and the University of California, Berkeley in 1969 led to ethnic studies programs; Amy Uyematsu's 'The Emergence of Yellow Power' appeared in 1969; the Civil Liberties Act of 1988 apologized for internment and paid $20,000 to each surviving internee.",
+    "text": "In November 1968, students at San Francisco State University went on strike, demanding courses in Black, Latino, and Asian American history and culture. Similar strikes followed at the University of California, Berkeley, in 1969. The strikes led colleges to create ethnic studies programs.\n\nIn 1969, Amy Uyematsu wrote an essay, \"The Emergence of Yellow Power,\" urging Asian Americans to examine their own conditions and fight injustice. Asian American activists also sought reparations for Japanese Americans forced into internment camps during World War II. In 1988, the federal government apologized and paid $20,000 to each surviving internee."
+  },
+  "stimulus_set": "asian-american-ethnic-studies",
+  "stem": "According to the passage, how did ethnic studies programs come to exist at colleges?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Congress ordered colleges to create them in 1968",
+      "misconception": "The passage says student strikes led colleges to create ethnic studies programs, not that Congress ordered them."
+    },
+    {
+      "key": "B",
+      "text": "Student strikes at San Francisco State and Berkeley pressed colleges"
+    },
+    {
+      "key": "C",
+      "text": "The Supreme Court required them in a 1969 decision",
+      "misconception": "The passage says nothing about a Supreme Court decision."
+    },
+    {
+      "key": "D",
+      "text": "Asian American students left college to study on their own instead",
+      "misconception": "The passage says students struck to win courses at their colleges, not that they left."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The passage says student strikes led colleges to create ethnic studies programs, not that Congress ordered them.",
+    "B": "The passage says strikes at San Francisco State in 1968 and Berkeley in 1969 led colleges to create ethnic studies programs.",
+    "C": "The passage says nothing about a Supreme Court decision.",
+    "D": "The passage says students struck to win courses at their colleges, not that they left college.",
+    "general": "1. Students at San Francisco State went on strike in November 1968, demanding courses in their own histories and cultures.\n2. Similar strikes followed at Berkeley in 1969.\n3. The passage says the strikes led colleges to create ethnic studies programs.\n4. The students won a change in what colleges taught, not only a change in who could attend.\nRemember: A strike over the curriculum is a claim that whose history counts is itself a civil rights question."
+  }
+}

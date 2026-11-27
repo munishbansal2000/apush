@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-2587",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.6"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.6 Early Steps in the Civil Rights Movement (1940s and 1950s)"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 26",
+    "section": "Prosperity and Anxiety: The 1950s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ],
+  "primary_sources": [
+   "Browder v. Gayle, 142 F. Supp. 707 (1956), affirmed 1956"
+  ]
+ },
+ "source": "original; stimulus Photograph: Rosa Parks being fingerprinted by Deputy Sheriff D. H. Lackey, February 22, 1956, Associated Press, public domain via Wikimedia Commons.",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph: Rosa Parks being fingerprinted by Deputy Sheriff D. H. Lackey, February 22, 1956, Associated Press, public domain via Wikimedia Commons.",
+  "text": "The photograph, taken on February 22, 1956, shows Rosa Parks being fingerprinted by Deputy Sheriff D. H. Lackey in Montgomery, Alabama, during the bus boycott. Parks, secretary of the Montgomery branch of the NAACP, had been arrested on December 1, 1955, for refusing to give up her bus seat to a white passenger. Black residents of Montgomery then refused to ride the city buses, walking or using carpools instead. The boycott lasted 381 days, ending on December 20, 1956, after the Supreme Court affirmed that bus segregation was unconstitutional."
+ },
+ "stimulus_set": "montgomery-bus-boycott-1955",
+ "stem": "The boycott ended through which combination of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "A vote by the Montgomery city council alone to end segregation",
+   "misconception": "Background from the books: the city council defended segregation, so it did not vote to end the boycott."
+  },
+  {
+   "key": "B",
+   "text": "An order from Governor Faubus of Arkansas to end the boycott",
+   "misconception": "Background from the books: Faubus was governor of Arkansas, not Alabama, and had no power over Montgomery buses."
+  },
+  {
+   "key": "C",
+   "text": "A long boycott plus a federal court ruling in Browder v. Gayle"
+  },
+  {
+   "key": "D",
+   "text": "A settlement that kept segregated seating on the city buses",
+   "misconception": "Background from the books: the boycott ended when the buses were desegregated, not when segregated seating was kept."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Background from the books: the city council defended segregation, so it did not vote to end the boycott.",
+  "B": "Background from the books: Faubus was governor of Arkansas, not Alabama, and had no power over Montgomery buses.",
+  "C": "Background from the books: the boycott held for 381 days while Browder v. Gayle moved through the courts, and the Supreme Court's ruling ended bus segregation.",
+  "D": "The boycott ended when the buses were desegregated, not when segregated seating was kept.",
+  "general": "1. The stimulus says the boycott lasted 381 days and ended after the Supreme Court affirmed that bus segregation was unconstitutional.\n2. The boycott alone did not change the law, and a court ruling alone would not have been won without the boycott's pressure.\n3. Background from the books: Browder v. Gayle was filed in February 1956 by four other Black women, while the boycott held.\n4. Protest sustained the case, and the case ended the segregation, so both parts were needed.\nRemember: a boycott and a lawsuit can do together what neither does alone."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2587",
+   "file": "u8/rosa-parks-fingerprint-1956.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Rosa_Parks_being_fingerprinted_by_Deputy_Sheriff_D.H._Lackey_after_being_arrested_on_February_22,_1956,_during_the_Montgomery_bus_boycott.jpg",
+   "license": "Public domain (photograph by Gene Herrick, Associated Press, February 22, 1956; Smithsonian National Portrait Gallery)",
+   "caption": "Rosa Parks being fingerprinted by a Montgomery deputy sheriff, February 1956",
+   "alt": "Rosa Parks, wearing glasses and a suit, having her fingers inked by a uniformed Montgomery deputy sheriff at a desk"
+  }
+ ]
+}

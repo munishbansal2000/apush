@@ -1,0 +1,92 @@
+{
+  "id": "apush-saq-0264",
+  "type": "saq",
+  "unit": 8,
+  "topics": [
+    "8.14"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A",
+    "3.B"
+  ],
+  "themes": [
+    "GEO",
+    "MIG"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.14 Society in Transition"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "The Election of 1980"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "U.S. Census Bureau, Historical Apportionment Data, 1960-1980"
+    ]
+  },
+  "source": "original; stimulus is an original secondary passage written for this question",
+  "saq_slot": 1,
+  "totalPoints": 3,
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Secondary passage written for this question, drawing on the grounding books (Barron's Ch. 10, Topic 8.14; 5 Steps Ch. 28; Princeton Ch. 12).",
+    "text": "Historians note that the South and West grew fast after 1945 as defense plants, highways, and air conditioning drew people and jobs to the Sunbelt. The newcomers were often younger, suburban, and more conservative than the voters they replaced, and their states gained House seats with every census. By 1980, these Sunbelt voters had become a base for a new conservatism that stressed lower taxes, traditional values, and limits on Washington."
+  },
+  "stimulus_set": null,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify one way the Sunbelt changed American politics, according to the passage.",
+      "modelAnswer": "The passage says Sunbelt states gained House seats with every census, so the region's weight in the House grew. That shift moved political power toward the South and West.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for identifying one change from the passage, such as Sunbelt states gaining House seats, or Sunbelt voters becoming a base for a new conservatism.",
+          "notEarned": "Naming a change the passage does not state, such as a change in the Senate, does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain one reason the Sunbelt grew after 1945.",
+      "modelAnswer": "Background: The Sunbelt grew because defense plants and military bases brought jobs to the South and West during and after World War II. Background: Highways and air conditioning then made those warm states easier to live and work in, so people kept moving there.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Background: Earns the point for explaining one reason, such as defense plants and military bases, highways, air conditioning, warm weather, or lower taxes drawing people and jobs south and west.",
+          "notEarned": "Restating that the Sunbelt grew, without a reason, does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Explain one way Sunbelt voters shaped the politics of 1980.",
+      "modelAnswer": "Background: Sunbelt voters shaped 1980 by backing Ronald Reagan's message of lower taxes, traditional values, and limits on Washington. Background: Their support helped Reagan win the presidency and helped elect a Republican majority in the Senate.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Background: Earns the point for explaining one effect, such as backing Reagan's tax-cut and traditional-values message in 1980, helping elect a Republican Senate majority, or shifting the Republican Party's base toward the South and West.",
+          "notEarned": "Restating that Sunbelt voters were conservative, without a political effect, does not earn the point."
+        }
+      ]
+    }
+  ]
+}

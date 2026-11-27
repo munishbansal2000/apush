@@ -1,0 +1,93 @@
+{
+  "id": "apush-mcq-2695",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.10"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "3.C",
+    "2.B"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.10 The African-American Civil Rights Movement (1960s)"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Civil Rights Movement in the 1960s: From Integration to Black Power"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The March on Washington (1963)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus photograph viewed before writing",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Photograph: Martin Luther King Jr. and Mathew Ahmann at the March on Washington, August 28, 1963, public domain (U.S. federal government photograph, National Archives). Account drawn from the grounding books (Barron's Ch. 10, Topic 8.10, \"The March on Washington (1963)\"; 5 Steps Ch. 27; Princeton Ch. 12). The Lewis draft quotation is in Barron's; the jobs-and-freedom demands are in the march's own name, visible on the button.",
+    "text": "The photograph shows Martin Luther King Jr. at the March on Washington on August 28, 1963, wearing a button that reads \"March on Washington for Jobs and Freedom.\" Behind him a sign reads \"NOW.\" More than 200,000 people gathered in Washington that day to march, sing, and hear speeches, including King's \"I Have a Dream\" speech at the Lincoln Memorial. The march had been organized to demand both jobs and freedom: an end to segregation and a federal jobs program and a higher minimum wage. John Lewis, the young leader of the Student Nonviolent Coordinating Committee (SNCC), was told by older organizers to tone down his speech before he gave it. His original draft had urged the movement to march \"through the heart of Dixie the way Sherman did . . . and burn Jim Crow to the ground.\""
+  },
+  "stimulus_set": "march-on-washington-1963",
+  "stem": "The older organizers' decision to tone down John Lewis's speech best shows which tension inside the movement?",
+  "options": [
+    {
+      "key": "A",
+      "text": "A growing split between younger activists pushing militancy and older leaders urging restraint"
+    },
+    {
+      "key": "B",
+      "text": "A split between Southern and Northern organizers over where to hold the march",
+      "misconception": "The passage says nothing about a dispute over where to hold the march."
+    },
+    {
+      "key": "C",
+      "text": "A split between organizers who wanted a march and those who wanted a boycott instead",
+      "misconception": "The passage describes one march with a disputed speech, not a march-versus-boycott dispute."
+    },
+    {
+      "key": "D",
+      "text": "A split between King and Lewis over whether to hold the march at all",
+      "misconception": "The passage says Lewis was told to tone down his speech, not that anyone opposed holding the march."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "The passage says the young SNCC leader was told by older organizers to tone down his fiery draft, which had urged marching through Dixie and burning Jim Crow to the ground.",
+    "B": "The dispute in the passage is over the speech's words, not the march's location.",
+    "C": "Both sides in the passage are part of the same march; no boycott is proposed.",
+    "D": "The passage shows a dispute over the speech, not over whether to march.",
+    "general": "1. Lewis, the young SNCC leader, writes a fiery draft urging the movement to burn Jim Crow to the ground.\n2. Older organizers tell him to tone it down before he speaks.\n3. The clash is over tone and militancy, not over the march itself.\n4. It shows a younger wing pushing harder than the older leadership wanted.\nRemember: A fight over one speech can reveal a split over a movement's direction."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-2695",
+      "file": "u8/barrons-2027-pt2-12.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Civil_Rights_March_on_Washington%2C_D.C._%28Dr._Martin_Luther_King%2C_Jr._and_Mathew_Ahmann_in_a_crowd.%29_-_NARA_-_542015_-_Restoration.jpg",
+      "license": "Public domain (work of the U.S. federal government, PD-USGov)",
+      "caption": "Martin Luther King Jr. at the March on Washington, August 28, 1963",
+      "alt": "Martin Luther King Jr. in the foreground wearing a round button that reads March on Washington for Jobs and Freedom, with Mathew Ahmann at right and a sign reading NOW behind them"
+    }
+  ]
+}

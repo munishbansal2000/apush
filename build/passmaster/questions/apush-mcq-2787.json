@@ -1,0 +1,88 @@
+{
+  "id": "apush-mcq-2787",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.13"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "1.B"
+  ],
+  "themes": [
+    "GEO",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.13 The environment and natural resources from 1968 to 1980"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Dangers of Nuclear Energy and Three Mile Island"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "Photograph of the Three Mile Island plant, April 6, 1979 (National Archives)"
+    ]
+  },
+  "source": "original; stimulus photograph viewed before writing",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Photograph: Three Mile Island plant through trees, April 6, 1979, public domain (U.S. National Archives photograph, NARA 540038, via Wikimedia Commons). Accident date and facts verified against the U.S. Nuclear Regulatory Commission history and the University of Nevada Yucca Mountain timeline: partial meltdown of the Unit 2 reactor on March 28, 1979, with a release of radioactive gas. Account drawn from the grounding books (Barron's Ch. 10, Topic 8.13, 'The Dangers of Nuclear Energy and Three Mile Island'; Princeton Ch. 12).",
+    "text": "The photograph, taken April 6, 1979, shows the Three Mile Island nuclear plant in Pennsylvania. Four tall cooling towers rise beyond farm fields and houses, with bare trees in the foreground.\n\nOn March 28, 1979, the Unit 2 reactor at Three Mile Island partly melted down, releasing radioactive gas. The accident was the worst in the history of the American nuclear industry. Groups such as the Clamshell Alliance in New England and the Abalone Alliance in California had already been protesting nuclear power plants for years."
+  },
+  "stimulus_set": "three-mile-island-1979",
+  "stem": "According to the passage, what happened at Three Mile Island in March 1979?",
+  "options": [
+    {
+      "key": "A",
+      "text": "A reactor exploded like an atomic bomb.",
+      "misconception": "Background: A reactor meltdown is not an atomic bomb explosion; no bomb went off at Three Mile Island."
+    },
+    {
+      "key": "B",
+      "text": "The plant was closed before it ever opened.",
+      "misconception": "Background: The plant was running, and its Unit 2 reactor melted down while in operation."
+    },
+    {
+      "key": "C",
+      "text": "A reactor partly melted down and released radioactive gas."
+    },
+    {
+      "key": "D",
+      "text": "The cooling towers collapsed into the river.",
+      "misconception": "The photograph shows the cooling towers standing, and the passage says nothing about a collapse."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "Background: A reactor meltdown is not an atomic bomb explosion; no bomb went off at Three Mile Island.",
+    "B": "Background: The plant was running, and its Unit 2 reactor melted down while in operation.",
+    "C": "The passage says the Unit 2 reactor partly melted down on March 28, 1979, releasing radioactive gas.",
+    "D": "The photograph shows the cooling towers standing, and the passage says nothing about a collapse.",
+    "general": "1. The passage dates the event: March 28, 1979, at the Unit 2 reactor.\n2. It names what failed: the reactor partly melted down and released radioactive gas.\n3. Background: It was the worst accident in the history of the American nuclear industry, which is why it mattered so much.\nRemember: A partial meltdown is a failure of cooling, not an explosion."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-2787",
+      "file": "u8/three-mile-island-1979.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Three_Mile_Island_plant_through_trees_-_NARA_-_540038.tif",
+      "license": "Public domain (U.S. National Archives photograph, NARA 540038)",
+      "caption": "Three Mile Island nuclear plant seen through trees, April 6, 1979",
+      "alt": "Four tall cooling towers rise beyond farm fields and houses, with bare trees in the foreground"
+    }
+  ]
+}

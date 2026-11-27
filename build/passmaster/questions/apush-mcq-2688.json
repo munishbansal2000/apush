@@ -1,0 +1,83 @@
+{
+  "id": "apush-mcq-2688",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.10"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "2.A",
+    "3.A"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.10 The African-American Civil Rights Movement (1960s)"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Civil Rights Movement in the 1960s: From Integration to Black Power"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Civil Rights Movement in the 1960s: From Integration to Black Power"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is an original account drawn from the grounding books; proposition rewritten against the books from staged survivor 5s24-ch27-mcq-01",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Account drawn from the grounding books (Barron's Ch. 10, Topic 8.10, \"The Freedom Rides (1961)\"; 5 Steps Ch. 27; Princeton Ch. 12). The Boynton date, the Anniston firebombing, and the November 1, 1961 effective date are verified against the Encyclopedia of Alabama and Britannica summaries of the ICC order (September 22, 1961).",
+    "text": "In December 1960 the Supreme Court ruled in Boynton v. Virginia that segregation in bus terminals serving interstate travel was unconstitutional. Southern states kept enforcing their own segregation rules anyway. In May 1961 the Congress of Racial Equality (CORE) sent Black and white riders together on buses through the South to test whether the ruling was being enforced. Near Anniston, Alabama, a white mob slashed a bus's tires and then firebombed the bus. Television carried pictures of the burning bus and beaten riders across the country. President Kennedy sent federal marshals to protect the riders, and Attorney General Robert Kennedy asked the Interstate Commerce Commission to ban segregation in interstate travel. In September 1961 the commission ordered segregation ended in interstate bus terminals, effective November 1, 1961."
+  },
+  "stimulus_set": "freedom-rides-1961",
+  "stem": "The early Freedom Rides most directly showed which of the following about television news?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Pictures of the violence moved public opinion before the government acted"
+    },
+    {
+      "key": "B",
+      "text": "Television stations refused to show the Freedom Rides to their viewers",
+      "misconception": "The passage says television carried pictures of the burning bus across the country."
+    },
+    {
+      "key": "C",
+      "text": "Television made Southern states enforce civil rights laws on their own",
+      "misconception": "The passage says the states kept enforcing segregation; the federal government had to step in."
+    },
+    {
+      "key": "D",
+      "text": "Television proved that the federal government was already protecting the riders",
+      "misconception": "The riders were beaten first; federal marshals were sent only after the attacks."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "The passage says television carried pictures of the burning bus and beaten riders across the country, and the federal response followed the attacks.",
+    "B": "Television did show the rides; the pictures reached viewers across the country.",
+    "C": "The states did not enforce the laws themselves; the commission had to order desegregation.",
+    "D": "Federal protection came after the beatings, not before them.",
+    "general": "1. A mob firebombs a bus and beats riders in Alabama.\n2. Television carries pictures of the burning bus across the country.\n3. Only after the attacks does the president send federal marshals.\n4. The pictures reached the public first, so television moved opinion before the government acted.\nRemember: Pictures of an event can change minds faster than a ruling can change behavior."
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "id": "apush-mcq-2703",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.10"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "1.B",
+    "3.A"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.10 The African-American Civil Rights Movement (1960s)"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Civil Rights Movement in the 1960s: From Integration to Black Power"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Selma to Montgomery March (1965)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus photograph viewed before writing",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Photograph: President Lyndon Johnson signing the Voting Rights Act, August 6, 1965, public domain (U.S. federal government photograph via Wikimedia Commons). Account drawn from the grounding books (Barron's Ch. 10, Topic 8.10, \"The Selma to Montgomery March (1965)\" and \"The Voting Rights Act (1965)\"; 5 Steps Ch. 27; Princeton Ch. 12). The March 7 and March 15, 1965 dates are in the books; the registration table is from the U.S. Commission on Civil Rights, Political Participation (1968), as summarized in the EBSCO research starter on the act.",
+    "text": "The photograph shows President Lyndon Johnson signing the Voting Rights Act on August 6, 1965, with Martin Luther King Jr. standing behind him. The act followed the Selma campaign for voting rights. On March 7, 1965, marchers crossing the Edmund Pettus Bridge in Selma, Alabama, were attacked by state and county police with clubs and tear gas in an event known as Bloody Sunday; television carried the attack across the country. On March 15 Johnson addressed Congress in support of voting rights, saying, \"We shall overcome.\" The march from Selma to Montgomery was completed later that month. The Voting Rights Act outlawed literacy tests and authorized federal examiners to register voters in places where few Black citizens were registered. It also required places with a history of discrimination to get federal approval before changing their voting laws.\n\nAfrican American voter registration, percent of voting-age population (U.S. Commission on Civil Rights, 1968):\n\n| State | 1964 | 1967 |\n| Mississippi | 6.7% | 59.8% |\n| Alabama | 23.0% | 51.6% |\n| Georgia | 27.4% | 52.6% |\n| Louisiana | 31.6% | 58.9% |\n| South Carolina | 37.3% | 51.2% |\n| Virginia | 38.3% | 55.6% |"
+  },
+  "stimulus_set": "selma-voting-rights-1965",
+  "stem": "According to the passage, Bloody Sunday most directly helped the voting rights cause by doing which of the following?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Putting televised images of the police attack before the whole country"
+    },
+    {
+      "key": "B",
+      "text": "Ending the Selma campaign because the marchers gave up after the attack",
+      "misconception": "The passage says the march was completed later that month, not abandoned."
+    },
+    {
+      "key": "C",
+      "text": "Persuading the police to register Black voters themselves instead",
+      "misconception": "The police attacked the marchers; the act later sent federal examiners to register voters."
+    },
+    {
+      "key": "D",
+      "text": "Proving that the Voting Rights Act had already been signed into law",
+      "misconception": "The act was signed in August 1965, months after Bloody Sunday in March."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "The passage says television carried the attack on the Edmund Pettus Bridge across the country.",
+    "B": "The march from Selma to Montgomery was completed later that month.",
+    "C": "The police attacked the marchers; federal examiners, not police, registered voters under the act.",
+    "D": "The act was signed in August 1965, after the March 7 attack.",
+    "general": "1. Marchers crossing the Edmund Pettus Bridge are attacked with clubs and tear gas.\n2. Television carries the attack across the country.\n3. The president addresses Congress in support of voting rights eight days later.\n4. The televised violence, not the attack itself, moved the cause forward.\nRemember: An attack the public sees can do more for a cause than an attack it never hears about."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-2703",
+      "file": "u8/pr25e-test2-q54.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/81/LyndonJohnson_signs_Voting_Rights_Act_of_1965.jpg",
+      "license": "Public domain (work of the U.S. federal government, PD-USGov)",
+      "caption": "President Johnson signing the Voting Rights Act, August 6, 1965",
+      "alt": "President Lyndon Johnson seated at a desk signing a document, with Martin Luther King Jr. standing behind him among a crowd of onlookers in a formal room"
+    }
+  ]
+}

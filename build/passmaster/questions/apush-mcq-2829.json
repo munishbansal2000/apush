@@ -1,0 +1,86 @@
+{
+  "id": "apush-mcq-2829",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.15"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 3,
+  "skills": [
+    "3.A",
+    "5.A"
+  ],
+  "themes": [
+    "SOC",
+    "WOR"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.5 Culture after 1945"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.14 Society in Transition"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 26",
+        "section": "Prosperity and Anxiety: The 1950s"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "America in an Era of Turmoil (1960-1975)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ]
+  },
+  "source": "original; stimulus table compiled from the Bureau of Labor Statistics, Monthly Labor Review, December 1999, Table 1",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from the Bureau of Labor Statistics, Monthly Labor Review, December 1999, Table 1.",
+    "text": "Share of adults in paid work (the civilian labor force), by sex (Bureau of Labor Statistics, Monthly Labor Review, December 1999, Table 1):\n\n| Year | Women | Men |\n| 1950 | 33.9% | 86.4% |\n| 1960 | 37.7% | 83.3% |\n| 1970 | 43.3% | 79.7% |\n| 1980 | 51.5% | 77.4% |"
+  },
+  "stimulus_set": "women-work-1950-1980",
+  "stem": "Which of the following best explains the rise in women's paid work shown in the table?",
+  "options": [
+    {
+      "key": "A",
+      "text": "World War II alone, because the rise in women's work ended as soon as the war ended.",
+      "misconception": "Background: The war ended in 1945, yet the table starts in 1950 and the rise runs through 1980."
+    },
+    {
+      "key": "B",
+      "text": "The feminist movement alone, because nothing at all changed for women before the 1960s began.",
+      "misconception": "The women's column already rises between 1950 and 1960, so the rise began before the 1960s."
+    },
+    {
+      "key": "C",
+      "text": "Higher pay for women alone, because the pay gap between men and women had closed by 1980.",
+      "misconception": "The table says nothing about pay, so it cannot support a claim about pay."
+    },
+    {
+      "key": "D",
+      "text": "Several forces together: wartime work, more service jobs, household technology, and changing ideas about women's roles."
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "Background: The war ended in 1945, yet the table starts in 1950 and the rise runs through 1980.",
+    "B": "The women's column already rises between 1950 and 1960, so the rise began before the 1960s.",
+    "C": "The table says nothing about pay, so it cannot support a claim about pay.",
+    "D": "Background: The rise spans the wartime years, the postwar boom, and the feminist movement, so no single cause covers all thirty years.",
+    "general": "1. The rise runs from 1950 to 1980 without a break, so any cause must work across all thirty years.\n2. Background: Wartime work, service jobs, household technology, and changing ideas about women's roles all pushed in the same direction over those decades.\n3. A single cause fails because the rise began before the 1960s and kept going after the war.\n4. The table shows the size of the rise, not its causes, so the answer must combine the table with what you know about the period.\nRemember: A change that runs for thirty years usually has more than one cause behind it."
+  }
+}

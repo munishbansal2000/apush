@@ -1,0 +1,81 @@
+{
+  "id": "apush-mcq-2840",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.15"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "1.A",
+    "2.A"
+  ],
+  "themes": [
+    "GEO",
+    "MIG"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.4 Economy after 1945"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.14 Society in Transition"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 26",
+        "section": "Prosperity and Anxiety: The 1950s"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ]
+  },
+  "source": "original; stimulus table compiled from the United States Census Bureau, decennial censuses 1950-1980",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from the United States Census Bureau, decennial censuses 1950-1980, and the Census Bureau's urban population series.",
+    "text": "Population of the United States (United States Census Bureau, decennial censuses; urban share from the Census Bureau):\n\n| Census | Population | Growth since last census | Living in urban areas |\n| 1950 | 151.3 million | 14.5% | 64.0% |\n| 1960 | 179.3 million | 18.5% | 69.9% |\n| 1970 | 203.2 million | 13.3% | 73.6% |\n| 1980 | 226.5 million | 11.5% | 73.7% |"
+  },
+  "stimulus_set": "population-urban-1950-1980",
+  "stem": "What does the table show about the population of the United States from 1950 to 1980?",
+  "options": [
+    {
+      "key": "A",
+      "text": "It fell in every single decade from 1950 through 1980 without exception.",
+      "misconception": "The population column rises at every step, from 151.3 million to 226.5 million."
+    },
+    {
+      "key": "B",
+      "text": "It stayed exactly the same size in every decade from 1950 to 1980.",
+      "misconception": "The population column rises from 151.3 million in 1950 to 226.5 million in 1980."
+    },
+    {
+      "key": "C",
+      "text": "It grew in every decade, rising from about 151 million to about 227 million."
+    },
+    {
+      "key": "D",
+      "text": "It grew only in the 1950s and then stopped growing entirely after that.",
+      "misconception": "The population column rises in 1960, 1970, and 1980 as well."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "The population column rises at every step, from 151.3 million to 226.5 million.",
+    "B": "The population column rises from 151.3 million in 1950 to 226.5 million in 1980.",
+    "C": "The population column rises at every step, from 151.3 million in 1950 to 226.5 million in 1980.",
+    "D": "The population column rises in 1960, 1970, and 1980 as well.",
+    "general": "1. Read the population column only: 151.3, 179.3, 203.2, 226.5 million.\n2. Each number is larger than the one before it, so the population grew in every decade.\n3. The other columns answer different questions, so they cannot change what the population column shows.\nRemember: Read one column at a time and compare each number with the one before it."
+  }
+}

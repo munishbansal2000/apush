@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-2733",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.11"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 4,
+  "skills": [
+    "3.D",
+    "2.C"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Title IX (1972)"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Expansion of Rights Movements"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "table",
+    "source_note": "Table: National Federation of State High School Associations (NFHS) High School Athletics Participation Survey, as reported by the NFHS. Figures verified against NFHS reporting: 294,015 girls in 1971-72; more than 2 million girls by 1977-78; total participation about 3.9 million in 1971-72 and about 6.4 million in 1977-78. Title IX date verified: signed June 23, 1972.",
+    "text": "Girls playing high school sports, National Federation of State High School Associations survey.\n\nSchool year | Girls playing high school sports\n1971-72 | 294,015\n1977-78 | More than 2,000,000\n\nAll high school athletes, boys and girls together: about 3.9 million in 1971-72; about 6.4 million in 1977-78.\n\nTitle IX of the Education Amendments of 1972 banned sex discrimination in any education program receiving federal money."
+  },
+  "stimulus_set": "title-ix-sports-table",
+  "stem": "A historian using this table to judge Title IX should be most cautious about which of the following?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Concluding that Title IX alone caused the rise, since other changes could also have increased girls' sports"
+    },
+    {
+      "key": "B",
+      "text": "Concluding that girls' participation rose after 1972, since the table shows the rise directly",
+      "misconception": "The table directly shows the rise from 294,015 to more than 2,000,000, so that conclusion is safe."
+    },
+    {
+      "key": "C",
+      "text": "Concluding that total participation rose, since the table gives totals for both years",
+      "misconception": "The table gives totals of about 3.9 million and about 6.4 million, so that conclusion is safe."
+    },
+    {
+      "key": "D",
+      "text": "Concluding that Title IX passed in 1972, since the table names the law and its year",
+      "misconception": "The passage states that Title IX was part of the Education Amendments of 1972, so that fact is given."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "Background: The table shows that participation rose after 1972, but it cannot show by itself that Title IX was the only cause, since attitudes, school budgets, and other changes could also have mattered.",
+    "B": "The table directly shows girls' participation rising from 294,015 to more than 2,000,000.",
+    "C": "The table gives totals of about 3.9 million in 1971-72 and about 6.4 million in 1977-78.",
+    "D": "The passage states that Title IX was part of the Education Amendments of 1972.",
+    "general": "1. The table shows two numbers: 294,015 girls in 1971-72 and more than 2,000,000 in 1977-78.\n2. Title IX passed in between, in 1972, so the timing fits.\n3. But timing alone does not prove a cause, since other changes in the same years could also have drawn girls into sports.\n4. Background: Historians therefore pair the table with other evidence, such as school budgets and court cases, before crediting Title IX alone.\nRemember: A table can show that two things happened together, but it cannot by itself prove that one caused the other."
+  }
+}

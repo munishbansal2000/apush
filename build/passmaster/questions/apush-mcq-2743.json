@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-2743",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.11"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "3.C",
+    "5.A"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.11 The Civil Rights Movement Expands"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "Nixon's Southern Strategy"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Original secondary account drawn from the grounding books and verified against the Yale Balkin timeline and NPS accounts: Swann v. Charlotte-Mecklenburg Board of Education was decided April 20, 1971 and unanimously upheld busing; Boston's court-ordered busing plan in 1974 met violent protests; Milliken v. Bradley (1974) struck down a cross-district Detroit plan.",
+    "text": "In 1971, the Supreme Court ruled in Swann v. Charlotte-Mecklenburg Board of Education that busing students to different schools was a proper tool for ending school segregation, after the Charlotte district had failed to desegregate.\n\nCourt-ordered busing then spread to Northern cities, including Boston, where a 1974 plan met violent protests. In 1974, the Court ruled in Milliken v. Bradley that judges could not order busing between Detroit's city schools and its suburbs, because the suburbs had not themselves been found guilty of segregation."
+  },
+  "stimulus_set": "swann-busing-north",
+  "stem": "Taken together, Swann (1971) and Milliken v. Bradley (1974) best show which of the following?",
+  "options": [
+    {
+      "key": "A",
+      "text": "That the Court ordered busing in every American city and suburb",
+      "misconception": "Milliken limited busing, so the Court did not order it everywhere."
+    },
+    {
+      "key": "B",
+      "text": "That the Court allowed busing within districts but not across district lines"
+    },
+    {
+      "key": "C",
+      "text": "That the Court banned all school desegregation after 1971",
+      "misconception": "Swann approved busing, so the Court did not ban desegregation."
+    },
+    {
+      "key": "D",
+      "text": "That Northern cities welcomed busing while Southern cities resisted it",
+      "misconception": "The passage says Boston's 1974 busing plan met violent protests, so Northern cities did not simply welcome busing."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "Milliken limited busing, so the Court did not order it everywhere.",
+    "B": "The passage says Swann approved busing to desegregate Charlotte's schools, while Milliken barred busing between Detroit and its suburbs.",
+    "C": "Swann approved busing, so the Court did not ban desegregation.",
+    "D": "The passage says Boston's 1974 busing plan met violent protests, so Northern cities did not simply welcome busing.",
+    "general": "1. Swann approved busing inside the Charlotte district to end segregation there.\n2. Milliken then said judges could not order busing between Detroit and its suburbs.\n3. The difference is the district line: the suburbs had not been found guilty of segregation.\n4. Background: That limit mattered because white families had moved to the suburbs, so city-only plans could not mix many schools.\nRemember: A remedy can be approved in one place and limited in another, and the limit can matter as much as the approval."
+  }
+}

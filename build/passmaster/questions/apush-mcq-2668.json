@@ -1,0 +1,84 @@
+{
+ "id": "apush-mcq-2668",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.9"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.9 The Great Society"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "The Great Society"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Liberal Hour of the 1960s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Lyndon Johnson's Social Agenda"
+   }
+  ],
+  "primary_sources": [
+   "Lyndon B. Johnson, Remarks with President Truman at the Signing in Independence of the Medicare Bill, July 30, 1965 (Public Papers of the Presidents)"
+  ]
+ },
+ "source": "original; stimulus paraphrased from the Medicare signing, July 30, 1965",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of the Medicare signing, July 30, 1965; enrollment figure from the Social Security Administration history.",
+  "text": "Paraphrase of the signing of the Social Security Amendments of 1965, July 30, 1965, in Independence, Missouri. President Lyndon Johnson signed the law creating Medicare, health insurance for Americans 65 and older, and Medicaid, medical coverage for Americans who could not afford their own insurance. Former President Harry S. Truman, then 81 years old, sat beside Johnson and received the first Medicare card as the program's first beneficiary. When Medicare services began on July 1, 1966, more than 19 million Americans 65 and older had enrolled."
+ },
+ "stimulus_set": "medicare-medicaid",
+ "stem": "According to the passage, how did Medicare and Medicaid differ?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Medicare: people 65 and older. Medicaid: people who could not pay"
+  },
+  {
+   "key": "B",
+   "text": "Medicare served the poor; Medicaid served people 65 and older",
+   "misconception": "The passage gives it the other way: Medicare is for those 65 and older, Medicaid for those who could not afford insurance."
+  },
+  {
+   "key": "C",
+   "text": "Medicare was run by the states; Medicaid was run by Washington",
+   "misconception": "The passage does not say who ran either program; it gives the groups each program served."
+  },
+  {
+   "key": "D",
+   "text": "Medicare paid for schools; Medicaid paid for houses",
+   "misconception": "The passage says both programs are about medical coverage, not schools or houses."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The passage says Medicare is health insurance for Americans 65 and older, and Medicaid is medical coverage for those who could not afford insurance.",
+  "B": "The passage gives it the other way: Medicare is for those 65 and older, Medicaid for those who could not afford insurance.",
+  "C": "The passage does not say who ran either program; it gives the groups each program served.",
+  "D": "The passage says both programs are about medical coverage, not schools or houses.",
+  "general": "1. The passage defines Medicare first: health insurance for Americans 65 and older.\n2. It then defines Medicaid: medical coverage for Americans who could not afford their own insurance.\n3. One program is sorted by age, the other by ability to pay.\n4. The two programs therefore served different groups of Americans.\nRemember: Two programs in one law can still serve different people."
+ }
+}

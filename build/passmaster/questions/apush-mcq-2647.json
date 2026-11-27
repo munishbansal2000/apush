@@ -1,0 +1,81 @@
+{
+ "id": "apush-mcq-2647",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.8"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.8 The Vietnam War"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.9 The Great Society"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Vietnam War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "American Involvement in Vietnam, World War II\u20131963"
+   }
+  ]
+ },
+ "source": "original; stimulus paraphrased from the grounding books' account of the war's cost at home",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of the war's cost at home, from the grounding books.",
+  "text": "Paraphrase of the war's cost at home. The Vietnam War cost hundreds of billions of dollars. As the war grew more expensive, Congress cut back or ended some Great Society programs aimed at ending poverty. Johnson's hopes for a Great Society were damaged by a war that grew costlier and more unpopular each year."
+ },
+ "stimulus_set": "king-great-society",
+ "stem": "The passage best supports which conclusion about the relationship between the Vietnam War and the Great Society?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The war and the Great Society had separate budgets that never affected each other",
+   "misconception": "The passage says the war's cost led Congress to cut Great Society programs, so the budgets did affect each other."
+  },
+  {
+   "key": "B",
+   "text": "The Great Society grew stronger as the war grew more expensive",
+   "misconception": "The passage says the war damaged Johnson's hopes for the Great Society, not that it strengthened them."
+  },
+  {
+   "key": "C",
+   "text": "The rising cost of the war crowded out the Great Society's antipoverty programs"
+  },
+  {
+   "key": "D",
+   "text": "Congress ended the war in order to save the Great Society",
+   "misconception": "Background: Congress did not end the war to save the Great Society; the war went on until 1973."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "The passage says the war's cost led Congress to cut Great Society programs, so the two did affect each other.",
+  "B": "The passage says the war damaged Johnson's hopes for the Great Society, not that it strengthened them.",
+  "C": "Background: the war cost hundreds of billions of dollars, and Congress cut back or ended antipoverty programs as the war grew more expensive.",
+  "D": "Background: the war continued until 1973, so Congress did not end it to save the Great Society.",
+  "general": "1. The passage gives the war's price first: hundreds of billions of dollars.\n2. It then ties that price to the Great Society: Congress cut back or ended antipoverty programs as the war grew more expensive.\n3. Background: the Great Society was Johnson's program to end poverty, and it competed with the war for the same federal dollars.\n4. The war therefore crowded out the reform it was fought beside.\nRemember: Two big programs paid from one budget always compete."
+ }
+}

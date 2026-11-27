@@ -1,0 +1,95 @@
+{
+ "id": "apush-saq-0253",
+ "type": "saq",
+ "unit": 8,
+ "topics": [
+  "8.9"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.9 The Great Society"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "The Great Society"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Liberal Hour of the 1960s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Lyndon Johnson's Social Agenda"
+   }
+  ]
+ },
+ "source": "original; stimulus is an original secondary passage written for this question, facts from the grounding books",
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question; facts from the grounding books.",
+  "text": "The laws passed in 1965 and 1966 were the most sweeping change to the federal government since the New Deal. Medicare and Medicaid gave health coverage to older Americans and to the poor. Federal aid reached schools in poor areas, and Head Start prepared disadvantaged preschool children for school. The poverty rate fell from 19.0 percent in 1964 to 12.1 percent in 1969. Yet poverty did not end, and critics said the programs cost too much and made people dependent on government."
+ },
+ "stimulus_set": null,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one Great Society program described in the passage.",
+   "modelAnswer": "Medicare gave health insurance to Americans 65 and older, so it is one Great Society program in the passage. It was signed into law in 1965 alongside Medicaid.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one program from the passage, such as Medicare, Medicaid, federal aid to schools in poor areas, or Head Start.",
+     "notEarned": "Naming a program that is not in the passage, such as the Peace Corps, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one reason the Great Society programs were able to pass in 1964 and 1965.",
+   "modelAnswer": "Johnson won the 1964 election with 61.1 percent of the popular vote, which gave him large Democratic majorities in Congress. Those majorities let him move bills that had stalled for years, including Medicare.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason the programs passed, such as Johnson's 1964 landslide and large Democratic majorities, Johnson's skill as a legislator, or the sympathy after Kennedy's assassination.",
+     "notEarned": "Restating that the laws passed, without a reason they passed, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one limit of the Great Society shown in the passage.",
+   "modelAnswer": "The poverty rate fell from 19.0 percent to 12.1 percent, but poverty did not end, so the goal of ending poverty was not met. The programs reduced poverty without eliminating it.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limit from the passage, such as poverty not ending, the high cost of the programs, or the criticism that they made people dependent on government.",
+     "notEarned": "Saying only that the Great Society was a failure, without a limit from the passage, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

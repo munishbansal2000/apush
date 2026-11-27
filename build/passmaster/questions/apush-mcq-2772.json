@@ -1,0 +1,89 @@
+{
+  "id": "apush-mcq-2772",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.13"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.13 The environment and natural resources from 1968 to 1980"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Environmental Movement"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Expansion of Rights Movements"
+      }
+    ],
+    "primary_sources": [
+      "Aerial photograph of the Santa Barbara oil spill, 1969 (U.S. Geological Survey)"
+    ]
+  },
+  "source": "original; stimulus photograph viewed before writing",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Photograph: aerial view of oil rising near Union Oil Platform A, Santa Barbara Channel, 1969, public domain (U.S. Geological Survey photograph, via Wikimedia Commons). Spill facts verified against Clarke and Hemphill, 'The Santa Barbara Oil Spill: A Retrospective' (2002) and the Sierra Club account: blowout January 28, 1969; about three million gallons over eleven days; 35 miles of coastline. Account drawn from the grounding books (Barron's Ch. 10, Topic 8.13).",
+    "text": "The photograph is an aerial view taken during the Santa Barbara oil spill of 1969. It shows an offshore drilling rig standing in dark water, with a pale patch of oil rising to the surface at the upper left and a disturbed ring of water around the rig.\n\nOn January 28, 1969, a well on Union Oil's Platform A, about six miles off Santa Barbara, California, blew out. Roughly three to four million gallons of crude oil escaped over about eleven days, coating about 35 miles of coastline and killing thousands of seabirds. The spill was the largest in American history at the time."
+  },
+  "stimulus_set": "santa-barbara-oil-spill-1969",
+  "stem": "The Santa Barbara spill most directly helped the environmental movement by doing which of the following?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Proving that offshore drilling could never cause harm.",
+      "misconception": "The passage describes a spill that coated 35 miles of coastline, the opposite of harmless drilling."
+    },
+    {
+      "key": "B",
+      "text": "Giving Americans a visible disaster that made pollution feel urgent."
+    },
+    {
+      "key": "C",
+      "text": "Ending all oil drilling off the California coast at once.",
+      "misconception": "Background: Drilling off California continued after 1969; the spill changed politics, not all drilling."
+    },
+    {
+      "key": "D",
+      "text": "Convincing the oil industry to stop selling gasoline.",
+      "misconception": "Background: The oil industry kept selling gasoline; the spill moved the public and lawmakers, not the industry."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The passage describes a spill that coated 35 miles of coastline, the opposite of harmless drilling.",
+    "B": "Background: The spill put oil-covered beaches and dead seabirds on television and in newspapers, so pollution became something Americans could see.",
+    "C": "Background: Drilling off California continued after 1969; the spill changed politics, not all drilling.",
+    "D": "Background: The oil industry kept selling gasoline; the spill moved the public and lawmakers, not the industry.",
+    "general": "1. The passage stresses what people could see: oil coating 35 miles of coastline and killing thousands of seabirds.\n2. Background: Before 1969 pollution was often invisible, so a disaster Americans could watch made the danger feel real and urgent.\n3. Background: That urgency fed the movement that won new laws within the next two years.\nRemember: A visible disaster persuades by showing, not by arguing."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-2772",
+      "file": "u8/santa-barbara-oil-spill-1969.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1969_Santa_Barbara_Oil_Spill_CA.jpg",
+      "license": "Public domain (U.S. Geological Survey photograph)",
+      "caption": "Aerial view of oil rising near Union Oil Platform A, Santa Barbara Channel, 1969",
+      "alt": "Black-and-white aerial view of dark ocean water with an offshore drilling rig at the right and a pale patch of rising oil at the upper left"
+    }
+  ]
+}

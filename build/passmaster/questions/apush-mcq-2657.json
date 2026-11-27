@@ -1,0 +1,84 @@
+{
+ "id": "apush-mcq-2657",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.9"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "SOC",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.9 The Great Society"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "The Other America"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Liberal Hour of the 1960s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Lyndon Johnson's Social Agenda"
+   }
+  ],
+  "primary_sources": [
+   "Michael Harrington, The Other America: Poverty in the United States (1962) (paraphrased)"
+  ]
+ },
+ "source": "original; stimulus paraphrased from Harrington, The Other America (1962)",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Harrington, The Other America (1962); facts as given in the grounding books.",
+  "text": "Paraphrase of Michael Harrington, The Other America: Poverty in the United States (1962). Harrington wrote that forty to fifty million Americans lived in poverty, many in decaying urban slums and many in isolated rural towns. He noted that machines had taken work from people: the mechanization of agriculture and the automation of factory work displaced workers and left them in bitter poverty. His book helped shape the domestic agendas of President John F. Kennedy and his successor, President Lyndon Johnson."
+ },
+ "stimulus_set": "other-america-poverty",
+ "stem": "According to Harrington, what turned economic growth into poverty for many workers?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The growth of labor unions in the factories",
+   "misconception": "Harrington says nothing about unions; he points to machines taking work from people."
+  },
+  {
+   "key": "B",
+   "text": "The movement of workers from farms into cities",
+   "misconception": "Harrington places the poor in both cities and rural towns, and blames machines, not the move itself."
+  },
+  {
+   "key": "C",
+   "text": "The refusal of the poor to learn new skills",
+   "misconception": "Harrington blames machines for taking work, not the workers for refusing to learn."
+  },
+  {
+   "key": "D",
+   "text": "Machines that displaced farm and factory workers"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "The passage points to machines taking work, not to unions, as the cause.",
+  "B": "Harrington blames machines for displacing workers, not the move from farms to cities.",
+  "C": "Harrington blames the mechanization of farming and the automation of factory work, not the workers.",
+  "D": "Harrington says the mechanization of agriculture and the automation of factory work displaced workers.",
+  "general": "1. Harrington names two changes: the mechanization of agriculture and the automation of factory work.\n2. Both changes mean machines doing work that people used to do.\n3. Workers displaced by machines were left in bitter poverty.\n4. Growth therefore hurt these workers because machines took their jobs.\n5. Growth helped the nation as a whole while hurting the workers machines replaced.\nRemember: New machines can raise output while taking jobs."
+ }
+}

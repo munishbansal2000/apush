@@ -1,0 +1,98 @@
+{
+ "id": "apush-saq-0251",
+ "type": "saq",
+ "unit": 8,
+ "topics": [
+  "8.8"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "WOR",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.8 The Vietnam War"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Background to American Involvement in Vietnam"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Vietnam War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "American Involvement in Vietnam, World War II\u20131963"
+   }
+  ],
+  "primary_sources": [
+   "Ho Chi Minh, Declaration of Independence of the Democratic Republic of Vietnam, September 2, 1945 (paraphrased)"
+  ]
+ },
+ "source": "original; stimulus paraphrased from Ho Chi Minh's Declaration of Independence of the Democratic Republic of Vietnam, September 2, 1945",
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Ho Chi Minh, Declaration of Independence of the Democratic Republic of Vietnam, September 2, 1945. The quoted words \"All men are created equal\" are from the United States Declaration of Independence, 1776, public domain.",
+  "text": "Paraphrase of Ho Chi Minh, Declaration of Independence of the Democratic Republic of Vietnam, September 2, 1945. Ho opens by quoting the American Declaration of Independence: \"All men are created equal.\" He says the Vietnamese people have fought the French for decades to win that equality and freedom. He declares that Vietnam is now free and independent, and that the Vietnamese people are determined to defend that independence against any attempt to take it away."
+ },
+ "stimulus_set": null,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one claim Ho Chi Minh makes in the passage.",
+   "modelAnswer": "Ho claims that Vietnam is now free and independent. He also claims the Vietnamese people have fought the French for decades to win the equality the American Declaration promises.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one claim from the passage, such as Vietnam being free and independent, the Vietnamese people fighting the French for decades, or the Vietnamese being determined to defend their independence.",
+     "notEarned": "Naming a fact about Vietnam that Ho does not claim in the passage does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one reason Ho Chi Minh quoted the American Declaration of Independence in 1945.",
+   "modelAnswer": "Ho quoted the American Declaration to claim the same rights for Vietnam that Americans claimed for themselves. He appealed to the United States as a fellow people that had once fought a colonial power for independence, hoping for American support against France.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason Ho quoted the American Declaration, such as claiming the same rights for Vietnam, appealing to American anticolonial ideals, or seeking American support against French rule.",
+     "notEarned": "Restating that Ho quoted the Declaration without explaining why does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one reason the United States later opposed Ho Chi Minh's government despite his appeal to American ideals.",
+   "modelAnswer": "The United States saw Ho as a Communist, and its policy of containment aimed to stop the spread of communism. American leaders feared that a Communist Vietnam would lead other Southeast Asian countries to fall, so they backed France and then South Vietnam against him.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason the United States opposed Ho, such as his communism, the policy of containment, the domino theory, or the fear that communism would spread in Southeast Asia.",
+     "notEarned": "Naming a later American policy without explaining why it led the United States to oppose Ho does not earn the point."
+    }
+   ]
+  }
+ ]
+}

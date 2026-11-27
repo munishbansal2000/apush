@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2626",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.8"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.8 The Vietnam War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Vietnam War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Kennedy and Foreign Policy"
+   }
+  ],
+  "primary_sources": [
+   "John F. Kennedy Library, Military Advisors in Vietnam: 1963"
+  ]
+ },
+ "source": "original; data table from John F. Kennedy Library figures on military advisors",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Data table compiled from U.S. Department of Defense and John F. Kennedy Library figures on military advisors in South Vietnam.",
+  "text": "U.S. military advisors in South Vietnam:\n\n| Year | Advisors |\n|---|---:|\n| 1961 | about 700 |\n| End of 1962 | about 11,000 |\n| End of 1963 | about 16,000 |\n\nPresident Kennedy sent these advisors to train the South Vietnamese army. He did not send American combat troops to fight the war."
+ },
+ "stimulus_set": "domino-advisors-diem",
+ "stem": "The pattern in the table best supports which conclusion about Kennedy's policy in Vietnam?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Kennedy deepened involvement step by step without sending combat troops"
+  },
+  {
+   "key": "B",
+   "text": "Kennedy withdrew American forces from Vietnam during his presidency",
+   "misconception": "The table shows the number rising from 700 to 16,000, not falling, so it shows a buildup, not a withdrawal."
+  },
+  {
+   "key": "C",
+   "text": "Kennedy sent combat troops to fight in Vietnam from the start",
+   "misconception": "The passage states plainly that Kennedy sent advisors to train the army and did not send combat troops."
+  },
+  {
+   "key": "D",
+   "text": "Kennedy kept the American presence in Vietnam frozen at its 1961 level",
+   "misconception": "The table shows the number growing more than twentyfold, so the presence was not frozen."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background: the advisor count rose from about 700 to about 16,000, yet Kennedy held back from sending combat troops.",
+  "B": "The table shows growth from 700 to 16,000, which is the opposite of a withdrawal.",
+  "C": "The passage states that Kennedy sent advisors to train the army and did not send combat troops.",
+  "D": "The table shows the number rising from about 700 to about 16,000, not staying frozen.",
+  "general": "1. Read the table across: about 700 advisors in 1961, about 11,000 by the end of 1962, about 16,000 by the end of 1963.\n2. The numbers climb steeply, so American involvement deepened under Kennedy.\n3. Background: the passage adds that these were advisors training the South Vietnamese army, not combat troops.\n4. The two facts together show a middle course: deeper involvement, still short of an American war.\nRemember: A rising count plus a stated limit tells you the policy's shape."
+ }
+}

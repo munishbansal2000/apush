@@ -1,0 +1,85 @@
+{
+ "id": "apush-mcq-2659",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.9"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "skills": [
+  "3.D",
+  "6.C"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.9 The Great Society"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "The Other America"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Liberal Hour of the 1960s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Lyndon Johnson's Social Agenda"
+   }
+  ],
+  "primary_sources": [
+   "Michael Harrington, The Other America: Poverty in the United States (1962) (paraphrased)"
+  ]
+ },
+ "source": "original; stimulus paraphrased from Harrington, The Other America (1962)",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Harrington, The Other America (1962); facts as given in the grounding books.",
+  "text": "Paraphrase of Michael Harrington, The Other America: Poverty in the United States (1962). Harrington wrote that forty to fifty million Americans lived in poverty, many in decaying urban slums and many in isolated rural towns. He noted that machines had taken work from people: the mechanization of agriculture and the automation of factory work displaced workers and left them in bitter poverty. His book helped shape the domestic agendas of President John F. Kennedy and his successor, President Lyndon Johnson."
+ },
+ "stimulus_set": "other-america-poverty",
+ "stem": "Harrington's evidence best supports which conclusion about postwar American prosperity?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Prosperity reached every American equally",
+   "misconception": "Harrington counts forty to fifty million Americans still in poverty, so prosperity did not reach everyone."
+  },
+  {
+   "key": "B",
+   "text": "Prosperity was real but uneven, leaving millions behind"
+  },
+  {
+   "key": "C",
+   "text": "Prosperity caused poverty to grow in every region",
+   "misconception": "Harrington describes poverty persisting amid growth, not growing everywhere because of it."
+  },
+  {
+   "key": "D",
+   "text": "Prosperity ended when machines replaced workers",
+   "misconception": "Harrington describes growth continuing while machines displaced some workers; prosperity did not end."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Forty to fifty million Americans in poverty means prosperity did not reach everyone equally.",
+  "B": "Growth was real, yet forty to fifty million people stayed poor, so prosperity was uneven.",
+  "C": "Harrington shows poverty persisting beside growth, not prosperity causing poverty everywhere.",
+  "D": "Harrington describes growth going on while machines displaced workers; prosperity itself did not end.",
+  "general": "1. Background: the postwar economy grew and living standards rose, which is the background the passage takes for granted.\n2. Against that background Harrington counts forty to fifty million people in poverty.\n3. Those two facts together mean growth and poverty existed at the same time.\n4. Prosperity was therefore real but uneven, leaving millions behind.\nRemember: Growth and hardship can rise together when the gains are uneven."
+ }
+}

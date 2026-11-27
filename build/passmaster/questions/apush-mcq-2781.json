@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-2781",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.13"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A"
+  ],
+  "themes": [
+    "WXT",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.13 The environment and natural resources from 1968 to 1980"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "The Presidency of Richard Nixon"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "U.S. Energy Information Administration, average gasoline and crude oil prices, 1973-1980"
+    ]
+  },
+  "source": "original; stimulus is an account of the 1973 embargo with an EIA price table",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Account of the embargo drawn from the grounding books (5 Steps Ch. 28; Princeton Ch. 12) and the U.S. State Department's account: embargo imposed October 1973 after U.S. aid to Israel, lifted March 1974. Prices are U.S. Energy Information Administration annual averages: regular gasoline 39 cents in 1973, 53 cents in 1974, 86 cents in 1979, 119 cents in 1980; crude oil about $2.90 a barrel before the embargo and $11.65 by January 1974.",
+    "text": "In October 1973, Egypt and Syria attacked Israel, starting the Yom Kippur War. When the United States sent emergency military aid to Israel, Arab oil producers cut production and embargoed oil shipments to the United States. The embargo ended in March 1974, but oil prices stayed high.\n\nAverage prices (U.S. Energy Information Administration):\n\n| | 1973 | 1974 | 1979 | 1980 |\n| Crude oil, dollars per barrel | $2.90 | $11.65 | — | — |\n| Regular gasoline, cents per gallon | 39 | 53 | 86 | 119 |"
+  },
+  "stimulus_set": "oil-embargo-gas-prices-1973",
+  "stem": "What most directly caused Arab producers to embargo oil to the United States in 1973?",
+  "options": [
+    {
+      "key": "A",
+      "text": "American military aid to Israel during the Yom Kippur War."
+    },
+    {
+      "key": "B",
+      "text": "An American ban on all oil imports.",
+      "misconception": "The passage says the producers cut off shipments, not that the United States banned imports."
+    },
+    {
+      "key": "C",
+      "text": "A drought that dried up Middle Eastern oil wells.",
+      "misconception": "The passage says nothing about a drought; the cause was the war and American aid."
+    },
+    {
+      "key": "D",
+      "text": "A United Nations vote to end the Vietnam War.",
+      "misconception": "Background: The embargo was a response to the Yom Kippur War, not to a vote about Vietnam."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "The passage says Arab producers acted when the United States sent emergency military aid to Israel in the Yom Kippur War.",
+    "B": "The passage says the producers cut off shipments, not that the United States banned imports.",
+    "C": "The passage says nothing about a drought; the cause was the war and American aid.",
+    "D": "Background: The embargo was a response to the Yom Kippur War, not to a vote about Vietnam.",
+    "general": "1. The passage opens with the war: Egypt and Syria attacked Israel in October 1973.\n2. It then says the United States sent emergency military aid to Israel.\n3. Background: The producers answered that aid with the embargo, so the aid, not a drought or a vote, was the direct cause.\nRemember: Trace the chain: war, then aid, then embargo."
+  }
+}

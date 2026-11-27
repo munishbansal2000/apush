@@ -1,0 +1,79 @@
+{
+  "id": "apush-mcq-2799",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.14"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 3,
+  "skills": [
+    "3.A",
+    "2.A"
+  ],
+  "themes": [
+    "GEO",
+    "MIG"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.14 Society in Transition"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "The Election of 1980"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "U.S. Census Bureau, Historical Apportionment Data, 1960, 1970, and 1980 censuses"
+    ]
+  },
+  "source": "original; stimulus table compiled from U.S. Census Bureau apportionment data",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from U.S. Census Bureau apportionment data for the 1960, 1970, and 1980 censuses. Account drawn from the grounding books (Barron's Ch. 10, Topic 8.14; 5 Steps Ch. 28; Princeton Ch. 12).",
+    "text": "House of Representatives seats after each census (U.S. Census Bureau):\n\n| State or region | 1960 | 1970 | 1980 |\n| South (total) | 106 | 108 | 116 |\n| California | 38 | 43 | 45 |\n| Florida | 12 | 15 | 19 |\n| Texas | 23 | 24 | 27 |\n| New York | 41 | 39 | 34 |\n| Pennsylvania | 27 | 25 | 23 |"
+  },
+  "stimulus_set": "sunbelt-seats-1970-1980",
+  "stem": "What most directly caused the population movement that the table records?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The Northeast gained factories while the South lost all of its factories.",
+      "misconception": "The table shows the South and West gaining seats, which means people moved toward them, not away."
+    },
+    {
+      "key": "B",
+      "text": "New federal laws that banned Americans from ever leaving the Northeast.",
+      "misconception": "Background: No federal law banned Americans from leaving the Northeast."
+    },
+    {
+      "key": "C",
+      "text": "Jobs, warm weather, air conditioning, and defense plants drew people south and west."
+    },
+    {
+      "key": "D",
+      "text": "Immigration from Europe stopped entirely in 1970 and never started again.",
+      "misconception": "Background: Immigration did not stop in 1970, and it would not explain movement inside the United States."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "The table shows the South and West gaining seats, so people moved toward them, not toward the Northeast.",
+    "B": "Background: No federal law ever banned Americans from leaving the Northeast, so this cannot explain the shift.",
+    "C": "Background: Defense plants, highways, air conditioning, and warm weather pulled jobs and people to the Sunbelt states that gained seats.",
+    "D": "Background: Immigration did not stop in 1970, and it would not explain Americans moving from one region to another.",
+    "general": "1. House seats follow population, so a state that gains seats has gained people.\n2. The gainers are the South and West, while New York and Pennsylvania each lost seats.\n3. Background: Jobs, warm weather, air conditioning, and defense plants pulled people and businesses to the Sunbelt.\nRemember: Seats follow people, so always ask what pulled people to the gaining states."
+  }
+}

@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-2773",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.13"
+ ],
+ "lesson": "apush-u8-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "3.B",
+  "4.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.13 The environment and natural resources from 1968 to 1980"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "The Environmental Movement"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Expansion of Rights Movements"
+   }
+  ],
+  "primary_sources": [
+   "Aerial photograph of the Santa Barbara oil spill, 1969 (U.S. Geological Survey)"
+  ]
+ },
+ "source": "original; stimulus photograph viewed before writing",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph: aerial view of oil rising near Union Oil Platform A, Santa Barbara Channel, 1969, public domain (U.S. Geological Survey photograph, via Wikimedia Commons). Spill facts verified against Clarke and Hemphill, 'The Santa Barbara Oil Spill: A Retrospective' (2002) and the Sierra Club account: blowout January 28, 1969; about three million gallons over eleven days; 35 miles of coastline. Account drawn from the grounding books (Barron's Ch. 10, Topic 8.13).",
+  "text": "The photograph is an aerial view taken during the Santa Barbara oil spill of 1969. It shows an offshore drilling rig standing in dark water, with a pale patch of oil rising to the surface at the upper left and a disturbed ring of water around the rig.\n\nOn January 28, 1969, a well on Union Oil's Platform A, about six miles off Santa Barbara, California, blew out. Roughly three to four million gallons of crude oil escaped over about eleven days, coating about 35 miles of coastline and killing thousands of seabirds. The spill was the largest in American history at the time."
+ },
+ "stimulus_set": "santa-barbara-oil-spill-1969",
+ "stem": "A historian would most likely use the Santa Barbara spill to support which argument?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Federal environmental laws were already strong before 1969.",
+   "misconception": "Background: The big federal environmental laws came after the spill, in 1970 and later."
+  },
+  {
+   "key": "B",
+   "text": "The spill mattered only to Californians and changed nothing nationally.",
+   "misconception": "Background: The spill drew national coverage and helped drive national laws within two years."
+  },
+  {
+   "key": "C",
+   "text": "A single visible disaster can turn public concern into new laws."
+  },
+  {
+   "key": "D",
+   "text": "The public ignored pollution until the 1980s.",
+   "misconception": "Background: The first Earth Day drew 20 million people in 1970, a year after the spill."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Background: The big federal environmental laws came after the spill, in 1970 and later.",
+  "B": "Background: The spill drew national coverage and helped drive national laws within two years.",
+  "C": "Background: The spill horrified the public in 1969, and within two years Congress had passed the National Environmental Policy Act and the Clean Air Act, and President Nixon had created the EPA.",
+  "D": "Background: The first Earth Day drew 20 million people in 1970, a year after the spill.",
+  "general": "1. The passage dates the spill to a single day: January 28, 1969.\n2. Background: It was followed fast by national action: the National Environmental Policy Act in January 1970, the EPA in December 1970, and the Clean Air Act the same year.\n3. Background: That sequence, disaster then laws, is why historians treat the spill as a turning point.\nRemember: To support a causation claim, line up the event and what followed it."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2773",
+   "file": "u8/santa-barbara-oil-spill-1969.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:1969_Santa_Barbara_Oil_Spill_CA.jpg",
+   "license": "Public domain (U.S. Geological Survey photograph)",
+   "caption": "Aerial view of oil rising near Union Oil Platform A, Santa Barbara Channel, 1969",
+   "alt": "Black-and-white aerial view of dark ocean water with an offshore drilling rig at the right and a pale patch of rising oil at the upper left"
+  }
+ ]
+}

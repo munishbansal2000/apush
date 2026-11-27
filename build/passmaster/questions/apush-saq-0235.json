@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0235",
+ "type": "saq",
+ "unit": 8,
+ "topics": [
+  "8.1"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "skills": [
+  "1.B",
+  "5.A"
+ ],
+ "themes": [
+  "WOR",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.1 Contextualizing Period 8"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.4 The Economy After 1945"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 26",
+    "section": "Prosperity and Anxiety: The 1950s"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question; facts from the grounding books.",
+  "text": "After World War II, the United States stood as the world's strongest power, with its cities untouched by war and its factories turning out goods for a world that needed rebuilding. At home, sixteen million veterans returned, the GI Bill sent millions to college and into new homes, and birthrates rose sharply in the baby boom. Abroad, the wartime alliance with the Soviet Union broke apart, and the United States took the lead in containing communism through aid, alliances, and the new United Nations.\n\nYet the postwar order left old patterns standing. African Americans continued to move from the rural South to northern and western cities, seeking work and a fuller share of American life, and they met segregation in housing and schools. Women who had worked in wartime factories were pressed back toward housework and suburban family life."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one way the United States took a leading role in the world after World War II.",
+   "modelAnswer": "The United States led the containment of communism by giving aid to rebuild friendly nations, as it did through the Marshall Plan in Western Europe. It also helped build lasting alliances such as NATO and took a leading place in the new United Nations.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one leading world role from the passage, such as Marshall Plan aid, building alliances such as NATO, or leading in the United Nations.",
+     "notEarned": "Naming a domestic change instead of a world role, or a vague answer with no role identified, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one way returning veterans changed American life at home after the war.",
+   "modelAnswer": "Millions of veterans used the GI Bill to attend college and buy homes, which widened the middle class and filled new suburbs. Their marriages also helped start the baby boom, as birthrates rose sharply from 1946 into the early 1960s.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one home-front change caused by returning veterans, such as GI Bill college or home buying, suburban growth, or the baby boom.",
+     "notEarned": "Restating that veterans came home, with no change explained, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one continuity in American life from the prewar years into the postwar period.",
+   "modelAnswer": "Racial segregation continued after the war, even as the United States claimed to lead the free world. African Americans still faced barred neighborhoods and segregated schools, and the migration north did not end discrimination.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one continuity, such as segregation in housing or schools continuing, or the limits placed on women's roles.",
+     "notEarned": "Naming a change instead of a continuity, or giving a continuity with no explanation, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

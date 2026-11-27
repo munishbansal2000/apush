@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-2539",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.4"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Poverty Amid Affluence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Great Society"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ]
+ },
+ "source": "original; stimulus is a public-domain photograph viewed before writing (see figures)",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph: President Lyndon B. Johnson signing the Medicare bill, July 30, 1965, Independence, Missouri. Former President Harry Truman sits beside him. Public domain (U.S. government photograph), via Wikimedia Commons.",
+  "text": "The photograph shows President Lyndon B. Johnson signing a bill at a desk, with Harry Truman seated beside him and Lady Bird Johnson standing behind him. Microphones stand on the desk, and American flags stand behind the group."
+ },
+ "stimulus_set": "medicare-great-society-1965",
+ "stem": "The Great Society cut the poverty rate by 40 percent, yet poverty remained and the programs drew criticism. Which conclusion best fits both facts?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Great Society ended poverty completely in the 1960s",
+   "misconception": "Background from the books: poverty remained after the programs; the Great Society did not end it."
+  },
+  {
+   "key": "B",
+   "text": "The programs failed because Congress never passed any of them",
+   "misconception": "Background from the books: Congress passed Medicare, Medicaid, and the Office of Economic Opportunity; the programs existed and helped many."
+  },
+  {
+   "key": "C",
+   "text": "The programs cut poverty without ending it, while Vietnam drained funds"
+  },
+  {
+   "key": "D",
+   "text": "Johnson never intended the programs to help poor Americans",
+   "misconception": "Background from the books: Johnson's stated goal was to end poverty; the programs were built to help the poor."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Background from the books: poverty remained after the programs, so the Great Society reduced it without ending it.",
+  "B": "Background from the books: Congress passed Medicare, Medicaid, and the Office of Economic Opportunity; the programs existed and helped many.",
+  "C": "Background from the books: the poverty rate fell 40 percent, yet the programs had limited success, and Vietnam diverted hundreds of billions of dollars from antipoverty work.",
+  "D": "Background from the books: Johnson's stated goal was to end poverty; the programs were built to help the poor.",
+  "general": "1. Hold both facts at once: a 40 percent cut and poverty still standing.\n2. Background from the books: the programs had limited success, and the war in Vietnam diverted hundreds of billions that could have gone to antipoverty programs.\n3. A partial success cut short by war spending fits both facts, while total success or total failure fits neither.\nRemember: When a result is real but incomplete, look for what cut it short."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2539",
+   "file": "u8/pr25e-test1-q52.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Lyndon_Johnson_signing_Medicare_bill%2C_with_Harry_Truman%2C_July_30%2C_1965.jpg",
+   "license": "Public domain (U.S. government photograph)",
+   "caption": "President Johnson signing the Medicare bill, July 30, 1965",
+   "alt": "President Lyndon Johnson signs the Medicare bill at a desk while former President Harry Truman sits beside him and Lady Bird Johnson stands behind him"
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "id": "apush-mcq-2545",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.5"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "SOC",
+  "ARC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.5 Culture After 1945"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 26",
+    "section": "Life in Suburbia"
+   }
+  ]
+ },
+ "source": "original; stimulus is a data table from the U.S. Census Bureau, table HS-42",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data table from U.S. Census Bureau, Statistical Abstract of the United States, table HS-42 (Selected Communications Media, 1920 to 2001).",
+  "text": "| Year | Share of American households owning a television |\n| 1950 | 9.0% |\n| 1955 | 64.5% |\n| 1960 | 87.1% |\n\nSource: U.S. Census Bureau, Statistical Abstract, table HS-42. The table gives the share of households owning at least one television set."
+ },
+ "stimulus_set": "tv-ownership-1950-1960",
+ "stem": "The rapid spread of television shown in the table best explains which change in American culture?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Americans began sharing one mass culture built on the same programs"
+  },
+  {
+   "key": "B",
+   "text": "Americans stopped going to movies and reading newspapers entirely",
+   "misconception": "Background from the books: movies and newspapers kept large audiences through the 1950s."
+  },
+  {
+   "key": "C",
+   "text": "Local radio stations became the main shapers of national opinion",
+   "misconception": "Background from the books: television, not local radio, became the national medium in the 1950s."
+  },
+  {
+   "key": "D",
+   "text": "Families moved from cities to farms to escape television",
+   "misconception": "Background from the books: families moved the other way, from cities to suburbs, and took television with them."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "With a set in nearly every home, millions watched the same few national programs, so one shared mass culture formed.",
+  "B": "Background from the books: movies and newspapers kept large audiences through the 1950s, so neither ended.",
+  "C": "Background from the books: television, not local radio, became the national medium in the 1950s.",
+  "D": "Background from the books: families moved from cities to suburbs in the 1950s, and television moved with them.",
+  "general": "1. The table shows television reaching nearly every home in a single decade.\n2. Background from the books: only three national networks fed most of those sets, so the same programs reached the whole country.\n3. When millions watch the same shows, they share jokes, stars, and stories, which is what a mass culture is.\nRemember: A medium that reaches nearly everyone tends to make culture more shared and more alike."
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-2441",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.1"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "4.B"
+ ],
+ "themes": [
+  "WOR",
+  "ARC"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.2 The Cold War from 1945 to 1980"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Origins of the Cold War (1945-1960)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Truman and the Beginning of the Cold War (1945-1953)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "U.S. government photograph of the mushroom cloud over Nagasaki, August 9, 1945, public domain.",
+  "text": "A photograph taken from the air over Nagasaki, Japan, on August 9, 1945, shows a vast mushroom cloud rising above the clouds after the atomic bomb was dropped on the city. The cloud's stem rises from the ground below, and its broad top spreads across the sky."
+ },
+ "stimulus_set": "atomic-age-nagasaki",
+ "source": "original; stimulus image from the shared pool: mushroom cloud over Nagasaki, August 9, 1945, public domain (U.S. government photograph)",
+ "stem": "The photograph shows a weapon used in 1945. Which of the following best explains how atomic weapons changed the way great powers thought about war after World War II?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Victory no longer seemed worth the price, since a defeated enemy could still destroy the victor's cities."
+  },
+  {
+   "key": "B",
+   "text": "Wars became shorter, since atomic bombs ended every conflict within days of their first use.",
+   "misconception": "Only the war with Japan ended after the bombs; Korea and later wars were fought without atomic bombs and lasted years."
+  },
+  {
+   "key": "C",
+   "text": "Great powers stopped building conventional armies and navies altogether.",
+   "misconception": "Atomic weapons added to conventional forces; they did not replace armies and navies."
+  },
+  {
+   "key": "D",
+   "text": "The United Nations banned all atomic weapons in 1946, so no state kept an arsenal after the war.",
+   "misconception": "No ban on atomic weapons took hold in 1946; the arsenals only grew."
+  }
+ ],
+ "rationales": {
+  "A": "Before the bomb, a great power could win a war and keep its own cities safe. Background from the books: atomic weapons broke that bargain, since even a losing enemy could answer with a bomb, so leaders leaned on deterrence instead.",
+  "B": "Atomic bombs did not end every conflict quickly. Korea lasted three years, and later wars dragged on for far longer.",
+  "C": "Conventional armies and navies did not disappear. The United States fought Korea with ground troops and kept large conventional forces.",
+  "D": "The United Nations did not ban atomic weapons in 1946, and both superpowers kept growing arsenals through the 1950s.",
+  "general": "1. Look at what one bomb did. A whole city, destroyed in a single blast.\n2. Ask what that does to winning. Background from the books: in earlier wars the victor's cities were safe; now a losing enemy could still destroy them.\n3. Ask what leaders did instead. Background from the books: they built arsenals to threaten retaliation, and they called the result deterrence.\n4. Name the change. War stopped being a contest a great power could expect to win cleanly, and became a ruin both sides had to avoid.\nRemember: atomic weapons turned victory itself into a doubtful prize."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2441",
+   "file": "u8/saq-set-26-q3.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Nagasakibomb.jpg",
+   "license": "Public domain (U.S. government photograph)",
+   "caption": "The mushroom cloud over Nagasaki, August 9, 1945",
+   "alt": "A vast mushroom cloud rising above the clouds over Nagasaki after the atomic bomb of August 9, 1945"
+  }
+ ]
+}

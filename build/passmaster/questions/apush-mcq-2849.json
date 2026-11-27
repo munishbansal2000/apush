@@ -1,0 +1,76 @@
+{
+  "answerKey": "B",
+  "difficulty": 2,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.8 The Vietnam War"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "America in an Era of Turmoil (1960–1975)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-2849",
+  "lesson": "apush-u8-l3",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Opposition grew because people believed the war was being won quickly.",
+      "text": "Widespread belief that the war was being won quickly and easily"
+    },
+    {
+      "key": "B",
+      "text": "Doubts about the war’s purpose, costs, and the credibility of government claims"
+    },
+    {
+      "key": "C",
+      "misconception": "Opposition grew despite unanimous student support.",
+      "text": "Unanimous support for the war among college students"
+    },
+    {
+      "key": "D",
+      "misconception": "Opposition grew although television never covered the war.",
+      "text": "The absence of television coverage of the war"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Belief in a quick, easy victory faded; it did not spread.",
+    "B": "Opposition grew as costs rose, casualties mounted, and the credibility gap widened. Each year of war brought more dead, more spending, and more doubt that official claims matched reality.",
+    "C": "Students were prominent opponents, not unanimous supporters.",
+    "D": "Television brought the war home; coverage was not absent.",
+    "general": "1. Ask what changed minds. Rising costs, mounting casualties, and government claims that did not match the news.\n2. Name the pattern. Doubt about the war's purpose, its costs, and the credibility of official claims.\n3. Test the reversals. Quick victory was not believed, students opposed the war, and television covered it heavily.\n4. Match the opposition. Doubt grows when costs rise and claims lose credibility.\nRemember: opposition to a war usually tracks its costs and the trustworthiness of its claims."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "2.B"
+  ],
+  "source": "original; stimulus is a paraphrase of Lyndon B. Johnson’s addresses on Vietnam (1964–1965)",
+  "status": "final",
+  "stem": "Growing opposition to the Vietnam War in the late 1960s most directly reflected which of the following?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Lyndon B. Johnson, address on Vietnam, 1964–1965, paraphrased from presidential addresses.",
+    "text": "We can continue to help the people of South Vietnam to defend their freedom or we can abandon them. I have chosen to continue our commitment to the freedom of South Vietnam."
+  },
+  "stimulus_set": "johnson-vietnam-1964",
+  "themes": [
+    "WOR",
+    "PCE"
+  ],
+  "topics": [
+    "8.8"
+  ],
+  "type": "mcq",
+  "unit": 8
+}

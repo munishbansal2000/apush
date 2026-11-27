@@ -1,0 +1,84 @@
+{
+  "id": "apush-mcq-2780",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.13"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 4,
+  "skills": [
+    "4.A",
+    "3.B"
+  ],
+  "themes": [
+    "PCE",
+    "GEO"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.13 The environment and natural resources from 1968 to 1980"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Environmental Movement"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "The Presidency of Richard Nixon"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "EPA, 'The Birth of EPA' and EPA History 1970-1985 (dates)"
+    ]
+  },
+  "source": "original; stimulus is a table of federal environmental actions",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from EPA histories: NEPA signed January 1, 1970; EPA opened December 2, 1970; Clean Air Act signed December 1970; Clean Water Act enacted October 18, 1972; Endangered Species Act enacted December 28, 1973; DDT uses cancelled in 1972. Dates verified against EPA, 'The Birth of EPA,' EPA History 1970-1985, and the Duke Nicholas School environmental timeline. Account drawn from the grounding books (Barron's Ch. 10, Topic 8.13; 5 Steps Ch. 28; Princeton Ch. 12).",
+    "text": "Major federal environmental actions, 1970-1973:\n\n| Action | Date | What it did |\n| National Environmental Policy Act (NEPA) | January 1, 1970 | Required federal agencies to assess the environmental effects of their projects |\n| Environmental Protection Agency (EPA) | December 2, 1970 | New federal agency to enforce environmental laws |\n| Clean Air Act | 1970 | Set national standards for air quality and auto emissions |\n| Clean Water Act | October 18, 1972 | Set federal limits on pollutants discharged into waters |\n| Endangered Species Act | December 28, 1973 | Protected species at risk of extinction and their habitats |\n| DDT ban | December 31, 1972 | EPA ended nearly all uses of the pesticide DDT |"
+  },
+  "stimulus_set": "epa-environmental-laws-1970-1973",
+  "stem": "Taken together, the actions in the table best support which conclusion about the early 1970s?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The federal government ignored pollution until the 1980s.",
+      "misconception": "The table lists six federal actions from 1970 to 1973, the opposite of ignoring pollution."
+    },
+    {
+      "key": "B",
+      "text": "Environmental protection became a major federal job."
+    },
+    {
+      "key": "C",
+      "text": "Congress passed environmental laws only when presidents opposed them.",
+      "misconception": "Background: President Nixon signed these laws and created the EPA, so the laws had presidential support."
+    },
+    {
+      "key": "D",
+      "text": "The states took over all environmental enforcement from Washington.",
+      "misconception": "Background: The table shows Washington creating an agency and setting national standards, not handing the job to the states."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The table lists six federal actions from 1970 to 1973, the opposite of ignoring pollution.",
+    "B": "Background: In four years Washington created an agency, set national air and water standards, protected endangered species, and banned DDT, a whole new federal job.",
+    "C": "Background: President Nixon signed these laws and created the EPA, so the laws had presidential support.",
+    "D": "Background: The table shows Washington creating an agency and setting national standards, not handing the job to the states.",
+    "general": "1. The table packs six major actions into four years, 1970 to 1973.\n2. Background: They cover air, water, species, and chemicals, so the government took on the whole environment, not one problem.\n3. Background: A new agency, the EPA, was created to run that job, which shows it was meant to last.\nRemember: When a table shows many actions in a short span, the pattern is the answer."
+  }
+}

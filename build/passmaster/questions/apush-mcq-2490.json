@@ -1,0 +1,73 @@
+{
+ "id": "apush-mcq-2490",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.3"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.3 The Red Scare"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "The Second Red Scare"
+   }
+  ],
+  "primary_sources": [
+   "Elizabeth Bentley, testimony before the House Committee on Un-American Activities, 1948"
+  ]
+ },
+ "source": "original; stimulus paraphrased from Elizabeth Bentley's testimony before HUAC, 1948",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Elizabeth Bentley's testimony before the House Committee on Un-American Activities, 1948. Paraphrased, not quoted, because the source is after 1929.",
+  "text": "In 1948, Elizabeth Bentley, a former courier for a Soviet spy ring, testified before the House Committee on Un-American Activities. She named government employees she said had passed her secret information, including material on aircraft production, for delivery to Soviet agents. The committee used her testimony to open a wider investigation of communists in the government."
+ },
+ "stimulus_set": "huac-bentley-1948",
+ "stem": "Bentley's testimony mattered most to HUAC because it",
+ "options": [
+  {
+   "key": "A",
+   "text": "Proved that Julius and Ethel Rosenberg were Soviet spies.",
+   "misconception": "Background from the books: the Rosenbergs were a separate case, indicted in 1950. Bentley testified in 1948 and named government employees, not the Rosenbergs."
+  },
+  {
+   "key": "B",
+   "text": "Showed that the Soviet Union had built an atomic bomb.",
+   "misconception": "Background from the books: the Soviet atomic test came in 1949, after Bentley's testimony. Her testimony was about people passing secrets, not about a Soviet bomb."
+  },
+  {
+   "key": "C",
+   "text": "Gave the committee named officials and specific secrets to investigate."
+  },
+  {
+   "key": "D",
+   "text": "Ended the Hollywood blacklist within a year.",
+   "misconception": "Bentley's testimony was about government spies, not Hollywood, and it ended nothing in the movie industry."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Background from the books: the Rosenbergs were a separate case, indicted in 1950. Bentley testified in 1948 and named government employees, not the Rosenbergs.",
+  "B": "Background from the books: the Soviet atomic test came in 1949, after Bentley's testimony. Her testimony was about people passing secrets, not about a Soviet bomb.",
+  "C": "Bentley named government employees and described the secrets they passed. That turned a general fear of spies into specific names the committee could pursue.",
+  "D": "Background from the books: the blacklist lasted until 1960. The Hollywood blacklist ran for years after Bentley testified, so her testimony ended nothing.",
+  "general": "1. Before Bentley, the fear of spies was general: enemies might be hidden in the government.\n2. Bentley named government employees and described the secrets they passed, including material on aircraft production.\n3. Named people and specific secrets turn a general fear into cases a committee can pursue.\nRemember: A named accusation with details moves an investigation forward; a vague fear does not."
+ }
+}

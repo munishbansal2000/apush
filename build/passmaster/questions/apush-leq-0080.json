@@ -1,0 +1,87 @@
+{
+ "id": "apush-leq-0080",
+ "type": "leq",
+ "unit": 8,
+ "topics": [
+  "8.4"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.4 The Economy After 1945"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Great Society"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ]
+ },
+ "source": "original; prompt written for this question",
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "stimulus_set": null,
+ "prompt": "Evaluate the extent to which federal government policies caused changes in the American economy from 1945 to 1980. In your response, analyze the causes of the economic changes you describe.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which federal government policies caused changes in the American economy from 1945 to 1980, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of the government's causal role does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the wartime economy, the New Deal, or the Cold War.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples of federal policies that changed the economy, such as the GI Bill, the Interstate Highway Act, or the Marshall Plan.",
+   "notEarned": "General statements about the government with no specific policy do not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples of economic change, such as suburban growth, the Sunbelt migration, the white-collar shift, or stagflation.",
+   "notEarned": "Repeating the same policy example, or naming an economic change with no specific detail, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (causation): earns the point for explaining the causes of the economic changes, linking policies to results such as loans creating homeowners, highways creating suburbs, or the oil cutoff creating shortages.",
+   "notEarned": "Listing policies with no explanation of how they produced the changes does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the thesis by period, explaining why federal policies built prosperity in the 1950s but failed against stagflation in the 1970s, or weighing the government's power against private markets and foreign oil.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: Federal policies caused most of the great economic changes of 1945 to 1980, from the suburban boom to the highway system, because Washington spent, lent, and regulated at a scale no private actor could match, though foreign oil and private markets set limits the government could not remove.\nContext: The wartime economy had made the federal government the nation's largest buyer and builder, and the New Deal had already taught Washington to use spending to fight hard times.\nEvidence of policies causing change: the GI Bill put eight million veterans through school and backed 4.3 million home loans, the 1956 highway act let families live in suburbs and drive to city jobs, and the Marshall Plan rebuilt Western Europe as a market for American goods.\nEvidence of economic change: suburbs and the Sunbelt grew, a majority of workers held white-collar jobs by 1956, and in the 1970s the OPEC cutoff produced gas lines and stagflation.\nCauses: federal loans and highways lowered the cost of houses and travel, defense spending poured billions into research and factories, and the oil cutoff raised the price of fuel and everything it moved.\nComplexity: the government's causal power was strongest when it built things and weakest when it faced forces abroad. Its policies built the 1950s boom, yet Nixon's wage-price freeze and Ford's WIN campaign could not stop stagflation, so the extent of its power changed across the period.",
+ "totalPoints": 6
+}

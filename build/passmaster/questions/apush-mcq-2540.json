@@ -1,0 +1,81 @@
+{
+ "id": "apush-mcq-2540",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.4"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Stagflation"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ]
+ },
+ "source": "original; stimulus is a public-domain photograph viewed before writing (see figures)",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph: gasoline line, 1973. EPA DOCUMERICA photograph (NARA 555459), public domain (U.S. government photograph), via Wikimedia Commons.",
+  "text": "The photograph, taken during the gasoline shortage of 1973-1974, shows cars lined up at a Shell station. The car nearest the camera carries a red sign reading 'SORRY! TEMPORARILY OUT OF GAS.' A price board lists Shell Regular, Super Regular, and Super Shell."
+ },
+ "stimulus_set": "gas-lines-stagflation-1973",
+ "stem": "What does the photograph show about daily life during the gasoline shortage?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Gasoline was so plentiful that stations gave it away free",
+   "misconception": "Background from the books: the 1973 shortage raised fuel prices and emptied pumps; gasoline was scarce, not free."
+  },
+  {
+   "key": "B",
+   "text": "Drivers waited in long lines and found stations out of gasoline"
+  },
+  {
+   "key": "C",
+   "text": "Most Americans stopped driving cars entirely in 1973",
+   "misconception": "Background from the books: Americans kept driving and waited in lines; they did not stop driving entirely."
+  },
+  {
+   "key": "D",
+   "text": "Gas stations closed forever across the whole country",
+   "misconception": "Background from the books: stations ran out of gas for hours at a time; they did not close forever."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Background from the books: the 1973 shortage raised fuel prices and emptied pumps; gasoline was scarce, not free.",
+  "B": "The line of cars and the sign reading out of gas show drivers waiting and then finding no gasoline.",
+  "C": "Background from the books: Americans kept driving and waited in lines; they did not stop driving entirely.",
+  "D": "Background from the books: stations ran out of gas for hours at a time; they did not close forever.",
+  "general": "1. Read the photo like a witness: cars in line, a sign saying out of gas.\n2. A line means waiting, and the sign means the wait ended with no gasoline.\n3. Free gas, no driving at all, and stations closed forever all go beyond what the photo shows.\nRemember: A photograph proves the scene it shows, and the scene here is waiting without fuel."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2540",
+   "file": "u8/barrons-2027-pt2-40.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/AFTER_HOURS_IN_A_GASOLINE_LINE_A_DRIVER_COULD_ARRIVE_AT_THE_PUMPS_AND_FIND_OUT_THAT_THE_CAR_AHEAD_OF_HIM_WAS_THE_LAST..._-_NARA_-_555459.jpg",
+   "license": "Public domain (U.S. government photograph)",
+   "caption": "Cars wait in line at a gasoline station during the 1973-1974 shortage",
+   "alt": "Cars lined up at a Shell gasoline station during the 1973-1974 shortage, with a red sign on the nearest car reading sorry, temporarily out of gas"
+  }
+ ]
+}

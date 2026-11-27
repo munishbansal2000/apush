@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-2590",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.6"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.6 Early Steps in the Civil Rights Movement (1940s and 1950s)"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 26",
+    "section": "Prosperity and Anxiety: The 1950s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ],
+  "primary_sources": [
+   "Executive Order 10730, September 23, 1957",
+   "Civil Rights Act of 1957, Pub. L. 85-315, September 9, 1957"
+  ]
+ },
+ "source": "original; stimulus Photograph: Operation Arkansas, Little Rock Nine, September 1957, U.S. Army, public domain via Wikimedia Commons.",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph: Operation Arkansas, Little Rock Nine, September 1957, U.S. Army, public domain via Wikimedia Commons.",
+  "text": "The photograph, taken in September 1957, shows a student of the Little Rock Nine arriving at Central High School in Little Rock, Arkansas, escorted by soldiers of the 101st Airborne Division. Governor Orval Faubus had used the Arkansas National Guard to block nine Black students from entering the school. President Dwight D. Eisenhower then federalized the National Guard and sent about 1,000 paratroopers to enforce the federal court order. In the same month, Congress passed the Civil Rights Act of 1957, the first federal civil rights law since Reconstruction."
+ },
+ "stimulus_set": "little-rock-cra-1957",
+ "stem": "The Civil Rights Act of 1957 mainly protected which right?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The right to attend any public school",
+   "misconception": "Background from the books: school desegregation rested on Brown, not on the 1957 act."
+  },
+  {
+   "key": "B",
+   "text": "The right to vote"
+  },
+  {
+   "key": "C",
+   "text": "The right to ride integrated buses",
+   "misconception": "Background from the books: integrated buses came from Browder v. Gayle, not from the 1957 act."
+  },
+  {
+   "key": "D",
+   "text": "The right to a federal job",
+   "misconception": "Background from the books: federal jobs were covered by earlier fair-employment orders, not by the 1957 act."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Background from the books: school desegregation rested on Brown, not on the 1957 act.",
+  "B": "Background from the books: the act was a voting rights bill: it created a Civil Rights Commission and a Civil Rights Division to protect voting.",
+  "C": "Background from the books: integrated buses came from Browder v. Gayle, not from the 1957 act.",
+  "D": "Background from the books: federal jobs were covered by earlier fair-employment orders, not by the 1957 act.",
+  "general": "1. The stimulus says the act was the first federal civil rights law since Reconstruction.\n2. A first law after eighty years would take up the right that Southern states had blocked longest.\n3. Background from the books: the act created a Civil Rights Commission to investigate voting discrimination and a Civil Rights Division to prosecute it.\n4. The machinery it built was voting machinery, so the right it protected was the vote.\nRemember: an act's new offices tell you which right it was written to protect."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2590",
+   "file": "u8/pr25e-test1-q46.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Operation_Arkansas%2C_Little_Rock_Nine.jpg",
+   "license": "Public domain (U.S. Army photograph, Operation Arkansas, 1957)",
+   "caption": "A Little Rock Nine student escorted by 101st Airborne soldiers, September 1957",
+   "alt": "A Black student in a skirt carrying books walks beside a car while helmeted soldiers of the 101st Airborne Division escort her at Central High School"
+  }
+ ]
+}

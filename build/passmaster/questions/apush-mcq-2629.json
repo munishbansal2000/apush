@@ -1,0 +1,84 @@
+{
+ "id": "apush-mcq-2629",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.8"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 2,
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.8 The Vietnam War"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "The Gulf of Tonkin Resolution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Vietnam War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "American Involvement in Vietnam, World War II\u20131963"
+   }
+  ],
+  "primary_sources": [
+   "Gulf of Tonkin Resolution, Public Law 88-408, August 7, 1964 (paraphrased)"
+  ]
+ },
+ "source": "original; stimulus paraphrased from the Gulf of Tonkin Resolution, Public Law 88-408",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of the Gulf of Tonkin Resolution, Public Law 88-408, passed August 7, 1964 (public domain, U.S. government document). Vote totals from the Congressional Record.",
+  "text": "Paraphrase of the Gulf of Tonkin Resolution, passed August 7, 1964. After reports that North Vietnamese boats had fired on American destroyers in the Gulf of Tonkin, Congress approved a resolution giving President Lyndon Johnson power to take all necessary steps, including the use of armed force, to prevent further aggression in Southeast Asia. The House voted 416 to 0. The Senate voted 88 to 2."
+ },
+ "stimulus_set": "tonkin-escalation",
+ "stem": "According to the passage, what did the Gulf of Tonkin Resolution authorize the president to do?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Negotiate a peace treaty with North Vietnam at once",
+   "misconception": "The resolution authorized military action, not a peace treaty."
+  },
+  {
+   "key": "B",
+   "text": "Withdraw all American forces from Southeast Asia at once",
+   "misconception": "The resolution expanded the president's power to fight, not to withdraw."
+  },
+  {
+   "key": "C",
+   "text": "Take all necessary steps, including armed force, to prevent further aggression"
+  },
+  {
+   "key": "D",
+   "text": "Ask the United Nations to take over the war in Vietnam",
+   "misconception": "The passage says nothing about the United Nations; the power went to the president."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "The passage says the resolution authorized force to prevent further aggression, not a peace treaty.",
+  "B": "The resolution gave the president power to use armed force, the opposite of ordering a withdrawal.",
+  "C": "The passage states the grant directly: power to take all necessary steps, including the use of armed force, to prevent further aggression.",
+  "D": "The passage gives the power to the president; it never mentions the United Nations.",
+  "general": "1. The passage states what Congress approved after the reported attacks on American destroyers.\n2. The grant is broad: all necessary steps, including the use of armed force.\n3. Its stated purpose is to prevent further aggression in Southeast Asia.\n4. That is the resolution's core, and the other options name actions the passage never mentions.\nRemember: When a resolution grants power, quote its grant, not its background."
+ }
+}

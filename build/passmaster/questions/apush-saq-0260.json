@@ -1,0 +1,96 @@
+{
+  "id": "apush-saq-0260",
+  "type": "saq",
+  "unit": 8,
+  "topics": [
+    "8.12"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A",
+    "3.B"
+  ],
+  "themes": [
+    "SOC",
+    "ARC"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The British Invasion"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.12 Youth Culture of the 1960s"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Expansion of Rights Movements"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The New Left, Feminism, and the Counterculture"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is a secondary account drawn from the grounding books",
+  "saq_slot": 1,
+  "totalPoints": 3,
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Secondary account drawn from the grounding books: Barron’s Ch. 10, ‘The British Invasion’; 5 Steps Ch. 27; Princeton Ch. 12.",
+    "text": "Secondary account of the British Invasion, drawn from the grounding books.\n\nIn 1964, the Beatles’ first American tour drew screaming crowds of teenagers, and British bands soon filled American radio. Young listeners heard in the new music a sound of their own, distinct from the music of their parents. The bands’ long hair and informal style unsettled many adults, who saw the new fashion as a rejection of respectable behavior. By the end of the decade, rock music had become the largest-selling popular music in the country, and its stars were among the richest entertainers in America."
+  },
+  "stimulus_set": null,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify one way the Beatles changed American popular culture in the 1960s.",
+      "modelAnswer": "The Beatles brought British rock music to the top of American popular culture, drawing screaming crowds of teenagers and filling American radio with British bands. Young listeners heard in the new music a sound of their own, distinct from the music of their parents.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Earns the point for identifying one change from the passage, such as British bands filling American radio, teenagers adopting a sound of their own, or rock becoming the largest-selling popular music.",
+          "notEarned": "Naming the Beatles without a change from the passage does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain one reason young people embraced rock music in the 1960s.",
+      "modelAnswer": "Background: Young listeners embraced rock because it sounded like their own generation, distinct from their parents’ music. Background: The music and the long hair that came with it let teenagers mark themselves apart from adult respectability.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Background: Earns the point for explaining one reason, such as the music sounding distinct from parents’ music, the stars’ style letting teenagers mark themselves apart, or rock stars speaking to young people’s hopes and fears.",
+          "notEarned": "Restating that young people liked rock music, without a reason, does not earn the point."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Explain one way youth culture challenged the values of the postwar consensus in the 1960s.",
+      "modelAnswer": "Background: Youth culture challenged the postwar consensus by rejecting materialism and conformity, the values of suburban life in the 1950s. Background: Hippies lived communally and experimented with drugs, while student activists attacked liberal institutions from the left, insisting that prosperity alone had not made America just.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Background: Earns the point for explaining one challenge, such as rejecting materialism and conformity, living communally, experimenting with psychedelic drugs, or student activists charging liberals with failing to transform society.",
+          "notEarned": "Saying only that young people were rebellious, without a specific challenge to postwar values, does not earn the point."
+        }
+      ]
+    }
+  ]
+}

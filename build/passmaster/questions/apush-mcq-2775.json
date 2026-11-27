@@ -1,0 +1,95 @@
+{
+  "id": "apush-mcq-2775",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.13"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 3,
+  "skills": [
+    "2.A",
+    "3.A"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.13 The environment and natural resources from 1968 to 1980"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Environmental Movement"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Expansion of Rights Movements"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The New Left, Feminism, and the Counterculture"
+      }
+    ],
+    "primary_sources": [
+      "Photograph of the first Earth Day flag ceremony, Washington, D.C., April 22, 1970 (National Park Service)"
+    ]
+  },
+  "source": "original; stimulus photograph viewed before writing",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Photograph: protesters at the Earth Day flag ceremony, Washington Monument, Washington, D.C., April 22, 1970, public domain (U.S. National Park Service photograph, via Wikimedia Commons; file dated April 22, 1970). Participation figure verified against the EPA's Earth Day history and EarthDay.org: about 20 million Americans. Account drawn from the grounding books (Barron's Ch. 10, Topic 8.13, 'The Environmental Movement').",
+    "text": "The photograph shows the first Earth Day, April 22, 1970, at the Washington Monument in Washington, D.C. Seen from above, a large crowd gathers around an American flag on a paved plaza. One protester holds a sign reading 'END THE RAPE OF AMERICA,' and several photographers film the crowd.\n\nSenator Gaylord Nelson of Wisconsin proposed the event as a nationwide teach-in, modeled on the teach-ins of the antiwar movement. About 20 million Americans took part in rallies, cleanups, and campus events across the country."
+  },
+  "stimulus_set": "first-earth-day-1970",
+  "stem": "The teach-in model for Earth Day best shows which of the following about the environmental movement?",
+  "options": [
+    {
+      "key": "A",
+      "text": "It copied its tactics from the oil industry.",
+      "misconception": "Background: The oil industry was the target of the movement, not its model for organizing."
+    },
+    {
+      "key": "B",
+      "text": "It refused to learn from any earlier movement.",
+      "misconception": "The passage says Earth Day was modeled on the teach-ins of the antiwar movement."
+    },
+    {
+      "key": "C",
+      "text": "It was organized entirely by the federal government.",
+      "misconception": "Background: Earth Day was organized by Senator Nelson and a staff of young activists, not by the federal government."
+    },
+    {
+      "key": "D",
+      "text": "It borrowed organizing methods from the antiwar movement."
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "Background: The oil industry was the target of the movement, not its model for organizing.",
+    "B": "The passage says Earth Day was modeled on the teach-ins of the antiwar movement.",
+    "C": "Background: Earth Day was organized by Senator Nelson and a staff of young activists, not by the federal government.",
+    "D": "The passage says Nelson proposed a nationwide teach-in modeled on the teach-ins of the antiwar movement.",
+    "general": "1. The passage names the model directly: a nationwide teach-in.\n2. Background: Teach-ins were the antiwar movement's way of teaching a campus about a cause, and Earth Day copied that form.\n3. Background: Many early environmental activists were veterans of the antiwar movement, so the borrowing was personal as well as tactical.\nRemember: A movement's tactics often come from the movements its people came from."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-2775",
+      "file": "u8/earth-day-1970.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Demonstrations._Protestors_at_the_National_Capital_Region_Earth_Day_flag_ceremony_in_Washington_DC._(1bfd12be1a48429fae160d14b10aade5).jpg",
+      "license": "Public domain (U.S. National Park Service photograph)",
+      "caption": "Protesters at the Earth Day flag ceremony, Washington Monument, April 22, 1970",
+      "alt": "Overhead color view of a large crowd gathered around an American flag on a paved plaza, with one protester holding a sign reading END THE RAPE OF AMERICA"
+    }
+  ]
+}

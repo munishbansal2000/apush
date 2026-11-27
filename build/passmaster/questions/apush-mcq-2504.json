@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-2504",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.3"
+ ],
+ "lesson": "apush-u8-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.3 The Red Scare"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Joseph McCarthy and McCarthyism"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "McCarthyism"
+   }
+  ],
+  "primary_sources": [
+   "Joseph McCarthy, speech in Wheeling, West Virginia, February 9, 1950"
+  ]
+ },
+ "source": "original; stimulus paraphrased from Senator Joseph McCarthy's speech in Wheeling, West Virginia, February 9, 1950",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Senator Joseph McCarthy's speech in Wheeling, West Virginia, February 9, 1950. Paraphrased, not quoted, because the source is after 1929.",
+  "text": "On February 9, 1950, Senator Joseph McCarthy of Wisconsin spoke in Wheeling, West Virginia. He claimed that he held a list of 205 communists working in the State Department. The number changed in later speeches, and the list was never fully shown. Within weeks, McCarthy was the most famous anti-communist in the country, and his name became the label for the whole movement."
+ },
+ "stimulus_set": "mccarthy-wheeling-1950",
+ "stem": "McCarthy's Wheeling speech made him famous because he claimed that",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Soviet Union had invaded South Korea.",
+   "misconception": "Background from the books: North Korea invaded the South in June 1950, months after Wheeling. The speech was about communists in the State Department, not Korea."
+  },
+  {
+   "key": "B",
+   "text": "Hollywood studios were run by communists.",
+   "misconception": "Background from the books: HUAC investigated Hollywood, not McCarthy in this speech. His Wheeling claim named the State Department, not the studios."
+  },
+  {
+   "key": "C",
+   "text": "President Truman was a member of the Communist Party.",
+   "misconception": "Background from the books: McCarthy later charged Truman with softness toward communism, but his Wheeling claim was about 205 communists in the State Department, not about the president's membership."
+  },
+  {
+   "key": "D",
+   "text": "Two hundred five communists worked in the State Department."
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Background from the books: North Korea invaded the South in June 1950, months after Wheeling. The speech was about communists in the State Department, not Korea.",
+  "B": "Background from the books: HUAC investigated Hollywood, not McCarthy in this speech. His Wheeling claim named the State Department, not the studios.",
+  "C": "Background from the books: McCarthy later charged Truman with softness toward communism, but his Wheeling claim was about 205 communists in the State Department, not about the president's membership.",
+  "D": "McCarthy claimed he held a list of 205 communists in the State Department. The number made headlines, and the senator became famous overnight.",
+  "general": "1. McCarthy told the Wheeling audience he held a list of 205 communists in the State Department.\n2. A specific number in a specific place sounds like documented proof, even when no list is ever shown to anyone.\n3. The claim made headlines across the country, and the senator became famous overnight.\nRemember: A precise-sounding number can make an unproven charge sound proven."
+ }
+}

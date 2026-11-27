@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-2795",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.14"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "2.A"
+  ],
+  "themes": [
+    "WXT",
+    "GEO"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.14 Society in Transition"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "The Presidency of Richard Nixon"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "U.S. Bureau of Labor Statistics, Current Employment Statistics, annual averages, 1970 and 1980"
+    ]
+  },
+  "source": "original; stimulus table compiled from U.S. Bureau of Labor Statistics annual averages",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Table compiled from U.S. Bureau of Labor Statistics, Current Employment Statistics, annual averages for 1970 and 1980. Account drawn from the grounding books (Barron's Ch. 10, Topic 8.14; 5 Steps Ch. 28; Princeton Ch. 12).",
+    "text": "Jobs by sector (U.S. Bureau of Labor Statistics, Current Employment Statistics, annual averages):\n\n| Year | Total nonfarm jobs | Manufacturing jobs | Manufacturing share of all jobs | Service-providing share of all jobs |\n| 1970 | 70.9 million | 17.8 million | 25% | 69% |\n| 1980 | 90.7 million | 18.7 million | 21% | 73% |"
+  },
+  "stimulus_set": "manufacturing-service-shift-1970-1980",
+  "stem": "What happened to manufacturing's share of all jobs between 1970 and 1980?",
+  "options": [
+    {
+      "key": "A",
+      "text": "It rose from 25 percent to 31 percent.",
+      "misconception": "The table shows the share falling, from 25 percent to 21 percent."
+    },
+    {
+      "key": "B",
+      "text": "It stayed at 25 percent.",
+      "misconception": "The table shows the share at 21 percent in 1980, not 25 percent."
+    },
+    {
+      "key": "C",
+      "text": "It fell from 25 percent to 21 percent."
+    },
+    {
+      "key": "D",
+      "text": "It fell from 25 percent to 9 percent.",
+      "misconception": "A share of 9 percent came decades later, not by 1980; the table shows 21 percent."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "The table shows the share falling, not rising, from 25 percent to 21 percent.",
+    "B": "The table shows the share at 21 percent in 1980, so it did not stay at 25 percent.",
+    "C": "The table gives 25 percent for 1970 and 21 percent for 1980, a fall of 4 points.",
+    "D": "Background: Manufacturing fell to about 9 percent of jobs only decades later; the table shows 21 percent in 1980.",
+    "general": "1. Find the manufacturing share column and read both rows.\n2. The 1970 row says 25 percent and the 1980 row says 21 percent.\n3. A move from 25 to 21 is a fall of four points, not a rise and not a standstill.\nRemember: A share can fall even while the number of jobs rises, so read the share column itself."
+  }
+}

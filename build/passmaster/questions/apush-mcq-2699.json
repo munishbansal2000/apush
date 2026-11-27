@@ -1,0 +1,93 @@
+{
+  "id": "apush-mcq-2699",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.10"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 4,
+  "skills": [
+    "3.B",
+    "1.B"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.10 The African-American Civil Rights Movement (1960s)"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Civil Rights Movement in the 1960s: From Integration to Black Power"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Civil Rights Act (1964)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus photograph viewed before writing",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Photograph: President Lyndon Johnson signing the Civil Rights Act, July 2, 1964, public domain (official White House photograph via Wikimedia Commons). Account drawn from the grounding books (Barron's Ch. 10, Topic 8.10, \"The Civil Rights Act (1964)\"; 5 Steps Ch. 27; Princeton Ch. 12). The signing date, the Evers murder date, and the Heart of Atlanta ruling are in the books and the Supreme Court decision itself (decided December 14, 1964).",
+    "text": "The photograph shows President Lyndon Johnson signing the Civil Rights Act on July 2, 1964, with Martin Luther King Jr. standing behind him. President Kennedy had sent the bill to Congress in June 1963, after the Birmingham campaign and the murder of civil rights leader Medgar Evers in Jackson, Mississippi. Southern senators filibustered the bill for months, and it passed only after the Senate voted to end debate. The act banned discrimination based on race, color, religion, sex, or national origin. Title II barred segregation in public accommodations such as hotels, restaurants, and theaters. Title VII barred discrimination in employment and created the Equal Employment Opportunity Commission (EEOC) to enforce the ban. In December 1964 the Supreme Court upheld Title II in Heart of Atlanta Motel v. United States, ruling that Congress could regulate hotels serving interstate travelers under its power over interstate commerce."
+  },
+  "stimulus_set": "civil-rights-act-1964",
+  "stem": "The Supreme Court's decision in Heart of Atlanta Motel v. United States (1964) most directly shows which of the following?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Congress could use its commerce power to ban segregation in hotels serving travelers"
+    },
+    {
+      "key": "B",
+      "text": "The Court struck down the Civil Rights Act as beyond Congress's power",
+      "misconception": "The passage says the Court upheld Title II, not that it struck the act down."
+    },
+    {
+      "key": "C",
+      "text": "Hotels were exempt from the act because they were private businesses",
+      "misconception": "The passage says the Court upheld Title II against a hotel, so hotels were not exempt."
+    },
+    {
+      "key": "D",
+      "text": "The act applied only to businesses owned by the federal government",
+      "misconception": "The passage says the ruling covered a private hotel serving interstate travelers."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "The passage says the Court upheld Title II, ruling that Congress could regulate hotels serving interstate travelers under its power over interstate commerce.",
+    "B": "The Court upheld Title II; it did not strike the act down.",
+    "C": "The hotel lost its challenge, so private hotels were covered by the act.",
+    "D": "Background: The case concerned a private motel, not a federally owned business.",
+    "general": "1. Title II barred segregation in public accommodations such as hotels.\n2. Background: A hotel challenged the law, saying Congress had no power over its business.\n3. The Court upheld Title II for hotels serving interstate travelers.\n4. The ruling rests on Congress's power over interstate commerce.\nRemember: A court case about a law tests where the law's power comes from."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-2699",
+      "file": "u8/5s24-ch27-mcq-06.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Lyndon_Johnson_signing_Civil_Rights_Act%2C_July_2%2C_1964.jpg",
+      "license": "Public domain (official White House photograph, PD-USGov-POTUS)",
+      "caption": "President Johnson signing the Civil Rights Act, July 2, 1964",
+      "alt": "President Lyndon Johnson seated at a desk signing a document, with Martin Luther King Jr. standing behind him among a large group of onlookers and the presidential seal on the wall"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "apush-mcq-2790",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.13"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 4,
+  "skills": [
+    "3.B",
+    "4.A"
+  ],
+  "themes": [
+    "PCE",
+    "GEO"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.13 The environment and natural resources from 1968 to 1980"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "Jimmy Carter"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "Federal Land Policy and Management Act, 1976 (paraphrased)",
+      "Nevada Assembly Bill 413, June 2, 1979 (paraphrased)"
+    ]
+  },
+  "source": "original; stimulus is an account of FLPMA and the Sagebrush Rebellion",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Account drawn from the grounding books (Barron's Ch. 10, Topic 8.13) and verified against the Congressional Research Service report on federal land ownership and the EBSCO research starter on the Sagebrush Rebellion: FLPMA (1976) made retention national policy; Nevada's law of June 2, 1979 claimed 48 million acres, 79 percent of the state; Hatch and Santini bills proposed transferring 544 million acres and failed in committee.",
+    "text": "In 1976 Congress passed the Federal Land Policy and Management Act (FLPMA). It declared that the public lands managed by the Bureau of Land Management would stay in federal ownership and be managed for many uses at once: grazing, mining, recreation, wildlife, and wilderness. The federal government owned about one-third of the nation's land, most of it in twelve western states.\n\nIn 1979 Nevada passed a law claiming title to the 48 million acres of federal land inside the state, about 79 percent of Nevada. Other western states passed similar laws, and bills in Congress proposed transferring 544 million acres to the states. The movement became known as the Sagebrush Rebellion."
+  },
+  "stimulus_set": "public-lands-sagebrush-1976-1979",
+  "stem": "FLPMA most directly helped cause the Sagebrush Rebellion by doing which of the following?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Selling all federal land to foreign buyers.",
+      "misconception": "The passage says FLPMA kept the lands in federal ownership, the opposite of selling them."
+    },
+    {
+      "key": "B",
+      "text": "Ending all grazing and mining on public lands.",
+      "misconception": "The passage says FLPMA kept grazing and mining among the allowed uses."
+    },
+    {
+      "key": "C",
+      "text": "Giving the states full control of federal lands.",
+      "misconception": "The passage says the lands stayed federal, which is what the rebels objected to."
+    },
+    {
+      "key": "D",
+      "text": "Declaring that federal lands would stay federal."
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "The passage says FLPMA kept the lands in federal ownership, the opposite of selling them.",
+    "B": "The passage says FLPMA kept grazing and mining among the allowed uses.",
+    "C": "The passage says the lands stayed federal, which is what the rebels objected to.",
+    "D": "Background: Keeping the lands federal, and managing them for recreation and wildlife as well as grazing and mining, told westerners that Washington, not the states, would decide their use.",
+    "general": "1. The passage says FLPMA declared the lands would stay in federal ownership.\n2. Background: Before 1976 the old policy had been to pass public land to states and private owners, so retention reversed the bargain.\n3. Background: Managing the lands for many uses also meant ranchers and miners now shared decisions with recreation and wildlife.\nRemember: A rebellion starts when a policy changes the rules people had lived by."
+  }
+}

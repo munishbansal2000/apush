@@ -1,0 +1,89 @@
+{
+  "id": "apush-mcq-2789",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.13"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "4.A",
+    "3.B"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.13 The environment and natural resources from 1968 to 1980"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Dangers of Nuclear Energy and Three Mile Island"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "Photograph of the Three Mile Island plant, April 6, 1979 (National Archives)"
+    ]
+  },
+  "source": "original; stimulus photograph viewed before writing",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Photograph: Three Mile Island plant through trees, April 6, 1979, public domain (U.S. National Archives photograph, NARA 540038, via Wikimedia Commons). Accident date and facts verified against the U.S. Nuclear Regulatory Commission history and the University of Nevada Yucca Mountain timeline: partial meltdown of the Unit 2 reactor on March 28, 1979, with a release of radioactive gas. Account drawn from the grounding books (Barron's Ch. 10, Topic 8.13, 'The Dangers of Nuclear Energy and Three Mile Island'; Princeton Ch. 12).",
+    "text": "The photograph, taken April 6, 1979, shows the Three Mile Island nuclear plant in Pennsylvania. Four tall cooling towers rise beyond farm fields and houses, with bare trees in the foreground.\n\nOn March 28, 1979, the Unit 2 reactor at Three Mile Island partly melted down, releasing radioactive gas. The accident was the worst in the history of the American nuclear industry. Groups such as the Clamshell Alliance in New England and the Abalone Alliance in California had already been protesting nuclear power plants for years."
+  },
+  "stimulus_set": "three-mile-island-1979",
+  "stem": "A historian would most likely use Three Mile Island to support which argument about the 1970s?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Fear of technology's dangers helped turn the environmental movement toward new targets."
+    },
+    {
+      "key": "B",
+      "text": "Americans in the 1970s trusted nuclear power more than ever before.",
+      "misconception": "Background: The accident deepened public fear of nuclear power, not trust in it."
+    },
+    {
+      "key": "C",
+      "text": "The accident proved that nuclear plants could never have problems.",
+      "misconception": "The passage says the accident was the worst in the industry's history, the opposite of proving plants safe."
+    },
+    {
+      "key": "D",
+      "text": "Environmentalists in the 1970s cared only about national parks.",
+      "misconception": "Background: The passage shows environmentalists protesting nuclear plants, not only defending parks."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "Background: The movement began with pesticides and pollution, then took up nuclear power, and the 1979 accident gave that new target its strongest case.",
+    "B": "Background: The accident deepened public fear of nuclear power, not trust in it.",
+    "C": "The passage says the accident was the worst in the industry's history, the opposite of proving plants safe.",
+    "D": "Background: The passage shows environmentalists protesting nuclear plants, not only defending parks.",
+    "general": "1. The passage shows the movement already aimed at nuclear plants before 1979, through the Clamshell and Abalone Alliances.\n2. Background: The movement had begun with pesticides and oil spills, so nuclear power was a new target.\n3. Background: The accident gave that target urgency and slowed the expansion of nuclear power.\nRemember: A movement's history is a story of new targets, and each disaster adds one."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-2789",
+      "file": "u8/three-mile-island-1979.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Three_Mile_Island_plant_through_trees_-_NARA_-_540038.tif",
+      "license": "Public domain (U.S. National Archives photograph, NARA 540038)",
+      "caption": "Three Mile Island nuclear plant seen through trees, April 6, 1979",
+      "alt": "Four tall cooling towers rise beyond farm fields and houses, with bare trees in the foreground"
+    }
+  ]
+}

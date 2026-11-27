@@ -1,0 +1,89 @@
+{
+  "id": "apush-mcq-2801",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.14"
+  ],
+  "lesson": "apush-u8-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A",
+    "3.B"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Topic 8.14 Society in Transition"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The Conservative Response to Rapid Social and Economic Change"
+      },
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "Young Americans for Freedom"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 28",
+        "section": "The Election of 1980"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12"
+      }
+    ],
+    "primary_sources": [
+      "Young Americans for Freedom, Sharon Statement, September 1960 (paraphrased)"
+    ]
+  },
+  "source": "original; stimulus paraphrased from the Sharon Statement (1960)",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Paraphrase of the Sharon Statement (Young Americans for Freedom, September 1960). Account drawn from the grounding books (Barron's Ch. 10, Topic 8.14; 5 Steps Ch. 28; Princeton Ch. 12).",
+    "text": "Paraphrase of the Sharon Statement, adopted by Young Americans for Freedom in September 1960 at Sharon, Connecticut. The statement said that free markets and personal freedom go together, that government should be limited to protecting freedom and keeping order, and that the United States must stand firmly against communism."
+  },
+  "stimulus_set": "sharon-statement-1960",
+  "stem": "According to the statement, what is the link between free markets and freedom?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Free markets require a large government to run them.",
+      "misconception": "The statement says government should be limited, not large."
+    },
+    {
+      "key": "B",
+      "text": "Personal freedom requires ending all trade.",
+      "misconception": "The statement links freedom to free markets, not to ending trade."
+    },
+    {
+      "key": "C",
+      "text": "Government should run the economy to protect freedom.",
+      "misconception": "The statement says government should be limited to protecting freedom and keeping order."
+    },
+    {
+      "key": "D",
+      "text": "Free markets protect personal freedom, so limiting government protects both."
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "The statement says government should be limited, not large, so this reverses its point.",
+    "B": "The statement links freedom to free markets, not to ending trade.",
+    "C": "The statement says government should be limited to protecting freedom and keeping order, not run the economy.",
+    "D": "The statement says free markets and personal freedom go together, so a limited government protects both.",
+    "general": "1. The statement pairs two ideas and says they belong together: free markets and personal freedom.\n2. It then limits government to two jobs: protecting freedom and keeping order.\n3. Put together, a small government lets free markets work, and free markets in turn keep people free.\nRemember: When a statement pairs two ideas, the link between them is usually the answer."
+  }
+}

@@ -1,0 +1,81 @@
+{
+ "id": "apush-mcq-2549",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.5"
+ ],
+ "lesson": "apush-u8-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "2.C"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.5 Culture After 1945"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 27",
+    "section": "The Counterculture"
+   }
+  ]
+ },
+ "source": "original; stimulus is a public-domain photograph viewed before writing (see figures)",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph: family watching television, about 1958. U.S. National Archives photograph by Evert F. Baumgardner, CC0, via Wikimedia Commons.",
+  "text": "The photograph, taken about 1958, shows a family of five gathered around a small television set in their living room. Two children sit on the floor, a third lies in the foreground, and the parents watch with them, all facing the screen."
+ },
+ "stimulus_set": "family-tv-1958",
+ "stem": "In the 1960 presidential debates, people who watched on television judged Kennedy the winner, while people who listened on the radio favored Nixon. That split best shows what television had changed about politics?",
+ "options": [
+  {
+   "key": "A",
+   "text": "A candidate's looks and manner on screen shaped voters' views"
+  },
+  {
+   "key": "B",
+   "text": "Television debates replaced all other forms of campaigning",
+   "misconception": "Background from the books: candidates still campaigned in person, in print, and on radio after 1960."
+  },
+  {
+   "key": "C",
+   "text": "Radio had lost its entire national audience to television by 1960",
+   "misconception": "Background from the books: radio kept a large audience in 1960, so it had not lost everyone."
+  },
+  {
+   "key": "D",
+   "text": "Voters no longer cared about a candidate's policies",
+   "misconception": "The split was about how the same words reached people, not about voters ignoring policies."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The same debate reached viewers and listeners differently, so what voters saw on screen, not just what they heard, shaped their judgment.",
+  "B": "Background from the books: candidates still campaigned in person, in print, and on radio after 1960.",
+  "C": "Background from the books: radio kept a large audience in 1960, so it had not lost everyone.",
+  "D": "The split was about how the same words reached people, not about voters ignoring policies.",
+  "general": "1. The two groups heard the same debate, so the words alone cannot explain the split.\n2. Background from the books: the difference was the picture — viewers saw Kennedy relaxed and Nixon uneasy.\n3. Background from the books: more people watched than listened, so the screen's judgment carried the election.\nRemember: A new medium changes politics when how a candidate looks starts to matter as much as what the candidate says."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2549",
+   "file": "u8/family-watching-tv-1958.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Family_watching_television_1958_cropped2.jpg",
+   "license": "CC0 (U.S. National Archives photograph by Evert F. Baumgardner)",
+   "caption": "A family watches television together at home, about 1958",
+   "alt": "A family of five gathered around a small television set in a living room about 1958, all facing the screen"
+  }
+ ]
+}

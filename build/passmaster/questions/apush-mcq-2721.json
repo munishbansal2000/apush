@@ -1,0 +1,88 @@
+{
+  "id": "apush-mcq-2721",
+  "type": "mcq",
+  "unit": 8,
+  "topics": [
+    "8.11"
+  ],
+  "lesson": "apush-u8-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "3.A",
+    "4.A"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 10",
+        "section": "The American Indian Movement"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 27",
+        "section": "The Expansion of Rights Movements"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 12",
+        "section": "The Civil Rights Movement"
+      }
+    ],
+    "primary_sources": []
+  },
+  "source": "original; stimulus is an original account drawn from the grounding books",
+  "stimulus": {
+    "kind": "image",
+    "source_note": "Photograph: graffiti painted during the occupation of Alcatraz Island (National Park Service photograph, public domain, via Wikimedia Commons); the photograph was viewed before writing. Account drawn from the grounding books and verified against the National Park Service and HISTORY timelines: occupation began November 20, 1969; the island was a former federal prison closed in 1963; the occupation ended June 11, 1971.",
+    "text": "The photograph shows a wall on Alcatraz Island painted with the words \"WELCOME\" and \"INDIAN LAND.\" A sign on the wall reads \"UNITED INDIAN PROPERTY.\"\n\nOn November 20, 1969, a group of activists calling themselves Indians of All Tribes landed on Alcatraz Island, a former federal prison in San Francisco Bay that the government had closed in 1963. They claimed the island by right of discovery and said they would build an Indian school, cultural center, and museum there. The occupation lasted until June 1971."
+  },
+  "stimulus_set": "alcatraz-indians-of-all-tribes",
+  "stem": "Why did the occupiers choose Alcatraz Island rather than another place?",
+  "options": [
+    {
+      "key": "A",
+      "text": "It was the only land in California that the federal government still owned",
+      "misconception": "The passage says Alcatraz was a former federal prison the government had closed, not that it was the only federal land in California."
+    },
+    {
+      "key": "B",
+      "text": "It was the site of the 1890 massacre of Lakota people",
+      "misconception": "The 1890 massacre happened at Wounded Knee, South Dakota, not on Alcatraz Island."
+    },
+    {
+      "key": "C",
+      "text": "It was tribal land that the state of California had seized in 1963",
+      "misconception": "The passage says Alcatraz was a former federal prison closed in 1963, not tribal land seized by the state."
+    },
+    {
+      "key": "D",
+      "text": "It was abandoned federal land, which occupiers said should return to Indians"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "The passage calls Alcatraz a former federal prison the government had closed, not the only federal land in California.",
+    "B": "Background: The 1890 massacre of Lakota people took place at Wounded Knee, South Dakota, not on Alcatraz.",
+    "C": "The passage says Alcatraz was a federal prison closed in 1963, not tribal land seized by California.",
+    "D": "Background from the books: The occupiers pointed to a treaty provision saying abandoned federal land should return to Indians, and Alcatraz was a closed federal prison.",
+    "general": "1. The passage says Alcatraz was a former federal prison that the government had closed in 1963.\n2. Background: The occupiers argued that a treaty provision returned unused federal land to Indians, so a closed prison island fit their claim.\n3. The island was also visible and symbolic, sitting in San Francisco Bay where reporters and the public could see the protest.\n4. That is why an abandoned island, rather than an ordinary piece of land, was the right stage for the claim.\nRemember: A protest site is chosen for what it lets the protesters say, and Alcatraz let them say the land should come back."
+  },
+  "figures": [
+    {
+      "file": "u8/alcatraz-welcome-indian-land-1969.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Alcatraz_Occupation_%22Welcome_to_Indian_Land%22_graffiti.jpeg",
+      "license": "Public domain (National Park Service photograph)",
+      "caption": "Graffiti reading WELCOME and INDIAN LAND on a wall on Alcatraz Island",
+      "alt": "A wall on Alcatraz Island painted with the words WELCOME and INDIAN LAND, with a sign reading UNITED INDIAN PROPERTY",
+      "id": "fig-apush-mcq-2721"
+    }
+  ]
+}

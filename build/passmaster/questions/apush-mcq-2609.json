@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-2609",
+ "type": "mcq",
+ "unit": 8,
+ "topics": [
+  "8.7"
+ ],
+ "lesson": "apush-u8-l3",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "skills": [
+  "3.A",
+  "6.B"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 10",
+    "section": "Topic 8.7 America as a World Power"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 25",
+    "section": "Cold War (1945-1960)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 12",
+    "section": "Unit 8: The Postwar Period and Cold War (1945-1980)"
+   }
+  ]
+ },
+ "source": "original; stimulus is an original secondary passage written for this question, facts from the grounding books",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question; facts from the grounding books.",
+  "text": "In the early 1950s, the Central Intelligence Agency helped remove two elected leaders. In Iran in 1953, Prime Minister Mohammad Mosaddegh had nationalized the oil industry; the CIA backed a coup that restored the Shah to power. In Guatemala in 1954, President Jacobo Arbenz had taken unused land from the United Fruit Company for redistribution to peasants; the CIA armed an opposition force that drove him from office."
+ },
+ "stimulus_set": "covert-action-iran-guatemala",
+ "stem": "Why did Eisenhower's administration prefer secret CIA action to open military force in Iran and Guatemala?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Congress had voted to order the CIA to remove both leaders in secret",
+   "misconception": "Background: the operations were ordered by the president, not by Congress."
+  },
+  {
+   "key": "B",
+   "text": "It could remove a hostile government without risking open war or American lives"
+  },
+  {
+   "key": "C",
+   "text": "The United Nations required both operations to stay secret from the public",
+   "misconception": "Background: the operations were secret American actions, not United Nations orders."
+  },
+  {
+   "key": "D",
+   "text": "Both leaders had asked Washington to remove them from office in secret",
+   "misconception": "The passage says the CIA backed a coup in Iran and armed a force in Guatemala; neither leader asked to be removed."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Background: the operations were ordered by the president, not by Congress, which did not vote to remove either leader.",
+  "B": "Background from the books: secret action let Washington remove a hostile government without sending its own armies or risking open war with the Soviet Union.",
+  "C": "Background: the operations were secret American actions, not orders from the United Nations.",
+  "D": "The passage says the CIA backed a coup in Iran and armed a force in Guatemala; neither leader asked to be removed.",
+  "general": "1. Both operations were run in secret by the CIA, not by armies in the open.\n2. Background from the books: open war would have risked American lives and a clash with the Soviet Union.\n3. Background from the books: secret action avoided both risks while still removing the hostile government.\n4. That is why Eisenhower chose covert action: the result without the open costs.\nRemember: When open force costs too much, leaders choose the secret path that buys the same result."
+ }
+}
