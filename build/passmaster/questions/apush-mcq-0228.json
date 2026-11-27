@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-0228",
+ "lesson": "apush-u2-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.4"
+ ],
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "mun-balance-trade",
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Thomas Mun, England's Treasure by Forraign Trade (1664), ch. 2. Quotation verbatim; figures from Mun's own example in the same chapter.",
+  "text": "The ordinary means therefore to increase our wealth and treasure is by Forraign Trade, wherein wee must ever observe this rule; to sell more to strangers yearly than wee consume of theirs in value.\n\n| England's yearly trade | Pounds |\n| Exports | £2,200,000 |\n| Imports | £2,000,000 |\n| Net gain in treasure | £200,000 |"
+ },
+ "source": "original; stimulus is Thomas Mun, England's Treasure by Forraign Trade (1664), verbatim, public domain; rewritten from survivor original-u1-trade-08",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Mercantilism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Part of an Empire"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650-1750)"
+   }
+  ],
+  "primary_sources": [
+   "Thomas Mun, England's Treasure by Forraign Trade (1664)"
+  ]
+ },
+ "status": "final",
+ "stem": "Mun illustrated his rule with these figures for England's yearly trade. What does the £200,000 figure represent in his argument?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The total value of all English trade in that year",
+   "misconception": "Adds the two figures instead of subtracting; the £200,000 is the gap between them."
+  },
+  {
+   "key": "B",
+   "text": "The money England lost to foreign competitors",
+   "misconception": "Reverses the sign; exports exceed imports here, so England gains, not loses."
+  },
+  {
+   "key": "C",
+   "text": "How much exports exceeded imports — England's yearly gain in treasure"
+  },
+  {
+   "key": "D",
+   "text": "The taxes the Crown collected on colonial imports",
+   "misconception": "Reads a trade figure as a tax; the table shows trade values only."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "general": "1. Find the figures. The table lists exports at £2,200,000 and imports at £2,000,000.\n2. Do the subtraction. Exports minus imports leaves £200,000.\n3. Apply Mun's rule. The kingdom sells more than it consumes of foreign goods, so the difference stays home as treasure.\n4. Read the label. The table itself calls the £200,000 a net gain, not a loss or a tax.\nRemember: in a table, work the arithmetic first, then let the labels tell you what the result means.",
+  "A": "Adding exports and imports gives £4,200,000, not £200,000. The figure is a difference, not a total.",
+  "B": "A loss would mean imports beat exports. Here exports are larger, so the balance favors England.",
+  "C": "Exports of £2,200,000 minus imports of £2,000,000 leaves £200,000 — the yearly gain in treasure Mun's rule predicts.",
+  "D": "The table lists exports and imports, not taxes. Nothing in the figures is a Crown tax."
+ }
+}

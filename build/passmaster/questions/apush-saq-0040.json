@@ -1,0 +1,91 @@
+{
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.2 European Colonization"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Colonial America (1607\u20131650)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-saq-0040",
+ "lesson": "apush-u2-l1",
+ "parts": [
+  {
+   "modelAnswer": "One difference is who came. France sent mostly single men who traded furs, while England sent whole families who farmed the land.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one difference between French and English colonization described in the passage.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one accurate difference from the passage, such as single fur traders versus farming families, or alliance versus displacement.",
+     "notEarned": "Naming a difference that does not appear in the passage, or restating the question with no difference identified, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Both empires depended on Native peoples at first. France needed Native partners for the fur trade, and England needed their land to farm.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Describe one similarity between French and English colonization described in the passage.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for describing one accurate similarity from the passage, such as dependence on Native peoples in the early years.",
+     "notEarned": "Stating only that both were European, with no similarity from the passage described, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "One reason is what each empire wanted. France wanted furs, which needed Native hunters and trading partners, while England wanted farmland, which needed families to work it and pushed Native peoples off it.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one reason for the difference between French and English patterns.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one accurate reason for the difference, such as the fur trade needing partners versus farming needing land.",
+     "notEarned": "Restating the difference with no reason for it, or a reason that does not follow from the passage, does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "comparison",
+ "saq_slot": 1,
+ "skills": [
+  "3.B",
+  "2.C"
+ ],
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "status": "final",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question, comparing French and English colonization patterns.",
+  "text": "France and England colonized North America in different ways. France sent few settlers \u2014 mostly single men who traded furs, married into Native families, and built alliances with the Wendat against the Iroquois. England sent whole families who farmed the land, pushed Native peoples off it, and built towns of their own. Both empires depended on Native peoples at first, but France needed them as partners and England needed their land."
+ },
+ "stimulus_set": null,
+ "themes": [
+  "GEO",
+  "MIG"
+ ],
+ "topics": [
+  "2.2"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 2
+}

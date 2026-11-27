@@ -1,0 +1,94 @@
+{
+ "answerKey": "D",
+ "difficulty": 3,
+ "figures": [
+  {
+   "alt": "Title page of a 1612 book, printed in old spelling, advertising a description of Virginia, its commodities, people, government, and religion",
+   "caption": "Title page of John Smith's A Map of Virginia (1612)",
+   "file": "u2/original-ctx-u2-06.jpg",
+   "id": "fig-apush-mcq-0152",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/A-map-of-virginia-_smith-john-1612-title-page.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.2 European Colonization"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "C. English Colonial Patterns"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Jamestown and the Chesapeake Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": [
+   "John Smith, A Map of Virginia (1612)"
+  ]
+ },
+ "id": "apush-mcq-0152",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Turns a book meant to attract settlers into a warning against settling.",
+   "text": "To warn English readers never to sail to Virginia."
+  },
+  {
+   "key": "B",
+   "misconception": "Gives Spain a role in an English book written for English readers.",
+   "text": "To satisfy a Spanish demand for a full account of the colony's people and trade."
+  },
+  {
+   "key": "C",
+   "misconception": "Reads a record of events as a balance sheet.",
+   "text": "To prove that the Virginia Company had already made a profit."
+  },
+  {
+   "key": "D",
+   "text": "To give English readers a trustworthy record that would draw settlers and investors to Virginia."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Smith advertises the colony's story, including its commodities and government, to attract readers to Virginia, not to warn them away.",
+  "B": "The book was printed at Oxford for English readers and investors; Spain had no part in it.",
+  "C": "The page promises a record of events, not a profit report, and the colony was still struggling to survive in 1612.",
+  "D": "Smith stresses that the account was taken faithfully from eyewitness writings, the kind of trustworthy record that would persuade settlers and investors to risk Virginia.",
+  "general": "1. Notice the promise on the page. The proceedings were 'taken faithfully' from the writings of men who were there.\n2. Ask why faithfulness matters. A reader risking money or a life on Virginia wants a record he can trust, not a rumor.\n3. Ask what Smith gains from trust. Background: the Virginia Company needed paying settlers and investors to keep the colony alive.\n4. Put it together. A reliable record is an advertisement: it answers the fear that Virginia was a gamble not worth taking.\nRemember: when a source stresses how faithfully it was written, ask whose trust it is trying to win."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "2.A"
+ ],
+ "source": "original; stimulus image from the shared pool, John Smith, A Map of Virginia (1612), public domain",
+ "status": "final",
+ "stem": "Why did Smith publish the colony's 'proceedings... taken faithfully as they were written'?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Title page from the shared image pool; John Smith, A Map of Virginia (1612), public domain.",
+  "text": "The title page of Captain John Smith's A Map of Virginia, printed at Oxford in 1612. It advertises a description of the country, its commodities, people, government, and religion, 'written by Captaine Smith, sometimes Governour of the Countrey,' with an account of the colony's proceedings since the settlers first left England. The map itself is not shown here \u2014 only the page that introduced it to English readers."
+ },
+ "stimulus_set": "smith-virginia-1612",
+ "themes": [
+  "MIG",
+  "WXT"
+ ],
+ "topics": [
+  "2.1"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

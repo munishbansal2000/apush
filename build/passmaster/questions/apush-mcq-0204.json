@@ -1,0 +1,77 @@
+{
+ "answerKey": "D",
+ "difficulty": 2,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "E. The Development of Self-Government in Britain's New World Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Massachusetts and the New England Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Colonial Governments"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0204",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Governors were appointed by the king or proprietor \u2014 town meetings chose selectmen, not governors.",
+   "text": "It elected a royal governor for the colony, chosen by the people of the town."
+  },
+  {
+   "key": "B",
+   "misconception": "Taxes for London were the assemblies' fight, not the town meeting's job \u2014 meetings ran the town.",
+   "text": "It collected taxes for the king in London, sending the money across the sea."
+  },
+  {
+   "key": "C",
+   "misconception": "Church membership was the congregation's business \u2014 the town meeting governed the town.",
+   "text": "It admitted new members to the Puritan church, deciding who could join."
+  },
+  {
+   "key": "D",
+   "text": "It let free male residents decide town business face to face and choose selectmen."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Governors were appointed by the king or proprietor \u2014 town meetings chose selectmen, not governors.",
+  "B": "Taxes for London were the assemblies' fight, not the town meeting's job \u2014 meetings ran the town.",
+  "C": "Church membership was the congregation's business \u2014 the town meeting governed the town.",
+  "D": "The passage says exactly that \u2014 face-to-face assemblies, open to all free male residents, choosing selectmen until the next meeting.",
+  "general": "1. Read the description. Face to face, open to free male residents, choosing selectmen.\n2. Ask what that is. Neighbors deciding their own town's business in the room together.\n3. Name it. Direct democracy at the town level \u2014 the smallest unit of self-government.\nRemember: when a passage describes a practice, the answer is the description \u2014 not a bigger job it never mentions."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "1.A"
+ ],
+ "source": "original; passage drawn from Barron's Premium 2027, Chapter 4",
+ "status": "final",
+ "stem": "According to the passage, what did a New England town meeting do?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, drawn from Barron's Premium 2027, Chapter 4; the historian's sentence is an original paraphrase of the survivor's stimulus.",
+  "text": "A historian argues: 'New England's town meetings created a more democratic political culture than the Chesapeake's, where a small planter elite monopolized political power.' Town meetings were face-to-face assemblies open to all free male residents, who chose selectmen to run the town until the next meeting. Virginia's House of Burgesses, created in 1619, was an elected assembly too \u2014 but over time voting there was limited to wealthy men, and smaller planters were barred."
+ },
+ "stimulus_set": "town-meetings-burgesses",
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

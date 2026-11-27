@@ -1,0 +1,77 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.5 Interactions Between American Indians and Europeans"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Part of an Empire"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0269",
+ "lesson": "apush-u2-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "No peace treaty followed the first battle; the war ended with the Pequots nearly destroyed.",
+   "text": "The English negotiated a peace treaty with the Pequot leaders after the first battle"
+  },
+  {
+   "key": "B",
+   "text": "The English burned the main Pequot village, killing about 400 people, many women and children"
+  },
+  {
+   "key": "C",
+   "misconception": "The English did not pay for the valley; they took it by war.",
+   "text": "The English paid the Pequots for the land they settled in the Connecticut valley"
+  },
+  {
+   "key": "D",
+   "misconception": "The opposite happened: the Pequots were scattered among other tribes and sold into slavery.",
+   "text": "The English allowed the Pequots to keep their name and their villages after the war"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "No peace treaty followed the first battle; the war ended with the Pequots nearly destroyed.",
+  "B": "Total war means war against a whole people, not just its fighters \u2014 and the passage describes exactly that. The English did not meet Pequot warriors on a battlefield; they surrounded a village, set it on fire, and killed about 400 people, many of them women and children. A war that burns a village full of families is a war aimed at destroying the community itself, and the near-destruction of the Pequots that followed proves the point.",
+  "C": "The English did not pay for the valley; they took it by war.",
+  "D": "The opposite happened: the Pequots were scattered among other tribes and sold into slavery.",
+  "general": "1. Ask what total war means. It is war against a whole people, not just its fighters.\n2. Look at the target. The English surrounded a village and set it on fire \u2014 not a battlefield, but a home.\n3. Count who died. About 400 people, many of them women and children, and a people nearly destroyed.\nRemember: the target tells you the aim \u2014 a burned village is a war against a community."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "6.B"
+ ],
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "status": "final",
+ "stem": "Which of the following best supports the claim that the English waged total war against the Pequots, rather than a war fought only against warriors?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question, summarizing standard background on the Pequot War.",
+  "text": "In the 1630s, English settlers pushed into the Connecticut River valley, land the Pequots controlled and farmed. When violence broke out, the English colonies, with Narragansett and Mohegan allies, marched on the main Pequot village in 1637. They set the village on fire and killed about 400 people, many of them women and children. The Pequots were nearly destroyed as a people, and their survivors were scattered among other tribes or sold into slavery."
+ },
+ "stimulus_set": "pequot-war",
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "topics": [
+  "2.5"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

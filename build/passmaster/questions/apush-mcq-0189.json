@@ -1,0 +1,77 @@
+{
+ "answerKey": "C",
+ "difficulty": 4,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.2 European Colonization"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Colonial America (1607\u20131650)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0189",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Small grants and no slavery were meant to prevent plantations, not to build the largest ones.",
+   "text": "To make Georgia's plantations the largest and richest in North America."
+  },
+  {
+   "key": "B",
+   "misconception": "The trustees wanted debtors to start over as free farmers, not to hold them in Georgia against their will.",
+   "text": "To stop English debtors from ever leaving Georgia."
+  },
+  {
+   "key": "C",
+   "text": "To keep Georgia a colony of armed small farmers defending the buffer."
+  },
+  {
+   "key": "D",
+   "misconception": "The trustees wanted many settlers, just on small farms \u2014 the point was the size of the farms, not the size of the population.",
+   "text": "To keep Georgia's population as small as possible."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Small grants and no slavery were meant to prevent plantations, not to build the largest ones.",
+  "B": "The trustees wanted debtors to start over as free farmers, not to hold them in Georgia against their will.",
+  "C": "Small farms meant many armed freeholders along the frontier \u2014 a militia colony, not a plantation colony.",
+  "D": "The trustees wanted many settlers, just on small farms \u2014 the point was the size of the farms, not the size of the population.",
+  "general": "1. Connect the two rules. No slavery and small grants are one design, not two.\n2. Ask what kind of colony they make. Small farms worked by their owners \u2014 many free men, each with a musket and a stake in the land.\n3. Ask what a buffer needs. Background: a buffer needs fighters, not overseers. Plantations concentrate wealth and arms in few hands; small farms spread both.\n4. Name the design. The trustees built a militia in the shape of a colony.\nRemember: when a founding rule looks odd, ask what job it was doing \u2014 here, the job was defense."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "2.C"
+ ],
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "status": "final",
+ "stem": "Why did Georgia's trustees ban slavery and keep land grants small?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question, summarizing Georgia's 1732 charter and its reversal by 1751.",
+  "text": "In 1732 James Oglethorpe and the trustees received a charter for Georgia. The colony was meant as a buffer between Spanish Florida and South Carolina, and as a fresh start for men imprisoned for debt. Slavery was banned at first, and land grants were small, so that Georgia would be a colony of small farmers, not plantations. By 1751 the trustees had given up both rules, and slavery was legal; Georgia became a royal colony in 1752."
+ },
+ "stimulus_set": "oglethorpe-georgia-1732",
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "topics": [
+  "2.2"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

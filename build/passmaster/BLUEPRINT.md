@@ -99,6 +99,48 @@ skill code goes untested in the unit. Reasoning processes: causation
 heaviest (Period 1 is a causation unit), comparison second, continuity
 and change third.
 
+### Unit 2 per-topic quotas (this tranche, set 2026-11-26)
+
+Unit 2: Period 2, 1607-1754, ~15 class periods, exam weight 6-8%.
+Same method as section 4: content topics weighted over the framing
+topics (2.1 contextualizing, 2.8 comparison capstone).
+
+| Topic | Title | MCQ | SAQ | LEQ |
+|---|---|---:|---:|---:|
+| 2.1 | Contextualizing Period 2 | 16 | 3 | 1 |
+| 2.2 | European Colonization | 30 | 5 | 2 |
+| 2.3 | The Regions of British Colonies | 30 | 4 | 1 |
+| 2.4 | Transatlantic Trade | 28 | 4 | 1 |
+| 2.5 | Interactions Between American Indians and Europeans | 28 | 4 | 1 |
+| 2.6 | Slavery in the British Colonies | 28 | 5 | 2 |
+| 2.7 | Colonial Society and Culture | 30 | 5 | 2 |
+| 2.8 | Comparison in Period 2 | 20 | 3 | 1 |
+| **Total** | | **210** | **33** | **11** |
+
+Unit 2 total: 254 questions (210 MCQ + 33 SAQ + 11 LEQ, no DBQ).
+
+### Unit 2 difficulty split (MCQ, 210)
+
+Easy (2) 42 / Medium (3) 74 / Hard (4) 94. Apply the 20/35/45 split
+approximately per topic; topics 2.1 and 2.8 (framing topics) skew easier,
+content topics skew harder. Levels 1 and 5 only for true extremes.
+Unit 1 landed 14 hard short — hit the hard count per topic in Unit 2,
+do not drift easy.
+
+### Unit 2 test-pool assignment (39 MCQ + 3 SAQ + 1 LEQ = 43)
+
+- MCQ test by topic: 2.1: 3, 2.2: 6, 2.3: 6, 2.4: 5, 2.5: 5, 2.6: 5, 2.7: 6, 2.8: 3.
+- SAQ test: 3, one per 2027 slot (Q1 secondary text, Q2 primary text,
+  Q3 non-text), spread across topics 2.2, 2.4, 2.6.
+- LEQ test: 1, topic 2.2 or 2.6.
+- The remaining 171 MCQ + 30 SAQ + 10 LEQ are practice pool.
+
+### Unit 2 skill coverage
+
+All 17 skill codes must be exercised across the unit's 210 MCQ, with the
+CED's suggested skills honored per topic and the other skills spread so no
+skill code goes untested in the unit.
+
 ## 5. Per-unit topic counts (all units, from cb-codes.json)
 
 U1: 7 topics. U2: 8. U3: 13. U4: 14. U5: 12. U6: 14. U7: 15. U8: 15.

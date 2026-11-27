@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0239",
+ "lesson": "apush-u2-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.4"
+ ],
+ "skills": [
+  "4.A"
+ ],
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "bowen-chart",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Emanuel Bowen, chart of the Atlantic Ocean, published in London on 5 September 1740, public domain (CC0).",
+  "text": "Emanuel Bowen's chart of the Atlantic Ocean, published in London on 5 September 1740. It maps the Atlantic between the Americas on the left and Europe and Africa on the right, with rhumb lines radiating from compass roses across the whole ocean. The words 'the Trade Winds' appear twice across the middle of the ocean. Its full title reads: 'A new chart of the vast Atlantic Ocean; exhibiting the seat of war, both in Europe and America, likewise the trade winds and course of sailing from one continent to the other.'"
+ },
+ "source": "original; stimulus image from the shared pool, Emanuel Bowen, chart of the Atlantic Ocean (1740), public domain (CC0)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "A. The Atlantic Economy and the Evolution of Colonial Economies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "British Empire in America: Growth and Conflict (1650-1750)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650-1750)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "The chart's title calls the Atlantic 'the seat of war, both in Europe and America.' What historical context best explains that wording?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Britain and France were at peace, and the chart celebrated that peace",
+   "misconception": "Reverses the context; the chart appeared during war, not peace."
+  },
+  {
+   "key": "B",
+   "text": "Britain was at war with Spain, so the trade ocean also carried warships"
+  },
+  {
+   "key": "C",
+   "text": "The chart was made to settle a border dispute between colonies",
+   "misconception": "Mistakes an ocean chart for a boundary map; the title names war, not borders."
+  },
+  {
+   "key": "D",
+   "text": "Atlantic trade had ended, and war was the ocean's only use",
+   "misconception": "Claims trade had ended, but the chart maps the trade winds and courses."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "general": "1. Read the title's claim. The Atlantic is 'the seat of war' — a place where wars are fought.\n2. Check the date. The chart was published in September 1740, a year after Britain declared war on Spain.\n3. Connect trade and war. The same ocean that carried sugar, tobacco, and enslaved people now carried warships and privateers.\n4. Rule out the rest. Peace does not make a sea a seat of war, and trade had not ended.\nRemember: a map's title tells you what its makers thought the place was for — read it like a headline.",
+  "A": "Peace would not make the Atlantic a seat of war. Britain was fighting Spain when the chart appeared.",
+  "B": "Britain declared war on Spain in 1739, so in 1740 the trade routes were also war routes.",
+  "C": "The chart maps an ocean and its winds, not a colonial border. Its title is about war at sea.",
+  "D": "Trade had not ended — the chart itself maps the trade winds and sailing courses."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0239",
+   "file": "u2/original-u1-trade-02.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/Special:FilePath/A%20new%20chart%20of%20the%20vast%20Atlantic%20Ocean%20-%20exhibiting%20the%20seat%20of%20war%2C%20both%20in%20Europe%20and%20America%2C%20likewise%20the%20trade%20winds%20%26%20course%20of%20sailing%20from%20one%20continent%20to%20the%20other%2C%20with%20the%20banks%2C%20shoals%20NYPL434669.tiff?width=1200",
+   "license": "Public domain (CC0)",
+   "caption": "Emanuel Bowen, chart of the Atlantic Ocean, 1740",
+   "alt": "Bowen's 1740 chart of the Atlantic Ocean, showing the trade winds and sailing courses between Europe, Africa, and the Americas, with compass roses and rhumb lines across the ocean"
+  }
+ ]
+}

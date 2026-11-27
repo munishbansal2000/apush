@@ -1,0 +1,101 @@
+{
+ "id": "apush-saq-0047",
+ "lesson": "apush-u2-l3",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.4"
+ ],
+ "skills": [
+  "1.B",
+  "4.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "saq_slot": 1,
+ "stimulus_set": "navigation-acts-saq",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, written from Barron's 2027 Chapter 4 and 5 Steps 2024 Chapter 8.",
+  "text": "By the early 1700s, Britain's colonies were growing rich inside a system built to control them. Parliament's Navigation Acts forced colonial trade onto English ships and through English ports, and the colonies bought their finished goods from England. Yet the same laws were barely enforced: customs officers were few, smuggling was open, and colonial assemblies grew used to managing their own affairs. The empire claimed control on paper; in practice, the colonies ran much of their own trade."
+ },
+ "source": "original; stimulus is an original secondary passage, written from the books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Navigation Acts and Mercantilism"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Lax Enforcement of Mercantilist Policies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Part of an Empire"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Salutary Neglect"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650-1750)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "parts": [
+  {
+   "part": "a",
+   "prompt": "Identify one rule the Navigation Acts imposed on colonial trade.",
+   "modelAnswer": "The acts forced colonial trade onto English ships and through English ports. Certain goods, like tobacco, could be shipped only to England.",
+   "points": 1,
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one rule, such as English ships, English ports, or the enumerated list of goods shipped only to England.",
+     "notEarned": "Naming a rule the acts did not impose, or restating the passage with no rule, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "prompt": "Explain one way the Navigation Acts served Britain's mercantilist goals.",
+   "modelAnswer": "The acts channeled colonial trade so its profits stayed with England, keeping the favorable balance mercantilism demanded. By forcing trade through English ports, they cut out rival nations and kept the shipping business English.",
+   "points": 1,
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one way the acts served mercantilism, such as keeping trade profits in England, cutting out rivals, or keeping shipping English.",
+     "notEarned": "Stating only that the acts controlled trade, with no link to mercantilist goals, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "prompt": "Explain one reason Britain's loose enforcement mattered for the colonies' development.",
+   "modelAnswer": "Loose enforcement let colonial merchants smuggle and trade freely, so they grew rich and used to managing their own affairs. That habit of self-government shaped how the colonies later responded when Britain tried to enforce its laws.",
+   "points": 1,
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one consequence of loose enforcement, such as merchants growing rich through smuggling or assemblies growing used to self-government.",
+     "notEarned": "Stating only that enforcement was loose, with no consequence for the colonies, does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

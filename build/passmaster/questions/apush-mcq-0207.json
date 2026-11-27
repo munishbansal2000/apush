@@ -1,0 +1,79 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "B. The New England Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Massachusetts and the New England Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Massachusetts Bay"
+   }
+  ],
+  "primary_sources": [
+   "Roger Williams, The Hireling Ministry None of Christ's (1652)"
+  ]
+ },
+ "id": "apush-mcq-0207",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The South was settled for tobacco and trade, not by the Puritan authorities Williams attacks.",
+   "text": "The southern colonies."
+  },
+  {
+   "key": "B",
+   "text": "The New England colonies."
+  },
+  {
+   "key": "C",
+   "misconception": "The middle colonies were the tolerant ones \u2014 Pennsylvania welcomed dissenters, not banished them.",
+   "text": "The middle colonies."
+  },
+  {
+   "key": "D",
+   "misconception": "The Chesapeake was settled by the Virginia Company for profit, not by the government that banished Williams.",
+   "text": "The Chesapeake colonies."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The South was settled for tobacco and trade, not by the Puritan authorities Williams attacks.",
+  "B": "Williams was banished from Massachusetts Bay \u2014 his critics were the Puritan authorities of New England.",
+  "C": "The middle colonies were the tolerant ones \u2014 Pennsylvania welcomed dissenters, not banished them.",
+  "D": "The Chesapeake was settled by the Virginia Company for profit, not by the government that banished Williams.",
+  "general": "1. Ask who Williams is writing about. The civil powers imposing religion \u2014 the government that banished him.\n2. Ask where that government was. Massachusetts Bay, in New England.\n3. Answer the region. His critics were New England Puritans, not southern or middle colonists.\nRemember: a source's enemy has an address \u2014 find where the writer was banished from, and you find them."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "1.B"
+ ],
+ "source": "original; rewritten from survivor pr25e-test1-q07 against the books",
+ "status": "final",
+ "stem": "The group Williams criticizes in the excerpt would have been most likely to settle which region?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Roger Williams, The Hireling Ministry None of Christ's (1652), verbatim, public domain.",
+  "text": "I observe the great and wonderful mistake, both our own and our fathers, as to the civil powers of this world, acting in spiritual matters. I have read\u2026the last will and testament of the Lord Jesus over many times, and yet I cannot find\u2026that ever He would have put forth the least finger of temporal or civil power in the matters of His spiritual affairs and Kingdom. Hence must it lamentably be against the testimony of Christ Jesus for the civil state to impose upon the souls of the people a religion, a worship, a ministry\u2026."
+ },
+ "stimulus_set": "williams-civil-power",
+ "themes": [
+  "SOC",
+  "GEO"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

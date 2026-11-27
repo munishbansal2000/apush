@@ -1,0 +1,82 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "C. English Colonial Patterns"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "E. Colonial Self-Government"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Jamestown and the Chesapeake Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0180",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Only English settlers voted for Burgesses \u2014 Native peoples were not represented in the assembly.",
+   "text": "To give Native peoples a vote in Virginia's government."
+  },
+  {
+   "key": "B",
+   "text": "To attract settlers by giving them a voice in their own laws."
+  },
+  {
+   "key": "C",
+   "misconception": "Virginia was a company colony in 1619, not a royal one \u2014 the king did not rule it directly until 1624.",
+   "text": "To let the king rule Virginia directly through his own assembly."
+  },
+  {
+   "key": "D",
+   "misconception": "The governor kept his seat and his veto \u2014 the assembly sat with him, it did not replace him.",
+   "text": "To replace the governor with an elected president."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "Only English settlers voted for Burgesses; the passage says two men from each settlement, and Native peoples were not represented.",
+  "B": "The company needed settlers to stay and pay, and a voice in the laws made the colony a better bargain \u2014 the assembly was an inducement.",
+  "C": "Virginia was a company colony in 1619, not a royal one; the king did not rule it directly until 1624.",
+  "D": "The governor kept his seat and his veto; the assembly sat with him, it did not replace him.",
+  "general": "1. Ask who the company needed. Settlers \u2014 and settlers who would stay, work, and pay.\n2. Ask what would keep them. Background: Jamestown's early years were deadly, and free Englishmen would not cross an ocean to be ruled like servants.\n3. Ask what the assembly offered. A say in the laws that governed them \u2014 the promise that Virginia would be run like England, with representation.\n4. Name the bargain. The company traded a share of power for a colony that would last.\nRemember: when a company gives away power, ask what it is buying \u2014 here, it bought settlers."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "2.C"
+ ],
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "status": "final",
+ "stem": "Why did the Virginia Company create the House of Burgesses in 1619?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question, summarizing the Virginia Company's 1619 order.",
+  "text": "In 1619 the Virginia Company ordered the colony to call an assembly. Two men chosen from each settlement met at Jamestown with the governor and his council to make laws for the colony. The assembly could pass laws, but the governor could veto them, and the company in London could veto them too."
+ },
+ "stimulus_set": "burgesses-1619",
+ "themes": [
+  "PCE",
+  "MIG"
+ ],
+ "topics": [
+  "2.2"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

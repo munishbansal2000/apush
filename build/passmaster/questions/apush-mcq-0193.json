@@ -1,0 +1,83 @@
+{
+ "answerKey": "A",
+ "difficulty": 4,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.2 European Colonization"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "E. Colonial Self-Government"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Colonial America (1607\u20131650)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650\u20131750)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0193",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "text": "Colonists expected self-government, so post-1763 taxes felt like a broken promise."
+  },
+  {
+   "key": "B",
+   "misconception": "The passage shows assemblies growing used to voting taxes \u2014 they practiced self-government, they did not forget it.",
+   "text": "Colonists forgot how to govern themselves and welcomed royal rule."
+  },
+  {
+   "key": "C",
+   "misconception": "The colonies never repealed the Navigation Acts \u2014 the passage shows the Acts standing while enforcement lapsed.",
+   "text": "The Navigation Acts were finally repealed by the colonies in 1763."
+  },
+  {
+   "key": "D",
+   "misconception": "After 1763 London tightened control with new taxes and enforcement \u2014 the opposite of abandoning the colonies.",
+   "text": "London decided to abandon the colonies entirely after 1763."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Decades of voting their own taxes and the governor's salary taught colonists that money needed their consent \u2014 the post-1763 taxes broke that expectation.",
+  "B": "The passage shows assemblies growing used to voting taxes and salaries \u2014 they practiced self-government, they did not forget it.",
+  "C": "The colonies never repealed the Navigation Acts; the passage shows the Acts standing while enforcement lapsed.",
+  "D": "After 1763 London tightened control with new taxes and enforcement \u2014 the opposite of abandoning the colonies.",
+  "general": "1. Ask what the assemblies practiced. Voting taxes and the governor's salary \u2014 the power of the purse, year after year.\n2. Ask what practice becomes. Background: a habit practiced forty years feels like a right, though no law wrote it down.\n3. Ask what happened in 1763. London ended the neglect and demanded new taxes \u2014 colonists heard a promise broken, not a policy changed.\n4. Name the link. Neglect built the expectation: self-government was the deal.\nRemember: the longer a habit runs, the more its ending feels like betrayal \u2014 and that feeling is history."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "4.B",
+  "3.D"
+ ],
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "status": "final",
+ "stem": "The decades of loose enforcement best help explain which later development?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question, summarizing salutary neglect under Robert Walpole.",
+  "text": "From the 1720s, Robert Walpole's government in London left the colonies largely alone. The Navigation Acts stayed on the books, but few customs officers enforced them. Colonial assemblies grew used to voting their own taxes and the governor's salary, and merchants traded where the profit was."
+ },
+ "stimulus_set": "salutary-neglect",
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "topics": [
+  "2.2"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

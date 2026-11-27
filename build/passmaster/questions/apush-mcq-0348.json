@@ -1,0 +1,89 @@
+{
+ "answerKey": "B",
+ "difficulty": 4,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.8 Subject to Debate"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "How Oppressed Were British Colonists?"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Lax Enforcement of Mercantilist Policies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "English Regulation of Colonial Trade"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Salutary Neglect"
+   }
+  ],
+  "primary_sources": [
+   "Navigation Act of 1660"
+  ]
+ },
+ "id": "apush-mcq-0348",
+ "lesson": "apush-u2-l5",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The Act covered colonial goods too; that is what it was written for.",
+   "text": "The Act applied only to goods made in England, not colonial goods."
+  },
+  {
+   "key": "B",
+   "text": "Britain lacked the officers and ships to enforce the Act across an ocean."
+  },
+  {
+   "key": "C",
+   "misconception": "Other countries wanted tobacco, sugar, and timber; the colonies had goods to sell.",
+   "text": "The colonies had no goods that other countries wanted to buy."
+  },
+  {
+   "key": "D",
+   "misconception": "Parliament never repealed the Act; it stayed on the books and was laxly enforced.",
+   "text": "Parliament repealed the Act within a few years of passing it."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The Act covered colonial goods too; that is what it was written for.",
+  "B": "The Act set a rule, but London had almost no way to police it. The colonies lay an ocean away, and Britain had too few ships and officers to watch every harbor and every cargo. Background: for decades the Acts were laxly enforced, smuggling was common, and colonists traded with the Dutch, the French, and the Spanish anyway. The Act did cover colonial goods, the colonies had goods other countries wanted, and Parliament never repealed it.",
+  "C": "Other countries wanted tobacco, sugar, and timber; the colonies had goods to sell.",
+  "D": "Parliament never repealed the Act; it stayed on the books and was laxly enforced.",
+  "general": "1. Start with the rule. The Act said colonial trade had to travel in English ships.\n2. Ask what enforcement needed. Ships and officers watching every harbor, across an ocean.\n3. Read the record. Background: London had too few of either, so smuggling was common and the Acts were laxly enforced.\n4. Drop the rest. The Act covered colonial goods. Background: other countries wanted them, and Parliament never repealed it.\nRemember: a rule without enforcement is a wish \u2014 distance made the Acts hard to police."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.B"
+ ],
+ "source": "original; stimulus is a verbatim public-domain primary source",
+ "status": "final",
+ "stem": "The Act was widely evaded \u2014 colonists smuggled goods and traded with other countries. Which of the following best explains why the Act did not stop that trade?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Navigation Act of 1660; public domain.",
+  "text": "\"For the increase of shipping and encouragement of the navigation of this nation... That from and after the first day of December 1660... no goods or commodities whatsoever shall be imported into or exported out of any lands, islands, plantations or territories to his Majesty belonging or in his possession... in Asia, Africa, or America, in any other ship or ships, vessel or vessels whatsoever, but in such ships or vessels as do truly and without fraud belong only to the people of England or Ireland... and whereof the master and three fourths of the mariners at least are English.\" \u2014 Navigation Act of 1660."
+ },
+ "stimulus_set": "navigation-act",
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "topics": [
+  "2.8"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

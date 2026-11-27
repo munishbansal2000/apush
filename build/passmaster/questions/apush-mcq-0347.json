@@ -1,0 +1,84 @@
+{
+ "answerKey": "D",
+ "difficulty": 2,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.8 Subject to Debate"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Navigation Acts and Mercantilism"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "English Regulation of Colonial Trade"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Part of an Empire"
+   }
+  ],
+  "primary_sources": [
+   "Navigation Act of 1660"
+  ]
+ },
+ "id": "apush-mcq-0347",
+ "lesson": "apush-u2-l5",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The stimulus as presented says nothing about where the ships were built.",
+   "text": "were built in the colonies by colonial shipwrights."
+  },
+  {
+   "key": "B",
+   "misconception": "The Act says nothing about passengers; it is about owners and crews.",
+   "text": "carried only English passengers and no foreign goods."
+  },
+  {
+   "key": "C",
+   "misconception": "The Act requires English or Irish ownership, not ownership by the Crown.",
+   "text": "were owned by the Crown and sailed under royal orders."
+  },
+  {
+   "key": "D",
+   "text": "belonged to English or Irish owners and had English crews."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The stimulus as presented says nothing about where the ships were built.",
+  "B": "The Act says nothing about passengers; it is about owners and crews.",
+  "C": "The Act requires English or Irish ownership, not ownership by the Crown.",
+  "D": "The Act says goods could move only in ships that 'belong only to the people of England or Ireland' and 'whereof the master and three fourths of the mariners at least are English.' Background: the stimulus as presented is about who owned the ships and who crewed them; it says nothing about where the ships were built, who rode in them, or whether the Crown owned them. Parliament wanted English ships carrying colonial trade so that England, not its rivals, profited from it.",
+  "general": "1. Read the rule. Goods could move only in ships belonging to the people of England or Ireland.\n2. Read the crew rule. The master and three fourths of the mariners at least had to be English.\n3. Check each option against the rule. Only one option names owners and crews.\n4. Drop the rest. Building place, passengers, and Crown ownership are not in the stimulus as presented.\nRemember: a law's rule is its text \u2014 match the option to the words on the page."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "1.A"
+ ],
+ "source": "original; stimulus is a verbatim public-domain primary source",
+ "status": "final",
+ "stem": "According to the Act, goods could be carried to and from the colonies only in ships that",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Navigation Act of 1660; public domain.",
+  "text": "\"For the increase of shipping and encouragement of the navigation of this nation... That from and after the first day of December 1660... no goods or commodities whatsoever shall be imported into or exported out of any lands, islands, plantations or territories to his Majesty belonging or in his possession... in Asia, Africa, or America, in any other ship or ships, vessel or vessels whatsoever, but in such ships or vessels as do truly and without fraud belong only to the people of England or Ireland... and whereof the master and three fourths of the mariners at least are English.\" \u2014 Navigation Act of 1660."
+ },
+ "stimulus_set": "navigation-act",
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "topics": [
+  "2.8"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

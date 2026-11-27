@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-0235",
+ "lesson": "apush-u2-l3",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 2,
+ "topics": [
+  "2.4"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "navigation-acts",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, written from Barron's 2027 Chapter 4 and 5 Steps 2024 Chapter 8.",
+  "text": "Parliament's Navigation Acts, passed from 1651 and tightened in the 1660s, forced colonial trade onto English ships and through English ports. Certain colonial goods — tobacco first, then rice and naval stores like tar and pitch — could be shipped only to England. This was the 'enumerated list.' European goods bound for the colonies had to pass through an English port first, where London took its cut. Parliament also fenced off colonial manufacturing: the Wool Act of 1699, the Hat Act of 1732, and the Iron Act of 1750."
+ },
+ "source": "original; fresh item on the 1660/1663 distinction, grounded in Barron's 2027 Chapter 4 and 5 Steps 2024 Chapter 8",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Navigation Acts and Mercantilism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Part of an Empire"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650-1750)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "Which statement correctly distinguishes the Navigation Act of 1660 from the Act of 1663?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The 1660 act told the colonies where to buy their goods, while the 1663 act told them what they could sell and on whose ships",
+   "misconception": "The classic error — it flips the two acts; 1660 is selling, 1663 is buying."
+  },
+  {
+   "key": "B",
+   "text": "The 1660 act was passed by Parliament and the 1663 act by the colonial assemblies",
+   "misconception": "Misattributes the acts; both were Parliament's laws, not the assemblies'."
+  },
+  {
+   "key": "C",
+   "text": "The 1660 act applied only to tobacco and the 1663 act only to rice",
+   "misconception": "Narrows each act to one crop; the 1660 act listed several enumerated goods."
+  },
+  {
+   "key": "D",
+   "text": "The 1660 act governed what the colonies could sell and on whose ships, while the 1663 act required European goods to pass through an English port"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "general": "1. Name the classic mix-up. Students often flip 1660 and 1663.\n2. Fix 1660 in place. It listed what the colonies could sell — tobacco first — and said it had to move on English ships.\n3. Fix 1663 in place. It said where the colonies had to buy: European goods reached them only through an English port.\n4. Use the memory hook. 1660 is about selling, 1663 is about buying.\nRemember: when two laws look alike, pin each one to its own verb — sell or buy.",
+  "A": "This has the two acts backwards — 1660 governed selling, 1663 governed buying.",
+  "B": "Both acts were passed by Parliament. The colonial assemblies passed neither.",
+  "C": "Neither act was limited to a single crop. The 1660 act covered an enumerated list of goods.",
+  "D": "The 1660 act set the enumerated list and the shipping rules; the 1663 act routed European goods through English ports."
+ }
+}

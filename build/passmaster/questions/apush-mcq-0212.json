@@ -1,0 +1,77 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "A. The Chesapeake and the Upper South"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Maryland: A Haven for Catholics"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Maryland"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0212",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The passage says Protestants arrived and outnumbered the Catholics \u2014 nobody abandoned the colony.",
+   "text": "The Catholics abandoned Maryland for Pennsylvania, leaving their colony behind them."
+  },
+  {
+   "key": "B",
+   "text": "Protestants arrived in greater numbers and soon outnumbered the founding Catholics."
+  },
+  {
+   "key": "C",
+   "misconception": "The 1649 law did the opposite \u2014 it protected Catholics and Trinitarian Protestants.",
+   "text": "The colony's assembly banned Catholic worship in 1649, closing every Catholic church."
+  },
+  {
+   "key": "D",
+   "misconception": "Catholics founded the colony \u2014 the passage says so in its first sentence.",
+   "text": "The Catholics never reached Maryland at all, and the colony was Protestant from the start."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The passage says Protestants arrived and outnumbered the Catholics \u2014 nobody abandoned the colony.",
+  "B": "The passage says it plainly \u2014 Protestants arrived in greater numbers and soon outnumbered the Catholics who had founded the colony.",
+  "C": "The 1649 law did the opposite \u2014 it protected Catholics and Trinitarian Protestants.",
+  "D": "Catholics founded the colony \u2014 the passage says so in its first sentence.",
+  "general": "1. Read the first sentence. A refuge for Catholics \u2014 that is the plan.\n2. Read the second. Protestants arrived in greater numbers and outnumbered the founders.\n3. Name the lesson. A refuge is only as Catholic as its people \u2014 numbers, not intentions, decided Maryland.\nRemember: when a passage gives a plan and then a population, the population wins."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.A"
+ ],
+ "source": "original; rewritten from survivor 5s24-ch07-mcq-03 against the books",
+ "status": "final",
+ "stem": "According to the passage, why did Maryland's Catholic refuge fail to stay Catholic?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, drawn from Barron's Premium 2027, Chapter 4.",
+  "text": "Maryland was founded in 1632 as a refuge for English Catholics, but the refuge did not stay Catholic for long. Protestants arrived in greater numbers and soon outnumbered the Catholics who had founded the colony. In 1649 the colony's assembly passed a law of religious toleration, protecting Catholics and Protestants who believed in the Trinity. Yet even that law did not settle the question \u2014 Protestants later seized control, and the toleration law was repealed."
+ },
+ "stimulus_set": "maryland-passage",
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

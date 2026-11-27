@@ -1,0 +1,77 @@
+{
+ "answerKey": "D",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "B. The New England Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Massachusetts and the New England Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Life in the Colonies"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0224",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "New England sold grain and livestock TO the sugar islands \u2014 it traded with them, it did not compete with them.",
+   "text": "They wanted to compete with the sugar islands, taking their trade away from them."
+  },
+  {
+   "key": "B",
+   "misconception": "The passage never mentions a royal order \u2014 the reason given is the rocky soil.",
+   "text": "They were ordered to do so by the king, who commanded them to fish and build."
+  },
+  {
+   "key": "C",
+   "misconception": "They raised cattle and sheep and sold grain \u2014 they farmed, just not an export crop.",
+   "text": "They had no land at all to farm, and could grow nothing in the ground."
+  },
+  {
+   "key": "D",
+   "text": "Their rocky soil would not grow an export crop, so they made a living other ways."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "New England sold grain and livestock TO the sugar islands \u2014 it traded with them, it did not compete with them.",
+  "B": "The passage never mentions a royal order \u2014 the reason given is the rocky soil.",
+  "C": "They raised cattle and sheep and sold grain \u2014 they farmed, just not an export crop.",
+  "D": "The passage opens with exactly that \u2014 rocky soil, no great export crop \u2014 and then lists the work that followed.",
+  "general": "1. Read the first sentence. Rocky soil, no great export crop \u2014 that is the problem.\n2. Read the rest as the answer. Fishing, shipbuilding, carrying goods, selling grain to the sugar islands.\n3. Name the pattern. When the land will not pay, people find other work \u2014 New England's economy was a patchwork.\nRemember: a passage that opens with a problem and lists jobs is telling you cause and effect."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.B"
+ ],
+ "source": "original; passage drawn from Barron's Premium 2027, Chapter 4",
+ "status": "final",
+ "stem": "According to the passage, why did New Englanders fish, build ships, and carry goods?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, drawn from Barron's Premium 2027, Chapter 4.",
+  "text": "New England's rocky soil would not grow a great export crop, so its people made their living in other ways. They fished the cold Atlantic, built ships, and carried goods for other colonies. They raised cattle and sheep, cut timber for barrels and masts, and sold grain and livestock to the sugar islands of the West Indies. What they could not grow, they bought \u2014 and what they could not buy, they made. New England's economy was a patchwork, not a plantation."
+ },
+ "stimulus_set": "new-england-economy",
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

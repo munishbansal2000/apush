@@ -1,0 +1,87 @@
+{
+ "answerKey": "D",
+ "difficulty": 4,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "C. English Colonial Patterns"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Jamestown and the Chesapeake Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Massachusetts and the New England Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The Pilgrims and the Massachusetts Bay Company"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0166",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Treats two different English colonies as the same kind of venture.",
+   "text": "Both colonies were founded by the same company for the same purpose, seeking profit and a godly community together in America."
+  },
+  {
+   "key": "B",
+   "misconception": "Reverses the mortality \u2014 Jamestown lost most of its people, while Massachusetts Bay grew.",
+   "text": "Both colonies lost most of their settlers in their first winters on the coast and nearly failed entirely."
+  },
+  {
+   "key": "C",
+   "misconception": "Reads a large migration as a small one.",
+   "text": "Massachusetts Bay was settled by only a handful of families from England seeking profit and trade."
+  },
+  {
+   "key": "D",
+   "text": "Jamestown began as a company venture of men seeking profit and nearly died, while Massachusetts Bay brought families seeking a godly community."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Jamestown was a Virginia Company venture seeking profit, while Massachusetts Bay was settled by Puritans building a godly community; the companies and purposes differed.",
+  "B": "Jamestown lost nearly 90 percent of its people in the starving time, but Massachusetts Bay grew, drawing more than 20,000 settlers in twelve years.",
+  "C": "Massachusetts Bay drew more than 20,000 settlers, whole families of middling sorts, not a handful of families.",
+  "D": "Jamestown's 144 men nearly vanished in its first years, while Massachusetts Bay's family migration of more than 20,000 made it a lasting settlement.",
+  "general": "1. Compare the two English rows. Jamestown starts with 144 men and nearly vanishes; Massachusetts Bay brings more than 20,000 people in twelve years.\n2. Ask who came in each case. Background: Jamestown's settlers were mostly men seeking profit, while Massachusetts Bay brought whole families of farmers and craftsmen.\n3. Ask why they came. Profit drove the Virginia Company; a godly community drove the Puritans.\n4. Name the contrast. One English colony was a fragile company venture; the other was a family migration that took root and grew.\nRemember: when two colonies share a flag, ask who came and why, and the differences usually explain which one survived."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "5.A"
+ ],
+ "source": "original; table built from figures in Barron's Premium 2027, Chapter 4, and Princeton Review Premium Prep, Chapter 6",
+ "status": "final",
+ "stem": "What contrast between the two English colonies does the table show?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Table built from figures given in the three books; France's count is given qualitatively because the books give no exact number.",
+  "text": "Early Atlantic crossings, 1607-1650\n\n| Group | People | When |\n|---|---|---|\n| Spaniards to the New World | About 350,000 | By 1650 |\n| English settlers at Jamestown | 144 landed; only 38 still alive a year later | 1607-1608 |\n| English settlers at Jamestown | About 500 in the colony; nearly 90% died in the 'starving time' | Winter 1609-1610 |\n| English settlers to Massachusetts Bay | More than 20,000 | 1630-1642 |\n| French settlers to New France | Few, mostly single men; the books give no exact count | 1600s |"
+ },
+ "stimulus_set": "atlantic-crossings-table",
+ "themes": [
+  "MIG",
+  "WXT"
+ ],
+ "topics": [
+  "2.1"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

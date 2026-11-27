@@ -1,0 +1,91 @@
+{
+ "id": "apush-mcq-0251",
+ "lesson": "apush-u2-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.4"
+ ],
+ "skills": [
+  "5.A"
+ ],
+ "themes": [
+  "WXT"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 4,
+ "stimulus_set": "havana-spanish",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "A view of the harbour and city of the Havana, drawn by Elias Durnford and engraved by Pierre Charles Canot, published in London in February 1765, public domain.",
+  "text": "A view of the harbour and city of the Havana, taken from Jesus del Monte. Drawn by Elias Durnford and engraved by Pierre Charles Canot, published in London in February 1765. The harbor stretches across the middle distance, dotted with sailing ships; palm trees and fields fill the foreground, and the city stands on the far shore."
+ },
+ "source": "original; rewritten from survivor 5s24-ch08-mcq-08 against Princeton 25e Chapter 6",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "A. The Atlantic Economy and the Evolution of Colonial Economies"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "C. British Imperial Policies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "British Empire in America: Growth and Conflict (1650-1750)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650-1750)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "Havana's harbor, like the English colonies' ports, served an empire that controlled its colonial trade. The Navigation Acts most closely resembled which other imperial trade system?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Spain's restriction of colonial trade to Spanish ships and ports"
+  },
+  {
+   "key": "B",
+   "text": "The Dutch Republic's open-port trading policy in the seventeenth century",
+   "misconception": "Confuses open-port trade with restriction; the Dutch policy was the opposite of the acts."
+  },
+  {
+   "key": "C",
+   "text": "Britain's repeal of the Corn Laws in 1846",
+   "misconception": "Reaches a century too late; the Corn Laws governed grain, not colonial shipping."
+  },
+  {
+   "key": "D",
+   "text": "The American Embargo Act of 1807",
+   "misconception": "Names a ban, not a system; the Embargo Act is not a colonial trade regime."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "general": "1. Name the English rule. The Navigation Acts forced colonial trade onto English ships and through English ports.\n2. Ask who else did that. Spain restricted its colonies to Spanish ships and Spanish ports — the same shape of control.\n3. Test the Dutch. The Dutch ran open ports and carried anyone's goods — the opposite of restriction.\n4. Rule out the later laws. The Corn Laws and the Embargo Act belong to other centuries and other aims.\nRemember: to compare systems, match the rule, not the flag — who may carry the goods, and through which ports.",
+  "A": "Spain restricted its colonies to Spanish ships and ports — the same shape of control as the Navigation Acts.",
+  "B": "The Dutch ran open ports and carried anyone's goods. That is the opposite of the Navigation Acts.",
+  "C": "The Corn Laws were repealed in 1846, a century later, and they governed grain imports, not colonial shipping.",
+  "D": "The Embargo Act of 1807 banned American ships from foreign ports. It is not a colonial shipping system."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0251",
+   "file": "u2/original-u1-trade-12.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/Special:FilePath/A%20view%20of%20the%20harbour%20and%20city%20of%20the%20Havana%2C%20taken%20from%20Jesu%20del%20Monte%20Vue%20du%20Port%20et%20ville%20de%20la%20Havane%20prise%20de%20Jesu%20del%20Monte%20%3D%20Vista%20del%20Puerto%20y%20Ciudad%20de%20la%20Havana%20desde%20Jesus%20del%20LCCN2009633662.jpg?width=1200",
+   "license": "Public domain",
+   "caption": "A view of the harbour and city of Havana, drawn by Elias Durnford and engraved by Pierre Charles Canot, 1765",
+   "alt": "A 1765 engraving of Havana harbor dotted with sailing ships, seen from Jesus del Monte with palm trees in the foreground"
+  }
+ ]
+}

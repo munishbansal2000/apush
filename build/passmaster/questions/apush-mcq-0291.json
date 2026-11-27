@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0291",
+ "lesson": "apush-u2-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.6"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "bacons-rebellion",
+ "stimulus": {
+  "kind": "text",
+  "text": "In 1676, Nathaniel Bacon raised an army of four to five hundred men on Virginia's frontier. The men attacked Native settlements \u2014 including the Pamunkey and the Occoneechee, peoples living at peace with the colonists \u2014 and then marched on Jamestown and burned it. Bacon died of dysentery soon after, and Governor Berkeley hanged twenty-three of the rebels. Berkeley had refused the farmers' call for war: wealthy Virginians profited from trade with Native peoples, and he judged frontier forts cheaper than war. The rebellion united poor Virginians across race: servants, freedmen, and enslaved Black people fought together against the governor.",
+  "source_note": "Original secondary passage written for this question, summarizing Barron's 2027 Ch 4, 5 Steps 2024 Ch 8, and Princeton Review Ch 6."
+ },
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Bacon's Rebellion and the Development of Slavery in Virginia"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Growth of Slavery"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Major Events of the Period"
+   }
+  ],
+  "primary_sources": [
+   "Bacon, Declaration of the People (1676)"
+  ]
+ },
+ "status": "final",
+ "stem": "Governor Berkeley refused to help the frontier farmers fight Native peoples. Based on the passage, why did he refuse?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Berkeley believed the frontier farmers could defend themselves without help.",
+   "misconception": "He refused because war would hurt the Indian trade and cost more than forts, not because farmers were safe."
+  },
+  {
+   "key": "B",
+   "text": "Wealthy Virginians profited from trade with Native peoples, and Berkeley judged forts cheaper."
+  },
+  {
+   "key": "C",
+   "text": "Berkeley had already granted Bacon a commission and wanted him to wait.",
+   "misconception": "Berkeley refused the commission; Bacon raised his army anyway."
+  },
+  {
+   "key": "D",
+   "text": "Parliament had forbidden the governor to raise any militia in Virginia.",
+   "misconception": "No such ban existed; the refusal was Berkeley's own calculation."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "general": "1. Read Berkeley's problem. Frontier farmers wanted war; war would cost money and break a profitable trade.\n2. Read his answer. Forts on the frontier \u2014 cheaper than war, and the trade kept flowing.\n3. Ask whose interests that served. Wealthy Virginians who profited from trade with Native peoples.\n4. Name the refusal for what it was. A governor protecting a trade, not a governor who thought the farmers were safe.\nRemember: when a ruler says no to a war, ask who profits from the peace.",
+  "B": "Berkeley refused because war would break a profitable trade: wealthy Virginians did business with Native peoples, and a war would cost more than it gained. His answer was frontier forts \u2014 cheaper than war, with the trade left intact. That served the traders' interests, not the farmers', which is why the farmers resented the forts. The other options are wrong: Berkeley never granted the commission, and no Parliament ban on militias existed.",
+  "A": "He refused because war would hurt the Indian trade and cost more than forts, not because farmers were safe.",
+  "C": "Berkeley refused the commission; Bacon raised his army anyway.",
+  "D": "No such ban existed; the refusal was Berkeley's own calculation."
+ }
+}

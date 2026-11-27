@@ -1,0 +1,84 @@
+{
+ "answerKey": "B",
+ "difficulty": 4,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.2 European Colonization"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "C. English Colonial Patterns"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Massachusetts and the New England Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The Pilgrims and the Massachusetts Bay Company"
+   }
+  ],
+  "primary_sources": [
+   "Mayflower Compact (November 11, 1620)"
+  ]
+ },
+ "id": "apush-mcq-0158",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Reverses the difference \u2014 the Spanish crown ruled directly, while the Compact let settlers make their own laws.",
+   "text": "It gave the Spanish crown direct rule over Plymouth."
+  },
+  {
+   "key": "B",
+   "text": "It let the settlers create a government by agreement, not wait for a royal governor."
+  },
+  {
+   "key": "C",
+   "misconception": "Turns a brief political agreement into a trade deal.",
+   "text": "It created a monopoly on the fur trade with the Native peoples of New England."
+  },
+  {
+   "key": "D",
+   "misconception": "Reads an English agreement as a Spanish system.",
+   "text": "It set up an encomienda system of forced Native labor in the colony."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Spain ruled its colonies through viceroys appointed by the crown; the Compact was the settlers' own agreement, not a royal appointment.",
+  "B": "The signers combined themselves into a civil Body Politick to make laws together, a government made by agreement rather than imposed by a king.",
+  "C": "The Compact says nothing about furs or trade; it creates a government, not a business.",
+  "D": "The encomienda was a Spanish system of forced labor, not an English one, and the Compact sets up no labor system at all.",
+  "general": "1. Set the Compact beside Spain's rule. Background: Spain governed its colonies through viceroys and royal officials sent from across the sea.\n2. Ask who governs in the Compact. The signers themselves combine into a body that will make its own laws.\n3. Notice the contrast. One government arrives by royal order; the other is made by the people it will govern.\n4. Name the English difference. Plymouth's settlers built their government by agreement, not by waiting for a governor from the king.\nRemember: ask who makes the rules in each colony, and the difference between empires often appears in that one answer."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "5.B"
+ ],
+ "source": "original; stimulus text from Mayflower Compact (November 11, 1620), public domain",
+ "status": "final",
+ "stem": "How did the government created by the Mayflower Compact differ from Spanish rule in the Americas?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Verbatim excerpt from the Mayflower Compact, signed November 11, 1620, public domain. Quoted in 5 Steps to a 5 2024, Chapter 7.",
+  "text": "\"We, whose names are underwritten, the Loyal Subjects of our dread Sovereign Lord King James, having undertaken for the Glory of God, and Advancement of the Christian Faith, and the Honour of our King and Country, a Voyage to plant the first Colony in the northern Parts of Virginia, do by these Presents, solemnly and mutually, in the Presence of God and one another, covenant and combine ourselves together into a civil Body Politick, for our better Ordering and Preservation.\""
+ },
+ "stimulus_set": "mayflower-compact-1620",
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "topics": [
+  "2.1"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

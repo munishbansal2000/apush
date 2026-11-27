@@ -1,0 +1,77 @@
+{
+ "answerKey": "C",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "B. The New England Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Massachusetts and the New England Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Life in the Colonies"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0226",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "New England sold directly to the West Indies \u2014 the colonies traded with each other, not only with England.",
+   "text": "The colonies traded only with England, and never with each other at all."
+  },
+  {
+   "key": "B",
+   "misconception": "The flow runs the other way \u2014 New England sold grain and livestock TO the islands.",
+   "text": "The sugar islands fed New England's people, sending them food and rum."
+  },
+  {
+   "key": "C",
+   "text": "The colonies were linked by trade, each selling what the others needed."
+  },
+  {
+   "key": "D",
+   "misconception": "Rivals do not buy each other's goods \u2014 the passage shows a working trade, not a rivalry.",
+   "text": "New England and the West Indies were rivals, fighting over the same trade."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "New England sold directly to the West Indies \u2014 the colonies traded with each other, not only with England.",
+  "B": "The flow runs the other way \u2014 New England sold grain and livestock TO the islands.",
+  "C": "New England's grain fed the sugar islands. Background: the islands' sugar trade fed New England's ships \u2014 each colony's surplus was the other's supply.",
+  "D": "Rivals do not buy each other's goods \u2014 the passage shows a working trade, not a rivalry.",
+  "general": "1. Follow the grain. From New England farms to the sugar islands of the West Indies.\n2. Ask what the islands sent back. Background: sugar, rum, and the trade that kept New England's ships busy.\n3. Name the system. Colonies linked by trade \u2014 each one selling what the others needed.\nRemember: a sale between colonies is evidence of a system \u2014 ask what flowed the other way."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "3.B"
+ ],
+ "source": "original; passage drawn from Barron's Premium 2027, Chapter 4",
+ "status": "final",
+ "stem": "The passage says New Englanders 'sold grain and livestock to the sugar islands.' What does that detail show about the colonies?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, drawn from Barron's Premium 2027, Chapter 4.",
+  "text": "New England's rocky soil would not grow a great export crop, so its people made their living in other ways. They fished the cold Atlantic, built ships, and carried goods for other colonies. They raised cattle and sheep, cut timber for barrels and masts, and sold grain and livestock to the sugar islands of the West Indies. What they could not grow, they bought \u2014 and what they could not buy, they made. New England's economy was a patchwork, not a plantation."
+ },
+ "stimulus_set": "new-england-economy",
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

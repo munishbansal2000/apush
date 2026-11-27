@@ -1,0 +1,91 @@
+{
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "B. The New England Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Massachusetts and the New England Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Massachusetts Bay"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-saq-0042",
+ "lesson": "apush-u2-l2",
+ "parts": [
+  {
+   "modelAnswer": "The Halfway Covenant of 1662 loosened the rules of church membership, letting the children of members be baptized without their parents joining. By 1692, Salem showed the other side of Puritan religion \u2014 fear of the devil led to accusations and executions.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one change in New England religion between 1662 and 1692.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one accurate change, such as the Halfway Covenant loosening baptism or Salem's witchcraft trials showing religious fear.",
+     "notEarned": "Naming a change with no link to New England religion in this period, or describing a change that did not happen, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Fewer second-generation Puritans had joined the church, so the colony faced a generation of children who could not be baptized and parents who could not vote. The covenant kept those families inside the church by baptizing their children.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Describe one reason the Halfway Covenant was adopted.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for describing one accurate reason, such as declining church membership or keeping the second generation inside the church.",
+     "notEarned": "Stating only that the covenant was adopted, with no reason, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Salem shows that Puritan authority could turn fear into deadly punishment \u2014 twenty people were executed on accusations of witchcraft. The trials also show its limits \u2014 the panic ended, and the colony later apologized for the executions.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way the Salem trials show the limits of Puritan religious authority.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one accurate limit, such as authority turning fear into execution or the colony later repenting and ending the trials.",
+     "notEarned": "Naming the trials with no explanation of what they show about authority does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "causation",
+ "saq_slot": 1,
+ "skills": [
+  "1.B",
+  "4.B"
+ ],
+ "source": "original; passage drawn from Barron's Premium 2027, Chapter 4",
+ "status": "final",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, drawn from Barron's Premium 2027, Chapter 4.",
+  "text": "By 1662, the children of the first Puritans were having children of their own \u2014 but fewer of them had joined the church, and only church members could vote or have their children baptized. The Halfway Covenant of 1662 let the children of church members be baptized even if their parents had not joined the church. Thirty years later, in Salem, more than 100 people were accused of witchcraft and 20 were executed."
+ },
+ "stimulus_set": "saq-halfway-salem",
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 2
+}

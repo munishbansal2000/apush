@@ -1,0 +1,94 @@
+{
+ "answerKey": "D",
+ "difficulty": 4,
+ "figures": [
+  {
+   "alt": "Engraving of a walled wooden trading post with cannons, storehouses, and dwellings on a riverbank, with gardens outside the walls",
+   "caption": "Champlain's Habitation at Quebec, 1613",
+   "file": "u2/champlain-habitation-quebec.jpg",
+   "id": "fig-apush-mcq-0156",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Champlain_Habitation_de_Quebec.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.1 Contextualizing Period 2"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "B. French and Dutch Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "New France"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "French Colonization of North America"
+   }
+  ],
+  "primary_sources": [
+   "Samuel de Champlain, Les Voyages (1613)"
+  ]
+ },
+ "id": "apush-mcq-0156",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Reads a claim on a map as control of the land.",
+   "text": "France controlled more of North America's land than any other empire by 1613."
+  },
+  {
+   "key": "B",
+   "misconception": "Treats a French post on the river as proof that Native peoples were gone.",
+   "text": "The French had already driven Native peoples out of the St. Lawrence valley by 1613, before Champlain built his post."
+  },
+  {
+   "key": "C",
+   "misconception": "Mistakes a small trading post for a large city.",
+   "text": "Quebec was the largest city in North America when Champlain built his post there in 1608."
+  },
+  {
+   "key": "D",
+   "text": "France claimed a vast territory with very few settlers, so it relied on Native allies and trade, not numbers."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "A map claim is not control; the post's small size shows France held little of the land it claimed.",
+  "B": "Native peoples still lived and traded along the St. Lawrence, and the French post depended on them.",
+  "C": "The post is a handful of buildings inside walls, far smaller than a city like Mexico City or even Jamestown's town.",
+  "D": "One small post on a great river shows a vast claim held by very few people, which forced France to trade with and ally with Native peoples.",
+  "general": "1. Measure the post against the river. One small walled post sits on a river that runs off the edge of the engraving.\n2. Ask what the size tells you. Background: France's North American claims were vast on paper but thinly peopled.\n3. Ask how a few people hold a great river. They cannot do it by force of numbers, so they need friends who know the country.\n4. Name the French answer. Alliance and trade with Native peoples let a handful of Frenchmen work a continent they could never fill.\nRemember: compare the size of a settlement with the size of its claim, and the gap usually explains the policy."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "3.B"
+ ],
+ "source": "original; stimulus image from the shared pool, Samuel de Champlain, Les Voyages (1613), public domain",
+ "status": "final",
+ "stem": "The engraving shows a single small post on a great river. Which conclusion about French colonization does that picture best support?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Engraving from the shared image pool; Samuel de Champlain, Les Voyages (1613), public domain.",
+  "text": "Samuel de Champlain's engraving of the Habitation at Quebec, from his Les Voyages (1613). The walled post stands on the St. Lawrence River, with cannons at its corners, storehouses and dwellings inside the walls, and a flag flying above the main house. Gardens lie outside the walls, and the river runs along the bottom of the image."
+ },
+ "stimulus_set": "champlain-quebec-1613",
+ "themes": [
+  "GEO",
+  "MIG"
+ ],
+ "topics": [
+  "2.1"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

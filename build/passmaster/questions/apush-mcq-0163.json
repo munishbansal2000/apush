@@ -1,0 +1,79 @@
+{
+ "answerKey": "A",
+ "difficulty": 4,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "C. English Colonial Patterns"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Massachusetts and the New England Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The Pilgrims and the Massachusetts Bay Company"
+   }
+  ],
+  "primary_sources": [
+   "John Winthrop, A Model of Christian Charity (1630)"
+  ]
+ },
+ "id": "apush-mcq-0163",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "text": "It claims the world will watch, but the colony banished Williams and Hutchinson for dissenting."
+  },
+  {
+   "key": "B",
+   "misconception": "Treats a sermon about godly living as a trade charter.",
+   "text": "It promises free trade with every nation in Europe."
+  },
+  {
+   "key": "C",
+   "misconception": "Reads a warning about being judged into a claim of military power.",
+   "text": "It says the colony's army will defeat any enemy."
+  },
+  {
+   "key": "D",
+   "misconception": "Turns a Puritan governor's sermon into a royal decree.",
+   "text": "It was written by the king of England himself, not by a colonial governor like Winthrop."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Winthrop's vision of a godly city on display clashed with the colony's own actions, banishing Williams and Hutchinson when their beliefs differed from the church.",
+  "B": "The sermon offers no trade or commerce; it warns about the colony's conduct before God.",
+  "C": "The passage speaks of being watched and judged, not of armies or battles.",
+  "D": "Winthrop, the colony's governor, wrote and preached the sermon; the king had no part in it.",
+  "general": "1. Hold Winthrop's promise up against the colony's record. A city upon a hill is supposed to be an example the world can admire.\n2. Ask who was allowed to stay in the example. Background: Massachusetts banished Roger Williams for wanting church and state kept apart.\n3. Add the second case. Anne Hutchinson was banished too, for claiming direct revelations from God.\n4. Name the limit. A vision of a godly community that banishes dissenters shows the colony policing belief, not protecting it.\nRemember: test a vision against what its believers did, and the gap between the two is often the answer."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "6.D"
+ ],
+ "source": "original; stimulus text from John Winthrop, A Model of Christian Charity (1630), public domain",
+ "status": "final",
+ "stem": "What is the main limit of Winthrop's 'city upon a hill' vision as a description of Massachusetts Bay?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Verbatim excerpt from John Winthrop, A Model of Christian Charity (1630), public domain.",
+  "text": "\"For we must consider that we shall be as a city upon a hill. The eyes of all people are upon us. So that if we shall deal falsely with our God in this work we have undertaken, and so cause Him to withdraw His present help from us, we shall be made a story and a by-word through the world.\""
+ },
+ "stimulus_set": "winthrop-city-hill-1630",
+ "themes": [
+  "ARC",
+  "PCE"
+ ],
+ "topics": [
+  "2.1"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

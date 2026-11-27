@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0315",
+ "lesson": "apush-u2-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.7"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "ARC",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "whitefield-preaching",
+ "stimulus": {
+  "kind": "text",
+  "text": "\"He had a loud and clear voice, and articulated his words and sentences so perfectly, that he might be heard and understood at a great distance.... Being among the hindmost in Market-street, I had the curiosity to learn how far he could be heard, by retiring backwards down the street towards the river.... Imagining then a semi-circle, of which my distance should be the radius, and that it were fill'd with auditors, to each of whom I allow'd two square feet, I computed that he might well be heard by more than thirty thousand.\" \u2014 Benjamin Franklin, Autobiography, describing Whitefield's Philadelphia preaching in 1739 (abridged).",
+  "source_note": "Benjamin Franklin, Autobiography (written 1771\u20131790), describing 1739; public domain."
+ },
+ "source": "original; stimulus is a verbatim public-domain primary source",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.7 Colonial Society and Culture"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The First Great Awakening"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "The First Great Awakening"
+   }
+  ],
+  "primary_sources": [
+   "Franklin, Autobiography (Whitefield passage, 1739)"
+  ]
+ },
+ "status": "final",
+ "stem": "What does Franklin's calculation best show about his approach to the revival?",
+ "options": [
+  {
+   "key": "A",
+   "text": "That he accepted the revival's claims about conversion and the size of its crowds on faith.",
+   "misconception": "Franklin does the opposite of accepting on faith: he walks backward down the street to test the claim."
+  },
+  {
+   "key": "B",
+   "text": "That he tried to disprove Whitefield's preaching by measuring the crowd and proving the reports false.",
+   "misconception": "Franklin is not trying to disprove anything; his measurement ends up supporting the crowd reports."
+  },
+  {
+   "key": "C",
+   "text": "That he believed only ordained ministers, and not laymen like himself, could fairly judge a sermon.",
+   "misconception": "Franklin judges the preaching himself, as a listener with a measuring mind, not by deferring to ministers."
+  },
+  {
+   "key": "D",
+   "text": "That he tested a popular claim the way a scientist tests a question \u2014 by measuring it."
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "general": "1. Watch what Franklin does. He does not argue about conversion; he walks backward down Market Street to find where the voice fades.\n2. Watch what he builds. A semicircle, a radius, two square feet per hearer \u2014 a geometry problem.\n3. See what the number does. Background: thirty thousand reconciles him to the newspaper reports he had doubted.\n4. Name the habit. This is the Enlightenment mind at work: test a claim by measuring it.\nRemember: Franklin meets the revival with a ruler, not a prayer \u2014 the Enlightenment testing the Awakening.",
+  "D": "Background: Franklin treats the reports of twenty-five thousand hearers as a question to be tested, not a story to be believed or denied. He measures how far Whitefield's voice carries, imagines a semicircle filled with auditors at two square feet each, and computes more than thirty thousand. Background: Franklin is the Enlightenment's counterweight to the Awakening \u2014 reason and experiment set against revival emotion. He does not try to disprove the preaching or defer to ministers; he measures.",
+  "A": "Franklin does the opposite of accepting on faith: he walks backward down the street to test the claim.",
+  "B": "Franklin is not trying to disprove anything; his measurement ends up supporting the crowd reports.",
+  "C": "Franklin judges the preaching himself, as a listener with a measuring mind, not by deferring to ministers."
+ }
+}

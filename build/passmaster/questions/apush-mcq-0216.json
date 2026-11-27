@@ -1,0 +1,79 @@
+{
+ "answerKey": "C",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "D. The Middle Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "The Middle Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Other Early Colonies"
+   }
+  ],
+  "primary_sources": [
+   "Benjamin Franklin, Observations Concerning the Increase of Mankind (1751)"
+  ]
+ },
+ "id": "apush-mcq-0216",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "That is the opposite of what he writes \u2014 he says they will never adopt English language or customs.",
+   "text": "He believed Germans would soon become English, adopting the language and customs."
+  },
+  {
+   "key": "B",
+   "misconception": "Franklin calls the Germans 'aliens' and fears them \u2014 he is not welcoming them.",
+   "text": "He believed all immigrants were equally welcome, whatever their language or faith."
+  },
+  {
+   "key": "C",
+   "text": "He believed German culture was fixed and could not change to English ways."
+  },
+  {
+   "key": "D",
+   "misconception": "Franklin never suggests abandoning Pennsylvania \u2014 he wants it to stay English.",
+   "text": "He believed Pennsylvania should be abandoned, and the English should leave it."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "That is the opposite of what he writes \u2014 he says they will never adopt English language or customs.",
+  "B": "Franklin calls the Germans 'aliens' and fears them \u2014 he is not welcoming them.",
+  "C": "Franklin treats German language and customs as something Germans cannot give up \u2014 a fixed identity, not a choice.",
+  "D": "Franklin never suggests abandoning Pennsylvania \u2014 he wants it to stay English.",
+  "general": "1. Read the sentence. The Germans will never adopt our language or customs.\n2. Ask what Franklin assumes. That culture is something you are born with, not something you can change.\n3. Name the view. Germans are permanently German \u2014 and that permanence is what frightens him.\nRemember: a claim about what people can never do is a claim about their nature \u2014 ask what the writer thinks people are."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "2.B"
+ ],
+ "source": "original; stimulus is Benjamin Franklin, Observations Concerning the Increase of Mankind (1751), verbatim, public domain",
+ "status": "final",
+ "stem": "Franklin writes that the Germans 'will never adopt our language or customs.' What does that claim show about Franklin's own view?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Benjamin Franklin, Observations Concerning the Increase of Mankind (1751), verbatim, public domain.",
+  "text": "Why should Pennsylvania, founded by the English, become a colony of aliens, who will shortly be so numerous as to Germanize us instead of our Anglifying them, and will never adopt our language or customs, any more than they can acquire our complexion?"
+ },
+ "stimulus_set": "franklin-germans",
+ "themes": [
+  "SOC",
+  "MIG"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

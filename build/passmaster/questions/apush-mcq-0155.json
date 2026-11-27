@@ -1,0 +1,94 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "figures": [
+  {
+   "alt": "Engraving of a walled wooden trading post with cannons, storehouses, and dwellings on a riverbank, with gardens outside the walls",
+   "caption": "Champlain's Habitation at Quebec, 1613",
+   "file": "u2/champlain-habitation-quebec.jpg",
+   "id": "fig-apush-mcq-0155",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Champlain_Habitation_de_Quebec.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "B. French and Dutch Colonies"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "French-American Indian Diplomacy"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "New France"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "French Colonization of North America"
+   }
+  ],
+  "primary_sources": [
+   "Samuel de Champlain, Les Voyages (1613)"
+  ]
+ },
+ "id": "apush-mcq-0155",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "text": "The fur trade needed few settlers and relied on Native partners, so a river post served France better."
+  },
+  {
+   "key": "B",
+   "misconception": "Blames French ships, when France crossed the Atlantic for fish, furs, and exploration.",
+   "text": "France had no ships that could carry settlers across the Atlantic to the St. Lawrence valley in 1608."
+  },
+  {
+   "key": "C",
+   "misconception": "Turns a small colony into a banned colony.",
+   "text": "The French king had forbidden all settlement in North America."
+  },
+  {
+   "key": "D",
+   "misconception": "Reverses the reason \u2014 rich soil would attract farmers, not keep them away.",
+   "text": "Quebec's soil was too rich for farming, so the French left the region empty and unsettled."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Furs came through Native partners, so France needed a small post on the river, not farms that would clear the woods and drive off the beaver.",
+  "B": "French ships crossed the Atlantic for decades before Quebec, carrying explorers, fishermen, and fur traders.",
+  "C": "The French king chartered and supported the colony; the post was small because the fur trade needed few settlers, not because settlement was banned.",
+  "D": "Rich soil would draw farmers, not keep them away; the French stayed small because their wealth came from furs, not fields.",
+  "general": "1. Ask what France was selling. Background: beaver fur, made into fashionable hats in Europe, was the colony's wealth.\n2. Ask what the fur trade needs. Fur traders must work with Native partners who know the woods and the rivers.\n3. Ask what it does not need. Farms would clear the woods, drive off the beaver, and need settlers France did not send.\n4. Match the building to the business. A small post on the river fits a trade that lives on Native partnership, not on fields.\nRemember: ask what a colony sold, and the shape of its settlements usually follows the goods."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.B"
+ ],
+ "source": "original; stimulus image from the shared pool, Samuel de Champlain, Les Voyages (1613), public domain",
+ "status": "final",
+ "stem": "Why did the French build a small trading post at Quebec instead of a large farming colony?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Engraving from the shared image pool; Samuel de Champlain, Les Voyages (1613), public domain.",
+  "text": "Samuel de Champlain's engraving of the Habitation at Quebec, from his Les Voyages (1613). The walled post stands on the St. Lawrence River, with cannons at its corners, storehouses and dwellings inside the walls, and a flag flying above the main house. Gardens lie outside the walls, and the river runs along the bottom of the image."
+ },
+ "stimulus_set": "champlain-quebec-1613",
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "topics": [
+  "2.1"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

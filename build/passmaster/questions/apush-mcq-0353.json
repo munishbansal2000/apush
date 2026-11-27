@@ -1,0 +1,87 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.8 Subject to Debate"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "King Philip's War (1675\u20131678)"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Bacon's Rebellion and the Development of Slavery in Virginia"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Major Events of the Period"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Interactions Between Native Americans and Europeans"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0353",
+ "lesson": "apush-u2-l5",
+ "options": [
+  {
+   "key": "A",
+   "text": "Both grew from English expansion onto Native land."
+  },
+  {
+   "key": "B",
+   "misconception": "Neither war was fought to end slavery.",
+   "text": "Both were fought to end slavery in the colonies."
+  },
+  {
+   "key": "C",
+   "misconception": "Bacon's Rebellion was started by English frontiersmen, not by Native peoples.",
+   "text": "Both were started by Native peoples attacking English towns first."
+  },
+  {
+   "key": "D",
+   "misconception": "Neither war ended with the English leaving; the English won both.",
+   "text": "Both ended with the English leaving the colonies for good."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Passage A says King Philip's War came after decades of English expansion onto Native land and broken treaties. Passage B says Bacon's men rebelled because Berkeley would not let them attack Native peoples for land, while coastal planters held nearly all the good land. Background: in both cases the fight was over land that Native peoples already lived on \u2014 expansion was the common cause. Neither war was fought to end slavery, and neither ended with the English leaving.",
+  "B": "Neither war was fought to end slavery.",
+  "C": "Bacon's Rebellion was started by English frontiersmen, not by Native peoples.",
+  "D": "Neither war ended with the English leaving; the English won both.",
+  "general": "1. Read Passage A. King Philip's War followed decades of English expansion onto Native land.\n2. Read Passage B. Bacon's men wanted to attack Native peoples for land.\n3. Ask what the two share. In both, English settlers pushed onto land Native peoples already lived on.\n4. Drop the rest. Neither war was about ending slavery, and the English stayed.\nRemember: two wars in two years, one cause \u2014 land."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "5.A"
+ ],
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "status": "final",
+ "stem": "What did the two conflicts have most in common?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passages written for this question; facts from the grounding books.",
+  "text": "Passage A \u2014 King Philip's War: \"In 1675, the Wampanoag leader Metacom \u2014 called King Philip by the English \u2014 led an alliance of Native peoples against the English towns of New England. The war came after decades of English expansion onto Native land, broken treaties, and the trial and execution of three Wampanoag men. The fighting was brutal: about a dozen English towns were destroyed, and thousands died on both sides. The English won, and the surviving Native peoples were killed, sold into slavery in the West Indies, or driven from southern New England.\"\n\nPassage B \u2014 Bacon's Rebellion: \"In 1676, Virginia frontiersmen led by Nathaniel Bacon rebelled against Governor William Berkeley. The rebels were angry that Berkeley would not let them attack Native peoples for land, and that the coastal planters held nearly all the good land. Bacon's men burned Jamestown before the rebellion collapsed when Bacon died of dysentery. Afterward, Virginia's planters moved away from indentured servants and toward enslaved African labor.\""
+ },
+ "stimulus_set": "wars-1675",
+ "themes": [
+  "NAT",
+  "GEO"
+ ],
+ "topics": [
+  "2.8"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

@@ -1,0 +1,92 @@
+{
+ "id": "apush-mcq-0250",
+ "lesson": "apush-u2-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.4"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "havana-spanish",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "A view of the harbour and city of the Havana, drawn by Elias Durnford and engraved by Pierre Charles Canot, published in London in February 1765, public domain.",
+  "text": "A view of the harbour and city of the Havana, taken from Jesus del Monte. Drawn by Elias Durnford and engraved by Pierre Charles Canot, published in London in February 1765. The harbor stretches across the middle distance, dotted with sailing ships; palm trees and fields fill the foreground, and the city stands on the far shore."
+ },
+ "source": "original; stimulus image from the shared pool, Elias Durnford / Pierre Charles Canot, View of Havana (1765), public domain; rewritten from survivor original-u1-trade-12 — 'crowded with sailing ships' softened to 'dotted', matching the engraving",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "A. The Atlantic Economy and the Evolution of Colonial Economies"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "C. British Imperial Policies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "British Empire in America: Growth and Conflict (1650-1750)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650-1750)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "This 1765 engraving shows the harbor of Havana, Cuba, dotted with sailing ships. As a major Spanish Atlantic port, Havana's importance rested on its role in which system?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The English triangular trade in enslaved Africans",
+   "misconception": "Misassigns the port; Havana was Spanish, not part of the English triangular trade."
+  },
+  {
+   "key": "B",
+   "text": "The French fur trade with Native allies in Canada and the Great Lakes",
+   "misconception": "Puts a northern fur trade in a Caribbean harbor; the fur trade ran through Canada."
+  },
+  {
+   "key": "C",
+   "text": "The movement of American silver and goods through Spanish ports to Europe"
+  },
+  {
+   "key": "D",
+   "text": "English colonial commerce regulated under the Navigation Acts of the 1660s",
+   "misconception": "Applies English law to a Spanish port; the Navigation Acts governed English colonies."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "general": "1. Name the port. Havana was Spanish Cuba's great harbor, not an English or French one.\n2. Ask what flowed through it. Silver from the American mines and colonial goods gathered at Havana for the crossing to Spain.\n3. Place it in the system. Spain, like England, ran its colonies to enrich the mother country — and Havana was the funnel.\n4. Rule out the rest. The fur trade was French and northern; the Navigation Acts were English.\nRemember: a port's importance is the system it serves — name the system before you name the port.",
+  "A": "Havana was Spanish, not English. The triangular trade's English ports were in Britain and its colonies.",
+  "B": "The fur trade ran through Canada and the Great Lakes, not through a Caribbean harbor.",
+  "C": "Havana gathered American silver and colonial goods for shipment to Spain — the Spanish imperial system.",
+  "D": "The Navigation Acts governed English colonies. Havana belonged to Spain."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0250",
+   "file": "u2/original-u1-trade-12.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/Special:FilePath/A%20view%20of%20the%20harbour%20and%20city%20of%20the%20Havana%2C%20taken%20from%20Jesu%20del%20Monte%20Vue%20du%20Port%20et%20ville%20de%20la%20Havane%20prise%20de%20Jesu%20del%20Monte%20%3D%20Vista%20del%20Puerto%20y%20Ciudad%20de%20la%20Havana%20desde%20Jesus%20del%20LCCN2009633662.jpg?width=1200",
+   "license": "Public domain",
+   "caption": "A view of the harbour and city of Havana, drawn by Elias Durnford and engraved by Pierre Charles Canot, 1765",
+   "alt": "A 1765 engraving of Havana harbor dotted with sailing ships, seen from Jesus del Monte with palm trees in the foreground"
+  }
+ ]
+}

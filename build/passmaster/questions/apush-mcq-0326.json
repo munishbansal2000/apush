@@ -1,0 +1,84 @@
+{
+ "id": "apush-mcq-0326",
+ "lesson": "apush-u2-l5",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 2,
+ "topics": [
+  "2.7"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "hamilton-zenger",
+ "stimulus": {
+  "kind": "text",
+  "text": "\"It is... a right, which all free men claim, that they are entitled to complain when they are hurt.... It is not the cause of one poor printer, nor of New York alone.... It is the cause of liberty.\" — Andrew Hamilton, defense of printer John Peter Zenger, August 4, 1735 (abridged).",
+  "source_note": "Andrew Hamilton, defense of John Peter Zenger, August 4, 1735; public domain."
+ },
+ "source": "original; stimulus is a verbatim public-domain primary source",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.7 Colonial Society and Culture"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "E. The Development of Self-Government in Britain's New World Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Colonial Governments"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Part of an Empire"
+   }
+  ],
+  "primary_sources": [
+   "Hamilton, defense of John Peter Zenger (1735)"
+  ]
+ },
+ "status": "final",
+ "stem": "Hamilton's claim that complaining when hurt is “a right which all free men claim” draws most directly on",
+ "options": [
+  {
+   "key": "A",
+   "text": "the traditional liberties of English subjects."
+  },
+  {
+   "key": "B",
+   "text": "the theory of French absolutism and unlimited royal power.",
+   "misconception": "French absolutist theory supported unlimited royal power — the opposite of Hamilton's claim that free men may complain."
+  },
+  {
+   "key": "C",
+   "text": "the system of Spanish colonial law in New Spain.",
+   "misconception": "Hamilton invoked no Spanish colonial law; his appeal was to English liberties, not Spanish legal tradition."
+  },
+  {
+   "key": "D",
+   "text": "the traditions of Native American diplomacy and alliance.",
+   "misconception": "Hamilton invoked no Native American diplomacy; his framework was English common law, not Indigenous tradition."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "general": "1. Listen to the claim. Free men may complain when hurt — a right they already hold, not one being granted.\n2. Ask where such a right comes from. Not from a king's gift, but from liberties English subjects carried with them.\n3. Rule out the rest. No French absolutism, no Spanish law, no Native diplomacy appears in the defense.\n4. Name the tradition. The common-law liberties of Englishmen, claimed in New York as at home.\nRemember: Hamilton's defense is an English argument — colonists claiming English liberties, not inventing new ones.",
+  "A": "Hamilton appeals to the inherited liberties of English subjects — the common-law tradition that free men may complain when they are hurt. He frames Zenger's case not as a new right but as an old one, claimed by Englishmen wherever they live. Background: colonists throughout the period defended themselves by claiming the rights of Englishmen, a habit that later shaped the Revolution's arguments. French absolutism, Spanish law, and Native diplomacy play no part in his defense.",
+  "B": "French absolutist theory supported unlimited royal power — the opposite of Hamilton's claim that free men may complain.",
+  "C": "Hamilton invoked no Spanish colonial law; his appeal was to English liberties, not Spanish legal tradition.",
+  "D": "Hamilton invoked no Native American diplomacy; his framework was English common law, not Indigenous tradition."
+ }
+}

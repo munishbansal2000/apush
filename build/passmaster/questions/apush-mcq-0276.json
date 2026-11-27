@@ -1,0 +1,77 @@
+{
+ "answerKey": "D",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.5 Interactions Between American Indians and Europeans"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Part of an Empire"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0276",
+ "lesson": "apush-u2-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The Jesuits famously learned Native languages \u2014 that was their method.",
+   "text": "The Jesuits refused to learn Native languages and preached only in French to settlers"
+  },
+  {
+   "key": "B",
+   "misconception": "Forcing converts into walled towns and banning customs was the English praying-town approach.",
+   "text": "The Jesuits forced Native peoples into walled towns and banned their customs"
+  },
+  {
+   "key": "C",
+   "misconception": "The Jesuits worked among Native peoples, not only with French settlers.",
+   "text": "The Jesuits ignored Native peoples entirely and worked only with French settlers in Quebec"
+  },
+  {
+   "key": "D",
+   "text": "The Jesuits lived among Native peoples and accepted that Christianity could blend with their traditions"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The Jesuits famously learned Native languages \u2014 that was their method.",
+  "B": "Forcing converts into walled towns and banning customs was the English praying-town approach.",
+  "C": "The Jesuits worked among Native peoples, not only with French settlers.",
+  "D": "The passage draws the contrast sharply: the Puritans demanded that converts abandon their traditions, while the Jesuits accepted blending. Jesuits lived in Native villages, learned Native languages, and let converts keep ceremonies the Puritans would have called idolatry. Both groups wanted converts \u2014 but the Jesuits were willing to meet Native peoples where they lived, and the Puritans demanded that Native peoples come to them.",
+  "general": "1. Line up the two approaches. The Puritans demanded abandonment; the Jesuits accepted blending.\n2. Ask where each group lived. The Jesuits lived in Native villages; the Puritans built separate praying towns.\n3. Ask what each one needed. Background: the French needed Native allies for the fur trade, and the Jesuits' approach fit that need.\nRemember: two missions can want the same converts and still be opposites \u2014 ask how each one meets the people it wants."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "3.C"
+ ],
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "status": "final",
+ "stem": "Compared with the English Puritans in Massachusetts Bay, the French Jesuit missionaries in Canada approached Native peoples in which of the following ways?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question, summarizing standard background on the praying towns and French missions.",
+  "text": "In Massachusetts Bay, Puritan ministers built \u201cpraying towns\u201d \u2014 villages where Native converts lived under English law, dressed in European clothing, and were expected to give up their own customs. By the 1670s there were fourteen such towns. Yet even converted Native peoples remained second-class citizens in English eyes: they were judged by how completely they had abandoned their old ways. French Jesuit missionaries took the opposite approach, living among Native peoples and accepting that Christianity could blend with Native traditions."
+ },
+ "stimulus_set": "praying-indians",
+ "themes": [
+  "ARC",
+  "WOR"
+ ],
+ "topics": [
+  "2.5"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

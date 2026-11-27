@@ -1,0 +1,94 @@
+{
+ "answerKey": "B",
+ "difficulty": 2,
+ "figures": [
+  {
+   "alt": "Title page of a 1612 book, printed in old spelling, advertising a description of Virginia, its commodities, people, government, and religion",
+   "caption": "Title page of John Smith's A Map of Virginia (1612)",
+   "file": "u2/original-ctx-u2-06.jpg",
+   "id": "fig-apush-mcq-0151",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/A-map-of-virginia-_smith-john-1612-title-page.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.2 European Colonization"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "C. English Colonial Patterns"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Jamestown and the Chesapeake Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": [
+   "John Smith, A Map of Virginia (1612)"
+  ]
+ },
+ "id": "apush-mcq-0151",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Treats an advertisement for a guidebook as proof of a gold discovery.",
+   "text": "It proves the English had already found more gold than the Spanish ever did."
+  },
+  {
+   "key": "B",
+   "text": "It sells practical knowledge for settlers \u2014 land, goods, peoples, government \u2014 not a story of conquest and treasure."
+  },
+  {
+   "key": "C",
+   "misconception": "Reads a private author's book as a royal government document.",
+   "text": "It shows the English crown ruling Virginia directly through a viceroy, as Spain ruled Mexico and Peru in America."
+  },
+  {
+   "key": "D",
+   "misconception": "Reads a description of peoples as their consent to be ruled.",
+   "text": "It promises that Virginia's Native peoples had already agreed to English rule before the settlers arrived."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The page advertises a description of the country, not a gold discovery, so a claim about English gold misses what Smith is selling.",
+  "B": "The title page lists commodities, people, government, and religion \u2014 the practical knowledge a settler or investor needed to build a lasting colony.",
+  "C": "The book is Smith's own account, written by a former governor, not a royal decree; Spain's viceroys ruled its empire, not Virginia.",
+  "D": "Describing a people is not the same as winning their consent, and the page says nothing about Native peoples agreeing to English rule.",
+  "general": "1. Read what the page is selling. It offers a description of the country: commodities, people, government, and religion.\n2. Ask who would buy that. A settler or investor planning to live and work in Virginia, not a reader hunting for a conquest tale.\n3. Compare it with Spain's story. Background: Spain's empire ran on conquest, silver mines, and forced labor.\n4. Name the difference. Smith is selling the knowledge to build a colony that stays, not the loot from one that was taken.\nRemember: ask what a source is selling and to whom, and the author's purpose usually answers itself."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "5.B"
+ ],
+ "source": "original; stimulus image from the shared pool, John Smith, A Map of Virginia (1612), public domain",
+ "status": "final",
+ "stem": "How does Smith's title page show that English colonization in Virginia differed from Spain's earlier approach in the Americas?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Title page from the shared image pool; John Smith, A Map of Virginia (1612), public domain.",
+  "text": "The title page of Captain John Smith's A Map of Virginia, printed at Oxford in 1612. It advertises a description of the country, its commodities, people, government, and religion, 'written by Captaine Smith, sometimes Governour of the Countrey,' with an account of the colony's proceedings since the settlers first left England. The map itself is not shown here \u2014 only the page that introduced it to English readers."
+ },
+ "stimulus_set": "smith-virginia-1612",
+ "themes": [
+  "GEO",
+  "MIG"
+ ],
+ "topics": [
+  "2.1"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

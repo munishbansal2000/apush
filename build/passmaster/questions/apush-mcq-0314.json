@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0314",
+ "lesson": "apush-u2-l5",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 2,
+ "topics": [
+  "2.7"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "ARC",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "whitefield-preaching",
+ "stimulus": {
+  "kind": "image",
+  "text": "An engraving published in 1857 imagining George Whitefield preaching. A solemn, dark-coated figure stands with arms raised and an open book before him, pictured as a commanding preacher.",
+  "source_note": "Engraving published 1857, imagining George Whitefield; public domain (pre-1930). The image is a 19th-century imagining, not a 1740s record."
+ },
+ "source": "original; stimulus is a real historical image from the shared pool",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.7 Colonial Society and Culture"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The First Great Awakening"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "The First Great Awakening"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "The engraving was made in 1857, more than a century after Whitefield preached. Which use of the engraving would be a mistake?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Using it to show how 19th-century Americans pictured the revival and its preachers.",
+   "misconception": "That is a sound use: the engraving is evidence of how later Americans remembered Whitefield."
+  },
+  {
+   "key": "B",
+   "text": "Using it as evidence of what Whitefield's preaching actually looked and sounded like."
+  },
+  {
+   "key": "C",
+   "text": "Using it to discuss why Whitefield became a famous figure in the colonies.",
+   "misconception": "That is a sound use: the image shows his later fame, which is worth discussing."
+  },
+  {
+   "key": "D",
+   "text": "Using it to ask what made itinerant preaching appealing to colonial audiences.",
+   "misconception": "That is a sound use: the image can open a discussion of the revival's appeal."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "general": "1. Check the date. The engraving is from 1857; Whitefield preached in the 1740s.\n2. Ask what a picture made a century later can show. How later Americans imagined him \u2014 not the event itself.\n3. Test each use. Fame, memory, and appeal are all things the image can speak to.\n4. Find the one it cannot do. It cannot show what his preaching actually looked or sounded like.\nRemember: a later imagining is evidence of memory, not of the moment \u2014 always check the date before you trust the picture.",
+  "B": "The engraving was made in 1857, more than a century after Whitefield's American tours of the 1740s, by an artist who never saw him preach. It shows how 19th-century Americans pictured the great revivalist \u2014 solemn, commanding, book in hand \u2014 not what his preaching actually looked or sounded like. Background: Whitefield's real appearance and voice are known from written accounts, such as Franklin's. The other options are sound uses of the image as evidence of memory and fame.",
+  "A": "That is a sound use: the engraving is evidence of how later Americans remembered Whitefield.",
+  "C": "That is a sound use: the image shows his later fame, which is worth discussing.",
+  "D": "That is a sound use: the image can open a discussion of the revival's appeal."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0314",
+   "file": "u2/pr25e-drill-mcq-q03.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/George_Whitefield_preaching.jpg",
+   "license": "Public domain",
+   "caption": "George Whitefield preaching, engraving published 1857",
+   "alt": "An 1857 engraving imagining George Whitefield preaching, arms raised, holding an open book"
+  }
+ ]
+}

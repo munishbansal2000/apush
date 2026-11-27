@@ -1,0 +1,89 @@
+{
+ "answerKey": "D",
+ "difficulty": 2,
+ "figures": [
+  {
+   "alt": "The Castello Plan of New Amsterdam in 1660, redrawn in 1916, showing the fort at the tip of Manhattan, the wall across the town, canals, gardens, and ships in the harbor",
+   "caption": "New Amsterdam in 1660, redrawn 1916",
+   "file": "u2/original-ctx-u2-07.jpg",
+   "id": "fig-apush-mcq-0170",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Castelloplan.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.2 European Colonization"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Colonial America (1607\u20131650)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": [
+   "Castello Plan of New Amsterdam (1660), redrawn by John Wolcott Adams and Isaac Newton Phelps Stokes (1916)"
+  ]
+ },
+ "id": "apush-mcq-0170",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Reads gardens as farming \u2014 the town's purpose was trade, not feeding the Dutch Republic.",
+   "text": "It was a farming colony built to feed the Dutch Republic."
+  },
+  {
+   "key": "B",
+   "misconception": "Confuses Dutch New Netherland with Spanish missions \u2014 the plan shows a commercial town.",
+   "text": "It was a Spanish mission town built to convert Native peoples."
+  },
+  {
+   "key": "C",
+   "misconception": "Reads a Dutch trading town as a New England town \u2014 the plan shows a fort, wall, and canals.",
+   "text": "It was a Puritan town built around a single church and common."
+  },
+  {
+   "key": "D",
+   "text": "A fortified trading port moving goods between the Hudson valley and the sea."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The plan shows a small walled town with a fort, canals, and ships \u2014 a port, not a farming colony.",
+  "B": "New Amsterdam was Dutch, not Spanish, and the plan shows a commercial town, not a mission.",
+  "C": "The plan shows a fort, a wall, and canals \u2014 a Dutch trading post, not a Puritan town around a church.",
+  "D": "The fort, the wall, the canals, and the crowded harbor all serve one purpose: a trading post that could defend its goods.",
+  "general": "1. Name what you see. A fort at the tip, a wall across the town, canals, gardens, and ships in the harbor.\n2. Ask what each part does. The fort and wall defend; the canals and harbor move goods.\n3. Compare with a farming colony. Background: a farming colony spreads fields and farmhouses. This town is packed tight around its port.\n4. Name the pattern. The Dutch built New Netherland to trade \u2014 furs out, goods in \u2014 and the town's shape is the business plan drawn on a map.\nRemember: a town's layout is its purpose in stone, so read the streets before you read the charter."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "1.A"
+ ],
+ "source": "original; stimulus image from the shared pool, Castello Plan of New Amsterdam (1660), redrawn 1916, public domain",
+ "status": "final",
+ "stem": "What does the plan best show about New Amsterdam in 1660?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Map from the shared image pool; Castello Plan of New Amsterdam (1660), redrawn by John Wolcott Adams and Isaac Newton Phelps Stokes (1916), public domain.",
+  "text": "The Castello Plan of New Amsterdam in 1660, redrawn by John Wolcott Adams and Isaac Newton Phelps Stokes in 1916 from the original plan. The map shows the town at the southern tip of Manhattan: the fort stands at the tip, a wall runs across the town, canals cut through the streets, and houses stand among gardens and orchards. Ships crowd the harbor at the left, where the Hudson meets the sea."
+ },
+ "stimulus_set": "castello-new-amsterdam",
+ "themes": [
+  "GEO",
+  "WXT"
+ ],
+ "topics": [
+  "2.2"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

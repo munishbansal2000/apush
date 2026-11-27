@@ -1,0 +1,81 @@
+{
+ "id": "apush-saq-0057",
+ "lesson": "apush-u2-l4",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.6"
+ ],
+ "skills": [
+  "1.A",
+  "5.A"
+ ],
+ "themes": [
+  "GEO",
+  "SOC"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "text",
+  "text": "Slavery was legal in all thirteen colonies at one time or another, but it looked different in the North and the South. In the 1740s, about 20 percent of New York's inhabitants were enslaved, and about 40 percent of households held at least one enslaved person; in Virginia about 40 percent of the population was enslaved, and in South Carolina about 70 percent. Northern enslaved people worked as sailors, domestic servants, longshoremen, and artisans' assistants. The northern colonies had no extensive export agriculture, so slavery there never grew as strong as in the South.",
+  "source_note": "Original secondary passage written for this question, summarizing Barron's 2027 Ch 4, Topic 2.6."
+ },
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Slavery in the North and South"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one difference between slavery in the northern and southern colonies.",
+   "modelAnswer": "One difference is scale: in the 1740s about 70 percent of South Carolina's people were enslaved, while only about 20 percent of New York's inhabitants were. The South held far larger enslaved populations than the North.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one accurate difference, such as scale, the kind of work, or the share of the population enslaved.",
+     "notEarned": "Stating only that slavery existed in both regions, with no difference named, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain why slavery never grew as strong in the North as in the South.",
+   "modelAnswer": "The northern colonies had no extensive export agriculture, so they had no plantation economy demanding large numbers of enslaved workers. Without labor-intensive cash crops like tobacco and rice, northern slavery stayed small and urban.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining the absence of export agriculture or plantation labor demand in the North.",
+     "notEarned": "Stating only that the North was colder, with no economic explanation, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one similarity between slavery in the North and the South.",
+   "modelAnswer": "Slavery was legal in both regions: all thirteen colonies held enslaved people at one time or another. In both regions enslaved people were unfree workers held as property, whether they worked in southern fields or northern towns.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one similarity, such as legality in both regions or enslaved people held as property in both.",
+     "notEarned": "Stating only that both regions had slaves, with no similarity explained, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

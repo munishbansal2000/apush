@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-0242",
+ "lesson": "apush-u2-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.4"
+ ],
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "brookes",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Stowage of the British slave ship Brookes under the Regulated Slave Trade Act of 1788, Library of Congress, public domain.",
+  "text": "Stowage of the British slave ship Brookes under the Regulated Slave Trade Act of 1788. The diagram shows the ship deck by deck: a side view at the top, then plans of the lower deck with rows of small figures packed shoulder to shoulder. A note on the diagram says the Brookes was allowed to carry 454 enslaved people under the 1788 act. One plan reads: 'Plan of lower deck with the stowage of 292 slaves, 130 of these being stowed under the shelves.' Another reads: 'the slaves stowed on the shelves and below them have only a height of 2 feet 7 inches between the beams.'"
+ },
+ "source": "original; stimulus image from the shared pool, Stowage of the British slave ship Brookes (1788), public domain",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "The African Slave Trade"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "British Empire in America: Growth and Conflict (1650-1750)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650-1750)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "The Brookes diagram was published in 1788 by British abolitionists. What does that purpose best explain about the diagram?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It was drawn by the ship's captain to help his sailors load the human cargo faster",
+   "misconception": "Mistakes the publisher; abolitionists, not the captain, published the diagram."
+  },
+  {
+   "key": "B",
+   "text": "It was drawn to show the public the tight packing and turn opinion against the trade"
+  },
+  {
+   "key": "C",
+   "text": "It was drawn to advertise the Brookes as a comfortable and modern passenger ship",
+   "misconception": "Reads an attack as an advertisement; the diagram exposes packing, it does not sell comfort."
+  },
+  {
+   "key": "D",
+   "text": "It was drawn to prove to the public that the slave trade had already ended",
+   "misconception": "Gets the date wrong; the trade continued for nearly two more decades after 1788."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "general": "1. Ask who made it. British abolitionists published the diagram in 1788, not the ship's owners.\n2. Ask what they wanted. They wanted the public to see the trade's cruelty and demand its end.\n3. Look at the method. Exact counts and measurements — 292 here, 2 feet 7 inches there — make the cruelty impossible to dismiss.\n4. Rule out the rest. A captain would not publish his cargo plan to end his own trade.\nRemember: a source's purpose shapes what it shows — ask who made it and what they wanted.",
+  "A": "A captain would not publish his loading plan to end the trade that paid him. Abolitionists published it.",
+  "B": "Abolitionists published exact measurements so the public could see the packing and oppose the trade.",
+  "C": "The diagram shows people packed like cargo, not passengers in comfort. It is an attack, not an advertisement.",
+  "D": "The trade was still running in 1788. The diagram attacked a living trade, not a dead one."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0242",
+   "file": "u2/original-u1-trade-03.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stowage%20of%20the%20British%20slave%20ship%20Brookes%20under%20the%20regulated%20slave%20trade%20act%20of%201788%20LCCN98504459.jpg?width=1200",
+   "license": "Public domain",
+   "caption": "Stowage of the British slave ship Brookes under the Regulated Slave Trade Act of 1788",
+   "alt": "The Brookes slave-ship diagram of 1788, showing enslaved people packed in rows on the lower deck, with only 2 feet 7 inches of height between the beams"
+  }
+ ]
+}

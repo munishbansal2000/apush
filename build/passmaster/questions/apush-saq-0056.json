@@ -1,0 +1,96 @@
+{
+ "id": "apush-saq-0056",
+ "lesson": "apush-u2-l4",
+ "type": "saq",
+ "pool": "test",
+ "unit": 2,
+ "topics": [
+  "2.6"
+ ],
+ "skills": [
+  "3.A",
+  "2.C"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "image",
+  "text": "A 1670 painting showing enslaved African laborers working in tobacco sheds: workers handle tobacco leaves under open-sided sheds, a planter's house stands in the center background, and a cook fire burns in the foreground. The painting's place and artist are unknown.",
+  "source_note": "1670 painting, artist unknown; public domain. The painting's place is not established \u2014 do not claim Virginia specifically."
+ },
+ "source": "original; stimulus is a real historical image from the shared pool",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.6 Slavery in the British Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Slavery in the Early Colonies"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "saq_slot": 3,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one thing the painting shows about labor on a tobacco plantation.",
+   "modelAnswer": "The painting shows enslaved African laborers doing the hand work of tobacco: handling and curing leaves under open-sided sheds. The work is done by hand, in groups, leaf by leaf.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one accurate thing the painting shows, such as hand labor, curing tobacco under sheds, or enslaved workers doing the work.",
+     "notEarned": "Stating only that the painting shows a plantation, with nothing about the labor, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain what the painting illustrates about the labor system on tobacco plantations.",
+   "modelAnswer": "The painting shows Black workers, not white servants, doing the tobacco work by hand under the sheds. It illustrates the enslaved African labor planters increasingly relied on as the demand for tobacco hands grew.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how the image shows the enslaved workforce that replaced indentured servants in tobacco labor.",
+     "notEarned": "Stating only that slavery existed, with no link to the shift from servants, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one limitation of the painting as evidence about tobacco labor in Virginia.",
+   "modelAnswer": "The painting's place and artist are unknown, and the palm trees suggest it may show a Caribbean plantation rather than the Chesapeake. It cannot prove where the scene was painted or that Virginia's sheds looked exactly like these.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limitation, such as the unknown place or artist, or that the scene may not be Virginian.",
+     "notEarned": "Stating only that the painting is old, with no limitation explained, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "figures": [
+  {
+   "id": "fig-apush-saq-0056",
+   "file": "u2/tobacco-sheds-1670.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Slaves_working_in_the_tobacco_sheds_on_a_plantation_(1670_painting).jpg",
+   "license": "Public domain",
+   "caption": "Enslaved laborers working in tobacco sheds, 1670 painting, artist unknown",
+   "alt": "A 1670 painting of enslaved African laborers handling tobacco leaves under open-sided sheds, with a planter's house in the background"
+  }
+ ]
+}

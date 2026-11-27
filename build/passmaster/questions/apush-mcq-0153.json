@@ -1,0 +1,95 @@
+{
+ "answerKey": "A",
+ "difficulty": 4,
+ "figures": [
+  {
+   "alt": "Title page of a 1612 book, printed in old spelling, advertising a description of Virginia, its commodities, people, government, and religion",
+   "caption": "Title page of John Smith's A Map of Virginia (1612)",
+   "file": "u2/original-ctx-u2-06.jpg",
+   "id": "fig-apush-mcq-0153",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/A-map-of-virginia-_smith-john-1612-title-page.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.1 Contextualizing Period 2"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.2 European Colonization"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Jamestown and the Chesapeake Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": [
+   "John Smith, A Map of Virginia (1612)"
+  ]
+ },
+ "id": "apush-mcq-0153",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "text": "The shift from exploration to permanent settlement, backed by printed knowledge letting English readers imagine living in Virginia."
+  },
+  {
+   "key": "B",
+   "misconception": "Treats England's 1588 naval victory as the end of Spain's American empire.",
+   "text": "The end of all Spanish claims in the Americas after England's victory over the Armada in 1588."
+  },
+  {
+   "key": "C",
+   "misconception": "Confuses a company colony financed by investors with a crown-ruled colony.",
+   "text": "The decision by the English crown to rule Virginia directly, as Spain ruled its colonies."
+  },
+  {
+   "key": "D",
+   "misconception": "Reads a 1612 book as proof that Native peoples were already gone.",
+   "text": "The replacement of Native peoples in Virginia by English settlers within a single generation of Jamestown's founding."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "A 1612 settler's guide belongs to the century of permanent colonies, not the century of first voyages, so it marks the shift from exploring to settling.",
+  "B": "Spain kept its American empire for centuries after 1588; the Armada's defeat only opened the seas to rivals.",
+  "C": "Virginia was a company colony financed by London investors, not a crown-ruled colony like New Spain.",
+  "D": "Native peoples still lived in and around Virginia in 1612, and the book itself describes them, so they had not been replaced.",
+  "general": "1. Set the date against the century before it. Columbus sailed in 1492; Smith's book came out in 1612.\n2. Ask what changed in between. Background: the 1500s were Spanish conquest and silver; the 1600s brought English settlers who came to stay.\n3. Look at what the book is. A printed guide to commodities, people, and government is a tool for settling, not a tale of discovery.\n4. Name the shift. Exploration mapped a new world; settlement needed readers who could picture living in it.\nRemember: a source's date is part of its argument, so place it on the timeline before you judge it."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "4.B",
+  "5.A"
+ ],
+ "source": "original; stimulus image from the shared pool, John Smith, A Map of Virginia (1612), public domain",
+ "status": "final",
+ "stem": "Smith's 1612 book appeared a century after Columbus's first voyage. Which broader change in European activity in the Americas does its publication best illustrate?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Title page from the shared image pool; John Smith, A Map of Virginia (1612), public domain.",
+  "text": "The title page of Captain John Smith's A Map of Virginia, printed at Oxford in 1612. It advertises a description of the country, its commodities, people, government, and religion, 'written by Captaine Smith, sometimes Governour of the Countrey,' with an account of the colony's proceedings since the settlers first left England. The map itself is not shown here \u2014 only the page that introduced it to English readers."
+ },
+ "stimulus_set": "smith-virginia-1612",
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "topics": [
+  "2.1"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

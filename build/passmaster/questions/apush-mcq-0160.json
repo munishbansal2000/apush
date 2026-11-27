@@ -1,0 +1,79 @@
+{
+ "answerKey": "D",
+ "difficulty": 4,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "C. English Colonial Patterns"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Massachusetts and the New England Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The Pilgrims and the Massachusetts Bay Company"
+   }
+  ],
+  "primary_sources": [
+   "Mayflower Compact (November 11, 1620)"
+  ]
+ },
+ "id": "apush-mcq-0160",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Confuses a civil body with a bill of rights.",
+   "text": "It lists the rights of every individual settler."
+  },
+  {
+   "key": "B",
+   "misconception": "Treats a 1620 agreement as a promise about who could vote in the 1700s.",
+   "text": "It promises that all men in the colony will be allowed to vote for their leaders and hold office in the government they create."
+  },
+  {
+   "key": "C",
+   "misconception": "Reads the word 'subjects' as a grant of freedom from the king.",
+   "text": "It frees the settlers from the king's authority."
+  },
+  {
+   "key": "D",
+   "text": "It promises government by agreement, but says nothing about religious freedom \u2014 and the colonies later banished Roger Williams and Anne Hutchinson for their beliefs."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The Compact creates a body that will make laws; it lists no individual rights at all.",
+  "B": "The Compact says nothing about who may vote. Background: voting in the colonies stayed limited for a century after.",
+  "C": "The signers call themselves the king's loyal subjects, so the Compact works under the crown, not against it.",
+  "D": "The Compact's promise is government by agreement, not freedom of worship, and the later banishments of Williams and Hutchinson show how narrow that promise was.",
+  "general": "1. Ask what the Compact actually promises. A civil Body Politick that will make laws \u2014 nothing more.\n2. Ask what it leaves out. It says nothing about worship, belief, or who may speak against the colony's church.\n3. Test the silence against what happened next. Background: Massachusetts banished Roger Williams for wanting church and state kept apart, and Anne Hutchinson for claiming direct revelations.\n4. Name the limit. A document that promises self-government is not the same as one that promises religious freedom.\nRemember: a source's silence is evidence too, so ask what it never mentions and whether the colony's later actions fill that gap."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "2.C"
+ ],
+ "source": "original; stimulus text from Mayflower Compact (November 11, 1620), public domain",
+ "status": "final",
+ "stem": "Why is the Mayflower Compact a poor source for claiming that the early New England colonies protected religious freedom?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Verbatim excerpt from the Mayflower Compact, signed November 11, 1620, public domain. Quoted in 5 Steps to a 5 2024, Chapter 7.",
+  "text": "\"We, whose names are underwritten, the Loyal Subjects of our dread Sovereign Lord King James, having undertaken for the Glory of God, and Advancement of the Christian Faith, and the Honour of our King and Country, a Voyage to plant the first Colony in the northern Parts of Virginia, do by these Presents, solemnly and mutually, in the Presence of God and one another, covenant and combine ourselves together into a civil Body Politick, for our better Ordering and Preservation.\""
+ },
+ "stimulus_set": "mayflower-compact-1620",
+ "themes": [
+  "PCE",
+  "ARC"
+ ],
+ "topics": [
+  "2.1"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

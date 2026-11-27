@@ -1,0 +1,67 @@
+{
+ "id": "apush-mcq-0301",
+ "lesson": "apush-u2-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.6"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "SOC",
+  "GEO"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 2,
+ "stimulus_set": "slavery-north-south",
+ "stimulus": {
+  "kind": "text",
+  "text": "Enslaved people as a share of the population, about 1740 (Barron's 2027, Ch 4):\n\n| Colony or region | Share of the population enslaved |\n| New York | About 20% of inhabitants; about 40% of households held at least one enslaved person |\n| Virginia | About 40% of the population |\n| South Carolina | About 70% of the population |\n\nSlavery was legal in all thirteen colonies at one time or another. In the North, enslaved people worked as sailors, domestic servants, longshoremen, and artisans' assistants. The northern colonies had no extensive export agriculture, so slavery there never grew as strong as in the South.",
+  "source_note": "Data table from Barron's 2027 Ch 4, Topic 2.6; passage summarizing the same section."
+ },
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Slavery in the North and South"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "According to the passage, what work did enslaved people do in the northern colonies?",
+ "options": [
+  {
+   "key": "A",
+   "text": "They worked only on large rice and tobacco plantations.",
+   "misconception": "Large plantations were a southern pattern; northern enslaved people worked in towns and on small farms."
+  },
+  {
+   "key": "B",
+   "text": "They worked as paid wage laborers in northern factories.",
+   "misconception": "Northern enslaved people were unfree workers, not paid factory hands."
+  },
+  {
+   "key": "C",
+   "text": "They worked as sailors, domestic servants, longshoremen, and artisans' assistants."
+  },
+  {
+   "key": "D",
+   "text": "They worked as elected representatives in colonial assemblies.",
+   "misconception": "Enslaved people had no political rights and could not hold office."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "general": "1. Read what the passage says about the North. Enslaved people worked as sailors, domestic servants, longshoremen, and artisans' assistants.\n2. Ask what those jobs have in common. They are town and household work, not plantation field work.\n3. Ask why the North looked different. It had no extensive export agriculture, so slavery never grew as strong there.\n4. Name the contrast. Same legal system, different work \u2014 slavery in the North was smaller and urban, not plantation-based.\nRemember: 'slavery existed here too' is only half the answer \u2014 ask what the enslaved people actually did.",
+  "C": "The passage lists the work directly: northern enslaved people worked as sailors, domestic servants, longshoremen, and artisans' assistants. Those are town and household jobs, not plantation field work \u2014 the pattern of a region without extensive export agriculture. The other options are wrong: large plantations were southern, northern enslaved people were unfree workers rather than paid factory hands, and enslaved people had no political rights.",
+  "A": "Large plantations were a southern pattern; northern enslaved people worked in towns and on small farms.",
+  "B": "Northern enslaved people were unfree workers, not paid factory hands.",
+  "D": "Enslaved people had no political rights and could not hold office."
+ }
+}

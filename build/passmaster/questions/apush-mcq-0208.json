@@ -1,0 +1,79 @@
+{
+ "answerKey": "D",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "B. The New England Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Massachusetts and the New England Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Massachusetts Bay"
+   }
+  ],
+  "primary_sources": [
+   "Roger Williams, The Hireling Ministry None of Christ's (1652)"
+  ]
+ },
+ "id": "apush-mcq-0208",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "One banished man's argument proves nothing about every colony \u2014 and Williams is complaining precisely because freedom was denied.",
+   "text": "It proves every colony practiced religious freedom, from New England down to the South."
+  },
+  {
+   "key": "B",
+   "misconception": "Williams was banished by that government \u2014 he is attacking it, not supporting it.",
+   "text": "It shows Williams supported the Puritan government that banished him from Massachusetts Bay."
+  },
+  {
+   "key": "C",
+   "misconception": "The government banished Williams for these views \u2014 agreement is the opposite of what happened.",
+   "text": "It proves the Massachusetts government agreed with him and let him preach freely there."
+  },
+  {
+   "key": "D",
+   "text": "It shows one side of a dispute, written by a banished dissenter against his expellers."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "One banished man's argument proves nothing about every colony \u2014 and Williams is complaining precisely because freedom was denied.",
+  "B": "Williams was banished by that government \u2014 he is attacking it, not supporting it.",
+  "C": "The government banished Williams for these views \u2014 agreement is the opposite of what happened.",
+  "D": "Williams writes as the losing side of a fight \u2014 his words show what dissenters believed, not a neutral account of the colony.",
+  "general": "1. Ask who is speaking. A minister Massachusetts Bay banished for his views.\n2. Ask what that means for the source. It is an argument from one side of a fight, not a balanced report.\n3. Use it right. Williams proves dissent existed \u2014 not that his side won, or that all colonies agreed.\nRemember: a source's author is part of the evidence \u2014 ask what side he was on before you trust his picture."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "2.C"
+ ],
+ "source": "original; stimulus is Roger Williams, The Hireling Ministry None of Christ's (1652), verbatim, public domain",
+ "status": "final",
+ "stem": "What does Williams's writing show about the limits of using it as evidence about religious freedom in the colonies?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Roger Williams, The Hireling Ministry None of Christ's (1652), verbatim, public domain.",
+  "text": "I observe the great and wonderful mistake, both our own and our fathers, as to the civil powers of this world, acting in spiritual matters. I have read\u2026the last will and testament of the Lord Jesus over many times, and yet I cannot find\u2026that ever He would have put forth the least finger of temporal or civil power in the matters of His spiritual affairs and Kingdom. Hence must it lamentably be against the testimony of Christ Jesus for the civil state to impose upon the souls of the people a religion, a worship, a ministry\u2026."
+ },
+ "stimulus_set": "williams-civil-power",
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

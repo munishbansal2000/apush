@@ -1,0 +1,82 @@
+{
+ "answerKey": "C",
+ "difficulty": 4,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "B. French and Dutch Colonies"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "French-American Indian Diplomacy"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "New France"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "French Colonization of North America"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0165",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Treats a small settler population as a reason to abandon the colony.",
+   "text": "France abandoned New France because it had too few settlers."
+  },
+  {
+   "key": "B",
+   "misconception": "Reverses the cause \u2014 few settlers meant France needed Native partners more, not less.",
+   "text": "France could ignore Native peoples because it had so few settlers."
+  },
+  {
+   "key": "C",
+   "text": "France relied on Native partners and allies, since few Frenchmen could work the fur trade."
+  },
+  {
+   "key": "D",
+   "misconception": "Mistakes a fur-trading colony for a plantation colony.",
+   "text": "France turned New France into a plantation colony worked by enslaved laborers from Africa."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "France kept New France for over a century with few settlers; small numbers shaped its policy, they did not end the colony.",
+  "B": "Few settlers meant France needed Native partners more, not less, because Frenchmen alone could not work the fur trade.",
+  "C": "With few settlers of its own, France's fur trade depended on Native partners who hunted and carried the furs.",
+  "D": "New France stayed a fur-trading colony; its labor system was partnership with Native peoples, not plantation slavery.",
+  "general": "1. Look at the French row. Few settlers, mostly single men, and no exact count \u2014 France barely moved people.\n2. Ask how a colony with so few people still worked. Background: the fur trade ran through Native partners who knew the woods and rivers.\n3. Ask what few settlers force a colony to do. It cannot farm or fight on its own, so it must make friends and trade.\n4. Name the pattern. Small numbers made alliance a necessity for France, and the fur trade turned that necessity into a policy.\nRemember: when a colony is tiny, ask who does its work, and the answer is usually the people it had to befriend."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.D"
+ ],
+ "source": "original; table built from figures in Barron's Premium 2027, Chapter 4, and Princeton Review Premium Prep, Chapter 6",
+ "status": "final",
+ "stem": "What does the table's French row help explain about French policy in North America?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Table built from figures given in the three books; France's count is given qualitatively because the books give no exact number.",
+  "text": "Early Atlantic crossings, 1607-1650\n\n| Group | People | When |\n|---|---|---|\n| Spaniards to the New World | About 350,000 | By 1650 |\n| English settlers at Jamestown | 144 landed; only 38 still alive a year later | 1607-1608 |\n| English settlers at Jamestown | About 500 in the colony; nearly 90% died in the 'starving time' | Winter 1609-1610 |\n| English settlers to Massachusetts Bay | More than 20,000 | 1630-1642 |\n| French settlers to New France | Few, mostly single men; the books give no exact count | 1600s |"
+ },
+ "stimulus_set": "atlantic-crossings-table",
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "topics": [
+  "2.1"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

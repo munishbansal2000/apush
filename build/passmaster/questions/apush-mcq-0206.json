@@ -1,0 +1,79 @@
+{
+ "answerKey": "A",
+ "difficulty": 4,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "B. The New England Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Massachusetts and the New England Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Massachusetts Bay"
+   }
+  ],
+  "primary_sources": [
+   "Roger Williams, The Hireling Ministry None of Christ's (1652)"
+  ]
+ },
+ "id": "apush-mcq-0206",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "text": "Puritans only, and no one else."
+  },
+  {
+   "key": "B",
+   "misconception": "Massachusetts did not welcome all Protestants \u2014 it banished dissenters like Williams himself.",
+   "text": "All Protestants, whatever their church."
+  },
+  {
+   "key": "C",
+   "misconception": "The Bay Colony protected no Christians but its own \u2014 Catholics and Quakers were not welcome.",
+   "text": "All Christians, whatever their church."
+  },
+  {
+   "key": "D",
+   "misconception": "Williams is arguing for wider freedom, not describing what his critics believed \u2014 his critics kept freedom narrow.",
+   "text": "Everyone, including Jews and non-Christians."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "Williams attacks a government that imposes one religion \u2014 the Massachusetts authorities kept worship for their own Puritan church alone.",
+  "B": "Massachusetts did not welcome all Protestants \u2014 it banished dissenters like Williams himself.",
+  "C": "The Bay Colony protected no Christians but its own \u2014 Catholics and Quakers were not welcome.",
+  "D": "Williams is arguing for wider freedom, not describing what his critics believed \u2014 his critics kept freedom narrow.",
+  "general": "1. Ask who Williams is arguing against. A government that imposes a religion on people's souls.\n2. Ask whose religion that government imposed. Massachusetts Bay's \u2014 the Puritan church alone.\n3. Flip it around. The critics' freedom was freedom for Puritans only.\nRemember: to find what a critic's opponents believed, read what the critic attacks \u2014 the attack names the belief."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "2.B"
+ ],
+ "source": "original; rewritten from survivor pr25e-test1-q05 against the books",
+ "status": "final",
+ "stem": "The people Williams criticizes in the excerpt believed that freedom of worship belonged to",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Roger Williams, The Hireling Ministry None of Christ's (1652), verbatim, public domain.",
+  "text": "I observe the great and wonderful mistake, both our own and our fathers, as to the civil powers of this world, acting in spiritual matters. I have read\u2026the last will and testament of the Lord Jesus over many times, and yet I cannot find\u2026that ever He would have put forth the least finger of temporal or civil power in the matters of His spiritual affairs and Kingdom. Hence must it lamentably be against the testimony of Christ Jesus for the civil state to impose upon the souls of the people a religion, a worship, a ministry\u2026."
+ },
+ "stimulus_set": "williams-civil-power",
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

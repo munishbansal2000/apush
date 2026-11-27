@@ -1,0 +1,77 @@
+{
+ "answerKey": "C",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "A. The Chesapeake and the Upper South"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Jamestown and the Chesapeake Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Jamestown"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0202",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The passage rejects geography as the answer \u2014 it says the difference was what the settlers came to do.",
+   "text": "Geography alone decided which colony would survive, and nothing else mattered at all."
+  },
+  {
+   "key": "B",
+   "misconception": "Only Jamestown nearly failed \u2014 Massachusetts Bay survived and grew.",
+   "text": "Both colonies failed for the same reason, and both had to be started over."
+  },
+  {
+   "key": "C",
+   "text": "Motives and social organization shaped a colony's survival more than its natural setting."
+  },
+  {
+   "key": "D",
+   "misconception": "The passage never blames the soil \u2014 it blames men who would not plant crops.",
+   "text": "Jamestown failed because Virginia's soil was poor and could not grow food."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The passage rejects geography as the answer \u2014 it says the difference was what the settlers came to do.",
+  "B": "Only Jamestown nearly failed \u2014 Massachusetts Bay survived and grew.",
+  "C": "The passage ends on exactly this point: not the climate, but what the settlers came to do and how they organized themselves.",
+  "D": "The passage never blames the soil \u2014 it blames men who would not plant crops.",
+  "general": "1. Gather the passage's verdict. Not the climate \u2014 the settlers' purpose and organization.\n2. Check it against the details. Single men hunting gold starved; families building towns survived.\n3. Name the rule. How people organize themselves can matter more than where they land.\nRemember: when a passage names its own explanation, take it \u2014 do not reach for a cause it already ruled out."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "6.C"
+ ],
+ "source": "original; passage drawn from the comparison in Barron's Premium 2027, Chapter 4",
+ "status": "final",
+ "stem": "Which claim about the two colonies does the passage best support?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, drawn from the comparison in Barron's Premium 2027, Chapter 4.",
+  "text": "Jamestown and Massachusetts Bay began only thirteen years apart, but they grew into different colonies. Jamestown's first settlers were mostly single men hoping to find gold; they planted few crops, and most died in the first winters. Massachusetts Bay's settlers came as families \u2014 farmers and craftsmen who meant to build towns and stay. The Virginians wanted quick riches; the Puritans wanted a godly community. The difference was not the climate \u2014 New England was colder \u2014 but what the settlers came to do and how they organized themselves."
+ },
+ "stimulus_set": "jamestown-massachusetts-bay",
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

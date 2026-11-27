@@ -1,0 +1,83 @@
+{
+ "id": "apush-mcq-0327",
+ "lesson": "apush-u2-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.7"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "hamilton-zenger",
+ "stimulus": {
+  "kind": "text",
+  "text": "\"It is... a right, which all free men claim, that they are entitled to complain when they are hurt.... It is not the cause of one poor printer, nor of New York alone.... It is the cause of liberty.\" \u2014 Andrew Hamilton, defense of printer John Peter Zenger, August 4, 1735 (abridged).",
+  "source_note": "Andrew Hamilton, defense of John Peter Zenger, August 4, 1735; public domain."
+ },
+ "source": "original; stimulus is a verbatim public-domain primary source",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.7 Colonial Society and Culture"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "E. The Development of Self-Government in Britain's New World Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Colonial Governments"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Part of an Empire"
+   }
+  ],
+  "primary_sources": [
+   "Hamilton, defense of John Peter Zenger (1735)"
+  ]
+ },
+ "status": "final",
+ "stem": "The jury's acquittal of Zenger demonstrated that colonial juries could",
+ "options": [
+  {
+   "key": "A",
+   "text": "levy taxes on the colonists of New York.",
+   "misconception": "Colonial juries did not levy taxes; taxation was the assembly's and Parliament's business, not the jury's."
+  },
+  {
+   "key": "B",
+   "text": "declare independence from Britain and its king.",
+   "misconception": "The jury did not declare independence; that came forty years later, and the acquittal was a check on the governor, not a revolution."
+  },
+  {
+   "key": "C",
+   "text": "serve as a check on royal authority."
+  },
+  {
+   "key": "D",
+   "text": "enforce the Navigation Acts against colonial smugglers.",
+   "misconception": "The jury did not enforce the Navigation Acts; those were enforced by vice-admiralty courts, often against colonial wishes."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "general": "1. See who was on trial. A printer, prosecuted for criticizing the royal governor.\n2. See who decided. Not the governor's handpicked judges, but a jury of ordinary New Yorkers.\n3. See what they did. They acquitted, defying the governor's court.\n4. Name the power. A jury that can refuse to convict is a check on royal authority.\nRemember: the jury box was a colonial check on the governor \u2014 ordinary men saying no to royal power.",
+  "C": "The acquittal showed a colonial jury defying the royal governor's handpicked judges: the judge had barred Hamilton from arguing that truth was a defense, yet the jury acquitted Zenger anyway. That is a jury acting as a popular check on imperial authority \u2014 ordinary colonists refusing to convict a man for criticizing the governor. Background: juries levied no taxes, declared no independence, and enforced no trade acts; their power was the refusal to convict.",
+  "A": "Colonial juries did not levy taxes; taxation was the assembly's and Parliament's business, not the jury's.",
+  "B": "The jury did not declare independence; that came forty years later, and the acquittal was a check on the governor, not a revolution.",
+  "D": "The jury did not enforce the Navigation Acts. Background: those were enforced by vice-admiralty courts, often against colonial wishes."
+ }
+}

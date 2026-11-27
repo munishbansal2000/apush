@@ -1,0 +1,77 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.2 European Colonization"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Colonial America (1607\u20131650)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0188",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "text": "To stand between Spanish Florida and South Carolina."
+  },
+  {
+   "key": "B",
+   "misconception": "Georgia faced Spanish Florida, not French Louisiana \u2014 the buffer faced south, not west.",
+   "text": "To protect French Louisiana from Spanish attack."
+  },
+  {
+   "key": "C",
+   "misconception": "Georgia was for debtors and defense, not new land for Virginia's planters.",
+   "text": "To give Virginia's tobacco planters new land."
+  },
+  {
+   "key": "D",
+   "misconception": "The threat the passage names is Spanish Florida, not Puritans moving south.",
+   "text": "To keep New England's Puritans from moving south."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The passage says Georgia was a buffer between Spanish Florida and South Carolina \u2014 a shield for the older colony.",
+  "B": "Georgia faced Spanish Florida to the south, not French Louisiana to the west.",
+  "C": "Georgia was a fresh start for debtors, not new land for Virginia's planters.",
+  "D": "The threat the passage names is Spanish Florida, not Puritans moving south.",
+  "general": "1. Find the buffer. A buffer sits between two things \u2014 here, Spanish Florida and South Carolina.\n2. Ask what a buffer does. It takes the first blow, so the colony behind it does not have to.\n3. Ask who needed shielding. Background: South Carolina was rich in rice and enslaved labor, and Spain in Florida had already armed enslaved people who fled there.\n4. Name Georgia's job. A colony of armed small farmers standing guard over a rich neighbor.\nRemember: a buffer colony is a wall made of people, so ask who it protects and from whom."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "1.A"
+ ],
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "status": "final",
+ "stem": "What was Georgia's main purpose as a buffer colony?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question, summarizing Georgia's 1732 charter and its reversal by 1751.",
+  "text": "In 1732 James Oglethorpe and the trustees received a charter for Georgia. The colony was meant as a buffer between Spanish Florida and South Carolina, and as a fresh start for men imprisoned for debt. Slavery was banned at first, and land grants were small, so that Georgia would be a colony of small farmers, not plantations. By 1751 the trustees had given up both rules, and slavery was legal; Georgia became a royal colony in 1752."
+ },
+ "stimulus_set": "oglethorpe-georgia-1732",
+ "themes": [
+  "GEO",
+  "WOR"
+ ],
+ "topics": [
+  "2.2"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

@@ -1,0 +1,77 @@
+{
+ "answerKey": "A",
+ "difficulty": 2,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.5 Interactions Between American Indians and Europeans"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Part of an Empire"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "French Colonization of North America"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0267",
+ "lesson": "apush-u2-l3",
+ "options": [
+  {
+   "key": "A",
+   "text": "A power that depended on Native trading partners to supply furs"
+  },
+  {
+   "key": "B",
+   "misconception": "Forced labor in mines and missions was the Spanish pattern under the encomienda.",
+   "text": "A power that forced Native peoples to labor in mines and missions"
+  },
+  {
+   "key": "C",
+   "misconception": "Planting settler colonies and pushing Native peoples off the land was the English pattern.",
+   "text": "A power that planted settler colonies and pushed Native peoples off the land"
+  },
+  {
+   "key": "D",
+   "misconception": "Avoiding contact was not the Dutch pattern \u2014 their trade depended on contact.",
+   "text": "A power that avoided contact with Native peoples altogether"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The Dutch built New Netherland around a single business: beaver fur. They had few settlers and no mines, so the furs had to come from Native hunters and traders. The Dutch pattern was partnership for profit \u2014 they needed Native peoples at the trading post, not driven from it, and the colony's whole economy ran on Native hunters, since the Dutch were too few to hunt the beaver themselves.",
+  "B": "Forced labor in mines and missions was the Spanish pattern under the encomienda.",
+  "C": "Planting settler colonies and pushing Native peoples off the land was the English pattern.",
+  "D": "Avoiding contact was not the Dutch pattern \u2014 their trade depended on contact.",
+  "general": "1. Ask what the Dutch colony was for. The passage says it plainly: trade, not settlement or mining.\n2. Ask who supplied the goods. Beaver pelts came from Native hunters and traders, not from Dutch farmers.\n3. Match the pattern to the power. A colony built on trade needs its trading partners close, not driven away.\nRemember: a trading colony and a settler colony are different kinds of place \u2014 ask what each one sells."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "5.A"
+ ],
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "status": "final",
+ "stem": "The passage describes four different European patterns of interaction with Native peoples. Which power's pattern is best illustrated by the Dutch fur trade on the Hudson River?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question, summarizing standard background on the four European patterns of interaction.",
+  "text": "The four European powers that reached North America wanted different things, and they treated Native peoples differently. Spain forced Native peoples to labor in mines and missions under the encomienda. France built a fur trade that depended on Native allies and trading partners. The Dutch likewise traded for furs and relied on Native hunters. England planted settler colonies: its colonists wanted the land itself, so they pushed Native peoples off it rather than living or working alongside them."
+ },
+ "stimulus_set": "four-empires",
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "topics": [
+  "2.5"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

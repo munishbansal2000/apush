@@ -1,0 +1,75 @@
+{
+ "id": "apush-mcq-0295",
+ "lesson": "apush-u2-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.6"
+ ],
+ "skills": [
+  "4.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "legal-hardening",
+ "stimulus": {
+  "kind": "text",
+  "text": "A historian argues: 'The arrival of enslaved Africans in Virginia in 1619 established race-based slavery in the British colonies, and the plantation slavery of the mid-1700s was essentially the same system that began in 1619.' Virginia's laws on slavery hardened step by step:\n\n| Year | Law or case | What it did |\n| 1640 | John Punch | A Black runaway and two white runaways were caught together; the white men got four more years added to their terms, while Punch was condemned to slavery for life. |\n| 1655 | John Casor | A Northampton County court declared Casor, an African servant, a slave for life \u2014 the first civil-court ruling of its kind in the English colonies. |\n| 1662 | Partus sequitur ventrem | A child's status followed the mother, so the children of enslaved women were born enslaved \u2014 breaking English common law, where status followed the father. |\n| 1667 | Baptism | Virginia declared that baptism did not free an enslaved person. |\n| 1705 | Slave code | Virginia gathered its slave laws into one code: 'All Negro, mulatto and Indian slaves within this dominion\u2026 shall be held to be real estate.' |",
+  "source_note": "Original table written for this question from Barron's 2027 Ch 4, 5 Steps 2024 Ch 8, and the Virginia slave code of 1705 (public domain). The Casor date follows the March 8, 1655 Northampton County ruling; Barron's dates the Casor case to 1640, which conflates it with the John Punch case of 1640."
+ },
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "The Nature of Slavery in British North America"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Growth of Slavery"
+   }
+  ],
+  "primary_sources": [
+   "Virginia slave code (1705)",
+   "Johnson v. Parker, Northampton County court ruling (March 8, 1655)"
+  ]
+ },
+ "status": "final",
+ "stem": "Virginia's comprehensive slave codes of 1705 defined enslaved people as property and stripped away legal rights. A historian argues these laws reveal as much about planters' fears as about their power. Which context best supports that interpretation?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The codes were copied directly from English laws governing London apprentices and servants.",
+   "misconception": "No equivalent English laws governed apprentices as racial property."
+  },
+  {
+   "key": "B",
+   "text": "The codes applied only to newly arrived Africans and exempted those born in Virginia.",
+   "misconception": "The codes defined enslaved status broadly, including the children of enslaved mothers."
+  },
+  {
+   "key": "C",
+   "text": "The codes were passed because slavery was becoming economically unimportant in the Chesapeake.",
+   "misconception": "Slavery was becoming more, not less, central to the Chesapeake economy."
+  },
+  {
+   "key": "D",
+   "text": "The codes followed decades of resistance, showing slavery required constant legal force."
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "general": "1. Read what the code did. It defined enslaved people as property and stripped away legal rights.\n2. Ask why a government writes such a code. To hold a system together that people keep resisting.\n3. Look at the timing. Background: the code came after Bacon's Rebellion and decades of resistance.\n4. Name what the timing shows. Planters legislating from fear of a system that needed constant force.\nRemember: a harsh law is evidence twice over \u2014 it shows the power claimed and the resistance feared.",
+  "D": "The 1705 code came after Bacon's Rebellion and decades of resistance \u2014 runaways, conspiracies, and uprisings that planters had to answer with law. A code that defines people as property, restricts movement and assembly, and strips away legal rights is a government legislating from fear: the system needed constant force to hold together. That is why the laws reveal planters' fears as much as their power. The other options are wrong: the codes were Virginia's own, they covered enslaved children, and slavery was growing more central.",
+  "A": "No equivalent English laws governed apprentices as racial property.",
+  "B": "The codes defined enslaved status broadly, including the children of enslaved mothers.",
+  "C": "Slavery was becoming more, not less, central to the Chesapeake economy."
+ }
+}

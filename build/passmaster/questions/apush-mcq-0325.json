@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-0325",
+ "lesson": "apush-u2-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.7"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "pyle-witch",
+ "stimulus": {
+  "kind": "image",
+  "text": "Howard Pyle's \"Arresting a Witch,\" published 1883. An older woman in a shawl is led away along a snowy path by men carrying muskets, one of them holding a paper warrant.",
+  "source_note": "Howard Pyle, \"Arresting a Witch,\" 1883; public domain (pre-1930 publication). The image is a 19th-century imagining, not a 17th-century record."
+ },
+ "source": "original; stimulus is a real historical image from the shared pool",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.7 Colonial Society and Culture"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "British Empire in America: Growth and Conflict (1650-1750)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Massachusetts Bay"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "What does the painting emphasize about the arrest?",
+ "options": [
+  {
+   "key": "A",
+   "text": "That the accused was tried and convicted on the spot, right there on the snowy path.",
+   "misconception": "No trial appears in the painting; the woman is being led away, not tried or sentenced."
+  },
+  {
+   "key": "B",
+   "text": "That the arrest was a public, communal event \u2014 neighbors and armed men escorting the accused away."
+  },
+  {
+   "key": "C",
+   "text": "That the accused resisted her arrest with violence and fought against the armed men escorting her.",
+   "misconception": "The woman is being led away, not resisting; no struggle or violence appears in the image."
+  },
+  {
+   "key": "D",
+   "text": "That the arrest took place inside a crowded courtroom before a judge and a jury of neighbors.",
+   "misconception": "The arrest takes place outdoors, on a snowy path, not inside a courtroom."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "general": "1. Look at where it happens. Outdoors, on a snowy path \u2014 not in a courtroom, not in private.\n2. Look at who is there. Armed men, a warrant, and the accused walking between them.\n3. Ask what that staging says. The arrest is done in the open, before the community.\n4. Rule out the rest. No trial, no struggle, no courtroom appears.\nRemember: Pyle stages the arrest as a public walk \u2014 the community itself carrying the accused away.",
+  "B": "The painting sets the arrest outdoors, on a snowy path, with the accused woman walking between armed men while one holds the paper warrant. Nothing is hidden or private: the arrest is staged as a communal event, the neighborhood itself taking the accused away. Background: in Salem, accusations and arrests were public affairs \u2014 neighbors naming neighbors \u2014 which is why the panic spread so fast. No trial, no resistance, and no courtroom appear in the image.",
+  "A": "No trial appears in the painting; the woman is being led away, not tried or sentenced.",
+  "C": "The woman is being led away, not resisting; no struggle or violence appears in the image.",
+  "D": "The arrest takes place outdoors, on a snowy path, not inside a courtroom."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0325",
+   "file": "u2/5s24-ch03-mcq-34.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/ArrestingAWitch-Pyle.jpg",
+   "license": "Public domain",
+   "caption": "Arresting a Witch, Howard Pyle, 1883",
+   "alt": "Howard Pyle's 1883 painting of an older woman in a shawl being led away by armed men along a snowy path"
+  }
+ ]
+}

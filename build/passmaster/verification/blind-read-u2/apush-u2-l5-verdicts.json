@@ -1,0 +1,597 @@
+{
+ "lesson": "apush-u2-l5",
+ "summary": {
+  "total": 61,
+  "pass": 61,
+  "fail": 0,
+  "mcq_picks_match": "50/50",
+  "saq_parts_match": "24/24",
+  "leq_rows_scored": "18/18"
+ },
+ "lesson_verdict": {
+  "verdict": "FAIL",
+  "defects": [
+   "Halfway Covenant wording contradicts the bank's own stimulus: the lesson (narrative and Key terms) says the 1662 rule 'let the children of church members be baptized even if their parents had not joined the church,' but the 0337 stimulus states the rule as 'the baptized children of baptized parents could themselves be baptized, even though their parents had never experienced conversion.' The parents were baptized (halfway) members who had not experienced conversion \u2014 not people who had not joined the church. As written the lesson sentence is self-contradictory (children of church members whose parents had not joined) and teaches the wrong mechanism. Fix both spots to 'even if their parents had never experienced conversion.'"
+  ],
+  "notes": [
+   "Whitefield engraving timing is loose: the lesson says the 1857 engraving 'was made more than a century after his tours.' His tours ran 1739-1770, so 1857 is 87 years after the last tour; the 0314 rationale states it precisely ('more than a century after Whitefield's American tours of the 1740s'). Tighten the lesson to 'a century after his 1740s tours.'",
+   "Salem count tension (shared with 0321): the lesson says '20 were executed' while 0321 rationale B says 'one of nineteen executed.' Both are defensible under different counting (19 hanged + Giles Corey pressed to death); fix the rationale to 'one of the nineteen hanged at Salem' so the two texts agree.",
+   "Teaching gap: the L5 narrative never teaches the enforcement gap / salutary neglect behind MCQ 0348's key (see the 0348 note). Add a sentence to the 'One empire, argued over' section."
+  ]
+ },
+ "items": [
+  {
+   "id": "apush-mcq-0311",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "C",
+   "key": "C",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0312",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "D",
+   "key": "D",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0313",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "A",
+   "key": "A",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0314",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "B",
+   "key": "B",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0315",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "D",
+   "key": "D",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0316",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "A",
+   "key": "A",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0317",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "C",
+   "key": "C",
+   "key_match": true,
+   "notes": [
+    "Background-tag omission (note): rationale D states the population-growth figure ('from about 250,000 to over a million by 1750') and general step 3 states 'the population was growing, not falling' without a Background tag, although rationale C tags the same fact."
+   ]
+  },
+  {
+   "id": "apush-mcq-0318",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "B",
+   "key": "B",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0319",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "A",
+   "key": "A",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0320",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "D",
+   "key": "D",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0321",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "B",
+   "key": "B",
+   "key_match": true,
+   "notes": [
+    "Consistency note: rationale B says Easty was 'one of nineteen executed at Salem' while the lesson says '20 were executed' (19 hanged + Giles Corey pressed to death). Fix the rationale to 'one of the nineteen hanged at Salem'."
+   ]
+  },
+  {
+   "id": "apush-mcq-0322",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "C",
+   "key": "C",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0323",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "A",
+   "key": "A",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0324",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "D",
+   "key": "D",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0325",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "B",
+   "key": "B",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0326",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "A",
+   "key": "A",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0327",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "C",
+   "key": "C",
+   "key_match": true,
+   "notes": [
+    "Background-tag omission (note): rationale D states 'those were enforced by vice-admiralty courts, often against colonial wishes' without a Background tag."
+   ]
+  },
+  {
+   "id": "apush-mcq-0328",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "D",
+   "key": "D",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0329",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "B",
+   "key": "B",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0330",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "A",
+   "key": "A",
+   "key_match": true,
+   "notes": [
+    "Figure-id note: carries fig-apush-mcq-0329, duplicating 0329's id for the same image. Fix to fig-apush-mcq-0330 (same class as the fixed 0325/0358 duplicates)."
+   ]
+  },
+  {
+   "id": "apush-mcq-0331",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "C",
+   "key": "C",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0332",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "D",
+   "key": "D",
+   "key_match": true,
+   "notes": [
+    "Figure-id note: carries fig-apush-mcq-0331, duplicating 0331's id for the same image. Fix to fig-apush-mcq-0332 (same class as the fixed 0325/0358 duplicates)."
+   ]
+  },
+  {
+   "id": "apush-mcq-0333",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "B",
+   "key": "B",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0334",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "A",
+   "key": "A",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0335",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "C",
+   "key": "C",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0336",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "D",
+   "key": "D",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0337",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "A",
+   "key": "A",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0338",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "B",
+   "key": "B",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0339",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "C",
+   "key": "C",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0340",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "D",
+   "key": "D",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0341",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "C",
+   "key": "C",
+   "key_match": true,
+   "notes": [
+    "Background-tag omission (note): rationale B states 'Slavery was legal in New England too' without a Background tag."
+   ]
+  },
+  {
+   "id": "apush-mcq-0342",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "A",
+   "key": "A",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0343",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "D",
+   "key": "D",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0344",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "B",
+   "key": "B",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0345",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "A",
+   "key": "A",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0346",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "C",
+   "key": "C",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0347",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "D",
+   "key": "D",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0348",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "B",
+   "key": "B",
+   "key_match": true,
+   "notes": [
+    "Fairness/lesson-gap note (not a question fail): the key (Britain lacked the officers and ships to enforce the Act) rests on the enforcement gap / salutary neglect, which the L5 narrative never teaches \u2014 its mercantilism paragraph covers only the oppress-or-benefit debate. The key is derivable by elimination from the stimulus, but the lesson should teach the enforcement gap, same class as the logged 0175 note for L1."
+   ]
+  },
+  {
+   "id": "apush-mcq-0349",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "A",
+   "key": "A",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0350",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "C",
+   "key": "C",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0351",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "D",
+   "key": "D",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0352",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "B",
+   "key": "B",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0353",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "A",
+   "key": "A",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0354",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "C",
+   "key": "C",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0355",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "B",
+   "key": "B",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0356",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "D",
+   "key": "D",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0357",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "A",
+   "key": "A",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0358",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "C",
+   "key": "C",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0359",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "D",
+   "key": "D",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-mcq-0360",
+   "type": "mcq",
+   "verdict": "PASS",
+   "blind_pick": "B",
+   "key": "B",
+   "key_match": true,
+   "notes": []
+  },
+  {
+   "id": "apush-saq-0059",
+   "type": "saq",
+   "verdict": "PASS",
+   "parts": {
+    "a": "match",
+    "b": "match",
+    "c": "match"
+   },
+   "notes": []
+  },
+  {
+   "id": "apush-saq-0060",
+   "type": "saq",
+   "verdict": "PASS",
+   "parts": {
+    "a": "match",
+    "b": "match",
+    "c": "match"
+   },
+   "notes": []
+  },
+  {
+   "id": "apush-saq-0061",
+   "type": "saq",
+   "verdict": "PASS",
+   "parts": {
+    "a": "match",
+    "b": "match",
+    "c": "match"
+   },
+   "notes": []
+  },
+  {
+   "id": "apush-saq-0062",
+   "type": "saq",
+   "verdict": "PASS",
+   "parts": {
+    "a": "match",
+    "b": "match",
+    "c": "match"
+   },
+   "notes": []
+  },
+  {
+   "id": "apush-saq-0063",
+   "type": "saq",
+   "verdict": "PASS",
+   "parts": {
+    "a": "match",
+    "b": "match",
+    "c": "match"
+   },
+   "notes": []
+  },
+  {
+   "id": "apush-saq-0064",
+   "type": "saq",
+   "verdict": "PASS",
+   "parts": {
+    "a": "match",
+    "b": "match",
+    "c": "match"
+   },
+   "notes": []
+  },
+  {
+   "id": "apush-saq-0065",
+   "type": "saq",
+   "verdict": "PASS",
+   "parts": {
+    "a": "match",
+    "b": "match",
+    "c": "match"
+   },
+   "notes": []
+  },
+  {
+   "id": "apush-saq-0066",
+   "type": "saq",
+   "verdict": "PASS",
+   "parts": {
+    "a": "match",
+    "b": "match",
+    "c": "match"
+   },
+   "notes": []
+  },
+  {
+   "id": "apush-leq-0020",
+   "type": "leq",
+   "verdict": "PASS",
+   "rubric_rows_scored": 6,
+   "notes": []
+  },
+  {
+   "id": "apush-leq-0021",
+   "type": "leq",
+   "verdict": "PASS",
+   "rubric_rows_scored": 6,
+   "notes": []
+  },
+  {
+   "id": "apush-leq-0022",
+   "type": "leq",
+   "verdict": "PASS",
+   "rubric_rows_scored": 6,
+   "notes": []
+  }
+ ]
+}

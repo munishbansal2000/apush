@@ -1,0 +1,89 @@
+{
+ "answerKey": "C",
+ "difficulty": 3,
+ "figures": [
+  {
+   "alt": "Smith's 1612 map of Virginia, with Native towns and peoples named across the Chesapeake region, Powhatan enthroned in the upper-left inset, and a Native man with a bow at the right",
+   "caption": "John Smith's map of Virginia, published 1612, engraved by William Hole",
+   "file": "u2/5s24-ch03-mcq-23.jpg",
+   "id": "fig-apush-mcq-0258",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Virginia_-_discovered_and_discribed_%28sic%29_by_Captan_%28sic%29_John_Smith%2C_1606%3B_graven_by_William_Hole_LCCN2003670836.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.5 Interactions Between American Indians and Europeans"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Jamestown and the Chesapeake Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": [
+   "John Smith, A Map of Virginia (1612)"
+  ]
+ },
+ "id": "apush-mcq-0258",
+ "lesson": "apush-u2-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The map shows towns and trade routes, not a war; large-scale war between settlers and Native peoples came later.",
+   "text": "Immediate large-scale warfare between settlers and Native peoples"
+  },
+  {
+   "key": "B",
+   "misconception": "No mass conversion happened in 1612, and the map records places, not baptisms.",
+   "text": "Successful mass conversion of the Powhatan to Christianity"
+  },
+  {
+   "key": "C",
+   "text": "English dependence on Native peoples for survival and knowledge"
+  },
+  {
+   "key": "D",
+   "misconception": "The map shows Native towns still standing, not land sold to settlers.",
+   "text": "Peaceful, fairly negotiated land sales between settlers and Native peoples"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The map shows towns and trade routes, not a war; large-scale war between settlers and Native peoples came later.",
+  "B": "No mass conversion happened in 1612, and the map records places, not baptisms.",
+  "C": "The map is crowded with Native towns, peoples, and place names \u2014 the Chesapeake world as Native peoples knew it \u2014 and Smith could only draw it because Native guides and informants taught him the rivers, villages, and trails. Jamestown survived its first years on Powhatan corn and Native knowledge, not on English self-sufficiency. The royal arms at the center and the English ship in the bay show who the map was for, but the names on the land show who taught Smith what to draw.",
+  "D": "The map shows Native towns still standing, not land sold to settlers.",
+  "general": "1. Count what the map is full of. Native towns, Native peoples, Native place names \u2014 dozens of them.\n2. Ask how Smith learned those names. Background: he had barely explored the region; Native guides and informants taught him.\n3. Connect the map to the colony. Background: Jamestown lived on Powhatan corn, and its map lived on Powhatan knowledge.\nRemember: a map is evidence too \u2014 ask who supplied the knowledge it shows."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "1.A"
+ ],
+ "source": "original; stimulus image from the shared pool, John Smith, A Map of Virginia (1612), public domain",
+ "status": "final",
+ "stem": "Smith's 1612 map of Virginia best illustrates which early colonial pattern?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Map from the shared image pool; John Smith, A Map of Virginia (1612), engraved by William Hole, public domain.",
+  "text": "John Smith's map of Virginia, published in 1612 and engraved by William Hole. Native towns and peoples are named across the whole map, and the upper-left inset shows Powhatan enthroned with his courtiers, captioned \u201cHeld this state & fashion when Capt. Smith was delivered to him prisoner 1607.\u201d A Native man with a bow stands at the right, and the royal arms of James I sit at the center."
+ },
+ "stimulus_set": "smith-map",
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "topics": [
+  "2.5"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

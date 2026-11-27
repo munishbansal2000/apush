@@ -1,0 +1,101 @@
+{
+ "difficulty": 3,
+ "figures": [
+  {
+   "alt": "Howard Pyle's 1905 painting of Bacon's rebels with torches and muskets marching through a burning Jamestown at night",
+   "caption": "The Burning of Jamestown, painted 1905",
+   "file": "u2/pr25e-test3-q01.jpg",
+   "id": "fig-apush-saq-0044",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Howard_Pyle_-_The_Burning_of_Jamestown.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "A. The Chesapeake and the Upper South"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Jamestown and the Chesapeake Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Bacon's Rebellion"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-saq-0044",
+ "lesson": "apush-u2-l2",
+ "parts": [
+  {
+   "modelAnswer": "The painting shows Bacon's Rebellion of 1676, when Nathaniel Bacon's followers burned Jamestown. The rebels torched the Virginia capital after Governor Berkeley refused to let them fight Native peoples on the frontier.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify the event shown in the painting.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying Bacon's Rebellion or the burning of Jamestown in 1676.",
+     "notEarned": "Naming an event that did not happen in Jamestown, or a date outside the rebellion, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Frontier farmers wanted protection from Native raids, but Governor Berkeley refused to let them raise a militia. Berkeley's refusal pushed the farmers to follow Bacon and take the fight themselves.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Describe one cause of the rebellion.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for describing one accurate cause, such as Berkeley's refusal of a militia or frontier anger at Native raids.",
+     "notEarned": "Stating only that the rebels were angry, with no cause, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "The rebellion frightened Virginia's leaders because former servants and free Black people had fought alongside Bacon. Afterward the colony moved toward laws that divided poor whites from enslaved Black people and tied slavery to race.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one consequence of the rebellion for Virginia.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one accurate consequence, such as the turn toward race-based slavery laws or the fear of servant and enslaved alliances.",
+     "notEarned": "Naming a consequence with no explanation, or a consequence that did not follow the rebellion, does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "causation",
+ "saq_slot": 3,
+ "skills": [
+  "2.A",
+  "3.B"
+ ],
+ "source": "original; stimulus image from the shared pool, Howard Pyle, The Burning of Jamestown (1905), public domain",
+ "status": "final",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Howard Pyle, The Burning of Jamestown (1905), public domain.",
+  "text": "Howard Pyle's painting The Burning of Jamestown, painted in 1905 \u2014 more than two centuries after the event it shows. Armed rebels with torches and muskets march through a burning town at night. Flames light the streets and the faces of the men, while smoke rises over the houses."
+ },
+ "stimulus_set": "saq-burning-jamestown",
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 2
+}

@@ -1,0 +1,77 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.5 Interactions Between American Indians and Europeans"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Part of an Empire"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The Early Colonial Era: Spain Colonizes the New World"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0277",
+ "lesson": "apush-u2-l3",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Pueblo Revolt of 1680, which expelled the Spanish from New Mexico."
+  },
+  {
+   "key": "B",
+   "misconception": "No French missionaries operated in New Mexico; the gentler approach came from Spanish friars chastened by the revolt.",
+   "text": "The arrival of French missionaries promoting a gentler approach."
+  },
+  {
+   "key": "C",
+   "misconception": "No silver discovery drove this change; New Mexico's value was strategic and missionary.",
+   "text": "The discovery of silver deposits in New Mexico."
+  },
+  {
+   "key": "D",
+   "misconception": "No royal decree ordered toleration; the accommodation was pragmatic and local.",
+   "text": "A royal decree from Madrid ordering religious toleration in the colonies."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "The passage says the Spanish \u201chad learned from the experience\u201d \u2014 and the experience was the revolt. In 1680 the Pueblos rose, killed the friars who had tried to crush their religion, and drove the Spanish out for twelve years. When the Spanish returned in 1692, they knew severity had failed once already, so friars who had once tried to wipe out every Native practice now often overlooked them \u2014 not a change of heart, but a lesson learned from defeat.",
+  "B": "No French missionaries operated in New Mexico; the gentler approach came from Spanish friars chastened by the revolt.",
+  "C": "No silver discovery drove this change; New Mexico's value was strategic and missionary.",
+  "D": "No royal decree ordered toleration; the accommodation was pragmatic and local.",
+  "general": "1. Find the passage's own cause. It says the Spanish \u201chad learned from the experience.\u201d\n2. Name the experience. The 1680 revolt, which killed the friars and expelled the Spanish for twelve years.\n3. Ask what the lesson was. Severity had failed once, so the returning friars overlooked what they once tried to crush.\nRemember: a policy that changes after a defeat is usually a lesson, not a change of heart."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.D"
+ ],
+ "source": "original; stimulus paraphrased from Colin G. Calloway, New World for All (1997)",
+ "status": "final",
+ "stem": "The Spanish accommodation Calloway describes was caused most directly by which of the following?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Colin G. Calloway, New World for All (1997).",
+  "text": "In 1680, Pop\u00e9, a Tewa religious leader from San Juan, coordinated a rising of the Pueblos that expelled the Spaniards for twelve years; rebels killed friars who had tried to crush their religion and destroyed Catholic ritual objects. When the Spanish returned, they had learned from the experience: where earlier friars had tried to wipe out every Native practice, they now often overlooked them. When Diego de Vargas campaigned to reconquer New Mexico in 1692, Luis, a Picuris leader, greeted him in animal skins with palm-shell headbands \u2014 but also wearing a rosary and carrying a silver cross. \u2014 paraphrased from Colin G. Calloway, New World for All (1997)"
+ },
+ "stimulus_set": "pueblo-calloway",
+ "themes": [
+  "PCE",
+  "ARC"
+ ],
+ "topics": [
+  "2.5"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

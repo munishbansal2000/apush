@@ -1,0 +1,72 @@
+{
+ "id": "apush-mcq-0283",
+ "lesson": "apush-u2-l4",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 2,
+ "topics": [
+  "2.6"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WOR",
+  "MIG"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "indentured-servitude",
+ "stimulus": {
+  "kind": "text",
+  "text": "Most English migrants to the Chesapeake in the 1600s came as indentured servants. A servant signed a contract promising usually seven years of labor in exchange for passage across the Atlantic, and at the end of the term received freedom and a small piece of land. The work was hard and the death rate high: nearly half of all servants did not survive their term. Still, the bargain drew crowds. More than three-quarters of the roughly 130,000 English people who migrated to the Chesapeake during the 1600s were indentured servants.",
+  "source_note": "Original secondary passage written for this question, summarizing Princeton Review Ch 6."
+ },
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "grounding": {
+  "books": [
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Jamestown and the Chesapeake Colonies"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "Based on the passage, which of the following statements about indentured servitude in the Chesapeake is accurate?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Indentured servitude was the means by which most Africans came to the New World.",
+   "misconception": "Confuses the European servant system with the African slave trade."
+  },
+  {
+   "key": "B",
+   "text": "Indentured servitude attracted few migrants because its terms were too harsh for most English workers.",
+   "misconception": "The harsh terms did not stop migration \u2014 poverty made the bargain attractive, and most migrants came as servants."
+  },
+  {
+   "key": "C",
+   "text": "Nearly half of all indentured servants died before finishing their term of service."
+  },
+  {
+   "key": "D",
+   "text": "Indentured servants received no land when freed, so they could never become property owners.",
+   "misconception": "Servants typically received a small piece of land with freedom, which let some of them vote."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "general": "1. Read the passage for numbers, not adjectives. It gives two: nearly half of servants died, and more than three-quarters of Chesapeake migrants came as servants.\n2. Test each option against those numbers. An option that says few came, or that none died, fights the passage.\n3. Match the surviving option to the passage's own words. 'Nearly half did not survive' is the passage's claim about death.\nRemember: when a passage hands you numbers, use them as the test \u2014 the right option is the one the numbers allow.",
+  "C": "The passage gives the mortality figure directly: nearly half of all indentured servants did not survive their term of service. That is the passage's own number, and it is the point of the item \u2014 the bargain was deadly even though it drew crowds. More than three-quarters of Chesapeake migrants came as servants, so the system was large, and the death rate was high. The other options contradict the passage: Africans came through the slave trade, the terms did not stop migration, and servants did receive land.",
+  "A": "Africans came to the New World through the transatlantic slave trade as enslaved laborers, not as indentured servants.",
+  "B": "The harsh terms did not stop migration \u2014 poverty in England made the bargain attractive, and most migrants came as servants.",
+  "D": "Servants typically received a small piece of land with freedom, which let some of them vote; land was part of the bargain."
+ }
+}

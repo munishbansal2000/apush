@@ -1,0 +1,77 @@
+{
+ "answerKey": "C",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "C. The Lower South and the West Indies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "The Southern Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Other Early Colonies"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0221",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Barbados exported about 50 million pounds of sugar \u2014 more than Virginia's 35 million pounds of tobacco.",
+   "text": "Barbados exported less sugar than Virginia exported tobacco in the same year."
+  },
+  {
+   "key": "B",
+   "misconception": "The table says the opposite \u2014 Barbados sugar planters were about four times as wealthy.",
+   "text": "Virginia's planters were wealthier than Barbados's planters, who were poorer."
+  },
+  {
+   "key": "C",
+   "text": "Barbados relied far more on enslaved labor than Virginia did."
+  },
+  {
+   "key": "D",
+   "misconception": "Enslaved people were three-fourths of Barbados's population but less than one-fourth of Virginia's.",
+   "text": "Virginia had more enslaved people than Barbados, in both number and share."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Barbados exported about 50 million pounds of sugar \u2014 more than Virginia's 35 million pounds of tobacco.",
+  "B": "The table says the opposite \u2014 Barbados sugar planters were about four times as wealthy.",
+  "C": "The table shows the gap twice over \u2014 three-fourths enslaved in Barbados against less than one-fourth in Virginia, and 115 enslaved workers per sugar grower.",
+  "D": "Enslaved people were three-fourths of Barbados's population but less than one-fourth of Virginia's.",
+  "general": "1. Read each row as a comparison. Sugar against tobacco, Barbados against Virginia.\n2. Find the biggest gap. Enslaved people were three-fourths of Barbados and less than one-fourth of Virginia.\n3. Add the grower's number. One hundred fifteen enslaved workers per sugar grower \u2014 that is a slave society, not a society with slaves.\nRemember: when a table compares two places, the widest gap is the story \u2014 ask what it took to grow sugar."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "3.B"
+ ],
+ "source": "original; data table drawn from Barron's Premium 2027, Chapter 4",
+ "status": "final",
+ "stem": "What does the table suggest about the difference between Barbados and Virginia around 1700?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data from Barron's Premium 2027, Chapter 4.",
+  "text": "| Sugar in Barbados and tobacco in Virginia, about 1700 |\n|---|---|\n| Barbados sugar | About 50 million pounds exported in a year |\n| Virginia tobacco | More than 35 million pounds exported in a year |\n| Enslaved people, Barbados | About three-fourths of the population |\n| Enslaved people, Virginia | Less than one-fourth of the population |\n| Average sugar grower | 115 enslaved workers |\n| Wealth of sugar planters | About four times that of Virginia tobacco planters |"
+ },
+ "stimulus_set": "barbados-virginia",
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

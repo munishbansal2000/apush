@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0054",
+ "lesson": "apush-u2-l4",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.6"
+ ],
+ "skills": [
+  "1.B",
+  "5.B"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "text",
+  "text": "After Bacon's Rebellion in 1676, Virginia's planters turned increasingly to enslaved Africans as their primary labor force. The rebellion had united poor Virginians across race, and planters wanted a workforce that could never unite that way again. At the same time, the supply of English servants was shrinking, and the price of enslaved Africans fell after the Dutch monopoly on the slave trade ended in 1682. Virginia's laws then hardened step by step: in 1662 a child's status followed the mother, and in 1705 the colony gathered its slave laws into one code.",
+  "source_note": "Original secondary passage written for this question, summarizing Barron's 2027 Ch 4 and 5 Steps 2024 Ch 8."
+ },
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Bacon's Rebellion and the Development of Slavery in Virginia"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Growth of Slavery"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Slavery in the Early Colonies"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one reason Virginia planters shifted from indentured servants to enslaved Africans after 1676.",
+   "modelAnswer": "One reason was fear: Bacon's Rebellion had united servants, freedmen, and enslaved Black people against the governor, and planters wanted a workforce that could never unite across race again. A workforce held for life, divided from poor whites by race, promised planters that security.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one accurate reason for the shift, such as fear of a united poor, servants growing fractious or scarce, cheaper enslaved labor after 1682, or lifetime hereditary labor.",
+     "notEarned": "Naming only that planters wanted workers, with no reason, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how Bacon's Rebellion contributed to that shift.",
+   "modelAnswer": "The rebellion showed planters that a mixed workforce of poor whites and Black laborers could unite against them, since servants, freedmen, and enslaved people fought together against Governor Berkeley. Planters answered by building a system of lifetime, hereditary slavery that divided workers by race, so the poor could never unite that way again.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how the rebellion's cross-racial alliance frightened planters and led them toward enslaved labor.",
+     "notEarned": "Stating only that a rebellion happened, with no link to the labor shift, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way Virginia's laws changed to support the new labor system.",
+   "modelAnswer": "Virginia's laws made slavery hereditary and permanent: the 1662 law said a child's status followed the mother, so children of enslaved women were born enslaved. The 1705 code then gathered those laws together, defining enslaved people as property held like real estate.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one legal change, such as the 1662 partus rule, the 1667 baptism law, or the 1705 code defining enslaved people as property.",
+     "notEarned": "Naming a law with no explanation of what it changed does not earn the point."
+    }
+   ]
+  }
+ ]
+}

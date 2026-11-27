@@ -1,0 +1,75 @@
+{
+ "id": "apush-mcq-0294",
+ "lesson": "apush-u2-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.6"
+ ],
+ "skills": [
+  "3.D"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 4,
+ "stimulus_set": "legal-hardening",
+ "stimulus": {
+  "kind": "text",
+  "text": "A historian argues: 'The arrival of enslaved Africans in Virginia in 1619 established race-based slavery in the British colonies, and the plantation slavery of the mid-1700s was essentially the same system that began in 1619.' Virginia's laws on slavery hardened step by step:\n\n| Year | Law or case | What it did |\n| 1640 | John Punch | A Black runaway and two white runaways were caught together; the white men got four more years added to their terms, while Punch was condemned to slavery for life. |\n| 1655 | John Casor | A Northampton County court declared Casor, an African servant, a slave for life \u2014 the first civil-court ruling of its kind in the English colonies. |\n| 1662 | Partus sequitur ventrem | A child's status followed the mother, so the children of enslaved women were born enslaved \u2014 breaking English common law, where status followed the father. |\n| 1667 | Baptism | Virginia declared that baptism did not free an enslaved person. |\n| 1705 | Slave code | Virginia gathered its slave laws into one code: 'All Negro, mulatto and Indian slaves within this dominion\u2026 shall be held to be real estate.' |",
+  "source_note": "Original table written for this question from Barron's 2027 Ch 4, 5 Steps 2024 Ch 8, and the Virginia slave code of 1705 (public domain). The Casor date follows the March 8, 1655 Northampton County ruling; Barron's dates the Casor case to 1640, which conflates it with the John Punch case of 1640."
+ },
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "The Nature of Slavery in British North America"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Growth of Slavery"
+   }
+  ],
+  "primary_sources": [
+   "Virginia slave code (1705)",
+   "Johnson v. Parker, Northampton County court ruling (March 8, 1655)"
+  ]
+ },
+ "status": "final",
+ "stem": "Which of the following most weakens the historian's claim?",
+ "options": [
+  {
+   "key": "A",
+   "text": "In the 1660s Virginia made enslaved status pass from mother to child and denied freedom to the baptized, so the system took shape decades after 1619."
+  },
+  {
+   "key": "B",
+   "text": "Because English planters wanted African labor from the start, the change from indentured servants to enslaved Africans in the Chesapeake was complete within a year of the 1619 arrival.",
+   "misconception": "The change took decades of lawmaking; the 1619 arrival did not create a complete system."
+  },
+  {
+   "key": "C",
+   "text": "The profitable tobacco economy was the single cause of slavery's growth, so Virginia's slave system would have looked the same in 1754 even without the laws passed in the 1660s.",
+   "misconception": "A single cause cannot carry the story; the laws created hereditary racial slavery."
+  },
+  {
+   "key": "D",
+   "text": "Africans in Virginia were enslaved on exactly the same legal terms and faced identical legal conditions as Africans in Barbados, since both colonies lived under the same English law.",
+   "misconception": "Virginia built its own code from its own laws; Barbados was a template, not a copy."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "general": "1. Read the historian's claim. Slavery arrived finished in 1619 and stayed the same until the mid-1700s.\n2. Test it against the table. In 1640 a runaway got lifetime slavery while his white partners got four more years.\n3. Test it again. In 1662 status followed the mother; in 1667 baptism stopped freeing anyone.\n4. Name what the table shows. A system built law by law over decades \u2014 not one delivered in 1619.\nRemember: a claim about 'always' falls to one dated change \u2014 find the first law that made it different.",
+  "A": "The historian's claim says the system arrived finished in 1619 and stayed the same. The table shows otherwise: in the 1660s Virginia passed laws making enslaved status pass from mother to child and denying freedom to the baptized \u2014 new legal machinery that created hereditary, race-based bondage. That was a real change, not a continuation of 1619. The plantation slavery of the mid-1700s was a system built law by law over decades. The other options defend the claim instead of weakening it, or rest on a single cause.",
+  "B": "The change took decades of lawmaking; the 1619 arrival did not create a complete system.",
+  "C": "A single cause cannot carry the story; the laws created hereditary racial slavery.",
+  "D": "Background: Virginia built its own code from its own laws; Barbados was a template, not a copy."
+ }
+}

@@ -1,0 +1,83 @@
+{
+ "id": "apush-saq-0055",
+ "lesson": "apush-u2-l4",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.6"
+ ],
+ "skills": [
+  "2.A",
+  "2.B"
+ ],
+ "themes": [
+  "SOC",
+  "ARC"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "text",
+  "text": "'These are the reasons why we are against the traffik of men-body.' \u2014 Germantown Quaker petition against slavery, Pennsylvania, 1688. The petition was written by German Quakers and sent to the Philadelphia Yearly Meeting, which set it aside without acting on it.",
+  "source_note": "Germantown Quaker petition against slavery (1688), quoted verbatim, public domain."
+ },
+ "source": "original; stimulus is a verbatim public-domain primary source",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Quakerism and the 'Holy Experiment'"
+   }
+  ],
+  "primary_sources": [
+   "Germantown Quaker petition against slavery (1688)"
+  ]
+ },
+ "status": "final",
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify the purpose of the Germantown petition.",
+   "modelAnswer": "The petition's purpose was to persuade the Quaker meeting to condemn the buying and selling of enslaved people. The petitioners called the trade 'the traffik of men-body' and asked the meeting to declare it wrong on grounds of conscience and faith.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying the petition's purpose: persuading the Quaker meeting to condemn the slave trade.",
+     "notEarned": "Stating only that Quakers disliked slavery, with no purpose named, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain the historical context that produced this petition.",
+   "modelAnswer": "The petition came from German Quakers in Pennsylvania, religious dissenters whose faith taught that all people were equal before God. Their conviction produced the earliest organized moral opposition to slavery in English America, even though the meeting set the petition aside.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining the Quaker religious context, such as egalitarian faith, dissent, or the 'holy experiment' in Pennsylvania.",
+     "notEarned": "Naming only the year or the place, with no context explained, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one limitation of the petition as evidence about opposition to slavery in the colonies.",
+   "modelAnswer": "The petition shows one group's view, not a movement: the Philadelphia Yearly Meeting set it aside without acting, and it changed nothing for a century. It cannot prove that most colonists opposed slavery \u2014 it proves only that some Quakers did, and that their own meeting was not ready to act.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limitation, such as the meeting setting it aside, its narrow authorship, or its lack of effect.",
+     "notEarned": "Stating only that the petition is old, with no limitation explained, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

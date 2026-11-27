@@ -1,0 +1,87 @@
+{
+ "answerKey": "D",
+ "difficulty": 3,
+ "figures": [
+  {
+   "alt": "An East Prospect of the City of Philadelphia, drawn in 1754 and engraved in 1768 \u2014 a grid city across the Delaware with sailing ships crowded at the wharves",
+   "caption": "An East Prospect of the City of Philadelphia, drawn 1754, engraved 1768",
+   "file": "u2/philadelphia-east-prospect-1768.jpg",
+   "id": "fig-apush-mcq-0218",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:An_east_prospect_of_the_city_of_Philadelphia,_1768_-_NARA_-_535738.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "D. The Middle Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "The Middle Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Other Early Colonies"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0220",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Franklin's own worry was that Germans were outnumbering the English. Background: Pennsylvania was the most diverse colony.",
+   "text": "Pennsylvania was settled only by the English, with no other peoples at all."
+  },
+  {
+   "key": "B",
+   "misconception": "Tobacco was the Chesapeake's crop \u2014 the prospect shows ships and wharves, not tobacco fields.",
+   "text": "Pennsylvania's economy depended on tobacco exports, like the Chesapeake's did."
+  },
+  {
+   "key": "C",
+   "misconception": "Pennsylvania was founded as a Quaker refuge and welcomed many faiths \u2014 the prospect's churches are many, not one.",
+   "text": "Pennsylvania had no religious diversity at all, with one church for everyone."
+  },
+  {
+   "key": "D",
+   "text": "Pennsylvania grew into a commercial center where trade and town life mattered most."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Franklin's own worry was that Germans were outnumbering the English. Background: Pennsylvania was the most diverse colony.",
+  "B": "Tobacco was the Chesapeake's crop \u2014 the prospect shows ships and wharves, not tobacco fields.",
+  "C": "Pennsylvania was founded as a Quaker refuge and welcomed many faiths \u2014 the prospect's churches are many, not one.",
+  "D": "The prospect's crowded wharves, grid streets, and public buildings are the picture of a commercial city \u2014 not a farming frontier.",
+  "general": "1. Ask what the picture is full of. Ships at the wharves, streets in a grid, public buildings.\n2. Ask what is missing. No fields, no tobacco sheds, no frontier cabins \u2014 this is a town, not a plantation.\n3. Name the economy. Trade and town life \u2014 Pennsylvania's breadbasket and workshops feeding a port.\nRemember: a picture's empty spaces are evidence too \u2014 ask what the artist did not bother to draw."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "6.C"
+ ],
+ "source": "original; stimulus image from the shared pool, An East Prospect of the City of Philadelphia (drawn 1754, engraved 1768), public domain",
+ "status": "final",
+ "stem": "Which claim about Pennsylvania does the prospect best support?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "An East Prospect of the City of Philadelphia, drawn by George Heap in 1754 and engraved by Thomas Jefferys in 1768, public domain.",
+  "text": "An East Prospect of the City of Philadelphia, drawn in 1754 and engraved in 1768. Seen across the Delaware River, the city shows a grid of streets and rows of brick houses, with churches and public buildings rising above them. Sailing ships crowd the river in front of the city, loading and unloading at the wharves. Small pictures along the bottom show the Battery, the State House, and other public buildings."
+ },
+ "stimulus_set": "philadelphia-prospect",
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

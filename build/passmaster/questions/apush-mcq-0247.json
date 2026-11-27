@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0247",
+ "lesson": "apush-u2-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.4"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "elmina",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Fishing canoes at Elmina and slaves going on board ship at Manfroe, engraved by Johannes Kip in 1732, public domain.",
+  "text": "Fishing canoes at Elmina and slaves going on board ship at Manfroe, engraved by Johannes Kip in 1732. The top half shows dozens of canoes on the water off the African coast, with European ships anchored offshore and the fort at Elmina on the shore. Its caption reads: 'A. Fishing Cannoes of Mina, 5 or 600 at a time. B. Negroes Cannoes, carrying Slaves, on Board of Ships att Manfroe.' The bottom half shows one large canoe carrying several people toward a European ship."
+ },
+ "source": "original; stimulus image from the shared pool, Johannes Kip, Fishing canoes at Elmina (1732), public domain",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "The African Slave Trade"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "British Empire in America: Growth and Conflict (1650-1750)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650-1750)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "The engraving shows African canoes \u2014 not European boats \u2014 carrying enslaved people out to the ships. What does that detail best show about how the slave trade worked on the African coast?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Europeans captured enslaved people themselves on inland raids far from the coast",
+   "misconception": "Puts Europeans inland; they stayed offshore while African middlemen brought captives to the ships."
+  },
+  {
+   "key": "B",
+   "text": "African rulers and traders had no part at all in the coastal trade",
+   "misconception": "Erases the African role the image shows; the canoes are African-operated."
+  },
+  {
+   "key": "C",
+   "text": "Coastal trade ran through African middlemen, who brought captives to the ships"
+  },
+  {
+   "key": "D",
+   "text": "The trade was run entirely by African merchants with no European ships involved",
+   "misconception": "Erases the European side; the ships offshore are European, waiting for their cargo."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "general": "1. Look at who rows the canoes. Africans, not Europeans, carry the captives out to the ships.\n2. Ask what that means. Europeans stayed offshore; the coastal exchange ran through African hands.\n3. Check the books. European traders set up on the coast and encouraged African men to venture inland to capture members of other groups.\n4. Rule out the extremes. Neither side ran the trade alone \u2014 the coast was a meeting point.\nRemember: in a trade image, who handles the goods tells you who ran that step of the trade.",
+  "A": "Europeans stayed on their ships offshore. African middlemen brought captives to the coast and out to the ships.",
+  "B": "African rulers and traders were central to the coastal trade \u2014 the canoes are theirs.",
+  "C": "The canoes show it: African middlemen carried captives from the shore out to the European ships.",
+  "D": "European ships anchor offshore waiting for cargo. Both sides were involved \u2014 neither ran it alone."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0247",
+   "file": "u2/original-u1-trade-05.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/Special:FilePath/AMH-8140-KB%20Fishing%20canoes%20at%20Elmina%20and%20slaves%20going%20on%20board%20ship%20at%20Manfroe.jpg?width=1200",
+   "license": "Public domain",
+   "caption": "Fishing canoes at Elmina and enslaved people going on board ship at Manfroe, engraved by Johannes Kip, 1732",
+   "alt": "A 1732 engraving of canoes off Elmina on the African coast, carrying enslaved people out to European ships anchored offshore"
+  }
+ ]
+}

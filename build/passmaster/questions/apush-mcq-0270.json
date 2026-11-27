@@ -1,0 +1,77 @@
+{
+ "answerKey": "C",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.5 Interactions Between American Indians and Europeans"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Part of an Empire"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0270",
+ "lesson": "apush-u2-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The opposite is true \u2014 the Narragansett and Mohegan fought with the English against the Pequots.",
+   "text": "All Native peoples in New England united against the English"
+  },
+  {
+   "key": "B",
+   "misconception": "Native allies were essential to the English victory; without them the outcome is doubtful.",
+   "text": "Native peoples had no role in the outcome of the Pequot War"
+  },
+  {
+   "key": "C",
+   "text": "Native peoples made their own alliances, sometimes against rival Native peoples"
+  },
+  {
+   "key": "D",
+   "misconception": "The Narragansett and Mohegan chose to ally with the English against a rival, not under force.",
+   "text": "The English forced every Native people to fight for them"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The opposite is true \u2014 the Narragansett and Mohegan fought with the English against the Pequots.",
+  "B": "Native allies were essential to the English victory; without them the outcome is doubtful.",
+  "C": "It is tempting to tell this war as English against Indians, but the passage will not let you: Narragansett and Mohegan warriors marched with the English because the Pequots were their rivals, and defeating a rival was worth more than standing with strangers. Native peoples were not a single side in these wars \u2014 they were many peoples with their own enmities, interests, and strategies, and they chose their allies accordingly.",
+  "D": "The Narragansett and Mohegan chose to ally with the English against a rival, not under force.",
+  "general": "1. Refuse the simple story. The war was not English against Indians \u2014 Native warriors marched on both sides.\n2. Ask why they marched with the English. Background: the Mohegan leader Uncas had broken with the Pequots, and the Narragansett had their own long rivalry with them.\n3. Name the pattern. Peoples choose allies by their own rivalries and interests, not by race.\nRemember: in a war with many peoples, ask who each side's enemy was \u2014 it is rarely everyone on the other side."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "5.B"
+ ],
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "status": "final",
+ "stem": "The Narragansett and Mohegan fought alongside the English against the Pequots. This alliance best shows which of the following about Native peoples in colonial New England?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question, summarizing standard background on the Pequot War.",
+  "text": "In the 1630s, English settlers pushed into the Connecticut River valley, land the Pequots controlled and farmed. When violence broke out, the English colonies, with Narragansett and Mohegan allies, marched on the main Pequot village in 1637. They set the village on fire and killed about 400 people, many of them women and children. The Pequots were nearly destroyed as a people, and their survivors were scattered among other tribes or sold into slavery."
+ },
+ "stimulus_set": "pequot-war",
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "topics": [
+  "2.5"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

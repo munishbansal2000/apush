@@ -1,0 +1,36 @@
+{
+ "lesson": "apush-u2-l2",
+ "round": "blind-read-u2-fix-l2-round2",
+ "scope": "Focused re-check of the 4 misconception-field fixes only; student-visible bytes unchanged in this round, so no blind solve.",
+ "items": [
+  {
+   "id": "apush-mcq-0207",
+   "field": "option C misconception",
+   "verdict": "PASS",
+   "checked": "Misconception reads exactly 'The middle colonies were the tolerant ones \u2014 Pennsylvania welcomed dissenters, not banished them.' Rhode Island no longer appears as a middle colony. Old phrasing 'Rhode Island welcomed dissenters' occurs 0 times in the whole item file."
+  },
+  {
+   "id": "apush-mcq-0209",
+   "field": "option C misconception",
+   "verdict": "PASS",
+   "checked": "Misconception reads exactly 'Hooker and Williams were ministers, Hutchinson was not \u2014 and all three broke with the Puritan church.' Williams is now correctly a minister. Old phrasing 'Williams and Hutchinson were not' occurs 0 times in the whole item file."
+  },
+  {
+   "id": "apush-mcq-0220",
+   "field": "option A misconception",
+   "verdict": "PASS",
+   "checked": "Misconception reads 'Franklin's own worry was that Germans were outnumbering the English. Background: Pennsylvania was the most diverse colony.' \u2014 the Background tag is present, matching rationale A. Both 'most diverse colony' occurrences in the file carry the tag; 0215's occurrence is also tagged."
+  },
+  {
+   "id": "apush-mcq-0199",
+   "field": "option C misconception",
+   "verdict": "PASS",
+   "checked": "Misconception reads exactly 'Three data points cannot show that exports rose every single year without fail.' \u2014 matches the corrected rationale C reasoning. Old wording 'Steady growth is what the historian would expect' occurs 0 times in the whole item file."
+  }
+ ],
+ "summary": {
+  "total": 4,
+  "pass": 4,
+  "fail": 0
+ }
+}

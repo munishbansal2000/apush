@@ -1,0 +1,77 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "B. The New England Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Massachusetts and the New England Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Massachusetts Bay"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0210",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The passage says nothing about stolen land \u2014 the break was over faith, not property.",
+   "text": "Dissenters were stealing the colony's land, taking farms that belonged to others."
+  },
+  {
+   "key": "B",
+   "text": "The Puritans prized a single faith and church, and dissent threatened that unity."
+  },
+  {
+   "key": "C",
+   "misconception": "Taxes never appear in the passage \u2014 the quarrel was about belief and church authority.",
+   "text": "Dissenters refused to pay taxes to the colony, keeping their money for themselves."
+  },
+  {
+   "key": "D",
+   "misconception": "The dissenters stayed in America and founded colonies \u2014 they did not sail home.",
+   "text": "Dissenters wanted to return to England, sailing home across the Atlantic Ocean."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The passage says nothing about stolen land \u2014 the break was over faith, not property.",
+  "B": "The passage opens with exactly that \u2014 one faith, one church \u2014 and then shows the expulsions that followed when people broke it.",
+  "C": "Taxes never appear in the passage \u2014 the quarrel was about belief and church authority.",
+  "D": "The dissenters stayed in America and founded colonies \u2014 they did not sail home.",
+  "general": "1. Read the first sentence. One faith, one church \u2014 that is the Puritans' prize.\n2. Ask what a dissenter does to it. Breaks the single faith, and with it the colony's unity.\n3. See the pattern. Expulsion follows the break, three times over.\nRemember: when a passage opens with a value and ends with punishments, the value is the reason for the punishments."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.B"
+ ],
+ "source": "original; passage drawn from Barron's Premium 2027, Chapter 4",
+ "status": "final",
+ "stem": "What does the passage suggest about why the Puritans expelled dissenters?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, drawn from Barron's Premium 2027, Chapter 4 and the Unit 2 lesson script for Period 2.",
+  "text": "New England's Puritans prized a single faith and a single church, and they expelled those who broke it. Roger Williams left in 1636 and founded Providence, welcoming believers of every faith. Anne Hutchinson, tried in 1637 and banished in 1638, carried her followers to Rhode Island. Thomas Hooker led his congregation out in 1636 and founded Hartford, whose Fundamental Orders of 1639 set out a government chosen by the people. Each break made a new colony \u2014 and each new colony was a little freer than the one it left."
+ },
+ "stimulus_set": "dissenters-passage",
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

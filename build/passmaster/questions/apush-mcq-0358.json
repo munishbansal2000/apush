@@ -1,0 +1,110 @@
+{
+ "answerKey": "C",
+ "difficulty": 4,
+ "figures": [
+  {
+   "alt": "Samuel de Champlain's 1613 engraving of the Habitation at Quebec \u2014 a single walled trading post on the St. Lawrence River, with cannons, a flag, and smoking chimneys",
+   "caption": "The Habitation at Quebec, Samuel de Champlain, 1613",
+   "file": "u2/champlain-habitation-quebec.jpg",
+   "id": "fig-apush-mcq-0358",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Champlain_Habitation_de_Quebec.jpg"
+  },
+  {
+   "alt": "The Castello Plan of New Amsterdam in 1660, redrawn 1916 \u2014 a bird's-eye view of a town with a fort, a wall, canals, streets, gardens, and ships in the harbor",
+   "caption": "The Castello Plan, New Amsterdam in 1660, redrawn 1916",
+   "file": "u2/original-ctx-u2-07.jpg",
+   "id": "fig-apush-mcq-0358-x",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Castelloplan.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.8 Subject to Debate"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Regional Differences in British North America"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Dutch New Amsterdam"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "French Colonization of North America"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Other Early Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "New France"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0358",
+ "lesson": "apush-u2-l5",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Quebec is a single trading post, not a farming town.",
+   "text": "Both empires built large farming towns on the coast to grow crops."
+  },
+  {
+   "key": "B",
+   "misconception": "Neither image shows enslaved labor.",
+   "text": "Both empires relied on enslaved labor to work their colonies' farms and mines."
+  },
+  {
+   "key": "C",
+   "text": "France built a small fur-trade post; the Netherlands built a commercial town."
+  },
+  {
+   "key": "D",
+   "misconception": "Both empires traded with Native peoples \u2014 that is what the post and the town were for.",
+   "text": "Neither empire ever traded with Native peoples in North America."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "Quebec is a single trading post, not a farming town.",
+  "B": "Neither image shows enslaved labor.",
+  "C": "Image 1 shows France's Quebec as a single fortified trading post on the St. Lawrence, built for the fur trade with Native peoples. Image 2 shows the Netherlands' New Amsterdam as a whole commercial town \u2014 streets, canals, gardens, a fort, a wall, and ships in the harbor. Background: France sent few settlers and traded for furs; the Dutch built a port town to trade. Neither image shows farming towns, enslaved labor, or empires that ignored Native peoples.",
+  "D": "Both empires traded with Native peoples \u2014 that is what the post and the town were for.",
+  "general": "1. Read Image 1. One fortified post on the river \u2014 a trading post, not a town.\n2. Read Image 2. A whole town with streets, canals, gardens, and ships in the harbor.\n3. Ask what each empire built. Background: France built a post for furs; the Dutch built a town for trade.\n4. Name the difference. A trading post against a commercial town \u2014 two ways to organize a colony.\nRemember: two pictures, one comparison \u2014 let each image say what it shows."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "3.C"
+ ],
+ "source": "original; stimulus images from the shared pool, Samuel de Champlain, Habitation at Quebec (1613) and the Castello Plan of New Amsterdam (1660, redrawn 1916), both public domain",
+ "status": "final",
+ "stem": "Taken together, what do the two images best show about how France and the Netherlands organized their colonies?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Image 1: Samuel de Champlain, Habitation at Quebec, from Les Voyages (1613), public domain. Image 2: Castello Plan of New Amsterdam in 1660, redrawn 1916 by John Wolcott Adams for I. N. Phelps Stokes, public domain.",
+  "text": "Two images of European colonies in North America. Image 1: Samuel de Champlain's engraving of the Habitation at Quebec, from his Les Voyages (1613). A single walled and fortified post stands on the St. Lawrence River, with cannons at the corners, a flag flying, chimneys smoking, and a garden beside it \u2014 one compound, with no town and no farms around it. Image 2: The Castello Plan of New Amsterdam in 1660, redrawn in 1916 by John Wolcott Adams for I. N. Phelps Stokes. A bird's-eye view of a whole town at the tip of Manhattan, with a fort, a wall across the island, canals, streets of houses with gardens, and ships in the harbor."
+ },
+ "stimulus_set": "empires-images",
+ "themes": [
+  "NAT",
+  "GEO"
+ ],
+ "topics": [
+  "2.8"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

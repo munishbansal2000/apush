@@ -1,0 +1,77 @@
+{
+ "answerKey": "C",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "A. The Chesapeake and the Upper South"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Jamestown and the Chesapeake Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Jamestown"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0198",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Tobacco needed large tracts \u2014 the table's millions of pounds came from spreading out, not from small plots.",
+   "text": "Tobacco could only be grown on small plots near the coast."
+  },
+  {
+   "key": "B",
+   "misconception": "Tobacco was labor-intensive \u2014 that is why the region turned to indentured servants and enslaved workers.",
+   "text": "Tobacco required almost no labor to grow and cure."
+  },
+  {
+   "key": "C",
+   "text": "Tobacco exhausted the soil, so planters sought new land and more workers."
+  },
+  {
+   "key": "D",
+   "misconception": "The land went to tobacco fields, not towns \u2014 the Chesapeake built few towns at all.",
+   "text": "Tobacco planters wanted land mainly to build towns."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Tobacco needed large tracts \u2014 the table's millions of pounds came from spreading out, not from small plots.",
+  "B": "Tobacco was labor-intensive \u2014 that is why the region turned to indentured servants and enslaved workers.",
+  "C": "Background: tobacco wore out the soil after a few years, so planters had to keep opening new fields, and each new field needed hands \u2014 which is why the region imported servants and enslaved workers.",
+  "D": "The land went to tobacco fields, not towns \u2014 the Chesapeake built few towns at all.",
+  "general": "1. Start with the scale. Thirty-five million pounds a year is not a garden crop \u2014 it is an industry.\n2. Add the background. Tobacco drained the soil in a few years, so a planter's fields were always wearing out.\n3. Put the two together. More tobacco meant more new land, and more new land meant more workers.\nRemember: a crop that eats its own soil makes its growers hungry for land \u2014 and for labor."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.B"
+ ],
+ "source": "original; data table drawn from Barron's Premium 2027, Chapter 4",
+ "status": "final",
+ "stem": "What does the table suggest about why Chesapeake planters kept seeking more land and more workers?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data from Barron's Premium 2027, Chapter 4.",
+  "text": "| Year | Tobacco in the Chesapeake |\n|---|---|\n| 1617 | First shipments sent to England |\n| 1700 | More than 35 million pounds exported in a year |\n| 1750 | Nearly three-fourths of the Chesapeake's exports, and nearly one-third of all exports from British North America |"
+ },
+ "stimulus_set": "tobacco-exports",
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

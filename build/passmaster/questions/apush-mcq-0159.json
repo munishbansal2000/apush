@@ -1,0 +1,79 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "C. English Colonial Patterns"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Massachusetts and the New England Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The Pilgrims and the Massachusetts Bay Company"
+   }
+  ],
+  "primary_sources": [
+   "Mayflower Compact (November 11, 1620)"
+  ]
+ },
+ "id": "apush-mcq-0159",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "text": "They had anchored at Cape Cod, outside their patent's land, so the settlers agreed to govern themselves before going ashore."
+  },
+  {
+   "key": "B",
+   "misconception": "Treats a written agreement as a sermon.",
+   "text": "They needed a sermon to preach before the first church service in the new land."
+  },
+  {
+   "key": "C",
+   "misconception": "Gives the Spanish crown a role in an English colonial agreement.",
+   "text": "The Spanish crown demanded a written agreement before the settlers could land."
+  },
+  {
+   "key": "D",
+   "misconception": "Reads a civil agreement as a trade contract.",
+   "text": "They had to promise the Virginia Company a share of the fur trade they hoped to build in America."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "Background: the Pilgrims were blown off course to Cape Cod, beyond their patent's land, so they wrote their own agreement to keep order before landing.",
+  "B": "The Compact creates a civil government, not a sermon, and it was signed to settle who would rule, not what would be preached.",
+  "C": "Spain had no claim over the Pilgrims' landing or their agreement; the Compact was an English settlers' document.",
+  "D": "The Compact says nothing about furs or a share of trade; it creates a government, not a business bargain.",
+  "general": "1. Start with where the ship ended up. Background: the Mayflower was bound for the northern parts of Virginia but landed at Cape Cod, off course.\n2. Ask why that mattered. A patent gives a colony its right to govern a place, and Cape Cod lay outside the land the patent covered.\n3. Ask what people do when no law covers them. They make their own agreement, or the landing ends in quarrel.\n4. Put it together. The Compact was written before landing because the settlers needed a government the moment they stepped ashore.\nRemember: when a document is written in a hurry, ask what went wrong first, and the reason is usually in the trouble."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "2.B"
+ ],
+ "source": "original; stimulus text from Mayflower Compact (November 11, 1620), public domain",
+ "status": "final",
+ "stem": "Why was the Mayflower Compact written before the settlers went ashore?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Verbatim excerpt from the Mayflower Compact, signed November 11, 1620, public domain. Quoted in 5 Steps to a 5 2024, Chapter 7.",
+  "text": "\"We, whose names are underwritten, the Loyal Subjects of our dread Sovereign Lord King James, having undertaken for the Glory of God, and Advancement of the Christian Faith, and the Honour of our King and Country, a Voyage to plant the first Colony in the northern Parts of Virginia, do by these Presents, solemnly and mutually, in the Presence of God and one another, covenant and combine ourselves together into a civil Body Politick, for our better Ordering and Preservation.\""
+ },
+ "stimulus_set": "mayflower-compact-1620",
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "topics": [
+  "2.1"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

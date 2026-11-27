@@ -1,0 +1,87 @@
+{
+ "answerKey": "C",
+ "difficulty": 4,
+ "figures": [
+  {
+   "alt": "An East Prospect of the City of Philadelphia, drawn in 1754 and engraved in 1768 \u2014 a grid city across the Delaware with sailing ships crowded at the wharves",
+   "caption": "An East Prospect of the City of Philadelphia, drawn 1754, engraved 1768",
+   "file": "u2/philadelphia-east-prospect-1768.jpg",
+   "id": "fig-apush-mcq-0218",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:An_east_prospect_of_the_city_of_Philadelphia,_1768_-_NARA_-_535738.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "D. The Middle Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "The Middle Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Other Early Colonies"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0219",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The drawing is from 1754 \u2014 using it as proof of 1768 ignores the fourteen-year gap.",
+   "text": "As proof of exactly how Philadelphia looked in 1768, down to every house."
+  },
+  {
+   "key": "B",
+   "misconception": "One view of one city cannot rank cities \u2014 it shows Philadelphia only.",
+   "text": "As proof that Philadelphia was the largest city in America, bigger than Boston."
+  },
+  {
+   "key": "C",
+   "text": "As evidence of Philadelphia's growth and trade in the 1750s, checked against other records."
+  },
+  {
+   "key": "D",
+   "misconception": "A prospect shows rooftops and ships, not who lived in poverty \u2014 it cannot prove that.",
+   "text": "As proof that Philadelphia had no poor people, and everyone there was rich."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The drawing is from 1754 \u2014 using it as proof of 1768 ignores the fourteen-year gap.",
+  "B": "One view of one city cannot rank cities \u2014 it shows Philadelphia only.",
+  "C": "The image shows the 1750s city as drawn then \u2014 its claims about growth and trade hold when other records agree.",
+  "D": "A prospect shows rooftops and ships, not who lived in poverty \u2014 it cannot prove that.",
+  "general": "1. Ask when the evidence was made. Drawn in 1754 \u2014 that is the date it speaks for.\n2. Ask what it can show. A planned city with a crowded port \u2014 growth and trade in the 1750s.\n3. Ask what it cannot. It cannot prove 1768, rank cities, or show poverty \u2014 those need other records.\nRemember: an image's date is its boundary \u2014 use it for its own time, and check the rest elsewhere."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.B"
+ ],
+ "source": "original; stimulus image from the shared pool, An East Prospect of the City of Philadelphia (drawn 1754, engraved 1768), public domain",
+ "status": "final",
+ "stem": "The prospect was drawn in 1754, fourteen years before it was engraved. Which use of the image as evidence would be most defensible?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "An East Prospect of the City of Philadelphia, drawn by George Heap in 1754 and engraved by Thomas Jefferys in 1768, public domain.",
+  "text": "An East Prospect of the City of Philadelphia, drawn in 1754 and engraved in 1768. Seen across the Delaware River, the city shows a grid of streets and rows of brick houses, with churches and public buildings rising above them. Sailing ships crowd the river in front of the city, loading and unloading at the wharves. Small pictures along the bottom show the Battery, the State House, and other public buildings."
+ },
+ "stimulus_set": "philadelphia-prospect",
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

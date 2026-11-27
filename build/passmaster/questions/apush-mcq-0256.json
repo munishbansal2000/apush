@@ -1,0 +1,78 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.5 Interactions Between American Indians and Europeans"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Jamestown and the Chesapeake Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": [
+   "John Smith, A True Relation (1608)"
+  ]
+ },
+ "id": "apush-mcq-0256",
+ "lesson": "apush-u2-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Smith did travel to Virginia \u2014 he helped found Jamestown and the events he describes happened there.",
+   "text": "Smith never traveled to Virginia or saw Jamestown"
+  },
+  {
+   "key": "B",
+   "text": "Smith wrote to impress English readers and attract investors"
+  },
+  {
+   "key": "C",
+   "misconception": "The account was composed in English, not Spanish; Smith was an English colonist writing for English readers.",
+   "text": "The account was composed in Spanish"
+  },
+  {
+   "key": "D",
+   "misconception": "Other colonists kept written records \u2014 George Percy and William Strachey, for example \u2014 so Smith's is not the only source.",
+   "text": "No other colonist in Virginia kept written records"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Smith did travel to Virginia \u2014 he helped found Jamestown and the events he describes happened there.",
+  "B": "Smith wrote for an English audience of investors and adventurers, and self-dramatization and colonial promotion shaped every line. The passage's drama is the tell: two hundred grim courtiers, a narrow escape, a king on a mat \u2014 Smith is staging a scene for readers back home, not filing a report. When the purpose is promotion, the details serve the pitch, and a careful historian treats the account as a sales document as much as a record.",
+  "C": "The account was composed in English, not Spanish; Smith was an English colonist writing for English readers.",
+  "D": "Background: other colonists kept written records \u2014 George Percy and William Strachey, for example \u2014 so Smith's is not the only source.",
+  "general": "1. Ask who Smith was writing for. His readers were English investors and adventurers.\n2. Ask what those readers wanted. They wanted a colony worth their money \u2014 and a hero worth following.\n3. Read the drama as evidence of purpose. The grim courtiers and the narrow escape are good copy, and good copy sells colonies.\nRemember: a source written to persuade is still useful, but its purpose is the first thing to name."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "2.A"
+ ],
+ "source": "original; stimulus is a verbatim quotation from John Smith, A True Relation (1608), public domain",
+ "status": "final",
+ "stem": "A historian would use Smith's account most cautiously because",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Captain John Smith, A True Relation (1608) and The Generall Historie of Virginia (1624), public domain.",
+  "text": "Questions 255-257 refer to the following sources.\n\n\u201cAt last they brought him to Werowocomoco, where was Powhatan, their emperor. Here more than two hundred of those grim courtiers stood wondering at him...\u201d\n\u2014Captain John Smith, on his capture, 1608 (abridged)\n\nSmith's 1624 General Historie describes the same capture: he wrote that Chief Powhatan ordered his execution, and that the chief's daughter Pocahontas threw herself over him and saved his life. The account appeared years after the event, in a book Smith wrote to promote Virginia to English readers."
+ },
+ "stimulus_set": "smith-quote",
+ "themes": [
+  "PCE"
+ ],
+ "topics": [
+  "2.5"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

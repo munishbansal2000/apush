@@ -1,0 +1,75 @@
+{
+ "id": "apush-mcq-0296",
+ "lesson": "apush-u2-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.6"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "stimulus_set": "legal-hardening",
+ "stimulus": {
+  "kind": "text",
+  "text": "A historian argues: 'The arrival of enslaved Africans in Virginia in 1619 established race-based slavery in the British colonies, and the plantation slavery of the mid-1700s was essentially the same system that began in 1619.' Virginia's laws on slavery hardened step by step:\n\n| Year | Law or case | What it did |\n| 1640 | John Punch | A Black runaway and two white runaways were caught together; the white men got four more years added to their terms, while Punch was condemned to slavery for life. |\n| 1655 | John Casor | A Northampton County court declared Casor, an African servant, a slave for life \u2014 the first civil-court ruling of its kind in the English colonies. |\n| 1662 | Partus sequitur ventrem | A child's status followed the mother, so the children of enslaved women were born enslaved \u2014 breaking English common law, where status followed the father. |\n| 1667 | Baptism | Virginia declared that baptism did not free an enslaved person. |\n| 1705 | Slave code | Virginia gathered its slave laws into one code: 'All Negro, mulatto and Indian slaves within this dominion\u2026 shall be held to be real estate.' |",
+  "source_note": "Original table written for this question from Barron's 2027 Ch 4, 5 Steps 2024 Ch 8, and the Virginia slave code of 1705 (public domain). The Casor date follows the March 8, 1655 Northampton County ruling; Barron's dates the Casor case to 1640, which conflates it with the John Punch case of 1640."
+ },
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "The Nature of Slavery in British North America"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Growth of Slavery"
+   }
+  ],
+  "primary_sources": [
+   "Virginia slave code (1705)",
+   "Johnson v. Parker, Northampton County court ruling (March 8, 1655)"
+  ]
+ },
+ "status": "final",
+ "stem": "In 1640, three runaway servants were caught together: two white men and one Black man, John Punch. The white men got four more years added to their terms. Punch was condemned to slavery for life. What does the difference in their sentences best show?",
+ "options": [
+  {
+   "key": "A",
+   "text": "That Virginia courts treated all runaway servants the same, whatever their race.",
+   "misconception": "The sentences were different \u2014 four more years for the white men, a lifetime for Punch."
+  },
+  {
+   "key": "B",
+   "text": "That Virginia law was already treating Black and white workers by different rules."
+  },
+  {
+   "key": "C",
+   "text": "That Punch's sentence was lighter because he had served longer than the others.",
+   "misconception": "Punch's sentence was far harsher \u2014 slavery for life, not extra years."
+  },
+  {
+   "key": "D",
+   "text": "That the court freed all three men because their masters had mistreated them.",
+   "misconception": "No one was freed; all three were punished, and Punch most harshly."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "general": "1. Read the crime. Three servants ran away together \u2014 two white, one Black.\n2. Read the sentences. The white men got four more years; Punch got slavery for life.\n3. Ask what the difference means. The same crime drew a different punishment by race.\n4. Name the direction. Virginia law was already splitting Black and white workers into different rules.\nRemember: when one crime gets two sentences, the law is telling you who it was written for.",
+  "B": "The two white runaways got four more years added to their terms. Punch, who ran away with them for the same crime, was condemned to slavery for life. The same crime drew a different punishment, and the difference was race. That is the earliest sign in the table of Virginia law splitting Black and white workers into different rules \u2014 a split the later laws of 1655, 1662, and 1667 would widen. The other options misread the sentences: treatment was unequal, Punch's was harsher, and no one was freed.",
+  "A": "The sentences were different \u2014 four more years for the white men, a lifetime for Punch.",
+  "C": "Punch's sentence was far harsher \u2014 slavery for life, not extra years.",
+  "D": "No one was freed; all three were punished, and Punch most harshly."
+ }
+}

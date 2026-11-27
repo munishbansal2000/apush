@@ -1,0 +1,98 @@
+{
+ "id": "apush-saq-0060",
+ "lesson": "apush-u2-l5",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.7"
+ ],
+ "skills": [
+  "1.B",
+  "3.A"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "text",
+  "text": "\"Why should Pennsylvania, founded by the English, become a Colony of Aliens, who will shortly be so numerous as to Germanize us instead of our Anglifying them, and will never adopt our Language or Customs, any more than they can acquire our Complexion.\" — Benjamin Franklin, \"Observations Concerning the Increase of Mankind,\" 1751.",
+  "source_note": "Benjamin Franklin, \"Observations Concerning the Increase of Mankind,\" 1751; public domain."
+ },
+ "source": "original; stimulus is a verbatim public-domain primary source",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.7 Colonial Society and Culture"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "D. The Middle Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Other Early Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "The Middle Colonies"
+   }
+  ],
+  "primary_sources": [
+   "Franklin, \"Observations Concerning the Increase of Mankind\" (1751)"
+  ]
+ },
+ "status": "final",
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify the group Franklin worried was “Germanizing” Pennsylvania.",
+   "modelAnswer": "Franklin worried about German immigrants, who were arriving in Pennsylvania in large numbers in the early 1700s. He feared they would soon be so numerous as to make the colony German rather than English.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying German immigrants as the group Franklin feared.",
+     "notEarned": "Stating only that Franklin worried about immigrants, with no group named, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain why Franklin feared German immigration would weaken Pennsylvania's English character.",
+   "modelAnswer": "Franklin believed the Germans would never adopt English language or customs, so a colony founded by the English would become a colony of aliens. If the newcomers kept their own tongue and ways, Pennsylvania would stop being English.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining Franklin's fear: Germans keeping their language and customs would displace English character.",
+     "notEarned": "Stating only that Franklin disliked Germans, with no explanation of the fear, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way Pennsylvania's diversity shaped the colony.",
+   "modelAnswer": "Pennsylvania's diversity shaped it into a patchwork of peoples: Welsh, German, Scots-Irish, and English settlers lived in their own townships, as Holme's 1687 map shows. The colony became known for religious toleration and for many languages and faiths living side by side.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining a shaping effect of diversity, such as distinct ethnic townships, religious toleration, or many languages and faiths.",
+     "notEarned": "Stating only that Pennsylvania was diverse, with no effect explained, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

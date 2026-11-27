@@ -1,0 +1,77 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "E. The Development of Self-Government in Britain's New World Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Jamestown and the Chesapeake Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Colonial Governments"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0205",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "text": "It began as an elected assembly open to free men and grew more exclusive."
+  },
+  {
+   "key": "B",
+   "misconception": "The Crown let the Burgesses continue after 1624 \u2014 it was not abolished.",
+   "text": "It was abolished when the Crown took over Virginia in 1624, ending the assembly."
+  },
+  {
+   "key": "C",
+   "misconception": "Voting was limited to men, and later to wealthy men \u2014 women never voted for Burgesses.",
+   "text": "It was open to all residents, including women, from the day it was created."
+  },
+  {
+   "key": "D",
+   "misconception": "An elected assembly that lasted a century had power \u2014 it grew more exclusive, not powerless.",
+   "text": "It never had any real power at all, and the governor ruled Virginia alone."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "The passage gives both ends of the story \u2014 created in 1619 as an elected assembly, then narrowed until smaller planters were barred.",
+  "B": "The Crown let the Burgesses continue after 1624 \u2014 it was not abolished.",
+  "C": "Voting was limited to men, and later to wealthy men \u2014 women never voted for Burgesses.",
+  "D": "An elected assembly that lasted a century had power \u2014 it grew more exclusive, not powerless.",
+  "general": "1. Find the two ends. An elected assembly in 1619; voting limited to wealthy men later on.\n2. Ask what changed. Not the assembly's existence \u2014 who could take part in it.\n3. Name the direction. Self-government that started broad and narrowed as planters gained power.\nRemember: a question about change wants both ends \u2014 where it started and where it landed."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "3.B"
+ ],
+ "source": "original; passage drawn from Barron's Premium 2027, Chapter 4",
+ "status": "final",
+ "stem": "What does the passage show about the House of Burgesses over time?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, drawn from Barron's Premium 2027, Chapter 4; the historian's sentence is an original paraphrase of the survivor's stimulus.",
+  "text": "A historian argues: 'New England's town meetings created a more democratic political culture than the Chesapeake's, where a small planter elite monopolized political power.' Town meetings were face-to-face assemblies open to all free male residents, who chose selectmen to run the town until the next meeting. Virginia's House of Burgesses, created in 1619, was an elected assembly too \u2014 but over time voting there was limited to wealthy men, and smaller planters were barred."
+ },
+ "stimulus_set": "town-meetings-burgesses",
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

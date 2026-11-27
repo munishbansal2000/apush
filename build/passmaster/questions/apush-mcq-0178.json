@@ -1,0 +1,95 @@
+{
+ "answerKey": "D",
+ "difficulty": 4,
+ "figures": [
+  {
+   "alt": "King James II in armor by Sir Godfrey Kneller, 1684, holding a scepter beside the crown, with ships and an anchor behind him",
+   "caption": "James II, painted by Kneller (1684)",
+   "file": "u2/5s24-ch08-mcq-01.jpg",
+   "id": "fig-apush-mcq-0178",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/King_James_II_by_Sir_Godfrey_Kneller%2C_Bt.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.2 European Colonization"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "E. Colonial Self-Government"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Colonial America (1607\u20131650)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650\u20131750)"
+   }
+  ],
+  "primary_sources": [
+   "Sir Godfrey Kneller, King James II (1684)"
+  ]
+ },
+ "id": "apush-mcq-0178",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Assemblies existed for decades \u2014 the Burgesses since 1619 \u2014 and the Dominion interrupted them, it did not invent them.",
+   "text": "Colonial assemblies had never existed before 1689."
+  },
+  {
+   "key": "B",
+   "misconception": "The colonists arrested Andros and restored their charters the moment James fell \u2014 they did not prefer his rule.",
+   "text": "The colonies preferred to be ruled directly by a royal governor."
+  },
+  {
+   "key": "C",
+   "misconception": "Royal government returned after 1689 and lasted until the Revolution \u2014 the Glorious Revolution restored charters, it did not end the crown's rule.",
+   "text": "The Glorious Revolution ended royal government in America for good."
+  },
+  {
+   "key": "D",
+   "text": "Colonial self-government survived a direct royal challenge once the king fell."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Assemblies had existed for decades \u2014 the House of Burgesses dated to 1619 \u2014 and the Dominion interrupted them, it did not invent them.",
+  "B": "The colonists arrested Andros and restored their charters the moment James fell \u2014 they did not prefer his rule.",
+  "C": "Royal government returned after 1689 and lasted until the Revolution; the Glorious Revolution restored charters, it did not end the crown's rule.",
+  "D": "The charters and assemblies came back at once because the habit of self-government was already deep \u2014 two years of Andros could not erase it.",
+  "general": "1. Name what happened. James fell in 1688, and within months the colonists arrested Andros and took their charters back.\n2. Ask why it was so fast. Background: the assemblies had been meeting for decades \u2014 Virginia's since 1619 \u2014 and the charters were the colonies' working memory.\n3. Ask what survived. Not just the charters, but the habit: voting taxes, passing laws, holding the purse.\n4. Name the point. The Dominion proved the crown could interrupt self-government, and its collapse proved the interruption could not last.\nRemember: a habit practiced for seventy years is harder to kill than a charter is to revoke."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "3.D",
+  "4.B"
+ ],
+ "source": "original; stimulus image from the shared pool, Sir Godfrey Kneller, King James II (1684), public domain",
+ "status": "final",
+ "stem": "The Dominion collapsed in 1689, after James II was deposed in the Glorious Revolution. What does the Dominion's collapse best illustrate about colonial government?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Portrait from the shared image pool; Sir Godfrey Kneller, King James II (1684), public domain.",
+  "text": "King James II, painted by Sir Godfrey Kneller in 1684, a year before James took the throne. The king stands in polished armor, a scepter in his right hand, the crown resting on a cushion at his left. Behind him, warships fire their guns and an anchor leans at his feet. Two years after this portrait was painted, James created the Dominion of New England, revoking the charters of the colonies from Delaware to Maine and placing them under a single royal governor, Edmund Andros."
+ },
+ "stimulus_set": "james-ii-dominion",
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "topics": [
+  "2.2"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

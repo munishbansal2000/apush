@@ -1,0 +1,87 @@
+{
+ "answerKey": "B",
+ "difficulty": 4,
+ "figures": [
+  {
+   "alt": "Darley's 1886 engraving of a Native raid on settlers during King Philip's War: warriors with tomahawks attack settlers in a field, one settler fires a musket, a child stands in the center, and a fallen settler lies in the foreground",
+   "caption": "The King Philip War \u2014 A Raid on the Settlers, engraving by F. O. C. Darley, 1886",
+   "file": "u2/king-philip-war-darley.jpg",
+   "id": "fig-apush-mcq-0273",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:The_King_Philip_War.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.5 Interactions Between American Indians and Europeans"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Part of an Empire"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0273",
+ "lesson": "apush-u2-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "No treaty recognized Wampanoag independence; the war ended with Metacom dead and his people scattered.",
+   "text": "The English signed a treaty recognizing Wampanoag independence and withdrew from New England"
+  },
+  {
+   "key": "B",
+   "text": "The English destroyed Native towns and food supplies across the region, and sold many survivors into slavery"
+  },
+  {
+   "key": "C",
+   "misconception": "The Wampanoag did not move west and rebuild; their power in New England was broken.",
+   "text": "The Wampanoag moved west and built a new confederacy on the Great Lakes beyond English reach"
+  },
+  {
+   "key": "D",
+   "misconception": "The French did not intervene; the war was fought between the English and Native peoples of New England.",
+   "text": "The French intervened and removed the remaining Native peoples to Canada after the war"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "No treaty recognized Wampanoag independence; the war ended with Metacom dead and his people scattered.",
+  "B": "Earlier wars had been fought over a valley or a town; this one was fought everywhere at once, and the English waged it against the means of life itself. They burned villages, destroyed cornfields and food stores, and killed or captured so many people that the survivors could not rebuild. Metacom was killed in August 1676, and many of the captives were sold into slavery in the West Indies \u2014 a people can survive losing a battle, but not losing its towns, its food, and its people all at once.",
+  "C": "The Wampanoag did not move west and rebuild; their power in New England was broken.",
+  "D": "The French did not intervene; the war was fought between the English and Native peoples of New England.",
+  "general": "1. Compare the scale. Background: earlier wars were fought over a valley or a town; this one was fought everywhere at once.\n2. Ask what was destroyed. Background: not just warriors, but villages, cornfields, and food stores \u2014 the means of life.\n3. Count the outcome. Background: Metacom dead in August 1676, survivors sold into slavery, and a people unable to rebuild.\nRemember: a people can survive losing a battle, but not losing its towns, its food, and its people at once."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.B"
+ ],
+ "source": "original; stimulus image from the shared pool, F. O. C. Darley, published 1886, public domain",
+ "status": "final",
+ "stem": "Unlike earlier conflicts in New England, King Philip's War ended Native power in the region. Which of the following best explains why this war, rather than earlier ones, had that result?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Engraving from the shared image pool; F. O. C. Darley, published 1886, public domain.",
+  "text": "An engraving by F. O. C. Darley, published in 1886 and captioned \u201cThe King Philip War \u2014 A Raid on the Settlers.\u201d Native warriors carrying tomahawks and clubs attack settlers in a field; one settler fires a musket, a frightened child stands in the center, and a fallen settler lies in the foreground."
+ },
+ "stimulus_set": "king-philip",
+ "themes": [
+  "PCE",
+  "MIG"
+ ],
+ "topics": [
+  "2.5"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

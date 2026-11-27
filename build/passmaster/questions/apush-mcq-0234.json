@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-0234",
+ "lesson": "apush-u2-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.4"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "navigation-acts",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, written from Barron's 2027 Chapter 4 and 5 Steps 2024 Chapter 8.",
+  "text": "Parliament's Navigation Acts, passed from 1651 and tightened in the 1660s, forced colonial trade onto English ships and through English ports. Certain colonial goods — tobacco first, then rice and naval stores like tar and pitch — could be shipped only to England. This was the 'enumerated list.' European goods bound for the colonies had to pass through an English port first, where London took its cut. Parliament also fenced off colonial manufacturing: the Wool Act of 1699, the Hat Act of 1732, and the Iron Act of 1750."
+ },
+ "source": "original; rewritten from survivor original-u1-trade-13 against Barron's 2027 Chapter 4",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Navigation Acts and Mercantilism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Part of an Empire"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650-1750)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "The Navigation Acts required colonial goods to pass through English ports carried on English ships. What was the most likely effect of these laws on Atlantic port cities?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Ports grew as bottlenecks for colonial exports and imports, enriching merchants"
+  },
+  {
+   "key": "B",
+   "text": "Port cities withered because the Acts banned nearly all colonial trade",
+   "misconception": "Confuses channeling with banning; the acts redirected trade, they did not stop it."
+  },
+  {
+   "key": "C",
+   "text": "Only inland towns benefited from the new trade rules",
+   "misconception": "Puts the benefit in the wrong place; the ports handled the funneled cargo."
+  },
+  {
+   "key": "D",
+   "text": "Colonial ports began trading freely with every nation",
+   "misconception": "Reverses the acts' effect; they restricted trade to English channels."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "general": "1. Picture the rule. Every colonial cargo had to move on an English ship through an English port.\n2. Follow the cargo. Goods funneled through a few ports, and each stop meant handling, storage, and fees.\n3. Ask who gains. Merchants at those ports — in England and in the colonies — took a cut at every step.\n4. Rule out the rest. Trade was channeled, not banned; ports, not inland towns, sat on the flow.\nRemember: when a law forces traffic through a few places, those places grow.",
+  "A": "Channeling all trade through ports made them busy bottlenecks, and merchants there took fees at every step.",
+  "B": "The acts channeled trade, they did not ban it. Ports grew busier, not emptier.",
+  "C": "Inland towns were far from the funneled trade. The ports, not the interior, sat on the flow.",
+  "D": "Free trade with every nation is what the acts forbade. Colonial ports traded through England."
+ }
+}

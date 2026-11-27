@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0246",
+ "lesson": "apush-u2-l3",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 2,
+ "topics": [
+  "2.4"
+ ],
+ "skills": [
+  "5.A"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "elmina",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Fishing canoes at Elmina and slaves going on board ship at Manfroe, engraved by Johannes Kip in 1732, public domain.",
+  "text": "Fishing canoes at Elmina and slaves going on board ship at Manfroe, engraved by Johannes Kip in 1732. The top half shows dozens of canoes on the water off the African coast, with European ships anchored offshore and the fort at Elmina on the shore. Its caption reads: 'A. Fishing Cannoes of Mina, 5 or 600 at a time. B. Negroes Cannoes, carrying Slaves, on Board of Ships att Manfroe.' The bottom half shows one large canoe carrying several people toward a European ship."
+ },
+ "source": "original; stimulus image from the shared pool, Johannes Kip, Fishing canoes at Elmina (1732), public domain; rewritten from survivor original-u1-trade-05",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "The African Slave Trade"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "British Empire in America: Growth and Conflict (1650-1750)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650-1750)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "This 1732 engraving shows canoes at Elmina, on the African coast, carrying enslaved people out to European ships anchored offshore. This scene represents which leg of the triangular trade?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The leg from Africa to the Americas, carrying enslaved people to plantations"
+  },
+  {
+   "key": "B",
+   "text": "The leg from Europe to Africa, carrying manufactured goods to trade for captives",
+   "misconception": "Confuses the outward leg with the Middle Passage; goods went to Africa, people left it."
+  },
+  {
+   "key": "C",
+   "text": "The leg from the Americas to Europe, carrying sugar and tobacco",
+   "misconception": "Puts the scene on the wrong leg; sugar and tobacco sailed from the Americas, not Africa."
+  },
+  {
+   "key": "D",
+   "text": "A voyage unrelated to the triangular trade system of the era",
+   "misconception": "Treats the central scene of the trade as unrelated to it; boarding captives is the Middle Passage."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "general": "1. Read the caption. The canoes are 'carrying Slaves, on Board of Ships' — people are boarding, not landing.\n2. Ask where the ships are going. The ships are anchored off Africa, taking on captives for the crossing.\n3. Place the leg. Captives boarded in Africa and crossed to the Americas — the Middle Passage.\n4. Rule out the other legs. Goods came to Africa from Europe, and crops left the Americas for Europe.\nRemember: to place a scene in a trade system, ask what is being loaded and where the ship is bound.",
+  "A": "The canoes carry enslaved people out to ships bound for the Americas — the Middle Passage leg.",
+  "B": "This leg carries goods to Africa, not people from it. Here people are boarding, so it is the next leg.",
+  "C": "Sugar and tobacco left the Americas for Europe. This scene is on the African coast, loading people.",
+  "D": "The scene is the heart of the system — captives boarding for the crossing to the Americas."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0246",
+   "file": "u2/original-u1-trade-05.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/Special:FilePath/AMH-8140-KB%20Fishing%20canoes%20at%20Elmina%20and%20slaves%20going%20on%20board%20ship%20at%20Manfroe.jpg?width=1200",
+   "license": "Public domain",
+   "caption": "Fishing canoes at Elmina and enslaved people going on board ship at Manfroe, engraved by Johannes Kip, 1732",
+   "alt": "A 1732 engraving of canoes off Elmina on the African coast, carrying enslaved people out to European ships anchored offshore"
+  }
+ ]
+}

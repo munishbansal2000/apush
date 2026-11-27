@@ -1,0 +1,72 @@
+{
+ "id": "apush-mcq-0297",
+ "lesson": "apush-u2-l4",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 2,
+ "topics": [
+  "2.6"
+ ],
+ "skills": [
+  "6.D"
+ ],
+ "themes": [
+  "SOC",
+  "ARC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "race-and-slavery",
+ "stimulus": {
+  "kind": "text",
+  "text": "Historians disagree about how race and slavery came together in the British colonies. Edmund Morgan argued that Virginia's planters made a political choice: after Bacon's Rebellion showed the poor could unite across race, planters built a system that divided workers by race, and racism grew as a tool to hold that system together. Other historians argue the other way: English ideas about race and hierarchy came first, and they made enslavement possible. The laws are the fact; which came first is the argument. The British colonies also differed from Spain and France: English families came in large numbers, men and women together, and the colonies did not tolerate intermarriage. In that setting, a rigid racial hierarchy took hold. Planters first tried enslaving Native Americans, but they knew the land and could escape, and disease had cut their numbers sharply \u2014 so planters turned increasingly to enslaved Africans, who did not know the land and could be identified on sight by their dark skin.",
+  "source_note": "Original secondary passage written for this question, summarizing Barron's 2027 Ch 4, Topic 2.6, and Princeton Review Ch 6."
+ },
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "The Origins of Racial Hierarchies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Slavery in the Early Colonies"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "Which of the following best evaluates Edmund Morgan's argument that Virginia's planters divided workers by race to keep them from uniting?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Morgan's argument fails because Bacon's Rebellion united only white servants, not enslaved Black people.",
+   "misconception": "Background: enslaved Black people fought in the rebellion alongside poor whites \u2014 the cross-racial alliance is the fact Morgan builds on."
+  },
+  {
+   "key": "B",
+   "text": "Morgan's argument fails because Virginia's slave codes were copied directly from Barbados in 1661.",
+   "misconception": "Virginia built its 1705 code from its own laws; Barbados was a template, not a copy."
+  },
+  {
+   "key": "C",
+   "text": "Morgan's argument holds: after 1676 planters built lifetime, hereditary slavery that divided workers by race."
+  },
+  {
+   "key": "D",
+   "text": "Morgan's argument fails because the laws show planters cared only about profits, never about dividing workers.",
+   "misconception": "Profits alone cannot explain a system built on racial division; the laws show both economics and control."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "general": "1. Read Morgan's claim. After 1676, planters divided workers by race so they could never unite again.\n2. Test it against the sequence. Bacon's Rebellion united the poor across race; the partus rule of 1662 was already in place, and the 1705 code came after.\n3. Test the other side. Some historians say racial ideas came first and made enslavement possible \u2014 the debate is real.\n4. Weigh the two. The rebellion showed planters the danger, and the laws and labor practice that followed divided workers by race \u2014 the broad sequence fits Morgan's order.\nRemember: to test a 'which came first' argument, put the events in order and see which side the dates support.",
+  "C": "Morgan's argument fits the broad sequence: Bacon's Rebellion united poor Virginians across race in 1676, and afterward planters divided workers by race \u2014 the partus rule of 1662 was already in place, the 1705 code followed, and reliance on enslaved labor grew. The rebellion showed planters the danger of a united poor, and the laws and labor practice that followed made that division stick. The other options fail. Background: enslaved people did fight, alongside poor whites. Virginia built its own code, and profits alone cannot explain racial division.",
+  "A": "Background: enslaved Black people fought in the rebellion alongside poor whites \u2014 the cross-racial alliance is the fact Morgan builds on.",
+  "B": "Background: Virginia built its 1705 code from its own laws; Barbados was a template, not a copy.",
+  "D": "Profits alone cannot explain a system built on racial division; the laws show both economics and control."
+ }
+}

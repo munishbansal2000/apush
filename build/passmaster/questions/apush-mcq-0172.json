@@ -1,0 +1,90 @@
+{
+ "answerKey": "C",
+ "difficulty": 4,
+ "figures": [
+  {
+   "alt": "The Castello Plan of New Amsterdam in 1660, redrawn in 1916, showing the fort at the tip of Manhattan, the wall across the town, canals, gardens, and ships in the harbor",
+   "caption": "New Amsterdam in 1660, redrawn 1916",
+   "file": "u2/original-ctx-u2-07.jpg",
+   "id": "fig-apush-mcq-0172",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Castelloplan.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.2 European Colonization"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Colonial America (1607\u20131650)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": [
+   "Castello Plan of New Amsterdam (1660), redrawn by John Wolcott Adams and Isaac Newton Phelps Stokes (1916)"
+  ]
+ },
+ "id": "apush-mcq-0172",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The plan clearly shows a fort at the tip and a wall across the town \u2014 the Dutch did build defenses.",
+   "text": "The Dutch had built no fort or wall at all."
+  },
+  {
+   "key": "B",
+   "misconception": "The harbor is crowded with ships \u2014 the canals served the port, not blocked it.",
+   "text": "The town's canals made it impossible for ships to reach the harbor."
+  },
+  {
+   "key": "C",
+   "text": "A small company post with few settlers, it could not mount a defense."
+  },
+  {
+   "key": "D",
+   "misconception": "The surrender followed the arrival of English warships, not a shared faith \u2014 Stuyvesant wanted to fight.",
+   "text": "The Dutch settlers welcomed the English because they shared the same religion."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "The plan shows a fort at the tip and a wall across the town \u2014 the Dutch did build defenses.",
+  "B": "The harbor in the plan is full of ships; the canals connected the town to the port, not blocked it.",
+  "C": "The plan shows one compact town, not a settled countryside of farms and towns; the company had planted few people, and Governor Stuyvesant surrendered when English ships arrived.",
+  "D": "The surrender followed the arrival of English warships, not a shared faith \u2014 Stuyvesant wanted to fight and his council refused.",
+  "general": "1. Look at the scale. One compact town at the tip of an island \u2014 not a countryside of farms and towns.\n2. Ask who lived there. Background: the Dutch West India Company ran New Netherland as a business, and few Dutch families ever crossed the ocean.\n3. Ask what happens when warships arrive. A company town with few settlers cannot raise an army, however strong its fort.\n4. Name the lesson. Trading posts are easy to take because their value is in goods, not people.\nRemember: count the settlers, not the walls, when you judge whether a colony can defend itself."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.B",
+  "2.C"
+ ],
+ "source": "original; stimulus image from the shared pool, Castello Plan of New Amsterdam (1660), redrawn 1916, public domain",
+ "status": "final",
+ "stem": "England seized New Netherland in 1664 almost without a fight. Which feature of the Dutch colony, shown in the plan, best explains why the takeover was so easy?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Map from the shared image pool; Castello Plan of New Amsterdam (1660), redrawn by John Wolcott Adams and Isaac Newton Phelps Stokes (1916), public domain.",
+  "text": "The Castello Plan of New Amsterdam in 1660, redrawn by John Wolcott Adams and Isaac Newton Phelps Stokes in 1916 from the original plan. The map shows the town at the southern tip of Manhattan: the fort stands at the tip, a wall runs across the town, canals cut through the streets, and houses stand among gardens and orchards. Ships crowd the harbor at the left, where the Hudson meets the sea."
+ },
+ "stimulus_set": "castello-new-amsterdam",
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "topics": [
+  "2.2"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

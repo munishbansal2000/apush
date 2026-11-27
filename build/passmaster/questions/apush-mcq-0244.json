@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-0244",
+ "lesson": "apush-u2-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.4"
+ ],
+ "skills": [
+  "2.C"
+ ],
+ "themes": [
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "equiano",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Olaudah Equiano, The Interesting Narrative of the Life of Olaudah Equiano (1789). Verbatim from Project Gutenberg EBook #15399.",
+  "text": "I was soon put down under the decks, and there I received such a salutation in my nostrils as I had never experienced in my life: so that, with the loathsomeness of the stench, and crying together, I became so sick and low that I was not able to eat, nor had I the least desire to taste any thing. I now wished for the last friend, death, to relieve me…"
+ },
+ "source": "original; stimulus is Olaudah Equiano, The Interesting Narrative (1789), verbatim, public domain",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "The African Slave Trade"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "British Empire in America: Growth and Conflict (1650-1750)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650-1750)"
+   }
+  ],
+  "primary_sources": [
+   "Olaudah Equiano, The Interesting Narrative of the Life of Olaudah Equiano (1789)"
+  ]
+ },
+ "status": "final",
+ "stem": "Equiano's account is one person's story of the Middle Passage. What is the most important limit on using it as evidence about the Middle Passage as a whole?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It was written in 1789, after the transatlantic slave trade had already ended",
+   "misconception": "Gets the timeline wrong; the slave trade continued for decades after 1789."
+  },
+  {
+   "key": "B",
+   "text": "It describes only the Atlantic crossing itself, not life on the plantations",
+   "misconception": "Names a scope that is not a limit; the question is about the crossing itself."
+  },
+  {
+   "key": "C",
+   "text": "It was written by a sailor who had never crossed the Atlantic himself",
+   "misconception": "Misidentifies the author; Equiano crossed as a captive, not as a stay-at-home sailor."
+  },
+  {
+   "key": "D",
+   "text": "It shows one voyage vividly but cannot alone prove how typical that voyage was"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "general": "1. Name the source's strength. Equiano was there — a firsthand account of one crossing.\n2. Name the limit. One voyage, however vivid, is a sample of one.\n3. Ask what the question needs. 'The Middle Passage as a whole' means the pattern across thousands of voyages.\n4. Weigh the other options. The trade had not ended in 1789, the crossing is the subject, and Equiano did cross.\nRemember: a single vivid story proves what happened once — proving a pattern takes more than one story.",
+  "A": "The slave trade had not ended in 1789 — Britain ended its trade in 1807. The date is not the limit.",
+  "B": "The crossing is the subject of the question. Describing only the crossing is not a limit here.",
+  "C": "Equiano was a captive on the crossing, not a sailor who stayed home. He was there.",
+  "D": "One vivid voyage cannot by itself prove what was typical across thousands of voyages."
+ }
+}

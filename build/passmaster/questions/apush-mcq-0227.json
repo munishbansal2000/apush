@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-0227",
+ "lesson": "apush-u2-l3",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 2,
+ "topics": [
+  "2.4"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "mun-balance-trade",
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Thomas Mun, England's Treasure by Forraign Trade (1664), ch. 2. Quotation verbatim; figures from Mun's own example in the same chapter.",
+  "text": "The ordinary means therefore to increase our wealth and treasure is by Forraign Trade, wherein wee must ever observe this rule; to sell more to strangers yearly than wee consume of theirs in value.\n\n| England's yearly trade | Pounds |\n| Exports | £2,200,000 |\n| Imports | £2,000,000 |\n| Net gain in treasure | £200,000 |"
+ },
+ "source": "original; stimulus is Thomas Mun, England's Treasure by Forraign Trade (1664), verbatim, public domain; rewritten from survivor original-u1-trade-07",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Mercantilism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Part of an Empire"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650-1750)"
+   }
+  ],
+  "primary_sources": [
+   "Thomas Mun, England's Treasure by Forraign Trade (1664)"
+  ]
+ },
+ "status": "final",
+ "stem": "Thomas Mun, an English merchant, wrote the passage below in 1664. According to Mun, what must a kingdom do to increase its wealth and treasure?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Conquer colonies and seize their gold by force of arms",
+   "misconception": "Confuses mercantilist trade policy with conquest; Mun's argument is about selling, not seizing."
+  },
+  {
+   "key": "B",
+   "text": "Sell more to foreigners each year than it buys from them"
+  },
+  {
+   "key": "C",
+   "text": "Refuse to trade with any foreign nation at all",
+   "misconception": "Reads 'favorable balance' as no trade at all; Mun wants more exports, not closed borders."
+  },
+  {
+   "key": "D",
+   "text": "Enrich itself through gifts and payments from other nations",
+   "misconception": "Substitutes tribute or gifts for trade; Mun's rule is about the balance of exports and imports."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "general": "1. Start with the writer. Mun is an English merchant writing a handbook for traders in 1664.\n2. Find his rule. The passage names one 'ordinary means' of increasing wealth: foreign trade.\n3. Read the rule closely. Sell more to strangers each year than the kingdom consumes of theirs in value — exports must beat imports.\n4. Match that rule to an option. Only selling more than you buy fits the rule he states.\nRemember: when a source states a rule, test each option against the rule's exact words.",
+  "A": "Mun's rule is about trade, not war. Conquest is not how his rule increases treasure — selling is.",
+  "B": "Mun's rule is exact: sell more to strangers yearly than the kingdom consumes of theirs in value. Exports must beat imports.",
+  "C": "Refusing to trade would stop the very trade Mun says increases wealth. His rule needs trade, not isolation.",
+  "D": "Gifts and payments are not Mun's rule. He names foreign trade — selling more than buying — as the ordinary means."
+ }
+}

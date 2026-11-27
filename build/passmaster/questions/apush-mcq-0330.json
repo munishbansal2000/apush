@@ -1,0 +1,91 @@
+{
+ "id": "apush-mcq-0330",
+ "lesson": "apush-u2-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.7"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "zenger-trial-image",
+ "stimulus": {
+  "kind": "image",
+  "text": "The trial of John Peter Zenger, as pictured in an image published between 1877 and 1896. A crowded courtroom: three wigged judges sit on a raised bench, a lawyer stands addressing them, and a jury box and royal arms are visible on the wall.",
+  "source_note": "Image published 1877\u20131896, picturing the Zenger trial of 1735; public domain (pre-1930). The image is a 19th-century imagining, not a 1735 record."
+ },
+ "source": "original; stimulus is a real historical image from the shared pool",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.7 Colonial Society and Culture"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "E. The Development of Self-Government in Britain's New World Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Colonial Governments"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Part of an Empire"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "The image was published between 1877 and 1896, more than a century after the trial. What does that fact most limit?",
+ "options": [
+  {
+   "key": "A",
+   "text": "That it cannot be used as evidence of what the 1735 courtroom actually looked like."
+  },
+  {
+   "key": "B",
+   "text": "That it proves the jury found Zenger guilty of seditious libel in the year 1735.",
+   "misconception": "The image proves nothing about the verdict; Zenger was in fact acquitted by the jury."
+  },
+  {
+   "key": "C",
+   "text": "That it proves the trial took place in Philadelphia, Pennsylvania, in the year 1735.",
+   "misconception": "The trial took place in New York, not Philadelphia, and the image names no city."
+  },
+  {
+   "key": "D",
+   "text": "That it proves the judges agreed with Zenger's lawyer, Andrew Hamilton, during the trial.",
+   "misconception": "The image shows a lawyer addressing the judges; it shows no agreement between them."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "general": "1. Check the date. The image is from 1877\u20131896; the trial was in 1735.\n2. Ask what a picture made a century later can show. How later Americans imagined the trial \u2014 not the trial itself.\n3. Test each claim. Guilt, city, and agreement are all things the image cannot prove at all.\n4. Find the real limit. It cannot show what the 1735 courtroom actually looked like.\nRemember: a later imagining is evidence of memory, not of the moment \u2014 always check the date before you trust the picture.",
+  "A": "The image was published between 1877 and 1896, more than a century after Zenger's 1735 trial, by artists who never saw the courtroom. It shows how 19th-century Americans pictured the famous trial \u2014 wigged judges, a standing lawyer, royal arms on the wall \u2014 not what the New York courtroom actually looked like. Background: the trial's facts come from written records, including Hamilton's defense. The other options claim things the image cannot prove at all.",
+  "B": "The image proves nothing about the verdict; Zenger was in fact acquitted by the jury.",
+  "C": "The trial took place in New York, not Philadelphia, and the image names no city.",
+  "D": "The image shows a lawyer addressing the judges; it shows no agreement between them."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0330",
+   "file": "u2/5s24-exam2-mcq-13.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/John_Peter_Zenger_trial.jpg",
+   "license": "Public domain",
+   "caption": "The trial of John Peter Zenger, image published 1877\u20131896",
+   "alt": "A crowded 19th-century image of the Zenger trial: wigged judges on a raised bench, a standing lawyer, a jury box, and royal arms on the wall"
+  }
+ ]
+}

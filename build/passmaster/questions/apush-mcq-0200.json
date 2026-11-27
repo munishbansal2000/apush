@@ -1,0 +1,77 @@
+{
+ "answerKey": "D",
+ "difficulty": 2,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "A. The Chesapeake and the Upper South"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Jamestown and the Chesapeake Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Jamestown"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0200",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The passage says the opposite \u2014 New England was colder, so climate cannot be the difference.",
+   "text": "Jamestown's settlers came from a colder climate than the Puritans of New England did."
+  },
+  {
+   "key": "B",
+   "misconception": "Families were the Bay Colony's settlers \u2014 Jamestown's were mostly single men.",
+   "text": "Jamestown's settlers were mostly families with children who came to build towns and stay."
+  },
+  {
+   "key": "C",
+   "misconception": "A godly community was the Puritans' goal \u2014 Jamestown's settlers wanted quick riches.",
+   "text": "Jamestown's settlers wanted to build godly towns where the Puritan faith would rule."
+  },
+  {
+   "key": "D",
+   "text": "Jamestown's settlers came as single men chasing riches; the Bay's came as families to stay."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The passage says the opposite \u2014 New England was colder, so climate cannot be the difference.",
+  "B": "Families were the Bay Colony's settlers \u2014 Jamestown's were mostly single men.",
+  "C": "A godly community was the Puritans' goal \u2014 Jamestown's settlers wanted quick riches.",
+  "D": "The passage draws the line exactly there \u2014 single men hoping for gold on one side, families meaning to build towns on the other.",
+  "general": "1. Find the contrast. The passage sets the two colonies side by side on purpose.\n2. Name each side. Single men hunting gold; families building towns.\n3. Check the climate line. New England was colder, so the weather cannot explain why Jamestown struggled.\nRemember: when a passage contrasts two groups, the answer is the contrast \u2014 not a detail from one side."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "1.A"
+ ],
+ "source": "original; passage drawn from the comparison in Barron's Premium 2027, Chapter 4",
+ "status": "final",
+ "stem": "According to the passage, what most separated Jamestown's settlers from those of Massachusetts Bay?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, drawn from the comparison in Barron's Premium 2027, Chapter 4.",
+  "text": "Jamestown and Massachusetts Bay began only thirteen years apart, but they grew into different colonies. Jamestown's first settlers were mostly single men hoping to find gold; they planted few crops, and most died in the first winters. Massachusetts Bay's settlers came as families \u2014 farmers and craftsmen who meant to build towns and stay. The Virginians wanted quick riches; the Puritans wanted a godly community. The difference was not the climate \u2014 New England was colder \u2014 but what the settlers came to do and how they organized themselves."
+ },
+ "stimulus_set": "jamestown-massachusetts-bay",
+ "themes": [
+  "MIG",
+  "GEO"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

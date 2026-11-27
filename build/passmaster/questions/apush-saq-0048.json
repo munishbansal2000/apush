@@ -1,0 +1,101 @@
+{
+ "id": "apush-saq-0048",
+ "lesson": "apush-u2-l3",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.4"
+ ],
+ "skills": [
+  "3.A",
+  "2.C"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "saq_slot": 3,
+ "stimulus_set": "bowen-chart-saq",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Emanuel Bowen, chart of the Atlantic Ocean, published in London on 5 September 1740, public domain (CC0).",
+  "text": "Emanuel Bowen's chart of the Atlantic Ocean, published in London on 5 September 1740. It maps the Atlantic between the Americas on the left and Europe and Africa on the right, with rhumb lines radiating from compass roses across the whole ocean. The words 'the Trade Winds' appear twice across the middle of the ocean. Its full title reads: 'A new chart of the vast Atlantic Ocean; exhibiting the seat of war, both in Europe and America, likewise the trade winds and course of sailing from one continent to the other.'"
+ },
+ "source": "original; stimulus image from the shared pool, Emanuel Bowen, chart of the Atlantic Ocean (1740), public domain (CC0)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "A. The Atlantic Economy and the Evolution of Colonial Economies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "British Empire in America: Growth and Conflict (1650-1750)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650-1750)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "parts": [
+  {
+   "part": "a",
+   "prompt": "Identify one feature of Atlantic commerce the chart shows.",
+   "modelAnswer": "The chart labels the trade winds twice across the Atlantic and maps the course of sailing from one continent to the other. It shows the wind patterns that sailing ships depended on to cross the ocean.",
+   "points": 1,
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one feature, such as the trade winds, the sailing courses, or the ocean between the continents.",
+     "notEarned": "Naming a feature the chart does not show, or describing the chart with no feature, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "prompt": "Explain how the trade winds shaped the sailing routes the chart maps.",
+   "modelAnswer": "Sailing ships could only move with the wind, so captains followed the trade winds on fixed routes across the Atlantic. The chart maps those wind-driven routes so merchants and captains could plan their crossings.",
+   "points": 1,
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining the link between the winds and the routes, such as ships following the winds or the chart mapping wind-driven courses.",
+     "notEarned": "Stating only that the winds blew, with no link to the sailing routes, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "prompt": "Explain one limit of the chart as evidence about how much trade crossed the Atlantic.",
+   "modelAnswer": "The chart shows routes and winds, not cargoes or volumes, so it cannot say how much trade crossed the ocean. It is a navigator's tool, and it tells us where ships sailed, not how many sailed or what they carried.",
+   "points": 1,
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one limit, such as the chart showing routes but not volumes, or being a navigational tool rather than a trade record.",
+     "notEarned": "Stating only that the chart is old, with no limit on what it can show, does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3,
+ "figures": [
+  {
+   "id": "fig-apush-saq-0048",
+   "file": "u2/original-u1-trade-02.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/Special:FilePath/A%20new%20chart%20of%20the%20vast%20Atlantic%20Ocean%20-%20exhibiting%20the%20seat%20of%20war%2C%20both%20in%20Europe%20and%20America%2C%20likewise%20the%20trade%20winds%20%26%20course%20of%20sailing%20from%20one%20continent%20to%20the%20other%2C%20with%20the%20banks%2C%20shoals%20NYPL434669.tiff?width=1200",
+   "license": "Public domain (CC0)",
+   "caption": "Emanuel Bowen, chart of the Atlantic Ocean, 1740",
+   "alt": "Bowen's 1740 chart of the Atlantic Ocean, showing the trade winds and sailing courses between Europe, Africa, and the Americas, with compass roses and rhumb lines across the ocean"
+  }
+ ]
+}

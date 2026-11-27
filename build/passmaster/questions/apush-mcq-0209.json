@@ -1,0 +1,77 @@
+{
+ "answerKey": "A",
+ "difficulty": 2,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "B. The New England Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Massachusetts and the New England Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Massachusetts Bay"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0209",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "text": "They left Massachusetts and founded colonies that were more tolerant."
+  },
+  {
+   "key": "B",
+   "misconception": "Nobody in the passage returns to England \u2014 they founded new colonies in America.",
+   "text": "They all returned to England after leaving, sailing back across the Atlantic."
+  },
+  {
+   "key": "C",
+   "misconception": "Hooker and Williams were ministers, Hutchinson was not \u2014 and all three broke with the Puritan church.",
+   "text": "They all became Puritan ministers themselves, preaching in the colony's churches."
+  },
+  {
+   "key": "D",
+   "misconception": "Williams went to Providence, Hutchinson to Rhode Island, Hooker to Hartford \u2014 three different colonies.",
+   "text": "They all settled in the same colony, building their towns side by side."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Williams founded Providence, Hutchinson's followers went to Rhode Island, Hooker founded Hartford \u2014 and the passage says each new colony was a little freer than the one it left.",
+  "B": "Nobody in the passage returns to England \u2014 they founded new colonies in America.",
+  "C": "Hooker and Williams were ministers, Hutchinson was not \u2014 and all three broke with the Puritan church.",
+  "D": "Williams went to Providence, Hutchinson to Rhode Island, Hooker to Hartford \u2014 three different colonies.",
+  "general": "1. Follow each person. Williams leaves, Hutchinson leaves, Hooker leaves.\n2. Ask where they go. Providence, Rhode Island, Hartford \u2014 new colonies, not back to England.\n3. Ask what the new colonies share. Each one is a little freer than the Massachusetts it left.\nRemember: when three stories end the same way, the shared ending is the point \u2014 dissent made new colonies."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.B"
+ ],
+ "source": "original; rewritten from survivor 5s24-ch07-mcq-02 against the books",
+ "status": "final",
+ "stem": "According to the passage, what did the people who broke with Puritan Massachusetts have in common?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, drawn from Barron's Premium 2027, Chapter 4 and the Unit 2 lesson script for Period 2.",
+  "text": "New England's Puritans prized a single faith and a single church, and they expelled those who broke it. Roger Williams left in 1636 and founded Providence, welcoming believers of every faith. Anne Hutchinson, tried in 1637 and banished in 1638, carried her followers to Rhode Island. Thomas Hooker led his congregation out in 1636 and founded Hartford, whose Fundamental Orders of 1639 set out a government chosen by the people. Each break made a new colony \u2014 and each new colony was a little freer than the one it left."
+ },
+ "stimulus_set": "dissenters-passage",
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

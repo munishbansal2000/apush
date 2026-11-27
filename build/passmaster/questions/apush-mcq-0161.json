@@ -1,0 +1,79 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "C. English Colonial Patterns"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Massachusetts and the New England Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The Pilgrims and the Massachusetts Bay Company"
+   }
+  ],
+  "primary_sources": [
+   "John Winthrop, A Model of Christian Charity (1630)"
+  ]
+ },
+ "id": "apush-mcq-0161",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Turns a warning about being watched into a promise of conquest.",
+   "text": "It promises that New England will conquer its neighbors."
+  },
+  {
+   "key": "B",
+   "text": "It warns the world will be watching, so the settlers must live up to the godly community they claim."
+  },
+  {
+   "key": "C",
+   "misconception": "Reads a hilltop city as a mountain fortress.",
+   "text": "It describes a fort built on a hill to defend the colony against attack."
+  },
+  {
+   "key": "D",
+   "misconception": "Treats a religious warning as a trade offer.",
+   "text": "It offers the colony's goods to any nation that will trade with Massachusetts Bay in the years ahead."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Winthrop speaks of being a story and a by-word if the settlers deal falsely with God, not of conquering neighbors.",
+  "B": "The eyes of all people are upon them, so their colony will be judged by the world, and failing their calling would make them a by-word.",
+  "C": "The city upon a hill is a community held up as an example, not a fort; no walls or weapons appear in the passage.",
+  "D": "The passage offers no goods or trade; it offers a warning about the colony's conduct before God.",
+  "general": "1. Read the image Winthrop uses. A city upon a hill can be seen by everyone, and the eyes of all people are upon it.\n2. Ask what being seen means here. A colony on display cannot hide its failures; the whole world will judge it.\n3. Ask what the judgment turns on. Background: the Puritans believed they had made a covenant with God to build a godly community.\n4. Name the warning. If the settlers deal falsely with God, they will be made a story and a by-word through the world.\nRemember: a metaphor's meaning lives in what it makes visible, so ask who is looking and what they will see."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.A"
+ ],
+ "source": "original; stimulus text from John Winthrop, A Model of Christian Charity (1630), public domain",
+ "status": "final",
+ "stem": "What did Winthrop mean when he said the settlers 'shall be as a city upon a hill'?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Verbatim excerpt from John Winthrop, A Model of Christian Charity (1630), public domain.",
+  "text": "\"For we must consider that we shall be as a city upon a hill. The eyes of all people are upon us. So that if we shall deal falsely with our God in this work we have undertaken, and so cause Him to withdraw His present help from us, we shall be made a story and a by-word through the world.\""
+ },
+ "stimulus_set": "winthrop-city-hill-1630",
+ "themes": [
+  "ARC",
+  "MIG"
+ ],
+ "topics": [
+  "2.1"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

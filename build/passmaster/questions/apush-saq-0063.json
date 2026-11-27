@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0063",
+ "lesson": "apush-u2-l5",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.7"
+ ],
+ "skills": [
+  "1.B",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "text",
+  "text": "\"The care of souls cannot belong to the civil magistrate, because his power consists only in outward force; but true and saving religion consists in the inward persuasion of the mind, without which nothing can be acceptable to God.\" \u2014 John Locke, A Letter Concerning Toleration, 1689.",
+  "source_note": "John Locke, A Letter Concerning Toleration, 1689 (Popple translation); public domain."
+ },
+ "source": "original; stimulus is a verbatim public-domain primary source",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.7 Colonial Society and Culture"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Massachusetts Bay"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Massachusetts and the New England Colonies"
+   }
+  ],
+  "primary_sources": [
+   "Locke, A Letter Concerning Toleration (1689)"
+  ]
+ },
+ "status": "final",
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify Locke's claim about the civil magistrate's power.",
+   "modelAnswer": "Locke claims the magistrate's power consists only in outward force \u2014 fines, prisons, and punishments. It cannot reach the inward persuasion of the mind, so the care of souls cannot belong to the magistrate.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying Locke's claim: the magistrate's power is only outward force and cannot care for souls.",
+     "notEarned": "Stating only that Locke wrote about toleration, with no claim identified, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain why Locke argues the magistrate cannot care for souls.",
+   "modelAnswer": "True religion consists in the inward persuasion of the mind, which no outward force can produce. A magistrate can compel outward conformity, but he cannot compel belief, so his power is the wrong tool for souls.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining that inward persuasion cannot be compelled by outward force.",
+     "notEarned": "Stating only that religion is personal, with no explanation of why force fails, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way Locke's ideas influenced colonial thinking about religious freedom.",
+   "modelAnswer": "Locke's argument shaped later 18th-century advocates of toleration, who used it to defend dissenters against established churches. That claim \u2014 that government cannot compel belief \u2014 became a foundation for religious freedom in America.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining an influence, such as later 18th-century advocates of toleration defending dissenters, or the later idea of religious freedom.",
+     "notEarned": "Stating only that Locke influenced America, with no example or mechanism, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

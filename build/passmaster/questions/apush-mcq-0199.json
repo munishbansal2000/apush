@@ -1,0 +1,77 @@
+{
+ "answerKey": "A",
+ "difficulty": 4,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "A. The Chesapeake and the Upper South"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Jamestown and the Chesapeake Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Jamestown"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0199",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "text": "Tobacco's growth depended on imported labor and new land, not only on what planters wanted."
+  },
+  {
+   "key": "B",
+   "misconception": "The table starts with a first shipment, not a first crop \u2014 and 'first' would support the historian, not challenge him.",
+   "text": "Tobacco was the first crop the Chesapeake ever grew, before any other crop was tried."
+  },
+  {
+   "key": "C",
+   "misconception": "Three data points cannot show that exports rose every single year without fail.",
+   "text": "Tobacco exports grew steadily through the whole century, rising every single year without fail."
+  },
+  {
+   "key": "D",
+   "misconception": "The table says the opposite \u2014 tobacco was nearly a third of all British North American exports.",
+   "text": "Tobacco was worthless in England by 1750, and no one there would buy it."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "Wanting riches does not explain the system that produced them \u2014 the table's scale only makes sense with the labor and land hunger behind it.",
+  "B": "The table starts with a first shipment, not a first crop \u2014 and 'first' would support the historian, not challenge him.",
+  "C": "The table gives only three data points, so it cannot show that exports rose every single year without fail.",
+  "D": "The table says the opposite \u2014 tobacco was nearly a third of all British North American exports.",
+  "general": "1. Name the claim. One motive \u2014 quick riches \u2014 explains the whole Chesapeake.\n2. Ask what the table needs besides a motive. Thirty-five million pounds a year needs fields, and fields need hands.\n3. Bring in the background. Those hands came as indentured servants and enslaved workers, and the fields kept moving to fresh soil.\nRemember: a motive is not a system \u2014 ask what had to exist for the motive to pay off."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "6.D"
+ ],
+ "source": "original; data table drawn from Barron's Premium 2027, Chapter 4",
+ "status": "final",
+ "stem": "A historian claims that the desire for quick riches alone explains why the Chesapeake developed as it did. Which evidence best challenges that claim?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data from Barron's Premium 2027, Chapter 4.",
+  "text": "| Year | Tobacco in the Chesapeake |\n|---|---|\n| 1617 | First shipments sent to England |\n| 1700 | More than 35 million pounds exported in a year |\n| 1750 | Nearly three-fourths of the Chesapeake's exports, and nearly one-third of all exports from British North America |"
+ },
+ "stimulus_set": "tobacco-exports",
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

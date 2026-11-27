@@ -1,0 +1,77 @@
+{
+ "answerKey": "D",
+ "difficulty": 2,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "A. The Chesapeake and the Upper South"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Maryland: A Haven for Catholics"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Maryland"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0213",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The law protected both Catholics and Protestants who believed in the Trinity \u2014 it did not ban Protestant worship.",
+   "text": "It banned all religion except Catholicism."
+  },
+  {
+   "key": "B",
+   "misconception": "Protestants already outnumbered Catholics by 1649 \u2014 the law protected both groups.",
+   "text": "It made Maryland a colony of Catholics only."
+  },
+  {
+   "key": "C",
+   "misconception": "The law was about toleration, not about who controlled the church.",
+   "text": "It gave the colony's assembly control over the church."
+  },
+  {
+   "key": "D",
+   "text": "It protected Catholics and Trinitarian Protestants from religious persecution."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The law protected both Catholics and Protestants who believed in the Trinity \u2014 it did not ban Protestant worship.",
+  "B": "Protestants already outnumbered Catholics by 1649 \u2014 the law protected both groups.",
+  "C": "The law was about toleration, not about who controlled the church.",
+  "D": "The passage says the assembly's law protected Catholics and Protestants who believed in the Trinity.",
+  "general": "1. Find the law. 1649, passed by the colony's assembly.\n2. Ask who it protects. Catholics and Protestants who believed in the Trinity.\n3. Name it. A toleration law \u2014 not a Catholic law, not a Protestant law, but a shield for both.\nRemember: a toleration law protects more than one faith \u2014 check who is named, and you have the answer."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.A"
+ ],
+ "source": "original; passage drawn from Barron's Premium 2027, Chapter 4",
+ "status": "final",
+ "stem": "According to the passage, what did Maryland's 1649 law do?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, drawn from Barron's Premium 2027, Chapter 4.",
+  "text": "Maryland was founded in 1632 as a refuge for English Catholics, but the refuge did not stay Catholic for long. Protestants arrived in greater numbers and soon outnumbered the Catholics who had founded the colony. In 1649 the colony's assembly passed a law of religious toleration, protecting Catholics and Protestants who believed in the Trinity. Yet even that law did not settle the question \u2014 Protestants later seized control, and the toleration law was repealed."
+ },
+ "stimulus_set": "maryland-passage",
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

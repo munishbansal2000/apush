@@ -1,0 +1,91 @@
+{
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "C. The Lower South and the West Indies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "The Southern Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Other Early Colonies"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-saq-0045",
+ "lesson": "apush-u2-l2",
+ "parts": [
+  {
+   "modelAnswer": "Georgia was founded as a colony for the 'deserving poor' \u2014 debtors and others who had fallen on hard times. It was also meant as a military buffer between South Carolina and Spanish Florida.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one purpose for which Georgia was founded.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one accurate purpose, such as a home for the deserving poor or a buffer against Spanish Florida.",
+     "notEarned": "Naming a purpose Georgia did not serve, or a purpose with no link to the passage, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Georgia had no assembly at first, while other colonies had elected assemblies. Its settlers were also expected to serve as soldiers, a military duty other colonies did not impose.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Describe one way Georgia differed from other English colonies at its founding.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for describing one accurate difference, such as having no assembly or requiring military service.",
+     "notEarned": "Stating only that Georgia was different, with no difference named, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Georgia struggled under the trustees' rules, and its military buffer role needed the Crown's support. The trustees ceded Georgia to the Crown in 1752, and it became a royal colony.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one reason Georgia became a royal colony in 1752.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one accurate reason, such as the trustees' struggles or the need for Crown support.",
+     "notEarned": "Naming the year with no reason, or a reason that does not explain the change, does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "causation",
+ "saq_slot": 1,
+ "skills": [
+  "1.B",
+  "4.B"
+ ],
+ "source": "original; passage drawn from Barron's Premium 2027, Chapter 4",
+ "status": "final",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, drawn from Barron's Premium 2027, Chapter 4.",
+  "text": "Georgia was founded in 1732 as a colony for the 'deserving poor' \u2014 debtors and others who had fallen on hard times in England. Its founder, James Oglethorpe, meant it as a buffer between South Carolina and Spanish Florida, and its settlers were expected to serve as soldiers. Georgia had no assembly at first, and in 1752 it was ceded to the Crown."
+ },
+ "stimulus_set": "saq-georgia-colony",
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 2
+}

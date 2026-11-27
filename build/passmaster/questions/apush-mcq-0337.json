@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-0337",
+ "lesson": "apush-u2-l5",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 2,
+ "topics": [
+  "2.7"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "halfway-williams",
+ "stimulus": {
+  "kind": "text",
+  "text": "In 1662, Massachusetts ministers agreed that the baptized children of baptized parents could themselves be baptized, even though their parents had never experienced conversion. Those baptized under the new rule could not vote in church affairs or take communion.",
+  "source_note": "Background from the books: the Halfway Covenant of 1662, as described in Barron's Chapter 4 and Princeton Review Chapter 6."
+ },
+ "source": "original; stimulus is a summary of the books' accounts",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.7 Colonial Society and Culture"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "B. The New England Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Massachusetts Bay"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Massachusetts and the New England Colonies"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "Which problem was this agreement meant to answer?",
+ "options": [
+  {
+   "key": "A",
+   "text": "That the second generation was drifting from the church, as fewer members experienced conversion."
+  },
+  {
+   "key": "B",
+   "text": "That too many colonists were leaving the church to join the Church of England.",
+   "misconception": "Colonists were not joining the Church of England in numbers; the problem was the young drifting from the Puritan church."
+  },
+  {
+   "key": "C",
+   "text": "That the colony had run out of ministers to perform baptisms for children.",
+   "misconception": "The colony had not run out of ministers; the problem was that fewer members qualified for full membership."
+  },
+  {
+   "key": "D",
+   "text": "That Native peoples were demanding full church membership for themselves and for their children.",
+   "misconception": "Native peoples were not demanding church membership; the agreement concerned the children of baptized Puritans."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "general": "1. Read the rule. Baptism for the children of baptized parents, even without a conversion experience.\n2. Ask why a church would bend its own rule. Because its young were slipping away unbaptized.\n3. See the limit. Baptism yes, but no vote and no communion — a halfway step, not full membership.\n4. Name the problem. A second generation drifting from the church as conversions fell.\nRemember: the Halfway Covenant was a compromise with decline — the church loosening its gate to keep its children.",
+  "A": "The agreement answers a membership crisis: the founders' children and grandchildren were coming of age without experiencing conversion, so under the old rule their children could not be baptized at all and the church was losing its young. The Halfway Covenant bent the rule — baptism for the children of baptized parents, though without vote or communion — to hold the second generation. Background: it was a compromise, and it foreshadowed the formalism the Great Awakening later attacked.",
+  "B": "Colonists were not joining the Church of England in numbers; the problem was the young drifting from the Puritan church.",
+  "C": "The colony had not run out of ministers; the problem was that fewer members qualified for full membership.",
+  "D": "Native peoples were not demanding church membership; the agreement concerned the children of baptized Puritans."
+ }
+}

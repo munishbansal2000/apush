@@ -1,0 +1,83 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.2 European Colonization"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "E. Colonial Self-Government"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Colonial America (1607\u20131650)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650\u20131750)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0191",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The Acts stayed on the books \u2014 the passage says so; they were not repealed, in London or anywhere else.",
+   "text": "Parliament did repeal the Acts, but the colonies ignored the repeal."
+  },
+  {
+   "key": "B",
+   "text": "The Acts stayed on the books; enforcement changed, not the law."
+  },
+  {
+   "key": "C",
+   "misconception": "Colonial assemblies could not repeal Parliament's laws \u2014 the passage shows them voting taxes, not repealing Acts.",
+   "text": "The colonies repealed the Acts themselves in their assemblies."
+  },
+  {
+   "key": "D",
+   "misconception": "The Navigation Acts were real laws from 1651 onward \u2014 the passage treats them as standing law that went unenforced.",
+   "text": "The Acts were never passed in the first place."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The passage says the Acts stayed on the books \u2014 they were not repealed, in London or anywhere else.",
+  "B": "The passage draws the line exactly: the law remained, the customs officers stayed home \u2014 neglect was about enforcement.",
+  "C": "Colonial assemblies could not repeal Parliament's laws; the passage shows them voting taxes, not repealing Acts.",
+  "D": "The Navigation Acts were real laws from 1651 onward; the passage treats them as standing law that went unenforced.",
+  "general": "1. Read the passage's first claim. The Navigation Acts stayed on the books.\n2. Read its second claim. Few customs officers enforced them.\n3. Ask what changed. Background: a law on the books with no one to enforce it is a dead letter, and Walpole's government was content to let it sleep.\n4. Name the correction. Salutary neglect was neglect, not repeal \u2014 the law slept, it did not die.\nRemember: when a question mixes law and enforcement, keep them in separate piles \u2014 the exam tests exactly that split."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "3.A",
+  "4.A"
+ ],
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "status": "final",
+ "stem": "A textbook says Parliament repealed the Navigation Acts in the 1720s. What is the best correction, using the passage?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question, summarizing salutary neglect under Robert Walpole.",
+  "text": "From the 1720s, Robert Walpole's government in London left the colonies largely alone. The Navigation Acts stayed on the books, but few customs officers enforced them. Colonial assemblies grew used to voting their own taxes and the governor's salary, and merchants traded where the profit was."
+ },
+ "stimulus_set": "salutary-neglect",
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "topics": [
+  "2.2"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

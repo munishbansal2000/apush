@@ -1,0 +1,79 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "D. The Middle Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "The Middle Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Other Early Colonies"
+   }
+  ],
+  "primary_sources": [
+   "Benjamin Franklin, Observations Concerning the Increase of Mankind (1751)"
+  ]
+ },
+ "id": "apush-mcq-0215",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Franklin is afraid precisely because it is not \u2014 Germans were arriving in great numbers.",
+   "text": "Pennsylvania was still settled only by the English, with no Germans at all."
+  },
+  {
+   "key": "B",
+   "text": "Pennsylvania's German population had grown large enough to worry its English founders."
+  },
+  {
+   "key": "C",
+   "misconception": "A ban would end Franklin's worry \u2014 he is writing because Germans kept coming.",
+   "text": "Pennsylvania had banned all German immigration, closing its borders to newcomers."
+  },
+  {
+   "key": "D",
+   "misconception": "Franklin says the opposite \u2014 Germans 'will never adopt our language or customs.'",
+   "text": "Pennsylvania's Germans had all become English, speaking English and living English lives."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Franklin is afraid precisely because it is not \u2014 Germans were arriving in great numbers.",
+  "B": "Franklin writes 'Germanize us' because Germans were becoming so numerous \u2014 his fear is the measure of their numbers.",
+  "C": "A ban would end Franklin's worry \u2014 he is writing because Germans kept coming.",
+  "D": "Franklin says the opposite \u2014 Germans 'will never adopt our language or customs.'",
+  "general": "1. Hear the fear. Pennsylvania, founded by the English, becoming a colony of aliens.\n2. Ask what makes the fear real. Germans arriving in such numbers that they might outnumber the English.\n3. Name what it reveals. Background: by 1751 Pennsylvania was already the most diverse colony in America.\nRemember: a writer's fear is evidence about the world he fears \u2014 ask what has to be true for the fear to make sense."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "6.C"
+ ],
+ "source": "original; stimulus is Benjamin Franklin, Observations Concerning the Increase of Mankind (1751), verbatim, public domain",
+ "status": "final",
+ "stem": "What does Franklin's fear in the excerpt reveal about Pennsylvania by 1751?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Benjamin Franklin, Observations Concerning the Increase of Mankind (1751), verbatim, public domain.",
+  "text": "Why should Pennsylvania, founded by the English, become a colony of aliens, who will shortly be so numerous as to Germanize us instead of our Anglifying them, and will never adopt our language or customs, any more than they can acquire our complexion?"
+ },
+ "stimulus_set": "franklin-germans",
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

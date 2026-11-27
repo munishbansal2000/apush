@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0046",
+ "lesson": "apush-u2-l3",
+ "type": "saq",
+ "pool": "test",
+ "unit": 2,
+ "topics": [
+  "2.4"
+ ],
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "SOC",
+  "MIG"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "saq_slot": 2,
+ "stimulus_set": "equiano-saq",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Olaudah Equiano, The Interesting Narrative of the Life of Olaudah Equiano (1789). Verbatim from Project Gutenberg EBook #15399. A different excerpt from the one used in MCQ 0243.",
+  "text": "The first object which saluted my eyes when I arrived on the coast, was the sea, and a slave ship, which was then riding at anchor, and waiting for its cargo. I was immediately handled, and tossed up to see if I were sound, by some of the crew; and I was now persuaded that I had gotten into a world of bad spirits, and that they were going to kill me."
+ },
+ "source": "original; stimulus is Olaudah Equiano, The Interesting Narrative (1789), verbatim, public domain",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "The African Slave Trade"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "British Empire in America: Growth and Conflict (1650-1750)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650-1750)"
+   }
+  ],
+  "primary_sources": [
+   "Olaudah Equiano, The Interesting Narrative of the Life of Olaudah Equiano (1789)"
+  ]
+ },
+ "status": "final",
+ "parts": [
+  {
+   "part": "a",
+   "prompt": "Identify one thing Equiano saw or experienced when he first reached the coast.",
+   "modelAnswer": "Equiano saw the sea and a slave ship riding at anchor, waiting for its cargo. He was then handled and tossed up by the crew to see if he was sound.",
+   "points": 1,
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one thing Equiano saw or experienced, such as the sea, the slave ship waiting for cargo, or being handled and tossed up by the crew.",
+     "notEarned": "Restating the excerpt with no identification, or naming something Equiano does not describe, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "prompt": "Explain how Equiano's account shows that enslaved people were treated as goods to be inspected and sold.",
+   "modelAnswer": "The crew handled Equiano and tossed him up to see if he was sound, the way a buyer inspects goods before a purchase. The ship waited for its cargo, and Equiano was part of that cargo — a person treated as a thing to be checked and sold.",
+   "points": 1,
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining how the account shows inspection and sale, such as the crew checking whether Equiano was sound or the ship waiting for its cargo.",
+     "notEarned": "Describing only that Equiano was frightened, with no link to inspection or sale, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "prompt": "Explain one way the passage shows that the Atlantic slave trade linked Africa and the Americas.",
+   "modelAnswer": "The ship waited at the African coast for its cargo of enslaved people, and its destination was the Americas, where plantation owners bought them. The trade moved people across the ocean from Africa to the Americas, linking the two continents in one system.",
+   "points": 1,
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one link, such as ships loading captives on the African coast for sale in the Americas, or the trade moving people across the Atlantic.",
+     "notEarned": "Stating only that the slave trade existed, with no link between Africa and the Americas, does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

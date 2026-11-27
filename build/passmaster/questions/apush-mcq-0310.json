@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-0310",
+ "lesson": "apush-u2-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.6"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 2,
+ "stimulus_set": "rolfe-engraving",
+ "stimulus": {
+  "kind": "image",
+  "text": "An engraving published in 1874 imagining John Rolfe at work in Virginia. A single man in 17th-century dress hoes young tobacco plants by hand among rows of small plants.",
+  "source_note": "Engraving published 1874, imagining John Rolfe; public domain (pre-1930). The image is a 19th-century imagining, not a 17th-century record."
+ },
+ "source": "original; stimulus is a real historical image from the shared pool",
+ "grounding": {
+  "books": [
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.6 Slavery in the British Colonies"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "What does the engraving show about tobacco farming in the Chesapeake?",
+ "options": [
+  {
+   "key": "A",
+   "text": "That tobacco was harvested by machine in the 1610s.",
+   "misconception": "The man works by hand with a hoe; no machine appears."
+  },
+  {
+   "key": "B",
+   "text": "That tobacco grew wild with no planting or care.",
+   "misconception": "The man is hoeing planted rows \u2014 the crop needed tending."
+  },
+  {
+   "key": "C",
+   "text": "That only wealthy planters ever touched a tobacco plant.",
+   "misconception": "The image shows one man working the plants himself; it says nothing about who did the work."
+  },
+  {
+   "key": "D",
+   "text": "That tobacco farming was labor-intensive work done by hand."
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "general": "1. Look at what the man is doing. He hoes young tobacco plants by hand.\n2. Look at what he is not using. No machine, no animal, no crew \u2014 just a hoe and his strength.\n3. Ask what that means. Tobacco needed many hands, all season.\n4. Name the point. Tobacco farming was hand labor.\nRemember: a picture of work tells you about labor \u2014 count the hands, not the machines.",
+  "D": "The engraving shows one man hoeing young tobacco plants by hand, row by row, with no machine, animal, or crew in sight. Tobacco had to be tended plant by plant, all season \u2014 work that demanded many hands. Background: that hunger for labor was first filled by indentured servants and then by enslaved Africans. The other options misread the image: there is no machine, the plants are tended rows rather than wild growth, and the image says nothing about who did the work.",
+  "A": "The man works by hand with a hoe; no machine appears.",
+  "B": "The man is hoeing planted rows \u2014 the crop needed tending.",
+  "C": "The image shows one man working the plants himself; it says nothing about who did the work."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0310",
+   "file": "u2/pr25e-ch06-q03.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/John_Rolfe_tobaccoitshistor01bill_0056.jpg",
+   "license": "Public domain",
+   "caption": "John Rolfe hoeing tobacco, engraving published 1874",
+   "alt": "A 19th-century engraving imagining John Rolfe hoeing young tobacco plants by hand in a Virginia field"
+  }
+ ]
+}

@@ -1,0 +1,97 @@
+{
+ "id": "apush-mcq-0331",
+ "lesson": "apush-u2-l5",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 2,
+ "topics": [
+  "2.7"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "penn-map",
+ "stimulus": {
+  "kind": "image",
+  "text": "Thomas Holme's map of Pennsylvania, 1687. The Delaware River runs along the right edge; townships are named across the map, including “THE WELCH TRACT,” “GERMAN TOWNSHIP,” “RADNOR TOWNSHIP,” and “HAVERFORD TOWNSHIP,” with a grid-plan inset of “THE CITY OF PHILADELPHIA” at the upper right.",
+  "source_note": "Thomas Holme, map of Pennsylvania, 1687; public domain."
+ },
+ "source": "original; stimulus is a real historical image from the shared pool",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.7 Colonial Society and Culture"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "D. The Middle Colonies"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Quakerism and the 'Holy Experiment'"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Other Early Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "The Middle Colonies"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "Penn's Charter of Privileges (1701) guaranteed religious toleration and representative government. Pennsylvania became known for which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Strict religious uniformity.",
+   "misconception": "Pennsylvania did not enforce religious uniformity; the Charter guaranteed toleration, the opposite of uniformity."
+  },
+  {
+   "key": "B",
+   "text": "Witch trials and popular superstition.",
+   "misconception": "Witch trials belong to Massachusetts, Salem in 1692; Pennsylvania was known for toleration, not witchcraft panics."
+  },
+  {
+   "key": "C",
+   "text": "Exceptional religious diversity."
+  },
+  {
+   "key": "D",
+   "text": "Hostility toward all religious practice.",
+   "misconception": "Pennsylvania was not hostile to religious practice; the Charter welcomed faith of many kinds."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "general": "1. Read the Charter's promise. Religious toleration and representative government, written down in 1701.\n2. Read the map. Welsh Tract, German Township, Radnor, Haverford — different peoples, side by side.\n3. Put the two together. A promise of toleration plus settlers of many faiths.\n4. Name the reputation. Pennsylvania became the colony where many religions lived together.\nRemember: toleration was Penn's promise, and the map shows it kept.",
+  "C": "The Charter's guarantee of religious toleration drew Quakers, Germans, Scots-Irish, Welsh, and others to Pennsylvania, making it the most religiously diverse colony. Background: Holme's 1687 map already shows the pattern — a Welsh Tract and a German Township laid out beside English settlements — and Penn advertised the colony in German and English as a haven. Uniformity, witch trials, and hostility to religion all describe other colonies, not Pennsylvania.",
+  "A": "Pennsylvania did not enforce religious uniformity; the Charter guaranteed toleration, the opposite of uniformity.",
+  "B": "Witch trials belong to Massachusetts, Salem in 1692; Pennsylvania was known for toleration, not witchcraft panics.",
+  "D": "Pennsylvania was not hostile to religious practice; the Charter welcomed faith of many kinds."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0331",
+   "file": "u2/5s24-exam2-mcq-45.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Holme%27s_Map_of_Pennsylvania_%281687%29.jpg",
+   "license": "Public domain",
+   "caption": "Holme's map of Pennsylvania, 1687",
+   "alt": "Thomas Holme's 1687 map of Pennsylvania showing the Delaware River, named townships, and a grid-plan inset of Philadelphia"
+  }
+ ]
+}

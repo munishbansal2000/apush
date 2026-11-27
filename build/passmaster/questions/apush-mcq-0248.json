@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0248",
+ "lesson": "apush-u2-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.4"
+ ],
+ "skills": [
+  "2.C"
+ ],
+ "themes": [
+  "SOC",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "sugar-plantation",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Paolo Fumagalli, Idealised view of an 18th-century sugar plantation in the West Indies, engraved 1830 after a 1762 engraving in Diderot's Encyclop\u00e9die, public domain. The image's published description notes that the forced labor of enslaved people is deliberately not shown.",
+  "text": "Idealised view of an 18th-century sugar plantation in the Caribbean, engraved by Paolo Fumagalli in 1830 after a 1762 engraving in Diderot's Encyclop\u00e9die. The picture shows the plantation laid out like a diagram: the master's house on a hill at the upper left, rows of slave quarters below it, the sugar works with its mill and boilers at the right, and cane fields stretching behind. In the foreground, one person fishes in a stream. No one in the picture is shown working the cane."
+ },
+ "source": "original; stimulus image from the shared pool, Paolo Fumagalli, Idealised view of a sugar plantation (1830), public domain; rewritten from survivor original-u1-trade-11 \u2014 the survivor's claim that it shows a plantation 'worked by enslaved laborers' is wrong, the engraving deliberately omits forced labor",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Tobacco, Indigo, Rice, Sugar, and Slavery in the South and the West Indies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "British Empire in America: Growth and Conflict (1650-1750)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650-1750)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "What limits the use of this image as evidence about enslaved labor on a sugar plantation?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It was made in 1830, after slavery had ended in the Caribbean",
+   "misconception": "Gets the date wrong; slavery had not ended in the Caribbean in 1830."
+  },
+  {
+   "key": "B",
+   "text": "It is an idealized view that deliberately leaves out forced labor"
+  },
+  {
+   "key": "C",
+   "text": "It shows a plantation in Virginia rather than the Caribbean",
+   "misconception": "Misplaces the plantation; sugar was a Caribbean crop, and the view is Caribbean."
+  },
+  {
+   "key": "D",
+   "text": "It was drawn by an enslaved worker who had never seen a plantation",
+   "misconception": "Misidentifies the artist; Fumagalli engraved it in 1830 after a 1762 engraving."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "general": "1. Read the label. The picture calls itself an 'idealised view' \u2014 a picture of how a plantation should look.\n2. Look for the workers. The cane fields stretch behind the house, but no one is shown working them.\n3. Check the source. The image's published description notes that the forced labor of enslaved people is deliberately not shown.\n4. Draw the limit. A picture that hides the labor cannot prove what the labor was like.\nRemember: an image that beautifies its subject can still teach you about layout \u2014 but not about the work it hides.",
+  "A": "Slavery had not ended in the Caribbean in 1830. The limit is the idealization, not the date.",
+  "B": "The engraving is an idealized view, and it deliberately leaves out the forced labor that ran the plantation.",
+  "C": "The view is Caribbean, not Virginian \u2014 it shows a sugar plantation, and sugar was a Caribbean crop.",
+  "D": "Fumagalli engraved it in 1830 after a 1762 engraving. No enslaved worker drew it."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0248",
+   "file": "u2/original-u1-trade-11.png",
+   "source_url": "https://commons.wikimedia.org/wiki/Special:FilePath/18th%20Sugar%20Plantation%20in%20the%20West%20Indies%2C%20by%20Paolo%20Fumagalli%2C%201830.png?width=1200",
+   "license": "Public domain",
+   "caption": "Idealised view of an 18th-century Caribbean sugar plantation, engraved by Paolo Fumagalli in 1830 after a 1762 engraving",
+   "alt": "An idealized 1830 engraving of a Caribbean sugar plantation showing the master's house, slave quarters, sugar works, and cane fields, with no one shown working the cane"
+  }
+ ]
+}

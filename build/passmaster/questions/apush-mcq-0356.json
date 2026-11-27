@@ -1,0 +1,87 @@
+{
+ "answerKey": "D",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.8 Subject to Debate"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Sugar and Slavery in the West Indies"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "The African Slave Trade"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Geography = Destiny?"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Growth of Slavery"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0356",
+ "lesson": "apush-u2-l5",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The Caribbean never banned the trade; it depended on constant importation.",
+   "text": "The Caribbean banned the slave trade, while the mainland encouraged it."
+  },
+  {
+   "key": "B",
+   "misconception": "Mainland workers were not freed after a few years; slavery was lifelong.",
+   "text": "Enslaved people on the mainland were freed after a few years of work."
+  },
+  {
+   "key": "C",
+   "misconception": "The Caribbean was covered in plantations; sugar was its leading crop.",
+   "text": "The Caribbean had no plantations at all, only small family farms."
+  },
+  {
+   "key": "D",
+   "text": "Caribbean death rates were high, so growth needed imports; mainland families grew."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The Caribbean never banned the trade; it depended on constant importation.",
+  "B": "Mainland workers were not freed after a few years; slavery was lifelong.",
+  "C": "The Caribbean was covered in plantations; sugar was its leading crop.",
+  "D": "The table's second row gives the contrast: the Caribbean population grew 'by constant importation, because death rates were high,' while the mainland population grew 'by natural increase, as families grew.' Background: on the mainland, enslaved families had children who lived, so the population increased on its own; in the Caribbean, high death rates meant the population could only be kept up by bringing in more people. The Caribbean never banned the trade, mainland workers were not freed after a few years, and the Caribbean was covered in plantations.",
+  "general": "1. Find the growth row. It is the second row of the table.\n2. Read the Caribbean cell. Growth by constant importation, because death rates were high.\n3. Read the mainland cell. Growth by natural increase, as families grew.\n4. Name the cause. High death rates forced imports; living families grew on their own.\nRemember: populations grow two ways \u2014 by birth or by arrival \u2014 and the table shows one of each."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "1.B"
+ ],
+ "source": "original; stimulus is an original data table compiled from the grounding books",
+ "status": "final",
+ "stem": "What best explains the different ways the enslaved populations of the Caribbean and the mainland grew?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Table compiled from the grounding books; see grounding.",
+  "text": "| | Caribbean (West Indies) | British North America |\n| Share of the Atlantic slave trade | A large share of the enslaved Africans shipped across the Atlantic | Only about 6% of the total |\n| How the enslaved population grew | By constant importation, because death rates were high | By natural increase, as families grew |\n| Leading crop | Sugar | Tobacco and rice |\n| Value to Britain | The most profitable colonies | Markets for British goods and sources of raw materials |"
+ },
+ "stimulus_set": "west-indies",
+ "themes": [
+  "WXT",
+  "MIG"
+ ],
+ "topics": [
+  "2.8"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

@@ -1,0 +1,77 @@
+{
+ "answerKey": "B",
+ "difficulty": 2,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "A. The Chesapeake and the Upper South"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Jamestown and the Chesapeake Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Jamestown"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0197",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The table shows exports growing, not failing \u2014 the first shipments were the start, not the end.",
+   "text": "Tobacco stopped being grown after the first shipments failed."
+  },
+  {
+   "key": "B",
+   "text": "Tobacco grew from a first shipment into the region's leading export."
+  },
+  {
+   "key": "C",
+   "misconception": "Rice belonged to the lower South, not the Chesapeake \u2014 the table is about tobacco's rise, not its replacement.",
+   "text": "Tobacco was replaced by rice as the Chesapeake's main crop."
+  },
+  {
+   "key": "D",
+   "misconception": "The 1750 row says the opposite \u2014 tobacco was nearly three-fourths of the region's exports.",
+   "text": "Tobacco exports fell to almost nothing by 1750."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The table shows exports growing, not failing \u2014 the first shipments were the start, not the end.",
+  "B": "The table runs one way: a first shipment in 1617, more than 35 million pounds a year by 1700, and nearly three-fourths of the region's exports by 1750.",
+  "C": "Rice belonged to the lower South, not the Chesapeake \u2014 the table is about tobacco's rise, not its replacement.",
+  "D": "The 1750 row says the opposite \u2014 tobacco was nearly three-fourths of the region's exports.",
+  "general": "1. Read the table like a timeline. First shipment, then millions of pounds, then three-fourths of everything the region sold.\n2. Ask what the direction means. Tobacco did not stay a small crop \u2014 it took over the Chesapeake's economy.\n3. Name the pattern. One crop, grown for export, came to define a whole region.\nRemember: when a table runs in one direction, follow it \u2014 the trend is the argument."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.B"
+ ],
+ "source": "original; data table drawn from Barron's Premium 2027, Chapter 4",
+ "status": "final",
+ "stem": "According to the table, what happened to tobacco in the Chesapeake between 1617 and 1750?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data from Barron's Premium 2027, Chapter 4.",
+  "text": "| Year | Tobacco in the Chesapeake |\n|---|---|\n| 1617 | First shipments sent to England |\n| 1700 | More than 35 million pounds exported in a year |\n| 1750 | Nearly three-fourths of the Chesapeake's exports, and nearly one-third of all exports from British North America |"
+ },
+ "stimulus_set": "tobacco-exports",
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-0237",
+ "lesson": "apush-u2-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.4"
+ ],
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "triangular-trade",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, written from Barron's 2027 Chapter 4 and 5 Steps 2024 Chapter 8.",
+  "text": "The triangular trade tied three continents together. European merchants carried manufactured goods — cloth, guns, metalware — to the African coast and traded them for captive Africans. Enslaved people were then carried across the Atlantic on the Middle Passage to plantations in the Americas. Plantation crops — sugar, tobacco, rice — sailed back to Europe, and the profits paid for the next voyage. Few ships actually sailed all three legs; most ran port to port. But the pattern held: each leg fed the next."
+ },
+ "source": "original; rewritten from survivor original-u1-trade-14 against Barron's 2027 Chapter 4",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Tobacco, Indigo, Rice, Sugar, and Slavery in the South and the West Indies"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "The African Slave Trade"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "British Empire in America: Growth and Conflict (1650-1750)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650-1750)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "South Carolina's rice plantations and the Chesapeake's tobacco plantations ran on enslaved labor — by the early 1700s, enslaved people outnumbered free whites in South Carolina. Which statement best connects these plantation economies to the triangular trade?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Plantations manufactured the finished goods Europe shipped to Africa",
+   "misconception": "Reverses the flow of manufactures; Europe made the goods, plantations grew the crops."
+  },
+  {
+   "key": "B",
+   "text": "Rice and tobacco were grown on plantations in Africa and shipped directly to Europe",
+   "misconception": "Puts the crops on the wrong continent; rice and tobacco grew in the Americas."
+  },
+  {
+   "key": "C",
+   "text": "Plantation colonies refused to take part in Atlantic commerce",
+   "misconception": "Reverses the colonies' role; plantation colonies drove Atlantic commerce, they did not refuse it."
+  },
+  {
+   "key": "D",
+   "text": "Planters' demand for workers drove the Africa-to-Americas leg across the Middle Passage"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "general": "1. Start with the demand. Rice and tobacco plantations needed large workforces.\n2. Ask who supplied them. Enslaved Africans, carried across the Atlantic on the Middle Passage.\n3. Place that leg in the triangle. Europe sent goods to Africa, Africa sent people to the Americas, the Americas sent crops to Europe.\n4. Connect the chain. Plantation demand is what pulled captives across the ocean.\nRemember: in a trade system, follow the demand — it explains why each leg exists.",
+  "A": "Plantations grew crops, not manufactures. Europe made the finished goods shipped to Africa.",
+  "B": "Rice and tobacco grew in the Americas, not in Africa. Africa supplied people, not plantation crops.",
+  "C": "Plantation colonies were the heart of Atlantic commerce — their crops and their demand drove it.",
+  "D": "The plantations needed workers, and the Middle Passage carried enslaved Africans to meet that demand."
+ }
+}

@@ -1,0 +1,82 @@
+{
+ "id": "apush-mcq-0309",
+ "lesson": "apush-u2-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.6"
+ ],
+ "skills": [
+  "2.C"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 4,
+ "stimulus_set": "rolfe-engraving",
+ "stimulus": {
+  "kind": "image",
+  "text": "An engraving published in 1874 imagining John Rolfe at work in Virginia. A single man in 17th-century dress hoes young tobacco plants by hand among rows of small plants.",
+  "source_note": "Engraving published 1874, imagining John Rolfe; public domain (pre-1930). The image is a 19th-century imagining, not a 17th-century record."
+ },
+ "source": "original; stimulus is a real historical image from the shared pool",
+ "grounding": {
+  "books": [
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.6 Slavery in the British Colonies"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "What limits the use of this engraving as evidence about tobacco farming in Virginia in the 1610s?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The engraving shows only one man, so it proves tobacco farming used no enslaved labor.",
+   "misconception": "One figure cannot prove who did the work; the image shows a single imagined scene."
+  },
+  {
+   "key": "B",
+   "text": "The engraving is a drawing, so it cannot show anything true about the past.",
+   "misconception": "Drawings can show true things, but this one is a later imagining \u2014 the limit is its date, not its medium."
+  },
+  {
+   "key": "C",
+   "text": "It was made in 1874, so it shows how 19th-century Americans pictured Rolfe, not 1610s farming."
+  },
+  {
+   "key": "D",
+   "text": "The engraving shows tobacco plants, so it proves Rolfe invented tobacco farming.",
+   "misconception": "Native peoples grew tobacco long before Rolfe; he made it a cash crop."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "general": "1. Read the date on the image. It was published in 1874 \u2014 more than two centuries after the 1610s.\n2. Ask what an 1874 artist could know about 1610s farming. Only what books and stories told him; he was imagining, not recording.\n3. Ask what the image can still show. How 19th-century Americans pictured Rolfe and the tobacco frontier.\n4. Name the limit. It is evidence about 1874, not about 1610.\nRemember: always check an image's date before you trust it as evidence \u2014 a late picture tells you about its own time.",
+  "C": "The engraving was published in 1874, more than two centuries after the 1610s it pictures. An artist working in 1874 could only imagine Rolfe's Virginia from books and stories \u2014 he was not recording what he saw. So the image is evidence about 19th-century Americans and how they pictured the tobacco frontier, not evidence about 1610s farming. The other options are wrong: a single figure proves nothing about the workforce, and drawings can show true things. Background: Native peoples grew tobacco long before Rolfe.",
+  "A": "One figure cannot prove who did the work; the image shows a single imagined scene.",
+  "B": "Drawings can show true things, but this one is a later imagining \u2014 the limit is its date, not its medium.",
+  "D": "Background: Native peoples grew tobacco long before Rolfe; he made it a cash crop."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0309",
+   "file": "u2/pr25e-ch06-q03.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/John_Rolfe_tobaccoitshistor01bill_0056.jpg",
+   "license": "Public domain",
+   "caption": "John Rolfe hoeing tobacco, engraving published 1874",
+   "alt": "A 19th-century engraving imagining John Rolfe hoeing young tobacco plants by hand in a Virginia field"
+  }
+ ]
+}

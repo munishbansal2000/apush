@@ -1,0 +1,87 @@
+{
+ "answerKey": "C",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.8 Subject to Debate"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Regional Differences in British North America"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Fish and Lumber in New England"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Effects of European Settlement"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Geography = Destiny?"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0341",
+ "lesson": "apush-u2-l5",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Population size is not the cause; the table shows the difference is in crops and labor.",
+   "text": "The Chesapeake and the Lower South had larger populations than New England."
+  },
+  {
+   "key": "B",
+   "misconception": "Background: slavery was legal in New England too; the difference was economic, not legal.",
+   "text": "New England's laws banned slavery entirely, while southern laws required it."
+  },
+  {
+   "key": "C",
+   "text": "Tobacco, rice, and indigo needed large plantation labor forces, while New England ran on fishing, timber, and small farms."
+  },
+  {
+   "key": "D",
+   "misconception": "Both regions were settled by free English migrants; enslaved people were brought in as labor.",
+   "text": "The Chesapeake and the Lower South were settled by enslaved people, while New England was settled only by free families."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "Population size is not the cause; the table shows the difference is in crops and labor.",
+  "B": "Background: Slavery was legal in New England too; the difference was economic, not legal.",
+  "C": "The table ties the labor system to the crop. Tobacco in the Chesapeake and rice and indigo in the Lower South were grown on large plantations that needed many workers, and enslaved Africans became that workforce \u2014 about 40% of Virginia's people and 70% of South Carolina's by 1740. Background: New England's fishing, timber, and shipbuilding ran on free families working small farms, so enslaved labor stayed a small share there. Population size and settlement by enslaved people are not what the table shows.",
+  "D": "Both regions were settled by free English migrants; enslaved people were brought in as labor.",
+  "general": "1. Read the exports column. Tobacco, rice, and indigo in the South; fish, timber, and ships in New England.\n2. Read the labor column. Large plantations in the South ran on enslaved labor; New England ran on free families.\n3. Connect crop to labor. Plantation crops needed many workers; fishing and small farms did not.\n4. Check the numbers. Enslaved people were about 40% of Virginia and 70% of South Carolina by 1740, but a small share in New England.\nRemember: the crop wrote the labor system \u2014 a plantation crop meant a plantation workforce."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "1.B"
+ ],
+ "source": "original; stimulus is an original data table compiled from the grounding books",
+ "status": "final",
+ "stem": "According to the table, why did slavery become central to the Chesapeake and the Lower South but remain a small part of New England life?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Table compiled from the grounding books; see grounding.",
+  "text": "| Region | Leading exports | Labor | Settlement | Enslaved people, c. 1740 |\n| Chesapeake (Virginia, Maryland) | Tobacco | Enslaved Africans and indentured servants | Scattered plantations along rivers | About 40% of Virginia's population |\n| New England | Fish, timber, ships | Free families on small farms | Compact towns | A small share, mostly household and skilled work |\n| Middle Colonies | Wheat, grain, livestock | Free labor, with some enslaved workers | Farms and towns | About 20% of New York's population |\n| Lower South (South Carolina, Georgia) | Rice and indigo | Enslaved Africans | Large plantations | About 70% of South Carolina's population |"
+ },
+ "stimulus_set": "regions-table",
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "topics": [
+  "2.8"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

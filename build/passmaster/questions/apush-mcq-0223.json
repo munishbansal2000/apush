@@ -1,0 +1,77 @@
+{
+ "answerKey": "A",
+ "difficulty": 4,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "C. The Lower South and the West Indies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "The Southern Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Other Early Colonies"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0223",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "text": "The average sugar grower held 115 enslaved workers, whose labor made the sugar."
+  },
+  {
+   "key": "B",
+   "misconception": "Big exports are what the historian must explain \u2014 they support his claim, they do not challenge it.",
+   "text": "Barbados exported about 50 million pounds of sugar a year, more than Virginia's tobacco."
+  },
+  {
+   "key": "C",
+   "misconception": "Virginia's tobacco says nothing about where Barbados's wealth came from.",
+   "text": "Virginia exported more than 35 million pounds of tobacco, nearly as much as Barbados."
+  },
+  {
+   "key": "D",
+   "misconception": "Their wealth is the fact to explain \u2014 it does not say whether soil or labor produced it.",
+   "text": "Sugar planters were four times as wealthy as Virginians, and their wealth came from sugar."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "Soil does not harvest sugar \u2014 115 enslaved workers per grower is the labor that turned the soil into wealth.",
+  "B": "Big exports are what the historian must explain \u2014 they support his claim, they do not challenge it.",
+  "C": "Virginia's tobacco says nothing about where Barbados's wealth came from.",
+  "D": "Their wealth is the fact to explain \u2014 it does not say whether soil or labor produced it.",
+  "general": "1. Name the claim. Fertile soil made the sugar planters rich.\n2. Ask what soil cannot do alone. It cannot plant, cut, and boil sugar \u2014 hands do that.\n3. Find the hands. One hundred fifteen enslaved workers per grower, on an island three-fourths enslaved.\nRemember: when a claim credits the land, look for the labor \u2014 ask whose hands did the work."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "6.D"
+ ],
+ "source": "original; data table drawn from Barron's Premium 2027, Chapter 4",
+ "status": "final",
+ "stem": "A historian argues that the wealth of Barbados's sugar planters came mainly from the island's fertile soil. Which evidence from the table best challenges that claim?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data from Barron's Premium 2027, Chapter 4.",
+  "text": "| Sugar in Barbados and tobacco in Virginia, about 1700 |\n|---|---|\n| Barbados sugar | About 50 million pounds exported in a year |\n| Virginia tobacco | More than 35 million pounds exported in a year |\n| Enslaved people, Barbados | About three-fourths of the population |\n| Enslaved people, Virginia | Less than one-fourth of the population |\n| Average sugar grower | 115 enslaved workers |\n| Wealth of sugar planters | About four times that of Virginia tobacco planters |"
+ },
+ "stimulus_set": "barbados-virginia",
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

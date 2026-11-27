@@ -1,0 +1,83 @@
+{
+ "id": "apush-saq-0058",
+ "lesson": "apush-u2-l4",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.6"
+ ],
+ "skills": [
+  "3.A",
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "text",
+  "text": "'All Negro, mulatto and Indian slaves within this dominion\u2026 shall be held to be real estate.' \u2014 Virginia slave code, 1705. The code gathered decades of Virginia's slave laws into one set of statutes, defining enslaved people as property and restricting their movement, assembly, and legal rights.",
+  "source_note": "Virginia slave code (1705), quoted verbatim, public domain."
+ },
+ "source": "original; stimulus is a verbatim public-domain primary source",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "The Nature of Slavery in British North America"
+   }
+  ],
+  "primary_sources": [
+   "Virginia slave code (1705)"
+  ]
+ },
+ "status": "final",
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify what the 1705 code declared about enslaved people.",
+   "modelAnswer": "The code declared that enslaved people were real estate \u2014 property held like land, passing to heirs like land. It gathered decades of Virginia's slave laws into one code defining enslaved people as property.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying the declaration: enslaved people held as real estate, or property.",
+     "notEarned": "Stating only that the code was about slavery, with no declaration named, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how the code changed the legal status of enslaved people in Virginia.",
+   "modelAnswer": "The code fixed in law what earlier statutes had built piece by piece: enslavement for life, hereditary through the mother, with no legal rights of movement, assembly, or appeal. Where earlier laws had hardened slavery case by case, the 1705 code wrote the whole system down at once.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how the code consolidated lifelong, hereditary slavery as property in law.",
+     "notEarned": "Stating only that the code was harsh, with no legal change explained, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way the code shows that slavery in Virginia had become a system of racial control by 1705.",
+   "modelAnswer": "The code defined enslaved people by race \u2014 'Negro, mulatto and Indian' \u2014 and held them as property for life, making race itself the mark of bondage. It was not a law about individual crimes or debts; it was a law about a whole class of people defined by race.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how the code's racial categories and property definition show a system of racial control.",
+     "notEarned": "Stating only that the code mentioned race, with no explanation of control, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

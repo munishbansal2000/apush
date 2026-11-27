@@ -1,0 +1,79 @@
+{
+ "answerKey": "D",
+ "difficulty": 4,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.5 Interactions Between American Indians and Europeans"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Jamestown and the Chesapeake Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": [
+   "John Smith, The Generall Historie of Virginia (1624)"
+  ]
+ },
+ "id": "apush-mcq-0257",
+ "lesson": "apush-u2-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Being the earliest surviving account does not make an account reliable, and an eyewitness can still misunderstand what he saw.",
+   "text": "Smith was the only English witness to the event, and his published account is the earliest surviving record of it, so his version cannot be challenged by later evidence."
+  },
+  {
+   "key": "B",
+   "misconception": "One source's limits do not condemn every English account of the period; each source must be judged on its own.",
+   "text": "Because England competed with Spain for empire, all English colonial writings of this period were propaganda and cannot be used as evidence about Native peoples."
+  },
+  {
+   "key": "C",
+   "misconception": "Later events cannot prove earlier motives; baptism and marriage in 1614 say nothing about what she intended in 1607.",
+   "text": "Pocahontas later accepted baptism and married the English colonist John Rolfe in 1614, which confirms that she had already sympathized with the English and opposed her father's decision."
+  },
+  {
+   "key": "D",
+   "text": "Smith wrote years later to win English support for the colony, and the \u201crescue\u201d may have been a ritual whose meaning he misunderstood, so the account cannot establish her motives."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Being the earliest surviving account does not make an account reliable, and an eyewitness can still misunderstand what he saw.",
+  "B": "One source's limits do not condemn every English account of the period; each source must be judged on its own.",
+  "C": "Later events cannot prove earlier motives; baptism and marriage in 1614 say nothing about what she intended in 1607.",
+  "D": "Smith's purpose limits what his account can prove: he wrote to win English support for the colony, which gave him reason to tell a dramatic story, and the episode may have been a ritual ceremony whose meaning he misunderstood. The account was also written years after the event, when Smith had every reason to make his Virginia years sound heroic, and it appeared in a book meant to persuade English readers to invest. Because of those limits, the account cannot settle what Pocahontas herself intended.",
+  "general": "1. Separate what Smith saw from what he claimed it meant. He saw something that may have been a ritual; he called it a rescue.\n2. Ask why he wrote it down years later. The General Historie was written to win English support for Virginia.\n3. Notice the gap the claim ignores. A dramatic story told for investors cannot prove what was in Pocahontas's mind.\nRemember: a source can be sincere and still be wrong about meaning \u2014 purpose and misunderstanding are both limits."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "2.C"
+ ],
+ "source": "original; stimulus is a verbatim quotation from John Smith, A True Relation (1608), and a summary of The Generall Historie of Virginia (1624), public domain",
+ "status": "final",
+ "stem": "A student claims that Smith's account proves Pocahontas personally opposed her father's decision and saved Smith's life. Which of the following best evaluates that claim?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Captain John Smith, A True Relation (1608) and The Generall Historie of Virginia (1624), public domain.",
+  "text": "Questions 255-257 refer to the following sources.\n\n\u201cAt last they brought him to Werowocomoco, where was Powhatan, their emperor. Here more than two hundred of those grim courtiers stood wondering at him...\u201d\n\u2014Captain John Smith, on his capture, 1608 (abridged)\n\nSmith's 1624 General Historie describes the same capture: he wrote that Chief Powhatan ordered his execution, and that the chief's daughter Pocahontas threw herself over him and saved his life. The account appeared years after the event, in a book Smith wrote to promote Virginia to English readers."
+ },
+ "stimulus_set": "smith-quote",
+ "themes": [
+  "WOR",
+  "SOC"
+ ],
+ "topics": [
+  "2.5"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

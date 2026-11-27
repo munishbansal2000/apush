@@ -1,0 +1,72 @@
+{
+ "id": "apush-mcq-0284",
+ "lesson": "apush-u2-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.6"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "WOR",
+  "MIG"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 2,
+ "stimulus_set": "indentured-servitude",
+ "stimulus": {
+  "kind": "text",
+  "text": "Most English migrants to the Chesapeake in the 1600s came as indentured servants. A servant signed a contract promising usually seven years of labor in exchange for passage across the Atlantic, and at the end of the term received freedom and a small piece of land. The work was hard and the death rate high: nearly half of all servants did not survive their term. Still, the bargain drew crowds. More than three-quarters of the roughly 130,000 English people who migrated to the Chesapeake during the 1600s were indentured servants.",
+  "source_note": "Original secondary passage written for this question, summarizing Princeton Review Ch 6."
+ },
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "grounding": {
+  "books": [
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Jamestown and the Chesapeake Colonies"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "The labor system described in the passage differed from enslaved labor in the colonies most clearly in that it",
+ "options": [
+  {
+   "key": "A",
+   "text": "was organized by churches to convert Native peoples to Christianity.",
+   "misconception": "Confuses a labor contract with a religious mission; churches did not organize indenture."
+  },
+  {
+   "key": "B",
+   "text": "bound workers for a limited term under a signed contract."
+  },
+  {
+   "key": "C",
+   "text": "gave workers permanent ownership of the land they farmed.",
+   "misconception": "Land came only at the end of service, and only a small piece \u2014 not ownership of the land farmed."
+  },
+  {
+   "key": "D",
+   "text": "recruited workers only from the port cities of New England.",
+   "misconception": "Servants came from across England and went to the Chesapeake, not New England."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "general": "1. Name the system the passage describes. Servants signed contracts for a set term of labor in exchange for passage.\n2. Ask what ends the bargain. The term ends, and the worker is free.\n3. Compare that with slavery. Background: enslaved labor had no term and no contract \u2014 it was for life and passed to children.\n4. Pick the difference the passage actually states. A signed contract for a limited term is the line between the two systems.\nRemember: when two labor systems look alike, ask what ends each one \u2014 the exit tells you which system you are in.",
+  "B": "The passage defines the system by its contract: a servant promised usually seven years of labor in exchange for passage, and at the end of the term received freedom and land. The contract had a fixed end. Background: enslaved labor had no term at all \u2014 it was lifelong and hereditary, with no contract and no end date. That fixed end is the defining difference between the two systems. Churches did not organize indenture, servants did not own the land they farmed, and recruitment reached across England.",
+  "A": "Churches did not organize this labor system; the contracts were commercial agreements, not religious missions.",
+  "C": "Servants did not own the land they farmed; land came only at the end of service, and only a small piece.",
+  "D": "Servants came from all over England and went to the Chesapeake, not only New England ports."
+ }
+}

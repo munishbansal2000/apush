@@ -1,0 +1,77 @@
+{
+ "answerKey": "A",
+ "difficulty": 4,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "A. The Chesapeake and the Upper South"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Maryland: A Haven for Catholics"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Maryland"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0214",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "text": "Protestants later seized control of Maryland, and the toleration law was repealed."
+  },
+  {
+   "key": "B",
+   "misconception": "A Catholic refuge is the starting point, not proof that freedom was settled \u2014 the passage shows it did not stay Catholic.",
+   "text": "Maryland was founded as a refuge for Catholics, and that alone proves freedom was settled."
+  },
+  {
+   "key": "C",
+   "misconception": "The law's protection is what the historian points to \u2014 it supports his claim, it does not challenge it.",
+   "text": "The 1649 law protected Catholics and Trinitarian Protestants, which shows freedom was settled."
+  },
+  {
+   "key": "D",
+   "misconception": "Numbers alone do not settle whether freedom lasted \u2014 the repeal is the evidence that it did not.",
+   "text": "Protestants outnumbered Catholics in Maryland, so the colony was Protestant by the 1650s."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "A law that was later repealed proves the opposite of settled freedom \u2014 toleration in Maryland was won, lost, and fought over.",
+  "B": "A Catholic refuge is the starting point, not proof that freedom was settled \u2014 the passage shows it did not stay Catholic.",
+  "C": "The law's protection is what the historian points to \u2014 it supports his claim, it does not challenge it.",
+  "D": "Numbers alone do not settle whether freedom lasted \u2014 the repeal is the evidence that it did not.",
+  "general": "1. Name the claim. Religious freedom was settled in the colonies by the mid-1600s \u2014 done, finished, no more argument.\n2. Ask what would break it. Proof that toleration did not last \u2014 a law undone, a promise broken.\n3. Find it. Protestants seized control of Maryland, and the toleration law was repealed.\nRemember: a law is not a settlement \u2014 ask what happened to it after it passed."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "6.D"
+ ],
+ "source": "original; passage drawn from Barron's Premium 2027, Chapter 4",
+ "status": "final",
+ "stem": "A historian claims that Maryland's 1649 toleration law proves religious freedom was settled in the colonies by the mid-1600s. Which evidence from the passage best challenges that claim?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, drawn from Barron's Premium 2027, Chapter 4.",
+  "text": "Maryland was founded in 1632 as a refuge for English Catholics, but the refuge did not stay Catholic for long. Protestants arrived in greater numbers and soon outnumbered the Catholics who had founded the colony. In 1649 the colony's assembly passed a law of religious toleration, protecting Catholics and Protestants who believed in the Trinity. Yet even that law did not settle the question \u2014 Protestants later seized control, and the toleration law was repealed."
+ },
+ "stimulus_set": "maryland-passage",
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

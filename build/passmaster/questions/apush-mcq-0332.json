@@ -1,0 +1,97 @@
+{
+ "id": "apush-mcq-0332",
+ "lesson": "apush-u2-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.7"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "penn-map",
+ "stimulus": {
+  "kind": "image",
+  "text": "Thomas Holme's map of Pennsylvania, 1687. The Delaware River runs along the right edge; townships are named across the map, including \u201cTHE WELCH TRACT,\u201d \u201cGERMAN TOWNSHIP,\u201d \u201cRADNOR TOWNSHIP,\u201d and \u201cHAVERFORD TOWNSHIP,\u201d with a grid-plan inset of \u201cTHE CITY OF PHILADELPHIA\u201d at the upper right.",
+  "source_note": "Thomas Holme, map of Pennsylvania, 1687; public domain."
+ },
+ "source": "original; stimulus is a real historical image from the shared pool",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.7 Colonial Society and Culture"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "D. The Middle Colonies"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Quakerism and the 'Holy Experiment'"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Other Early Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "The Middle Colonies"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "What do the township names on Holme's map best show about Pennsylvania?",
+ "options": [
+  {
+   "key": "A",
+   "text": "That Pennsylvania was settled entirely by English Quakers and by no one else.",
+   "misconception": "The map itself contradicts this: a Welsh Tract and a German Township sit beside English settlements."
+  },
+  {
+   "key": "B",
+   "text": "That the colony's towns were all built without any sort of plan at all.",
+   "misconception": "The map shows the opposite of no plan: named townships and a grid-plan inset for Philadelphia."
+  },
+  {
+   "key": "C",
+   "text": "That every one of Pennsylvania's settlers spoke the very same language as the rest.",
+   "misconception": "Welsh and German names on the map point to settlers of different tongues, not one language."
+  },
+  {
+   "key": "D",
+   "text": "That distinct groups \u2014 Welsh, German, and others \u2014 settled in their own townships."
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "general": "1. Read the labels. Welch Tract, German Township, Radnor, Haverford \u2014 names that carry peoples with them.\n2. Ask what a name marks. A township settled by Welsh, or by Germans, keeping its own community.\n3. See the pattern. Not one people spread thin, but distinct groups settled side by side.\n4. Name the colony. Pennsylvania was a patchwork of peoples, mapped township by township.\nRemember: on Holme's map the names are the evidence \u2014 Welsh and German townships mean Welsh and German settlers.",
+  "D": "The map's labels are settlement evidence: \u201cTHE WELCH TRACT\u201d and \u201cGERMAN TOWNSHIP\u201d name townships settled by Welsh and German immigrants, while Radnor and Haverford carry Welsh names too. Read together, they show distinct groups settling in their own townships side by side \u2014 Pennsylvania as a patchwork of peoples, not a colony of English Quakers alone. Background: Penn recruited settlers in German and English, and his toleration drew many faiths and tongues.",
+  "A": "The map itself contradicts this: a Welsh Tract and a German Township sit beside English settlements.",
+  "B": "The map shows the opposite of no plan: named townships and a grid-plan inset for Philadelphia.",
+  "C": "Welsh and German names on the map point to settlers of different tongues, not one language."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0332",
+   "file": "u2/5s24-exam2-mcq-45.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Holme%27s_Map_of_Pennsylvania_%281687%29.jpg",
+   "license": "Public domain",
+   "caption": "Holme's map of Pennsylvania, 1687",
+   "alt": "Thomas Holme's 1687 map of Pennsylvania showing the Delaware River, named townships, and a grid-plan inset of Philadelphia"
+  }
+ ]
+}

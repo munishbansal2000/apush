@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0249",
+ "lesson": "apush-u2-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.4"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "sugar-plantation",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Paolo Fumagalli, Idealised view of an 18th-century sugar plantation in the West Indies, engraved 1830 after a 1762 engraving in Diderot's Encyclop\u00e9die, public domain. The image's published description notes that the forced labor of enslaved people is deliberately not shown.",
+  "text": "Idealised view of an 18th-century sugar plantation in the Caribbean, engraved by Paolo Fumagalli in 1830 after a 1762 engraving in Diderot's Encyclop\u00e9die. The picture shows the plantation laid out like a diagram: the master's house on a hill at the upper left, rows of slave quarters below it, the sugar works with its mill and boilers at the right, and cane fields stretching behind. In the foreground, one person fishes in a stream. No one in the picture is shown working the cane."
+ },
+ "source": "original; stimulus image from the shared pool, Paolo Fumagalli, Idealised view of a sugar plantation (1830), public domain",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Tobacco, Indigo, Rice, Sugar, and Slavery in the South and the West Indies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "British Empire in America: Growth and Conflict (1650-1750)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650-1750)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "The picture lays out the plantation like a diagram. What does that layout best show about how a sugar plantation was organized?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Enslaved workers owned the land they farmed",
+   "misconception": "Reverses ownership; enslaved workers owned nothing on the plantation."
+  },
+  {
+   "key": "B",
+   "text": "The plantation grew food only for its own workers",
+   "misconception": "Confuses a cash crop with subsistence farming; sugar was grown for export."
+  },
+  {
+   "key": "C",
+   "text": "The master's house stood at the bottom of the hill, below the quarters",
+   "misconception": "Flips the layout; the master's house stands above the quarters, not below them."
+  },
+  {
+   "key": "D",
+   "text": "The plantation was one enterprise: house, quarters, sugar works, and fields arranged around production"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "general": "1. Read the layout like a map. House on the hill, quarters below it, sugar works at the right, cane fields behind.\n2. Ask what the arrangement serves. Every part sits where the work needs it \u2014 the works beside the fields, the quarters near the work.\n3. Note the order. The master's house looks down on the quarters; the layout shows hierarchy as well as function.\n4. Match the claim. Only the answer naming the whole enterprise fits the picture.\nRemember: a diagram-like picture is an argument about how its subject is organized \u2014 read the arrangement, not just the parts.",
+  "A": "Enslaved workers owned nothing. The land, the works, and the quarters all belonged to the master.",
+  "B": "Sugar was a cash crop for export, not food for the workers. The fields grew cane for the market.",
+  "C": "The house stands on the hill above the quarters, not below them. The layout shows the master's position.",
+  "D": "House, quarters, works, and fields are arranged around one purpose: producing sugar."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0249",
+   "file": "u2/original-u1-trade-11.png",
+   "source_url": "https://commons.wikimedia.org/wiki/Special:FilePath/18th%20Sugar%20Plantation%20in%20the%20West%20Indies%2C%20by%20Paolo%20Fumagalli%2C%201830.png?width=1200",
+   "license": "Public domain",
+   "caption": "Idealised view of an 18th-century Caribbean sugar plantation, engraved by Paolo Fumagalli in 1830 after a 1762 engraving",
+   "alt": "An idealized 1830 engraving of a Caribbean sugar plantation showing the master's house, slave quarters, sugar works, and cane fields, with no one shown working the cane"
+  }
+ ]
+}

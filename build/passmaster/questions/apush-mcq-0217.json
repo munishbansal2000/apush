@@ -1,0 +1,79 @@
+{
+ "answerKey": "D",
+ "difficulty": 2,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "D. The Middle Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "The Middle Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Other Early Colonies"
+   }
+  ],
+  "primary_sources": [
+   "Benjamin Franklin, Observations Concerning the Increase of Mankind (1751)"
+  ]
+ },
+ "id": "apush-mcq-0217",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The Germans are the 'aliens' Franklin fears \u2014 they are the them, not the us.",
+   "text": "The Germans arriving in Pennsylvania, who Franklin calls aliens in the excerpt."
+  },
+  {
+   "key": "B",
+   "misconception": "Franklin's fear is about Germans outnumbering the English \u2014 enslaved people are not his subject here.",
+   "text": "The enslaved people of Pennsylvania, who worked on the colony's farms."
+  },
+  {
+   "key": "C",
+   "misconception": "Franklin writes about immigrants, not Native peoples \u2014 they are not the 'us' being Germanized.",
+   "text": "The Native peoples of Pennsylvania, who lived there before the English came."
+  },
+  {
+   "key": "D",
+   "text": "The English founders and settlers of Pennsylvania."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "The Germans are the 'aliens' Franklin fears \u2014 they are the them, not the us.",
+  "B": "Franklin's fear is about Germans outnumbering the English \u2014 enslaved people are not his subject here.",
+  "C": "Franklin writes about immigrants, not Native peoples \u2014 they are not the 'us' being Germanized.",
+  "D": "Franklin says Pennsylvania was 'founded by the English' \u2014 the 'us' being Germanized is the English.",
+  "general": "1. Find the 'us'. 'Germanize us instead of our Anglifying them.'\n2. Ask who 'us' is. Pennsylvania, founded by the English in 1681 \u2014 the English founders and settlers.\n3. Check the other side. The Germans are the 'aliens' doing the Germanizing, not the 'us'.\nRemember: pronouns have owners \u2014 find who founded the colony, and you find the 'us' \u2014 the people Franklin speaks for."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.B"
+ ],
+ "source": "original; stimulus is Benjamin Franklin, Observations Concerning the Increase of Mankind (1751), verbatim, public domain",
+ "status": "final",
+ "stem": "Which group does Franklin's 'us' in the excerpt most directly refer to?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Benjamin Franklin, Observations Concerning the Increase of Mankind (1751), verbatim, public domain.",
+  "text": "Why should Pennsylvania, founded by the English, become a colony of aliens, who will shortly be so numerous as to Germanize us instead of our Anglifying them, and will never adopt our language or customs, any more than they can acquire our complexion?"
+ },
+ "stimulus_set": "franklin-germans",
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

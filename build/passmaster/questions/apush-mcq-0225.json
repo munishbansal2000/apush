@@ -1,0 +1,77 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "B. The New England Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Massachusetts and the New England Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Life in the Colonies"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0225",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The passage calls New England a patchwork, not a plantation \u2014 the Chesapeake was a plantation economy.",
+   "text": "New England and the Chesapeake had the same economy, growing the same crops."
+  },
+  {
+   "key": "B",
+   "text": "New England's economy was more varied than the Chesapeake's one-crop economy."
+  },
+  {
+   "key": "C",
+   "misconception": "New England could not grow a great export crop at all \u2014 tobacco was Virginia's.",
+   "text": "New England grew more tobacco than Virginia, and sold it in England."
+  },
+  {
+   "key": "D",
+   "misconception": "The passage says New Englanders carried goods for other colonies and sold to the West Indies.",
+   "text": "New England had no trade with other colonies, and kept to itself entirely."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The passage calls New England a patchwork, not a plantation \u2014 the Chesapeake was a plantation economy.",
+  "B": "The passage lists fishing, shipbuilding, carrying, cattle, timber, grain \u2014 a patchwork \u2014 against the plantation economy the Chesapeake ran on one crop.",
+  "C": "New England could not grow a great export crop at all \u2014 tobacco was Virginia's.",
+  "D": "The passage says New Englanders carried goods for other colonies and sold to the West Indies.",
+  "general": "1. Count New England's jobs. Fishing, ships, carrying, cattle, timber, grain \u2014 six ways to make a living.\n2. Set it against the plantation. One crop, grown for export, worked by servants and enslaved people.\n3. Name the difference. Variety against a single crop \u2014 the soil decided the economy.\nRemember: when a passage lists jobs, count them \u2014 a long list is the evidence for a varied economy."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "6.C"
+ ],
+ "source": "original; passage drawn from Barron's Premium 2027, Chapter 4",
+ "status": "final",
+ "stem": "Which claim about the regions does the passage best support?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, drawn from Barron's Premium 2027, Chapter 4.",
+  "text": "New England's rocky soil would not grow a great export crop, so its people made their living in other ways. They fished the cold Atlantic, built ships, and carried goods for other colonies. They raised cattle and sheep, cut timber for barrels and masts, and sold grain and livestock to the sugar islands of the West Indies. What they could not grow, they bought \u2014 and what they could not buy, they made. New England's economy was a patchwork, not a plantation."
+ },
+ "stimulus_set": "new-england-economy",
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

@@ -1,0 +1,87 @@
+{
+ "answerKey": "A",
+ "difficulty": 4,
+ "figures": [
+  {
+   "alt": "Darley's 1886 engraving of a Native raid on settlers during King Philip's War: warriors with tomahawks attack settlers in a field, one settler fires a musket, a child stands in the center, and a fallen settler lies in the foreground",
+   "caption": "The King Philip War \u2014 A Raid on the Settlers, engraving by F. O. C. Darley, 1886",
+   "file": "u2/king-philip-war-darley.jpg",
+   "id": "fig-apush-mcq-0271",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:The_King_Philip_War.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.5 Interactions Between American Indians and Europeans"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Part of an Empire"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0271",
+ "lesson": "apush-u2-l3",
+ "options": [
+  {
+   "key": "A",
+   "text": "English settlers pushing onto Wampanoag land and disrupting Native farming and hunting"
+  },
+  {
+   "key": "B",
+   "misconception": "The Sassamon trial was the spark, not the underlying cause \u2014 the land pressure came first.",
+   "text": "The trial and execution of three Wampanoag men for the murder of John Sassamon"
+  },
+  {
+   "key": "C",
+   "misconception": "No French agents supplied the Wampanoag; the war was an English\u2013Native conflict.",
+   "text": "French agents supplying guns to the Wampanoag"
+  },
+  {
+   "key": "D",
+   "misconception": "No Spanish missionaries operated in New England.",
+   "text": "Spanish missionaries demanding that the Wampanoag convert to Catholicism"
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "The war grew from land: English towns, fences, and cattle kept spreading onto Wampanoag ground, trampling cornfields and crowding out hunting. Metacom \u2014 called King Philip by the English \u2014 watched his people's land shrink year by year, and by 1675 there was nowhere left to retreat. The Sassamon trial lit the fuse, but the powder was decades of English expansion, and that is why the war began when it did.",
+  "B": "The Sassamon trial was the spark, not the underlying cause \u2014 the land pressure came first.",
+  "C": "No French agents supplied the Wampanoag; the war was an English\u2013Native conflict.",
+  "D": "No Spanish missionaries operated in New England.",
+  "general": "1. Separate the spark from the cause. Background: the Sassamon trial lit the fuse in 1675.\n2. Ask what the fuse was laid in. Background: decades of English towns, fences, and cattle spreading onto Wampanoag ground.\n3. Name the cause. Land pressure \u2014 the slow loss of the ground a people lived on.\nRemember: a spark explains when a war starts, not why \u2014 look for what was building underneath."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.B"
+ ],
+ "source": "original; stimulus image from the shared pool, F. O. C. Darley, published 1886, public domain",
+ "status": "final",
+ "stem": "The engraving shows a Native raid on an English settlement during King Philip's War. What was the underlying cause of the war?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Engraving from the shared image pool; F. O. C. Darley, published 1886, public domain.",
+  "text": "An engraving by F. O. C. Darley, published in 1886 and captioned \u201cThe King Philip War \u2014 A Raid on the Settlers.\u201d Native warriors carrying tomahawks and clubs attack settlers in a field; one settler fires a musket, a frightened child stands in the center, and a fallen settler lies in the foreground."
+ },
+ "stimulus_set": "king-philip",
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "topics": [
+  "2.5"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

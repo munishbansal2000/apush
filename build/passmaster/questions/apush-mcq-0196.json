@@ -1,0 +1,88 @@
+{
+ "answerKey": "D",
+ "difficulty": 4,
+ "figures": [
+  {
+   "alt": "Enslaved African laborers curing tobacco in open sheds in a 1670 painting, hanging and pressing leaves while a planter's house stands behind them",
+   "caption": "Enslaved laborers curing tobacco (1670)",
+   "file": "u2/tobacco-sheds-1670.jpg",
+   "id": "fig-apush-mcq-0196",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Slaves_working_in_the_tobacco_sheds_on_a_plantation_(1670_painting).jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "C. English Colonial Patterns"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Jamestown and the Chesapeake Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0196",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Tobacco was already the Chesapeake's main crop by 1670 \u2014 the painting's date is right for the economy it shows.",
+   "text": "The painting was made in 1670, too early to show any tobacco economy."
+  },
+  {
+   "key": "B",
+   "misconception": "The yard is full of workers hanging, pressing, and packing tobacco \u2014 the painting shows the work plainly.",
+   "text": "The painting shows no workers at all."
+  },
+  {
+   "key": "C",
+   "misconception": "One painting cannot prove what all workers were \u2014 in the Chesapeake, indentured servants worked alongside enslaved Africans.",
+   "text": "The painting proves that all tobacco workers were enslaved Africans."
+  },
+  {
+   "key": "D",
+   "text": "The painting shows tobacco curing, but not its place or how widespread it was."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Tobacco was already the Chesapeake's main crop by 1670 \u2014 the painting's date is right for the economy it shows.",
+  "B": "The yard is full of workers hanging, pressing, and packing tobacco \u2014 the painting shows the work plainly.",
+  "C": "One painting cannot prove what all workers were \u2014 in the Chesapeake, indentured servants worked alongside enslaved Africans.",
+  "D": "The painting shows the curing work, but it names no place and counts no plantations \u2014 it cannot by itself prove where the scene was or how widespread the practice was.",
+  "general": "1. Ask what the painting shows. Workers curing tobacco by hand \u2014 the steps are clear, the skill is visible.\n2. Ask what it does not show. No place name, no owner's name, no count of plantations \u2014 and palm trees rise around a yard that could be anywhere tobacco grew.\n3. Ask what a historian needs. Background: a single image proves a practice existed, not where it happened or how widespread it was.\n4. Name the limit. The painting is strong evidence for how tobacco was cured, and weak evidence for where.\nRemember: an image answers the question it can see \u2014 ask what it cannot see before you trust it to speak for a whole region."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "3.A",
+  "6.D"
+ ],
+ "source": "original; stimulus image from the shared pool, Slaves working in the tobacco sheds on a plantation (1670 painting), public domain",
+ "status": "final",
+ "stem": "A historian wants to use this painting as evidence for the tobacco economy of the Chesapeake colonies. What is the strongest reason to use the painting with caution?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Painting from the shared image pool; enslaved laborers curing tobacco in open sheds, 1670, public domain.",
+  "text": "Enslaved African laborers curing tobacco in open sheds, painted in 1670. Under the sheds, workers hang tobacco leaves to dry, press the leaves, and pack them for shipment, while others tend a fire. A planter's house stands behind the sheds, and palm trees rise around the yard."
+ },
+ "stimulus_set": "tobacco-sheds-1670",
+ "themes": [
+  "ARC",
+  "WXT"
+ ],
+ "topics": [
+  "2.2"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

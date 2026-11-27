@@ -1,0 +1,87 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.8 Subject to Debate"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Sugar and Slavery in the West Indies"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Tobacco, Indigo, Rice, Sugar, and Slavery in the South and the West Indies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Geography = Destiny?"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Growth of Slavery"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0355",
+ "lesson": "apush-u2-l5",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The table says nothing about population size.",
+   "text": "The West Indies had larger populations than the mainland colonies."
+  },
+  {
+   "key": "B",
+   "text": "Sugar was the most profitable crop, while the mainland supplied raw materials."
+  },
+  {
+   "key": "C",
+   "misconception": "The mainland had exports \u2014 tobacco, rice, grain, and more.",
+   "text": "The mainland colonies had no exports at all to send to Britain."
+  },
+  {
+   "key": "D",
+   "misconception": "The table says nothing about distance to London.",
+   "text": "The West Indies were closer to London than the mainland colonies."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The table says nothing about population size.",
+  "B": "The table's last row gives the answer: the West Indies were 'the most profitable colonies,' and their leading crop was sugar. Background: the mainland colonies served Britain differently \u2014 as markets for British goods and sources of raw materials \u2014 which was useful but less profitable than sugar. The table says nothing about population size or distance, and the mainland clearly had exports like tobacco and rice.",
+  "C": "The mainland had exports \u2014 tobacco, rice, grain, and more.",
+  "D": "The table says nothing about distance to London.",
+  "general": "1. Find the value row. It is the last row of the table.\n2. Read the West Indies cell. The most profitable colonies, with sugar as the leading crop.\n3. Read the mainland cell. Markets for British goods and sources of raw materials.\n4. Compare the two. Sugar profits beat raw materials and markets.\nRemember: value is in the last row \u2014 read what each place was worth to Britain."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "1.B"
+ ],
+ "source": "original; stimulus is an original data table compiled from the grounding books",
+ "status": "final",
+ "stem": "According to the table, why did Britain value its West Indies colonies more than its mainland colonies?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Table compiled from the grounding books; see grounding.",
+  "text": "| | Caribbean (West Indies) | British North America |\n| Share of the Atlantic slave trade | A large share of the enslaved Africans shipped across the Atlantic | Only about 6% of the total |\n| How the enslaved population grew | By constant importation, because death rates were high | By natural increase, as families grew |\n| Leading crop | Sugar | Tobacco and rice |\n| Value to Britain | The most profitable colonies | Markets for British goods and sources of raw materials |"
+ },
+ "stimulus_set": "west-indies",
+ "themes": [
+  "WXT",
+  "WOR"
+ ],
+ "topics": [
+  "2.8"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

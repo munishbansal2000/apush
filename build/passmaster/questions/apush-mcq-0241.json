@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-0241",
+ "lesson": "apush-u2-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.4"
+ ],
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "brookes",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Stowage of the British slave ship Brookes under the Regulated Slave Trade Act of 1788, Library of Congress, public domain.",
+  "text": "Stowage of the British slave ship Brookes under the Regulated Slave Trade Act of 1788. The diagram shows the ship deck by deck: a side view at the top, then plans of the lower deck with rows of small figures packed shoulder to shoulder. A note on the diagram says the Brookes was allowed to carry 454 enslaved people under the 1788 act. One plan reads: 'Plan of lower deck with the stowage of 292 slaves, 130 of these being stowed under the shelves.' Another reads: 'the slaves stowed on the shelves and below them have only a height of 2 feet 7 inches between the beams.'"
+ },
+ "source": "original; stimulus image from the shared pool, Stowage of the British slave ship Brookes (1788), public domain",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "The African Slave Trade"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "British Empire in America: Growth and Conflict (1650-1750)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650-1750)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "The diagram's note says the Brookes was allowed to carry 454 enslaved people under the 1788 act, and one plan shows only 2 feet 7 inches of height between the beams. What do these numbers best show about the 1788 regulation?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The law capped how many people a ship could carry but still allowed brutal overcrowding"
+  },
+  {
+   "key": "B",
+   "text": "The law ended the British slave trade by making the trade unprofitable for merchants",
+   "misconception": "Confuses regulation with abolition; the 1788 act limited numbers, it did not end the trade."
+  },
+  {
+   "key": "C",
+   "text": "The law required ships to give each enslaved person a full private cabin",
+   "misconception": "Invents a cabin requirement; the diagram shows people packed on shelves."
+  },
+  {
+   "key": "D",
+   "text": "The law applied only to French slave ships, not to British ones",
+   "misconception": "Misstates the law's reach; the Brookes was British and the act was British."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "general": "1. Read the cap. The 1788 act allowed the Brookes 454 people — a legal limit, not a ban.\n2. Read the space. 2 feet 7 inches between the beams is barely room to lie down.\n3. Put them together. A limit can exist and still permit cruelty; regulation is not the same as humanity.\n4. Rule out the endings. The trade continued for years after 1788, and no cabin was required.\nRemember: a law that caps a practice is not a law that ends it — check what the cap still allows.",
+  "A": "The act set a maximum of 454, yet 2 feet 7 inches of height shows the crowding the law still permitted.",
+  "B": "The trade continued for nearly two more decades. The 1788 act regulated it; it did not end it.",
+  "C": "No cabin was required — the diagram shows people packed on shelves and below them, not in cabins.",
+  "D": "The Brookes was a British ship under a British act. The law governed British ships."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0241",
+   "file": "u2/original-u1-trade-03.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stowage%20of%20the%20British%20slave%20ship%20Brookes%20under%20the%20regulated%20slave%20trade%20act%20of%201788%20LCCN98504459.jpg?width=1200",
+   "license": "Public domain",
+   "caption": "Stowage of the British slave ship Brookes under the Regulated Slave Trade Act of 1788",
+   "alt": "The Brookes slave-ship diagram of 1788, showing enslaved people packed in rows on the lower deck, with only 2 feet 7 inches of height between the beams"
+  }
+ ]
+}

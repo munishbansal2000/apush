@@ -1,0 +1,77 @@
+{
+ "answerKey": "C",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.2 European Colonization"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Colonial America (1607\u20131650)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0185",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Plymouth's row says religious freedom \u2014 the Separatists came to worship, not to grow tobacco.",
+   "text": "Plymouth"
+  },
+  {
+   "key": "B",
+   "misconception": "Maryland's row says refuge for English Catholics \u2014 a religious reason, not an economic one.",
+   "text": "Maryland"
+  },
+  {
+   "key": "C",
+   "text": "Virginia"
+  },
+  {
+   "key": "D",
+   "misconception": "Rhode Island's row says refuge for religious dissenters \u2014 a religious reason, not an economic one.",
+   "text": "Rhode Island"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Plymouth's row says religious freedom \u2014 the Separatists came to worship, not to grow tobacco.",
+  "B": "Maryland's row says refuge for English Catholics \u2014 a religious reason, not an economic one.",
+  "C": "Virginia's row is the only one that names economic gain, through tobacco.",
+  "D": "Rhode Island's row says refuge for religious dissenters \u2014 a religious reason, not an economic one.",
+  "general": "1. Read the table row by row. Each colony has one main reason written next to it.\n2. Match the question to a row. The question asks for economic gain, so scan the 'main reason' column for money.\n3. Notice the pattern. Only Virginia's row names economic gain; the rest name religion or defense.\n4. Name the answer. Background: Virginia's tobacco made it the money colony, while the others were founded as refuges or buffers.\nRemember: a table answers only when you read the right column \u2014 the year column would have sent you elsewhere."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "1.A"
+ ],
+ "source": "original; stimulus is a data table drawn from the Princeton Review founding-reasons list",
+ "status": "final",
+ "stem": "According to the table, which colony was founded mainly for economic gain?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Data table drawn from the founding-reasons list in Princeton Review, Chapter 6.",
+  "text": "Founding reasons of selected English colonies\n\n| Colony | Founded | Main reason |\n|---|---|---|\n| Virginia | 1607 | Economic gain (tobacco) |\n| Plymouth | 1620 | Religious freedom (Separatists) |\n| Maryland | 1634 | Refuge for English Catholics |\n| Rhode Island | 1636 | Refuge for religious dissenters |\n| Pennsylvania | 1682 | Refuge for Quakers |\n| Georgia | 1732 | Buffer against Spanish Florida, and a fresh start for debtors |"
+ },
+ "stimulus_set": "charter-comparison",
+ "themes": [
+  "MIG",
+  "WXT"
+ ],
+ "topics": [
+  "2.2"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

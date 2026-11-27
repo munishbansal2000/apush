@@ -1,0 +1,101 @@
+{
+ "id": "apush-saq-0061",
+ "lesson": "apush-u2-l5",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.7"
+ ],
+ "skills": [
+  "1.A",
+  "3.A"
+ ],
+ "themes": [
+  "SOC",
+  "ARC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "image",
+  "text": "Howard Pyle's \"Arresting a Witch,\" published 1883. An older woman in a shawl is led away along a snowy path by men carrying muskets, one of them holding a paper warrant.",
+  "source_note": "Howard Pyle, \"Arresting a Witch,\" 1883; public domain (pre-1930 publication). The image is a 19th-century imagining, not a 17th-century record."
+ },
+ "source": "original; stimulus is a real historical image from the shared pool",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.7 Colonial Society and Culture"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "British Empire in America: Growth and Conflict (1650-1750)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Massachusetts Bay"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "saq_slot": 3,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify what the image shows happening.",
+   "modelAnswer": "The image shows the arrest of an accused witch: an older woman in a shawl is led away along a snowy path by armed men, one of them holding a paper warrant. The arrest is staged outdoors, in public, before the community.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying the arrest of an accused witch, led away by armed men with a warrant.",
+     "notEarned": "Stating only that the image shows a woman and some men, with no arrest identified, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain what the image's date, 1883, means for its use as evidence about Salem.",
+   "modelAnswer": "Because the painting was made in 1883, nearly two centuries after the Salem trials of 1692, it cannot show what an arrest actually looked like. It is evidence of how 19th-century Americans imagined the trials, not of the trials themselves.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining that the 1883 date limits the image to evidence of later memory, not of the 1692 event.",
+     "notEarned": "Stating only the date, with no explanation of what it limits, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one factor that made witchcraft accusations plausible in Puritan New England.",
+   "modelAnswer": "Witchcraft was plausible because Puritans lived inside an active cosmic struggle: God and Satan contended daily, and Satan's agents worked real mischief in ordinary life. Inside that worldview, a neighbor's sickness or a bad harvest could be the Devil's work.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining a factor that made accusations plausible, such as the cosmic-struggle worldview or daily supernatural activity.",
+     "notEarned": "Stating only that Puritans believed in witches, with no factor explained, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "figures": [
+  {
+   "id": "fig-apush-saq-0061",
+   "file": "u2/5s24-ch03-mcq-34.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/ArrestingAWitch-Pyle.jpg",
+   "license": "Public domain",
+   "caption": "Arresting a Witch, Howard Pyle, 1883",
+   "alt": "Howard Pyle's 1883 painting of an older woman in a shawl being led away by armed men along a snowy path"
+  }
+ ]
+}

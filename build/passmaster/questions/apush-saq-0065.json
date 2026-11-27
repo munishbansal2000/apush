@@ -1,0 +1,103 @@
+{
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.8 Subject to Debate"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Religious Toleration"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Maryland"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Other Early Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "English Interest in America"
+   }
+  ],
+  "primary_sources": [
+   "Maryland Toleration Act (1649)"
+  ]
+ },
+ "id": "apush-saq-0065",
+ "lesson": "apush-u2-l5",
+ "parts": [
+  {
+   "modelAnswer": "The Act protects anyone in Maryland who professes to believe in Jesus Christ from being troubled, molested, or discountenanced for their religion. It guarantees them the free exercise of their religion within the province.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify the protection the Act gives.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying the protection: Christians in Maryland may practice their religion without being troubled, molested, or discountenanced.",
+     "notEarned": "Stating only that the Act is about religion, with no protection identified, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Maryland was founded by Lord Baltimore as a refuge for Catholics, and Catholics and Protestants lived side by side there. The Act was meant to keep the peace between them by promising that no Christian would be punished for their faith.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain why Maryland passed this Act.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining the reason, such as Maryland as a Catholic refuge or keeping peace between Catholic and Protestant settlers.",
+     "notEarned": "Stating only that Maryland wanted toleration, with no reason given, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "The Act protected only Christians \u2014 anyone who denied the Trinity or blasphemed God could be put to death under the same Act. Jews and people of other faiths had no protection at all.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one limit of the Act's protection.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one limit, such as protection for Christians only, death for denying the Trinity or blasphemy, or no protection for Jews and people of other faiths.",
+     "notEarned": "Stating only that the Act was limited, with no limit named, does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "causation",
+ "saq_slot": 2,
+ "skills": [
+  "1.B",
+  "3.A"
+ ],
+ "source": "original; stimulus is a verbatim public-domain primary source",
+ "status": "final",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "An Act Concerning Religion (Maryland Toleration Act), passed April 21, 1649; public domain. Text as transcribed by the Maryland State Archives, spelling modernized.",
+  "text": "\"...that no person or persons whatsoever within this Province, or the Islands, ports, harbours, creeks or havens thereunto belonging, professing to believe in Jesus Christ, shall from henceforth be any ways troubled, molested, or discountenanced, for or in respect of his or her religion, nor in the free exercise thereof within this Province...\" \u2014 An Act Concerning Religion (Maryland Toleration Act), passed April 21, 1649."
+ },
+ "stimulus_set": null,
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "topics": [
+  "2.8"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 2
+}

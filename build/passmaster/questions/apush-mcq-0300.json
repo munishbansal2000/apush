@@ -1,0 +1,67 @@
+{
+ "id": "apush-mcq-0300",
+ "lesson": "apush-u2-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.6"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "GEO",
+  "SOC"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 4,
+ "stimulus_set": "slavery-north-south",
+ "stimulus": {
+  "kind": "text",
+  "text": "Enslaved people as a share of the population, about 1740 (Barron's 2027, Ch 4):\n\n| Colony or region | Share of the population enslaved |\n| New York | About 20% of inhabitants; about 40% of households held at least one enslaved person |\n| Virginia | About 40% of the population |\n| South Carolina | About 70% of the population |\n\nSlavery was legal in all thirteen colonies at one time or another. In the North, enslaved people worked as sailors, domestic servants, longshoremen, and artisans' assistants. The northern colonies had no extensive export agriculture, so slavery there never grew as strong as in the South.",
+  "source_note": "Data table from Barron's 2027 Ch 4, Topic 2.6; passage summarizing the same section."
+ },
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Slavery in the North and South"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "Based on the table and your knowledge of the colonies, which statement best explains why South Carolina's enslaved share was the highest?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Slavery existed only in the southern colonies and never in the North.",
+   "misconception": "The table shows one in five New Yorkers enslaved, and slavery was legal in all thirteen colonies."
+  },
+  {
+   "key": "B",
+   "text": "South Carolina's rice economy created exceptional demand for enslaved labor, making it the most slave-dependent colony."
+  },
+  {
+   "key": "C",
+   "text": "South Carolina granted freedom to enslaved people who converted to Christianity.",
+   "misconception": "No such policy existed in South Carolina."
+  },
+  {
+   "key": "D",
+   "text": "A British law required South Carolina to import more enslaved workers than all the other colonies.",
+   "misconception": "No British law mandated imports; the plantation economy drove them."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "general": "1. Read the table for the pattern. South Carolina enslaved about 70 percent of its people; Virginia about 40 percent; New York about 20 percent.\n2. Ask what made South Carolina different. Background: its rice plantations demanded more enslaved labor than any other mainland colony.\n3. Connect the number to the economy. The highest share sits where the labor demand was greatest.\n4. Name the conclusion. Enslavement tracked the crop: rice country needed the most workers, so it held the most enslaved people.\nRemember: a table shows the pattern; the economy explains it \u2014 read both together.",
+  "B": "The table shows South Carolina with about 70 percent of its people enslaved \u2014 far above Virginia's 40 percent and New York's 20 percent. That pattern tracks the crop: South Carolina's rice plantations demanded more enslaved labor than any other mainland colony, making it the most slave-dependent. The other options contradict the table or the record: slavery existed in the North, no freedom-through-conversion policy existed, and no British law mandated imports \u2014 the plantation economy drove them.",
+  "A": "The table shows one in five New Yorkers enslaved, and slavery was legal in all thirteen colonies.",
+  "C": "No such policy existed in South Carolina.",
+  "D": "No British law mandated imports; the plantation economy drove them."
+ }
+}

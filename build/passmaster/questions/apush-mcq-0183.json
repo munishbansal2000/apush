@@ -1,0 +1,78 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.2 European Colonization"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Colonial America (1607\u20131650)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "EARLY COLONIALIZATION OF THE NEW WORLD (1491\u20131607)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0183",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The Armada was a sea battle with Spain \u2014 it did not create England's landless poor.",
+   "text": "The defeat of the Spanish Armada in 1588."
+  },
+  {
+   "key": "B",
+   "text": "Enclosure and population growth left many English people without land or work."
+  },
+  {
+   "key": "C",
+   "misconception": "Ireland was a separate venture \u2014 the 'idle poor' in Hakluyt's argument were English people without land or work.",
+   "text": "The English crown had already conquered Ireland."
+  },
+  {
+   "key": "D",
+   "misconception": "The fur trade was small in the 1580s and enriched few merchants \u2014 it did not explain England's poor.",
+   "text": "English merchants had grown rich from the fur trade with Native peoples."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The Armada was a sea battle with Spain; it did not create England's landless poor.",
+  "B": "Enclosure fenced common land for sheep, and a growing population meant fewer livings to go around \u2014 the 'idle poor' were the men left without work.",
+  "C": "Ireland was a separate venture; the 'idle poor' in Hakluyt's argument were English people without land or work.",
+  "D": "The fur trade was small in the 1580s and enriched few merchants; it did not explain England's poor.",
+  "general": "1. Ask who the 'idle poor' were. Men without land or work, not lazy men.\n2. Ask what took their work. Background: landlords fenced the common fields for sheep, a change called enclosure, and England's population was growing fast.\n3. Ask what Hakluyt offered them. A colony across the ocean, where land was plentiful and work was waiting.\n4. Name the push. Colonization answered a problem at home, not just a dream abroad.\nRemember: every colony has a push as well as a pull \u2014 find the trouble at home."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "2.A",
+  "2.C"
+ ],
+ "source": "original; stimulus is an original secondary passage written for this question, paraphrasing Hakluyt's arguments",
+ "status": "final",
+ "stem": "Hakluyt's argument about England's \"idle poor\" best reflects which change in England?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question, paraphrasing Richard Hakluyt's arguments for English colonization in the 1580s.",
+  "text": "In the 1580s Richard Hakluyt argued that England should plant colonies in America. He said the colonies would give work to England's idle poor, provide timber and other goods that England bought from foreign rivals, and spread the Protestant faith against Catholic Spain."
+ },
+ "stimulus_set": "hakluyt-motives",
+ "themes": [
+  "MIG",
+  "WXT"
+ ],
+ "topics": [
+  "2.2"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

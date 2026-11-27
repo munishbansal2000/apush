@@ -1,0 +1,87 @@
+{
+ "answerKey": "D",
+ "difficulty": 4,
+ "figures": [
+  {
+   "alt": "Darley's 1886 engraving of a Native raid on settlers during King Philip's War: warriors with tomahawks attack settlers in a field, one settler fires a musket, a child stands in the center, and a fallen settler lies in the foreground",
+   "caption": "The King Philip War \u2014 A Raid on the Settlers, engraving by F. O. C. Darley, 1886",
+   "file": "u2/king-philip-war-darley.jpg",
+   "id": "fig-apush-mcq-0272",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:The_King_Philip_War.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.5 Interactions Between American Indians and Europeans"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Part of an Empire"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0272",
+ "lesson": "apush-u2-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Whether Darley visited New England is not the point; the problem is the two-century gap.",
+   "text": "It was made by an artist who had never visited New England"
+  },
+  {
+   "key": "B",
+   "misconception": "The warriors' weapons are plausible for the period; the problem is the date of the image.",
+   "text": "It shows Native warriors using weapons they did not own"
+  },
+  {
+   "key": "C",
+   "misconception": "Publication in a book is not a limit; the 1886 date is.",
+   "text": "It was published in a history book rather than a newspaper"
+  },
+  {
+   "key": "D",
+   "text": "It shows how nineteenth-century Americans imagined the war, not how it looked"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Whether Darley visited New England is not the point; the problem is the two-century gap.",
+  "B": "The warriors' weapons are plausible for the period; the problem is the date of the image.",
+  "C": "Publication in a book is not a limit; the 1886 date is.",
+  "D": "Darley never saw King Philip's War \u2014 nobody alive in 1886 had. He drew what his readers expected: tomahawks, a frightened child, a settler firing his musket, a body in the field. The engraving is real evidence, but evidence about 1886, not 1675: it shows how Americans two centuries later remembered the war, as a story of settler heroism and Native savagery \u2014 use it to study memory, not the war.",
+  "general": "1. Check the date first. The war was 1675; the engraving is 1886 \u2014 more than two centuries later.\n2. Ask what the artist could have known. Darley never saw the war, so he drew what his readers expected.\n3. Name what the image is evidence of. It is evidence about 1886, about how Americans remembered the war.\nRemember: a late image tells you about the people who made it, not the people it depicts."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "2.C"
+ ],
+ "source": "original; stimulus image from the shared pool, F. O. C. Darley, published 1886, public domain",
+ "status": "final",
+ "stem": "The engraving was made in 1886, more than two hundred years after King Philip's War. What is the most important limit on using it as evidence about the war itself?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Engraving from the shared image pool; F. O. C. Darley, published 1886, public domain.",
+  "text": "An engraving by F. O. C. Darley, published in 1886 and captioned \u201cThe King Philip War \u2014 A Raid on the Settlers.\u201d Native warriors carrying tomahawks and clubs attack settlers in a field; one settler fires a musket, a frightened child stands in the center, and a fallen settler lies in the foreground."
+ },
+ "stimulus_set": "king-philip",
+ "themes": [
+  "WXT",
+  "ARC"
+ ],
+ "topics": [
+  "2.5"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

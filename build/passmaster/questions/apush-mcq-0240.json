@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0240",
+ "lesson": "apush-u2-l3",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 2,
+ "topics": [
+  "2.4"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "SOC",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "brookes",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Stowage of the British slave ship Brookes under the Regulated Slave Trade Act of 1788, Library of Congress, public domain.",
+  "text": "Stowage of the British slave ship Brookes under the Regulated Slave Trade Act of 1788. The diagram shows the ship deck by deck: a side view at the top, then plans of the lower deck with rows of small figures packed shoulder to shoulder. A note on the diagram says the Brookes was allowed to carry 454 enslaved people under the 1788 act. One plan reads: 'Plan of lower deck with the stowage of 292 slaves, 130 of these being stowed under the shelves.' Another reads: 'the slaves stowed on the shelves and below them have only a height of 2 feet 7 inches between the beams.'"
+ },
+ "source": "original; stimulus image from the shared pool, Stowage of the British slave ship Brookes (1788), public domain; rewritten from survivor original-u1-trade-03",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "The African Slave Trade"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "British Empire in America: Growth and Conflict (1650-1750)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650-1750)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "This 1788 diagram shows, deck by deck, exactly how many enslaved people could be packed into the slave ship Brookes 'under the regulated slave trade act of 1788.' What does the diagram's precise measurement of human beings as cargo best demonstrate about the Middle Passage?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The 1788 act gave enslaved people comfortable and spacious quarters",
+   "misconception": "Reads packing as comfort; 2 feet 7 inches of height is cramped, not spacious."
+  },
+  {
+   "key": "B",
+   "text": "Most Africans crossed the Atlantic as free, paying passengers",
+   "misconception": "Mistakes captives for passengers; the people on the Brookes were enslaved."
+  },
+  {
+   "key": "C",
+   "text": "The slave trade treated enslaved people as cargo packed for profit"
+  },
+  {
+   "key": "D",
+   "text": "Slave ships carried manufactured goods rather than human beings",
+   "misconception": "Puts the wrong cargo on the ship; this leg carried enslaved people, not goods."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "general": "1. Look at what is measured. The diagram counts people the way a cargo plan counts crates — 292 here, 130 there.\n2. Read the numbers. 454 people on one ship, with 2 feet 7 inches of height between the beams.\n3. Ask what the precision means. The trade planned its human cargo down to the inch, because more bodies meant more profit.\n4. Rule out comfort. Nothing about 2 feet 7 inches is spacious, and these are captives, not passengers.\nRemember: when a source measures people like freight, it is showing you how the system saw them.",
+  "A": "2 feet 7 inches between the beams is not spacious. The diagram shows packing, not comfort.",
+  "B": "The figures on the decks are captives, not passengers. They were carried against their will.",
+  "C": "The diagram plans people like cargo — counted, measured, and packed tight to maximize the load.",
+  "D": "The diagram's cargo is people. Manufactured goods went to Africa on the outward leg, not here."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0240",
+   "file": "u2/original-u1-trade-03.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stowage%20of%20the%20British%20slave%20ship%20Brookes%20under%20the%20regulated%20slave%20trade%20act%20of%201788%20LCCN98504459.jpg?width=1200",
+   "license": "Public domain",
+   "caption": "Stowage of the British slave ship Brookes under the Regulated Slave Trade Act of 1788",
+   "alt": "The Brookes slave-ship diagram of 1788, showing enslaved people packed in rows on the lower deck, with only 2 feet 7 inches of height between the beams"
+  }
+ ]
+}

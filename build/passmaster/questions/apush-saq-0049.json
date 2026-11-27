@@ -1,0 +1,101 @@
+{
+ "id": "apush-saq-0049",
+ "lesson": "apush-u2-l3",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.4"
+ ],
+ "skills": [
+  "1.B",
+  "5.B"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "saq_slot": 1,
+ "stimulus_set": "triangular-trade-saq",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, written from Barron's 2027 Chapter 4 and 5 Steps 2024 Chapter 8.",
+  "text": "The triangular trade ran on plantation demand. Sugar in the Caribbean, tobacco in the Chesapeake, and rice in South Carolina all needed large workforces, and enslaved Africans supplied them. European ships carried manufactured goods to the African coast, traded them for captives, and carried enslaved people across the Middle Passage to the Americas. The plantation crops then sailed to Europe, and the profits paid for the next voyage — while the trade destabilized African societies, as warfare and kidnapping spread along the coast."
+ },
+ "source": "original; stimulus is an original secondary passage, written from the books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "A. The Atlantic Economy and the Evolution of Colonial Economies"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "The African Slave Trade"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Tobacco, Indigo, Rice, Sugar, and Slavery in the South and the West Indies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "British Empire in America: Growth and Conflict (1650-1750)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650-1750)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "parts": [
+  {
+   "part": "a",
+   "prompt": "Identify one leg of the triangular trade.",
+   "modelAnswer": "One leg carried manufactured goods from Europe to the African coast, where merchants traded them for captives. Another leg carried enslaved people across the Middle Passage to the Americas.",
+   "points": 1,
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one leg, such as goods from Europe to Africa, enslaved people from Africa to the Americas, or crops from the Americas to Europe.",
+     "notEarned": "Naming a leg that is not part of the triangular trade, or restating the passage with no leg, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "prompt": "Explain how plantation demand drove the transatlantic slave trade.",
+   "modelAnswer": "Sugar, tobacco, and rice plantations needed large workforces, and enslaved Africans supplied them. That demand pulled captives across the Atlantic, so the Middle Passage grew with the plantations.",
+   "points": 1,
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining how plantation demand drove the trade, such as plantations needing workers or the Middle Passage growing with plantation labor needs.",
+     "notEarned": "Stating only that plantations used enslaved labor, with no link to the trade's growth, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "prompt": "Explain one effect of the slave trade on African societies.",
+   "modelAnswer": "The trade spread warfare and kidnapping along the African coast, as traders and rulers captured people to sell to Europeans. Whole societies were destabilized by the demand for captives.",
+   "points": 1,
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one effect on African societies, such as warfare, kidnapping, or destabilization along the coast.",
+     "notEarned": "Stating only that Africans were enslaved, with no effect on their societies, does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

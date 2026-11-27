@@ -1,0 +1,77 @@
+{
+ "answerKey": "C",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "B. The New England Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Massachusetts and the New England Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Massachusetts Bay"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0211",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Dissent made NEW colonies \u2014 Providence, Rhode Island, Hartford \u2014 it did not destroy New England.",
+   "text": "Dissent destroyed the New England colonies, leaving them empty and abandoned."
+  },
+  {
+   "key": "B",
+   "misconception": "The passage ends on the opposite point \u2014 each new colony was freer than the one it left.",
+   "text": "Dissenters had no lasting effect on colonial life, and nothing changed after they left."
+  },
+  {
+   "key": "C",
+   "text": "Dissent pushed people out of Massachusetts, and the colonies they founded were freer."
+  },
+  {
+   "key": "D",
+   "misconception": "Massachusetts kept expelling dissenters \u2014 it was the new colonies, not Massachusetts, that grew freer.",
+   "text": "Dissent made Massachusetts more tolerant over time, until it welcomed every faith."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Dissent made NEW colonies \u2014 Providence, Rhode Island, Hartford \u2014 it did not destroy New England.",
+  "B": "The passage ends on the opposite point \u2014 each new colony was freer than the one it left.",
+  "C": "The passage traces one arc: expulsion, founding, and a little more freedom each time \u2014 dissent did not vanish, it moved and built.",
+  "D": "Massachusetts kept expelling dissenters \u2014 it was the new colonies, not Massachusetts, that grew freer.",
+  "general": "1. Trace the arc. Expelled from Massachusetts, a dissenter founds a new colony.\n2. Repeat it. Williams, Hutchinson, Hooker \u2014 the same arc three times.\n3. Name what grows. Each new colony is a little freer than the one its founders left.\nRemember: a repeated story is an argument \u2014 when a passage tells it three times, it is claiming a pattern, not an accident."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "6.C"
+ ],
+ "source": "original; passage drawn from Barron's Premium 2027, Chapter 4",
+ "status": "final",
+ "stem": "Which claim about religious dissent in New England does the passage best support?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, drawn from Barron's Premium 2027, Chapter 4 and the Unit 2 lesson script for Period 2.",
+  "text": "New England's Puritans prized a single faith and a single church, and they expelled those who broke it. Roger Williams left in 1636 and founded Providence, welcoming believers of every faith. Anne Hutchinson, tried in 1637 and banished in 1638, carried her followers to Rhode Island. Thomas Hooker led his congregation out in 1636 and founded Hartford, whose Fundamental Orders of 1639 set out a government chosen by the people. Each break made a new colony \u2014 and each new colony was a little freer than the one it left."
+ },
+ "stimulus_set": "dissenters-passage",
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

@@ -1,0 +1,87 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "figures": [
+  {
+   "alt": "An East Prospect of the City of Philadelphia, drawn in 1754 and engraved in 1768 \u2014 a grid city across the Delaware with sailing ships crowded at the wharves",
+   "caption": "An East Prospect of the City of Philadelphia, drawn 1754, engraved 1768",
+   "file": "u2/philadelphia-east-prospect-1768.jpg",
+   "id": "fig-apush-mcq-0218",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:An_east_prospect_of_the_city_of_Philadelphia,_1768_-_NARA_-_535738.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "D. The Middle Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "The Middle Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Other Early Colonies"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0218",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "text": "It was a planned city with a busy port and a growing population."
+  },
+  {
+   "key": "B",
+   "misconception": "The prospect shows rows of brick houses and crowded wharves \u2014 not a small village.",
+   "text": "It was a small farming village with few houses, and no ships at all."
+  },
+  {
+   "key": "C",
+   "misconception": "The small pictures show a Battery, but the city itself is open and commercial \u2014 no siege is shown.",
+   "text": "It was a fortified military town under siege, with soldiers on the walls."
+  },
+  {
+   "key": "D",
+   "misconception": "The grid holds houses of many sizes and busy wharves \u2014 the prospect shows a working city, not a rich enclave.",
+   "text": "It was a town built only for the wealthy, with no room for ordinary people."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The prospect shows all three at once \u2014 a grid plan, ships crowding the river, and rows of brick houses.",
+  "B": "The prospect shows rows of brick houses and crowded wharves \u2014 not a small village.",
+  "C": "The small pictures show a Battery, but the city itself is open and commercial \u2014 no siege is shown.",
+  "D": "The grid holds houses of many sizes and busy wharves \u2014 the prospect shows a working city, not a rich enclave.",
+  "general": "1. Look at the plan. A grid of streets, laid out on purpose \u2014 this is a planned city.\n2. Look at the river. Sailing ships crowd the wharves \u2014 this is a working port.\n3. Look at the houses. Rows of brick, churches, public buildings \u2014 people are living and building here.\nRemember: a city view is three kinds of evidence at once \u2014 plan, port, and population."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "2.A"
+ ],
+ "source": "original; stimulus image from the shared pool, An East Prospect of the City of Philadelphia (drawn 1754, engraved 1768), public domain",
+ "status": "final",
+ "stem": "What does the prospect most directly show about Philadelphia by 1754?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "An East Prospect of the City of Philadelphia, drawn by George Heap in 1754 and engraved by Thomas Jefferys in 1768, public domain.",
+  "text": "An East Prospect of the City of Philadelphia, drawn in 1754 and engraved in 1768. Seen across the Delaware River, the city shows a grid of streets and rows of brick houses, with churches and public buildings rising above them. Sailing ships crowd the river in front of the city, loading and unloading at the wharves. Small pictures along the bottom show the Battery, the State House, and other public buildings."
+ },
+ "stimulus_set": "philadelphia-prospect",
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

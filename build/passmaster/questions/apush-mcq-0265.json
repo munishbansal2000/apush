@@ -1,0 +1,77 @@
+{
+ "answerKey": "C",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.5 Interactions Between American Indians and Europeans"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Part of an Empire"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "French Colonization of North America"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0265",
+ "lesson": "apush-u2-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Enslavement under the encomienda was the Spanish pattern, not the French one.",
+   "text": "The French enslaved Native peoples to work in mines and missions"
+  },
+  {
+   "key": "B",
+   "misconception": "Driving Native peoples off the land was the English pattern in Virginia and New England.",
+   "text": "The French drove Native peoples off their land to build settler farms"
+  },
+  {
+   "key": "C",
+   "text": "The French relied on Native allies and trading partners to supply the fur trade"
+  },
+  {
+   "key": "D",
+   "misconception": "The French did the opposite of avoiding contact \u2014 they lived among Native peoples.",
+   "text": "The French avoided all contact with Native peoples and traded only with other Europeans"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Enslavement under the encomienda was the Spanish pattern, not the French one.",
+  "B": "Driving Native peoples off the land was the English pattern in Virginia and New England.",
+  "C": "The French came for furs, and furs came from Native hunters, trappers, and guides \u2014 the French could not get them any other way. Champlain's 1609 alliance with the Huron was a business partnership as much as a military one, and French traders lived in Native villages, learned Native languages, and married into Native families. The English in Virginia wanted land; the French in Canada wanted partners, because without partners there was no trade.",
+  "D": "The French did the opposite of avoiding contact \u2014 they lived among Native peoples.",
+  "general": "1. Ask what each power wanted. The English wanted land; the French wanted furs.\n2. Ask how furs were got. Only Native hunters, trappers, and guides could supply them.\n3. Notice what dependence required. The French had to live among Native peoples, learn their languages, and keep their friendship.\nRemember: what a colony wants decides how it treats the people already there."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "3.C"
+ ],
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "status": "final",
+ "stem": "Compared with the English in Virginia, the French in Canada depended on Native peoples in which of the following ways?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question, summarizing standard background on the French, the Huron, and the Beaver Wars.",
+  "text": "The French came to North America for beaver fur, and they could not get it without Native partners. Samuel de Champlain allied with the Huron in 1609, and French traders lived among Native peoples, learned their languages, and married into their families. But contact brought disaster: after 1634, measles and smallpox swept the Huron villages, killing between half and two-thirds of their people. Weakened by disease, the Huron were then destroyed in 1649, when some 1,000 Iroquois warriors, armed with Dutch guns and hungry for beaver territory, burned their mission villages and killed about 300 people."
+ },
+ "stimulus_set": "huron-beaver",
+ "themes": [
+  "WOR",
+  "MIG"
+ ],
+ "topics": [
+  "2.5"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

@@ -1,0 +1,79 @@
+{
+ "answerKey": "C",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.5 Interactions Between American Indians and Europeans"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Jamestown and the Chesapeake Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": [
+   "John Smith, A True Relation (1608)"
+  ]
+ },
+ "id": "apush-mcq-0255",
+ "lesson": "apush-u2-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "No evidence shows Powhatan studied European government; the European words are Smith's, not Powhatan's.",
+   "text": "Powhatan had studied European government"
+  },
+  {
+   "key": "B",
+   "misconception": "The passage shows Smith using English political vocabulary, not fluency in Algonquian.",
+   "text": "Smith was fluent in Algonquian languages"
+  },
+  {
+   "key": "C",
+   "text": "Smith imposed European political categories on a Native society"
+  },
+  {
+   "key": "D",
+   "misconception": "Royal titles did not mean the English accepted Powhatan as a sovereign equal; they soon moved to dominate his people.",
+   "text": "The English recognized Powhatan sovereignty as fully equal"
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "No evidence shows Powhatan studied European government; the European words are Smith's, not Powhatan's.",
+  "B": "The passage shows Smith using English political vocabulary, not fluency in Algonquian.",
+  "C": "Powhatan led a powerful Algonquian chiefdom, but \u201cemperor\u201d and \u201ccourtiers\u201d are the vocabulary of European courts \u2014 kings, palaces, and ranks. Smith reached for the only political language he knew and dressed a Native leader in it. The passage tells us more about Smith's own framework than about how Powhatan's people governed themselves, and the words he chose show the limits of that understanding.",
+  "D": "Royal titles did not mean the English accepted Powhatan as a sovereign equal. Background: they soon moved to dominate his people.",
+  "general": "1. Look at the labels Smith uses. \u201cEmperor\u201d and \u201ccourtiers\u201d are words from a European court.\n2. Ask what he had to work with. Smith knew kings and palaces, not chiefdoms built on kinship and tribute.\n3. Notice what the passage reveals. It tells you how Smith thought, not how Powhatan ruled.\nRemember: when a source dresses a strange world in familiar clothes, the clothes are the author's \u2014 ask what they hide."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "2.A"
+ ],
+ "source": "original; stimulus is a verbatim quotation from John Smith, A True Relation (1608), public domain",
+ "status": "final",
+ "stem": "Smith's description of Powhatan as an \u201cemperor\u201d surrounded by \u201ccourtiers\u201d most directly reveals that",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Captain John Smith, A True Relation (1608) and The Generall Historie of Virginia (1624), public domain.",
+  "text": "Questions 255-257 refer to the following sources.\n\n\u201cAt last they brought him to Werowocomoco, where was Powhatan, their emperor. Here more than two hundred of those grim courtiers stood wondering at him...\u201d\n\u2014Captain John Smith, on his capture, 1608 (abridged)\n\nSmith's 1624 General Historie describes the same capture: he wrote that Chief Powhatan ordered his execution, and that the chief's daughter Pocahontas threw herself over him and saved his life. The account appeared years after the event, in a book Smith wrote to promote Virginia to English readers."
+ },
+ "stimulus_set": "smith-quote",
+ "themes": [
+  "SOC",
+  "WXT"
+ ],
+ "topics": [
+  "2.5"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

@@ -1,0 +1,77 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.5 Interactions Between American Indians and Europeans"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Jamestown and the Chesapeake Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0262",
+ "lesson": "apush-u2-l3",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The English were badly outnumbered in Virginia; the passage credits deception, not numbers.",
+   "text": "The English won the wars mainly through superior numbers"
+  },
+  {
+   "key": "B",
+   "text": "The English were willing to use deception to destroy Powhatan leaders"
+  },
+  {
+   "key": "C",
+   "misconception": "The passage shows the English offering a parley \u2014 and then betraying it.",
+   "text": "The Powhatan refused all offers of peace from the English"
+  },
+  {
+   "key": "D",
+   "misconception": "The passage ties the wars to food, land, and leadership, not to religion.",
+   "text": "The wars were fought mostly over religious differences"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The English were badly outnumbered in Virginia; the passage credits deception, not numbers.",
+  "B": "The episode is a deliberate deception: the English invited Powhatan leaders to a peace parley and then poisoned their wine, killing about 200 of them. That is not battle \u2014 it is a deception carried out under a flag of truce. It shows the wars had moved beyond fighting over land into a struggle to destroy the Powhatan leadership itself, by any means the English could find.",
+  "C": "The passage shows the English offering a parley \u2014 and then betraying it.",
+  "D": "The passage ties the wars to food, land, and leadership, not to religion.",
+  "general": "1. Read the episode literally. Leaders were invited to talk peace, then given poisoned wine.\n2. Ask what kind of act that is. It is not a battle won on a field \u2014 it is a deception.\n3. Ask what the deception reveals. The English were no longer trying to defeat an army, but to break a people by removing its leaders.\nRemember: the means a side uses in war tell you what the war has become."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.A"
+ ],
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "status": "final",
+ "stem": "The passage's account of the 1623 poisoned-wine episode best supports which of the following claims about the Anglo-Powhatan wars?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question, summarizing standard background on Jamestown and the Powhatan.",
+  "text": "Jamestown survived its first years only because Powhatan's peoples traded corn to the settlers. But the English kept demanding more food and more land, and within a few years they were raiding Native villages for corn. In 1622, Powhatan's successor Opechancanough struck back, killing 347 settlers \u2014 about a quarter of the colony. The English answered with a decade of war, and in 1623 they lured some 200 Powhatan leaders to a peace parley and poisoned their wine. A second great war in 1644 ended with the Powhatan peoples broken and confined to small reserves."
+ },
+ "stimulus_set": "powhatan-jamestown",
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "topics": [
+  "2.5"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

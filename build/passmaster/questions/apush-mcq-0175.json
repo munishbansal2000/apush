@@ -1,0 +1,90 @@
+{
+ "answerKey": "A",
+ "difficulty": 4,
+ "figures": [
+  {
+   "alt": "Thomas Holme's 1687 map of the improved part of Pennsylvania, showing surveyed parcels with owners' names along the Delaware River and a grid plan of Philadelphia in the inset",
+   "caption": "Holme's map of Pennsylvania (1687)",
+   "file": "u2/5s24-exam2-mcq-45.jpg",
+   "id": "fig-apush-mcq-0175",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Holme%27s_Map_of_Pennsylvania_%281687%29.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.2 European Colonization"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Colonial America (1607\u20131650)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": [
+   "Thomas Holme, A Map of the Improved Part of the Province of Pennsylvania in America (1687)"
+  ]
+ },
+ "id": "apush-mcq-0175",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "text": "One man held the charter and sold the land, so tolerance served business as well as belief."
+  },
+  {
+   "key": "B",
+   "misconception": "Penn was a proprietor, not a royal governor \u2014 Pennsylvania was a proprietary colony, not a royal one.",
+   "text": "Pennsylvania was ruled directly by the king through a royal governor."
+  },
+  {
+   "key": "C",
+   "misconception": "Penn held his charter from the king \u2014 the buyers purchased land, they did not elect the proprietor.",
+   "text": "The buyers named on the map elected Penn as their governor."
+  },
+  {
+   "key": "D",
+   "misconception": "The parcels name Welsh, German, and other buyers \u2014 Penn sold to anyone who paid, not to Quakers only.",
+   "text": "Penn gave the land to Quakers only, and no one else could own land in Pennsylvania."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "The dedication names Penn as proprietor, and the named parcels show him selling land \u2014 tolerance brought paying settlers, and paying settlers funded the colony.",
+  "B": "The map is dedicated to Penn the proprietor, not to a royal governor; Pennsylvania was a proprietary colony, not a royal one.",
+  "C": "Penn held his charter from the king; the buyers purchased land, they did not elect the proprietor.",
+  "D": "The parcels name Welsh, German, and other buyers \u2014 Penn sold land to anyone who would pay, not to Quakers only.",
+  "general": "1. Read the dedication. The map is addressed to Penn, proprietor of Pennsylvania \u2014 one man holds the charter.\n2. Read the parcels. Each carries a buyer's name \u2014 the land is being sold, not given.\n3. Ask why tolerance paid. Background: Penn promised religious freedom, and that promise drew Quakers, Germans, and Welsh buyers who paid for their land.\n4. Name the double purpose. The 'Holy Experiment' was a belief and a business: tolerance filled the colony, and the land sales paid for it.\nRemember: when a colony's ideals and its income point the same way, both are part of the founding story."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.C",
+  "6.C"
+ ],
+ "source": "original; stimulus image from the shared pool, Thomas Holme, A Map of the Improved Part of Pennsylvania (1687), public domain",
+ "status": "final",
+ "stem": "The map is dedicated to William Penn as proprietor, and its parcels carry the names of buyers. What conclusion about Pennsylvania's government does the map best support?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Map from the shared image pool; Thomas Holme, A Map of the Improved Part of the Province of Pennsylvania in America (1687), public domain.",
+  "text": "Thomas Holme's map of the improved part of Pennsylvania, surveyed for William Penn and published in 1687. The map shows the Delaware River along the bottom and the settled land divided into surveyed parcels, each marked with an owner's name \u2014 Radnor, Haverford, Germantown, and many others. In the upper right corner, an inset shows the city of Philadelphia laid out as a regular grid of streets. The Penn coat of arms fills the upper left corner, and the map is dedicated to William Penn, proprietor of Pennsylvania."
+ },
+ "stimulus_set": "holme-pennsylvania-1687",
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "topics": [
+  "2.2"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

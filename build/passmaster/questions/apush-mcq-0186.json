@@ -1,0 +1,77 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.2 European Colonization"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Colonial America (1607\u20131650)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0186",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Background: private companies, proprietors, and religious groups did the founding \u2014 the crown granted charters, it did not found the colonies itself.",
+   "text": "The king founded and ruled every colony directly from London."
+  },
+  {
+   "key": "B",
+   "text": "Private companies, proprietors, and religious groups did the founding."
+  },
+  {
+   "key": "C",
+   "misconception": "The table lists different reasons \u2014 economic gain, religious refuge, buffer \u2014 not one reason for all.",
+   "text": "Every colony was founded for the same reason."
+  },
+  {
+   "key": "D",
+   "misconception": "Pennsylvania was founded in 1682 and Georgia in 1732, both after 1650.",
+   "text": "No colony was founded after 1650."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: private companies, proprietors, and religious groups did the founding \u2014 the crown granted charters, it did not found the colonies itself.",
+  "B": "Virginia was a company, Maryland and Pennsylvania were proprietors, Plymouth and Rhode Island were religious groups \u2014 the crown's role was the charter, not the founding.",
+  "C": "The table lists different reasons \u2014 economic gain, religious refuge, buffer \u2014 not one reason for all.",
+  "D": "Pennsylvania was founded in 1682 and Georgia in 1732, both after 1650.",
+  "general": "1. Ask who founded each colony. Background: a company for Virginia, proprietors for Maryland and Pennsylvania, religious groups for Plymouth and Rhode Island.\n2. Ask what the crown did. Background: the king granted charters \u2014 permission slips \u2014 and the founders did the work.\n3. Ask what that pattern means. England colonized by letting others take the risk, and the crown collected the benefit.\n4. Name the conclusion. Private initiative built the colonies; the crown licensed them.\nRemember: a charter is a permission, not a project \u2014 ask who actually crossed the ocean and built the town."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "3.A"
+ ],
+ "source": "original; stimulus is a data table drawn from the Princeton Review founding-reasons list",
+ "status": "final",
+ "stem": "The table best supports which conclusion about how English colonies were founded?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Data table drawn from the founding-reasons list in Princeton Review, Chapter 6.",
+  "text": "Founding reasons of selected English colonies\n\n| Colony | Founded | Main reason |\n|---|---|---|\n| Virginia | 1607 | Economic gain (tobacco) |\n| Plymouth | 1620 | Religious freedom (Separatists) |\n| Maryland | 1634 | Refuge for English Catholics |\n| Rhode Island | 1636 | Refuge for religious dissenters |\n| Pennsylvania | 1682 | Refuge for Quakers |\n| Georgia | 1732 | Buffer against Spanish Florida, and a fresh start for debtors |"
+ },
+ "stimulus_set": "charter-comparison",
+ "themes": [
+  "PCE",
+  "MIG"
+ ],
+ "topics": [
+  "2.2"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

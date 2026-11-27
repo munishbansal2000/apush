@@ -1,0 +1,96 @@
+{
+ "id": "apush-saq-0062",
+ "lesson": "apush-u2-l5",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.7"
+ ],
+ "skills": [
+  "3.A",
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "text",
+  "text": "In 1728, the Massachusetts House refused to vote Governor Burnet a fixed salary of £1,700, paying him year by year instead. The representatives understood what the governor did not: whoever controlled the purse controlled the government.",
+  "source_note": "Secondary account written for this question, summarizing the assembly's power of the purse as described in Barron's Chapter 4."
+ },
+ "source": "original; stimulus is a secondary account written for this question",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.7 Colonial Society and Culture"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "E. The Development of Self-Government in Britain's New World Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Colonial Governments"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Part of an Empire"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify the power the Massachusetts House used against the governor.",
+   "modelAnswer": "The House used the power of the purse: it refused the governor a fixed salary and voted his pay year by year. By controlling the money, the assembly controlled the governor.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying the power of the purse, or control over the governor's salary.",
+     "notEarned": "Stating only that the House opposed the governor, with no power named, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how control of salaries gave the assembly leverage over a royal governor.",
+   "modelAnswer": "A governor who must ask the assembly for his pay each year cannot afford to defy it. The assembly could withhold the salary until the governor yielded, turning the purse into a lever over royal authority.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how yearly salary votes let the assembly pressure or constrain the governor.",
+     "notEarned": "Stating only that the assembly controlled money, with no leverage explained, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way the assemblies' growing power showed colonists governing themselves.",
+   "modelAnswer": "The assemblies' growing power showed self-government because elected representatives, not royal officials, decided how the colony's money was spent. Colonists were making their own political choices through their own institutions.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how assembly power — over money, laws, or appointments — showed colonial self-government.",
+     "notEarned": "Stating only that assemblies grew stronger, with no link to self-government, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

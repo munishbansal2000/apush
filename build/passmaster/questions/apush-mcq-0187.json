@@ -1,0 +1,78 @@
+{
+ "answerKey": "D",
+ "difficulty": 4,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.2 European Colonization"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Colonial America (1607\u20131650)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0187",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Maryland was a refuge for Catholics, Pennsylvania for Quakers \u2014 different groups, not the same one.",
+   "text": "Both colonies were founded by the same single religious group."
+  },
+  {
+   "key": "B",
+   "misconception": "Both colonies were known for tolerance, not for banning religions \u2014 Maryland passed an Act of Toleration in 1649.",
+   "text": "Both colonies banned all religions except their own."
+  },
+  {
+   "key": "C",
+   "misconception": "Both were proprietary colonies \u2014 Calvert and Penn held charters from the king; the king did not found them himself.",
+   "text": "Both colonies were founded by the king himself."
+  },
+  {
+   "key": "D",
+   "text": "The charter system let different religious minorities build their own refuges."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "Maryland was a refuge for Catholics, Pennsylvania for Quakers \u2014 different groups, not the same one.",
+  "B": "Both colonies were known for tolerance, not for banning religions \u2014 Maryland passed an Act of Toleration in 1649.",
+  "C": "Both were proprietary colonies \u2014 Calvert and Penn held charters from the king; the king did not found them himself.",
+  "D": "The same charter system let a Catholic proprietor and a Quaker proprietor each build a refuge \u2014 the system served many faiths, not one.",
+  "general": "1. Compare the two rows. Maryland: refuge for Catholics. Pennsylvania: refuge for Quakers. Same shape, different faiths.\n2. Ask what system allowed both. Background: the crown granted charters to proprietors and let them set the colony's terms, including religion.\n3. Ask what that means. English colonization was not one church's project \u2014 the charter system was a frame that different minorities could fill.\n4. Name the pattern. One system, many refuges.\nRemember: when two rows share a shape but differ in content, the shape is the system and the content is the choice."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "3.B",
+  "2.B"
+ ],
+ "source": "original; stimulus is a data table drawn from the Princeton Review founding-reasons list",
+ "status": "final",
+ "stem": "Maryland and Pennsylvania both appear in the table as refuges. Their shared presence best shows which fact about English colonization?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Data table drawn from the founding-reasons list in Princeton Review, Chapter 6.",
+  "text": "Founding reasons of selected English colonies\n\n| Colony | Founded | Main reason |\n|---|---|---|\n| Virginia | 1607 | Economic gain (tobacco) |\n| Plymouth | 1620 | Religious freedom (Separatists) |\n| Maryland | 1634 | Refuge for English Catholics |\n| Rhode Island | 1636 | Refuge for religious dissenters |\n| Pennsylvania | 1682 | Refuge for Quakers |\n| Georgia | 1732 | Buffer against Spanish Florida, and a fresh start for debtors |"
+ },
+ "stimulus_set": "charter-comparison",
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "topics": [
+  "2.2"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

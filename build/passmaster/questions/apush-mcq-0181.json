@@ -1,0 +1,83 @@
+{
+ "answerKey": "C",
+ "difficulty": 4,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "C. English Colonial Patterns"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "E. Colonial Self-Government"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Jamestown and the Chesapeake Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0181",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The crown took Virginia over precisely because tobacco made it valuable \u2014 the king cared, he did not walk away.",
+   "text": "The king had no interest in Virginia after 1624."
+  },
+  {
+   "key": "B",
+   "misconception": "The governor and crown kept their vetoes \u2014 the assembly had influence, not sovereignty.",
+   "text": "The Burgesses became more powerful than the king himself."
+  },
+  {
+   "key": "C",
+   "text": "Elected assemblies were already rooted in English colonial life."
+  },
+  {
+   "key": "D",
+   "misconception": "The company lost its charter in 1624 \u2014 the crown, not the company, ruled Virginia after that.",
+   "text": "The Virginia Company continued to rule the colony after 1624."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The crown took Virginia over precisely because tobacco made it valuable \u2014 the king cared, he did not walk away.",
+  "B": "The governor and the crown kept their vetoes; the assembly had influence, not sovereignty.",
+  "C": "Five years of meeting had made the assembly part of how Virginia worked, so even a royal governor found it easier to rule with the Burgesses than without them.",
+  "D": "The company lost its charter in 1624; the crown, not the company, ruled Virginia after that.",
+  "general": "1. Name the change. In 1624 the company lost its charter and the crown took Virginia \u2014 new owner, same assembly.\n2. Ask why the king kept it. Background: a royal governor still needed taxes voted and laws passed, and the Burgesses were the machine that did both.\n3. Ask what five years had done. The assembly had become the colony's habit \u2014 the way Virginians expected to be governed.\n4. Name the pattern. Institutions outlive their founders when they become habits.\nRemember: ask what survives a change of owner, and you will find what a colony truly values."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "3.D",
+  "4.B"
+ ],
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "status": "final",
+ "stem": "Virginia became a royal colony in 1624, yet the House of Burgesses kept meeting. What does that survival best show?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question, summarizing the Virginia Company's 1619 order.",
+  "text": "In 1619 the Virginia Company ordered the colony to call an assembly. Two men chosen from each settlement met at Jamestown with the governor and his council to make laws for the colony. The assembly could pass laws, but the governor could veto them, and the company in London could veto them too."
+ },
+ "stimulus_set": "burgesses-1619",
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "topics": [
+  "2.2"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

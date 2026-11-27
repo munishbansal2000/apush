@@ -1,0 +1,93 @@
+{
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "B. The New England Colonies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Massachusetts and the New England Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Massachusetts Bay"
+   }
+  ],
+  "primary_sources": [
+   "Fundamental Orders of Connecticut (1639)"
+  ]
+ },
+ "id": "apush-saq-0043",
+ "lesson": "apush-u2-l2",
+ "parts": [
+  {
+   "modelAnswer": "The Fundamental Orders set out how Connecticut would govern itself, creating regular assemblies and elected offices. They gave the colony a written frame of government.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify the purpose of the Fundamental Orders.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying the purpose, such as setting out Connecticut's government or creating regular assemblies.",
+     "notEarned": "Restating the excerpt with no purpose, or naming a purpose the Orders do not serve, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "The Orders created assemblies that met on a regular schedule and chose the colony's leaders. They put government on a written footing, with elections and set meetings rather than a governor's whim.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Describe one way the Fundamental Orders reflected the colonists' ideas about government.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for describing one accurate reflection, such as regular elected assemblies or a written frame of government.",
+     "notEarned": "Stating only that the Orders created a government, with no connection to the colonists' ideas, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Connecticut's Orders gave the vote more broadly than Massachusetts Bay, where only church members could vote. Hooker's colony also wrote its government down in 1639, while Massachusetts Bay ruled by charter and church membership.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way the Fundamental Orders differed from the government of Massachusetts Bay.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one accurate difference, such as Connecticut's broader vote or its written frame of government.",
+     "notEarned": "Naming a difference with no explanation, or a difference that does not distinguish the two colonies, does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "causation",
+ "saq_slot": 2,
+ "skills": [
+  "2.B",
+  "4.B"
+ ],
+ "source": "original; stimulus is the Fundamental Orders of Connecticut (1639), verbatim, public domain",
+ "status": "final",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Verbatim excerpt from the Fundamental Orders of Connecticut (1639), public domain.",
+  "text": "The Fundamental Orders of Connecticut (1639): '\u2026it is Ordered, sentenced and decreed, that there shall be yearly two several General Assemblies or Courts, the one the second Thursday in April, the other the seventh Thursday after the election of Governor, or the first Thursday in October\u2026'"
+ },
+ "stimulus_set": "saq-fundamental-orders",
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 2
+}

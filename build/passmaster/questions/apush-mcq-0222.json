@@ -1,0 +1,77 @@
+{
+ "answerKey": "B",
+ "difficulty": 4,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "C. The Lower South and the West Indies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "The Southern Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Other Early Colonies"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0222",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The table shows 115 enslaved workers per sugar grower \u2014 sugar ran on far more labor than tobacco did.",
+   "text": "Sugar and tobacco required the same amount of labor, and both used the same workers."
+  },
+  {
+   "key": "B",
+   "text": "Sugar made Barbados richer and more dependent on enslaved labor than tobacco made Virginia."
+  },
+  {
+   "key": "C",
+   "misconception": "Barbados exported about 50 million pounds of sugar against Virginia's 35 million pounds of tobacco.",
+   "text": "Virginia's tobacco trade was larger than Barbados's sugar trade, in pounds and in value."
+  },
+  {
+   "key": "D",
+   "misconception": "The table gives shares, not totals \u2014 and the shares show two very different societies.",
+   "text": "Barbados and Virginia had the same population, with the same number of people."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The table shows 115 enslaved workers per sugar grower \u2014 sugar ran on far more labor than tobacco did.",
+  "B": "Both halves of the claim sit in the table \u2014 sugar planters about four times as wealthy, and enslaved people three-fourths of Barbados against less than one-fourth of Virginia.",
+  "C": "Barbados exported about 50 million pounds of sugar against Virginia's 35 million pounds of tobacco.",
+  "D": "The table gives shares, not totals \u2014 and the shares show two very different societies.",
+  "general": "1. Take the wealth row. Sugar planters were about four times as wealthy as Virginia's tobacco planters.\n2. Take the labor rows. Three-fourths enslaved in Barbados, less than one-fourth in Virginia.\n3. Put them together. The richer colony was also the one that depended most on enslaved labor.\nRemember: wealth and labor travel together in this table \u2014 ask what the riches were built on."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "6.C"
+ ],
+ "source": "original; data table drawn from Barron's Premium 2027, Chapter 4",
+ "status": "final",
+ "stem": "Which claim about the two colonies does the table best support?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data from Barron's Premium 2027, Chapter 4.",
+  "text": "| Sugar in Barbados and tobacco in Virginia, about 1700 |\n|---|---|\n| Barbados sugar | About 50 million pounds exported in a year |\n| Virginia tobacco | More than 35 million pounds exported in a year |\n| Enslaved people, Barbados | About three-fourths of the population |\n| Enslaved people, Virginia | Less than one-fourth of the population |\n| Average sugar grower | 115 enslaved workers |\n| Wealth of sugar planters | About four times that of Virginia tobacco planters |"
+ },
+ "stimulus_set": "barbados-virginia",
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

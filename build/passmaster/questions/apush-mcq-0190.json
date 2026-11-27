@@ -1,0 +1,78 @@
+{
+ "answerKey": "B",
+ "difficulty": 4,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.2 European Colonization"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Colonial America (1607\u20131650)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0190",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The trustees designed Georgia with care \u2014 the reversal came from colonists demanding change, not from trustee indifference.",
+   "text": "The trustees had never really wanted Georgia to succeed."
+  },
+  {
+   "key": "B",
+   "text": "Colonists' economic interests could overturn a colony's founding design."
+  },
+  {
+   "key": "C",
+   "misconception": "Georgia was not conquered \u2014 it became a royal colony in 1751 with slavery legal; the change came from inside, not from Spain.",
+   "text": "Spanish Florida had conquered Georgia by 1751."
+  },
+  {
+   "key": "D",
+   "misconception": "The trustees made the rules and the colonists pushed to change them \u2014 the king did not forbid the trustees from ruling.",
+   "text": "The king had forbidden the trustees from making any rules at all."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The trustees designed Georgia with care \u2014 a buffer, a fresh start, small farms \u2014 and the reversal came from colonists demanding change, not from trustee indifference.",
+  "B": "Georgia's settlers wanted enslaved labor and larger grants to grow rice like South Carolina, and their pressure wore the trustees down until the rules fell.",
+  "C": "Georgia was not conquered; slavery became legal in 1751 and Georgia became a royal colony in 1752 \u2014 the change came from inside, not from Spain.",
+  "D": "The trustees made the rules and the colonists pushed to change them; the king did not forbid the trustees from ruling.",
+  "general": "1. Name what changed. Two founding rules \u2014 no slavery, small grants \u2014 both gone within twenty years.\n2. Ask who changed them. Not Spain, not the king \u2014 Georgia's own settlers, who wanted enslaved labor and bigger farms.\n3. Ask what they wanted instead. Background: across the river, South Carolina's rice plantations made men rich, and Georgians wanted the same.\n4. Name the lesson. A colony's design lasts only as long as its settlers accept it.\nRemember: founders draw the plan, but the people who live in it decide whether it stands \u2014 and profit is a strong argument."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "3.D",
+  "4.A"
+ ],
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "status": "final",
+ "stem": "Georgia's trustees banned slavery and limited land grants, yet by 1751 both rules were gone. What does that reversal best show?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question, summarizing Georgia's 1732 charter and its reversal by 1751.",
+  "text": "In 1732 James Oglethorpe and the trustees received a charter for Georgia. The colony was meant as a buffer between Spanish Florida and South Carolina, and as a fresh start for men imprisoned for debt. Slavery was banned at first, and land grants were small, so that Georgia would be a colony of small farmers, not plantations. By 1751 the trustees had given up both rules, and slavery was legal; Georgia became a royal colony in 1752."
+ },
+ "stimulus_set": "oglethorpe-georgia-1732",
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "topics": [
+  "2.2"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

@@ -1,0 +1,79 @@
+{
+ "answerKey": "C",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "C. English Colonial Patterns"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Massachusetts and the New England Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The Pilgrims and the Massachusetts Bay Company"
+   }
+  ],
+  "primary_sources": [
+   "Mayflower Compact (November 11, 1620)"
+  ]
+ },
+ "id": "apush-mcq-0157",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Treats a written agreement as a church law.",
+   "text": "To set up a church that every settler in Plymouth had to join."
+  },
+  {
+   "key": "B",
+   "misconception": "Reads a colonial agreement as a declaration of independence.",
+   "text": "To declare independence from the English king."
+  },
+  {
+   "key": "C",
+   "text": "To bind the settlers into one body governing itself by laws they made together."
+  },
+  {
+   "key": "D",
+   "misconception": "Turns an agreement to obey the law into a grant of land.",
+   "text": "To divide the land of New England fairly among all the settlers."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The Compact says nothing about a church or required worship; it creates a civil body, not a congregation.",
+  "B": "The Compact calls the signers the king's loyal subjects and acts in his honour, so it is not a break from the crown.",
+  "C": "The signers covenant and combine themselves into a civil Body Politick, so the agreement creates a self-governing body bound by laws they would make together.",
+  "D": "The Compact divides no land; it creates a government, not a property map.",
+  "general": "1. Read the promise at the heart of the passage. The signers covenant and combine themselves into a civil Body Politick.\n2. Ask what that body is for. Its purpose is better ordering and preservation \u2014 government, not worship or land division.\n3. Ask what is new about it. The authority comes from the signers combining themselves, not from a governor sent from London.\n4. Name the idea. A group of settlers agreed to make and obey their own laws, and that agreement became their government.\nRemember: when a document says what it is for, trust its own words before guessing a bigger purpose."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.A"
+ ],
+ "source": "original; stimulus text from Mayflower Compact (November 11, 1620), public domain",
+ "status": "final",
+ "stem": "What did the signers promise to do in the Mayflower Compact?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Verbatim excerpt from the Mayflower Compact, signed November 11, 1620, public domain. Quoted in 5 Steps to a 5 2024, Chapter 7.",
+  "text": "\"We, whose names are underwritten, the Loyal Subjects of our dread Sovereign Lord King James, having undertaken for the Glory of God, and Advancement of the Christian Faith, and the Honour of our King and Country, a Voyage to plant the first Colony in the northern Parts of Virginia, do by these Presents, solemnly and mutually, in the Presence of God and one another, covenant and combine ourselves together into a civil Body Politick, for our better Ordering and Preservation.\""
+ },
+ "stimulus_set": "mayflower-compact-1620",
+ "themes": [
+  "PCE",
+  "MIG"
+ ],
+ "topics": [
+  "2.1"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

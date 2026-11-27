@@ -1,0 +1,87 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "figures": [
+  {
+   "alt": "Enslaved African laborers curing tobacco in open sheds in a 1670 painting, hanging and pressing leaves while a planter's house stands behind them",
+   "caption": "Enslaved laborers curing tobacco (1670)",
+   "file": "u2/tobacco-sheds-1670.jpg",
+   "id": "fig-apush-mcq-0195",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Slaves_working_in_the_tobacco_sheds_on_a_plantation_(1670_painting).jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "C. English Colonial Patterns"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Jamestown and the Chesapeake Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The English Arrive"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0195",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "text": "A large bound labor force, kept working year after year."
+  },
+  {
+   "key": "B",
+   "misconception": "The painting shows a yard full of laborers, not a few craftsmen \u2014 the work was many-handed, not specialized and free.",
+   "text": "A small number of highly paid free craftsmen, hired by the year."
+  },
+  {
+   "key": "C",
+   "misconception": "Curing ran for months after the harvest, and planters wanted a workforce they controlled year-round, not hired hands.",
+   "text": "Seasonal wage workers hired only at harvest time."
+  },
+  {
+   "key": "D",
+   "misconception": "The workers are curing tobacco, not standing guard \u2014 the painting shows labor, not soldiering.",
+   "text": "Soldiers who could defend the plantation from attack."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Curing tobacco took many hands for months at a time, and planters wanted workers they could keep \u2014 first indentured servants, then enslaved Africans.",
+  "B": "The painting shows a yard full of laborers, not a few paid craftsmen \u2014 the work was many-handed, not specialized and free.",
+  "C": "Curing ran for months after the harvest, and planters wanted a workforce they controlled year-round, not hired hands.",
+  "D": "The workers in the painting are curing tobacco, not defending the plantation \u2014 the painting shows labor, not soldiering.",
+  "general": "1. Ask what the work demands. Many hands, for months \u2014 hanging, pressing, packing, tending fires.\n2. Ask who a planter wants for that work. Background: a planter wanted workers he could keep and command, not men who could leave.\n3. Ask what that meant in the Chesapeake. First indentured servants, then enslaved Africans \u2014 bound labor, because the crop would not wait and the work would not end.\n4. Name the chain. Tobacco's profits depended on hands, and hands depended on bondage.\nRemember: a crop's labor demand is its history \u2014 follow the work, and you will find the workforce."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "2.C"
+ ],
+ "source": "original; stimulus image from the shared pool, Slaves working in the tobacco sheds on a plantation (1670 painting), public domain",
+ "status": "final",
+ "stem": "The work shown in the painting best explains why tobacco planters in the Chesapeake sought which kind of labor force?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Painting from the shared image pool; enslaved laborers curing tobacco in open sheds, 1670, public domain.",
+  "text": "Enslaved African laborers curing tobacco in open sheds, painted in 1670. Under the sheds, workers hang tobacco leaves to dry, press the leaves, and pack them for shipment, while others tend a fire. A planter's house stands behind the sheds, and palm trees rise around the yard."
+ },
+ "stimulus_set": "tobacco-sheds-1670",
+ "themes": [
+  "WXT",
+  "MIG"
+ ],
+ "topics": [
+  "2.2"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

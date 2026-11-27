@@ -1,0 +1,95 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "figures": [
+  {
+   "alt": "King James II in armor by Sir Godfrey Kneller, 1684, holding a scepter beside the crown, with ships and an anchor behind him",
+   "caption": "James II, painted by Kneller (1684)",
+   "file": "u2/5s24-ch08-mcq-01.jpg",
+   "id": "fig-apush-mcq-0177",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/King_James_II_by_Sir_Godfrey_Kneller%2C_Bt.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.2 European Colonization"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "E. Colonial Self-Government"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Colonial America (1607\u20131650)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650\u20131750)"
+   }
+  ],
+  "primary_sources": [
+   "Sir Godfrey Kneller, King James II (1684)"
+  ]
+ },
+ "id": "apush-mcq-0177",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "text": "The crown could revoke colonial charters and rule the colonies directly."
+  },
+  {
+   "key": "B",
+   "misconception": "James acted on his own royal authority \u2014 the Dominion was imposed, not approved by Parliament.",
+   "text": "The king needed Parliament's approval before he could change any colonial charter."
+  },
+  {
+   "key": "C",
+   "misconception": "The colonies resisted Andros's rule and overthrew him in 1689 \u2014 they did not welcome direct royal rule.",
+   "text": "The colonies welcomed direct royal rule because their assemblies had failed."
+  },
+  {
+   "key": "D",
+   "misconception": "The Dominion abolished the assemblies \u2014 Andros ruled with an appointed council, not an elected house.",
+   "text": "The Dominion gave New England its first elected assembly."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "James revoked the charters north of Delaware and put the colonies under one royal governor \u2014 the crown could take self-government away.",
+  "B": "James acted on his own royal authority; the Dominion was imposed, not approved by Parliament.",
+  "C": "The colonies resisted Andros's rule and overthrew him in 1689 \u2014 they did not welcome direct royal rule.",
+  "D": "The Dominion abolished the assemblies; Andros ruled with a council he appointed, not an elected house.",
+  "general": "1. Name what James did. He revoked the charters of the colonies from Delaware to Maine and put them under one governor, Andros.\n2. Ask what a charter was. A colony's written promise of self-government \u2014 its assembly, its laws, its courts.\n3. Ask what revoking it meant. Background: James treated the charters as gifts from the crown, and gifts can be taken back.\n4. Name the lesson. For two years the colonies learned that their self-government existed only as long as the king allowed it.\nRemember: a right the crown can revoke is a permission, not a possession \u2014 and the colonists never forgot the difference."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "2.B",
+  "3.A"
+ ],
+ "source": "original; stimulus image from the shared pool, Sir Godfrey Kneller, King James II (1684), public domain",
+ "status": "final",
+ "stem": "James II's creation of the Dominion of New England in 1686 best shows which fact about royal power in the colonies?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Portrait from the shared image pool; Sir Godfrey Kneller, King James II (1684), public domain.",
+  "text": "King James II, painted by Sir Godfrey Kneller in 1684, a year before James took the throne. The king stands in polished armor, a scepter in his right hand, the crown resting on a cushion at his left. Behind him, warships fire their guns and an anchor leans at his feet. Two years after this portrait was painted, James created the Dominion of New England, revoking the charters of the colonies from New Jersey to Maine and placing them under a single royal governor, Edmund Andros."
+ },
+ "stimulus_set": "james-ii-dominion",
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "topics": [
+  "2.2"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

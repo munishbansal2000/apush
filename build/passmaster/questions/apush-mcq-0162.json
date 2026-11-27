@@ -1,0 +1,79 @@
+{
+ "answerKey": "C",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "C. English Colonial Patterns"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Massachusetts and the New England Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The Pilgrims and the Massachusetts Bay Company"
+   }
+  ],
+  "primary_sources": [
+   "John Winthrop, A Model of Christian Charity (1630)"
+  ]
+ },
+ "id": "apush-mcq-0162",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Moves the sermon to the wrong ship and year.",
+   "text": "It was preached aboard the Mayflower in 1620."
+  },
+  {
+   "key": "B",
+   "misconception": "Places the sermon after the colony was already founded.",
+   "text": "It was preached in Boston after the settlers had landed."
+  },
+  {
+   "key": "C",
+   "text": "It was preached aboard the Arbella in 1630, as the settlers sailed to Massachusetts Bay."
+  },
+  {
+   "key": "D",
+   "misconception": "Treats a lay governor's sermon as a royal speech.",
+   "text": "It was spoken by the king of England to the settlers before they sailed."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The Mayflower carried the Pilgrims in 1620, a decade before Winthrop's sermon; the sermon belonged to the Massachusetts Bay voyage.",
+  "B": "The sermon was preached aboard ship on the way to New England, before the settlers landed, not in Boston afterward.",
+  "C": "Winthrop preached aboard the Arbella in 1630, on the voyage that brought the Massachusetts Bay settlers to New England.",
+  "D": "Winthrop, the colony's governor, preached the sermon himself; the king did not speak to the settlers.",
+  "general": "1. Anchor the sermon to its voyage. Background: Winthrop sailed with the Massachusetts Bay settlers aboard the Arbella in 1630.\n2. Ask why the timing matters. A sermon preached on the way sets the terms of the venture before the settlers arrive.\n3. Ask what those terms were. The passage binds the settlers to a covenant with God before they have built anything.\n4. Put it together. The sermon is a promise made at sea, not a lesson taught after the colony was already built.\nRemember: when a source was delivered matters as much as what it says, so ask where the speaker stood."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "2.B"
+ ],
+ "source": "original; stimulus text from John Winthrop, A Model of Christian Charity (1630), public domain",
+ "status": "final",
+ "stem": "Why does the setting of Winthrop's sermon matter for understanding it?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Verbatim excerpt from John Winthrop, A Model of Christian Charity (1630), public domain.",
+  "text": "\"For we must consider that we shall be as a city upon a hill. The eyes of all people are upon us. So that if we shall deal falsely with our God in this work we have undertaken, and so cause Him to withdraw His present help from us, we shall be made a story and a by-word through the world.\""
+ },
+ "stimulus_set": "winthrop-city-hill-1630",
+ "themes": [
+  "MIG",
+  "ARC"
+ ],
+ "topics": [
+  "2.1"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

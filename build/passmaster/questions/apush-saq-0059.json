@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0059",
+ "lesson": "apush-u2-l5",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 2,
+ "topics": [
+  "2.7"
+ ],
+ "skills": [
+  "3.A",
+  "1.B"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "text",
+  "text": "The revivals of the 1730s and 1740s did more than fill churches. They taught ordinary colonists to judge religious authority for themselves — to trust a conversion they felt over a sermon they were told to accept. Once learned, that habit of judging authority for oneself was hard to confine to the church.",
+  "source_note": "Secondary account written for this question, summarizing the historian's debate in Barron's Chapter 4."
+ },
+ "source": "original; stimulus is a secondary account written for this question",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Topic 2.7 Colonial Society and Culture"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The First Great Awakening"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "The First Great Awakening"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one way the Great Awakening challenged established religious authority.",
+   "modelAnswer": "The Awakening challenged established authority when itinerant preachers drew crowds away from settled ministers and told hearers to trust their own conversion experience over the minister's word. Ordinary colonists began judging sermons and ministers for themselves.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying a challenge to established religious authority, such as itinerant preaching, lay judgment of ministers, or conversion over ordination.",
+     "notEarned": "Stating only that the Awakening was a religious revival, with no challenge to authority named, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how the Awakening gave ordinary colonists experience in judging authority for themselves.",
+   "modelAnswer": "Revival preaching put the test of true religion inside the hearer: a conversion felt in the heart mattered more than a minister's learning or a church's approval. Colonists who judged a preacher by their own experience were practicing independent judgment.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how the revival experience — feeling conversion, judging preachers — trained independent judgment.",
+     "notEarned": "Stating only that colonists attended revivals, with no explanation of how that trained judgment, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one reason historians disagree about whether the Awakening helped cause the Revolution.",
+   "modelAnswer": "Historians disagree because the evidence pulls both ways: the revivals taught defiance of authority, yet the fires had died decades before 1776 and many patriot leaders were never awakened. A habit learned in church may or may not have survived into politics.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining a reason for disagreement, such as the time gap, unawakened leaders, or the difficulty of tracing a habit across decades.",
+     "notEarned": "Stating only that historians disagree, with no reason given, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,81 @@
+{
+ "id": "apush-mcq-0253",
+ "lesson": "apush-u2-l3",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 2,
+ "topics": [
+  "2.4"
+ ],
+ "skills": [
+  "6.D"
+ ],
+ "themes": [
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "neglect-in-practice",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, written from Barron's 2027 Chapter 4 and 5 Steps 2024 Chapter 8. The historian's argument is original, written for the question.",
+  "text": "England passed the Navigation Acts to control colonial trade, yet for decades it barely enforced them. Customs offices were left understaffed, governors looked the other way, and colonial merchants smuggled openly — Boston merchants bought cheap French molasses for their rum distilleries despite the Molasses Act of 1733. This loose enforcement later got a name, 'salutary neglect,' coined by Edmund Burke in 1775, looking back. The laws stayed on the books while nobody enforced them, and colonial merchants grew rich in the gaps.\n\nA historian argues: 'British mercantilist laws, especially the Navigation Acts, impoverished the North American colonies by choking off their trade.'"
+ },
+ "source": "original; rewritten from survivor original-hard-u2-transatlantic-trade-04 against Barron's 2027 Chapter 4",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Lax Enforcement of Mercantilist Policies"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "Navigation Acts and Mercantilism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 8",
+    "section": "Salutary Neglect"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "THE AGE OF SALUTARY NEGLECT (1650-1750)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "A historian argues that British mercantilist laws, especially the Navigation Acts, impoverished the North American colonies by choking off their trade. Which of the following best evaluates this argument?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Enforcement was loose during the era of salutary neglect, smuggling was widespread, and the colonies received naval protection and favored access to English markets"
+  },
+  {
+   "key": "B",
+   "text": "Parliament wrote the laws to enrich England at the colonies' expense, and that purpose alone proves the laws made the colonies poorer",
+   "misconception": "Confuses purpose with effect; what Parliament intended does not prove what the colonies suffered."
+  },
+  {
+   "key": "C",
+   "text": "New England's trade-based economy kept growing under the acts, which shows the laws imposed no real costs on colonial trade anywhere",
+   "misconception": "Overgeneralizes from one region; New England's growth does not prove no costs anywhere."
+  },
+  {
+   "key": "D",
+   "text": "The acts restricted colonial trade in the 1600s and the Revolution followed in the 1770s, so the economic damage they caused drove the colonies to independence",
+   "misconception": "Confuses sequence with causation; the acts and the Revolution are a century apart."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "general": "1. Read the claim. The laws impoverished the colonies by choking off trade.\n2. Check the enforcement. For decades the laws were barely enforced — smuggling was open and customs offices empty.\n3. Check the benefits. The colonies got Royal Navy protection and favored access to English markets.\n4. Weigh the claim against both sides. A law that was loosely enforced and came with benefits cannot simply have impoverished the colonies.\nRemember: to evaluate an argument, weigh the evidence for and against it — purpose alone is not proof.",
+  "A": "Loose enforcement, widespread smuggling, and the benefits of protection and market access all cut against the claim.",
+  "B": "A law's purpose does not prove its effect. What Parliament wanted is not proof of what the colonies suffered.",
+  "C": "Growth in one region does not prove the laws cost nothing anywhere. The claim needs evidence from all the colonies.",
+  "D": "Sequence is not causation. The acts and the Revolution are separated by a century, and the link needs more than order."
+ }
+}

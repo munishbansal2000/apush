@@ -1,0 +1,77 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "A. The Chesapeake and the Upper South"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "Jamestown and the Chesapeake Colonies"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Jamestown"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-0201",
+ "lesson": "apush-u2-l2",
+ "options": [
+  {
+   "key": "A",
+   "text": "New England was colder, yet its colony survived while Jamestown's settlers died."
+  },
+  {
+   "key": "B",
+   "misconception": "They began thirteen years apart \u2014 and the same year would not prove anything about climate.",
+   "text": "Both colonies were founded in the same year, not thirteen years apart."
+  },
+  {
+   "key": "C",
+   "misconception": "Planting few crops is about what the settlers did, not about the climate they faced.",
+   "text": "Jamestown's settlers planted few crops in Virginia because they wanted quick riches."
+  },
+  {
+   "key": "D",
+   "misconception": "Their goal was religious, not climatic \u2014 it says nothing about the weather.",
+   "text": "The Puritans wanted a godly community, and that goal shaped how they lived."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "If cold decided survival, the colder colony should have died \u2014 instead it was Jamestown, in the milder climate, that nearly collapsed.",
+  "B": "They began thirteen years apart \u2014 and the same year would not prove anything about climate.",
+  "C": "Planting few crops is about what the settlers did, not about the climate they faced.",
+  "D": "Their goal was religious, not climatic \u2014 it says nothing about the weather.",
+  "general": "1. Read the claim. Climate did not make the difference.\n2. Test it. New England was colder \u2014 so cold should have hurt the Puritans most.\n3. Look at the result. The colder colony lived; the warmer one starved.\nRemember: to test a cause, look for the case where it points the wrong way \u2014 that is the evidence that kills it."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "3.B"
+ ],
+ "source": "original; passage drawn from the comparison in Barron's Premium 2027, Chapter 4",
+ "status": "final",
+ "stem": "The passage says the difference between the colonies was not the climate. Which evidence in the passage best supports that?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage, drawn from the comparison in Barron's Premium 2027, Chapter 4.",
+  "text": "Jamestown and Massachusetts Bay began only thirteen years apart, but they grew into different colonies. Jamestown's first settlers were mostly single men hoping to find gold; they planted few crops, and most died in the first winters. Massachusetts Bay's settlers came as families \u2014 farmers and craftsmen who meant to build towns and stay. The Virginians wanted quick riches; the Puritans wanted a godly community. The difference was not the climate \u2014 New England was colder \u2014 but what the settlers came to do and how they organized themselves."
+ },
+ "stimulus_set": "jamestown-massachusetts-bay",
+ "themes": [
+  "GEO",
+  "MIG"
+ ],
+ "topics": [
+  "2.3"
+ ],
+ "type": "mcq",
+ "unit": 2
+}

@@ -1,0 +1,94 @@
+{
+ "answerKey": "C",
+ "difficulty": 2,
+ "figures": [
+  {
+   "alt": "Engraving of a walled wooden trading post with cannons, storehouses, and dwellings on a riverbank, with gardens outside the walls",
+   "caption": "Champlain's Habitation at Quebec, 1613",
+   "file": "u2/champlain-habitation-quebec.jpg",
+   "id": "fig-apush-mcq-0154",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Champlain_Habitation_de_Quebec.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "B. French and Dutch Colonies"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 4",
+    "section": "French-American Indian Diplomacy"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 7",
+    "section": "New France"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "French Colonization of North America"
+   }
+  ],
+  "primary_sources": [
+   "Samuel de Champlain, Les Voyages (1613)"
+  ]
+ },
+ "id": "apush-mcq-0154",
+ "lesson": "apush-u2-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Reads storehouses and walls as a farming town.",
+   "text": "It was a farming town built to feed a large population of settlers there."
+  },
+  {
+   "key": "B",
+   "misconception": "Turns a trading post with cannons into a church mission.",
+   "text": "It was a mission built only to convert Native peoples to Christianity."
+  },
+  {
+   "key": "C",
+   "text": "It was a fortified trading post, built to hold goods and defend the fur trade."
+  },
+  {
+   "key": "D",
+   "misconception": "Treats a wooden post on the St. Lawrence as a royal palace.",
+   "text": "It was a royal palace built for the king of France to visit."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The post has walls, cannons, and storehouses but no farmland, so it was built for trade and defense, not farming.",
+  "B": "No church dominates the post, and its cannons and storehouses point to trade, not conversion alone.",
+  "C": "Walls and cannons defend the post, storehouses hold furs, and the river carries them away \u2014 a trading post built to guard the fur trade.",
+  "D": "The post is a small wooden fort on the St. Lawrence, not a palace, and the king of France never visited it.",
+  "general": "1. Start with what you can see. Walls, cannons at the corners, and storehouses fill the post, with the river at its foot.\n2. Ask what those things are for. Walls and cannons defend something valuable, and storehouses hold goods waiting to move.\n3. Ask what good. Background: the French trade was beaver fur, gathered from Native partners and shipped down the St. Lawrence.\n4. Name the purpose. This is a trading post built to guard the fur trade, not a town built to farm the land.\nRemember: in an image, the biggest structures tell you the job, so ask what the buildings were built to do."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.A"
+ ],
+ "source": "original; stimulus image from the shared pool, Samuel de Champlain, Les Voyages (1613), public domain",
+ "status": "final",
+ "stem": "What does the engraving show about the purpose of Champlain's Habitation at Quebec?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Engraving from the shared image pool; Samuel de Champlain, Les Voyages (1613), public domain.",
+  "text": "Samuel de Champlain's engraving of the Habitation at Quebec, from his Les Voyages (1613). The walled post stands on the St. Lawrence River, with cannons at its corners, storehouses and dwellings inside the walls, and a flag flying above the main house. Gardens lie outside the walls, and the river runs along the bottom of the image."
+ },
+ "stimulus_set": "champlain-quebec-1613",
+ "themes": [
+  "GEO",
+  "WXT"
+ ],
+ "topics": [
+  "2.1"
+ ],
+ "type": "mcq",
+ "unit": 2
+}
