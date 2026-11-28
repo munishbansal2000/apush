@@ -1,71 +1,81 @@
 {
-  "id": "apush-mcq-2302",
-  "type": "mcq",
-  "unit": 7,
-  "topics": [
-    "7.11"
+ "id": "apush-mcq-2302",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.11"
+ ],
+ "lesson": "apush-u7-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.11 Interwar Foreign Policy"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
   ],
-  "lesson": "apush-u7-l4",
-  "status": "final",
-  "pool": "practice",
-  "difficulty": 2,
-  "skills": [
-    "1.B"
-  ],
-  "themes": [
-    "WOR"
-  ],
-  "reasoning": "comparison",
-  "grounding": {
-    "books": [
-      {
-        "book": "barrons-2027",
-        "chapter": "Chapter 9",
-        "section": "Topic 7.11 Interwar Foreign Policy"
-      },
-      {
-        "book": "princeton-25e",
-        "chapter": "Chapter 11",
-        "section": "Jazz Age and Great Depression (1920-1933)"
-      }
-    ],
-    "primary_sources": []
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "Photograph of the open Kellogg-Briand Pact, signed at the Quai d'Orsay in Paris, August 27, 1928. The pact's pages are covered with signatures, and round seals hang from ribbons down the center.",
+  "source_note": "Photograph of the open Kellogg-Briand Pact, Paris, August 27, 1928. Nationaal Archief (Dutch National Archives); public domain."
+ },
+ "stimulus_set": "kellogg-briand-1928",
+ "source": "original; stimulus photograph, signing of the Kellogg-Briand Pact, Paris, 1928, public domain",
+ "stem": "More than sixty nations signed the pact shown in the photograph. That wide support best shows which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Most nations were ready to disband their armies",
+   "misconception": "No nation disbanded its army; the pact only renounced war on paper."
   },
-  "stimulus": {
-    "kind": "image",
-    "text": "Photograph of the signing of the Kellogg-Briand Pact at the Quai d'Orsay in Paris, August 27, 1928. A man holds up the open pact for the camera; its pages are covered with signatures, and round seals hang from ribbons down the center. Other men in formal dress stand beside him.",
-    "source_note": "Signing of the Kellogg-Briand Pact, Quai d'Orsay, Paris, August 27, 1928. French press photograph (Biblioth\u00e8que nationale de France); public domain."
+  {
+   "key": "B",
+   "text": "The League of Nations had become all-powerful",
+   "misconception": "The League could not even stop Japan in Manchuria, and the United States was not a member."
   },
-  "stimulus_set": "kellogg-briand-1928",
-  "source": "original; stimulus photograph, signing of the Kellogg-Briand Pact, Paris, 1928, public domain",
-  "stem": "More than sixty nations signed the pact shown in the photograph. That wide support best shows which of the following?",
-  "options": [
-    {
-      "key": "A",
-      "text": "Most nations were ready to disband their armies",
-      "misconception": "No nation disbanded its army; the pact only renounced war on paper."
-    },
-    {
-      "key": "B",
-      "text": "The League of Nations had become all-powerful",
-      "misconception": "The League could not even stop Japan in Manchuria, and the United States was not a member."
-    },
-    {
-      "key": "C",
-      "text": "The United States had joined the League of Nations",
-      "misconception": "The United States never joined the League; the pact was signed outside it."
-    },
-    {
-      "key": "D",
-      "text": "Many nations hoped treaties could outlaw war"
-    }
-  ],
-  "answerKey": "D",
-  "rationales": {
-    "A": "Background from the books: the pact asked nations to renounce war, not to give up their armies.",
-    "B": "Background from the books: the League had no army and no power to enforce its protests.",
-    "C": "Background from the books: the Senate refused to ratify the Treaty of Versailles, so the United States stayed out of the League.",
-    "D": "After the First World War, dozens of nations shared the hope that a treaty could cure war itself.",
-    "general": "1. The photograph shows a signing ceremony in Paris in 1928.\n2. More than sixty nations eventually signed the pact renouncing war.\n3. That breadth shows a shared hope after the First World War, not shared power.\n4. The hope rested on the belief that war was a misunderstanding treaties could cure, a belief the 1930s would destroy.\nRemember: wide agreement on paper is not the same as power to enforce it."
+  {
+   "key": "C",
+   "text": "The United States had joined the League of Nations",
+   "misconception": "The United States never joined the League; the pact was signed outside it."
+  },
+  {
+   "key": "D",
+   "text": "Many nations hoped treaties could outlaw war"
   }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Background from the books: the pact asked nations to renounce war, not to give up their armies.",
+  "B": "Background from the books: the League had no army and no power to enforce its protests.",
+  "C": "Background from the books: the Senate refused to ratify the Treaty of Versailles, so the United States stayed out of the League.",
+  "D": "After the First World War, dozens of nations shared the hope that a treaty could cure war itself.",
+  "general": "1. The photograph shows the signed pact in Paris in 1928.\n2. More than sixty nations eventually signed the pact renouncing war.\n3. That breadth shows a shared hope after the First World War, not shared power.\n4. The hope rested on the belief that war was a misunderstanding treaties could cure, a belief the 1930s would destroy.\nRemember: wide agreement on paper is not the same as power to enforce it."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2302",
+   "file": "u7/kellogg-briand-signing-1928.jpg",
+   "caption": "The open Kellogg-Briand Pact, Paris, August 27, 1928",
+   "alt": "Photograph of the open Kellogg-Briand Pact with its pages covered in signatures and round seals hanging from ribbons down the center",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Kellogg%E2%80%93Briand_Pact_(1928).jpg"
+  }
+ ]
 }

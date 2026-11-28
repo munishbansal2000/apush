@@ -1,80 +1,90 @@
 {
-  "id": "apush-mcq-2336",
-  "type": "mcq",
-  "unit": 7,
-  "topics": [
-    "7.12"
+ "id": "apush-mcq-2336",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.12"
+ ],
+ "lesson": "apush-u7-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "5.A"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.12 World War II: Mobilization"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 24",
+    "section": "World War II (1933-1945)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "New Deal and WWII (1934-1945)"
+   }
   ],
-  "lesson": "apush-u7-l5",
-  "status": "final",
-  "pool": "practice",
-  "difficulty": 4,
-  "skills": [
-    "5.A"
-  ],
-  "themes": [
-    "SOC",
-    "PCE"
-  ],
-  "reasoning": "continuity-change",
-  "grounding": {
-    "books": [
-      {
-        "book": "barrons-2027",
-        "chapter": "Chapter 9",
-        "section": "Topic 7.12 World War II: Mobilization"
-      },
-      {
-        "book": "5steps-2024",
-        "chapter": "Chapter 24",
-        "section": "World War II (1933-1945)"
-      },
-      {
-        "book": "princeton-25e",
-        "chapter": "Chapter 11",
-        "section": "New Deal and WWII (1934-1945)"
-      }
-    ],
-    "primary_sources": [
-      "Executive Order 9066, February 19, 1942",
-      "Korematsu v. United States (1944)"
-    ]
+  "primary_sources": [
+   "Executive Order 9066, February 19, 1942",
+   "Korematsu v. United States (1944)"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "This photograph, taken in Hayward, California, on May 8, 1942, shows a Japanese American family waiting on a sidewalk with their baggage piled beside them. A woman in a hat holds a bundle, a small child sits on a suitcase with a paper tag tied to the child's coat, and a boy in a hat stands nearby. They are waiting for a bus to take them from their home to a relocation center.",
+  "source_note": "Dorothea Lange, War Relocation Authority photograph, Hayward, California, May 8, 1942 (National Archives 537523). Public domain, U.S. federal work. The family was awaiting evacuation under Executive Order 9066. Viewed before use."
+ },
+ "stimulus_set": "internment-9066-1942",
+ "source": "original; stimulus from the shared image pool (Dorothea Lange photograph, 1942)",
+ "stem": "A historian using this photograph and the Korematsu decision together would most likely argue which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The courts protected Japanese Americans from removal",
+   "misconception": "The Supreme Court upheld the removal in Korematsu in 1944."
   },
-  "stimulus": {
-    "kind": "image",
-    "text": "This photograph, taken in Hayward, California, on May 8, 1942, shows a Japanese American family waiting on a sidewalk with their baggage piled beside them. A woman in a hat holds a bundle, a small child sits on a suitcase with a paper tag tied to the child's coat, and a boy in a hat stands nearby. They are waiting for a bus to take them from their home to a relocation center.",
-    "source_note": "Dorothea Lange, War Relocation Authority photograph, Hayward, California, May 8, 1942 (National Archives 537523). Public domain, U.S. federal work. The family was awaiting evacuation under Executive Order 9066. Viewed before use."
+  {
+   "key": "B",
+   "text": "The removal was limited to adults who had broken the law",
+   "misconception": "No one in the photograph was charged with a crime; children were removed too."
   },
-  "stimulus_set": "internment-9066-1942",
-  "source": "original; stimulus from the shared image pool (Dorothea Lange photograph, 1942)",
-  "stem": "A historian using this photograph and the Korematsu decision together would most likely argue which of the following?",
-  "options": [
-    {
-      "key": "A",
-      "text": "The courts protected Japanese Americans from removal",
-      "misconception": "The Supreme Court upheld the removal in Korematsu in 1944."
-    },
-    {
-      "key": "B",
-      "text": "The removal was limited to adults who had broken the law",
-      "misconception": "No one in the photograph was charged with a crime; children were removed too."
-    },
-    {
-      "key": "C",
-      "text": "Wartime fear led the government to curtail the liberties of citizens"
-    },
-    {
-      "key": "D",
-      "text": "The removal was ordered by state governments, not the federal government",
-      "misconception": "The order came from President Roosevelt, a federal act."
-    }
-  ],
-  "answerKey": "C",
-  "rationales": {
-    "A": "In Korematsu v. United States (1944) the Court upheld the removal, so the courts did not protect the families.",
-    "B": "The photograph shows a small child with a tag, and no one removed was charged with a crime.",
-    "C": "Fear of invasion and sabotage after Pearl Harbor led the federal government to remove citizens from their homes.",
-    "D": "Executive Order 9066 was a presidential order, so the removal was federal policy.",
-    "general": "1. The photograph shows a whole family, including a small child, waiting to be taken away.\n2. Background from the books: about 120,000 people were removed, and about two-thirds were American citizens.\n3. In Korematsu (1944) the Supreme Court upheld the removal on grounds of military necessity.\n4. Together the picture and the ruling show fear in wartime curtailing citizens' liberties.\nRemember: pair a photograph with the court ruling on the same policy to see both the act and its defense."
+  {
+   "key": "C",
+   "text": "Wartime fear led the government to curtail the liberties of citizens"
+  },
+  {
+   "key": "D",
+   "text": "The removal was ordered by state governments, not the federal government",
+   "misconception": "The order came from President Roosevelt, a federal act."
   }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "In Korematsu v. United States (1944) the Court upheld the removal, so the courts did not protect the families.",
+  "B": "The photograph shows a small child with a tag, and no one removed was charged with a crime.",
+  "C": "Fear of invasion and sabotage after Pearl Harbor led the federal government to remove citizens from their homes.",
+  "D": "Executive Order 9066 was a presidential order, so the removal was federal policy.",
+  "general": "1. The photograph shows a whole family, including a small child, waiting to be taken away.\n2. Background from the books: about 120,000 people were removed, and about two-thirds were American citizens.\n3. In Korematsu (1944) the Supreme Court upheld the removal on grounds of military necessity.\n4. Together the picture and the ruling show fear in wartime curtailing citizens' liberties.\nRemember: pair a photograph with the court ruling on the same policy to see both the act and its defense."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2336",
+   "file": "u7/lange-hayward-evacuation-1942.jpg",
+   "caption": "Dorothea Lange, Japanese American family awaiting evacuation, Hayward, California, May 8, 1942",
+   "alt": "Photograph of a Japanese American family waiting on a sidewalk with their baggage piled beside them: a woman in a hat holds a bundle, a small child sits on a suitcase with a paper tag tied to the coat, and a boy in a hat stands nearby",
+   "license": "Public domain (U.S. federal work)",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Hayward,_California._With_baggage_piled_on_sidewalk,_evacuees_of_Japanese_ancestry_await_evacuation_._._._-_NARA_-_537523.jpg"
+  }
+ ]
 }

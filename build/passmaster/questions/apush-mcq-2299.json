@@ -1,77 +1,87 @@
 {
-  "id": "apush-mcq-2299",
-  "type": "mcq",
-  "unit": 7,
-  "topics": [
-    "7.11"
+ "id": "apush-mcq-2299",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.11"
+ ],
+ "lesson": "apush-u7-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.11 Interwar Foreign Policy"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 22",
+    "section": "Beginning of Modern America: The 1920s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
   ],
-  "lesson": "apush-u7-l4",
-  "status": "final",
-  "pool": "practice",
-  "difficulty": 4,
-  "skills": [
-    "5.B"
-  ],
-  "themes": [
-    "WOR",
-    "PCE"
-  ],
-  "reasoning": "continuity-change",
-  "grounding": {
-    "books": [
-      {
-        "book": "barrons-2027",
-        "chapter": "Chapter 9",
-        "section": "Topic 7.11 Interwar Foreign Policy"
-      },
-      {
-        "book": "5steps-2024",
-        "chapter": "Chapter 22",
-        "section": "Beginning of Modern America: The 1920s"
-      },
-      {
-        "book": "princeton-25e",
-        "chapter": "Chapter 11",
-        "section": "Jazz Age and Great Depression (1920-1933)"
-      }
-    ],
-    "primary_sources": []
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "Photograph of the American delegates leaving D.A.R. Hall in Washington during the Washington Naval Conference, 1921. Men in overcoats and hats walk down the stone steps of the hall. The photograph's own caption names Elihu Root and Secretary of State Charles Evans Hughes in front, with Senator Henry Cabot Lodge and Senator Oscar Underwood behind.",
+  "source_note": "American delegates leaving D.A.R. Hall, Washington, D.C., during the World Disarmament Conference, 1921. Library of Congress, LCCN2002697195; public domain. The catalog gives the date as September 11, 1921, while the caption printed on the negative reads 11/9/21; the day is not stated in the questions."
+ },
+ "stimulus_set": "washington-naval-1921",
+ "source": "original; stimulus photograph, American delegates leaving D.A.R. Hall, 1921, Library of Congress, public domain",
+ "stem": "The Washington Naval Conference best illustrates which pattern in American foreign policy in the 1920s?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Leading on disarmament while refusing binding commitments abroad"
   },
-  "stimulus": {
-    "kind": "image",
-    "text": "Photograph of the American delegates leaving D.A.R. Hall in Washington during the Washington Naval Conference, 1921. Men in overcoats and hats walk down the stone steps of the hall. The photograph's own caption names Elihu Root and Secretary of State Charles Evans Hughes in front, with Senator Henry Cabot Lodge and Senator Oscar Underwood behind.",
-    "source_note": "American delegates leaving D.A.R. Hall, Washington, D.C., during the World Disarmament Conference, 1921. Library of Congress, LCCN2002697195; public domain. The catalog gives the date as September 11, 1921, while the caption printed on the negative reads 11/9/21; the day is not stated in the questions."
+  {
+   "key": "B",
+   "text": "Joining international organizations to enforce peace",
+   "misconception": "The United States stayed out of the League of Nations, and the conference created no enforcement body."
   },
-  "stimulus_set": "washington-naval-1921",
-  "source": "original; stimulus photograph, American delegates leaving D.A.R. Hall, 1921, Library of Congress, public domain",
-  "stem": "The Washington Naval Conference best illustrates which pattern in American foreign policy in the 1920s?",
-  "options": [
-    {
-      "key": "A",
-      "text": "Leading on disarmament while refusing binding commitments abroad"
-    },
-    {
-      "key": "B",
-      "text": "Joining international organizations to enforce peace",
-      "misconception": "The United States stayed out of the League of Nations, and the conference created no enforcement body."
-    },
-    {
-      "key": "C",
-      "text": "Using military force to protect American business abroad",
-      "misconception": "Marines stayed in Latin America, but the conference itself was about naval limits, not intervention."
-    },
-    {
-      "key": "D",
-      "text": "Withdrawing from all diplomacy with Europe and Asia",
-      "misconception": "The United States hosted the conference and signed treaties; it did not withdraw from diplomacy."
-    }
-  ],
-  "answerKey": "A",
-  "rationales": {
-    "A": "The United States led the disarmament talks yet took on no promise to defend anyone and joined no enforcement body.",
-    "B": "Background from the books: the United States never joined the League, and the naval treaties had no enforcement mechanism.",
-    "C": "Background from the books: force in Latin America continued, but it was separate from the disarmament conference.",
-    "D": "Background from the books: the United States hosted the conference and signed the Five-Power, Four-Power, and Nine-Power treaties.",
-    "general": "1. The United States hosted the conference and Secretary Hughes proposed the cuts himself.\n2. The treaties that followed limited ships and pledged respect for China and Pacific islands.\n3. None of the treaties promised American troops or created any way to enforce the limits.\n4. That mix, leading the talks while refusing binding promises, is the 1920s pattern.\nRemember: leadership in the 1920s meant treaties and talks, not membership or enforcement."
+  {
+   "key": "C",
+   "text": "Using military force to protect American business abroad",
+   "misconception": "Marines stayed in Latin America, but the conference itself was about naval limits, not intervention."
+  },
+  {
+   "key": "D",
+   "text": "Withdrawing from all diplomacy with Europe and Asia",
+   "misconception": "The United States hosted the conference and signed treaties; it did not withdraw from diplomacy."
   }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The United States led the disarmament talks yet took on no promise to defend anyone and joined no enforcement body.",
+  "B": "Background from the books: the United States never joined the League, and the naval treaties had no enforcement mechanism.",
+  "C": "Background from the books: force in Latin America continued, but it was separate from the disarmament conference.",
+  "D": "Background from the books: the United States hosted the conference and signed the Five-Power, Four-Power, and Nine-Power treaties.",
+  "general": "1. The United States hosted the conference and Secretary Hughes proposed the cuts himself.\n2. The treaties that followed limited ships and pledged respect for China and Pacific islands.\n3. None of the treaties promised American troops or created any way to enforce the limits.\n4. That mix, leading the talks while refusing binding promises, is the 1920s pattern.\nRemember: leadership in the 1920s meant treaties and talks, not membership or enforcement."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2299",
+   "file": "u7/washington-naval-conference-delegates-1921.jpg",
+   "caption": "American delegates leaving D.A.R. Hall during the Washington Naval Conference, 1921",
+   "alt": "Photograph of the American delegates in overcoats and hats walking down the stone steps of D.A.R. Hall, with Elihu Root and Charles Evans Hughes in front",
+   "license": "Public domain (National Photo Company Collection, Library of Congress; no known restrictions)",
+   "source_url": "https://www.loc.gov/item/2002697195/"
+  }
+ ]
 }

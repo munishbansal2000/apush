@@ -1,77 +1,87 @@
 {
-  "id": "apush-mcq-2298",
-  "type": "mcq",
-  "unit": 7,
-  "topics": [
-    "7.11"
+ "id": "apush-mcq-2298",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.11"
+ ],
+ "lesson": "apush-u7-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.11 Interwar Foreign Policy"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 22",
+    "section": "Beginning of Modern America: The 1920s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
   ],
-  "lesson": "apush-u7-l4",
-  "status": "final",
-  "pool": "practice",
-  "difficulty": 3,
-  "skills": [
-    "3.A"
-  ],
-  "themes": [
-    "WOR",
-    "PCE"
-  ],
-  "reasoning": "causation",
-  "grounding": {
-    "books": [
-      {
-        "book": "barrons-2027",
-        "chapter": "Chapter 9",
-        "section": "Topic 7.11 Interwar Foreign Policy"
-      },
-      {
-        "book": "5steps-2024",
-        "chapter": "Chapter 22",
-        "section": "Beginning of Modern America: The 1920s"
-      },
-      {
-        "book": "princeton-25e",
-        "chapter": "Chapter 11",
-        "section": "Jazz Age and Great Depression (1920-1933)"
-      }
-    ],
-    "primary_sources": []
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "Photograph of the American delegates leaving D.A.R. Hall in Washington during the Washington Naval Conference, 1921. Men in overcoats and hats walk down the stone steps of the hall. The photograph's own caption names Elihu Root and Secretary of State Charles Evans Hughes in front, with Senator Henry Cabot Lodge and Senator Oscar Underwood behind.",
+  "source_note": "American delegates leaving D.A.R. Hall, Washington, D.C., during the World Disarmament Conference, 1921. Library of Congress, LCCN2002697195; public domain. The catalog gives the date as September 11, 1921, while the caption printed on the negative reads 11/9/21; the day is not stated in the questions."
+ },
+ "stimulus_set": "washington-naval-1921",
+ "source": "original; stimulus photograph, American delegates leaving D.A.R. Hall, 1921, Library of Congress, public domain",
+ "stem": "How did Japan respond to the 5:3 battleship ratio it received under the Five-Power Treaty?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It welcomed the limit as a fair share",
+   "misconception": "Japan signed the treaty but saw the lower ratio as a slight, not as fair."
   },
-  "stimulus": {
-    "kind": "image",
-    "text": "Photograph of the American delegates leaving D.A.R. Hall in Washington during the Washington Naval Conference, 1921. Men in overcoats and hats walk down the stone steps of the hall. The photograph's own caption names Elihu Root and Secretary of State Charles Evans Hughes in front, with Senator Henry Cabot Lodge and Senator Oscar Underwood behind.",
-    "source_note": "American delegates leaving D.A.R. Hall, Washington, D.C., during the World Disarmament Conference, 1921. Library of Congress, LCCN2002697195; public domain. The catalog gives the date as September 11, 1921, while the caption printed on the negative reads 11/9/21; the day is not stated in the questions."
+  {
+   "key": "B",
+   "text": "It accepted the limit yet resented the insult"
   },
-  "stimulus_set": "washington-naval-1921",
-  "source": "original; stimulus photograph, American delegates leaving D.A.R. Hall, 1921, Library of Congress, public domain",
-  "stem": "How did Japan respond to the 5:3 battleship ratio it received under the Five-Power Treaty?",
-  "options": [
-    {
-      "key": "A",
-      "text": "It welcomed the limit as a fair share",
-      "misconception": "Japan signed the treaty but saw the lower ratio as a slight, not as fair."
-    },
-    {
-      "key": "B",
-      "text": "It accepted the limit yet resented the insult"
-    },
-    {
-      "key": "C",
-      "text": "It refused to sign the treaty",
-      "misconception": "Japan signed the Five-Power Treaty; it left the limits later, in the mid-1930s."
-    },
-    {
-      "key": "D",
-      "text": "It demanded the same ratio as Britain",
-      "misconception": "Japan asked for a higher ratio and settled for 3, not 5."
-    }
-  ],
-  "answerKey": "B",
-  "rationales": {
-    "A": "Background from the books: Japan took the lower ratio as a mark of second-class status, not as a fair share.",
-    "B": "Japan signed and kept the 5:3 ratio for a time, but the slight fed resentment that later broke the limits.",
-    "C": "Background from the books: Japan signed the treaty in 1922 and renounced its limits only in the mid-1930s.",
-    "D": "Background from the books: Japan wanted a ratio closer to 5 and accepted 3 as a compromise.",
-    "general": "1. The Five-Power Treaty gave the United States and Britain a ratio of 5 and Japan a ratio of 3.\n2. Japan signed the treaty and lived with the limit through the 1920s.\n3. Japan saw the lower number as a racial insult and a mark of second-class status.\n4. In the mid-1930s Japan renounced the limits and built the fleet that later struck Pearl Harbor.\nRemember: a bargain that feels unfair to one side rarely holds once that side grows stronger."
+  {
+   "key": "C",
+   "text": "It refused to sign the treaty",
+   "misconception": "Japan signed the Five-Power Treaty; it left the limits later, in the mid-1930s."
+  },
+  {
+   "key": "D",
+   "text": "It demanded the same ratio as Britain",
+   "misconception": "Japan asked for a higher ratio and settled for 3, not 5."
   }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Background from the books: Japan took the lower ratio as a mark of second-class status, not as a fair share.",
+  "B": "Japan signed and kept the 5:3 ratio for a time, but the slight fed resentment that later broke the limits.",
+  "C": "Background from the books: Japan signed the treaty in 1922 and renounced its limits only in the mid-1930s.",
+  "D": "Background from the books: Japan wanted a ratio closer to 5 and accepted 3 as a compromise.",
+  "general": "1. The Five-Power Treaty gave the United States and Britain a ratio of 5 and Japan a ratio of 3.\n2. Japan signed the treaty and lived with the limit through the 1920s.\n3. Japan saw the lower number as a racial insult and a mark of second-class status.\n4. In the mid-1930s Japan renounced the limits and built the fleet that later struck Pearl Harbor.\nRemember: a bargain that feels unfair to one side rarely holds once that side grows stronger."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2298",
+   "file": "u7/washington-naval-conference-delegates-1921.jpg",
+   "caption": "American delegates leaving D.A.R. Hall during the Washington Naval Conference, 1921",
+   "alt": "Photograph of the American delegates in overcoats and hats walking down the stone steps of D.A.R. Hall, with Elihu Root and Charles Evans Hughes in front",
+   "license": "Public domain (National Photo Company Collection, Library of Congress; no known restrictions)",
+   "source_url": "https://www.loc.gov/item/2002697195/"
+  }
+ ]
 }
